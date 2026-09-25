@@ -1,0 +1,8 @@
+node_modules/
+.env
+
+# Hasil perekaman lokal; arsip resmi ada di branch arsip-data
+arsip/
+
+# Slide kuliah milik dosen, jangan ikut dipublikasikan
+*.pdf
