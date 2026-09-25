@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#007fff">
+    <meta name="csrf-token" content="AyYccedZetfYVZjr4h38V9MfcXbCk6KHh6vg2u94">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="magma,esdm,bencana,gunungapi,pvmbg,badan geologi,vona,gempabumi,volcano" />
+
+    <!-- Page title -->
+    <title>Tingkat Aktivitas Gunung Api
+</title>
+    <link rel="shortcut icon" href="https://magma.esdm.go.id/favicon.ico">
+    <link rel="icon" type="image/png" href="https://magma.esdm.go.id/favicon-16x16.0.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://magma.esdm.go.id/favicon-32x32.0.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://magma.esdm.go.id/favicon-96x96.0.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://magma.esdm.go.id/favicon-192x192.0.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://magma.esdm.go.id/favicon-180x180.0.png" sizes="180x180">
+    <link rel="dns-prefetch" href="https://magma.esdm.go.id">
+    <link rel="dns-prefetch" href="https://magma.vsi.esdm.go.id/">
+    <link itemprop="thumbnailUrl" href="https://magma.esdm.go.id/snapshot.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:site" content="@id_magma">
+    <meta name="twitter:creator" content="@KementerianESDM">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tingkat Aktivitas Gunung Api
+">
+    <meta name="twitter:description" content="MAGMA Indonesia">
+    <meta name="twitter:image" content="https://magma.esdm.go.id/snapshot.png">
+
+    <!-- Facebook -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://magma.esdm.go.id">
+    <meta property="og:title" content="Tingkat Aktivitas Gunung Api
+">
+    <meta property="og:description" content="MAGMA Indonesia">
+    <meta property="og:image" content="https://magma.esdm.go.id/snapshot.png">
+    <meta property="og:image:secure_url" content="https://magma.esdm.go.id/snapshot.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Meta -->
+    <meta name="description" content="MAGMA Indonesia">
+    <meta name="author" content="Pusat Vulkanologi dan Mitigasi Bencana Geologi">
+
+    <!-- vendor css -->
+    <link href="https://magma.esdm.go.id/slim/lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="https://magma.esdm.go.id/slim/lib/Ionicons/css/ionicons.css" rel="stylesheet">
+    
+    <!-- Slim CSS -->
+    <link rel="stylesheet" href="https://magma.esdm.go.id/css/icon-magma.css">
+    <link rel="stylesheet" href="https://magma.esdm.go.id/slim/css/slim.css">
+    <link rel="stylesheet" href="https://magma.esdm.go.id/slim/css/slim-magma.css">
+
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-213713124-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-213713124-1');
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="slim-header">
+    <div class="container">
+        <div class="slim-header-left">
+            <span><a href="https://www.esdm.go.id/" target="_blank"><img src="https://magma.esdm.go.id/images/logo/esdm.gif" style="height:32px;"></a></span>
+            <h2 class="slim-logo mg-l-10"><span><a href="https://magma.esdm.go.id/v1">MAGMA Indonesia.</a></span></h2>
+        </div>
+    </div>
+</div>
+    <!-- Navbar -->
+    <div class="slim-navbar">
+    <div class="container">
+        <ul class="nav">
+            <li class="nav-item nav-item-10">
+                <a class="nav-link" href="https://magma.esdm.go.id/v1">
+                    <i class="icon ion-map"></i>
+                    <span class="d-none d-xl-block">Peta </span>
+                </a>
+            </li>
+            <li class="nav-item nav-item-15 with-sub active">
+                <a class="nav-link" href="#">
+                    <i class="icon icon-volcano-warning"></i>
+                    <span class="d-none d-xl-block">Gunung Api </span>
+                </a>
+                <div class="sub-item">
+                    <label class="label-section">Informasi</label>
+                    <ul>
+                        <li><a href="https://magma.esdm.go.id/v1/gunung-api/tingkat-aktivitas">Tingkat Aktivitas</a></li>
+                        <li><a href="https://magma.esdm.go.id/v1/gunung-api/laporan">Laporan Aktivitas</a></li>
+                        <li><a href="https://magma.esdm.go.id/v1/gunung-api/laporan-harian">Laporan Harian</a></li>
+                        <li><a href="https://magma.esdm.go.id/v1/gunung-api/informasi-letusan">Informasi Letusan</a></li>
+                        <li><a href="https://magma.esdm.go.id/v1/gunung-api/peta-kawasan-rawan-bencana">Download Peta KRB</a></li>
+                        <li><a href="https://magma.esdm.go.id/v1/gunung-api/cctv">Kamera (CCTV)</a></li>
+                        <li><a href="https://magma.esdm.go.id/v1/gunung-api/gallery">Gallery</a></li>
+                        <li><a href="https://magma.esdm.go.id/v1/gunung-api/live-seismogram">Live Seismogram</a></li>
+                    </ul>
+                    <label class="label-section mg-t-15">VONA <i class="icon ion-plane"></i></label>
+                    <ul>
+                        <li><a href="https://magma.esdm.go.id/vona">Issued</a></li>
+                        <li><a href="https://magma.esdm.go.id/v1/vona">Archived</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item nav-item-20 with-sub ">
+                <a class="nav-link" href="#">
+                    <i class="icon icon-landslide"></i>
+                    <span class="d-none d-xl-block">Gerakan Tanah </span>
+                </a>
+                <div class="sub-item">
+                    <ul>
+                        <li><a href="https://magma.esdm.go.id/v1/gerakan-tanah/tanggapan">Tanggapan Kejadian</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item nav-item-25 with-sub ">
+                <a class="nav-link" href="#">
+                    <i class="icon icon-earthquake"></i>
+                    <span class="d-none d-xl-block">Gempa Bumi dan Tsunami</span>
+                </a>
+                <div class="sub-item">
+                    <ul>
+                        <li><a href="https://magma.esdm.go.id/v1/gempa-bumi-dan-tsunami/kajian">Kajian Kejadian</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item nav-item-15 with-sub ">
+                <a class="nav-link" href="#">
+                    <i class="icon ion-ios-paper-outline"></i>
+                    <span class="d-none d-xl-block">Edukasi </span>
+                </a>
+                <div class="sub-item">
+                    <ul>
+                        <li><a href="https://magma.esdm.go.id/v1/edukasi">Informasi Publik</a></li>
+                        <li><a href="https://magma.esdm.go.id/v1/edukasi/glossary">Glossary</a></li>
+                        <li><a href="https://magma.esdm.go.id/v1/edukasi/magma-indonesia">Tentang MAGMA</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCl6iW8jAJ9X-Fv68GIkCG_Q" target="_blank">PVMBG TV</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item nav-item-15 with-sub ">
+                <a class="nav-link" href="#">
+                    <i class="icon ion-ios-bookmarks-outline"></i>
+                    <span class="d-none d-xl-block">Press Release </span>
+                </a>
+                <div class="sub-item">
+                    <ul>
+                        <li><a href="https://magma.esdm.go.id/press-release">Press Release</a></li>
+                        <li><a href="https://magma.esdm.go.id/v1/press-release">Archived</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+    <!-- Main Panel -->
+    <div class="slim-mainpanel ">
+    <div class="container">
+        <div class="slim-pageheader">
+            <ol class="breadcrumb slim-breadcrumb">
+                <li class="breadcrumb-item"><a href="https://magma.esdm.go.id/v1">Home</a></li>
+                <li class="breadcrumb-item"><a>Gunung Api</a></li>
+<li class="breadcrumb-item active" aria-current="page">Tingkat Aktivitas</li>
+            </ol>
+            <h6 class="slim-pagetitle">Tingkat Aktivitas Gunung Api
+</h6>
+        </div>
+
+        <div class="row row-xs">
+    <div class="col-sm-6 col-lg-3">
+        <div class="card card-status">
+            <div class="media">
+                <i class="icon icon-volcano-warning tx-danger"></i>
+                <div class="media-body">
+                    <h1>0</h1>
+                    <p>Level IV (Awas)</p>
+                </div><!-- media-body -->
+            </div><!-- media -->
+        </div><!-- card -->
+    </div><!-- col-3 -->
+    <div class="col-sm-6 col-lg-3 mg-t-10 mg-sm-t-0">
+        <div class="card card-status">
+            <div class="media">
+                <i class="icon icon-volcano-warning tx-orange"></i>
+                <div class="media-body">
+                    <h1>3</h1>
+                    <p>Level III (Siaga)</p>
+                </div><!-- media-body -->
+            </div><!-- media -->
+        </div><!-- card -->
+    </div><!-- col-3 -->
+    <div class="col-sm-6 col-lg-3 mg-t-10 mg-lg-t-0">
+        <div class="card card-status">
+            <div class="media">
+                <i class="icon icon-volcano-warning tx-warning"></i>
+                <div class="media-body">
+                    <h1>24</h1>
+                    <p>Level II (Waspada)</p>
+                </div><!-- media-body -->
+            </div><!-- media -->
+        </div><!-- card -->
+    </div><!-- col-3 -->
+    <div class="col-sm-6 col-lg-3 mg-t-10 mg-lg-t-0">
+        <div class="card card-status">
+            <div class="media">
+                <i class="icon icon-volcano-warning tx-success"></i>
+                <div class="media-body">
+                    <h1>42</h1>
+                    <p>Level I (Normal)</p>
+                </div><!-- media-body -->
+            </div><!-- media -->
+        </div><!-- card -->
+    </div><!-- col-3 -->
+</div>
+
+<div class="row row-xs mg-t-10">
+    <div class="col-lg-12">
+        <div class="card card-table">
+            <div class="card-header">
+                <h6 class="slim-card-title">Daftar Tingkat Aktivitas Gunung Api</h6>
+            </div><!-- card-header -->
+            <div class="table-responsive">
+                <table class="table mg-b-0 tx-13">
+                    <thead>
+                        <tr class="tx-10">
+                            <th class="pd-y-5 wd-30p">Tingkat Aktivitas</th>
+                            <th class="pd-y-5">Jumlah</th>
+                            <th class="pd-y-5">Gunung Api</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td rowspan="1">
+                                <a href="" class="tx-inverse tx-14 tx-medium d-block">Level IV (Awas)</a>
+                                <span class="tx-11 d-block">Hasil pengamatan visual dan instrumental teramati mengalami peningkatan aktivitas yang semakin nyata atau gunung api mengalami erupsi</span>
+                            </td>
+                            <td class="tx-12" rowspan="1">
+                                0
+                            </td>
+                                                        <td>
+                                Tidak ada gunung api Level IV (Awas)
+                            </td>
+                                                    </tr>
+                        
+                        
+                        <tr>
+                            <td rowspan="4">
+                                <a href="" class="tx-inverse tx-14 tx-medium d-block">Level III (Siaga)</a>
+                                <span class="tx-11 d-block">Hasil pengamatan visual dan instrumental memperlihatkan peningkatan aktivitas yang semakin nyata atau gunung api mengalami erupsi</span>
+                            </td>
+                            <td class="tx-12" rowspan="4">
+                                3
+                            </td>
+                                                    </tr>
+                                                                                <tr>
+                                <td>
+                                Merapi - Daerah Istimewa Yogyakarta dan Jawa Tengah <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326778?signature=f93c49d3082279af31322c4c85cd53ac7978e5a3bf1f47df282f4d1745e52e78"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Semeru - Jawa Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326779?signature=1707ff4c5ede2d40e3f987114c30367985cd2b219cac623ffb1165462ca935d6"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Sinabung - Sumatera Utara <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326774?signature=18408a15f1629633ac9d3b0b888303a3d9de65540f6ac58d348bee73ade7f421"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                    
+                        
+                        <tr>
+                            <td rowspan="25">
+                                <a href="" class="tx-inverse tx-14 tx-medium d-block">Level II (Waspada)</a>
+                                <span class="tx-11 d-block">Hasil pengamatan visual dan instrumental mulai memperlihatkan peningkatan aktivitas. Pada beberapa gunung api dapat terjadi erupsi</span>
+                            </td>
+                            <td class="tx-12" rowspan="25">
+                                24
+                            </td>
+                                                    </tr>
+                                                                                <tr>
+                                <td>
+                                Anak Krakatau - Lampung <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326775?signature=47baeea65e3ac486f0bfb224893653d4d2a0ec905fb86bb5a1d1255ecdc57341"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Anak Ranakah - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326770?signature=92b861831a416b32942c96ee8d4295846024c03345f733150e58a78b4bb803c3"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Awu - Sulawesi Utara <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326729?signature=cb787335a79578e1c731ef1e32d7932717c7fd9f651be96c83ecd6cc3118e752"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Banda Api - Maluku <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326757?signature=364ed1f2d932746125fbcbc44833f7e411c3ae5967a23b43aa0b51e9ff262d05"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Bromo - Jawa Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326782?signature=5274b2d3d0e0012bb2bbff150b20a8dbea88a6e158d9c2fe0e21fe70fa8b8cc2"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Bur Ni Telong - Aceh <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326748?signature=ad6d6cd51f9897a68aa0c899aab5fddf76b4a6953d63d7507d8f1227f48306e1"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Dempo - Sumatera Selatan <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326745?signature=a50a3ffdb8e6624c128245e9997858fde23c71789ffb6e5268cf02fa87b0abcc"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Dukono - Maluku Utara <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326765?signature=146d05e3ec6ec993c478177c196404ba3d6259649399d67259937d5aac86fdb1"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Gamalama - Maluku Utara <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326766?signature=fd9b1dd2bdfd19f56a20156239eb5e536e9cc38138573a978a2d856073105162"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Ibu - Maluku Utara <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326772?signature=32c77e8935fb9fa7fb95a130746538b4a802937e54171c5fe36034ec5b50ed86"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Ili Lewotolok - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326771?signature=a448d9c664276b387b29df585d29b33dd64847c9d754e242fa660bd9ce9fb6ca"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Iya - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326756?signature=1c036d9d315df9b3db2051a91c404bfb8612aa2a29d922b71622987c6aafca32"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Karangetang - Sulawesi Utara <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326781?signature=836591c8a2bc3c1893d42250375b3079b2d45e933d584bf5c32ea078e88c8eeb"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Kerinci - Jambi, Sumatera Barat <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326776?signature=7f1f8f643ff38ffa115185d955122f64c6d377252da392971f6c2b87fc8310d2"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Lewotobi Laki-laki - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326768?signature=e8f1f34fc5706380d7d045e75daa01234af5ab19a13a18909021fc557a77a7f1"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Lokon - Sulawesi Utara <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326713?signature=5a578a22efe55de227992223ffaa70e3603f2d20a6fb075e723df9719fef735f"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Marapi - Sumatera Barat <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326780?signature=7e56880f3f6532ee8d7381d7811d67df09435d77d94710c2ce29992dbc4182ad"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Raung - Jawa Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326716?signature=5d23c22b8f692d8e39b1bd8fd12459984ac09d935b5ccba6c7fcb25c8f321fe5"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Rinjani - Nusa Tenggara Barat <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326718?signature=d3518b758b679b65525759747830373414e42e9ac176e07d365a8ec4f2dead5c"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Sangeangapi - Nusa Tenggara Barat <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326752?signature=f5c52821f05f0ba9156cc618f0f7f33f6341e01cdc247b1e114a7217fd9e8b39"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Slamet - Jawa Tengah <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326721?signature=90f02a649d0db4e164e8afc621ff9395125f87724139066d69410adb4c8cabe3"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Soputan - Sulawesi Utara <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326708?signature=7b18653e748bf2eb48ed041bfc0fbbe360d16f8a78d8fc62496d98f2cba7bb28"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Sorikmarapi - Sumatera Utara <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326750?signature=61029467f3aa90fe1b9e3a81345d1b42abbfb3d68e737322f696332d3e39a7d5"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Tambora - Nusa Tenggara Barat <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326741?signature=7be6b69c8cda5de00bd33d8e191fb7bd5ef8e9a948ae53112eddf2d5921db28d"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                    
+                        
+                        <tr>
+                            <td rowspan="43">
+                                <a href="" class="tx-inverse tx-14 tx-medium d-block">Level I (Normal)</a>
+                                <span class="tx-11 d-block">Hasil pengamatan visual dan instrumental fluktuatif, tetapi tidak memperlihatkan peningkatan aktivitas yang signifikan</span>
+                            </td>
+                            <td class="tx-12" rowspan="43">
+                                42
+                            </td>
+                                                    </tr>
+                                                                                <tr>
+                                <td>
+                                Agung - Bali <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326751?signature=57dee81e5bf742a9dc5de6421cc2c462e4ddc1ed7bcaedec1b47882ba6180849"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Ambang - Sulawesi Utara <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326753?signature=a8a4da47e054f8ec189a3a17d6ff27c276d8098afb224bf4595a96684adfa804"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Arjuno Welirang - Jawa Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326743?signature=7abdd961932f0bc7ed97b07ade54915da4bffa07b91bf4b20ab567049be5fe89"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Batur - Bali <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326749?signature=403dbb323075704a43d79c4028b366e92fdcc918055fcdf128d069acd25cf08b"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Batutara - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/304360?signature=9fc9cb41fee7945dcaf55e401991812d3efa16f558033d67049b5ff9ec490e18"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Ciremai - Jawa Barat <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326730?signature=76b344867afe89b3d26913df0d894d79f4082f61dcc389d81d2aa9cb000b60bc"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Colo - Sulawesi Tengah <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326719?signature=c58fb158711bc40dffa8f370689c1822188e65f62fa7fdb862fafa8003794a80"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Dieng - Jawa Tengah <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326731?signature=86c206df6579b76a22099d2401b11df95ec60ad4bcc074cfb261a425325daec5"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Ebulobo - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326767?signature=8d28ccbd4626b70d7191cc7260d28360922bd362379a160cb1110974bcbd4f8d"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Egon - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326710?signature=43d077504bccc596a3df8f18c2520add34ad828fface8eac9f680d3fd33cbd4b"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Galunggung - Jawa Barat <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326747?signature=c53953e98e22cdb22da42832acf86ae5e08799ac1cb39bc70424a84a5ee347eb"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Gamkonora - Maluku Utara <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326687?signature=d0e27b74b6cae6f350ac667f9295374344f38649098131826e0c021e1811c81a"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Gede - Jawa Barat <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326717?signature=17c5f325b6e4e604e093974a57fc4691607ab3afa75ba8f975b1b7b65906c424"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Guntur - Jawa Barat <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326737?signature=151beeb0dc63b199ef9a2c202f5809442cd9808ad444086780ea6164713d9b24"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Hobal - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/293107?signature=f959cd69680f596cadcabcf3f7941886b8e715da2686516bdb856fd27f93c5f6"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Ijen - Jawa Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326755?signature=5ef90cc0d60c68ca5c720577282a2b380aaf2b1e6818d9903d8939a55969dfa5"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Ile Werung - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326705?signature=068ad12c90049b81e91985d7ff8f85028609f5f9c3de60e28258bb75c49e37c0"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Ili Boleng - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326728?signature=8c1f13899e352c2ce5a87d2754f0b7cb37ac2dd882beb938904d6ccae635fcc6"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Inielika - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326735?signature=9d05e4ef4be7d8ec2bb2f1051cd58d4875fbe1eaa94c0ca38afb9706370063e8"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Inierie - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326722?signature=f245b0a86e84565dcf07795ab2425f0c60f2b850e860d53e91a3029c85642d26"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Kaba - Bengkulu <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326734?signature=10d0208ab5705534bc0fa81e9541a3ee9eea93af3e07ac187adcfb6a58c2f040"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Kelimutu - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326720?signature=3a3a7e1b1e31e5a78fa5e9d3ccd79b2f1658a562a6821cb66bd76c57c4aafb92"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Kelud - Jawa Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326736?signature=cc4bba7df43077fd9922e1bd65cbbba6b66d448d71669089869aa9a8317940bd"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Kie Besi - Maluku Utara <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326764?signature=4c9bc271a6a505516582a481b0fe462107c3f77c96639df8ce974afd7d7d36e6"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Lamongan - Jawa Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326746?signature=dcbee42949ecd9a12b588065e3a93055bdde2d49b6ea299309e04f678a784a2a"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Lereboleng - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326694?signature=706ed87e149eebb9ff5af9419125dddced77861e2479981ba1608f3d7ead37a4"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Lewotobi Perempuan - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326693?signature=aeaead11891b6193cae4f6248255cd786543831f06006eb31eec96d056e0169b"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Mahawu - Sulawesi Utara <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326695?signature=ea6777982d562ae10f560974c178a2335be3522fb10cdc8e410444fcc284c07a"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Papandayan - Jawa Barat <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326733?signature=c563f8d0f660f0171bdaf6df850b9c8a6d069ae0fc02e2f75ff1952383e12552"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Peut Sague - Daerah Istimewa Aceh <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326754?signature=75bf399b222f81f41e1af5cd664b8ca8dabd95564c28e239be4140b26fc7e89d"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Rokatenda - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326769?signature=cdcec3fdff1d27c0f27211c3e7c50e4dd07f07fd0db9b366f81d9371cd2a7763"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Ruang - Sulawesi Utara <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326739?signature=6f3ca32410f34e6105d54eabb0b9b0382478e2a1406a4f06e18517bcb2dfa5f8"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Salak - Jawa Barat <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326712?signature=7029841f1a452905034515eb66fa317f41d1f659609750f3cdf3dc8421a188b8"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Seulawah Agam - Daerah Istimewa Aceh <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326740?signature=9fc367b67e6804a18ca206f56ba23720345f10fa676367cea043a104d5807116"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Sirung - Nusa Tenggara Timur <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326711?signature=e03805b26c769ae976c75e4ba5f50862dd55317b7028633559d975fb0e9b2e5d"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Sumbing - Jawa Tengah <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326725?signature=f49aa9216854bc4266595a036dd7f0f17f0b766dd1c26897151bec522fa06500"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Sundoro - Jawa Tengah <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326726?signature=0f95a6bc238d4e461fb9a69b9c5b9c3adf69b6ef22340d2e92635542f29905af"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Talang - Sumatera Barat <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326732?signature=60a4f063c9ebc382a009b3f081461353b5f048babff436c45b0bb3e546cebe3c"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Tandikat - Sumatera Barat <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326738?signature=b97168647a0dc18377a53badda5a637d04deded4580e48a1d8bcd659178d3414"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Tangkoko - Sulawesi Utara <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326744?signature=8c5ee297ae1a39e79f7369cf216c94a5a0a6bd491a10de0a9e8cb761268c3a03"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Tangkuban Parahu - Jawa Barat <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326715?signature=fdd56efbb8ed0e2ca9f888cca5f4f3d34f7e1ef04bb246c8f98c0d38faeb8944"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                Wurlali - Maluku <a href="https://magma.esdm.go.id/v1/gunung-api/laporan/326714?signature=4a0756fc40988d0216431920ca50aa963035e1ec1a7fe2dbb0ac8d4e2087a3c0"><i class="fa fa-angle-right mg-r-5"
+                                        target="_blank"></i>Lihat laporan</a><br>
+                                </td>
+                            </tr>
+                                                                        </tbody>
+                </table>
+            </div><!-- table-responsive -->
+            <div class="card-footer tx-12 pd-y-15 bg-transparent">
+                <a href="https://magma.esdm.go.id/v1/gunung-api/laporan"><i class="fa fa-angle-down mg-r-5"></i>Lihat Laporan Aktivitas</a>
+            </div><!-- card-footer -->
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+    <!-- Footer -->
+    <div class="slim-footer">
+    <div class="container">
+        <p>Copyright 2026 &copy; All Rights Reserved. MAGMA Indonesia</p>
+        <p>Dibuat oleh: <a href="#">Pusat Vulkanologi dan Mitigasi Bencana Geologi</a></p>
+    </div>
+</div>
+    <!-- Vendor scripts -->
+    <script src="https://magma.esdm.go.id/slim/lib/jquery/js/jquery.js"></script>
+<script src="https://magma.esdm.go.id/slim/lib/popper.js/js/popper.js"></script>
+<script src="https://magma.esdm.go.id/slim/lib/bootstrap/js/bootstrap.js"></script>
+<script src="https://magma.esdm.go.id/slim/js/slim.js"></script>
+
+</body>
+</html>

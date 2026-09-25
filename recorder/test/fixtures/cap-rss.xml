@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-stylesheet type="text/xsl" href="/cap/nowcast-rss-style.xsl"?>
+    <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+        <channel>
+            <title>Peringatan Dini Cuaca BMKG</title>
+            <link>https://www.bmkg.go.id/alerts/nowcast/id/rss.xml</link>
+            <description>Peringatan Dini Cuaca dari BMKG (Badan Meteorologi, Klimatologi, dan Geofisika)</description>
+            <atom:link href="https://www.bmkg.go.id/alerts/nowcast/id/rss.xml" rel="self" type="application/rss+xml"/>
+            <language>id</language>
+            <copyright>public domain</copyright>
+            <pubDate>Fri, 25 Sep 2026 18:00:17 +0000</pubDate>
+            <lastBuildDate>Fri, 25 Sep 2026 18:00:17 +0000</lastBuildDate>
+            <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+            
+        <item>
+            <title>Hujan Lebat disertai Petir di Riau</title>
+            <link>https://www.bmkg.go.id/alerts/nowcast/id/CRU20260925007_alert.xml</link>
+            <description>Hujan lebat disertai petir akan terjadi pada 26 September 2026, 01:00 WIB di sebagian wilayah Riau, khususnya di BANGKO PUSAKO, BANGUN PURBA, BATANG PERANAP, GUNUNG SAHILAN, HULU KUANTAN, KABUN, KAMPAR, KAMPAR KIRI HILIR, KAMPAR KIRI TENGAH, KAMPAR UTARA, KEPENUHAN HULU, KOTO KAMPAR HULU, KUANTAN MUDIK, KUANTAN TENGAH, PANGEAN, PERANAP, PUCUK RANTAU, PUJUD, RAMBAH, RAMBAH HILIR, RAMBAH SAMO, ROKAN IV KOTO, SIAK HULU, SINGINGI, SINGINGI HILIR, TAMBANG, TAMBUSAI, TAMBUSAI UTARA, TANAH PUTIH TANJUNG MELAWAN, TANDUN, TAPUNG, TAPUNG HILIR, XIII KOTO KAMPAR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 September 2026, 04:00 WIB.</description>
+            <author>cuaca.ekstrem@bmkg.go.id (BMKG)</author>
+            <category>Met</category>
+            <guid isPermaLink="false">2.49.0.1.360.0.2026.09.25.18.14.007</guid>
+            <pubDate>Sat, 26 Sep 2026 00:52:00 +0700</pubDate>
+        </item>
+
+        <item>
+            <title>Hujan Lebat disertai Petir di Papua</title>
+            <link>https://www.bmkg.go.id/alerts/nowcast/id/CPU20260925010_alert.xml</link>
+            <description>Hujan lebat disertai petir akan terjadi pada 26 September 2026, 03:00 WIT di sebagian wilayah Papua, khususnya di RAVENI RARA, SKANTO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 September 2026, 05:00 WIT.</description>
+            <author>cuaca.ekstrem@bmkg.go.id (BMKG)</author>
+            <category>Met</category>
+            <guid isPermaLink="false">2.49.0.1.360.0.2026.09.25.18.91.010</guid>
+            <pubDate>Sat, 26 Sep 2026 02:49:00 +0900</pubDate>
+        </item>
+        </channel>
+    </rss>
