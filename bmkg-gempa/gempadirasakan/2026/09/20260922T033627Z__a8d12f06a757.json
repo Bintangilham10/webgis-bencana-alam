@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "data": {
+    "Tanggal": "22 Sep 2026",
+    "Jam": "10:36:27 WIB",
+    "DateTime": "2026-09-22T03:36:27+00:00",
+    "Coordinates": "-8.43,121.44",
+    "Lintang": "8.43 LS",
+    "Bujur": "121.44 BT",
+    "Magnitude": "4.8",
+    "Kedalaman": "14 km",
+    "Wilayah": "Pusat gempa berada di laut 31 km timur laut Mbay, Nagekeo",
+    "Dirasakan": "IV Kab. Nagekeo, III Kab. Ngada, III Kab. Sikka, III Kab. Ende, II Kab. Manggarai"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "data": {
+    "Tanggal": "14 Sep 2026",
+    "Jam": "17:58:04 WIB",
+    "DateTime": "2026-09-14T10:58:04+00:00",
+    "Coordinates": "2.52,128.09",
+    "Lintang": "2.52 LU",
+    "Bujur": "128.09 BT",
+    "Magnitude": "6.2",
+    "Kedalaman": "145 km",
+    "Wilayah": "42 km TimurLaut PULAUDOI-MALUT",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}

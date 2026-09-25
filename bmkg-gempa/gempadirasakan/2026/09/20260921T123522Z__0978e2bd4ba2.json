@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "data": {
+    "Tanggal": "21 Sep 2026",
+    "Jam": "19:35:22 WIB",
+    "DateTime": "2026-09-21T12:35:22+00:00",
+    "Coordinates": "-0.52,99.37",
+    "Lintang": "0.52 LS",
+    "Bujur": "99.37 BT",
+    "Magnitude": "4.5",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di laut 76 km Barat Daya Agam",
+    "Dirasakan": "III-IV Agam, II-III Kab. Padang Pariaman, II-III Kota Pariaman, II-III Kota Padang"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "data": {
+    "Tanggal": "17 Sep 2026",
+    "Jam": "13:20:53 WIB",
+    "DateTime": "2026-09-17T06:20:53+00:00",
+    "Coordinates": "1.35,126.44",
+    "Lintang": "1.35 LU",
+    "Bujur": "126.44 BT",
+    "Magnitude": "5.1",
+    "Kedalaman": "24 km",
+    "Wilayah": "118 km BaratLaut JAILOLO-MALUT",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}

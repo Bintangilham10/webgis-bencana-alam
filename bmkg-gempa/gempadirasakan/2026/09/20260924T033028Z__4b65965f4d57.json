@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "data": {
+    "Tanggal": "24 Sep 2026",
+    "Jam": "10:30:28 WIB",
+    "DateTime": "2026-09-24T03:30:28+00:00",
+    "Coordinates": "-8.32,119.25",
+    "Lintang": "8.32 LS",
+    "Bujur": "119.25 BT",
+    "Magnitude": "4.6",
+    "Kedalaman": "12 km",
+    "Wilayah": "Pusat gempa berada di laut 57 km timur Kota Bima",
+    "Dirasakan": "II - III Kota Bima, II - III Kabupaten Bima"
+  }
+}

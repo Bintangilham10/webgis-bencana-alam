@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "data": {
+    "Tanggal": "23 Sep 2026",
+    "Jam": "00:20:14 WIB",
+    "DateTime": "2026-09-22T17:20:14+00:00",
+    "Coordinates": "-8.21,120.28",
+    "Lintang": "8.21 LS",
+    "Bujur": "120.28 BT",
+    "Magnitude": "4.2",
+    "Kedalaman": "7 km",
+    "Wilayah": "Pusat gempa berada di laut 49 km Barat Laut Ruteng, Manggarai",
+    "Dirasakan": "II-III Kab. Manggarai"
+  }
+}

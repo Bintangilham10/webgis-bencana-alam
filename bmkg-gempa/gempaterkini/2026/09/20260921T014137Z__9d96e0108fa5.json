@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "data": {
+    "Tanggal": "21 Sep 2026",
+    "Jam": "08:41:37 WIB",
+    "DateTime": "2026-09-21T01:41:37+00:00",
+    "Coordinates": "-8.33,120.59",
+    "Lintang": "8.33 LS",
+    "Bujur": "120.59 BT",
+    "Magnitude": "5.3",
+    "Kedalaman": "10 km",
+    "Wilayah": "34 km TimurLaut RUTENG-MANGGARAI-NTT",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}

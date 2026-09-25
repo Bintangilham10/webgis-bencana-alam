@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "data": {
+    "Tanggal": "04 Sep 2026",
+    "Jam": "12:04:59 WIB",
+    "DateTime": "2026-09-04T05:04:59+00:00",
+    "Coordinates": "-8.42,109.02",
+    "Lintang": "8.42 LS",
+    "Bujur": "109.02 BT",
+    "Magnitude": "5.4",
+    "Kedalaman": "10 km",
+    "Wilayah": "77 km Tenggara CILACAP-JATENG",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}

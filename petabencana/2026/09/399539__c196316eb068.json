@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        124.0815348201,
+        0.609549756
+      ]
+    },
+    "properties": {
+      "pkey": "399539",
+      "created_at": "2026-09-19T15:59:36.582Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "10493c83-ef0a-43c3-a0e6-52cf23ee91c7",
+      "image_url": "https://images.petabencana.id/10493c83-ef0a-43c3-a0e6-52cf23ee91c7.jpg",
+      "disaster_type": "wind",
+      "is_training": false,
+      "report_data": {
+        "report_type": "wind",
+        "impact": 1
+      },
+      "tags": {
+        "city": "BOLAANG MONGONDOW",
+        "district_id": null,
+        "region_code": "7101",
+        "local_area_id": null,
+        "instance_region_code": "ID-SA"
+      },
+      "title": null,
+      "text": "Bencana angin puting beliung merusak area pesta pernikahan di lapangan Desa Dumara, Kecamatan Dumoga Tenggara, Kabupaten Bolaang Mongondow",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

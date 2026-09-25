@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        98.6832136947,
+        3.5039143376
+      ]
+    },
+    "properties": {
+      "pkey": "399543",
+      "created_at": "2026-09-23T15:06:04.006Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "d92ff34e-5400-4328-9bc3-ff896876a17e",
+      "image_url": "https://images.petabencana.id/d92ff34e-5400-4328-9bc3-ff896876a17e.jpg",
+      "disaster_type": "wind",
+      "is_training": false,
+      "report_data": {
+        "report_type": "wind",
+        "impact": 2
+      },
+      "tags": {
+        "city": "DELI SERDANG",
+        "district_id": null,
+        "region_code": "1207",
+        "local_area_id": null,
+        "instance_region_code": "ID-SU"
+      },
+      "title": null,
+      "text": "\nTelah terjadi Angin Puting Beliung yg disebabkan hujan deras disertai angin kencang di :\nKecamatan : Patumb",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        113.9166361133,
+        -2.2102918589
+      ]
+    },
+    "properties": {
+      "pkey": "399544",
+      "created_at": "2026-09-24T09:30:06.553Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "0cdc885c-b404-4395-8450-60ce2e963d2b",
+      "image_url": "https://images.petabencana.id/0cdc885c-b404-4395-8450-60ce2e963d2b.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 1,
+        "airQuality": 2
+      },
+      "tags": {
+        "city": "KOTA PALANGKARAYA",
+        "district_id": null,
+        "region_code": "6271",
+        "local_area_id": null,
+        "instance_region_code": "ID-KT"
+      },
+      "title": null,
+      "text": "Kabut asap di kota Palangkaraya, Kalimantan Tengah siang ini (24/09)",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

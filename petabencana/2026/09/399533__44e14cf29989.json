@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.7117622094,
+        -6.3116343271
+      ]
+    },
+    "properties": {
+      "pkey": "399533",
+      "created_at": "2026-09-19T14:36:11.170Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "847cf1e6-9600-432e-92c6-7b28d7c804ce",
+      "image_url": "https://images.petabencana.id/847cf1e6-9600-432e-92c6-7b28d7c804ce.jpg",
+      "disaster_type": "wind",
+      "is_training": false,
+      "report_data": {
+        "report_type": "wind",
+        "impact": 1
+      },
+      "tags": {
+        "city": "KOTA TANGERANG SELATAN",
+        "district_id": null,
+        "region_code": "3674",
+        "local_area_id": null,
+        "instance_region_code": "ID-BT"
+      },
+      "title": null,
+      "text": "Pohon tumbang terjadi di Jalan Suka Karya, Serua, Ciputat, pada Sabtu sore (19/9), saat hujan deras mengguyur wilayah\nTangerang Selatan.",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

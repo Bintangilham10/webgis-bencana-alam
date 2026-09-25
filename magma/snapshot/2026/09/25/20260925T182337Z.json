@@ -1,0 +1,351 @@
+{
+  "captured_at": "2026-09-25T18:23:37.497Z",
+  "source_url": "https://magma.esdm.go.id/v1/gunung-api/tingkat-aktivitas",
+  "volcanoes": [
+    {
+      "name": "Merapi",
+      "region": "Daerah Istimewa Yogyakarta dan Jawa Tengah",
+      "level": 3
+    },
+    {
+      "name": "Semeru",
+      "region": "Jawa Timur",
+      "level": 3
+    },
+    {
+      "name": "Sinabung",
+      "region": "Sumatera Utara",
+      "level": 3
+    },
+    {
+      "name": "Anak Krakatau",
+      "region": "Lampung",
+      "level": 2
+    },
+    {
+      "name": "Anak Ranakah",
+      "region": "Nusa Tenggara Timur",
+      "level": 2
+    },
+    {
+      "name": "Awu",
+      "region": "Sulawesi Utara",
+      "level": 2
+    },
+    {
+      "name": "Banda Api",
+      "region": "Maluku",
+      "level": 2
+    },
+    {
+      "name": "Bromo",
+      "region": "Jawa Timur",
+      "level": 2
+    },
+    {
+      "name": "Bur Ni Telong",
+      "region": "Aceh",
+      "level": 2
+    },
+    {
+      "name": "Dempo",
+      "region": "Sumatera Selatan",
+      "level": 2
+    },
+    {
+      "name": "Dukono",
+      "region": "Maluku Utara",
+      "level": 2
+    },
+    {
+      "name": "Gamalama",
+      "region": "Maluku Utara",
+      "level": 2
+    },
+    {
+      "name": "Ibu",
+      "region": "Maluku Utara",
+      "level": 2
+    },
+    {
+      "name": "Ili Lewotolok",
+      "region": "Nusa Tenggara Timur",
+      "level": 2
+    },
+    {
+      "name": "Iya",
+      "region": "Nusa Tenggara Timur",
+      "level": 2
+    },
+    {
+      "name": "Karangetang",
+      "region": "Sulawesi Utara",
+      "level": 2
+    },
+    {
+      "name": "Kerinci",
+      "region": "Jambi, Sumatera Barat",
+      "level": 2
+    },
+    {
+      "name": "Lewotobi Laki-laki",
+      "region": "Nusa Tenggara Timur",
+      "level": 2
+    },
+    {
+      "name": "Lokon",
+      "region": "Sulawesi Utara",
+      "level": 2
+    },
+    {
+      "name": "Marapi",
+      "region": "Sumatera Barat",
+      "level": 2
+    },
+    {
+      "name": "Raung",
+      "region": "Jawa Timur",
+      "level": 2
+    },
+    {
+      "name": "Rinjani",
+      "region": "Nusa Tenggara Barat",
+      "level": 2
+    },
+    {
+      "name": "Sangeangapi",
+      "region": "Nusa Tenggara Barat",
+      "level": 2
+    },
+    {
+      "name": "Slamet",
+      "region": "Jawa Tengah",
+      "level": 2
+    },
+    {
+      "name": "Soputan",
+      "region": "Sulawesi Utara",
+      "level": 2
+    },
+    {
+      "name": "Sorikmarapi",
+      "region": "Sumatera Utara",
+      "level": 2
+    },
+    {
+      "name": "Tambora",
+      "region": "Nusa Tenggara Barat",
+      "level": 2
+    },
+    {
+      "name": "Agung",
+      "region": "Bali",
+      "level": 1
+    },
+    {
+      "name": "Ambang",
+      "region": "Sulawesi Utara",
+      "level": 1
+    },
+    {
+      "name": "Arjuno Welirang",
+      "region": "Jawa Timur",
+      "level": 1
+    },
+    {
+      "name": "Batur",
+      "region": "Bali",
+      "level": 1
+    },
+    {
+      "name": "Batutara",
+      "region": "Nusa Tenggara Timur",
+      "level": 1
+    },
+    {
+      "name": "Ciremai",
+      "region": "Jawa Barat",
+      "level": 1
+    },
+    {
+      "name": "Colo",
+      "region": "Sulawesi Tengah",
+      "level": 1
+    },
+    {
+      "name": "Dieng",
+      "region": "Jawa Tengah",
+      "level": 1
+    },
+    {
+      "name": "Ebulobo",
+      "region": "Nusa Tenggara Timur",
+      "level": 1
+    },
+    {
+      "name": "Egon",
+      "region": "Nusa Tenggara Timur",
+      "level": 1
+    },
+    {
+      "name": "Galunggung",
+      "region": "Jawa Barat",
+      "level": 1
+    },
+    {
+      "name": "Gamkonora",
+      "region": "Maluku Utara",
+      "level": 1
+    },
+    {
+      "name": "Gede",
+      "region": "Jawa Barat",
+      "level": 1
+    },
+    {
+      "name": "Guntur",
+      "region": "Jawa Barat",
+      "level": 1
+    },
+    {
+      "name": "Hobal",
+      "region": "Nusa Tenggara Timur",
+      "level": 1
+    },
+    {
+      "name": "Ijen",
+      "region": "Jawa Timur",
+      "level": 1
+    },
+    {
+      "name": "Ile Werung",
+      "region": "Nusa Tenggara Timur",
+      "level": 1
+    },
+    {
+      "name": "Ili Boleng",
+      "region": "Nusa Tenggara Timur",
+      "level": 1
+    },
+    {
+      "name": "Inielika",
+      "region": "Nusa Tenggara Timur",
+      "level": 1
+    },
+    {
+      "name": "Inierie",
+      "region": "Nusa Tenggara Timur",
+      "level": 1
+    },
+    {
+      "name": "Kaba",
+      "region": "Bengkulu",
+      "level": 1
+    },
+    {
+      "name": "Kelimutu",
+      "region": "Nusa Tenggara Timur",
+      "level": 1
+    },
+    {
+      "name": "Kelud",
+      "region": "Jawa Timur",
+      "level": 1
+    },
+    {
+      "name": "Kie Besi",
+      "region": "Maluku Utara",
+      "level": 1
+    },
+    {
+      "name": "Lamongan",
+      "region": "Jawa Timur",
+      "level": 1
+    },
+    {
+      "name": "Lereboleng",
+      "region": "Nusa Tenggara Timur",
+      "level": 1
+    },
+    {
+      "name": "Lewotobi Perempuan",
+      "region": "Nusa Tenggara Timur",
+      "level": 1
+    },
+    {
+      "name": "Mahawu",
+      "region": "Sulawesi Utara",
+      "level": 1
+    },
+    {
+      "name": "Papandayan",
+      "region": "Jawa Barat",
+      "level": 1
+    },
+    {
+      "name": "Peut Sague",
+      "region": "Daerah Istimewa Aceh",
+      "level": 1
+    },
+    {
+      "name": "Rokatenda",
+      "region": "Nusa Tenggara Timur",
+      "level": 1
+    },
+    {
+      "name": "Ruang",
+      "region": "Sulawesi Utara",
+      "level": 1
+    },
+    {
+      "name": "Salak",
+      "region": "Jawa Barat",
+      "level": 1
+    },
+    {
+      "name": "Seulawah Agam",
+      "region": "Daerah Istimewa Aceh",
+      "level": 1
+    },
+    {
+      "name": "Sirung",
+      "region": "Nusa Tenggara Timur",
+      "level": 1
+    },
+    {
+      "name": "Sumbing",
+      "region": "Jawa Tengah",
+      "level": 1
+    },
+    {
+      "name": "Sundoro",
+      "region": "Jawa Tengah",
+      "level": 1
+    },
+    {
+      "name": "Talang",
+      "region": "Sumatera Barat",
+      "level": 1
+    },
+    {
+      "name": "Tandikat",
+      "region": "Sumatera Barat",
+      "level": 1
+    },
+    {
+      "name": "Tangkoko",
+      "region": "Sulawesi Utara",
+      "level": 1
+    },
+    {
+      "name": "Tangkuban Parahu",
+      "region": "Jawa Barat",
+      "level": 1
+    },
+    {
+      "name": "Wurlali",
+      "region": "Maluku",
+      "level": 1
+    }
+  ]
+}

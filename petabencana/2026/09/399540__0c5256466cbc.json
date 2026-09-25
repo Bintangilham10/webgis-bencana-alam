@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.6791641766,
+        -3.4463601064
+      ]
+    },
+    "properties": {
+      "pkey": "399540",
+      "created_at": "2026-09-20T16:33:47.719Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "7b0c1039-5723-428e-a4dd-2ab11b22cc7a",
+      "image_url": "https://images.petabencana.id/7b0c1039-5723-428e-a4dd-2ab11b22cc7a.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 26.820265835866103,
+        "fireLocation": {
+          "lng": 114.67916417661394,
+          "lat": -3.4463601064068428
+        },
+        "personLocation": {
+          "lng": 114.6889221864426,
+          "lat": -3.4447824407329932
+        },
+        "fireRadius": {
+          "lng": 114.67892277780408,
+          "lat": -3.4463708158418314
+        }
+      },
+      "tags": {
+        "city": "BANJAR",
+        "district_id": null,
+        "region_code": "6303",
+        "local_area_id": null,
+        "instance_region_code": "ID-KS"
+      },
+      "title": null,
+      "text": "Kebakaran lahan di Jl. Gubernur Soebarjo, Lingkar Selatan Liang Anggang, Kalimantan Selatan (20/09)",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

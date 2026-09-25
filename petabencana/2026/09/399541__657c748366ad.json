@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        112.506329845,
+        -7.2711239718
+      ]
+    },
+    "properties": {
+      "pkey": "399541",
+      "created_at": "2026-09-21T01:16:05.631Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "7c0663fd-c7fc-494b-8027-77ba75810532",
+      "image_url": "https://images.petabencana.id/7c0663fd-c7fc-494b-8027-77ba75810532.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 180
+      },
+      "tags": {
+        "city": "GRESIK",
+        "district_id": null,
+        "region_code": "3525",
+        "local_area_id": null,
+        "instance_region_code": "ID-JI"
+      },
+      "title": null,
+      "text": "p\n",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

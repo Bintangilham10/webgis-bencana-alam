@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "data": {
+    "Tanggal": "23 Sep 2026",
+    "Jam": "05:27:42 WIB",
+    "DateTime": "2026-09-22T22:27:42+00:00",
+    "Coordinates": "-7.00,105.57",
+    "Lintang": "7.00 LS",
+    "Bujur": "105.57 BT",
+    "Magnitude": "4.6",
+    "Kedalaman": "20 km",
+    "Wilayah": "Pusat gempa berada di laut 38 Km Selatan Sumur",
+    "Dirasakan": "II - III Sumur"
+  }
+}

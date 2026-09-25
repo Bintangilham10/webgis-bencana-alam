@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "data": {
+    "Tanggal": "18 Sep 2026",
+    "Jam": "21:36:17 WIB",
+    "DateTime": "2026-09-18T14:36:17+00:00",
+    "Coordinates": "-8.64,105.74",
+    "Lintang": "8.64 LS",
+    "Bujur": "105.74 BT",
+    "Magnitude": "5.2",
+    "Kedalaman": "10 km",
+    "Wilayah": "198 km BaratDaya BAYAH-BANTEN",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        100.6535688695,
+        -0.798535838
+      ]
+    },
+    "properties": {
+      "pkey": "399535",
+      "created_at": "2026-09-19T15:03:07.293Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "15f0efb4-8b7d-4d60-bd73-59d1b58b99b7",
+      "image_url": "https://images.petabencana.id/15f0efb4-8b7d-4d60-bd73-59d1b58b99b7.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 56
+      },
+      "tags": {
+        "city": "SOLOK",
+        "district_id": null,
+        "region_code": "1302",
+        "local_area_id": null,
+        "instance_region_code": "ID-SB"
+      },
+      "title": null,
+      "text": "Hujan deras mengguyur Kabupaten Solok sejak pagi hingga sore ini menyebabkan sungai batang lembah meluap hingga lutut orang dewasa",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

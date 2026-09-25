@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-09-25T18:23:37.497Z",
+  "data": {
+    "Tanggal": "22 Sep 2026",
+    "Jam": "06:48:13 WIB",
+    "DateTime": "2026-09-21T23:48:13+00:00",
+    "Coordinates": "4.74,125.30",
+    "Lintang": "4.74 LU",
+    "Bujur": "125.30 BT",
+    "Magnitude": "5.2",
+    "Kedalaman": "10 km",
+    "Wilayah": "127 km BaratLaut TAHUNA-KEP.SANGIHE-SULUT",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}
