@@ -1,0 +1,17 @@
+{
+  "name": "sigap-recorder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Perekam arsip data bencana terbuka (BMKG CAP & gempa, MAGMA, PetaBencana) untuk riset SIGAP Bencana",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "record": "node src/record.js",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  }
+}
