@@ -1,0 +1,69 @@
+name: Rekam data bencana
+
+on:
+  schedule:
+    # Tiap 15 menit, di menit ganjil supaya tidak ikut antrean padat jam bulat GitHub.
+    # Repo private (jatah 2.000 menit/bulan): ganti jadi '7,37 * * * *' (tiap 30 menit).
+    - cron: '7,22,37,52 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rekam-data
+  cancel-in-progress: false
+
+jobs:
+  rekam:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: recorder/package-lock.json
+
+      - name: Pasang dependensi
+        working-directory: recorder
+        run: npm ci
+
+      # Data disimpan di branch terpisah supaya riwayat kode di main tetap bersih.
+      - name: Siapkan branch arsip-data
+        run: |
+          if git fetch --depth=1 origin arsip-data:arsip-data; then
+            git worktree add arsip arsip-data
+          else
+            git worktree add --orphan -b arsip-data arsip
+          fi
+
+      - name: Rekam
+        id: rekam
+        continue-on-error: true
+        working-directory: recorder
+        run: npm run record
+        env:
+          ARSIP_DIR: ${{ github.workspace }}/arsip
+
+      # Tetap commit walau ada sumber gagal: log kegagalan di _runs/ juga data riset.
+      - name: Commit & push arsip
+        working-directory: arsip
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Tidak ada perubahan."
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "arsip: $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push origin arsip-data
+
+      - name: Tandai gagal bila semua sumber gagal
+        if: steps.rekam.outcome == 'failure'
+        run: exit 1
