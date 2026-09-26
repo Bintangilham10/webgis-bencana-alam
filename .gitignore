@@ -4,5 +4,11 @@ node_modules/
 # Hasil perekaman lokal; arsip resmi ada di branch arsip-data
 arsip/
 
+# Unduhan data mentah untuk seed (bisa diunduh ulang)
+server/data/raw/
+
+# Hasil build frontend
+web/dist/
+
 # Slide kuliah milik dosen, jangan ikut dipublikasikan
 *.pdf
