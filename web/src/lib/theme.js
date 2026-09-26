@@ -1,7 +1,7 @@
 // Tema gelap (bawaan) dan terang. Pilihan pengguna disimpan di localStorage;
 // index.html sudah menerapkannya sebelum halaman digambar supaya tidak berkedip.
 const STORAGE_KEY = 'sigap-theme';
-const THEME_COLORS = { dark: '#0a101c', light: '#ffffff' };
+const THEME_COLORS = { dark: '#141518', light: '#ffffff' };
 const TRANSITION_MS = 450;
 
 const listeners = new Set();

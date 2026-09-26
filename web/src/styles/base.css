@@ -1,7 +1,9 @@
 /* Token desain SIGAP Bencana. Tema gelap (bawaan) dan terang memakai nama
-   variabel yang sama, jadi komponen cukup memakai var(--…). Warna status
-   (hijau/kuning/oranye/merah) khusus untuk makna bahaya. Teks memenuhi kontras
-   WCAG AA di atas panel kaca pada kedua tema. */
+   variabel yang sama, jadi komponen cukup memakai var(--…).
+   Aturan warna: panel netral abu grafit, satu aksen biru polos (tanpa gradien
+   dan tanpa efek cahaya) untuk tombol utama, status terpilih, tautan, dan
+   fokus. Warna mencolok (hijau/kuning/oranye/merah) khusus untuk data bahaya.
+   Teks memenuhi kontras WCAG AA di atas panel pada kedua tema. */
 :root {
   --font: 'Plus Jakarta Sans Variable', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace;
@@ -23,42 +25,41 @@
 :root,
 [data-theme='dark'] {
   color-scheme: dark;
-  --map-bg: #0a101c;
-  --glass: rgb(12 19 32 / 0.74);
-  --glass-strong: rgb(13 20 34 / 0.92);
-  --glass-border: rgb(255 255 255 / 0.09);
-  --glass-highlight: rgb(255 255 255 / 0.05);
-  --surface: #0f1829;
-  --surface-2: rgb(255 255 255 / 0.045);
-  --surface-3: rgb(255 255 255 / 0.09);
+  --map-bg: #141518;
+  --glass: rgb(24 26 30 / 0.8);
+  --glass-strong: rgb(24 26 30 / 0.95);
+  --glass-border: rgb(255 255 255 / 0.08);
+  --glass-highlight: rgb(255 255 255 / 0.04);
+  --surface: #181a1e;
+  --surface-2: rgb(255 255 255 / 0.04);
+  --surface-3: rgb(255 255 255 / 0.08);
   --line: rgb(255 255 255 / 0.08);
-  --line-strong: rgb(255 255 255 / 0.17);
-  --ink: #e8eef6;
-  --ink-2: #b6c2d1;
-  --ink-3: #8a98ab;
-  --primary: #38bdf8;
-  --primary-2: #2dd4bf;
-  --primary-ink: #04121f;
-  --primary-soft: rgb(56 189 248 / 0.14);
-  --primary-glow: rgb(56 189 248 / 0.38);
-  --brand: #f1f5f9;
-  --ok: #34d399;
-  --fault-color: #ff5d7a;
-  --plate-color: #a3b0c2;
-  --boundary-color: #7f8ea4;
-  --quake-ring: rgb(10 16 28 / 0.85);
-  --glyph-outline: #0a101c;
-  --rain: #60a5fa;
-  --tooltip-bg: #121c2f;
-  --tab-indicator: rgb(56 189 248 / 0.16);
-  --tab-indicator-border: rgb(56 189 248 / 0.35);
-  --cta-bg: linear-gradient(145deg, rgb(56 189 248 / 0.16), rgb(45 212 191 / 0.07));
-  --cta-border: rgb(56 189 248 / 0.28);
+  --line-strong: rgb(255 255 255 / 0.16);
+  --ink: #ededf0;
+  --ink-2: #b5b9c1;
+  --ink-3: #8b919b;
+  /* --primary untuk teks/ikon, --primary-fill untuk latar tombol & pilihan
+     aktif (teks di atasnya --primary-ink). */
+  --primary: #79aaff;
+  --primary-fill: #2a64dc;
+  --primary-fill-hover: #3470e8;
+  --primary-ink: #ffffff;
+  --primary-soft: rgb(121 170 255 / 0.14);
+  --brand: #f3f4f6;
+  --ok: #4cc26f;
+  --fault-color: #f06b60;
+  --plate-color: #a7acb4;
+  --boundary-color: #858b94;
+  --quake-ring: rgb(14 15 17 / 0.85);
+  --glyph-outline: #0f1012;
+  --rain: #5d9ef5;
+  --tooltip-bg: #202328;
+  --tab-indicator: rgb(255 255 255 / 0.1);
+  --tab-indicator-border: rgb(255 255 255 / 0.06);
   --notice-bg: rgb(251 191 36 / 0.1);
   --notice-border: rgb(251 191 36 / 0.3);
   --notice-ink: #fcd98a;
-  --skeleton-a: rgb(255 255 255 / 0.05);
-  --skeleton-b: rgb(255 255 255 / 0.12);
+  --skeleton: rgb(255 255 255 / 0.08);
   --shadow-1: 0 1px 2px rgb(0 0 0 / 0.3);
   --shadow-2: 0 8px 24px rgb(0 0 0 / 0.35);
   --shadow-3: 0 18px 44px rgb(0 0 0 / 0.5);
@@ -66,45 +67,42 @@
 
 [data-theme='light'] {
   color-scheme: light;
-  --map-bg: #dde3e9;
-  --glass: rgb(255 255 255 / 0.8);
-  --glass-strong: rgb(255 255 255 / 0.95);
-  --glass-border: rgb(17 28 42 / 0.08);
+  --map-bg: #e4e6e9;
+  --glass: rgb(255 255 255 / 0.82);
+  --glass-strong: rgb(255 255 255 / 0.96);
+  --glass-border: rgb(20 22 26 / 0.08);
   --glass-highlight: rgb(255 255 255 / 0.7);
   --surface: #ffffff;
-  --surface-2: rgb(17 28 42 / 0.035);
-  --surface-3: rgb(17 28 42 / 0.075);
-  --line: rgb(17 28 42 / 0.09);
-  --line-strong: rgb(17 28 42 / 0.18);
-  --ink: #111c2a;
-  --ink-2: #3d4959;
-  --ink-3: #5c6879;
-  --primary: #0f5e96;
-  --primary-2: #0e7490;
+  --surface-2: rgb(20 22 26 / 0.035);
+  --surface-3: rgb(20 22 26 / 0.075);
+  --line: rgb(20 22 26 / 0.09);
+  --line-strong: rgb(20 22 26 / 0.18);
+  --ink: #17191d;
+  --ink-2: #434851;
+  --ink-3: #626873;
+  --primary: #1f5fd1;
+  --primary-fill: #1f5fd1;
+  --primary-fill-hover: #1a51b5;
   --primary-ink: #ffffff;
-  --primary-soft: rgb(15 94 150 / 0.1);
-  --primary-glow: rgb(15 94 150 / 0.28);
-  --brand: #0b3d5c;
+  --primary-soft: rgb(31 95 209 / 0.09);
+  --brand: #17191d;
   --ok: #2e7d32;
   --fault-color: #b3001b;
-  --plate-color: #3d4451;
-  --boundary-color: #56606e;
+  --plate-color: #444851;
+  --boundary-color: #5b616b;
   --quake-ring: #ffffff;
-  --glyph-outline: #111c2a;
+  --glyph-outline: #17191d;
   --rain: #3a86c8;
   --tooltip-bg: #ffffff;
   --tab-indicator: #ffffff;
-  --tab-indicator-border: rgb(17 28 42 / 0.06);
-  --cta-bg: linear-gradient(160deg, #f4f8fc, #e4f0f7);
-  --cta-border: #d3e3f0;
+  --tab-indicator-border: rgb(20 22 26 / 0.06);
   --notice-bg: #fff7e3;
   --notice-border: #f1dca4;
   --notice-ink: #5f4300;
-  --skeleton-a: #e9edf1;
-  --skeleton-b: #f6f8fa;
-  --shadow-1: 0 1px 2px rgb(17 28 42 / 0.08);
-  --shadow-2: 0 2px 4px rgb(17 28 42 / 0.05), 0 8px 24px rgb(17 28 42 / 0.1);
-  --shadow-3: 0 16px 40px rgb(17 28 42 / 0.18);
+  --skeleton: #e9ebee;
+  --shadow-1: 0 1px 2px rgb(20 22 26 / 0.08);
+  --shadow-2: 0 2px 4px rgb(20 22 26 / 0.05), 0 8px 24px rgb(20 22 26 / 0.1);
+  --shadow-3: 0 16px 40px rgb(20 22 26 / 0.18);
 }
 
 *,
@@ -191,7 +189,7 @@ a {
   border-radius: var(--radius-sm);
   font-weight: 600;
   color: var(--primary-ink);
-  background: var(--primary);
+  background: var(--primary-fill);
   text-decoration: none;
 }
 
@@ -204,12 +202,14 @@ a {
 }
 
 /* ---------- Panel kaca ---------- */
+/* Buram netral tanpa saturate(), supaya warna peta di belakang panel tidak
+   berubah menjadi sapuan warna mencolok. */
 .glass {
   background: var(--glass);
   border: 1px solid var(--glass-border);
   box-shadow: var(--shadow-2), inset 0 1px 0 var(--glass-highlight);
-  -webkit-backdrop-filter: blur(18px) saturate(1.5);
-  backdrop-filter: blur(18px) saturate(1.5);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
 }
 
 /* Browser tanpa backdrop-filter, atau pengguna yang meminta transparansi

@@ -127,8 +127,8 @@
 }
 
 .tool:hover {
-  color: var(--primary);
-  background: var(--surface-2);
+  color: var(--ink);
+  background: var(--surface-3);
 }
 
 .tool:disabled {
@@ -141,7 +141,7 @@
 .tool[aria-pressed='true'],
 .tool[aria-expanded='true'] {
   color: var(--primary-ink);
-  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  background: var(--primary-fill);
 }
 
 .tool .icon {
@@ -459,10 +459,6 @@
   animation: pop-in 0.5s var(--ease-spring) both;
 }
 
-[data-theme='dark'] .quake-marker {
-  filter: drop-shadow(0 0 5px currentColor);
-}
-
 /* Gelombang riak dari gempa paling baru. */
 .quake-ripple span {
   position: absolute;
@@ -479,10 +475,6 @@
 
 .quake-ripple span:nth-child(3) {
   animation-delay: 1.6s;
-}
-
-[data-theme='dark'] .quake-ripple span {
-  box-shadow: 0 0 12px rgb(239 68 68 / 0.6);
 }
 
 /* ---------- Gunung api ---------- */
@@ -510,17 +502,15 @@
   clip-path: polygon(50% 12%, 94% 100%, 6% 100%);
 }
 
-/* Siaga/Awas berpendar: halo berdenyut di belakang segitiga. */
-.volcano-icon--alert .volcano-marker {
-  filter: drop-shadow(0 0 6px var(--level-color));
-}
-
+/* Siaga/Awas: cincin sewarna level memancar dari balik segitiga, sama
+   bahasanya dengan riak gempa terbaru. */
 .volcano-halo {
   position: absolute;
-  inset: -45%;
+  inset: -35%;
+  border: 2px solid var(--level-color);
   border-radius: 50%;
-  background: radial-gradient(closest-side, var(--level-color), transparent);
-  animation: halo 2.2s ease-in-out infinite;
+  opacity: 0;
+  animation: halo 2.4s var(--ease-out) infinite;
 }
 
 .boundary-tooltip {
@@ -585,7 +575,7 @@
 }
 
 .analysis-marker__pulse {
-  background: var(--primary);
+  background: var(--primary-fill);
   opacity: 0;
   animation: ripple 2s var(--ease-out) infinite;
 }
@@ -597,8 +587,8 @@
 .analysis-marker__dot {
   inset: 5px !important;
   border: 3px solid #fff;
-  background: var(--primary);
-  box-shadow: 0 0 0 1px rgb(0 0 0 / 0.2), 0 0 14px var(--primary-glow);
+  background: var(--primary-fill);
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 0.25), var(--shadow-1);
   animation: pop-in 0.45s var(--ease-spring) both;
 }
 

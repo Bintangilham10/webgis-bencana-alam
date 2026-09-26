@@ -89,13 +89,12 @@
 }
 
 @keyframes halo {
-  0%,
-  100% {
-    opacity: 0.55;
-    transform: scale(0.9);
+  from {
+    opacity: 0.9;
+    transform: scale(0.5);
   }
-  50% {
-    opacity: 0.1;
+  to {
+    opacity: 0;
     transform: scale(1.6);
   }
 }
@@ -110,21 +109,19 @@
   }
 }
 
-@keyframes shimmer {
-  from {
-    background-position: 200% 0;
-  }
-  to {
-    background-position: -200% 0;
+@keyframes skeleton-pulse {
+  50% {
+    opacity: 0.45;
   }
 }
 
-@keyframes drift {
+/* Batang muat tanpa ujung: satu ruas polos bergeser dari kiri ke kanan. */
+@keyframes indeterminate {
   from {
-    transform: translate(0, 0) scale(1);
+    transform: translateX(-100%);
   }
   to {
-    transform: translate(-18%, 12%) scale(1.15);
+    transform: translateX(250%);
   }
 }
 
@@ -156,8 +153,7 @@
     box-shadow 0.2s ease,
     background-color 0.2s ease,
     border-color 0.2s ease,
-    color 0.2s ease,
-    filter 0.2s ease;
+    color 0.2s ease;
 }
 
 .btn:hover,
@@ -198,20 +194,12 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  background:
-    radial-gradient(60% 50% at 50% 42%, rgb(56 189 248 / 0.12), transparent 70%),
-    radial-gradient(120% 90% at 50% 100%, #0d1628, #060a12);
-  color: #e8eef6;
+  /* Warna polos sama dengan latar peta, jadi peta muncul tanpa sambungan. */
+  background: var(--map-bg);
+  color: var(--ink);
   transition:
     opacity 0.5s ease,
     transform 0.6s var(--ease-out);
-}
-
-[data-theme='light'] .splash {
-  background:
-    radial-gradient(60% 50% at 50% 42%, rgb(15 94 150 / 0.1), transparent 70%),
-    radial-gradient(120% 90% at 50% 100%, #ffffff, #e6edf3);
-  color: #111c2a;
 }
 
 .splash.is-done {
@@ -315,11 +303,13 @@
 
 .splash-bar span {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, transparent, #38bdf8, #2dd4bf, transparent);
-  background-size: 50% 100%;
-  background-repeat: no-repeat;
-  animation: shimmer 1.3s ease-in-out infinite reverse;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  border-radius: inherit;
+  background: #f59e0b;
+  animation: indeterminate 1.3s ease-in-out infinite;
 }
 
 /* ---------- Kurangi gerakan ---------- */

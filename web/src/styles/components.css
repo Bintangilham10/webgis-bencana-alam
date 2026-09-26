@@ -69,58 +69,37 @@
 }
 
 .stat {
-  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 0;
   padding: 12px;
-  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface-2);
 }
 
-/* Cahaya lembut di sudut kartu, sewarna dengan ikonnya. */
-.stat::after {
-  content: '';
-  position: absolute;
-  right: -40px;
-  bottom: -50px;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: radial-gradient(closest-side, var(--stat-tint), transparent);
-  pointer-events: none;
-}
-
 .stat--quake {
   --stat-icon: #f87171;
-  --stat-tint: rgb(239 68 68 / 0.3);
 }
 
 .stat--strong {
   --stat-icon: #fb923c;
-  --stat-tint: rgb(251 146 60 / 0.28);
 }
 
 .stat--volcano {
   --stat-icon: #fbbf24;
-  --stat-tint: rgb(245 158 11 / 0.28);
 }
 
 [data-theme='light'] .stat--quake {
   --stat-icon: #c62828;
-  --stat-tint: rgb(198 40 40 / 0.12);
 }
 
 [data-theme='light'] .stat--strong {
   --stat-icon: #c2410c;
-  --stat-tint: rgb(194 65 12 / 0.12);
 }
 
 [data-theme='light'] .stat--volcano {
   --stat-icon: #b45309;
-  --stat-tint: rgb(180 83 9 / 0.12);
 }
 
 .stat-icon {
@@ -179,30 +158,28 @@
 
 .btn-primary {
   color: var(--primary-ink);
-  background: linear-gradient(135deg, var(--primary), var(--primary-2));
-  box-shadow: 0 8px 20px -8px var(--primary-glow);
+  background: var(--primary-fill);
 }
 
 .btn-primary:hover {
-  box-shadow: 0 12px 26px -8px var(--primary-glow);
-  filter: brightness(1.06);
+  background: var(--primary-fill-hover);
 }
 
+/* Tombol kedua netral; biru hanya muncul saat mode pilih titik aktif. */
 .btn-secondary {
-  color: var(--primary);
+  color: var(--ink);
   background: var(--surface-2);
   border-color: var(--line-strong);
 }
 
 .btn-secondary:hover {
-  border-color: var(--primary);
-  background: var(--primary-soft);
+  background: var(--surface-3);
 }
 
 .btn-secondary[aria-pressed='true'] {
   color: var(--primary-ink);
-  background: var(--primary);
-  border-color: var(--primary);
+  background: var(--primary-fill);
+  border-color: var(--primary-fill);
 }
 
 .btn-block {
@@ -237,28 +214,10 @@
 
 /* ---------- Ajakan cek risiko ---------- */
 .cta {
-  position: relative;
   padding: 16px;
-  overflow: hidden;
-  isolation: isolate;
-  border: 1px solid var(--cta-border);
+  border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  background: var(--cta-bg);
-}
-
-/* Cahaya yang bergerak pelan di latar kartu. */
-.cta::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: -60%;
-  right: -30%;
-  width: 70%;
-  height: 160%;
-  border-radius: 50%;
-  background: radial-gradient(closest-side, var(--primary-glow), transparent);
-  opacity: 0.55;
-  animation: drift 9s ease-in-out infinite alternate;
+  background: var(--surface-2);
 }
 
 .cta-title {
@@ -341,10 +300,6 @@
   color: var(--pill-fg, #fff);
   background: var(--pill-bg, var(--ink-3));
   box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.08);
-}
-
-[data-theme='dark'] .mag-badge {
-  box-shadow: 0 0 16px -2px color-mix(in srgb, var(--pill-bg) 70%, transparent);
 }
 
 .mag-badge--lg {
@@ -478,7 +433,7 @@
 }
 
 .switch:checked {
-  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  background: var(--primary-fill);
 }
 
 .switch:checked::after {
@@ -506,7 +461,7 @@
   height: 14px;
   border-radius: 50%;
   background: var(--sym);
-  box-shadow: 0 0 10px -1px var(--sym);
+  box-shadow: 0 0 0 1.5px var(--quake-ring);
 }
 
 .sym-triangle {
@@ -561,15 +516,14 @@
 }
 
 .choice span:hover {
-  border-color: var(--primary);
-  color: var(--primary);
+  border-color: var(--ink-3);
+  color: var(--ink);
 }
 
 .choice input:checked + span {
   color: var(--primary-ink);
-  background: linear-gradient(135deg, var(--primary), var(--primary-2));
-  border-color: transparent;
-  box-shadow: 0 6px 16px -8px var(--primary-glow);
+  background: var(--primary-fill);
+  border-color: var(--primary-fill);
 }
 
 .choice input:focus-visible + span {
@@ -594,7 +548,7 @@
 
 .range-row input {
   width: 100%;
-  accent-color: var(--primary);
+  accent-color: var(--primary-fill);
 }
 
 .range-row output {
@@ -619,7 +573,7 @@
   border-color: var(--primary);
   box-shadow:
     var(--shadow-2),
-    0 0 0 4px var(--primary-soft);
+    0 0 0 3px var(--primary-soft);
 }
 
 .search-form > .icon {
@@ -649,11 +603,11 @@
   font-size: 13px;
   font-weight: 750;
   color: var(--primary-ink);
-  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  background: var(--primary-fill);
 }
 
 .search-submit:hover {
-  filter: brightness(1.08);
+  background: var(--primary-fill-hover);
 }
 
 .search-results {
@@ -706,8 +660,8 @@
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  color: var(--primary);
-  background: var(--primary-soft);
+  color: var(--ink-2);
+  background: var(--surface-3);
 }
 
 .search-result__icon .icon {
@@ -759,8 +713,8 @@
 
 .search-example:hover,
 .search-example:focus-visible {
-  border-color: var(--primary);
-  color: var(--primary);
+  border-color: var(--ink-3);
+  color: var(--ink);
 }
 
 /* ---------- Tab Info ---------- */
@@ -784,8 +738,8 @@
 }
 
 .emergency:hover {
-  border-color: var(--primary);
-  background: var(--primary-soft);
+  border-color: var(--line-strong);
+  background: var(--surface-3);
 }
 
 .emergency strong {
@@ -794,12 +748,12 @@
   gap: 6px;
   font-size: 19px;
   font-weight: 800;
-  color: var(--primary);
 }
 
 .emergency strong .icon {
   width: 16px;
   height: 16px;
+  color: var(--primary);
 }
 
 .emergency span {
@@ -835,8 +789,8 @@
   border-radius: 50%;
   font-size: 11.5px;
   font-weight: 800;
-  color: var(--primary);
-  background: var(--primary-soft);
+  color: var(--ink);
+  background: var(--surface-3);
 }
 
 .notice {
@@ -894,9 +848,8 @@
 .skeleton {
   display: block;
   border-radius: var(--radius-sm);
-  background: linear-gradient(90deg, var(--skeleton-a) 25%, var(--skeleton-b) 50%, var(--skeleton-a) 75%);
-  background-size: 200% 100%;
-  animation: shimmer 1.4s ease-in-out infinite;
+  background: var(--skeleton);
+  animation: skeleton-pulse 1.4s ease-in-out infinite;
 }
 
 .skeleton--row {

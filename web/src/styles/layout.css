@@ -49,11 +49,6 @@ body {
   flex: none;
   width: 30px;
   height: 30px;
-  filter: drop-shadow(0 0 10px rgb(245 158 11 / 0.45));
-}
-
-[data-theme='light'] .brand-mark {
-  filter: none;
 }
 
 .brand-text {
@@ -282,7 +277,7 @@ body {
 }
 
 .tab[aria-selected='true'] {
-  color: var(--primary);
+  color: var(--ink);
 }
 
 .tabpanel {
