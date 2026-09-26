@@ -1,0 +1,43 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-09-26T17:58:16.118Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        112.9224991207,
+        -8.1062640609
+      ]
+    },
+    "properties": {
+      "pkey": "399545",
+      "created_at": "2026-09-26T16:19:09.558Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "94bfc159-7577-4ba7-beda-52847747e39e",
+      "image_url": "https://images.petabencana.id/94bfc159-7577-4ba7-beda-52847747e39e.jpg",
+      "disaster_type": "volcano",
+      "is_training": false,
+      "report_data": {
+        "report_type": "volcano",
+        "volcanicSigns": [
+          0
+        ],
+        "evacuationNumber": 1,
+        "evacuationArea": true
+      },
+      "tags": {
+        "city": "MALANG",
+        "district_id": null,
+        "region_code": "3507",
+        "local_area_id": null,
+        "instance_region_code": "ID-JI"
+      },
+      "title": null,
+      "text": "Gunubg semeru masih mengalami erupsi dg tinggi letusan mencapai 800m pada Jumat malam (25/09)",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

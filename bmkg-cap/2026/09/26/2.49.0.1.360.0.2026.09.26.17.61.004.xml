@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.26.17.61.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-26T23:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-26T23:10:00+07:00</effective>
+    <expires>2026-09-27T01:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 September 2026, 23:10 WIB di sebagian wilayah Kalimantan Barat, khususnya di SUNGAI AMBAWANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 September 2026, 01:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/09/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>0.086,109.869 0.069,109.859 0.038,109.864 0.025,109.856 0.025,109.838 0.019,109.835 -0.000,109.842 -0.046,109.848 -0.069,109.871 -0.090,109.883 -0.107,109.904 -0.127,109.901 -0.105,109.844 -0.100,109.809 -0.103,109.772 -0.115,109.749 -0.134,109.738 -0.157,109.713 -0.165,109.694 -0.202,109.635 -0.202,109.614 -0.207,109.606 -0.204,109.590 -0.169,109.550 -0.131,109.492 -0.115,109.476 -0.088,109.461 -0.082,109.444 -0.083,109.431 -0.088,109.419 -0.079,109.407 -0.066,109.404 -0.055,109.394 -0.052,109.384 -0.036,109.371 -0.026,109.384 -0.021,109.377 -0.009,109.378 0.009,109.370 0.021,109.371 0.042,109.366 0.042,109.440 -0.020,109.453 -0.015,109.467 -0.022,109.503 -0.029,109.501 -0.032,109.504 -0.009,109.549 -0.020,109.553 -0.021,109.560 -0.018,109.596 0.002,109.608 0.023,109.643 0.033,109.635 0.042,109.636 0.046,109.629 0.049,109.631 0.052,109.645 0.041,109.643 0.036,109.656 0.050,109.649 0.051,109.652 0.042,109.659 0.042,109.664 0.053,109.656 0.066,109.663 0.065,109.685 0.068,109.694 0.070,109.692 0.076,109.700 0.072,109.712 0.078,109.731 0.085,109.747 0.093,109.750 0.077,109.768 0.078,109.774 0.087,109.783 0.090,109.795 0.087,109.819 0.091,109.841 0.086,109.869</polygon>
+    </area>
+  </info>
+</alert>
