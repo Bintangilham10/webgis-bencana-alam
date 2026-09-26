@@ -37,7 +37,7 @@ export const ReadoutControl = L.Control.extend({
   options: { position: 'bottomright' },
 
   onAdd(map) {
-    const el = L.DomUtil.create('div', 'map-readout');
+    const el = L.DomUtil.create('div', 'map-readout glass');
     el.innerHTML = '<span class="readout-geo"></span><span class="readout-proj"></span><span class="readout-scale"></span>';
     const geo = el.querySelector('.readout-geo');
     const proj = el.querySelector('.readout-proj');

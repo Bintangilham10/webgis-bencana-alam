@@ -1,38 +1,110 @@
-/* Token desain SIGAP Bencana: satu sumber untuk warna, jarak, dan bayangan.
-   Warna status (hijau/kuning/oranye/merah) khusus untuk makna bahaya dan tidak
-   dipakai sebagai warna dekorasi. Teks memenuhi kontras WCAG AA di atas --surface. */
+/* Token desain SIGAP Bencana. Tema gelap (bawaan) dan terang memakai nama
+   variabel yang sama, jadi komponen cukup memakai var(--…). Warna status
+   (hijau/kuning/oranye/merah) khusus untuk makna bahaya. Teks memenuhi kontras
+   WCAG AA di atas panel kaca pada kedua tema. */
 :root {
   --font: 'Plus Jakarta Sans Variable', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace;
 
-  --topbar-h: 60px;
+  --gap: 16px;
+  --topbar-h: 52px;
   --sidebar-w: 384px;
-  --sheet-peek: 176px;
+  --sheet-peek: 184px;
 
-  --canvas: #eef1f4;
+  --radius-sm: 10px;
+  --radius: 14px;
+  --radius-lg: 20px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --danger: #ef4444;
+}
+
+:root,
+[data-theme='dark'] {
+  color-scheme: dark;
+  --map-bg: #0a101c;
+  --glass: rgb(12 19 32 / 0.74);
+  --glass-strong: rgb(13 20 34 / 0.92);
+  --glass-border: rgb(255 255 255 / 0.09);
+  --glass-highlight: rgb(255 255 255 / 0.05);
+  --surface: #0f1829;
+  --surface-2: rgb(255 255 255 / 0.045);
+  --surface-3: rgb(255 255 255 / 0.09);
+  --line: rgb(255 255 255 / 0.08);
+  --line-strong: rgb(255 255 255 / 0.17);
+  --ink: #e8eef6;
+  --ink-2: #b6c2d1;
+  --ink-3: #8a98ab;
+  --primary: #38bdf8;
+  --primary-2: #2dd4bf;
+  --primary-ink: #04121f;
+  --primary-soft: rgb(56 189 248 / 0.14);
+  --primary-glow: rgb(56 189 248 / 0.38);
+  --brand: #f1f5f9;
+  --ok: #34d399;
+  --fault-color: #ff5d7a;
+  --plate-color: #a3b0c2;
+  --boundary-color: #7f8ea4;
+  --quake-ring: rgb(10 16 28 / 0.85);
+  --glyph-outline: #0a101c;
+  --rain: #60a5fa;
+  --tooltip-bg: #121c2f;
+  --tab-indicator: rgb(56 189 248 / 0.16);
+  --tab-indicator-border: rgb(56 189 248 / 0.35);
+  --cta-bg: linear-gradient(145deg, rgb(56 189 248 / 0.16), rgb(45 212 191 / 0.07));
+  --cta-border: rgb(56 189 248 / 0.28);
+  --notice-bg: rgb(251 191 36 / 0.1);
+  --notice-border: rgb(251 191 36 / 0.3);
+  --notice-ink: #fcd98a;
+  --skeleton-a: rgb(255 255 255 / 0.05);
+  --skeleton-b: rgb(255 255 255 / 0.12);
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.3);
+  --shadow-2: 0 8px 24px rgb(0 0 0 / 0.35);
+  --shadow-3: 0 18px 44px rgb(0 0 0 / 0.5);
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+  --map-bg: #dde3e9;
+  --glass: rgb(255 255 255 / 0.8);
+  --glass-strong: rgb(255 255 255 / 0.95);
+  --glass-border: rgb(17 28 42 / 0.08);
+  --glass-highlight: rgb(255 255 255 / 0.7);
   --surface: #ffffff;
-  --surface-2: #f5f7f9;
-  --surface-3: #e9edf1;
-  --line: #e2e7ec;
-  --line-strong: #cbd3dc;
+  --surface-2: rgb(17 28 42 / 0.035);
+  --surface-3: rgb(17 28 42 / 0.075);
+  --line: rgb(17 28 42 / 0.09);
+  --line-strong: rgb(17 28 42 / 0.18);
   --ink: #111c2a;
   --ink-2: #3d4959;
-  --ink-3: #647081;
-
+  --ink-3: #5c6879;
   --primary: #0f5e96;
-  --primary-hover: #0b4b79;
-  --primary-soft: #e8f1f8;
+  --primary-2: #0e7490;
+  --primary-ink: #ffffff;
+  --primary-soft: rgb(15 94 150 / 0.1);
+  --primary-glow: rgb(15 94 150 / 0.28);
   --brand: #0b3d5c;
-  --danger: #c62828;
   --ok: #2e7d32;
+  --fault-color: #b3001b;
+  --plate-color: #3d4451;
+  --boundary-color: #56606e;
+  --quake-ring: #ffffff;
+  --glyph-outline: #111c2a;
   --rain: #3a86c8;
-
-  --radius-sm: 8px;
-  --radius: 12px;
-  --radius-lg: 16px;
+  --tooltip-bg: #ffffff;
+  --tab-indicator: #ffffff;
+  --tab-indicator-border: rgb(17 28 42 / 0.06);
+  --cta-bg: linear-gradient(160deg, #f4f8fc, #e4f0f7);
+  --cta-border: #d3e3f0;
+  --notice-bg: #fff7e3;
+  --notice-border: #f1dca4;
+  --notice-ink: #5f4300;
+  --skeleton-a: #e9edf1;
+  --skeleton-b: #f6f8fa;
   --shadow-1: 0 1px 2px rgb(17 28 42 / 0.08);
-  --shadow-2: 0 2px 4px rgb(17 28 42 / 0.06), 0 6px 16px rgb(17 28 42 / 0.1);
-  --shadow-3: 0 12px 32px rgb(17 28 42 / 0.18);
+  --shadow-2: 0 2px 4px rgb(17 28 42 / 0.05), 0 8px 24px rgb(17 28 42 / 0.1);
+  --shadow-3: 0 16px 40px rgb(17 28 42 / 0.18);
 }
 
 *,
@@ -51,7 +123,7 @@ body {
   font-size: 14px;
   line-height: 1.45;
   color: var(--ink);
-  background: var(--canvas);
+  background: var(--map-bg);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -111,55 +183,60 @@ a {
 }
 
 .skip-link {
-  position: absolute;
-  z-index: 100;
-  top: -48px;
+  position: fixed;
+  z-index: 200;
+  top: -60px;
   left: 12px;
   padding: 8px 14px;
   border-radius: var(--radius-sm);
   font-weight: 600;
-  color: #fff;
-  background: var(--ink);
+  color: var(--primary-ink);
+  background: var(--primary);
   text-decoration: none;
 }
 
 .skip-link:focus {
-  top: 10px;
+  top: 12px;
 }
 
 .muted {
   color: var(--ink-3);
 }
 
-/* Kerangka muat: balok abu-abu berkilau, diganti isi saat data tiba. */
-.skeleton {
-  display: block;
-  border-radius: var(--radius-sm);
-  background: linear-gradient(90deg, var(--surface-3) 25%, #f4f6f8 50%, var(--surface-3) 75%);
-  background-size: 200% 100%;
-  animation: shimmer 1.4s ease-in-out infinite;
+/* ---------- Panel kaca ---------- */
+.glass {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-2), inset 0 1px 0 var(--glass-highlight);
+  -webkit-backdrop-filter: blur(18px) saturate(1.5);
+  backdrop-filter: blur(18px) saturate(1.5);
 }
 
-.skeleton--row {
-  height: 48px;
-  margin: 6px 0;
-}
-
-@keyframes shimmer {
-  from {
-    background-position: 200% 0;
-  }
-  to {
-    background-position: -200% 0;
+/* Browser tanpa backdrop-filter, atau pengguna yang meminta transparansi
+   dikurangi, mendapat panel pekat supaya teks tetap terbaca. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass {
+    background: var(--glass-strong);
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+@media (prefers-reduced-transparency: reduce) {
+  .glass {
+    background: var(--surface);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
   }
+}
+
+/* Transisi warna saat berganti tema (kelas dipasang sementara oleh theme.js). */
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition:
+    background-color 0.4s ease,
+    border-color 0.4s ease,
+    color 0.4s ease,
+    fill 0.4s ease,
+    stroke 0.4s ease !important;
 }

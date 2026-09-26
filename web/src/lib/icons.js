@@ -19,10 +19,13 @@ export const icons = {
   locate: icon('<circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="7.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22"/>'),
   map: icon('<path d="m9 4.5-6 2v13l6-2 6 2 6-2v-13l-6 2-6-2z"/><path d="M9 4.5v13M15 6.5v13"/>'),
   minus: icon('<path d="M5 12h14"/>'),
+  moon: icon('<path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/>'),
+  mountain: icon('<path d="m2.5 20 7-12.5 3.5 6 2.5-3.5 6 10z"/>'),
   phone: icon('<path d="M5 3.5h3.5l2 5-2.5 1.6a11 11 0 0 0 5.9 5.9l1.6-2.5 5 2V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5.5a2 2 0 0 1 2-2z"/>'),
   pin: icon('<path d="M12 21.5s-7-6.3-7-12a7 7 0 0 1 14 0c0 5.7-7 12-7 12z"/><circle cx="12" cy="9.5" r="2.5"/>'),
   plus: icon('<path d="M12 5v14M5 12h14"/>'),
   quake: icon('<path d="M2 12h3.5l2-4.5 3 10 3-13 3 12 2-4.5H22"/>'),
   refresh: icon('<path d="M20 12a8 8 0 1 1-2.4-5.7"/><path d="M20 4v5h-5"/>'),
   search: icon('<circle cx="11" cy="11" r="7"/><path d="m20.5 20.5-4.3-4.3"/>'),
+  sun: icon('<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'),
 };

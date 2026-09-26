@@ -1,0 +1,339 @@
+/* Animasi dan transisi. Semua durasi dinolkan otomatis bila pengguna meminta
+   "kurangi gerakan" (lihat blok paling bawah). Elemen yang posisinya diatur
+   Leaflet lewat transform (marker, tooltip) tidak dianimasikan langsung;
+   yang dianimasikan adalah elemen di dalamnya. */
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  65% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes menu-in {
+  from {
+    opacity: 0;
+    transform: translateX(10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes grow-width {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes ripple {
+  from {
+    opacity: 0.9;
+    transform: scale(0.3);
+  }
+  to {
+    opacity: 0;
+    transform: scale(2.8);
+  }
+}
+
+@keyframes halo {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.1;
+    transform: scale(1.6);
+  }
+}
+
+@keyframes live-pulse {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--ok) 60%, transparent);
+  }
+  70%,
+  100% {
+    box-shadow: 0 0 0 7px transparent;
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    transform: translate(-18%, 12%) scale(1.15);
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* ---------- Daftar yang muncul berurutan ---------- */
+/* JS memasang kelas .stagger dan --i (urutan) hanya saat isi daftar berubah,
+   supaya pembaruan berkala yang sama tidak memicu animasi ulang. */
+.stagger > * {
+  animation: rise-in 0.45s var(--ease-out) both;
+  animation-delay: calc(var(--i, 0) * 55ms);
+}
+
+/* ---------- Efek tombol: terangkat saat disorot, memantul saat ditekan ---------- */
+.btn,
+.tool,
+.tab,
+.theme-toggle,
+.choice span,
+.search-submit,
+.search-example,
+.emergency {
+  transition:
+    transform 0.2s var(--ease-spring),
+    box-shadow 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    filter 0.2s ease;
+}
+
+.btn:hover,
+.emergency:hover,
+.search-example:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active,
+.tool:active,
+.tab:active,
+.theme-toggle:active,
+.choice span:active,
+.search-submit:active,
+.search-example:active,
+.emergency:active {
+  transform: scale(0.94);
+  transition-duration: 0.08s;
+}
+
+.list-row {
+  transition:
+    background-color 0.2s ease,
+    transform 0.25s var(--ease-out);
+}
+
+.list-row:hover {
+  transform: translateX(3px);
+}
+
+/* ---------- Layar pembuka ---------- */
+.splash {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background:
+    radial-gradient(60% 50% at 50% 42%, rgb(56 189 248 / 0.12), transparent 70%),
+    radial-gradient(120% 90% at 50% 100%, #0d1628, #060a12);
+  color: #e8eef6;
+  transition:
+    opacity 0.5s ease,
+    transform 0.6s var(--ease-out);
+}
+
+[data-theme='light'] .splash {
+  background:
+    radial-gradient(60% 50% at 50% 42%, rgb(15 94 150 / 0.1), transparent 70%),
+    radial-gradient(120% 90% at 50% 100%, #ffffff, #e6edf3);
+  color: #111c2a;
+}
+
+.splash.is-done {
+  opacity: 0;
+  transform: scale(1.04);
+  pointer-events: none;
+}
+
+.splash-emblem {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+/* Gelombang seismik yang memancar dari logo. */
+.splash-wave {
+  position: absolute;
+  inset: 25px;
+  border: 2px solid rgb(245 158 11 / 0.6);
+  border-radius: 50%;
+  opacity: 0;
+  animation: ripple 2.4s var(--ease-out) infinite;
+}
+
+.splash-wave:nth-child(2) {
+  animation-delay: 0.8s;
+}
+
+.splash-wave:nth-child(3) {
+  animation-delay: 1.6s;
+}
+
+.splash-logo {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  overflow: visible;
+}
+
+.splash-tri {
+  fill: #f59e0b;
+  fill-opacity: 0;
+  stroke: #f59e0b;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation:
+    draw 0.9s var(--ease-out) forwards,
+    splash-fill 0.4s ease 0.75s forwards;
+}
+
+@keyframes splash-fill {
+  to {
+    fill-opacity: 1;
+  }
+}
+
+.splash-bang {
+  stroke: #0b1220;
+  stroke-width: 5;
+  stroke-linecap: round;
+  opacity: 0;
+  animation: fade-in 0.3s ease 1s forwards;
+}
+
+.splash-dot {
+  fill: #0b1220;
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pop-in 0.45s var(--ease-spring) 1.15s forwards;
+}
+
+.splash-title {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  animation: rise-in 0.6s var(--ease-out) 0.35s both;
+}
+
+.splash-sub {
+  font-size: 13.5px;
+  opacity: 0.7;
+  animation: rise-in 0.6s var(--ease-out) 0.5s both;
+}
+
+.splash-bar {
+  position: relative;
+  width: 160px;
+  height: 3px;
+  margin-top: 14px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgb(128 140 160 / 0.25);
+  animation: fade-in 0.4s ease 0.6s both;
+}
+
+.splash-bar span {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, #38bdf8, #2dd4bf, transparent);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 1.3s ease-in-out infinite reverse;
+}
+
+/* ---------- Kurangi gerakan ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0s !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .splash-wave {
+    display: none;
+  }
+}

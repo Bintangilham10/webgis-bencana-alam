@@ -21,16 +21,16 @@ export const MapToolbar = L.Control.extend({
   onAdd(map) {
     const el = L.DomUtil.create('div', 'map-toolbar');
     el.innerHTML = `
-      <div class="tool-group">
+      <div class="tool-group glass">
         ${toolButton('zoom-in', 'Perbesar', icons.plus)}
         ${toolButton('zoom-out', 'Perkecil', icons.minus)}
         ${toolButton('home', 'Tampilkan seluruh Indonesia', icons.extent)}
       </div>
-      <div class="tool-group">
+      <div class="tool-group glass">
         ${toolButton('locate', 'Cek risiko di lokasi saya', icons.locate)}
         ${toolButton('pick', 'Cek risiko: pilih titik di peta', icons.pin, 'aria-pressed="false"')}
       </div>
-      <div class="tool-group">
+      <div class="tool-group glass">
         ${toolButton('basemap', 'Ganti peta dasar', icons.layers, 'aria-expanded="false" aria-controls="basemap-menu"')}
         <div id="basemap-menu" class="basemap-menu" role="radiogroup" aria-label="Peta dasar" hidden>
           <p class="basemap-menu__title">Peta dasar</p>
@@ -88,6 +88,14 @@ export const MapToolbar = L.Control.extend({
   // Bisa dipanggil sebelum kontrol ditambahkan ke peta; saat itu belum ada tombol.
   setPicking(active) {
     this._pick?.setAttribute('aria-pressed', String(active));
+  },
+
+  // Gambar mini kanvas berganti mengikuti tema.
+  setThumbnail(id, src) {
+    const img = this._menu?.querySelector(`input[value="${id}"] + img`);
+    if (!img) return;
+    if (img.dataset.src) img.dataset.src = src;
+    else img.src = src;
   },
 
   _toggleMenu(open = this._menu.hidden) {

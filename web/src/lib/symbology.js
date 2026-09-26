@@ -41,9 +41,6 @@ export const WARNING_LEVEL_STYLES = [
 ];
 
 // Variabel CSS untuk pil/lencana berwarna (.level-pill, .class-pill, .mag-badge).
+// Warna garis sesar, lempeng, batas wilayah, dan titik analisis mengikuti tema,
+// jadi didefinisikan sebagai variabel CSS di styles/base.css.
 export const pillStyle = ({ color, text }) => `--pill-bg:${color};--pill-fg:${text}`;
-
-export const ANALYSIS_COLOR = '#0f5e96';
-export const FAULT_COLOR = '#b3001b';
-export const PLATE_COLOR = '#3d4451';
-export const BOUNDARY_COLOR = '#56606e';

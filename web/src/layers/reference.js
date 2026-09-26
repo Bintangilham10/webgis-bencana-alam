@@ -1,7 +1,11 @@
 import L from 'leaflet';
 import { getJson } from '../lib/api.js';
 import { escapeHtml, formatNumber } from '../lib/format.js';
-import { BOUNDARY_COLOR, FAULT_COLOR, PLATE_COLOR } from '../lib/symbology.js';
+import { cssVar, onThemeChange } from '../lib/theme.js';
+
+// Warna garis diambil dari variabel tema (--fault-color, --plate-color,
+// --boundary-color). Garis SVG diwarnai lewat kelas CSS; batas wilayah digambar
+// di canvas, jadi warnanya dipasang ulang saat tema berganti.
 
 // Data rujukan baru diunduh saat layer pertama kali dinyalakan.
 function lazyGeoJson(url, options, onError) {
@@ -68,7 +72,8 @@ export function createFaultLayer(onError) {
   return lazyGeoJson(
     '/api/faults',
     {
-      style: { color: FAULT_COLOR, weight: 1.6, opacity: 0.9 },
+      className: 'fault-line',
+      style: { weight: 1.6, opacity: 0.9 },
       onEachFeature: (feature, layer) => {
         layer.bindPopup(faultPopup(feature.properties), { maxWidth: 300 });
         layer.on('mouseover', () => layer.setStyle({ weight: 3.5 }));
@@ -84,8 +89,8 @@ export function createPlateLayer(onError) {
     '/data/plates.geojson',
     {
       interactive: true,
+      className: 'plate-line',
       style: (f) => ({
-        color: PLATE_COLOR,
         weight: f.properties.subduksi ? 2.6 : 1.8,
         dashArray: f.properties.subduksi ? null : '6 5',
         opacity: 0.8,
@@ -102,28 +107,31 @@ export function createPlateLayer(onError) {
 // 514 poligon digambar di canvas (lebih ringan dari SVG) dan diletakkan di pane
 // "boundaries" di bawah sesar dan gempa.
 export function createBoundaryLayer(onError) {
-  return lazyGeoJson(
+  const style = () => ({ color: cssVar('--boundary-color'), weight: 0.7, opacity: 0.8, fill: true, fillOpacity: 0 });
+  const layer = lazyGeoJson(
     '/api/wilayah?tingkat=kabkota',
     {
       pane: 'boundaries',
       renderer: L.canvas({ pane: 'boundaries' }),
-      style: { color: BOUNDARY_COLOR, weight: 0.7, opacity: 0.8, fill: true, fillOpacity: 0 },
-      onEachFeature: (f, layer) => {
-        layer.bindTooltip(escapeHtml(f.properties.nama), { sticky: true, className: 'boundary-tooltip' });
-        layer.on('mouseover', () => layer.setStyle({ fillOpacity: 0.08, fillColor: BOUNDARY_COLOR }));
-        layer.on('mouseout', () => layer.setStyle({ fillOpacity: 0 }));
+      style,
+      onEachFeature: (f, feature) => {
+        feature.bindTooltip(escapeHtml(f.properties.nama), { sticky: true, className: 'boundary-tooltip' });
+        feature.on('mouseover', () => feature.setStyle({ fillOpacity: 0.12, fillColor: cssVar('--boundary-color') }));
+        feature.on('mouseout', () => feature.setStyle({ fillOpacity: 0 }));
       },
     },
     onError,
   );
+  onThemeChange(() => layer.setStyle(style));
+  return layer;
 }
 
 export const faultLegend = () =>
-  `<div class="legend-row"><span class="swatch-line" style="border-color:${FAULT_COLOR}"></span>Segmen sesar aktif</div>`;
+  '<div class="legend-row"><span class="swatch-line" style="border-color:var(--fault-color)"></span>Segmen sesar aktif</div>';
 
 export const plateLegend = () => `
-  <div class="legend-row"><span class="swatch-line swatch-line-thick" style="border-color:${PLATE_COLOR}"></span>Zona subduksi</div>
-  <div class="legend-row"><span class="swatch-line swatch-line-dashed" style="border-color:${PLATE_COLOR}"></span>Batas lempeng lain</div>`;
+  <div class="legend-row"><span class="swatch-line swatch-line-thick" style="border-color:var(--plate-color)"></span>Zona subduksi</div>
+  <div class="legend-row"><span class="swatch-line swatch-line-dashed" style="border-color:var(--plate-color)"></span>Batas lempeng lain</div>`;
 
 export const boundaryLegend = () =>
-  `<div class="legend-row"><span class="swatch-line" style="border-color:${BOUNDARY_COLOR}"></span>Batas kabupaten/kota</div>`;
+  '<div class="legend-row"><span class="swatch-line" style="border-color:var(--boundary-color)"></span>Batas kabupaten/kota</div>';

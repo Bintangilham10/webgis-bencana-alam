@@ -2,6 +2,7 @@ import L from 'leaflet';
 import { getJson } from '../lib/api.js';
 import { escapeHtml, formatDateTime, formatNumber } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
+import { flyTo } from '../lib/motion.js';
 import { pillStyle, VOLCANO_LEVELS } from '../lib/symbology.js';
 
 const MAGMA_STATUS_URL = 'https://magma.esdm.go.id/v1/gunung-api/tingkat-aktivitas';
@@ -39,22 +40,27 @@ export function createVolcanoLayer(map) {
   function render(collection) {
     group.clearLayers();
     markers.clear();
-    for (const { geometry, properties: v } of collection.features) {
+    collection.features.forEach(({ geometry, properties: v }, index) => {
       const [lon, lat] = geometry.coordinates;
       const level = VOLCANO_LEVELS[v.level];
-      const size = v.level >= 3 ? 24 : 18;
+      const alert = v.level >= 3;
+      // Siaga/Awas lebih besar, berpendar, dan diberi halo berdenyut.
+      // --i = urutan muncul; animasi ada di elemen dalam (bukan elemen ikon
+      // yang posisinya diatur Leaflet lewat transform).
       const marker = L.marker([lat, lon], {
         icon: L.divIcon({
-          className: 'volcano-icon',
-          html: `<span style="--level-color:${level.color}"></span>`,
-          iconSize: [size, size],
+          className: `volcano-icon${alert ? ' volcano-icon--alert' : ''}`,
+          html:
+            `<span class="volcano-marker" style="--level-color:${level.color};--i:${index}">` +
+            `${alert ? '<i class="volcano-halo"></i>' : ''}<span class="volcano-shape"></span></span>`,
+          iconSize: alert ? [24, 24] : [18, 18],
         }),
         title: `${volcanoName(v.nama)} (${level.label})`,
         // Status lebih tinggi selalu tampil di atas bila berdekatan.
         zIndexOffset: v.level * 100,
       }).bindPopup(volcanoPopup(v), { maxWidth: 320 });
       markers.set(v.kode, marker.addTo(group));
-    }
+    });
   }
 
   return {
@@ -68,8 +74,8 @@ export function createVolcanoLayer(map) {
       const marker = markers.get(kode);
       if (!marker) return;
       if (!map.hasLayer(group)) group.addTo(map);
-      map.flyTo(marker.getLatLng(), Math.max(map.getZoom(), 9), { duration: 0.8 });
       map.once('moveend', () => marker.openPopup());
+      flyTo(map, marker.getLatLng(), Math.max(map.getZoom(), 9));
     },
   };
 }

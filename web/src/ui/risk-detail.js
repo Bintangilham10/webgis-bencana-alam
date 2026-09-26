@@ -80,13 +80,16 @@ function hazardSummary(hazards) {
 
 // Batang = nilai indeks 0–1 dengan garis kelas BNPB di 1/3 dan 2/3. Angka dan
 // label kelas selalu ditulis, jadi informasi tidak bergantung pada warna.
-function meter(index, cls) {
-  const fill = cls ? `<span class="meter-fill" style="width:${Math.max(3, Math.round(index * 100))}%;background:${cls.color}"></span>` : '';
+// --i mengatur urutan batang terisi.
+function meter(index, cls, order) {
+  const fill = cls
+    ? `<span class="meter-fill" style="width:${Math.max(3, Math.round(index * 100))}%;background:${cls.color};color:${cls.color};--i:${order}"></span>`
+    : '';
   const ticks = BNPB_CLASS_BOUNDARIES.map((b) => `<span class="meter-tick" style="left:${(b * 100).toFixed(1)}%"></span>`).join('');
   return `<span class="meter" aria-hidden="true">${fill}${ticks}</span>`;
 }
 
-function hazardRow(h) {
+function hazardRow(h, order) {
   let value;
   let cls = null;
   if (h.error) value = '<span class="muted">Gagal dimuat</span>';
@@ -98,7 +101,7 @@ function hazardRow(h) {
   return `
     <li class="hazard-row">
       <div class="hazard-row__top"><span class="hazard-name">${escapeHtml(h.label)}</span><span class="hazard-value">${value}</span></div>
-      ${meter(h.index, cls)}
+      ${meter(h.index, cls, order)}
     </li>`;
 }
 
@@ -106,14 +109,14 @@ function hazardRow(h) {
 function rainDays(rain) {
   if (rain.error || !rain.days.length) return '<p class="empty-note">Prakiraan hujan sedang tidak tersedia.</p>';
   const days = rain.days
-    .map((d) => {
+    .map((d, i) => {
       const mm = d.precipitation_mm;
       const width = mm > 0 ? Math.max(3, Math.min(100, (mm / RAIN_SCALE_MAX_MM) * 100)) : 0;
       return `
         <div class="rain-day">
           <span class="rain-date">${formatDay(d.date)}</span>
           <span class="rain-mm">${mm == null ? '–' : formatDecimal(mm)}<small> mm</small></span>
-          <span class="rain-bar" aria-hidden="true"><span style="width:${width}%"></span></span>
+          <span class="rain-bar" aria-hidden="true"><span style="width:${width}%;--i:${i}"></span></span>
           <span class="rain-cat">${escapeHtml(d.category?.label ?? 'Tidak hujan')}</span>
           ${d.probability_pct == null ? '' : `<span class="rain-prob">Peluang ${d.probability_pct}%</span>`}
         </div>`;
@@ -190,7 +193,7 @@ function profileHtml(profile, { label, lat = profile.location.lat, lon = profile
     <div class="detail-body view-scroll">
       ${outlook(profile.indications, profile.rain.error)}
       ${indicationList(profile.indications)}
-      ${section('Bahaya di titik ini', 'InaRISK BNPB', `${hazardSummary(profile.hazards)}<ul class="hazard-list">${profile.hazards.map(hazardRow).join('')}</ul>`)}
+      ${section('Bahaya di titik ini', 'InaRISK BNPB', `${hazardSummary(profile.hazards)}<ul class="hazard-list">${profile.hazards.map((h, i) => hazardRow(h, i)).join('')}</ul>`)}
       ${section('Prakiraan hujan', 'Open-Meteo', rainDays(profile.rain))}
       ${section('Sekitar lokasi', '', nearby(profile))}
       ${section('Saran kesiapsiagaan', '', `<ul class="tip-list">${profile.recommendations.map((t) => `<li>${icons.check}<span>${escapeHtml(t)}</span></li>`).join('')}</ul>`)}
@@ -238,6 +241,8 @@ export function createRiskDetail(element, { sidebar, onClose, onFit, onRetry }) 
     const hadFocus = element.contains(document.activeElement);
     element.innerHTML = html;
     element.classList.remove('is-refreshing');
+    // Urutan kemunculan bagian-bagian (animasi berurutan di detail.css).
+    [...(element.querySelector('.detail-body')?.children ?? [])].forEach((child, i) => child.style.setProperty('--i', String(i)));
     sidebar.showDetail();
     if (opening || hadFocus) element.querySelector('.detail-title')?.focus({ preventScroll: true });
   }

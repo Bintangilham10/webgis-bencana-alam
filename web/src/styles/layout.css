@@ -1,35 +1,46 @@
 body {
-  display: grid;
-  /* minmax(0, 1fr): tanpa ini lebar kolom ikut teks terpanjang dan halaman
-     bisa digeser ke samping di HP. */
-  grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: var(--topbar-h) minmax(0, 1fr);
   height: 100vh;
   height: 100dvh;
   overflow: hidden;
 }
 
-/* ---------- Bilah atas ---------- */
-/* Kolom pertama selebar panel samping, jadi kotak pencarian sejajar dengan tepi peta. */
+/* Peta memenuhi layar; bilah atas, panel, dan kontrol melayang di atasnya.
+   isolation: z-index panel Leaflet (hingga 1000) tidak bocor ke luar peta. */
+#map {
+  position: fixed;
+  inset: 0;
+  isolation: isolate;
+  background: var(--map-bg);
+}
+
+/* ---------- Bilah atas melayang ---------- */
 .topbar {
-  position: relative;
-  z-index: 30;
-  display: grid;
-  grid-template-columns: var(--sidebar-w) minmax(0, 620px) minmax(0, 1fr);
+  position: fixed;
+  z-index: 40;
+  top: var(--gap);
+  right: var(--gap);
+  left: var(--gap);
+  display: flex;
   align-items: center;
-  gap: 0 16px;
-  padding-right: 16px;
-  background: var(--surface);
-  border-bottom: 1px solid var(--line);
+  gap: 12px;
+  height: var(--topbar-h);
+  /* Celah antarkartu tetap bisa diklik untuk menggeser peta. */
+  pointer-events: none;
+}
+
+.topbar > * {
+  pointer-events: auto;
 }
 
 .brand {
   display: flex;
+  flex: none;
   align-items: center;
   gap: 10px;
-  min-width: 0;
+  width: var(--sidebar-w);
   height: 100%;
-  padding: 0 16px 0 18px;
+  padding: 0 16px;
+  border-radius: var(--radius);
   color: var(--ink);
   text-decoration: none;
 }
@@ -38,6 +49,11 @@ body {
   flex: none;
   width: 30px;
   height: 30px;
+  filter: drop-shadow(0 0 10px rgb(245 158 11 / 0.45));
+}
+
+[data-theme='light'] .brand-mark {
+  filter: none;
 }
 
 .brand-text {
@@ -49,7 +65,7 @@ body {
 
 .brand-text strong {
   font-size: 16px;
-  font-weight: 750;
+  font-weight: 800;
   letter-spacing: -0.01em;
   color: var(--brand);
 }
@@ -62,19 +78,30 @@ body {
   text-overflow: ellipsis;
 }
 
+.search {
+  position: relative;
+  flex: 0 1 560px;
+  min-width: 0;
+  height: 100%;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+  margin-left: auto;
+}
+
 .freshness {
-  justify-self: end;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  min-width: 0;
-  max-width: 100%;
-  padding: 6px 12px;
-  border: 1px solid var(--line);
+  height: 42px;
+  padding: 0 14px;
   border-radius: 999px;
   font-size: 12.5px;
   color: var(--ink-2);
-  background: var(--surface);
 }
 
 .freshness-dot {
@@ -87,18 +114,19 @@ body {
 
 .freshness[data-state='ok'] .freshness-dot {
   background: var(--ok);
-  box-shadow: 0 0 0 3px rgb(46 125 50 / 0.18);
+  animation: live-pulse 2s ease-out infinite;
 }
 
 .freshness[data-state='stale'] .freshness-dot {
-  background: #f9a825;
-  box-shadow: 0 0 0 3px rgb(249 168 37 / 0.2);
+  background: #fbbf24;
 }
 
 .freshness[data-state='error'] {
-  border-color: #f2c4c4;
+  color: #fca5a5;
+}
+
+[data-theme='light'] .freshness[data-state='error'] {
   color: #8e1b1b;
-  background: #fdf1f1;
 }
 
 .freshness[data-state='error'] .freshness-dot {
@@ -111,30 +139,56 @@ body {
   text-overflow: ellipsis;
 }
 
-/* ---------- Kerangka: panel samping + peta ---------- */
-.app {
+.theme-toggle {
   position: relative;
   display: grid;
-  grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
-  min-height: 0;
+  flex: none;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  color: var(--ink);
 }
 
-/* isolation: z-index panel Leaflet (hingga 1000) tidak bocor ke luar peta. */
-#map {
-  position: relative;
-  isolation: isolate;
-  min-height: 0;
-  background: #dfe4e9;
+.theme-toggle:hover {
+  color: var(--primary);
 }
 
+/* Ikon yang tampil = tema tujuan (matahari saat gelap, bulan saat terang). */
+.theme-icon {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  transition:
+    transform 0.5s var(--ease-spring),
+    opacity 0.3s ease;
+}
+
+.theme-icon .icon {
+  width: 20px;
+  height: 20px;
+}
+
+[data-theme='dark'] .theme-icon--moon,
+[data-theme='light'] .theme-icon--sun {
+  opacity: 0;
+  transform: rotate(-120deg) scale(0.3);
+}
+
+/* ---------- Panel samping melayang ---------- */
 .sidebar {
-  position: relative;
-  z-index: 20;
+  position: fixed;
+  z-index: 30;
+  top: calc(var(--gap) + var(--topbar-h) + 12px);
+  bottom: var(--gap);
+  left: var(--gap);
   display: flex;
   flex-direction: column;
-  min-height: 0;
-  background: var(--surface);
-  border-right: 1px solid var(--line);
+  width: var(--sidebar-w);
+  overflow: hidden;
+  border-radius: var(--radius-lg);
 }
 
 .sidebar:focus {
@@ -152,27 +206,58 @@ body {
   display: none;
 }
 
+/* Tampilan utama memudar masuk; detail cek risiko meluncur dari kanan. */
+#main-view {
+  animation: fade-in 0.3s ease both;
+}
+
+#detail-view:not([hidden]) {
+  animation: slide-in-right 0.4s var(--ease-out) both;
+}
+
 .view-scroll {
   flex: 1;
   min-height: 0;
   overflow-y: auto;
   overscroll-behavior: contain;
+  scrollbar-color: var(--line-strong) transparent;
+  scrollbar-width: thin;
 }
 
-/* ---------- Tab ---------- */
+/* ---------- Tab dengan penanda yang meluncur ---------- */
 .tabs {
+  position: relative;
   flex: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4px;
-  margin: 14px 16px 2px;
+  margin: 12px 14px 4px;
   padding: 4px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface-2);
 }
 
+.tab-indicator {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 0;
+  border: 1px solid var(--tab-indicator-border);
+  border-radius: 10px;
+  background: var(--tab-indicator);
+  box-shadow: var(--shadow-1);
+  transition:
+    transform 0.4s var(--ease-out),
+    width 0.4s var(--ease-out);
+}
+
+.tab-indicator.no-transition {
+  transition: none;
+}
+
 .tab {
+  position: relative;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -180,12 +265,11 @@ body {
   min-height: 36px;
   padding: 6px 8px;
   border: 0;
-  border-radius: 9px;
+  border-radius: 10px;
   font-size: 13px;
   font-weight: 650;
   color: var(--ink-3);
   background: transparent;
-  transition: color 0.15s, background 0.15s;
 }
 
 .tab .icon {
@@ -199,12 +283,15 @@ body {
 
 .tab[aria-selected='true'] {
   color: var(--primary);
-  background: var(--surface);
-  box-shadow: var(--shadow-1);
 }
 
 .tabpanel {
   padding: 2px 16px 24px;
+}
+
+/* Isi tab bergeser-memudar setiap kali ditampilkan. */
+.tabpanel:not([hidden]) {
+  animation: rise-in 0.35s var(--ease-out) both;
 }
 
 .tabpanel:focus-visible {
@@ -218,25 +305,39 @@ body {
 /* ---------- Layar sempit: panel menjadi lembar bawah ---------- */
 @media (max-width: 767.98px) {
   :root {
-    --topbar-h: 58px;
+    --gap: 10px;
+    --topbar-h: 48px;
   }
 
   .topbar {
-    grid-template-columns: auto minmax(0, 1fr) auto;
     gap: 8px;
-    padding: 0 10px;
   }
 
   .brand {
-    padding: 0 2px;
+    justify-content: center;
+    width: 48px;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  .brand-mark {
+    width: 26px;
+    height: 26px;
   }
 
   .brand-text {
     display: none;
   }
 
+  .search {
+    flex: 1 1 auto;
+  }
+
   .freshness {
-    padding: 9px;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    padding: 0;
   }
 
   /* Teks status tetap dibacakan pembaca layar, hanya disembunyikan visual. */
@@ -248,26 +349,30 @@ body {
     clip: rect(0 0 0 0);
   }
 
-  .app {
-    grid-template-columns: minmax(0, 1fr);
+  .theme-toggle {
+    width: 42px;
+    height: 42px;
   }
 
-  #map {
-    grid-area: 1 / 1;
-  }
-
+  /* Lembar bawah digeser dengan transform (lebih mulus daripada mengubah
+     tinggi). Bagian 48px ekstra di bawah layar menutup celah saat pegas
+     memantul melewati posisi akhir. */
   .sidebar {
-    position: absolute;
-    inset: auto 0 0;
-    height: var(--sheet-peek);
-    border-right: 0;
-    border-radius: 18px 18px 0 0;
-    box-shadow: 0 -6px 24px rgb(17 28 42 / 0.16);
-    transition: height 0.25s ease;
+    top: auto;
+    right: 0;
+    bottom: -48px;
+    left: 0;
+    width: auto;
+    height: calc(var(--sheet-ratio, 0.62) * 100dvh + 48px);
+    padding-bottom: 48px;
+    border-width: 1px 0 0;
+    border-radius: 22px 22px 0 0;
+    transform: translateY(calc(var(--sheet-ratio, 0.62) * 100dvh - var(--sheet-peek)));
+    transition: transform 0.55s cubic-bezier(0.32, 1.25, 0.5, 1);
   }
 
   .sidebar.is-expanded {
-    height: var(--sheet-expanded, 62%);
+    transform: none;
   }
 
   .sidebar:not(.is-expanded) .view-scroll {
@@ -279,7 +384,7 @@ body {
     flex: none;
     align-items: center;
     justify-content: center;
-    height: 22px;
+    height: 24px;
     padding: 0;
     border: 0;
     background: transparent;
@@ -287,10 +392,15 @@ body {
   }
 
   .sheet-grip {
-    width: 40px;
+    width: 42px;
     height: 5px;
     border-radius: 999px;
     background: var(--line-strong);
+    transition: width 0.3s var(--ease-spring);
+  }
+
+  .sidebar.is-expanded .sheet-grip {
+    width: 28px;
   }
 
   .tabs {

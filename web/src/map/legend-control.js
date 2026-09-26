@@ -4,38 +4,43 @@ import { icons } from '../lib/icons.js';
 
 // Legenda peta (elemen kartografi) melayang di kiri bawah peta. Isinya diatur
 // panel lapisan sesuai layer yang aktif. Terlipat bawaan supaya tidak menutupi
-// peta; tombolnya menunjukkan jumlah lapisan aktif.
+// peta; tombolnya menunjukkan jumlah lapisan aktif. Buka-tutupnya beranimasi (CSS).
 export const LegendControl = L.Control.extend({
   options: { position: 'bottomleft', collapsed: true },
 
   onAdd() {
-    const el = L.DomUtil.create('section', 'map-legend');
+    const el = L.DomUtil.create('section', 'map-legend glass');
     el.setAttribute('aria-label', 'Legenda peta');
     el.innerHTML = `
-      <button type="button" class="map-legend__toggle" aria-expanded="false">
+      <button type="button" class="map-legend__toggle" aria-expanded="false" aria-controls="map-legend-body">
         ${icons.list}<span>Legenda</span><span class="map-legend__count"></span>
         <span class="map-legend__chevron">${icons.chevronDown}</span>
       </button>
-      <div class="map-legend__body" hidden></div>`;
+      <div class="map-legend__panel">
+        <div class="map-legend__body" id="map-legend-body">
+          <div class="map-legend__scroll"></div>
+        </div>
+      </div>`;
     L.DomEvent.disableClickPropagation(el);
     L.DomEvent.disableScrollPropagation(el);
 
+    this._el = el;
     this._toggle = el.querySelector('.map-legend__toggle');
     this._count = el.querySelector('.map-legend__count');
-    this._body = el.querySelector('.map-legend__body');
-    this._toggle.addEventListener('click', () => this.setExpanded(this._body.hidden));
+    this._content = el.querySelector('.map-legend__scroll');
+    this._toggle.addEventListener('click', () => this.setExpanded(!el.classList.contains('is-open')));
     this.setExpanded(!this.options.collapsed);
     this._render();
     return el;
   },
 
   setExpanded(open) {
-    if (!this._body) {
+    if (!this._el) {
       this.options.collapsed = !open;
       return;
     }
+    this._el.classList.toggle('is-open', open);
     this._toggle.setAttribute('aria-expanded', String(open));
-    this._body.hidden = !open;
   },
 
   setBlocks(blocks) {
@@ -44,10 +49,10 @@ export const LegendControl = L.Control.extend({
   },
 
   _render() {
-    if (!this._body) return;
+    if (!this._content) return;
     const blocks = this._blocks ?? [];
     this._count.textContent = blocks.length ? `${blocks.length} lapisan` : '';
-    this._body.innerHTML = blocks.length
+    this._content.innerHTML = blocks.length
       ? blocks.map((b) => `<div class="legend-block"><h3>${escapeHtml(b.title)}</h3>${b.html}</div>`).join('')
       : '<p class="legend-empty">Tidak ada lapisan aktif.</p>';
   },

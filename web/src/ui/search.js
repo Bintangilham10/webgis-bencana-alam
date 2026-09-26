@@ -20,7 +20,7 @@ function resultHtml(result, index) {
 // Saat kosong, kotak menawarkan contoh pencarian.
 export function createSearch(container, { onSelect }) {
   container.innerHTML = `
-    <form class="search-form" role="search">
+    <form class="search-form glass" role="search">
       ${icons.search}
       <input type="search" name="q" placeholder="Cari tempat atau kab/kota…" aria-label="Cari lokasi"
              autocomplete="off" minlength="2" maxlength="100" enterkeyhint="search" required />

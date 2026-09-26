@@ -2,15 +2,30 @@
 .leaflet-container {
   font-family: var(--font);
   font-size: 13px;
-  background: #dfe4e9;
+  background: var(--map-bg);
 }
 
 .leaflet-container a {
   color: var(--primary);
 }
 
+/* Kontrol Leaflet diberi jarak dari bilah atas dan panel samping yang melayang. */
+#map .leaflet-top {
+  top: calc(var(--gap) + var(--topbar-h) + 2px);
+}
+
+#map .leaflet-bottom {
+  bottom: 2px;
+}
+
+@media (min-width: 768px) {
+  #map .leaflet-left {
+    left: calc(var(--gap) + var(--sidebar-w) + 2px);
+  }
+}
+
 .leaflet-top.leaflet-right .leaflet-control {
-  margin: 12px 12px 0 0;
+  margin: 12px var(--gap) 0 0;
 }
 
 .leaflet-bottom.leaflet-left .leaflet-control {
@@ -18,7 +33,7 @@
 }
 
 .leaflet-bottom.leaflet-right .leaflet-control {
-  margin: 0 12px 6px 0;
+  margin: 0 var(--gap) 8px 0;
 }
 
 .leaflet-bottom.leaflet-right .leaflet-control-attribution {
@@ -29,8 +44,10 @@
   padding: 2px 8px;
   border-radius: 8px 0 0;
   font-size: 10.5px;
-  color: var(--ink-2);
-  background: rgb(255 255 255 / 0.85);
+  color: var(--ink-3);
+  background: var(--glass);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .leaflet-control-scale-line {
@@ -38,18 +55,35 @@
   border: 2px solid var(--ink-2);
   border-top: 0;
   font-size: 11px;
-  font-weight: 650;
+  font-weight: 700;
   color: var(--ink);
-  background: rgb(255 255 255 / 0.85);
+  background: var(--glass);
 }
 
 .leaflet-tooltip {
-  padding: 4px 8px;
-  border: 0;
-  border-radius: 6px;
+  padding: 5px 9px;
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
   font-size: 12px;
   color: var(--ink);
+  background: var(--tooltip-bg);
   box-shadow: var(--shadow-2);
+}
+
+.leaflet-tooltip-top::before {
+  border-top-color: var(--tooltip-bg);
+}
+
+.leaflet-tooltip-bottom::before {
+  border-bottom-color: var(--tooltip-bg);
+}
+
+.leaflet-tooltip-left::before {
+  border-left-color: var(--tooltip-bg);
+}
+
+.leaflet-tooltip-right::before {
+  border-right-color: var(--tooltip-bg);
 }
 
 /* ---------- Bilah alat kanan ---------- */
@@ -64,19 +98,16 @@
   display: flex;
   flex-direction: column;
   border-radius: var(--radius);
-  background: var(--surface);
-  box-shadow: var(--shadow-2);
 }
 
 .tool {
   display: grid;
   place-items: center;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border: 0;
   color: var(--ink-2);
   background: transparent;
-  transition: background 0.15s, color 0.15s;
 }
 
 .tool + .tool {
@@ -96,7 +127,7 @@
 }
 
 .tool:hover {
-  color: var(--ink);
+  color: var(--primary);
   background: var(--surface-2);
 }
 
@@ -104,12 +135,13 @@
   color: var(--line-strong);
   background: transparent;
   cursor: default;
+  transform: none;
 }
 
 .tool[aria-pressed='true'],
 .tool[aria-expanded='true'] {
-  color: #fff;
-  background: var(--primary);
+  color: var(--primary-ink);
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
 }
 
 .tool .icon {
@@ -125,12 +157,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px 10px;
-  width: 244px;
+  width: 248px;
   padding: 12px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
-  background: var(--surface);
+  background: var(--glass-strong);
   box-shadow: var(--shadow-3);
+  transform-origin: right top;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+.basemap-menu:not([hidden]) {
+  animation: menu-in 0.25s var(--ease-out) both;
 }
 
 .basemap-menu[hidden] {
@@ -139,9 +178,9 @@
 
 .basemap-menu__title {
   grid-column: 1 / -1;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-size: 11.5px;
+  font-weight: 750;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-3);
 }
@@ -152,7 +191,7 @@
   flex-direction: column;
   gap: 5px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 650;
   line-height: 1.25;
   color: var(--ink-2);
   cursor: pointer;
@@ -172,10 +211,15 @@
   border: 2px solid var(--line);
   border-radius: var(--radius-sm);
   background: var(--surface-3);
+  transition:
+    border-color 0.2s ease,
+    transform 0.25s var(--ease-spring),
+    box-shadow 0.2s ease;
 }
 
 .basemap-option:hover img {
   border-color: var(--line-strong);
+  transform: translateY(-2px);
 }
 
 .basemap-option input:checked + img {
@@ -197,14 +241,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 46px;
+  width: 42px;
+  height: 48px;
   border-radius: var(--radius);
   font-size: 10px;
   font-weight: 800;
   color: var(--ink-2);
-  background: var(--surface);
-  box-shadow: var(--shadow-2);
 }
 
 .north-arrow svg {
@@ -212,14 +254,21 @@
   height: 20px;
 }
 
+.north-arrow .na-dark {
+  fill: var(--ink);
+}
+
+.north-arrow .na-light {
+  fill: var(--glass-strong);
+  stroke: var(--ink);
+}
+
 /* ---------- Legenda melayang ---------- */
 .map-legend {
-  width: 248px;
+  width: 252px;
   max-width: calc(100vw - 96px);
   overflow: hidden;
   border-radius: var(--radius-lg);
-  background: rgb(255 255 255 / 0.97);
-  box-shadow: var(--shadow-2);
 }
 
 .map-legend__toggle {
@@ -227,11 +276,11 @@
   align-items: center;
   gap: 8px;
   width: 100%;
-  padding: 10px 12px;
+  padding: 11px 13px;
   border: 0;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-size: 11.5px;
+  font-weight: 750;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-2);
   background: transparent;
@@ -244,7 +293,7 @@
 
 .map-legend__count {
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 650;
   letter-spacing: 0;
   text-transform: none;
   color: var(--ink-3);
@@ -252,22 +301,42 @@
 
 .map-legend__chevron {
   margin-left: auto;
-  transition: transform 0.2s;
+  transition: transform 0.35s var(--ease-spring);
 }
 
 .map-legend__toggle[aria-expanded='false'] .map-legend__chevron {
   transform: rotate(180deg);
 }
 
-.map-legend__body {
-  max-height: min(46vh, 380px);
-  overflow-y: auto;
-  padding: 0 12px 12px;
-  border-top: 1px solid var(--line);
+/* Buka-tutup beranimasi: baris grid tumbuh dari 0fr ke 1fr. */
+.map-legend__panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s var(--ease-out);
 }
 
-.map-legend__body[hidden] {
-  display: none;
+.map-legend.is-open .map-legend__panel {
+  grid-template-rows: 1fr;
+}
+
+.map-legend__body {
+  min-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: visibility 0s 0.4s;
+}
+
+.map-legend.is-open .map-legend__body {
+  visibility: visible;
+  transition: visibility 0s;
+}
+
+.map-legend__scroll {
+  max-height: min(46vh, 380px);
+  overflow-y: auto;
+  padding: 0 13px 13px;
+  border-top: 1px solid var(--line);
+  scrollbar-width: thin;
 }
 
 .legend-block {
@@ -277,7 +346,7 @@
 .legend-block h3 {
   margin-bottom: 4px;
   font-size: 12.5px;
-  font-weight: 700;
+  font-weight: 750;
 }
 
 .legend-row {
@@ -317,7 +386,7 @@
 
 .swatch-circle {
   border-radius: 50%;
-  box-shadow: 0 0 0 1.5px #fff, 0 0 0 2.5px var(--line-strong);
+  box-shadow: 0 0 0 1.5px var(--quake-ring);
 }
 
 .swatch-pulse {
@@ -373,46 +442,67 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 5px 9px;
+  padding: 6px 10px;
   border-radius: var(--radius-sm);
   font: 11px/1.5 var(--mono);
   color: var(--ink-2);
-  background: rgb(255 255 255 / 0.88);
-  box-shadow: var(--shadow-1);
   pointer-events: none;
 }
 
-/* ---------- Simbol di peta ---------- */
-.quake-pulse span {
-  display: block;
-  width: 100%;
-  height: 100%;
+/* ---------- Gempa ---------- */
+/* Warna tepi dari tema (CSS menimpa atribut stroke dari Leaflet). Titik muncul
+   membesar dengan jeda berurutan (--delay dari JS). */
+.quake-marker {
+  stroke: var(--quake-ring);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pop-in 0.5s var(--ease-spring) both;
+}
+
+[data-theme='dark'] .quake-marker {
+  filter: drop-shadow(0 0 5px currentColor);
+}
+
+/* Gelombang riak dari gempa paling baru. */
+.quake-ripple span {
+  position: absolute;
+  inset: 0;
   border: 2px solid var(--danger);
   border-radius: 50%;
-  animation: pulse 1.8s ease-out infinite;
+  opacity: 0;
+  animation: ripple 2.4s var(--ease-out) infinite;
 }
 
-@keyframes pulse {
-  from {
-    transform: scale(0.6);
-    opacity: 1;
-  }
-  to {
-    transform: scale(2);
-    opacity: 0;
-  }
+.quake-ripple span:nth-child(2) {
+  animation-delay: 0.8s;
 }
 
-.volcano-icon span {
+.quake-ripple span:nth-child(3) {
+  animation-delay: 1.6s;
+}
+
+[data-theme='dark'] .quake-ripple span {
+  box-shadow: 0 0 12px rgb(239 68 68 / 0.6);
+}
+
+/* ---------- Gunung api ---------- */
+.volcano-marker {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
-  background: var(--ink);
+  animation: pop-in 0.45s var(--ease-spring) both;
+  animation-delay: calc(var(--i, 0) * 12ms + 150ms);
+}
+
+.volcano-shape {
+  position: absolute;
+  inset: 0;
+  background: var(--glyph-outline);
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
 }
 
-.volcano-icon span::after {
+.volcano-shape::after {
   content: '';
   position: absolute;
   inset: 2px 2px 1px;
@@ -420,8 +510,35 @@
   clip-path: polygon(50% 12%, 94% 100%, 6% 100%);
 }
 
+/* Siaga/Awas berpendar: halo berdenyut di belakang segitiga. */
+.volcano-icon--alert .volcano-marker {
+  filter: drop-shadow(0 0 6px var(--level-color));
+}
+
+.volcano-halo {
+  position: absolute;
+  inset: -45%;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, var(--level-color), transparent);
+  animation: halo 2.2s ease-in-out infinite;
+}
+
 .boundary-tooltip {
   font-size: 12px;
+}
+
+.fault-line {
+  stroke: var(--fault-color);
+}
+
+/* Di peta gelap garis terang cepat mendominasi; redupkan supaya simbol gempa
+   dan gunung api tetap menonjol. */
+[data-theme='dark'] .fault-line {
+  stroke-opacity: 0.6;
+}
+
+.plate-line {
+  stroke: var(--plate-color);
 }
 
 /* ---------- Mode pilih titik & hasil analisis ---------- */
@@ -433,40 +550,119 @@
 .map-hint {
   position: absolute;
   z-index: 1000;
-  top: 12px;
+  top: calc(var(--gap) + var(--topbar-h) + 14px);
   left: 50%;
   max-width: calc(100% - 140px);
-  padding: 8px 16px;
+  padding: 9px 16px;
+  border: 1px solid var(--glass-border);
   border-radius: 999px;
   font-size: 13px;
-  font-weight: 600;
-  color: #fff;
-  background: rgb(17 28 42 / 0.9);
+  font-weight: 650;
+  color: var(--ink);
+  background: var(--glass-strong);
   box-shadow: var(--shadow-2);
   transform: translateX(-50%);
   pointer-events: none;
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.map-hint:not([hidden]) {
+  animation: drop-in 0.3s var(--ease-out) both;
+}
+
+@media (min-width: 768px) {
+  .map-hint {
+    left: calc(50% + (var(--sidebar-w) + var(--gap)) / 2);
+  }
+}
+
+/* Titik yang dianalisis: inti + cincin berdenyut (lebih cepat saat memuat). */
+.analysis-marker span {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+}
+
+.analysis-marker__pulse {
+  background: var(--primary);
+  opacity: 0;
+  animation: ripple 2s var(--ease-out) infinite;
+}
+
+.analysis-marker.is-loading .analysis-marker__pulse {
+  animation-duration: 1.1s;
+}
+
+.analysis-marker__dot {
+  inset: 5px !important;
+  border: 3px solid #fff;
+  background: var(--primary);
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 0.2), 0 0 14px var(--primary-glow);
+  animation: pop-in 0.45s var(--ease-spring) both;
+}
+
+.accuracy-circle {
+  stroke: var(--primary);
+  fill: var(--primary);
 }
 
 .leaflet-tooltip.distance-label {
-  padding: 3px 10px;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 700;
-  white-space: nowrap;
-  background: #fff;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .leaflet-tooltip.distance-label::before {
   display: none;
 }
 
+/* Label muncul memantul setelah garis selesai tergambar. */
+.distance-label__inner {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 750;
+  white-space: nowrap;
+  color: var(--ink);
+  background: var(--glass-strong);
+  box-shadow: var(--shadow-2);
+  animation: pop-in 0.45s var(--ease-spring) both;
+}
+
 /* ---------- Popup ---------- */
-/* Jarak dalam diberikan lewat padding pembungkus: margin pada isi akan "bocor"
-   keluar kotak (margin collapsing) bila pembungkus tanpa padding. */
+/* Jarak dalam lewat padding pembungkus: margin pada isi akan "bocor" keluar
+   kotak (margin collapsing) bila pembungkus tanpa padding. */
 .leaflet-popup-content-wrapper {
   padding: 14px 16px 12px;
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
+  color: var(--ink);
+  background: var(--glass-strong);
   box-shadow: var(--shadow-3);
+  transform-origin: 50% 100%;
+  animation: popup-in 0.28s var(--ease-spring) both;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+@keyframes popup-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.leaflet-popup-tip {
+  background: var(--glass-strong);
+  box-shadow: none;
 }
 
 .leaflet-popup-content {
@@ -474,6 +670,11 @@
   font-size: 13px;
   line-height: 1.45;
   color: var(--ink);
+}
+
+/* Leaflet memberi <p> di popup margin 1,3em; jarak diatur sendiri di bawah. */
+.leaflet-popup-content p {
+  margin: 0;
 }
 
 .leaflet-container a.leaflet-popup-close-button {
@@ -488,12 +689,7 @@
 
 .leaflet-container a.leaflet-popup-close-button:hover {
   color: var(--ink);
-  background: var(--surface-2);
-}
-
-/* Leaflet memberi <p> di popup margin 1,3em; jarak diatur sendiri di bawah. */
-.leaflet-popup-content p {
-  margin: 0;
+  background: var(--surface-3);
 }
 
 .popup {
@@ -518,7 +714,7 @@
 
 .popup h3 {
   font-size: 15px;
-  font-weight: 750;
+  font-weight: 800;
   line-height: 1.25;
 }
 
@@ -533,7 +729,7 @@
 
 .popup .popup-place {
   margin-bottom: 6px;
-  font-weight: 650;
+  font-weight: 700;
 }
 
 .popup-facts {
@@ -555,7 +751,7 @@
   margin: 8px 0;
   padding: 8px 10px;
   border-radius: var(--radius-sm);
-  font-weight: 650;
+  font-weight: 700;
   color: #fff;
   background: var(--danger);
 }
@@ -564,7 +760,7 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-weight: 650;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -602,6 +798,6 @@
 
   .map-legend {
     width: auto;
-    min-width: 150px;
+    min-width: 160px;
   }
 }

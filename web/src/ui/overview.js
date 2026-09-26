@@ -1,5 +1,6 @@
 import { escapeHtml, formatDecimal, shortQuakeRegion, timeAgo } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
+import { animateNumber } from '../lib/motion.js';
 import { depthClass, pillStyle, VOLCANO_LEVELS } from '../lib/symbology.js';
 
 const HOUR_MS = 3_600_000;
@@ -7,10 +8,10 @@ const QUAKE_LIST_SIZE = 6;
 
 const volcanoName = (nama) => (/^gunung\s/i.test(nama) ? nama : `Gunung ${nama}`);
 
-function quakeRow(q, now) {
+function quakeRow(q, index, now) {
   const depth = depthClass(q.depth_class);
   return `
-    <li>
+    <li style="--i:${index}">
       <button type="button" class="list-row" data-quake="${escapeHtml(q.id)}">
         <span class="mag-badge" style="${pillStyle(depth)}"><span class="visually-hidden">Magnitudo </span>${formatDecimal(q.magnitude)}</span>
         <span class="list-row__text">
@@ -22,10 +23,10 @@ function quakeRow(q, now) {
     </li>`;
 }
 
-function volcanoRow(v) {
+function volcanoRow(v, index) {
   const level = VOLCANO_LEVELS[v.level];
   return `
-    <li>
+    <li style="--i:${index}">
       <button type="button" class="list-row" data-volcano="${escapeHtml(v.kode)}">
         <span class="row-icon"><span class="volcano-glyph" style="--level-color:${level.color}"></span></span>
         <span class="list-row__text">
@@ -37,8 +38,18 @@ function volcanoRow(v) {
     </li>`;
 }
 
-// Tab Ikhtisar: kartu statistik nasional, gunung api berstatus tinggi, dan
-// daftar gempa terkini (klik untuk menuju ke peta).
+// Isi daftar diganti setiap pembaruan (supaya "x menit lalu" tetap akurat),
+// tetapi animasi berurutan hanya diputar bila isinya benar-benar berubah.
+function renderList(list, html, signature) {
+  const changed = list.dataset.signature !== signature;
+  list.dataset.signature = signature;
+  list.classList.toggle('stagger', changed);
+  list.removeAttribute('aria-busy');
+  list.innerHTML = html;
+}
+
+// Tab Ikhtisar: kartu statistik nasional (angka menghitung naik), gunung api
+// berstatus tinggi, dan daftar gempa terkini (klik untuk menuju ke peta).
 export function createOverview({ stats, quakeList, volcanoList, onSelectQuake, onSelectVolcano }) {
   quakeList.addEventListener('click', (event) => {
     const button = event.target.closest('[data-quake]');
@@ -55,14 +66,18 @@ export function createOverview({ stats, quakeList, volcanoList, onSelectQuake, o
       const quakes = collection.features.map((f) => f.properties);
       const lastDay = quakes.filter((q) => now - new Date(q.occurred_at) < 24 * HOUR_MS);
       const strongest = lastDay.reduce((max, q) => (!max || q.magnitude > max.magnitude ? q : max), null);
-      stats.quakes24h.textContent = lastDay.length;
+      animateNumber(stats.quakes24h, lastDay.length);
       stats.quakes24hSub.textContent = strongest ? `terbesar M ${formatDecimal(strongest.magnitude)}` : 'tidak ada';
-      stats.quakesM5.textContent = quakes.filter((q) => q.magnitude >= 5).length;
+      animateNumber(stats.quakesM5, quakes.filter((q) => q.magnitude >= 5).length);
 
-      quakeList.removeAttribute('aria-busy');
-      quakeList.innerHTML = quakes.length
-        ? quakes.slice(0, QUAKE_LIST_SIZE).map((q) => quakeRow(q, now)).join('')
-        : '<li class="empty-note">Belum ada gempa tercatat dalam 7 hari terakhir.</li>';
+      const shown = quakes.slice(0, QUAKE_LIST_SIZE);
+      renderList(
+        quakeList,
+        shown.length
+          ? shown.map((q, i) => quakeRow(q, i, now)).join('')
+          : '<li class="empty-note">Belum ada gempa tercatat dalam 7 hari terakhir.</li>',
+        shown.map((q) => `${q.id}:${q.magnitude}`).join('|'),
+      );
     },
 
     renderVolcanoes(collection) {
@@ -71,13 +86,15 @@ export function createOverview({ stats, quakeList, volcanoList, onSelectQuake, o
         .filter((v) => v.level >= 3)
         .sort((a, b) => b.level - a.level || a.nama.localeCompare(b.nama, 'id'));
       const waspada = volcanoes.filter((v) => v.level === 2).length;
-      stats.volcanoes.textContent = high.length;
+      animateNumber(stats.volcanoes, high.length);
       stats.volcanoesSub.textContent = `dari ${volcanoes.length} dipantau`;
 
-      volcanoList.removeAttribute('aria-busy');
-      volcanoList.innerHTML =
+      renderList(
+        volcanoList,
         (high.length ? high.map(volcanoRow).join('') : '<li class="empty-note">Tidak ada gunung api berstatus Siaga atau Awas.</li>') +
-        (waspada ? `<li class="list-note">${waspada} gunung api lain berstatus Waspada (Level II).</li>` : '');
+          (waspada ? `<li class="list-note" style="--i:${high.length}">${waspada} gunung api lain berstatus Waspada (Level II).</li>` : ''),
+        `${high.map((v) => `${v.kode}:${v.level}`).join('|')}#${waspada}`,
+      );
     },
 
     // Daftar lama tetap ditampilkan bila ada; pesan hanya menggantikan kerangka muat.

@@ -2,6 +2,7 @@ import L from 'leaflet';
 import { getJson } from '../lib/api.js';
 import { escapeHtml, formatDateTime, formatDecimal, shortQuakeRegion, timeAgo } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
+import { flyTo } from '../lib/motion.js';
 import { DEPTH_CLASSES, depthClass, magnitudeRadius, pillStyle } from '../lib/symbology.js';
 
 export function earthquakePopup(p) {
@@ -44,30 +45,38 @@ export function createEarthquakeLayer(map) {
     markers.clear();
 
     // Gempa besar digambar lebih dulu supaya gempa kecil di atasnya tetap bisa
-    // diklik; cincin putih memisahkan lingkaran yang bertumpuk.
+    // diklik. Warna cincin pemisah mengikuti tema (kelas .quake-marker di CSS).
     const byMagnitude = [...collection.features].sort((a, b) => b.properties.magnitude - a.properties.magnitude);
-    for (const { geometry, properties: p } of byMagnitude) {
+    byMagnitude.forEach(({ geometry, properties: p }, index) => {
       const [lon, lat] = geometry.coordinates;
+      const color = depthClass(p.depth_class).color;
       const marker = L.circleMarker([lat, lon], {
         pane: 'quakes',
+        className: 'quake-marker',
         radius: magnitudeRadius(p.magnitude),
-        color: '#fff',
         weight: 1.5,
-        fillColor: depthClass(p.depth_class).color,
+        fillColor: color,
         fillOpacity: 0.85,
       })
         .bindPopup(earthquakePopup(p), { maxWidth: 320 })
         .bindTooltip(`M ${formatDecimal(p.magnitude)} · ${timeAgo(p.occurred_at)}`, { direction: 'top' });
       markers.set(p.id, marker.addTo(group));
-    }
+      // Titik muncul membesar berurutan; currentColor dipakai untuk efek pendar.
+      const el = marker.getElement();
+      if (el) {
+        el.style.color = color;
+        el.style.animationDelay = `${index * 40}ms`;
+      }
+    });
 
     const latest = collection.features[0];
     if (latest) {
       const [lon, lat] = latest.geometry.coordinates;
-      // Animasi ada di <span> dalam ikon: transform milik elemen ikon dipakai
-      // Leaflet untuk posisi, jadi tidak boleh ditimpa animasi scale.
+      // Gelombang riak ada di <span> dalam ikon: transform milik elemen ikon
+      // dipakai Leaflet untuk posisi, jadi tidak boleh ditimpa animasi scale.
       L.marker([lat, lon], {
-        icon: L.divIcon({ className: 'quake-pulse', html: '<span></span>', iconSize: [28, 28] }),
+        pane: 'quakes',
+        icon: L.divIcon({ className: 'quake-ripple', html: '<span></span><span></span><span></span>', iconSize: [34, 34] }),
         interactive: false,
         keyboard: false,
       }).addTo(group);
@@ -90,8 +99,8 @@ export function createEarthquakeLayer(map) {
       const marker = markers.get(id);
       if (!marker) return;
       if (!map.hasLayer(group)) group.addTo(map);
-      map.flyTo(marker.getLatLng(), Math.max(map.getZoom(), 7), { duration: 0.8 });
       map.once('moveend', () => marker.openPopup());
+      flyTo(map, marker.getLatLng(), Math.max(map.getZoom(), 7));
     },
   };
 }
