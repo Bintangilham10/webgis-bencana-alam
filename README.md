@@ -10,6 +10,7 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
 - **Antarmuka gelap kaca + mode terang:**
   - peta memenuhi layar;
   - pencarian, panel bertab (Ikhtisar, Lapisan, Info), bilah alat, dan legenda melayang sebagai panel kaca buram;
+  - warna polos tanpa gradien: panel abu netral, satu aksen biru untuk tombol utama dan pilihan aktif, sedangkan warna mencolok hanya dipakai untuk data bahaya;
   - tombol matahari/bulan mengganti tema (tersimpan di browser); peta dasar, garis sesar, dan batas wilayah ikut menyesuaikan;
   - di HP panel menjadi lembar bawah (*bottom sheet*) yang bisa digeser;
   - tab Info memuat nomor darurat (112, 117, 115, 119, 113, 110).
@@ -19,7 +20,7 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
   - layar pembuka dengan logo tergambar dan gelombang seismik;
   - penanda tab meluncur; isi panel dan detail cek risiko bergeser masuk;
   - angka statistik menghitung naik; daftar muncul berurutan; batang bahaya/hujan terisi bertahap;
-  - gempa terbaru memancarkan riak; gunung api Siaga/Awas berpendar;
+  - gempa terbaru dan gunung api Siaga/Awas memancarkan cincin riak;
   - garis jarak tergambar pelan; peta "terbang" ke lokasi; tombol memantul saat ditekan.
   
   Semua animasi mati otomatis bila pengguna mengaktifkan "kurangi gerakan".
