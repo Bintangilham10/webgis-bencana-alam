@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.26.23.17.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-27T06:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-27T06:25:00+07:00</effective>
+    <expires>2026-09-27T08:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bengkulu</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 September 2026, 06:25 WIB di sebagian wilayah Bengkulu, khususnya di AIR MAJUNTO, KOTA MUKOMUKO, LUBUK PINANG, XIV KOTO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 September 2026, 08:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBK/2026/09/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bengkulu</areaDesc>
+      <polygon>-2.448,101.169 -2.459,101.169 -2.462,101.131 -2.476,101.124 -2.426,101.097 -2.387,101.150 -2.379,101.173 -2.368,101.191 -2.379,101.204 -2.398,101.202 -2.405,101.189 -2.422,101.186 -2.434,101.190 -2.442,101.186 -2.448,101.169</polygon>
+      <polygon>-2.510,101.136 -2.531,101.140 -2.532,101.159 -2.526,101.184 -2.532,101.180 -2.539,101.198 -2.555,101.201 -2.558,101.210 -2.587,101.210 -2.600,101.182 -2.622,101.191 -2.658,101.194 -2.628,101.142 -2.596,101.115 -2.552,101.086 -2.508,101.047 -2.507,101.070 -2.519,101.094 -2.511,101.100 -2.507,101.122 -2.510,101.136</polygon>
+      <polygon>-2.476,101.124 -2.500,101.135 -2.510,101.136 -2.507,101.122 -2.511,101.100 -2.519,101.094 -2.507,101.070 -2.508,101.047 -2.493,101.029 -2.478,101.023 -2.444,101.071 -2.427,101.096 -2.426,101.097 -2.476,101.124</polygon>
+      <polygon>-2.526,101.184 -2.532,101.159 -2.531,101.140 -2.510,101.136 -2.500,101.135 -2.476,101.124 -2.462,101.131 -2.459,101.169 -2.448,101.169 -2.456,101.171 -2.472,101.209 -2.482,101.217 -2.510,101.199 -2.514,101.184 -2.519,101.181 -2.526,101.184</polygon>
+    </area>
+  </info>
+</alert>
