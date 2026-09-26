@@ -1,0 +1,88 @@
+# SIGAP Bencana
+
+Sistem web pemetaan **peringatan dini dan mitigasi bencana alam Indonesia** berbasis data spasial terbuka.
+Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom University.
+
+> **Bukan sumber peringatan resmi.** Untuk keputusan keselamatan, ikuti BMKG, PVMBG/MAGMA, dan BNPB/BPBD setempat.
+
+## Fitur saat ini
+
+- **Peta dasar:** abu-abu netral, kemanusiaan (HOT), OpenStreetMap, relief (OpenTopoMap), dan citra satelit (Esri).
+- **Elemen kartografi:** legenda dinamis, skala batang, arah utara, angka skala 1:n beserta klasifikasinya, dan koordinat kursor dalam WGS84, UTM, dan EPSG:3857.
+- **Gempa BMKG:** disinkronkan tiap 60 detik. Simbol menunjukkan magnitudo dan kelas kedalaman, dengan penanda potensi tsunami dan tautan shakemap.
+- **Status gunung api:** 69 gunung api dari MAGMA/PVMBG, disinkronkan tiap 30 menit.
+- **Peta rawan InaRISK BNPB:** gempa bumi, cuaca ekstrem, banjir, tanah longsor, dan gunung api, masing-masing dalam 3 kelas bahaya.
+- **Data geologi dan wilayah:** sesar aktif PuSGeN 2024, batas lempeng tektonik, dan batas 514 kabupaten/kota (Kepmendagri 2025).
+- **Perekam arsip data riset** (`recorder/`): GitHub Actions merekam tiap 15 menit ke branch `arsip-data`.
+
+## Struktur
+
+| Folder | Isi |
+|---|---|
+| `server/` | API Express + PostGIS, penjadwal sinkronisasi, migrasi, dan seed data |
+| `web/` | Frontend Vite + Leaflet |
+| `recorder/` | Perekam arsip data (berjalan di GitHub Actions) |
+| `docker-compose.yml` | Database PostgreSQL 18 + PostGIS 3.6 |
+
+## Menjalankan secara lokal
+
+Prasyarat: Node.js 22 atau lebih baru dan Docker Desktop.
+
+```bash
+docker compose up -d        # database di localhost:5433
+
+cd server
+npm install
+npm run migrate             # membuat tabel
+npm run seed                # batas wilayah, gunung api, sesar (unduh sekali, ±15 detik)
+npm run dev                 # API di http://localhost:3000/api
+```
+
+Di terminal lain:
+
+```bash
+cd web
+npm install
+npm run dev                 # buka http://localhost:5173
+```
+
+Konfigurasi bawaan sudah cocok dengan `docker-compose.yml`. Salin `.env.example` menjadi `.env` hanya bila perlu mengubahnya.
+
+### Test
+
+```bash
+cd server && npm test       # unit test
+cd recorder && npm test
+```
+
+Test integrasi server memakai database terpisah supaya data pengembangan tidak tersentuh:
+
+```bash
+docker compose exec db createdb -U sigap sigap_test     # sekali saja
+cd server
+TEST_DATABASE_URL=postgres://sigap:sigap@localhost:5433/sigap_test npm test
+```
+
+Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/sigap_test"; npm test`
+
+## API
+
+| Endpoint | Isi |
+|---|---|
+| `GET /api/health` | Status database dan sinkronisasi tiap sumber |
+| `GET /api/earthquakes?days=7` | Gempa dalam 1–90 hari terakhir (GeoJSON) |
+| `GET /api/volcanoes` | Gunung api beserta status level |
+| `GET /api/faults` | Segmen sesar aktif PuSGeN 2024 |
+| `GET /api/wilayah?tingkat=provinsi` atau `kabkota` | Batas wilayah, disederhanakan untuk tampilan |
+
+## Sumber data dan atribusi
+
+| Data | Sumber | Ketentuan |
+|---|---|---|
+| Gempa bumi | [BMKG](https://data.bmkg.go.id/) | Wajib mencantumkan BMKG sebagai sumber |
+| Indeks bahaya, sesar aktif | [InaRISK BNPB](https://inarisk.bnpb.go.id/); model sesar PuSGeN 2024 | Cantumkan BNPB dan PuSGeN |
+| Status gunung api | [MAGMA Indonesia](https://magma.esdm.go.id/), PVMBG Kementerian ESDM | Cantumkan PVMBG |
+| Batas lempeng | Bird (2003) PB2002, konversi H. Ahlenius/Nordpil | ODC-By |
+| Batas wilayah | Kepmendagri No 300.2.2-2430 Tahun 2025, [cahyadsn/wilayah_boundaries](https://github.com/cahyadsn/wilayah_boundaries) | MIT |
+| Laporan warga (arsip riset) | [PetaBencana.id](https://petabencana.id/) | CC BY-NC 4.0 |
+| Peta dasar | Esri; © OpenStreetMap contributors (ODbL); Humanitarian OpenStreetMap Team; OpenTopoMap | CC-BY-SA untuk OpenTopoMap |
