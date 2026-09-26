@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.26.09.19.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-26T15:55:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-26T16:05:00+07:00</effective>
+    <expires>2026-09-26T18:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 September 2026, 16:05 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di MENDO BARAT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 September 2026, 18:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/09/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-2.080,106.043 -2.083,106.040 -2.099,106.046 -2.107,106.044 -2.108,106.039 -2.112,106.040 -2.124,106.059 -2.132,106.088 -2.146,106.089 -2.156,106.075 -2.167,106.071 -2.174,106.074 -2.186,106.041 -2.208,106.021 -2.214,106.021 -2.222,105.992 -2.231,105.980 -2.229,105.949 -2.214,105.923 -2.237,105.919 -2.250,105.912 -2.261,105.917 -2.268,105.935 -2.279,105.939 -2.286,105.935 -2.291,105.921 -2.302,105.921 -2.322,105.904 -2.338,105.900 -2.343,105.902 -2.334,105.883 -2.333,105.866 -2.340,105.845 -2.346,105.843 -2.349,105.836 -2.348,105.825 -2.364,105.813 -2.367,105.803 -2.342,105.814 -2.335,105.822 -2.315,105.827 -2.304,105.823 -2.296,105.813 -2.279,105.809 -2.252,105.788 -2.236,105.786 -2.229,105.791 -2.208,105.788 -2.193,105.793 -2.177,105.790 -2.170,105.802 -2.172,105.814 -2.164,105.821 -2.146,105.825 -2.141,105.816 -2.136,105.816 -2.141,105.836 -2.138,105.847 -2.132,105.854 -2.126,105.845 -2.117,105.818 -2.111,105.814 -2.100,105.817 -2.098,105.814 -2.088,105.822 -2.090,105.833 -2.085,105.841 -2.077,105.843 -2.067,105.871 -2.069,105.886 -2.077,105.889 -2.081,105.899 -2.047,105.942 -2.046,105.955 -2.030,105.992 -2.025,106.017 -2.046,106.014 -2.054,105.994 -2.064,105.986 -2.065,106.006 -2.077,106.013 -2.080,106.043</polygon>
+    </area>
+  </info>
+</alert>

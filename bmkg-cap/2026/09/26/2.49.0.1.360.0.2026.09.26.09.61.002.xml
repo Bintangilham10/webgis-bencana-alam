@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.26.09.61.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-26T16:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-26T16:20:00+07:00</effective>
+    <expires>2026-09-26T18:40:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 September 2026, 16:20 WIB di sebagian wilayah Kalimantan Barat, khususnya di MEMPAWAH HULU, MENJALIN, MONTERADO, SADANIANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 September 2026, 18:40 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/09/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>0.607,109.290 0.588,109.282 0.580,109.275 0.575,109.265 0.552,109.247 0.517,109.238 0.490,109.223 0.469,109.223 0.464,109.225 0.462,109.223 0.452,109.183 0.465,109.160 0.466,109.151 0.460,109.119 0.483,109.122 0.494,109.128 0.507,109.127 0.521,109.120 0.524,109.096 0.529,109.087 0.539,109.084 0.558,109.059 0.588,109.034 0.596,109.043 0.599,109.072 0.635,109.104 0.645,109.108 0.660,109.133 0.685,109.143 0.686,109.149 0.671,109.167 0.671,109.181 0.655,109.190 0.643,109.213 0.643,109.229 0.635,109.245 0.645,109.260 0.636,109.263 0.626,109.278 0.607,109.290</polygon>
+      <polygon>0.858,109.213 0.843,109.188 0.827,109.182 0.828,109.158 0.825,109.150 0.815,109.141 0.813,109.146 0.804,109.150 0.788,109.149 0.778,109.158 0.782,109.177 0.767,109.190 0.764,109.191 0.759,109.184 0.750,109.186 0.721,109.210 0.706,109.200 0.701,109.193 0.694,109.149 0.685,109.143 0.660,109.133 0.645,109.108 0.635,109.104 0.715,109.051 0.740,109.031 0.767,109.024 0.779,109.036 0.832,109.041 0.848,109.054 0.853,109.067 0.873,109.113 0.882,109.124 0.884,109.132 0.901,109.144 0.903,109.157 0.942,109.161 0.960,109.170 0.962,109.175 0.941,109.185 0.932,109.194 0.924,109.216 0.921,109.217 0.870,109.205 0.858,109.213</polygon>
+      <polygon>0.762,109.484 0.738,109.500 0.729,109.497 0.704,109.500 0.693,109.497 0.662,109.472 0.654,109.470 0.619,109.466 0.602,109.472 0.591,109.469 0.582,109.476 0.531,109.434 0.515,109.437 0.478,109.412 0.480,109.380 0.488,109.361 0.513,109.359 0.554,109.340 0.588,109.304 0.607,109.290 0.626,109.278 0.636,109.263 0.645,109.260 0.635,109.245 0.643,109.229 0.643,109.213 0.655,109.190 0.671,109.181 0.671,109.167 0.686,109.149 0.685,109.143 0.694,109.149 0.701,109.193 0.706,109.200 0.721,109.210 0.727,109.215 0.722,109.233 0.730,109.250 0.751,109.266 0.743,109.275 0.727,109.276 0.717,109.282 0.712,109.293 0.719,109.306 0.751,109.329 0.764,109.345 0.767,109.358 0.760,109.365 0.758,109.377 0.732,109.400 0.732,109.411 0.738,109.423 0.741,109.432 0.777,109.471 0.777,109.477 0.762,109.484</polygon>
+      <polygon>0.478,109.412 0.463,109.426 0.457,109.475 0.443,109.490 0.434,109.516 0.420,109.500 0.407,109.475 0.407,109.458 0.412,109.438 0.393,109.419 0.386,109.416 0.371,109.385 0.362,109.322 0.392,109.319 0.403,109.314 0.430,109.293 0.437,109.281 0.453,109.269 0.455,109.247 0.470,109.242 0.472,109.236 0.469,109.223 0.490,109.223 0.517,109.238 0.552,109.247 0.575,109.265 0.580,109.275 0.588,109.282 0.607,109.290 0.588,109.304 0.554,109.340 0.513,109.359 0.488,109.361 0.480,109.380 0.478,109.412</polygon>
+    </area>
+  </info>
+</alert>
