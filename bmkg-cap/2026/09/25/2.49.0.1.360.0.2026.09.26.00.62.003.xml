@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.26.00.62.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-26T04:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-26T05:00:00+07:00</effective>
+    <expires>2026-09-26T07:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 September 2026, 05:00 WIB di sebagian wilayah Kalimantan Tengah, khususnya di BARITO TUHUP RAYA, SUMBER BARITO, SUNGAI BABUAT, TANAH SIANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 September 2026, 07:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/09/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-0.554,114.657 -0.594,114.560 -0.609,114.551 -0.646,114.551 -0.637,114.508 -0.625,114.483 -0.594,114.391 -0.515,114.426 -0.473,114.450 -0.450,114.452 -0.404,114.437 -0.372,114.427 -0.281,114.417 -0.169,114.430 -0.119,114.456 -0.096,114.494 -0.078,114.561 -0.081,114.602 -0.077,114.671 -0.158,114.653 -0.199,114.638 -0.236,114.608 -0.287,114.588 -0.344,114.593 -0.429,114.641 -0.480,114.625 -0.513,114.625 -0.531,114.635 -0.554,114.657</polygon>
+      <polygon>-0.281,114.417 -0.372,114.427 -0.404,114.437 -0.395,114.357 -0.423,114.334 -0.454,114.323 -0.496,114.296 -0.540,114.262 -0.610,114.175 -0.645,114.155 -0.695,114.110 -0.610,114.075 -0.541,114.061 -0.484,114.029 -0.416,114.012 -0.381,113.991 -0.375,113.973 -0.386,113.943 -0.405,113.928 -0.458,113.929 -0.466,113.921 -0.465,113.907 -0.469,113.902 -0.458,113.885 -0.454,113.842 -0.453,113.835 -0.349,113.875 -0.305,113.925 -0.278,113.974 -0.266,114.135 -0.231,114.228 -0.234,114.269 -0.252,114.337 -0.281,114.417</polygon>
+      <polygon>-0.166,115.067 -0.247,115.054 -0.323,115.057 -0.367,115.052 -0.405,115.031 -0.512,115.043 -0.576,115.004 -0.587,114.997 -0.623,114.971 -0.647,114.955 -0.652,114.951 -0.699,114.914 -0.736,114.874 -0.736,114.868 -0.744,114.786 -0.744,114.784 -0.718,114.787 -0.702,114.783 -0.671,114.795 -0.584,114.884 -0.567,114.883 -0.523,114.845 -0.461,114.826 -0.430,114.811 -0.374,114.824 -0.346,114.819 -0.318,114.809 -0.167,114.814 0.016,114.795 0.057,114.857 0.057,114.873 0.039,114.895 0.019,114.890 -0.012,114.899 -0.035,114.898 -0.099,114.924 -0.114,114.926 -0.134,114.920 -0.164,114.933 -0.182,114.929 -0.188,114.931 -0.190,114.951 -0.180,114.962 -0.178,114.979 -0.173,114.987 -0.179,114.994 -0.184,114.989 -0.186,114.992 -0.185,115.024 -0.192,115.039 -0.190,115.045 -0.166,115.067</polygon>
+      <polygon>-0.404,114.437 -0.450,114.452 -0.473,114.450 -0.515,114.426 -0.594,114.391 -0.620,114.383 -0.652,114.385 -0.666,114.369 -0.668,114.334 -0.662,114.315 -0.651,114.313 -0.647,114.297 -0.634,114.292 -0.610,114.296 -0.599,114.285 -0.588,114.287 -0.554,114.266 -0.540,114.262 -0.496,114.296 -0.454,114.323 -0.423,114.334 -0.395,114.357 -0.404,114.437</polygon>
+    </area>
+  </info>
+</alert>
