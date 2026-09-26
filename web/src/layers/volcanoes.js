@@ -1,48 +1,59 @@
 import L from 'leaflet';
 import { getJson } from '../lib/api.js';
 import { escapeHtml, formatDateTime, formatNumber } from '../lib/format.js';
-import { VOLCANO_LEVELS } from '../lib/symbology.js';
+import { icons } from '../lib/icons.js';
+import { pillStyle, VOLCANO_LEVELS } from '../lib/symbology.js';
 
 const MAGMA_STATUS_URL = 'https://magma.esdm.go.id/v1/gunung-api/tingkat-aktivitas';
 
+const volcanoName = (nama) => (/^gunung\s/i.test(nama) ? nama : `Gunung ${nama}`);
+
 function volcanoPopup(v) {
-  const { label, color } = VOLCANO_LEVELS[v.level];
+  const level = VOLCANO_LEVELS[v.level];
   const location = [v.kabupaten, v.provinsi].filter(Boolean).map(escapeHtml).join(' — ');
-  const changed = v.level_changed_at
-    ? `Level berubah pada ${formatDateTime(v.level_changed_at)}.`
-    : 'Belum ada perubahan level sejak sistem mulai memantau.';
+  const changed = v.level_changed_at ? formatDateTime(v.level_changed_at) : 'Belum ada sejak sistem mulai memantau';
   return `
     <div class="popup">
-      <h3>${escapeHtml(v.nama)} <small>gunung api</small></h3>
-      <p><span class="level-badge" style="background:${color}">${label}</span></p>
-      <p>${location}</p>
-      ${v.elevasi_m ? `<p>Elevasi ${formatNumber(v.elevasi_m)} m dpl</p>` : ''}
-      <p class="muted">Diperiksa ${formatDateTime(v.checked_at)}. ${changed}</p>
-      <p><a href="${MAGMA_STATUS_URL}" target="_blank" rel="noopener">Rekomendasi resmi PVMBG di MAGMA</a></p>
-      <p class="source">Sumber: PVMBG — MAGMA Indonesia</p>
+      <div class="popup-head">
+        <span class="row-icon"><span class="volcano-glyph" style="--level-color:${level.color}"></span></span>
+        <div class="popup-heading">
+          <h3>${escapeHtml(volcanoName(v.nama))}</h3>
+          <span class="level-pill" style="${pillStyle(level)}">${level.label}</span>
+        </div>
+      </div>
+      <dl class="popup-facts">
+        ${location ? `<dt>Lokasi</dt><dd>${location}</dd>` : ''}
+        ${v.elevasi_m ? `<dt>Elevasi</dt><dd>${formatNumber(v.elevasi_m)} m dpl</dd>` : ''}
+        <dt>Diperiksa</dt><dd>${formatDateTime(v.checked_at)}</dd>
+        <dt>Perubahan level</dt><dd>${changed}</dd>
+      </dl>
+      <a class="popup-link" href="${MAGMA_STATUS_URL}" target="_blank" rel="noopener">Rekomendasi resmi PVMBG${icons.external}</a>
+      <p class="popup-source">Sumber: PVMBG — MAGMA Indonesia</p>
     </div>`;
 }
 
-export function createVolcanoLayer() {
+export function createVolcanoLayer(map) {
   const group = L.layerGroup();
+  const markers = new Map();
 
   function render(collection) {
     group.clearLayers();
+    markers.clear();
     for (const { geometry, properties: v } of collection.features) {
       const [lon, lat] = geometry.coordinates;
+      const level = VOLCANO_LEVELS[v.level];
       const size = v.level >= 3 ? 24 : 18;
-      L.marker([lat, lon], {
+      const marker = L.marker([lat, lon], {
         icon: L.divIcon({
           className: 'volcano-icon',
-          html: `<span style="--level-color:${VOLCANO_LEVELS[v.level].color}"></span>`,
+          html: `<span style="--level-color:${level.color}"></span>`,
           iconSize: [size, size],
         }),
-        title: `${v.nama} (${VOLCANO_LEVELS[v.level].label})`,
+        title: `${volcanoName(v.nama)} (${level.label})`,
         // Status lebih tinggi selalu tampil di atas bila berdekatan.
         zIndexOffset: v.level * 100,
-      })
-        .bindPopup(volcanoPopup(v), { maxWidth: 300 })
-        .addTo(group);
+      }).bindPopup(volcanoPopup(v), { maxWidth: 320 });
+      markers.set(v.kode, marker.addTo(group));
     }
   }
 
@@ -53,11 +64,19 @@ export function createVolcanoLayer() {
       render(collection);
       return collection;
     },
+    focus(kode) {
+      const marker = markers.get(kode);
+      if (!marker) return;
+      if (!map.hasLayer(group)) group.addTo(map);
+      map.flyTo(marker.getLatLng(), Math.max(map.getZoom(), 9), { duration: 0.8 });
+      map.once('moveend', () => marker.openPopup());
+    },
   };
 }
 
 export function volcanoLegend() {
-  return Object.values(VOLCANO_LEVELS)
-    .map((l) => `<div class="legend-row"><span class="swatch swatch-triangle" style="--level-color:${l.color}"></span>${l.label}</div>`)
+  const rows = Object.values(VOLCANO_LEVELS)
+    .map((l) => `<div class="legend-row"><span class="swatch swatch-triangle" style="--level-color:${l.color}"></span>${l.roman} · ${l.short}</div>`)
     .join('');
+  return `<div class="legend-grid">${rows}</div>`;
 }

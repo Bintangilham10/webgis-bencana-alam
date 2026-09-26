@@ -1,0 +1,299 @@
+body {
+  display: grid;
+  /* minmax(0, 1fr): tanpa ini lebar kolom ikut teks terpanjang dan halaman
+     bisa digeser ke samping di HP. */
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: var(--topbar-h) minmax(0, 1fr);
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+/* ---------- Bilah atas ---------- */
+/* Kolom pertama selebar panel samping, jadi kotak pencarian sejajar dengan tepi peta. */
+.topbar {
+  position: relative;
+  z-index: 30;
+  display: grid;
+  grid-template-columns: var(--sidebar-w) minmax(0, 620px) minmax(0, 1fr);
+  align-items: center;
+  gap: 0 16px;
+  padding-right: 16px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  height: 100%;
+  padding: 0 16px 0 18px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.brand-mark {
+  flex: none;
+  width: 30px;
+  height: 30px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.2;
+}
+
+.brand-text strong {
+  font-size: 16px;
+  font-weight: 750;
+  letter-spacing: -0.01em;
+  color: var(--brand);
+}
+
+.brand-text small {
+  overflow: hidden;
+  font-size: 12px;
+  color: var(--ink-3);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.freshness {
+  justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  max-width: 100%;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 12.5px;
+  color: var(--ink-2);
+  background: var(--surface);
+}
+
+.freshness-dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ink-3);
+}
+
+.freshness[data-state='ok'] .freshness-dot {
+  background: var(--ok);
+  box-shadow: 0 0 0 3px rgb(46 125 50 / 0.18);
+}
+
+.freshness[data-state='stale'] .freshness-dot {
+  background: #f9a825;
+  box-shadow: 0 0 0 3px rgb(249 168 37 / 0.2);
+}
+
+.freshness[data-state='error'] {
+  border-color: #f2c4c4;
+  color: #8e1b1b;
+  background: #fdf1f1;
+}
+
+.freshness[data-state='error'] .freshness-dot {
+  background: var(--danger);
+}
+
+.freshness-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* ---------- Kerangka: panel samping + peta ---------- */
+.app {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
+  min-height: 0;
+}
+
+/* isolation: z-index panel Leaflet (hingga 1000) tidak bocor ke luar peta. */
+#map {
+  position: relative;
+  isolation: isolate;
+  min-height: 0;
+  background: #dfe4e9;
+}
+
+.sidebar {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: var(--surface);
+  border-right: 1px solid var(--line);
+}
+
+.sidebar:focus {
+  outline: none;
+}
+
+.view {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.view[hidden] {
+  display: none;
+}
+
+.view-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+/* ---------- Tab ---------- */
+.tabs {
+  flex: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  margin: 14px 16px 2px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 6px 8px;
+  border: 0;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 650;
+  color: var(--ink-3);
+  background: transparent;
+  transition: color 0.15s, background 0.15s;
+}
+
+.tab .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.tab:hover {
+  color: var(--ink);
+}
+
+.tab[aria-selected='true'] {
+  color: var(--primary);
+  background: var(--surface);
+  box-shadow: var(--shadow-1);
+}
+
+.tabpanel {
+  padding: 2px 16px 24px;
+}
+
+.tabpanel:focus-visible {
+  outline-offset: -2px;
+}
+
+.sheet-handle {
+  display: none;
+}
+
+/* ---------- Layar sempit: panel menjadi lembar bawah ---------- */
+@media (max-width: 767.98px) {
+  :root {
+    --topbar-h: 58px;
+  }
+
+  .topbar {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 8px;
+    padding: 0 10px;
+  }
+
+  .brand {
+    padding: 0 2px;
+  }
+
+  .brand-text {
+    display: none;
+  }
+
+  .freshness {
+    padding: 9px;
+  }
+
+  /* Teks status tetap dibacakan pembaca layar, hanya disembunyikan visual. */
+  .freshness-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  .app {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #map {
+    grid-area: 1 / 1;
+  }
+
+  .sidebar {
+    position: absolute;
+    inset: auto 0 0;
+    height: var(--sheet-peek);
+    border-right: 0;
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 -6px 24px rgb(17 28 42 / 0.16);
+    transition: height 0.25s ease;
+  }
+
+  .sidebar.is-expanded {
+    height: var(--sheet-expanded, 62%);
+  }
+
+  .sidebar:not(.is-expanded) .view-scroll {
+    overflow: hidden;
+  }
+
+  .sheet-handle {
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    touch-action: none;
+  }
+
+  .sheet-grip {
+    width: 40px;
+    height: 5px;
+    border-radius: 999px;
+    background: var(--line-strong);
+  }
+
+  .tabs {
+    margin-top: 0;
+  }
+}

@@ -31,6 +31,12 @@ export const formatDecimal = (value, digits = 1) =>
 const dayFormat = new Intl.DateTimeFormat('id-ID', { weekday: 'short', day: 'numeric', month: 'numeric', timeZone: 'Asia/Jakarta' });
 export const formatDay = (isoDate) => dayFormat.format(new Date(`${isoDate}T12:00:00+07:00`));
 
+export const capitalize = (text) => (text ? text[0].toUpperCase() + text.slice(1) : '');
+
+// Teks wilayah BMKG "Pusat gempa berada di laut 46 km utara Ruteng" dipersingkat
+// menjadi "Laut 46 km utara Ruteng" untuk daftar dan popup.
+export const shortQuakeRegion = (text) => capitalize(String(text ?? '').replace(/^pusat gempa berada di\s+/i, '').trim());
+
 const relativeFormat = new Intl.RelativeTimeFormat('id-ID', { numeric: 'auto' });
 const UNITS = [
   ['day', 86_400],

@@ -47,7 +47,7 @@ export function createHazardLayer(hazard, opacity) {
 
 export function hazardLegend() {
   const rows = HAZARD_CLASSES.map(
-    (c) => `<div class="legend-row"><span class="swatch" style="background:rgb(${c.rgb.join(',')})"></span>${c.label}</div>`,
+    (c) => `<div class="legend-row"><span class="swatch" style="background:${c.color}"></span>${c.label}</div>`,
   ).join('');
-  return `${rows}<p class="legend-note">Indeks bahaya BNPB, resolusi 100 m. Area tanpa warna: indeks 0.</p>`;
+  return `${rows}<p class="legend-note">Resolusi 100 m. Tanpa warna: di luar zona bahaya.</p>`;
 }

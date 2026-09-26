@@ -1,0 +1,410 @@
+/* ---------- Detail cek risiko (menggantikan isi panel samping) ---------- */
+.detail-header {
+  display: flex;
+  flex: none;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 12px 16px 12px 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.detail-heading {
+  min-width: 0;
+  padding-top: 3px;
+}
+
+.detail-eyebrow {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.detail-title {
+  margin-top: 2px;
+  font-size: 20px;
+  font-weight: 750;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  outline: none;
+}
+
+.detail-place {
+  margin-top: 3px;
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+.detail-coords {
+  margin-top: 2px;
+  font: 12px/1.4 var(--mono);
+  color: var(--ink-3);
+}
+
+.detail-status {
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 650;
+  color: var(--primary);
+}
+
+.detail-status:empty {
+  display: none;
+}
+
+.detail-body {
+  padding: 16px 16px 24px;
+  transition: opacity 0.15s;
+}
+
+#detail-view.is-refreshing .detail-body {
+  opacity: 0.45;
+}
+
+/* ---------- Status 3 hari ---------- */
+.outlook {
+  display: flex;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid color-mix(in srgb, var(--outlook) 35%, white);
+  border-left: 4px solid var(--outlook);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--outlook) 9%, white);
+}
+
+.outlook-icon {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: var(--outlook-fg);
+  background: var(--outlook);
+}
+
+.outlook-icon .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.outlook-title {
+  font-size: 14.5px;
+  font-weight: 750;
+  line-height: 1.3;
+}
+
+.outlook-body {
+  margin-top: 2px;
+  font-size: 12.5px;
+  color: var(--ink-2);
+}
+
+.indication-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.indication-list li {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 8px;
+  font-size: 12.5px;
+  color: var(--ink-2);
+}
+
+.indication-list .level-pill {
+  justify-content: center;
+}
+
+/* ---------- Bagian ---------- */
+.detail-section {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.detail-section h2 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.detail-section h2 small {
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* ---------- Profil bahaya ---------- */
+.hazard-summary {
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+.hazard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hazard-row__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.hazard-name {
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.hazard-value {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+}
+
+.hazard-index {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Batang tipis, pangkal lurus dan ujung data membulat; garis putih di 1/3 dan
+   2/3 menandai batas kelas BNPB. */
+.meter {
+  position: relative;
+  display: block;
+  height: 8px;
+  overflow: hidden;
+  border-radius: 0 4px 4px 0;
+  background: var(--surface-3);
+}
+
+.meter-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.meter-tick {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--surface);
+}
+
+/* ---------- Prakiraan hujan ---------- */
+.rain-days {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.rain-day {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.rain-date {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-3);
+}
+
+.rain-mm {
+  font-size: 20px;
+  font-weight: 750;
+  letter-spacing: -0.01em;
+}
+
+.rain-mm small {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-3);
+}
+
+.rain-bar {
+  display: block;
+  height: 6px;
+  margin: 2px 0;
+  overflow: hidden;
+  border-radius: 0 3px 3px 0;
+  background: var(--surface-3);
+}
+
+.rain-bar span {
+  display: block;
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+  background: var(--rain);
+}
+
+.rain-cat {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+
+.rain-prob {
+  font-size: 11.5px;
+  color: var(--ink-3);
+}
+
+/* ---------- Sekitar lokasi ---------- */
+.nearby-group + .nearby-group {
+  margin-top: 12px;
+}
+
+.nearby-group h3 {
+  margin-bottom: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-3);
+}
+
+.nearby-row {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+}
+
+.nearby-icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: var(--ink-2);
+  background: var(--surface-2);
+}
+
+.nearby-text {
+  min-width: 0;
+}
+
+.nearby-title {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.nearby-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--ink-3);
+}
+
+.nearby-distance {
+  font-size: 15px;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.nearby-distance small {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--ink-3);
+}
+
+.detail-section .btn-block {
+  margin-top: 12px;
+}
+
+/* ---------- Saran ---------- */
+.tip-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tip-list li {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  gap: 8px;
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+.tip-list .icon {
+  margin-top: 1px;
+  color: var(--ok);
+}
+
+.detail-footer {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: var(--radius);
+  font-size: 11.5px;
+  color: var(--ink-3);
+  background: var(--surface-2);
+}
+
+/* ---------- Status muat & galat ---------- */
+.state-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  border-radius: var(--radius);
+  font-size: 13.5px;
+  color: var(--ink-2);
+  background: var(--surface-2);
+}
+
+.skeleton--banner {
+  height: 68px;
+  border-radius: var(--radius);
+}
+
+.skeleton--title {
+  width: 40%;
+  height: 12px;
+  margin: 24px 0 14px;
+}
+
+.skeleton--meter {
+  height: 30px;
+  margin: 10px 0;
+}
+
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.skeleton--card {
+  height: 100px;
+  border-radius: var(--radius);
+}

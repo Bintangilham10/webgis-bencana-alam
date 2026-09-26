@@ -1,18 +1,19 @@
 import { escapeHtml } from '../lib/format.js';
 
-// Panel dibangun dari daftar grup, jadi layer baru cukup didaftarkan di main.js.
-// Grup `exclusive` berupa pilihan tunggal (mis. peta rawan: satu bahaya sekaligus
-// supaya raster tidak saling menutupi).
-export function createLayerPanel({ map, container, legendElement, groups }) {
+// Tab Lapisan dibangun dari daftar grup, jadi layer baru cukup didaftarkan di
+// main.js. Grup biasa berupa sakelar; grup `exclusive` berupa pilihan tunggal
+// (chip) karena raster peta rawan saling menutupi bila dinyalakan bersamaan.
+// Legenda peta mengikuti layer yang aktif.
+export function createLayerPanel({ map, container, legend, groups }) {
   const active = new Set();
 
-  const renderLegend = () => {
-    const blocks = groups
-      .flatMap((group) => group.items)
-      .filter((item) => active.has(item) && item.legend)
-      .map((item) => `<div class="legend-block"><h3>${escapeHtml(item.label)}</h3>${item.legend()}</div>`);
-    legendElement.innerHTML = blocks.join('') || '<p class="muted">Tidak ada layer aktif.</p>';
-  };
+  const updateLegend = () =>
+    legend.setBlocks(
+      groups
+        .flatMap((group) => group.items)
+        .filter((item) => active.has(item) && item.legend)
+        .map((item) => ({ title: item.legendTitle ?? item.label, html: item.legend() })),
+    );
 
   const setActive = (item, on) => {
     if (on) {
@@ -24,43 +25,85 @@ export function createLayerPanel({ map, container, legendElement, groups }) {
     }
   };
 
-  for (const group of groups) {
-    const section = document.createElement('div');
-    section.className = 'layer-group';
-    section.innerHTML = `<h2>${escapeHtml(group.title)}${group.note ? ` <small>${escapeHtml(group.note)}</small>` : ''}</h2>`;
-
-    const options = group.exclusive
-      ? [{ label: 'Tidak ditampilkan', on: !group.items.some((item) => item.on) }, ...group.items]
-      : group.items;
-
-    for (const option of options) {
-      const label = document.createElement('label');
-      label.className = 'layer-toggle';
-      const input = document.createElement('input');
-      input.type = group.exclusive ? 'radio' : 'checkbox';
-      input.name = `layer-${group.id}`;
-      input.checked = Boolean(option.on);
+  function switchList(group) {
+    const list = document.createElement('ul');
+    list.className = 'switch-list';
+    for (const item of group.items) {
+      const row = document.createElement('li');
+      row.innerHTML = `
+        <label class="switch-row">
+          <span class="switch-symbol" aria-hidden="true">${item.symbol ?? ''}</span>
+          <span class="switch-text">
+            <span class="switch-label">${escapeHtml(item.label)}</span>
+            ${item.description ? `<span class="switch-desc">${escapeHtml(item.description)}</span>` : ''}
+          </span>
+          <input type="checkbox" role="switch" class="switch"${item.on ? ' checked' : ''} />
+        </label>`;
+      const input = row.querySelector('input');
       input.addEventListener('change', () => {
-        if (group.exclusive) group.items.forEach((item) => setActive(item, item === option));
-        else setActive(option, input.checked);
-        renderLegend();
+        setActive(item, input.checked);
+        updateLegend();
       });
-      label.append(input, document.createTextNode(option.label));
-      section.append(label);
-      if (option.on && option.layer) setActive(option, true);
+      if (item.on) setActive(item, true);
+      list.append(row);
     }
+    return list;
+  }
 
-    if (group.opacity !== undefined) {
-      const label = document.createElement('label');
-      label.className = 'opacity-control';
-      label.textContent = 'Transparansi';
-      const slider = document.createElement('input');
-      Object.assign(slider, { type: 'range', min: 0.2, max: 1, step: 0.05, value: group.opacity });
-      slider.addEventListener('input', () => group.items.forEach((item) => item.layer.setOpacity(Number(slider.value))));
-      label.append(slider);
-      section.append(label);
-    }
+  function choiceGroup(group) {
+    const wrap = document.createElement('div');
+    const options = [{ label: 'Tidak ada' }, ...group.items];
+    wrap.innerHTML = `
+      <div class="choice-chips" role="radiogroup" aria-label="${escapeHtml(group.title)}">
+        ${options
+          .map(
+            (option, index) => `
+              <label class="choice">
+                <input type="radio" name="layer-${group.id}" value="${index}"${index === 0 ? ' checked' : ''} />
+                <span>${escapeHtml(option.label)}</span>
+              </label>`,
+          )
+          .join('')}
+      </div>
+      ${
+        group.opacity === undefined
+          ? ''
+          : `<label class="range-row" hidden>
+               Transparansi
+               <input type="range" min="0.2" max="1" step="0.05" value="${group.opacity}" />
+               <output>${Math.round(group.opacity * 100)}%</output>
+             </label>`
+      }`;
+
+    const range = wrap.querySelector('.range-row');
+    wrap.querySelector('.choice-chips').addEventListener('change', (event) => {
+      const chosen = options[Number(event.target.value)];
+      const shown = group.items.includes(chosen);
+      group.items.forEach((item) => setActive(item, item === chosen));
+      if (range) range.hidden = !shown;
+      updateLegend();
+      // Warna peta rawan hanya bisa dibaca dengan legendanya.
+      if (shown) legend.setExpanded(true);
+    });
+    range?.querySelector('input').addEventListener('input', (event) => {
+      const value = Number(event.target.value);
+      group.items.forEach((item) => item.layer.setOpacity(value));
+      range.querySelector('output').textContent = `${Math.round(value * 100)}%`;
+    });
+    return wrap;
+  }
+
+  for (const group of groups) {
+    const section = document.createElement('section');
+    section.className = 'section';
+    section.innerHTML = `
+      <div class="section-head">
+        <h2 class="section-title">${escapeHtml(group.title)}</h2>
+        ${group.note ? `<span class="section-meta">${escapeHtml(group.note)}</span>` : ''}
+      </div>`;
+    section.append(group.exclusive ? choiceGroup(group) : switchList(group));
+    if (group.description) section.insertAdjacentHTML('beforeend', `<p class="section-note">${escapeHtml(group.description)}</p>`);
     container.append(section);
   }
-  renderLegend();
+  updateLegend();
 }

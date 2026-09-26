@@ -39,18 +39,28 @@ export function faultDisplayName(nama) {
   return /\s*fault$/i.test(nama) ? `Sesar ${nama.replace(/\s*fault$/i, '')}` : nama;
 }
 
+// Nama wilayah PuSGeN berbahasa Inggris.
+const REGION_NAMES = {
+  Java: 'Jawa',
+  Sumatra: 'Sumatra',
+  Sulawesi: 'Sulawesi',
+  Kalimantan: 'Kalimantan',
+  'NT-Banda': 'Nusa Tenggara–Banda',
+  'NMaluku-Papua': 'Maluku Utara–Papua',
+};
+
 function faultPopup(f) {
   return `
     <div class="popup">
       <h3>${escapeHtml(faultDisplayName(f.nama))}</h3>
-      <p class="muted">Segmen ${escapeHtml(f.segmen)} · ${escapeHtml(f.region)}</p>
-      <table class="popup-table">
-        <tr><th>Mekanisme</th><td>${faultMechanism(f.tipe)} <small>(${escapeHtml(f.tipe)})</small></td></tr>
-        <tr><th>Magnitudo maksimum</th><td>M ${decimal(f.mmax)}</td></tr>
-        <tr><th>Laju geser</th><td>${decimal(f.slip_rate_mm_per_year)} mm/tahun</td></tr>
-        <tr><th>Panjang</th><td>${decimal(f.panjang_km)} km</td></tr>
-      </table>
-      <p class="source">Sumber: PuSGeN 2024 via InaRISK BNPB</p>
+      <p class="popup-sub">Segmen ${escapeHtml(f.segmen)} · ${escapeHtml(REGION_NAMES[f.region] ?? f.region)}</p>
+      <dl class="popup-facts">
+        <dt>Mekanisme</dt><dd>${faultMechanism(f.tipe)} <span class="muted">(${escapeHtml(f.tipe)})</span></dd>
+        <dt>Magnitudo maks.</dt><dd>M ${decimal(f.mmax)}</dd>
+        <dt>Laju geser</dt><dd>${decimal(f.slip_rate_mm_per_year)} mm/tahun</dd>
+        <dt>Panjang</dt><dd>${decimal(f.panjang_km)} km</dd>
+      </dl>
+      <p class="popup-source">Sumber: PuSGeN 2024 via InaRISK BNPB</p>
     </div>`;
 }
 

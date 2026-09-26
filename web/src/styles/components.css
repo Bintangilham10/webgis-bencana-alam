@@ -1,0 +1,797 @@
+/* ---------- Bagian di panel ---------- */
+.section {
+  padding: 16px 0;
+}
+
+.section + .section {
+  border-top: 1px solid var(--line);
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.section > .section-title {
+  margin-bottom: 10px;
+}
+
+.section-meta {
+  font-size: 12px;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+.section-note,
+.panel-note {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--ink-3);
+}
+
+.panel-note {
+  margin-top: 0;
+}
+
+.empty-note,
+.list-note {
+  padding: 8px 0;
+  font-size: 13px;
+  color: var(--ink-3);
+}
+
+.list-note {
+  padding-bottom: 0;
+  font-size: 12px;
+}
+
+.prose {
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
+
+/* ---------- Kartu statistik ---------- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+/* Label dua baris supaya angka di ketiga kartu sejajar. */
+.stat-label {
+  min-height: 2.5em;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ink-2);
+}
+
+.stat-value {
+  font-size: 26px;
+  font-weight: 750;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.stat-sub {
+  font-size: 11.5px;
+  line-height: 1.3;
+  color: var(--ink-3);
+}
+
+/* ---------- Tombol ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 8px 14px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  font-size: 13.5px;
+  font-weight: 650;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.btn-primary {
+  color: #fff;
+  background: var(--primary);
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+}
+
+.btn-secondary {
+  color: var(--primary);
+  background: var(--surface);
+  border-color: var(--line-strong);
+}
+
+.btn-secondary:hover {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.btn-secondary[aria-pressed='true'] {
+  color: #fff;
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.icon-btn {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  color: var(--ink-2);
+  background: transparent;
+}
+
+.icon-btn:hover {
+  background: var(--surface-3);
+}
+
+.button-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+/* ---------- Ajakan cek risiko ---------- */
+.cta {
+  padding: 16px;
+  border: 1px solid #d3e3f0;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(160deg, #f4f8fc, #e8f1f8);
+}
+
+.cta-title {
+  font-size: 15px;
+  font-weight: 750;
+}
+
+.cta-text {
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+.cta .button-row {
+  margin-top: 14px;
+}
+
+.cta-hint {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--ink-3);
+}
+
+/* ---------- Daftar baris (gempa, gunung api) ---------- */
+.row-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  width: calc(100% + 16px);
+  margin: 0 -8px;
+  padding: 8px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  text-align: left;
+  background: transparent;
+}
+
+.list-row:hover {
+  background: var(--surface-2);
+}
+
+.list-row__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.list-row__title {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.3;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.list-row__meta {
+  font-size: 12px;
+  color: var(--ink-3);
+}
+
+/* Lencana magnitudo: warna kelas kedalaman, teks putih/gelap sesuai kontras. */
+.mag-badge {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 13.5px;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+  color: var(--pill-fg, #fff);
+  background: var(--pill-bg, var(--ink-3));
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.08);
+}
+
+.mag-badge--lg {
+  width: 46px;
+  height: 46px;
+  font-size: 15px;
+}
+
+.row-icon {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--surface-2);
+}
+
+.level-pill,
+.class-pill,
+.tsunami-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: nowrap;
+  color: var(--pill-fg, #fff);
+  background: var(--pill-bg, var(--ink-3));
+}
+
+.tsunami-pill {
+  color: #fff;
+  background: var(--danger);
+}
+
+.tsunami-pill .icon {
+  width: 13px;
+  height: 13px;
+}
+
+/* Segitiga gunung api: garis tepi gelap + isi warna level PVMBG. */
+.volcano-glyph {
+  position: relative;
+  flex: none;
+  width: 22px;
+  height: 19px;
+  background: var(--ink);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.volcano-glyph::after {
+  content: '';
+  position: absolute;
+  inset: 3px 3px 1.5px;
+  background: var(--level-color);
+  clip-path: polygon(50% 6%, 96% 100%, 4% 100%);
+}
+
+.volcano-glyph--sm {
+  width: 18px;
+  height: 16px;
+}
+
+/* ---------- Sakelar lapisan ---------- */
+.switch-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.switch-row {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  margin: 0 -8px;
+  padding: 9px 8px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.switch-row:hover {
+  background: var(--surface-2);
+}
+
+.switch-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.switch-label {
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.switch-desc {
+  font-size: 12px;
+  color: var(--ink-3);
+}
+
+.switch {
+  position: relative;
+  flex: none;
+  width: 40px;
+  height: 24px;
+  margin: 0;
+  border-radius: 999px;
+  background: var(--line-strong);
+  cursor: pointer;
+  appearance: none;
+  transition: background 0.15s;
+}
+
+.switch::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.25);
+  transition: transform 0.15s;
+}
+
+.switch:checked {
+  background: var(--primary);
+}
+
+.switch:checked::after {
+  transform: translateX(16px);
+}
+
+@media (forced-colors: active) {
+  .switch {
+    border: 1px solid CanvasText;
+  }
+
+  .switch:checked {
+    background: Highlight;
+  }
+}
+
+/* Simbol kecil di depan nama lapisan, sama dengan simbol di peta. */
+.sym {
+  display: block;
+  margin: auto;
+}
+
+.sym-circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--sym);
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--line-strong);
+}
+
+.sym-triangle {
+  width: 16px;
+  height: 14px;
+  background: var(--sym);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.sym-line {
+  width: 22px;
+  border-top: 2px solid var(--sym);
+}
+
+.sym-line--thick {
+  border-top-width: 3px;
+}
+
+.sym-line--thin {
+  border-top-width: 1px;
+}
+
+/* ---------- Pilihan tunggal berbentuk chip ---------- */
+.choice-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.choice {
+  position: relative;
+}
+
+.choice input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.choice span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 6px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-2);
+  background: var(--surface);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.choice span:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.choice input:checked + span {
+  color: #fff;
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.choice input:focus-visible + span {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.range-row {
+  display: grid;
+  grid-template-columns: auto 1fr 3em;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  font-size: 12.5px;
+  color: var(--ink-2);
+}
+
+.range-row[hidden] {
+  display: none;
+}
+
+.range-row input {
+  width: 100%;
+  accent-color: var(--primary);
+}
+
+.range-row output {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  color: var(--ink-3);
+}
+
+/* ---------- Pencarian di bilah atas ---------- */
+.search {
+  position: relative;
+  min-width: 0;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  padding: 0 4px 0 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface-2);
+  transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
+}
+
+.search-form:focus-within {
+  border-color: var(--primary);
+  background: var(--surface);
+  box-shadow: 0 0 0 3px var(--primary-soft);
+}
+
+.search-form > .icon {
+  color: var(--ink-3);
+}
+
+.search-form input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0 10px;
+  border: 0;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+.search-form input::placeholder {
+  color: var(--ink-3);
+}
+
+.search-submit {
+  height: 34px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 650;
+  color: #fff;
+  background: var(--primary);
+}
+
+.search-submit:hover {
+  background: var(--primary-hover);
+}
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  left: 0;
+  max-height: min(60vh, 420px);
+  overflow-y: auto;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-3);
+}
+
+.search-result {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  text-align: left;
+  background: transparent;
+}
+
+.search-result:hover,
+.search-result:focus-visible {
+  outline: none;
+  background: var(--surface-2);
+}
+
+.search-result:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--primary);
+}
+
+.search-result__icon {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--ink-2);
+  background: var(--surface-3);
+}
+
+.search-result__icon .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.search-result__text {
+  min-width: 0;
+}
+
+.search-result strong {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 650;
+}
+
+.search-result small {
+  display: block;
+  overflow: hidden;
+  font-size: 12px;
+  color: var(--ink-3);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.search-note {
+  padding: 8px 10px;
+  font-size: 12.5px;
+  color: var(--ink-3);
+}
+
+.search-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0 10px 8px;
+}
+
+.search-example {
+  padding: 5px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-2);
+  background: var(--surface);
+}
+
+.search-example:hover,
+.search-example:focus-visible {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* ---------- Tab Info ---------- */
+.emergency-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.emergency {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  height: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--ink);
+  text-decoration: none;
+  background: var(--surface);
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.emergency:hover {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.emergency strong {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  font-weight: 750;
+  color: var(--primary);
+}
+
+.emergency strong .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.emergency span {
+  font-size: 12px;
+  line-height: 1.3;
+  color: var(--ink-2);
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  counter-reset: step;
+}
+
+.steps li {
+  position: relative;
+  padding-left: 32px;
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+.steps li::before {
+  content: counter(step);
+  counter-increment: step;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 11.5px;
+  font-weight: 750;
+  color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.notice {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid #f1dca4;
+  border-radius: var(--radius);
+  font-size: 12.5px;
+  color: #5f4300;
+  background: #fff7e3;
+}
+
+.notice .icon {
+  margin-top: 1px;
+  color: #b7791f;
+}
+
+.source-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.source-list li {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.source-list li:last-child {
+  border-bottom: 0;
+}
+
+.source-list a {
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.source-list a:hover {
+  text-decoration: underline;
+}
+
+.source-list span {
+  font-size: 12px;
+  color: var(--ink-3);
+}

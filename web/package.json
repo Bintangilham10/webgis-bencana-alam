@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "bootstrap": "^5.3.8",
+    "@fontsource-variable/plus-jakarta-sans": "^5.3.0",
     "esri-leaflet": "^3.0.19",
     "leaflet": "^1.9.4",
     "proj4": "^2.22.0"

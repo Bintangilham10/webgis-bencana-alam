@@ -1,21 +1,34 @@
 import L from 'leaflet';
 import { getJson } from '../lib/api.js';
-import { escapeHtml, formatDateTime, timeAgo } from '../lib/format.js';
-import { DEPTH_CLASSES, depthColor, magnitudeRadius } from '../lib/symbology.js';
+import { escapeHtml, formatDateTime, formatDecimal, shortQuakeRegion, timeAgo } from '../lib/format.js';
+import { icons } from '../lib/icons.js';
+import { DEPTH_CLASSES, depthClass, magnitudeRadius, pillStyle } from '../lib/symbology.js';
 
 export function earthquakePopup(p) {
-  const potensi = p.tsunami
-    ? '<p class="alert-tsunami">⚠ Berpotensi tsunami — ikuti arahan BMKG dan BPBD</p>'
-    : p.potensi ? `<p class="muted">${escapeHtml(p.potensi)}</p>` : '';
+  const depth = depthClass(p.depth_class);
+  const magnitude = formatDecimal(p.magnitude);
+  const tsunami = p.tsunami
+    ? `<p class="popup-alert">${icons.alert}<span>Berpotensi tsunami — segera ikuti arahan BMKG dan BPBD.</span></p>`
+    : '';
   return `
     <div class="popup">
-      <h3>M ${p.magnitude.toFixed(1)} · kedalaman ${p.depth_km} km (${p.depth_class})</h3>
-      <p class="muted">${formatDateTime(p.occurred_at)}, ${timeAgo(p.occurred_at)}</p>
-      <p>${escapeHtml(p.wilayah)}</p>
-      ${potensi}
-      ${p.dirasakan ? `<p><strong>Dirasakan (skala MMI):</strong> ${escapeHtml(p.dirasakan)}</p>` : ''}
-      ${p.shakemap ? `<p><a href="${escapeHtml(p.shakemap)}" target="_blank" rel="noopener">Peta guncangan (shakemap) BMKG</a></p>` : ''}
-      <p class="source">Sumber: ${escapeHtml(p.source)}</p>
+      <div class="popup-head">
+        <span class="mag-badge mag-badge--lg" style="${pillStyle(depth)}">${magnitude}</span>
+        <div class="popup-heading">
+          <h3>Gempa M ${magnitude}</h3>
+          <p class="popup-sub">${timeAgo(p.occurred_at)}</p>
+        </div>
+      </div>
+      <p class="popup-place">${escapeHtml(shortQuakeRegion(p.wilayah))}</p>
+      ${tsunami}
+      <dl class="popup-facts">
+        <dt>Waktu</dt><dd>${formatDateTime(p.occurred_at)}</dd>
+        <dt>Kedalaman</dt><dd>${p.depth_km} km (${escapeHtml(p.depth_class)})</dd>
+        ${p.dirasakan ? `<dt>Dirasakan</dt><dd>${escapeHtml(p.dirasakan)} <span class="muted">skala MMI</span></dd>` : ''}
+        ${!p.tsunami && p.potensi ? `<dt>Keterangan</dt><dd>${escapeHtml(p.potensi)}</dd>` : ''}
+      </dl>
+      ${p.shakemap ? `<a class="popup-link" href="${escapeHtml(p.shakemap)}" target="_blank" rel="noopener">Peta guncangan BMKG${icons.external}</a>` : ''}
+      <p class="popup-source">Sumber: ${escapeHtml(p.source)}</p>
     </div>`;
 }
 
@@ -30,20 +43,21 @@ export function createEarthquakeLayer(map) {
     group.clearLayers();
     markers.clear();
 
-    // Gempa besar digambar lebih dulu supaya gempa kecil di atasnya tetap bisa diklik.
+    // Gempa besar digambar lebih dulu supaya gempa kecil di atasnya tetap bisa
+    // diklik; cincin putih memisahkan lingkaran yang bertumpuk.
     const byMagnitude = [...collection.features].sort((a, b) => b.properties.magnitude - a.properties.magnitude);
     for (const { geometry, properties: p } of byMagnitude) {
       const [lon, lat] = geometry.coordinates;
       const marker = L.circleMarker([lat, lon], {
         pane: 'quakes',
         radius: magnitudeRadius(p.magnitude),
-        color: '#5c1a0b',
-        weight: 1,
-        fillColor: depthColor(p.depth_class),
-        fillOpacity: 0.8,
+        color: '#fff',
+        weight: 1.5,
+        fillColor: depthClass(p.depth_class).color,
+        fillOpacity: 0.85,
       })
-        .bindPopup(earthquakePopup(p), { maxWidth: 300 })
-        .bindTooltip(`M ${p.magnitude.toFixed(1)} · ${timeAgo(p.occurred_at)}`, { direction: 'top' });
+        .bindPopup(earthquakePopup(p), { maxWidth: 320 })
+        .bindTooltip(`M ${formatDecimal(p.magnitude)} · ${timeAgo(p.occurred_at)}`, { direction: 'top' });
       markers.set(p.id, marker.addTo(group));
     }
 

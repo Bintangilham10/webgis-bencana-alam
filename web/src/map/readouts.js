@@ -1,3 +1,4 @@
+import L from 'leaflet';
 import proj4 from 'proj4';
 import { formatNumber } from '../lib/format.js';
 
@@ -9,22 +10,6 @@ export function toUtm(lat, lon) {
   const utm = `+proj=utm +zone=${zone}${south ? ' +south' : ''} +datum=WGS84 +units=m +no_defs`;
   const [easting, northing] = proj4('EPSG:4326', utm, [lon, lat]);
   return { zone: `${zone}${south ? 'S' : 'N'}`, easting, northing };
-}
-
-export function showCoordinates(map, element) {
-  const update = (latlng) => {
-    const { lat, lng } = latlng;
-    const utm = toUtm(lat, lng);
-    const mercator = map.options.crs.project(latlng);
-    element.textContent =
-      `WGS84 ${lat.toFixed(5)}, ${lng.toFixed(5)} | ` +
-      `UTM ${utm.zone} ${Math.round(utm.easting)} E ${Math.round(utm.northing)} N | ` +
-      `EPSG:3857 ${Math.round(mercator.x)}, ${Math.round(mercator.y)}`;
-  };
-  map.on('mousemove', (e) => update(e.latlng));
-  // Di layar sentuh tidak ada kursor, jadi tampilkan koordinat pusat peta.
-  map.on('moveend', () => update(map.getCenter()));
-  update(map.getCenter());
 }
 
 // Klasifikasi skala peta dari Modul 2 (Pertemuan 2).
@@ -45,13 +30,47 @@ export function scaleDenominator(lat, zoom) {
   return (METERS_PER_PIXEL_Z0 * Math.cos((lat * Math.PI) / 180)) / 2 ** zoom / OGC_PIXEL_SIZE_M;
 }
 
-export function showScale(map, element) {
-  const update = () => {
-    const denominator = scaleDenominator(map.getCenter().lat, map.getZoom());
-    const rounded = Number(denominator.toPrecision(2));
-    const { label } = SCALE_CLASSES.find((c) => denominator <= c.max);
-    element.textContent = `Skala ≈ 1:${formatNumber(rounded)} (${label})`;
-  };
-  map.on('zoomend moveend', update);
-  update();
-}
+// Kotak kecil di kanan bawah peta: koordinat kursor (atau pusat peta di layar
+// sentuh) dan angka skala 1:n beserta klasnya. Koordinat memakai titik desimal
+// (konvensi GIS) supaya tidak rancu dengan koma pemisah lintang/bujur.
+export const ReadoutControl = L.Control.extend({
+  options: { position: 'bottomright' },
+
+  onAdd(map) {
+    const el = L.DomUtil.create('div', 'map-readout');
+    el.innerHTML = '<span class="readout-geo"></span><span class="readout-proj"></span><span class="readout-scale"></span>';
+    const geo = el.querySelector('.readout-geo');
+    const proj = el.querySelector('.readout-proj');
+    const scale = el.querySelector('.readout-scale');
+
+    const showCoordinates = (latlng) => {
+      const { lat, lng } = latlng;
+      const utm = toUtm(lat, lng);
+      const mercator = map.options.crs.project(latlng);
+      geo.textContent = `WGS84 ${lat.toFixed(5)}, ${lng.toFixed(5)}`;
+      proj.textContent =
+        `UTM ${utm.zone} ${Math.round(utm.easting)} E ${Math.round(utm.northing)} N · ` +
+        `EPSG:3857 ${Math.round(mercator.x)}, ${Math.round(mercator.y)}`;
+    };
+    const showScale = () => {
+      const denominator = scaleDenominator(map.getCenter().lat, map.getZoom());
+      const { label } = SCALE_CLASSES.find((c) => denominator <= c.max);
+      scale.textContent = `Skala ≈ 1:${formatNumber(Number(denominator.toPrecision(2)))} (${label})`;
+    };
+
+    this._onMove = (event) => showCoordinates(event.latlng);
+    this._onMoveEnd = () => {
+      showCoordinates(map.getCenter());
+      showScale();
+    };
+    map.on('mousemove', this._onMove);
+    map.on('moveend zoomend', this._onMoveEnd);
+    this._onMoveEnd();
+    return el;
+  },
+
+  onRemove(map) {
+    map.off('mousemove', this._onMove);
+    map.off('moveend zoomend', this._onMoveEnd);
+  },
+});

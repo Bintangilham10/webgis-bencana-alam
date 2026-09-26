@@ -9,11 +9,14 @@ import { ANALYSIS_COLOR, FAULT_COLOR, VOLCANO_LEVELS } from '../lib/symbology.js
 export function createRiskCheck({ map, card, onPickingChange, viewPadding = () => ({}) }) {
   const layer = L.featureGroup().addTo(map);
   const hint = L.DomUtil.create('div', 'map-hint', map.getContainer());
-  hint.textContent = 'Klik titik di peta untuk cek risiko · Esc untuk batal';
+  hint.textContent = window.matchMedia('(pointer: coarse)').matches
+    ? 'Ketuk titik di peta untuk cek risiko'
+    : 'Klik titik di peta untuk cek risiko · Esc untuk batal';
   hint.hidden = true;
 
   let picking = false;
   let controller = null;
+  let lastRequest = null;
 
   function setPicking(active) {
     picking = active;
@@ -22,9 +25,12 @@ export function createRiskCheck({ map, card, onPickingChange, viewPadding = () =
     onPickingChange?.(active);
   }
 
+  // Label jarak ditempel di ujung garis (sesar/gunung api), bukan di tengahnya:
+  // dua garis pendek dari titik yang sama membuat label di tengah bertumpuk.
   function link(from, to, color, text) {
-    L.polyline([from, to], { pane: 'analysis', color, weight: 2, dashArray: '6 6', interactive: false })
-      .bindTooltip(text, { permanent: true, direction: 'center', className: 'distance-label' })
+    L.polyline([from, to], { pane: 'analysis', color, weight: 2, dashArray: '6 6', interactive: false }).addTo(layer);
+    L.circleMarker(to, { pane: 'analysis', radius: 4, color: '#fff', weight: 2, fillColor: color, fillOpacity: 1, interactive: false })
+      .bindTooltip(text, { permanent: true, direction: 'top', offset: [0, -6], className: 'distance-label' })
       .addTo(layer);
   }
 
@@ -51,6 +57,7 @@ export function createRiskCheck({ map, card, onPickingChange, viewPadding = () =
   }
 
   async function check(latlng, { label, accuracyM } = {}) {
+    lastRequest = [latlng, { label, accuracyM }];
     setPicking(false);
     // Hanya hasil permintaan terakhir yang ditampilkan.
     controller?.abort();
@@ -78,6 +85,7 @@ export function createRiskCheck({ map, card, onPickingChange, viewPadding = () =
 
   return {
     check,
+    retry: () => lastRequest && check(...lastRequest),
     togglePicking: () => setPicking(!picking),
     fitToResult: () => {
       if (layer.getLayers().length) map.fitBounds(layer.getBounds(), { maxZoom: 13, ...viewPadding() });

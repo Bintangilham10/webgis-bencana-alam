@@ -2,7 +2,8 @@
 <html lang="id">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
     <title>SIGAP Bencana — Peta Peringatan Dini dan Mitigasi</title>
     <meta
       name="description"
@@ -10,74 +11,178 @@
     />
     <link
       rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3 30 28H2z' fill='%23f08c00'/%3E%3Cpath d='M16 12v8M16 23v2' stroke='%230b3d5c' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 4.5 28.5 26.5h-25z' fill='%23f08c00' stroke='%23f08c00' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M16 12.5v6.5' stroke='%230b3d5c' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='22.8' r='1.8' fill='%230b3d5c'/%3E%3C/svg%3E"
     />
   </head>
   <body>
-    <header class="app-header">
-      <button id="panel-toggle" class="panel-toggle" type="button" aria-controls="panel" aria-expanded="false">
-        ☰<span class="visually-hidden"> Tampilkan panel</span>
-      </button>
-      <div class="brand">
-        <strong>SIGAP Bencana</strong>
-        <span>Peringatan dini &amp; mitigasi bencana alam Indonesia</span>
-      </div>
-      <div id="sync-status" class="sync-status" aria-live="polite">Memuat data…</div>
+    <a class="skip-link" href="#sidebar">Lewati ke panel informasi</a>
+
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="SIGAP Bencana — muat ulang peta">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 4.5 28.5 26.5h-25z" fill="#f08c00" stroke="#f08c00" stroke-width="3" stroke-linejoin="round" />
+          <path d="M16 12.5v6.5" stroke="#0b3d5c" stroke-width="3" stroke-linecap="round" />
+          <circle cx="16" cy="22.8" r="1.8" fill="#0b3d5c" />
+        </svg>
+        <span class="brand-text">
+          <strong>SIGAP Bencana</strong>
+          <small>Peringatan dini &amp; mitigasi bencana Indonesia</small>
+        </span>
+      </a>
+      <div id="search" class="search"></div>
+      <div id="freshness" class="freshness" role="status" aria-live="polite"></div>
     </header>
 
-    <div class="app-body">
-      <aside id="panel" class="panel" aria-label="Panel layer dan legenda">
-        <section>
-          <h2>Ringkasan</h2>
-          <div class="stats">
-            <div class="stat"><span id="stat-quakes-24h">–</span><small>Gempa 24 jam</small></div>
-            <div class="stat"><span id="stat-quakes-m5">–</span><small>Gempa M≥5, 7 hari</small></div>
-            <div class="stat"><span id="stat-volcanoes">–</span><small>Gunung api ≥ Siaga</small></div>
+    <div class="app">
+      <aside id="sidebar" class="sidebar" aria-label="Panel informasi" tabindex="-1">
+        <button id="sheet-handle" class="sheet-handle" type="button" aria-controls="sidebar" aria-expanded="false">
+          <span class="sheet-grip" aria-hidden="true"></span>
+          <span class="visually-hidden">Perluas panel</span>
+        </button>
+
+        <div id="main-view" class="view">
+          <div class="tabs" role="tablist" aria-label="Isi panel">
+            <button id="tab-ikhtisar" class="tab" type="button" role="tab" aria-selected="true" aria-controls="panel-ikhtisar" data-icon="activity">
+              Ikhtisar
+            </button>
+            <button id="tab-lapisan" class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-lapisan" tabindex="-1" data-icon="layers">
+              Lapisan
+            </button>
+            <button id="tab-info" class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-info" tabindex="-1" data-icon="info">
+              Info
+            </button>
           </div>
-        </section>
 
-        <section class="risk-hint">
-          <h2>Cek risiko lokasi</h2>
-          <p>
-            Cari tempat di kotak pencarian peta, tekan tombol lokasi saya, atau tombol pin lalu klik peta
-            (pintasan: klik kanan / tekan lama) untuk melihat profil risiko suatu titik.
-          </p>
-        </section>
+          <div id="main-scroll" class="view-scroll">
+            <!-- Ikhtisar -->
+            <section id="panel-ikhtisar" class="tabpanel" role="tabpanel" aria-labelledby="tab-ikhtisar" tabindex="0">
+              <div class="section">
+                <div class="section-head">
+                  <h2 class="section-title">Situasi terkini</h2>
+                  <span class="section-meta">Seluruh Indonesia</span>
+                </div>
+                <div class="stats">
+                  <div class="stat">
+                    <span class="stat-label">Gempa 24 jam</span>
+                    <span class="stat-value" id="stat-quakes-24h">–</span>
+                    <span class="stat-sub" id="stat-quakes-24h-sub">&nbsp;</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Gempa M ≥ 5</span>
+                    <span class="stat-value" id="stat-quakes-m5">–</span>
+                    <span class="stat-sub">7 hari terakhir</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Gunung api ≥ Siaga</span>
+                    <span class="stat-value" id="stat-volcanoes">–</span>
+                    <span class="stat-sub" id="stat-volcanoes-sub">&nbsp;</span>
+                  </div>
+                </div>
+              </div>
 
-        <section>
-          <h2>Gempa terkini</h2>
-          <ol id="quake-list" class="quake-list"></ol>
-        </section>
+              <div class="section">
+                <div class="cta">
+                  <h2 class="cta-title">Cek risiko lokasi</h2>
+                  <p class="cta-text">Lihat tingkat bahaya, prakiraan hujan, serta jarak ke sesar aktif dan gunung api di titik mana pun.</p>
+                  <div class="button-row">
+                    <button type="button" class="btn btn-primary" data-action="locate" data-icon="locate">Lokasi saya</button>
+                    <button type="button" class="btn btn-secondary" data-action="pick" data-icon="pin" aria-pressed="false">Pilih di peta</button>
+                  </div>
+                  <p class="cta-hint">Bisa juga lewat kotak pencarian di atas, atau klik kanan / tekan lama di peta.</p>
+                </div>
+              </div>
 
-        <section id="layer-controls"></section>
+              <div class="section">
+                <div class="section-head">
+                  <h2 class="section-title">Gunung api berstatus tinggi</h2>
+                  <span class="section-meta">PVMBG</span>
+                </div>
+                <ul id="volcano-alerts" class="row-list" aria-busy="true">
+                  <li class="skeleton skeleton--row"></li>
+                </ul>
+              </div>
 
-        <section>
-          <h2>Legenda</h2>
-          <div id="legend" class="legend"></div>
-        </section>
+              <div class="section">
+                <div class="section-head">
+                  <h2 class="section-title">Gempa terkini</h2>
+                  <span class="section-meta">BMKG · 7 hari</span>
+                </div>
+                <ol id="quake-list" class="row-list" aria-busy="true">
+                  <li class="skeleton skeleton--row"></li>
+                  <li class="skeleton skeleton--row"></li>
+                  <li class="skeleton skeleton--row"></li>
+                </ol>
+              </div>
+            </section>
 
-        <section class="disclaimer">
-          <p>
-            Informasi ini bukan peringatan resmi. Untuk keputusan keselamatan, ikuti
-            <a href="https://www.bmkg.go.id/" target="_blank" rel="noopener">BMKG</a>,
-            <a href="https://magma.esdm.go.id/" target="_blank" rel="noopener">MAGMA/PVMBG</a>, dan BNPB/BPBD setempat.
-          </p>
-          <p>
-            Sumber data: BMKG (gempa), BNPB InaRISK (indeks bahaya), PVMBG MAGMA (gunung api), PuSGeN 2024 (sesar aktif),
-            Bird 2003 (batas lempeng), Kepmendagri 2025 (batas wilayah), © OpenStreetMap contributors.
-          </p>
-        </section>
+            <!-- Lapisan -->
+            <section id="panel-lapisan" class="tabpanel" role="tabpanel" aria-labelledby="tab-lapisan" tabindex="0" hidden>
+              <div id="layer-controls"></div>
+              <p class="panel-note">Peta dasar (abu-abu, citra satelit, relief, dll.) diganti lewat tombol lapisan di kanan peta.</p>
+            </section>
+
+            <!-- Info -->
+            <section id="panel-info" class="tabpanel" role="tabpanel" aria-labelledby="tab-info" tabindex="0" hidden>
+              <div class="section">
+                <h2 class="section-title">Nomor darurat</h2>
+                <ul class="emergency-list">
+                  <li><a class="emergency" href="tel:112"><strong data-icon="phone">112</strong><span>Panggilan darurat terpadu</span></a></li>
+                  <li><a class="emergency" href="tel:117"><strong data-icon="phone">117</strong><span>BNPB (informasi bencana)</span></a></li>
+                  <li><a class="emergency" href="tel:115"><strong data-icon="phone">115</strong><span>Basarnas (pencarian &amp; pertolongan)</span></a></li>
+                  <li><a class="emergency" href="tel:119"><strong data-icon="phone">119</strong><span>Ambulans (SPGDT)</span></a></li>
+                  <li><a class="emergency" href="tel:113"><strong data-icon="phone">113</strong><span>Pemadam kebakaran</span></a></li>
+                  <li><a class="emergency" href="tel:110"><strong data-icon="phone">110</strong><span>Polisi</span></a></li>
+                </ul>
+              </div>
+
+              <div class="section">
+                <h2 class="section-title">Cara memakai</h2>
+                <ol class="steps">
+                  <li>Cari tempat di kotak pencarian atau tekan <strong>Lokasi saya</strong>.</li>
+                  <li>Baca profil risiko: status 3 hari ke depan, tingkat bahaya, dan jarak ke sesar serta gunung api.</li>
+                  <li>Nyalakan peta rawan banjir, longsor, atau bahaya lain di tab <strong>Lapisan</strong>.</li>
+                </ol>
+              </div>
+
+              <div class="section">
+                <h2 class="section-title">Tentang SIGAP Bencana</h2>
+                <p class="prose">
+                  SIGAP Bencana menggabungkan data terbuka BMKG, BNPB, PVMBG, dan PuSGeN dalam satu peta untuk membantu warga
+                  memahami risiko bencana di lokasinya. Dibuat sebagai Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web,
+                  Telkom University.
+                </p>
+                <p class="notice">
+                  <span data-icon="alert"></span>
+                  <span>
+                    Informasi di sini <strong>bukan peringatan resmi</strong>. Untuk keputusan keselamatan, ikuti
+                    <a href="https://www.bmkg.go.id/" target="_blank" rel="noopener">BMKG</a>,
+                    <a href="https://magma.esdm.go.id/" target="_blank" rel="noopener">MAGMA/PVMBG</a>, dan BNPB/BPBD setempat.
+                  </span>
+                </p>
+              </div>
+
+              <div class="section">
+                <h2 class="section-title">Sumber data</h2>
+                <ul class="source-list">
+                  <li><a href="https://data.bmkg.go.id/" target="_blank" rel="noopener">BMKG</a><span>Gempa bumi, diperbarui tiap menit</span></li>
+                  <li><a href="https://inarisk.bnpb.go.id/" target="_blank" rel="noopener">InaRISK BNPB</a><span>Indeks bahaya lima jenis bencana (100 m)</span></li>
+                  <li><a href="https://magma.esdm.go.id/" target="_blank" rel="noopener">PVMBG — MAGMA Indonesia</a><span>Tingkat aktivitas 69 gunung api</span></li>
+                  <li><a href="https://inarisk.bnpb.go.id/" target="_blank" rel="noopener">PuSGeN 2024</a><span>Segmen sesar aktif (via InaRISK)</span></li>
+                  <li><a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a><span>Prakiraan hujan dan elevasi · CC BY 4.0</span></li>
+                  <li><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap / Nominatim</a><span>Pencarian tempat · ODbL</span></li>
+                  <li><a href="https://github.com/fraxen/tectonicplates" target="_blank" rel="noopener">Bird (2003) PB2002</a><span>Batas lempeng tektonik · ODC-By</span></li>
+                  <li><a href="https://github.com/cahyadsn/wilayah_boundaries" target="_blank" rel="noopener">Kepmendagri 2025</a><span>Batas provinsi dan kabupaten/kota · MIT</span></li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div id="detail-view" class="view" hidden></div>
       </aside>
 
       <main id="map" aria-label="Peta interaktif"></main>
-
-      <section id="risk-card" class="risk-card" aria-label="Profil risiko lokasi" aria-live="polite" hidden></section>
     </div>
-
-    <footer class="status-bar">
-      <span id="coordinates">Arahkan kursor ke peta untuk melihat koordinat</span>
-      <span id="scale-readout"></span>
-    </footer>
 
     <script type="module" src="/src/main.js"></script>
   </body>
