@@ -7,14 +7,21 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
 
 ## Fitur saat ini
 
-- **Peta dasar:** abu-abu netral, kemanusiaan (HOT), OpenStreetMap, relief (OpenTopoMap), dan citra satelit (Esri).
-- **Elemen kartografi:** legenda dinamis, skala batang, arah utara, angka skala 1:n beserta klasifikasinya, dan koordinat kursor dalam WGS84, UTM, dan EPSG:3857.
+- **Antarmuka peta dominan:**
+  - pencarian di bilah atas;
+  - panel samping bertab (Ikhtisar, Lapisan, Info) yang menjadi lembar bawah (*bottom sheet*) di HP;
+  - bilah alat seragam di kanan peta (zoom, seluruh Indonesia, lokasi saya, pilih titik, peta dasar);
+  - indikator kesegaran data.
+  
+  Tab Info memuat nomor darurat (112, 117, 115, 119, 113, 110). Tanpa framework CSS; font Plus Jakarta Sans dimuat mandiri (±27 KB).
+- **Peta dasar:** abu-abu netral, kemanusiaan (HOT), OpenStreetMap, relief (OpenTopoMap), dan citra satelit (Esri), dipilih lewat menu bergambar.
+- **Elemen kartografi:** legenda dinamis yang bisa dilipat, skala batang, arah utara, angka skala 1:n beserta klasifikasinya, dan koordinat kursor dalam WGS84, UTM, dan EPSG:3857.
 - **Gempa BMKG:** disinkronkan tiap 60 detik. Simbol menunjukkan magnitudo dan kelas kedalaman, dengan penanda potensi tsunami dan tautan shakemap.
 - **Status gunung api:** 69 gunung api dari MAGMA/PVMBG, disinkronkan tiap 30 menit.
 - **Peta rawan InaRISK BNPB:** gempa bumi, cuaca ekstrem, banjir, tanah longsor, dan gunung api, masing-masing dalam 3 kelas bahaya.
 - **Data geologi dan wilayah:** sesar aktif PuSGeN 2024, batas lempeng tektonik, dan batas 514 kabupaten/kota (Kepmendagri 2025).
 - **Pencarian lokasi:** nama kab/kota dicari di database sendiri, tempat lain lewat Nominatim OpenStreetMap. Pencarian berjalan saat Enter ditekan, sesuai kebijakan Nominatim.
-- **Cek risiko lokasi:** pilih titik dengan pencarian, tombol "lokasi saya", mode pilih titik, atau klik kanan/tekan lama di peta. Kartu profil menampilkan:
+- **Cek risiko lokasi:** pilih titik dengan pencarian, tombol "lokasi saya", mode pilih titik, atau klik kanan/tekan lama di peta. Profil tampil di panel samping (peta tidak tertutup) dan dibuka dengan satu status 3 hari ke depan (Normal/Waspada/Siaga/Awas). Isinya:
   - indeks lima bahaya InaRISK dengan kelas BNPB;
   - indikasi peringatan 3 hari (hujan × kelas bahaya, aturan awal v0 di `server/src/config/rules.json`);
   - prakiraan hujan dan elevasi;
