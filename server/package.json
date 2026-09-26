@@ -1,0 +1,23 @@
+{
+  "name": "sigap-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "API dan penjadwal sinkronisasi data SIGAP Bencana",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "migrate": "node db/migrate.js",
+    "seed": "node scripts/seed.js",
+    "build:plates": "node scripts/build-plates.js",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "dependencies": {
+    "compression": "^1.8.2",
+    "express": "^5.2.1",
+    "pg": "^8.23.0"
+  }
+}
