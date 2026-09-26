@@ -1,0 +1,31 @@
+{
+  "version": "v0-baseline",
+  "description": "Ambang awal sebelum dikalibrasi dengan hindcast (RQ1). Kategori hujan mengikuti BMKG (mm/hari); kelas indeks bahaya mengikuti BNPB (nilai dibulatkan 3 desimal).",
+  "hazardClasses": [
+    { "id": "rendah", "label": "Rendah", "max": 0.333 },
+    { "id": "sedang", "label": "Sedang", "max": 0.666 },
+    { "id": "tinggi", "label": "Tinggi", "max": 1 }
+  ],
+  "rainCategories": [
+    { "id": "ringan", "label": "Hujan ringan", "min": 0.5 },
+    { "id": "sedang", "label": "Hujan sedang", "min": 20 },
+    { "id": "lebat", "label": "Hujan lebat", "min": 50 },
+    { "id": "sangat_lebat", "label": "Hujan sangat lebat", "min": 100 },
+    { "id": "ekstrem", "label": "Hujan ekstrem", "min": 150 }
+  ],
+  "warningLevels": ["Normal", "Waspada", "Siaga", "Awas"],
+  "rainHazardMatrix": {
+    "description": "Level peringatan banjir dan tanah longsor. Baris = kategori hujan, kolom = kelas indeks bahaya [rendah, sedang, tinggi]. Hujan di bawah 'lebat' atau lokasi di luar zona bahaya selalu Normal.",
+    "hazards": ["banjir", "longsor"],
+    "levels": {
+      "lebat": [0, 1, 1],
+      "sangat_lebat": [1, 1, 2],
+      "ekstrem": [1, 2, 3]
+    }
+  },
+  "landslideAntecedentRain": {
+    "description": "Akumulasi hujan beberapa hari memicu longsor walau hujan harian tidak lebat: bila tercapai, kategori hujan untuk longsor minimal 'lebat'.",
+    "days": 3,
+    "minTotalMm": 100
+  }
+}

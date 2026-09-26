@@ -1,7 +1,8 @@
 // Sengaja terpisah dari recorder/: recorder berjalan sendiri di GitHub Actions
 // dan tidak boleh ikut rusak karena perubahan di server.
-// BMKG menolak User-Agent yang terlalu polos, jadi identitas selalu dikirim.
-const USER_AGENT = 'SIGAP-Bencana/0.1 (WebGIS peringatan dini, riset akademik)';
+// BMKG menolak User-Agent yang terlalu polos, dan kebijakan Nominatim meminta
+// identitas aplikasi yang bisa dihubungi, jadi identitas + URL repo selalu dikirim.
+const USER_AGENT = 'SIGAP-Bencana/0.1 (+https://github.com/Bintangilham10/webgis-bencana-alam)';
 
 export class HttpError extends Error {
   constructor(url, status) {
