@@ -7,13 +7,22 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
 
 ## Fitur saat ini
 
-- **Antarmuka peta dominan:**
-  - pencarian di bilah atas;
-  - panel samping bertab (Ikhtisar, Lapisan, Info) yang menjadi lembar bawah (*bottom sheet*) di HP;
-  - bilah alat seragam di kanan peta (zoom, seluruh Indonesia, lokasi saya, pilih titik, peta dasar);
-  - indikator kesegaran data.
+- **Antarmuka gelap kaca + mode terang:**
+  - peta memenuhi layar;
+  - pencarian, panel bertab (Ikhtisar, Lapisan, Info), bilah alat, dan legenda melayang sebagai panel kaca buram;
+  - tombol matahari/bulan mengganti tema (tersimpan di browser); peta dasar, garis sesar, dan batas wilayah ikut menyesuaikan;
+  - di HP panel menjadi lembar bawah (*bottom sheet*) yang bisa digeser;
+  - tab Info memuat nomor darurat (112, 117, 115, 119, 113, 110).
   
-  Tab Info memuat nomor darurat (112, 117, 115, 119, 113, 110). Tanpa framework CSS; font Plus Jakarta Sans dimuat mandiri (±27 KB).
+  Tanpa framework CSS; font Plus Jakarta Sans dimuat mandiri (±27 KB). Efek kaca otomatis diganti panel pekat bila sistem meminta transparansi dikurangi.
+- **Animasi:**
+  - layar pembuka dengan logo tergambar dan gelombang seismik;
+  - penanda tab meluncur; isi panel dan detail cek risiko bergeser masuk;
+  - angka statistik menghitung naik; daftar muncul berurutan; batang bahaya/hujan terisi bertahap;
+  - gempa terbaru memancarkan riak; gunung api Siaga/Awas berpendar;
+  - garis jarak tergambar pelan; peta "terbang" ke lokasi; tombol memantul saat ditekan.
+  
+  Semua animasi mati otomatis bila pengguna mengaktifkan "kurangi gerakan".
 - **Peta dasar:** abu-abu netral, kemanusiaan (HOT), OpenStreetMap, relief (OpenTopoMap), dan citra satelit (Esri), dipilih lewat menu bergambar.
 - **Elemen kartografi:** legenda dinamis yang bisa dilipat, skala batang, arah utara, angka skala 1:n beserta klasifikasinya, dan koordinat kursor dalam WGS84, UTM, dan EPSG:3857.
 - **Gempa BMKG:** disinkronkan tiap 60 detik. Simbol menunjukkan magnitudo dan kelas kedalaman, dengan penanda potensi tsunami dan tautan shakemap.
