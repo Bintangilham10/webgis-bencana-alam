@@ -36,6 +36,14 @@
           </div>
         </section>
 
+        <section class="risk-hint">
+          <h2>Cek risiko lokasi</h2>
+          <p>
+            Cari tempat di kotak pencarian peta, tekan tombol lokasi saya, atau tombol pin lalu klik peta
+            (pintasan: klik kanan / tekan lama) untuk melihat profil risiko suatu titik.
+          </p>
+        </section>
+
         <section>
           <h2>Gempa terkini</h2>
           <ol id="quake-list" class="quake-list"></ol>
@@ -62,6 +70,8 @@
       </aside>
 
       <main id="map" aria-label="Peta interaktif"></main>
+
+      <section id="risk-card" class="risk-card" aria-label="Profil risiko lokasi" aria-live="polite" hidden></section>
     </div>
 
     <footer class="status-bar">

@@ -62,12 +62,20 @@ const NorthArrow = L.Control.extend({
 
 // Urutan tumpukan layer (bawaan Leaflet: tile 200, overlay 400, marker 600).
 // Raster bahaya di bawah garis, batas wilayah di bawah sesar, label peta dasar
-// di atas raster, dan titik gempa di atas semuanya supaya tetap bisa diklik.
-const PANES = { hazard: 250, boundaries: 350, labels: 420, quakes: 450 };
+// di atas raster, titik gempa di atas garis supaya tetap bisa diklik, dan hasil
+// analisis cek risiko di atas gempa.
+const PANES = { hazard: 250, boundaries: 350, labels: 420, quakes: 450, analysis: 460 };
 
+// Tombol zoom sengaja tidak dibuat di sini: main.js menambahkannya di bawah
+// kotak pencarian supaya pencarian berada paling atas.
 export function createMap(element) {
   // minZoom 3 supaya seluruh Indonesia tetap muat di layar HP (±390 px).
-  const map = L.map(element, { minZoom: 3, maxBounds: INDONESIA_BOUNDS.pad(0.6), zoomSnap: 0.5 });
+  const map = L.map(element, {
+    minZoom: 3,
+    maxBounds: INDONESIA_BOUNDS.pad(0.6),
+    zoomSnap: 0.5,
+    zoomControl: false,
+  });
   for (const [name, zIndex] of Object.entries(PANES)) map.createPane(name).style.zIndex = String(zIndex);
   map.getPane('labels').style.pointerEvents = 'none';
   map.fitBounds(INDONESIA_BOUNDS);

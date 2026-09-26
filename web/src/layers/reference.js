@@ -33,10 +33,16 @@ export function faultMechanism(code) {
 
 const decimal = (value) => (value == null ? '–' : formatNumber(Math.round(value * 100) / 100));
 
+// Nama PuSGeN berbahasa Inggris: "Lembang Fault" → "Sesar Lembang"; nama lain
+// (mis. "Java Back-arc Thrust") dibiarkan apa adanya.
+export function faultDisplayName(nama) {
+  return /\s*fault$/i.test(nama) ? `Sesar ${nama.replace(/\s*fault$/i, '')}` : nama;
+}
+
 function faultPopup(f) {
   return `
     <div class="popup">
-      <h3>Sesar ${escapeHtml(f.nama.replace(/\s*fault$/i, ''))}</h3>
+      <h3>${escapeHtml(faultDisplayName(f.nama))}</h3>
       <p class="muted">Segmen ${escapeHtml(f.segmen)} · ${escapeHtml(f.region)}</p>
       <table class="popup-table">
         <tr><th>Mekanisme</th><td>${faultMechanism(f.tipe)} <small>(${escapeHtml(f.tipe)})</small></td></tr>

@@ -15,6 +15,8 @@ export const HAZARDS = [
 
 // Server BNPB mengubah indeks 0–1 menjadi 3 kelas warna (Remap lalu Colormap).
 // Nilai 0 dijadikan NoData sehingga area tanpa bahaya tampil transparan.
+// Batas kelas = aturan BNPB atas nilai yang dibulatkan 3 desimal (sama dengan
+// server/src/config/rules.json), mis. 0,666667 → 0,667 → tinggi.
 const RENDERING_RULE = {
   rasterFunction: 'Colormap',
   rasterFunctionArguments: {
@@ -22,7 +24,7 @@ const RENDERING_RULE = {
     Raster: {
       rasterFunction: 'Remap',
       rasterFunctionArguments: {
-        InputRanges: [0, 0.3334, 0.3334, 0.6667, 0.6667, 1.01],
+        InputRanges: [0, 0.3335, 0.3335, 0.6665, 0.6665, 1.01],
         OutputValues: [1, 2, 3],
         NoDataRanges: [-1, 0.0001],
       },
