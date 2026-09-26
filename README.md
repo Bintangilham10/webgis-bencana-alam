@@ -11,6 +11,7 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
   - peta memenuhi layar;
   - pencarian, panel bertab (Ikhtisar, Lapisan, Info), bilah alat, dan legenda melayang sebagai panel kaca buram;
   - warna polos tanpa gradien: panel abu netral, satu aksen biru untuk tombol utama dan pilihan aktif, sedangkan warna mencolok hanya dipakai untuk data bahaya;
+  - ikon garis seragam dari Tabler Icons: tiap jenis bencana, layanan darurat, dan tombol punya ikon sendiri; nama tombol peta muncul saat disorot;
   - tombol matahari/bulan mengganti tema (tersimpan di browser); peta dasar, garis sesar, dan batas wilayah ikut menyesuaikan;
   - di HP panel menjadi lembar bawah (*bottom sheet*) yang bisa digeser;
   - tab Info memuat nomor darurat (112, 117, 115, 119, 113, 110).
@@ -27,7 +28,7 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
 - **Peta dasar:** abu-abu netral, kemanusiaan (HOT), OpenStreetMap, relief (OpenTopoMap), dan citra satelit (Esri), dipilih lewat menu bergambar.
 - **Elemen kartografi:** legenda dinamis yang bisa dilipat, skala batang, arah utara, angka skala 1:n beserta klasifikasinya, dan koordinat kursor dalam WGS84, UTM, dan EPSG:3857.
 - **Gempa BMKG:** disinkronkan tiap 60 detik. Simbol menunjukkan magnitudo dan kelas kedalaman, dengan penanda potensi tsunami dan tautan shakemap.
-- **Status gunung api:** 69 gunung api dari MAGMA/PVMBG, disinkronkan tiap 30 menit.
+- **Status gunung api:** 69 gunung api dari MAGMA/PVMBG, disinkronkan tiap 30 menit. Simbol segitiga berwarna level PVMBG; makin tinggi level, makin besar.
 - **Peta rawan InaRISK BNPB:** gempa bumi, cuaca ekstrem, banjir, tanah longsor, dan gunung api, masing-masing dalam 3 kelas bahaya.
 - **Data geologi dan wilayah:** sesar aktif PuSGeN 2024, batas lempeng tektonik, dan batas 514 kabupaten/kota (Kepmendagri 2025).
 - **Pencarian lokasi:** nama kab/kota dicari di database sendiri, tempat lain lewat Nominatim OpenStreetMap. Pencarian berjalan saat Enter ditekan, sesuai kebijakan Nominatim.
@@ -114,3 +115,4 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 | Prakiraan hujan dan elevasi | [Open-Meteo](https://open-meteo.com/) (elevasi dari Copernicus DEM 90 m) | CC BY 4.0, gratis untuk nonkomersial |
 | Pencarian tempat | [Nominatim](https://nominatim.org/) © OpenStreetMap contributors | ODbL; maksimal 1 request/detik, tanpa autocomplete |
 | Peta dasar | Esri; © OpenStreetMap contributors (ODbL); Humanitarian OpenStreetMap Team; OpenTopoMap | CC-BY-SA untuk OpenTopoMap |
+| Ikon antarmuka | [Tabler Icons](https://tabler.io/icons) © Paweł Kuna | MIT |
