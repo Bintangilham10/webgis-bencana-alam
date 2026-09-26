@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.26.05.76.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-26T12:44:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-26T13:00:00+08:00</effective>
+    <expires>2026-09-26T14:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 September 2026, 13:00 WITA di sebagian wilayah Sulawesi Barat, khususnya di KALUMPANG, SARJO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 September 2026, 14:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSK/2026/09/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Barat</areaDesc>
+      <polygon>-0.851,119.561 -0.871,119.571 -0.881,119.571 -0.889,119.570 -0.901,119.561 -0.914,119.563 -0.930,119.554 -0.949,119.555 -0.946,119.516 -0.934,119.522 -0.899,119.526 -0.864,119.548 -0.849,119.561 -0.851,119.561</polygon>
+      <polygon>-2.295,119.628 -2.326,119.655 -2.329,119.665 -2.339,119.674 -2.339,119.680 -2.334,119.688 -2.336,119.693 -2.342,119.694 -2.354,119.691 -2.404,119.720 -2.425,119.713 -2.445,119.697 -2.461,119.694 -2.474,119.701 -2.492,119.727 -2.500,119.731 -2.527,119.726 -2.555,119.711 -2.569,119.711 -2.579,119.721 -2.593,119.741 -2.617,119.761 -2.628,119.782 -2.640,119.797 -2.662,119.773 -2.671,119.752 -2.680,119.758 -2.693,119.747 -2.706,119.749 -2.714,119.747 -2.719,119.729 -2.727,119.722 -2.732,119.708 -2.753,119.688 -2.756,119.676 -2.753,119.633 -2.750,119.615 -2.741,119.604 -2.743,119.587 -2.748,119.583 -2.742,119.573 -2.732,119.569 -2.729,119.553 -2.741,119.523 -2.741,119.485 -2.751,119.478 -2.768,119.448 -2.767,119.443 -2.730,119.450 -2.654,119.486 -2.624,119.482 -2.578,119.461 -2.507,119.458 -2.450,119.451 -2.427,119.414 -2.419,119.410 -2.419,119.384 -2.396,119.382 -2.394,119.376 -2.394,119.365 -2.406,119.350 -2.414,119.329 -2.413,119.308 -2.406,119.311 -2.382,119.336 -2.380,119.344 -2.385,119.352 -2.385,119.360 -2.355,119.415 -2.342,119.426 -2.333,119.444 -2.337,119.454 -2.345,119.457 -2.353,119.469 -2.366,119.479 -2.367,119.503 -2.307,119.531 -2.309,119.554 -2.294,119.564 -2.288,119.579 -2.288,119.587 -2.301,119.605 -2.294,119.620 -2.295,119.628</polygon>
+    </area>
+  </info>
+</alert>
