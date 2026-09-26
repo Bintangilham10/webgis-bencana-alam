@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SIGAP Bencana — Peta Peringatan Dini dan Mitigasi</title>
+    <meta
+      name="description"
+      content="Peta web peringatan dini dan mitigasi bencana alam Indonesia berbasis data spasial terbuka (BMKG, BNPB InaRISK, MAGMA, PuSGeN)."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3 30 28H2z' fill='%23f08c00'/%3E%3Cpath d='M16 12v8M16 23v2' stroke='%230b3d5c' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <header class="app-header">
+      <button id="panel-toggle" class="panel-toggle" type="button" aria-controls="panel" aria-expanded="false">
+        ☰<span class="visually-hidden"> Tampilkan panel</span>
+      </button>
+      <div class="brand">
+        <strong>SIGAP Bencana</strong>
+        <span>Peringatan dini &amp; mitigasi bencana alam Indonesia</span>
+      </div>
+      <div id="sync-status" class="sync-status" aria-live="polite">Memuat data…</div>
+    </header>
+
+    <div class="app-body">
+      <aside id="panel" class="panel" aria-label="Panel layer dan legenda">
+        <section>
+          <h2>Ringkasan</h2>
+          <div class="stats">
+            <div class="stat"><span id="stat-quakes-24h">–</span><small>Gempa 24 jam</small></div>
+            <div class="stat"><span id="stat-quakes-m5">–</span><small>Gempa M≥5, 7 hari</small></div>
+            <div class="stat"><span id="stat-volcanoes">–</span><small>Gunung api ≥ Siaga</small></div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Gempa terkini</h2>
+          <ol id="quake-list" class="quake-list"></ol>
+        </section>
+
+        <section id="layer-controls"></section>
+
+        <section>
+          <h2>Legenda</h2>
+          <div id="legend" class="legend"></div>
+        </section>
+
+        <section class="disclaimer">
+          <p>
+            Informasi ini bukan peringatan resmi. Untuk keputusan keselamatan, ikuti
+            <a href="https://www.bmkg.go.id/" target="_blank" rel="noopener">BMKG</a>,
+            <a href="https://magma.esdm.go.id/" target="_blank" rel="noopener">MAGMA/PVMBG</a>, dan BNPB/BPBD setempat.
+          </p>
+          <p>
+            Sumber data: BMKG (gempa), BNPB InaRISK (indeks bahaya), PVMBG MAGMA (gunung api), PuSGeN 2024 (sesar aktif),
+            Bird 2003 (batas lempeng), Kepmendagri 2025 (batas wilayah), © OpenStreetMap contributors.
+          </p>
+        </section>
+      </aside>
+
+      <main id="map" aria-label="Peta interaktif"></main>
+    </div>
+
+    <footer class="status-bar">
+      <span id="coordinates">Arahkan kursor ke peta untuk melihat koordinat</span>
+      <span id="scale-readout"></span>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
