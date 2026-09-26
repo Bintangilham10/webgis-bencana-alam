@@ -1,7 +1,7 @@
 import { escapeHtml, formatDecimal, shortQuakeRegion, timeAgo } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
 import { animateNumber } from '../lib/motion.js';
-import { depthClass, pillStyle, VOLCANO_LEVELS } from '../lib/symbology.js';
+import { depthClass, pillStyle, VOLCANO_LEVELS, volcanoSymbol } from '../lib/symbology.js';
 
 const HOUR_MS = 3_600_000;
 const QUAKE_LIST_SIZE = 6;
@@ -28,7 +28,7 @@ function volcanoRow(v, index) {
   return `
     <li style="--i:${index}">
       <button type="button" class="list-row" data-volcano="${escapeHtml(v.kode)}">
-        <span class="row-icon"><span class="volcano-glyph" style="--level-color:${level.color}"></span></span>
+        <span class="row-icon">${volcanoSymbol(v.level)}</span>
         <span class="list-row__text">
           <span class="list-row__title">${escapeHtml(volcanoName(v.nama))}</span>
           <span class="list-row__meta">${escapeHtml(v.provinsi ?? '')}</span>

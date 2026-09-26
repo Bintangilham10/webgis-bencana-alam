@@ -2,8 +2,10 @@ import L from 'leaflet';
 import { escapeHtml } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
 
+// Nama tombol tampil sebagai label di samping saat disorot (data-tip, CSS),
+// jadi ikon tidak perlu ditebak artinya.
 const toolButton = (name, label, icon, extra = '') =>
-  `<button type="button" class="tool" data-tool="${name}" aria-label="${label}" title="${label}" ${extra}>${icon}</button>`;
+  `<button type="button" class="tool" data-tool="${name}" aria-label="${label}" data-tip="${label}" ${extra}>${icon}</button>`;
 
 // Gambar mini baru dimuat saat menu pertama kali dibuka (data-src).
 const basemapOption = (basemap) => `
@@ -24,14 +26,14 @@ export const MapToolbar = L.Control.extend({
       <div class="tool-group glass">
         ${toolButton('zoom-in', 'Perbesar', icons.plus)}
         ${toolButton('zoom-out', 'Perkecil', icons.minus)}
-        ${toolButton('home', 'Tampilkan seluruh Indonesia', icons.extent)}
+        ${toolButton('home', 'Tampilkan seluruh Indonesia', icons.globe)}
       </div>
       <div class="tool-group glass">
         ${toolButton('locate', 'Cek risiko di lokasi saya', icons.locate)}
         ${toolButton('pick', 'Cek risiko: pilih titik di peta', icons.pin, 'aria-pressed="false"')}
       </div>
       <div class="tool-group glass">
-        ${toolButton('basemap', 'Ganti peta dasar', icons.layers, 'aria-expanded="false" aria-controls="basemap-menu"')}
+        ${toolButton('basemap', 'Ganti peta dasar', icons.map, 'aria-expanded="false" aria-controls="basemap-menu"')}
         <div id="basemap-menu" class="basemap-menu" role="radiogroup" aria-label="Peta dasar" hidden>
           <p class="basemap-menu__title">Peta dasar</p>
           ${this.options.basemaps.map(basemapOption).join('')}

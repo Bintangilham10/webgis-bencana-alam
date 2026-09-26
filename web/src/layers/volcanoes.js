@@ -3,9 +3,11 @@ import { getJson } from '../lib/api.js';
 import { escapeHtml, formatDateTime, formatNumber } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
 import { flyTo } from '../lib/motion.js';
-import { pillStyle, VOLCANO_LEVELS } from '../lib/symbology.js';
+import { pillStyle, VOLCANO_LEVELS, volcanoSymbol } from '../lib/symbology.js';
 
 const MAGMA_STATUS_URL = 'https://magma.esdm.go.id/v1/gunung-api/tingkat-aktivitas';
+// Ukuran simbol per level (px): makin tinggi level, makin besar.
+const MARKER_SIZES = { 1: 18, 2: 18, 3: 24, 4: 28 };
 
 const volcanoName = (nama) => (/^gunung\s/i.test(nama) ? nama : `Gunung ${nama}`);
 
@@ -16,7 +18,7 @@ function volcanoPopup(v) {
   return `
     <div class="popup">
       <div class="popup-head">
-        <span class="row-icon"><span class="volcano-glyph" style="--level-color:${level.color}"></span></span>
+        <span class="row-icon">${volcanoSymbol(v.level)}</span>
         <div class="popup-heading">
           <h3>${escapeHtml(volcanoName(v.nama))}</h3>
           <span class="level-pill" style="${pillStyle(level)}">${level.label}</span>
@@ -44,16 +46,17 @@ export function createVolcanoLayer(map) {
       const [lon, lat] = geometry.coordinates;
       const level = VOLCANO_LEVELS[v.level];
       const alert = v.level >= 3;
-      // Siaga/Awas lebih besar, berpendar, dan diberi halo berdenyut.
-      // --i = urutan muncul; animasi ada di elemen dalam (bukan elemen ikon
-      // yang posisinya diatur Leaflet lewat transform).
+      const size = MARKER_SIZES[v.level] ?? MARKER_SIZES[1];
+      // Siaga/Awas lebih besar dan diberi cincin berdenyut. --i = urutan
+      // muncul; animasi ada di elemen dalam (bukan elemen ikon yang posisinya
+      // diatur Leaflet lewat transform).
       const marker = L.marker([lat, lon], {
         icon: L.divIcon({
           className: `volcano-icon${alert ? ' volcano-icon--alert' : ''}`,
           html:
             `<span class="volcano-marker" style="--level-color:${level.color};--i:${index}">` +
-            `${alert ? '<i class="volcano-halo"></i>' : ''}<span class="volcano-shape"></span></span>`,
-          iconSize: alert ? [24, 24] : [18, 18],
+            `${alert ? '<i class="volcano-halo"></i>' : ''}${volcanoSymbol(v.level)}</span>`,
+          iconSize: [size, size],
         }),
         title: `${volcanoName(v.nama)} (${level.label})`,
         // Status lebih tinggi selalu tampil di atas bila berdekatan.
@@ -81,8 +84,8 @@ export function createVolcanoLayer(map) {
 }
 
 export function volcanoLegend() {
-  const rows = Object.values(VOLCANO_LEVELS)
-    .map((l) => `<div class="legend-row"><span class="swatch swatch-triangle" style="--level-color:${l.color}"></span>${l.roman} · ${l.short}</div>`)
+  const rows = Object.entries(VOLCANO_LEVELS)
+    .map(([id, l]) => `<div class="legend-row">${volcanoSymbol(Number(id))}${l.roman} · ${l.short}</div>`)
     .join('');
   return `<div class="legend-grid">${rows}</div>`;
 }

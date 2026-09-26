@@ -53,7 +53,7 @@ export const LegendControl = L.Control.extend({
     const blocks = this._blocks ?? [];
     this._count.textContent = blocks.length ? `${blocks.length} lapisan` : '';
     this._content.innerHTML = blocks.length
-      ? blocks.map((b) => `<div class="legend-block"><h3>${escapeHtml(b.title)}</h3>${b.html}</div>`).join('')
+      ? blocks.map((b) => `<div class="legend-block"><h3>${b.icon ?? ''}${escapeHtml(b.title)}</h3>${b.html}</div>`).join('')
       : '<p class="legend-empty">Tidak ada lapisan aktif.</p>';
   },
 });

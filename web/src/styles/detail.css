@@ -187,6 +187,23 @@
   gap: 12px;
 }
 
+/* Ikon kecil netral di depan nama bahaya (sama dengan pilihan di tab Lapisan). */
+.hazard-row {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  align-items: start;
+  gap: 10px;
+}
+
+.hazard-icon {
+  padding-top: 1px;
+  color: var(--ink-3);
+}
+
+.hazard-main {
+  min-width: 0;
+}
+
 .hazard-row__top {
   display: flex;
   align-items: center;
@@ -258,9 +275,24 @@
   background: var(--surface-2);
 }
 
+.rain-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
 .rain-date {
   font-size: 12px;
   font-weight: 650;
+  color: var(--ink-3);
+}
+
+.rain-icon {
+  color: var(--rain);
+}
+
+.rain-icon[data-category='none'] {
   color: var(--ink-3);
 }
 
@@ -333,6 +365,20 @@
   border-radius: 50%;
   color: var(--ink-2);
   background: var(--surface-2);
+}
+
+/* Di daftar sekitar lokasi dipakai simbol peta: segitiga gunung api dan
+   garis merah sesar. */
+.nearby-icon .volcano-symbol {
+  width: 19px;
+  height: 19px;
+}
+
+.fault-symbol {
+  width: 18px;
+  border-top: 2.5px solid var(--fault-color);
+  border-radius: 2px;
+  transform: rotate(-35deg);
 }
 
 .nearby-text {

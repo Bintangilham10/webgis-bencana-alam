@@ -1,9 +1,10 @@
 import { escapeHtml } from '../lib/format.js';
+import { icons } from '../lib/icons.js';
 
 // Tab Lapisan dibangun dari daftar grup, jadi layer baru cukup didaftarkan di
 // main.js. Grup biasa berupa sakelar; grup `exclusive` berupa pilihan tunggal
-// (chip) karena raster peta rawan saling menutupi bila dinyalakan bersamaan.
-// Legenda peta mengikuti layer yang aktif.
+// (petak berikon) karena raster peta rawan saling menutupi bila dinyalakan
+// bersamaan. Legenda peta mengikuti layer yang aktif.
 export function createLayerPanel({ map, container, legend, groups }) {
   const active = new Set();
 
@@ -12,7 +13,7 @@ export function createLayerPanel({ map, container, legend, groups }) {
       groups
         .flatMap((group) => group.items)
         .filter((item) => active.has(item) && item.legend)
-        .map((item) => ({ title: item.legendTitle ?? item.label, html: item.legend() })),
+        .map((item) => ({ title: item.legendTitle ?? item.label, icon: item.icon, html: item.legend() })),
     );
 
   const setActive = (item, on) => {
@@ -52,15 +53,15 @@ export function createLayerPanel({ map, container, legend, groups }) {
 
   function choiceGroup(group) {
     const wrap = document.createElement('div');
-    const options = [{ label: 'Tidak ada' }, ...group.items];
+    const options = [{ label: 'Tidak ada', icon: icons.none }, ...group.items];
     wrap.innerHTML = `
-      <div class="choice-chips" role="radiogroup" aria-label="${escapeHtml(group.title)}">
+      <div class="choice-grid" role="radiogroup" aria-label="${escapeHtml(group.title)}">
         ${options
           .map(
             (option, index) => `
               <label class="choice">
                 <input type="radio" name="layer-${group.id}" value="${index}"${index === 0 ? ' checked' : ''} />
-                <span>${escapeHtml(option.label)}</span>
+                <span>${option.icon ?? ''}${escapeHtml(option.label)}</span>
               </label>`,
           )
           .join('')}
@@ -76,7 +77,7 @@ export function createLayerPanel({ map, container, legend, groups }) {
       }`;
 
     const range = wrap.querySelector('.range-row');
-    wrap.querySelector('.choice-chips').addEventListener('change', (event) => {
+    wrap.querySelector('.choice-grid').addEventListener('change', (event) => {
       const chosen = options[Number(event.target.value)];
       const shown = group.items.includes(chosen);
       group.items.forEach((item) => setActive(item, item === chosen));

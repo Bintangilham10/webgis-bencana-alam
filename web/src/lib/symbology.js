@@ -22,6 +22,12 @@ export const VOLCANO_LEVELS = {
   4: { label: 'Level IV · Awas', roman: 'IV', short: 'Awas', color: '#c62828', text: '#fff' },
 };
 
+// Simbol gunung api: segitiga berwarna level PVMBG dengan garis tepi gelap
+// (konvensi peta MAGMA). Dipakai sama di peta, daftar, popup, dan legenda.
+export const volcanoSymbol = (level) =>
+  `<svg class="volcano-symbol" viewBox="0 0 24 24" style="--level-color:${VOLCANO_LEVELS[level].color}" aria-hidden="true" focusable="false">` +
+  '<path class="volcano-symbol__body" d="M12 3.5 22 20.5H2z"/></svg>';
+
 // Kelas indeks bahaya BNPB (nilai dibulatkan 3 desimal):
 // rendah ≤ 0,333 < sedang ≤ 0,666 < tinggi. Warna standar InaRISK; kuningnya
 // kurang kontras di latar putih, jadi selalu disertai angka dan label kelas.

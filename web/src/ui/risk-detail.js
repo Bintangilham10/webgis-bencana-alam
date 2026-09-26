@@ -1,7 +1,7 @@
 import { faultDisplayName } from '../layers/reference.js';
 import { capitalize, escapeHtml, formatDay, formatDecimal, formatNumber } from '../lib/format.js';
-import { icons } from '../lib/icons.js';
-import { HAZARD_CLASSES, pillStyle, VOLCANO_LEVELS, WARNING_LEVEL_STYLES } from '../lib/symbology.js';
+import { HAZARD_ICONS, icons, rainIcon } from '../lib/icons.js';
+import { HAZARD_CLASSES, pillStyle, VOLCANO_LEVELS, volcanoSymbol, WARNING_LEVEL_STYLES } from '../lib/symbology.js';
 
 const INDICATION_NAMES = { banjir: 'banjir', longsor: 'tanah longsor' };
 // Skala batang hujan: batas bawah hujan ekstrem BMKG (mm/hari).
@@ -100,8 +100,11 @@ function hazardRow(h, order) {
   }
   return `
     <li class="hazard-row">
-      <div class="hazard-row__top"><span class="hazard-name">${escapeHtml(h.label)}</span><span class="hazard-value">${value}</span></div>
-      ${meter(h.index, cls, order)}
+      <span class="hazard-icon" aria-hidden="true">${HAZARD_ICONS[h.id] ?? icons.alert}</span>
+      <div class="hazard-main">
+        <div class="hazard-row__top"><span class="hazard-name">${escapeHtml(h.label)}</span><span class="hazard-value">${value}</span></div>
+        ${meter(h.index, cls, order)}
+      </div>
     </li>`;
 }
 
@@ -114,7 +117,10 @@ function rainDays(rain) {
       const width = mm > 0 ? Math.max(3, Math.min(100, (mm / RAIN_SCALE_MAX_MM) * 100)) : 0;
       return `
         <div class="rain-day">
-          <span class="rain-date">${formatDay(d.date)}</span>
+          <span class="rain-top">
+            <span class="rain-date">${formatDay(d.date)}</span>
+            <span class="rain-icon" data-category="${escapeHtml(d.category?.id ?? 'none')}" aria-hidden="true">${rainIcon(d.category?.id)}</span>
+          </span>
           <span class="rain-mm">${mm == null ? '–' : formatDecimal(mm)}<small> mm</small></span>
           <span class="rain-bar" aria-hidden="true"><span style="width:${width}%;--i:${i}"></span></span>
           <span class="rain-cat">${escapeHtml(d.category?.label ?? 'Tidak hujan')}</span>
@@ -138,7 +144,7 @@ function nearbyRow({ icon, title, meta, distance }) {
 function nearby({ nearest_fault: fault, nearest_volcanoes: volcanoes, recent_quakes: quakes }) {
   const faultRows = fault
     ? nearbyRow({
-        icon: icons.fault,
+        icon: '<span class="fault-symbol"></span>',
         title: escapeHtml(faultDisplayName(fault.nama)),
         meta: `Segmen ${escapeHtml(fault.segmen)} · magnitudo maks. M ${formatDecimal(fault.mmax)}`,
         distance: fault.distance_km,
@@ -149,7 +155,7 @@ function nearby({ nearest_fault: fault, nearest_volcanoes: volcanoes, recent_qua
         .map((v) => {
           const level = VOLCANO_LEVELS[v.level];
           return nearbyRow({
-            icon: `<span class="volcano-glyph volcano-glyph--sm" style="--level-color:${level.color}"></span>`,
+            icon: volcanoSymbol(v.level),
             title: escapeHtml(volcanoName(v.nama)),
             meta: `<span class="level-pill" style="${pillStyle(level)}">${level.label}</span>`,
             distance: v.distance_km,
@@ -169,7 +175,7 @@ function nearby({ nearest_fault: fault, nearest_volcanoes: volcanoes, recent_qua
     <div class="nearby-group"><h3>Sesar aktif terdekat</h3><ul class="nearby-list">${faultRows}</ul></div>
     <div class="nearby-group"><h3>Gunung api terdekat</h3><ul class="nearby-list">${volcanoRows}</ul></div>
     <div class="nearby-group"><h3>Gempa ${quakes.days} hari terakhir, radius ${quakes.radius_km} km</h3><ul class="nearby-list">${quakeRow}</ul></div>
-    <button type="button" class="btn btn-secondary btn-block" data-action="fit">${icons.map}Tampilkan jarak di peta</button>`;
+    <button type="button" class="btn btn-secondary btn-block" data-action="fit">${icons.route}Tampilkan jarak di peta</button>`;
 }
 
 function section(title, meta, body) {

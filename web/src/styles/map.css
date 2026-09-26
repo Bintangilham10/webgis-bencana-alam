@@ -149,6 +149,47 @@
   height: 20px;
 }
 
+/* Label nama tombol muncul di kiri saat disorot atau difokus keyboard. */
+@media (hover: hover) {
+  .tool[data-tip] {
+    position: relative;
+  }
+
+  .tool[data-tip]::after {
+    content: attr(data-tip);
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 10px);
+    padding: 5px 10px;
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 650;
+    line-height: 1.3;
+    white-space: nowrap;
+    color: var(--ink);
+    background: var(--tooltip-bg);
+    box-shadow: var(--shadow-2);
+    opacity: 0;
+    transform: translate(6px, -50%);
+    pointer-events: none;
+    transition:
+      opacity 0.15s ease,
+      transform 0.2s var(--ease-out);
+  }
+
+  .tool[data-tip]:hover::after,
+  .tool[data-tip]:focus-visible::after {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+
+  /* Menu peta dasar terbuka di posisi yang sama. */
+  .tool[aria-expanded='true']::after {
+    display: none;
+  }
+}
+
 /* Pemilih peta dasar terbuka ke kiri tombol. */
 .basemap-menu {
   position: absolute;
@@ -344,9 +385,23 @@
 }
 
 .legend-block h3 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   margin-bottom: 4px;
   font-size: 12.5px;
   font-weight: 750;
+}
+
+.legend-block h3 .icon {
+  width: 16px;
+  height: 16px;
+  color: var(--ink-2);
+}
+
+.legend-row .volcano-symbol {
+  width: 16px;
+  height: 16px;
 }
 
 .legend-row {
@@ -392,12 +447,6 @@
 .swatch-pulse {
   border: 2px solid var(--danger);
   border-radius: 50%;
-}
-
-.swatch-triangle {
-  border-radius: 0;
-  background: var(--level-color);
-  clip-path: polygon(50% 0, 100% 100%, 0 100%);
 }
 
 .swatch-line {
@@ -487,19 +536,10 @@
   animation-delay: calc(var(--i, 0) * 12ms + 150ms);
 }
 
-.volcano-shape {
-  position: absolute;
-  inset: 0;
-  background: var(--glyph-outline);
-  clip-path: polygon(50% 0, 100% 100%, 0 100%);
-}
-
-.volcano-shape::after {
-  content: '';
-  position: absolute;
-  inset: 2px 2px 1px;
-  background: var(--level-color);
-  clip-path: polygon(50% 12%, 94% 100%, 6% 100%);
+.volcano-marker .volcano-symbol {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 /* Siaga/Awas: cincin sewarna level memancar dari balik segitiga, sama
