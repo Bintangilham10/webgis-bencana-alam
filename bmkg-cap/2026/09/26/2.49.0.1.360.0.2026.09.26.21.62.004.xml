@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.26.21.62.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-27T03:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-27T03:40:00+07:00</effective>
+    <expires>2026-09-27T06:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 September 2026, 03:40 WIB di sebagian wilayah Kalimantan Tengah, khususnya di PERMATA INTAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 September 2026, 06:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/09/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-0.666,114.369 -0.688,114.353 -0.695,114.350 -0.704,114.353 -0.721,114.369 -0.746,114.413 -0.757,114.424 -0.775,114.430 -0.833,114.430 -0.837,114.385 -0.854,114.312 -0.865,114.270 -0.867,114.246 -0.859,114.228 -0.812,114.184 -0.799,114.156 -0.783,114.134 -0.758,114.124 -0.695,114.110 -0.645,114.155 -0.610,114.175 -0.540,114.262 -0.554,114.266 -0.588,114.287 -0.599,114.285 -0.610,114.296 -0.634,114.292 -0.647,114.297 -0.651,114.313 -0.662,114.315 -0.668,114.334 -0.666,114.369</polygon>
+    </area>
+  </info>
+</alert>
