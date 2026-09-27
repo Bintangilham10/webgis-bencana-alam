@@ -28,7 +28,7 @@ Arsip bersifat **append-only**: file yang sudah ada tidak pernah ditimpa. Data y
 ## Catatan waktu
 
 - Semua timestamp ISO 8601 UTC. Partisi folder memakai tanggal UTC.
-- `first_seen_at` dan `detected_at` adalah waktu run perekam, **bukan** waktu kejadian atau terbit. Jadwalnya tiap 15 menit, tetapi GitHub Actions sering menunda jadwal: 25–27 Sep 2026 run terjadwal rata-rata hanya tiap ±3,7 jam (±6 kali sehari). Peringatan CAP yang berumur pendek bisa terlewat di antara dua run.
+- `first_seen_at` dan `detected_at` adalah waktu run perekam, **bukan** waktu kejadian atau terbit. Jadwalnya tiap 15 menit, tetapi GitHub Actions sering menunda jadwal: 25–27 Sep 2026 run terjadwal rata-rata hanya tiap ±3,7 jam (±6 kali sehari), sehingga peringatan CAP yang berumur pendek bisa terlewat di antara dua run. Sejak 27 Sep 2026 13:45 UTC, run juga dipicu dari luar tiap 15 menit (cron-job.org → `workflow_dispatch`). Karena itu, bandingkan kelengkapan data sebelum dan sesudah waktu ini secara terpisah.
 - Run yang hilang terlihat dari celah di `_runs/`. Hitung ketersediaan sumber dari file ini.
 - Tanggal harian, bulan, dan dasarian pada `bmkg-cews/`, `pvmbg-prakiraan/`, dan `open-meteo-ens/` memakai WIB, karena produknya disusun per tanggal lokal.
 - Titik kab/kota diambil dari `recorder/data/wilayah.json` (satu titik di dalam tiap wilayah, Kepmendagri 2025).
