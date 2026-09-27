@@ -1,0 +1,23 @@
+{
+  "guid": "CBMirgFBVV95cUxQLXRjVElxeHNzeDJpcHYtVWFQczZ1dllCY0VYSEtsRVpFZlNnNFhuMXF4M25Qa2hqOXVzODZiaTJrejFRejJueHVNRHJQNzJFa1I5QzI3TjdDSXFDYnpCSWhDQ294QWpWSGVUZzgtcDJ6SHhvcEN1WjdCREpFZ2FmWTFYNEQ2bDFlWDMtUDY4S1UtdlF5U3dLZWRnYkl5VHFiWm5zeGIyaTdpUHJDRFE",
+  "title": "Hujan Deras Picu Banjir dan Longsor di Lima Kecamatan Aceh Tengah - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQLXRjVElxeHNzeDJpcHYtVWFQczZ1dllCY0VYSEtsRVpFZlNnNFhuMXF4M25Qa2hqOXVzODZiaTJrejFRejJueHVNRHJQNzJFa1I5QzI3TjdDSXFDYnpCSWhDQ294QWpWSGVUZzgtcDJ6SHhvcEN1WjdCREpFZ2FmWTFYNEQ2bDFlWDMtUDY4S1UtdlF5U3dLZWRnYkl5VHFiWm5zeGIyaTdpUHJDRFE?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-09-27T00:18:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-09-27T11:30:36.409Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

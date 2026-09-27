@@ -15,6 +15,14 @@ Arsip bersifat **append-only**: file yang sudah ada tidak pernah ditimpa. Data y
 | `magma/snapshot/YYYY/MM/DD/<waktu>.json` | | Salinan lengkap setiap kali ada perubahan level |
 | `magma/perubahan.jsonl` | | Riwayat perubahan level: `from` → `to` per gunung api |
 | `petabencana/YYYY/MM/<pkey>__<hash>.json` | PetaBencana.id | Laporan warga (GeoJSON Feature) |
+| `bmkg-cews/YYYY/MM/dasarian-N__<hash>.json` | BMKG — Peringatan Dini Curah Hujan Tinggi (CEWS) | Daftar kab/kota per level (aman, waspada, siaga, awas) untuk satu dasarian, beserta kode Kepmendagri (`kode` null bila nama tidak dikenali, mis. "DANAU"). Hash berbeda = peringatan direvisi. Diperiksa tiap 6 jam; arsip sejak Jan 2022 diisi bertahap |
+| `pvmbg-prakiraan/YYYY/MM.jsonl` | PVMBG — Prakiraan Wilayah Potensi Terjadi Gerakan Tanah (bulanan) | Potensi gerakan tanah (`potensi`) dan zona kerentanan (`zkgt`) di satu titik tiap kab/kota, dari GetFeatureInfo layer `pmbgi:prakiraan_{tahun}_{bulan}` |
+| `pvmbg-laporan/snapshot/YYYY-MM-DD.json` | PVMBG — laporan pemeriksaan lapangan gerakan tanah (Portal MBG) | Salinan utuh saat pertama direkam dan setiap kali ada perubahan |
+| `pvmbg-laporan/perubahan.jsonl` | | Laporan `baru`, `berubah`, atau `hilang` dibanding pemeriksaan sebelumnya (mingguan) |
+| `open-meteo-ens/YYYY/MM/DD.jsonl` | Open-Meteo — ensemble ECMWF IFS 0,25° (51 anggota) | Ringkasan curah hujan harian 3 hari di satu titik tiap kab/kota: median, p90, maksimum, dan peluang ≥ 20/50/100 mm. Direkam sekali sehari mulai 15.00 WIB, dicicil beberapa run |
+| `bnpb-mingguan/YYYY/MM/<id>__<hash>.json` | BNPB — Kejadian Bencana Mingguan (ArcGIS) | Kejadian per kab/kota beserta korban dan kronologi; diperiksa harian |
+| `berita-longsor/YYYY/MM/<hash>.json` | Google News (RSS, bahasa Indonesia) | Judul, sumber, waktu, dan tautan berita longsor, plus kab/kota yang disebut (`kab_kota`, dengan `keyakinan`), tanda `luar_negeri`, dan `jenis` (kejadian/imbauan/lainnya, heuristik kata kunci) |
+| `<sumber>/status.json`, `pvmbg-laporan/terkini.json` | | File status perekam (waktu periksa terakhir, kemajuan backfill); bukan data arsip |
 | `_runs/YYYY/MM/DD.jsonl` | | Log tiap run: berhasil/gagal, jumlah item, dan durasi per sumber |
 
 ## Catatan waktu
@@ -22,11 +30,18 @@ Arsip bersifat **append-only**: file yang sudah ada tidak pernah ditimpa. Data y
 - Semua timestamp ISO 8601 UTC. Partisi folder memakai tanggal UTC.
 - `first_seen_at` dan `detected_at` adalah waktu run perekam, **bukan** waktu kejadian atau terbit. Resolusinya ±15 menit, bisa lebih lama bila jadwal GitHub Actions tertunda.
 - Run yang hilang terlihat dari celah di `_runs/`. Hitung ketersediaan sumber dari file ini.
+- Tanggal harian, bulan, dan dasarian pada `bmkg-cews/`, `pvmbg-prakiraan/`, dan `open-meteo-ens/` memakai WIB, karena produknya disusun per tanggal lokal.
+- Titik kab/kota diambil dari `recorder/data/wilayah.json` (satu titik di dalam tiap wilayah, Kepmendagri 2025).
 
 ## Lisensi & atribusi
 
 - Data gempa dan peringatan dini cuaca: **BMKG** (sumber wajib dicantumkan).
 - Tingkat aktivitas gunung api: **PVMBG — MAGMA Indonesia, Kementerian ESDM**.
 - Laporan warga: **PetaBencana.id**, CC BY-NC 4.0.
+- Peringatan dini curah hujan tinggi: **BMKG** (sumber wajib dicantumkan).
+- Prakiraan potensi dan laporan pemeriksaan gerakan tanah: **PVMBG, Badan Geologi, Kementerian ESDM**.
+- Ensemble curah hujan: **Open-Meteo** (CC BY 4.0), data model **ECMWF**.
+- Kejadian bencana mingguan: **BNPB**.
+- Berita: hak cipta pada penerbit masing-masing; arsip hanya menyimpan judul dan tautan untuk riset.
 
 Arsip ini untuk riset nonkomersial. Ikuti lisensi masing-masing sumber saat memakai ulang data.

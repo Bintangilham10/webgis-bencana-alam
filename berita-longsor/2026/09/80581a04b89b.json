@@ -1,0 +1,23 @@
+{
+  "guid": "CBMijgFBVV95cUxQMEpmaWt1NFp6VHBnZTFUQlFRR3BPUUh2ZzgyNjA1MklVeHNhRnpvNW9RS2V1WWtMUFNia0VNVzRjYzVCejJoS0Uzb0hLVFREV0ZtWFNNWHJaZGJmejVIR25qMDRNVlFWMFVvOUlSMlJoa0V1b1RXVGJIVzZ1LW9RWndRRkV3ZUo5b3lVSmZR",
+  "title": "Hujan Deras Picu Banjir dan Longsor di Lima Kecamatan Aceh Tengah - nukilan.id",
+  "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMEpmaWt1NFp6VHBnZTFUQlFRR3BPUUh2ZzgyNjA1MklVeHNhRnpvNW9RS2V1WWtMUFNia0VNVzRjYzVCejJoS0Uzb0hLVFREV0ZtWFNNWHJaZGJmejVIR25qMDRNVlFWMFVvOUlSMlJoa0V1b1RXVGJIVzZ1LW9RWndRRkV3ZUo5b3lVSmZR?oc=5",
+  "source": "nukilan.id",
+  "source_url": "https://nukilan.id",
+  "published_at": "2026-09-27T03:00:56.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-09-27T11:30:36.409Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

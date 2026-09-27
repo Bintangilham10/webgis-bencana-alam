@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.27.11.73.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-27T18:45:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-27T19:15:00+08:00</effective>
+    <expires>2026-09-27T21:15:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 September 2026, 19:15 WITA di sebagian wilayah Sulawesi Selatan, khususnya di BAROKO, GANDANGBATU SILLANAN, MENGKENDEK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 September 2026, 21:15 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSL/2026/09/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Selatan</areaDesc>
+      <polygon>-3.268,119.843 -3.276,119.835 -3.276,119.819 -3.291,119.822 -3.317,119.815 -3.313,119.795 -3.297,119.799 -3.292,119.780 -3.272,119.772 -3.265,119.776 -3.247,119.775 -3.240,119.781 -3.247,119.796 -3.245,119.813 -3.248,119.829 -3.257,119.841 -3.268,119.843</polygon>
+      <polygon>-3.113,119.911 -3.119,119.922 -3.131,119.928 -3.152,119.922 -3.175,119.922 -3.178,119.938 -3.173,119.956 -3.187,119.985 -3.206,119.992 -3.218,119.988 -3.224,119.980 -3.250,119.982 -3.281,120.024 -3.318,120.031 -3.353,120.044 -3.368,120.041 -3.374,120.034 -3.371,120.028 -3.363,120.027 -3.358,120.020 -3.346,120.015 -3.334,120.002 -3.318,120.006 -3.303,119.996 -3.309,119.989 -3.300,119.980 -3.293,119.963 -3.294,119.938 -3.264,119.919 -3.257,119.882 -3.248,119.885 -3.240,119.881 -3.221,119.883 -3.207,119.891 -3.198,119.890 -3.186,119.881 -3.190,119.872 -3.182,119.864 -3.168,119.836 -3.135,119.853 -3.113,119.879 -3.110,119.887 -3.113,119.911</polygon>
+      <polygon>-3.257,119.882 -3.269,119.876 -3.273,119.869 -3.271,119.861 -3.281,119.851 -3.268,119.843 -3.257,119.841 -3.248,119.829 -3.245,119.813 -3.247,119.796 -3.240,119.781 -3.230,119.784 -3.217,119.781 -3.209,119.804 -3.168,119.836 -3.182,119.864 -3.190,119.872 -3.186,119.881 -3.198,119.890 -3.207,119.891 -3.221,119.883 -3.240,119.881 -3.248,119.885 -3.257,119.882</polygon>
+    </area>
+  </info>
+</alert>

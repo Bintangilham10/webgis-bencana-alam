@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiwgFBVV95cUxPYjc1cTJJSlhzak1lckQ3NkQ1NTJOdGlMUFF3Sm9sejBRRFQ2WmxQR0gyX29DdnJaRGhCbWdhU2JVaElCUXNZUHhJUkxyNjRCazVrRjhZV2I0QkFVOTZ4SWdCTG5kMU43U0xoNXFSRkM5UHBHV08xOHBKLVJqb3IyR29GeWdDQS03M1FPalF4TVVPVklLTFpSMEhmUFcwbjFqa1pVdGpIal9fN3EwUElFMG5jWjNZa3FDcjd1OXhPa0lDd9IBpAFBVV95cUxQQnQzUmtpVF9ZNUNuQXQ5V0dnV1UzZnIzRUFjUFRTcGFmQV9aZjBTRVd4eUp2Zkxwa1hNWkIzWFFqM0ZhVHhqOElUYzdteUtBUW45X3hSa0FRZ1ZwQ1BsQUR6UXowWWlCZzFaSUcyVlFEUXI5Z204UkVBNUVkRFEzR2NER2wwTmVjWlA0NHlJUGZsOFdBV2lBM2lLX2c1d09pd0RDXw",
+  "title": "Karanganyar Perkuat Mitigasi Longsor dan Gempa Jelang Musim Hujan - Espos.id",
+  "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYjc1cTJJSlhzak1lckQ3NkQ1NTJOdGlMUFF3Sm9sejBRRFQ2WmxQR0gyX29DdnJaRGhCbWdhU2JVaElCUXNZUHhJUkxyNjRCazVrRjhZV2I0QkFVOTZ4SWdCTG5kMU43U0xoNXFSRkM5UHBHV08xOHBKLVJqb3IyR29GeWdDQS03M1FPalF4TVVPVklLTFpSMEhmUFcwbjFqa1pVdGpIal9fN3EwUElFMG5jWjNZa3FDcjd1OXhPa0lDd9IBpAFBVV95cUxQQnQzUmtpVF9ZNUNuQXQ5V0dnV1UzZnIzRUFjUFRTcGFmQV9aZjBTRVd4eUp2Zkxwa1hNWkIzWFFqM0ZhVHhqOElUYzdteUtBUW45X3hSa0FRZ1ZwQ1BsQUR6UXowWWlCZzFaSUcyVlFEUXI5Z204UkVBNUVkRFEzR2NER2wwTmVjWlA0NHlJUGZsOFdBV2lBM2lLX2c1d09pd0RDXw?oc=5",
+  "source": "Espos.id",
+  "source_url": "https://solopos.espos.id",
+  "published_at": "2026-09-26T15:12:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-09-27T11:30:36.409Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.13",
+      "nama": "Kabupaten Karanganyar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
