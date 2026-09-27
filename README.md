@@ -71,6 +71,8 @@ npm install
 npm run dev                 # buka http://localhost:5173
 ```
 
+Buka alamat itu di browser biasa (Chrome, Edge, Brave, atau Firefox). Di browser bawaan VS Code peta dasar Kemanusiaan (HOT) tampil kosong, karena server OSM Prancis menolak User-Agent VS Code (HTTP 403).
+
 Konfigurasi bawaan sudah cocok dengan `docker-compose.yml`. Salin `.env.example` menjadi `.env` hanya bila perlu mengubahnya.
 
 ### Test
