@@ -3,6 +3,9 @@ name: Rekam data bencana
 on:
   schedule:
     # Tiap 15 menit, di menit ganjil supaya tidak ikut antrean padat jam bulat GitHub.
+    # Kenyataannya GitHub hanya menjalankan ±6 kali sehari, jadi jadwal ini cadangan.
+    # Pemicu utamanya cron-job.org yang memanggil workflow_dispatch tiap 15 menit
+    # (cara pasang di README.md, bagian perekam).
     # Repo private (jatah 2.000 menit/bulan): ganti jadi '7,37 * * * *' (tiap 30 menit).
     - cron: '7,22,37,52 * * * *'
   workflow_dispatch:

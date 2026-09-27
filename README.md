@@ -45,6 +45,12 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
 
   Titik kab/kota untuk perekam dibuat dengan `npm run export:recorder` di folder `server/` (hasilnya `recorder/data/wilayah.json`, ikut dikomit).
 
+  Jadwal `schedule` GitHub Actions sering molor (kenyataannya ±6 run per hari), jadi run juga dipicu dari luar tiap 15 menit oleh layanan cron gratis cron-job.org yang memanggil API `workflow_dispatch`. Cara memasangnya:
+  1. Di GitHub (Settings → Developer settings → Fine-grained tokens), buat token yang hanya bisa mengakses repo ini, dengan izin **Actions: Read and write**. Beri masa berlaku sampai setelah musim hujan.
+  2. Di cron-job.org, buat job tiap 15 menit berisi `POST https://api.github.com/repos/Bintangilham10/webgis-bencana-alam/actions/workflows/rekam-data.yml/dispatches` dengan header `Authorization: Bearer <token>`, `Accept: application/vnd.github+json`, dan `X-GitHub-Api-Version: 2022-11-28`, serta body `{"ref":"main"}`. Kalau benar, balasannya HTTP 204.
+
+  Token ini hanya bisa memicu, membatalkan, atau menonaktifkan run workflow. Token tidak bisa mengubah kode maupun isi arsip. Cabut token di GitHub kalau sudah tidak dipakai.
+
 ## Struktur
 
 | Folder | Isi |
