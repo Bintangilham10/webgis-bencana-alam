@@ -82,3 +82,28 @@ export async function recentQuakes(lat, lon, { radiusKm = 100, days = 7 } = {}) 
       : null,
   };
 }
+
+// Riwayat kejadian gerakan tanah (PVMBG/MAGMA) di sekitar titik: jumlah dalam
+// radius, kejadian terdekat, dan kejadian terbaru.
+export async function nearbyLandslides(lat, lon, { radiusKm = 5 } = {}) {
+  const { rows } = await query(
+    `WITH near AS (
+       SELECT occurred_at, props->>'tanggal' AS tanggal, props->>'tipe' AS tipe, props->>'sumber' AS sumber,
+              ST_Distance(geom::geography, ${POINT}::geography) AS distance_m
+       FROM events
+       WHERE hazard = 'longsor' AND ST_DWithin(geom::geography, ${POINT}::geography, $3)
+     )
+     SELECT (SELECT count(*) FROM near)::int AS count,
+            (SELECT row_to_json(n) FROM (SELECT * FROM near ORDER BY distance_m LIMIT 1) n) AS nearest,
+            (SELECT row_to_json(n) FROM (SELECT * FROM near ORDER BY occurred_at DESC LIMIT 1) n) AS latest`,
+    [lon, lat, radiusKm * 1000],
+  );
+  const summary = ({ tanggal, tipe, sumber, distance_m }) => ({ tanggal, tipe, sumber, distance_km: round1(distance_m) });
+  const { count, nearest, latest } = rows[0];
+  return {
+    radius_km: radiusKm,
+    count,
+    nearest: nearest && summary(nearest),
+    latest: latest && summary(latest),
+  };
+}

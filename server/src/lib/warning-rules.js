@@ -21,6 +21,12 @@ export function rainCategory(mm) {
   return rules.rainCategories.findLast((c) => mm >= c.min) ?? null;
 }
 
+// Kelas lereng Van Zuidam dari derajat kemiringan.
+export function slopeClass(degrees) {
+  if (!Number.isFinite(degrees)) return null;
+  return rules.slopeClasses.classes.findLast((c) => degrees >= c.min) ?? null;
+}
+
 const rainCategoryById = (id) => rules.rainCategories.find((c) => c.id === id);
 const rainRank = (category) => (category ? RAIN_IDS.indexOf(category.id) : -1);
 

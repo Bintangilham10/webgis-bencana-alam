@@ -1,9 +1,11 @@
 import { Router } from 'express';
 import { memoize } from '../lib/cache.js';
 import { buildRiskProfile } from '../risk/profile.js';
-import { nearestFault, nearestVolcanoes, placeAt, recentQuakes } from '../risk/nearby.js';
+import { nearbyLandslides, nearestFault, nearestVolcanoes, placeAt, recentQuakes } from '../risk/nearby.js';
+import { levelFor } from '../sources/bmkg-cews.js';
 import { identifyHazards } from '../sources/inarisk.js';
-import { fetchForecast } from '../sources/open-meteo.js';
+import { fetchEnsemble, fetchForecast, fetchSlope } from '../sources/open-meteo.js';
+import { fetchLandslidePotential } from '../sources/pvmbg.js';
 
 // Kawasan Indonesia (sedikit lebih lebar dari daratan) untuk menolak koordinat
 // yang jelas keliru sebelum memanggil layanan luar.
@@ -17,8 +19,18 @@ export function inRegion(lat, lon) {
   );
 }
 
-// identify dan forecast bisa diganti saat test supaya tidak memanggil layanan asli.
-export function createRiskRouter({ identify = identifyHazards, forecast = fetchForecast } = {}) {
+const failed = (err) => ({ error: err.message });
+
+// Layanan luar bisa diganti saat test supaya tidak memanggil layanan asli.
+// rainWarnings dipakai bersama dengan layer peta (lihat app.js).
+export function createRiskRouter({
+  identify = identifyHazards,
+  forecast = fetchForecast,
+  potential = fetchLandslidePotential,
+  slope = fetchSlope,
+  ensemble = fetchEnsemble,
+  rainWarnings,
+} = {}) {
   const router = Router();
 
   // Kunci cache = koordinat dibulatkan 3 desimal (±100 m, seukuran piksel InaRISK),
@@ -26,15 +38,22 @@ export function createRiskRouter({ identify = identifyHazards, forecast = fetchF
   const loadProfile = memoize(
     async (key) => {
       const [lat, lon] = key.split(',').map(Number);
-      const [hazardIndices, weather, place, fault, volcanoes, quakes] = await Promise.all([
+      const [hazardIndices, weather, place, fault, volcanoes, quakes, pvmbg, cews, members, terrain, history] = await Promise.all([
         identify(lat, lon),
         forecast(lat, lon).catch((err) => ({ error: err.message, days: [] })),
         placeAt(lat, lon),
         nearestFault(lat, lon),
         nearestVolcanoes(lat, lon),
         recentQuakes(lat, lon),
+        potential(lat, lon).catch(failed),
+        rainWarnings().catch(failed),
+        ensemble(lat, lon).catch(failed),
+        slope(lat, lon).catch(failed),
+        nearbyLandslides(lat, lon),
       ]);
-      return buildRiskProfile({ lat, lon, place, hazardIndices, forecast: weather, fault, volcanoes, quakes });
+      const rainWarning = cews.error ? cews : { ...cews, level: levelFor(cews, place?.kode) };
+      const landslide = { potential: pvmbg, rainWarning, ensemble: members, slope: terrain, history };
+      return buildRiskProfile({ lat, lon, place, hazardIndices, forecast: weather, fault, volcanoes, quakes, landslide });
     },
     CACHE_TTL_MS,
     { maxEntries: 1000 },

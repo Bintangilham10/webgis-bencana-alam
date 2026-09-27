@@ -1,0 +1,4 @@
+{"type":"FeatureCollection","features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[107.01,-7.0]},"properties":{"id":"pvmbg:uji:2021-02-10:0","tanggal":"2021-02-10","waktu_utc":null,"sumber":"pvmbg-lapangan","tipe":"Longsoran","desa":null,"kecamatan":"Uji","kab_kode":"99.01","kab_nama":"Kabupaten Uji","provinsi":"Provinsi Uji"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[107.1,-7.0]},"properties":{"id":"magma:CRS20230223160000","tanggal":"2023-02-23","waktu_utc":"2023-02-23T16:00:00+00:00","sumber":"magma-tanggapan","tipe":null,"desa":"Uji","kecamatan":null,"kab_kode":"99.01","kab_nama":"Kabupaten Uji","provinsi":"Provinsi Uji"}}
+]}

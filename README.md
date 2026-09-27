@@ -70,7 +70,7 @@ docker compose up -d        # database di localhost:5433
 cd server
 npm install
 npm run migrate             # membuat tabel
-npm run seed                # batas wilayah, gunung api, sesar (unduh sekali, ±15 detik)
+npm run seed                # batas wilayah, gunung api, sesar, riwayat longsor (unduh sekali, ±15 detik)
 npm run dev                 # API di http://localhost:3000/api
 ```
 
@@ -112,7 +112,9 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 | `GET /api/volcanoes` | Gunung api beserta status level, erupsi, dan VONA |
 | `GET /api/faults` | Segmen sesar aktif PuSGeN 2024 |
 | `GET /api/wilayah?tingkat=provinsi` atau `kabkota` | Batas wilayah, disederhanakan untuk tampilan |
-| `GET /api/risk?lat=-6.2&lon=106.85` | Profil risiko satu titik (cache 10 menit per sel ±100 m) |
+| `GET /api/risk?lat=-6.2&lon=106.85` | Profil risiko satu titik (cache 10 menit per sel ±100 m), termasuk bagian `landslide`: potensi gerakan tanah bulanan PVMBG, peringatan hujan tinggi BMKG, hujan 3 hari terakhir, peluang ensemble, kemiringan lereng, dan riwayat longsor dalam 5 km |
+| `GET /api/rain-warnings` | Kab/kota berstatus Waspada, Siaga, atau Awas pada peringatan dini curah hujan tinggi BMKG dasarian ini (GeoJSON) |
+| `GET /api/landslides` | Riwayat kejadian gerakan tanah PVMBG dan MAGMA (GeoJSON) |
 | `GET /api/geocode?q=bandung` | Pencarian kab/kota (database) dan tempat lain (Nominatim) |
 
 ## Sumber data dan atribusi
@@ -122,6 +124,8 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 | Gempa bumi | [BMKG](https://data.bmkg.go.id/) | Wajib mencantumkan BMKG sebagai sumber |
 | Indeks bahaya, sesar aktif | [InaRISK BNPB](https://inarisk.bnpb.go.id/); model sesar PuSGeN 2024 | Cantumkan BNPB dan PuSGeN |
 | Status gunung api | [MAGMA Indonesia](https://magma.esdm.go.id/), PVMBG Kementerian ESDM | Cantumkan PVMBG |
+| Prakiraan potensi gerakan tanah bulanan, ZKGT, dan riwayat kejadian longsor | PVMBG, Badan Geologi, Kementerian ESDM ([Portal MBG](https://vsi.esdm.go.id/portalmbg/) dan MAGMA Indonesia) | Cantumkan PVMBG. Riwayat disusun ulang oleh `research/01_inventaris.py` tanpa data pribadi |
+| Peringatan dini curah hujan tinggi | [BMKG CEWS](https://cews.bmkg.go.id/) | Wajib mencantumkan BMKG sebagai sumber |
 | Batas lempeng | Bird (2003) PB2002, konversi H. Ahlenius/Nordpil | ODC-By |
 | Batas wilayah | Kepmendagri No 300.2.2-2430 Tahun 2025, [cahyadsn/wilayah_boundaries](https://github.com/cahyadsn/wilayah_boundaries) | MIT |
 | Laporan warga (arsip riset) | [PetaBencana.id](https://petabencana.id/) | CC BY-NC 4.0 |

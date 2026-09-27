@@ -3,14 +3,18 @@ import express from 'express';
 import { earthquakesRouter } from './routes/earthquakes.js';
 import { createGeocodeRouter } from './routes/geocode.js';
 import { healthRouter } from './routes/health.js';
+import { createLandslideRouter } from './routes/landslides.js';
 import { referenceRouter } from './routes/reference.js';
 import { createRiskRouter } from './routes/risk.js';
 import { volcanoesRouter } from './routes/volcanoes.js';
+import { createRainWarnings } from './sources/bmkg-cews.js';
 
 // `services` memungkinkan test mengganti layanan luar (InaRISK, Open-Meteo,
-// Nominatim) dengan versi palsu.
+// Nominatim, PVMBG, BMKG CEWS) dengan versi palsu.
 export function createApp({ services = {} } = {}) {
   const app = express();
+  // Satu cache peringatan CEWS untuk cek risiko dan layer peta.
+  const rainWarnings = services.rainWarnings ?? createRainWarnings();
   app.disable('x-powered-by');
   // GeoJSON batas wilayah dan sesar berukuran besar; gzip memangkasnya ±80%.
   app.use(compression());
@@ -21,7 +25,8 @@ export function createApp({ services = {} } = {}) {
     earthquakesRouter,
     volcanoesRouter,
     referenceRouter,
-    createRiskRouter(services.risk),
+    createRiskRouter({ rainWarnings, ...services.risk }),
+    createLandslideRouter({ rainWarnings }),
     createGeocodeRouter(services.geocode),
   );
   app.use('/api', (req, res) => res.status(404).json({ error: 'Endpoint tidak ditemukan' }));

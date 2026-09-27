@@ -20,7 +20,35 @@ const NEAR_ACTIVE_VOLCANO_KM = 30;
 // (sama dengan faultDisplayName di web/src/layers/reference.js).
 const faultDisplayName = (nama) => (/\s*fault$/i.test(nama) ? `Sesar ${nama.replace(/\s*fault$/i, '')}` : nama);
 
-export function recommendations({ hazards, indications, fault, volcanoes }) {
+const MONTHS = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+const monthName = (yyyymm) => {
+  const [year, month] = yyyymm.split('-').map(Number);
+  return `${MONTHS[month - 1]} ${year}`;
+};
+
+// Saran dari produk resmi longsor dan hujan: potensi gerakan tanah PVMBG bulan
+// ini dan peringatan dini curah hujan tinggi BMKG untuk dasarian ini.
+function landslideTips(landslide, place) {
+  const tips = [];
+  const potensi = landslide?.potential?.potensi?.toLowerCase();
+  if (potensi === 'tinggi' || potensi === 'menengah') {
+    tips.push(
+      `Prakiraan PVMBG ${monthName(landslide.potential.month)}: potensi gerakan tanah ${potensi} di lokasi ini. ` +
+        'Saat dan setelah hujan lebat, hindari tebing dan lereng terjal, lalu perhatikan retakan tanah dan air keruh dari lereng.',
+    );
+  }
+  const warning = landslide?.rain_warning;
+  if (warning?.level >= 1) {
+    const where = place ? place.nama : 'wilayah ini';
+    tips.push(
+      `BMKG: peringatan dini curah hujan tinggi level ${warning.label.toLowerCase()} untuk ${where} ` +
+        `(${warning.dasarian.start} s.d. ${warning.dasarian.end}). Hujan tinggi berturut-turut meningkatkan peluang banjir dan longsor.`,
+    );
+  }
+  return tips;
+}
+
+export function recommendations({ hazards, indications, fault, volcanoes, landslide = null, place = null }) {
   const tips = [];
 
   for (const indication of indications.filter((i) => i.level > 0)) {
@@ -28,6 +56,8 @@ export function recommendations({ hazards, indications, fault, volcanoes }) {
       `Indikasi ${indication.label.toLowerCase()} ${indication.hazard} dalam 3 hari: pantau peringatan resmi BMKG dan informasi BPBD setempat.`,
     );
   }
+
+  tips.push(...landslideTips(landslide, place));
 
   const relevant = hazards.filter((h) => h.class && h.class.id !== 'rendah');
   for (const hazard of relevant) tips.push(BY_HAZARD[hazard.id]);

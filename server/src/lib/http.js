@@ -14,10 +14,10 @@ export class HttpError extends Error {
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const isRetryable = (err) => !(err instanceof HttpError) || err.status === 429 || err.status >= 500;
 
-export async function fetchText(url, { timeoutMs = 20_000, retries = 1 } = {}) {
+async function request(url, init, { timeoutMs = 20_000, retries = 1 } = {}) {
   for (let attempt = 0; ; attempt++) {
     try {
-      const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(timeoutMs) });
+      const res = await fetch(url, { ...init, headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(timeoutMs) });
       if (!res.ok) throw new HttpError(url, res.status);
       return await res.text();
     } catch (err) {
@@ -31,6 +31,11 @@ export async function fetchText(url, { timeoutMs = 20_000, retries = 1 } = {}) {
   }
 }
 
+export const fetchText = (url, options) => request(url, {}, options);
+
 export async function fetchJson(url, options) {
   return JSON.parse(await fetchText(url, options));
 }
+
+// Formulir POST (application/x-www-form-urlencoded), mis. endpoint CEWS BMKG.
+export const postForm = (url, fields, options) => request(url, { method: 'POST', body: new URLSearchParams(fields) }, options);

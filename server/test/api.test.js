@@ -32,13 +32,32 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       },
       forecast: async () => ({
         elevationM: 120,
+        pastDays: [
+          { date: '2026-09-23', precipitationMm: 20 },
+          { date: '2026-09-24', precipitationMm: 15 },
+          { date: '2026-09-25', precipitationMm: 5 },
+        ],
         days: [
           { date: '2026-09-26', precipitationMm: 60, probabilityPct: 90 },
           { date: '2026-09-27', precipitationMm: 10, probabilityPct: 60 },
           { date: '2026-09-28', precipitationMm: 5, probabilityPct: 40 },
         ],
       }),
+      potential: async () => ({ month: '2026-09', current: true, potensi: 'Tinggi', zkgt: 'Tinggi' }),
+      slope: async () => ({ degrees: 20.3, stepM: 90 }),
+      ensemble: async () => {
+        throw new Error('Open-Meteo 429');
+      },
     },
+    // CEWS palsu: Kabupaten Uji berstatus Siaga pada dasarian III September 2026.
+    rainWarnings: async () => ({
+      dasarian: { year: 2026, month: 9, num: 3, start: '2026-09-21', end: '2026-09-30' },
+      published: true,
+      counts: { aman: 1, waspada: 0, siaga: 1, awas: 0 },
+      by_code: { '99.01': 2 },
+      unmatched: [],
+      fetched_at: '2026-09-27T00:00:00.000Z',
+    }),
     geocode: {
       searchPlaces: async (q) => {
         calls.places++;
@@ -172,6 +191,9 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
           errors: [],
         }),
       });
+      // Dua kejadian longsor buatan: ±1,1 km dan ±11 km dari titik uji.
+      const { seedLandslides } = await import('../scripts/seed-landslides.js');
+      await seedLandslides(new URL('./fixtures/landslides-uji.geojson', import.meta.url));
     });
 
     test('profil risiko menggabungkan InaRISK, cuaca, dan analisis kedekatan', async () => {
@@ -196,6 +218,39 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       assert.equal(body.recent_quakes.count, 1);
       assert.equal(body.recent_quakes.strongest.magnitude, 5.2);
       assert.ok(body.recommendations.some((t) => t.startsWith('Indikasi waspada banjir')));
+    });
+
+    test('bagian tanah longsor: produk resmi, lereng, riwayat, dan sumber yang gagal', async () => {
+      const { body } = await getJson('/risk?lat=-7&lon=107');
+      const { landslide } = body;
+      assert.equal(landslide.potential.potensi, 'Tinggi');
+      assert.equal(landslide.rain_warning.level, 2);
+      assert.equal(landslide.rain_warning.label, 'Siaga');
+      assert.equal(landslide.antecedent_rain.total_mm, 40);
+      assert.equal(landslide.slope.class.id, 'curam');
+      assert.deepEqual(landslide.ensemble, { error: 'Open-Meteo 429' });
+      assert.equal(landslide.history.count, 1);
+      assert.equal(landslide.history.nearest.tanggal, '2021-02-10');
+      assert.ok(Math.abs(landslide.history.nearest.distance_km - 1.1) < 0.1);
+      assert.ok(body.recommendations.some((t) => t.includes('level siaga untuk Kabupaten Uji')));
+    });
+
+    test('layer peringatan hujan hanya berisi kab/kota Waspada ke atas', async () => {
+      const { status, body } = await getJson('/rain-warnings');
+      assert.equal(status, 200);
+      assert.equal(body.dasarian.num, 3);
+      assert.equal(body.features.length, 1);
+      assert.deepEqual(body.features[0].properties, { kode: '99.01', nama: 'Kabupaten Uji', level: 2, level_label: 'Siaga' });
+      assert.match(body.features[0].geometry.type, /Polygon$/);
+    });
+
+    test('riwayat longsor tampil sebagai GeoJSON [lon, lat]', async () => {
+      const { status, body } = await getJson('/landslides');
+      assert.equal(status, 200);
+      assert.equal(body.features.length, 2);
+      assert.deepEqual(body.features[0].geometry.coordinates, [107.01, -7]);
+      assert.equal(body.features[0].properties.tipe, 'Longsoran');
+      assert.match(body.attribution, /PVMBG/);
     });
 
     test('titik yang sama (dibulatkan 3 desimal) dilayani dari cache', async () => {

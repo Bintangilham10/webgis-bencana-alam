@@ -1,6 +1,7 @@
 import { pool } from '../src/db.js';
 import { syncVolcanoes } from '../src/jobs/sync-volcanoes.js';
 import { seedFaults } from './seed-faults.js';
+import { seedLandslides } from './seed-landslides.js';
 import { seedWilayah } from './seed-wilayah.js';
 
 // Gunung api tidak punya seed terpisah: sinkronisasi MAGMA sekaligus
@@ -9,6 +10,7 @@ const SEEDS = {
   wilayah: seedWilayah,
   volcanoes: async () => (await syncVolcanoes()).items,
   faults: seedFaults,
+  landslides: seedLandslides,
 };
 
 // Pemakaian: npm run seed [-- wilayah faults ...]; tanpa argumen = semua.

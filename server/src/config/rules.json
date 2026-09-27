@@ -27,5 +27,17 @@
     "description": "Akumulasi hujan beberapa hari memicu longsor walau hujan harian tidak lebat: bila tercapai, kategori hujan untuk longsor minimal 'lebat'.",
     "days": 3,
     "minTotalMm": 100
+  },
+  "slopeClasses": {
+    "description": "Kelas kemiringan lereng Van Zuidam (1985), dalam derajat; min = batas bawah kelas. Hanya informasi, belum dipakai untuk level peringatan.",
+    "classes": [
+      { "id": "datar", "label": "Datar atau hampir datar", "min": 0 },
+      { "id": "landai", "label": "Landai", "min": 2 },
+      { "id": "miring", "label": "Miring", "min": 4 },
+      { "id": "agak_curam", "label": "Agak curam", "min": 8 },
+      { "id": "curam", "label": "Curam", "min": 16 },
+      { "id": "sangat_curam", "label": "Sangat curam", "min": 35 },
+      { "id": "terjal", "label": "Terjal", "min": 55 }
+    ]
   }
 }
