@@ -11,11 +11,12 @@ export const THRESHOLDS_MM = [20, 50, 100];
 // Run 00 UTC ECMWF biasanya sudah tersedia di Open-Meteo sekitar 08 UTC (15 WIB).
 const START_HOUR_WIB = 15;
 // Satu lokasi ensemble dihitung ±4 panggilan dan batas gratis 600 panggilan per
-// menit (uji 27 Sep 2026: 429 setelah 150 lokasi). Dua request × 50 lokasi per
-// run dengan jeda 30 detik; 514 titik selesai dalam ±6 run (±1,5 jam).
+// menit (uji 27 Sep 2026: 429 setelah 150 lokasi). Request 50 lokasi (±200
+// panggilan) diberi jeda 25 detik, jadi ±480 panggilan per menit. Semua titik
+// diambil dalam satu run (±4 menit) karena jadwal GitHub Actions sering hanya
+// berjalan beberapa kali sehari.
 const POINTS_PER_REQUEST = 50;
-const REQUESTS_PER_RUN = 2;
-const PAUSE_MS = 30_000;
+const PAUSE_MS = 25_000;
 
 export function ensembleUrl(points) {
   const params = new URLSearchParams({
@@ -70,9 +71,7 @@ export async function recordOpenMeteoEns({ archive, http, now, data = {}, pause 
   const errors = [];
 
   const batches = [];
-  for (let i = 0; i < todo.length && batches.length < REQUESTS_PER_RUN; i += POINTS_PER_REQUEST) {
-    batches.push(todo.slice(i, i + POINTS_PER_REQUEST));
-  }
+  for (let i = 0; i < todo.length; i += POINTS_PER_REQUEST) batches.push(todo.slice(i, i + POINTS_PER_REQUEST));
   for (const [index, batch] of batches.entries()) {
     if (index > 0) await pause(PAUSE_MS);
     try {

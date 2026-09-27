@@ -145,7 +145,7 @@ describe('BMKG CEWS', () => {
     assert.ok(record.levels.waspada.some((e) => e.kab_kota === 'AGAM' && e.kode === '13.06'));
   });
 
-  test('tidak memeriksa ulang sebelum 6 jam', async () => {
+  test('tidak memeriksa ulang sebelum 3 jam', async () => {
     await recordBmkgCews({ archive, http: fakeHttp({ post: cewsPost }), now: '2026-09-25T18:05:00.000Z', data: DATA, pause: noPause });
     const http = fakeHttp({ post: cewsPost });
     await recordBmkgCews({ archive, http, now: '2026-09-25T20:05:00.000Z', data: DATA, pause: noPause });
@@ -265,18 +265,17 @@ describe('Open-Meteo ensemble', () => {
     assert.equal(again.skipped, 'sudah direkam hari ini');
   });
 
-  test('titik banyak dicicil maksimal 100 per run supaya tidak melewati batas per menit', async () => {
+  test('semua titik diambil dalam satu run, dengan jeda antar-request untuk batas per menit', async () => {
     const many = Array.from({ length: 150 }, (_, i) => ({ kode: `99.${String(i).padStart(3, '0')}`, lat: -7 - i / 1000, lon: 110 }));
     const data = { ...DATA, wilayah: many };
     const http = fakeHttp({ get: [[(u) => u.startsWith('https://ensemble-api.open-meteo.com/'), ensembleFor]] });
-    const first = await recordOpenMeteoEns({ archive, http, now: '2026-09-27T09:00:00.000Z', data, pause: noPause });
-    assert.equal(first.new, 100);
-    assert.equal((await archive.readJson('open-meteo-ens/status.json')).completed_at, undefined);
+    const pauses = [];
+    const result = await recordOpenMeteoEns({ archive, http, now: '2026-09-27T09:00:00.000Z', data, pause: async (ms) => pauses.push(ms) });
 
-    const second = await recordOpenMeteoEns({ archive, http, now: '2026-09-27T09:15:00.000Z', data, pause: noPause });
-    assert.equal(second.new, 50);
-    assert.ok((await archive.readJson('open-meteo-ens/status.json')).completed_at);
+    assert.equal(result.new, 150);
     assert.equal(http.calls.length, 3);
+    assert.deepEqual(pauses, [25_000, 25_000]);
+    assert.ok((await archive.readJson('open-meteo-ens/status.json')).completed_at);
   });
 
   test('kuota habis (429): titik yang sudah terekam disimpan, sisanya lanjut run berikutnya', async () => {
@@ -334,7 +333,7 @@ describe('berita longsor', () => {
     const result = await recordBeritaLongsor({ archive, http, now: '2026-09-27T01:00:00.000Z', data: DATA, pause: noPause });
     assert.deepEqual(result, { items: 8, new: 8, errors: [] });
     const again = await recordBeritaLongsor({ archive, http, now: '2026-09-27T03:00:00.000Z', data: DATA, pause: noPause });
-    assert.equal(again.skipped, 'belum 6 jam');
+    assert.equal(again.skipped, 'belum 3 jam');
   });
 });
 

@@ -7,7 +7,7 @@ import { hoursSince, pad2 } from '../lib/time.js';
 export const QUERIES = ['"tanah longsor" when:1d', 'longsor when:1d'];
 export const rssUrl = (query) => `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=id&gl=ID&ceid=ID:id`;
 
-const CHECK_EVERY_HOURS = 6;
+const CHECK_EVERY_HOURS = 3;
 
 // Banyak situs asing (mis. Vietnam.vn) menerbitkan berita berbahasa Indonesia.
 const FOREIGN_SOURCE = /vietnam|vov\.vn|nhandan|vnexpress/i;
@@ -60,7 +60,7 @@ export function classify(item, gazetteer) {
 
 export async function recordBeritaLongsor({ archive, http, now, data = {}, pause = async () => {} }) {
   const status = (await archive.readJson('berita-longsor/status.json')) ?? {};
-  if (hoursSince(status.checked_at, now) < CHECK_EVERY_HOURS) return { items: 0, new: 0, skipped: 'belum 6 jam' };
+  if (hoursSince(status.checked_at, now) < CHECK_EVERY_HOURS) return { items: 0, new: 0, skipped: `belum ${CHECK_EVERY_HOURS} jam` };
 
   const items = new Map();
   const errors = [];

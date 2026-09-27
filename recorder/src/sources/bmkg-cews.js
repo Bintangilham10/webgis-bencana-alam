@@ -10,8 +10,10 @@ export const LEVELS = ['aman', 'waspada', 'siaga', 'awas'];
 // Arsip CEWS di server BMKG dimulai Januari 2022.
 export const BACKFILL_FROM = { year: 2022, month: 1, num: 1 };
 
-const CHECK_EVERY_HOURS = 6;
-const BACKFILL_PER_RUN = 6;
+// Jadwal GitHub Actions sering tertunda (±6 run per hari), jadi pemeriksaan
+// dibuat cukup rapat supaya praktis terjadi di setiap run.
+const CHECK_EVERY_HOURS = 3;
+const BACKFILL_PER_RUN = 12;
 const PAUSE_MS = 1_000;
 
 export const dasarianLabel = ({ year, month, num }) => `${year}-${pad2(month)} dasarian ${num}`;
