@@ -24,6 +24,8 @@ research/.venv/Scripts/python -m unittest discover -s research/tests
 
 Semua respons sumber disimpan di cache `research/data/cache/`, beserta waktu pengambilan di `_manifest.jsonl`. Menjalankan ulang tidak mengunduh ulang dan memberi hasil yang sama. Skrip yang terhenti bisa langsung dijalankan lagi.
 
+Balasan yang bukan data tidak pernah masuk cache. Kalau firewall situs ESDM membalas halaman blokir, skrip berhenti dengan galat `Blocked`; tunggu beberapa jam, lalu jalankan ulang. Balasan GeoServer yang tak terduga dicoba ulang, dan skrip berhenti dengan `UnexpectedResponse` bila tetap gagal. Isi cache lama yang tidak lolos pemeriksaan ini diambil ulang secara otomatis.
+
 Data CEWS dibaca dari arsip perekam (branch `arsip-data`, folder `bmkg-cews/`). Bagian ini dilewati otomatis sampai arsip 2022–2025 lengkap.
 
 ## Struktur

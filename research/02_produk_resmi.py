@@ -36,6 +36,8 @@ from sigap_riset.wilayah import kab_kota_at, random_points
 PVMBG_WMS = 'https://vsi.esdm.go.id/data/api/public/geohazard/map-layer/wms'
 # Titik rujukan di zona kerentanan Tinggi (Banjarnegara) untuk mengenali layer kosong.
 REFERENCE = (-7.275, 109.67)
+# Galat GeoServer untuk layer yang rusak permanen (2025-12: kolom zona_perki hilang).
+BROKEN_LAYER = 'can not be used with this layer'
 FIRST_MONTH, LAST_MONTH = (2022, 1), (2025, 12)
 N_SPATIAL = 10
 N_TEMPORAL = 6
@@ -81,15 +83,26 @@ def feature_info_url(year: int, month: int, lat: float, lon: float) -> str:
     return f"{PVMBG_WMS}?{'&'.join(f'{k}={v}' for k, v in params.items())}"
 
 
-def read_pvmbg(client: Client, year: int, month: int, lat: float, lon: float) -> dict | None:
+def is_feature_info(text: str) -> bool:
+    """Balasan yang sah: JSON GetFeatureInfo, atau galat GeoServer untuk layer
+    yang rusak permanen. Galat lain (mis. GeoServer sedang bermasalah) dicoba
+    ulang oleh Client dan tidak di-cache."""
+    return text.lstrip().startswith('{') or BROKEN_LAYER in text
+
+
+def parse_feature_info(text: str | None) -> dict | None:
     """Atribut poligon di titik; None bila layer bulan itu tidak ada (404) atau
-    rusak (GeoServer membalas ServiceExceptionReport XML, mis. layer 2025-12)."""
-    text = client.text(feature_info_url(year, month, round(lat, 5), round(lon, 5)))
-    if text is None or text.lstrip().startswith('<'):
+    rusak (layer 2025-12 tidak punya kolom zona_perki, jadi style-nya ditolak)."""
+    if text is None or BROKEN_LAYER in text:
         return None
     features = json.loads(text).get('features') or []
     props = features[0]['properties'] if features else {}
     return {'ada_poligon': bool(features), 'potensi': props.get('zona_perki'), 'zkgt': props.get('unsur')}
+
+
+def read_pvmbg(client: Client, year: int, month: int, lat: float, lon: float) -> dict | None:
+    url = feature_info_url(year, month, round(lat, 5), round(lon, 5))
+    return parse_feature_info(client.text(url, valid=is_feature_info))
 
 
 def layer_status(client: Client) -> dict[tuple[int, int], str]:

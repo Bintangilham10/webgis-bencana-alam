@@ -10,6 +10,7 @@ from __future__ import annotations
 import hashlib
 import json
 import time
+from collections.abc import Callable
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -20,11 +21,27 @@ from .paths import CACHE
 USER_AGENT = 'SIGAP-Riset/0.1 (+https://github.com/Bintangilham10/webgis-bencana-alam)'
 NOT_FOUND = '__HTTP_404__'
 MAX_ATTEMPTS = 4
+# Halaman blokir firewall (F5 di situs ESDM, Cloudflare) sering dibalas dengan
+# status 200. Kalau ikut di-cache, halaman ini terbaca sebagai data yang sah.
+BLOCK_MARKERS = ('Request Rejected', 'The requested URL was rejected', '<title>Just a moment...</title>')
+
+
+class Blocked(RuntimeError):
+    """Server sumber membalas halaman blokir firewall, bukan data."""
+
+
+class UnexpectedResponse(RuntimeError):
+    """Balasan tetap tidak lolos pemeriksaan isi setelah dicoba ulang."""
+
+
+def is_block_page(content: str) -> bool:
+    head = content[:2000]
+    return any(marker in head for marker in BLOCK_MARKERS)
 
 
 class Client:
-    def __init__(self, name: str, min_interval_s: float = 1.0):
-        self.dir = CACHE / name
+    def __init__(self, name: str, min_interval_s: float = 1.0, cache_dir: Path | None = None):
+        self.dir = (cache_dir or CACHE) / name
         self.dir.mkdir(parents=True, exist_ok=True)
         self.min_interval_s = min_interval_s
         self.network_requests = 0
@@ -40,13 +57,22 @@ class Client:
             record = {'file': self._file(key).name, 'url': url, 'status': status, 'fetched_at': datetime.now(timezone.utc).isoformat()}
             f.write(json.dumps(record) + '\n')
 
-    def text(self, url: str, data: dict | None = None, timeout: float = 60) -> str | None:
-        """Isi respons sebagai teks (BOM dibuang); None bila 404."""
+    def text(self, url: str, data: dict | None = None, timeout: float = 60,
+             valid: Callable[[str], bool] | None = None) -> str | None:
+        """Isi respons sebagai teks (BOM dibuang); None bila 404.
+
+        `valid` memeriksa isi balasan. Balasan yang tidak lolos tidak di-cache
+        dan dicoba ulang; isi cache lama yang tidak lolos diambil ulang.
+        """
         key = url if data is None else f'{url}\n{json.dumps(data, sort_keys=True)}'
         file = self._file(key)
         if file.exists():
             content = file.read_text(encoding='utf-8')
-            return None if content == NOT_FOUND else content
+            if content == NOT_FOUND:
+                return None
+            if not is_block_page(content) and (valid is None or valid(content)):
+                return content
+            file.unlink()
 
         for attempt in range(MAX_ATTEMPTS):
             wait = self.min_interval_s - (time.monotonic() - self._last)
@@ -79,6 +105,14 @@ class Client:
             res.raise_for_status()
             # requests menebak ISO-8859-1 untuk HTML tanpa charset; sumber kita UTF-8.
             content = res.content.decode('utf-8-sig', errors='replace')
+            # Mencoba ulang saat diblokir hanya memperburuk keadaan: berhenti di sini.
+            if is_block_page(content):
+                raise Blocked(f'Diblokir firewall server sumber, coba lagi nanti: {url}')
+            if valid is not None and not valid(content):
+                if attempt == MAX_ATTEMPTS - 1:
+                    raise UnexpectedResponse(f'Balasan tak terduga dari {url}: {content[:200]!r}')
+                time.sleep(10 * 2**attempt)
+                continue
             file.write_text(content, encoding='utf-8')
             self._log(key, url, res.status_code)
             return content
