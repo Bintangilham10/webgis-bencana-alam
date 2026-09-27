@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.27.07.72.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-27T13:58:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-27T14:10:00+08:00</effective>
+    <expires>2026-09-27T16:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 September 2026, 14:10 WITA di sebagian wilayah Sulawesi Tengah, khususnya di MARAWOLA BARAT, PINEMBANI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 September 2026, 16:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSG/2026/09/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tengah</areaDesc>
+      <polygon>-1.036,119.774 -1.046,119.781 -1.068,119.785 -1.084,119.796 -1.089,119.804 -1.108,119.799 -1.131,119.796 -1.134,119.806 -1.143,119.805 -1.151,119.794 -1.185,119.787 -1.198,119.770 -1.193,119.764 -1.176,119.761 -1.170,119.740 -1.153,119.726 -1.156,119.700 -1.170,119.682 -1.171,119.672 -1.162,119.639 -1.154,119.638 -1.147,119.632 -1.147,119.608 -1.135,119.611 -1.120,119.609 -1.118,119.602 -1.124,119.593 -1.093,119.588 -1.078,119.581 -1.047,119.574 -1.025,119.576 -1.018,119.575 -1.010,119.581 -1.003,119.600 -1.011,119.629 -1.010,119.646 -1.002,119.652 -0.994,119.650 -0.988,119.661 -1.013,119.681 -1.020,119.704 -1.018,119.712 -1.012,119.712 -1.005,119.719 -1.014,119.733 -1.008,119.740 -1.007,119.750 -1.013,119.758 -1.027,119.761 -1.036,119.774</polygon>
+      <polygon>-0.904,119.785 -0.902,119.804 -0.929,119.797 -0.934,119.803 -0.935,119.816 -0.941,119.824 -0.956,119.826 -0.962,119.822 -0.970,119.800 -0.995,119.779 -1.012,119.778 -1.014,119.785 -1.034,119.772 -1.036,119.774 -1.027,119.761 -1.013,119.758 -1.007,119.750 -1.008,119.740 -1.014,119.733 -1.005,119.719 -1.012,119.712 -1.018,119.712 -1.020,119.704 -1.013,119.681 -0.988,119.661 -0.994,119.650 -0.970,119.648 -0.953,119.654 -0.941,119.672 -0.935,119.705 -0.901,119.731 -0.919,119.746 -0.909,119.754 -0.904,119.785</polygon>
+    </area>
+  </info>
+</alert>
