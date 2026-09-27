@@ -51,3 +51,22 @@ export function timeAgo(iso, now = Date.now()) {
   }
   return 'baru saja';
 }
+
+// Dasarian BMKG {start: "2026-09-21", end: "2026-09-30", num: 3} → "21–30 Sep 2026 (dasarian III)".
+const monthShort = new Intl.DateTimeFormat('id-ID', { month: 'short', timeZone: 'UTC' });
+// short: "21–30 Sep" untuk ruang sempit.
+export function formatDasarian({ start, end, num }, { short = false } = {}) {
+  const [year, month, first] = start.split('-').map(Number);
+  const last = Number(end.slice(8, 10));
+  const range = `${first}–${last} ${monthShort.format(new Date(Date.UTC(year, month - 1, 15)))}`;
+  return short ? range : `${range} ${year} (dasarian ${['I', 'II', 'III'][num - 1]})`;
+}
+
+// Bulan prakiraan "2026-09" → "September 2026".
+const monthLong = new Intl.DateTimeFormat('id-ID', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+export const formatMonth = (yyyymm) => monthLong.format(new Date(`${yyyymm}-15T00:00:00Z`));
+
+// Tanggal kejadian "2021-01-06" → "6 Jan 2021".
+const dateShort = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+export const formatDateShort = (isoDate) => dateShort.format(new Date(`${isoDate}T00:00:00Z`));
+

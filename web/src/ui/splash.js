@@ -2,7 +2,8 @@ import { prefersReducedMotion } from '../lib/motion.js';
 
 // Layar pembuka tampil minimal sebentar supaya animasi logonya selesai, lalu
 // memudar setelah data pertama dimuat (atau paling lama MAX_WAIT_MS).
-// Animasi logo selesai ±1,6 detik setelah halaman dibuka (lihat motion.css).
+// Intro logo Kontur selesai ±1,4 detik setelah halaman dibuka dan sinyal
+// pertamanya memancar pada 1,1 detik (lihat motion.css).
 const MIN_VISIBLE_MS = 1_800;
 const MAX_WAIT_MS = 4_500;
 const FADE_MS = 700;

@@ -1106,3 +1106,30 @@
     min-width: 160px;
   }
 }
+
+/* ---------- Legenda lapisan hujan dan longsor ---------- */
+.legend-ramp {
+  display: flex;
+  overflow: hidden;
+  height: 10px;
+  margin: 4px 0 2px;
+  border-radius: 3px;
+}
+
+.legend-ramp span {
+  flex: 1;
+}
+
+.legend-ramp-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-3);
+}
+
+.swatch-triangle {
+  flex: none;
+  width: 15px;
+  height: 15px;
+}

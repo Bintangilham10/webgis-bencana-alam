@@ -44,3 +44,42 @@ export const WARNING_LEVEL_STYLES = [
 // Warna garis sesar, lempeng, batas wilayah, dan titik analisis mengikuti tema,
 // jadi didefinisikan sebagai variabel CSS di styles/base.css.
 export const pillStyle = ({ color, text }) => `--pill-bg:${color};--pill-fg:${text}`;
+
+// ---------- Tanah longsor dan hujan ----------
+
+// Kelas potensi gerakan tanah (prakiraan bulanan PVMBG) dan zona kerentanan
+// (ZKGT) memakai warna kelas InaRISK, jadi satu arti warna berlaku untuk semua
+// peta rawan. "Sangat rendah" dan di luar zona tidak diwarnai.
+export const LANDSLIDE_CLASSES = {
+  rendah: HAZARD_CLASSES[0],
+  menengah: HAZARD_CLASSES[1],
+  tinggi: HAZARD_CLASSES[2],
+};
+export const landslideClass = (label) => LANDSLIDE_CLASSES[String(label ?? '').trim().toLowerCase()] ?? null;
+// Zona aliran bahan rombakan (lahar/debris flow) di peta ZKGT: biru kehijauan,
+// jauh dari hijau–kuning–merah kelas kerentanan.
+export const DEBRIS_FLOW = { label: 'Aliran bahan rombakan', rgb: [0, 139, 179], color: 'rgb(0,139,179)' };
+
+// Peringatan dini curah hujan tinggi BMKG (CEWS): label BMKG, warna level
+// peringatan SIGAP. Level 0 (Aman) tidak diwarnai di peta.
+export const CEWS_LEVELS = WARNING_LEVEL_STYLES.map((style, level) => ({ ...style, label: ['Aman', 'Waspada', 'Siaga', 'Awas'][level] }));
+
+// Riwayat longsor: segitiga ungu, makin gelap makin baru. Ungu dipilih supaya
+// tidak tertukar dengan warna kedalaman gempa (merah–oranye) dan kelas bahaya.
+export const LANDSLIDE_AGES = [
+  { label: '2024–2025', from: 2024, color: '#6b21a8' },
+  { label: '2021–2023', from: 2021, color: '#a855f7' },
+  { label: '2020 dan sebelumnya', from: -Infinity, color: '#d8b4fe' },
+];
+export const landslideAgeColor = (year) => LANDSLIDE_AGES.find((age) => year >= age.from).color;
+
+// Skala warna hujan satelit NASA GPM IMERG (colormap GIBS), mm/jam.
+export const IMERG_RAMP = [
+  { mm: '0,1', color: '#00764e' },
+  { mm: '0,3', color: '#17b000' },
+  { mm: '0,9', color: '#b8e100' },
+  { mm: '1,3', color: '#f2e600' },
+  { mm: '2,7', color: '#ff8814' },
+  { mm: '7,5', color: '#ff0707' },
+  { mm: '21', color: '#960000' },
+];

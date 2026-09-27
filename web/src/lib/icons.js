@@ -15,6 +15,8 @@ export const icons = {
   fault: icon('<path d="M13 2 9.5 8.5l4 3-3.5 5 2 5.5"/>'),
   filter: icon('<path d="M21 4H3l7 8.2V19l4 2v-8.8z"/>'),
   info: icon('<circle cx="12" cy="12" r="9"/><path d="M12 11v5.5"/><path d="M12 7.5h.01"/>'),
+  // Lereng dengan runtuhan di kakinya (riwayat longsor).
+  landslide: icon('<path d="M3 20h18"/><path d="M4 20 11 6l3 5"/><circle cx="16" cy="15" r="1.4"/><circle cx="19" cy="18.2" r="1.1"/><circle cx="14.2" cy="18.4" r="0.9"/>'),
   layers: icon('<path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5"/>'),
   list: icon('<path d="M9 6h11M9 12h11M9 18h11"/><path d="M4.5 6h.01M4.5 12h.01M4.5 18h.01"/>'),
   locate: icon('<circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="7.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22"/>'),
@@ -28,5 +30,7 @@ export const icons = {
   quake: icon('<path d="M2 12h3.5l2-4.5 3 10 3-13 3 12 2-4.5H22"/>'),
   refresh: icon('<path d="M20 12a8 8 0 1 1-2.4-5.7"/><path d="M20 4v5h-5"/>'),
   search: icon('<circle cx="11" cy="11" r="7"/><path d="m20.5 20.5-4.3-4.3"/>'),
+  // Bidang miring dengan busur sudut kemiringan.
+  slope: icon('<path d="M3 20h18"/><path d="M3 20 17 6"/><path d="M11 20a8 8 0 0 0-2.3-5.7"/>'),
   sun: icon('<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'),
 };

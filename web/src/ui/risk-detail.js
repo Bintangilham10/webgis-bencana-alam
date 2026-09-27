@@ -1,7 +1,16 @@
 import { faultDisplayName } from '../layers/reference.js';
-import { capitalize, escapeHtml, formatDay, formatDecimal, formatNumber } from '../lib/format.js';
+import {
+  capitalize,
+  escapeHtml,
+  formatDasarian,
+  formatDateShort,
+  formatDay,
+  formatDecimal,
+  formatMonth,
+  formatNumber,
+} from '../lib/format.js';
 import { icons } from '../lib/icons.js';
-import { HAZARD_CLASSES, pillStyle, VOLCANO_LEVELS, WARNING_LEVEL_STYLES } from '../lib/symbology.js';
+import { CEWS_LEVELS, HAZARD_CLASSES, INK, landslideClass, pillStyle, VOLCANO_LEVELS, WARNING_LEVEL_STYLES } from '../lib/symbology.js';
 
 const INDICATION_NAMES = { banjir: 'banjir', longsor: 'tanah longsor' };
 // Skala batang hujan: batas bawah hujan ekstrem BMKG (mm/hari).
@@ -125,6 +134,116 @@ function rainDays(rain) {
   return `<div class="rain-days">${days}</div><p class="section-note">Batang dibandingkan dengan 150 mm/hari (batas hujan ekstrem BMKG).</p>`;
 }
 
+// ---------- Tanah longsor dan hujan ----------
+// Produk resmi (PVMBG, BMKG), hujan beberapa hari terakhir, peluang hujan lebat
+// dari ensemble, lereng, dan riwayat kejadian. Bagian yang sumbernya gagal
+// hanya menulis "gagal dimuat"; bagian lain tetap tampil.
+const muted = (text) => `<span class="muted">${escapeHtml(text)}</span>`;
+// "Sangat rendah" tidak punya warna kelas: pil abu-abu.
+const NEUTRAL_PILL = { color: '#98a2b3', text: INK };
+
+function classPill(label) {
+  if (!label) return muted('Di luar zona');
+  return `<span class="class-pill" style="${pillStyle(landslideClass(label) ?? NEUTRAL_PILL)}">${escapeHtml(capitalize(label.toLowerCase()))}</span>`;
+}
+
+function officialRow({ name, meta, value }) {
+  return `
+    <li class="official-row">
+      <span class="official-text"><span class="official-name">${name}</span><span class="official-meta">${meta}</span></span>
+      <span class="official-value">${value}</span>
+    </li>`;
+}
+
+function officialProducts({ potential: p, rain_warning: w }, place) {
+  let month = 'Prakiraan bulanan PVMBG';
+  if (!p.error) month += ` · ${formatMonth(p.month)}${p.current ? '' : ' (bulan ini belum terbit)'}`;
+  let warning = muted('Gagal dimuat');
+  let warningMeta = 'BMKG (CEWS)';
+  if (!w.error) {
+    warningMeta = `${place ? escapeHtml(place.nama) : 'Kab/kota ini'} · ${formatDasarian(w.dasarian)}`;
+    if (!w.published) warning = muted('Belum terbit');
+    else if (w.level == null) warning = muted('Di luar kab/kota');
+    else warning = `<span class="level-pill" style="${pillStyle(CEWS_LEVELS[w.level])}">${CEWS_LEVELS[w.level].label}</span>`;
+  }
+  return `
+    <ul class="official-list">
+      ${officialRow({ name: 'Potensi gerakan tanah', meta: month, value: p.error ? muted('Gagal dimuat') : classPill(p.potensi) })}
+      ${officialRow({ name: 'Zona kerentanan (ZKGT)', meta: 'Peta dasar PVMBG untuk prakiraan bulanan', value: p.error ? muted('Gagal dimuat') : classPill(p.zkgt) })}
+      ${officialRow({ name: 'Peringatan hujan tinggi BMKG', meta: warningMeta, value: warning })}
+    </ul>`;
+}
+
+function pastRain({ days, total_mm: total }) {
+  if (!days.length) return '<p class="empty-note">Data hujan beberapa hari terakhir tidak tersedia.</p>';
+  const tiles = days
+    .map((d, i) => {
+      const mm = d.precipitation_mm;
+      const width = mm > 0 ? Math.max(3, Math.min(100, (mm / RAIN_SCALE_MAX_MM) * 100)) : 0;
+      return `
+        <div class="rain-day">
+          <span class="rain-date">${formatDay(d.date)}</span>
+          <span class="rain-mm">${mm == null ? '–' : formatDecimal(mm)}<small> mm</small></span>
+          <span class="rain-bar" aria-hidden="true"><span style="width:${width}%;--i:${i}"></span></span>
+          <span class="rain-cat">${escapeHtml(d.category?.label ?? 'Tidak hujan')}</span>
+        </div>`;
+    })
+    .join('');
+  const sum = total == null ? '' : `Total ${formatDecimal(total)} mm dalam ${days.length} hari. `;
+  return `<div class="rain-days">${tiles}</div><p class="section-note">${sum}Angka model Open-Meteo, bukan penakar hujan.</p>`;
+}
+
+function heavyRainOdds(ensemble) {
+  if (ensemble.error) return '<p class="empty-note">Peluang hujan lebat sedang tidak tersedia.</p>';
+  const tiles = ensemble.days
+    .map(
+      (d) => `
+        <div class="rain-day">
+          <span class="rain-date">${formatDay(d.date)}</span>
+          <span class="rain-mm">${d.prob_50mm == null ? '–' : formatNumber(Math.round(d.prob_50mm * 100))}<small> %</small></span>
+          <span class="rain-prob">hujan ≥ 50 mm</span>
+          <span class="rain-prob">median ${formatDecimal(d.median_mm)} · p90 ${formatDecimal(d.p90_mm)} mm</span>
+        </div>`,
+    )
+    .join('');
+  const members = ensemble.days[0]?.members;
+  return `<div class="rain-days">${tiles}</div><p class="section-note">Porsi dari ${members ?? 51} anggota ensemble ECMWF yang memberi hujan lebat (≥ 50 mm/hari, batas BMKG).</p>`;
+}
+
+function terrainAndHistory({ slope, history: h }) {
+  const slopeRow = slope.error
+    ? nearbyRow({ icon: icons.slope, title: 'Kemiringan lereng tidak tersedia', meta: 'Elevasi Open-Meteo gagal dimuat' })
+    : nearbyRow({
+        icon: icons.slope,
+        title: `Kemiringan ${formatDecimal(slope.degrees)}° · ${escapeHtml(slope.class?.label ?? '')}`,
+        meta: 'Kelas Van Zuidam; rata-rata lereng sepanjang ±180 m',
+      });
+  const historyRow = h.count
+    ? nearbyRow({
+        icon: icons.landslide,
+        title: `${formatNumber(h.count)} kejadian longsor dalam ${h.radius_km} km`,
+        meta: `Terdekat ${formatDateShort(h.nearest.tanggal)} · terbaru ${formatDateShort(h.latest.tanggal)}`,
+        distance: h.nearest.distance_km,
+      })
+    : nearbyRow({ icon: icons.landslide, title: `Tidak ada kejadian tercatat dalam ${h.radius_km} km`, meta: 'Riwayat PVMBG dan MAGMA sejak 2008' });
+  return `<ul class="nearby-list">${slopeRow}${historyRow}</ul>`;
+}
+
+function landslideSection(landslide, place) {
+  if (!landslide) return '';
+  return section(
+    'Tanah longsor dan hujan',
+    'PVMBG · BMKG · Open-Meteo',
+    `${officialProducts(landslide, place)}
+     <h3 class="detail-subhead">Hujan 3 hari terakhir</h3>
+     ${pastRain(landslide.antecedent_rain)}
+     <h3 class="detail-subhead">Peluang hujan lebat, 3 hari ke depan</h3>
+     ${heavyRainOdds(landslide.ensemble)}
+     <h3 class="detail-subhead">Lereng dan riwayat</h3>
+     ${terrainAndHistory(landslide)}`,
+  );
+}
+
 // ---------- Sekitar lokasi ----------
 function nearbyRow({ icon, title, meta, distance }) {
   return `
@@ -195,11 +314,13 @@ function profileHtml(profile, { label, lat = profile.location.lat, lon = profile
       ${indicationList(profile.indications)}
       ${section('Bahaya di titik ini', 'InaRISK BNPB', `${hazardSummary(profile.hazards)}<ul class="hazard-list">${profile.hazards.map((h, i) => hazardRow(h, i)).join('')}</ul>`)}
       ${section('Prakiraan hujan', 'Open-Meteo', rainDays(profile.rain))}
+      ${landslideSection(profile.landslide, wilayah)}
       ${section('Sekitar lokasi', '', nearby(profile))}
       ${section('Saran kesiapsiagaan', '', `<ul class="tip-list">${profile.recommendations.map((t) => `<li>${icons.check}<span>${escapeHtml(t)}</span></li>`).join('')}</ul>`)}
       <footer class="detail-footer">
         Indikasi sistem, bukan peringatan resmi — ikuti BMKG, PVMBG, dan BPBD setempat.
-        Sumber: InaRISK BNPB, Open-Meteo (CC BY 4.0), PuSGeN 2024, MAGMA, BMKG. Aturan ${escapeHtml(profile.rules_version)}.
+        Sumber: InaRISK BNPB, PVMBG (prakiraan gerakan tanah, ZKGT, MAGMA), BMKG (gempa, CEWS), Open-Meteo (CC BY 4.0, ECMWF),
+        PuSGeN 2024. Aturan ${escapeHtml(profile.rules_version)}.
       </footer>
     </div>`;
 }

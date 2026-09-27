@@ -47,8 +47,29 @@ body {
 
 .brand-mark {
   flex: none;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
+  overflow: visible;
+}
+
+.brand-line {
+  fill: none;
+  stroke: var(--logo-line);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.brand-dot {
+  fill: var(--logo-dot);
+}
+
+/* Sinyal kecil dari titik puncak saat logo disorot (animasi di motion.css). */
+.brand-ring {
+  fill: none;
+  stroke: var(--logo-dot);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+  opacity: 0;
 }
 
 .brand-text {
@@ -316,8 +337,8 @@ body {
   }
 
   .brand-mark {
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
   }
 
   .brand-text {

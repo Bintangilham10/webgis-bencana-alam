@@ -12,7 +12,16 @@ import './styles/detail.css';
 import L from 'leaflet';
 import { createRiskCheck } from './features/risk-check.js';
 import { createEarthquakeLayer, earthquakeLegend } from './layers/earthquakes.js';
-import { createHazardLayer, HAZARDS, hazardLegend } from './layers/hazards.js';
+import { createHazardLayer, createZkgtLayer, HAZARDS, hazardLegend, zkgtLegend } from './layers/hazards.js';
+import {
+  createImergLayer,
+  createLandslideHistoryLayer,
+  createRainWarningLayer,
+  imergLegend,
+  landslideLegend,
+  landslideSymbol,
+  rainWarningLegend,
+} from './layers/landslide.js';
 import {
   boundaryLegend,
   createBoundaryLayer,
@@ -22,9 +31,11 @@ import {
   plateLegend,
 } from './layers/reference.js';
 import { createVolcanoLayer, volcanoLegend, volcanoSwatch } from './layers/volcanoes.js';
+import { getJson } from './lib/api.js';
+import { formatDasarian } from './lib/format.js';
 import { icons } from './lib/icons.js';
 import { flyToBounds } from './lib/motion.js';
-import { DEPTH_CLASSES } from './lib/symbology.js';
+import { CEWS_LEVELS, DEPTH_CLASSES, IMERG_RAMP } from './lib/symbology.js';
 import { cssVar, currentTheme, onThemeChange, setTheme } from './lib/theme.js';
 import { createMap, INDONESIA_BOUNDS } from './map/create-map.js';
 import { LegendControl } from './map/legend-control.js';
@@ -45,6 +56,8 @@ const px = (name) => parseFloat(cssVar(name)) || 0;
 
 const EARTHQUAKE_REFRESH_MS = 60_000;
 const VOLCANO_REFRESH_MS = 10 * 60_000;
+// Produk CEWS dasarian di-cache server 3 jam; daftar di Ikhtisar cukup dicek tiap 30 menit.
+const RAIN_WARNING_REFRESH_MS = 30 * 60_000;
 const HAZARD_OPACITY = 0.65;
 const PLACE_ZOOM = 13;
 
@@ -188,6 +201,10 @@ function markerPadding() {
 const earthquakes = createEarthquakeLayer(map, { viewPadding: markerPadding });
 const volcanoes = createVolcanoLayer(map, { viewPadding: markerPadding });
 const reportLoadError = (name) => (err) => freshness.fail(name, err);
+const rainWarnings = createRainWarningLayer({ onError: reportLoadError('Peringatan hujan') });
+// Waktu IMERG yang gagal dibaca tidak fatal: petanya jatuh ke data terbaru GIBS.
+const rainNow = createImergLayer({ onError: (err) => console.warn('Waktu IMERG tidak terbaca', err) });
+const landslideHistory = createLandslideHistoryLayer({ onError: reportLoadError('Riwayat longsor') });
 
 const symbol = {
   quake: `<span class="sym quake-swatch" style="--c:${DEPTH_CLASSES[0].color}"></span>`,
@@ -195,6 +212,9 @@ const symbol = {
   fault: '<span class="sym sym-line" style="--sym:var(--fault-color)"></span>',
   plate: '<span class="sym sym-line sym-line--thick" style="--sym:var(--plate-color)"></span>',
   boundary: '<span class="sym sym-line sym-line--thin" style="--sym:var(--boundary-color)"></span>',
+  rain: `<span class="sym rain-swatch" style="--c:${CEWS_LEVELS[1].color}"></span>`,
+  imerg: `<span class="sym ramp-swatch">${[0, 3, 5].map((i) => `<span style="background:${IMERG_RAMP[i].color}"></span>`).join('')}</span>`,
+  landslide: landslideSymbol(),
 };
 
 createLayerPanel({
@@ -227,18 +247,58 @@ createLayerPanel({
       ],
     },
     {
+      id: 'hujan',
+      title: 'Hujan dan longsor',
+      note: 'BMKG · NASA · PVMBG',
+      items: [
+        {
+          label: 'Peringatan hujan tinggi BMKG',
+          description: 'Per dasarian · kab/kota Waspada ke atas',
+          legendTitle: 'Peringatan hujan tinggi (BMKG)',
+          symbol: symbol.rain,
+          layer: rainWarnings,
+          legend: rainWarningLegend,
+          on: true,
+        },
+        {
+          label: 'Hujan terkini dari satelit',
+          description: 'NASA IMERG · rata-rata 30 menit, terlambat ±5 jam',
+          legendTitle: 'Hujan satelit (NASA IMERG)',
+          symbol: symbol.imerg,
+          layer: rainNow,
+          legend: imergLegend,
+        },
+        {
+          label: 'Riwayat longsor',
+          description: 'PVMBG dan MAGMA · kejadian sejak 2008',
+          legendTitle: 'Riwayat longsor (PVMBG)',
+          symbol: symbol.landslide,
+          layer: landslideHistory,
+          legend: landslideLegend,
+        },
+      ],
+    },
+    {
       id: 'bahaya',
       title: 'Peta rawan bencana',
-      note: 'InaRISK BNPB',
+      note: 'InaRISK BNPB · PVMBG',
       description: 'Satu peta rawan ditampilkan sekaligus supaya warnanya tidak saling menutupi.',
       exclusive: true,
       opacity: HAZARD_OPACITY,
-      items: HAZARDS.map((hazard) => ({
-        label: hazard.label.replace(/\s*\(.*\)$/, ''),
-        legendTitle: `Indeks bahaya ${hazard.label.toLowerCase()}`,
-        layer: createHazardLayer(hazard, HAZARD_OPACITY),
-        legend: hazardLegend,
-      })),
+      items: [
+        ...HAZARDS.map((hazard) => ({
+          label: hazard.label.replace(/\s*\(.*\)$/, ''),
+          legendTitle: `Indeks bahaya ${hazard.label.toLowerCase()}`,
+          layer: createHazardLayer(hazard, HAZARD_OPACITY),
+          legend: hazardLegend,
+        })),
+        {
+          label: 'Kerentanan gerakan tanah',
+          legendTitle: 'Zona kerentanan gerakan tanah (PVMBG)',
+          layer: createZkgtLayer(HAZARD_OPACITY),
+          legend: zkgtLegend,
+        },
+      ],
     },
     {
       id: 'geologi',
@@ -292,6 +352,8 @@ const overview = createOverview({
   },
   quakeList: $('#quake-list'),
   volcanoList: $('#volcano-alerts'),
+  rainList: $('#rain-warnings'),
+  rainMeta: $('#rain-warning-meta'),
   onSelectQuake(id) {
     sidebar.collapse();
     earthquakes.focus(id);
@@ -300,7 +362,33 @@ const overview = createOverview({
     sidebar.collapse();
     volcanoes.focus(kode);
   },
+  // Kab/kota dari daftar peringatan hujan: layer CEWS dinyalakan, peta terbang
+  // ke wilayahnya, lalu rincian peringatannya dibuka.
+  onSelectRainWarning(kode) {
+    const region = rainSummary?.regions.find((r) => r.kode === kode);
+    if (!region) return;
+    sidebar.collapse();
+    if (!map.hasLayer(rainWarnings)) map.addLayer(rainWarnings);
+    map.once('moveend', () => {
+      rainWarnings.eachLayer((feature) => {
+        if (feature.feature.properties.kode === kode) feature.openPopup();
+      });
+    });
+    flyToBounds(map, region.bounds, { maxZoom: 10, ...markerPadding() });
+  },
 });
+
+let rainSummary = null;
+async function refreshRainWarnings() {
+  try {
+    rainSummary = await getJson('/api/rain-warnings/summary');
+    overview.renderRainWarnings(rainSummary, formatDasarian(rainSummary.dasarian, { short: true }));
+    freshness.ok('Peringatan hujan', rainSummary.fetched_at);
+  } catch (err) {
+    overview.showError($('#rain-warnings'), 'Peringatan hujan BMKG gagal dimuat. Dicoba lagi otomatis.');
+    freshness.fail('Peringatan hujan', err);
+  }
+}
 
 async function refreshEarthquakes() {
   try {
@@ -328,3 +416,5 @@ async function refreshVolcanoes() {
 hideSplashWhen($('#splash'), Promise.allSettled([refreshEarthquakes(), refreshVolcanoes()]));
 setInterval(refreshEarthquakes, EARTHQUAKE_REFRESH_MS);
 setInterval(refreshVolcanoes, VOLCANO_REFRESH_MS);
+refreshRainWarnings();
+setInterval(refreshRainWarnings, RAIN_WARNING_REFRESH_MS);

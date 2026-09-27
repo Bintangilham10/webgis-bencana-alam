@@ -1,10 +1,11 @@
 import { escapeHtml, formatDecimal, shortQuakeRegion, timeAgo } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
 import { animateNumber } from '../lib/motion.js';
-import { depthClass, pillStyle, VOLCANO_LEVELS } from '../lib/symbology.js';
+import { CEWS_LEVELS, depthClass, pillStyle, VOLCANO_LEVELS } from '../lib/symbology.js';
 
 const HOUR_MS = 3_600_000;
 const QUAKE_LIST_SIZE = 6;
+const RAIN_LIST_SIZE = 5;
 
 const volcanoName = (nama) => (/^gunung\s/i.test(nama) ? nama : `Gunung ${nama}`);
 
@@ -38,6 +39,21 @@ function volcanoRow(v, index) {
     </li>`;
 }
 
+function rainWarningRow(r, index) {
+  const style = CEWS_LEVELS[r.level];
+  return `
+    <li style="--i:${index}">
+      <button type="button" class="list-row" data-rain-warning="${escapeHtml(r.kode)}">
+        <span class="row-icon"><span class="rain-swatch" style="--c:${style.color}"></span></span>
+        <span class="list-row__text">
+          <span class="list-row__title">${escapeHtml(r.nama)}</span>
+          <span class="list-row__meta">${escapeHtml(r.provinsi)}</span>
+        </span>
+        <span class="level-pill" style="${pillStyle(style)}">${escapeHtml(style.label)}</span>
+      </button>
+    </li>`;
+}
+
 // Isi daftar diganti setiap pembaruan (supaya "x menit lalu" tetap akurat),
 // tetapi animasi berurutan hanya diputar bila isinya benar-benar berubah.
 function renderList(list, html, signature) {
@@ -50,7 +66,7 @@ function renderList(list, html, signature) {
 
 // Tab Ikhtisar: kartu statistik nasional (angka menghitung naik), gunung api
 // berstatus tinggi, dan daftar gempa terkini (klik untuk menuju ke peta).
-export function createOverview({ stats, quakeList, volcanoList, onSelectQuake, onSelectVolcano }) {
+export function createOverview({ stats, quakeList, volcanoList, rainList, rainMeta, onSelectQuake, onSelectVolcano, onSelectRainWarning }) {
   quakeList.addEventListener('click', (event) => {
     const button = event.target.closest('[data-quake]');
     if (button) onSelectQuake(button.dataset.quake);
@@ -58,6 +74,10 @@ export function createOverview({ stats, quakeList, volcanoList, onSelectQuake, o
   volcanoList.addEventListener('click', (event) => {
     const button = event.target.closest('[data-volcano]');
     if (button) onSelectVolcano(button.dataset.volcano);
+  });
+  rainList.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-rain-warning]');
+    if (button) onSelectRainWarning(button.dataset.rainWarning);
   });
 
   return {
@@ -95,6 +115,24 @@ export function createOverview({ stats, quakeList, volcanoList, onSelectQuake, o
           (waspada ? `<li class="list-note" style="--i:${high.length}">${waspada} gunung api lain berstatus Waspada (Level II).</li>` : ''),
         `${high.map((v) => `${v.kode}:${v.level}`).join('|')}#${waspada}`,
       );
+    },
+
+    // Peringatan dini curah hujan tinggi BMKG (CEWS) untuk dasarian berjalan:
+    // kab/kota Waspada ke atas, tertinggi dulu. Klik untuk menuju wilayahnya.
+    renderRainWarnings(summary, period) {
+      rainMeta.textContent = `BMKG · ${period}`;
+      const regions = summary.regions;
+      const shown = regions.slice(0, RAIN_LIST_SIZE);
+      let html;
+      if (!summary.published) html = '<li class="empty-note">BMKG belum menerbitkan peringatan untuk dasarian ini.</li>';
+      else if (!regions.length) html = '<li class="empty-note">Tidak ada kab/kota berstatus Waspada atau lebih tinggi.</li>';
+      else {
+        html = shown.map(rainWarningRow).join('');
+        if (regions.length > shown.length) {
+          html += `<li class="list-note" style="--i:${shown.length}">${regions.length - shown.length} kab/kota lain juga berstatus Waspada atau lebih tinggi. Lihat semuanya di peta.</li>`;
+        }
+      }
+      renderList(rainList, html, `${summary.dasarian.start}#${regions.map((r) => `${r.kode}:${r.level}`).join('|')}`);
     },
 
     // Daftar lama tetap ditampilkan bila ada; pesan hanya menggantikan kerangka muat.

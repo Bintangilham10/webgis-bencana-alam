@@ -9,10 +9,7 @@
       name="description"
       content="Peta web peringatan dini dan mitigasi bencana alam Indonesia berbasis data spasial terbuka (BMKG, BNPB InaRISK, MAGMA, PuSGeN)."
     />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 4.5 28.5 26.5h-25z' fill='%23f59e0b' stroke='%23f59e0b' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M16 12.5v6.5' stroke='%230b1220' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='22.8' r='1.8' fill='%230b1220'/%3E%3C/svg%3E"
-    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <script>
       // Terapkan tema tersimpan sebelum halaman digambar supaya tidak berkedip.
       try {
@@ -27,16 +24,17 @@
   <body>
     <a class="skip-link" href="#sidebar">Lewati ke panel informasi</a>
 
-    <!-- Layar pembuka: logo tergambar dengan gelombang seismik, hilang setelah data pertama dimuat. -->
+    <!-- Layar pembuka: titik siaga muncul, tiga garis kontur huruf S tergambar
+         bergantian, lalu sinyal memancar dari titik itu. Hilang setelah data pertama dimuat. -->
     <div id="splash" class="splash" aria-hidden="true">
       <div class="splash-emblem">
-        <span class="splash-wave"></span>
-        <span class="splash-wave"></span>
-        <span class="splash-wave"></span>
         <svg class="splash-logo" viewBox="0 0 64 64">
-          <path class="splash-tri" pathLength="1" d="M32 8 58.5 54h-53z" />
-          <path class="splash-bang" d="M32 24.5v14" />
-          <circle class="splash-dot" cx="32" cy="46" r="3.2" />
+          <circle class="splash-ring" cx="32" cy="22" r="2.7" />
+          <circle class="splash-ring splash-ring--late" cx="32" cy="22" r="2.7" />
+          <path class="splash-line" style="--i: 0" pathLength="1" d="M36.07 19.46A4.8 4.8 0 1 0 32 26.8A15.2 15.2 0 1 1 19.11 50.05" />
+          <path class="splash-line" style="--i: 1" pathLength="1" d="M40.48 16.7A10 10 0 1 0 32 32A10 10 0 1 1 23.52 47.3" />
+          <path class="splash-line" style="--i: 2" pathLength="1" d="M44.89 13.95A15.2 15.2 0 1 0 32 37.2A4.8 4.8 0 1 1 27.93 44.54" />
+          <circle class="splash-dot" cx="32" cy="22" r="2.7" />
         </svg>
       </div>
       <p class="splash-title">SIGAP Bencana</p>
@@ -48,10 +46,12 @@
 
     <header class="topbar">
       <a class="brand glass" href="./" aria-label="SIGAP Bencana — muat ulang peta">
-        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-          <path d="M16 4.5 28.5 26.5h-25z" fill="#f59e0b" stroke="#f59e0b" stroke-width="3" stroke-linejoin="round" />
-          <path d="M16 12.5v6.5" stroke="#0b1220" stroke-width="3" stroke-linecap="round" />
-          <circle cx="16" cy="22.8" r="1.8" fill="#0b1220" />
+        <!-- Logo Kontur versi kecil: dua garis kontur huruf S dan titik puncak amber. -->
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <circle class="brand-ring" cx="32" cy="22" r="2.8" />
+          <path class="brand-line" d="M37.6 18.5A6.6 6.6 0 1 0 32 28.6A14.4 14.4 0 1 1 19.79 49.63" />
+          <path class="brand-line" d="M44.21 14.37A14.4 14.4 0 1 0 32 36.4A6.6 6.6 0 1 1 26.4 45.5" />
+          <circle class="brand-dot" cx="32" cy="22" r="2.8" />
         </svg>
         <span class="brand-text">
           <strong>SIGAP Bencana</strong>
@@ -141,6 +141,16 @@
 
             <div class="section">
               <div class="section-head">
+                <h2 class="section-title">Peringatan hujan tinggi</h2>
+                <span class="section-meta" id="rain-warning-meta">BMKG</span>
+              </div>
+              <ul id="rain-warnings" class="row-list" aria-busy="true">
+                <li class="skeleton skeleton--row"></li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <div class="section-head">
                 <h2 class="section-title">Gempa terkini</h2>
                 <span class="section-meta">BMKG · 7 hari</span>
               </div>
@@ -207,8 +217,11 @@
                 <li><a href="https://data.bmkg.go.id/" target="_blank" rel="noopener">BMKG</a><span>Gempa bumi, diperbarui tiap menit</span></li>
                 <li><a href="https://inarisk.bnpb.go.id/" target="_blank" rel="noopener">InaRISK BNPB</a><span>Indeks bahaya lima jenis bencana (100 m)</span></li>
                 <li><a href="https://magma.esdm.go.id/" target="_blank" rel="noopener">PVMBG — MAGMA Indonesia</a><span>Tingkat aktivitas 69 gunung api</span></li>
+                <li><a href="https://vsi.esdm.go.id/portalmbg/" target="_blank" rel="noopener">PVMBG — Portal MBG</a><span>Prakiraan potensi gerakan tanah bulanan, ZKGT, dan riwayat kejadian</span></li>
+                <li><a href="https://cews.bmkg.go.id/" target="_blank" rel="noopener">BMKG — CEWS</a><span>Peringatan dini curah hujan tinggi per dasarian</span></li>
+                <li><a href="https://gpm.nasa.gov/data/imerg" target="_blank" rel="noopener">NASA GPM IMERG</a><span>Hujan dari satelit, rata-rata 30 menit (via NASA GIBS)</span></li>
                 <li><a href="https://inarisk.bnpb.go.id/" target="_blank" rel="noopener">PuSGeN 2024</a><span>Segmen sesar aktif (via InaRISK)</span></li>
-                <li><a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a><span>Prakiraan hujan dan elevasi · CC BY 4.0</span></li>
+                <li><a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a><span>Prakiraan hujan, ensemble ECMWF, dan elevasi · CC BY 4.0</span></li>
                 <li><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap / Nominatim</a><span>Pencarian tempat · ODbL</span></li>
                 <li><a href="https://github.com/fraxen/tectonicplates" target="_blank" rel="noopener">Bird (2003) PB2002</a><span>Batas lempeng tektonik · ODC-By</span></li>
                 <li><a href="https://github.com/cahyadsn/wilayah_boundaries" target="_blank" rel="noopener">Kepmendagri 2025</a><span>Batas provinsi dan kabupaten/kota · MIT</span></li>

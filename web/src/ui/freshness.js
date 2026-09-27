@@ -2,8 +2,9 @@ import { timeAgo } from '../lib/format.js';
 
 // Kesegaran data per sumber, ditampilkan di bilah atas sebagai titik status +
 // teks singkat; rincian per sumber ada di tooltip. Gempa dianggap tertunda bila
-// sinkronisasi terakhir lebih dari 5 menit lalu (penjadwal server tiap 60 detik).
-const STALE_AFTER_MS = { Gempa: 5 * 60_000, 'Gunung api': 90 * 60_000 };
+// sinkronisasi terakhir lebih dari 5 menit lalu (penjadwal server tiap 60 detik);
+// peringatan hujan BMKG di-cache server 3 jam, jadi baru tertunda setelah 6 jam.
+const STALE_AFTER_MS = { Gempa: 5 * 60_000, 'Gunung api': 90 * 60_000, 'Peringatan hujan': 6 * 60 * 60_000 };
 const REFRESH_TEXT_MS = 30_000;
 
 export function createFreshness(element) {

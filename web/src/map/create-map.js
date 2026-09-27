@@ -92,10 +92,11 @@ const NorthArrow = L.Control.extend({
 });
 
 // Urutan tumpukan layer (bawaan Leaflet: tile 200, overlay 400, marker 600).
-// Raster bahaya di bawah garis, batas wilayah di bawah sesar, label peta dasar
+// Raster bahaya di bawah garis, lalu peringatan hujan BMKG dan hujan satelit,
+// batas wilayah di bawah sesar, label peta dasar
 // di atas raster, titik gempa di atas garis supaya tetap bisa diklik, dan hasil
 // analisis cek risiko di atas gempa.
-const PANES = { hazard: 250, boundaries: 350, labels: 420, quakes: 450, analysis: 460 };
+const PANES = { hazard: 250, warnings: 300, boundaries: 350, labels: 420, quakes: 450, analysis: 460 };
 
 // Tombol zoom dan pemilih peta dasar ada di bilah alat (map/toolbar.js).
 export function createMap(element, { theme = 'dark' } = {}) {

@@ -1,5 +1,5 @@
-import { imageMapLayer } from 'esri-leaflet';
-import { HAZARD_CLASSES } from '../lib/symbology.js';
+import { dynamicMapLayer, imageMapLayer } from 'esri-leaflet';
+import { DEBRIS_FLOW, HAZARD_CLASSES, LANDSLIDE_CLASSES } from '../lib/symbology.js';
 
 const INARISK_URL = 'https://gis.bnpb.go.id/server/rest/services/inarisk/';
 
@@ -50,4 +50,62 @@ export function hazardLegend() {
     (c) => `<div class="legend-row"><span class="swatch" style="background:${c.color}"></span>${c.label}</div>`,
   ).join('');
   return `${rows}<p class="legend-note">Resolusi 100 m. Tanpa warna: di luar zona bahaya.</p>`;
+}
+
+// ---------- Zona kerentanan gerakan tanah (ZKGT) PVMBG ----------
+
+// 207.120 poligon nasional di server peta BNPB. Warna diatur lewat dynamicLayers
+// (dirender server) supaya sama dengan kelas InaRISK: hijau, kuning, merah.
+// Sangat rendah tidak diwarnai. Ini juga peta dasar prakiraan bulanan PVMBG.
+const ZKGT_URL = 'https://gis.bnpb.go.id/server/rest/services/thematic/Peta_ZKGT_ESDM/MapServer';
+
+const solidFill = (rgb) => ({
+  type: 'esriSFS',
+  style: 'esriSFSSolid',
+  color: [...rgb, 255],
+  outline: { type: 'esriSLS', style: 'esriSLSNull', color: [0, 0, 0, 0], width: 0 },
+});
+
+// Dikirim sebagai string JSON, karena esri-leaflet menempelkannya apa adanya ke URL gambar.
+const ZKGT_RENDERER = JSON.stringify([
+  {
+    id: 0,
+    source: { type: 'mapLayer', mapLayerId: 0 },
+    drawingInfo: {
+      renderer: {
+        type: 'uniqueValue',
+        field1: 'NAMOBJ',
+        uniqueValueInfos: [
+          ...['Tinggi', 'Menengah', 'Rendah'].map((kelas) => ({
+            value: `Zona Kerentanan Gerakan Tanah ${kelas}`,
+            label: kelas,
+            symbol: solidFill(LANDSLIDE_CLASSES[kelas.toLowerCase()].rgb),
+          })),
+          { value: 'Aliran Bahan Rombakan', label: DEBRIS_FLOW.label, symbol: solidFill(DEBRIS_FLOW.rgb) },
+        ],
+      },
+    },
+  },
+]);
+
+export function createZkgtLayer(opacity) {
+  return dynamicMapLayer({
+    url: ZKGT_URL,
+    dynamicLayers: ZKGT_RENDERER,
+    f: 'image',
+    format: 'png32',
+    transparent: true,
+    pane: 'hazard',
+    opacity,
+    attribution: 'Zona kerentanan gerakan tanah &copy; PVMBG, via <a href="https://gis.bnpb.go.id/">BNPB</a>',
+  });
+}
+
+export function zkgtLegend() {
+  const rows = ['tinggi', 'menengah', 'rendah'].map((id) => {
+    const c = LANDSLIDE_CLASSES[id];
+    return `<div class="legend-row"><span class="swatch" style="background:${c.color}"></span>${c.id === 'sedang' ? 'Menengah' : c.label}</div>`;
+  });
+  rows.push(`<div class="legend-row"><span class="swatch" style="background:${DEBRIS_FLOW.color}"></span>${DEBRIS_FLOW.label}</div>`);
+  return `${rows.join('')}<p class="legend-note">Sangat rendah tidak diwarnai. Dasar prakiraan bulanan PVMBG.</p>`;
 }
