@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/logo-dark.svg">
+  <img src="docs/images/logo-light.svg" width="80" height="80" alt="Logo SIGAP Bencana: huruf S dari tiga garis kontur di sekitar titik puncak amber">
+</picture>
+
 # SIGAP Bencana
 
 *English version: [README.md](README.md)*
@@ -32,7 +37,12 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
 - **Gempa BMKG:** disinkronkan tiap 60 detik. Simbolnya cakram berlapis seukuran magnitudo, berwarna kelas kedalaman, dan makin pudar seiring umur (sampai 7 hari). Popup memuat penanda potensi tsunami dan tautan shakemap.
 - **Status gunung api:** 69 gunung api dari MAGMA/PVMBG, disinkronkan tiap 30 menit. Simbolnya kerucut berfaset berwarna level PVMBG (gaya terinspirasi ikon peta MAGMA, digambar sendiri); Siaga/Awas lebih besar. Status sedang erupsi dan VONA (peringatan abu vulkanik untuk penerbangan) ikut diambil dari MAGMA.
 - **Filter penanda:** tombol corong di bilah alat kanan menyalakan atau mematikan penanda gempa dan gunung api, serta menyaring gempa menurut kedalaman, magnitudo minimum, dan waktu (24 jam, 3 hari, 7 hari), dan gunung api menurut tingkat aktivitas. Menu menunjukkan jumlah titik yang tampil; titik biru di tombol menandakan ada penanda yang disembunyikan. Gempa atau gunung api yang dipilih dari daftar tetap ditampilkan walau tersaring.
-- **Peta rawan InaRISK BNPB:** gempa bumi, cuaca ekstrem, banjir, tanah longsor, dan gunung api, masing-masing dalam 3 kelas bahaya.
+- **Peta rawan InaRISK BNPB:** gempa bumi, cuaca ekstrem, banjir, tanah longsor, dan gunung api, masing-masing dalam 3 kelas bahaya. Ditambah zona kerentanan gerakan tanah (ZKGT) PVMBG dengan warna kelas yang sama.
+- **Hujan dan longsor:**
+  - peringatan dini curah hujan tinggi BMKG (CEWS) dasarian berjalan, digambar di batas kab/kota (Waspada, Siaga, Awas) dan didaftar di Ikhtisar; klik untuk menuju wilayahnya;
+  - hujan terkini dari satelit NASA GPM IMERG (rata-rata 30 menit, terlambat ±5 jam);
+  - riwayat 1.884 kejadian longsor PVMBG dan MAGMA, segitiga ungu yang makin gelap makin baru.
+- **Logo Kontur:** huruf S dari tiga garis kontur di sekitar titik puncak amber. Di layar pembuka, titik muncul lebih dulu, garis kontur tergambar bergantian, lalu sinyal memancar dari titik itu.
 - **Data geologi dan wilayah:** sesar aktif PuSGeN 2024, batas lempeng tektonik, dan batas 514 kabupaten/kota (Kepmendagri 2025).
 - **Pencarian lokasi:** nama kab/kota dicari di database sendiri, tempat lain lewat Nominatim OpenStreetMap. Pencarian berjalan saat Enter ditekan, sesuai kebijakan Nominatim.
 - **Cek risiko lokasi:** pilih titik dengan pencarian, tombol "lokasi saya", mode pilih titik, atau klik kanan/tekan lama di peta. Profil tampil di panel samping (peta tidak tertutup) dan dibuka dengan satu status 3 hari ke depan (Normal/Waspada/Siaga/Awas). Isinya:
@@ -40,7 +50,8 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
   - indikasi peringatan 3 hari (hujan × kelas bahaya, aturan awal v0 di `server/src/config/rules.json`);
   - prakiraan hujan dan elevasi;
   - jarak ke sesar aktif dan gunung api terdekat, digambar sebagai garis di peta;
-  - gempa di sekitar lokasi dan saran kesiapsiagaan.
+  - gempa di sekitar lokasi dan saran kesiapsiagaan;
+  - tanah longsor dan hujan: potensi gerakan tanah bulanan PVMBG dan ZKGT, peringatan hujan tinggi BMKG untuk kab/kota itu, hujan 3 hari terakhir, peluang hujan ≥ 50 mm dari 51 anggota ensemble ECMWF, kemiringan lereng, dan riwayat longsor dalam 5 km.
 - **Perekam arsip data riset** (`recorder/`): GitHub Actions merekam tiap 15 menit ke branch `arsip-data`. Yang direkam:
   - peringatan dini cuaca dan gempa BMKG, status gunung api MAGMA, dan laporan PetaBencana;
   - untuk riset longsor dan hujan: peringatan dini curah hujan tinggi BMKG (CEWS, per dasarian, termasuk arsip sejak 2022), prakiraan bulanan potensi gerakan tanah PVMBG di titik tiap kab/kota, laporan pemeriksaan lapangan PVMBG (baru/berubah), ringkasan ensemble hujan ECMWF 3 hari, kejadian mingguan BNPB, dan berita longsor yang dicocokkan ke kab/kota.
@@ -117,6 +128,8 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 | `GET /api/risk?lat=-6.2&lon=106.85` | Profil risiko satu titik (cache 10 menit per sel ±100 m), termasuk bagian `landslide`: potensi gerakan tanah bulanan PVMBG, peringatan hujan tinggi BMKG, hujan 3 hari terakhir, peluang ensemble, kemiringan lereng, dan riwayat longsor dalam 5 km |
 | `GET /api/rain-warnings` | Kab/kota berstatus Waspada, Siaga, atau Awas pada peringatan dini curah hujan tinggi BMKG dasarian ini (GeoJSON) |
 | `GET /api/landslides` | Riwayat kejadian gerakan tanah PVMBG dan MAGMA (GeoJSON) |
+| `GET /api/rain-warnings/summary` | Peringatan hujan BMKG tanpa geometri, dengan provinsi dan batas wilayah, untuk daftar |
+| `GET /api/rain-now` | Waktu dan URL petak peta hujan satelit NASA IMERG terbaru |
 | `GET /api/geocode?q=bandung` | Pencarian kab/kota (database) dan tempat lain (Nominatim) |
 
 ## Sumber data dan atribusi
@@ -132,5 +145,6 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 | Batas wilayah | Kepmendagri No 300.2.2-2430 Tahun 2025, [cahyadsn/wilayah_boundaries](https://github.com/cahyadsn/wilayah_boundaries) | MIT |
 | Laporan warga (arsip riset) | [PetaBencana.id](https://petabencana.id/) | CC BY-NC 4.0 |
 | Prakiraan hujan dan elevasi | [Open-Meteo](https://open-meteo.com/) (elevasi dari Copernicus DEM 90 m) | CC BY 4.0, gratis untuk nonkomersial |
+| Hujan satelit | [NASA GPM IMERG](https://gpm.nasa.gov/data/imerg) Early Run, lewat NASA GIBS | Data terbuka NASA; cantumkan NASA |
 | Pencarian tempat | [Nominatim](https://nominatim.org/) © OpenStreetMap contributors | ODbL; maksimal 1 request/detik, tanpa autocomplete |
 | Peta dasar | Esri; © OpenStreetMap contributors (ODbL); Humanitarian OpenStreetMap Team; OpenTopoMap | CC-BY-SA untuk OpenTopoMap |
