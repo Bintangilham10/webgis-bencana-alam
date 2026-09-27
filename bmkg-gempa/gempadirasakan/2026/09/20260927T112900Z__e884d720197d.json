@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-09-27T13:08:03.485Z",
+  "data": {
+    "Tanggal": "27 Sep 2026",
+    "Jam": "18:29:00 WIB",
+    "DateTime": "2026-09-27T11:29:00+00:00",
+    "Coordinates": "-2.93,119.40",
+    "Lintang": "2.93 LS",
+    "Bujur": "119.40 BT",
+    "Magnitude": "2.5",
+    "Kedalaman": "5 km",
+    "Wilayah": "Pusat gempa berada di darat 2.7 km timur laut Mamasa",
+    "Dirasakan": "II Mamasa"
+  }
+}
