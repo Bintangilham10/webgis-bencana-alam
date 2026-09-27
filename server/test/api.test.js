@@ -49,6 +49,7 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
         throw new Error('Open-Meteo 429');
       },
     },
+    rainNow: async () => ({ layer: 'IMERG_Precipitation_Rate_30min', time: '2026-09-27T11:30:00Z', tile_url: 'https://contoh/{z}/{y}/{x}.png' }),
     // CEWS palsu: Kabupaten Uji berstatus Siaga pada dasarian III September 2026.
     rainWarnings: async () => ({
       dasarian: { year: 2026, month: 9, num: 3, start: '2026-09-21', end: '2026-09-30' },
@@ -244,12 +245,30 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       assert.match(body.features[0].geometry.type, /Polygon$/);
     });
 
+    test('ringkasan peringatan hujan tanpa geometri, dengan provinsi dan batas untuk zoom', async () => {
+      const { status, body } = await getJson('/rain-warnings/summary');
+      assert.equal(status, 200);
+      assert.deepEqual(body.regions, [
+        { kode: '99.01', nama: 'Kabupaten Uji', provinsi: 'Provinsi Uji', level: 2, level_label: 'Siaga', bounds: [[-7.5, 106.5], [-6.5, 107.5]] },
+      ]);
+      assert.equal(body.dasarian.end, '2026-09-30');
+    });
+
+    test('waktu hujan satelit terbaru diteruskan dari layanan GIBS', async () => {
+      const { status, body } = await getJson('/rain-now');
+      assert.equal(status, 200);
+      assert.equal(body.time, '2026-09-27T11:30:00Z');
+    });
+
     test('riwayat longsor tampil sebagai GeoJSON [lon, lat]', async () => {
       const { status, body } = await getJson('/landslides');
       assert.equal(status, 200);
       assert.equal(body.features.length, 2);
       assert.deepEqual(body.features[0].geometry.coordinates, [107.01, -7]);
       assert.equal(body.features[0].properties.tipe, 'Longsoran');
+      assert.equal(body.features[0].properties.jam_diketahui, false);
+      assert.equal(body.features[1].properties.jam_diketahui, true);
+      assert.equal(new Date(body.features[1].properties.occurred_at).toISOString(), '2023-02-23T16:00:00.000Z');
       assert.match(body.attribution, /PVMBG/);
     });
 

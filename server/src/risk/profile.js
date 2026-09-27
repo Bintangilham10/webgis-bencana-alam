@@ -21,7 +21,7 @@ function landslideSection({ potential, rainWarning, pastDays, ensemble, slope, h
           label: rainWarning.level === null ? null : LEVEL_LABELS[rainWarning.level],
         },
     antecedent_rain: {
-      days: pastDays.map((d) => ({ date: d.date, precipitation_mm: d.precipitationMm })),
+      days: pastDays.map((d) => ({ date: d.date, precipitation_mm: d.precipitationMm, category: rainCategory(d.precipitationMm) })),
       total_mm: knownPast.length ? round1(knownPast.reduce((sum, d) => sum + d.precipitationMm, 0)) : null,
     },
     ensemble: ensemble.error

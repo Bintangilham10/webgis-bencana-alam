@@ -10,7 +10,7 @@ import { volcanoesRouter } from './routes/volcanoes.js';
 import { createRainWarnings } from './sources/bmkg-cews.js';
 
 // `services` memungkinkan test mengganti layanan luar (InaRISK, Open-Meteo,
-// Nominatim, PVMBG, BMKG CEWS) dengan versi palsu.
+// Nominatim, PVMBG, BMKG CEWS, NASA GIBS) dengan versi palsu.
 export function createApp({ services = {} } = {}) {
   const app = express();
   // Satu cache peringatan CEWS untuk cek risiko dan layer peta.
@@ -26,7 +26,7 @@ export function createApp({ services = {} } = {}) {
     volcanoesRouter,
     referenceRouter,
     createRiskRouter({ rainWarnings, ...services.risk }),
-    createLandslideRouter({ rainWarnings }),
+    createLandslideRouter({ rainWarnings, rainNow: services.rainNow }),
     createGeocodeRouter(services.geocode),
   );
   app.use('/api', (req, res) => res.status(404).json({ error: 'Endpoint tidak ditemukan' }));

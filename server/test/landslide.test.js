@@ -8,6 +8,7 @@ import { slopeClass } from '../src/lib/warning-rules.js';
 import { buildRiskProfile } from '../src/risk/profile.js';
 import { codeLevels, dasarianRange, levelFor } from '../src/sources/bmkg-cews.js';
 import { parseForecast, slopeDegrees, slopeStencil } from '../src/sources/open-meteo.js';
+import { latestTime } from '../src/sources/gibs.js';
 import { monthOf, parseFeatureInfoText } from '../src/sources/pvmbg.js';
 
 // Fixture = respons asli sumber, sama dengan fixture perekam (diambil 27 Sep 2026).
@@ -188,5 +189,14 @@ describe('seed riwayat longsor', () => {
   test('laporan tanpa jam dicatat 00.00 WIB', () => {
     assert.equal(occurredAt({ tanggal: '2021-02-10', waktu_utc: null }), '2021-02-10T00:00:00+07:00');
     assert.equal(occurredAt({ tanggal: '2023-02-23', waktu_utc: '2023-02-23T16:00:00+00:00' }), '2023-02-23T16:00:00+00:00');
+  });
+});
+
+describe('NASA GIBS', () => {
+  test('waktu IMERG terbaru = akhir rentang terakhir di domain waktu', () => {
+    const xml = (domain) => `<Domains><DimensionDomain><ows:Identifier>time</ows:Identifier><Domain>${domain}</Domain></DimensionDomain></Domains>`;
+    assert.equal(latestTime(xml('2026-09-27/2026-09-27T11:30:00Z/PT30M')), '2026-09-27T11:30:00Z');
+    assert.equal(latestTime(xml('2026-09-25T00:00:00Z/2026-09-25T06:00:00Z/PT30M,2026-09-26T10:00:00Z/2026-09-26T23:30:00Z/PT30M')), '2026-09-26T23:30:00Z');
+    assert.throws(() => latestTime('<Domains></Domains>'), /tidak dikenal/);
   });
 });
