@@ -20,14 +20,14 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
   - layar pembuka dengan logo tergambar dan gelombang seismik;
   - penanda tab meluncur; isi panel dan detail cek risiko bergeser masuk;
   - angka statistik menghitung naik; daftar muncul berurutan; batang bahaya/hujan terisi bertahap;
-  - gempa terbaru dan gunung api Siaga/Awas memancarkan cincin riak;
+  - gempa < 24 jam memancarkan gelombang (gempa terbaru bergelombang merah); gunung api yang sedang erupsi mengepulkan abu dan percikan lava, Siaga/Awas bercincin;
   - garis jarak tergambar pelan; peta "terbang" ke lokasi; tombol memantul saat ditekan.
   
   Semua animasi mati otomatis bila pengguna mengaktifkan "kurangi gerakan".
 - **Peta dasar:** abu-abu netral, kemanusiaan (HOT), OpenStreetMap, relief (OpenTopoMap), dan citra satelit (Esri), dipilih lewat menu bergambar.
 - **Elemen kartografi:** legenda dinamis yang bisa dilipat, skala batang, arah utara, angka skala 1:n beserta klasifikasinya, dan koordinat kursor dalam WGS84, UTM, dan EPSG:3857.
-- **Gempa BMKG:** disinkronkan tiap 60 detik. Simbol menunjukkan magnitudo dan kelas kedalaman, dengan penanda potensi tsunami dan tautan shakemap.
-- **Status gunung api:** 69 gunung api dari MAGMA/PVMBG, disinkronkan tiap 30 menit.
+- **Gempa BMKG:** disinkronkan tiap 60 detik. Simbolnya cakram berlapis seukuran magnitudo, berwarna kelas kedalaman, dan makin pudar seiring umur (sampai 7 hari). Popup memuat penanda potensi tsunami dan tautan shakemap.
+- **Status gunung api:** 69 gunung api dari MAGMA/PVMBG, disinkronkan tiap 30 menit. Simbolnya kerucut berfaset berwarna level PVMBG (gaya terinspirasi ikon peta MAGMA, digambar sendiri); Siaga/Awas lebih besar. Status sedang erupsi dan VONA (peringatan abu vulkanik untuk penerbangan) ikut diambil dari MAGMA.
 - **Peta rawan InaRISK BNPB:** gempa bumi, cuaca ekstrem, banjir, tanah longsor, dan gunung api, masing-masing dalam 3 kelas bahaya.
 - **Data geologi dan wilayah:** sesar aktif PuSGeN 2024, batas lempeng tektonik, dan batas 514 kabupaten/kota (Kepmendagri 2025).
 - **Pencarian lokasi:** nama kab/kota dicari di database sendiri, tempat lain lewat Nominatim OpenStreetMap. Pencarian berjalan saat Enter ditekan, sesuai kebijakan Nominatim.
@@ -95,7 +95,7 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 |---|---|
 | `GET /api/health` | Status database dan sinkronisasi tiap sumber |
 | `GET /api/earthquakes?days=7` | Gempa dalam 1–90 hari terakhir (GeoJSON) |
-| `GET /api/volcanoes` | Gunung api beserta status level |
+| `GET /api/volcanoes` | Gunung api beserta status level, erupsi, dan VONA |
 | `GET /api/faults` | Segmen sesar aktif PuSGeN 2024 |
 | `GET /api/wilayah?tingkat=provinsi` atau `kabkota` | Batas wilayah, disederhanakan untuk tampilan |
 | `GET /api/risk?lat=-6.2&lon=106.85` | Profil risiko satu titik (cache 10 menit per sel ±100 m) |
