@@ -11,7 +11,7 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
   - peta memenuhi layar;
   - pencarian, panel bertab (Ikhtisar, Lapisan, Info), bilah alat, dan legenda melayang sebagai panel kaca buram;
   - warna polos tanpa gradien: panel abu netral, satu aksen biru untuk tombol utama dan pilihan aktif, sedangkan warna mencolok hanya dipakai untuk data bahaya;
-  - tombol matahari/bulan mengganti tema (tersimpan di browser); peta dasar, garis sesar, dan batas wilayah ikut menyesuaikan;
+  - tombol matahari/bulan mengganti tema antarmuka (tersimpan di browser); peta dasar tidak ikut berganti;
   - di HP panel menjadi lembar bawah (*bottom sheet*) yang bisa digeser;
   - tab Info memuat nomor darurat (112, 117, 115, 119, 113, 110).
   
@@ -25,10 +25,11 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
   - klik gempa atau gunung api (di peta maupun di daftar) menerbangkan peta mendekat ke titik itu (zoom 10 untuk gempa, 12 untuk gunung api) di area yang tidak tertutup panel, lalu popup terbuka dan titiknya disorot cincin biru.
   
   Semua animasi mati otomatis bila pengguna mengaktifkan "kurangi gerakan".
-- **Peta dasar:** abu-abu netral, kemanusiaan (HOT), OpenStreetMap, relief (OpenTopoMap), dan citra satelit (Esri), dipilih lewat menu bergambar.
+- **Peta dasar:** kanvas abu-abu terang dan gelap (Esri), kemanusiaan (HOT), OpenStreetMap, relief (OpenTopoMap), dan citra satelit (Esri), dipilih lewat menu bergambar. Peta dasar awal menyesuaikan tema saat halaman dibuka. Warna garis sesar, lempeng, batas wilayah, dan tepi simbol mengikuti terang-gelapnya peta dasar supaya tetap kontras.
 - **Elemen kartografi:** legenda dinamis yang bisa dilipat, skala batang, arah utara, angka skala 1:n beserta klasifikasinya, dan koordinat kursor dalam WGS84, UTM, dan EPSG:3857.
 - **Gempa BMKG:** disinkronkan tiap 60 detik. Simbolnya cakram berlapis seukuran magnitudo, berwarna kelas kedalaman, dan makin pudar seiring umur (sampai 7 hari). Popup memuat penanda potensi tsunami dan tautan shakemap.
 - **Status gunung api:** 69 gunung api dari MAGMA/PVMBG, disinkronkan tiap 30 menit. Simbolnya kerucut berfaset berwarna level PVMBG (gaya terinspirasi ikon peta MAGMA, digambar sendiri); Siaga/Awas lebih besar. Status sedang erupsi dan VONA (peringatan abu vulkanik untuk penerbangan) ikut diambil dari MAGMA.
+- **Filter penanda:** tombol corong di bilah alat kanan menyalakan atau mematikan penanda gempa dan gunung api, serta menyaring gempa menurut kedalaman, magnitudo minimum, dan waktu (24 jam, 3 hari, 7 hari), dan gunung api menurut tingkat aktivitas. Menu menunjukkan jumlah titik yang tampil; titik biru di tombol menandakan ada penanda yang disembunyikan. Gempa atau gunung api yang dipilih dari daftar tetap ditampilkan walau tersaring.
 - **Peta rawan InaRISK BNPB:** gempa bumi, cuaca ekstrem, banjir, tanah longsor, dan gunung api, masing-masing dalam 3 kelas bahaya.
 - **Data geologi dan wilayah:** sesar aktif PuSGeN 2024, batas lempeng tektonik, dan batas 514 kabupaten/kota (Kepmendagri 2025).
 - **Pencarian lokasi:** nama kab/kota dicari di database sendiri, tempat lain lewat Nominatim OpenStreetMap. Pencarian berjalan saat Enter ditekan, sesuai kebijakan Nominatim.
