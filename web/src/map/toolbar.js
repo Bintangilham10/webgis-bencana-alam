@@ -1,9 +1,19 @@
 import L from 'leaflet';
 import { escapeHtml } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
+import { cssVar } from '../lib/theme.js';
 
 const toolButton = (name, label, icon, extra = '') =>
   `<button type="button" class="tool" data-tool="${name}" aria-label="${label}" title="${label}" ${extra}>${icon}</button>`;
+
+// Tombol yang membuka menu di kiri bilah alat; satu menu terbuka sekaligus.
+const MENUS = ['filter', 'basemap'];
+// Jarak menu dari tepi bawah layar (di HP: dari lembar bawah) dan dari bilah atas.
+const MENU_EDGE_GAP = 16;
+const MENU_TOP_GAP = 8;
+const MIN_MENU_HEIGHT = 200;
+const MOBILE_QUERY = '(max-width: 767.98px)';
+const px = (name) => parseFloat(cssVar(name)) || 0;
 
 // Jeda sebelum gambar mini yang gagal dimuat dicoba lagi.
 const THUMB_RETRY_MS = [1_500, 4_000];
@@ -19,9 +29,10 @@ const basemapOption = (basemap) => `
     <span>${escapeHtml(basemap.name)}</span>
   </label>`;
 
-// Gambar mini diambil langsung dari server tile. Server relawan (misalnya HOT di
-// OSM Prancis) kadang gagal sesaat, jadi gambar yang gagal dicoba lagi. Bila
-// tetap gagal, kotaknya diberi keterangan dan dicoba lagi saat menu dibuka lagi.
+// Gambar mini diambil langsung dari server tile. Server bisa gagal sesaat atau
+// menolak browser tertentu (server HOT menolak browser bawaan VS Code), jadi
+// gambar yang gagal dicoba lagi. Bila tetap gagal, kotaknya diberi keterangan
+// dan dicoba lagi saat menu dibuka lagi.
 function retryThumbnail(img) {
   const option = img.closest('.basemap-option');
   let attempt = 0;
@@ -36,8 +47,7 @@ function retryThumbnail(img) {
     img.src = BLANK_IMAGE;
     if (attempt < THUMB_RETRY_MS.length) {
       setTimeout(() => {
-        // Tema bisa berganti selama menunggu; gambar mini yang baru tidak ditimpa.
-        if (img.getAttribute('src') === BLANK_IMAGE && !img.dataset.src) img.src = src;
+        img.src = src;
       }, THUMB_RETRY_MS[attempt++]);
       return;
     }
@@ -48,7 +58,7 @@ function retryThumbnail(img) {
 }
 
 // Bilah alat di kanan peta dengan tombol seragam: zoom, seluruh Indonesia,
-// cek risiko (lokasi saya / pilih titik), dan pemilih peta dasar.
+// cek risiko (lokasi saya / pilih titik), filter penanda, dan peta dasar.
 export const MapToolbar = L.Control.extend({
   options: { position: 'topright', basemaps: [], onHome() {}, onLocate() {}, onPick() {} },
 
@@ -65,9 +75,11 @@ export const MapToolbar = L.Control.extend({
         ${toolButton('pick', 'Cek risiko: pilih titik di peta', icons.pin, 'aria-pressed="false"')}
       </div>
       <div class="tool-group glass">
+        ${toolButton('filter', 'Filter penanda peta', icons.filter, 'aria-expanded="false" aria-controls="filter-menu"')}
         ${toolButton('basemap', 'Ganti peta dasar', icons.layers, 'aria-expanded="false" aria-controls="basemap-menu"')}
-        <div id="basemap-menu" class="basemap-menu" role="radiogroup" aria-label="Peta dasar" hidden>
-          <p class="basemap-menu__title">Peta dasar</p>
+        <div id="filter-menu" class="map-menu filter-menu" role="group" aria-label="Filter penanda peta" hidden></div>
+        <div id="basemap-menu" class="map-menu basemap-menu" role="radiogroup" aria-label="Peta dasar" hidden>
+          <p class="map-menu__title">Peta dasar</p>
           ${this.options.basemaps.map(basemapOption).join('')}
         </div>
       </div>`;
@@ -76,9 +88,15 @@ export const MapToolbar = L.Control.extend({
 
     this._map = map;
     this._pick = el.querySelector('[data-tool="pick"]');
-    this._menuButton = el.querySelector('[data-tool="basemap"]');
-    this._menu = el.querySelector('.basemap-menu');
-    this._menu.querySelectorAll('img').forEach(retryThumbnail);
+    this._menus = MENUS.map((name) => ({
+      name,
+      button: el.querySelector(`[data-tool="${name}"]`),
+      menu: el.querySelector(`#${name}-menu`),
+    }));
+    // Isi menu filter dibuat oleh ui/marker-filter.js.
+    this.filterMenu = el.querySelector('#filter-menu');
+    this._basemapMenu = el.querySelector('#basemap-menu');
+    this._basemapMenu.querySelectorAll('img').forEach(retryThumbnail);
     const zoomIn = el.querySelector('[data-tool="zoom-in"]');
     const zoomOut = el.querySelector('[data-tool="zoom-out"]');
 
@@ -89,17 +107,18 @@ export const MapToolbar = L.Control.extend({
       else if (tool === 'home') this.options.onHome();
       else if (tool === 'locate') this.options.onLocate();
       else if (tool === 'pick') this.options.onPick();
-      else if (tool === 'basemap') this._toggleMenu();
+      else if (MENUS.includes(tool)) this._toggleMenu(tool);
     });
-    this._menu.addEventListener('change', (event) => this._setBasemap(event.target.value));
+    this._basemapMenu.addEventListener('change', (event) => this._setBasemap(event.target.value));
 
     this._onDocumentPointer = (event) => {
-      if (!this._menu.hidden && !el.contains(event.target)) this._toggleMenu(false);
+      if (!el.contains(event.target)) this._toggleMenu(null);
     };
     this._onKeydown = (event) => {
-      if (event.key === 'Escape' && !this._menu.hidden) {
-        this._toggleMenu(false);
-        this._menuButton.focus();
+      const open = this._menus.find(({ menu }) => !menu.hidden);
+      if (event.key === 'Escape' && open) {
+        this._toggleMenu(null);
+        open.button.focus();
       }
     };
     document.addEventListener('pointerdown', this._onDocumentPointer);
@@ -125,29 +144,55 @@ export const MapToolbar = L.Control.extend({
     this._pick?.setAttribute('aria-pressed', String(active));
   },
 
-  // Gambar mini kanvas berganti mengikuti tema.
-  setThumbnail(id, src) {
-    const img = this._menu?.querySelector(`input[value="${id}"] + img`);
-    if (!img) return;
-    if (img.dataset.src) img.dataset.src = src;
-    else img.src = src;
+  // Titik penanda di tombol filter selama ada penanda yang disembunyikan.
+  setFiltered(filtered) {
+    this._menus?.find(({ name }) => name === 'filter').button.classList.toggle('is-filtered', filtered);
   },
 
-  _toggleMenu(open = this._menu.hidden) {
-    this._menu.hidden = !open;
-    this._menuButton.setAttribute('aria-expanded', String(open));
-    if (!open) return;
-    for (const img of this._menu.querySelectorAll('img[data-src]')) {
+  // Membuka menu `name` (atau menutupnya bila sudah terbuka) dan menutup menu
+  // lain; null menutup semua.
+  _toggleMenu(name) {
+    for (const { name: id, button, menu } of this._menus) {
+      const open = id === name && menu.hidden;
+      menu.hidden = !open;
+      button.setAttribute('aria-expanded', String(open));
+      if (open) this._showMenu(menu);
+    }
+  },
+
+  _showMenu(menu) {
+    for (const img of menu.querySelectorAll('img[data-src]')) {
       img.src = img.dataset.src;
       img.removeAttribute('data-src');
     }
-    this._menu.querySelector('input:checked')?.focus();
+    this._placeMenu(menu);
+    const target = menu === this._basemapMenu ? menu.querySelector('input:checked') : menu.querySelector('input');
+    target?.focus();
+  },
+
+  // Menu sejajar tombolnya. Bila tidak muat ke bawah (di HP terpotong lembar
+  // bawah), menu dinaikkan secukupnya tanpa melewati bilah atas; sisanya digulir.
+  _placeMenu(menu) {
+    const bottomLimit = window.innerHeight - MENU_EDGE_GAP - (window.matchMedia(MOBILE_QUERY).matches ? px('--sheet-peek') : 0);
+    const topLimit = px('--gap') + px('--topbar-h') + MENU_TOP_GAP;
+    menu.style.top = '';
+    menu.style.maxHeight = '';
+    const { top } = menu.getBoundingClientRect();
+    // Tinggi penuh = isi + garis tepi, +1 karena tinggi isi bisa pecahan piksel;
+    // tanpa itu muncul scrollbar yang menyempitkan isi sehingga chip turun baris.
+    const height = menu.scrollHeight + (menu.offsetHeight - menu.clientHeight) + 1;
+    const shift = Math.min(Math.max(0, top + height - bottomLimit), Math.max(0, top - topLimit));
+    menu.style.top = `${-shift}px`;
+    menu.style.maxHeight = `${Math.max(MIN_MENU_HEIGHT, bottomLimit - top + shift)}px`;
   },
 
   _setBasemap(id) {
     for (const basemap of this.options.basemaps) {
       if (this._map.hasLayer(basemap.layer)) this._map.removeLayer(basemap.layer);
     }
-    this.options.basemaps.find((b) => b.id === id)?.layer.addTo(this._map);
+    const basemap = this.options.basemaps.find((b) => b.id === id);
+    if (!basemap) return;
+    basemap.layer.addTo(this._map);
+    this._map.fire('basemapchange', { basemap });
   },
 });

@@ -85,12 +85,37 @@ function volcanoPopup(v) {
 // mendarat di area yang terlihat.
 export function createVolcanoLayer(map, { viewPadding } = {}) {
   const group = L.layerGroup();
-  const openers = new Map();
+  // kode → { marker, level, open }
+  const entries = new Map();
   let signature = '';
+  let loaded = false;
+  // Tingkat aktivitas yang tampil, dari menu filter (null = semua).
+  let levels = null;
+  // Gunung api yang dipilih dari daftar tetap tampil walau tersaring, sampai popupnya ditutup.
+  let revealed = null;
+
+  // Penanda yang lolos filter ada di grup, sisanya dikeluarkan. `quick`: yang
+  // muncul lagi karena filter berubah langsung memantul, tanpa jeda berurutan.
+  // Event filterchange memberi tahu menu filter (lihat earthquakes.js).
+  function applyFilter({ quick = true } = {}) {
+    for (const [kode, { marker, level }] of entries) {
+      const show = kode === revealed || !levels || levels.has(level);
+      if (show === group.hasLayer(marker)) continue;
+      if (!show) {
+        group.removeLayer(marker);
+        continue;
+      }
+      group.addLayer(marker);
+      if (quick) marker.getElement()?.firstElementChild?.style.setProperty('--i', '0');
+    }
+    group.fire('filterchange');
+  }
 
   function render(collection) {
+    // Daftar dikosongkan sebelum grup: popup yang tertutup karena penandanya
+    // dihapus tidak memicu filter atas penanda lama.
+    entries.clear();
     group.clearLayers();
-    openers.clear();
     collection.features.forEach(({ geometry, properties: v }, index) => {
       const [lon, lat] = geometry.coordinates;
       const level = VOLCANO_LEVELS[v.level];
@@ -107,18 +132,28 @@ export function createVolcanoLayer(map, { viewPadding } = {}) {
         title: `${volcanoName(v.nama)} (${level.label}${v.erupsi ? ', sedang erupsi' : ''})`,
         // Status lebih tinggi dan yang sedang erupsi tampil di atas bila berdekatan.
         zIndexOffset: v.level * 100 + (v.erupsi ? 50 : 0),
-      }).addTo(group);
-      openers.set(
-        v.kode,
-        makeFocusable(map, marker, { zoom: FOCUS_ZOOM, popup: () => volcanoPopup(v), viewPadding }),
-      );
+      });
+      marker.on('popupclose', () => {
+        if (revealed !== v.kode || entries.get(v.kode)?.marker !== marker) return;
+        revealed = null;
+        applyFilter();
+      });
+      entries.set(v.kode, {
+        marker,
+        level: v.level,
+        open: makeFocusable(map, marker, { zoom: FOCUS_ZOOM, popup: () => volcanoPopup(v), viewPadding }),
+      });
     });
+    // Penanda masuk ke grup lewat filter, dengan animasi muncul berurutan.
+    if (!entries.has(revealed)) revealed = null;
+    applyFilter({ quick: false });
   }
 
   return {
     layer: group,
     async load() {
       const collection = await getJson('/api/volcanoes');
+      loaded = true;
       // Digambar ulang hanya bila level atau status erupsi berubah, supaya
       // animasi muncul tidak terulang dan popup yang terbuka tidak tertutup.
       const next = collection.features
@@ -130,10 +165,20 @@ export function createVolcanoLayer(map, { viewPadding } = {}) {
       }
       return collection;
     },
+    setFilter(next) {
+      levels = next.levels ?? null;
+      applyFilter();
+    },
+    counts: () => ({ shown: group.getLayers().length, total: entries.size, loaded }),
     focus(kode) {
-      if (!openers.has(kode)) return;
+      const entry = entries.get(kode);
+      if (!entry) return;
       if (!map.hasLayer(group)) group.addTo(map);
-      openers.get(kode)();
+      if (!group.hasLayer(entry.marker)) {
+        revealed = kode;
+        applyFilter();
+      }
+      entry.open();
     },
   };
 }

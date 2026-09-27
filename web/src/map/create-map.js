@@ -9,47 +9,37 @@ const THUMB = { z: 5, x: 25, y: 16 };
 
 const esriThumb = (service) => `${ESRI_TILES}/${service}/MapServer/tile/${THUMB.z}/${THUMB.y}/${THUMB.x}`;
 
-// Kanvas abu-abu Esri mengikuti tema: gelap di mode gelap, terang di mode terang.
-// Labelnya di pane terpisah agar tetap terbaca di atas raster bahaya.
-const CANVAS_SERVICES = {
-  dark: { base: 'Canvas/World_Dark_Gray_Base', labels: 'Canvas/World_Dark_Gray_Reference' },
-  light: { base: 'Canvas/World_Light_Gray_Base', labels: 'Canvas/World_Light_Gray_Reference' },
-};
-
-function createCanvasBasemap(theme) {
+// Kanvas abu-abu Esri (terang atau gelap). Labelnya di pane terpisah agar tetap
+// terbaca di atas raster bahaya.
+function canvasBasemap({ id, name, tone, service }) {
   const options = { maxNativeZoom: 16, maxZoom: 19 };
-  const group = L.layerGroup();
-  const basemap = {
-    id: 'kanvas',
-    name: 'Kanvas (ikut tema)',
-    layer: group,
-    thumbnail: '',
-    setTheme(next) {
-      const { base, labels } = CANVAS_SERVICES[next];
-      group.clearLayers();
-      group.addLayer(
-        L.tileLayer(`${ESRI_TILES}/${base}/MapServer/tile/{z}/{y}/{x}`, {
-          ...options,
-          attribution: `Peta dasar &copy; Esri, HERE, Garmin, ${OSM_ATTRIBUTION}`,
-        }),
-      );
-      group.addLayer(L.tileLayer(`${ESRI_TILES}/${labels}/MapServer/tile/{z}/{y}/{x}`, { ...options, pane: 'labels' }));
-      basemap.thumbnail = esriThumb(base);
-    },
+  return {
+    id,
+    name,
+    tone,
+    thumbnail: esriThumb(`Canvas/${service}_Base`),
+    layer: L.layerGroup([
+      L.tileLayer(`${ESRI_TILES}/Canvas/${service}_Base/MapServer/tile/{z}/{y}/{x}`, {
+        ...options,
+        attribution: `Peta dasar &copy; Esri, HERE, Garmin, ${OSM_ATTRIBUTION}`,
+      }),
+      L.tileLayer(`${ESRI_TILES}/Canvas/${service}_Reference/MapServer/tile/{z}/{y}/{x}`, { ...options, pane: 'labels' }),
+    ]),
   };
-  basemap.setTheme(theme);
-  return basemap;
 }
 
 // Peta umum, relief (peta timbul digital), dan citra satelit (raster) sesuai
 // klasifikasi peta di Modul 2. Semua tanpa API key (CARTO kini mewajibkannya).
 // Kanvas netral dipakai bawaan supaya warna layer tematik lebih menonjol.
-function createBasemaps(theme) {
+// tone = nada peta dasar (terang/gelap); warna garis dan simbol menyesuaikan.
+function createBasemaps() {
   return [
-    createCanvasBasemap(theme),
+    canvasBasemap({ id: 'kanvas-terang', name: 'Kanvas terang', tone: 'light', service: 'World_Light_Gray' }),
+    canvasBasemap({ id: 'kanvas-gelap', name: 'Kanvas gelap', tone: 'dark', service: 'World_Dark_Gray' }),
     {
       id: 'hot',
       name: 'Kemanusiaan (HOT)',
+      tone: 'light',
       thumbnail: `https://a.tile.openstreetmap.fr/hot/${THUMB.z}/${THUMB.x}/${THUMB.y}.png`,
       layer: L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
         attribution: `${OSM_ATTRIBUTION}, gaya peta <a href="https://www.hotosm.org/">Humanitarian OpenStreetMap Team</a>`,
@@ -60,12 +50,14 @@ function createBasemaps(theme) {
     {
       id: 'osm',
       name: 'OpenStreetMap',
+      tone: 'light',
       thumbnail: `https://tile.openstreetmap.org/${THUMB.z}/${THUMB.x}/${THUMB.y}.png`,
       layer: L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: OSM_ATTRIBUTION, maxZoom: 19 }),
     },
     {
       id: 'topo',
       name: 'Relief (topografi)',
+      tone: 'light',
       thumbnail: `https://a.tile.opentopomap.org/${THUMB.z}/${THUMB.x}/${THUMB.y}.png`,
       layer: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
         attribution: `${OSM_ATTRIBUTION}, SRTM | Gaya peta &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)`,
@@ -76,6 +68,7 @@ function createBasemaps(theme) {
     {
       id: 'citra',
       name: 'Citra satelit',
+      tone: 'dark',
       thumbnail: esriThumb('World_Imagery'),
       layer: L.tileLayer(`${ESRI_TILES}/World_Imagery/MapServer/tile/{z}/{y}/{x}`, {
         attribution: 'Citra &copy; Esri, Maxar, Earthstar Geographics',
@@ -117,9 +110,18 @@ export function createMap(element, { theme = 'dark' } = {}) {
   map.getPane('labels').style.pointerEvents = 'none';
   map.fitBounds(INDONESIA_BOUNDS);
 
-  const basemaps = createBasemaps(theme);
-  basemaps[0].layer.addTo(map);
-  basemaps[0].active = true;
+  // Peta dasar awal menyesuaikan tema saat halaman dibuka. Setelah itu peta
+  // dasar dipilih sendiri lewat bilah alat dan tidak berubah saat tema diganti.
+  const basemaps = createBasemaps();
+  const initial = basemaps.find((b) => b.id === (theme === 'light' ? 'kanvas-terang' : 'kanvas-gelap'));
+  initial.layer.addTo(map);
+  initial.active = true;
+  // Nada peta dasar dipasang di elemen peta; warna garis rujukan dan simbol
+  // (styles/base.css) mengikutinya supaya tetap kontras.
+  element.dataset.tone = initial.tone;
+  map.on('basemapchange', ({ basemap }) => {
+    element.dataset.tone = basemap.tone;
+  });
   new NorthArrow().addTo(map);
   L.control.scale({ metric: true, imperial: false, position: 'bottomright' }).addTo(map);
   return { map, basemaps };

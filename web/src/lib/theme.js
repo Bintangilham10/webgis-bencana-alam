@@ -29,5 +29,6 @@ export function onThemeChange(listener) {
   listeners.add(listener);
 }
 
-// Nilai variabel CSS tema aktif, untuk layer canvas yang tidak bisa diwarnai lewat CSS.
-export const cssVar = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+// Nilai variabel CSS, untuk layer canvas yang tidak bisa diwarnai lewat CSS.
+// Warna isi peta dibaca dari elemen peta karena mengikuti nada peta dasar.
+export const cssVar = (name, element = document.documentElement) => getComputedStyle(element).getPropertyValue(name).trim();

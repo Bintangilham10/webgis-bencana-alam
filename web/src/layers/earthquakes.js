@@ -11,6 +11,7 @@ const HOUR_MS = 3_600_000;
 const RECENT_HOURS = 24;
 const WEEK_HOURS = 168;
 const OLDEST_FADE = 0.45;
+const DEPTH_IDS = new Set(DEPTH_CLASSES.map((c) => c.id));
 
 // Umur gempa menentukan tampilannya: < 24 jam memancarkan gelombang, gempa
 // yang lebih lama makin pudar sampai 7 hari. Gempa terbaru selalu penuh.
@@ -77,6 +78,36 @@ export function createEarthquakeLayer(map, { viewPadding } = {}) {
   const styles = new Map();
   const openers = new Map();
   let signature = '';
+  let loaded = false;
+  // Filter dari menu filter (ui/marker-filter.js); bawaan semua gempa tampil.
+  // depths = kelas kedalaman yang tampil (null = semua).
+  let filter = { depths: null, minMagnitude: 0, maxHours: Infinity };
+  // Gempa yang dipilih dari daftar tetap tampil walau tersaring, sampai popupnya ditutup.
+  let revealedId = null;
+
+  const matches = (p, now) =>
+    (!filter.depths || !DEPTH_IDS.has(p.depth_class) || filter.depths.has(p.depth_class)) &&
+    p.magnitude >= filter.minMagnitude &&
+    (now - new Date(p.occurred_at)) / HOUR_MS <= filter.maxHours;
+
+  // Penanda yang lolos filter ada di grup, sisanya dikeluarkan. `quick`: yang
+  // muncul lagi karena filter berubah langsung memantul, tanpa jeda berurutan
+  // seperti saat peta pertama dimuat. Event filterchange memberi tahu menu
+  // filter supaya jumlah penanda yang tampil diperbarui.
+  function applyFilter({ quick = true } = {}) {
+    const now = Date.now();
+    for (const [id, marker] of markers) {
+      const show = id === revealedId || matches(styles.get(id).props, now);
+      if (show === group.hasLayer(marker)) continue;
+      if (!show) {
+        group.removeLayer(marker);
+        continue;
+      }
+      group.addLayer(marker);
+      if (quick) marker.getElement()?.firstElementChild?.style.setProperty('--i', '0');
+    }
+    group.fire('filterchange');
+  }
 
   // Setiap sinkronisasi, gempa yang melewati 24 jam berhenti bergelombang dan
   // gempa lama makin pudar. Elemen yang tampil diubah di tempat (tanpa animasi
@@ -93,15 +124,19 @@ export function createEarthquakeLayer(map, { viewPadding } = {}) {
       symbol?.classList.toggle('is-recent', recent);
       symbol?.style.setProperty('--fade', fade.toFixed(2));
     }
+    // Filter waktu bergantung pada jam sekarang.
+    applyFilter();
   }
 
   function render(collection) {
     // Popup yang sedang dibaca dibuka lagi setelah data diperbarui.
     const openId = [...markers].find(([, marker]) => marker.isPopupOpen())?.[0];
-    group.clearLayers();
+    // Daftar dikosongkan sebelum grup: popup yang tertutup karena penandanya
+    // dihapus tidak memicu filter atas penanda lama.
     markers.clear();
     styles.clear();
     openers.clear();
+    group.clearLayers();
     const now = Date.now();
     const latestId = collection.features[0]?.properties.id;
 
@@ -118,10 +153,18 @@ export function createEarthquakeLayer(map, { viewPadding } = {}) {
         zIndexOffset: Math.round((10 - p.magnitude) * 1000) + (latest ? 20_000 : 0),
       }).bindTooltip(`M ${formatDecimal(p.magnitude)} · ${timeAgo(p.occurred_at)}`, { direction: 'top' });
       const open = makeFocusable(map, marker, { zoom: FOCUS_ZOOM, popup: () => earthquakePopup(p), viewPadding });
+      marker.on('popupclose', () => {
+        if (revealedId !== p.id || markers.get(p.id) !== marker) return;
+        revealedId = null;
+        applyFilter();
+      });
       styles.set(p.id, style);
       openers.set(p.id, open);
-      markers.set(p.id, marker.addTo(group));
+      markers.set(p.id, marker);
     });
+    // Penanda masuk ke grup lewat filter, dengan animasi muncul berurutan.
+    if (!markers.has(revealedId)) revealedId = null;
+    applyFilter({ quick: false });
     openers.get(openId)?.({ fly: false });
   }
 
@@ -129,6 +172,7 @@ export function createEarthquakeLayer(map, { viewPadding } = {}) {
     layer: group,
     async load() {
       const collection = await getJson('/api/earthquakes?days=7');
+      loaded = true;
       const next = JSON.stringify(collection.features.map((f) => [f.properties.id, f.properties.magnitude, f.properties.depth_km]));
       if (next !== signature) {
         signature = next;
@@ -138,9 +182,18 @@ export function createEarthquakeLayer(map, { viewPadding } = {}) {
       }
       return collection;
     },
+    setFilter(next) {
+      filter = { ...filter, ...next };
+      applyFilter();
+    },
+    counts: () => ({ shown: group.getLayers().length, total: markers.size, loaded }),
     focus(id) {
       if (!markers.has(id)) return;
       if (!map.hasLayer(group)) group.addTo(map);
+      if (!group.hasLayer(markers.get(id))) {
+        revealedId = id;
+        applyFilter();
+      }
       openers.get(id)();
     },
   };

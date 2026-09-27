@@ -1,11 +1,12 @@
 import L from 'leaflet';
 import { getJson } from '../lib/api.js';
 import { escapeHtml, formatNumber } from '../lib/format.js';
-import { cssVar, onThemeChange } from '../lib/theme.js';
+import { cssVar } from '../lib/theme.js';
 
-// Warna garis diambil dari variabel tema (--fault-color, --plate-color,
-// --boundary-color). Garis SVG diwarnai lewat kelas CSS; batas wilayah digambar
-// di canvas, jadi warnanya dipasang ulang saat tema berganti.
+// Warna garis diambil dari variabel CSS (--fault-color, --plate-color,
+// --boundary-color) yang mengikuti nada peta dasar. Garis SVG diwarnai lewat
+// kelas CSS; batas wilayah digambar di canvas, jadi warnanya dipasang ulang
+// saat peta dasar berganti.
 
 // Data rujukan baru diunduh saat layer pertama kali dinyalakan.
 function lazyGeoJson(url, options, onError) {
@@ -107,7 +108,8 @@ export function createPlateLayer(onError) {
 // 514 poligon digambar di canvas (lebih ringan dari SVG) dan diletakkan di pane
 // "boundaries" di bawah sesar dan gempa.
 export function createBoundaryLayer(onError) {
-  const style = () => ({ color: cssVar('--boundary-color'), weight: 0.7, opacity: 0.8, fill: true, fillOpacity: 0 });
+  const color = () => cssVar('--boundary-color', layer._map?.getContainer());
+  const style = () => ({ color: color(), weight: 0.7, opacity: 0.8, fill: true, fillOpacity: 0 });
   const layer = lazyGeoJson(
     '/api/wilayah?tingkat=kabkota',
     {
@@ -116,13 +118,18 @@ export function createBoundaryLayer(onError) {
       style,
       onEachFeature: (f, feature) => {
         feature.bindTooltip(escapeHtml(f.properties.nama), { sticky: true, className: 'boundary-tooltip' });
-        feature.on('mouseover', () => feature.setStyle({ fillOpacity: 0.12, fillColor: cssVar('--boundary-color') }));
+        feature.on('mouseover', () => feature.setStyle({ fillOpacity: 0.12, fillColor: color() }));
         feature.on('mouseout', () => feature.setStyle({ fillOpacity: 0 }));
       },
     },
     onError,
   );
-  onThemeChange(() => layer.setStyle(style));
+  const restyle = () => layer.setStyle(style);
+  layer.on('add', () => {
+    restyle();
+    layer._map.on('basemapchange', restyle);
+  });
+  layer.on('remove', () => layer._map.off('basemapchange', restyle));
   return layer;
 }
 

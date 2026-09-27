@@ -32,6 +32,7 @@ import { ReadoutControl } from './map/readouts.js';
 import { MapToolbar } from './map/toolbar.js';
 import { createFreshness } from './ui/freshness.js';
 import { createLayerPanel } from './ui/layer-panel.js';
+import { createMarkerFilter } from './ui/marker-filter.js';
 import { createOverview } from './ui/overview.js';
 import { createRiskDetail } from './ui/risk-detail.js';
 import { createSearch } from './ui/search.js';
@@ -163,6 +164,7 @@ function locateUser() {
 }
 
 // ---------- Tema gelap/terang ----------
+// Tema hanya mengubah antarmuka; peta dasar dipilih sendiri di bilah alat.
 const themeToggle = $('#theme-toggle');
 function labelThemeToggle(theme) {
   const next = theme === 'dark' ? 'terang' : 'gelap';
@@ -171,12 +173,7 @@ function labelThemeToggle(theme) {
 }
 labelThemeToggle(currentTheme());
 themeToggle.addEventListener('click', () => setTheme(currentTheme() === 'dark' ? 'light' : 'dark'));
-onThemeChange((theme) => {
-  labelThemeToggle(theme);
-  const [canvas] = basemaps;
-  canvas.setTheme(theme);
-  toolbar.setThumbnail(canvas.id, canvas.thumbnail);
-});
+onThemeChange(labelThemeToggle);
 
 // ---------- Lapisan ----------
 const freshness = createFreshness($('#freshness'));
@@ -273,6 +270,15 @@ createLayerPanel({
       ],
     },
   ],
+});
+
+// ---------- Filter penanda (menu di bilah alat) ----------
+createMarkerFilter({
+  map,
+  container: toolbar.filterMenu,
+  earthquakes,
+  volcanoes,
+  onChange: (filtered) => toolbar.setFiltered(filtered),
 });
 
 // ---------- Ikhtisar & pembaruan data berkala ----------

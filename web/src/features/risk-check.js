@@ -88,7 +88,7 @@ export function createRiskCheck({ map, card, onPickingChange, viewPadding = () =
   function drawProximity({ nearest_fault: fault, nearest_volcanoes: volcanoes }, origin) {
     if (fault) {
       const [lon, lat] = fault.closest_point;
-      link(origin, [lat, lon], cssVar('--fault-color'), `${formatDecimal(fault.distance_km)} km ke sesar`, 0);
+      link(origin, [lat, lon], cssVar('--fault-color', map.getContainer()), `${formatDecimal(fault.distance_km)} km ke sesar`, 0);
     }
     const [volcano] = volcanoes;
     if (volcano) {

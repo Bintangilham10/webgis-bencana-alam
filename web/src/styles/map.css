@@ -28,6 +28,11 @@
   margin: 12px var(--gap) 0 0;
 }
 
+/* Menu bilah alat (pojok kanan atas) tampil di atas kontrol pojok bawah. */
+#map .leaflet-top.leaflet-right {
+  z-index: 1001;
+}
+
 .leaflet-bottom.leaflet-left .leaflet-control {
   margin: 0 0 12px 12px;
 }
@@ -101,6 +106,7 @@
 }
 
 .tool {
+  position: relative;
   display: grid;
   place-items: center;
   width: 42px;
@@ -149,40 +155,68 @@
   height: 20px;
 }
 
-/* Pemilih peta dasar terbuka ke kiri tombol. */
-.basemap-menu {
+/* Titik biru di tombol filter selama ada penanda yang disembunyikan. */
+.tool.is-filtered::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 0 2px var(--glass-strong);
+}
+
+.tool.is-filtered[aria-expanded='true']::after {
+  background: var(--primary-ink);
+  box-shadow: none;
+}
+
+/* Menu bilah alat (filter, peta dasar) terbuka ke kiri tombol. Tingginya
+   dibatasi dari JS supaya tidak melewati tepi bawah layar; sisanya digulir. */
+.map-menu {
   position: absolute;
   top: 0;
   right: calc(100% + 10px);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px 10px;
-  width: 248px;
   padding: 12px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
   background: var(--glass-strong);
   box-shadow: var(--shadow-3);
+  scrollbar-width: thin;
   transform-origin: right top;
   -webkit-backdrop-filter: blur(18px);
   backdrop-filter: blur(18px);
 }
 
-.basemap-menu:not([hidden]) {
+.map-menu:not([hidden]) {
   animation: menu-in 0.25s var(--ease-out) both;
 }
 
-.basemap-menu[hidden] {
+.map-menu[hidden] {
   display: none;
 }
 
-.basemap-menu__title {
-  grid-column: 1 / -1;
+.map-menu__title {
   font-size: 11.5px;
   font-weight: 750;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-3);
+}
+
+.basemap-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 10px;
+  width: 248px;
+}
+
+.basemap-menu .map-menu__title {
+  grid-column: 1 / -1;
 }
 
 .basemap-option {
@@ -250,6 +284,175 @@
   text-align: center;
   color: var(--ink-3);
   pointer-events: none;
+}
+
+/* ---------- Menu filter penanda ---------- */
+.filter-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: min(304px, calc(100vw - 88px));
+}
+
+.filter-group + .filter-group {
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.filter-head {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.filter-head__symbol {
+  display: grid;
+  place-items: center;
+}
+
+.filter-head__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.filter-head__label {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.filter-head__count {
+  font-size: 11.5px;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-3);
+}
+
+/* Isi grup redup dan tidak bisa diubah selama penandanya dimatikan. */
+.filter-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+  margin: 10px 0 0;
+  padding: 0;
+  border: 0;
+  transition: opacity 0.2s ease;
+}
+
+.filter-body:disabled {
+  opacity: 0.4;
+}
+
+.filter-field {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.filter-field legend {
+  margin-bottom: 6px;
+  padding: 0;
+  font-size: 11.5px;
+  font-weight: 650;
+  color: var(--ink-3);
+}
+
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.filter-chip {
+  position: relative;
+}
+
+.filter-chip input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Chip terpilih: garis biru di atas latar biru tipis, swatch warna data penuh.
+   Chip tidak terpilih: teks dan swatch diredupkan. */
+.filter-chip > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 30px;
+  padding: 4px 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 650;
+  color: var(--ink-3);
+  cursor: pointer;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.filter-chip > span:hover {
+  border-color: var(--ink-3);
+  color: var(--ink);
+}
+
+.filter-chip input:checked + span {
+  border-color: var(--primary);
+  color: var(--ink);
+  background: var(--primary-soft);
+}
+
+.filter-chip input:focus-visible + span {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.filter-chip input:disabled + span {
+  cursor: default;
+}
+
+.filter-chip .quake-swatch,
+.filter-chip .volcano-swatch {
+  width: 12px;
+  height: 12px;
+  opacity: 0.35;
+  transition: opacity 0.15s ease;
+}
+
+.filter-chip .volcano-swatch {
+  width: 14px;
+  height: 14px;
+}
+
+.filter-chip input:checked + span .quake-swatch,
+.filter-chip input:checked + span .volcano-swatch {
+  opacity: 1;
+}
+
+.filter-reset {
+  align-self: flex-start;
+  padding: 2px 0;
+  border: 0;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--primary);
+  background: none;
+  cursor: pointer;
+}
+
+.filter-reset:hover:not(:disabled) {
+  text-decoration: underline;
+}
+
+.filter-reset:disabled {
+  color: var(--ink-3);
+  cursor: default;
 }
 
 .north-arrow {
@@ -633,9 +836,9 @@
   stroke: var(--fault-color);
 }
 
-/* Di peta gelap garis terang cepat mendominasi; redupkan supaya simbol gempa
-   dan gunung api tetap menonjol. */
-[data-theme='dark'] .fault-line {
+/* Di peta dasar gelap garis terang cepat mendominasi; redupkan supaya simbol
+   gempa dan gunung api tetap menonjol. */
+[data-tone='dark'] .fault-line {
   stroke-opacity: 0.6;
 }
 

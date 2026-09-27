@@ -6,6 +6,7 @@ import { escapeHtml } from '../lib/format.js';
 // Legenda peta mengikuti layer yang aktif.
 export function createLayerPanel({ map, container, legend, groups }) {
   const active = new Set();
+  const switches = new Map();
 
   const updateLegend = () =>
     legend.setBlocks(
@@ -17,13 +18,26 @@ export function createLayerPanel({ map, container, legend, groups }) {
 
   const setActive = (item, on) => {
     if (on) {
-      item.layer.addTo(map);
       active.add(item);
+      item.layer.addTo(map);
     } else {
-      map.removeLayer(item.layer);
       active.delete(item);
+      map.removeLayer(item.layer);
     }
   };
+
+  // Lapisan juga bisa dinyalakan dari luar panel (menu filter di bilah alat,
+  // pilihan di daftar Ikhtisar), jadi sakelar dan legenda mengikuti peta.
+  const items = groups.flatMap((group) => group.items);
+  map.on('layeradd layerremove', ({ layer }) => {
+    const item = items.find((candidate) => candidate.layer === layer);
+    if (!item || map.hasLayer(layer) === active.has(item)) return;
+    if (map.hasLayer(layer)) active.add(item);
+    else active.delete(item);
+    const input = switches.get(item);
+    if (input) input.checked = active.has(item);
+    updateLegend();
+  });
 
   function switchList(group) {
     const list = document.createElement('ul');
@@ -40,6 +54,7 @@ export function createLayerPanel({ map, container, legend, groups }) {
           <input type="checkbox" role="switch" class="switch"${item.on ? ' checked' : ''} />
         </label>`;
       const input = row.querySelector('input');
+      switches.set(item, input);
       input.addEventListener('change', () => {
         setActive(item, input.checked);
         updateLegend();
