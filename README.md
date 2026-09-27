@@ -39,7 +39,11 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
   - prakiraan hujan dan elevasi;
   - jarak ke sesar aktif dan gunung api terdekat, digambar sebagai garis di peta;
   - gempa di sekitar lokasi dan saran kesiapsiagaan.
-- **Perekam arsip data riset** (`recorder/`): GitHub Actions merekam tiap 15 menit ke branch `arsip-data`.
+- **Perekam arsip data riset** (`recorder/`): GitHub Actions merekam tiap 15 menit ke branch `arsip-data`. Yang direkam:
+  - peringatan dini cuaca dan gempa BMKG, status gunung api MAGMA, dan laporan PetaBencana;
+  - untuk riset longsor dan hujan: peringatan dini curah hujan tinggi BMKG (CEWS, per dasarian, termasuk arsip sejak 2022), prakiraan bulanan potensi gerakan tanah PVMBG di titik tiap kab/kota, laporan pemeriksaan lapangan PVMBG (baru/berubah), ringkasan ensemble hujan ECMWF 3 hari, kejadian mingguan BNPB, dan berita longsor yang dicocokkan ke kab/kota.
+
+  Titik kab/kota untuk perekam dibuat dengan `npm run export:recorder` di folder `server/` (hasilnya `recorder/data/wilayah.json`, ikut dikomit).
 
 ## Struktur
 
