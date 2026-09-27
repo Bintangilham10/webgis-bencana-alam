@@ -1,29 +1,59 @@
+import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { http as liveHttp } from './lib/http.js';
 import { datePath } from './lib/paths.js';
 import { createArchive } from './lib/store.js';
+import { createGazetteer, loadWilayah } from './lib/wilayah.js';
+import { recordBeritaLongsor } from './sources/berita-longsor.js';
 import { recordBmkgCap } from './sources/bmkg-cap.js';
+import { recordBmkgCews } from './sources/bmkg-cews.js';
 import { recordBmkgGempa } from './sources/bmkg-gempa.js';
+import { recordBnpbMingguan } from './sources/bnpb-mingguan.js';
 import { recordMagma } from './sources/magma.js';
+import { recordOpenMeteoEns } from './sources/open-meteo-ens.js';
 import { recordPetaBencana } from './sources/petabencana.js';
+import { recordPvmbgLaporan } from './sources/pvmbg-laporan.js';
+import { recordPvmbgPrakiraan } from './sources/pvmbg-prakiraan.js';
 
 export const SOURCES = {
   'bmkg-cap': recordBmkgCap,
   'bmkg-gempa': recordBmkgGempa,
   magma: recordMagma,
   petabencana: recordPetaBencana,
+  'bmkg-cews': recordBmkgCews,
+  'pvmbg-prakiraan': recordPvmbgPrakiraan,
+  'pvmbg-laporan': recordPvmbgLaporan,
+  'open-meteo-ens': recordOpenMeteoEns,
+  'bnpb-mingguan': recordBnpbMingguan,
+  'berita-longsor': recordBeritaLongsor,
 };
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+// Titik kab/kota dan gazeter nama wilayah untuk sumber yang membutuhkannya.
+export function defaultData() {
+  const file = new URL('../data/wilayah.json', import.meta.url);
+  const wilayah = existsSync(file) ? loadWilayah(file) : [];
+  return { wilayah, gazetteer: wilayah.length ? createGazetteer(wilayah) : null };
+}
 
 // Satu sumber yang gagal tidak menghentikan sumber lain. Hasil tiap run,
 // termasuk kegagalan, dicatat di _runs/ sebagai data ketersediaan sumber (RQ2).
-export async function runOnce({ archive, http = liveHttp, now = new Date().toISOString(), sources = SOURCES }) {
+export async function runOnce({
+  archive,
+  http = liveHttp,
+  now = new Date().toISOString(),
+  sources = SOURCES,
+  data = defaultData(),
+  pause = sleep,
+}) {
   const results = {};
   for (const [name, record] of Object.entries(sources)) {
     const started = performance.now();
     try {
-      results[name] = { ok: true, ...(await record({ archive, http, now })) };
+      results[name] = { ok: true, ...(await record({ archive, http, now, data, pause })) };
     } catch (err) {
       results[name] = { ok: false, error: err.message };
     }
@@ -42,10 +72,11 @@ async function main() {
 
   const results = await runOnce({ archive });
   for (const [name, r] of Object.entries(results)) {
-    const detail = r.ok
-      ? `items=${r.items} baru=${r.new}${r.errors?.length ? ` error=${r.errors.length}` : ''}`
-      : `GAGAL: ${r.error}`;
-    console.log(`${name.padEnd(12)} ${detail} (${r.ms} ms)`);
+    let detail;
+    if (!r.ok) detail = `GAGAL: ${r.error}`;
+    else if (r.skipped) detail = `lewat (${r.skipped})`;
+    else detail = `items=${r.items} baru=${r.new}${r.errors?.length ? ` error=${r.errors.length}` : ''}`;
+    console.log(`${name.padEnd(16)} ${detail} (${r.ms} ms)`);
     for (const e of r.errors ?? []) console.log(`  - ${e}`);
   }
   console.log(`Arsip: ${archive.rootDir}`);

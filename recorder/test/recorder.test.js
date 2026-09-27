@@ -4,7 +4,7 @@ import { mkdtemp, readdir, readFile, rm } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { afterEach, beforeEach, describe, test } from 'node:test';
-import { runOnce } from '../src/record.js';
+import { SOURCES, runOnce } from '../src/record.js';
 import { createArchive } from '../src/lib/store.js';
 import { RSS_URL, parseCap, parseRss, recordBmkgCap } from '../src/sources/bmkg-cap.js';
 import { FEEDS, eventFilePath, extractEvents, recordBmkgGempa } from '../src/sources/bmkg-gempa.js';
@@ -13,6 +13,10 @@ import { REPORTS_URL } from '../src/sources/petabencana.js';
 
 // Fixture = respons asli sumber (diambil 26 Sep 2026).
 const fixture = (name) => readFileSync(new URL(`./fixtures/${name}`, import.meta.url), 'utf8');
+
+// Empat sumber pertama; sumber longsor dan hujan diuji di sumber-longsor.test.js.
+const CORE_SOURCES = Object.fromEntries(['bmkg-cap', 'bmkg-gempa', 'magma', 'petabencana'].map((name) => [name, SOURCES[name]]));
+const runCore = (options) => runOnce({ sources: CORE_SOURCES, data: {}, pause: async () => {}, ...options });
 
 const CAP_1_URL = 'https://www.bmkg.go.id/alerts/nowcast/id/CRU20260925007_alert.xml';
 const CAP_2_URL = 'https://www.bmkg.go.id/alerts/nowcast/id/CPU20260925010_alert.xml';
@@ -172,7 +176,7 @@ describe('MAGMA', () => {
 
 describe('runOnce', () => {
   test('run pertama mengarsipkan semua sumber dan mencatat log run', async () => {
-    const results = await runOnce({ archive, http: fakeHttp(), now: '2026-09-25T18:05:00.000Z' });
+    const results = await runCore({ archive, http: fakeHttp(), now: '2026-09-25T18:05:00.000Z' });
 
     assert.equal(results['bmkg-cap'].new, 2);
     assert.equal(results['bmkg-gempa'].new, 31);
@@ -186,11 +190,11 @@ describe('runOnce', () => {
   });
 
   test('run kedua tidak menggandakan data dan tidak mengunduh ulang XML CAP', async () => {
-    await runOnce({ archive, http: fakeHttp(), now: '2026-09-25T18:05:00.000Z' });
+    await runCore({ archive, http: fakeHttp(), now: '2026-09-25T18:05:00.000Z' });
     const filesAfterFirst = await listFiles(tmpDir);
 
     const http = fakeHttp();
-    const results = await runOnce({ archive, http, now: '2026-09-25T18:20:00.000Z' });
+    const results = await runCore({ archive, http, now: '2026-09-25T18:20:00.000Z' });
 
     assert.ok(Object.values(results).every((r) => r.ok && r.new === 0));
     assert.ok(!http.calls.includes(CAP_1_URL) && !http.calls.includes(CAP_2_URL));
@@ -202,7 +206,7 @@ describe('runOnce', () => {
 
   test('satu sumber gagal tidak menghentikan sumber lain', async () => {
     const { [PAGE_URL]: _, ...withoutMagma } = ROUTES;
-    const results = await runOnce({ archive, http: fakeHttp(withoutMagma), now: '2026-09-25T18:05:00.000Z' });
+    const results = await runCore({ archive, http: fakeHttp(withoutMagma), now: '2026-09-25T18:05:00.000Z' });
 
     assert.equal(results.magma.ok, false);
     assert.match(results.magma.error, /URL tidak terduga/);

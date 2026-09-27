@@ -15,11 +15,12 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 // 4xx selain 429 tidak akan sembuh dengan mencoba ulang.
 const isRetryable = (err) => !(err instanceof HttpError) || err.status === 429 || err.status >= 500;
 
-export async function fetchText(url, { timeoutMs = 20_000, retries = 2 } = {}) {
+async function request(url, init, { timeoutMs = 20_000, retries = 2 } = {}) {
   for (let attempt = 0; ; attempt++) {
     try {
       const res = await fetch(url, {
-        headers: { 'User-Agent': USER_AGENT },
+        ...init,
+        headers: { 'User-Agent': USER_AGENT, ...init.headers },
         signal: AbortSignal.timeout(timeoutMs),
       });
       if (!res.ok) throw new HttpError(url, res.status);
@@ -35,8 +36,13 @@ export async function fetchText(url, { timeoutMs = 20_000, retries = 2 } = {}) {
   }
 }
 
+export const fetchText = (url, options) => request(url, {}, options);
+
 export async function fetchJson(url, options) {
   return JSON.parse(await fetchText(url, options));
 }
 
-export const http = { fetchText, fetchJson };
+// Formulir POST (application/x-www-form-urlencoded), mis. daftar wilayah CEWS BMKG.
+export const postForm = (url, fields, options) => request(url, { method: 'POST', body: new URLSearchParams(fields) }, options);
+
+export const http = { fetchText, fetchJson, postForm };
