@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.27.15.12.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-27T19:55:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-27T20:00:00+07:00</effective>
+    <expires>2026-09-27T23:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 September 2026, 20:00 WIB di sebagian wilayah Sumatera Utara, khususnya di BESITANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 September 2026, 23:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSU/2026/09/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Utara</areaDesc>
+      <polygon>4.083,98.157 4.074,98.169 4.061,98.184 4.061,98.213 4.056,98.223 4.020,98.220 4.015,98.214 4.019,98.208 3.966,98.206 3.963,98.197 3.957,98.198 3.957,98.206 3.962,98.206 3.962,98.211 3.956,98.219 3.942,98.173 3.914,98.187 3.883,98.170 3.884,98.135 3.875,98.105 3.840,98.066 3.815,98.065 3.812,98.056 3.816,98.034 3.807,98.013 3.774,97.998 3.775,97.985 3.785,97.969 3.788,97.939 3.800,97.917 3.816,97.900 3.821,97.909 3.841,97.920 3.877,97.910 3.890,97.902 3.911,97.900 3.912,97.907 3.913,97.916 3.890,97.952 3.902,97.957 3.914,97.955 3.929,97.958 3.941,97.980 3.944,97.993 3.961,98.003 3.971,98.024 3.988,98.031 4.016,98.026 4.022,98.030 4.022,98.044 4.032,98.048 4.040,98.040 4.095,98.046 4.108,98.051 4.113,98.049 4.133,98.052 4.140,98.066 4.175,98.056 4.187,98.056 4.193,98.085 4.198,98.089 4.188,98.084 4.173,98.095 4.162,98.094 4.129,98.109 4.102,98.126 4.083,98.157</polygon>
+    </area>
+  </info>
+</alert>
