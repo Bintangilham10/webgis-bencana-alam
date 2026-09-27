@@ -1,134 +1,314 @@
+<div align="center">
+
+<img src="docs/images/logo.svg" width="72" height="72" alt="SIGAP Bencana logo">
+
 # SIGAP Bencana
 
-Sistem web pemetaan **peringatan dini dan mitigasi bencana alam Indonesia** berbasis data spasial terbuka.
-Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom University.
+**Open-data web GIS for disaster early warning and mitigation across Indonesia**
 
-> **Bukan sumber peringatan resmi.** Untuk keputusan keselamatan, ikuti BMKG, PVMBG/MAGMA, dan BNPB/BPBD setempat.
+Earthquakes, volcanoes, floods, landslides, and heavy rain on one map, checked against official data from BMKG, PVMBG, and BNPB.
 
-## Fitur saat ini
+[![Node.js 22+](https://img.shields.io/badge/Node.js-22%2B-3c873a?logo=nodedotjs&logoColor=white)](server/package.json)
+[![PostGIS 3.6](https://img.shields.io/badge/PostGIS-3.6-336791?logo=postgresql&logoColor=white)](docker-compose.yml)
+[![Leaflet 1.9](https://img.shields.io/badge/Leaflet-1.9-199900?logo=leaflet&logoColor=white)](web/package.json)
+[![Python 3.11](https://img.shields.io/badge/Python-3.11-3776ab?logo=python&logoColor=white)](research/requirements.txt)
+[![Data recorder](https://github.com/Bintangilham10/webgis-bencana-alam/actions/workflows/rekam-data.yml/badge.svg)](https://github.com/Bintangilham10/webgis-bencana-alam/actions/workflows/rekam-data.yml)
 
-- **Antarmuka gelap kaca + mode terang:**
-  - peta memenuhi layar;
-  - pencarian, panel bertab (Ikhtisar, Lapisan, Info), bilah alat, dan legenda melayang sebagai panel kaca buram;
-  - warna polos tanpa gradien: panel abu netral, satu aksen biru untuk tombol utama dan pilihan aktif, sedangkan warna mencolok hanya dipakai untuk data bahaya;
-  - tombol matahari/bulan mengganti tema antarmuka (tersimpan di browser); peta dasar tidak ikut berganti;
-  - di HP panel menjadi lembar bawah (*bottom sheet*) yang bisa digeser;
-  - tab Info memuat nomor darurat (112, 117, 115, 119, 113, 110).
-  
-  Tanpa framework CSS; font Plus Jakarta Sans dimuat mandiri (±27 KB). Efek kaca otomatis diganti panel pekat bila sistem meminta transparansi dikurangi.
-- **Animasi:**
-  - layar pembuka dengan logo tergambar dan gelombang seismik;
-  - penanda tab meluncur; isi panel dan detail cek risiko bergeser masuk;
-  - angka statistik menghitung naik; daftar muncul berurutan; batang bahaya/hujan terisi bertahap;
-  - gempa < 24 jam memancarkan gelombang (gempa terbaru bergelombang merah); gunung api yang sedang erupsi mengepulkan abu dan percikan lava, Siaga/Awas bercincin;
-  - garis jarak tergambar pelan; peta "terbang" ke lokasi; tombol memantul saat ditekan;
-  - klik gempa atau gunung api (di peta maupun di daftar) menerbangkan peta mendekat ke titik itu (zoom 10 untuk gempa, 12 untuk gunung api) di area yang tidak tertutup panel, lalu popup terbuka dan titiknya disorot cincin biru.
-  
-  Semua animasi mati otomatis bila pengguna mengaktifkan "kurangi gerakan".
-- **Peta dasar:** kanvas abu-abu terang dan gelap (Esri), kemanusiaan (HOT), OpenStreetMap, relief (OpenTopoMap), dan citra satelit (Esri), dipilih lewat menu bergambar. Peta dasar awal menyesuaikan tema saat halaman dibuka. Warna garis sesar, lempeng, batas wilayah, dan tepi simbol mengikuti terang-gelapnya peta dasar supaya tetap kontras.
-- **Elemen kartografi:** legenda dinamis yang bisa dilipat, skala batang, arah utara, angka skala 1:n beserta klasifikasinya, dan koordinat kursor dalam WGS84, UTM, dan EPSG:3857.
-- **Gempa BMKG:** disinkronkan tiap 60 detik. Simbolnya cakram berlapis seukuran magnitudo, berwarna kelas kedalaman, dan makin pudar seiring umur (sampai 7 hari). Popup memuat penanda potensi tsunami dan tautan shakemap.
-- **Status gunung api:** 69 gunung api dari MAGMA/PVMBG, disinkronkan tiap 30 menit. Simbolnya kerucut berfaset berwarna level PVMBG (gaya terinspirasi ikon peta MAGMA, digambar sendiri); Siaga/Awas lebih besar. Status sedang erupsi dan VONA (peringatan abu vulkanik untuk penerbangan) ikut diambil dari MAGMA.
-- **Filter penanda:** tombol corong di bilah alat kanan menyalakan atau mematikan penanda gempa dan gunung api, serta menyaring gempa menurut kedalaman, magnitudo minimum, dan waktu (24 jam, 3 hari, 7 hari), dan gunung api menurut tingkat aktivitas. Menu menunjukkan jumlah titik yang tampil; titik biru di tombol menandakan ada penanda yang disembunyikan. Gempa atau gunung api yang dipilih dari daftar tetap ditampilkan walau tersaring.
-- **Peta rawan InaRISK BNPB:** gempa bumi, cuaca ekstrem, banjir, tanah longsor, dan gunung api, masing-masing dalam 3 kelas bahaya.
-- **Data geologi dan wilayah:** sesar aktif PuSGeN 2024, batas lempeng tektonik, dan batas 514 kabupaten/kota (Kepmendagri 2025).
-- **Pencarian lokasi:** nama kab/kota dicari di database sendiri, tempat lain lewat Nominatim OpenStreetMap. Pencarian berjalan saat Enter ditekan, sesuai kebijakan Nominatim.
-- **Cek risiko lokasi:** pilih titik dengan pencarian, tombol "lokasi saya", mode pilih titik, atau klik kanan/tekan lama di peta. Profil tampil di panel samping (peta tidak tertutup) dan dibuka dengan satu status 3 hari ke depan (Normal/Waspada/Siaga/Awas). Isinya:
-  - indeks lima bahaya InaRISK dengan kelas BNPB;
-  - indikasi peringatan 3 hari (hujan × kelas bahaya, aturan awal v0 di `server/src/config/rules.json`);
-  - prakiraan hujan dan elevasi;
-  - jarak ke sesar aktif dan gunung api terdekat, digambar sebagai garis di peta;
-  - gempa di sekitar lokasi dan saran kesiapsiagaan.
-- **Perekam arsip data riset** (`recorder/`): GitHub Actions merekam tiap 15 menit ke branch `arsip-data`. Yang direkam:
-  - peringatan dini cuaca dan gempa BMKG, status gunung api MAGMA, dan laporan PetaBencana;
-  - untuk riset longsor dan hujan: peringatan dini curah hujan tinggi BMKG (CEWS, per dasarian, termasuk arsip sejak 2022), prakiraan bulanan potensi gerakan tanah PVMBG di titik tiap kab/kota, laporan pemeriksaan lapangan PVMBG (baru/berubah), ringkasan ensemble hujan ECMWF 3 hari, kejadian mingguan BNPB, dan berita longsor yang dicocokkan ke kab/kota.
+[Features](#what-it-does) · [Screenshots](#screenshots) · [Architecture](#architecture) · [Landslide research](#landslide-research-sigap-l) · [Quick start](#quick-start) · [API](#api) · [Data sources](#data-sources-and-attribution) · [Bahasa Indonesia](README.id.md)
 
-  Titik kab/kota untuk perekam dibuat dengan `npm run export:recorder` di folder `server/` (hasilnya `recorder/data/wilayah.json`, ikut dikomit).
+</div>
 
-  Jadwal `schedule` GitHub Actions sering molor (kenyataannya ±6 run per hari), jadi run juga dipicu dari luar tiap 15 menit oleh layanan cron gratis cron-job.org yang memanggil API `workflow_dispatch`. Cara memasangnya:
-  1. Di GitHub (Settings → Developer settings → Fine-grained tokens), buat token yang hanya bisa mengakses repo ini, dengan izin **Actions: Read and write**. Beri masa berlaku sampai setelah musim hujan.
-  2. Di cron-job.org, buat job tiap 15 menit berisi `POST https://api.github.com/repos/Bintangilham10/webgis-bencana-alam/actions/workflows/rekam-data.yml/dispatches` dengan header `Authorization: Bearer <token>`, `Accept: application/vnd.github+json`, dan `X-GitHub-Api-Version: 2022-11-28`, serta body `{"ref":"main"}`. Kalau benar, balasannya HTTP 204.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/app-dark.jpg">
+  <img src="docs/images/app-light.jpg" alt="SIGAP Bencana map of Indonesia showing active faults, earthquakes of the last 7 days, and volcano alert levels, with the overview panel on the left">
+</picture>
 
-  Token ini hanya bisa memicu, membatalkan, atau menonaktifkan run workflow. Token tidak bisa mengubah kode maupun isi arsip. Cabut token di GitHub kalau sudah tidak dipakai.
+> [!IMPORTANT]
+> SIGAP is a student research system, **not an official warning service**. For safety decisions, follow [BMKG](https://www.bmkg.go.id/), [MAGMA Indonesia (PVMBG)](https://magma.esdm.go.id/), and your local BPBD or [BNPB](https://bnpb.go.id/).
 
-## Struktur
+SIGAP (*Sistem Informasi Geospasial Antisipasi & Peringatan*) is the term project for the Web-Based Mapping Technology course (ACK4LBB3) at Telkom University. It is also the instrument for a research track on landslide early warning. The interface is in Indonesian, because it is built for people living in Indonesia.
 
-| Folder | Isi |
-|---|---|
-| `server/` | API Express + PostGIS, penjadwal sinkronisasi, migrasi, dan seed data |
-| `web/` | Frontend Vite + Leaflet |
-| `recorder/` | Perekam arsip data (berjalan di GitHub Actions) |
-| `docker-compose.yml` | Database PostgreSQL 18 + PostGIS 3.6 |
+## At a glance
 
-## Menjalankan secara lokal
+| 514 | 69 | 401 | 1,884 | 10 |
+|:---:|:---:|:---:|:---:|:---:|
+| regencies and cities with official 2025 boundaries | volcanoes with live PVMBG alert levels | active fault segments (PuSGeN 2024) | landslide events in the deduplicated inventory | open data feeds in the research archive |
 
-Prasyarat: Node.js 22 atau lebih baru dan Docker Desktop.
+## What it does
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Live hazards on one map
+- **Earthquakes** from BMKG, synced every 60 seconds. Circles are sized by magnitude, coloured by depth class, and fade over 7 days. Popups carry the tsunami flag and the ShakeMap.
+- **Volcanoes** from MAGMA Indonesia, synced every 30 minutes, with alert level I–IV, eruption status, and aviation ash warnings (VONA).
+- **Hazard maps** from BNPB InaRISK for earthquake, extreme weather, flood, landslide, and volcano, in the three official BNPB classes.
+- **Geology and boundaries**: active faults, tectonic plate boundaries (Bird 2003), and 514 regency and city boundaries.
+
+</td>
+<td width="50%" valign="top">
+
+### Risk check for any point
+Pick a point by search, GPS, right-click, or long press. SIGAP runs 11 lookups in parallel (web services and PostGIS queries) and returns one profile:
+- a 3-day outlook (Normal, Waspada, Siaga, Awas) from rainfall × hazard class;
+- the five InaRISK hazard indices;
+- the nearest active fault and volcanoes, drawn as distance lines;
+- recent earthquakes within 100 km;
+- **landslide and rain**: the PVMBG monthly landslide forecast, BMKG heavy-rain warnings, rain over the last 3 days, ensemble odds of ≥ 50 mm, terrain slope, and past landslides within 5 km. This part is live in the API; its map panel and layers are being built.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### Built for the field
+- Full-bleed map with floating panels; on phones the panel becomes a bottom sheet.
+- Dark and light themes, flat colours, and one blue accent. Bright colours are reserved for hazard data.
+- Cartographic essentials: collapsible legend, scale bar with a 1:n reading, north arrow, and cursor coordinates in WGS84, UTM, and EPSG:3857.
+- Animations switch off when the system asks for reduced motion.
+
+</td>
+<td width="50%" valign="top">
+
+### A research archive that fills itself
+Several official products vanish once they expire, such as short weather warnings, revised earthquake parameters, and monthly forecasts. A small recorder on GitHub Actions saves them to the [`arsip-data`](https://github.com/Bintangilham10/webgis-bencana-alam/tree/arsip-data) branch every 15 minutes. That archive becomes the ground truth for testing warnings during the 2026/27 rainy season.
+
+</td>
+</tr>
+</table>
+
+## Screenshots
+
+**Risk check in Lembang, West Java.** The point sits 1.4 km from the Lembang Fault and 4.9 km from Tangkuban Parahu, and InaRISK rates its earthquake hazard as high (0.862).
+
+![Risk check profile for Lembang with distance lines to the Lembang Fault and Tangkuban Parahu volcano](docs/images/risk-check-lembang.jpg)
+
+**InaRISK landslide hazard over West and Central Java**, one of five hazard layers. Only one hazard raster is shown at a time so the colours stay readable.
+
+![InaRISK landslide hazard layer over West and Central Java with the layer panel open](docs/images/hazard-landslide-java.jpg)
+
+<table>
+<tr>
+<td width="50%"><img src="docs/images/mobile-overview.jpg" alt="Phone layout: map with the overview bottom sheet"></td>
+<td width="50%"><img src="docs/images/mobile-risk.jpg" alt="Phone layout: risk profile for Lembang in the bottom sheet"></td>
+</tr>
+<tr>
+<td align="center">Phone layout: overview</td>
+<td align="center">Phone layout: risk profile</td>
+</tr>
+</table>
+
+## Architecture
+
+```mermaid
+flowchart LR
+  subgraph sources["Open data sources"]
+    BMKG["BMKG<br/>earthquakes, CAP warnings, CEWS"]
+    ESDM["PVMBG / MAGMA<br/>volcanoes, landslide forecast"]
+    BNPB["BNPB InaRISK<br/>hazard index, ZKGT"]
+    OM["Open-Meteo<br/>rain, ECMWF ensemble, DEM"]
+    OSMN["OpenStreetMap<br/>Nominatim"]
+  end
+
+  subgraph server["server/ (Node.js, Express)"]
+    SYNC["Scheduler<br/>quakes 60 s, volcanoes 30 min"]
+    API["REST API<br/>GeoJSON"]
+    RISK["Risk check<br/>11 lookups in parallel"]
+  end
+
+  DB[("PostgreSQL 18<br/>PostGIS 3.6")]
+  WEB["web/<br/>Vite + Leaflet"]
+  REC["recorder/<br/>GitHub Actions, every 15 min"]
+  ARCH[("arsip-data<br/>branch")]
+  RES["research/<br/>Python analysis"]
+
+  BMKG --> SYNC
+  ESDM --> SYNC
+  SYNC --> DB
+  DB --> API
+  BNPB --> RISK
+  OM --> RISK
+  ESDM --> RISK
+  BMKG --> RISK
+  RISK --> API
+  OSMN --> API
+  API --> WEB
+  sources --> REC
+  REC --> ARCH
+  ARCH --> RES
+  RES -->|landslide history| DB
+```
+
+- **Server.** Express 5 with plain SQL on PostGIS, so every spatial query can be read and cited. Distances are computed on the ellipsoid (`geography`); nearest neighbours use GiST indexes. External calls are cached, and a slow or failing source never breaks the rest of a response.
+- **Web.** Vanilla JavaScript on Vite and Leaflet, with no CSS framework. The font is self-hosted (±27 KB).
+- **Recorder.** A separate Node package with no dependency on the server. It writes append-only files, so a revised product shows up as a new file instead of overwriting the old one.
+- **Shared definitions.** The server reuses the recorder's parsers for BMKG CEWS, PVMBG, and the ensemble summary, so the app and the research archive count things the same way.
+
+## Landslide research (SIGAP-L)
+
+Indonesia has official landslide products: the monthly landslide potential forecast from PVMBG and the dasarian (10-day) heavy-rain warnings from BMKG. We have not found a study that measures how well they match landslides that actually happened. SIGAP-L sets out to do that, and then to test whether an open-data model can do better.
+
+| Question | What is measured | Status |
+|---|---|---|
+| **RQ-L1** | Skill of the PVMBG monthly forecast and BMKG CEWS warnings, 2022–2025, using a matched case-control design | Protocol committed; sampling 8,370 points |
+| **RQ-L2** | Do soil moisture × rainfall thresholds (ERA5-Land) beat rainfall-only thresholds? | Planned |
+| **RQ-L3** | Skill of a daily SIGAP-L model at 0–2 days lead time against the official products | Planned |
+
+The analysis plan was written and committed **before any result was computed** ([`research/PROTOKOL.md`](research/PROTOKOL.md), commits `88819cd` and `9da4339`). Version 1.1 added one rule after a data check: 83 of 788 PVMBG field reports fall on 1 January, a placeholder for "year only", so those dates are kept out of the main monthly analysis.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/chart-inventory-dark.svg">
+  <img src="docs/images/chart-inventory-light.svg" alt="Stacked bar chart of landslide events per year from 2017 to 2025. Totals: 238, 114, 173, 676, 350, 151, 45, 129, 1. MAGMA responses stop after April 2023.">
+</picture>
+
+The inventory merges two PVMBG sources and removes duplicates (≤ 2 km and ≤ 3 days apart). The public MAGMA feed stopped after April 2023, and the field-report portal has almost nothing for 2025. That gap is why the recorder now archives landslide news and new field reports as they appear.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/chart-forecast-layers-dark.svg">
+  <img src="docs/images/chart-forecast-layers-light.svg" alt="Grid of 48 months from 2022 to 2025. Six months are not published (April, September, October, November 2023; August 2024; November 2025) and December 2025 is broken.">
+</picture>
+
+Seven of the 48 monthly forecast maps cannot be read through PVMBG's public map service. That availability gap is a finding in its own right, and those months are excluded from the analysis as stated in the protocol.
+
+```mermaid
+flowchart LR
+  P["PROTOKOL.md<br/>committed first"] -.-> E
+  I["01_inventaris.py<br/>1,884 events"] --> S["02_produk_resmi.py<br/>cases + matched controls"]
+  S --> E["06_evaluasi_rq_l1.py<br/>matched AUC, TSS, bootstrap CI"]
+  A[("recorder archive<br/>BMKG CEWS 2022-")] --> S
+  I --> H["server/data/landslides.geojson<br/>history layer in the app"]
+```
+
+## What the recorder archives
+
+| Feed | Source | Why it is archived |
+|---|---|---|
+| Weather warnings (CAP 1.2) | BMKG nowcast | Disappear from the feed when they expire |
+| Earthquakes (3 feeds) | BMKG | Parameters get revised after the first release |
+| Volcano alert levels | MAGMA Indonesia | Only the current level is public |
+| Citizen flood reports | PetaBencana.id | Reports expire from the live map |
+| Heavy-rain warnings by regency | BMKG CEWS | Per dasarian, backfilled to January 2022 |
+| Monthly landslide potential | PVMBG | Sampled at one point in each of the 514 regencies |
+| Landslide field reports | PVMBG Portal MBG | New, changed, and removed reports are logged weekly |
+| 3-day rainfall ensemble | Open-Meteo (ECMWF, 51 members) | The API keeps only 3 past days |
+| Weekly disaster events | BNPB | Kept in case the service resumes |
+| Landslide news headlines | Google News RSS | Independent ground truth, matched to regencies |
+
+GitHub runs scheduled workflows much less often than requested, about 6 times a day in practice. An external cron job therefore triggers the workflow every 15 minutes through the `workflow_dispatch` API, using a token that can only start workflow runs on this repository. The archive layout is documented in [`recorder/ARSIP_README.md`](recorder/ARSIP_README.md).
+
+## Quick start
+
+Requirements: Node.js 22 or newer and Docker Desktop. Python 3.11 is needed only for `research/`.
 
 ```bash
-docker compose up -d        # database di localhost:5433
+docker compose up -d          # PostGIS on localhost:5433
 
 cd server
 npm install
-npm run migrate             # membuat tabel
-npm run seed                # batas wilayah, gunung api, sesar, riwayat longsor (unduh sekali, ±15 detik)
-npm run dev                 # API di http://localhost:3000/api
+npm run migrate               # create tables
+npm run seed                  # boundaries, volcanoes, faults, landslide history (±15 s, downloads once)
+npm run dev                   # API on http://localhost:3000/api
 ```
 
-Di terminal lain:
+In a second terminal:
 
 ```bash
 cd web
 npm install
-npm run dev                 # buka http://localhost:5173
+npm run dev                   # open http://localhost:5173
 ```
 
-Buka alamat itu di browser biasa (Chrome, Edge, Brave, atau Firefox). Di browser bawaan VS Code peta dasar Kemanusiaan (HOT) tampil kosong, karena server OSM Prancis menolak User-Agent VS Code (HTTP 403).
+Use a regular browser (Chrome, Edge, Brave, or Firefox). VS Code's built-in browser gets HTTP 403 from the French OSM server, so the Humanitarian basemap stays blank there.
 
-Konfigurasi bawaan sudah cocok dengan `docker-compose.yml`. Salin `.env.example` menjadi `.env` hanya bila perlu mengubahnya.
+The defaults match `docker-compose.yml`. Copy `.env.example` to `.env` only if you need to change them.
 
-### Test
+<details>
+<summary><strong>Running the tests</strong></summary>
 
 ```bash
-cd server && npm test       # unit test
+cd server && npm test         # unit tests
 cd recorder && npm test
+research/.venv/Scripts/python -m unittest discover -s research/tests
 ```
 
-Test integrasi server memakai database terpisah supaya data pengembangan tidak tersentuh:
+The server's integration tests use a separate database so development data is never touched:
 
 ```bash
-docker compose exec db createdb -U sigap sigap_test     # sekali saja
+docker compose exec db createdb -U sigap sigap_test      # once
 cd server
 TEST_DATABASE_URL=postgres://sigap:sigap@localhost:5433/sigap_test npm test
 ```
 
-Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/sigap_test"; npm test`
+In PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/sigap_test"; npm test`
+
+Current counts: 53 server tests (with the integration database), 37 recorder tests, and 15 research tests.
+
+</details>
 
 ## API
 
-| Endpoint | Isi |
+Every endpoint returns JSON; spatial data is GeoJSON with `[lon, lat]` coordinates.
+
+| Endpoint | Returns |
 |---|---|
-| `GET /api/health` | Status database dan sinkronisasi tiap sumber |
-| `GET /api/earthquakes?days=7` | Gempa dalam 1–90 hari terakhir (GeoJSON) |
-| `GET /api/volcanoes` | Gunung api beserta status level, erupsi, dan VONA |
-| `GET /api/faults` | Segmen sesar aktif PuSGeN 2024 |
-| `GET /api/wilayah?tingkat=provinsi` atau `kabkota` | Batas wilayah, disederhanakan untuk tampilan |
-| `GET /api/risk?lat=-6.2&lon=106.85` | Profil risiko satu titik (cache 10 menit per sel ±100 m), termasuk bagian `landslide`: potensi gerakan tanah bulanan PVMBG, peringatan hujan tinggi BMKG, hujan 3 hari terakhir, peluang ensemble, kemiringan lereng, dan riwayat longsor dalam 5 km |
-| `GET /api/rain-warnings` | Kab/kota berstatus Waspada, Siaga, atau Awas pada peringatan dini curah hujan tinggi BMKG dasarian ini (GeoJSON) |
-| `GET /api/landslides` | Riwayat kejadian gerakan tanah PVMBG dan MAGMA (GeoJSON) |
-| `GET /api/geocode?q=bandung` | Pencarian kab/kota (database) dan tempat lain (Nominatim) |
+| `GET /api/health` | Database status and the last sync of each source |
+| `GET /api/earthquakes?days=7` | Earthquakes from the last 1–90 days |
+| `GET /api/volcanoes` | Volcanoes with alert level, eruption status, and VONA |
+| `GET /api/faults` | PuSGeN 2024 active fault segments |
+| `GET /api/wilayah?tingkat=provinsi` or `kabkota` | Province or regency boundaries, simplified for display |
+| `GET /api/risk?lat=-6.81&lon=107.62` | Risk profile for one point, cached 10 minutes per ±100 m cell, including the `landslide` section |
+| `GET /api/rain-warnings` | Regencies under a BMKG heavy-rain warning (Waspada or higher) for the current dasarian |
+| `GET /api/landslides` | Landslide history from PVMBG and MAGMA |
+| `GET /api/geocode?q=bandung` | Regency search in the database, other places through Nominatim |
 
-## Sumber data dan atribusi
+<details>
+<summary><strong>Example: the landslide section of a risk profile</strong> (Banjarnegara, 27 September 2026)</summary>
 
-| Data | Sumber | Ketentuan |
+```json
+{
+  "potential": { "month": "2026-09", "current": true, "potensi": "Tinggi", "zkgt": "Tinggi" },
+  "rain_warning": { "dasarian": { "start": "2026-09-21", "end": "2026-09-30" }, "level": 0, "label": "Aman" },
+  "antecedent_rain": { "total_mm": 12.9 },
+  "ensemble": { "model": "ecmwf_ifs025", "days": [{ "date": "2026-09-27", "members": 51, "median_mm": 5.8, "prob_50mm": 0 }] },
+  "slope": { "degrees": 7.4, "class": { "id": "miring", "label": "Miring" } },
+  "history": { "radius_km": 5, "count": 10, "nearest": { "tanggal": "2021-01-06", "distance_km": 0.4 } }
+}
+```
+
+Shortened from the real response. If one source fails, only its own part carries an `error`; the rest of the profile is still returned.
+
+</details>
+
+## Project structure
+
+| Path | Contents |
+|---|---|
+| [`server/`](server) | Express API, sync scheduler, migrations, seeds, and warning rules (`src/config/rules.json`) |
+| [`web/`](web) | Vite + Leaflet frontend |
+| [`recorder/`](recorder) | Data recorder that runs on GitHub Actions |
+| [`research/`](research) | Python analysis for SIGAP-L, the preregistered protocol, and results |
+| [`docs/images/`](docs/images) | Screenshots and charts used in this README |
+| [`docker-compose.yml`](docker-compose.yml) | PostgreSQL 18 + PostGIS 3.6 |
+
+## Data sources and attribution
+
+| Data | Source | Terms |
 |---|---|---|
-| Gempa bumi | [BMKG](https://data.bmkg.go.id/) | Wajib mencantumkan BMKG sebagai sumber |
-| Indeks bahaya, sesar aktif | [InaRISK BNPB](https://inarisk.bnpb.go.id/); model sesar PuSGeN 2024 | Cantumkan BNPB dan PuSGeN |
-| Status gunung api | [MAGMA Indonesia](https://magma.esdm.go.id/), PVMBG Kementerian ESDM | Cantumkan PVMBG |
-| Prakiraan potensi gerakan tanah bulanan, ZKGT, dan riwayat kejadian longsor | PVMBG, Badan Geologi, Kementerian ESDM ([Portal MBG](https://vsi.esdm.go.id/portalmbg/) dan MAGMA Indonesia) | Cantumkan PVMBG. Riwayat disusun ulang oleh `research/01_inventaris.py` tanpa data pribadi |
-| Peringatan dini curah hujan tinggi | [BMKG CEWS](https://cews.bmkg.go.id/) | Wajib mencantumkan BMKG sebagai sumber |
-| Batas lempeng | Bird (2003) PB2002, konversi H. Ahlenius/Nordpil | ODC-By |
-| Batas wilayah | Kepmendagri No 300.2.2-2430 Tahun 2025, [cahyadsn/wilayah_boundaries](https://github.com/cahyadsn/wilayah_boundaries) | MIT |
-| Laporan warga (arsip riset) | [PetaBencana.id](https://petabencana.id/) | CC BY-NC 4.0 |
-| Prakiraan hujan dan elevasi | [Open-Meteo](https://open-meteo.com/) (elevasi dari Copernicus DEM 90 m) | CC BY 4.0, gratis untuk nonkomersial |
-| Pencarian tempat | [Nominatim](https://nominatim.org/) © OpenStreetMap contributors | ODbL; maksimal 1 request/detik, tanpa autocomplete |
-| Peta dasar | Esri; © OpenStreetMap contributors (ODbL); Humanitarian OpenStreetMap Team; OpenTopoMap | CC-BY-SA untuk OpenTopoMap |
+| Earthquakes | [BMKG](https://data.bmkg.go.id/) | Credit BMKG as the source |
+| Heavy-rain early warnings | [BMKG CEWS](https://cews.bmkg.go.id/) | Credit BMKG as the source |
+| Hazard indices, active faults | [BNPB InaRISK](https://inarisk.bnpb.go.id/); PuSGeN 2024 fault model | Credit BNPB and PuSGeN |
+| Volcano alert levels | [MAGMA Indonesia](https://magma.esdm.go.id/), PVMBG, Ministry of Energy and Mineral Resources | Credit PVMBG |
+| Monthly landslide forecast, ZKGT, landslide events | PVMBG, Geological Agency ([Portal MBG](https://vsi.esdm.go.id/portalmbg/) and MAGMA Indonesia) | Credit PVMBG. The event history is rebuilt by `research/01_inventaris.py` without personal data |
+| Plate boundaries | Bird (2003) PB2002, converted by H. Ahlenius / Nordpil | ODC-By |
+| Administrative boundaries | Kepmendagri No 300.2.2-2430 of 2025, [cahyadsn/wilayah_boundaries](https://github.com/cahyadsn/wilayah_boundaries) | MIT |
+| Citizen reports (research archive) | [PetaBencana.id](https://petabencana.id/) | CC BY-NC 4.0 |
+| Rain forecast, ensemble, elevation | [Open-Meteo](https://open-meteo.com/) (ECMWF; Copernicus DEM 90 m) | CC BY 4.0, free for non-commercial use |
+| Place search | [Nominatim](https://nominatim.org/), © OpenStreetMap contributors | ODbL; at most 1 request per second, no autocomplete |
+| Basemaps | Esri; © OpenStreetMap contributors (ODbL); Humanitarian OpenStreetMap Team; OpenTopoMap | CC-BY-SA for OpenTopoMap |
+
+Portal MBG and CEWS endpoints are internal site APIs, not documented services. SIGAP sends an identifying User-Agent, keeps request rates low, and caches every response.
+
+---
+
+<sub>Built at Telkom University for ACK4LBB3 Web-Based Mapping Technology. Screenshots and charts use real data captured on 27 September 2026.</sub>

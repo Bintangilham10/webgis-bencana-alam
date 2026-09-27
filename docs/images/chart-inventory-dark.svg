@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="380" viewBox="0 0 880 380" role="img" aria-label="Bar chart of landslide events per year by source, 2017 to 2025" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif">
+<title>Bar chart of landslide events per year by source, 2017 to 2025</title>
+<text x="0" y="22" font-size="17" font-weight="700" fill="#f0f6fc">Landslide events in the SIGAP inventory, by year</text>
+<text x="0" y="44" font-size="13" fill="#9198a1">1,884 deduplicated events from PVMBG field reports and MAGMA responses (7 more before 2017 are not shown)</text>
+<rect x="0" y="62" width="12" height="12" rx="3" fill="#3987e5"/>
+<text x="18" y="72.5" font-size="13" fill="#f0f6fc">MAGMA landslide response</text>
+<rect x="212" y="62" width="12" height="12" rx="3" fill="#d95926"/>
+<text x="230" y="72.5" font-size="13" fill="#f0f6fc">PVMBG field report only</text>
+<line x1="56" x2="856" y1="336.0" y2="336.0" stroke="#3d444d" stroke-width="1"/>
+<text x="46" y="340.0" font-size="12" text-anchor="end" fill="#848d97" style="font-variant-numeric:tabular-nums">0</text>
+<line x1="56" x2="856" y1="267.4" y2="267.4" stroke="#2f353d" stroke-width="1"/>
+<text x="46" y="271.4" font-size="12" text-anchor="end" fill="#848d97" style="font-variant-numeric:tabular-nums">200</text>
+<line x1="56" x2="856" y1="198.9" y2="198.9" stroke="#2f353d" stroke-width="1"/>
+<text x="46" y="202.9" font-size="12" text-anchor="end" fill="#848d97" style="font-variant-numeric:tabular-nums">400</text>
+<line x1="56" x2="856" y1="130.3" y2="130.3" stroke="#2f353d" stroke-width="1"/>
+<text x="46" y="134.3" font-size="12" text-anchor="end" fill="#848d97" style="font-variant-numeric:tabular-nums">600</text>
+<path d="M75.55555555555556,262.9714285714286h49.77777777777778V336.0H75.55555555555556Z" fill="#3987e5"><title>2017: 213 MAGMA</title></path>
+<path d="M75.55555555555556,260.9714285714286V258.4Q75.55555555555556,254.4 79.55555555555556,254.4H121.33333333333334Q125.33333333333334,254.4 125.33333333333334,258.4V260.9714285714286Z" fill="#d95926"><title>2017: 25 PVMBG</title></path>
+<text x="100.4" y="246.4" font-size="12" font-weight="600" text-anchor="middle" fill="#9198a1" style="font-variant-numeric:tabular-nums">238</text>
+<text x="100.4" y="356" font-size="12" text-anchor="middle" fill="#848d97">2017</text>
+<path d="M164.44444444444443,328.11428571428576h49.77777777777778V336.0H164.44444444444443Z" fill="#3987e5"><title>2018: 23 MAGMA</title></path>
+<path d="M164.44444444444443,326.11428571428576V300.91428571428577Q164.44444444444443,296.91428571428577 168.44444444444443,296.91428571428577H210.2222222222222Q214.2222222222222,296.91428571428577 214.2222222222222,300.91428571428577V326.11428571428576Z" fill="#d95926"><title>2018: 91 PVMBG</title></path>
+<text x="189.3" y="288.9" font-size="12" font-weight="600" text-anchor="middle" fill="#9198a1" style="font-variant-numeric:tabular-nums">114</text>
+<text x="189.3" y="356" font-size="12" text-anchor="middle" fill="#848d97">2018</text>
+<path d="M253.33333333333331,317.8285714285714h49.77777777777778V336.0H253.33333333333331Z" fill="#3987e5"><title>2019: 53 MAGMA</title></path>
+<path d="M253.33333333333331,315.8285714285714V280.68571428571425Q253.33333333333331,276.68571428571425 257.3333333333333,276.68571428571425H299.1111111111111Q303.1111111111111,276.68571428571425 303.1111111111111,280.68571428571425V315.8285714285714Z" fill="#d95926"><title>2019: 120 PVMBG</title></path>
+<text x="278.2" y="268.7" font-size="12" font-weight="600" text-anchor="middle" fill="#9198a1" style="font-variant-numeric:tabular-nums">173</text>
+<text x="278.2" y="356" font-size="12" text-anchor="middle" fill="#848d97">2019</text>
+<path d="M342.2222222222222,162.85714285714286h49.77777777777778V336.0H342.2222222222222Z" fill="#3987e5"><title>2020: 505 MAGMA</title></path>
+<path d="M342.2222222222222,160.85714285714286V108.22857142857143Q342.2222222222222,104.22857142857143 346.2222222222222,104.22857142857143H387.99999999999994Q391.99999999999994,104.22857142857143 391.99999999999994,108.22857142857143V160.85714285714286Z" fill="#d95926"><title>2020: 171 PVMBG</title></path>
+<text x="367.1" y="96.2" font-size="12" font-weight="600" text-anchor="middle" fill="#9198a1" style="font-variant-numeric:tabular-nums">676</text>
+<text x="367.1" y="356" font-size="12" text-anchor="middle" fill="#848d97">2020</text>
+<path d="M431.1111111111111,247.2h49.77777777777778V336.0H431.1111111111111Z" fill="#3987e5"><title>2021: 259 MAGMA</title></path>
+<path d="M431.1111111111111,245.2V220.0Q431.1111111111111,216.0 435.1111111111111,216.0H476.88888888888886Q480.88888888888886,216.0 480.88888888888886,220.0V245.2Z" fill="#d95926"><title>2021: 91 PVMBG</title></path>
+<text x="456.0" y="208.0" font-size="12" font-weight="600" text-anchor="middle" fill="#9198a1" style="font-variant-numeric:tabular-nums">350</text>
+<text x="456.0" y="356" font-size="12" text-anchor="middle" fill="#848d97">2021</text>
+<path d="M520.0,330.51428571428573h49.77777777777778V336.0H520.0Z" fill="#3987e5"><title>2022: 16 MAGMA</title></path>
+<path d="M520.0,328.51428571428573V288.22857142857146Q520.0,284.22857142857146 524.0,284.22857142857146H565.7777777777778Q569.7777777777778,284.22857142857146 569.7777777777778,288.22857142857146V328.51428571428573Z" fill="#d95926"><title>2022: 135 PVMBG</title></path>
+<text x="544.9" y="276.2" font-size="12" font-weight="600" text-anchor="middle" fill="#9198a1" style="font-variant-numeric:tabular-nums">151</text>
+<text x="544.9" y="356" font-size="12" text-anchor="middle" fill="#848d97">2022</text>
+<path d="M608.8888888888888,328.11428571428576h49.77777777777778V336.0H608.8888888888888Z" fill="#3987e5"><title>2023: 23 MAGMA</title></path>
+<path d="M608.8888888888888,326.11428571428576V324.5714285714286Q608.8888888888888,320.5714285714286 612.8888888888888,320.5714285714286H654.6666666666666Q658.6666666666666,320.5714285714286 658.6666666666666,324.5714285714286V326.11428571428576Z" fill="#d95926"><title>2023: 22 PVMBG</title></path>
+<text x="633.8" y="312.6" font-size="12" font-weight="600" text-anchor="middle" fill="#9198a1" style="font-variant-numeric:tabular-nums">45</text>
+<text x="633.8" y="356" font-size="12" text-anchor="middle" fill="#848d97">2023</text>
+<path d="M697.7777777777777,336.0V295.7714285714286Q697.7777777777777,291.7714285714286 701.7777777777777,291.7714285714286H743.5555555555555Q747.5555555555555,291.7714285714286 747.5555555555555,295.7714285714286V336.0Z" fill="#d95926"><title>2024: 129 PVMBG</title></path>
+<text x="722.7" y="283.8" font-size="12" font-weight="600" text-anchor="middle" fill="#9198a1" style="font-variant-numeric:tabular-nums">129</text>
+<text x="722.7" y="356" font-size="12" text-anchor="middle" fill="#848d97">2024</text>
+<path d="M786.6666666666666,336.0V336.0Q786.6666666666666,334.5 788.1666666666666,334.5H834.9444444444445Q836.4444444444445,334.5 836.4444444444445,336.0V336.0Z" fill="#d95926"><title>2025: 1 PVMBG</title></path>
+<text x="811.6" y="327.7" font-size="12" font-weight="600" text-anchor="middle" fill="#9198a1" style="font-variant-numeric:tabular-nums">1</text>
+<text x="811.6" y="356" font-size="12" text-anchor="middle" fill="#848d97">2025</text>
+<line x1="633.8" x2="633.8" y1="294.6" y2="186.0" stroke="#848d97" stroke-dasharray="3 3"/>
+<text x="639.8" y="182.0" font-size="12" fill="#9198a1">MAGMA responses stop after April 2023</text>
+</svg>

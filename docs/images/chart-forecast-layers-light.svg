@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="808" height="272" viewBox="0 0 808 272" role="img" aria-label="Grid of PVMBG monthly forecast layer availability from 2022 to 2025" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif">
+<title>Grid of PVMBG monthly forecast layer availability from 2022 to 2025</title>
+<text x="0" y="22" font-size="17" font-weight="700" fill="#1f2328">PVMBG monthly landslide forecast layers, 2022–2025</text>
+<text x="0" y="44" font-size="13" fill="#59636e">41 of 48 months can be read through the public WMS (checked 27 Sep 2026)</text>
+<rect x="0" y="62" width="12" height="12" rx="3" fill="#2a78d6"/>
+<text x="18" y="72.5" font-size="13" fill="#1f2328">Available</text>
+<rect x="100.5" y="62.5" width="11" height="11" rx="3" fill="none" stroke="#818b98" stroke-dasharray="2 2"/>
+<text x="118" y="72.5" font-size="13" fill="#1f2328">Not published (HTTP 404)</text>
+<rect x="300" y="62" width="12" height="12" rx="3" fill="#ec835a"/>
+<text x="318" y="72.5" font-size="13" fill="#1f2328">Broken (GeoServer style error)</text>
+<text x="85.0" y="102" font-size="12" text-anchor="middle" fill="#818b98">Jan</text>
+<text x="147.0" y="102" font-size="12" text-anchor="middle" fill="#818b98">Feb</text>
+<text x="209.0" y="102" font-size="12" text-anchor="middle" fill="#818b98">Mar</text>
+<text x="271.0" y="102" font-size="12" text-anchor="middle" fill="#818b98">Apr</text>
+<text x="333.0" y="102" font-size="12" text-anchor="middle" fill="#818b98">May</text>
+<text x="395.0" y="102" font-size="12" text-anchor="middle" fill="#818b98">Jun</text>
+<text x="457.0" y="102" font-size="12" text-anchor="middle" fill="#818b98">Jul</text>
+<text x="519.0" y="102" font-size="12" text-anchor="middle" fill="#818b98">Aug</text>
+<text x="581.0" y="102" font-size="12" text-anchor="middle" fill="#818b98">Sep</text>
+<text x="643.0" y="102" font-size="12" text-anchor="middle" fill="#818b98">Oct</text>
+<text x="705.0" y="102" font-size="12" text-anchor="middle" fill="#818b98">Nov</text>
+<text x="767.0" y="102" font-size="12" text-anchor="middle" fill="#818b98">Dec</text>
+<text x="46" y="133.0" font-size="12" text-anchor="end" fill="#818b98">2022</text>
+<rect x="56" y="112" width="58" height="34" rx="4" fill="#2a78d6"><title>Jan 2022: available</title></rect>
+<rect x="118" y="112" width="58" height="34" rx="4" fill="#2a78d6"><title>Feb 2022: available</title></rect>
+<rect x="180" y="112" width="58" height="34" rx="4" fill="#2a78d6"><title>Mar 2022: available</title></rect>
+<rect x="242" y="112" width="58" height="34" rx="4" fill="#2a78d6"><title>Apr 2022: available</title></rect>
+<rect x="304" y="112" width="58" height="34" rx="4" fill="#2a78d6"><title>May 2022: available</title></rect>
+<rect x="366" y="112" width="58" height="34" rx="4" fill="#2a78d6"><title>Jun 2022: available</title></rect>
+<rect x="428" y="112" width="58" height="34" rx="4" fill="#2a78d6"><title>Jul 2022: available</title></rect>
+<rect x="490" y="112" width="58" height="34" rx="4" fill="#2a78d6"><title>Aug 2022: available</title></rect>
+<rect x="552" y="112" width="58" height="34" rx="4" fill="#2a78d6"><title>Sep 2022: available</title></rect>
+<rect x="614" y="112" width="58" height="34" rx="4" fill="#2a78d6"><title>Oct 2022: available</title></rect>
+<rect x="676" y="112" width="58" height="34" rx="4" fill="#2a78d6"><title>Nov 2022: available</title></rect>
+<rect x="738" y="112" width="58" height="34" rx="4" fill="#2a78d6"><title>Dec 2022: available</title></rect>
+<text x="46" y="171.0" font-size="12" text-anchor="end" fill="#818b98">2023</text>
+<rect x="56" y="150" width="58" height="34" rx="4" fill="#2a78d6"><title>Jan 2023: available</title></rect>
+<rect x="118" y="150" width="58" height="34" rx="4" fill="#2a78d6"><title>Feb 2023: available</title></rect>
+<rect x="180" y="150" width="58" height="34" rx="4" fill="#2a78d6"><title>Mar 2023: available</title></rect>
+<rect x="242.5" y="150.5" width="57" height="33" rx="4" fill="none" stroke="#818b98" stroke-dasharray="3 3"><title>Apr 2023: not published</title></rect>
+<text x="271.0" y="171.0" font-size="11.5" font-weight="600" text-anchor="middle" fill="#59636e">404</text>
+<rect x="304" y="150" width="58" height="34" rx="4" fill="#2a78d6"><title>May 2023: available</title></rect>
+<rect x="366" y="150" width="58" height="34" rx="4" fill="#2a78d6"><title>Jun 2023: available</title></rect>
+<rect x="428" y="150" width="58" height="34" rx="4" fill="#2a78d6"><title>Jul 2023: available</title></rect>
+<rect x="490" y="150" width="58" height="34" rx="4" fill="#2a78d6"><title>Aug 2023: available</title></rect>
+<rect x="552.5" y="150.5" width="57" height="33" rx="4" fill="none" stroke="#818b98" stroke-dasharray="3 3"><title>Sep 2023: not published</title></rect>
+<text x="581.0" y="171.0" font-size="11.5" font-weight="600" text-anchor="middle" fill="#59636e">404</text>
+<rect x="614.5" y="150.5" width="57" height="33" rx="4" fill="none" stroke="#818b98" stroke-dasharray="3 3"><title>Oct 2023: not published</title></rect>
+<text x="643.0" y="171.0" font-size="11.5" font-weight="600" text-anchor="middle" fill="#59636e">404</text>
+<rect x="676.5" y="150.5" width="57" height="33" rx="4" fill="none" stroke="#818b98" stroke-dasharray="3 3"><title>Nov 2023: not published</title></rect>
+<text x="705.0" y="171.0" font-size="11.5" font-weight="600" text-anchor="middle" fill="#59636e">404</text>
+<rect x="738" y="150" width="58" height="34" rx="4" fill="#2a78d6"><title>Dec 2023: available</title></rect>
+<text x="46" y="209.0" font-size="12" text-anchor="end" fill="#818b98">2024</text>
+<rect x="56" y="188" width="58" height="34" rx="4" fill="#2a78d6"><title>Jan 2024: available</title></rect>
+<rect x="118" y="188" width="58" height="34" rx="4" fill="#2a78d6"><title>Feb 2024: available</title></rect>
+<rect x="180" y="188" width="58" height="34" rx="4" fill="#2a78d6"><title>Mar 2024: available</title></rect>
+<rect x="242" y="188" width="58" height="34" rx="4" fill="#2a78d6"><title>Apr 2024: available</title></rect>
+<rect x="304" y="188" width="58" height="34" rx="4" fill="#2a78d6"><title>May 2024: available</title></rect>
+<rect x="366" y="188" width="58" height="34" rx="4" fill="#2a78d6"><title>Jun 2024: available</title></rect>
+<rect x="428" y="188" width="58" height="34" rx="4" fill="#2a78d6"><title>Jul 2024: available</title></rect>
+<rect x="490.5" y="188.5" width="57" height="33" rx="4" fill="none" stroke="#818b98" stroke-dasharray="3 3"><title>Aug 2024: not published</title></rect>
+<text x="519.0" y="209.0" font-size="11.5" font-weight="600" text-anchor="middle" fill="#59636e">404</text>
+<rect x="552" y="188" width="58" height="34" rx="4" fill="#2a78d6"><title>Sep 2024: available</title></rect>
+<rect x="614" y="188" width="58" height="34" rx="4" fill="#2a78d6"><title>Oct 2024: available</title></rect>
+<rect x="676" y="188" width="58" height="34" rx="4" fill="#2a78d6"><title>Nov 2024: available</title></rect>
+<rect x="738" y="188" width="58" height="34" rx="4" fill="#2a78d6"><title>Dec 2024: available</title></rect>
+<text x="46" y="247.0" font-size="12" text-anchor="end" fill="#818b98">2025</text>
+<rect x="56" y="226" width="58" height="34" rx="4" fill="#2a78d6"><title>Jan 2025: available</title></rect>
+<rect x="118" y="226" width="58" height="34" rx="4" fill="#2a78d6"><title>Feb 2025: available</title></rect>
+<rect x="180" y="226" width="58" height="34" rx="4" fill="#2a78d6"><title>Mar 2025: available</title></rect>
+<rect x="242" y="226" width="58" height="34" rx="4" fill="#2a78d6"><title>Apr 2025: available</title></rect>
+<rect x="304" y="226" width="58" height="34" rx="4" fill="#2a78d6"><title>May 2025: available</title></rect>
+<rect x="366" y="226" width="58" height="34" rx="4" fill="#2a78d6"><title>Jun 2025: available</title></rect>
+<rect x="428" y="226" width="58" height="34" rx="4" fill="#2a78d6"><title>Jul 2025: available</title></rect>
+<rect x="490" y="226" width="58" height="34" rx="4" fill="#2a78d6"><title>Aug 2025: available</title></rect>
+<rect x="552" y="226" width="58" height="34" rx="4" fill="#2a78d6"><title>Sep 2025: available</title></rect>
+<rect x="614" y="226" width="58" height="34" rx="4" fill="#2a78d6"><title>Oct 2025: available</title></rect>
+<rect x="676.5" y="226.5" width="57" height="33" rx="4" fill="none" stroke="#818b98" stroke-dasharray="3 3"><title>Nov 2025: not published</title></rect>
+<text x="705.0" y="247.0" font-size="11.5" font-weight="600" text-anchor="middle" fill="#59636e">404</text>
+<rect x="738" y="226" width="58" height="34" rx="4" fill="#ec835a"><title>Dec 2025: broken</title></rect>
+<text x="767.0" y="247.0" font-size="11.5" font-weight="700" text-anchor="middle" fill="#1f2328">error</text>
+</svg>
