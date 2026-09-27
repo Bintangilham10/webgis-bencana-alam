@@ -122,6 +122,20 @@
   }
 }
 
+@keyframes marker-focus {
+  from {
+    opacity: 1;
+    transform: scale(0.45);
+  }
+  60% {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
 /* Kepulan abu membesar sambil naik dan melayang ke samping (--dx dari JS). */
 @keyframes volcano-ash {
   0% {

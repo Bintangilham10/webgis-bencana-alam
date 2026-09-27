@@ -2,9 +2,11 @@ import L from 'leaflet';
 import { getJson } from '../lib/api.js';
 import { escapeHtml, formatDateTime, formatDecimal, shortQuakeRegion, timeAgo } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
-import { flyTo } from '../lib/motion.js';
+import { makeFocusable } from '../lib/marker-focus.js';
 import { DEPTH_CLASSES, depthClass, magnitudeRadius, pillStyle } from '../lib/symbology.js';
 
+// Zoom tujuan saat gempa diklik: sekitar ±150 km terlihat di layar desktop.
+const FOCUS_ZOOM = 10;
 const HOUR_MS = 3_600_000;
 const RECENT_HOURS = 24;
 const WEEK_HOURS = 168;
@@ -67,10 +69,13 @@ export function earthquakePopup(p) {
     </div>`;
 }
 
-export function createEarthquakeLayer(map) {
+// viewPadding() = ruang peta yang tertutup panel, supaya titik yang dituju
+// mendarat di area yang terlihat.
+export function createEarthquakeLayer(map, { viewPadding } = {}) {
   const group = L.featureGroup();
   const markers = new Map();
   const styles = new Map();
+  const openers = new Map();
   let signature = '';
 
   // Setiap sinkronisasi, gempa yang melewati 24 jam berhenti bergelombang dan
@@ -96,6 +101,7 @@ export function createEarthquakeLayer(map) {
     group.clearLayers();
     markers.clear();
     styles.clear();
+    openers.clear();
     const now = Date.now();
     const latestId = collection.features[0]?.properties.id;
 
@@ -110,13 +116,13 @@ export function createEarthquakeLayer(map) {
         pane: 'quakes',
         icon: quakeIcon(p, style),
         zIndexOffset: Math.round((10 - p.magnitude) * 1000) + (latest ? 20_000 : 0),
-      })
-        .bindPopup(earthquakePopup(p), { maxWidth: 320 })
-        .bindTooltip(`M ${formatDecimal(p.magnitude)} · ${timeAgo(p.occurred_at)}`, { direction: 'top' });
+      }).bindTooltip(`M ${formatDecimal(p.magnitude)} · ${timeAgo(p.occurred_at)}`, { direction: 'top' });
+      const open = makeFocusable(map, marker, { zoom: FOCUS_ZOOM, popup: () => earthquakePopup(p), viewPadding });
       styles.set(p.id, style);
+      openers.set(p.id, open);
       markers.set(p.id, marker.addTo(group));
     });
-    markers.get(openId)?.openPopup();
+    openers.get(openId)?.({ fly: false });
   }
 
   return {
@@ -133,11 +139,9 @@ export function createEarthquakeLayer(map) {
       return collection;
     },
     focus(id) {
-      const marker = markers.get(id);
-      if (!marker) return;
+      if (!markers.has(id)) return;
       if (!map.hasLayer(group)) group.addTo(map);
-      map.once('moveend', () => marker.openPopup());
-      flyTo(map, marker.getLatLng(), Math.max(map.getZoom(), 7));
+      openers.get(id)();
     },
   };
 }

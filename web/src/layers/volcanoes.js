@@ -2,10 +2,12 @@ import L from 'leaflet';
 import { getJson } from '../lib/api.js';
 import { escapeHtml, formatDateTime, formatNumber } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
-import { flyTo } from '../lib/motion.js';
+import { makeFocusable } from '../lib/marker-focus.js';
 import { pillStyle, VOLCANO_LEVELS } from '../lib/symbology.js';
 
 const MAGMA_STATUS_URL = 'https://magma.esdm.go.id/v1/gunung-api/tingkat-aktivitas';
+// Zoom tujuan saat gunung api diklik: lereng dan desa di sekitarnya terlihat.
+const FOCUS_ZOOM = 12;
 
 // Jeda animasi dibagi merata dalam satu siklus (detik, sama dengan map.css).
 const RING_SECONDS = 2.6;
@@ -79,14 +81,16 @@ function volcanoPopup(v) {
     </div>`;
 }
 
-export function createVolcanoLayer(map) {
+// viewPadding() = ruang peta yang tertutup panel, supaya gunung api yang dituju
+// mendarat di area yang terlihat.
+export function createVolcanoLayer(map, { viewPadding } = {}) {
   const group = L.layerGroup();
-  const markers = new Map();
+  const openers = new Map();
   let signature = '';
 
   function render(collection) {
     group.clearLayers();
-    markers.clear();
+    openers.clear();
     collection.features.forEach(({ geometry, properties: v }, index) => {
       const [lon, lat] = geometry.coordinates;
       const level = VOLCANO_LEVELS[v.level];
@@ -103,8 +107,11 @@ export function createVolcanoLayer(map) {
         title: `${volcanoName(v.nama)} (${level.label}${v.erupsi ? ', sedang erupsi' : ''})`,
         // Status lebih tinggi dan yang sedang erupsi tampil di atas bila berdekatan.
         zIndexOffset: v.level * 100 + (v.erupsi ? 50 : 0),
-      }).bindPopup(volcanoPopup(v), { maxWidth: 320 });
-      markers.set(v.kode, marker.addTo(group));
+      }).addTo(group);
+      openers.set(
+        v.kode,
+        makeFocusable(map, marker, { zoom: FOCUS_ZOOM, popup: () => volcanoPopup(v), viewPadding }),
+      );
     });
   }
 
@@ -124,11 +131,9 @@ export function createVolcanoLayer(map) {
       return collection;
     },
     focus(kode) {
-      const marker = markers.get(kode);
-      if (!marker) return;
+      if (!openers.has(kode)) return;
       if (!map.hasLayer(group)) group.addTo(map);
-      map.once('moveend', () => marker.openPopup());
-      flyTo(map, marker.getLatLng(), Math.max(map.getZoom(), 9));
+      openers.get(kode)();
     },
   };
 }

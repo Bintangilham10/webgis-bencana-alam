@@ -510,6 +510,19 @@
   animation-delay: 1.73s;
 }
 
+/* Penanda yang baru dituju (diklik atau dipilih dari daftar): cincin biru,
+   warna pilihan di antarmuka, memancar dua kali setelah peta berhenti. */
+.quake-symbol.is-focused::after,
+.volcano-marker.is-focused::after {
+  content: '';
+  position: absolute;
+  inset: -12px;
+  border: 3px solid var(--primary);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: marker-focus 0.9s var(--ease-out) 2;
+}
+
 /* ---------- Gunung api: kerucut berfaset, warna level PVMBG ---------- */
 .volcano-marker {
   position: relative;

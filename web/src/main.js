@@ -180,8 +180,16 @@ onThemeChange((theme) => {
 
 // ---------- Lapisan ----------
 const freshness = createFreshness($('#freshness'));
-const earthquakes = createEarthquakeLayer(map);
-const volcanoes = createVolcanoLayer(map);
+// Klik titik gempa/gunung api: peta terbang mendekat ke area yang tidak tertutup
+// panel. Di HP, sisi kanan juga dikosongkan untuk bilah alat supaya popup di
+// atas titik tidak menabraknya.
+function markerPadding() {
+  const padding = viewPadding();
+  if (sidebar.isMobile()) padding.paddingBottomRight = [68, padding.paddingBottomRight[1]];
+  return padding;
+}
+const earthquakes = createEarthquakeLayer(map, { viewPadding: markerPadding });
+const volcanoes = createVolcanoLayer(map, { viewPadding: markerPadding });
 const reportLoadError = (name) => (err) => freshness.fail(name, err);
 
 const symbol = {
