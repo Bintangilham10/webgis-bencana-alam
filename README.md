@@ -21,7 +21,8 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
   - penanda tab meluncur; isi panel dan detail cek risiko bergeser masuk;
   - angka statistik menghitung naik; daftar muncul berurutan; batang bahaya/hujan terisi bertahap;
   - gempa < 24 jam memancarkan gelombang (gempa terbaru bergelombang merah); gunung api yang sedang erupsi mengepulkan abu dan percikan lava, Siaga/Awas bercincin;
-  - garis jarak tergambar pelan; peta "terbang" ke lokasi; tombol memantul saat ditekan.
+  - garis jarak tergambar pelan; peta "terbang" ke lokasi; tombol memantul saat ditekan;
+  - klik gempa atau gunung api (di peta maupun di daftar) menerbangkan peta mendekat ke titik itu (zoom 10 untuk gempa, 12 untuk gunung api) di area yang tidak tertutup panel, lalu popup terbuka dan titiknya disorot cincin biru.
   
   Semua animasi mati otomatis bila pengguna mengaktifkan "kurangi gerakan".
 - **Peta dasar:** abu-abu netral, kemanusiaan (HOT), OpenStreetMap, relief (OpenTopoMap), dan citra satelit (Esri), dipilih lewat menu bergambar.
