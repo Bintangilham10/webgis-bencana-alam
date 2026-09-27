@@ -13,5 +13,10 @@ web/dist/
 # Snapshot halaman dari alat uji browser (playwright-cli)
 .playwright-cli/
 
+# Riset: lingkungan Python dan data mentah/cache (bisa diunduh ulang)
+research/.venv/
+research/data/
+__pycache__/
+
 # Slide kuliah milik dosen, jangan ikut dipublikasikan
 *.pdf
