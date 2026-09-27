@@ -17,7 +17,9 @@ concurrency:
 jobs:
   rekam:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # Satu run biasanya 1–4 menit; sumber longsor/hujan dicicil dengan jeda
+    # supaya sopan ke server sumber, jadi beri ruang cadangan.
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
         with:
