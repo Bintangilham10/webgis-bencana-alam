@@ -27,7 +27,7 @@ from sigap_riset.metrik import BOOTSTRAP_N, bootstrap_ci, per_case, pooled_auc, 
 from sigap_riset.paths import CACHE, DATA, RESULTS  # noqa: E402
 
 CONTROL_LABELS = {'kontrol_prov': 'spasial (provinsi)', 'kontrol_kab': 'spasial (kab/kota)', 'kontrol_waktu': 'temporal'}
-SCORE_LABELS = {'skor_potensi': 'Potensi bulanan PVMBG', 'skor_zkgt': 'ZKGT (statis)', 'skor_cews': 'Peringatan hujan BMKG (CEWS)'}
+SCORE_LABELS = {'skor_potensi': 'Potensi bulanan PVMBG', 'skor_zkgt': 'ZKGT (dalam layer bulanan)', 'skor_cews': 'Peringatan hujan BMKG (CEWS)'}
 CLASS_NAMES = ['0 (luar/sangat rendah)', '1 Rendah', '2 Menengah', '3 Tinggi']
 CEWS_NAMES = ['0 Aman', '1 Waspada', '2 Siaga', '3 Awas']
 
@@ -177,6 +177,7 @@ def markdown(table: pd.DataFrame, meta: dict) -> str:
         f"Bootstrap klaster {BOOTSTRAP_N} kali. Layer PVMBG yang tidak ada/rusak: {', '.join(meta['bulan_dikeluarkan']) or '-'}.",
         f"Bulan bercakupan tidak lengkap (sensitivitas): {', '.join(meta['bulan_tak_lengkap']) or '-'} (median cakupan {fmt(meta['cakupan_median'], 2)}).",
         f"Presisi tanggal kasus PVMBG: {meta['presisi_pvmbg']}. Analisis utama PVMBG memakai presisi hari dan bulan; CEWS hanya presisi hari (PROTOKOL.md v1.1).",
+        *([f"Dasarian CEWS tanpa produk di sumber BMKG (dikeluarkan): {', '.join(meta['cews_dikeluarkan']) or '-'}."] if meta['cews'] else []),
         '',
         '| Produk | Analisis | Kontrol | n kasus | AUC berpasangan [CI 95%] | AUC gabungan | POD≥2 | POFD≥2 | TSS≥2 [CI 95%] | POD=3 | POFD=3 |',
         '|---|---|---|---|---|---|---|---|---|---|---|',
@@ -200,6 +201,10 @@ def markdown(table: pd.DataFrame, meta: dict) -> str:
         'potensi bulanan memberi nilai tambah atas ZKGT bila batas bawah CI selisih > 0.',
     ]
     return '\n'.join(lines) + '\n'
+
+
+def read_list(path, column: str) -> list:
+    return pd.read_csv(path)[column].tolist() if path.exists() and path.stat().st_size > len(column) + 2 else []
 
 
 def fetched_range() -> str:
@@ -227,19 +232,21 @@ def main() -> None:
     rows, meta = evaluate_pvmbg(pvmbg, inventory)
     if cews is not None:
         rows += evaluate_cews(cews, inventory)
-    excluded_file = DATA / 'pvmbg_bulan_dikeluarkan.csv'
-    excluded = pd.read_csv(excluded_file)['bulan'].tolist() if excluded_file.exists() and excluded_file.stat().st_size > 1 else []
     meta |= {
         'dihitung': datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC'),
         'diambil': fetched_range(),
-        'bulan_dikeluarkan': excluded,
+        'bulan_dikeluarkan': read_list(DATA / 'pvmbg_bulan_dikeluarkan.csv', 'bulan'),
         'cews': cews is not None,
+        'cews_dikeluarkan': read_list(DATA / 'cews_dasarian_dikeluarkan.csv', 'dasarian'),
     }
 
     table = pd.DataFrame(rows)
     table.to_csv(out_dir / 'rq_l1_ringkasan.csv', index=False)
     (out_dir / 'rq_l1_ringkasan.md').write_text(markdown(table, meta), encoding='utf-8')
-    plot_distributions(pvmbg, cews, out_dir / 'rq_l1_distribusi.png')
+    # Grafik memakai kasus analisis utama, sama dengan angka utama di tabel.
+    precision = inventory.set_index('id')['presisi_tanggal']
+    main_only = lambda sample, product: sample[sample['kasus_id'].map(precision).isin(MAIN_PRECISION[product])]  # noqa: E731
+    plot_distributions(main_only(pvmbg, 'pvmbg'), None if cews is None else main_only(cews, 'cews'), out_dir / 'rq_l1_distribusi.png')
     print(f'Keluaran di {out_dir}')
     if not args.uji:
         print(markdown(table[table['analisis'] == 'utama'], meta))

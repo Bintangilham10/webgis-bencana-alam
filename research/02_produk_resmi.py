@@ -201,6 +201,11 @@ def sample_cews(cases: pd.DataFrame, pvmbg_sample: pd.DataFrame | None, force: b
         print(f'CEWS: arsip perekam belum lengkap ({len(needed) - len(missing)}/{len(needed)} dasarian 2022–2025); '
               f'jalankan ulang setelah backfill selesai, atau pakai --paksa-cews.')
         return None
+    # Setelah backfill selesai, dasarian yang tetap tidak ada berarti BMKG tidak punya produk untuk
+    # dasarian itu (semua daftar kosong, termasuk Aman). Seperti bulan PVMBG yang tidak ada, dikeluarkan.
+    pd.DataFrame({'dasarian': [f'{y}-{m:02d} das {n}' for y, m, n in missing]}).to_csv(DATA / 'cews_dasarian_dikeluarkan.csv', index=False)
+    if missing:
+        print(f'CEWS: {len(missing)} dasarian tanpa produk dikeluarkan: ' + ', '.join(f'{y}-{m:02d} das {n}' for y, m, n in missing))
 
     # Kontrol spasial CEWS memakai kab/kota titik kontrol provinsi yang sama dengan PVMBG.
     control_points = {}
@@ -236,7 +241,8 @@ def main() -> None:
     parser.add_argument('--batas', type=int, help='hanya N kasus pertama (uji coba)')
     parser.add_argument('--tanpa-pvmbg', action='store_true')
     parser.add_argument('--tanpa-cews', action='store_true')
-    parser.add_argument('--paksa-cews', action='store_true', help='jalankan CEWS walau arsip belum lengkap')
+    parser.add_argument('--paksa-cews', action='store_true',
+                        help='jalankan CEWS walau ada dasarian yang tidak ada di arsip; dasarian itu dikeluarkan')
     args = parser.parse_args()
 
     inventory = pd.read_parquet(DATA / 'inventaris.parquet')
