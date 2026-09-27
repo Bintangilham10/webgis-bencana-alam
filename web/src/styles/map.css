@@ -236,6 +236,22 @@
   outline-offset: 2px;
 }
 
+/* Server gambar mini gagal: kotak polos berketerangan, bukan ikon gambar rusak. */
+.basemap-option.is-broken::after {
+  content: 'Pratinjau gagal dimuat';
+  position: absolute;
+  inset: 0 0 auto;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 3;
+  padding: 8px;
+  font-size: 10.5px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--ink-3);
+  pointer-events: none;
+}
+
 .north-arrow {
   display: flex;
   flex-direction: column;

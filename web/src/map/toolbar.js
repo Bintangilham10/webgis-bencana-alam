@@ -5,6 +5,12 @@ import { icons } from '../lib/icons.js';
 const toolButton = (name, label, icon, extra = '') =>
   `<button type="button" class="tool" data-tool="${name}" aria-label="${label}" title="${label}" ${extra}>${icon}</button>`;
 
+// Jeda sebelum gambar mini yang gagal dimuat dicoba lagi.
+const THUMB_RETRY_MS = [1_500, 4_000];
+// Gambar transparen 1 px pengganti gambar mini yang gagal. Chrome tetap
+// menggambar ikon gambar rusak walau atribut src dilepas.
+const BLANK_IMAGE = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
+
 // Gambar mini baru dimuat saat menu pertama kali dibuka (data-src).
 const basemapOption = (basemap) => `
   <label class="basemap-option">
@@ -12,6 +18,34 @@ const basemapOption = (basemap) => `
     <img alt="" width="96" height="72" data-src="${escapeHtml(basemap.thumbnail)}" />
     <span>${escapeHtml(basemap.name)}</span>
   </label>`;
+
+// Gambar mini diambil langsung dari server tile. Server relawan (misalnya HOT di
+// OSM Prancis) kadang gagal sesaat, jadi gambar yang gagal dicoba lagi. Bila
+// tetap gagal, kotaknya diberi keterangan dan dicoba lagi saat menu dibuka lagi.
+function retryThumbnail(img) {
+  const option = img.closest('.basemap-option');
+  let attempt = 0;
+  img.addEventListener('load', () => {
+    if (img.getAttribute('src') === BLANK_IMAGE) return;
+    attempt = 0;
+    option.classList.remove('is-broken');
+  });
+  img.addEventListener('error', () => {
+    const src = img.getAttribute('src');
+    if (!src || src === BLANK_IMAGE) return;
+    img.src = BLANK_IMAGE;
+    if (attempt < THUMB_RETRY_MS.length) {
+      setTimeout(() => {
+        // Tema bisa berganti selama menunggu; gambar mini yang baru tidak ditimpa.
+        if (img.getAttribute('src') === BLANK_IMAGE && !img.dataset.src) img.src = src;
+      }, THUMB_RETRY_MS[attempt++]);
+      return;
+    }
+    attempt = 0;
+    option.classList.add('is-broken');
+    img.dataset.src = src;
+  });
+}
 
 // Bilah alat di kanan peta dengan tombol seragam: zoom, seluruh Indonesia,
 // cek risiko (lokasi saya / pilih titik), dan pemilih peta dasar.
@@ -44,6 +78,7 @@ export const MapToolbar = L.Control.extend({
     this._pick = el.querySelector('[data-tool="pick"]');
     this._menuButton = el.querySelector('[data-tool="basemap"]');
     this._menu = el.querySelector('.basemap-menu');
+    this._menu.querySelectorAll('img').forEach(retryThumbnail);
     const zoomIn = el.querySelector('[data-tool="zoom-in"]');
     const zoomOut = el.querySelector('[data-tool="zoom-out"]');
 
