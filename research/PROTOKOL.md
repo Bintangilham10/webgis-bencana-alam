@@ -1,6 +1,6 @@
 # Protokol Analisis RQ-L1 — Skill Produk Peringatan Longsor Resmi
 
-**Versi 1.0, 27 September 2026.** Protokol ini dikunci sebelum hasil dihitung. Commit git yang memuat file ini menjadi cap waktunya. Perubahan setelah hasil terlihat hanya boleh dibuat sebagai versi baru, disertai alasan dan catatan apa yang berubah.
+**Versi 1.1, 27 September 2026.** Protokol ini dikunci sebelum hasil dihitung. Commit git yang memuat file ini menjadi cap waktunya. Perubahan setelah hasil terlihat hanya boleh dibuat sebagai versi baru, disertai alasan dan catatan apa yang berubah. Perubahan dari versi 1.0 ada di bagian 9.
 
 ## 1. Pertanyaan
 
@@ -29,6 +29,12 @@ Sub-pertanyaan:
 - **Titik dalam satu laporan.** Titik laporan PVMBG dengan `doc_id` dan tanggal yang sama, yang berjarak ≤ 1 km satu sama lain, digabung menjadi satu kejadian. Titik yang dipakai adalah titik pertama.
 - **Dua sumber, satu kejadian.** Kejadian MAGMA dan PVMBG yang berselisih ≤ 3 hari dan berjarak ≤ 2 km dianggap sama.
 - **Entri yang dibuang.** Entri bertipe "Kajian Lokasi", "Calon Lahan Relokasi", atau "Geolistrik" bukan kejadian dan dibuang. Entri tanpa tipe tetap dipakai dan diberi tanda.
+- **Presisi tanggal** (sejak v1.1). Laporan lapangan PVMBG yang hanya mengetahui tahun kejadian diisi tanggal 1 Januari atau 31 Desember, dan yang hanya mengetahui bulannya diisi tanggal 1. Setiap kejadian diberi tanda `presisi_tanggal`:
+  - `tahun`: laporan lapangan PVMBG bertanggal 1 Januari atau 31 Desember;
+  - `bulan`: laporan lapangan PVMBG bertanggal 1 pada bulan lain (bisa juga tanggal asli, jadi artinya "mungkin hanya bulan");
+  - `hari`: selain itu, termasuk semua tanggapan MAGMA yang mencantumkan tanggal dan jam kejadian.
+
+  Analisis utama prakiraan bulanan PVMBG dan ZKGT memakai presisi `hari` dan `bulan`. Analisis utama CEWS (per dasarian) hanya memakai presisi `hari`. Jumlah kasus per presisi dilaporkan.
 - **Bulan tanpa layer PVMBG.** Kasus pada bulan yang layernya tidak ada (404) atau kosong dikeluarkan dari analisis PVMBG. "Kosong" berarti titik rujukan di zona Tinggi Banjarnegara (−7,275; 109,67) tidak mengembalikan poligon. Layer yang membalas pesan error GeoServer juga dianggap tidak ada. Hasil pemeriksaan 27 Sep 2026: 2025-11 tidak ada (404), 2025-12 rusak ("The requested Style can not be used with this layer"). Jumlah kasus yang dikeluarkan dilaporkan.
 
 ## 4. Kontrol
@@ -73,6 +79,7 @@ Semua analisis berikut dilaporkan apa pun hasilnya:
 4. Per tahun.
 5. Khusus CEWS: EDuMaP (Calvello & Piciullo 2016) pada unit kab/kota × dasarian, dengan cakupan penuh.
 6. Tanpa bulan PVMBG yang cakupannya tidak lengkap. Suatu bulan dianggap tidak lengkap bila fraksi kontrol provinsi yang jatuh di dalam poligon layer < 50% dari median fraksi semua bulan. Layer seperti ini membuat lokasi di "lubang" terbaca skor 0.
+7. Semua kasus tanpa memandang presisi tanggal, yaitu definisi kasus versi 1.0 (sejak v1.1).
 
 ## 7. Keterbatasan yang sudah diketahui
 
@@ -82,6 +89,7 @@ Semua analisis berikut dilaporkan apa pun hasilnya:
 - Layer bulanan PVMBG hanya bisa dibaca per titik (GetMap ditutup), sehingga EDuMaP penuh untuk PVMBG belum bisa dikerjakan.
 - ZKGT di dalam layer diperbarui pada 2025.
 - Tanggal laporan lapangan tidak memuat jam; periode ditentukan dari tanggal lokal.
+- Tanda presisi tanggal bersifat heuristik. Kejadian yang memang terjadi pada tanggal 1 ikut ditandai `bulan`, dan tanggal pengganti lain (mis. tanggal pemeriksaan) tidak terdeteksi.
 
 ## 8. Reprodusibilitas
 
@@ -91,3 +99,11 @@ Semua analisis berikut dilaporkan apa pun hasilnya:
 - Skrip dijalankan berurutan: `01_inventaris.py` → `02_produk_resmi.py` → `06_evaluasi_rq_l1.py`. Nomor 03–05 disiapkan untuk RQ-L2/L3.
 
 Protokol RQ-L2 dan RQ-L3 (ambang hidrometeorologi dan model SIGAP-L) ditulis terpisah sebelum model dilatih.
+
+## 9. Riwayat versi
+
+- **1.0 (27 Sep 2026)**: versi awal, commit 88819cd.
+- **1.1 (27 Sep 2026)**: menambahkan presisi tanggal (bagian 3) dan sensitivitas 7 (bagian 6).
+  - Alasannya ditemukan saat memeriksa riwayat kejadian untuk peta SIGAP: 83 dari 788 kejadian laporan lapangan PVMBG jatuh pada 1 Januari, padahal sebaran merata hanya memberi ±2 kejadian, dan 154 jatuh pada tanggal 1.
+  - Di rentang RQ-L1 (2022–2025, 326 kandidat) ada 7 kasus presisi `tahun` dan 25 kasus presisi `bulan`.
+  - Saat perubahan ini dibuat, sampel PVMBG penuh belum selesai diambil. Skrip evaluasi baru dijalankan pada sampel uji 3 kasus untuk memeriksa kode, dan belum ada hasil yang dilihat.
