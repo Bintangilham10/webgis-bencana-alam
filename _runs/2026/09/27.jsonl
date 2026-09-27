@@ -1,0 +1,1 @@
+{"run_at":"2026-09-27T01:44:36.282Z","results":{"bmkg-cap":{"ok":true,"items":7,"new":7,"errors":[],"ms":10138},"bmkg-gempa":{"ok":true,"items":31,"new":0,"errors":[],"ms":832},"magma":{"ok":true,"items":69,"new":0,"changes":0,"ms":1491},"petabencana":{"ok":true,"items":6,"new":0,"ms":811}}}
