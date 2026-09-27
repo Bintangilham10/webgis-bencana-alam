@@ -21,10 +21,10 @@ import {
   faultLegend,
   plateLegend,
 } from './layers/reference.js';
-import { createVolcanoLayer, volcanoLegend } from './layers/volcanoes.js';
+import { createVolcanoLayer, volcanoLegend, volcanoSwatch } from './layers/volcanoes.js';
 import { icons } from './lib/icons.js';
 import { flyToBounds } from './lib/motion.js';
-import { DEPTH_CLASSES, VOLCANO_LEVELS } from './lib/symbology.js';
+import { DEPTH_CLASSES } from './lib/symbology.js';
 import { cssVar, currentTheme, onThemeChange, setTheme } from './lib/theme.js';
 import { createMap, INDONESIA_BOUNDS } from './map/create-map.js';
 import { LegendControl } from './map/legend-control.js';
@@ -185,8 +185,8 @@ const volcanoes = createVolcanoLayer(map);
 const reportLoadError = (name) => (err) => freshness.fail(name, err);
 
 const symbol = {
-  quake: `<span class="sym sym-circle" style="--sym:${DEPTH_CLASSES[0].color}"></span>`,
-  volcano: `<span class="sym sym-triangle" style="--sym:${VOLCANO_LEVELS[3].color}"></span>`,
+  quake: `<span class="sym quake-swatch" style="--c:${DEPTH_CLASSES[0].color}"></span>`,
+  volcano: volcanoSwatch(3),
   fault: '<span class="sym sym-line" style="--sym:var(--fault-color)"></span>',
   plate: '<span class="sym sym-line sym-line--thick" style="--sym:var(--plate-color)"></span>',
   boundary: '<span class="sym sym-line sym-line--thin" style="--sym:var(--boundary-color)"></span>',

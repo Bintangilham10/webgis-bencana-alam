@@ -5,6 +5,40 @@ import { icons } from '../lib/icons.js';
 import { flyTo } from '../lib/motion.js';
 import { DEPTH_CLASSES, depthClass, magnitudeRadius, pillStyle } from '../lib/symbology.js';
 
+const HOUR_MS = 3_600_000;
+const RECENT_HOURS = 24;
+const WEEK_HOURS = 168;
+const OLDEST_FADE = 0.45;
+
+// Umur gempa menentukan tampilannya: < 24 jam memancarkan gelombang, gempa
+// yang lebih lama makin pudar sampai 7 hari. Gempa terbaru selalu penuh.
+function quakeAge(p, now, latest) {
+  const hours = (now - new Date(p.occurred_at)) / HOUR_MS;
+  const recent = !latest && hours < RECENT_HOURS;
+  const fade = latest || recent ? 1 : Math.max(OLDEST_FADE, 1 - (1 - OLDEST_FADE) * (hours / WEEK_HOURS));
+  return { recent, fade };
+}
+
+// Cakram berlapis seukuran magnitudo (tepi terang, cincin warna kedalaman, inti
+// gelap). Tiga elemen gelombang selalu ada; CSS menampilkannya sesuai kelas
+// is-recent (2 gelombang) atau is-latest (3, merah). Status disimpan di HTML
+// ikon karena Leaflet membuat ulang elemen ikon setiap lapisan dinyalakan lagi.
+// Cakram kecil (< 14 px) tanpa cincin tengah supaya tetap terbaca.
+function quakeIcon(p, { color, index, latest, recent, fade }) {
+  const r = magnitudeRadius(p.magnitude);
+  const d = Math.round(2 * r);
+  const state = (latest ? ' is-latest' : recent ? ' is-recent' : '') + (d < 14 ? ' is-small' : '');
+  return L.divIcon({
+    className: 'quake-icon',
+    html:
+      `<span class="quake-symbol${state}" style="--c:${color};--i:${index};--fade:${fade.toFixed(2)}" role="img" aria-label="Gempa M ${formatDecimal(p.magnitude)}">` +
+      '<i class="quake-wave"></i><i class="quake-wave"></i><i class="quake-wave"></i><i class="quake-disc"></i><i class="quake-band"></i><i class="quake-core"></i></span>',
+    iconSize: [d, d],
+    tooltipAnchor: [0, -r],
+    popupAnchor: [0, -r],
+  });
+}
+
 export function earthquakePopup(p) {
   const depth = depthClass(p.depth_class);
   const magnitude = formatDecimal(p.magnitude);
@@ -36,51 +70,52 @@ export function earthquakePopup(p) {
 export function createEarthquakeLayer(map) {
   const group = L.featureGroup();
   const markers = new Map();
+  const styles = new Map();
   let signature = '';
+
+  // Setiap sinkronisasi, gempa yang melewati 24 jam berhenti bergelombang dan
+  // gempa lama makin pudar. Elemen yang tampil diubah di tempat (tanpa animasi
+  // muncul ulang); ikon baru disimpan untuk saat elemen dibuat ulang.
+  function updateAges() {
+    const now = Date.now();
+    for (const [id, marker] of markers) {
+      const style = styles.get(id);
+      const { recent, fade } = quakeAge(style.props, now, style.latest);
+      if (recent === style.recent && Math.abs(fade - style.fade) < 0.01) continue;
+      Object.assign(style, { recent, fade });
+      marker.options.icon = quakeIcon(style.props, style);
+      const symbol = marker.getElement()?.firstElementChild;
+      symbol?.classList.toggle('is-recent', recent);
+      symbol?.style.setProperty('--fade', fade.toFixed(2));
+    }
+  }
 
   function render(collection) {
     // Popup yang sedang dibaca dibuka lagi setelah data diperbarui.
     const openId = [...markers].find(([, marker]) => marker.isPopupOpen())?.[0];
     group.clearLayers();
     markers.clear();
+    styles.clear();
+    const now = Date.now();
+    const latestId = collection.features[0]?.properties.id;
 
-    // Gempa besar digambar lebih dulu supaya gempa kecil di atasnya tetap bisa
-    // diklik. Warna cincin pemisah mengikuti tema (kelas .quake-marker di CSS).
+    // Gempa besar digambar lebih dulu dan diberi urutan tumpuk lebih rendah,
+    // supaya gempa kecil di atasnya tetap bisa diklik. Gempa terbaru paling atas.
     const byMagnitude = [...collection.features].sort((a, b) => b.properties.magnitude - a.properties.magnitude);
     byMagnitude.forEach(({ geometry, properties: p }, index) => {
       const [lon, lat] = geometry.coordinates;
-      const color = depthClass(p.depth_class).color;
-      const marker = L.circleMarker([lat, lon], {
+      const latest = p.id === latestId;
+      const style = { props: p, color: depthClass(p.depth_class).color, index, latest, ...quakeAge(p, now, latest) };
+      const marker = L.marker([lat, lon], {
         pane: 'quakes',
-        className: 'quake-marker',
-        radius: magnitudeRadius(p.magnitude),
-        weight: 1.5,
-        fillColor: color,
-        fillOpacity: 0.85,
+        icon: quakeIcon(p, style),
+        zIndexOffset: Math.round((10 - p.magnitude) * 1000) + (latest ? 20_000 : 0),
       })
         .bindPopup(earthquakePopup(p), { maxWidth: 320 })
         .bindTooltip(`M ${formatDecimal(p.magnitude)} · ${timeAgo(p.occurred_at)}`, { direction: 'top' });
+      styles.set(p.id, style);
       markers.set(p.id, marker.addTo(group));
-      // Titik muncul membesar berurutan; currentColor dipakai untuk efek pendar.
-      const el = marker.getElement();
-      if (el) {
-        el.style.color = color;
-        el.style.animationDelay = `${index * 40}ms`;
-      }
     });
-
-    const latest = collection.features[0];
-    if (latest) {
-      const [lon, lat] = latest.geometry.coordinates;
-      // Gelombang riak ada di <span> dalam ikon: transform milik elemen ikon
-      // dipakai Leaflet untuk posisi, jadi tidak boleh ditimpa animasi scale.
-      L.marker([lat, lon], {
-        pane: 'quakes',
-        icon: L.divIcon({ className: 'quake-ripple', html: '<span></span><span></span><span></span>', iconSize: [34, 34] }),
-        interactive: false,
-        keyboard: false,
-      }).addTo(group);
-    }
     markers.get(openId)?.openPopup();
   }
 
@@ -92,6 +127,8 @@ export function createEarthquakeLayer(map) {
       if (next !== signature) {
         signature = next;
         render(collection);
+      } else {
+        updateAges();
       }
       return collection;
     },
@@ -109,12 +146,14 @@ export function earthquakeLegend() {
   const sizes = [4, 5, 6, 7]
     .map((m) => {
       const d = 2 * magnitudeRadius(m);
-      return `<span class="legend-size"><span class="legend-circle" style="width:${d}px;height:${d}px"></span>M${m}</span>`;
+      return `<span class="legend-size"><span class="quake-swatch" style="width:${d}px;height:${d}px"></span>M${m}</span>`;
     })
     .join('');
   const depths = DEPTH_CLASSES.map(
-    (c) => `<div class="legend-row"><span class="swatch swatch-circle" style="background:${c.color}"></span>${c.label}</div>`,
+    (c) => `<div class="legend-row"><span class="quake-swatch" style="--c:${c.color}"></span>${c.label}</div>`,
   ).join('');
   return `<div class="legend-sizes">${sizes}</div>${depths}
-    <div class="legend-row"><span class="swatch swatch-pulse"></span>Gempa paling baru</div>`;
+    <div class="legend-row"><span class="quake-swatch quake-swatch--wave" style="--c:${DEPTH_CLASSES[0].color}"></span>Bergelombang: terjadi &lt; 24 jam</div>
+    <div class="legend-row"><span class="quake-swatch quake-swatch--wave" style="--c:var(--danger)"></span>Gempa paling baru</div>
+    <p class="legend-note">Makin pudar, makin lama terjadinya (sampai 7 hari).</p>`;
 }

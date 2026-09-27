@@ -50,7 +50,9 @@
   --fault-color: #f06b60;
   --plate-color: #a7acb4;
   --boundary-color: #858b94;
-  --quake-ring: rgb(14 15 17 / 0.85);
+  --marker-shadow: rgb(0 0 0 / 0.55);
+  --ash: #9a928b;
+  --lava: #ff8a2b;
   --glyph-outline: #0f1012;
   --rain: #5d9ef5;
   --tooltip-bg: #202328;
@@ -90,7 +92,9 @@
   --fault-color: #b3001b;
   --plate-color: #444851;
   --boundary-color: #5b616b;
-  --quake-ring: #ffffff;
+  --marker-shadow: rgb(0 0 0 / 0.3);
+  --ash: #736b64;
+  --lava: #f07418;
   --glyph-outline: #17191d;
   --rain: #3a86c8;
   --tooltip-bg: #ffffff;

@@ -384,22 +384,6 @@
   border-radius: 3px;
 }
 
-.swatch-circle {
-  border-radius: 50%;
-  box-shadow: 0 0 0 1.5px var(--quake-ring);
-}
-
-.swatch-pulse {
-  border: 2px solid var(--danger);
-  border-radius: 50%;
-}
-
-.swatch-triangle {
-  border-radius: 0;
-  background: var(--level-color);
-  clip-path: polygon(50% 0, 100% 100%, 0 100%);
-}
-
 .swatch-line {
   display: inline-block;
   flex: none;
@@ -431,12 +415,6 @@
   color: var(--ink-3);
 }
 
-.legend-circle {
-  border-radius: 50%;
-  background: var(--surface-3);
-  box-shadow: inset 0 0 0 1px var(--line-strong);
-}
-
 /* ---------- Koordinat & skala ---------- */
 .map-readout {
   display: flex;
@@ -449,68 +427,173 @@
   pointer-events: none;
 }
 
-/* ---------- Gempa ---------- */
-/* Warna tepi dari tema (CSS menimpa atribut stroke dari Leaflet). Titik muncul
-   membesar dengan jeda berurutan (--delay dari JS). */
-.quake-marker {
-  stroke: var(--quake-ring);
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: pop-in 0.5s var(--ease-spring) both;
+/* ---------- Gempa: cakram berlapis seukuran magnitudo ---------- */
+/* Gempa < 24 jam memancarkan gelombang, gempa terbaru bergelombang merah lebih
+   jauh, dan gempa lama makin pudar (--fade dari JS). Semua animasi ada di
+   elemen dalam, bukan elemen ikon yang posisinya diatur Leaflet lewat transform. */
+.quake-symbol {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: var(--fade, 1);
+  animation: pop-in 0.5s var(--ease-spring) backwards;
+  animation-delay: calc(var(--i, 0) * 40ms);
+  transition:
+    transform 0.2s var(--ease-spring),
+    opacity 0.6s ease;
 }
 
-/* Gelombang riak dari gempa paling baru. */
-.quake-ripple span {
+.quake-icon:hover .quake-symbol,
+.quake-icon:focus-visible .quake-symbol {
+  transform: scale(1.15);
+}
+
+.quake-symbol i {
   position: absolute;
-  inset: 0;
-  border: 2px solid var(--danger);
+  display: block;
   border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Tepi terang, cincin warna kedalaman, dan inti gelap: tiga lapis warna polos
+   yang memberi kesan timbul. Cakram kecil tanpa cincin tengah. */
+.quake-disc {
+  inset: 0;
+  background: color-mix(in srgb, var(--c) 62%, #fff);
+  box-shadow:
+    0 0 0 1.5px var(--glyph-outline),
+    0 1px 3px var(--marker-shadow);
+}
+
+.quake-band {
+  inset: 20%;
+  background: var(--c);
+}
+
+.quake-core {
+  inset: 38%;
+  background: color-mix(in srgb, var(--c) 62%, #000);
+}
+
+.quake-symbol.is-small .quake-band {
+  display: none;
+}
+
+.quake-symbol .quake-wave {
+  display: none;
+  inset: 0;
+  border: 1.5px solid var(--c);
   opacity: 0;
-  animation: ripple 2.4s var(--ease-out) infinite;
+  animation: quake-wave 2.6s var(--ease-out) infinite;
 }
 
-.quake-ripple span:nth-child(2) {
-  animation-delay: 0.8s;
+.quake-symbol.is-recent .quake-wave:nth-child(-n + 2),
+.quake-symbol.is-latest .quake-wave {
+  display: block;
 }
 
-.quake-ripple span:nth-child(3) {
-  animation-delay: 1.6s;
+.quake-symbol.is-recent .quake-wave:nth-child(2) {
+  animation-delay: 1.3s;
 }
 
-/* ---------- Gunung api ---------- */
+.quake-symbol.is-latest .quake-wave {
+  border: 2px solid var(--danger);
+  animation-name: quake-wave-far;
+}
+
+.quake-symbol.is-latest .quake-wave:nth-child(2) {
+  animation-delay: 0.87s;
+}
+
+.quake-symbol.is-latest .quake-wave:nth-child(3) {
+  animation-delay: 1.73s;
+}
+
+/* ---------- Gunung api: kerucut berfaset, warna level PVMBG ---------- */
 .volcano-marker {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
-  animation: pop-in 0.45s var(--ease-spring) both;
+  animation: pop-in 0.45s var(--ease-spring) backwards;
   animation-delay: calc(var(--i, 0) * 12ms + 150ms);
+  transition: transform 0.2s var(--ease-spring);
 }
 
-.volcano-shape {
+.volcano-icon:hover .volcano-marker,
+.volcano-icon:focus-visible .volcano-marker {
+  transform: scale(1.15);
+}
+
+/* Dua bidang warna polos (terang di kiri, gelap di kanan) memberi kesan 3D,
+   dibentuk dari warna level PVMBG; kerucut dipakai juga di legenda. */
+.volcano-cone {
   position: absolute;
   inset: 0;
-  background: var(--glyph-outline);
-  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  width: 100%;
+  height: 100%;
+  overflow: visible;
 }
 
-.volcano-shape::after {
-  content: '';
-  position: absolute;
-  inset: 2px 2px 1px;
-  background: var(--level-color);
-  clip-path: polygon(50% 12%, 94% 100%, 6% 100%);
+.volcano-cone__light {
+  fill: color-mix(in srgb, var(--level-color) 76%, #fff);
 }
 
-/* Siaga/Awas: cincin sewarna level memancar dari balik segitiga, sama
-   bahasanya dengan riak gempa terbaru. */
-.volcano-halo {
+.volcano-cone__shade {
+  fill: color-mix(in srgb, var(--level-color) 74%, #000);
+}
+
+.volcano-cone__edge {
+  fill: none;
+  stroke: var(--glyph-outline);
+  stroke-width: 1.4;
+  stroke-linejoin: round;
+}
+
+/* Siaga/Awas: dua cincin sewarna level berdenyut dari kaki gunung (jeda dari
+   JS). Margin persen dihitung dari lebar kotak (persegi), jadi tetap di tengah. */
+.volcano-ring {
   position: absolute;
-  inset: -35%;
+  left: 50%;
+  top: 62%;
+  width: 130%;
+  height: 130%;
+  margin: -65% 0 0 -65%;
   border: 2px solid var(--level-color);
   border-radius: 50%;
   opacity: 0;
-  animation: halo 2.4s var(--ease-out) infinite;
+  pointer-events: none;
+  animation: volcano-ring 2.6s var(--ease-out) infinite;
+}
+
+/* Sedang erupsi: kolom abu mengepul dari kawah (ukuran dan arah tiap kepulan
+   dari JS) dan percikan lava yang terlempar ke atas. */
+.volcano-ash,
+.volcano-ember {
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.volcano-ash {
+  width: var(--size, 8px);
+  height: var(--size, 8px);
+  margin-left: calc(var(--size, 8px) / -2);
+  background: var(--ash);
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 0.18);
+  animation: volcano-ash 2.2s ease-out infinite;
+}
+
+.volcano-ember {
+  width: 3px;
+  height: 3px;
+  margin-left: -1.5px;
+  background: var(--lava);
+  animation: volcano-ember 1.4s ease-out infinite;
 }
 
 .boundary-tooltip {

@@ -456,19 +456,66 @@
   margin: auto;
 }
 
-.sym-circle {
-  width: 14px;
-  height: 14px;
+/* Contoh cakram gempa berlapis untuk daftar lapisan dan legenda. Tanpa --c
+   memakai abu-abu, misalnya untuk contoh ukuran magnitudo. Varian --wave
+   menambah satu lingkaran luar sebagai tanda gelombang. */
+.quake-swatch {
+  position: relative;
+  flex: none;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  background: var(--sym);
-  box-shadow: 0 0 0 1.5px var(--quake-ring);
+  background: color-mix(in srgb, var(--c, var(--ink-3)) 62%, #fff);
+  box-shadow: 0 0 0 1.5px var(--glyph-outline);
 }
 
-.sym-triangle {
-  width: 16px;
-  height: 14px;
-  background: var(--sym);
-  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+.quake-swatch::before,
+.quake-swatch::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+
+.quake-swatch::before {
+  inset: 20%;
+  background: var(--c, var(--ink-3));
+}
+
+.quake-swatch::after {
+  inset: 38%;
+  background: color-mix(in srgb, var(--c, var(--ink-3)) 62%, #000);
+}
+
+.quake-swatch--wave {
+  outline: 1.5px solid color-mix(in srgb, var(--c) 55%, transparent);
+  outline-offset: 3px;
+}
+
+/* Contoh kerucut gunung api (SVG sama dengan penanda di peta, versi kecil).
+   Varian --erupting diberi kepulan abu diam di atas kawah. */
+.volcano-swatch {
+  position: relative;
+  display: block;
+  flex: none;
+  width: 18px;
+  height: 18px;
+}
+
+.switch-symbol > .volcano-swatch {
+  margin: auto;
+}
+
+.volcano-swatch--erupting::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  margin-left: -2px;
+  border-radius: 50%;
+  background: var(--ash);
+  box-shadow: -4px 2px 0 -1px var(--ash);
 }
 
 .sym-line {
