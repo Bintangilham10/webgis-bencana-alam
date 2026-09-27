@@ -4,7 +4,7 @@ Folder ini berisi skrip analisis untuk paper. Rancangan lengkapnya ada di rencan
 
 | Pertanyaan | Isi | Status |
 |---|---|---|
-| RQ-L1 | Skill prakiraan bulanan potensi gerakan tanah PVMBG dan peringatan curah hujan tinggi BMKG (CEWS), 2022–2025 | Skrip siap; CEWS menunggu backfill arsip perekam |
+| RQ-L1 | Skill prakiraan bulanan potensi gerakan tanah PVMBG dan peringatan curah hujan tinggi BMKG (CEWS), 2022–2025 | Hasil pertama di [`results/rq_l1_ringkasan.md`](results/rq_l1_ringkasan.md); EDuMaP untuk CEWS (sensitivitas 5) belum |
 | RQ-L2 | Ambang hidrometeorologi (kelembapan tanah ERA5-Land × hujan) vs ambang hujan saja | Belum |
 | RQ-L3 | Skill model SIGAP-L harian pada lead 0–2 hari vs produk resmi | Belum |
 

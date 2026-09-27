@@ -107,3 +107,9 @@ Protokol RQ-L2 dan RQ-L3 (ambang hidrometeorologi dan model SIGAP-L) ditulis ter
   - Alasannya ditemukan saat memeriksa riwayat kejadian untuk peta SIGAP: 83 dari 788 kejadian laporan lapangan PVMBG jatuh pada 1 Januari, padahal sebaran merata hanya memberi ±2 kejadian, dan 154 jatuh pada tanggal 1.
   - Di rentang RQ-L1 (2022–2025, 326 kandidat) ada 7 kasus presisi `tahun` dan 25 kasus presisi `bulan`.
   - Saat perubahan ini dibuat, sampel PVMBG penuh belum selesai diambil. Skrip evaluasi baru dijalankan pada sampel uji 3 kasus untuk memeriksa kode, dan belum ada hasil yang dilihat.
+
+**Catatan penerapan (27 Sep 2026).** Catatan ini ditulis setelah hasil dihitung. Isinya tidak mengubah definisi, metrik, atau kriteria apa pun.
+- **Dasarian CEWS tanpa produk.** Setelah backfill arsip perekam selesai, 7 dasarian tetap kosong di sumber BMKG: semua daftar kosong, termasuk Aman (dicek langsung untuk 2024-02 dasarian 2). Dasarian tersebut adalah 2022-09 das 2 dan 3, 2022-10 das 1 dan 2, 2024-02 das 2, 2024-06 das 3, dan 2025-05 das 3. Semuanya dikeluarkan dengan aturan yang sama seperti bulan PVMBG yang tidak ada (bagian 3).
+- **ZKGT di dalam layer bulanan tidak statis.** Di titik yang sama, kelas ZKGT berbeda antarbulan pada ±12% pasangan bulan, terutama pada layer 2022. Karena itu label "ZKGT (statis)" pada keluaran diganti menjadi "ZKGT (dalam layer bulanan)". Perhitungannya tetap sama.
+- **Sensitivitas 3 (per sumber).** Kejadian yang dicatat MAGMA sekaligus laporan lapangan PVMBG tampil sebagai kelompok ketiga (3 kasus), terpisah dari dua kelompok sumber tunggal.
+
