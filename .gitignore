@@ -10,5 +10,8 @@ server/data/raw/
 # Hasil build frontend
 web/dist/
 
+# Snapshot halaman dari alat uji browser (playwright-cli)
+.playwright-cli/
+
 # Slide kuliah milik dosen, jangan ikut dipublikasikan
 *.pdf
