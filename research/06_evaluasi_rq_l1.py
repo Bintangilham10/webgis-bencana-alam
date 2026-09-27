@@ -75,48 +75,72 @@ def row(produk: str, analisis: str, kontrol: str, result: dict) -> dict:
     return out
 
 
+# PROTOKOL.md v1.1 bagian 3: tingkat ketepatan tanggal yang boleh masuk analisis
+# utama. Produk bulanan butuh bulan yang benar; CEWS per dasarian butuh tanggalnya.
+MAIN_PRECISION = {'pvmbg': {'hari', 'bulan'}, 'cews': {'hari'}}
+
+
+def case_info(sample: pd.DataFrame, inventory: pd.DataFrame) -> pd.DataFrame:
+    return inventory.set_index('id').loc[list(set(sample.loc[sample['jenis'] == 'kasus', 'kasus_id']))]
+
+
+def main_cases(info: pd.DataFrame, product: str) -> set:
+    return set(info.index[info['presisi_tanggal'].isin(MAIN_PRECISION[product])])
+
+
 def evaluate_pvmbg(sample: pd.DataFrame, inventory: pd.DataFrame) -> tuple[list[dict], dict]:
     rows = []
-    case_ids = set(sample.loc[sample['jenis'] == 'kasus', 'kasus_id'])
-    info = inventory.set_index('id').loc[list(case_ids)]
+    info = case_info(sample, inventory)
+    main = main_cases(info, 'pvmbg')
     coverage, incomplete = month_coverage(sample)
 
     # Analisis utama.
     for score in ('skor_potensi', 'skor_zkgt'):
         for control in ('kontrol_prov', 'kontrol_waktu'):
-            rows.append(row(SCORE_LABELS[score], 'utama', CONTROL_LABELS[control], analyse(sample, score, control)))
-    rows.append(row('Potensi − ZKGT (L1c)', 'utama', CONTROL_LABELS['kontrol_prov'], auc_difference(sample, 'kontrol_prov')))
+            rows.append(row(SCORE_LABELS[score], 'utama', CONTROL_LABELS[control], analyse(sample, score, control, main)))
+    rows.append(row('Potensi − ZKGT (L1c)', 'utama', CONTROL_LABELS['kontrol_prov'], auc_difference(sample, 'kontrol_prov', main)))
 
-    # Sensitivitas (PROTOKOL.md bagian 6).
-    typed = set(info.index[info['tipe_diketahui']])
+    # Sensitivitas (PROTOKOL.md bagian 6), semuanya di dalam himpunan kasus utama
+    # kecuali nomor 7 yang justru memasukkan kembali tanggal perkiraan.
+    typed = set(info.index[info['tipe_diketahui']]) & main
     rows.append(row(SCORE_LABELS['skor_potensi'], 'sens: tipe diketahui', CONTROL_LABELS['kontrol_prov'], analyse(sample, 'skor_potensi', 'kontrol_prov', typed)))
     rows.append(row(SCORE_LABELS['skor_potensi'], 'sens: tipe diketahui', CONTROL_LABELS['kontrol_waktu'], analyse(sample, 'skor_potensi', 'kontrol_waktu', typed)))
-    rows.append(row(SCORE_LABELS['skor_potensi'], 'sens: kontrol kab/kota', CONTROL_LABELS['kontrol_kab'], analyse(sample, 'skor_potensi', 'kontrol_kab')))
-    rows.append(row('Potensi − ZKGT (L1c)', 'sens: kontrol kab/kota', CONTROL_LABELS['kontrol_kab'], auc_difference(sample, 'kontrol_kab')))
+    rows.append(row(SCORE_LABELS['skor_potensi'], 'sens: kontrol kab/kota', CONTROL_LABELS['kontrol_kab'], analyse(sample, 'skor_potensi', 'kontrol_kab', main)))
+    rows.append(row('Potensi − ZKGT (L1c)', 'sens: kontrol kab/kota', CONTROL_LABELS['kontrol_kab'], auc_difference(sample, 'kontrol_kab', main)))
     for source, ids in info.groupby('sumber').groups.items():
         for control in ('kontrol_prov', 'kontrol_waktu'):
-            rows.append(row(SCORE_LABELS['skor_potensi'], f'sens: sumber {source}', CONTROL_LABELS[control], analyse(sample, 'skor_potensi', control, set(ids))))
+            rows.append(row(SCORE_LABELS['skor_potensi'], f'sens: sumber {source}', CONTROL_LABELS[control], analyse(sample, 'skor_potensi', control, set(ids) & main)))
     years = pd.to_datetime(info['tanggal']).dt.year
     for year, ids in years.groupby(years).groups.items():
         for control in ('kontrol_prov', 'kontrol_waktu'):
-            rows.append(row(SCORE_LABELS['skor_potensi'], f'sens: tahun {year}', CONTROL_LABELS[control], analyse(sample, 'skor_potensi', control, set(ids))))
+            rows.append(row(SCORE_LABELS['skor_potensi'], f'sens: tahun {year}', CONTROL_LABELS[control], analyse(sample, 'skor_potensi', control, set(ids) & main)))
 
     # Tanpa bulan bercakupan tidak lengkap: kasus di bulan itu dan kontrol temporal di bulan itu dibuang.
     case_month = sample[sample['jenis'] == 'kasus'].set_index('kasus_id')[['tahun', 'bulan']].apply(tuple, axis=1)
-    complete_cases = set(case_month.index[~case_month.isin(incomplete)])
+    complete_cases = set(case_month.index[~case_month.isin(incomplete)]) & main
     trimmed = sample[~((sample['jenis'] == 'kontrol_waktu') & sample[['tahun', 'bulan']].apply(tuple, axis=1).isin(incomplete))]
     for control in ('kontrol_prov', 'kontrol_waktu'):
         rows.append(row(SCORE_LABELS['skor_potensi'], 'sens: tanpa bulan tak lengkap', CONTROL_LABELS[control], analyse(trimmed, 'skor_potensi', control, complete_cases)))
 
+    # Sensitivitas 7: semua kasus, termasuk yang tanggalnya hanya perkiraan tahun.
+    for control in ('kontrol_prov', 'kontrol_waktu'):
+        rows.append(row(SCORE_LABELS['skor_potensi'], 'sens: semua presisi tanggal', CONTROL_LABELS[control], analyse(sample, 'skor_potensi', control)))
+    rows.append(row('Potensi − ZKGT (L1c)', 'sens: semua presisi tanggal', CONTROL_LABELS['kontrol_prov'], auc_difference(sample, 'kontrol_prov')))
+
     meta = {
         'bulan_tak_lengkap': sorted(f'{y}-{m:02d}' for y, m in incomplete),
         'cakupan_median': float(coverage.median()),
+        'presisi_pvmbg': {k: int(v) for k, v in info['presisi_tanggal'].value_counts().items()},
     }
     return rows, meta
 
 
-def evaluate_cews(sample: pd.DataFrame) -> list[dict]:
-    return [row(SCORE_LABELS['skor_cews'], 'utama', CONTROL_LABELS[c], analyse(sample, 'skor_cews', c)) for c in ('kontrol_prov', 'kontrol_waktu')]
+def evaluate_cews(sample: pd.DataFrame, inventory: pd.DataFrame) -> list[dict]:
+    main = main_cases(case_info(sample, inventory), 'cews')
+    controls = ('kontrol_prov', 'kontrol_waktu')
+    rows = [row(SCORE_LABELS['skor_cews'], 'utama', CONTROL_LABELS[c], analyse(sample, 'skor_cews', c, main)) for c in controls]
+    rows += [row(SCORE_LABELS['skor_cews'], 'sens: semua presisi tanggal', CONTROL_LABELS[c], analyse(sample, 'skor_cews', c)) for c in controls]
+    return rows
 
 
 def plot_distributions(pvmbg: pd.DataFrame, cews: pd.DataFrame | None, path) -> None:
@@ -152,6 +176,7 @@ def markdown(table: pd.DataFrame, meta: dict) -> str:
         f"Dihitung {meta['dihitung']} dari cache data (diambil {meta['diambil']}). Protokol: `research/PROTOKOL.md`.",
         f"Bootstrap klaster {BOOTSTRAP_N} kali. Layer PVMBG yang tidak ada/rusak: {', '.join(meta['bulan_dikeluarkan']) or '-'}.",
         f"Bulan bercakupan tidak lengkap (sensitivitas): {', '.join(meta['bulan_tak_lengkap']) or '-'} (median cakupan {fmt(meta['cakupan_median'], 2)}).",
+        f"Presisi tanggal kasus PVMBG: {meta['presisi_pvmbg']}. Analisis utama PVMBG memakai presisi hari dan bulan; CEWS hanya presisi hari (PROTOKOL.md v1.1).",
         '',
         '| Produk | Analisis | Kontrol | n kasus | AUC berpasangan [CI 95%] | AUC gabungan | POD≥2 | POFD≥2 | TSS≥2 [CI 95%] | POD=3 | POFD=3 |',
         '|---|---|---|---|---|---|---|---|---|---|---|',
@@ -201,7 +226,7 @@ def main() -> None:
 
     rows, meta = evaluate_pvmbg(pvmbg, inventory)
     if cews is not None:
-        rows += evaluate_cews(cews)
+        rows += evaluate_cews(cews, inventory)
     excluded_file = DATA / 'pvmbg_bulan_dikeluarkan.csv'
     excluded = pd.read_csv(excluded_file)['bulan'].tolist() if excluded_file.exists() and excluded_file.stat().st_size > 1 else []
     meta |= {

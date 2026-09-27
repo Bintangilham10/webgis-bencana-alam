@@ -6,13 +6,15 @@ Sumber:
 
 Aturan pembersihan mengikuti PROTOKOL.md bagian 3. Keluaran satu baris per
 kejadian di data/inventaris.parquet (dan .csv), plus ringkasan per tahun di
-results/inventaris_per_tahun.csv.
+results/inventaris_per_tahun.csv. Salinan ringkas untuk layer riwayat longsor
+SIGAP ditulis ke server/data/landslides.geojson (tanpa data pribadi).
 
 Jalankan dari root repo: research/.venv/Scripts/python research/01_inventaris.py
 """
 
 from __future__ import annotations
 
+import json
 import re
 from datetime import date, datetime, timedelta, timezone
 
@@ -21,7 +23,7 @@ from bs4 import BeautifulSoup
 
 from sigap_riset.geo import haversine_km
 from sigap_riset.http import Client
-from sigap_riset.paths import DATA, RESULTS
+from sigap_riset.paths import DATA, RESULTS, ROOT
 from sigap_riset.waktu import BULAN, TZ_OFFSET_JAM
 from sigap_riset.wilayah import kab_kota_at
 
@@ -259,6 +261,22 @@ def merge_sources(magma: pd.DataFrame, pvmbg: pd.DataFrame) -> tuple[pd.DataFram
     return merged, duplicates
 
 
+def date_precision(sumber: str, tanggal: date) -> str:
+    """Seberapa tepat tanggal kejadian (PROTOKOL.md v1.1 bagian 3).
+
+    Laporan lapangan PVMBG yang hanya tahu tahun kejadian diisi 1 Januari atau
+    31 Desember, dan yang hanya tahu bulannya diisi tanggal 1: 83 dari 788
+    kejadian jatuh pada 1 Januari, padahal sebaran merata hanya memberi ±2.
+    Tanggal 1 tetap bisa asli, jadi tanda 'bulan' berarti "mungkin hanya bulan".
+    Tanggapan MAGMA memuat tanggal dan jam kejadian di teksnya.
+    """
+    if sumber != 'pvmbg-lapangan':
+        return 'hari'
+    if (tanggal.month, tanggal.day) in ((1, 1), (12, 31)):
+        return 'tahun'
+    return 'bulan' if tanggal.day == 1 else 'hari'
+
+
 def assign_wilayah(events: pd.DataFrame) -> pd.DataFrame:
     """Kode kab/kota dan provinsi dari poligon Kepmendagri 2025 di PostGIS."""
     found = kab_kota_at(events['lat'].tolist(), events['lon'].tolist())
@@ -266,6 +284,49 @@ def assign_wilayah(events: pd.DataFrame) -> pd.DataFrame:
     for col, pos in (('kab_kode', 0), ('kab_nama', 1), ('prov_kode', 2), ('provinsi', 3)):
         events[col] = [row[pos] if row else None for row in found]
     return events
+
+
+# ---------- Ekspor untuk layer riwayat SIGAP ----------
+
+SERVER_GEOJSON = ROOT.parent / 'server' / 'data' / 'landslides.geojson'
+
+
+def export_for_server(events: pd.DataFrame) -> int:
+    """GeoJSON ringkas untuk seed tabel events (hazard longsor). Hanya waktu,
+    lokasi, dan tipe gerakan tanah; rekomendasi panjang dan identitas petugas
+    tidak ikut. Koordinat 4 desimal (±10 m) sudah cukup untuk peta."""
+    def text(value):
+        return value.strip() if isinstance(value, str) and value.strip() else None
+
+    features = []
+    for e in events.itertuples():
+        features.append({
+            'type': 'Feature',
+            'geometry': {'type': 'Point', 'coordinates': [round(e.lon, 4), round(e.lat, 4)]},
+            'properties': {
+                'id': e.id,
+                'tanggal': e.tanggal.isoformat(),
+                'presisi_tanggal': e.presisi_tanggal,
+                'waktu_utc': text(e.waktu_utc),
+                'sumber': e.sumber,
+                'tipe': text(e.tipe),
+                'desa': text(e.desa),
+                'kecamatan': text(e.kecamatan),
+                'kab_kode': text(e.kab_kode),
+                'kab_nama': text(e.kab_nama),
+                'provinsi': text(e.provinsi),
+            },
+        })
+    collection = {
+        'type': 'FeatureCollection',
+        'attribution': 'Kejadian gerakan tanah: PVMBG, Badan Geologi, Kementerian ESDM (Portal MBG dan MAGMA Indonesia), '
+                       'dihimpun dan dideduplikasi oleh research/01_inventaris.py',
+        'generated_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),
+        'features': features,
+    }
+    SERVER_GEOJSON.parent.mkdir(parents=True, exist_ok=True)
+    SERVER_GEOJSON.write_text(json.dumps(collection, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    return len(features)
 
 
 def main() -> None:
@@ -282,11 +343,13 @@ def main() -> None:
     events['tipe_diketahui'] = events['tipe'].notna()
     events['di_daratan'] = events['kab_kode'].notna()
     events['tanggal'] = pd.to_datetime(events['tanggal']).dt.date
+    events['presisi_tanggal'] = [date_precision(s, t) for s, t in zip(events['sumber'], events['tanggal'])]
     events = events.sort_values(['tanggal', 'id']).reset_index(drop=True)
     print(f'Kejadian gabungan: {len(events)} (duplikat PVMBG↔MAGMA dibuang: {duplicates}, di luar poligon kab/kota: {(~events["di_daratan"]).sum()})')
 
     events.to_parquet(DATA / 'inventaris.parquet', index=False)
     events.to_csv(DATA / 'inventaris.csv', index=False)
+    print(f'Riwayat untuk server: {export_for_server(events)} kejadian → server/data/landslides.geojson')
 
     per_year = (
         events[events['di_daratan']]
@@ -297,7 +360,8 @@ def main() -> None:
     per_year.to_csv(RESULTS / 'inventaris_per_tahun.csv')
     print(per_year.loc[per_year.index >= 2015].to_string())
     window = events[events['di_daratan'] & (pd.to_datetime(events['tanggal']).dt.year.between(2022, 2025))]
-    print(f'Kasus kandidat RQ-L1 (2022–2025, di daratan): {len(window)}; bertipe diketahui: {window["tipe_diketahui"].sum()}')
+    print(f'Kasus kandidat RQ-L1 (2022–2025, di daratan): {len(window)}; bertipe diketahui: {window["tipe_diketahui"].sum()}; '
+          f'presisi tanggal: {window["presisi_tanggal"].value_counts().to_dict()}')
 
 
 if __name__ == '__main__':
