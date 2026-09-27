@@ -1,0 +1,23 @@
+{
+  "guid": "CBMi3wFBVV95cUxPakV3UWUyOVhBMG5JZkhuNTZhQXVQelBMenBRdlUydFZuQzJHbmt1NGtuM2F6ODlhS1JDRFhzMFB0ZkExYkhEYk5NSGp3R3NtaG5NSTNWOE9oRm1XYk80QXBJaUhqUGtaMjdES09tS1ltMkVMcEFZRzJLUkk4QmxpeGtPbEJFMm0wWnVlRGFab3B4bnlxeWQzWEtmSHZjSk9GY2NNYjNwV3NrRjlMUXNWS3JiMDZxSjJKYjlBZEU1Q29PVWhFcUN0X2lvRl80UmV6SWF0M1ZwLUhxZXRwcC1N",
+  "title": "BMKG Petakan Wilayah Rawan Longsor di Bengkulu 28 September 2026, Sejumlah Daerah Berpotensi Hujan - Tribunbengkulu.com",
+  "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPakV3UWUyOVhBMG5JZkhuNTZhQXVQelBMenBRdlUydFZuQzJHbmt1NGtuM2F6ODlhS1JDRFhzMFB0ZkExYkhEYk5NSGp3R3NtaG5NSTNWOE9oRm1XYk80QXBJaUhqUGtaMjdES09tS1ltMkVMcEFZRzJLUkk4QmxpeGtPbEJFMm0wWnVlRGFab3B4bnlxeWQzWEtmSHZjSk9GY2NNYjNwV3NrRjlMUXNWS3JiMDZxSjJKYjlBZEU1Q29PVWhFcUN0X2lvRl80UmV6SWF0M1ZwLUhxZXRwcC1N?oc=5",
+  "source": "Tribunbengkulu.com",
+  "source_url": "https://bengkulu.tribunnews.com",
+  "published_at": "2026-09-27T14:55:36.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-09-27T17:45:23.902Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "17.71",
+      "nama": "Kota Bengkulu",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bengkulu"
+  ]
+}
