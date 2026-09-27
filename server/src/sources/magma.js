@@ -2,7 +2,7 @@ import { fetchText } from '../lib/http.js';
 
 // MAGMA tidak menyediakan API, tetapi halaman utamanya menyematkan data peta
 // sebagai literal JSON: `var markersGunungApi = [...]`, lengkap dengan
-// koordinat dan status level setiap gunung api.
+// koordinat, status level, dan status erupsi setiap gunung api.
 export const HOME_URL = 'https://magma.esdm.go.id/';
 
 const MIN_EXPECTED_VOLCANOES = 50;
@@ -21,6 +21,10 @@ export function extractVolcanoes(html) {
       provinsi: m.ga_prov_gapi || null,
       elevasiM: Number.isFinite(m.ga_elev_gapi) ? m.ga_elev_gapi : null,
       level: Number(m.ga_status),
+      // erupt_icon = MAGMA memasang ikon letusan di petanya; has_vona = VONA
+      // (peringatan abu vulkanik untuk penerbangan) sedang berlaku.
+      erupsi: m.erupt_icon === true,
+      vona: m.has_vona === true,
       lat: Number(m.ga_lat_gapi),
       lon: Number(m.ga_lon_gapi),
     };

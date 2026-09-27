@@ -8,7 +8,7 @@ export const volcanoesRouter = Router();
 
 volcanoesRouter.get('/volcanoes', async (req, res) => {
   const { rows } = await query(
-    `SELECT kode, nama, kabupaten, provinsi, elevasi_m, level, checked_at, level_changed_at,
+    `SELECT kode, nama, kabupaten, provinsi, elevasi_m, level, erupsi, vona, checked_at, level_changed_at,
             ST_AsGeoJSON(geom, 4)::json AS geometry
      FROM volcanoes
      ORDER BY level DESC, nama`,

@@ -63,8 +63,18 @@ describe('MAGMA', () => {
       ['Merapi', 'Semeru', 'Sinabung'],
     );
     assert.deepEqual(volcanoes.find((v) => v.kode === 'AGU'), {
-      kode: 'AGU', nama: 'Agung', kabupaten: 'Karangasem', provinsi: 'Bali', elevasiM: 3142, level: 1, lat: -8.342, lon: 115.508,
+      kode: 'AGU', nama: 'Agung', kabupaten: 'Karangasem', provinsi: 'Bali', elevasiM: 3142, level: 1,
+      erupsi: false, vona: false, lat: -8.342, lon: 115.508,
     });
+  });
+
+  test('extractVolcanoes membaca status erupsi dan VONA', () => {
+    const volcanoes = extractVolcanoes(fixture('magma-home.html'));
+    assert.deepEqual(
+      volcanoes.filter((v) => v.erupsi).map((v) => v.nama).sort(),
+      ['Ibu', 'Ili Lewotolok', 'Semeru'],
+    );
+    assert.equal(volcanoes.find((v) => v.kode === 'SMR').vona, true);
   });
 
   test('extractJsonLiteral tidak tertipu kurung di dalam string', () => {

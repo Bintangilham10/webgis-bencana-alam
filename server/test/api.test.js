@@ -125,6 +125,23 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
     assert.ok(body.features[0].properties.level_changed_at);
   });
 
+  test('status erupsi dan VONA disimpan dan dikirim API', async () => {
+    const semeru = (erupsi) => [
+      { kode: 'SMR', nama: 'Semeru', kabupaten: 'Lumajang', provinsi: 'Jawa Timur', elevasiM: 3676, level: 3, erupsi, vona: erupsi, lat: -8.108, lon: 112.92 },
+    ];
+    await syncVolcanoes({ fetchVolcanoes: async () => semeru(true) });
+    let { body } = await getJson('/volcanoes');
+    let props = body.features.find((f) => f.properties.kode === 'SMR').properties;
+    assert.equal(props.erupsi, true);
+    assert.equal(props.vona, true);
+
+    await syncVolcanoes({ fetchVolcanoes: async () => semeru(false) });
+    ({ body } = await getJson('/volcanoes'));
+    props = body.features.find((f) => f.properties.kode === 'SMR').properties;
+    assert.equal(props.erupsi, false);
+    assert.equal(props.vona, false);
+  });
+
   test('parameter tidak valid dan endpoint tak dikenal dijawab dengan jelas', async () => {
     assert.equal((await getJson('/wilayah?tingkat=desa')).status, 400);
     assert.equal((await getJson('/tidak-ada')).status, 404);
