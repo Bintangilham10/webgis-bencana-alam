@@ -17,19 +17,17 @@ Jalankan dari root repo:
 from __future__ import annotations
 
 import argparse
-import io
 import json
 import random
-import subprocess
-import tarfile
 import time
 import zlib
 from datetime import date
 
 import pandas as pd
 
+from sigap_riset import cews
 from sigap_riset.http import Client
-from sigap_riset.paths import DATA, ROOT
+from sigap_riset.paths import DATA
 from sigap_riset.waktu import dasarian, dasarian_index, month_index
 from sigap_riset.wilayah import kab_kota_at, random_points
 
@@ -42,8 +40,6 @@ FIRST_MONTH, LAST_MONTH = (2022, 1), (2025, 12)
 N_SPATIAL = 10
 N_TEMPORAL = 6
 SCORES = {'tinggi': 3, 'menengah': 2, 'rendah': 1, 'sangat rendah': 0}
-CEWS_LEVELS = {'aman': 0, 'waspada': 1, 'siaga': 2, 'awas': 3}
-ARCHIVE_DIR = DATA / 'arsip'
 
 
 def score(label) -> int:
@@ -163,38 +159,9 @@ def sample_pvmbg(cases: pd.DataFrame) -> pd.DataFrame:
 
 # ---------- CEWS ----------
 
-def extract_cews_archive() -> None:
-    """Salin folder bmkg-cews/ dari branch arsip-data ke research/data/arsip/."""
-    repo = ROOT.parent
-    subprocess.run(['git', 'fetch', '--depth=1', 'origin', 'arsip-data'], cwd=repo, check=True, capture_output=True)
-    tar_bytes = subprocess.run(['git', 'archive', 'FETCH_HEAD', 'bmkg-cews'], cwd=repo, check=True, capture_output=True).stdout
-    ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
-    with tarfile.open(fileobj=io.BytesIO(tar_bytes)) as tar:
-        tar.extractall(ARCHIVE_DIR, filter='data')
-
-
-def load_cews_levels() -> tuple[dict, set]:
-    """{(kode kab/kota, tahun, bulan, dasarian): skor} dan himpunan dasarian yang tersedia.
-    Bila satu dasarian punya beberapa versi (revisi), yang terakhir terlihat dipakai."""
-    latest: dict[tuple[int, int, int], dict] = {}
-    for file in (ARCHIVE_DIR / 'bmkg-cews').glob('*/*/dasarian-*.json'):
-        record = json.loads(file.read_text(encoding='utf-8'))
-        d = record['dasarian']
-        key = (d['year'], d['month'], d['num'])
-        if key not in latest or record['first_seen_at'] > latest[key]['first_seen_at']:
-            latest[key] = record
-    levels = {}
-    for (year, month, num), record in latest.items():
-        for level, entries in record['levels'].items():
-            for entry in entries:
-                if entry.get('kode'):
-                    levels[(entry['kode'], year, month, num)] = CEWS_LEVELS[level]
-    return levels, set(latest)
-
-
 def sample_cews(cases: pd.DataFrame, pvmbg_sample: pd.DataFrame | None, force: bool) -> pd.DataFrame | None:
-    extract_cews_archive()
-    levels, available = load_cews_levels()
+    cews.extract_archive()
+    levels, available = cews.load_levels()
     needed = set(all_dasarian())
     missing = sorted(needed - available)
     if missing and not force:
@@ -262,10 +229,10 @@ def main() -> None:
         pvmbg = pd.read_parquet(DATA / f'sampel_pvmbg{suffix}.parquet')
 
     if not args.tanpa_cews:
-        cews = sample_cews(cases, pvmbg, args.paksa_cews)
-        if cews is not None:
-            cews.to_parquet(DATA / f'sampel_cews{suffix}.parquet', index=False)
-            print(f'CEWS: {len(cews)} baris → data/sampel_cews{suffix}.parquet')
+        cews_sample = sample_cews(cases, pvmbg, args.paksa_cews)
+        if cews_sample is not None:
+            cews_sample.to_parquet(DATA / f'sampel_cews{suffix}.parquet', index=False)
+            print(f'CEWS: {len(cews_sample)} baris → data/sampel_cews{suffix}.parquet')
 
 
 if __name__ == '__main__':

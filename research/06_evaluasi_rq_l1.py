@@ -1,9 +1,11 @@
 """Evaluasi RQ-L1: skill produk peringatan longsor resmi (PROTOKOL.md bagian 5–6).
 
 Masukan: data/inventaris.parquet, data/sampel_pvmbg.parquet, dan (bila ada)
-data/sampel_cews.parquet dari 01_inventaris.py dan 02_produk_resmi.py.
-Keluaran: results/rq_l1_ringkasan.csv, results/rq_l1_ringkasan.md, dan
-results/rq_l1_distribusi.png.
+data/sampel_cews.parquet dari 01_inventaris.py dan 02_produk_resmi.py, serta
+arsip CEWS perekam (data/arsip/, disalin oleh 02_produk_resmi.py).
+Keluaran: results/rq_l1_ringkasan.csv, results/rq_l1_ringkasan.md,
+results/rq_l1_distribusi.png, dan untuk CEWS results/rq_l1_edumap_cews.md/.csv
+(sensitivitas 5, metode EDuMaP).
 
 Jalankan dari root repo:
     research/.venv/Scripts/python research/06_evaluasi_rq_l1.py
@@ -23,8 +25,11 @@ import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
 
+from sigap_riset import cews as cews_archive  # noqa: E402
+from sigap_riset.edumap import alert_classification, duration_matrix, grade_by_distance, indicators  # noqa: E402
 from sigap_riset.metrik import BOOTSTRAP_N, bootstrap_ci, per_case, pooled_auc, summarize  # noqa: E402
-from sigap_riset.paths import CACHE, DATA, RESULTS  # noqa: E402
+from sigap_riset.paths import CACHE, DATA, RESULTS, ROOT  # noqa: E402
+from sigap_riset.waktu import dasarian  # noqa: E402
 
 CONTROL_LABELS = {'kontrol_prov': 'spasial (provinsi)', 'kontrol_kab': 'spasial (kab/kota)', 'kontrol_waktu': 'temporal'}
 SCORE_LABELS = {'skor_potensi': 'Potensi bulanan PVMBG', 'skor_zkgt': 'ZKGT (dalam layer bulanan)', 'skor_cews': 'Peringatan hujan BMKG (CEWS)'}
@@ -143,6 +148,141 @@ def evaluate_cews(sample: pd.DataFrame, inventory: pd.DataFrame) -> list[dict]:
     return rows
 
 
+# ---------- EDuMaP untuk CEWS (PROTOKOL.md bagian 6, sensitivitas 5) ----------
+# Zona peringatan = kab/kota, satuan waktu = dasarian (produk CEWS), durasi dalam
+# hari. Kelas peringatan: 1 Aman, 2 Waspada, 3 Siaga, 4 Awas. Kelas kejadian
+# (kriteria absolut, seperti Tabel 3 makalah, disesuaikan dengan inventaris yang
+# jarang): 1 = tidak ada, 2 = 1 kejadian, 3 = 2–3 kejadian, 4 = ≥ 4 kejadian.
+WARNING_NAMES = ['Aman', 'Waspada', 'Siaga', 'Awas']
+EVENT_NAMES = ['0', '1', '2–3', '≥ 4']
+INDICATOR_NAMES = {
+    'Ieff': 'Indeks efisiensi', 'HR': 'Hit rate', 'PP': 'Predictive power', 'TS': 'Threat score', 'OR': 'Odds ratio',
+    'RMA': 'Missed alert rate', 'RFA': 'False alert rate', 'ER': 'Error rate', 'PSM': 'Probability of serious mistakes',
+    'PSM_NW': 'Serious no-warning mistakes', 'PSM_NL': 'Serious no-landslide mistakes',
+    'IMA': 'Keparahan missed alert', 'IFA': 'Keparahan false alert',
+}
+
+
+def event_class(count: int) -> int:
+    return 1 if count == 0 else 2 if count == 1 else 3 if count <= 3 else 4
+
+
+def dasarian_days(year: int, month: int, num: int) -> int:
+    last = pd.Timestamp(year=year, month=month, day=1).days_in_month
+    return 10 if num < 3 else last - 20
+
+
+def edumap_cells(inventory: pd.DataFrame) -> pd.DataFrame:
+    """Satu baris per kab/kota × dasarian yang produk CEWS-nya ada, 2022–2025."""
+    levels, available = cews_archive.load_levels()
+    periods = sorted(p for p in available if 2022 <= p[0] <= 2025)
+    wilayah = json.loads((ROOT.parent / 'recorder' / 'data' / 'wilayah.json').read_text(encoding='utf-8'))
+    events = inventory[inventory['di_daratan'] & inventory['presisi_tanggal'].isin(MAIN_PRECISION['cews'])].copy()
+    events['das'] = pd.to_datetime(events['tanggal']).dt.date.map(dasarian)
+    counts = events.groupby(['kab_kode', 'das']).size().to_dict()
+    rows = [
+        {
+            'kab_kode': w['kode'],
+            'dasarian': p,
+            'kelas_peringatan': levels.get((w['kode'], *p), 0) + 1,
+            'jumlah_longsor': counts.get((w['kode'], p), 0),
+            'hari': dasarian_days(*p),
+        }
+        for w in wilayah
+        for p in periods
+    ]
+    cells = pd.DataFrame(rows)
+    cells['kelas_longsor'] = cells['jumlah_longsor'].map(event_class)
+    return cells
+
+
+def edumap_analysis(cells: pd.DataFrame, alert_from: int) -> tuple[np.ndarray, dict]:
+    d = duration_matrix(cells['kelas_peringatan'], cells['kelas_longsor'], cells['hari'])
+    return d, indicators(d, alert_classification(4, 4, alert_from=alert_from, event_from=2), grade_by_distance(4, 4))
+
+
+def evaluate_cews_edumap(inventory: pd.DataFrame, out_dir) -> None:
+    cells = edumap_cells(inventory)
+    watched = set(cells.loc[cells['jumlah_longsor'] > 0, 'kab_kode'])
+    analyses = [
+        ('utama: alert = Siaga ke atas', cells, 3),
+        ('sens: alert = Waspada ke atas', cells, 2),
+        ('sens: hanya kab/kota dengan ≥ 1 kejadian tercatat', cells[cells['kab_kode'].isin(watched)], 3),
+    ]
+    results = []
+    main_matrix = None
+    for name, subset, alert_from in analyses:
+        d, result = edumap_analysis(subset, alert_from)
+        main_matrix = d if main_matrix is None else main_matrix
+        results.append({'analisis': name, 'kab_kota': subset['kab_kode'].nunique(), **result})
+    table = pd.DataFrame(results)
+    table.to_csv(out_dir / 'rq_l1_edumap_cews.csv', index=False)
+
+    n_periods = cells['dasarian'].nunique()
+    lines = [
+        '# RQ-L1 sensitivitas 5 — EDuMaP untuk peringatan hujan BMKG (CEWS)',
+        '',
+        'Metode EDuMaP (Calvello & Piciullo 2016, NHESS 16:103–122). Implementasinya diuji dengan contoh Tabel 7–8 makalah '
+        '(`research/tests/test_edumap.py`).',
+        '',
+        '**Parameter** (ditetapkan sebelum EDuMaP dihitung; lihat catatan penerapan di PROTOKOL.md):',
+        '',
+        '| Parameter | Nilai |',
+        '|---|---|',
+        '| Kelas peringatan | 1 Aman, 2 Waspada, 3 Siaga, 4 Awas (CEWS; kab/kota yang tidak tercantum = Aman) |',
+        '| Kelas kejadian longsor (kriteria absolut) | 1 = tidak ada, 2 = 1 kejadian, 3 = 2–3 kejadian, 4 = ≥ 4 kejadian |',
+        '| Zona peringatan | kab/kota Kepmendagri 2025 |',
+        f"| Satuan waktu | dasarian; {n_periods} dasarian 2022–2025 yang produknya ada |",
+        '| Lead time, over time | 0 (CEWS terbit sebelum dasarian dimulai; kejadian dikelompokkan per dasarian) |',
+        '| Kejadian | inventaris PVMBG + MAGMA dengan presisi tanggal harian |',
+        '| Kriteria A | alert = kelas peringatan ≥ 3 (Siaga), kejadian = kelas longsor ≥ 2 (≥ 1 longsor) |',
+        '| Kriteria B | warna menurut selisih kelas: 0 hijau, 1 kuning, 2 merah, 3 ungu |',
+        '',
+        '**Matriks durasi** (hari; baris = peringatan, kolom = jumlah kejadian longsor per kab/kota per dasarian; semua kab/kota):',
+        '',
+        '| Peringatan \\ Longsor | ' + ' | '.join(EVENT_NAMES) + ' |',
+        '|---|' + '---|' * len(EVENT_NAMES),
+    ]
+    for i, name in enumerate(WARNING_NAMES):
+        lines.append(f'| {name} | ' + ' | '.join(f'{main_matrix[i, j]:,.0f}' for j in range(4)) + ' |')
+    # Normalisasi baris (sejalan dengan persamaan 3 makalah): seberapa sering
+    # longsor tercatat selama tiap tingkat peringatan berlaku.
+    days = main_matrix.sum(axis=1)
+    with_landslide = main_matrix[:, 1:].sum(axis=1)
+    base = with_landslide[0] / days[0]
+    lines += [
+        '',
+        '**Seberapa sering longsor tercatat per tingkat peringatan** (normalisasi baris matriks di atas):',
+        '',
+        '| Peringatan | Hari | Hari dengan ≥ 1 longsor | Proporsi | Kali lipat terhadap Aman |',
+        '|---|---|---|---|---|',
+    ]
+    for i, name in enumerate(WARNING_NAMES):
+        share = with_landslide[i] / days[i]
+        lines.append(
+            f"| {name} | {days[i]:,.0f} | {with_landslide[i]:,.0f} | {share * 100:.2f}% | {share / base:.1f}× |"
+        )
+    lines += [
+        '',
+        '**Indikator** (d_11 = Aman tanpa longsor diabaikan, sesuai makalah):',
+        '',
+        '| Indikator | ' + ' | '.join(r['analisis'] for r in results) + ' |',
+        '|---|' + '---|' * len(results),
+        '| Kab/kota | ' + ' | '.join(str(r['kab_kota']) for r in results) + ' |',
+    ]
+    for key in ('CA', 'MA', 'FA', 'TN'):
+        lines.append(f'| {key} (hari) | ' + ' | '.join(f"{r[key]:,.0f}" for r in results) + ' |')
+    for key, label in INDICATOR_NAMES.items():
+        lines.append(f'| {label} ({key}) | ' + ' | '.join(fmt(r[key]) for r in results) + ' |')
+    lines += [
+        '',
+        'Catatan: inventaris kejadian tidak lengkap, jadi sebagian "false alert" bisa jadi longsor yang tidak tercatat. '
+        'Nilai predictive power dan false alert rate karena itu batas bawah dan batas atas.',
+    ]
+    (out_dir / 'rq_l1_edumap_cews.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
+    print(f"EDuMaP CEWS: {len(cells)} sel kab/kota × dasarian → {out_dir / 'rq_l1_edumap_cews.md'}")
+
+
 def plot_distributions(pvmbg: pd.DataFrame, cews: pd.DataFrame | None, path) -> None:
     panels = [('skor_potensi', pvmbg, CLASS_NAMES), ('skor_zkgt', pvmbg, CLASS_NAMES)]
     if cews is not None:
@@ -199,6 +339,7 @@ def markdown(table: pd.DataFrame, meta: dict) -> str:
         '',
         'Kriteria (ditetapkan sebelum hasil dihitung): produk punya diskriminasi bila batas bawah CI AUC > 0,5; '
         'potensi bulanan memberi nilai tambah atas ZKGT bila batas bawah CI selisih > 0.',
+        *(['', 'EDuMaP untuk CEWS (sensitivitas 5): [`rq_l1_edumap_cews.md`](rq_l1_edumap_cews.md).'] if meta['cews'] else []),
     ]
     return '\n'.join(lines) + '\n'
 
@@ -232,6 +373,8 @@ def main() -> None:
     rows, meta = evaluate_pvmbg(pvmbg, inventory)
     if cews is not None:
         rows += evaluate_cews(cews, inventory)
+        if not args.uji:
+            evaluate_cews_edumap(inventory, out_dir)
     meta |= {
         'dihitung': datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC'),
         'diambil': fetched_range(),
