@@ -1,6 +1,6 @@
 # Hasil RQ-L1 — skill produk peringatan longsor resmi
 
-Dihitung 2026-09-27 17:06 UTC dari cache data (diambil 2026-09-27 s.d. 2026-09-27). Protokol: `research/PROTOKOL.md`.
+Dihitung 2026-09-27 17:47 UTC dari cache data (diambil 2026-09-27 s.d. 2026-09-27). Protokol: `research/PROTOKOL.md`.
 Bootstrap klaster 2000 kali. Layer PVMBG yang tidak ada/rusak: 2023-04, 2023-09, 2023-10, 2023-11, 2024-08, 2025-11, 2025-12.
 Bulan bercakupan tidak lengkap (sensitivitas): 2022-12 (median cakupan 1.00).
 Presisi tanggal kasus PVMBG: {'hari': 280, 'bulan': 23, 'tahun': 7}. Analisis utama PVMBG memakai presisi hari dan bulan; CEWS hanya presisi hari (PROTOKOL.md v1.1).
@@ -42,3 +42,5 @@ Dasarian CEWS tanpa produk di sumber BMKG (dikeluarkan): 2022-09 das 2, 2022-09 
 | Peringatan hujan BMKG (CEWS) | sens: semua presisi tanggal | temporal | 250 | 0.568 [0.537, 0.600] | 0.569 | 0.18 | 0.07 | 0.109 [0.062, 0.161] | 0.02 | 0.02 |
 
 Kriteria (ditetapkan sebelum hasil dihitung): produk punya diskriminasi bila batas bawah CI AUC > 0,5; potensi bulanan memberi nilai tambah atas ZKGT bila batas bawah CI selisih > 0.
+
+EDuMaP untuk CEWS (sensitivitas 5): [`rq_l1_edumap_cews.md`](rq_l1_edumap_cews.md).

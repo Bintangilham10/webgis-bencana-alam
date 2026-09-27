@@ -4,7 +4,7 @@ Folder ini berisi skrip analisis untuk paper. Rancangan lengkapnya ada di rencan
 
 | Pertanyaan | Isi | Status |
 |---|---|---|
-| RQ-L1 | Skill prakiraan bulanan potensi gerakan tanah PVMBG dan peringatan curah hujan tinggi BMKG (CEWS), 2022–2025 | Hasil pertama di [`results/rq_l1_ringkasan.md`](results/rq_l1_ringkasan.md); EDuMaP untuk CEWS (sensitivitas 5) belum |
+| RQ-L1 | Skill prakiraan bulanan potensi gerakan tanah PVMBG dan peringatan curah hujan tinggi BMKG (CEWS), 2022–2025 | Hasil di [`results/rq_l1_ringkasan.md`](results/rq_l1_ringkasan.md) dan EDuMaP CEWS di [`results/rq_l1_edumap_cews.md`](results/rq_l1_edumap_cews.md) |
 | RQ-L2 | Ambang hidrometeorologi (kelembapan tanah ERA5-Land × hujan) vs ambang hujan saja | Belum |
 | RQ-L3 | Skill model SIGAP-L harian pada lead 0–2 hari vs produk resmi | Belum |
 
@@ -34,9 +34,9 @@ Data CEWS dibaca dari arsip perekam (branch `arsip-data`, folder `bmkg-cews/`). 
 |---|---|
 | `01_inventaris.py` | Inventaris kejadian gerakan tanah: laporan lapangan PVMBG + tanggapan MAGMA, dedup, kode kab/kota |
 | `02_produk_resmi.py` | Desain kasus-kontrol dan nilai produk resmi di tiap titik/periode |
-| `06_evaluasi_rq_l1.py` | AUC berpasangan, POD/POFD/TSS, CI bootstrap klaster, analisis sensitivitas |
-| `sigap_riset/` | Modul bersama: klien HTTP ber-cache, query PostGIS, metrik |
-| `tests/` | Uji metrik dengan data buatan |
+| `06_evaluasi_rq_l1.py` | AUC berpasangan, POD/POFD/TSS, CI bootstrap klaster, analisis sensitivitas, dan EDuMaP untuk CEWS |
+| `sigap_riset/` | Modul bersama: klien HTTP ber-cache, query PostGIS, metrik, arsip CEWS, dan EDuMaP (Calvello & Piciullo 2016) |
+| `tests/` | Uji metrik dengan data buatan, uji klien HTTP, dan uji EDuMaP dengan contoh di makalah aslinya |
 | `data/` | Cache, data antara, dan sampel (tidak dikomit; bisa dibuat ulang) |
 | `results/` | Tabel dan gambar hasil (dikomit) |
 

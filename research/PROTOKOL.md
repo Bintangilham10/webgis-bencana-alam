@@ -112,4 +112,10 @@ Protokol RQ-L2 dan RQ-L3 (ambang hidrometeorologi dan model SIGAP-L) ditulis ter
 - **Dasarian CEWS tanpa produk.** Setelah backfill arsip perekam selesai, 7 dasarian tetap kosong di sumber BMKG: semua daftar kosong, termasuk Aman (dicek langsung untuk 2024-02 dasarian 2). Dasarian tersebut adalah 2022-09 das 2 dan 3, 2022-10 das 1 dan 2, 2024-02 das 2, 2024-06 das 3, dan 2025-05 das 3. Semuanya dikeluarkan dengan aturan yang sama seperti bulan PVMBG yang tidak ada (bagian 3).
 - **ZKGT di dalam layer bulanan tidak statis.** Di titik yang sama, kelas ZKGT berbeda antarbulan pada ±12% pasangan bulan, terutama pada layer 2022. Karena itu label "ZKGT (statis)" pada keluaran diganti menjadi "ZKGT (dalam layer bulanan)". Perhitungannya tetap sama.
 - **Sensitivitas 3 (per sumber).** Kejadian yang dicatat MAGMA sekaligus laporan lapangan PVMBG tampil sebagai kelompok ketiga (3 kasus), terpisah dari dua kelompok sumber tunggal.
+- **Parameter EDuMaP (sensitivitas 5).** Ditetapkan 28 Sep 2026, sebelum EDuMaP dihitung. Saat itu hasil utama RQ-L1 sudah terlihat, begitu juga sebaran jumlah kejadian per kab/kota per dasarian (tanpa level CEWS-nya).
+  - Kelas kejadian: 0, 1, 2–3, dan ≥ 4 kejadian (kriteria absolut). Kelas peringatan: Aman, Waspada, Siaga, Awas.
+  - Kriteria A: alert = Siaga ke atas, kejadian = ≥ 1 longsor. Kriteria B: warna menurut selisih kelas.
+  - Lead time dan over time 0. Satuan waktu dasarian, durasi dalam hari. Zona peringatan: semua 514 kab/kota.
+  - Analisis tambahan: alert = Waspada ke atas, dan hanya kab/kota yang punya ≥ 1 kejadian tercatat.
+  - Implementasinya diuji dengan contoh Tabel 7–8 Calvello & Piciullo (2016): ke-14 indikator cocok sampai dua desimal.
 
