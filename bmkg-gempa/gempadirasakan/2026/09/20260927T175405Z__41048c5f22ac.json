@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-09-27T18:15:26.031Z",
+  "data": {
+    "Tanggal": "28 Sep 2026",
+    "Jam": "00:54:05 WIB",
+    "DateTime": "2026-09-27T17:54:05+00:00",
+    "Coordinates": "4.76,96.70",
+    "Lintang": "4.76 LU",
+    "Bujur": "96.70 BT",
+    "Magnitude": "3.4",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di darat 18 km barat Bener Meriah",
+    "Dirasakan": "III Aceh Tengah, III Bener Meriah"
+  }
+}
