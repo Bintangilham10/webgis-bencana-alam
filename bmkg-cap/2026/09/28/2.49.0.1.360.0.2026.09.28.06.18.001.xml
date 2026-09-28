@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.28.06.18.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-28T11:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-28T12:00:00+07:00</effective>
+    <expires>2026-09-28T14:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Lampung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 September 2026, 12:00 WIB di sebagian wilayah Lampung, khususnya di KATIBUNG, SIDOMULYO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 September 2026, 14:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CLG/2026/09/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Lampung</areaDesc>
+      <polygon>-5.552,105.508 -5.560,105.508 -5.558,105.516 -5.570,105.539 -5.571,105.551 -5.600,105.566 -5.613,105.563 -5.613,105.557 -5.623,105.545 -5.624,105.528 -5.632,105.521 -5.644,105.497 -5.653,105.487 -5.653,105.469 -5.648,105.470 -5.650,105.457 -5.637,105.441 -5.628,105.422 -5.582,105.443 -5.540,105.444 -5.540,105.456 -5.545,105.460 -5.543,105.477 -5.557,105.494 -5.552,105.508</polygon>
+      <polygon>-5.463,105.499 -5.484,105.499 -5.485,105.507 -5.494,105.506 -5.498,105.502 -5.507,105.464 -5.530,105.463 -5.525,105.504 -5.541,105.517 -5.554,105.512 -5.552,105.508 -5.557,105.494 -5.543,105.477 -5.545,105.460 -5.540,105.456 -5.540,105.444 -5.582,105.443 -5.628,105.422 -5.622,105.410 -5.609,105.404 -5.586,105.383 -5.541,105.364 -5.522,105.347 -5.514,105.359 -5.514,105.363 -5.521,105.370 -5.524,105.387 -5.516,105.398 -5.516,105.420 -5.512,105.430 -5.465,105.427 -5.476,105.455 -5.471,105.465 -5.459,105.472 -5.463,105.499</polygon>
+    </area>
+  </info>
+</alert>

@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiugFBVV95cUxNT2NhYmRPS3NGMW1WSHh5WnpTR0xOMlJ1MG51QzRhQ2pnYzNXM1VvUTJ2a0p5UU56Y0xFa2tSUkkxbzVtVzhQVDFJQ1FKSXhQZjM3bUtpQzJRbml2ODZDdWIyZHNmM0lBX1pLa3V6WG5lY2ZLNGJZMktxbG9waXY1eWM4U1lZMEFCelU0NURMSHRZZ1pqU21GN2JKZXBQMUZkVXZuRFhXNTd3VlItOUpuWnc3UlBWNm92Z3c",
+  "title": "Banjir dan Longsor Melanda Gayo Lues dan Aceh Tenggara, Akses Jalan Terganggu - metrotvnews.com",
+  "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNT2NhYmRPS3NGMW1WSHh5WnpTR0xOMlJ1MG51QzRhQ2pnYzNXM1VvUTJ2a0p5UU56Y0xFa2tSUkkxbzVtVzhQVDFJQ1FKSXhQZjM3bUtpQzJRbml2ODZDdWIyZHNmM0lBX1pLa3V6WG5lY2ZLNGJZMktxbG9waXY1eWM4U1lZMEFCelU0NURMSHRZZ1pqU21GN2JKZXBQMUZkVXZuRFhXNTd3VlItOUpuWnc3UlBWNm92Z3c?oc=5",
+  "source": "metrotvnews.com",
+  "source_url": "https://www.metrotvnews.com",
+  "published_at": "2026-09-28T04:49:28.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-09-28T06:15:26.924Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.02",
+      "nama": "Kabupaten Aceh Tenggara",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "11.13",
+      "nama": "Kabupaten Gayo Lues",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
