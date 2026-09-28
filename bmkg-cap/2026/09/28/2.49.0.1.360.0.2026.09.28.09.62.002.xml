@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.28.09.62.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-28T15:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-28T15:10:00+07:00</effective>
+    <expires>2026-09-28T17:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 September 2026, 15:10 WIB di sebagian wilayah Kalimantan Tengah, khususnya di DANAU SELULUK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 September 2026, 17:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/09/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-2.213,112.373 -2.267,112.373 -2.267,112.408 -2.328,112.408 -2.328,112.429 -2.333,112.419 -2.347,112.398 -2.356,112.395 -2.375,112.380 -2.385,112.363 -2.378,112.293 -2.446,112.294 -2.482,112.303 -2.527,112.292 -2.520,112.269 -2.509,112.260 -2.493,112.264 -2.480,112.244 -2.449,112.213 -2.427,112.212 -2.423,112.156 -2.406,112.145 -2.401,112.135 -2.338,112.134 -2.345,112.095 -2.341,112.040 -2.301,112.025 -2.303,112.108 -2.310,112.119 -2.315,112.142 -2.316,112.204 -2.311,112.217 -2.293,112.244 -2.285,112.250 -2.275,112.270 -2.249,112.293 -2.213,112.373 -2.213,112.373</polygon>
+    </area>
+  </info>
+</alert>
