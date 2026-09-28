@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.28.07.72.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-28T15:10:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-28T15:22:00+08:00</effective>
+    <expires>2026-09-28T17:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 September 2026, 15:22 WITA di sebagian wilayah Sulawesi Tengah, khususnya di GUMBASA, TILOAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 September 2026, 17:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSG/2026/09/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tengah</areaDesc>
+      <polygon>1.143,121.285 1.093,121.322 1.065,121.335 1.069,121.337 1.067,121.341 1.056,121.339 1.034,121.345 1.027,121.354 1.000,121.368 0.991,121.370 0.986,121.367 0.981,121.349 0.989,121.329 0.983,121.312 0.985,121.309 0.980,121.305 0.967,121.315 0.933,121.299 0.923,121.297 0.916,121.302 0.900,121.295 0.893,121.285 0.880,121.285 0.869,121.290 0.810,121.271 0.796,121.270 0.801,121.238 0.792,121.217 0.768,121.209 0.766,121.195 0.757,121.186 0.743,121.182 0.722,121.187 0.688,121.174 0.677,121.163 0.681,121.150 0.681,121.134 0.698,121.095 0.699,121.071 0.691,121.052 0.692,121.048 0.705,121.017 0.706,121.008 0.701,121.003 0.692,120.972 0.687,120.933 0.703,120.882 0.703,120.881 0.703,120.880 0.701,120.876 0.700,120.874 0.700,120.874 0.700,120.874 0.701,120.873 0.702,120.872 0.702,120.872 0.703,120.871 0.704,120.871 0.704,120.871 0.705,120.870 0.705,120.868 0.708,120.862 0.709,120.861 0.709,120.861 0.709,120.860 0.708,120.859 0.707,120.856 0.705,120.855 0.703,120.853 0.701,120.851 0.701,120.850 0.696,120.842 0.755,120.881 0.787,120.891 0.797,120.915 0.826,120.932 0.827,120.950 0.835,120.962 0.842,120.989 0.861,121.006 0.873,121.008 0.885,121.004 0.981,121.021 0.988,121.019 1.004,121.026 1.015,121.024 1.015,121.019 1.032,121.007 1.039,121.026 1.050,121.041 1.060,121.041 1.070,121.050 1.078,121.056 1.083,121.065 1.093,121.095 1.088,121.105 1.088,121.144 1.092,121.157 1.102,121.168 1.115,121.196 1.113,121.222 1.130,121.246 1.133,121.271 1.143,121.285</polygon>
+      <polygon>-1.154,119.986 -1.178,120.005 -1.204,120.011 -1.219,120.023 -1.230,120.024 -1.234,120.015 -1.238,120.015 -1.241,120.041 -1.236,120.056 -1.240,120.062 -1.248,120.068 -1.268,120.053 -1.271,120.049 -1.268,120.038 -1.277,120.028 -1.308,120.015 -1.327,120.017 -1.340,120.012 -1.339,120.007 -1.348,119.989 -1.348,119.965 -1.363,119.938 -1.276,119.939 -1.260,119.945 -1.234,119.936 -1.200,119.934 -1.187,119.922 -1.184,119.924 -1.168,119.930 -1.161,119.942 -1.154,119.964 -1.154,119.986</polygon>
+    </area>
+  </info>
+</alert>
