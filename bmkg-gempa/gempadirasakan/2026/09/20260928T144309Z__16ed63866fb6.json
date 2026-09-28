@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-09-28T15:00:38.076Z",
+  "data": {
+    "Tanggal": "28 Sep 2026",
+    "Jam": "21:43:09 WIB",
+    "DateTime": "2026-09-28T14:43:09+00:00",
+    "Coordinates": "5.19,94.41",
+    "Lintang": "5.19 LU",
+    "Bujur": "94.41 BT",
+    "Magnitude": "4.5",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di laut 127 km Barat Daya Kota Sabang",
+    "Dirasakan": "III-IV Aceh Besar, III-IV Banda Aceh"
+  }
+}
