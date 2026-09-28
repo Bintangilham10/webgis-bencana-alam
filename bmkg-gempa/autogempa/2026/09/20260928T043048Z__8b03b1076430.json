@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-09-28T05:00:38.130Z",
+  "data": {
+    "Tanggal": "28 Sep 2026",
+    "Jam": "11:30:48 WIB",
+    "DateTime": "2026-09-28T04:30:48+00:00",
+    "Coordinates": "-8.10,120.49",
+    "Lintang": "8.10 LS",
+    "Bujur": "120.49 BT",
+    "Magnitude": "4.5",
+    "Kedalaman": "1 km",
+    "Wilayah": "Pusat gempa berada di laut 57 km Utara Ruteng-Manggarai",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Kab. Manggarai",
+    "Shakemap": "20260928113048.mmi.jpg"
+  }
+}
