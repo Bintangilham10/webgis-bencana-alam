@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.28.09.35.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-28T15:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-28T15:30:00+07:00</effective>
+    <expires>2026-09-28T17:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 September 2026, 15:30 WIB di sebagian wilayah Jawa Timur, khususnya di BLIMBING, KEDUNGKANDANG, TUMPANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 September 2026, 17:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/09/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.986,112.845 -8.000,112.839 -8.010,112.840 -8.023,112.829 -8.029,112.780 -8.021,112.757 -8.031,112.749 -8.029,112.739 -8.021,112.730 -8.029,112.721 -8.033,112.708 -8.040,112.704 -8.029,112.686 -8.028,112.675 -8.025,112.672 -8.013,112.673 -8.005,112.684 -8.007,112.695 -8.004,112.721 -7.991,112.727 -7.986,112.759 -8.000,112.808 -7.986,112.845</polygon>
+      <polygon>-7.930,112.662 -7.944,112.667 -7.959,112.663 -7.965,112.657 -7.993,112.646 -7.987,112.635 -7.963,112.639 -7.961,112.637 -7.935,112.642 -7.926,112.637 -7.921,112.640 -7.917,112.648 -7.930,112.662</polygon>
+      <polygon>-8.005,112.684 -8.013,112.673 -8.025,112.672 -8.028,112.675 -8.048,112.657 -8.050,112.642 -8.046,112.632 -8.033,112.629 -7.994,112.633 -7.987,112.635 -7.993,112.646 -7.965,112.657 -7.977,112.690 -7.983,112.695 -8.005,112.684</polygon>
+    </area>
+  </info>
+</alert>
