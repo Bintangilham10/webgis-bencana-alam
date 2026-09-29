@@ -2,6 +2,8 @@ import rules from '../config/rules.json' with { type: 'json' };
 
 // Logika peringatan dini berbasis aturan (plan §8). Semua ambang ada di
 // config/rules.json supaya bisa dikalibrasi (RQ1) tanpa mengubah kode.
+// Fungsi di sini dipakai bersama oleh cek risiko titik dan indikasi SIGAP
+// 3 hari per kab/kota, jadi keduanya selalu memakai aturan yang sama.
 export const RULES_VERSION = rules.version;
 export const WARNING_LEVELS = rules.warningLevels;
 
@@ -14,6 +16,11 @@ export function hazardClass(index) {
   const rounded = Math.round(index * 1000) / 1000;
   return rules.hazardClasses.find((c) => rounded <= c.max) ?? rules.hazardClasses.at(-1);
 }
+
+// Kelas BNPB dari nilai raster kelas (1 rendah, 2 sedang, 3 tinggi; 0 di luar zona),
+// dan sebaliknya nilai kelas dari indeks 0–1.
+export const hazardClassByValue = (value) => rules.hazardClasses[value - 1] ?? null;
+export const hazardClassValue = (index) => rules.hazardClasses.indexOf(hazardClass(index)) + 1;
 
 // Kategori hujan harian BMKG; di bawah 0,5 mm dianggap tidak hujan (null).
 export function rainCategory(mm) {
@@ -42,30 +49,73 @@ const formatMm = (mm) => `${Math.round(mm * 10) / 10} mm`.replace('.', ',');
 const indexFormat = new Intl.NumberFormat('id-ID', { maximumFractionDigits: 3 });
 const formatIndex = (index) => indexFormat.format(index);
 
-// Indikasi per titik untuk hari-hari prakiraan: hujan tertinggi × kelas bahaya.
-// hazards: { banjir: { index }, longsor: { index } }; days: [{ date, precipitationMm }]
-export function rainHazardIndications(hazards, days) {
-  const rainyDays = days.filter((d) => Number.isFinite(d.precipitationMm));
-  if (!rainyDays.length) return [];
-  const peak = rainyDays.reduce((max, d) => (d.precipitationMm > max.precipitationMm ? d : max));
+const known = (days) => days.filter((d) => Number.isFinite(d.precipitationMm));
+const peakDay = (days) => days.reduce((max, d) => (d.precipitationMm > max.precipitationMm ? d : max));
+
+// Hari prakiraan dengan akumulasi hujan N hari bergulir terbesar. Jendela untuk
+// hari-hari pertama ikut menghitung hujan beberapa hari terakhir (pastDays),
+// karena tanah yang sudah basah lebih mudah longsor.
+function wettestWindow(pastDays, days, windowDays) {
+  const series = [...pastDays, ...days];
+  let best = null;
+  days.forEach((day, k) => {
+    const end = pastDays.length + k;
+    const total = known(series.slice(Math.max(0, end - windowDays + 1), end + 1)).reduce((sum, d) => sum + d.precipitationMm, 0);
+    if (!best || total > best.total) best = { date: day.date, total };
+  });
+  return best;
+}
+
+// Indikasi hujan lebat: kategori hujan harian tertinggi dalam prakiraan → level.
+export function heavyRainIndication(days) {
+  const rainy = known(days);
+  if (!rainy.length) return null;
+  const peak = peakDay(rainy);
+  const rain = rainCategory(peak.precipitationMm);
+  const level = rules.rainLevels.levels[rain?.id] ?? 0;
+  return {
+    hazard: 'hujan',
+    level,
+    label: WARNING_LEVELS[level],
+    reason: `hujan tertinggi ${formatMm(peak.precipitationMm)}/hari (${rain?.label.toLowerCase() ?? 'tidak hujan'})`,
+    peakDate: peak.date,
+    rainMm: peak.precipitationMm,
+  };
+}
+
+// Indikasi banjir dan longsor per titik: hujan tertinggi × kelas bahaya.
+// hazards: { banjir: { index } | { class }, longsor: ... } — index dari identify
+// InaRISK (cek risiko) atau class dari raster kelas (indikasi kab/kota).
+// days: prakiraan [{ date, precipitationMm }]; pastDays: hujan hari-hari terakhir.
+export function rainHazardIndications(hazards, days, pastDays = []) {
+  const rainy = known(days);
+  if (!rainy.length) return [];
+  const peak = peakDay(rainy);
   const { days: windowDays, minTotalMm } = rules.landslideAntecedentRain;
-  const total = rainyDays.slice(0, windowDays).reduce((sum, d) => sum + d.precipitationMm, 0);
+  const wettest = wettestWindow(pastDays, days, windowDays);
 
   return rules.rainHazardMatrix.hazards.map((hazard) => {
     const index = hazards[hazard]?.index ?? null;
-    const cls = hazardClass(index);
+    const cls = hazards[hazard]?.class ?? hazardClass(index);
     let rain = rainCategory(peak.precipitationMm);
     let rainText = `hujan tertinggi ${formatMm(peak.precipitationMm)}/hari (${rain?.label.toLowerCase() ?? 'tidak hujan'})`;
+    let peakDate = peak.date;
 
-    if (hazard === 'longsor' && total >= minTotalMm && rainRank(rain) < RAIN_IDS.indexOf('lebat')) {
+    if (hazard === 'longsor' && wettest.total >= minTotalMm && rainRank(rain) < RAIN_IDS.indexOf('lebat')) {
       rain = rainCategoryById('lebat');
-      rainText = `akumulasi hujan ${windowDays} hari ${formatMm(total)} (setara hujan lebat untuk longsor)`;
+      rainText = `akumulasi hujan ${windowDays} hari ${formatMm(wettest.total)} (setara hujan lebat untuk longsor)`;
+      peakDate = wettest.date;
     }
 
     const level = cls ? warningLevel(rain?.id, cls.id) : 0;
-    const hazardText = cls
-      ? `indeks bahaya ${cls.label.toLowerCase()} (${formatIndex(index)})`
-      : 'lokasi di luar zona bahaya InaRISK';
-    return { hazard, level, label: WARNING_LEVELS[level], reason: `${rainText}; ${hazardText}` };
+    let hazardText = 'lokasi di luar zona bahaya InaRISK';
+    if (cls) hazardText = index == null ? `zona bahaya ${cls.label.toLowerCase()} (InaRISK)` : `indeks bahaya ${cls.label.toLowerCase()} (${formatIndex(index)})`;
+    return { hazard, level, label: WARNING_LEVELS[level], reason: `${rainText}; ${hazardText}`, peakDate, rainMm: peak.precipitationMm };
   });
+}
+
+// Ketiga indikasi 3 hari (hujan lebat, banjir, tanah longsor) untuk satu titik.
+export function outlookIndications(hazards, days, pastDays = []) {
+  const rain = heavyRainIndication(days);
+  return rain ? [rain, ...rainHazardIndications(hazards, days, pastDays)] : [];
 }

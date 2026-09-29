@@ -1,4 +1,4 @@
-import { hazardClass, rainCategory, rainHazardIndications, RULES_VERSION, slopeClass } from '../lib/warning-rules.js';
+import { hazardClass, outlookIndications, rainCategory, RULES_VERSION, slopeClass } from '../lib/warning-rules.js';
 import { LEVEL_LABELS } from '../sources/bmkg-cews.js';
 import { HAZARDS } from '../sources/inarisk.js';
 import { recommendations } from './recommendations.js';
@@ -51,7 +51,8 @@ export function buildRiskProfile({ lat, lon, place, hazardIndices, forecast, fau
   });
 
   const days = forecast.days ?? [];
-  const indications = forecast.error ? [] : rainHazardIndications(hazardIndices, days);
+  // Hujan lebat, banjir, dan longsor 3 hari; aturan yang sama dengan indikasi kab/kota.
+  const indications = forecast.error ? [] : outlookIndications(hazardIndices, days, forecast.pastDays ?? []);
   const landslideInfo = landslide && landslideSection({ ...landslide, pastDays: forecast.pastDays ?? [] });
 
   return {

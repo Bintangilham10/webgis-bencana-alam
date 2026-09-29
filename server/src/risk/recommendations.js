@@ -13,6 +13,8 @@ const BY_HAZARD = {
     'Gunung api: ikuti status dan rekomendasi PVMBG di MAGMA, siapkan masker untuk hujan abu, dan patuhi radius larangan.',
 };
 
+const HAZARD_NAMES = { hujan: 'hujan lebat', banjir: 'banjir', longsor: 'tanah longsor' };
+
 const NEAR_FAULT_KM = 10;
 const NEAR_ACTIVE_VOLCANO_KM = 30;
 
@@ -53,7 +55,7 @@ export function recommendations({ hazards, indications, fault, volcanoes, landsl
 
   for (const indication of indications.filter((i) => i.level > 0)) {
     tips.push(
-      `Indikasi ${indication.label.toLowerCase()} ${indication.hazard} dalam 3 hari: pantau peringatan resmi BMKG dan informasi BPBD setempat.`,
+      `Indikasi ${indication.label.toLowerCase()} ${HAZARD_NAMES[indication.hazard] ?? indication.hazard} dalam 3 hari: pantau peringatan resmi BMKG dan informasi BPBD setempat.`,
     );
   }
 
