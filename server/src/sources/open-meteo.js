@@ -91,3 +91,73 @@ export async function fetchEnsemble(lat, lon) {
   });
   return { model: ENSEMBLE_MODEL, days: summarizeLocation(await fetchJson(`${ENSEMBLE_URL}?${params}`, { timeoutMs: 20_000, retries: 0 })) };
 }
+
+// ---------- Hujan untuk banyak lokasi (indikasi SIGAP 3 hari) ----------
+
+// Hujan harian 3 hari lalu + 3 hari prakiraan untuk banyak titik. Satu lokasi
+// dihitung satu panggilan kuota Open-Meteo (gratis ±10.000/hari, 5.000/jam, dan
+// 600/menit), jadi 100 lokasi per permintaan diberi jeda 12 detik (±500/menit).
+const RAIN_BATCH = 100;
+const RAIN_PAUSE_MS = 12_000;
+const QUOTA_WAIT_MS = 65_000;
+// Tiga permintaan berturut-turut gagal berarti Open-Meteo sedang bermasalah atau
+// kuota harian habis: sisa sel tidak diminta supaya run cepat selesai.
+const MAX_FAILED_BATCHES = 3;
+const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+export function rainBatchUrl(locations) {
+  const params = new URLSearchParams({
+    latitude: locations.map((l) => l.lat).join(','),
+    longitude: locations.map((l) => l.lon).join(','),
+    daily: 'precipitation_sum',
+    timezone: 'Asia/Jakarta',
+    past_days: String(PAST_DAYS),
+    forecast_days: String(FORECAST_DAYS),
+  });
+  return `${FORECAST_URL}?${params}`;
+}
+
+// Kuota per menit habis (HTTP 429): tunggu satu menit, lalu coba sekali lagi.
+async function fetchBatch(batch, { getJson, sleep }) {
+  const get = async () => {
+    const json = await getJson(rainBatchUrl(batch), { timeoutMs: 60_000, retries: 1 });
+    const locations = Array.isArray(json) ? json : [json];
+    if (locations.length !== batch.length) throw new Error(`Open-Meteo mengirim ${locations.length} lokasi, diminta ${batch.length}`);
+    return locations.map((location) => parseForecast(location, PAST_DAYS));
+  };
+  try {
+    return await get();
+  } catch (err) {
+    if (err.status !== 429) throw err;
+    await sleep(QUOTA_WAIT_MS);
+    return get();
+  }
+}
+
+// locations: [{ key, lat, lon }] → { rain: Map(key → { pastDays, days }), failed, error }.
+// Batch yang gagal tidak menghentikan run; lokasinya dihitung di `failed`.
+export async function fetchRainPoints(locations, { batchSize = RAIN_BATCH, pauseMs = RAIN_PAUSE_MS, sleep = pause, getJson = fetchJson, onProgress } = {}) {
+  const rain = new Map();
+  let failed = 0;
+  let failedInRow = 0;
+  let error = null;
+  for (let start = 0; start < locations.length; start += batchSize) {
+    const batch = locations.slice(start, start + batchSize);
+    if (failedInRow >= MAX_FAILED_BATCHES) {
+      failed += batch.length;
+      continue;
+    }
+    if (start > 0) await sleep(pauseMs);
+    try {
+      const series = await fetchBatch(batch, { getJson, sleep });
+      batch.forEach((location, k) => rain.set(location.key, series[k]));
+      failedInRow = 0;
+    } catch (err) {
+      failed += batch.length;
+      failedInRow++;
+      error = err.message;
+    }
+    onProgress?.({ done: start + batch.length, total: locations.length, failed });
+  }
+  return { rain, failed, error };
+}

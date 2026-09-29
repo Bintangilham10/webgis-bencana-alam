@@ -4,6 +4,7 @@ import { earthquakesRouter } from './routes/earthquakes.js';
 import { createGeocodeRouter } from './routes/geocode.js';
 import { healthRouter } from './routes/health.js';
 import { createLandslideRouter } from './routes/landslides.js';
+import { createOutlookRouter } from './routes/outlook.js';
 import { referenceRouter } from './routes/reference.js';
 import { createRiskRouter } from './routes/risk.js';
 import { volcanoesRouter } from './routes/volcanoes.js';
@@ -27,6 +28,7 @@ export function createApp({ services = {} } = {}) {
     referenceRouter,
     createRiskRouter({ rainWarnings, ...services.risk }),
     createLandslideRouter({ rainWarnings, rainNow: services.rainNow }),
+    createOutlookRouter(),
     createGeocodeRouter(services.geocode),
   );
   app.use('/api', (req, res) => res.status(404).json({ error: 'Endpoint tidak ditemukan' }));

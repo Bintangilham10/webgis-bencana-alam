@@ -12,6 +12,7 @@
     "start": "node src/index.js",
     "migrate": "node db/migrate.js",
     "seed": "node scripts/seed.js",
+    "indikasi": "node scripts/run-indikasi.js",
     "build:plates": "node scripts/build-plates.js",
     "export:recorder": "node scripts/export-recorder-wilayah.js",
     "test": "node --test \"test/*.test.js\""
