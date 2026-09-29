@@ -5,6 +5,11 @@
       "total": 514,
       "done": 514,
       "completed_at": "2026-09-27T14:15:23.791Z"
+    },
+    "2026-10": {
+      "layer": "pmbgi:prakiraan_2026_10",
+      "total": 514,
+      "done": 100
     }
   }
 }
