@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiqwFBVV95cUxQWG1qUktXWllZUFlRRHNST3dGME5QemNmN2doZG0yeFd1VThVQ0hDdWZweFJabzBod01VbjFteHRuU3lUOUNSZzRISUlib0s1SXU4SGZicWYtQ05TX09kSElzVHRDNjhINm5tVmZIZ3JVTTF5VDFzYnItTEd3Tm1BT0xyMVpGbU16NGdUNEstYjdkVmtISVliejNSTEZueDAwZndmbmI2blZPbDQ",
+  "title": "Cuaca Ekstrem Mengintai Dharmasraya, Warga Diminta Waspada Banjir dan Longsor - PASBANA",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWG1qUktXWllZUFlRRHNST3dGME5QemNmN2doZG0yeFd1VThVQ0hDdWZweFJabzBod01VbjFteHRuU3lUOUNSZzRISUlib0s1SXU4SGZicWYtQ05TX09kSElzVHRDNjhINm5tVmZIZ3JVTTF5VDFzYnItTEd3Tm1BT0xyMVpGbU16NGdUNEstYjdkVmtISVliejNSTEZueDAwZndmbmI2blZPbDQ?oc=5",
+  "source": "PASBANA",
+  "source_url": "https://www.pasbana.com",
+  "published_at": "2026-09-29T11:43:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-09-29T13:30:34.034Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "13.10",
+      "nama": "Kabupaten Dharmasraya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
