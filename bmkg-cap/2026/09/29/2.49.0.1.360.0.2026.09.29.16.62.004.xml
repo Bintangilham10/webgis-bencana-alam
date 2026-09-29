@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.29.16.62.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-29T22:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-29T22:10:00+07:00</effective>
+    <expires>2026-09-30T00:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 29 September 2026, 22:10 WIB di sebagian wilayah Kalimantan Tengah, khususnya di KARAU KUALA, PAJU EPAT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 September 2026, 00:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/09/29/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-1.852,114.960 -1.890,114.956 -1.951,114.963 -1.978,114.959 -2.021,114.946 -2.048,114.943 -2.107,114.931 -2.106,114.899 -2.097,114.879 -2.064,114.865 -2.025,114.856 -1.993,114.833 -1.975,114.808 -1.976,114.768 -1.987,114.656 -1.975,114.640 -1.950,114.621 -1.915,114.616 -1.892,114.618 -1.813,114.636 -1.784,114.636 -1.773,114.681 -1.782,114.715 -1.820,114.753 -1.836,114.798 -1.832,114.811 -1.830,114.849 -1.802,114.850 -1.807,114.877 -1.852,114.960</polygon>
+      <polygon>-2.023,115.129 -2.071,115.121 -2.098,115.104 -2.200,115.058 -2.221,115.040 -2.254,115.010 -2.273,114.944 -2.231,114.925 -2.223,114.918 -2.178,114.934 -2.126,114.934 -2.107,114.931 -2.048,114.943 -2.026,114.996 -1.974,115.017 -1.998,115.038 -2.013,115.059 -2.023,115.129</polygon>
+    </area>
+  </info>
+</alert>
