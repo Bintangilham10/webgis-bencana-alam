@@ -1,0 +1,43 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-09-29T12:15:28.182Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        123.508746386,
+        -8.2714682205
+      ]
+    },
+    "properties": {
+      "pkey": "399548",
+      "created_at": "2026-09-29T12:04:49.605Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "5ad82fce-b183-4820-94b0-d188c54d1d92",
+      "image_url": "https://images.petabencana.id/5ad82fce-b183-4820-94b0-d188c54d1d92.jpg",
+      "disaster_type": "volcano",
+      "is_training": false,
+      "report_data": {
+        "report_type": "volcano",
+        "volcanicSigns": [
+          0
+        ],
+        "evacuationNumber": 1,
+        "evacuationArea": true
+      },
+      "tags": {
+        "city": "LEMBATA",
+        "district_id": null,
+        "region_code": "5313",
+        "local_area_id": null,
+        "instance_region_code": "ID-NT"
+      },
+      "title": null,
+      "text": "Gunung Ili Lewotolok di Nusa Tenggara Timur (NTT) mengalami erupsi pada Selasa (29/9/2026) siang. ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
