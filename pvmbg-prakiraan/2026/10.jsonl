@@ -298,3 +298,103 @@
 {"kode":"53.06","lat":-8.334,"lon":123.1624,"potensi":"Menengah","zkgt":"Menengah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:00:36.890Z"}
 {"kode":"53.07","lat":-8.5828,"lon":122.0918,"potensi":"Menengah","zkgt":"Menengah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:00:36.890Z"}
 {"kode":"53.08","lat":-8.6733,"lon":121.6917,"potensi":"Tinggi","zkgt":"Tinggi","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:00:36.890Z"}
+{"kode":"53.09","lat":-8.6483,"lon":120.9989,"potensi":"Menengah","zkgt":"Menengah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"53.10","lat":-8.5404,"lon":120.443,"potensi":"Menengah","zkgt":"Menengah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"53.11","lat":-9.8047,"lon":120.1631,"potensi":"Menengah","zkgt":"Menengah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"53.12","lat":-9.595,"lon":119.4365,"potensi":"Menengah","zkgt":"Menengah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"53.13","lat":-8.3775,"lon":123.5457,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"53.14","lat":-10.6887,"lon":123.206,"potensi":"Rendah","zkgt":"Rendah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"53.15","lat":-8.5781,"lon":120.0618,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"53.16","lat":-8.6736,"lon":121.2696,"potensi":"Tinggi","zkgt":"Tinggi","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"53.17","lat":-9.5917,"lon":119.6709,"potensi":"Rendah","zkgt":"Rendah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"53.18","lat":-9.5461,"lon":119.1652,"potensi":"Rendah","zkgt":"Rendah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"53.19","lat":-8.5846,"lon":120.6938,"potensi":"Menengah","zkgt":"Menengah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"53.20","lat":-10.5227,"lon":121.8867,"potensi":"Rendah","zkgt":"Rendah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"53.21","lat":-9.5334,"lon":124.8792,"potensi":"Menengah","zkgt":"Menengah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"53.71","lat":-10.2059,"lon":123.5911,"potensi":"Rendah","zkgt":"Rendah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"61.01","lat":1.5227,"lon":109.4049,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Barat","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"61.02","lat":0.3442,"lon":109.099,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Barat","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"61.03","lat":0.3449,"lon":110.544,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Barat","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"61.04","lat":-1.6741,"lon":110.4633,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Barat","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"61.05","lat":0.1932,"lon":111.5666,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Barat","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"61.06","lat":0.8284,"lon":112.7953,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Barat","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"61.07","lat":1.0331,"lon":109.7714,"potensi":"Menengah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Barat","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"61.08","lat":0.5011,"lon":109.7064,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Barat","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"61.09","lat":0.0357,"lon":110.9421,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Barat","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"61.10","lat":-0.7245,"lon":111.6551,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Barat","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"61.11","lat":-1.0222,"lon":110.0347,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Barat","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"61.12","lat":-0.3276,"lon":109.5258,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Barat","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"61.71","lat":-0.0316,"lon":109.3257,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Barat","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"61.72","lat":0.8939,"lon":109.0506,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Barat","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"62.01","lat":-2.5028,"lon":111.6542,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Tengah","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"62.02","lat":-2.2319,"lon":112.7894,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Tengah","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"62.03","lat":-1.9229,"lon":114.3365,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Tengah","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"62.04","lat":-1.9456,"lon":114.7796,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Tengah","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"62.05","lat":-0.7545,"lon":115.0457,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Tengah","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"62.06","lat":-1.8725,"lon":113.3408,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Tengah","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"62.07","lat":-2.1126,"lon":112.1665,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Tengah","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"62.08","lat":-2.5512,"lon":111.1844,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Tengah","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"62.09","lat":-1.7802,"lon":111.4175,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Tengah","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"62.10","lat":-0.9792,"lon":113.5577,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Tengah","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"62.11","lat":-2.4626,"lon":114.0425,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Tengah","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"62.12","lat":-0.0413,"lon":114.1251,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Tengah","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"62.13","lat":-2.0063,"lon":115.1776,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Tengah","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"62.71","lat":-1.9639,"lon":113.7138,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Tengah","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"63.01","lat":-3.8408,"lon":114.9883,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Selatan","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"63.02","lat":-2.7984,"lon":115.8557,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Selatan","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"63.03","lat":-3.2858,"lon":115.0282,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Selatan","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"63.04","lat":-3.0222,"lon":114.6769,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Selatan","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"63.05","lat":-2.8622,"lon":115.0087,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Selatan","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"63.06","lat":-2.7174,"lon":115.1618,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Selatan","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"63.07","lat":-2.6245,"lon":115.4321,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Selatan","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"63.08","lat":-2.422,"lon":115.1573,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Selatan","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"63.09","lat":-1.8444,"lon":115.5185,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Selatan","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"63.10","lat":-3.4351,"lon":115.6991,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Selatan","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"63.11","lat":-2.2864,"lon":115.6211,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Selatan","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"63.71","lat":-3.3254,"lon":114.5994,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Selatan","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"63.72","lat":-3.4736,"lon":114.7839,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Selatan","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"64.01","lat":-1.6884,"lon":116.0189,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Timur","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"64.02","lat":0.1958,"lon":116.1515,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Timur","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"64.03","lat":1.7698,"lon":117.2687,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Timur","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"64.07","lat":-0.4183,"lon":115.7451,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Timur","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"64.08","lat":0.9438,"lon":117.0113,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Timur","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"64.09","lat":-1.1932,"lon":116.5684,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Timur","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"64.11","lat":0.6225,"lon":115.315,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Timur","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"64.71","lat":-1.1602,"lon":116.9,"potensi":"Menengah","zkgt":"Menengah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"64.72","lat":-0.5188,"lon":117.1582,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Timur","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"64.74","lat":0.1147,"lon":117.4588,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Timur","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"65.01","lat":2.7596,"lon":117.0708,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Utara","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"65.02","lat":2.617,"lon":115.6927,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Utara","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"65.03","lat":3.904,"lon":116.9869,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Utara","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"65.04","lat":3.5433,"lon":116.9415,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Utara","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"65.71","lat":3.3449,"lon":117.5976,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Kalimantan Utara","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"71.01","lat":0.7198,"lon":123.9873,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":2009,"wilayah_zkgt":"Sulawesi Utara","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"71.02","lat":1.2345,"lon":124.9009,"potensi":"Danau","zkgt":"Danau","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"71.03","lat":3.5518,"lon":125.5512,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":2009,"wilayah_zkgt":"Sulawesi Utara","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"71.04","lat":4.2674,"lon":126.8093,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Sulawesi Utara","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"71.05","lat":1.0576,"lon":124.4373,"potensi":"Rendah","zkgt":"Rendah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"71.06","lat":1.5167,"lon":125.0015,"potensi":"Tinggi","zkgt":"Tinggi","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"71.07","lat":0.9854,"lon":124.7309,"potensi":"Menengah","zkgt":"Menengah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"71.08","lat":0.7636,"lon":123.4851,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":"Sulawesi Utara","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"71.09","lat":2.3549,"lon":125.4176,"potensi":"Tinggi","zkgt":"Tinggi","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"71.10","lat":0.7118,"lon":124.493,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":2009,"wilayah_zkgt":"Sulawesi Utara","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"71.11","lat":0.4542,"lon":124.1831,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":2009,"wilayah_zkgt":"Sulawesi Utara","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"71.71","lat":1.503,"lon":124.8803,"potensi":"Menengah","zkgt":"Menengah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"71.72","lat":1.4964,"lon":125.149,"potensi":"Rendah","zkgt":"Rendah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"71.73","lat":1.3198,"lon":124.803,"potensi":"Rendah","zkgt":"Rendah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"71.74","lat":0.7105,"lon":124.3159,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":2009,"wilayah_zkgt":"Sulawesi Utara","checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"72.01","lat":-1.0925,"lon":122.3167,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":2009,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"72.02","lat":-1.6643,"lon":120.538,"potensi":"Tinggi","zkgt":"Tinggi","zona":"004","tahun_zkgt":2009,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"72.03","lat":-1.0475,"lon":119.6757,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"72.04","lat":0.9724,"lon":120.8778,"potensi":"Tinggi","zkgt":"Tinggi","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"72.05","lat":0.9958,"lon":121.5413,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"72.06","lat":-2.7083,"lon":121.8759,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"72.07","lat":-1.398,"lon":123.3909,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":2009,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"72.08","lat":-0.2239,"lon":119.9658,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":2009,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"72.09","lat":-1.2327,"lon":121.6367,"potensi":"Menengah","zkgt":"Menengah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"72.10","lat":-1.4571,"lon":119.9316,"potensi":"Tinggi","zkgt":"Tinggi","zona":"004","tahun_zkgt":2009,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"72.11","lat":-1.8412,"lon":123.1022,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":2009,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"72.12","lat":-1.8406,"lon":121.12,"potensi":"Rendah","zkgt":"Rendah","zona":null,"tahun_zkgt":0,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"72.71","lat":-0.7973,"lon":119.8849,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":2009,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"73.01","lat":-7.2965,"lon":120.9545,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":2009,"wilayah_zkgt":null,"checked_at":"2026-09-29T17:15:28.032Z"}
+{"kode":"73.02","lat":-5.4548,"lon":120.2427,"potensi":"Berpotensi Banjir Bandang/Aliran Bahan Rombakan","zkgt":"Alur Aliran Bahan Rombakan","zona":"005","tahun_zkgt":2009,"wilayah_zkgt":"Sulawesi Selatan","checked_at":"2026-09-29T17:15:28.032Z"}
