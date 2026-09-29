@@ -1,0 +1,21 @@
+{
+  "guid": "CBMitgFBVV95cUxOdV83aDgxdXA0cDVUX1B4SExDT0tuRk9CQlg0ckI2VGt2RXZsTXNya0F1MUxYdzJmYjVGYXFsQ29XYVNHbmZJYm1EMXZwcVhTQVdOdktvbG5JQzF2NkQ0OF9hNGdTVUNmN3UwdzBIVUFfai1TODlERHUwbG81N2pJTkRkWFVsTEI0SjE4LTZGelNBSDh1czctdEJRbHFoS0xYUHN4UkRLdmdRRW5YaDBYQnh0TzRmdw",
+  "title": "Antisipasi Banjir hingga Longsor, Kota Sukabumi Petakan Titik Rawan Bencana - Radar Sukabumi",
+  "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdV83aDgxdXA0cDVUX1B4SExDT0tuRk9CQlg0ckI2VGt2RXZsTXNya0F1MUxYdzJmYjVGYXFsQ29XYVNHbmZJYm1EMXZwcVhTQVdOdktvbG5JQzF2NkQ0OF9hNGdTVUNmN3UwdzBIVUFfai1TODlERHUwbG81N2pJTkRkWFVsTEI0SjE4LTZGelNBSDh1czctdEJRbHFoS0xYUHN4UkRLdmdRRW5YaDBYQnh0TzRmdw?oc=5",
+  "source": "Radar Sukabumi",
+  "source_url": "https://radarsukabumi.com",
+  "published_at": "2026-09-29T04:35:40.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-09-29T07:00:44.446Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

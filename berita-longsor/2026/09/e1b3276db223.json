@@ -1,0 +1,23 @@
+{
+  "guid": "CBMirAFBVV95cUxQU0xHeG5nV0RJVTkzaU1TUU9KM25NSWFHY0ZtcEY5T2hINzdTSWNCdlFhakJmQ1lNRkp4RGVIQUdPM0JJZEg5NTdDQVotZjBSbjBkMXdDMFpyeXljeHV1QWNvNXltYXJjNS1fMXhUcFZabTE2RkVFeHphT2JGRm1acWZiUGJaTnZUTFMwZDFDYjhiWER4S3I1YkV5VkVHaWZSc1U0TUpQU0JyZEsz0gGyAUFVX3lxTE1HZnBOSmVDR2tSVm9DMGNoZDYxRmhmdE4wUmxxaFZFUG1lYkxfM0p5ZFFWNXdEdDJuLUV3YmpuVWVGb0pCb0JZd1QzTWt1ejlmYjZYRnp6T1p5d1F4dHFuQ2EzOWl5ZTRhTl82d0ZMX0ROd04xMkJRbnFzWGpFUFk2TmtDVkN2ZGJUNjY1YjhadUhya25penV4RUp5WlJ1WDVka0dJQjRpZk5mOXBwMDRnWVE",
+  "title": "Wilayah Berpotensi Banjir dan Longsor di Bengkulu, Mana Saja? - detikcom",
+  "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQU0xHeG5nV0RJVTkzaU1TUU9KM25NSWFHY0ZtcEY5T2hINzdTSWNCdlFhakJmQ1lNRkp4RGVIQUdPM0JJZEg5NTdDQVotZjBSbjBkMXdDMFpyeXljeHV1QWNvNXltYXJjNS1fMXhUcFZabTE2RkVFeHphT2JGRm1acWZiUGJaTnZUTFMwZDFDYjhiWER4S3I1YkV5VkVHaWZSc1U0TUpQU0JyZEsz0gGyAUFVX3lxTE1HZnBOSmVDR2tSVm9DMGNoZDYxRmhmdE4wUmxxaFZFUG1lYkxfM0p5ZFFWNXdEdDJuLUV3YmpuVWVGb0pCb0JZd1QzTWt1ejlmYjZYRnp6T1p5d1F4dHFuQ2EzOWl5ZTRhTl82d0ZMX0ROd04xMkJRbnFzWGpFUFk2TmtDVkN2ZGJUNjY1YjhadUhya25penV4RUp5WlJ1WDVka0dJQjRpZk5mOXBwMDRnWVE?oc=5",
+  "source": "detikcom",
+  "source_url": "https://www.detik.com",
+  "published_at": "2026-09-29T04:20:45.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-09-29T07:00:44.446Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "17.71",
+      "nama": "Kota Bengkulu",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bengkulu"
+  ]
+}
