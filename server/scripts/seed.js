@@ -1,5 +1,6 @@
 import { pool } from '../src/db.js';
 import { syncVolcanoes } from '../src/jobs/sync-volcanoes.js';
+import { seedBahaya } from './seed-bahaya.js';
 import { seedFaults } from './seed-faults.js';
 import { seedLandslides } from './seed-landslides.js';
 import { seedWilayah } from './seed-wilayah.js';
@@ -11,6 +12,8 @@ const SEEDS = {
   volcanoes: async () => (await syncVolcanoes()).items,
   faults: seedFaults,
   landslides: seedLandslides,
+  // Raster kelas bahaya InaRISK, statistik zona, dan titik pantau indikasi 3 hari.
+  bahaya: seedBahaya,
 };
 
 // Pemakaian: npm run seed [-- wilayah faults ...]; tanpa argumen = semua.

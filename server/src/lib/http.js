@@ -14,12 +14,12 @@ export class HttpError extends Error {
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const isRetryable = (err) => !(err instanceof HttpError) || err.status === 429 || err.status >= 500;
 
-async function request(url, init, { timeoutMs = 20_000, retries = 1 } = {}) {
+async function request(url, init, { timeoutMs = 20_000, retries = 1 } = {}, read = (res) => res.text()) {
   for (let attempt = 0; ; attempt++) {
     try {
       const res = await fetch(url, { ...init, headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(timeoutMs) });
       if (!res.ok) throw new HttpError(url, res.status);
-      return await res.text();
+      return await read(res);
     } catch (err) {
       if (attempt < retries && isRetryable(err)) {
         await sleep(1_000 * 2 ** attempt);
@@ -32,6 +32,9 @@ async function request(url, init, { timeoutMs = 20_000, retries = 1 } = {}) {
 }
 
 export const fetchText = (url, options) => request(url, {}, options);
+
+// Isi respons biner (mis. GeoTIFF) sebagai Buffer.
+export const fetchBuffer = (url, options) => request(url, {}, options, async (res) => Buffer.from(await res.arrayBuffer()));
 
 export async function fetchJson(url, options) {
   return JSON.parse(await fetchText(url, options));
