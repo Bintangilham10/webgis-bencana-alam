@@ -38,6 +38,13 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
 - **Status gunung api:** 69 gunung api dari MAGMA/PVMBG, disinkronkan tiap 30 menit. Simbolnya kerucut berfaset berwarna level PVMBG (gaya terinspirasi ikon peta MAGMA, digambar sendiri); Siaga/Awas lebih besar. Status sedang erupsi dan VONA (peringatan abu vulkanik untuk penerbangan) ikut diambil dari MAGMA.
 - **Filter penanda:** tombol corong di bilah alat kanan menyalakan atau mematikan penanda gempa dan gunung api, serta menyaring gempa menurut kedalaman, magnitudo minimum, dan waktu (24 jam, 3 hari, 7 hari), dan gunung api menurut tingkat aktivitas. Menu menunjukkan jumlah titik yang tampil; titik biru di tombol menandakan ada penanda yang disembunyikan. Gempa atau gunung api yang dipilih dari daftar tetap ditampilkan walau tersaring.
 - **Peta rawan InaRISK BNPB:** gempa bumi, cuaca ekstrem, banjir, tanah longsor, dan gunung api, masing-masing dalam 3 kelas bahaya. Ditambah zona kerentanan gerakan tanah (ZKGT) PVMBG dengan warna kelas yang sama.
+- **Indikasi SIGAP 3 hari per kab/kota:** 514 kab/kota dinilai ulang tiap 12 jam untuk hujan lebat, banjir, dan tanah longsor. Nyala bawaan di peta, dengan pilihan tampilan Tertinggi, Hujan lebat, Banjir, dan Tanah longsor. Cara kerjanya:
+  - kelas bahaya banjir dan longsor InaRISK seluruh Indonesia (±550 m) dimuat ke raster PostGIS, lalu di-clip per kab/kota; luas tiap kelas per kab/kota ikut dicatat;
+  - tiap kab/kota punya sampai 3 titik pantau per bahaya di sel 0,25° berkelas tertinggi, ditambah 1 titik acuan. Kelas tiap titik dicek ke nilai asli InaRISK 100 m (`getSamples`), karena ekspor 550 m dihaluskan server. Hasilnya, cek risiko di titik itu menunjukkan kelas yang sama;
+  - hujan harian Open-Meteo 3 hari lalu dan 3 hari ke depan diambil tepat di tiap titik pantau, pada koordinat yang sama dengan cek risiko. Di Indonesia Open-Meteo memakai ECMWF IFS 9 km, jauh lebih rapat dari sel 0,25°, jadi hujan tidak dirata-rata per sel. Satu run ±3.200 panggilan (100 titik per permintaan dengan jeda), karena itu dijalankan tiap 12 jam supaya tetap di dalam kuota gratis;
+  - aturan v0.1 (`server/src/config/rules.json`): hujan lebat mengikuti kategori BMKG (lebat Waspada, sangat lebat Siaga, ekstrem Awas); banjir dan longsor menggabungkan hujan harian tertinggi dengan kelas bahaya di titik; untuk longsor, akumulasi 3 hari ≥ 100 mm (termasuk hujan hari-hari terakhir) dihitung setara hujan lebat. Level kab/kota = level tertinggi dari titik-titiknya;
+  - popup kab/kota memuat ketiga bahaya beserta alasan dan hari puncaknya, level CEWS BMKG sebagai pembanding, dan tombol cek risiko di titik pantau terparah. Ikhtisar menampilkan jumlah kab/kota per level dan daftar yang Waspada ke atas;
+  - setiap run disimpan (`indikasi_run`, `indikasi_wilayah`), termasuk kab/kota yang Normal, untuk uji prospektif. Aturannya belum dikalibrasi, jadi selalu diberi label indikasi sistem, bukan peringatan resmi.
 - **Hujan dan longsor:**
   - peringatan dini curah hujan tinggi BMKG (CEWS) dasarian berjalan, digambar di batas kab/kota (Waspada, Siaga, Awas) dan didaftar di Ikhtisar; klik untuk menuju wilayahnya;
   - hujan terkini dari satelit NASA GPM IMERG (rata-rata 30 menit, terlambat ±5 jam);
@@ -47,7 +54,7 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
 - **Pencarian lokasi:** nama kab/kota dicari di database sendiri, tempat lain lewat Nominatim OpenStreetMap. Pencarian berjalan saat Enter ditekan, sesuai kebijakan Nominatim.
 - **Cek risiko lokasi:** pilih titik dengan pencarian, tombol "lokasi saya", mode pilih titik, atau klik kanan/tekan lama di peta. Profil tampil di panel samping (peta tidak tertutup) dan dibuka dengan satu status 3 hari ke depan (Normal/Waspada/Siaga/Awas). Isinya:
   - indeks lima bahaya InaRISK dengan kelas BNPB;
-  - indikasi peringatan 3 hari (hujan × kelas bahaya, aturan awal v0 di `server/src/config/rules.json`);
+  - indikasi 3 hari untuk hujan lebat, banjir, dan tanah longsor (hujan × kelas bahaya, aturan v0.1 di `server/src/config/rules.json`, sama dengan indikasi per kab/kota);
   - prakiraan hujan dan elevasi;
   - jarak ke sesar aktif dan gunung api terdekat, digambar sebagai garis di peta;
   - gempa di sekitar lokasi dan saran kesiapsiagaan;
@@ -83,8 +90,8 @@ docker compose up -d        # database di localhost:5433
 cd server
 npm install
 npm run migrate             # membuat tabel
-npm run seed                # batas wilayah, gunung api, sesar, riwayat longsor (unduh sekali, ±15 detik)
-npm run dev                 # API di http://localhost:3000/api
+npm run seed                # batas wilayah, gunung api, sesar, riwayat longsor, zona bahaya (±5 menit pertama kali)
+npm run dev                 # API di http://localhost:3000/api; indikasi 3 hari pertama siap ±10 menit kemudian
 ```
 
 Di terminal lain:
@@ -96,6 +103,8 @@ npm run dev                 # buka http://localhost:5173
 ```
 
 Buka alamat itu di browser biasa (Chrome, Edge, Brave, atau Firefox). Di browser bawaan VS Code peta dasar Kemanusiaan (HOT) tampil kosong, karena server OSM Prancis menolak User-Agent VS Code (HTTP 403).
+
+Server menghitung indikasi 3 hari tiap 12 jam dan tidak mengulanginya saat dimulai ulang bila run terakhir masih segar. Untuk memperbarui kapan saja (mis. sebelum demo), jalankan `npm run indikasi` di folder `server/`. Satu run memakai ±sepertiga kuota harian gratis Open-Meteo.
 
 Konfigurasi bawaan sudah cocok dengan `docker-compose.yml`. Salin `.env.example` menjadi `.env` hanya bila perlu mengubahnya.
 
@@ -130,6 +139,7 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 | `GET /api/landslides` | Riwayat kejadian gerakan tanah PVMBG dan MAGMA (GeoJSON) |
 | `GET /api/rain-warnings/summary` | Peringatan hujan BMKG tanpa geometri, dengan provinsi dan batas wilayah, untuk daftar |
 | `GET /api/rain-now` | Waktu dan URL petak peta hujan satelit NASA IMERG terbaru |
+| `GET /api/outlook` | Indikasi SIGAP 3 hari terbaru: level hujan lebat, banjir, dan tanah longsor per kab/kota beserta alasan, hari puncak, dan titik pantau terparah, plus jumlah kab/kota per level |
 | `GET /api/geocode?q=bandung` | Pencarian kab/kota (database) dan tempat lain (Nominatim) |
 
 ## Sumber data dan atribusi
@@ -137,14 +147,14 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 | Data | Sumber | Ketentuan |
 |---|---|---|
 | Gempa bumi | [BMKG](https://data.bmkg.go.id/) | Wajib mencantumkan BMKG sebagai sumber |
-| Indeks bahaya, sesar aktif | [InaRISK BNPB](https://inarisk.bnpb.go.id/); model sesar PuSGeN 2024 | Cantumkan BNPB dan PuSGeN |
+| Indeks bahaya (cek titik, sampel, dan raster kelas ±550 m untuk indikasi 3 hari), sesar aktif | [InaRISK BNPB](https://inarisk.bnpb.go.id/); model sesar PuSGeN 2024 | Cantumkan BNPB dan PuSGeN |
 | Status gunung api | [MAGMA Indonesia](https://magma.esdm.go.id/), PVMBG Kementerian ESDM | Cantumkan PVMBG |
 | Prakiraan potensi gerakan tanah bulanan, ZKGT, dan riwayat kejadian longsor | PVMBG, Badan Geologi, Kementerian ESDM ([Portal MBG](https://vsi.esdm.go.id/portalmbg/) dan MAGMA Indonesia) | Cantumkan PVMBG. Riwayat disusun ulang oleh `research/01_inventaris.py` tanpa data pribadi |
 | Peringatan dini curah hujan tinggi | [BMKG CEWS](https://cews.bmkg.go.id/) | Wajib mencantumkan BMKG sebagai sumber |
 | Batas lempeng | Bird (2003) PB2002, konversi H. Ahlenius/Nordpil | ODC-By |
 | Batas wilayah | Kepmendagri No 300.2.2-2430 Tahun 2025, [cahyadsn/wilayah_boundaries](https://github.com/cahyadsn/wilayah_boundaries) | MIT |
 | Laporan warga (arsip riset) | [PetaBencana.id](https://petabencana.id/) | CC BY-NC 4.0 |
-| Prakiraan hujan dan elevasi | [Open-Meteo](https://open-meteo.com/) (elevasi dari Copernicus DEM 90 m) | CC BY 4.0, gratis untuk nonkomersial |
+| Prakiraan hujan (juga untuk indikasi 3 hari) dan elevasi | [Open-Meteo](https://open-meteo.com/) (elevasi dari Copernicus DEM 90 m) | CC BY 4.0, gratis untuk nonkomersial |
 | Hujan satelit | [NASA GPM IMERG](https://gpm.nasa.gov/data/imerg) Early Run, lewat NASA GIBS | Data terbuka NASA; cantumkan NASA |
 | Pencarian tempat | [Nominatim](https://nominatim.org/) © OpenStreetMap contributors | ODbL; maksimal 1 request/detik, tanpa autocomplete |
 | Peta dasar | Esri; © OpenStreetMap contributors (ODbL); Humanitarian OpenStreetMap Team; OpenTopoMap | CC-BY-SA untuk OpenTopoMap |

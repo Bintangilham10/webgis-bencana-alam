@@ -23,7 +23,7 @@ Earthquakes, volcanoes, floods, landslides, and heavy rain on one map, checked a
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/images/app-dark.jpg">
-  <img src="docs/images/app-light.jpg" alt="SIGAP Bencana map of Indonesia with satellite rainfall from NASA IMERG, active faults, earthquakes of the last 7 days, and volcano alert levels, with the overview panel on the left">
+  <img src="docs/images/app-light.jpg" alt="SIGAP Bencana map of Indonesia with the SIGAP 3-day outlook for every regency, active faults, earthquakes of the last 7 days, and volcano alert levels, with the overview panel on the left">
 </picture>
 
 > [!IMPORTANT]
@@ -37,7 +37,7 @@ The logo is an **S drawn from three contour lines** around an amber summit point
 
 | 514 | 69 | 401 | 1,884 | 10 |
 |:---:|:---:|:---:|:---:|:---:|
-| regencies and cities with official 2025 boundaries | volcanoes with live PVMBG alert levels | active fault segments (PuSGeN 2024) | landslide events in the deduplicated inventory | open data feeds in the research archive |
+| regencies and cities, each with a 3-day SIGAP outlook every 12 hours | volcanoes with live PVMBG alert levels | active fault segments (PuSGeN 2024) | landslide events in the deduplicated inventory | open data feeds in the research archive |
 
 ## What it does
 
@@ -46,6 +46,7 @@ The logo is an **S drawn from three contour lines** around an amber summit point
 <td width="50%" valign="top">
 
 ### Live hazards on one map
+- **SIGAP 3-day outlook** for all 514 regencies and cities, recomputed every 12 hours: heavy rain, flood, and landslide levels from Open-Meteo rain at 3,222 monitoring points × InaRISK hazard classes. It is on by default, and each popup shows BMKG's official warning next to it. It is a system indication, not an official warning.
 - **Earthquakes** from BMKG, synced every 60 seconds. Circles are sized by magnitude, coloured by depth class, and fade over 7 days. Popups carry the tsunami flag and the ShakeMap.
 - **Volcanoes** from MAGMA Indonesia, synced every 30 minutes, with alert level I–IV, eruption status, and aviation ash warnings (VONA).
 - **Heavy-rain warnings** from BMKG CEWS for the current dasarian (10-day period), drawn on regency boundaries and listed in the overview.
@@ -59,7 +60,7 @@ The logo is an **S drawn from three contour lines** around an amber summit point
 
 ### Risk check for any point
 Pick a point by search, GPS, right-click, or long press. SIGAP runs 11 lookups in parallel (web services and PostGIS queries) and returns one profile:
-- a 3-day outlook (Normal, Waspada, Siaga, Awas) from rainfall × hazard class;
+- a 3-day outlook (Normal, Waspada, Siaga, Awas) for heavy rain, flood, and landslide, from rainfall × hazard class, with the same rules as the regency outlook;
 - the five InaRISK hazard indices;
 - the nearest active fault and volcanoes, drawn as distance lines;
 - recent earthquakes within 100 km;
@@ -100,6 +101,10 @@ Several official products vanish once they expire, such as short weather warning
 
 ![Agam regency highlighted as Waspada on the heavy-rain warning layer, with the warning list in the overview panel](docs/images/rain-warnings-agam.jpg)
 
+**SIGAP 3-day outlook for 29 September–1 October 2026.** All 514 regencies are rated: Nias Selatan is Awas, Kepulauan Mentawai is Siaga, four regencies are Waspada, and 508 are Normal. The Nias Selatan level comes from one monitoring point in a high flood-hazard zone, where the model forecasts 261.6 mm for 30 September. The popup lists the three hazards with their reasons and can open the risk check at that point. It also shows BMKG's official CEWS level (Aman for this dasarian), because one uncalibrated 9 km forecast cell can be enough to raise a regency.
+
+![Nias Selatan at Awas on the SIGAP 3-day outlook, with Kepulauan Mentawai at Siaga, the regency popup, and the outlook summary in the overview panel](docs/images/outlook-nias-selatan.jpg)
+
 <table>
 <tr>
 <td width="50%"><img src="docs/images/mobile-overview.jpg" alt="Phone layout: map with the overview bottom sheet"></td>
@@ -110,6 +115,22 @@ Several official products vanish once they expire, such as short weather warning
 <td align="center">Phone layout: risk profile</td>
 </tr>
 </table>
+
+## How the 3-day outlook works
+
+Every 12 hours the server rates heavy rain, flood, and landslide for all 514 regencies and cities. Every run is stored, Normal regencies included, so the outlook can be verified against events later.
+
+1. **Hazard zones.** InaRISK flood and landslide classes for the whole country, at about 550 m, are loaded into PostGIS rasters and clipped to each regency. The same step records the area of each class per regency.
+2. **Monitoring points.** Each regency gets up to three points per hazard, in the 0.25° cells with the highest class, plus one reference point. The server smooths the 550 m export, so each point's class is checked against the native 100 m InaRISK value (`getSamples`). The risk check at that point therefore shows the same class.
+3. **Rain.** Open-Meteo daily rain for the past 3 and next 3 days at every monitoring point, at the same coordinates the risk check uses. In Indonesia Open-Meteo serves ECMWF IFS at 9 km, much finer than a 0.25° cell, so the rain is not averaged over a cell. The job asks for 100 points per request with pauses, about 3,200 calls per run, which is why it runs every 12 hours within the free quota.
+4. **Rules v0.1** in [`rules.json`](server/src/config/rules.json):
+   - heavy rain follows the BMKG category: heavy, very heavy, and extreme rain give Waspada, Siaga, and Awas;
+   - flood and landslide combine the peak daily rain with the hazard class at the point;
+   - for landslides, 100 mm over any 3 days, including the last few days, counts as heavy rain.
+
+   A regency takes the highest level among its points.
+
+The rules are not calibrated yet (that is RQ-L2), so the map labels the result as a system indication and shows BMKG's CEWS level next to it.
 
 ## Architecture
 
@@ -125,7 +146,7 @@ flowchart LR
   end
 
   subgraph server["server/ (Node.js, Express)"]
-    SYNC["Scheduler<br/>quakes 60 s, volcanoes 30 min"]
+    SYNC["Scheduler<br/>quakes 60 s, volcanoes 30 min,<br/>3-day outlook 12 h"]
     API["REST API<br/>GeoJSON"]
     RISK["Risk check<br/>11 lookups in parallel"]
   end
@@ -138,6 +159,8 @@ flowchart LR
 
   BMKG --> SYNC
   ESDM --> SYNC
+  OM --> SYNC
+  BNPB -. hazard classes, at seed .-> DB
   SYNC --> DB
   DB --> API
   BNPB --> RISK
@@ -239,8 +262,8 @@ docker compose up -d          # PostGIS on localhost:5433
 cd server
 npm install
 npm run migrate               # create tables
-npm run seed                  # boundaries, volcanoes, faults, landslide history (±15 s, downloads once)
-npm run dev                   # API on http://localhost:3000/api
+npm run seed                  # boundaries, volcanoes, faults, landslides, hazard zones (±5 min the first time)
+npm run dev                   # API on http://localhost:3000/api; first 3-day outlook ±10 min later
 ```
 
 In a second terminal:
@@ -252,6 +275,8 @@ npm run dev                   # open http://localhost:5173
 ```
 
 Use a regular browser (Chrome, Edge, Brave, or Firefox). VS Code's built-in browser gets HTTP 403 from the French OSM server, so the Humanitarian basemap stays blank there.
+
+The server computes the 3-day outlook every 12 hours and skips the run after a restart if the last one is still fresh. `npm run indikasi` in `server/` runs it once on demand, for example before a demo; each run uses about a third of Open-Meteo's free daily quota.
 
 The defaults match `docker-compose.yml`. Copy `.env.example` to `.env` only if you need to change them.
 
@@ -274,7 +299,7 @@ TEST_DATABASE_URL=postgres://sigap:sigap@localhost:5433/sigap_test npm test
 
 In PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/sigap_test"; npm test`
 
-Current counts: 56 server tests (with the integration database), 37 recorder tests, and 18 research tests. One research test reproduces the worked example of the EDuMaP paper.
+Current counts: 75 server tests (with the integration database), 37 recorder tests, and 18 research tests. One research test reproduces the worked example of the EDuMaP paper.
 
 </details>
 
@@ -293,6 +318,7 @@ Every endpoint returns JSON; spatial data is GeoJSON with `[lon, lat]` coordinat
 | `GET /api/rain-warnings` | Regencies under a BMKG heavy-rain warning (Waspada or higher) for the current dasarian |
 | `GET /api/rain-warnings/summary` | The same warnings without geometry, with province and bounds, for lists |
 | `GET /api/rain-now` | Time and tile URL of the latest NASA IMERG rainfall map |
+| `GET /api/outlook` | Latest SIGAP 3-day outlook: heavy rain, flood, and landslide level per regency, with reason, peak day, and worst monitoring point, plus counts per level |
 | `GET /api/landslides` | Landslide history from PVMBG and MAGMA |
 | `GET /api/geocode?q=bandung` | Regency search in the database, other places through Nominatim |
 
@@ -331,13 +357,13 @@ Shortened from the real response. If one source fails, only its own part carries
 |---|---|---|
 | Earthquakes | [BMKG](https://data.bmkg.go.id/) | Credit BMKG as the source |
 | Heavy-rain early warnings | [BMKG CEWS](https://cews.bmkg.go.id/) | Credit BMKG as the source |
-| Hazard indices, active faults | [BNPB InaRISK](https://inarisk.bnpb.go.id/); PuSGeN 2024 fault model | Credit BNPB and PuSGeN |
+| Hazard indices (point lookups, samples, and ~550 m class rasters for the outlook), active faults | [BNPB InaRISK](https://inarisk.bnpb.go.id/); PuSGeN 2024 fault model | Credit BNPB and PuSGeN |
 | Volcano alert levels | [MAGMA Indonesia](https://magma.esdm.go.id/), PVMBG, Ministry of Energy and Mineral Resources | Credit PVMBG |
 | Monthly landslide forecast, ZKGT, landslide events | PVMBG, Geological Agency ([Portal MBG](https://vsi.esdm.go.id/portalmbg/) and MAGMA Indonesia) | Credit PVMBG. The event history is rebuilt by `research/01_inventaris.py` without personal data |
 | Plate boundaries | Bird (2003) PB2002, converted by H. Ahlenius / Nordpil | ODC-By |
 | Administrative boundaries | Kepmendagri No 300.2.2-2430 of 2025, [cahyadsn/wilayah_boundaries](https://github.com/cahyadsn/wilayah_boundaries) | MIT |
 | Citizen reports (research archive) | [PetaBencana.id](https://petabencana.id/) | CC BY-NC 4.0 |
-| Rain forecast, ensemble, elevation | [Open-Meteo](https://open-meteo.com/) (ECMWF; Copernicus DEM 90 m) | CC BY 4.0, free for non-commercial use |
+| Rain forecast (also for the 3-day outlook), ensemble, elevation | [Open-Meteo](https://open-meteo.com/) (ECMWF; Copernicus DEM 90 m) | CC BY 4.0, free for non-commercial use |
 | Satellite rainfall | [NASA GPM IMERG](https://gpm.nasa.gov/data/imerg) Early Run through [NASA GIBS](https://www.earthdata.nasa.gov/engage/open-data-services-software/earthdata-developer-portal/gibs-api) | Open NASA data; credit NASA |
 | Place search | [Nominatim](https://nominatim.org/), © OpenStreetMap contributors | ODbL; at most 1 request per second, no autocomplete |
 | Basemaps | Esri; © OpenStreetMap contributors (ODbL); Humanitarian OpenStreetMap Team; OpenTopoMap | CC-BY-SA for OpenTopoMap |
