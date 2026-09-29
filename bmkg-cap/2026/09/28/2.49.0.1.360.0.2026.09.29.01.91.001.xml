@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.29.01.91.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-29T08:55:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-29T09:00:00+09:00</effective>
+    <expires>2026-09-29T11:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 29 September 2026, 09:00 WIT di sebagian wilayah Papua, khususnya di PANTAI BARAT, SARMI, SARMI SELATAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 29 September 2026, 11:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPU/2026/09/29/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua</areaDesc>
+      <polygon>-1.920,138.790 -1.921,138.784 -1.948,138.771 -1.928,138.715 -1.868,138.715 -1.845,138.725 -1.854,138.741 -1.853,138.748 -1.847,138.751 -1.855,138.754 -1.857,138.748 -1.867,138.748 -1.920,138.790</polygon>
+      <polygon>-1.592,138.733 -1.607,138.746 -1.625,138.748 -1.618,138.719 -1.605,138.709 -1.597,138.709 -1.580,138.717 -1.592,138.733</polygon>
+      <polygon>-1.645,138.777 -1.645,138.774 -1.640,138.775 -1.645,138.777</polygon>
+      <polygon>-1.664,138.803 -1.679,138.805 -1.707,138.797 -1.700,138.793 -1.686,138.795 -1.673,138.790 -1.664,138.798 -1.664,138.803</polygon>
+      <polygon>-1.787,138.652 -1.790,138.655 -1.822,138.652 -1.844,138.635 -1.852,138.621 -1.866,138.608 -1.886,138.620 -1.886,138.602 -1.894,138.592 -1.890,138.580 -1.911,138.551 -1.918,138.550 -1.896,138.367 -1.866,138.276 -1.854,138.255 -1.840,138.235 -1.804,138.214 -1.774,138.201 -1.742,138.195 -1.705,138.194 -1.683,138.173 -1.674,138.175 -1.640,138.168 -1.631,138.170 -1.690,138.293 -1.720,138.373 -1.753,138.494 -1.787,138.652</polygon>
+      <polygon>-1.845,138.725 -1.868,138.715 -1.928,138.715 -1.948,138.771 -1.995,138.759 -2.066,138.760 -2.086,138.749 -2.114,138.740 -2.151,138.705 -2.183,138.701 -2.196,138.698 -2.217,138.677 -2.246,138.679 -2.285,138.663 -2.332,138.653 -2.289,138.622 -2.278,138.621 -2.264,138.603 -2.239,138.603 -2.226,138.587 -2.212,138.584 -2.205,138.598 -2.187,138.606 -2.187,138.615 -2.177,138.620 -2.160,138.619 -2.146,138.624 -2.127,138.622 -2.125,138.627 -2.115,138.629 -2.092,138.628 -2.086,138.621 -2.071,138.631 -2.061,138.616 -2.060,138.611 -2.068,138.602 -2.064,138.595 -2.055,138.590 -2.053,138.573 -2.044,138.566 -2.040,138.554 -2.021,138.530 -2.013,138.528 -1.992,138.537 -1.969,138.529 -1.968,138.540 -1.964,138.543 -1.953,138.544 -1.942,138.540 -1.918,138.550 -1.911,138.551 -1.890,138.580 -1.894,138.592 -1.886,138.602 -1.886,138.620 -1.866,138.608 -1.852,138.621 -1.844,138.635 -1.822,138.652 -1.790,138.655 -1.787,138.652 -1.803,138.681 -1.845,138.725</polygon>
+    </area>
+  </info>
+</alert>
