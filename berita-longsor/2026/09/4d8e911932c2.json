@@ -1,0 +1,28 @@
+{
+  "guid": "CBMinAFBVV95cUxOZ3pqM1RwNDNWRFN4eDZhNndlV3BDbUF6MzlVVUNRQVVPVTk1MGt3ZUR6Wi1fQTI4R0JSWTdTUDlvcnAzQ3h1RUhHS3lLRmgyX3k0MXVGV21XNmJ0QkNsazhEQlMwLXZ0LVJ3dHBtY3M5bkdDbFFiY2xvbElvWU5aeDNMTnJZNVFMVEtnSkVWMDhkeC04M3VEOXFoODY",
+  "title": "Banjir dan Longsor Terjang Gayo Lues dan Aceh Tenggara - MetroTVNews.com",
+  "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZ3pqM1RwNDNWRFN4eDZhNndlV3BDbUF6MzlVVUNRQVVPVTk1MGt3ZUR6Wi1fQTI4R0JSWTdTUDlvcnAzQ3h1RUhHS3lLRmgyX3k0MXVGV21XNmJ0QkNsazhEQlMwLXZ0LVJ3dHBtY3M5bkdDbFFiY2xvbElvWU5aeDNMTnJZNVFMVEtnSkVWMDhkeC04M3VEOXFoODY?oc=5",
+  "source": "MetroTVNews.com",
+  "source_url": "https://www.metrotvnews.com",
+  "published_at": "2026-09-29T01:10:41.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-09-29T03:45:29.437Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.02",
+      "nama": "Kabupaten Aceh Tenggara",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "11.13",
+      "nama": "Kabupaten Gayo Lues",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
