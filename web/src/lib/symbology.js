@@ -40,6 +40,9 @@ export const WARNING_LEVEL_STYLES = [
   { label: 'Awas', color: '#c62828', text: '#fff' },
 ];
 
+// Kab/kota tanpa data hujan pada indikasi SIGAP 3 hari (abu-abu, bukan level).
+export const NO_DATA_STYLE = { label: 'Tanpa data', color: '#98a2b3', text: INK };
+
 // Variabel CSS untuk pil/lencana berwarna (.level-pill, .class-pill, .mag-badge).
 // Warna garis sesar, lempeng, batas wilayah, dan titik analisis mengikuti tema,
 // jadi didefinisikan sebagai variabel CSS di styles/base.css.

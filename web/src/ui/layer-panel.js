@@ -3,10 +3,15 @@ import { escapeHtml } from '../lib/format.js';
 // Tab Lapisan dibangun dari daftar grup, jadi layer baru cukup didaftarkan di
 // main.js. Grup biasa berupa sakelar; grup `exclusive` berupa pilihan tunggal
 // (chip) karena raster peta rawan saling menutupi bila dinyalakan bersamaan.
+// Item dengan `on: true` menyala sejak awal (di grup exclusive: pilihan bawaan).
 // Legenda peta mengikuti layer yang aktif.
 export function createLayerPanel({ map, container, legend, groups }) {
   const active = new Set();
   const switches = new Map();
+  // Grup exclusive: radio tiap item dan radio "Tidak ada".
+  const radios = new Map();
+  const noneRadios = new Map();
+  const groupOf = new Map(groups.flatMap((group) => group.items.map((item) => [item, group])));
 
   const updateLegend = () =>
     legend.setBlocks(
@@ -27,15 +32,23 @@ export function createLayerPanel({ map, container, legend, groups }) {
   };
 
   // Lapisan juga bisa dinyalakan dari luar panel (menu filter di bilah alat,
-  // pilihan di daftar Ikhtisar), jadi sakelar dan legenda mengikuti peta.
+  // pilihan di daftar Ikhtisar), jadi sakelar, pilihan, dan legenda mengikuti peta.
   const items = groups.flatMap((group) => group.items);
   map.on('layeradd layerremove', ({ layer }) => {
     const item = items.find((candidate) => candidate.layer === layer);
     if (!item || map.hasLayer(layer) === active.has(item)) return;
-    if (map.hasLayer(layer)) active.add(item);
-    else active.delete(item);
+    const group = groupOf.get(item);
+    if (map.hasLayer(layer)) {
+      active.add(item);
+      // Tetap satu pilihan per grup exclusive.
+      if (group.exclusive) group.items.filter((other) => other !== item && active.has(other)).forEach((other) => setActive(other, false));
+    } else active.delete(item);
     const input = switches.get(item);
     if (input) input.checked = active.has(item);
+    if (group.exclusive) {
+      const chosen = group.items.find((candidate) => active.has(candidate));
+      (chosen ? radios.get(chosen) : noneRadios.get(group)).checked = true;
+    }
     updateLegend();
   });
 
@@ -68,13 +81,14 @@ export function createLayerPanel({ map, container, legend, groups }) {
   function choiceGroup(group) {
     const wrap = document.createElement('div');
     const options = [{ label: 'Tidak ada' }, ...group.items];
+    const initial = Math.max(0, options.findIndex((option) => option.on));
     wrap.innerHTML = `
       <div class="choice-chips" role="radiogroup" aria-label="${escapeHtml(group.title)}">
         ${options
           .map(
             (option, index) => `
               <label class="choice">
-                <input type="radio" name="layer-${group.id}" value="${index}"${index === 0 ? ' checked' : ''} />
+                <input type="radio" name="layer-${group.id}" value="${index}"${index === initial ? ' checked' : ''} />
                 <span>${escapeHtml(option.label)}</span>
               </label>`,
           )
@@ -83,12 +97,17 @@ export function createLayerPanel({ map, container, legend, groups }) {
       ${
         group.opacity === undefined
           ? ''
-          : `<label class="range-row" hidden>
+          : `<label class="range-row"${initial ? '' : ' hidden'}>
                Transparansi
                <input type="range" min="0.2" max="1" step="0.05" value="${group.opacity}" />
                <output>${Math.round(group.opacity * 100)}%</output>
              </label>`
       }`;
+
+    const inputs = wrap.querySelectorAll('input[type="radio"]');
+    noneRadios.set(group, inputs[0]);
+    group.items.forEach((item, index) => radios.set(item, inputs[index + 1]));
+    if (initial) setActive(options[initial], true);
 
     const range = wrap.querySelector('.range-row');
     wrap.querySelector('.choice-chips').addEventListener('change', (event) => {

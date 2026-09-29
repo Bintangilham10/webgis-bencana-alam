@@ -22,6 +22,7 @@ import {
   landslideSymbol,
   rainWarningLegend,
 } from './layers/landslide.js';
+import { createOutlookLayer, HAZARD_NAMES, OUTLOOK_VIEWS, outlookLegend } from './layers/outlook.js';
 import {
   boundaryLegend,
   createBoundaryLayer,
@@ -58,6 +59,8 @@ const EARTHQUAKE_REFRESH_MS = 60_000;
 const VOLCANO_REFRESH_MS = 10 * 60_000;
 // Produk CEWS dasarian di-cache server 3 jam; daftar di Ikhtisar cukup dicek tiap 30 menit.
 const RAIN_WARNING_REFRESH_MS = 30 * 60_000;
+// Indikasi SIGAP dihitung server tiap 12 jam; hasil run baru terlihat paling lambat 10 menit kemudian.
+const OUTLOOK_REFRESH_MS = 10 * 60_000;
 const HAZARD_OPACITY = 0.65;
 const PLACE_ZOOM = 13;
 
@@ -205,6 +208,23 @@ const rainWarnings = createRainWarningLayer({ onError: reportLoadError('Peringat
 // Waktu IMERG yang gagal dibaca tidak fatal: petanya jatuh ke data terbaru GIBS.
 const rainNow = createImergLayer({ onError: (err) => console.warn('Waktu IMERG tidak terbaca', err) });
 const landslideHistory = createLandslideHistoryLayer({ onError: reportLoadError('Riwayat longsor') });
+// Indikasi SIGAP 3 hari per kab/kota. Popup membandingkannya dengan peringatan
+// resmi CEWS BMKG dan bisa membuka cek risiko di titik pantau terparah.
+const outlook = createOutlookLayer({
+  onError: reportLoadError('Indikasi SIGAP'),
+  officialRain(kode) {
+    if (!rainSummary?.published) return null;
+    return {
+      level: rainSummary.regions.find((r) => r.kode === kode)?.level ?? 0,
+      period: formatDasarian(rainSummary.dasarian, { short: true }),
+    };
+  },
+  onCheckPoint({ lat, lon, hazard }) {
+    const target = L.latLng(lat, lon);
+    flyToBounds(map, target.toBounds(3_000), { maxZoom: PLACE_ZOOM, ...viewPadding({ detail: true }) });
+    risk.check(target, { label: `Titik pantau ${HAZARD_NAMES[hazard].toLowerCase()}` });
+  },
+});
 
 const symbol = {
   quake: `<span class="sym quake-swatch" style="--c:${DEPTH_CLASSES[0].color}"></span>`,
@@ -222,6 +242,20 @@ createLayerPanel({
   container: $('#layer-controls'),
   legend,
   groups: [
+    {
+      id: 'indikasi',
+      title: 'Indikasi SIGAP · 3 hari',
+      note: 'Per kab/kota',
+      description: 'Prakiraan hujan × zona bahaya InaRISK, dihitung ulang tiap 12 jam. Indikasi sistem, bukan peringatan resmi.',
+      exclusive: true,
+      items: OUTLOOK_VIEWS.map((view) => ({
+        label: view.label,
+        legendTitle: `Indikasi SIGAP 3 hari · ${view.label.toLowerCase()}`,
+        layer: outlook.views[view.id],
+        legend: outlookLegend(view.id),
+        on: view.id === 'tertinggi',
+      })),
+    },
     {
       id: 'kejadian',
       title: 'Kejadian & status',
@@ -258,7 +292,6 @@ createLayerPanel({
           symbol: symbol.rain,
           layer: rainWarnings,
           legend: rainWarningLegend,
-          on: true,
         },
         {
           label: 'Hujan terkini dari satelit',
@@ -354,6 +387,7 @@ const overview = createOverview({
   volcanoList: $('#volcano-alerts'),
   rainList: $('#rain-warnings'),
   rainMeta: $('#rain-warning-meta'),
+  outlook: { counts: $('#outlook-counts'), list: $('#outlook-list'), meta: $('#outlook-meta') },
   onSelectQuake(id) {
     sidebar.collapse();
     earthquakes.focus(id);
@@ -376,6 +410,18 @@ const overview = createOverview({
     });
     flyToBounds(map, region.bounds, { maxZoom: 10, ...markerPadding() });
   },
+  // Kab/kota dari daftar indikasi SIGAP: tampilan "Tertinggi" dinyalakan bila
+  // belum ada tampilan indikasi, lalu popup dibuka setelah peta dan batas siap.
+  async onSelectOutlook(kode) {
+    const region = outlookData?.regions.find((r) => r.kode === kode);
+    if (!region) return;
+    sidebar.collapse();
+    if (!outlook.activeView) map.addLayer(outlook.views.tertinggi);
+    const arrived = new Promise((resolve) => map.once('moveend', resolve));
+    flyToBounds(map, region.bounds, { maxZoom: 9, ...markerPadding() });
+    await Promise.all([arrived, outlook.whenLoaded()]);
+    outlook.openPopup(kode);
+  },
 });
 
 let rainSummary = null;
@@ -387,6 +433,23 @@ async function refreshRainWarnings() {
   } catch (err) {
     overview.showError($('#rain-warnings'), 'Peringatan hujan BMKG gagal dimuat. Dicoba lagi otomatis.');
     freshness.fail('Peringatan hujan', err);
+  }
+}
+
+let outlookData = null;
+async function refreshOutlook() {
+  try {
+    outlookData = await outlook.refresh();
+    overview.renderOutlook(outlookData);
+    freshness.ok('Indikasi SIGAP', outlookData.run.finished_at);
+  } catch (err) {
+    // 404 = server belum menyelesaikan run pertama (±10 menit setelah seed).
+    if (err.status === 404) {
+      overview.showOutlookMessage('Indikasi pertama sedang dihitung server (±10 menit). Dicoba lagi otomatis.');
+      return;
+    }
+    overview.showOutlookMessage('Indikasi SIGAP gagal dimuat. Dicoba lagi otomatis.');
+    freshness.fail('Indikasi SIGAP', err);
   }
 }
 
@@ -418,3 +481,5 @@ setInterval(refreshEarthquakes, EARTHQUAKE_REFRESH_MS);
 setInterval(refreshVolcanoes, VOLCANO_REFRESH_MS);
 refreshRainWarnings();
 setInterval(refreshRainWarnings, RAIN_WARNING_REFRESH_MS);
+refreshOutlook();
+setInterval(refreshOutlook, OUTLOOK_REFRESH_MS);

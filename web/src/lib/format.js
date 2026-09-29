@@ -70,3 +70,6 @@ export const formatMonth = (yyyymm) => monthLong.format(new Date(`${yyyymm}-15T0
 const dateShort = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
 export const formatDateShort = (isoDate) => dateShort.format(new Date(`${isoDate}T00:00:00Z`));
 
+// Rentang prakiraan "2026-09-29".."2026-10-01" → "29 Sep–1 Okt".
+const dayMonth = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'short', timeZone: 'UTC' });
+export const formatDateRange = (from, to) => `${dayMonth.format(new Date(`${from}T00:00:00Z`))}–${dayMonth.format(new Date(`${to}T00:00:00Z`))}`;

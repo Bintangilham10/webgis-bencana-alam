@@ -12,7 +12,7 @@ import {
 import { icons } from '../lib/icons.js';
 import { CEWS_LEVELS, HAZARD_CLASSES, INK, landslideClass, pillStyle, VOLCANO_LEVELS, WARNING_LEVEL_STYLES } from '../lib/symbology.js';
 
-const INDICATION_NAMES = { banjir: 'banjir', longsor: 'tanah longsor' };
+const INDICATION_NAMES = { hujan: 'hujan lebat', banjir: 'banjir', longsor: 'tanah longsor' };
 // Skala batang hujan: batas bawah hujan ekstrem BMKG (mm/hari).
 const RAIN_SCALE_MAX_MM = 150;
 const BNPB_CLASS_BOUNDARIES = [1 / 3, 2 / 3];
@@ -42,7 +42,7 @@ function outlook(indications, rainError) {
   }
   const top = Math.max(...indications.map((i) => i.level));
   if (top === 0) {
-    return banner(0, 'Normal untuk 3 hari ke depan', 'Prakiraan hujan tidak memicu indikasi banjir atau tanah longsor di titik ini.');
+    return banner(0, 'Normal untuk 3 hari ke depan', 'Prakiraan hujan tidak memicu indikasi hujan lebat, banjir, atau tanah longsor di titik ini.');
   }
   const worst = indications.filter((i) => i.level === top);
   const names = worst.map((i) => INDICATION_NAMES[i.hazard] ?? i.hazard).join(' dan ');
@@ -61,7 +61,7 @@ function banner(level, title, body) {
     </div>`;
 }
 
-function indicationList(indications) {
+function indicationList(indications, rulesVersion) {
   if (!indications.length) return '';
   return `
     <ul class="indication-list">
@@ -76,7 +76,7 @@ function indicationList(indications) {
         })
         .join('')}
     </ul>
-    <p class="section-note">Aturan awal v0 (hujan × kelas bahaya), belum dikalibrasi.</p>`;
+    <p class="section-note">Aturan ${escapeHtml(rulesVersion)} (hujan × kelas bahaya), belum dikalibrasi. Sama dengan indikasi SIGAP per kab/kota.</p>`;
 }
 
 // ---------- Profil bahaya ----------
@@ -311,7 +311,7 @@ function profileHtml(profile, { label, lat = profile.location.lat, lon = profile
     ${header({ title: label ?? 'Titik pilihan', place, coords: `${coordinateText(lat, lon)}${elevation}` })}
     <div class="detail-body view-scroll">
       ${outlook(profile.indications, profile.rain.error)}
-      ${indicationList(profile.indications)}
+      ${indicationList(profile.indications, profile.rules_version)}
       ${section('Bahaya di titik ini', 'InaRISK BNPB', `${hazardSummary(profile.hazards)}<ul class="hazard-list">${profile.hazards.map((h, i) => hazardRow(h, i)).join('')}</ul>`)}
       ${section('Prakiraan hujan', 'Open-Meteo', rainDays(profile.rain))}
       ${landslideSection(profile.landslide, wilayah)}
