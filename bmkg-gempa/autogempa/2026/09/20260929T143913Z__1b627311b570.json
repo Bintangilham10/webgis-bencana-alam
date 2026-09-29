@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-09-29T15:08:40.929Z",
+  "data": {
+    "Tanggal": "29 Sep 2026",
+    "Jam": "21:39:13 WIB",
+    "DateTime": "2026-09-29T14:39:13+00:00",
+    "Coordinates": "-4.05,121.58",
+    "Lintang": "4.05 LS",
+    "Bujur": "121.58 BT",
+    "Magnitude": "3.1",
+    "Kedalaman": "3 km",
+    "Wilayah": "Pusat gempa berada di darat 5 km Barat Kolaka",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Kolaka",
+    "Shakemap": "20260929213913.mmi.jpg"
+  }
+}
