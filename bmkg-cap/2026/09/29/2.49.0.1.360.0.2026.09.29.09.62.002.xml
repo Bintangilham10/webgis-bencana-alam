@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.29.09.62.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-29T15:45:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-29T15:55:00+07:00</effective>
+    <expires>2026-09-29T18:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 29 September 2026, 15:55 WIB di sebagian wilayah Kalimantan Tengah, khususnya di SERUYAN HILIR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 29 September 2026, 18:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/09/29/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-2.784,112.788 -2.796,112.784 -2.951,112.672 -3.020,112.633 -3.095,112.569 -3.131,112.551 -3.189,112.503 -3.252,112.461 -3.250,112.470 -3.260,112.487 -3.247,112.493 -3.243,112.500 -3.265,112.503 -3.282,112.524 -3.317,112.538 -3.331,112.556 -3.345,112.556 -3.346,112.573 -3.354,112.569 -3.353,112.556 -3.358,112.558 -3.363,112.568 -3.378,112.555 -3.396,112.555 -3.431,112.571 -3.431,112.567 -3.447,112.562 -3.442,112.535 -3.396,112.456 -3.380,112.440 -3.358,112.428 -3.317,112.340 -3.311,112.305 -3.313,112.259 -3.323,112.224 -3.340,112.186 -3.399,112.089 -3.463,111.997 -3.540,111.904 -3.544,111.890 -3.542,111.860 -3.534,111.819 -3.409,111.879 -3.383,111.899 -3.312,111.933 -3.219,111.969 -3.132,111.995 -3.007,112.047 -2.930,112.055 -2.889,112.055 -2.874,112.109 -2.880,112.276 -2.850,112.325 -2.754,112.433 -2.714,112.492 -2.683,112.514 -2.671,112.523 -2.656,112.535 -2.651,112.534 -2.636,112.543 -2.636,112.543 -2.658,112.578 -2.683,112.607 -2.722,112.688 -2.784,112.788</polygon>
+    </area>
+  </info>
+</alert>
