@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.29.07.31.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-29T13:15:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-29T13:25:00+07:00</effective>
+    <expires>2026-09-29T15:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 29 September 2026, 13:25 WIB di sebagian wilayah Jakarta, khususnya di CISAUK, JAMBE, TIGARAKSA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 29 September 2026, 15:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJK/2026/09/29/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jakarta</areaDesc>
+      <polygon>-6.247,106.491 -6.265,106.501 -6.275,106.512 -6.288,106.504 -6.304,106.469 -6.325,106.443 -6.319,106.442 -6.325,106.430 -6.315,106.429 -6.309,106.435 -6.302,106.433 -6.297,106.426 -6.294,106.430 -6.289,106.460 -6.271,106.462 -6.258,106.453 -6.261,106.448 -6.259,106.440 -6.233,106.438 -6.229,106.450 -6.216,106.457 -6.216,106.464 -6.194,106.469 -6.202,106.473 -6.203,106.478 -6.216,106.476 -6.237,106.482 -6.247,106.491</polygon>
+      <polygon>-6.288,106.504 -6.293,106.512 -6.304,106.509 -6.316,106.516 -6.324,106.515 -6.332,106.515 -6.339,106.531 -6.347,106.529 -6.355,106.519 -6.351,106.507 -6.356,106.497 -6.351,106.476 -6.344,106.476 -6.339,106.484 -6.322,106.482 -6.304,106.469 -6.288,106.504</polygon>
+      <polygon>-6.293,106.655 -6.325,106.658 -6.327,106.661 -6.340,106.647 -6.357,106.657 -6.362,106.651 -6.362,106.651 -6.363,106.597 -6.359,106.593 -6.356,106.588 -6.347,106.588 -6.343,106.590 -6.337,106.610 -6.327,106.614 -6.321,106.642 -6.292,106.646 -6.293,106.655</polygon>
+    </area>
+  </info>
+</alert>

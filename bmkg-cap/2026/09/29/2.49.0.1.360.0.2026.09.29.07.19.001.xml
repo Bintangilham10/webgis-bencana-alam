@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.29.07.19.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-29T13:25:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-29T13:35:00+07:00</effective>
+    <expires>2026-09-29T15:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 29 September 2026, 13:35 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di PAYUNG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 29 September 2026, 15:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/09/29/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-2.566,106.200 -2.574,106.209 -2.591,106.213 -2.605,106.204 -2.613,106.209 -2.624,106.207 -2.616,106.224 -2.640,106.244 -2.640,106.253 -2.647,106.260 -2.664,106.249 -2.684,106.209 -2.726,106.207 -2.733,106.178 -2.726,106.160 -2.734,106.099 -2.727,106.079 -2.716,106.068 -2.709,106.051 -2.699,106.046 -2.682,106.051 -2.673,106.064 -2.555,106.074 -2.542,106.079 -2.535,106.087 -2.505,106.098 -2.496,106.087 -2.491,106.089 -2.489,106.104 -2.493,106.114 -2.501,106.121 -2.507,106.149 -2.521,106.151 -2.527,106.163 -2.559,106.186 -2.566,106.200</polygon>
+    </area>
+  </info>
+</alert>
