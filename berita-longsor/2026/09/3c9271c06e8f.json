@@ -1,0 +1,26 @@
+{
+  "guid": "CBMikAFBVV95cUxQZXR6TTJlay04TFVPRVVLOWVwR3E1cm5lQ1ZONFZ3bml0MjhMZGUybzRaVDdCT2t6X0lhUnlLOTFLV1JySHBFS1lIZVNkcVpUa1Z2WlVaOExYVHZuVHZuajJncmhDbUFtVzVibkNVdVRaNHFHaVJsbzJGbEF3eVlPbEZscTJEZlN1NGhGOVYxWEs",
+  "title": "Longsor di Curug Bogor Barat Ancam Rumah Warga - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZXR6TTJlay04TFVPRVVLOWVwR3E1cm5lQ1ZONFZ3bml0MjhMZGUybzRaVDdCT2t6X0lhUnlLOTFLV1JySHBFS1lIZVNkcVpUa1Z2WlVaOExYVHZuVHZuajJncmhDbUFtVzVibkNVdVRaNHFHaVJsbzJGbEF3eVlPbEZscTJEZlN1NGhGOVYxWEs?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-09-29T09:15:59.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-09-29T10:15:26.228Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
