@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.30.10.19.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-30T16:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-30T16:25:00+07:00</effective>
+    <expires>2026-09-30T18:25:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 September 2026, 16:25 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di BELINYU, BUKITINTAN, PANGKALAN BARU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 September 2026, 18:25 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/09/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-1.554,105.970 -1.560,105.973 -1.567,105.969 -1.577,105.972 -1.584,105.969 -1.596,105.981 -1.605,105.982 -1.623,105.992 -1.629,105.991 -1.639,105.979 -1.651,105.933 -1.685,105.912 -1.698,105.889 -1.721,105.864 -1.741,105.857 -1.746,105.870 -1.752,105.872 -1.766,105.869 -1.771,105.838 -1.786,105.804 -1.780,105.795 -1.757,105.789 -1.737,105.770 -1.728,105.754 -1.716,105.753 -1.686,105.740 -1.678,105.757 -1.648,105.762 -1.637,105.753 -1.632,105.734 -1.625,105.736 -1.621,105.742 -1.610,105.741 -1.584,105.721 -1.544,105.721 -1.534,105.705 -1.528,105.703 -1.533,105.757 -1.531,105.815 -1.523,105.843 -1.520,105.879 -1.514,105.887 -1.507,105.886 -1.503,105.891 -1.506,105.905 -1.503,105.917 -1.521,105.920 -1.523,105.913 -1.534,105.910 -1.540,105.913 -1.560,105.952 -1.554,105.970</polygon>
+      <polygon>-1.737,105.768 -1.743,105.769 -1.739,105.764 -1.737,105.768</polygon>
+      <polygon>-2.151,106.102 -2.154,106.104 -2.154,106.106 -2.154,106.111 -2.154,106.118 -2.147,106.131 -2.159,106.152 -2.155,106.163 -2.154,106.178 -2.154,106.182 -2.162,106.189 -2.175,106.190 -2.183,106.199 -2.204,106.207 -2.209,106.206 -2.216,106.184 -2.216,106.172 -2.227,106.164 -2.230,106.148 -2.255,106.121 -2.250,106.110 -2.250,106.095 -2.226,106.097 -2.218,106.093 -2.214,106.083 -2.198,106.095 -2.196,106.105 -2.182,106.105 -2.181,106.096 -2.171,106.086 -2.174,106.074 -2.167,106.071 -2.156,106.075 -2.146,106.089 -2.145,106.094 -2.151,106.102</polygon>
+      <polygon>-2.149,106.276 -2.153,106.279 -2.159,106.274 -2.158,106.262 -2.150,106.270 -2.149,106.276</polygon>
+      <polygon>-2.086,106.159 -2.093,106.167 -2.126,106.183 -2.154,106.178 -2.155,106.163 -2.159,106.152 -2.147,106.131 -2.141,106.132 -2.136,106.122 -2.131,106.121 -2.129,106.126 -2.112,106.133 -2.105,106.138 -2.097,106.137 -2.083,106.149 -2.086,106.159</polygon>
+      <polygon>-2.148,106.105 -2.144,106.112 -2.133,106.117 -2.144,106.112 -2.148,106.105</polygon>
+      <polygon>-2.152,106.103 -2.154,106.104 -2.151,106.102 -2.152,106.103</polygon>
+    </area>
+  </info>
+</alert>
