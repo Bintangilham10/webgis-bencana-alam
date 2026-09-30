@@ -72,6 +72,7 @@ Pick a point by search, GPS, right-click, or long press. SIGAP runs 11 lookups i
 <td width="50%" valign="top">
 
 ### Built for the field
+- An opening page that tours the product before the map: real screenshots in tablet, laptop, and phone mockups, live counts, the features, how the outlook is computed, and the data sources. Opening the map reveals it through an expanding circle.
 - Full-bleed map with floating panels; on phones the panel becomes a bottom sheet.
 - Dark and light themes, flat colours, and one blue accent. Bright colours are reserved for hazard data.
 - Cartographic essentials: collapsible legend, scale bar with a 1:n reading, north arrow, and cursor coordinates in WGS84, UTM, and EPSG:3857.
@@ -88,6 +89,10 @@ Several official products vanish once they expire, such as short weather warning
 </table>
 
 ## Screenshots
+
+**Opening page.** A product tour built from real screenshots of the app (`web/public/images/landing/`, dark and light versions that follow the theme). The hero shows the app on a tablet mockup that tilts upright as you scroll, and the live counts come from the same API as the overview. In the feature tour a laptop mockup stays pinned and slides to the next screenshot as you read: the overview, the 3-day outlook, BMKG rain warnings, and the risk check. Motion stops when the system asks for reduced motion.
+
+![Opening page: the headline "Semua informasi bencana Indonesia, di satu peta." with live counts, above a tablet mockup showing the SIGAP map and overview panel](docs/images/landing.jpg)
 
 **Risk check in Lembang, West Java.** The point sits 1.4 km from the Lembang Fault and 4.9 km from Tangkuban Parahu, and InaRISK rates its earthquake hazard as high (0.862).
 

@@ -23,6 +23,14 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
   - tab Info memuat nomor darurat (112, 117, 115, 119, 113, 110).
   
   Tanpa framework CSS; font Plus Jakarta Sans dimuat mandiri (±27 KB). Efek kaca otomatis diganti panel pekat bila sistem meminta transparansi dikurangi.
+- **Halaman depan:** tur produk sebelum peta dibuka. Isinya:
+  - tangkapan layar aplikasi asli dalam mockup tablet, laptop, dan HP (`web/public/images/landing/`, versi gelap dan terang mengikuti tema); tablet di hero tegak mengikuti gulir;
+  - empat angka langsung dari data yang sama dengan Ikhtisar;
+  - tur fitur: mockup laptop menempel di layar dan tangkapannya bergeser ke fitur yang sedang dibaca (Ikhtisar, indikasi 3 hari, peringatan hujan BMKG, cek risiko);
+  - bagian Di HP, Cara kerja, dan Sumber data;
+  - pencarian yang langsung diteruskan ke cek risiko, tombol "Pakai lokasi saya", dan "Buka peta" yang membuka aplikasi lewat lingkaran yang membesar.
+
+  Gerak berhenti total bila sistem meminta gerakan dikurangi.
 - **Animasi:**
   - layar pembuka dengan logo tergambar dan gelombang seismik;
   - penanda tab meluncur; isi panel dan detail cek risiko bergeser masuk;
