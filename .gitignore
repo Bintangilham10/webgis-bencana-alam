@@ -18,5 +18,8 @@ research/.venv/
 research/data/
 __pycache__/
 
-# Slide kuliah milik dosen, jangan ikut dipublikasikan
+# Slide kuliah, jangan ikut dipublikasikan
 *.pdf
+
+# Tugas kuliah (slide PPTX/PDF kebutuhan sistem)
+docs/tugas-1-kebutuhan-sistem/
