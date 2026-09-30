@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.30.08.34.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-30T15:12:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-30T15:22:00+07:00</effective>
+    <expires>2026-09-30T16:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di DI Yogyakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 September 2026, 15:22 WIB di sebagian wilayah DI Yogyakarta, khususnya di PAKEM, TURI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 September 2026, 16:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CYG/2026/09/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>DI Yogyakarta</areaDesc>
+      <polygon>-7.672,110.377 -7.683,110.374 -7.676,110.369 -7.672,110.370 -7.668,110.365 -7.664,110.344 -7.629,110.357 -7.617,110.371 -7.615,110.365 -7.589,110.396 -7.565,110.413 -7.575,110.419 -7.600,110.414 -7.672,110.377</polygon>
+      <polygon>-7.568,110.459 -7.572,110.444 -7.590,110.442 -7.608,110.431 -7.636,110.427 -7.668,110.431 -7.672,110.421 -7.670,110.418 -7.687,110.408 -7.702,110.399 -7.689,110.404 -7.675,110.390 -7.672,110.377 -7.600,110.414 -7.575,110.419 -7.565,110.413 -7.542,110.446 -7.568,110.459</polygon>
+    </area>
+  </info>
+</alert>
