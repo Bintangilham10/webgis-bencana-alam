@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.30.04.14.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-30T10:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-30T10:30:00+07:00</effective>
+    <expires>2026-09-30T13:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Riau</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 September 2026, 10:30 WIB di sebagian wilayah Riau, khususnya di BANTAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 September 2026, 13:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CRU/2026/09/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Riau</areaDesc>
+      <polygon>1.307,102.504 1.308,102.490 1.330,102.457 1.439,102.394 1.476,102.328 1.476,102.239 1.487,102.212 1.496,102.159 1.495,102.143 1.499,102.137 1.522,102.132 1.552,102.132 1.553,102.110 1.591,102.109 1.569,102.185 1.563,102.256 1.553,102.281 1.548,102.324 1.551,102.338 1.536,102.407 1.518,102.461 1.474,102.492 1.462,102.495 1.440,102.487 1.431,102.495 1.378,102.494 1.307,102.504</polygon>
+    </area>
+  </info>
+</alert>
