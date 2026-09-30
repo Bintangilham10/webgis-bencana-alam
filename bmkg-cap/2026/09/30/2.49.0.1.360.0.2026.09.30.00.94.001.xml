@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.30.00.94.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-30T09:07:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-30T09:12:00+09:00</effective>
+    <expires>2026-09-30T10:15:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 September 2026, 09:12 WIT di sebagian wilayah Papua Tengah, khususnya di KUALA KENCANA, KWAMKI NARAMA, MIMIKA BARU, TEMBAGAPURA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 September 2026, 10:15 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPT/2026/09/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua Tengah</areaDesc>
+      <polygon>-4.024,137.204 -4.032,137.291 -4.033,137.292 -4.047,137.295 -4.115,137.310 -4.120,137.311 -4.161,137.322 -4.225,137.293 -4.264,137.312 -4.304,137.318 -4.346,137.310 -4.396,137.328 -4.437,137.383 -4.449,137.342 -4.449,137.306 -4.467,137.168 -4.487,137.113 -4.484,137.005 -4.495,136.952 -4.495,136.952 -4.433,136.937 -4.396,136.933 -4.326,136.980 -4.287,136.965 -4.248,136.963 -4.223,136.945 -4.173,136.928 -4.130,136.919 -4.125,136.972 -4.088,137.027 -4.021,137.124 -4.024,137.204</polygon>
+      <polygon>-4.618,136.837 -4.618,136.837 -4.618,136.837 -4.618,136.837 -4.619,136.837 -4.620,136.838 -4.620,136.839 -4.620,136.839 -4.620,136.839 -4.621,136.839 -4.622,136.839 -4.622,136.840 -4.622,136.840 -4.622,136.840 -4.622,136.841 -4.623,136.841 -4.624,136.840 -4.623,136.840 -4.623,136.839 -4.624,136.839 -4.624,136.839 -4.624,136.839 -4.624,136.839 -4.625,136.840 -4.625,136.840 -4.625,136.840 -4.625,136.841 -4.625,136.842 -4.625,136.842 -4.625,136.842 -4.625,136.842 -4.625,136.842 -4.625,136.842 -4.625,136.842 -4.625,136.842 -4.625,136.842 -4.626,136.841 -4.626,136.841 -4.627,136.841 -4.627,136.841 -4.628,136.841 -4.628,136.841 -4.627,136.840 -4.627,136.840 -4.628,136.839 -4.628,136.839 -4.628,136.838 -4.628,136.838 -4.628,136.838 -4.628,136.834 -4.629,136.823 -4.628,136.807 -4.629,136.805 -4.630,136.794 -4.629,136.766 -4.625,136.733 -4.607,136.735 -4.579,136.747 -4.577,136.753 -4.594,136.802 -4.580,136.818 -4.575,136.831 -4.605,136.839 -4.618,136.837</polygon>
+      <polygon>-4.130,136.919 -4.173,136.928 -4.223,136.945 -4.248,136.963 -4.287,136.965 -4.326,136.980 -4.396,136.933 -4.433,136.937 -4.495,136.952 -4.497,136.903 -4.500,136.890 -4.498,136.842 -4.498,136.807 -4.497,136.789 -4.497,136.788 -4.497,136.788 -4.468,136.805 -4.464,136.802 -4.455,136.772 -4.429,136.747 -4.345,136.707 -4.290,136.672 -4.250,136.661 -4.218,136.656 -4.218,136.649 -4.218,136.671 -4.189,136.703 -4.146,136.726 -4.127,136.731 -4.138,136.824 -4.130,136.919</polygon>
+      <polygon>-4.495,136.952 -4.535,136.935 -4.539,136.938 -4.536,136.933 -4.544,136.906 -4.549,136.899 -4.557,136.897 -4.546,136.870 -4.524,136.856 -4.556,136.835 -4.575,136.831 -4.580,136.818 -4.594,136.802 -4.531,136.802 -4.533,136.839 -4.511,136.846 -4.498,136.847 -4.498,136.842 -4.500,136.890 -4.497,136.903 -4.495,136.952 -4.495,136.952</polygon>
+    </area>
+  </info>
+</alert>
