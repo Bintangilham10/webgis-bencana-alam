@@ -1,0 +1,1895 @@
+/* ---------- Halaman depan: tur produk ---------- */
+/* Lapisan pekat di atas aplikasi yang sudah berjalan (di bawah layar pembuka).
+   Visual utamanya tangkapan layar aplikasi asli dalam bingkai browser dan HP
+   (web/public/images/landing/, versi gelap dan terang mengikuti tema). Warna
+   sama dengan aplikasi: netral grafit, satu aksen biru, titik kuning dari logo;
+   tanpa gradien atau efek cahaya. Keadaan tersembunyi hanya berlaku di bawah
+   .lp-motion, jadi "kurangi gerakan" langsung menampilkan semuanya. */
+
+/* Jari-jari lubang saat "Buka peta"; didaftarkan supaya bisa dianimasikan. */
+@property --lp-hole {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 0px;
+}
+
+:root,
+[data-theme='dark'] {
+  --lp-bg: #0e1013;
+  --lp-panel: #15181c;
+  --lp-line: rgb(255 255 255 / 0.09);
+  --lp-line-2: rgb(255 255 255 / 0.16);
+}
+
+[data-theme='light'] {
+  --lp-bg: #f6f7f9;
+  --lp-panel: #ffffff;
+  --lp-line: rgb(20 22 26 / 0.09);
+  --lp-line-2: rgb(20 22 26 / 0.16);
+}
+
+/* ---------- Aplikasi di belakangnya ---------- */
+body.has-landing .topbar,
+body.has-landing .sidebar,
+body.has-landing .skip-link,
+body.has-landing #map .leaflet-control:not(.leaflet-control-attribution) {
+  visibility: hidden;
+}
+
+/* Saat lubang membesar: peta sedikit mundur, bilah atas dan panel masuk.
+   translate/scale terpisah dari transform, jadi posisi lembar bawah di HP
+   (transform) tidak terganggu. */
+body.is-arriving #map {
+  animation: lp-map-in 1.2s var(--ease-out) both;
+}
+
+body.is-arriving .topbar {
+  animation: lp-drop-in 0.6s var(--ease-out) 0.3s both;
+}
+
+body.is-arriving .sidebar {
+  animation: lp-panel-in 0.7s var(--ease-out) 0.4s both;
+}
+
+body.is-arriving #map .leaflet-control:not(.leaflet-control-attribution) {
+  animation: lp-fade-in 0.5s ease 0.65s both;
+}
+
+@keyframes lp-map-in {
+  from {
+    scale: 1.08;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes lp-drop-in {
+  from {
+    opacity: 0;
+    translate: 0 -14px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes lp-panel-in {
+  from {
+    opacity: 0;
+    translate: -28px 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes lp-sheet-in {
+  from {
+    opacity: 0;
+    translate: 0 48px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes lp-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ---------- Wadah ---------- */
+.landing {
+  --lp-nav-h: 72px;
+  --lp-x: clamp(16px, 4vw, 48px);
+  position: fixed;
+  z-index: 90;
+  inset: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--lp-bg);
+}
+
+.landing[hidden] {
+  display: none;
+}
+
+/* Lubang lingkaran dari tombol yang ditekan; aplikasi terlihat di dalamnya. */
+.landing.is-leaving {
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(circle at var(--hole-x) var(--hole-y), transparent var(--lp-hole), #000 calc(var(--lp-hole) + 0.5px));
+  mask-image: radial-gradient(circle at var(--hole-x) var(--hole-y), transparent var(--lp-hole), #000 calc(var(--lp-hole) + 0.5px));
+  animation: lp-hole 0.95s cubic-bezier(0.65, 0, 0.25, 1) both;
+}
+
+@keyframes lp-hole {
+  to {
+    --lp-hole: var(--hole-r);
+  }
+}
+
+/* Garis biru tipis mengikuti tepi lubang (lingkaran penuh yang diskalakan). */
+.lp-hole-ring {
+  position: fixed;
+  z-index: 91;
+  top: 0;
+  left: 0;
+  width: calc(var(--hole-r) * 2);
+  height: calc(var(--hole-r) * 2);
+  margin: calc(var(--hole-r) * -1) 0 0 calc(var(--hole-r) * -1);
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  pointer-events: none;
+  translate: var(--hole-x) var(--hole-y);
+  animation: lp-hole-ring 0.95s cubic-bezier(0.65, 0, 0.25, 1) both;
+}
+
+@keyframes lp-hole-ring {
+  from {
+    opacity: 1;
+    scale: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    scale: 1;
+  }
+}
+
+.lp-wrap {
+  width: min(1240px, 100% - var(--lp-x) * 2);
+  margin-inline: auto;
+}
+
+/* ---------- Tombol dan tautan ---------- */
+.lp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 22px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    scale 0.2s var(--ease-spring);
+}
+
+.lp-btn:active {
+  scale: 0.97;
+}
+
+.lp-btn--primary {
+  color: var(--primary-ink);
+  background: var(--primary-fill);
+}
+
+.lp-btn--primary:hover {
+  background: var(--primary-fill-hover);
+}
+
+.lp-btn .icon {
+  transition: translate 0.3s var(--ease-out);
+}
+
+.lp-btn:hover .icon {
+  translate: 4px 0;
+}
+
+.lp-btn--ghost {
+  color: var(--ink);
+  border-color: var(--lp-line-2);
+  background: transparent;
+}
+
+.lp-btn--ghost:hover {
+  background: var(--surface-2);
+}
+
+.lp-btn--sm {
+  min-height: 38px;
+  padding: 0 16px;
+  font-size: 13.5px;
+}
+
+.lp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  border: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary);
+  background: none;
+  text-decoration: none;
+}
+
+.lp-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* ---------- Bilah atas ---------- */
+/* Tiga bagian: merek di kiri, menu tepat di tengah, status dan aksi di kanan.
+   Garis biru di bawah menu menandai bagian yang sedang dibaca; garis tipis
+   di dasar header menunjukkan kemajuan baca. */
+.lp-nav {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  height: var(--lp-nav-h);
+  border-bottom: 1px solid transparent;
+  background: var(--lp-bg);
+  transition: border-color 0.3s ease;
+}
+
+.lp-nav.is-stuck {
+  border-bottom-color: var(--lp-line);
+}
+
+.lp-nav__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+  width: min(1440px, 100% - var(--lp-x) * 2);
+  height: 100%;
+}
+
+.lp-nav__progress {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary);
+  transform-origin: 0 50%;
+  scale: var(--read, 0) 1;
+}
+
+.lp-brand {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 12px;
+  justify-self: start;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  white-space: nowrap;
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.lp-brand__text {
+  display: grid;
+  line-height: 1.15;
+}
+
+.lp-brand__text small {
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--ink-3);
+}
+
+.lp-brand .brand-mark {
+  width: 32px;
+  height: 32px;
+}
+
+.lp-brand:hover .brand-ring,
+.lp-brand:focus-visible .brand-ring {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: logo-ping 0.9s var(--ease-out);
+}
+
+.lp-nav__links {
+  position: relative;
+  display: flex;
+  gap: 4px;
+}
+
+.lp-nav__links a {
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-2);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.lp-nav__links a:hover,
+.lp-nav__links a[aria-current='true'] {
+  color: var(--ink);
+}
+
+/* Garis penanda bagian aktif, bergeser antar-tautan. */
+.lp-nav__ink {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: var(--w, 0);
+  height: 2px;
+  border-radius: 1px;
+  background: var(--primary);
+  opacity: 0;
+  translate: var(--x, 0) 0;
+  transition:
+    translate 0.45s var(--ease-out),
+    width 0.45s var(--ease-out),
+    opacity 0.3s ease;
+}
+
+.lp-nav__ink.is-on {
+  opacity: 1;
+}
+
+.lp-nav__actions {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 10px;
+}
+
+/* Status data langsung: teks biasa dengan titik hijau, waktu dari sinkron gempa terakhir. */
+.lp-nav__live {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 8px 0 0;
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  color: var(--ink-3);
+}
+
+.lp-nav__pulse {
+  flex: none;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ok);
+}
+
+.lp-nav .lp-btn--sm .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.lp-icon-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--lp-line-2);
+  background: transparent;
+}
+
+/* ---------- Tangkapan layar: versi gelap/terang mengikuti tema ---------- */
+.lp-shot {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+}
+
+.lp-shot--light,
+[data-theme='light'] .lp-shot--dark {
+  display: none;
+}
+
+[data-theme='light'] .lp-shot--light {
+  display: block;
+}
+
+/* Mockup MacBook dilihat dari depan. Tutup: bezel kaca hitam dengan tepi
+   logam tipis, bilah menu + notch kamera di atas layar. Badan: pelat tipis
+   setebal rata, sedikit lebih lebar dari tutup, ujung kiri-kanan membulat,
+   sisi bawah lebih gelap (lengkung ke bawah), cekungan jari di tengah depan.
+   Space gray di tema gelap, silver di tema terang. Warna datar; ukuran dalam
+   cqw dari lebar badan. */
+.lp-laptop {
+  --lid-edge: #4d5158;
+  --body: #767b83;
+  --body-top: #a0a5ad;
+  --body-under: #595d64;
+  --groove: #5c6067;
+  container-type: inline-size;
+  margin: 0;
+}
+
+[data-theme='light'] .lp-laptop {
+  --lid-edge: #aeb3ba;
+  --body: #d3d6db;
+  --body-top: #eef0f2;
+  --body-under: #b3b7be;
+  --groove: #b4b9c0;
+}
+
+.lp-laptop__lid {
+  width: 88%;
+  margin-inline: auto;
+  padding: 1.05cqw 1.05cqw 1.6cqw;
+  border-radius: 1.9cqw 1.9cqw 0 0;
+  background: #0a0b0d;
+  box-shadow: 0 0 0 max(1px, 0.14cqw) var(--lid-edge);
+}
+
+.lp-laptop__screen {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.8cqw 0.8cqw 0 0;
+  background: var(--map-bg);
+}
+
+.lp-laptop__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.7cqw;
+  padding: 0 1.1cqw;
+  font-size: max(5px, 0.75cqw);
+  color: #e9eaed;
+  background: #0b0c0e;
+}
+
+[data-theme='light'] .lp-laptop__bar {
+  color: #17191d;
+  background: #eceef1;
+}
+
+.lp-laptop__icons {
+  display: flex;
+  align-items: center;
+  gap: 0.6cqw;
+}
+
+.lp-laptop__icons svg {
+  height: max(4px, 0.7cqw);
+  width: auto;
+}
+
+/* Notch di tengah bilah menu, dengan kamera depan. */
+.lp-laptop__notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 9%;
+  height: 1.7cqw;
+  border-radius: 0 0 0.55cqw 0.55cqw;
+  background: #0a0b0d;
+  translate: -50% 0;
+}
+
+.lp-laptop__notch::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max(3px, 0.45cqw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #26334a;
+  box-shadow: 0 0 0 max(1px, 0.14cqw) #17191d;
+  translate: -50% -50%;
+}
+
+.lp-laptop__view {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.lp-laptop__base {
+  position: relative;
+  height: 1.6cqw;
+  overflow: hidden;
+  border-radius: 0.15cqw 0.15cqw 3cqw 3cqw / 0.15cqw 0.15cqw 1.6cqw 1.6cqw;
+  background: var(--body);
+  box-shadow:
+    inset 0 max(1px, 0.12cqw) 0 var(--body-top),
+    0 1.4cqw 2.4cqw -1.2cqw rgb(0 0 0 / 0.5);
+}
+
+/* Sisi bawah pelat yang melengkung ke dalam. */
+.lp-laptop__base::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 38%;
+  background: var(--body-under);
+}
+
+/* Cekungan jari untuk membuka tutup. */
+.lp-laptop__base::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  width: 13%;
+  height: 48%;
+  border-radius: 0 0 1cqw 1cqw;
+  background: var(--groove);
+  translate: -50% 0;
+}
+
+/* Mockup tablet 16:10 mendatar (seperti tablet Android). Semua warna datar:
+   rangka aluminium dari lapisan garis (box-shadow), bezel kaca hitam, tombol
+   daya dan volume menonjol di sisi atas, lensa kamera berlapis, status bar
+   dan garis navigasi di dalam layar. Sudut layar = sudut bodi − bezel. */
+.lp-tablet {
+  /* Ukuran relatif lebar tablet (container .lp-hero__stage), jadi proporsinya
+     sama di semua layar. */
+  --bezel: max(6px, 1.35cqw);
+  --rim: max(1.5px, 0.3cqw);
+  --radius: max(14px, 2.9cqw);
+  --metal: #a4a9b1;
+  --metal-edge: #6c7079;
+  position: relative;
+  margin: 0;
+  padding: var(--bezel);
+  border-radius: var(--radius);
+  background: #07080a;
+  box-shadow:
+    inset 0 0 0 1px #1e2126,
+    0 0 0 var(--rim) var(--metal),
+    0 0 0 calc(var(--rim) + 1px) var(--metal-edge),
+    var(--shadow-3);
+}
+
+[data-theme='light'] .lp-tablet {
+  --metal: #c3c7cd;
+  --metal-edge: #9aa0a8;
+}
+
+/* Tombol di sisi atas (tampak menonjol dari rangka). */
+.lp-tablet__key {
+  position: absolute;
+  bottom: 100%;
+  height: calc(var(--rim) + 2px);
+  margin-bottom: var(--rim);
+  border: 1px solid var(--metal-edge);
+  border-bottom: 0;
+  border-radius: 3px 3px 0 0;
+  background: var(--metal);
+}
+
+.lp-tablet__key--power {
+  right: 17%;
+  width: 4.5%;
+}
+
+.lp-tablet__key--volume {
+  right: 23%;
+  width: 8%;
+}
+
+/* Kamera depan di bezel atas: cincin gelap, lensa, pantulan titik kecil (datar). */
+.lp-tablet__cam {
+  position: absolute;
+  top: calc(var(--bezel) / 2);
+  left: 50%;
+  width: max(3.5px, 0.55cqw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #14161a;
+  box-shadow: 0 0 0 1.5px #23262c;
+  translate: -50% -50%;
+}
+
+.lp-tablet__cam::after {
+  content: '';
+  position: absolute;
+  inset: 30%;
+  border-radius: 50%;
+  background: #2c3a52;
+}
+
+.lp-tablet__screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: calc(var(--radius) - var(--bezel));
+  background: var(--map-bg);
+}
+
+.lp-tablet__status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.85cqw;
+  padding: 0 1.7cqw;
+  font-size: max(5px, 0.88cqw);
+  color: #e9eaed;
+  background: #0b0c0e;
+}
+
+[data-theme='light'] .lp-tablet__status {
+  color: #17191d;
+  background: #eceef1;
+}
+
+.lp-tablet__status b {
+  font-weight: 700;
+}
+
+.lp-tablet__icons {
+  display: flex;
+  align-items: center;
+  gap: 0.45cqw;
+}
+
+.lp-tablet__icons svg {
+  height: max(4px, 0.8cqw);
+  width: auto;
+}
+
+.lp-tablet__app {
+  position: relative;
+  aspect-ratio: 16 / 10;
+}
+
+/* Garis navigasi gestur di bawah layar. */
+.lp-tablet__home {
+  position: absolute;
+  bottom: 0.5cqw;
+  left: 50%;
+  width: 14%;
+  height: max(1.5px, 0.28cqw);
+  border-radius: 2px;
+  background: rgb(255 255 255 / 0.7);
+  translate: -50% 0;
+}
+
+[data-theme='light'] .lp-tablet__home {
+  background: rgb(20 22 26 / 0.55);
+}
+
+/* ---------- Hero ---------- */
+.lp-hero {
+  padding-block: clamp(24px, 6vh, 72px) clamp(56px, 9vh, 96px);
+  overflow: clip;
+}
+
+.lp-hero__copy {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.lp-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+/* Jarak flex dikurangi supaya " · " terbaca seperti satu spasi. */
+.lp-kicker__long {
+  margin-left: -5px;
+}
+
+.lp-dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--logo-dot);
+}
+
+.lp-title {
+  max-width: 18ch;
+  margin-top: 20px;
+  font-size: clamp(36px, min(5.2vw, 8vh), 72px);
+  font-weight: 800;
+  line-height: 1.03;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.lp-lead {
+  max-width: 58ch;
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+
+.lp-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+/* Angka langsung, satu baris dengan garis pemisah. */
+.lp-live {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 32px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13.5px;
+  color: var(--ink-3);
+}
+
+.lp-live li {
+  padding: 2px 16px;
+}
+
+.lp-live li + li {
+  border-left: 1px solid var(--lp-line-2);
+}
+
+.lp-live strong {
+  margin-right: 4px;
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+.lp-hero__stage {
+  container-type: inline-size;
+  margin-top: clamp(40px, 7vh, 72px);
+  perspective: 1800px;
+}
+
+/* Bingkai mulai miring ke belakang lalu tegak mengikuti gulir (--tilt 1 → 0). */
+.lp-hero__frame {
+  transform-origin: 50% 0;
+}
+
+.lp-motion .lp-hero__frame {
+  transform: rotateX(calc(var(--tilt, 1) * 16deg)) scale(calc(1 - var(--tilt, 1) * 0.08));
+}
+
+.lp-caption {
+  margin-top: 14px;
+  font-size: 12.5px;
+  text-align: center;
+  color: var(--ink-3);
+}
+
+/* ---------- Tur fitur ---------- */
+.lp-tour {
+  padding-top: clamp(72px, 12vh, 128px);
+  border-top: 1px solid var(--lp-line);
+  scroll-margin-top: var(--lp-nav-h);
+}
+
+.lp-tour__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+  gap: clamp(28px, 4vw, 64px);
+}
+
+.lp-tour__steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lp-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
+}
+
+.lp-step:first-child {
+  min-height: 60vh;
+  justify-content: flex-start;
+}
+
+.lp-step.is-current {
+  opacity: 1;
+}
+
+.lp-step__n {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.lp-step h3 {
+  margin-top: 12px;
+  font-size: clamp(26px, 2.6vw, 36px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.lp-step p:not([class]) {
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+
+.lp-step__live {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--lp-line-2);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Tangkapan per langkah hanya di layar sempit (tanpa bingkai yang menempel). */
+.lp-step__shot {
+  display: none;
+}
+
+.lp-tour__sticky {
+  position: sticky;
+  top: calc(var(--lp-nav-h) + (100svh - var(--lp-nav-h)) / 2);
+  translate: 0 -50%;
+  margin-top: 30vh;
+}
+
+/* Geser mendatar: tiap layar di posisi (--i − --current) × 100%. */
+.lp-screen {
+  position: absolute;
+  inset: 0;
+  translate: calc((var(--i) - var(--current)) * 100%) 0;
+  transition: translate 0.9s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.lp-tour__dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.lp-tour__dots span {
+  width: 24px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--lp-line-2);
+  transition:
+    background-color 0.4s ease,
+    width 0.4s var(--ease-out);
+}
+
+.lp-tour__dots span.is-current {
+  width: 48px;
+  background: var(--primary);
+}
+
+/* ---------- Bagian umum ---------- */
+.lp-section {
+  padding-block: clamp(80px, 13vh, 140px);
+  border-top: 1px solid var(--lp-line);
+  scroll-margin-top: var(--lp-nav-h);
+}
+
+.lp-section--alt {
+  background: var(--lp-panel);
+}
+
+.lp-section:focus,
+.lp-tour:focus {
+  outline: none;
+}
+
+.lp-head {
+  margin-bottom: clamp(24px, 5vh, 48px);
+}
+
+.lp-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.lp-eyebrow::before {
+  content: '';
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--logo-dot);
+}
+
+.lp-h2 {
+  max-width: 20ch;
+  margin-top: 16px;
+  font-size: clamp(30px, 3.8vw, 52px);
+  font-weight: 800;
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+/* ---------- Di HP ---------- */
+.lp-phones {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  align-items: center;
+  gap: clamp(32px, 5vw, 80px);
+}
+
+.lp-checks {
+  display: grid;
+  gap: 14px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+.lp-checks li {
+  display: flex;
+  gap: 12px;
+}
+
+.lp-checks .icon {
+  margin-top: 2px;
+  color: var(--primary);
+}
+
+.lp-phones__row {
+  display: flex;
+  justify-content: center;
+  gap: clamp(16px, 3vw, 36px);
+}
+
+/* Mockup HP Android (seperti tablet di hero): bezel kaca hitam, rangka logam
+   dari lapisan box-shadow, tombol daya di kanan dan volume di kiri, kamera
+   punch-hole di tengah status bar, garis navigasi gestur. Warna datar;
+   ukuran dalam cqw dari lebar HP. Status bar di atas tangkapan (bukan
+   menimpanya), jadi layar aplikasi tampil utuh. */
+.lp-phone {
+  --metal: #a4a9b1;
+  --metal-edge: #6c7079;
+  --rim: max(1.5px, 0.9cqw);
+  container-type: inline-size;
+  width: min(260px, 44%);
+  margin: 0;
+}
+
+[data-theme='light'] .lp-phone {
+  --metal: #c3c7cd;
+  --metal-edge: #9aa0a8;
+}
+
+.lp-phone__body {
+  position: relative;
+  padding: 3.2cqw;
+  border-radius: 14cqw;
+  background: #07080a;
+  box-shadow:
+    inset 0 0 0 1px #1e2126,
+    0 0 0 var(--rim) var(--metal),
+    0 0 0 calc(var(--rim) + 1px) var(--metal-edge),
+    var(--shadow-3);
+}
+
+/* Tombol samping menonjol dari rangka. */
+.lp-phone__key {
+  position: absolute;
+  width: calc(var(--rim) + 1.4cqw);
+  border: 1px solid var(--metal-edge);
+  background: var(--metal);
+}
+
+.lp-phone__key--power {
+  top: 24%;
+  left: calc(100% + var(--rim) - 1px);
+  height: 9%;
+  border-left: 0;
+  border-radius: 0 1cqw 1cqw 0;
+}
+
+.lp-phone__key--vol {
+  top: 17%;
+  right: calc(100% + var(--rim) - 1px);
+  height: 15%;
+  border-right: 0;
+  border-radius: 1cqw 0 0 1cqw;
+}
+
+.lp-phone__screen {
+  position: relative;
+  overflow: hidden;
+  border-radius: 11cqw;
+  background: var(--map-bg);
+}
+
+.lp-phone__status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9cqw;
+  padding: 0 7cqw;
+  font-size: 3.6cqw;
+  color: #e9eaed;
+  background: #0b0c0e;
+}
+
+[data-theme='light'] .lp-phone__status {
+  color: #17191d;
+  background: #eceef1;
+}
+
+.lp-phone__status b {
+  font-weight: 700;
+}
+
+.lp-phone__icons {
+  display: flex;
+  align-items: center;
+  gap: 1.4cqw;
+}
+
+.lp-phone__icons svg {
+  height: 3.1cqw;
+  width: auto;
+}
+
+/* Kamera punch-hole di tengah status bar. */
+.lp-phone__cam {
+  position: absolute;
+  top: 4.5cqw;
+  left: 50%;
+  width: 4.2cqw;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #07080a;
+  translate: -50% -50%;
+}
+
+.lp-phone__cam::after {
+  content: '';
+  position: absolute;
+  inset: 32%;
+  border-radius: 50%;
+  background: #26334a;
+}
+
+.lp-phone__app {
+  aspect-ratio: 600 / 1298;
+}
+
+.lp-phone__home {
+  position: absolute;
+  bottom: 2.2cqw;
+  left: 50%;
+  width: 34%;
+  height: 1.4cqw;
+  border-radius: 1cqw;
+  background: rgb(20 22 26 / 0.55);
+  translate: -50% 0;
+}
+
+[data-theme='dark'] .lp-phone__home {
+  background: rgb(255 255 255 / 0.7);
+}
+
+.lp-phone--raised {
+  margin-top: -48px;
+}
+
+/* ---------- Cara kerja ---------- */
+.lp-cara__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px 40px;
+  margin-bottom: clamp(32px, 6vh, 56px);
+}
+
+.lp-cara__head .lp-head {
+  margin-bottom: 0;
+}
+
+/* Keterangan run terakhir indikasi SIGAP (data langsung). */
+.lp-run {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 46ch;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-2);
+}
+
+/* Garis alur: abu-abu di belakang, biru menyapu dari kiri ke kanan saat
+   terlihat; titik tiap langkah menyala saat garis melewatinya. */
+.lp-pipe {
+  --node: 34px;
+  --gap: clamp(14px, 2vw, 24px);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lp-pipe::before,
+.lp-pipe::after {
+  content: '';
+  position: absolute;
+  top: calc(var(--node) / 2 - 1px);
+  right: calc((100% - 3 * var(--gap)) / 4 - var(--node) / 2);
+  left: calc(var(--node) / 2);
+  height: 2px;
+  transform-origin: 0 50%;
+}
+
+.lp-pipe::before {
+  background: var(--lp-line-2);
+}
+
+.lp-pipe::after {
+  background: var(--primary);
+  scale: 0 1;
+  transition: scale 1.6s cubic-bezier(0.65, 0, 0.35, 1) 0.2s;
+}
+
+.lp-pipe.is-in::after {
+  scale: 1 1;
+}
+
+.lp-pipe__step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.lp-pipe__node {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: var(--node);
+  height: var(--node);
+  border: 1px solid var(--lp-line-2);
+  border-radius: 50%;
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-3);
+  background: var(--lp-bg);
+  transition:
+    background-color 0.4s ease,
+    border-color 0.4s ease,
+    color 0.4s ease;
+  transition-delay: calc(0.2s + var(--n) * 0.5s);
+}
+
+.lp-pipe.is-in .lp-pipe__node {
+  border-color: var(--primary-fill);
+  color: var(--primary-ink);
+  background: var(--primary-fill);
+}
+
+.lp-pipe__step h3 {
+  margin-top: 22px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.lp-pipe__step > p:not([class]) {
+  max-width: 34ch;
+  margin-top: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+
+/* Satu baris fakta per langkah, teks biasa. */
+.lp-pipe__fact {
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-3);
+}
+
+.lp-pipe__fact b {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.lp-pipe__fact code {
+  font-family: var(--mono);
+  font-size: 0.95em;
+  color: var(--ink);
+}
+
+/* Teks langkah muncul berurutan mengikuti garis (hanya bila gerakan tidak dikurangi). */
+.lp-motion .lp-pipe[data-reveal]:not(.is-in) {
+  opacity: 1;
+  translate: none;
+}
+
+.lp-motion .lp-pipe:not(.is-in) .lp-pipe__step > :not(.lp-pipe__node) {
+  opacity: 0;
+  translate: 0 12px;
+}
+
+.lp-motion .lp-pipe__step > :not(.lp-pipe__node) {
+  transition:
+    opacity 0.7s ease calc(0.2s + var(--n) * 0.5s),
+    translate 0.7s var(--ease-out) calc(0.2s + var(--n) * 0.5s);
+}
+
+.lp-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 36px;
+  font-size: 14px;
+  color: var(--ink-3);
+}
+
+/* ---------- Sumber data ---------- */
+.lp-sources {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+  align-items: start;
+  gap: clamp(28px, 5vw, 80px);
+}
+
+.lp-sources__head {
+  position: sticky;
+  top: calc(var(--lp-nav-h) + 32px);
+}
+
+.lp-sources__intro {
+  max-width: 38ch;
+  margin-top: 18px;
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+
+.lp-srcgroup + .lp-srcgroup {
+  margin-top: 44px;
+}
+
+.lp-srcgroup__title {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--lp-line-2);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.lp-srclist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Satu baris per sumber: nama, data yang diambil, jadwal pembaruan. */
+.lp-src {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 5fr) minmax(0, 2.4fr);
+  align-items: baseline;
+  gap: 8px 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--lp-line);
+}
+
+.lp-src__name {
+  display: inline;
+  font-size: 15.5px;
+  font-weight: 750;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+/* Ikon ikut baris terakhir nama bila nama turun baris. */
+a.lp-src__name .icon {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-left: 6px;
+  vertical-align: -1px;
+  color: var(--ink-3);
+  transition:
+    color 0.2s ease,
+    translate 0.2s var(--ease-out);
+}
+
+a.lp-src__name:hover {
+  color: var(--primary);
+}
+
+a.lp-src__name:hover .icon {
+  color: var(--primary);
+  translate: 2px -2px;
+}
+
+.lp-src__data {
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+.lp-src__when {
+  display: grid;
+  gap: 2px;
+  justify-items: end;
+  text-align: right;
+}
+
+.lp-src__when b {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.lp-src__when small {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-3);
+}
+
+/* Titik hijau: sumber yang disinkronkan otomatis oleh server. */
+.lp-src__when--live small::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ok);
+}
+
+/* ---------- Penutup ---------- */
+/* Ajakan akhir: judul dan penjelasan di kiri, pencarian di kanan. Di bawahnya
+   baris keselamatan (catatan resmi + nomor darurat) berupa teks biasa. */
+.lp-final {
+  padding-block: clamp(80px, 13vh, 140px) clamp(40px, 6vh, 64px);
+  border-top: 1px solid var(--lp-line);
+}
+
+.lp-final__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  align-items: end;
+  gap: clamp(32px, 5vw, 80px);
+}
+
+.lp-final__lead {
+  max-width: 40ch;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+
+.lp-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 7px 7px 18px;
+  border: 1px solid var(--lp-line-2);
+  border-radius: 14px;
+  background: var(--lp-panel);
+  transition: border-color 0.2s ease;
+}
+
+.lp-search:focus-within {
+  border-color: var(--primary);
+}
+
+.lp-search__icon {
+  color: var(--ink-3);
+}
+
+.lp-search input {
+  flex: 1;
+  min-width: 0;
+  height: 52px;
+  padding: 0 6px;
+  border: 0;
+  font-size: 17px;
+  background: transparent;
+  outline: none;
+}
+
+.lp-search input::placeholder {
+  color: var(--ink-3);
+}
+
+.lp-search .lp-btn {
+  min-height: 52px;
+}
+
+/* Contoh pencarian: tautan teks, bukan tombol berbingkai. */
+.lp-examples {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 16px;
+  margin-top: 14px;
+  font-size: 13.5px;
+  color: var(--ink-3);
+}
+
+.lp-examples button {
+  padding: 0;
+  border: 0;
+  font-weight: 600;
+  color: var(--ink-2);
+  background: none;
+  text-decoration: underline;
+  text-decoration-color: var(--lp-line-2);
+  text-underline-offset: 4px;
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
+}
+
+.lp-examples button:hover {
+  color: var(--primary);
+  text-decoration-color: currentColor;
+}
+
+.lp-final__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin-top: 26px;
+}
+
+.lp-final__safety {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 40px;
+  margin-top: clamp(56px, 9vh, 96px);
+  padding-top: 22px;
+  border-top: 1px solid var(--lp-line);
+}
+
+.lp-final__warn {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 60ch;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+
+.lp-final__warn .icon {
+  margin-top: 1px;
+  color: var(--logo-dot);
+}
+
+.lp-final__warn strong {
+  color: var(--ink);
+}
+
+/* ---------- Kaki halaman ---------- */
+/* Sederhana: merek, beberapa tautan, kembali ke atas; lalu satu baris kecil. */
+.lp-footer {
+  padding-block: 32px 28px;
+  border-top: 1px solid var(--lp-line);
+}
+
+.lp-footer__wrap {
+  width: min(1440px, 100% - var(--lp-x) * 2);
+  margin-inline: auto;
+}
+
+.lp-footer__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+}
+
+.lp-brand--sm {
+  font-size: 15px;
+}
+
+.lp-brand--sm .brand-mark {
+  width: 26px;
+  height: 26px;
+}
+
+/* Nomor darurat: angka tebal, bisa langsung ditekan di HP. */
+.lp-footer__tel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 24px;
+  font-size: 13.5px;
+  color: var(--ink-3);
+}
+
+.lp-footer__tel > span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lp-footer__tel a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  color: var(--ink-2);
+  text-decoration: none;
+}
+
+.lp-footer__tel b {
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  transition: color 0.2s ease;
+}
+
+.lp-footer__tel a:hover b {
+  color: var(--primary);
+}
+
+.lp-footer__top-link {
+  font-size: 14px;
+  color: var(--ink-2);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.lp-footer__top-link:hover {
+  color: var(--primary);
+}
+
+.lp-footer__top-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lp-footer__top-link .icon {
+  width: 16px;
+  height: 16px;
+  transition: translate 0.3s var(--ease-out);
+}
+
+.lp-footer__top-link:hover .icon {
+  translate: 0 -3px;
+}
+
+.lp-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6px 32px;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--lp-line);
+  font-size: 12.5px;
+  color: var(--ink-3);
+}
+
+.lp-footer__bottom a {
+  font-weight: 700;
+  color: var(--ink-2);
+  text-decoration: none;
+}
+
+@media (max-width: 1099.98px) {
+  .lp-final__grid {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .lp-search {
+    padding-left: 14px;
+  }
+
+  .lp-search input {
+    font-size: 16px;
+  }
+}
+
+/* ---------- Gerak (hanya bila gerakan tidak dikurangi) ---------- */
+.lp-motion:not(.is-playing) .lp-nav,
+.lp-motion:not(.is-playing) [data-in],
+.lp-motion:not(.is-playing) .lp-hero__stage {
+  opacity: 0;
+}
+
+.lp-motion:not(.is-playing) [data-in] {
+  translate: 0 14px;
+}
+
+.lp-motion:not(.is-playing) .lp-hero__stage {
+  translate: 0 60px;
+}
+
+.lp-motion .lp-nav {
+  transition:
+    opacity 0.8s ease,
+    border-color 0.3s ease;
+}
+
+.lp-motion [data-in] {
+  transition:
+    opacity 0.9s ease calc(var(--d, 0) * 90ms + 150ms),
+    translate 0.9s var(--ease-out) calc(var(--d, 0) * 90ms + 150ms);
+}
+
+.lp-motion .lp-hero__stage {
+  transition:
+    opacity 1s ease 0.5s,
+    translate 1.4s var(--ease-out) 0.5s;
+}
+
+.lp-motion [data-reveal]:not(.is-in) {
+  opacity: 0;
+  translate: 0 18px;
+}
+
+.lp-motion [data-reveal] {
+  transition:
+    opacity 0.8s ease calc(var(--d, 0) * 100ms),
+    translate 0.8s var(--ease-out) calc(var(--d, 0) * 100ms);
+}
+
+/* ---------- Layar sedang ---------- */
+@media (max-width: 1099.98px) {
+  .lp-phones,
+  .lp-sources {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .lp-sources__head {
+    position: static;
+  }
+}
+
+@media (max-width: 959.98px) {
+  /* Tanpa bingkai menempel: tiap langkah membawa tangkapannya sendiri. */
+  .lp-tour__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .lp-tour__stage {
+    display: none;
+  }
+
+  .lp-step,
+  .lp-step:first-child {
+    min-height: 0;
+    padding-bottom: 56px;
+    opacity: 1;
+  }
+
+  .lp-step__shot {
+    display: block;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 1279.98px) {
+  .lp-nav__live {
+    display: none;
+  }
+}
+
+@media (max-width: 899.98px) {
+  .lp-nav__inner {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .lp-nav__links {
+    display: none;
+  }
+
+  /* Bertumpuk: titik di kiri, kartu di kanannya, disambung garis tegak. */
+  .lp-pipe {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .lp-pipe::before,
+  .lp-pipe::after {
+    display: none;
+  }
+
+  .lp-pipe__step {
+    display: grid;
+    grid-template-columns: var(--node) minmax(0, 1fr);
+    align-items: start;
+    column-gap: 16px;
+    padding-bottom: 8px;
+  }
+
+  .lp-pipe__step > :not(.lp-pipe__node) {
+    grid-column: 2;
+  }
+
+  .lp-pipe__node {
+    grid-row: 1 / span 3;
+  }
+
+  .lp-pipe__step h3 {
+    margin-top: 5px;
+  }
+
+  .lp-pipe__step:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: var(--node);
+    bottom: calc(var(--gap) * -1);
+    left: calc(var(--node) / 2 - 1px);
+    width: 2px;
+    background: var(--lp-line-2);
+  }
+
+}
+
+@media (max-width: 479.98px) {
+  .lp-brand__text small {
+    display: none;
+  }
+}
+
+/* ---------- HP ---------- */
+@media (max-width: 767.98px) {
+  body.is-arriving .sidebar {
+    animation-name: lp-sheet-in;
+  }
+
+  .landing {
+    --lp-nav-h: 60px;
+    font-size: 14px;
+  }
+
+  .lp-brand {
+    font-size: 15px;
+  }
+
+  .lp-kicker {
+    font-size: 11px;
+    letter-spacing: 0.06em;
+  }
+
+  .lp-lead {
+    font-size: 15.5px;
+  }
+
+  .lp-cta .lp-btn {
+    flex: 1 1 auto;
+  }
+
+  /* Nama lengkap sudah ada di paragraf pembuka; di layar sempit cukup "SIGAP Bencana". */
+  .lp-kicker__long {
+    display: none;
+  }
+
+  .lp-live {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .lp-live li {
+    display: grid;
+    align-content: start;
+    gap: 2px;
+    padding: 0 12px;
+  }
+
+  .lp-live li:nth-child(3) {
+    border-left: 0;
+  }
+
+  .lp-live strong {
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: -0.03em;
+  }
+
+  /* Nama dan jadwal sebaris, data di bawahnya. */
+  .lp-src {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .lp-src__data {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .lp-phone--raised {
+    margin-top: 32px;
+  }
+
+}
+
+/* ---------- Kurangi gerakan ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .landing *,
+  .landing *::before,
+  .landing *::after,
+  body.is-arriving * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

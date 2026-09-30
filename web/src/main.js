@@ -8,6 +8,7 @@ import "./styles/layout.css";
 import "./styles/components.css";
 import "./styles/map.css";
 import "./styles/detail.css";
+import "./styles/landing.css";
 
 import L from "leaflet";
 import { createRiskCheck } from "./features/risk-check.js";
@@ -61,6 +62,7 @@ import { LegendControl } from "./map/legend-control.js";
 import { ReadoutControl } from "./map/readouts.js";
 import { MapToolbar } from "./map/toolbar.js";
 import { createFreshness } from "./ui/freshness.js";
+import { createLanding } from "./ui/landing.js";
 import { createLayerPanel } from "./ui/layer-panel.js";
 import { createMarkerFilter } from "./ui/marker-filter.js";
 import { createOverview } from "./ui/overview.js";
@@ -72,87 +74,6 @@ import { createTabs } from "./ui/tabs.js";
 
 const $ = (selector) => document.querySelector(selector);
 const px = (name) => parseFloat(cssVar(name)) || 0;
-
-const landingShell = $("#landing-shell");
-const enterMap = () => {
-  if (!landingShell) return;
-  landingShell.classList.add("is-hidden");
-  document.body.classList.remove("has-landing");
-  const openMap = () => {
-    if (landingShell) landingShell.setAttribute("aria-hidden", "true");
-    if (
-      document.activeElement &&
-      typeof document.activeElement.blur === "function"
-    ) {
-      document.activeElement.blur();
-    }
-  };
-  requestAnimationFrame(openMap);
-};
-
-document.querySelectorAll('[data-action="enter-map"]').forEach((btn) => {
-  btn.addEventListener("click", enterMap);
-});
-
-document.querySelectorAll('[data-action="explore-risk"]').forEach((btn) => {
-  btn.addEventListener("click", () => {
-    enterMap();
-    const pickButton = document.querySelector('[data-action="pick"]');
-    if (pickButton) pickButton.click();
-  });
-});
-
-document
-  .querySelectorAll('[data-action="enter-tab-ikhtisar"]')
-  .forEach((btn) => {
-    btn.addEventListener("click", () => {
-      enterMap();
-      document.querySelector("#tab-ikhtisar")?.click();
-    });
-  });
-
-document
-  .querySelectorAll('[data-action="enter-tab-lapisan"]')
-  .forEach((btn) => {
-    btn.addEventListener("click", () => {
-      enterMap();
-      document.querySelector("#tab-lapisan")?.click();
-    });
-  });
-
-document.querySelectorAll('[data-action="enter-tab-info"]').forEach((btn) => {
-  btn.addEventListener("click", () => {
-    enterMap();
-    document.querySelector("#tab-info")?.click();
-  });
-});
-
-const landingSearchInput = document.querySelector("[data-landing-search]");
-if (landingSearchInput) {
-  landingSearchInput.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-      const val = landingSearchInput.value.trim();
-      enterMap();
-      const mainSearchInput = document.querySelector(".search-input");
-      if (mainSearchInput && val) {
-        mainSearchInput.value = val;
-        mainSearchInput.dispatchEvent(new Event("input", { bubbles: true }));
-        mainSearchInput.focus();
-      }
-    }
-  });
-}
-
-const clockEl = document.querySelector("#landing-clock");
-if (clockEl) {
-  const updateClock = () => {
-    const now = new Date();
-    const timeStr = now.toLocaleTimeString("id-ID", { hour12: false });
-    clockEl.textContent = `WIB ${timeStr}`;
-  };
-  updateClock();
-  setInterval(updateClock, 1000);
-}
 
 const EARTHQUAKE_REFRESH_MS = 60_000;
 const VOLCANO_REFRESH_MS = 10 * 60_000;
@@ -201,230 +122,6 @@ L.Popup.mergeOptions(
 // ---------- Peta dan kontrolnya ----------
 const { map, basemaps } = createMap($("#map"), { theme: currentTheme() });
 
-function initLandingMiniMap(globalMap, onEnterMap) {
-  const container = document.querySelector("#landing-mini-map");
-  if (!container) return;
-
-  const miniMap = L.map(container, {
-    center: [-2.2, 118.0],
-    zoom: 4.8,
-    minZoom: 3,
-    maxZoom: 9,
-    zoomSnap: 0.1,
-    zoomControl: true,
-    attributionControl: true,
-    scrollWheelZoom: false,
-    doubleClickZoom: false,
-  });
-
-  const osmLayer = L.tileLayer(
-    "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-    {
-      maxZoom: 18,
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>',
-    },
-  );
-
-  const satLayer = L.tileLayer(
-    "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-    {
-      maxZoom: 18,
-      attribution:
-        '&copy; <a href="https://www.esri.com" target="_blank" rel="noopener">Esri</a>, Earthstar Geographics',
-    },
-  );
-
-  osmLayer.addTo(miniMap);
-
-  const layerBtns = document.querySelectorAll("[data-radar-layer]");
-  layerBtns.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      const target = btn.dataset.radarLayer;
-      layerBtns.forEach((b) => b.classList.remove("radar-tag--active"));
-      btn.classList.add("radar-tag--active");
-
-      if (target === "satellite") {
-        if (miniMap.hasLayer(osmLayer)) miniMap.removeLayer(osmLayer);
-        satLayer.addTo(miniMap);
-      } else {
-        if (miniMap.hasLayer(satLayer)) miniMap.removeLayer(satLayer);
-        osmLayer.addTo(miniMap);
-      }
-    });
-  });
-
-  // Sunda Megathrust subduction trench line
-  const trenchCoords = [
-    [10.2, 92.4],
-    [5.8, 94.6],
-    [2.1, 96.5],
-    [-0.5, 98.2],
-    [-3.2, 100.4],
-    [-6.3, 103.5],
-    [-7.8, 105.9],
-    [-9.2, 108.5],
-    [-9.8, 111.5],
-    [-10.4, 115.0],
-    [-10.9, 118.5],
-    [-11.2, 122.0],
-    [-10.8, 125.5],
-    [-9.5, 128.5],
-    [-7.5, 131.0],
-    [-4.5, 133.5],
-  ];
-
-  const trenchLine = L.polyline(trenchCoords, {
-    color: "#f43f5e",
-    weight: 2.8,
-    opacity: 0.85,
-    dashArray: "6, 6",
-    className: "sunda-trench-path",
-  }).addTo(miniMap);
-
-  trenchLine.bindTooltip("Palung Sunda (Sunda Megathrust Arc)", {
-    className: "mini-map-tooltip",
-    sticky: true,
-  });
-
-  // Epicenter 1: Palu-Koro fault
-  const quakeIcon1 = L.divIcon({
-    className: "mini-map-custom-icon",
-    html: `
-      <div class="mini-map-epicenter">
-        <span class="mini-map-pulse-ring"></span>
-        <span class="mini-map-pulse-ring"></span>
-        <span class="mini-map-pulse-ring"></span>
-        <span class="mini-map-epicenter-core"></span>
-      </div>
-    `,
-    iconSize: [44, 44],
-    iconAnchor: [22, 22],
-  });
-
-  const quake1 = L.marker([-0.89, 119.87], { icon: quakeIcon1 }).addTo(miniMap);
-  quake1.bindTooltip("Palu-Koro &bull; M 6.2 (Simulasi Sensor)", {
-    className: "mini-map-tooltip",
-    direction: "top",
-    offset: [0, -14],
-  });
-  quake1.on("click", (e) => {
-    L.DomEvent.stopPropagation(e);
-    quake1.openTooltip();
-  });
-
-  // Epicenter 2: Megathrust Selatan Jawa
-  const quakeIcon2 = L.divIcon({
-    className: "mini-map-custom-icon",
-    html: `
-      <div class="mini-map-epicenter mini-map-epicenter--amber">
-        <span class="mini-map-pulse-ring"></span>
-        <span class="mini-map-pulse-ring"></span>
-        <span class="mini-map-epicenter-core"></span>
-      </div>
-    `,
-    iconSize: [44, 44],
-    iconAnchor: [22, 22],
-  });
-
-  const quake2 = L.marker([-8.85, 108.45], { icon: quakeIcon2 }).addTo(miniMap);
-  quake2.bindTooltip("Megathrust S. Jawa &bull; M 5.4 Kedalaman 24 km", {
-    className: "mini-map-tooltip",
-    direction: "top",
-    offset: [0, -14],
-  });
-  quake2.on("click", (e) => {
-    L.DomEvent.stopPropagation(e);
-    quake2.openTooltip();
-  });
-
-  // Volcano 1: Gunung Merapi
-  const volcanoIcon = L.divIcon({
-    className: "mini-map-custom-icon",
-    html: `
-      <div class="mini-map-volcano">
-        <div class="mini-map-volcano-cone"></div>
-        <div class="mini-map-volcano-dot"></div>
-      </div>
-    `,
-    iconSize: [28, 28],
-    iconAnchor: [14, 14],
-  });
-
-  const volcanoMerapi = L.marker([-7.54, 110.44], {
-    icon: volcanoIcon,
-  }).addTo(miniMap);
-  volcanoMerapi.bindTooltip("G. Merapi &bull; Level III (Siaga)", {
-    className: "mini-map-tooltip",
-    direction: "top",
-    offset: [0, -12],
-  });
-  volcanoMerapi.on("click", (e) => {
-    L.DomEvent.stopPropagation(e);
-    volcanoMerapi.openTooltip();
-  });
-
-  // Volcano 2: Gunung Semeru
-  const volcanoSemeru = L.marker([-8.108, 112.92], {
-    icon: volcanoIcon,
-  }).addTo(miniMap);
-  volcanoSemeru.bindTooltip("G. Semeru &bull; Level III (Siaga)", {
-    className: "mini-map-tooltip",
-    direction: "top",
-    offset: [0, -12],
-  });
-  volcanoSemeru.on("click", (e) => {
-    L.DomEvent.stopPropagation(e);
-    volcanoSemeru.openTooltip();
-  });
-
-  const quakeGroup = L.layerGroup([
-    quake1,
-    quake2,
-    volcanoMerapi,
-    volcanoSemeru,
-  ]).addTo(miniMap);
-
-  const toggleBtns = document.querySelectorAll("[data-radar-toggle]");
-  toggleBtns.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      const toggleType = btn.dataset.radarToggle;
-      btn.classList.toggle("radar-tag--active");
-      const isActive = btn.classList.contains("radar-tag--active");
-
-      if (toggleType === "quakes") {
-        if (isActive) {
-          miniMap.addLayer(quakeGroup);
-        } else {
-          miniMap.removeLayer(quakeGroup);
-        }
-      } else if (toggleType === "trench") {
-        if (isActive) {
-          miniMap.addLayer(trenchLine);
-        } else {
-          miniMap.removeLayer(trenchLine);
-        }
-      }
-    });
-  });
-
-  const coordDisplay = document.querySelector("#landing-radar-coords");
-  if (coordDisplay) {
-    miniMap.on("mousemove", (e) => {
-      const lat = e.latlng.lat.toFixed(2);
-      const lng = e.latlng.lng.toFixed(2);
-      coordDisplay.textContent = `${lat}°, ${lng}°`;
-    });
-  }
-
-  setTimeout(() => miniMap.invalidateSize(), 300);
-  window.addEventListener("resize", () => miniMap.invalidateSize());
-}
-
-initLandingMiniMap(map, enterMap);
-
 // Peta memenuhi layar dan sebagian tertutup panel melayang. viewPadding()
 // menghitung ruang itu supaya hasil yang dibidik tidak tersembunyi. `detail` =
 // hasil akan dibuka di panel detail (lembar bawah diperluas di HP).
@@ -450,6 +147,25 @@ function viewPadding({ detail = false } = {}) {
 map.fitBounds(INDONESIA_BOUNDS, viewPadding());
 const legend = new LegendControl().addTo(map);
 new ReadoutControl().addTo(map);
+
+// ---------- Halaman depan ----------
+// Profil situs di atas aplikasi yang sudah berjalan; "Buka peta" membuka
+// aplikasi di belakangnya dalam tampilan biasa.
+const landing = createLanding({
+  element: $("#landing"),
+  app: [$(".topbar"), $("#sidebar"), $("#map")],
+  // Di HP fokus ke pegangan lembar bawah: fokus di dalam lembar akan
+  // membukanya dan menutupi peta.
+  focusAfter: () => (sidebar.isMobile() ? $("#sheet-handle") : $("#sidebar")),
+  // Pencarian dari halaman depan diteruskan ke kotak pencarian aplikasi.
+  onSearch(q) {
+    const input = $("#search input");
+    input.value = q;
+    input.focus();
+    input.form.requestSubmit();
+  },
+  onLocate: () => locateUser(),
+});
 
 // ---------- Cek risiko: pencarian, lokasi saya, dan pilih titik ----------
 const riskDetail = createRiskDetail($("#detail-view"), {
@@ -814,12 +530,14 @@ async function refreshRainWarnings() {
       rainSummary,
       formatDasarian(rainSummary.dasarian, { short: true }),
     );
+    landing.renderRainWarnings(rainSummary);
     freshness.ok("Peringatan hujan", rainSummary.fetched_at);
   } catch (err) {
     overview.showError(
       $("#rain-warnings"),
       "Peringatan hujan BMKG gagal dimuat. Dicoba lagi otomatis.",
     );
+    landing.showUnavailable("rain");
     freshness.fail("Peringatan hujan", err);
   }
 }
@@ -829,10 +547,12 @@ async function refreshOutlook() {
   try {
     outlookData = await outlook.refresh();
     overview.renderOutlook(outlookData);
+    landing.renderOutlook(outlookData);
     freshness.ok("Indikasi SIGAP", outlookData.run.finished_at);
   } catch (err) {
     // 404 = server belum menyelesaikan run pertama (±10 menit setelah seed).
     if (err.status === 404) {
+      landing.showUnavailable("outlook", "indikasi pertama sedang dihitung");
       overview.showOutlookMessage(
         "Indikasi pertama sedang dihitung server (±10 menit). Dicoba lagi otomatis.",
       );
@@ -841,6 +561,7 @@ async function refreshOutlook() {
     overview.showOutlookMessage(
       "Indikasi SIGAP gagal dimuat. Dicoba lagi otomatis.",
     );
+    landing.showUnavailable("outlook");
     freshness.fail("Indikasi SIGAP", err);
   }
 }
@@ -849,12 +570,14 @@ async function refreshEarthquakes() {
   try {
     const collection = await earthquakes.load();
     overview.renderQuakes(collection);
+    landing.renderQuakes(collection);
     freshness.ok("Gempa", collection.meta.synced_at);
   } catch (err) {
     overview.showError(
       $("#quake-list"),
       "Data gempa gagal dimuat. Dicoba lagi otomatis tiap menit.",
     );
+    landing.showUnavailable("quakes");
     freshness.fail("Gempa", err);
   }
 }
@@ -863,18 +586,21 @@ async function refreshVolcanoes() {
   try {
     const collection = await volcanoes.load();
     overview.renderVolcanoes(collection);
+    landing.renderVolcanoes(collection);
     freshness.ok("Gunung api", collection.meta.synced_at);
   } catch (err) {
     overview.showError($("#volcano-alerts"), "Status gunung api gagal dimuat.");
+    landing.showUnavailable("volcanoes");
     freshness.fail("Gunung api", err);
   }
 }
 
-// Layar pembuka hilang setelah data gempa dan gunung api pertama selesai dimuat.
+// Layar pembuka hilang setelah data gempa dan gunung api pertama selesai dimuat;
+// halaman depan memulai intronya saat layar pembuka memudar.
 hideSplashWhen(
   $("#splash"),
   Promise.allSettled([refreshEarthquakes(), refreshVolcanoes()]),
-);
+).then(() => landing.play());
 setInterval(refreshEarthquakes, EARTHQUAKE_REFRESH_MS);
 setInterval(refreshVolcanoes, VOLCANO_REFRESH_MS);
 refreshRainWarnings();
