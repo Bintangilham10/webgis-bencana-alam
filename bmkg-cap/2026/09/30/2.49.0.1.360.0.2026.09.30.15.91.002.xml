@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.30.15.91.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-30T23:40:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-30T23:45:00+09:00</effective>
+    <expires>2026-10-01T01:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 September 2026, 23:45 WIT di sebagian wilayah Papua, khususnya di HERAM, RAVENI RARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 01 October 2026, 01:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPU/2026/09/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua</areaDesc>
+      <polygon>-2.476,140.653 -2.517,140.632 -2.520,140.631 -2.512,140.574 -2.504,140.523 -2.494,140.452 -2.491,140.433 -2.421,140.445 -2.430,140.456 -2.430,140.486 -2.440,140.488 -2.443,140.495 -2.442,140.502 -2.432,140.510 -2.428,140.527 -2.448,140.541 -2.440,140.559 -2.450,140.560 -2.450,140.582 -2.455,140.594 -2.454,140.600 -2.441,140.608 -2.440,140.613 -2.449,140.617 -2.454,140.629 -2.468,140.634 -2.464,140.645 -2.476,140.653</polygon>
+      <polygon>-2.583,140.665 -2.601,140.668 -2.611,140.655 -2.650,140.654 -2.661,140.651 -2.685,140.658 -2.725,140.658 -2.723,140.633 -2.716,140.632 -2.704,140.627 -2.615,140.621 -2.613,140.614 -2.581,140.626 -2.549,140.623 -2.558,140.640 -2.583,140.665</polygon>
+    </area>
+  </info>
+</alert>
