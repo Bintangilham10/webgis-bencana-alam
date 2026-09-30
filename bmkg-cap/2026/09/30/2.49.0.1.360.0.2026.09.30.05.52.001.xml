@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.30.05.52.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-30T13:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-30T13:10:00+08:00</effective>
+    <expires>2026-09-30T15:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 September 2026, 13:10 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di NARMADA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 September 2026, 15:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/09/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.411,116.339 -8.462,116.304 -8.504,116.321 -8.551,116.295 -8.565,116.267 -8.579,116.262 -8.593,116.249 -8.601,116.220 -8.610,116.202 -8.617,116.196 -8.620,116.179 -8.625,116.168 -8.608,116.154 -8.592,116.169 -8.589,116.160 -8.587,116.194 -8.572,116.211 -8.569,116.221 -8.562,116.226 -8.548,116.221 -8.527,116.241 -8.514,116.246 -8.489,116.246 -8.456,116.279 -8.443,116.278 -8.440,116.278 -8.427,116.314 -8.410,116.334 -8.411,116.339</polygon>
+    </area>
+  </info>
+</alert>
