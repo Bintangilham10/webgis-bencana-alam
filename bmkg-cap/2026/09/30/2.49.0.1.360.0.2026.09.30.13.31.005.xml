@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.30.13.31.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-30T20:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-30T20:10:00+07:00</effective>
+    <expires>2026-09-30T23:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 September 2026, 20:10 WIB di sebagian wilayah Jakarta, khususnya di JAMBE, JASINGA, PANONGAN, SOLEAR, SUKAJAYA, TENJO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 September 2026, 23:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJK/2026/09/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jakarta</areaDesc>
+      <polygon>-6.442,106.509 -6.450,106.481 -6.460,106.473 -6.480,106.492 -6.499,106.503 -6.511,106.501 -6.524,106.494 -6.547,106.497 -6.545,106.486 -6.557,106.472 -6.555,106.447 -6.546,106.426 -6.548,106.420 -6.520,106.405 -6.468,106.412 -6.457,106.404 -6.454,106.405 -6.450,106.433 -6.444,106.441 -6.427,106.453 -6.407,106.451 -6.404,106.452 -6.396,106.444 -6.383,106.452 -6.378,106.458 -6.382,106.471 -6.408,106.475 -6.424,106.493 -6.418,106.500 -6.424,106.515 -6.442,106.509</polygon>
+      <polygon>-6.355,106.519 -6.359,106.522 -6.379,106.511 -6.390,106.516 -6.398,106.512 -6.418,106.548 -6.442,106.509 -6.424,106.515 -6.418,106.500 -6.424,106.493 -6.408,106.475 -6.382,106.471 -6.378,106.458 -6.383,106.452 -6.396,106.444 -6.404,106.452 -6.407,106.451 -6.411,106.447 -6.405,106.441 -6.390,106.435 -6.387,106.437 -6.375,106.428 -6.360,106.431 -6.348,106.427 -6.348,106.431 -6.325,106.443 -6.304,106.469 -6.322,106.482 -6.339,106.484 -6.344,106.476 -6.351,106.476 -6.356,106.497 -6.351,106.507 -6.355,106.519</polygon>
+      <polygon>-6.547,106.497 -6.562,106.513 -6.604,106.520 -6.643,106.501 -6.661,106.514 -6.670,106.514 -6.684,106.506 -6.698,106.507 -6.725,106.482 -6.734,106.459 -6.728,106.451 -6.708,106.450 -6.695,106.436 -6.682,106.429 -6.589,106.430 -6.569,106.424 -6.559,106.416 -6.551,106.423 -6.548,106.420 -6.546,106.426 -6.555,106.447 -6.557,106.472 -6.545,106.486 -6.547,106.497</polygon>
+      <polygon>-6.288,106.504 -6.293,106.512 -6.304,106.509 -6.316,106.516 -6.324,106.515 -6.332,106.515 -6.339,106.531 -6.347,106.529 -6.355,106.519 -6.351,106.507 -6.356,106.497 -6.351,106.476 -6.344,106.476 -6.339,106.484 -6.322,106.482 -6.304,106.469 -6.288,106.504</polygon>
+      <polygon>-6.245,106.540 -6.259,106.537 -6.267,106.546 -6.281,106.552 -6.308,106.554 -6.316,106.547 -6.312,106.535 -6.313,106.519 -6.316,106.516 -6.304,106.509 -6.293,106.512 -6.288,106.504 -6.275,106.512 -6.265,106.501 -6.247,106.491 -6.242,106.501 -6.245,106.513 -6.245,106.540</polygon>
+      <polygon>-6.325,106.443 -6.348,106.431 -6.348,106.427 -6.345,106.411 -6.334,106.404 -6.332,106.400 -6.328,106.403 -6.313,106.393 -6.296,106.397 -6.283,106.392 -6.280,106.395 -6.283,106.433 -6.288,106.443 -6.287,106.451 -6.273,106.452 -6.261,106.448 -6.258,106.453 -6.271,106.462 -6.289,106.460 -6.294,106.430 -6.297,106.426 -6.302,106.433 -6.309,106.435 -6.315,106.429 -6.325,106.430 -6.319,106.442 -6.325,106.443</polygon>
+    </area>
+  </info>
+</alert>

@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.30.13.33.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-30T20:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-30T20:10:00+07:00</effective>
+    <expires>2026-09-30T22:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 September 2026, 20:10 WIB di sebagian wilayah Jawa Tengah, khususnya di JAPAH, KUNDURAN, NGARINGAN, NGAWEN, TODANAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 September 2026, 22:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJH/2026/09/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Tengah</areaDesc>
+      <polygon>-7.012,111.199 -7.019,111.203 -7.021,111.213 -7.031,111.218 -7.076,111.215 -7.091,111.221 -7.098,111.178 -7.102,111.172 -7.113,111.176 -7.115,111.162 -7.120,111.152 -7.117,111.146 -7.110,111.135 -7.097,111.131 -7.089,111.135 -7.075,111.133 -7.063,111.137 -7.044,111.122 -7.037,111.122 -7.028,111.136 -7.018,111.140 -7.000,111.114 -6.993,111.110 -6.979,111.114 -6.977,111.132 -6.983,111.168 -7.007,111.197 -7.012,111.199</polygon>
+      <polygon>-6.968,111.337 -6.977,111.340 -6.993,111.337 -6.995,111.347 -7.004,111.338 -7.069,111.336 -7.081,111.330 -7.094,111.328 -7.111,111.340 -7.112,111.322 -7.111,111.315 -7.093,111.287 -7.076,111.276 -7.066,111.283 -7.048,111.278 -7.036,111.290 -7.018,111.289 -7.009,111.284 -6.997,111.266 -6.997,111.255 -6.987,111.229 -6.980,111.227 -6.954,111.234 -6.960,111.257 -6.959,111.268 -6.980,111.266 -6.983,111.286 -6.988,111.295 -6.981,111.306 -6.971,111.307 -6.965,111.315 -6.972,111.327 -6.966,111.332 -6.968,111.337</polygon>
+      <polygon>-7.111,111.315 -7.115,111.290 -7.126,111.289 -7.148,111.276 -7.154,111.250 -7.153,111.241 -7.140,111.240 -7.091,111.221 -7.076,111.215 -7.031,111.218 -7.021,111.213 -7.019,111.203 -7.012,111.199 -6.996,111.200 -6.996,111.219 -6.987,111.229 -6.997,111.255 -6.997,111.266 -7.009,111.284 -7.018,111.289 -7.036,111.290 -7.048,111.278 -7.066,111.283 -7.076,111.276 -7.093,111.287 -7.111,111.315</polygon>
+      <polygon>-6.850,111.239 -6.862,111.242 -6.882,111.243 -6.902,111.255 -6.914,111.257 -6.922,111.254 -6.928,111.238 -6.942,111.233 -6.954,111.234 -6.980,111.227 -6.987,111.229 -6.996,111.219 -6.996,111.200 -7.012,111.199 -7.007,111.197 -6.983,111.168 -6.977,111.132 -6.979,111.114 -6.966,111.108 -6.916,111.115 -6.913,111.125 -6.921,111.138 -6.911,111.144 -6.901,111.142 -6.909,111.156 -6.898,111.198 -6.878,111.204 -6.872,111.211 -6.872,111.222 -6.849,111.223 -6.847,111.226 -6.850,111.239</polygon>
+      <polygon>-6.855,111.263 -6.866,111.290 -6.865,111.314 -6.869,111.328 -6.875,111.339 -6.881,111.341 -6.940,111.344 -6.951,111.339 -6.966,111.342 -6.968,111.337 -6.966,111.332 -6.972,111.327 -6.965,111.315 -6.971,111.307 -6.981,111.306 -6.988,111.295 -6.983,111.286 -6.980,111.266 -6.959,111.268 -6.960,111.257 -6.954,111.234 -6.942,111.233 -6.928,111.238 -6.922,111.254 -6.914,111.257 -6.902,111.255 -6.882,111.243 -6.862,111.242 -6.861,111.249 -6.854,111.258 -6.855,111.263</polygon>
+    </area>
+  </info>
+</alert>
