@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.30.16.16.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-30T21:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-30T22:00:00+07:00</effective>
+    <expires>2026-09-30T23:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 September 2026, 22:00 WIB di sebagian wilayah Sumatera Selatan, khususnya di SUNGAI LILIN, TUNGKAL ILIR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 September 2026, 23:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSS/2026/09/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Selatan</areaDesc>
+      <polygon>-2.433,104.043 -2.437,104.051 -2.454,104.066 -2.507,104.102 -2.526,104.076 -2.539,104.073 -2.552,104.098 -2.565,104.113 -2.550,104.135 -2.593,104.202 -2.639,104.146 -2.652,104.145 -2.662,104.138 -2.659,104.112 -2.660,104.102 -2.667,104.091 -2.669,104.056 -2.664,104.035 -2.633,104.050 -2.608,104.051 -2.591,104.049 -2.575,104.035 -2.561,104.031 -2.552,104.021 -2.545,104.000 -2.545,103.987 -2.540,103.977 -2.533,103.976 -2.525,103.962 -2.521,103.963 -2.510,103.956 -2.502,103.931 -2.491,103.928 -2.470,103.932 -2.455,103.929 -2.456,103.924 -2.466,103.914 -2.455,103.908 -2.454,103.884 -2.458,103.870 -2.418,103.897 -2.407,103.919 -2.410,103.992 -2.433,104.043</polygon>
+      <polygon>-2.456,104.359 -2.521,104.348 -2.534,104.356 -2.531,104.361 -2.533,104.369 -2.545,104.371 -2.555,104.353 -2.581,104.328 -2.623,104.321 -2.647,104.306 -2.666,104.286 -2.662,104.283 -2.645,104.239 -2.630,104.241 -2.631,104.230 -2.617,104.228 -2.620,104.210 -2.615,104.209 -2.600,104.222 -2.593,104.202 -2.550,104.135 -2.565,104.113 -2.552,104.098 -2.539,104.073 -2.526,104.076 -2.507,104.102 -2.454,104.066 -2.429,104.095 -2.426,104.106 -2.428,104.117 -2.445,104.150 -2.511,104.222 -2.520,104.259 -2.519,104.275 -2.510,104.294 -2.479,104.323 -2.456,104.359</polygon>
+    </area>
+  </info>
+</alert>
