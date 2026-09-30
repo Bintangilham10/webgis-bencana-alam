@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.30.12.32.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-30T17:15:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-30T17:25:00+07:00</effective>
+    <expires>2026-09-30T19:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 September 2026, 17:25 WIB di sebagian wilayah Jawa Barat, khususnya di BATUJAJAR, CIPONGKOR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 September 2026, 19:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/09/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.861,107.460 -6.872,107.460 -6.879,107.453 -6.886,107.453 -6.889,107.435 -6.901,107.434 -6.904,107.426 -6.899,107.428 -6.901,107.424 -6.908,107.421 -6.901,107.412 -6.893,107.413 -6.920,107.401 -6.920,107.398 -6.915,107.400 -6.908,107.397 -6.913,107.388 -6.914,107.365 -6.905,107.362 -6.891,107.345 -6.882,107.352 -6.878,107.365 -6.882,107.381 -6.880,107.390 -6.870,107.392 -6.864,107.399 -6.860,107.452 -6.861,107.460</polygon>
+      <polygon>-6.895,107.513 -6.901,107.511 -6.921,107.525 -6.936,107.523 -6.935,107.509 -6.915,107.482 -6.908,107.454 -6.898,107.436 -6.889,107.445 -6.885,107.473 -6.892,107.475 -6.906,107.493 -6.887,107.476 -6.894,107.486 -6.888,107.489 -6.884,107.498 -6.886,107.506 -6.889,107.512 -6.895,107.513</polygon>
+      <polygon>-6.891,107.345 -6.905,107.362 -6.914,107.365 -6.915,107.369 -6.921,107.371 -6.925,107.351 -6.930,107.358 -6.922,107.363 -6.925,107.369 -6.943,107.362 -6.932,107.368 -6.927,107.374 -6.951,107.370 -6.937,107.373 -6.943,107.378 -6.949,107.376 -6.946,107.379 -6.934,107.374 -6.929,107.377 -6.932,107.379 -6.941,107.383 -6.943,107.402 -6.947,107.409 -6.950,107.407 -6.955,107.413 -6.956,107.414 -6.965,107.413 -6.957,107.414 -6.964,107.419 -6.968,107.416 -6.971,107.406 -6.964,107.392 -6.984,107.382 -6.998,107.368 -6.996,107.353 -6.978,107.357 -6.974,107.342 -6.977,107.313 -6.975,107.305 -6.957,107.301 -6.932,107.320 -6.919,107.323 -6.908,107.312 -6.908,107.307 -6.897,107.314 -6.888,107.323 -6.886,107.342 -6.891,107.345</polygon>
+    </area>
+  </info>
+</alert>

@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.30.12.35.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-30T17:25:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-30T17:30:00+07:00</effective>
+    <expires>2026-09-30T19:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 September 2026, 17:30 WIB di sebagian wilayah Jawa Timur, khususnya di MAYANG, NGRAHO, PONCOL.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 September 2026, 19:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/09/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-8.181,113.850 -8.205,113.848 -8.223,113.835 -8.240,113.805 -8.245,113.786 -8.231,113.780 -8.215,113.785 -8.210,113.776 -8.205,113.777 -8.204,113.767 -8.208,113.755 -8.229,113.728 -8.217,113.726 -8.210,113.731 -8.211,113.736 -8.193,113.754 -8.188,113.778 -8.175,113.789 -8.173,113.797 -8.172,113.807 -8.170,113.829 -8.178,113.841 -8.177,113.850 -8.181,113.850</polygon>
+      <polygon>-7.695,111.298 -7.705,111.302 -7.716,111.297 -7.722,111.299 -7.741,111.304 -7.759,111.294 -7.750,111.288 -7.743,111.289 -7.735,111.275 -7.744,111.265 -7.745,111.242 -7.749,111.235 -7.738,111.216 -7.728,111.216 -7.722,111.209 -7.712,111.182 -7.689,111.188 -7.686,111.189 -7.711,111.232 -7.710,111.248 -7.701,111.263 -7.695,111.298</polygon>
+      <polygon>-7.205,111.567 -7.213,111.582 -7.217,111.612 -7.220,111.602 -7.230,111.592 -7.243,111.589 -7.255,111.594 -7.263,111.588 -7.267,111.583 -7.262,111.572 -7.264,111.568 -7.276,111.565 -7.291,111.569 -7.303,111.565 -7.309,111.553 -7.307,111.539 -7.301,111.534 -7.275,111.542 -7.268,111.535 -7.263,111.523 -7.275,111.510 -7.293,111.508 -7.300,111.513 -7.309,111.509 -7.307,111.498 -7.303,111.496 -7.297,111.484 -7.285,111.478 -7.273,111.480 -7.262,111.469 -7.256,111.473 -7.254,111.480 -7.260,111.490 -7.251,111.486 -7.243,111.488 -7.249,111.501 -7.240,111.513 -7.236,111.523 -7.227,111.528 -7.227,111.536 -7.223,111.542 -7.218,111.537 -7.215,111.539 -7.202,111.554 -7.207,111.562 -7.205,111.567</polygon>
+    </area>
+  </info>
+</alert>
