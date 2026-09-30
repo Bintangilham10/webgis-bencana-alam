@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-09-30T11:30:33.100Z",
+  "data": {
+    "Tanggal": "30 Sep 2026",
+    "Jam": "17:58:51 WIB",
+    "DateTime": "2026-09-30T10:58:51+00:00",
+    "Coordinates": "-10.02,123.65",
+    "Lintang": "10.02 LS",
+    "Bujur": "123.65 BT",
+    "Magnitude": "4.7",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di laut 26 km Barat Kab. Kupang",
+    "Dirasakan": "IV Kab. Kupang, IV Kota Kupang"
+  }
+}
