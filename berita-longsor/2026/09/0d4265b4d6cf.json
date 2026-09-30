@@ -1,0 +1,26 @@
+{
+  "guid": "CBMilwFBVV95cUxPTmdHYlFpM21FTWlqVjdFMUw4WnJRTlRRWkJ4TG9oWm44Q3IzVU9jaUxmRmI4UGJLVWhlWHliZDh0X28tRTJtTjB5d3A2M0V0RFdTanFBTTZITmhYVFFPbHNybklaRXM4bHdTYUNQbklOTGtHQ3RISmRvOFFwNzdhNllOVWpDb2N6bEZBbWFteVU1QTN2RXUw0gGcAUFVX3lxTE13OXVpeDlUd01xTDUtODBkUUg0MGRqRlZiUFhyY01taHYwMHIzck1ZSnM5a1lTNF9TWWV6TEhjQjlNeXRueTBtMnhNMUU3Y2tCS3ZDVUVtYW8wTlphUEVYQU5lZFFLMTFXbTNKcV9nc241ODhvS3JUbkRHYWRIS3hQSHpPalB3Wk5XRk1EdFBQd0otWHhiR0Y5eHRwMA",
+  "title": "Tagana Tasikmalaya Siaga Hadapi Ancaman Longsor - Insiden 24 - Insiden 24",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPTmdHYlFpM21FTWlqVjdFMUw4WnJRTlRRWkJ4TG9oWm44Q3IzVU9jaUxmRmI4UGJLVWhlWHliZDh0X28tRTJtTjB5d3A2M0V0RFdTanFBTTZITmhYVFFPbHNybklaRXM4bHdTYUNQbklOTGtHQ3RISmRvOFFwNzdhNllOVWpDb2N6bEZBbWFteVU1QTN2RXUw0gGcAUFVX3lxTE13OXVpeDlUd01xTDUtODBkUUg0MGRqRlZiUFhyY01taHYwMHIzck1ZSnM5a1lTNF9TWWV6TEhjQjlNeXRueTBtMnhNMUU3Y2tCS3ZDVUVtYW8wTlphUEVYQU5lZFFLMTFXbTNKcV9nc241ODhvS3JUbkRHYWRIS3hQSHpPalB3Wk5XRk1EdFBQd0otWHhiR0Y5eHRwMA?oc=5",
+  "source": "Insiden 24",
+  "source_url": "https://www.insiden24.com",
+  "published_at": "2026-09-30T07:25:56.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-09-30T08:30:31.844Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
