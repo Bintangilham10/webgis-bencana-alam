@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.30.09.63.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-30T16:45:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-30T16:55:00+08:00</effective>
+    <expires>2026-09-30T18:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 September 2026, 16:55 WITA di sebagian wilayah Kalimantan Selatan, khususnya di ASTAMBUL, BANJARBARU SELATAN, BANJARBARU UTARA, CEMPAKA, MARTAPURA, MATARAMAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 September 2026, 18:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKS/2026/09/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Selatan</areaDesc>
+      <polygon>-3.400,114.922 -3.428,114.913 -3.416,114.892 -3.417,114.883 -3.436,114.873 -3.436,114.868 -3.423,114.862 -3.427,114.855 -3.425,114.825 -3.414,114.802 -3.390,114.819 -3.390,114.832 -3.386,114.838 -3.366,114.843 -3.379,114.860 -3.381,114.884 -3.361,114.903 -3.382,114.918 -3.400,114.922</polygon>
+      <polygon>-3.387,114.987 -3.388,114.951 -3.400,114.922 -3.382,114.918 -3.361,114.903 -3.351,114.881 -3.327,114.861 -3.311,114.858 -3.250,114.865 -3.244,114.955 -3.268,114.956 -3.283,114.965 -3.287,114.964 -3.289,114.956 -3.314,114.959 -3.318,114.968 -3.316,114.979 -3.326,114.998 -3.356,115.010 -3.362,115.009 -3.381,114.988 -3.387,114.987</polygon>
+      <polygon>-3.325,115.073 -3.336,115.073 -3.364,115.104 -3.368,115.113 -3.386,115.121 -3.406,115.130 -3.417,115.124 -3.428,115.100 -3.425,115.085 -3.417,115.083 -3.412,115.076 -3.402,115.047 -3.400,115.022 -3.387,114.987 -3.381,114.988 -3.362,115.009 -3.356,115.010 -3.326,114.998 -3.316,114.979 -3.318,114.968 -3.314,114.959 -3.289,114.956 -3.287,114.964 -3.283,114.965 -3.268,114.956 -3.244,114.955 -3.231,115.010 -3.232,115.021 -3.246,115.037 -3.264,115.036 -3.275,115.040 -3.288,115.028 -3.298,115.007 -3.302,115.003 -3.311,115.005 -3.324,115.024 -3.325,115.073</polygon>
+      <polygon>-3.464,114.883 -3.471,114.927 -3.464,114.927 -3.482,114.938 -3.514,114.945 -3.541,114.932 -3.558,114.929 -3.574,114.915 -3.568,114.911 -3.543,114.909 -3.546,114.888 -3.555,114.869 -3.569,114.859 -3.551,114.844 -3.550,114.828 -3.539,114.812 -3.526,114.810 -3.525,114.785 -3.515,114.785 -3.495,114.795 -3.474,114.833 -3.476,114.839 -3.466,114.860 -3.464,114.883</polygon>
+      <polygon>-3.414,114.802 -3.425,114.825 -3.427,114.855 -3.423,114.862 -3.436,114.868 -3.436,114.873 -3.417,114.883 -3.416,114.892 -3.428,114.913 -3.434,114.922 -3.442,114.925 -3.457,114.923 -3.464,114.927 -3.471,114.927 -3.464,114.883 -3.445,114.877 -3.441,114.871 -3.441,114.842 -3.446,114.828 -3.425,114.803 -3.414,114.801 -3.414,114.802</polygon>
+      <polygon>-3.464,114.883 -3.466,114.860 -3.476,114.839 -3.474,114.833 -3.454,114.836 -3.446,114.828 -3.441,114.842 -3.441,114.871 -3.445,114.877 -3.464,114.883</polygon>
+    </area>
+  </info>
+</alert>

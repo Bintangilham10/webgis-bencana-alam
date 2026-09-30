@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.30.09.62.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-30T14:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-30T14:40:00+07:00</effective>
+    <expires>2026-09-30T16:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 September 2026, 14:40 WIB di sebagian wilayah Kalimantan Tengah, khususnya di KAPUAS TIMUR, PANDIH BATU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 September 2026, 16:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/09/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-3.015,114.496 -3.068,114.546 -3.143,114.456 -3.162,114.445 -3.174,114.429 -3.164,114.425 -3.081,114.388 -3.058,114.393 -3.038,114.402 -3.037,114.463 -3.009,114.491 -3.015,114.496</polygon>
+      <polygon>-3.118,114.255 -3.194,114.227 -3.188,114.204 -3.159,114.127 -3.111,114.019 -3.078,113.965 -3.077,113.963 -3.053,113.975 -2.964,114.038 -2.992,114.135 -3.007,114.158 -3.016,114.152 -3.118,114.255</polygon>
+    </area>
+  </info>
+</alert>
