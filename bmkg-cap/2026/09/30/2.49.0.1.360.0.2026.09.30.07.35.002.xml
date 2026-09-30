@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.09.30.07.35.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-09-30T14:25:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-09-30T14:35:00+07:00</effective>
+    <expires>2026-09-30T16:35:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 September 2026, 14:35 WIB di sebagian wilayah Jawa Timur, khususnya di DAGANGAN, NGEBEL.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 September 2026, 16:35 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/09/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.808,111.693 -7.817,111.687 -7.828,111.686 -7.837,111.670 -7.837,111.662 -7.832,111.657 -7.831,111.635 -7.820,111.630 -7.824,111.606 -7.815,111.605 -7.820,111.585 -7.816,111.575 -7.807,111.600 -7.802,111.600 -7.797,111.589 -7.787,111.600 -7.778,111.601 -7.782,111.610 -7.767,111.661 -7.774,111.678 -7.788,111.682 -7.800,111.695 -7.808,111.693</polygon>
+      <polygon>-7.695,111.599 -7.696,111.594 -7.702,111.591 -7.710,111.590 -7.715,111.593 -7.725,111.610 -7.727,111.622 -7.746,111.649 -7.767,111.661 -7.782,111.610 -7.778,111.601 -7.770,111.600 -7.760,111.575 -7.761,111.573 -7.772,111.575 -7.772,111.571 -7.754,111.553 -7.744,111.563 -7.737,111.560 -7.728,111.547 -7.686,111.540 -7.682,111.542 -7.681,111.548 -7.674,111.566 -7.676,111.573 -7.666,111.571 -7.665,111.578 -7.676,111.589 -7.677,111.603 -7.682,111.607 -7.689,111.604 -7.692,111.588 -7.695,111.599</polygon>
+    </area>
+  </info>
+</alert>
