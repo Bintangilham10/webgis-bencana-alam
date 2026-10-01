@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.01.01.72.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-01T08:20:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-01T08:32:00+08:00</effective>
+    <expires>2026-10-01T11:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 01 October 2026, 08:32 WITA di sebagian wilayah Sulawesi Tengah, khususnya di SINIU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 01 October 2026, 11:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSG/2026/10/01/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tengah</areaDesc>
+      <polygon>-0.517,120.045 -0.517,120.052 -0.529,120.049 -0.607,120.062 -0.646,120.064 -0.650,120.017 -0.642,120.020 -0.632,120.002 -0.615,120.008 -0.592,120.002 -0.583,119.988 -0.553,119.969 -0.547,119.957 -0.547,119.954 -0.529,119.952 -0.523,119.947 -0.517,120.045</polygon>
+    </area>
+  </info>
+</alert>
