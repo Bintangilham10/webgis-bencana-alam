@@ -1,3 +1,4 @@
+import { containsPoint } from '../lib/geo.js';
 import { HttpError } from '../lib/http.js';
 import { nextMonth, pad2, wibDate } from '../lib/time.js';
 
@@ -12,6 +13,12 @@ export const REFERENCE_POINT = { lat: -7.275, lon: 109.67 };
 const POINTS_PER_RUN = 100;
 const PAUSE_MS = 1_000;
 const HALF_BOX_DEG = 0.01;
+
+// Versi pembaca GetFeatureInfo yang dicatat di arsip. Versi 1 selalu memakai
+// poligon pertama; versi 2 (1 Okt 2026) memakai poligon yang memuat titik. Bulan
+// yang direkam dengan versi lama direkam ulang. Baris lama tetap di arsip, jadi
+// pemakai arsip mengambil baris terakhir per kode yang `pembaca`-nya 2.
+export const PARSER_VERSION = 2;
 
 export const layerName = ({ year, month }) => `pmbgi:prakiraan_${year}_${month}`;
 
@@ -35,10 +42,18 @@ export function featureInfoUrl(layer, { lat, lon }) {
   return `${WMS_URL}?${params}`;
 }
 
-// Atribut poligon pertama di titik itu, tanpa geometri; null bila titik di luar zona.
-export function parseFeatureInfo(json) {
+// Atribut poligon di titik itu, tanpa geometri; null bila titik di luar zona.
+// GetFeatureInfo memeriksa piksel tengah beserta toleransi beberapa piksel, jadi
+// titik di dekat batas zona mengembalikan 2–3 poligon dalam urutan acak. Poligon
+// pertama ternyata bukan yang memuat titik pada 9,2% dari 8.434 balasan di cache
+// riset (kelas potensinya berbeda pada 6,9%). Karena itu yang dipakai adalah poligon
+// yang geometrinya memuat titik; poligon pertama hanya dipakai bila tidak ada
+// geometri atau tidak satu pun memuat titik (titik tepat di garis batas).
+export function parseFeatureInfo(json, point) {
   if (!Array.isArray(json?.features)) throw new Error('format GetFeatureInfo tidak dikenal');
-  const p = json.features[0]?.properties;
+  const features = json.features;
+  const feature = (point && features.find((f) => containsPoint(f.geometry, point))) ?? features[0];
+  const p = feature?.properties;
   if (!p) return null;
   return {
     potensi: p.zona_perki ?? null,
@@ -46,6 +61,7 @@ export function parseFeatureInfo(json) {
     zona: p.zona ?? null,
     tahun_zkgt: p.tahun ?? null,
     wilayah_zkgt: p.wilayah ?? null,
+    n_poligon: features.length,
   };
 }
 
@@ -63,10 +79,18 @@ async function isPublished(http, layer) {
 const monthKey = ({ year, month }) => `${year}-${pad2(month)}`;
 const monthFile = ({ year, month }) => `pvmbg-prakiraan/${year}/${pad2(month)}.jsonl`;
 
+// Kode yang sudah direkam dengan pembaca versi sekarang.
 async function doneCodes(archive, month) {
   const text = await archive.readText(monthFile(month));
-  return new Set((text ?? '').trim().split('\n').filter(Boolean).map((line) => JSON.parse(line).kode));
+  const lines = (text ?? '').trim().split('\n').filter(Boolean).map((line) => JSON.parse(line));
+  return new Set(lines.filter((line) => (line.pembaca ?? 1) >= PARSER_VERSION).map((line) => line.kode));
 }
+
+const isCurrentParser = (monthStatus) => (monthStatus?.pembaca ?? 1) >= PARSER_VERSION;
+const parseMonthKey = (key) => {
+  const [year, month] = key.split('-').map(Number);
+  return { year, month };
+};
 
 export async function recordPvmbgPrakiraan({ archive, http, now, data = {}, pause = async () => {} }) {
   const points = data.wilayah ?? [];
@@ -80,10 +104,13 @@ export async function recordPvmbgPrakiraan({ archive, http, now, data = {}, paus
   let saved = 0;
   const errors = [];
 
-  // Bulan berjalan dan bulan depan (prakiraan terbit menjelang bulannya).
-  for (const target of [current, nextMonth(current)]) {
+  // Bulan berjalan dan bulan depan (prakiraan terbit menjelang bulannya), lalu
+  // bulan lama yang direkam dengan pembaca versi sebelumnya.
+  const outdated = Object.keys(status.months).filter((key) => !isCurrentParser(status.months[key])).map(parseMonthKey);
+  const targets = [...new Map([current, nextMonth(current), ...outdated].map((m) => [monthKey(m), m])).values()];
+  for (const target of targets) {
     const key = monthKey(target);
-    if (status.months[key]?.completed_at || budget === 0) continue;
+    if ((status.months[key]?.completed_at && isCurrentParser(status.months[key])) || budget === 0) continue;
     const layer = layerName(target);
     try {
       if (!(await isPublished(http, layer))) continue;
@@ -98,8 +125,15 @@ export async function recordPvmbgPrakiraan({ archive, http, now, data = {}, paus
       if (done.has(point.kode)) continue;
       budget--;
       try {
-        const attrs = parseFeatureInfo(await http.fetchJson(featureInfoUrl(layer, point)));
-        await archive.appendLine(monthFile(target), { kode: point.kode, lat: point.lat, lon: point.lon, ...(attrs ?? { potensi: null }), checked_at: now });
+        const attrs = parseFeatureInfo(await http.fetchJson(featureInfoUrl(layer, point)), point);
+        await archive.appendLine(monthFile(target), {
+          kode: point.kode,
+          lat: point.lat,
+          lon: point.lon,
+          ...(attrs ?? { potensi: null }),
+          pembaca: PARSER_VERSION,
+          checked_at: now,
+        });
         done.add(point.kode);
         saved++;
       } catch (err) {
@@ -109,7 +143,13 @@ export async function recordPvmbgPrakiraan({ archive, http, now, data = {}, paus
       await pause(PAUSE_MS);
     }
     items += done.size;
-    status.months[key] = { layer, total: points.length, done: done.size, ...(done.size >= points.length ? { completed_at: now } : {}) };
+    status.months[key] = {
+      layer,
+      total: points.length,
+      done: done.size,
+      pembaca: PARSER_VERSION,
+      ...(done.size >= points.length ? { completed_at: now } : {}),
+    };
   }
 
   await archive.writeJson('pvmbg-prakiraan/status.json', status);

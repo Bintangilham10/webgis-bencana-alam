@@ -14,7 +14,8 @@ import { AREA_URL, LEVELS, parseAreaCoverage, recordBmkgCews } from '../src/sour
 import { QUERY_URL, extractEvents, recordBnpbMingguan } from '../src/sources/bnpb-mingguan.js';
 import { recordOpenMeteoEns, summarizeLocation } from '../src/sources/open-meteo-ens.js';
 import { REPORTS_URL, diffReports, flattenReports, recordPvmbgLaporan } from '../src/sources/pvmbg-laporan.js';
-import { WMS_URL, featureInfoUrl, parseFeatureInfo, recordPvmbgPrakiraan } from '../src/sources/pvmbg-prakiraan.js';
+import { containsPoint } from '../src/lib/geo.js';
+import { PARSER_VERSION, WMS_URL, featureInfoUrl, parseFeatureInfo, recordPvmbgPrakiraan } from '../src/sources/pvmbg-prakiraan.js';
 
 // Fixture = respons asli sumber (diambil 27 Sep 2026; geometri PVMBG dan jumlah
 // berita dipangkas supaya kecil).
@@ -171,15 +172,44 @@ describe('BMKG CEWS', () => {
 });
 
 describe('PVMBG prakiraan bulanan', () => {
+  // Atribut asli titik acuan Banjarnegara (1 Okt 2026, layer 2026_10): dua poligon
+  // kembali, dan yang pertama bukan yang memuat titik. Geometrinya diganti dua
+  // kotak bersebelahan supaya fixture kecil.
+  const BATAS = JSON.parse(fixture('pvmbg-prakiraan-batas.json'));
+  const BANJARNEGARA = { lat: -7.353, lon: 109.655 };
+
   test('GetFeatureInfo dibaca tanpa geometri', () => {
-    assert.deepEqual(parseFeatureInfo(JSON.parse(fixture('pvmbg-prakiraan-garut.json'))), {
+    assert.deepEqual(parseFeatureInfo(JSON.parse(fixture('pvmbg-prakiraan-garut.json')), { lat: -7.2297, lon: 107.9322 }), {
       potensi: 'Menengah',
       zkgt: 'Menengah',
       zona: '003',
       tahun_zkgt: 2016,
       wilayah_zkgt: 'Jawa Barat',
+      n_poligon: 1,
     });
-    assert.equal(parseFeatureInfo({ features: [] }), null);
+    assert.equal(parseFeatureInfo({ features: [] }, BANJARNEGARA), null);
+  });
+
+  test('di dekat batas zona dipakai poligon yang memuat titik, bukan poligon pertama', () => {
+    assert.equal(BATAS.features[0].properties.unsur, 'Sangat Rendah');
+    const info = parseFeatureInfo(BATAS, BANJARNEGARA);
+    assert.equal(info.zkgt, 'Rendah');
+    assert.equal(info.zona, '002');
+    assert.equal(info.n_poligon, 2);
+    // Tanpa titik (atau tanpa geometri) kembali ke poligon pertama.
+    assert.equal(parseFeatureInfo(BATAS).zkgt, 'Sangat Rendah');
+  });
+
+  test('titik di dalam poligon: lubang dan multipoligon', () => {
+    const ring = (w, s, e, n) => [[w, s], [e, s], [e, n], [w, n], [w, s]];
+    const donut = { type: 'Polygon', coordinates: [ring(0, 0, 10, 10), ring(4, 4, 6, 6)] };
+    assert.equal(containsPoint(donut, { lat: 2, lon: 2 }), true);
+    assert.equal(containsPoint(donut, { lat: 5, lon: 5 }), false);
+    assert.equal(containsPoint(donut, { lat: 5, lon: 11 }), false);
+    const islands = { type: 'MultiPolygon', coordinates: [[ring(0, 0, 1, 1)], [ring(5, 5, 6, 6)]] };
+    assert.equal(containsPoint(islands, { lat: 5.5, lon: 5.5 }), true);
+    assert.equal(containsPoint(islands, { lat: 3, lon: 3 }), false);
+    assert.equal(containsPoint(null, { lat: 0, lon: 0 }), false);
   });
 
   test('potensi bulan berjalan direkam per titik; bulan depan yang belum terbit dilewati', async () => {
@@ -188,14 +218,42 @@ describe('PVMBG prakiraan bulanan', () => {
     assert.deepEqual(result, { items: 2, new: 2, errors: [] });
 
     const lines = (await archive.readText('pvmbg-prakiraan/2026/09.jsonl')).trim().split('\n').map(JSON.parse);
-    assert.deepEqual(lines.map((l) => [l.kode, l.potensi]), [['32.05', 'Menengah'], ['13.06', 'Menengah']]);
+    assert.deepEqual(lines.map((l) => [l.kode, l.potensi, l.pembaca]), [['32.05', 'Menengah', PARSER_VERSION], ['13.06', 'Menengah', PARSER_VERSION]]);
     const status = await archive.readJson('pvmbg-prakiraan/status.json');
     assert.ok(status.months['2026-09'].completed_at);
+    assert.equal(status.months['2026-09'].pembaca, PARSER_VERSION);
     assert.equal(status.months['2026-10'], undefined);
   });
 
+  test('bulan yang direkam dengan pembaca lama direkam ulang tanpa menghapus baris lama', async () => {
+    await archive.writeJson('pvmbg-prakiraan/status.json', {
+      months: { '2026-09': { layer: 'pmbgi:prakiraan_2026_9', total: 2, done: 2, completed_at: '2026-09-27T14:15:23.791Z' } },
+    });
+    for (const point of POINTS) await archive.appendLine('pvmbg-prakiraan/2026/09.jsonl', { kode: point.kode, potensi: 'Tinggi' });
+    const http = fakeHttp({
+      get: [[isPvmbg('2026_9'), fixture('pvmbg-prakiraan-garut.json')], [isPvmbg('2026_10'), notFound], [isPvmbg('2026_11'), notFound]],
+    });
+    const result = await recordPvmbgPrakiraan({ archive, http, now: '2026-10-01T01:00:00.000Z', data: DATA, pause: noPause });
+    assert.equal(result.new, 2);
+
+    const lines = (await archive.readText('pvmbg-prakiraan/2026/09.jsonl')).trim().split('\n').map(JSON.parse);
+    assert.deepEqual(lines.map((l) => [l.kode, l.potensi, l.pembaca ?? 1]), [
+      ['32.05', 'Tinggi', 1],
+      ['13.06', 'Tinggi', 1],
+      ['32.05', 'Menengah', PARSER_VERSION],
+      ['13.06', 'Menengah', PARSER_VERSION],
+    ]);
+    const status = await archive.readJson('pvmbg-prakiraan/status.json');
+    assert.equal(status.months['2026-09'].pembaca, PARSER_VERSION);
+    assert.equal(status.months['2026-09'].completed_at, '2026-10-01T01:00:00.000Z');
+
+    // Run berikutnya tidak merekam bulan itu lagi.
+    const again = await recordPvmbgPrakiraan({ archive, http, now: '2026-10-01T01:15:00.000Z', data: DATA, pause: noPause });
+    assert.equal(again.new, 0);
+  });
+
   test('melanjutkan dari titik yang belum direkam', async () => {
-    await archive.appendLine('pvmbg-prakiraan/2026/09.jsonl', { kode: '32.05', potensi: 'Menengah' });
+    await archive.appendLine('pvmbg-prakiraan/2026/09.jsonl', { kode: '32.05', potensi: 'Menengah', pembaca: PARSER_VERSION });
     const http = fakeHttp({ get: [[isPvmbg('2026_9'), fixture('pvmbg-prakiraan-garut.json')], [isPvmbg('2026_10'), notFound]] });
     await recordPvmbgPrakiraan({ archive, http, now: '2026-09-25T18:05:00.000Z', data: DATA, pause: noPause });
     const pointCalls = http.calls.filter((u) => u.includes('prakiraan_2026_9&') && u !== featureInfoUrl('pmbgi:prakiraan_2026_9', { lat: -7.275, lon: 109.67 }));
