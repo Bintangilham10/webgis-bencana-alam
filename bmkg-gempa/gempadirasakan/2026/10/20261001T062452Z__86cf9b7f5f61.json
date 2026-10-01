@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-01T07:00:37.569Z",
+  "data": {
+    "Tanggal": "01 Okt 2026",
+    "Jam": "13:24:52 WIB",
+    "DateTime": "2026-10-01T06:24:52+00:00",
+    "Coordinates": "-2.46,140.38",
+    "Lintang": "2.46 LS",
+    "Bujur": "140.38 BT",
+    "Magnitude": "3.2",
+    "Kedalaman": "25 km",
+    "Wilayah": "Pusat gempa berada di darat 15 km Barat Laut Sentani",
+    "Dirasakan": "II Kab. Jayapura"
+  }
+}
