@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, test } from 'node:test';
 import { hazardClassByValue, heavyRainIndication, outlookIndications, rainHazardIndications } from '../src/lib/warning-rules.js';
-import { rainPoint, regionOutlook } from '../src/risk/outlook.js';
+import { rainPoint, regionDailyOutlook, regionOutlook, summarizeDays } from '../src/risk/outlook.js';
 import { fetchRainPoints, rainBatchUrl } from '../src/sources/open-meteo.js';
 
 const DATES = ['2026-09-29', '2026-09-30', '2026-10-01'];
@@ -101,6 +101,40 @@ describe('indikasi per kab/kota', () => {
     const noRain = regionOutlook(points, () => null);
     assert.ok(noRain.every((o) => o.level === null && /gagal dimuat/.test(o.reason)));
   });
+
+  test('level per hari: hari yang sudah lewat tidak ikut menentukan jendela berikutnya', () => {
+    const daily = regionDailyOutlook(points, rainAt, DATES);
+    assert.equal(daily.length, DATES.length * 3);
+    const on = (date, hazard) => daily.find((d) => d.date === date && d.hazard === hazard);
+    assert.equal(on('2026-09-29', 'longsor').level, 1);
+    assert.equal(on('2026-09-30', 'banjir').level, 2);
+    assert.equal(on('2026-09-30', 'banjir').rainMm, 120);
+    assert.equal(on('2026-09-30', 'banjir').reason, 'hujan 120 mm/hari (hujan sangat lebat); zona bahaya tinggi (InaRISK)');
+    assert.equal(on('2026-10-01', 'hujan').level, 0);
+
+    // Jendela 29 Sep–1 Okt: puncak banjir 30 Sep. Jendela mulai 1 Okt: Normal.
+    const all = Object.fromEntries(summarizeDays(daily, DATES).map((s) => [s.hazard, s]));
+    assert.deepEqual([all.banjir.level, all.banjir.peakDate], [2, '2026-09-30']);
+    const later = Object.fromEntries(summarizeDays(daily, ['2026-10-01']).map((s) => [s.hazard, s]));
+    assert.deepEqual([later.hujan.level, later.banjir.level, later.longsor.level], [0, 0, 0]);
+    assert.equal(later.banjir.peakDate, null);
+  });
+
+  test('akumulasi longsor per hari memakai hujan hari-hari sebelumnya', () => {
+    const wet = [{ hazard: 'longsor', kelas: 3, lat: -7.4, lon: 107.2, rain: rain([30, 40, 0], [0, 10, 20]) }];
+    const daily = regionDailyOutlook(wet, rainAt, DATES);
+    const longsor = (date) => daily.find((d) => d.date === date && d.hazard === 'longsor');
+    // 10 + 20 + 30 = 60 mm pada 29 Sep; 20 + 30 + 40 = 90 mm pada 30 Sep: belum 100 mm.
+    assert.equal(longsor('2026-09-30').level, 0);
+    const wetter = regionDailyOutlook([{ ...wet[0], rain: rain([30, 75, 0], [0, 10, 20]) }], rainAt, DATES);
+    const day2 = wetter.find((d) => d.date === '2026-09-30' && d.hazard === 'longsor');
+    assert.equal(day2.level, 1);
+    assert.match(day2.reason, /^hujan 75 mm\/hari \(hujan lebat\)/);
+    const day3 = wetter.find((d) => d.date === '2026-10-01' && d.hazard === 'longsor');
+    assert.equal(day3.level, 1);
+    // 1 Okt kering, tetapi 30 + 75 + 0 = 105 mm dalam 3 hari: setara hujan lebat untuk longsor.
+    assert.match(day3.reason, /^akumulasi hujan 3 hari 105 mm/);
+  });
 });
 
 describe('hujan untuk banyak lokasi (Open-Meteo)', () => {
@@ -112,11 +146,11 @@ describe('hujan untuk banyak lokasi (Open-Meteo)', () => {
     return count === 1 ? location : Array.from({ length: count }, () => location);
   };
 
-  test('URL memuat semua lokasi, 3 hari lalu, dan 3 hari prakiraan', () => {
+  test('URL memuat semua lokasi, 3 hari lalu, dan 4 hari prakiraan', () => {
     const url = new URL(rainBatchUrl(cells.slice(0, 2)));
     assert.equal(url.searchParams.get('latitude'), '-7,-6.75');
     assert.equal(url.searchParams.get('past_days'), '3');
-    assert.equal(url.searchParams.get('forecast_days'), '3');
+    assert.equal(url.searchParams.get('forecast_days'), '4');
     assert.equal(url.searchParams.get('timezone'), 'Asia/Jakarta');
   });
 

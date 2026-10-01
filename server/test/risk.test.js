@@ -1,7 +1,9 @@
 import assert from 'node:assert/strict';
 import { describe, test } from 'node:test';
 import { hazardClass, rainCategory, rainHazardIndications, warningLevel } from '../src/lib/warning-rules.js';
+import { regionStatus } from '../src/risk/profile.js';
 import { recommendations } from '../src/risk/recommendations.js';
+import { matchesWordStart, rankResults } from '../src/routes/geocode.js';
 import { parseIdentifyValue } from '../src/sources/inarisk.js';
 import { toPlace } from '../src/sources/nominatim.js';
 import { parseForecast } from '../src/sources/open-meteo.js';
@@ -9,13 +11,17 @@ import { parseForecast } from '../src/sources/open-meteo.js';
 const day = (precipitationMm, date = '2026-09-26') => ({ date, precipitationMm, probabilityPct: 80 });
 
 describe('aturan peringatan (baseline v0)', () => {
-  test('kelas indeks bahaya BNPB memakai nilai yang dibulatkan 3 desimal', () => {
+  test('kelas indeks bahaya BNPB: sepertiga dengan batas atas inklusif', () => {
     assert.equal(hazardClass(null), null);
     assert.equal(hazardClass(0), null);
+    // Indeks longsor InaRISK = zona kerentanan PVMBG: 1/3 rendah, 2/3 menengah, 1 tinggi.
     assert.equal(hazardClass(0.333333).id, 'rendah');
+    assert.equal(hazardClass(1 / 3).id, 'rendah');
     assert.equal(hazardClass(0.3335).id, 'sedang');
     assert.equal(hazardClass(0.666).id, 'sedang');
-    assert.equal(hazardClass(0.666667).id, 'tinggi');
+    assert.equal(hazardClass(0.666667).id, 'sedang');
+    assert.equal(hazardClass(2 / 3).id, 'sedang');
+    assert.equal(hazardClass(0.6668).id, 'tinggi');
     assert.equal(hazardClass(1).id, 'tinggi');
   });
 
@@ -112,5 +118,45 @@ describe('parser sumber luar', () => {
     });
     assert.equal(place.name, 'Cibaduyut');
     assert.deepEqual(place.bounds, [[-6.9574807, 107.5899834], [-6.9499704, 107.5997136]]);
+  });
+});
+
+describe('urutan hasil pencarian', () => {
+  const wilayah = (name) => ({ source: 'wilayah', name });
+  const osm = (name) => ({ source: 'osm', name });
+
+  test('nama wilayah yang hanya cocok di tengah kata turun ke bawah hasil OSM', () => {
+    assert.equal(matchesWordStart('Kota Palembang', 'Lembang'), false);
+    assert.equal(matchesWordStart('Kabupaten Garut', 'garut'), true);
+    const results = rankResults('Lembang', [wilayah('Kota Palembang')], [osm('Lembang'), osm('Lembang')]);
+    assert.deepEqual(results.map((r) => `${r.source}:${r.name}`), ['osm:Lembang', 'osm:Lembang', 'wilayah:Kota Palembang']);
+  });
+
+  test('wilayah yang cocok di awal kata tetap di atas, paling banyak empat', () => {
+    const names = ['Kota Administrasi Jakarta Timur', 'Kota Administrasi Jakarta Pusat', 'Kota Administrasi Jakarta Utara', 'Kota Administrasi Jakarta Barat', 'Kota Administrasi Jakarta Selatan'];
+    const results = rankResults('Jakarta', names.map(wilayah), [osm('Daerah Khusus Ibukota Jakarta')]);
+    assert.deepEqual(results.map((r) => r.source), ['wilayah', 'wilayah', 'wilayah', 'wilayah', 'osm']);
+    // Tempat OSM yang namanya sama dengan wilayah tidak diulang.
+    assert.deepEqual(rankResults('Garut', [wilayah('Kabupaten Garut')], [osm('kabupaten garut'), osm('Garut')]).map((r) => r.name), ['Kabupaten Garut', 'Garut']);
+  });
+});
+
+describe('status lokasi cek risiko', () => {
+  const place = (distanceKm) => ({ kode: '32.17', nama: 'Kabupaten Bandung Barat', provinsi: 'Jawa Barat', distance_km: distanceKm });
+
+  test('di dalam kab/kota, di pesisir (≤ 1 km), di perairan, atau di negara lain', () => {
+    assert.equal(regionStatus(place(0), 1257), 'indonesia');
+    assert.equal(regionStatus(place(0.4), 3), 'pesisir');
+    assert.equal(regionStatus(place(12), 0), 'perairan');
+    // Kuala Lumpur: daratan (55 m) ±90 km dari kab/kota terdekat.
+    assert.equal(regionStatus(place(90), 55), 'luar_indonesia');
+    assert.equal(regionStatus(place(90), null), 'luar_batas');
+    assert.equal(regionStatus(null, 10), 'luar_batas');
+  });
+
+  test('di negara lain tidak ada saran nomor darurat Indonesia', () => {
+    const tips = recommendations({ hazards: [], indications: [], fault: null, volcanoes: [], status: 'luar_indonesia' });
+    assert.equal(tips.length, 1);
+    assert.match(tips[0], /di luar wilayah Indonesia/);
   });
 });

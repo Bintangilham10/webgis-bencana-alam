@@ -18,10 +18,18 @@ const wilayah = JSON.parse(readFileSync(new URL('../../recorder/data/wilayah.jso
 describe('PVMBG prakiraan gerakan tanah', () => {
   test('potensi bulan ini dan ZKGT dari GetFeatureInfo', () => {
     assert.deepEqual(
-      parseFeatureInfoText(fixture('pvmbg-prakiraan-garut.json')),
-      { potensi: 'Menengah', zkgt: 'Menengah', zona: '003', tahun_zkgt: 2016, wilayah_zkgt: 'Jawa Barat' },
+      parseFeatureInfoText(fixture('pvmbg-prakiraan-garut.json'), { lat: -7.2297, lon: 107.9322 }),
+      { potensi: 'Menengah', zkgt: 'Menengah', zona: '003', tahun_zkgt: 2016, wilayah_zkgt: 'Jawa Barat', n_poligon: 1 },
     );
-    assert.equal(parseFeatureInfoText('{"type":"FeatureCollection","features":[]}'), null);
+    assert.equal(parseFeatureInfoText('{"type":"FeatureCollection","features":[]}', { lat: -7.2, lon: 107.9 }), null);
+  });
+
+  test('titik di dekat batas zona memakai poligon yang memuatnya', () => {
+    // Balasan asli titik acuan Banjarnegara (1 Okt 2026), geometri disederhanakan:
+    // poligon pertama (ZKGT Sangat Rendah) tidak memuat titik.
+    const info = parseFeatureInfoText(fixture('pvmbg-prakiraan-batas.json'), { lat: -7.353, lon: 109.655 });
+    assert.equal(info.zkgt, 'Rendah');
+    assert.equal(info.n_poligon, 2);
   });
 
   test('halaman blokir firewall dan layer rusak tidak terbaca sebagai data', () => {
@@ -171,6 +179,17 @@ describe('cache', () => {
     const results = await Promise.all([load('a'), load('a'), load('a')]);
     assert.deepEqual(results, [1, 1, 1]);
     assert.equal(calls, 1);
+  });
+
+  test('ttlFor memperpendek umur cache untuk hasil tertentu', async () => {
+    let calls = 0;
+    const load = memoize(async () => ({ published: ++calls > 1 }), 60_000, { ttlFor: (r) => (r.published ? 60_000 : 0) });
+    assert.equal((await load('das')).published, false);
+    await new Promise((resolve) => setTimeout(resolve, 5));
+    // Hasil "belum terbit" kedaluwarsa segera, jadi sumber diminta lagi.
+    assert.equal((await load('das')).published, true);
+    assert.equal((await load('das')).published, true);
+    assert.equal(calls, 2);
   });
 
   test('hasil gagal tidak disimpan', async () => {

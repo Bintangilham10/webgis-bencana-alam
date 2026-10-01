@@ -1,0 +1,114 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "prakiraan_2026_10.64446",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        109.6555,
+        -7.356
+       ],
+       [
+        109.66,
+        -7.356
+       ],
+       [
+        109.66,
+        -7.35
+       ],
+       [
+        109.6555,
+        -7.35
+       ],
+       [
+        109.6555,
+        -7.356
+       ]
+      ]
+     ]
+    ]
+   },
+   "geometry_name": "geom",
+   "properties": {
+    "objectid_1": 0,
+    "objectid_2": 0,
+    "lcode": "MB03050260",
+    "shape_leng": 0,
+    "shape_le_1": 0,
+    "shape_le_2": 0,
+    "shape_area": 0,
+    "tahun": 2016,
+    "wilayah": "Jawa Tengah",
+    "objectid": 112737,
+    "unsur": "Sangat Rendah",
+    "keterangan": "Daerah yang mempunyai tingkat kerentanan sangat rendah untuk*",
+    "zona": "001",
+    "zona_perki": "Rendah"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "prakiraan_2026_10.68520",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        109.65,
+        -7.356
+       ],
+       [
+        109.6555,
+        -7.356
+       ],
+       [
+        109.6555,
+        -7.35
+       ],
+       [
+        109.65,
+        -7.35
+       ],
+       [
+        109.65,
+        -7.356
+       ]
+      ]
+     ]
+    ]
+   },
+   "geometry_name": "geom",
+   "properties": {
+    "objectid_1": 0,
+    "objectid_2": 0,
+    "lcode": "MB03050260",
+    "shape_leng": 0,
+    "shape_le_1": 0,
+    "shape_le_2": 0,
+    "shape_area": 0,
+    "tahun": 2016,
+    "wilayah": "Jawa Tengah",
+    "objectid": 116822,
+    "unsur": "Rendah",
+    "keterangan": "Daerah yang mempunyai tingkat kerentanan rendah untuk terken*",
+    "zona": "002",
+    "zona_perki": "Rendah"
+   }
+  }
+ ],
+ "totalFeatures": "unknown",
+ "numberReturned": 2,
+ "timeStamp": "2026-10-01T00:49:39.632Z",
+ "crs": {
+  "type": "name",
+  "properties": {
+   "name": "urn:ogc:def:crs:EPSG::4326"
+  }
+ }
+}

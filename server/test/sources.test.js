@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { describe, test } from 'node:test';
 import { depthClass, hasTsunamiPotential } from '../src/lib/classify.js';
 import { extractEvents, normalizeEvent } from '../src/sources/bmkg-gempa.js';
+import { createHazardIdentifier, OUTAGE_MS } from '../src/sources/inarisk.js';
 import { extractJsonLiteral, extractVolcanoes } from '../src/sources/magma.js';
 import { parseBoundarySql, toRings } from '../scripts/seed-wilayah.js';
 
@@ -102,5 +103,37 @@ describe('batas wilayah', () => {
     const ring = [[-6, 106], [-6, 107], [-7, 107]];
     const rings = toRings([[[ring, ring]], [ring.slice(0, 2)]]);
     assert.deepEqual(rings, [[[106, -6], [107, -6], [107, -7], [106, -6]]]);
+  });
+});
+
+describe('InaRISK identify', () => {
+  test('layanan yang gagal dilewati sementara supaya cek risiko tidak ikut menunggu', async () => {
+    let clock = 0;
+    const requested = [];
+    const getJson = async (url) => {
+      const service = url.match(/inarisk\/(\w+)\/ImageServer/)[1];
+      requested.push(service);
+      if (service === 'INDEKS_BAHAYA_CUACAEKSTRIM') throw new Error('HTTP 525 dari gis.bnpb.go.id');
+      return { value: service === 'INDEKS_BAHAYA_BANJIR' ? 'NoData' : '0.666667' };
+    };
+    const identify = createHazardIdentifier({ getJson, now: () => clock });
+
+    const first = await identify(-6.9, 107.6);
+    assert.equal(requested.length, 5);
+    assert.deepEqual(first.longsor, { index: 0.666667 });
+    assert.deepEqual(first.banjir, { index: null });
+    assert.match(first.cuaca.error, /HTTP 525/);
+
+    // Dalam 5 menit, layanan yang gagal tidak diminta lagi.
+    clock = OUTAGE_MS - 1;
+    const second = await identify(-6.9, 107.6);
+    assert.equal(requested.length, 9);
+    assert.match(second.cuaca.error, /sedang bermasalah.*dicoba lagi otomatis/);
+    assert.equal(second.gempa.index, 0.666667);
+
+    // Setelahnya dicoba lagi.
+    clock = OUTAGE_MS;
+    await identify(-6.9, 107.6);
+    assert.equal(requested.length, 14);
   });
 });

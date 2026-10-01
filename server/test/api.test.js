@@ -19,7 +19,10 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
   let placesShouldFail = false;
   // Router menyimpan referensi fungsi saat dibuat, jadi hasil palsu diatur lewat variabel ini.
   let placesOverride = null;
+  // Tanggal "hari ini" (WIB) untuk jendela indikasi SIGAP.
+  let outlookToday = '2026-09-29';
   const services = {
+    outlook: { today: () => outlookToday },
     risk: {
       identify: async () => {
         calls.identify++;
@@ -77,7 +80,7 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
     const { migrate } = await import('../db/migrate.js');
     await migrate();
     await pool.query(
-      'TRUNCATE events, volcanoes, sync_logs, faults, wilayah, wilayah_bahaya, titik_pantau, bahaya_raster, indikasi_run, indikasi_wilayah',
+      'TRUNCATE events, volcanoes, sync_logs, faults, wilayah, wilayah_bahaya, titik_pantau, bahaya_raster, indikasi_run, indikasi_wilayah, indikasi_hari',
     );
     ({ syncEarthquakes } = await import('../src/jobs/sync-earthquakes.js'));
     ({ syncVolcanoes } = await import('../src/jobs/sync-volcanoes.js'));
@@ -204,6 +207,8 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       const { status, body } = await getJson('/risk?lat=-7&lon=107');
       assert.equal(status, 200);
       assert.deepEqual(body.location.wilayah, { kode: '99.01', nama: 'Kabupaten Uji', provinsi: 'Provinsi Uji' });
+      assert.equal(body.location.status, 'indonesia');
+      assert.equal(body.location.wilayah_terdekat, null);
       assert.equal(body.location.elevation_m, 120);
 
       const hazards = Object.fromEntries(body.hazards.map((h) => [h.id, h]));
@@ -235,6 +240,7 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       assert.deepEqual(landslide.ensemble, { error: 'Open-Meteo 429' });
       assert.equal(landslide.history.count, 1);
       assert.equal(landslide.history.nearest.tanggal, '2021-02-10');
+      assert.equal(landslide.history.nearest.presisi_tanggal, 'hari');
       assert.ok(Math.abs(landslide.history.nearest.distance_km - 1.1) < 0.1);
       assert.ok(body.recommendations.some((t) => t.includes('level siaga untuk Kabupaten Uji')));
     });
@@ -281,10 +287,25 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       assert.equal(calls.identify, before);
     });
 
-    test('titik di luar wilayah administrasi tetap dilayani tanpa nama wilayah', async () => {
+    test('titik di luar wilayah administrasi tetap dilayani, dengan kab/kota terdekat dan statusnya', async () => {
+      // Elevasi palsu 120 m: daratan ±222 km dari Kabupaten Uji = di luar Indonesia.
       const { status, body } = await getJson('/risk?lat=-9.5&lon=107');
       assert.equal(status, 200);
       assert.equal(body.location.wilayah, null);
+      assert.equal(body.location.status, 'luar_indonesia');
+      assert.equal(body.location.wilayah_terdekat.kode, '99.01');
+      assert.ok(Math.abs(body.location.wilayah_terdekat.distance_km - 221.3) < 1, `jarak ${body.location.wilayah_terdekat.distance_km}`);
+      assert.deepEqual(body.indications, []);
+      assert.equal(body.landslide.rain_warning.level, null);
+      assert.match(body.recommendations[0], /di luar wilayah Indonesia/);
+    });
+
+    test('titik di pesisir (≤ 1 km dari batas) memakai kab/kota terdekat', async () => {
+      // 0,005° (±550 m) di luar sisi timur Kabupaten Uji.
+      const { body } = await getJson('/risk?lat=-7&lon=107.505');
+      assert.equal(body.location.status, 'pesisir');
+      assert.deepEqual(body.location.wilayah, { kode: '99.01', nama: 'Kabupaten Uji', provinsi: 'Provinsi Uji' });
+      assert.equal(body.landslide.rain_warning.level, 2);
     });
 
     test('pencarian mendahulukan nama wilayah lalu hasil OpenStreetMap', async () => {
@@ -397,6 +418,8 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       assert.deepEqual(pick({ a: 0, b: 3, c: 3 }), { id: 'b', kelas: 3 });
       assert.deepEqual(pick({ a: 1, b: 2, c: 0 }), { id: 'b', kelas: 2 });
       assert.equal(pick({ a: 0, b: 0, c: 0 }), null);
+      // Kandidat yang dibulatkan ke luar kab/kotanya dilewati.
+      assert.deepEqual(bahaya.pickPoint(cell, () => 3, (c) => c.id !== 'a'), { id: 'b', kelas: 3 });
       assert.equal(bahaya.parseSample(''), null);
       assert.equal(bahaya.parseSample('NoData'), null);
       assert.equal(bahaya.parseSample('0.777777791'), 0.777777791);
@@ -444,9 +467,10 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
 
       const { status, body } = await getJson('/outlook');
       assert.equal(status, 200);
-      assert.equal(body.run.rules_version, 'v0.1');
+      assert.equal(body.run.rules_version, 'v0.2');
       assert.equal(body.run.forecast_from, '2026-09-29');
       assert.equal(body.run.forecast_to, '2026-10-01');
+      assert.deepEqual(body.window, { from: '2026-09-29', to: '2026-10-01', expired: false });
       assert.equal(body.run.locations, 6);
       assert.equal(body.run.locations_failed, 1);
       assert.deepEqual(body.counts.tertinggi, { normal: 0, waspada: 1, siaga: 1, awas: 0, tanpa_data: 1 });
@@ -472,6 +496,36 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       const gagal = region('99.01');
       assert.equal(gagal.level, null);
       assert.match(gagal.hazards.hujan.reason, /gagal dimuat/);
+    });
+
+    test('jendela peta mulai hari ini: hari yang sudah lewat tidak ikut, run yang terlalu lama kedaluwarsa', async () => {
+      const { rows } = await pool.query('SELECT count(*)::int AS n FROM indikasi_hari');
+      assert.equal(rows[0].n, 3 * 3 * 3, '3 kab/kota × 3 bahaya × 3 hari');
+
+      outlookToday = '2026-09-30';
+      let { body } = await getJson('/outlook');
+      assert.deepEqual(body.window, { from: '2026-09-30', to: '2026-10-01', expired: false });
+      let raster = body.regions.find((r) => r.kode === '98.01');
+      assert.equal(raster.hazards.longsor.level, 2, 'puncak 30 Sep masih di dalam jendela');
+      assert.equal(raster.hazards.longsor.peak_date, '2026-09-30');
+      assert.match(raster.hazards.longsor.reason, /^hujan 120 mm\/hari/);
+
+      // 1 Okt: hujan 120 mm tanggal 30 Sep sudah lewat, jadi hujan lebat dan banjir
+      // Normal; longsor tetap Waspada karena akumulasi 3 hari (30 + 120 + 10 mm) masih
+      // dihitung. Kota Kering (hujan lebat 29 Sep) kembali Normal.
+      outlookToday = '2026-10-01';
+      ({ body } = await getJson('/outlook'));
+      raster = body.regions.find((r) => r.kode === '98.01');
+      assert.deepEqual([raster.hazards.hujan.level, raster.hazards.banjir.level], [0, 0]);
+      assert.deepEqual([raster.hazards.longsor.level, raster.hazards.longsor.peak_date], [1, '2026-10-01']);
+      assert.match(raster.hazards.longsor.reason, /^akumulasi hujan 3 hari 160 mm/);
+      assert.deepEqual(body.counts.tertinggi, { normal: 1, waspada: 1, siaga: 0, awas: 0, tanpa_data: 1 });
+
+      outlookToday = '2026-10-05';
+      ({ body } = await getJson('/outlook'));
+      assert.deepEqual(body.window, { from: null, to: null, expired: true });
+      assert.ok(body.regions.every((r) => r.level === null && /sudah lewat/.test(r.hazards.hujan.reason)));
+      outlookToday = '2026-09-29';
     });
 
     test('run baru langsung menggantikan hasil sebelumnya', async () => {
