@@ -46,11 +46,11 @@ The logo is an **S drawn from three contour lines** around an amber summit point
 <td width="50%" valign="top">
 
 ### Live hazards on one map
-- **SIGAP 3-day outlook** for all 514 regencies and cities, recomputed every 12 hours: heavy rain, flood, and landslide levels from Open-Meteo rain at 3,222 monitoring points × InaRISK hazard classes. It is on by default, and each popup shows BMKG's official warning next to it. It is a system indication, not an official warning.
-- **Earthquakes** from BMKG, synced every 60 seconds. Circles are sized by magnitude, coloured by depth class, and fade over 7 days. Popups carry the tsunami flag and the ShakeMap.
+- **SIGAP 3-day outlook** for all 514 regencies and cities, recomputed every 12 hours: heavy rain, flood, and landslide levels from Open-Meteo rain at 3,219 monitoring points × InaRISK hazard classes. The map always covers today and the next two days. It is on by default, and each popup shows BMKG's official warning next to it. It is a system indication, not an official warning.
+- **Earthquakes** from BMKG, synced every 60 seconds. BMKG's public feeds list M 5+ and felt earthquakes only, so smaller unfelt events are not shown or counted. Circles are sized by magnitude, coloured by depth class, and fade over 7 days. Popups carry the tsunami flag and the ShakeMap.
 - **Volcanoes** from MAGMA Indonesia, synced every 30 minutes, with alert level I–IV, eruption status, and aviation ash warnings (VONA).
 - **Heavy-rain warnings** from BMKG CEWS for the current dasarian (10-day period), drawn on regency boundaries and listed in the overview.
-- **Rain from satellite**: the latest 30-minute NASA GPM IMERG rainfall, about 5 hours behind real time.
+- **Rain from satellite**: the latest 30-minute NASA GPM IMERG rainfall, about 4–6 hours behind real time (the legend shows the data time).
 - **Landslides**: 1,884 past events from PVMBG and MAGMA, coloured by age.
 - **Hazard maps** from BNPB InaRISK for earthquake, extreme weather, flood, landslide, and volcano, in the three official BNPB classes, plus the PVMBG landslide susceptibility zones (ZKGT) in the same colours.
 - **Geology and boundaries**: active faults, tectonic plate boundaries (Bird 2003), and 514 regency and city boundaries.
@@ -60,7 +60,7 @@ The logo is an **S drawn from three contour lines** around an amber summit point
 
 ### Risk check for any point
 Pick a point by search, GPS, right-click, or long press. SIGAP runs 11 lookups in parallel (web services and PostGIS queries) and returns one profile:
-- a 3-day outlook (Normal, Waspada, Siaga, Awas) for heavy rain, flood, and landslide, from rainfall × hazard class, with the same rules as the regency outlook;
+- a 3-day outlook (Normal, Waspada, Siaga, Awas) for heavy rain, flood, and landslide, from rainfall × hazard class, with the same rules as the regency outlook. Points outside every regency are labelled coast (within 1 km, using the nearest regency), sea, or outside Indonesia, where no outlook is computed;
 - the five InaRISK hazard indices;
 - the nearest active fault and volcanoes, drawn as distance lines;
 - recent earthquakes within 100 km;
@@ -123,17 +123,17 @@ Several official products vanish once they expire, such as short weather warning
 
 ## How the 3-day outlook works
 
-Every 12 hours the server rates heavy rain, flood, and landslide for all 514 regencies and cities. Every run is stored, Normal regencies included, so the outlook can be verified against events later.
+Every 12 hours the server rates heavy rain, flood, and landslide for all 514 regencies and cities, day by day. Every run is stored, Normal regencies included, with one level per regency, hazard, and day (`indikasi_hari`), so the outlook can be verified against events later at each lead time.
 
-1. **Hazard zones.** InaRISK flood and landslide classes for the whole country, at about 550 m, are loaded into PostGIS rasters and clipped to each regency. The same step records the area of each class per regency.
-2. **Monitoring points.** Each regency gets up to three points per hazard, in the 0.25° cells with the highest class, plus one reference point. The server smooths the 550 m export, so each point's class is checked against the native 100 m InaRISK value (`getSamples`). The risk check at that point therefore shows the same class.
-3. **Rain.** Open-Meteo daily rain for the past 3 and next 3 days at every monitoring point, at the same coordinates the risk check uses. In Indonesia Open-Meteo serves ECMWF IFS at 9 km, much finer than a 0.25° cell, so the rain is not averaged over a cell. The job asks for 100 points per request with pauses, about 3,200 calls per run, which is why it runs every 12 hours within the free quota.
-4. **Rules v0.1** in [`rules.json`](server/src/config/rules.json):
+1. **Hazard zones.** InaRISK flood and landslide classes for the whole country, at about 550 m, are loaded into PostGIS rasters and clipped to each regency. The same step records the area of each class per regency. The 0–1 index is split into thirds with the upper bound included (low ≤ 1/3, medium ≤ 2/3, high > 2/3), because the InaRISK landslide index stores PVMBG susceptibility zones as exactly 1/3, 2/3, and 1.
+2. **Monitoring points.** Each regency gets up to three points per hazard, in the 0.25° cells with the highest class, plus one reference point. The server smooths the 550 m export, so each point's class is checked against the native 100 m InaRISK value (`getSamples`), and every point is checked to lie inside its own regency. The risk check at that point therefore shows the same class.
+3. **Rain.** Open-Meteo daily rain for the past 3 and next 4 days at every monitoring point, at the same coordinates the risk check uses. In Indonesia Open-Meteo serves ECMWF IFS at 9 km, much finer than a 0.25° cell, so the rain is not averaged over a cell. The job asks for 100 points per request with pauses, about 3,200 calls per run, which is why it runs every 12 hours within the free quota.
+4. **Rules v0.2** in [`rules.json`](server/src/config/rules.json), applied to each forecast day:
    - heavy rain follows the BMKG category: heavy, very heavy, and extreme rain give Waspada, Siaga, and Awas;
-   - flood and landslide combine the peak daily rain with the hazard class at the point;
-   - for landslides, 100 mm over any 3 days, including the last few days, counts as heavy rain.
+   - flood and landslide combine that day's rain with the hazard class at the point;
+   - for landslides, 100 mm over the 3 days ending that day, including rain that already fell, counts as heavy rain.
 
-   A regency takes the highest level among its points.
+   A regency takes the highest level among its points on each day. The map and the API show the worst day from today to two days ahead, so a peak that has passed no longer colours the map.
 
 The rules are not calibrated yet (that is RQ-L2), so the map labels the result as a system indication and shows BMKG's CEWS level next to it.
 
@@ -220,12 +220,13 @@ Matched AUC compares each landslide with its own controls: other places in the s
 
 | Official product | Tells **where** landslides happen? | Tells **when**? |
 |---|---|---|
-| PVMBG monthly landslide forecast (303 events) | Yes, 0.63 [0.60–0.66] | Yes, 0.56 [0.53–0.59] |
-| PVMBG susceptibility map (ZKGT) | Yes, 0.65 [0.63–0.68] | No, 0.50, as expected for a map that barely changes |
+| PVMBG monthly landslide forecast (303 events) | Yes, 0.64 [0.61–0.67] | Yes, 0.56 [0.54–0.59] |
+| PVMBG susceptibility map (ZKGT) | Yes, 0.66 [0.64–0.69] | No, 0.50, as expected for a map that barely changes |
 | BMKG CEWS heavy-rain warnings (211–225 events) | Not shown, 0.52 [0.50–0.54] | Yes, 0.57 [0.54–0.60] |
 
-- The monthly forecast adds timing information but **no spatial skill** over the susceptibility map it is built on: the difference is −0.023 [−0.036 to −0.009].
+- The monthly forecast adds timing information but **no spatial skill** over the susceptibility map it is built on: the difference is −0.021 [−0.034 to −0.009].
 - The conclusions hold across all the preregistered sensitivity analyses.
+- These numbers were corrected on 1 October 2026. Near zone boundaries the PVMBG map service returns two to four polygons, and the first version always used the first one, which was the wrong zone for 7% of the sampled points. Reading the polygon that actually contains each point moved the AUCs by up to 0.01 and changed no conclusion; the protocol records the before and after values.
 - BMKG warnings show a clear dose-response in an EDuMaP analysis (Calvello & Piciullo 2016) over all 514 regencies and 137 dasarian. Compared with Aman, recorded landslides were 2.5 times as frequent under Waspada, 3.9 times under Siaga, and 4.6 times under Awas.
 - Siaga or higher still covered only 10% of the regency-days with a recorded landslide. CEWS is a rainfall product, not a landslide warning.
 
