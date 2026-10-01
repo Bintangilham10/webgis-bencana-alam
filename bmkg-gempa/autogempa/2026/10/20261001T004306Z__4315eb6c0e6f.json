@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-01T01:15:33.631Z",
+  "data": {
+    "Tanggal": "01 Okt 2026",
+    "Jam": "07:43:06 WIB",
+    "DateTime": "2026-10-01T00:43:06+00:00",
+    "Coordinates": "-10.04,123.61",
+    "Lintang": "10.04 LS",
+    "Bujur": "123.61 BT",
+    "Magnitude": "3.1",
+    "Kedalaman": "6 km",
+    "Wilayah": "Pusat gempa berada di Laut 31 km Barat Kab. Kupang",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "II - III Kab. Kupang, II - III Kota Kupang",
+    "Shakemap": "20261001074306.mmi.jpg"
+  }
+}
