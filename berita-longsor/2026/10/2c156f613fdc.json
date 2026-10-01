@@ -1,0 +1,26 @@
+{
+  "guid": "CBMisgFBVV95cUxQbTFudUtZaXRjbGxZbzU2WWNDa2xiaDVSVjBjTnIzU1lvQi10OWg5UTRnbHVBVkNzcXdSdlQtbnp1anI0NWVLYXNjcGhNWTQ0NFQ4TGlmTDhIZWhLSW80WWZXVWRlQ0ZUY2VzQjQ0VGFYSEl3UDVuZWItNVlhYnNwbUUyT0NXNm05R3BDNm03YXNfbGI0TUxSbDNUNHFmWjQ4R2dVZkhHQXNzNGxaSWk3eUp3",
+  "title": "Awas Longsor, Polres Trenggalek Pasang Garis Pembatas di Jalur Utama Trenggalek-Tulungagung - Afederasi",
+  "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbTFudUtZaXRjbGxZbzU2WWNDa2xiaDVSVjBjTnIzU1lvQi10OWg5UTRnbHVBVkNzcXdSdlQtbnp1anI0NWVLYXNjcGhNWTQ0NFQ4TGlmTDhIZWhLSW80WWZXVWRlQ0ZUY2VzQjQ0VGFYSEl3UDVuZWItNVlhYnNwbUUyT0NXNm05R3BDNm03YXNfbGI0TUxSbDNUNHFmWjQ4R2dVZkhHQXNzNGxaSWk3eUp3?oc=5",
+  "source": "Afederasi",
+  "source_url": "https://afederasi.com",
+  "published_at": "2026-10-01T13:47:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-01T19:00:38.789Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.04",
+      "nama": "Kabupaten Tulungagung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
