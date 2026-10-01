@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.01.08.19.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-01T14:45:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-01T15:00:00+07:00</effective>
+    <expires>2026-10-01T17:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 01 October 2026, 15:00 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di SIMPANG TERITIP.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 01 October 2026, 17:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/10/01/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-1.760,105.391 -1.776,105.421 -1.790,105.466 -1.801,105.481 -1.851,105.478 -1.901,105.482 -1.935,105.496 -1.957,105.530 -1.976,105.543 -2.000,105.549 -2.032,105.545 -2.052,105.528 -2.067,105.527 -2.077,105.520 -2.090,105.502 -2.092,105.485 -2.103,105.464 -2.135,105.434 -2.136,105.429 -2.120,105.408 -2.132,105.378 -2.122,105.346 -2.052,105.365 -2.050,105.303 -2.063,105.289 -2.062,105.282 -2.034,105.283 -2.021,105.277 -2.016,105.267 -1.986,105.267 -1.982,105.275 -1.966,105.266 -1.940,105.261 -1.906,105.249 -1.902,105.248 -1.895,105.268 -1.884,105.279 -1.862,105.321 -1.845,105.335 -1.840,105.349 -1.815,105.360 -1.802,105.372 -1.760,105.391</polygon>
+    </area>
+  </info>
+</alert>
