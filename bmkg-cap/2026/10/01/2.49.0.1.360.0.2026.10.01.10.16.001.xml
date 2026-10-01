@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.01.10.16.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-01T17:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-01T17:40:00+07:00</effective>
+    <expires>2026-10-01T19:40:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 01 October 2026, 17:40 WIB di sebagian wilayah Sumatera Selatan, khususnya di BAYUNG LENCIR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 01 October 2026, 19:40 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSS/2026/10/01/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Selatan</areaDesc>
+      <polygon>-2.137,104.393 -2.244,104.314 -2.260,104.325 -2.271,104.326 -2.289,104.321 -2.301,104.311 -2.296,104.289 -2.309,104.261 -2.337,104.241 -2.334,104.203 -2.330,104.186 -2.343,104.166 -2.344,104.158 -2.337,104.150 -2.332,104.130 -2.318,104.129 -2.258,104.066 -2.267,104.051 -2.254,104.035 -2.125,104.013 -2.195,103.975 -2.243,103.896 -2.300,103.846 -2.255,103.816 -2.203,103.771 -2.251,103.714 -2.262,103.695 -2.155,103.667 -2.180,103.640 -2.246,103.525 -2.256,103.466 -2.259,103.465 -2.213,103.451 -2.181,103.459 -2.175,103.460 -2.174,103.464 -2.177,103.499 -2.168,103.526 -2.139,103.561 -2.134,103.560 -2.125,103.531 -2.104,103.517 -2.084,103.514 -2.049,103.538 -2.048,103.552 -2.000,103.560 -2.001,103.557 -1.978,103.535 -1.963,103.510 -1.909,103.519 -1.890,103.536 -1.844,103.619 -1.845,103.655 -1.843,103.675 -1.816,103.766 -1.820,103.777 -1.797,103.873 -1.789,103.873 -1.754,104.004 -1.753,104.022 -1.713,104.151 -1.793,104.163 -1.889,104.212 -1.952,104.254 -2.071,104.360 -2.105,104.373 -2.137,104.393</polygon>
+      <polygon>-2.347,103.447 -2.343,103.450 -2.339,103.449 -2.343,103.451 -2.347,103.447</polygon>
+    </area>
+  </info>
+</alert>
