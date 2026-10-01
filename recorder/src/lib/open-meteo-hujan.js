@@ -13,8 +13,9 @@ export const PAST_DAYS = 3;
 export const OUTLOOK_FORECAST_DAYS = 4;
 
 // Satu lokasi dihitung satu panggilan kuota Open-Meteo (gratis ±10.000/hari,
-// 5.000/jam, dan 600/menit), jadi 100 lokasi per permintaan diberi jeda 12 detik
-// (±500/menit).
+// 5.000/jam, dan 600/menit), jadi permintaan 100 lokasi dimulai paling cepat tiap
+// 12 detik (±500/menit). Jeda dihitung dari awal permintaan sebelumnya: bila
+// balasannya sudah lambat (mis. ±20 detik dari runner GitHub), tidak ada jeda tambahan.
 const RAIN_BATCH = 100;
 const RAIN_PAUSE_MS = 12_000;
 const QUOTA_WAIT_MS = 65_000;
@@ -83,22 +84,37 @@ async function fetchBatch(batch, { getJson, sleep }) {
   }
 }
 
-// locations: [{ key, lat, lon }] → { rain: Map(key → { pastDays, days }), failed, error }.
+// locations: [{ key, lat, lon }] → { rain: Map(key → { pastDays, days }), failed, error, notStarted }.
 // Batch yang gagal tidak menghentikan run; lokasinya dihitung di `failed`.
 // getJson(url, options) wajib diberikan: server dan perekam punya klien HTTP sendiri.
-export async function fetchRainPoints(locations, { getJson, batchSize = RAIN_BATCH, pauseMs = RAIN_PAUSE_MS, sleep = pause, onProgress } = {}) {
+// deadline (ms epoch, opsional): batch baru tidak dimulai lagi setelah waktu ini;
+// lokasi yang belum diminta dihitung di `notStarted` (bukan gagal) supaya bisa dicicil.
+export async function fetchRainPoints(
+  locations,
+  { getJson, batchSize = RAIN_BATCH, pauseMs = RAIN_PAUSE_MS, sleep = pause, onProgress, deadline = Infinity, clock = Date.now } = {},
+) {
   if (!getJson) throw new Error('fetchRainPoints butuh getJson');
   const rain = new Map();
   let failed = 0;
+  let notStarted = 0;
   let failedInRow = 0;
   let error = null;
+  let lastStart = null;
   for (let start = 0; start < locations.length; start += batchSize) {
     const batch = locations.slice(start, start + batchSize);
+    if (clock() >= deadline) {
+      notStarted += batch.length;
+      continue;
+    }
     if (failedInRow >= MAX_FAILED_BATCHES) {
       failed += batch.length;
       continue;
     }
-    if (start > 0) await sleep(pauseMs);
+    if (lastStart !== null) {
+      const wait = pauseMs - (clock() - lastStart);
+      if (wait > 0) await sleep(wait);
+    }
+    lastStart = clock();
     try {
       const series = await fetchBatch(batch, { getJson, sleep });
       batch.forEach((location, k) => rain.set(location.key, series[k]));
@@ -110,5 +126,5 @@ export async function fetchRainPoints(locations, { getJson, batchSize = RAIN_BAT
     }
     onProgress?.({ done: start + batch.length, total: locations.length, failed });
   }
-  return { rain, failed, error };
+  return { rain, failed, error, notStarted };
 }

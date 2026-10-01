@@ -1,4 +1,4 @@
-import { access, appendFile, mkdir, readFile, writeFile } from 'node:fs/promises';
+import { access, appendFile, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
 // Semua path relatif memakai "/" dan diterjemahkan ke separator OS di sini.
@@ -61,6 +61,11 @@ export function createArchive(rootDir) {
 
     async writeJson(relPath, value) {
       await this.writeText(relPath, `${JSON.stringify(value, null, 2)}\n`);
+    },
+
+    // Hanya untuk file kerja sementara (mis. sigap-indikasi/pending.json), bukan data arsip.
+    async remove(relPath) {
+      await rm(resolve(relPath), { force: true });
     },
   };
 }

@@ -160,6 +160,7 @@ describe('hujan untuk banyak lokasi (Open-Meteo)', () => {
       batchSize: 2,
       pauseMs: 12_000,
       sleep: async (ms) => pauses.push(ms),
+      clock: () => 0,
       getJson: async (url) => reply(url),
     });
     assert.equal(failed, 0);
@@ -198,6 +199,29 @@ describe('hujan untuk banyak lokasi (Open-Meteo)', () => {
     assert.equal(failed, 5);
     assert.equal(result.size, 0);
     assert.equal(error, 'HTTP 502');
+  });
+
+  test('balasan yang sudah lambat tidak ditambah jeda; tenggat menghentikan batch baru', async () => {
+    let now = 0;
+    const pauses = [];
+    const { rain: result, notStarted } = await fetchRainPoints(cells, {
+      batchSize: 2,
+      pauseMs: 12_000,
+      deadline: 30_000,
+      clock: () => now,
+      sleep: async (ms) => {
+        pauses.push(ms);
+        now += ms;
+      },
+      // Tiap balasan butuh 20 detik.
+      getJson: async (url) => {
+        now += 20_000;
+        return reply(url);
+      },
+    });
+    assert.deepEqual(pauses, []);
+    assert.equal(result.size, 4);
+    assert.equal(notStarted, 1);
   });
 
   test('jumlah lokasi di balasan harus sama dengan yang diminta', async () => {

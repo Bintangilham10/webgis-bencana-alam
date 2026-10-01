@@ -7,10 +7,12 @@ import { HttpError } from '../src/lib/http.js';
 import { MODEL_META_URL, rainBatchUrl } from '../src/lib/open-meteo-hujan.js';
 import { createArchive } from '../src/lib/store.js';
 import { RULES_VERSION } from '../src/lib/warning-rules.js';
-import { recordSigapIndikasi } from '../src/sources/sigap-indikasi.js';
+import { BUDGET_MS, MAX_RUNS, recordSigapIndikasi } from '../src/sources/sigap-indikasi.js';
 
-// Siklus ECMWF 00Z 1 Okt 2026, tersedia 06:32 UTC (nilai asli meta.json Open-Meteo).
-const META = { last_run_initialisation_time: 1790812800, last_run_availability_time: 1790836340 };
+// Siklus ECMWF 00Z 1 Okt 2026, tersedia 06:32 UTC (nilai asli meta.json Open-Meteo),
+// dan siklus 12Z berikutnya.
+const META_00Z = { last_run_initialisation_time: 1790812800, last_run_availability_time: 1790836340 };
+const META_12Z = { last_run_initialisation_time: 1790856000, last_run_availability_time: 1790879540 };
 const PAST = ['2026-09-28', '2026-09-29', '2026-09-30'];
 const DAYS = ['2026-10-01', '2026-10-02', '2026-10-03', '2026-10-04'];
 
@@ -26,23 +28,34 @@ const RAIN = {
   '-7.100,107.200': [10, 20, 30, 40, 120, 10, 0],
   '-8.000,111.000': [0, 0, 0, 2, 3, 1, 0],
 };
+// 100 titik tambahan (Kabupaten Banyak) supaya hujan diminta dalam dua permintaan:
+// [Uji acuan, Uji longsor, Banyak × 98] lalu [Banyak × 2, Kota Kering].
+const BANYAK = Array.from({ length: 100 }, (_, i) => ({ kode: '99.03', hazard: 'acuan', urutan: i + 1, kelas: 0, lat: -9 - i / 100, lon: 120 }));
+for (const point of BANYAK) RAIN[`${point.lat.toFixed(3)},${point.lon.toFixed(3)}`] = [0, 0, 0, 1, 1, 1, 1];
+const TITIK_BANYAK = [TITIK[0], TITIK[1], ...BANYAK, TITIK[2]];
+const KERING = '-8.000,111.000';
 
-function fakeHttp({ failKeys = new Set() } = {}) {
+const keysOf = (url) => {
+  const params = new URL(url).searchParams;
+  const lons = params.get('longitude').split(',');
+  return params.get('latitude').split(',').map((lat, i) => `${Number(lat).toFixed(3)},${Number(lons[i]).toFixed(3)}`);
+};
+
+// meta: objek atau fungsi (nomor panggilan meta → objek). failKeys: permintaan yang
+// memuat salah satu kunci ini gagal (HTTP 502). onRain: dipanggil tiap permintaan hujan.
+function fakeHttp({ meta = META_00Z, failKeys = new Set(), onRain = () => {} } = {}) {
   const calls = [];
+  let metaCalls = 0;
   const fetchJson = async (url) => {
     calls.push(url);
-    if (url === MODEL_META_URL) return META;
-    const params = new URL(url).searchParams;
-    const lats = params.get('latitude').split(',');
-    const lons = params.get('longitude').split(',');
-    const replies = lats.map((lat, i) => {
-      const key = `${Number(lat).toFixed(3)},${Number(lons[i]).toFixed(3)}`;
-      if (failKeys.has(key)) throw new HttpError(url, 502);
-      return { latitude: Number(lat), longitude: Number(lons[i]), daily: { time: [...PAST, ...DAYS], precipitation_sum: RAIN[key] } };
-    });
+    if (url === MODEL_META_URL) return typeof meta === 'function' ? meta(metaCalls++) : meta;
+    const keys = keysOf(url);
+    onRain(keys);
+    if (keys.some((key) => failKeys.has(key))) throw new HttpError(url, 502);
+    const replies = keys.map((key) => ({ daily: { time: [...PAST, ...DAYS], precipitation_sum: RAIN[key] } }));
     return replies.length === 1 ? replies[0] : replies;
   };
-  return { calls, fetchJson };
+  return { calls, fetchJson, rainCalls: () => calls.filter((u) => u !== MODEL_META_URL) };
 }
 
 let tmpDir;
@@ -54,7 +67,9 @@ beforeEach(async () => {
 afterEach(() => rm(tmpDir, { recursive: true, force: true }));
 
 const NOW = '2026-10-01T06:45:00.000Z';
-const run = (http, now = NOW) => recordSigapIndikasi({ archive, http, now, data: { titikPantau: TITIK } });
+const record = (http, { titik = TITIK, now = NOW, clock } = {}) =>
+  recordSigapIndikasi({ archive, http, now, data: { titikPantau: titik }, ...(clock ? { clock } : {}) });
+const readCycle = (file = 'sigap-indikasi/2026/10/01/00Z.json') => archive.readJson(file);
 
 describe('arsip indikasi SIGAP per siklus model', () => {
   test('hujan diminta dari ECMWF IFS secara eksplisit, 3 hari lalu dan 4 hari ke depan', () => {
@@ -65,27 +80,29 @@ describe('arsip indikasi SIGAP per siklus model', () => {
   });
 
   test('siklus baru direkam: level per kab/kota per hari, hujan per titik, dan jejak versinya', async () => {
-    const result = await run(fakeHttp());
+    const result = await record(fakeHttp());
     assert.deepEqual(result, { items: 2, new: 1, errors: [] });
 
-    const record = await archive.readJson('sigap-indikasi/2026/10/01/00Z.json');
-    assert.equal(record.model, 'ecmwf_ifs');
-    assert.equal(record.model_init, '2026-10-01T00:00:00.000Z');
-    assert.equal(record.model_available, '2026-10-01T06:32:20.000Z');
-    assert.equal(record.rules_version, RULES_VERSION);
-    assert.match(record.rules_sha256, /^[0-9a-f]{64}$/);
-    assert.equal(record.titik_pantau.count, 3);
-    assert.deepEqual(record.dates, DAYS);
-    assert.deepEqual(record.hujan_kolom, ['lat', 'lon', ...PAST, ...DAYS]);
+    const cycle = await readCycle();
+    assert.equal(cycle.model, 'ecmwf_ifs');
+    assert.equal(cycle.model_init, '2026-10-01T00:00:00.000Z');
+    assert.equal(cycle.model_available, '2026-10-01T06:32:20.000Z');
+    assert.equal(cycle.runs, 1);
+    assert.equal(cycle.locations_missing, 0);
+    assert.equal(cycle.rules_version, RULES_VERSION);
+    assert.match(cycle.rules_sha256, /^[0-9a-f]{64}$/);
+    assert.equal(cycle.titik_pantau.count, 3);
+    assert.deepEqual(cycle.dates, DAYS);
+    assert.deepEqual(cycle.hujan_kolom, ['lat', 'lon', ...PAST, ...DAYS]);
 
-    const uji = record.wilayah.find((w) => w.kode === '99.01');
+    const uji = cycle.wilayah.find((w) => w.kode === '99.01');
     // 1 Okt: akumulasi 3 hari 90 mm, belum 100 mm. 2 Okt: 120 mm di zona tinggi =
     // sangat lebat × tinggi = Siaga. 3–4 Okt: akumulasi 170 dan 130 mm = Waspada.
     assert.deepEqual(uji.longsor, [0, 2, 1, 1]);
     assert.deepEqual(uji.hujan, [0, 2, 0, 0]);
     // Tanpa titik zona banjir: Normal, bukan tanpa data.
     assert.deepEqual(uji.banjir, [0, 0, 0, 0]);
-    assert.deepEqual(record.counts['2026-10-02'], { normal: 1, waspada: 0, siaga: 1, awas: 0, tanpa_data: 0 });
+    assert.deepEqual(cycle.counts['2026-10-02'], { normal: 1, waspada: 0, siaga: 1, awas: 0, tanpa_data: 0 });
 
     const rows = (await archive.readText('sigap-indikasi/2026/10/01/00Z-hujan.jsonl')).trim().split('\n').map(JSON.parse);
     assert.equal(rows.length, 3);
@@ -93,37 +110,84 @@ describe('arsip indikasi SIGAP per siklus model', () => {
 
     const status = await archive.readJson('sigap-indikasi/status.json');
     assert.equal(status.last_init, '2026-10-01T00:00:00.000Z');
+    assert.equal(await archive.readText('sigap-indikasi/pending.json'), null);
   });
 
   test('siklus yang sama tidak direkam dua kali', async () => {
-    await run(fakeHttp());
+    await record(fakeHttp());
     const http = fakeHttp();
-    const again = await run(http, '2026-10-01T07:00:00.000Z');
+    const again = await record(http, { now: '2026-10-01T07:00:00.000Z' });
     assert.match(again.skipped, /sudah direkam/);
     assert.deepEqual(http.calls, [MODEL_META_URL]);
   });
 
-  test('titik yang gagal membuat siklus diulang; percobaan ketiga disimpan dengan jumlah gagalnya', async () => {
-    // 103 lokasi = dua permintaan (100 + 3); permintaan kedua (berisi Kota Kering) gagal.
-    const extra = Array.from({ length: 100 }, (_, i) => ({ kode: '99.03', hazard: 'acuan', urutan: i + 1, kelas: 0, lat: -9 - i / 100, lon: 120 }));
-    for (const point of extra) RAIN[`${point.lat.toFixed(3)},${point.lon.toFixed(3)}`] = [0, 0, 0, 1, 1, 1, 1];
-    const [kering, ...uji] = [TITIK[2], TITIK[0], TITIK[1]];
-    const titik = [...uji, ...extra, kering];
-    const http = fakeHttp({ failKeys: new Set(['-8.000,111.000']) });
-    const run = (_, now = NOW) => recordSigapIndikasi({ archive, http, now, data: { titikPantau: titik } });
-    const first = await run(http);
+  test('jatah waktu habis: hujan dicicil dan run berikutnya hanya meminta titik yang belum ada', async () => {
+    // Jam palsu: tiap permintaan hujan memakan seluruh jatah waktu run.
+    let now = 0;
+    const clock = () => now;
+    const http = fakeHttp({ onRain: () => (now += BUDGET_MS) });
+    const first = await record(http, { titik: TITIK_BANYAK, clock });
     assert.equal(first.new, 0);
-    assert.match(first.errors[0], /diulang di run berikutnya \(1\/3\)/);
-    assert.equal(await archive.readText('sigap-indikasi/2026/10/01/00Z.json'), null);
+    assert.equal(first.items, 100);
+    assert.match(first.errors.at(-1), /100\/103 titik hujan, 3 menunggu jatah waktu run berikutnya; dilanjutkan di run berikutnya \(1\/6\)/);
+    const pending = await archive.readJson('sigap-indikasi/pending.json');
+    assert.equal(Object.keys(pending.hujan).length, 100);
 
-    await run(http, '2026-10-01T07:00:00.000Z');
-    const third = await run(http, '2026-10-01T07:15:00.000Z');
-    assert.equal(third.new, 1);
-    const record = await archive.readJson('sigap-indikasi/2026/10/01/00Z.json');
-    assert.equal(record.locations, 103);
-    assert.equal(record.locations_failed, 3);
-    assert.equal(record.attempts, 3);
-    assert.deepEqual(record.wilayah.find((w) => w.kode === '99.02').hujan, [null, null, null, null]);
+    const http2 = fakeHttp({ onRain: () => (now += BUDGET_MS) });
+    now = 10 * BUDGET_MS;
+    const second = await record(http2, { titik: TITIK_BANYAK, clock, now: '2026-10-01T07:00:00.000Z' });
+    assert.equal(second.new, 1);
+    assert.deepEqual(keysOf(http2.rainCalls()[0]).length, 3);
+    const cycle = await readCycle();
+    assert.equal(cycle.runs, 2);
+    assert.equal(cycle.locations_missing, 0);
+    assert.equal(cycle.first_fetched_at, NOW);
+    assert.deepEqual(cycle.wilayah.find((w) => w.kode === '99.01').longsor, [0, 2, 1, 1]);
+    assert.equal(await archive.readText('sigap-indikasi/pending.json'), null);
+  });
+
+  test('titik yang gagal diambil ulang di run berikutnya', async () => {
+    const first = await record(fakeHttp({ failKeys: new Set([KERING]) }), { titik: TITIK_BANYAK });
+    assert.equal(first.new, 0);
+    assert.match(first.errors[0], /3 titik gagal diambil \(HTTP 502/);
+
+    const second = await record(fakeHttp(), { titik: TITIK_BANYAK, now: '2026-10-01T07:00:00.000Z' });
+    assert.equal(second.new, 1);
+    const cycle = await readCycle();
+    assert.equal(cycle.locations_missing, 0);
+    assert.deepEqual(cycle.wilayah.find((w) => w.kode === '99.02').hujan, [0, 0, 0, 0]);
+  });
+
+  test(`setelah ${MAX_RUNS} run masih ada titik gagal: siklus disimpan dengan titik tanpa hujan`, async () => {
+    const http = fakeHttp({ failKeys: new Set([KERING]) });
+    let result;
+    for (let i = 0; i < MAX_RUNS; i++) result = await record(http, { titik: TITIK_BANYAK });
+    assert.equal(result.new, 1);
+    const cycle = await readCycle();
+    assert.equal(cycle.runs, MAX_RUNS);
+    assert.equal(cycle.locations_missing, 3);
+    assert.deepEqual(cycle.wilayah.find((w) => w.kode === '99.02').hujan, [null, null, null, null]);
+    assert.deepEqual(cycle.counts['2026-10-01'].tanpa_data, 1);
+  });
+
+  test('siklus baru terbit sebelum siklus lama lengkap: siklus lama disimpan apa adanya', async () => {
+    await record(fakeHttp({ failKeys: new Set([KERING]) }), { titik: TITIK_BANYAK });
+    const result = await record(fakeHttp({ meta: META_12Z }), { titik: TITIK_BANYAK, now: '2026-10-01T19:00:00.000Z' });
+    assert.equal(result.new, 2);
+    assert.match(result.errors[0], /siklus 2026-10-01T00:00:00.000Z disimpan dengan 3 titik tanpa hujan karena siklus baru terbit/);
+    assert.equal((await readCycle()).locations_missing, 3);
+    const late = await readCycle('sigap-indikasi/2026/10/01/12Z.json');
+    assert.equal(late.model_init, '2026-10-01T12:00:00.000Z');
+    assert.equal(late.locations_missing, 0);
+  });
+
+  test('model berganti saat hujan diambil: hujan run itu dibuang', async () => {
+    const http = fakeHttp({ meta: (n) => (n === 0 ? META_00Z : META_12Z) });
+    const result = await record(http);
+    assert.equal(result.new, 0);
+    assert.match(result.errors[0], /siklus model berganti/);
+    assert.equal(await readCycle(), null);
+    assert.equal(await archive.readText('sigap-indikasi/pending.json'), null);
   });
 
   test('tanpa daftar titik pantau, sumber dilewati', async () => {
