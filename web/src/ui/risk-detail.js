@@ -3,9 +3,9 @@ import {
   capitalize,
   escapeHtml,
   formatDasarian,
-  formatDateShort,
   formatDay,
   formatDecimal,
+  formatEventDate,
   formatMonth,
   formatNumber,
 } from '../lib/format.js';
@@ -36,7 +36,10 @@ function header({ title, place = '', coords = '', status = '' }) {
 }
 
 // ---------- Status 3 hari (jawaban utama) ----------
-function outlook(indications, rainError) {
+function outlook(indications, rainError, status) {
+  if (status === 'luar_indonesia') {
+    return banner(null, 'Di luar wilayah Indonesia', 'SIGAP hanya menghitung indikasi di Indonesia, karena zona bahaya InaRISK dan peringatan resmi yang dipakai hanya mencakup Indonesia.');
+  }
   if (!indications.length) {
     return banner(null, 'Indikasi belum tersedia', rainError ? 'Prakiraan hujan gagal dimuat, jadi indikasi 3 hari tidak dapat dihitung.' : 'Tidak ada data prakiraan hujan.');
   }
@@ -222,7 +225,7 @@ function terrainAndHistory({ slope, history: h }) {
     ? nearbyRow({
         icon: icons.landslide,
         title: `${formatNumber(h.count)} kejadian longsor dalam ${h.radius_km} km`,
-        meta: `Terdekat ${formatDateShort(h.nearest.tanggal)} · terbaru ${formatDateShort(h.latest.tanggal)}`,
+        meta: `Terdekat ${formatEventDate(h.nearest.tanggal, h.nearest.presisi_tanggal)} · terbaru ${formatEventDate(h.latest.tanggal, h.latest.presisi_tanggal)}`,
         distance: h.nearest.distance_km,
       })
     : nearbyRow({ icon: icons.landslide, title: `Tidak ada kejadian tercatat dalam ${h.radius_km} km`, meta: 'Riwayat PVMBG dan MAGMA sejak 2008' });
@@ -299,18 +302,27 @@ function section(title, meta, body) {
     </section>`;
 }
 
+// Baris tempat di bawah judul. Judul hasil pencarian kab/kota ("Kabupaten Garut")
+// tidak diulang. Titik di luar semua batas ditulis dengan kab/kota terdekatnya.
+function placeText({ wilayah, wilayah_terdekat: near, status }, label) {
+  const from = near ? ` ±${formatDecimal(near.distance_km)} km dari ${escapeHtml(near.nama)}` : '';
+  if (status === 'pesisir') return `Pesisir ${escapeHtml(wilayah.nama)}, ${escapeHtml(wilayah.provinsi)}`;
+  if (status === 'perairan') return `Perairan,${from}`;
+  if (status === 'luar_indonesia') return `Di luar wilayah Indonesia (${from.trim()})`;
+  if (wilayah) return label === wilayah.nama ? escapeHtml(wilayah.provinsi) : `${escapeHtml(wilayah.nama)}, ${escapeHtml(wilayah.provinsi)}`;
+  return near ? `Di luar batas kabupaten/kota (${from.trim()})` : 'Di luar batas kabupaten/kota';
+}
+
 // lat/lon = titik yang diklik; location dari server memakai koordinat sel cache.
 function profileHtml(profile, { label, lat = profile.location.lat, lon = profile.location.lon }) {
   const { location } = profile;
   const { wilayah } = location;
-  // Judul hasil pencarian kab/kota ("Kabupaten Garut") tidak diulang di baris tempat.
-  let place = 'Di luar batas kabupaten/kota (perairan?)';
-  if (wilayah) place = label === wilayah.nama ? escapeHtml(wilayah.provinsi) : `${escapeHtml(wilayah.nama)}, ${escapeHtml(wilayah.provinsi)}`;
+  const place = placeText(location, label);
   const elevation = location.elevation_m == null ? '' : ` · ${formatNumber(Math.round(location.elevation_m))} m dpl`;
   return `
     ${header({ title: label ?? 'Titik pilihan', place, coords: `${coordinateText(lat, lon)}${elevation}` })}
     <div class="detail-body view-scroll">
-      ${outlook(profile.indications, profile.rain.error)}
+      ${outlook(profile.indications, profile.rain.error, location.status)}
       ${indicationList(profile.indications, profile.rules_version)}
       ${section('Bahaya di titik ini', 'InaRISK BNPB', `${hazardSummary(profile.hazards)}<ul class="hazard-list">${profile.hazards.map((h, i) => hazardRow(h, i)).join('')}</ul>`)}
       ${section('Prakiraan hujan', 'Open-Meteo', rainDays(profile.rain))}

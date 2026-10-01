@@ -12,6 +12,7 @@ const CEWS_PAGE = 'https://cews.bmkg.go.id/';
 const RELOAD_AFTER_MS = 30 * 60_000;
 
 const longDate = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Jakarta' });
+const monthYear = new Intl.DateTimeFormat('id-ID', { month: 'long', year: 'numeric', timeZone: 'Asia/Jakarta' });
 const shortDate = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'short', timeZone: 'Asia/Jakarta' });
 const clock = new Intl.DateTimeFormat('id-ID', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Jakarta' });
 
@@ -116,7 +117,7 @@ export const imergLegend = () => `
   <p class="legend-note" data-legend-live="imerg">${escapeHtml(legendText.imerg)}</p>
   <div class="legend-ramp" aria-hidden="true">${IMERG_RAMP.map((c) => `<span style="background:${c.color}"></span>`).join('')}</div>
   <div class="legend-ramp-labels"><span>${IMERG_RAMP[0].mm}</span><span>${IMERG_RAMP[3].mm}</span><span>${IMERG_RAMP.at(-1).mm}+ mm/jam</span></div>
-  <p class="legend-note">Rata-rata 30 menit dari satelit, terlambat ±5 jam. Hujan lokal yang singkat bisa terlewat.</p>`;
+  <p class="legend-note">Rata-rata 30 menit dari satelit, terlambat ±4–6 jam (waktu data tertulis di atas). Hujan lokal yang singkat bisa terlewat.</p>`;
 
 // ---------- Riwayat longsor ----------
 
@@ -157,6 +158,7 @@ function historyPopup(p) {
   const date = new Date(`${p.tanggal}T12:00:00+07:00`);
   let when = longDate.format(date);
   if (p.presisi_tanggal === 'tahun') when = `${date.getFullYear()} (tanggal pasti tidak dicatat)`;
+  else if (p.presisi_tanggal === 'bulan') when = `${monthYear.format(date)} (tanggal pasti mungkin tidak dicatat)`;
   else if (p.jam_diketahui) when += `, ${clock.format(new Date(p.occurred_at)).replace(':', '.')} WIB`;
   const desa = placeName(p.desa);
   const kecamatan = placeName(p.kecamatan);

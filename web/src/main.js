@@ -355,7 +355,7 @@ createLayerPanel({
       items: [
         {
           label: "Gempa BMKG",
-          description: "7 hari terakhir · diperbarui tiap menit",
+          description: "M ≥ 5 dan gempa dirasakan · 7 hari · tiap menit",
           legendTitle: "Gempa BMKG (7 hari)",
           symbol: symbol.quake,
           layer: earthquakes.layer,
@@ -388,7 +388,7 @@ createLayerPanel({
         },
         {
           label: "Hujan terkini dari satelit",
-          description: "NASA IMERG · rata-rata 30 menit, terlambat ±5 jam",
+          description: "NASA IMERG · rata-rata 30 menit, terlambat ±4–6 jam",
           legendTitle: "Hujan satelit (NASA IMERG)",
           symbol: symbol.imerg,
           layer: rainNow,

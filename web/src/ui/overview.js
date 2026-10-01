@@ -1,4 +1,4 @@
-import { capitalize, escapeHtml, formatDateRange, formatDay, formatDecimal, shortQuakeRegion, timeAgo } from '../lib/format.js';
+import { capitalize, escapeHtml, formatDay, formatDecimal, outlookPeriod, shortQuakeRegion, timeAgo } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
 import { animateNumber } from '../lib/motion.js';
 import { CEWS_LEVELS, depthClass, pillStyle, VOLCANO_LEVELS, WARNING_LEVEL_STYLES } from '../lib/symbology.js';
@@ -195,7 +195,7 @@ export function createOverview({
     // Indikasi SIGAP 3 hari: jumlah kab/kota per level tertinggi, lalu kab/kota
     // Waspada ke atas (tertinggi dulu). Klik untuk menuju wilayahnya.
     renderOutlook(data) {
-      outlook.meta.textContent = formatDateRange(data.run.forecast_from, data.run.forecast_to);
+      outlook.meta.textContent = outlookPeriod(data);
       const counts = data.counts.tertinggi;
       for (const tile of countTiles()) {
         const value = counts[COUNT_KEYS[tile.dataset.level]];
@@ -209,11 +209,12 @@ export function createOverview({
       let html = shown.length
         ? shown.map(outlookRow).join('')
         : '<li class="empty-note">Tidak ada kab/kota dengan indikasi Waspada atau lebih tinggi untuk 3 hari ke depan.</li>';
+      if (data.window?.expired) html = '<li class="empty-note">Indikasi terakhir sudah kedaluwarsa. Hasil baru muncul setelah run berikutnya selesai.</li>';
       if (warned.length > shown.length) {
         html += `<li class="list-note" style="--i:${shown.length}">${warned.length - shown.length} kab/kota lain juga Waspada atau lebih tinggi. Lihat semuanya di peta.</li>`;
       }
-      if (counts.tanpa_data) html += `<li class="list-note">${counts.tanpa_data} kab/kota tanpa data hujan pada perhitungan ini.</li>`;
-      renderList(outlook.list, html, `${data.run.id}`);
+      if (counts.tanpa_data && !data.window?.expired) html += `<li class="list-note">${counts.tanpa_data} kab/kota tanpa data hujan pada perhitungan ini.</li>`;
+      renderList(outlook.list, html, `${data.run.id}|${data.window?.from}`);
     },
 
     // Belum ada hasil (run pertama) atau gagal dimuat: kerangka muat diganti pesan.

@@ -100,7 +100,7 @@
           </div>
           <ul class="lp-live" data-in style="--d: 4" aria-label="Situasi saat ini">
             <li><strong data-stat="outlook">–</strong> kab/kota berindikasi Waspada ke atas</li>
-            <li><strong data-stat="quakes">–</strong> gempa dalam 7 hari</li>
+            <li><strong data-stat="quakes">–</strong> gempa dirasakan/M ≥ 5 dalam 7 hari</li>
             <li><strong data-stat="volcanoes">–</strong> gunung api Siaga ke atas</li>
             <li><strong data-stat="rain">–</strong> peringatan hujan BMKG</li>
           </ul>
@@ -145,7 +145,7 @@
               <li class="lp-step is-current" data-step="overview">
                 <p class="lp-step__n">01</p>
                 <h3>Lihat situasi seluruh Indonesia</h3>
-                <p>Ikhtisar merangkum gempa 24 jam, gunung api berstatus tinggi, peringatan hujan, dan kab/kota berindikasi. Di peta: gempa BMKG tiap menit, 69 gunung api MAGMA, dan sesar aktif.</p>
+                <p>Ikhtisar merangkum gempa 24 jam, gunung api berstatus tinggi, peringatan hujan, dan kab/kota berindikasi. Di peta: gempa BMKG (M ≥ 5 dan gempa dirasakan) tiap menit, 69 gunung api MAGMA, dan sesar aktif.</p>
                 <p class="lp-step__live" data-live="overview">Memuat data…</p>
                 <figure class="lp-laptop lp-step__shot">
                   <div class="lp-laptop__lid"><div class="lp-laptop__screen"><div class="lp-laptop__bar" aria-hidden="true"><b>SIGAP Bencana</b><span class="lp-laptop__icons"><svg viewBox="0 0 18 14"><path d="M1.5 5a11 11 0 0 1 15 0M4.2 7.8a7 7 0 0 1 9.6 0M6.9 10.6a3 3 0 0 1 4.2 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg><svg viewBox="0 0 26 13"><rect x="1" y="1" width="21" height="11" rx="3" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.4" /><rect x="3" y="3" width="15" height="7" rx="1.5" fill="currentColor" /><rect x="23.3" y="4.5" width="1.8" height="4" rx="0.9" fill="currentColor" fill-opacity="0.55" /></svg><span>Rab 30 Sep 20.15</span></span></div><span class="lp-laptop__notch" aria-hidden="true"></span><div class="lp-laptop__view">
@@ -298,7 +298,7 @@
               <span class="lp-pipe__node" aria-hidden="true">3</span>
               <h3>Nilai</h3>
               <p>Aturan terbuka memberi level dari hujan harian tertinggi dan kelas bahaya di titik itu.</p>
-              <p class="lp-pipe__fact">Satu berkas: <code>rules.json</code> v0.1</p>
+              <p class="lp-pipe__fact">Satu berkas: <code>rules.json</code> <span data-lp="rules">v0.2</span></p>
             </li>
             <li class="lp-pipe__step" style="--n: 3">
               <span class="lp-pipe__node" aria-hidden="true">4</span>
@@ -307,7 +307,7 @@
               <p class="lp-pipe__fact">Saat ini: <b data-lp="n-awas">–</b> Awas · <b data-lp="n-siaga">–</b> Siaga · <b data-lp="n-waspada">–</b> Waspada · <b data-lp="n-normal">–</b> Normal</p>
             </li>
           </ol>
-          <p class="lp-note" data-reveal><span data-icon="info"></span>Aturan v0.1 belum dikalibrasi; ketepatannya sedang diuji dalam riset SIGAP-L.</p>
+          <p class="lp-note" data-reveal><span data-icon="info"></span>Aturan <span data-lp="rules">v0.2</span> belum dikalibrasi; ketepatannya sedang diuji dalam riset SIGAP-L.</p>
         </div>
       </section>
 
@@ -327,7 +327,7 @@
                 <li class="lp-src"><a class="lp-src__name" href="https://magma.esdm.go.id/" target="_blank" rel="noopener">PVMBG · MAGMA<span data-icon="external"></span></a><span class="lp-src__data">Tingkat aktivitas 69 gunung api, erupsi, VONA</span><span class="lp-src__when lp-src__when--live"><b>tiap 30 menit</b><small data-sync="volcanoes">memuat…</small></span></li>
                 <li class="lp-src"><a class="lp-src__name" href="https://cews.bmkg.go.id/" target="_blank" rel="noopener">BMKG CEWS<span data-icon="external"></span></a><span class="lp-src__data">Peringatan dini curah hujan tinggi per kab/kota</span><span class="lp-src__when lp-src__when--live"><b>per dasarian</b><small data-sync="rain">memuat…</small></span></li>
                 <li class="lp-src"><a class="lp-src__name" href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo · ECMWF<span data-icon="external"></span></a><span class="lp-src__data">Prakiraan hujan 3 hari di <span data-lp="locations">3.221</span> titik pantau</span><span class="lp-src__when lp-src__when--live"><b>tiap 12 jam</b><small data-sync="outlook">memuat…</small></span></li>
-                <li class="lp-src"><span class="lp-src__name">NASA GPM IMERG</span><span class="lp-src__data">Hujan satelit 30 menit, tampil sebagai lapisan peta</span><span class="lp-src__when"><b>±5 jam di belakang</b></span></li>
+                <li class="lp-src"><span class="lp-src__name">NASA GPM IMERG</span><span class="lp-src__data">Hujan satelit 30 menit, tampil sebagai lapisan peta</span><span class="lp-src__when"><b>±4–6 jam di belakang</b></span></li>
               </ul>
             </section>
             <section class="lp-srcgroup" data-reveal style="--d: 1" aria-labelledby="lp-src-ref">
@@ -559,7 +559,7 @@
                 <span class="section-meta">Seluruh Indonesia</span>
               </div>
               <div class="stats">
-                <div class="stat stat--quake">
+                <div class="stat stat--quake" title="Gempa M ≥ 5 dan gempa dirasakan dari feed publik BMKG; gempa kecil yang tidak dirasakan tidak ikut dihitung">
                   <span class="stat-icon" data-icon="quake"></span>
                   <span class="stat-value" id="stat-quakes-24h">–</span>
                   <span class="stat-label">Gempa 24 jam</span>
@@ -654,7 +654,7 @@
             <div class="section">
               <div class="section-head">
                 <h2 class="section-title">Gempa terkini</h2>
-                <span class="section-meta">BMKG · 7 hari</span>
+                <span class="section-meta">BMKG · M ≥ 5 dan dirasakan · 7 hari</span>
               </div>
               <ol id="quake-list" class="row-list" aria-busy="true">
                 <li class="skeleton skeleton--row"></li>
@@ -792,7 +792,7 @@
                     target="_blank"
                     rel="noopener"
                     >BMKG</a
-                  ><span>Gempa bumi, diperbarui tiap menit</span>
+                  ><span>Gempa M ≥ 5 dan gempa dirasakan (feed publik BMKG), diperbarui tiap menit</span>
                 </li>
                 <li>
                   <a

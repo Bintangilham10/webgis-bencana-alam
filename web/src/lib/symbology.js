@@ -22,8 +22,8 @@ export const VOLCANO_LEVELS = {
   4: { label: 'Level IV · Awas', roman: 'IV', short: 'Awas', color: '#c62828', text: '#fff' },
 };
 
-// Kelas indeks bahaya BNPB (nilai dibulatkan 3 desimal):
-// rendah ≤ 0,333 < sedang ≤ 0,666 < tinggi. Warna standar InaRISK; kuningnya
+// Kelas indeks bahaya BNPB: rendah ≤ 1/3 < sedang ≤ 2/3 < tinggi (batas atas
+// inklusif, lihat server/src/config/rules.json). Warna standar InaRISK; kuningnya
 // kurang kontras di latar putih, jadi selalu disertai angka dan label kelas.
 export const HAZARD_CLASSES = [
   { id: 'rendah', label: 'Rendah', rgb: [56, 168, 0], text: INK },

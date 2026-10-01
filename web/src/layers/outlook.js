@@ -1,6 +1,6 @@
 import L from 'leaflet';
 import { getJson } from '../lib/api.js';
-import { capitalize, escapeHtml, formatDateRange, formatDay } from '../lib/format.js';
+import { capitalize, escapeHtml, formatDay, outlookPeriod } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
 import { CEWS_LEVELS, NO_DATA_STYLE, pillStyle, WARNING_LEVEL_STYLES } from '../lib/symbology.js';
 
@@ -85,7 +85,8 @@ function hazardRow(region, hazard, view) {
     </li>`;
 }
 
-function popupHtml(region, { view, run, official }) {
+function popupHtml(region, { view, data, official }) {
+  const { run } = data;
   const style = levelStyle(levelIn(region, view));
   const officialRow = official
     ? `<p class="outlook-official">Peringatan resmi BMKG (CEWS, ${escapeHtml(official.period)}):
@@ -98,7 +99,7 @@ function popupHtml(region, { view, run, official }) {
         <h3>${escapeHtml(region.nama)}</h3>
         <span class="level-pill" style="${pillStyle(style)}">${escapeHtml(style.label)}</span>
       </div>
-      <p class="popup-sub">${escapeHtml(region.provinsi)} · indikasi ${escapeHtml(formatDateRange(run.forecast_from, run.forecast_to))}</p>
+      <p class="popup-sub">${escapeHtml(region.provinsi)} · indikasi ${escapeHtml(outlookPeriod(data))}</p>
       <ul class="outlook-hazards">${['hujan', 'banjir', 'longsor'].map((hazard) => hazardRow(region, hazard, view)).join('')}</ul>
       ${officialRow}
       ${point ? `<button type="button" class="btn btn-secondary btn-block" data-action="outlook-check">${icons.pin}Cek risiko di titik pantau</button>` : ''}
@@ -137,7 +138,7 @@ export function createOutlookLayer({ onError, onCheckPoint, officialRain = () =>
       feature.bindPopup(
         () =>
           data && regionOf(feature)
-            ? popupHtml(regionOf(feature), { view, run: data.run, official: officialRain(f.properties.kode) })
+            ? popupHtml(regionOf(feature), { view, data, official: officialRain(f.properties.kode) })
             : `<div class="popup"><h3>${escapeHtml(f.properties.nama)}</h3><p class="popup-sub">Indikasi SIGAP untuk kab/kota ini belum tersedia.</p></div>`,
         { maxWidth: 320 },
       );
@@ -213,7 +214,11 @@ export function createOutlookLayer({ onError, onCheckPoint, officialRain = () =>
     async refresh() {
       data = await getJson('/api/outlook');
       byKode = new Map(data.regions.map((region) => [region.kode, region]));
-      fillLegend(`Prakiraan ${formatDateRange(data.run.forecast_from, data.run.forecast_to)}, dihitung ${wib(data.run.finished_at)} WIB`);
+      fillLegend(
+        data.window?.expired
+          ? `Indikasi terakhir (dihitung ${wib(data.run.finished_at)} WIB) sudah kedaluwarsa`
+          : `Prakiraan ${outlookPeriod(data)}, dihitung ${wib(data.run.finished_at)} WIB`,
+      );
       restyle();
       return data;
     },

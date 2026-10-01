@@ -70,6 +70,25 @@ export const formatMonth = (yyyymm) => monthLong.format(new Date(`${yyyymm}-15T0
 const dateShort = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
 export const formatDateShort = (isoDate) => dateShort.format(new Date(`${isoDate}T00:00:00Z`));
 
+// Tanggal kejadian menurut presisinya: laporan yang hanya mencatat tahun atau
+// bulan memakai tanggal pengganti (1 Jan/31 Des atau tanggal 1), jadi yang
+// ditulis hanya bagian yang diketahui: "2020", "Mar 2021", atau "6 Jan 2021".
+const monthShortYear = new Intl.DateTimeFormat('id-ID', { month: 'short', year: 'numeric', timeZone: 'UTC' });
+export function formatEventDate(isoDate, precision = 'hari') {
+  if (precision === 'tahun') return isoDate.slice(0, 4);
+  if (precision === 'bulan') return monthShortYear.format(new Date(`${isoDate}T00:00:00Z`));
+  return formatDateShort(isoDate);
+}
+
 // Rentang prakiraan "2026-09-29".."2026-10-01" → "29 Sep–1 Okt".
 const dayMonth = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'short', timeZone: 'UTC' });
 export const formatDateRange = (from, to) => `${dayMonth.format(new Date(`${from}T00:00:00Z`))}–${dayMonth.format(new Date(`${to}T00:00:00Z`))}`;
+
+// Hari yang dicakup indikasi SIGAP di peta: hari ini sampai H+2 (window dari server),
+// atau rentang run untuk run lama yang belum punya level per hari.
+export function outlookPeriod({ run, window }) {
+  if (window?.expired) return 'kedaluwarsa';
+  const from = window?.from ?? run.forecast_from;
+  const to = window?.to ?? run.forecast_to;
+  return from === to ? dayMonth.format(new Date(`${from}T00:00:00Z`)) : formatDateRange(from, to);
+}

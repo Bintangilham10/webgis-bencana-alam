@@ -255,7 +255,7 @@ export function createLanding({ element, app, focusAfter, onSearch, onLocate }) 
       const quakes = collection.features.map((f) => f.properties);
       const strongest = quakes.reduce((max, q) => (!max || q.magnitude > max.magnitude ? q : max), null);
       setStat('quakes', quakes.length);
-      setLive('overview', 'quakes', strongest ? `Saat ini: ${quakes.length} gempa dalam 7 hari, terbesar M ${formatDecimal(strongest.magnitude)}` : 'Saat ini: belum ada gempa dirasakan atau M5+ dalam 7 hari');
+      setLive('overview', 'quakes', strongest ? `Saat ini: ${quakes.length} gempa dirasakan atau M5+ dalam 7 hari, terbesar M ${formatDecimal(strongest.magnitude)}` : 'Saat ini: belum ada gempa dirasakan atau M5+ dalam 7 hari');
       setStamp('quakes', collection.meta.synced_at);
       setSync('quakes', collection.meta.synced_at);
     },
@@ -293,6 +293,7 @@ export function createLanding({ element, app, focusAfter, onSearch, onLocate }) 
           : 'Saat ini: semua kab/kota Normal',
       );
       setText('locations', formatNumber(data.run.locations));
+      setText('rules', data.run.rules_version);
       for (const key of ['normal', 'waspada', 'siaga', 'awas']) setText(`n-${key}`, formatNumber(counts[key]));
       const failed = data.run.locations_failed ? `, ${formatNumber(data.run.locations_failed)} gagal` : '';
       setText('run', `Run terakhir ${clock(data.run.finished_at)} · ${formatNumber(data.run.locations)} titik pantau${failed} · dihitung ulang tiap 12 jam`);
