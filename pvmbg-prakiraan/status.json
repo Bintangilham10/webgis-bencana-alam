@@ -3,14 +3,15 @@
     "2026-09": {
       "layer": "pmbgi:prakiraan_2026_9",
       "total": 514,
-      "done": 514,
-      "completed_at": "2026-09-27T14:15:23.791Z"
+      "done": 86,
+      "pembaca": 2
     },
     "2026-10": {
       "layer": "pmbgi:prakiraan_2026_10",
       "total": 514,
-      "done": 500,
-      "pembaca": 2
+      "done": 514,
+      "pembaca": 2,
+      "completed_at": "2026-10-01T05:00:35.448Z"
     }
   }
 }
