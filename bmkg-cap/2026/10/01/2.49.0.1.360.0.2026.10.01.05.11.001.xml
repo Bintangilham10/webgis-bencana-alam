@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.01.05.11.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-01T11:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-01T11:10:00+07:00</effective>
+    <expires>2026-10-01T13:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Aceh</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 01 October 2026, 11:10 WIB di sebagian wilayah Aceh, khususnya di SIMEULUE TIMUR, TEUPAH SELATAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 01 October 2026, 13:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CAH/2026/10/01/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Aceh</areaDesc>
+      <polygon>2.477,96.427 2.467,96.431 2.444,96.425 2.425,96.412 2.413,96.395 2.426,96.370 2.437,96.360 2.446,96.357 2.467,96.316 2.485,96.322 2.505,96.286 2.522,96.277 2.527,96.264 2.531,96.233 2.540,96.223 2.545,96.201 2.553,96.207 2.590,96.223 2.598,96.229 2.604,96.243 2.591,96.250 2.577,96.266 2.559,96.306 2.561,96.317 2.552,96.329 2.546,96.347 2.525,96.341 2.518,96.353 2.517,96.362 2.520,96.358 2.521,96.362 2.514,96.368 2.510,96.364 2.498,96.365 2.475,96.383 2.473,96.390 2.467,96.384 2.456,96.385 2.462,96.391 2.463,96.398 2.457,96.397 2.455,96.401 2.461,96.407 2.470,96.408 2.479,96.401 2.505,96.407 2.506,96.402 2.512,96.404 2.511,96.409 2.488,96.415 2.477,96.427</polygon>
+      <polygon>2.655,96.377 2.654,96.388 2.645,96.397 2.644,96.382 2.656,96.352 2.664,96.365 2.659,96.367 2.655,96.377</polygon>
+      <polygon>2.541,96.352 2.539,96.349 2.542,96.347 2.541,96.352</polygon>
+      <polygon>2.538,96.358 2.539,96.356 2.540,96.359 2.538,96.358</polygon>
+      <polygon>2.534,96.350 2.530,96.349 2.532,96.345 2.534,96.350</polygon>
+      <polygon>2.525,96.382 2.520,96.378 2.515,96.379 2.518,96.387 2.514,96.392 2.510,96.390 2.514,96.384 2.514,96.373 2.521,96.363 2.526,96.367 2.522,96.374 2.527,96.378 2.525,96.382</polygon>
+      <polygon>2.348,96.339 2.350,96.340 2.355,96.342 2.366,96.346 2.366,96.346 2.367,96.347 2.368,96.347 2.369,96.347 2.372,96.348 2.373,96.348 2.373,96.348 2.374,96.349 2.376,96.349 2.376,96.349 2.377,96.349 2.382,96.351 2.391,96.358 2.394,96.363 2.395,96.366 2.400,96.374 2.404,96.380 2.413,96.395 2.425,96.412 2.444,96.425 2.467,96.431 2.477,96.427 2.481,96.430 2.486,96.426 2.492,96.428 2.460,96.467 2.449,96.471 2.438,96.466 2.410,96.487 2.399,96.477 2.386,96.492 2.363,96.499 2.344,96.481 2.340,96.461 2.328,96.441 2.332,96.407 2.349,96.387 2.347,96.374 2.340,96.373 2.337,96.367 2.343,96.344 2.348,96.339</polygon>
+      <polygon>2.439,96.483 2.436,96.485 2.433,96.482 2.437,96.476 2.440,96.477 2.439,96.483</polygon>
+      <polygon>2.436,96.494 2.427,96.516 2.415,96.510 2.418,96.496 2.427,96.485 2.438,96.489 2.436,96.494</polygon>
+      <polygon>2.414,96.502 2.412,96.503 2.413,96.499 2.414,96.502</polygon>
+      <polygon>2.169,96.648 2.167,96.662 2.156,96.658 2.149,96.652 2.149,96.636 2.175,96.610 2.182,96.608 2.188,96.625 2.186,96.635 2.169,96.648</polygon>
+      <polygon>2.120,96.665 2.110,96.678 2.090,96.687 2.083,96.685 2.056,96.648 2.062,96.629 2.075,96.615 2.083,96.612 2.104,96.611 2.111,96.613 2.121,96.628 2.123,96.650 2.120,96.665</polygon>
+    </area>
+  </info>
+</alert>
