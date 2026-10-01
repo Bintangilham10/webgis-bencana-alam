@@ -16,7 +16,7 @@ export const HAZARDS = [
 // Server BNPB mengubah indeks 0–1 menjadi 3 kelas warna (Remap lalu Colormap).
 // Nilai 0 dijadikan NoData sehingga area tanpa bahaya tampil transparan.
 // Batas kelas = sepertiga dengan batas atas inklusif (sama dengan
-// server/src/config/rules.json): 2/3 (zona menengah pada indeks longsor) = sedang.
+// recorder/src/lib/rules.json): 2/3 (zona menengah pada indeks longsor) = sedang.
 const RENDERING_RULE = {
   rasterFunction: 'Colormap',
   rasterFunctionArguments: {

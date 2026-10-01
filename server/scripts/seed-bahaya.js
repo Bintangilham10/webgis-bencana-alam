@@ -5,7 +5,7 @@ import { loadRawBuffer, readRawJson, writeRawJson } from './raw-cache.js';
 
 // Raster kelas bahaya InaRISK BNPB untuk seluruh Indonesia, dasar indikasi
 // SIGAP 3 hari. Server BNPB membagi indeks 0–1 menjadi kelas dengan Remap yang
-// sama dengan peta (web/src/layers/hazards.js) dan config/rules.json:
+// sama dengan peta (web/src/layers/hazards.js) dan recorder/src/lib/rules.json:
 // 1 rendah (≤ 1/3), 2 sedang (≤ 2/3), 3 tinggi; indeks 0 dan laut menjadi NoData (0).
 const SERVICE_URL = 'https://gis.bnpb.go.id/server/rest/services/inarisk';
 export const RASTER_HAZARDS = [
