@@ -4,7 +4,7 @@ import { mkdtemp, readdir, readFile, rm } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { afterEach, beforeEach, describe, test } from 'node:test';
-import { SOURCES, runOnce } from '../src/record.js';
+import { SOURCES, runOnce, selectSources } from '../src/record.js';
 import { createArchive } from '../src/lib/store.js';
 import { RSS_URL, parseCap, parseRss, recordBmkgCap } from '../src/sources/bmkg-cap.js';
 import { FEEDS, eventFilePath, extractEvents, recordBmkgGempa } from '../src/sources/bmkg-gempa.js';
@@ -212,5 +212,16 @@ describe('runOnce', () => {
     assert.match(results.magma.error, /URL tidak terduga/);
     assert.equal(results['bmkg-cap'].ok, true);
     assert.equal(results.petabencana.ok, true);
+  });
+});
+
+describe('pilihan sumber dari baris perintah', () => {
+  test('--kecuali dan --hanya memilah sumber untuk dua langkah workflow', () => {
+    const names = (argv) => Object.keys(selectSources(argv));
+    assert.deepEqual(names([]), Object.keys(SOURCES));
+    assert.deepEqual(names(['--hanya', 'sigap-indikasi']), ['sigap-indikasi']);
+    assert.ok(!names(['--kecuali', 'sigap-indikasi']).includes('sigap-indikasi'));
+    assert.equal(names(['--kecuali', 'sigap-indikasi']).length, Object.keys(SOURCES).length - 1);
+    assert.throws(() => selectSources(['--hanya', 'tidak-ada']), /Sumber tidak dikenal/);
   });
 });

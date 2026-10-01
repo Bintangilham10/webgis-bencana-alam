@@ -45,8 +45,25 @@ export function defaultData() {
   return { wilayah, gazetteer: wilayah.length ? createGazetteer(wilayah) : null, titikPantau };
 }
 
+// Pilihan sumber dari argumen baris perintah: --hanya a,b atau --kecuali a,b.
+// Workflow memakai dua langkah: semua sumber kecuali sigap-indikasi (cepat, langsung
+// di-commit), lalu sigap-indikasi sendiri (bisa lama, dicicil antar-run).
+export function selectSources(argv, sources = SOURCES) {
+  const pick = (flag) => {
+    const i = argv.indexOf(flag);
+    return i === -1 ? null : (argv[i + 1] ?? '').split(',').filter(Boolean);
+  };
+  const only = pick('--hanya');
+  const except = pick('--kecuali');
+  for (const name of [...(only ?? []), ...(except ?? [])]) {
+    if (!(name in sources)) throw new Error(`Sumber tidak dikenal: ${name}`);
+  }
+  return Object.fromEntries(Object.entries(sources).filter(([name]) => (only ? only.includes(name) : !except?.includes(name))));
+}
+
 // Satu sumber yang gagal tidak menghentikan sumber lain. Hasil tiap run,
-// termasuk kegagalan, dicatat di _runs/ sebagai data ketersediaan sumber (RQ2).
+// termasuk kegagalan, dicatat di _runs/ sebagai data ketersediaan sumber (RQ2);
+// run_id (GITHUB_RUN_ID) mengaitkan baris log dari langkah-langkah satu run.
 export async function runOnce({
   archive,
   http = liveHttp,
@@ -54,6 +71,7 @@ export async function runOnce({
   sources = SOURCES,
   data = defaultData(),
   pause = sleep,
+  runId = process.env.GITHUB_RUN_ID ?? null,
 }) {
   const results = {};
   for (const [name, record] of Object.entries(sources)) {
@@ -65,7 +83,7 @@ export async function runOnce({
     }
     results[name].ms = Math.round(performance.now() - started);
   }
-  await archive.appendLine(`_runs/${datePath(now)}.jsonl`, { run_at: now, results });
+  await archive.appendLine(`_runs/${datePath(now)}.jsonl`, { run_at: now, ...(runId ? { run_id: runId } : {}), results });
   return results;
 }
 
@@ -76,7 +94,7 @@ async function main() {
   const readme = await readFile(new URL('../ARSIP_README.md', import.meta.url), 'utf8');
   if ((await archive.readText('README.md')) !== readme) await archive.writeText('README.md', readme);
 
-  const results = await runOnce({ archive });
+  const results = await runOnce({ archive, sources: selectSources(process.argv.slice(2)) });
   for (const [name, r] of Object.entries(results)) {
     let detail;
     if (!r.ok) detail = `GAGAL: ${r.error}`;
