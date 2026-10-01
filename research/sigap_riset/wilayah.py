@@ -25,6 +25,31 @@ def kab_kota_at(lats: list[float], lons: list[float]) -> list[tuple | None]:
     return [tuple(found[i]) if i in found else None for i in range(len(lats))]
 
 
+def nearest_kab_kota(lats: list[float], lons: list[float], max_m: float) -> list[tuple | None]:
+    """(kode kab/kota, nama, kode provinsi, nama provinsi, jarak m) kab/kota terdekat
+    dalam max_m meter dari tiap titik; None bila tidak ada."""
+    with connect() as conn:
+        rows = conn.execute(
+            """
+            SELECT t.idx, k.kode, k.nama, p.kode, p.nama, k.jarak
+            FROM unnest(%s::int[], %s::float8[], %s::float8[]) AS t(idx, lon, lat)
+            JOIN LATERAL (
+              SELECT kode, nama, induk_kode,
+                     ST_Distance(geom::geography, ST_SetSRID(ST_MakePoint(t.lon, t.lat), 4326)::geography) AS jarak
+              FROM wilayah
+              WHERE tingkat <> 'provinsi'
+                AND ST_DWithin(geom::geography, ST_SetSRID(ST_MakePoint(t.lon, t.lat), 4326)::geography, %s)
+              ORDER BY jarak
+              LIMIT 1
+            ) k ON true
+            JOIN wilayah p ON p.kode = k.induk_kode
+            """,
+            (list(range(len(lats))), list(lons), list(lats), max_m),
+        ).fetchall()
+    found = {idx: rest for idx, *rest in rows}
+    return [tuple(found[i]) if i in found else None for i in range(len(lats))]
+
+
 def random_points(specs: list[tuple[str, str, int, int]]) -> dict[str, list[tuple[float, float]]]:
     """Titik acak di dalam wilayah. specs = [(kunci, kode wilayah, jumlah, seed)] → {kunci: [(lat, lon), ...]}.
 

@@ -1,0 +1,6 @@
+sumber,dari,sampai,sinkronisasi,sukses,persen_sukses,gagal_jaringan_klien,gagal_sumber,persen_sukses_tanpa_gagal_klien,persen_slot_terjadwal_berjalan,tabel,kelompok,n,jeda_sumber_median_mnt,jeda_sumber_p90_mnt,jeda_sistem_maks_s,jeda_sistem_median_s
+bmkg-gempa,2026-09-26 00:45:15.418000+00:00,2026-10-01 01:21:19.895000+00:00,4312.0,3685.0,85.45918367346938,626.0,1.0,99.97287032013023,59.58208569619625,ketersediaan,,,,,,
+indikasi-sigap,2026-09-29 11:59:00.850000+00:00,2026-09-30 14:06:01.036000+00:00,5.0,5.0,100.0,0.0,0.0,100.0,100.0,ketersediaan,,,,,,
+magma,2026-09-26 00:45:15.445000+00:00,2026-10-01 01:13:19.852000+00:00,225.0,201.0,89.33333333333333,22.0,2.0,99.01477832512315,92.99988552747423,ketersediaan,,,,,,
+,,,,,,,,,,latensi,semua terpantau,6.0,22.621132808333332,28.083715225,60.318742,60.2907615
+,,,,,,,,,,latensi,gempa dirasakan,6.0,22.621132808333332,28.083715225,60.318742,60.2907615

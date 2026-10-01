@@ -7,6 +7,7 @@ Folder ini berisi skrip analisis untuk paper. Rancangan lengkapnya ada di rencan
 | RQ-L1 | Skill prakiraan bulanan potensi gerakan tanah PVMBG dan peringatan curah hujan tinggi BMKG (CEWS), 2022–2025 | Hasil di [`results/rq_l1_ringkasan.md`](results/rq_l1_ringkasan.md) dan EDuMaP CEWS di [`results/rq_l1_edumap_cews.md`](results/rq_l1_edumap_cews.md) |
 | RQ-L2 | Ambang hidrometeorologi (kelembapan tanah ERA5-Land × hujan) vs ambang hujan saja | Belum |
 | RQ-L3 | Skill model SIGAP-L harian pada lead 0–2 hari vs produk resmi | Belum |
+| RQ2 | Kinerja sistem: ketersediaan sinkronisasi dan latensi data | Ukuran di [`results/kinerja_sistem.md`](results/kinerja_sistem.md); perlu server yang selalu aktif untuk angka final |
 
 ## Menjalankan
 
@@ -19,6 +20,7 @@ research/.venv/Scripts/python -m pip install -r research/requirements.txt
 research/.venv/Scripts/python research/01_inventaris.py     # ±5 menit pertama kali (menjelajah 110 halaman MAGMA)
 research/.venv/Scripts/python research/02_produk_resmi.py   # ±3 jam pertama kali (±8.400 titik PVMBG, 1 request/detik)
 research/.venv/Scripts/python research/06_evaluasi_rq_l1.py # hitung metrik, tulis ke results/
+research/.venv/Scripts/python research/09_kinerja_sistem.py # ketersediaan dan latensi dari database SIGAP (RQ2)
 research/.venv/Scripts/python -m unittest discover -s research/tests
 ```
 
@@ -28,6 +30,10 @@ Balasan yang bukan data tidak pernah masuk cache. Kalau firewall situs ESDM memb
 
 Data CEWS dibaca dari arsip perekam (branch `arsip-data`, folder `bmkg-cews/`). Bagian ini dilewati otomatis sampai arsip 2022–2025 lengkap.
 
+**Nilai PVMBG di titik.** GetFeatureInfo mengembalikan 2–4 poligon untuk titik di dekat batas zona (17% titik sampel). Sejak 1 Okt 2026, `02_produk_resmi.py` memakai poligon yang memuat titik, bukan poligon pertama. Dampaknya terhadap hasil dicatat di `PROTOKOL.md` (catatan penerapan 1 Okt 2026).
+
+**Latensi (RQ2).** BMKG baru menerbitkan gempa di feed publik beberapa menit setelah kejadian: 15–31 menit (median 22,6) untuk 6 gempa dirasakan yang tertangkap saat server memantau, 26 Sep–1 Okt 2026. Karena itu latensi dilaporkan dalam dua bagian: jeda sumber (waktu kejadian → muncul di feed, diperkirakan dari event yang tertangkap saat server memantau) dan jeda sistem SIGAP (muncul di feed → tersimpan, paling lama satu interval sinkronisasi). Target "gempa masuk ≤ 2 menit dari kejadian" tidak bisa dicapai sistem mana pun yang memakai feed publik.
+
 ## Struktur
 
 | Path | Isi |
@@ -35,6 +41,7 @@ Data CEWS dibaca dari arsip perekam (branch `arsip-data`, folder `bmkg-cews/`). 
 | `01_inventaris.py` | Inventaris kejadian gerakan tanah: laporan lapangan PVMBG + tanggapan MAGMA, dedup, kode kab/kota |
 | `02_produk_resmi.py` | Desain kasus-kontrol dan nilai produk resmi di tiap titik/periode |
 | `06_evaluasi_rq_l1.py` | AUC berpasangan, POD/POFD/TSS, CI bootstrap klaster, analisis sensitivitas, dan EDuMaP untuk CEWS |
+| `09_kinerja_sistem.py` | Ketersediaan sinkronisasi per sumber (gagal jaringan klien dipisah dari gagal sumber) dan latensi gempa BMKG |
 | `sigap_riset/` | Modul bersama: klien HTTP ber-cache, query PostGIS, metrik, arsip CEWS, dan EDuMaP (Calvello & Piciullo 2016) |
 | `tests/` | Uji metrik dengan data buatan, uji klien HTTP, dan uji EDuMaP dengan contoh di makalah aslinya |
 | `data/` | Cache, data antara, dan sampel (tidak dikomit; bisa dibuat ulang) |

@@ -25,7 +25,7 @@ from sigap_riset.geo import haversine_km
 from sigap_riset.http import Client
 from sigap_riset.paths import DATA, RESULTS, ROOT
 from sigap_riset.waktu import BULAN, TZ_OFFSET_JAM
-from sigap_riset.wilayah import kab_kota_at
+from sigap_riset.wilayah import kab_kota_at, nearest_kab_kota
 
 FIELD_REPORTS_URL = 'https://vsi.esdm.go.id/portalmbg/api/get-field-reports'
 MAGMA_LIST_URL = 'https://magma.esdm.go.id/v1/gerakan-tanah/tanggapan?page={page}'
@@ -277,12 +277,34 @@ def date_precision(sumber: str, tanggal: date) -> str:
     return 'bulan' if tanggal.day == 1 else 'hari'
 
 
+# Garis pantai poligon Kepmendagri lebih kasar dari kenyataan: 13 kejadian pantai
+# jatuh 2–389 m di laut. Kejadian sampai 1 km di luar poligon diberi kab/kota
+# terdekat (untuk peta dan analisis lanjutan), tetapi tetap tidak memenuhi definisi
+# kasus RQ-L1 ("koordinat di dalam poligon kab/kota", PROTOKOL.md bagian 3).
+COAST_SNAP_M = 1000
+
+
 def assign_wilayah(events: pd.DataFrame) -> pd.DataFrame:
-    """Kode kab/kota dan provinsi dari poligon Kepmendagri 2025 di PostGIS."""
-    found = kab_kota_at(events['lat'].tolist(), events['lon'].tolist())
+    """Kode kab/kota dan provinsi dari poligon Kepmendagri 2025 di PostGIS.
+
+    `di_daratan` = titik di dalam poligon kab/kota. `jarak_batas_m` = 0 untuk titik
+    di dalam poligon, jarak ke kab/kota terdekat untuk titik pantai yang dipasangkan
+    (≤ 1 km), dan kosong untuk titik yang lebih jauh."""
+    lats, lons = events['lat'].tolist(), events['lon'].tolist()
+    found = kab_kota_at(lats, lons)
+    outside = [i for i, row in enumerate(found) if row is None]
+    nearby = nearest_kab_kota([lats[i] for i in outside], [lons[i] for i in outside], COAST_SNAP_M)
+    distance = [0.0 if row else None for row in found]
+    for i, row in zip(outside, nearby):
+        if row:
+            found[i] = row[:4]
+            distance[i] = round(row[4], 1)
     events = events.copy()
+    outside_set = set(outside)
+    events['di_daratan'] = [i not in outside_set for i in range(len(found))]
     for col, pos in (('kab_kode', 0), ('kab_nama', 1), ('prov_kode', 2), ('provinsi', 3)):
         events[col] = [row[pos] if row else None for row in found]
+    events['jarak_batas_m'] = distance
     return events
 
 
@@ -341,11 +363,12 @@ def main() -> None:
     events, duplicates = merge_sources(magma, pvmbg)
     events = assign_wilayah(events)
     events['tipe_diketahui'] = events['tipe'].notna()
-    events['di_daratan'] = events['kab_kode'].notna()
     events['tanggal'] = pd.to_datetime(events['tanggal']).dt.date
     events['presisi_tanggal'] = [date_precision(s, t) for s, t in zip(events['sumber'], events['tanggal'])]
     events = events.sort_values(['tanggal', 'id']).reset_index(drop=True)
-    print(f'Kejadian gabungan: {len(events)} (duplikat PVMBG↔MAGMA dibuang: {duplicates}, di luar poligon kab/kota: {(~events["di_daratan"]).sum()})')
+    snapped = int((events['jarak_batas_m'] > 0).sum())
+    print(f'Kejadian gabungan: {len(events)} (duplikat PVMBG↔MAGMA dibuang: {duplicates}, di luar poligon kab/kota: '
+          f'{(~events["di_daratan"]).sum()}, {snapped} di antaranya ≤ 1 km dari pantai dan diberi kab/kota terdekat)')
 
     events.to_parquet(DATA / 'inventaris.parquet', index=False)
     events.to_csv(DATA / 'inventaris.csv', index=False)
