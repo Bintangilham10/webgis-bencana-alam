@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.01.11.62.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-01T18:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-01T18:20:00+07:00</effective>
+    <expires>2026-10-01T20:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 01 October 2026, 18:20 WIB di sebagian wilayah Kalimantan Tengah, khususnya di GUNUNG PUREI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 01 October 2026, 20:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/01/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-1.116,115.803 -1.140,115.826 -1.151,115.843 -1.159,115.847 -1.169,115.841 -1.200,115.797 -1.229,115.772 -1.283,115.755 -1.307,115.758 -1.315,115.754 -1.315,115.749 -1.337,115.714 -1.333,115.670 -1.394,115.559 -1.402,115.496 -1.416,115.476 -1.413,115.472 -1.360,115.459 -1.291,115.453 -1.277,115.456 -1.245,115.476 -1.223,115.483 -1.107,115.465 -1.004,115.508 -0.988,115.532 -0.983,115.547 -0.972,115.622 -0.985,115.643 -1.000,115.659 -1.023,115.657 -1.058,115.673 -1.056,115.696 -1.084,115.724 -1.091,115.743 -1.123,115.749 -1.135,115.757 -1.134,115.766 -1.123,115.777 -1.113,115.792 -1.112,115.800 -1.116,115.803</polygon>
+    </area>
+  </info>
+</alert>
