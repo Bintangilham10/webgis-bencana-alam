@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-01T12:15:31.728Z",
+  "data": {
+    "Tanggal": "01 Okt 2026",
+    "Jam": "18:51:40 WIB",
+    "DateTime": "2026-10-01T11:51:40+00:00",
+    "Coordinates": "0.95,122.69",
+    "Lintang": "0.95 LU",
+    "Bujur": "122.69 BT",
+    "Magnitude": "3.6",
+    "Kedalaman": "47 km",
+    "Wilayah": "Pusat gempa berada di laut 26 km barat laut Gorontalo Utara",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "II - III Kab. Gorontalo Utara",
+    "Shakemap": "20261001185140.mmi.jpg"
+  }
+}
