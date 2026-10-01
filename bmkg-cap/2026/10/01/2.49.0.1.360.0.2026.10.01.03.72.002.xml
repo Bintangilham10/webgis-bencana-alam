@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.01.03.72.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-01T11:15:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-01T11:27:00+08:00</effective>
+    <expires>2026-10-01T14:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 01 October 2026, 11:27 WITA di sebagian wilayah Sulawesi Tengah, khususnya di SINDUE TOMBUSABORA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 01 October 2026, 14:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSG/2026/10/01/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tengah</areaDesc>
+      <polygon>-0.452,119.938 -0.500,119.934 -0.514,119.938 -0.509,119.918 -0.519,119.893 -0.516,119.883 -0.544,119.818 -0.513,119.809 -0.518,119.767 -0.506,119.767 -0.495,119.759 -0.469,119.763 -0.451,119.761 -0.437,119.755 -0.400,119.765 -0.393,119.763 -0.393,119.779 -0.382,119.794 -0.379,119.808 -0.384,119.830 -0.390,119.839 -0.397,119.807 -0.408,119.792 -0.416,119.788 -0.424,119.793 -0.424,119.807 -0.436,119.825 -0.428,119.869 -0.432,119.888 -0.431,119.903 -0.452,119.919 -0.452,119.938</polygon>
+    </area>
+  </info>
+</alert>
