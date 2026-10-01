@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-01T15:00:51.335Z",
+  "data": {
+    "Tanggal": "01 Okt 2026",
+    "Jam": "21:20:00 WIB",
+    "DateTime": "2026-10-01T14:20:00+00:00",
+    "Coordinates": "-7.07,120.80",
+    "Lintang": "7.07 LS",
+    "Bujur": "120.80 BT",
+    "Magnitude": "5.1",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di laut 111 km tenggara Selayar",
+    "Dirasakan": "III Benteng Selayar, IV Jampea Kep. Selayar"
+  }
+}
