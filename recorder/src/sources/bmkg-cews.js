@@ -10,9 +10,14 @@ export const LEVELS = ['aman', 'waspada', 'siaga', 'awas'];
 // Arsip CEWS di server BMKG dimulai Januari 2022.
 export const BACKFILL_FROM = { year: 2022, month: 1, num: 1 };
 
-// Jadwal GitHub Actions sering tertunda (±6 run per hari), jadi pemeriksaan
-// dibuat cukup rapat supaya praktis terjadi di setiap run.
+// Peringatan terbit menjelang dasariannya, dan waktu terbit itu menentukan lead
+// time peringatan. Selama dasarian berjalan atau berikutnya belum terbit, BMKG
+// diperiksa tiap jam (pemicu luar menjalankan perekam tiap 15 menit), jadi
+// first_seen_at tepat sampai ±1 jam. Setelah keduanya terbit, tiap 3 jam untuk
+// menangkap revisi.
 const CHECK_EVERY_HOURS = 3;
+const CHECK_UNPUBLISHED_HOURS = 1;
+const dasarianKey = ({ year, month, num }) => `${year}-${pad2(month)}-${num}`;
 const BACKFILL_PER_RUN = 12;
 const PAUSE_MS = 1_000;
 
@@ -75,11 +80,18 @@ export async function recordBmkgCews({ archive, http, now, data = {}, pause = as
   const errors = [];
 
   // Dasarian berjalan dan berikutnya (peringatan terbit sebelum dasarian dimulai).
-  if (hoursSince(status.checked_at, now) >= CHECK_EVERY_HOURS) {
-    for (const dasarian of [current, nextDasarian(current)]) {
+  // seen = kapan produk tiap dasarian pertama kali terlihat (hanya beberapa terakhir).
+  const watched = [current, nextDasarian(current)];
+  const seen = Object.fromEntries(Object.entries(status.seen ?? {}).filter(([key]) => key >= dasarianKey(current)));
+  const waiting = watched.some((d) => !seen[dasarianKey(d)]);
+  if (hoursSince(status.checked_at, now) >= (waiting ? CHECK_UNPUBLISHED_HOURS : CHECK_EVERY_HOURS)) {
+    for (const dasarian of watched) {
       try {
         const result = await saveDasarian(context, dasarian, await fetchDasarian(http, dasarian, pause));
-        if (result !== null) items++;
+        if (result !== null) {
+          items++;
+          seen[dasarianKey(dasarian)] ??= now;
+        }
         if (result) saved++;
       } catch (err) {
         errors.push(`${dasarianLabel(dasarian)}: ${err.message}`);
@@ -87,6 +99,7 @@ export async function recordBmkgCews({ archive, http, now, data = {}, pause = as
     }
     status.checked_at = now;
   }
+  status.seen = seen;
 
   // Backfill arsip lama, dicicil beberapa dasarian per run supaya tidak membebani server.
   const backfillFrom = data.cewsBackfillFrom === undefined ? BACKFILL_FROM : data.cewsBackfillFrom;

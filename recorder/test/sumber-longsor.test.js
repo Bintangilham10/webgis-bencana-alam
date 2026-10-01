@@ -146,11 +146,27 @@ describe('BMKG CEWS', () => {
     assert.ok(record.levels.waspada.some((e) => e.kab_kota === 'AGAM' && e.kode === '13.06'));
   });
 
-  test('tidak memeriksa ulang sebelum 3 jam', async () => {
+  test('selama dasarian berikutnya belum terbit, diperiksa tiap jam', async () => {
     await recordBmkgCews({ archive, http: fakeHttp({ post: cewsPost }), now: '2026-09-25T18:05:00.000Z', data: DATA, pause: noPause });
-    const http = fakeHttp({ post: cewsPost });
+    const soon = fakeHttp({ post: cewsPost });
+    await recordBmkgCews({ archive, http: soon, now: '2026-09-25T18:50:00.000Z', data: DATA, pause: noPause });
+    assert.equal(soon.calls.length, 0);
+    const later = fakeHttp({ post: cewsPost });
+    await recordBmkgCews({ archive, http: later, now: '2026-09-25T19:10:00.000Z', data: DATA, pause: noPause });
+    assert.equal(later.calls.length, 8, 'dua dasarian × empat level');
+    const status = await archive.readJson('bmkg-cews/status.json');
+    assert.deepEqual(Object.keys(status.seen), ['2026-09-3']);
+    assert.equal(status.seen['2026-09-3'], '2026-09-25T18:05:00.000Z');
+  });
+
+  test('setelah dasarian berjalan dan berikutnya terbit, diperiksa tiap 3 jam', async () => {
+    const both = (url, fields) => JSON.stringify(CEWS[fields.legendindex]);
+    await recordBmkgCews({ archive, http: fakeHttp({ post: both }), now: '2026-09-25T18:05:00.000Z', data: DATA, pause: noPause });
+    const http = fakeHttp({ post: both });
     await recordBmkgCews({ archive, http, now: '2026-09-25T20:05:00.000Z', data: DATA, pause: noPause });
     assert.equal(http.calls.length, 0);
+    await recordBmkgCews({ archive, http, now: '2026-09-25T21:10:00.000Z', data: DATA, pause: noPause });
+    assert.equal(http.calls.length, 8);
   });
 
   test('backfill berjalan bertahap sampai dasarian berjalan lalu berhenti', async () => {
