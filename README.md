@@ -128,7 +128,7 @@ Every 12 hours the server rates heavy rain, flood, and landslide for all 514 reg
 1. **Hazard zones.** InaRISK flood and landslide classes for the whole country, at about 550 m, are loaded into PostGIS rasters and clipped to each regency. The same step records the area of each class per regency. The 0–1 index is split into thirds with the upper bound included (low ≤ 1/3, medium ≤ 2/3, high > 2/3), because the InaRISK landslide index stores PVMBG susceptibility zones as exactly 1/3, 2/3, and 1.
 2. **Monitoring points.** Each regency gets up to three points per hazard, in the 0.25° cells with the highest class, plus one reference point. The server smooths the 550 m export, so each point's class is checked against the native 100 m InaRISK value (`getSamples`), and every point is checked to lie inside its own regency. The risk check at that point therefore shows the same class.
 3. **Rain.** Open-Meteo daily rain for the past 3 and next 4 days at every monitoring point, at the same coordinates the risk check uses. In Indonesia Open-Meteo serves ECMWF IFS at 9 km, much finer than a 0.25° cell, so the rain is not averaged over a cell. The job asks for 100 points per request with pauses, about 3,200 calls per run, which is why it runs every 12 hours within the free quota.
-4. **Rules v0.2** in [`rules.json`](server/src/config/rules.json), applied to each forecast day:
+4. **Rules v0.2** in [`rules.json`](recorder/src/lib/rules.json), applied to each forecast day:
    - heavy rain follows the BMKG category: heavy, very heavy, and extreme rain give Waspada, Siaga, and Awas;
    - flood and landslide combine that day's rain with the hazard class at the point;
    - for landslides, 100 mm over the 3 days ending that day, including rain that already fell, counts as heavy rain.
@@ -186,7 +186,7 @@ flowchart LR
 - **Server.** Express 5 with plain SQL on PostGIS, so every spatial query can be read and cited. Distances are computed on the ellipsoid (`geography`); nearest neighbours use GiST indexes. External calls are cached, and a slow or failing source never breaks the rest of a response.
 - **Web.** Vanilla JavaScript on Vite and Leaflet, with no CSS framework. The font is self-hosted (±27 KB).
 - **Recorder.** A separate Node package with no dependency on the server. It writes append-only files, so a revised product shows up as a new file instead of overwriting the old one.
-- **Shared definitions.** The server reuses the recorder's parsers for BMKG CEWS, PVMBG, and the ensemble summary, so the app and the research archive count things the same way.
+- **Shared definitions.** The server reuses the recorder's parsers for BMKG CEWS, PVMBG, and the ensemble summary, and the outlook rules and rain reader live in the recorder too. The app and the research archive therefore count things the same way, and the recorder can compute the SIGAP outlook on its own.
 
 ## Landslide research (SIGAP-L)
 
@@ -255,6 +255,7 @@ flowchart LR
 | 3-day rainfall ensemble | Open-Meteo (ECMWF, 51 members) | The API keeps only 3 past days |
 | Weekly disaster events | BNPB | Kept in case the service resumes |
 | Landslide news headlines | Google News RSS | Independent ground truth, matched to regencies |
+| SIGAP 3-day outlook, with the rain at all 3,219 monitoring points | SIGAP rules on Open-Meteo ECMWF IFS | One file per model cycle (00Z and 12Z), so every forecast is timestamped before the events and can be recomputed exactly |
 
 GitHub runs scheduled workflows much less often than requested, about 6 times a day in practice. An external cron job therefore triggers the workflow every 15 minutes through the `workflow_dispatch` API, using a token that can only start workflow runs on this repository. The archive layout is documented in [`recorder/ARSIP_README.md`](recorder/ARSIP_README.md).
 
@@ -284,6 +285,8 @@ Use a regular browser (Chrome, Edge, Brave, or Firefox). VS Code's built-in brow
 
 The server computes the 3-day outlook every 12 hours and skips the run after a restart if the last one is still fresh. `npm run indikasi` in `server/` runs it once on demand, for example before a demo; each run uses about a third of Open-Meteo's free daily quota.
 
+After re-seeding the hazard zones, run `npm run export:recorder` in `server/` and commit `recorder/data/`. The recorder then computes the archived outlook on the same monitoring points as the server.
+
 The defaults match `docker-compose.yml`. Copy `.env.example` to `.env` only if you need to change them.
 
 <details>
@@ -305,7 +308,7 @@ TEST_DATABASE_URL=postgres://sigap:sigap@localhost:5433/sigap_test npm test
 
 In PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/sigap_test"; npm test`
 
-Current counts: 75 server tests (with the integration database), 37 recorder tests, and 18 research tests. One research test reproduces the worked example of the EDuMaP paper.
+Current counts: 86 server tests (with the integration database), 46 recorder tests, and 22 research tests. One research test reproduces the worked example of the EDuMaP paper.
 
 </details>
 
@@ -350,9 +353,9 @@ Shortened from the real response. If one source fails, only its own part carries
 
 | Path | Contents |
 |---|---|
-| [`server/`](server) | Express API, sync scheduler, migrations, seeds, and warning rules (`src/config/rules.json`) |
+| [`server/`](server) | Express API, sync scheduler, migrations, and seeds |
 | [`web/`](web) | Vite + Leaflet frontend |
-| [`recorder/`](recorder) | Data recorder that runs on GitHub Actions |
+| [`recorder/`](recorder) | Data recorder that runs on GitHub Actions, plus the outlook rules (`src/lib/rules.json`) shared with the server |
 | [`research/`](research) | Python analysis for SIGAP-L, the preregistered protocol, and results |
 | [`docs/images/`](docs/images) | Screenshots and charts used in this README |
 | [`docker-compose.yml`](docker-compose.yml) | PostgreSQL 18 + PostGIS 3.6 |

@@ -32,6 +32,8 @@ Data CEWS dibaca dari arsip perekam (branch `arsip-data`, folder `bmkg-cews/`). 
 
 **Nilai PVMBG di titik.** GetFeatureInfo mengembalikan 2–4 poligon untuk titik di dekat batas zona (17% titik sampel). Sejak 1 Okt 2026, `02_produk_resmi.py` memakai poligon yang memuat titik, bukan poligon pertama. Dampaknya terhadap hasil dicatat di `PROTOKOL.md` (catatan penerapan 1 Okt 2026).
 
+**Arsip prospektif (Tahap 4).** Perekam di GitHub Actions menyimpan indikasi SIGAP untuk setiap siklus model ECMWF (00Z dan 12Z) ke branch `arsip-data` (`sigap-indikasi/`), lengkap dengan hujan di 3.219 titik pantau, versi aturan, dan hash titik pantau. Commit git memberi cap waktu publik sebelum kejadian, jadi verifikasi musim hujan 2026/27 bisa dilakukan per lead time (tanggal prakiraan − tanggal inisialisasi model), dan indikasi bisa dihitung ulang dengan aturan versi baru pada prakiraan yang sama persis. Waktu terbit peringatan CEWS juga tercatat sampai ±1 jam.
+
 **Latensi (RQ2).** BMKG baru menerbitkan gempa di feed publik beberapa menit setelah kejadian: 15–31 menit (median 22,6) untuk 6 gempa dirasakan yang tertangkap saat server memantau, 26 Sep–1 Okt 2026. Karena itu latensi dilaporkan dalam dua bagian: jeda sumber (waktu kejadian → muncul di feed, diperkirakan dari event yang tertangkap saat server memantau) dan jeda sistem SIGAP (muncul di feed → tersimpan, paling lama satu interval sinkronisasi). Target "gempa masuk ≤ 2 menit dari kejadian" tidak bisa dicapai sistem mana pun yang memakai feed publik.
 
 ## Struktur
