@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.01.21.65.013</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-02T05:35:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-02T05:40:00+08:00</effective>
+    <expires>2026-10-02T08:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 02 October 2026, 05:40 WITA di sebagian wilayah Kalimantan Utara, khususnya di TARAKAN TENGAH, TARAKAN TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 02 October 2026, 08:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKU/2026/10/02/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Utara</areaDesc>
+      <polygon>3.391,117.667 3.368,117.667 3.363,117.648 3.365,117.622 3.362,117.615 3.355,117.619 3.339,117.639 3.314,117.614 3.308,117.611 3.294,117.613 3.291,117.609 3.301,117.599 3.294,117.594 3.289,117.586 3.298,117.578 3.318,117.601 3.325,117.592 3.339,117.587 3.384,117.576 3.390,117.597 3.391,117.667</polygon>
+      <polygon>3.289,117.586 3.294,117.594 3.301,117.599 3.291,117.609 3.294,117.613 3.308,117.611 3.314,117.614 3.339,117.639 3.355,117.619 3.362,117.615 3.365,117.622 3.363,117.648 3.368,117.667 3.362,117.669 3.355,117.664 3.328,117.658 3.252,117.657 3.240,117.650 3.237,117.642 3.242,117.629 3.253,117.619 3.280,117.610 3.280,117.594 3.289,117.586</polygon>
+    </area>
+  </info>
+</alert>
