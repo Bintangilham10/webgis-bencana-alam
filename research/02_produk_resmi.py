@@ -26,6 +26,7 @@ from datetime import date
 import pandas as pd
 
 from sigap_riset import cews
+from sigap_riset.geo import contains_point
 from sigap_riset.http import Client
 from sigap_riset.paths import DATA
 from sigap_riset.waktu import dasarian, dasarian_index, month_index
@@ -86,19 +87,29 @@ def is_feature_info(text: str) -> bool:
     return text.lstrip().startswith('{') or BROKEN_LAYER in text
 
 
-def parse_feature_info(text: str | None) -> dict | None:
+def parse_feature_info(text: str | None, lat: float | None = None, lon: float | None = None) -> dict | None:
     """Atribut poligon di titik; None bila layer bulan itu tidak ada (404) atau
-    rusak (layer 2025-12 tidak punya kolom zona_perki, jadi style-nya ditolak)."""
+    rusak (layer 2025-12 tidak punya kolom zona_perki, jadi style-nya ditolak).
+
+    GetFeatureInfo memeriksa piksel tengah beserta toleransi beberapa piksel, jadi
+    titik di dekat batas zona mengembalikan 2–3 poligon dalam urutan acak. Yang
+    dipakai adalah poligon yang geometrinya memuat titik (lat, lon); poligon
+    pertama hanya dipakai bila tidak ada yang memuat titik. Versi sebelum 1 Okt
+    2026 selalu memakai poligon pertama (PROTOKOL.md, catatan penerapan 1 Okt 2026)."""
     if text is None or BROKEN_LAYER in text:
         return None
     features = json.loads(text).get('features') or []
-    props = features[0]['properties'] if features else {}
-    return {'ada_poligon': bool(features), 'potensi': props.get('zona_perki'), 'zkgt': props.get('unsur')}
+    feature = features[0] if features else None
+    if lat is not None and lon is not None:
+        feature = next((f for f in features if contains_point(f.get('geometry'), lat, lon)), feature)
+    props = feature['properties'] if feature else {}
+    return {'ada_poligon': bool(features), 'potensi': props.get('zona_perki'), 'zkgt': props.get('unsur'), 'n_poligon': len(features)}
 
 
 def read_pvmbg(client: Client, year: int, month: int, lat: float, lon: float) -> dict | None:
-    url = feature_info_url(year, month, round(lat, 5), round(lon, 5))
-    return parse_feature_info(client.text(url, valid=is_feature_info))
+    lat, lon = round(lat, 5), round(lon, 5)
+    url = feature_info_url(year, month, lat, lon)
+    return parse_feature_info(client.text(url, valid=is_feature_info), lat, lon)
 
 
 def layer_status(client: Client) -> dict[tuple[int, int], str]:
@@ -144,7 +155,7 @@ def sample_pvmbg(cases: pd.DataFrame) -> pd.DataFrame:
     results = []
     started = time.monotonic()
     for i, row in enumerate(plan.itertuples(), 1):
-        results.append(read_pvmbg(client, row.tahun, row.bulan, row.lat, row.lon) or {'ada_poligon': False, 'potensi': None, 'zkgt': None})
+        results.append(read_pvmbg(client, row.tahun, row.bulan, row.lat, row.lon) or {'ada_poligon': False, 'potensi': None, 'zkgt': None, 'n_poligon': 0})
         if i % 250 == 0:
             rate = client.network_requests / max(time.monotonic() - started, 1)
             remaining = (len(plan) - i) / rate / 60 if rate else 0

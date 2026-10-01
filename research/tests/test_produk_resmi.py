@@ -27,17 +27,34 @@ BROKEN_LAYER_REPLY = (
 OTHER_ERROR = '<?xml version="1.0"?><ServiceExceptionReport><ServiceException>java.io.IOException</ServiceException></ServiceExceptionReport>'
 
 
-def feature_collection(*props: dict) -> str:
-    return json.dumps({'type': 'FeatureCollection', 'features': [{'type': 'Feature', 'properties': p} for p in props]})
+def feature_collection(*props: dict, geometries: list | None = None) -> str:
+    geometries = geometries or [None] * len(props)
+    return json.dumps({'type': 'FeatureCollection',
+                       'features': [{'type': 'Feature', 'properties': p, 'geometry': g} for p, g in zip(props, geometries)]})
+
+
+def square(west: float, south: float, east: float, north: float) -> dict:
+    return {'type': 'MultiPolygon', 'coordinates': [[[[west, south], [east, south], [east, north], [west, north], [west, south]]]]}
 
 
 class TestFeatureInfo(unittest.TestCase):
-    def test_poligon_pertama_dipakai(self):
+    def test_tanpa_geometri_poligon_pertama_dipakai(self):
         text = feature_collection({'zona_perki': 'Tinggi', 'unsur': 'Menengah'}, {'zona_perki': 'Menengah', 'unsur': 'Rendah'})
-        self.assertEqual(produk.parse_feature_info(text), {'ada_poligon': True, 'potensi': 'Tinggi', 'zkgt': 'Menengah'})
+        self.assertEqual(produk.parse_feature_info(text, -7.3, 109.6),
+                         {'ada_poligon': True, 'potensi': 'Tinggi', 'zkgt': 'Menengah', 'n_poligon': 2})
+
+    def test_poligon_yang_memuat_titik_dipakai(self):
+        # Dua zona bersebelahan; titik ada di zona kedua (kasus batas yang dulu salah dibaca).
+        text = feature_collection({'zona_perki': 'Tinggi', 'unsur': 'Tinggi'}, {'zona_perki': 'Menengah', 'unsur': 'Menengah'},
+                                  geometries=[square(109.6555, -7.356, 109.66, -7.35), square(109.65, -7.356, 109.6555, -7.35)])
+        self.assertEqual(produk.parse_feature_info(text, -7.353, 109.655)['potensi'], 'Menengah')
+        self.assertEqual(produk.parse_feature_info(text, -7.353, 109.657)['potensi'], 'Tinggi')
+        # Tanpa titik: poligon pertama, seperti pembaca versi lama.
+        self.assertEqual(produk.parse_feature_info(text)['potensi'], 'Tinggi')
 
     def test_di_luar_poligon(self):
-        self.assertEqual(produk.parse_feature_info(feature_collection()), {'ada_poligon': False, 'potensi': None, 'zkgt': None})
+        self.assertEqual(produk.parse_feature_info(feature_collection(), -7.3, 109.6),
+                         {'ada_poligon': False, 'potensi': None, 'zkgt': None, 'n_poligon': 0})
 
     def test_layer_tidak_ada_atau_rusak(self):
         self.assertIsNone(produk.parse_feature_info(None))

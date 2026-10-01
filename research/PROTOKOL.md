@@ -119,3 +119,15 @@ Protokol RQ-L2 dan RQ-L3 (ambang hidrometeorologi dan model SIGAP-L) ditulis ter
   - Analisis tambahan: alert = Waspada ke atas, dan hanya kab/kota yang punya ≥ 1 kejadian tercatat.
   - Implementasinya diuji dengan contoh Tabel 7–8 Calvello & Piciullo (2016): ke-14 indikator cocok sampai dua desimal.
 
+**Catatan penerapan (1 Okt 2026): koreksi pembacaan poligon PVMBG.** Kesalahan ini ditemukan saat audit data setelah hasil pertama dilaporkan. Definisi, metrik, dan kriteria tidak berubah. Yang diperbaiki adalah penerapan "kelas produk di titik" (bagian 2 dan 5).
+- **Masalah.** GetFeatureInfo memeriksa piksel tengah (bbox ±0,01°, 101 piksel, ±22 m per piksel) beserta toleransi beberapa piksel. Titik di dekat batas zona mendapat 2–4 poligon dalam urutan acak: 1.432 dari 8.370 baris sampel (17%). `02_produk_resmi.py` memakai poligon pertama, yang ternyata sering bukan poligon yang memuat titik.
+- **Perbaikan.** Yang dipakai kini poligon yang geometrinya memuat titik (aturan genap-ganjil, `sigap_riset/geo.py`). Poligon pertama hanya dipakai bila tidak ada poligon yang memuat titik. Sampel dibangun ulang dari cache yang sama tanpa request jaringan; titik, bulan, dan seed identik.
+- **Dampak.** Skor potensi berubah pada 584 dari 8.370 baris (7,0%; 25 dari 310 kasus), dan skor ZKGT pada 749 baris. Hasil utama:
+  - Potensi bulanan, spasial: 0,631 [0,603; 0,659] menjadi 0,642 [0,614; 0,670].
+  - Potensi bulanan, temporal: 0,560 [0,534; 0,587] menjadi 0,565 [0,537; 0,592].
+  - ZKGT, spasial: 0,653 menjadi 0,664; ZKGT, temporal: 0,501 menjadi 0,500.
+  - L1c: −0,023 [−0,036; −0,009] menjadi −0,021 [−0,034; −0,009].
+  - CEWS dan EDuMaP CEWS tidak terpengaruh. Kesimpulan menurut kriteria bagian 5 tidak berubah. Hasil lama tersimpan di riwayat git (commit 07cce31, versi terakhir sebelum koreksi).
+- **Label lain di layer bulanan.** "Berpotensi Banjir Bandang/Aliran Bahan Rombakan", "Danau", "Alur Aliran Bahan Rombakan", dan "Danau/Situ" mendapat skor 0 sesuai bagian 5. Label ini hanya muncul di 57 titik kontrol spasial dan tidak di kasus mana pun.
+- **Pembaca yang sama di tempat lain.** Perekam arsip (`pvmbg-prakiraan`) dan cek risiko SIGAP memakai pembaca yang sama dan ikut diperbaiki. Bulan arsip yang direkam dengan pembaca lama (2026-09 dan 2026-10) direkam ulang dengan tanda `pembaca: 2`, tanpa menghapus baris lama.
+
