@@ -10,8 +10,11 @@ export const LEVEL_LABELS = ['Aman', 'Waspada', 'Siaga', 'Awas'];
 export const ATTRIBUTION = 'Peringatan dini curah hujan tinggi: BMKG (CEWS)';
 export const PAGE_URL = 'https://cews.bmkg.go.id/';
 
-// Produk dasarian jarang berubah; 3 jam cukup untuk menangkap revisi.
+// Produk dasarian jarang berubah; 3 jam cukup untuk menangkap revisi. Selama
+// produk dasarian berjalan belum terbit (mis. 1 Okt 2026 pagi), BMKG diperiksa
+// lagi tiap 30 menit supaya peringatan yang baru terbit tidak tertahan cache.
 const CACHE_TTL_MS = 3 * 60 * 60 * 1000;
+const UNPUBLISHED_TTL_MS = 30 * 60 * 1000;
 const PAUSE_MS = 300;
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -72,7 +75,7 @@ export function createRainWarnings({ fetch = fetchLevels, gazetteer = loadGazett
       unmatched,
       fetched_at: new Date().toISOString(),
     };
-  }, CACHE_TTL_MS);
+  }, CACHE_TTL_MS, { ttlFor: (warnings) => (warnings.published ? CACHE_TTL_MS : UNPUBLISHED_TTL_MS) });
 
   return (now = new Date()) => {
     const { year, month, num } = dasarianOf(wibDate(now));

@@ -8,15 +8,30 @@ const POINT = 'ST_SetSRID(ST_MakePoint($1, $2), 4326)';
 const KNN_CANDIDATES = 8;
 const round1 = (meters) => Math.round(meters / 100) / 10;
 
+// Kab/kota yang memuat titik (distance_km 0), atau kab/kota terdekat beserta
+// jaraknya bila titik di luar semua batas: laut, pesisir yang terpotong garis
+// pantai data batas, atau negara lain.
 export async function placeAt(lat, lon) {
   const { rows } = await query(
-    `SELECT k.kode, k.nama, p.nama AS provinsi
-     FROM wilayah k JOIN wilayah p ON p.kode = k.induk_kode
-     WHERE k.tingkat <> 'provinsi' AND ST_Intersects(k.geom, ${POINT})
-     LIMIT 1`,
+    `WITH inside AS (
+       SELECT k.kode, k.nama, p.nama AS provinsi, 0::float8 AS distance_m
+       FROM wilayah k JOIN wilayah p ON p.kode = k.induk_kode
+       WHERE k.tingkat <> 'provinsi' AND ST_Intersects(k.geom, ${POINT})
+       LIMIT 1
+     ),
+     nearest AS (
+       SELECT k.kode, k.nama, p.nama AS provinsi, ST_Distance(k.geom::geography, ${POINT}::geography) AS distance_m
+       FROM (SELECT * FROM wilayah WHERE tingkat <> 'provinsi' ORDER BY geom <-> ${POINT} LIMIT ${KNN_CANDIDATES}) k
+       JOIN wilayah p ON p.kode = k.induk_kode
+       WHERE NOT EXISTS (SELECT 1 FROM inside)
+       ORDER BY distance_m
+       LIMIT 1
+     )
+     SELECT * FROM inside UNION ALL SELECT * FROM nearest`,
     [lon, lat],
   );
-  return rows[0] ?? null;
+  const r = rows[0];
+  return r ? { kode: r.kode, nama: r.nama, provinsi: r.provinsi, distance_km: round1(r.distance_m) } : null;
 }
 
 export async function nearestFault(lat, lon) {
@@ -88,7 +103,8 @@ export async function recentQuakes(lat, lon, { radiusKm = 100, days = 7 } = {}) 
 export async function nearbyLandslides(lat, lon, { radiusKm = 5 } = {}) {
   const { rows } = await query(
     `WITH near AS (
-       SELECT occurred_at, props->>'tanggal' AS tanggal, props->>'tipe' AS tipe, props->>'sumber' AS sumber,
+       SELECT occurred_at, props->>'tanggal' AS tanggal, props->>'presisi_tanggal' AS presisi_tanggal,
+              props->>'tipe' AS tipe, props->>'sumber' AS sumber,
               ST_Distance(geom::geography, ${POINT}::geography) AS distance_m
        FROM events
        WHERE hazard = 'longsor' AND ST_DWithin(geom::geography, ${POINT}::geography, $3)
@@ -98,7 +114,14 @@ export async function nearbyLandslides(lat, lon, { radiusKm = 5 } = {}) {
             (SELECT row_to_json(n) FROM (SELECT * FROM near ORDER BY occurred_at DESC LIMIT 1) n) AS latest`,
     [lon, lat, radiusKm * 1000],
   );
-  const summary = ({ tanggal, tipe, sumber, distance_m }) => ({ tanggal, tipe, sumber, distance_km: round1(distance_m) });
+  // presisi_tanggal: 'hari', 'bulan', atau 'tahun' (laporan yang hanya mencatat bulan/tahun).
+  const summary = ({ tanggal, presisi_tanggal, tipe, sumber, distance_m }) => ({
+    tanggal,
+    presisi_tanggal: presisi_tanggal ?? 'hari',
+    tipe,
+    sumber,
+    distance_km: round1(distance_m),
+  });
   const { count, nearest, latest } = rows[0];
   return {
     radius_km: radiusKm,

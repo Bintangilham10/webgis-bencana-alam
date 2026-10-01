@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { memoize } from '../lib/cache.js';
-import { buildRiskProfile } from '../risk/profile.js';
+import { buildRiskProfile, COAST_TOLERANCE_KM } from '../risk/profile.js';
 import { nearbyLandslides, nearestFault, nearestVolcanoes, placeAt, recentQuakes } from '../risk/nearby.js';
 import { levelFor } from '../sources/bmkg-cews.js';
 import { identifyHazards } from '../sources/inarisk.js';
@@ -51,7 +51,9 @@ export function createRiskRouter({
         slope(lat, lon).catch(failed),
         nearbyLandslides(lat, lon),
       ]);
-      const rainWarning = cews.error ? cews : { ...cews, level: levelFor(cews, place?.kode) };
+      // Peringatan CEWS berlaku per kab/kota: hanya untuk titik di dalam atau di pesisirnya.
+      const regionCode = place && place.distance_km <= COAST_TOLERANCE_KM ? place.kode : null;
+      const rainWarning = cews.error ? cews : { ...cews, level: levelFor(cews, regionCode) };
       const landslide = { potential: pvmbg, rainWarning, ensemble: members, slope: terrain, history };
       return buildRiskProfile({ lat, lon, place, hazardIndices, forecast: weather, fault, volcanoes, quakes, landslide });
     },

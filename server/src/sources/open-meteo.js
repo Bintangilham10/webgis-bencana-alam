@@ -94,9 +94,12 @@ export async function fetchEnsemble(lat, lon) {
 
 // ---------- Hujan untuk banyak lokasi (indikasi SIGAP 3 hari) ----------
 
-// Hujan harian 3 hari lalu + 3 hari prakiraan untuk banyak titik. Satu lokasi
-// dihitung satu panggilan kuota Open-Meteo (gratis ±10.000/hari, 5.000/jam, dan
-// 600/menit), jadi 100 lokasi per permintaan diberi jeda 12 detik (±500/menit).
+// Hujan harian 3 hari lalu + 4 hari prakiraan untuk banyak titik. Hari keempat
+// membuat run malam hari tetap menutup tiga hari penuh pada keesokan paginya
+// (jendela peta = hari ini sampai H+2). Satu lokasi dihitung satu panggilan kuota
+// Open-Meteo (gratis ±10.000/hari, 5.000/jam, dan 600/menit), jadi 100 lokasi per
+// permintaan diberi jeda 12 detik (±500/menit).
+export const OUTLOOK_FORECAST_DAYS = 4;
 const RAIN_BATCH = 100;
 const RAIN_PAUSE_MS = 12_000;
 const QUOTA_WAIT_MS = 65_000;
@@ -112,7 +115,7 @@ export function rainBatchUrl(locations) {
     daily: 'precipitation_sum',
     timezone: 'Asia/Jakarta',
     past_days: String(PAST_DAYS),
-    forecast_days: String(FORECAST_DAYS),
+    forecast_days: String(OUTLOOK_FORECAST_DAYS),
   });
   return `${FORECAST_URL}?${params}`;
 }

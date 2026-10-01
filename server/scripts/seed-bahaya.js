@@ -6,7 +6,7 @@ import { loadRawBuffer, readRawJson, writeRawJson } from './raw-cache.js';
 // Raster kelas bahaya InaRISK BNPB untuk seluruh Indonesia, dasar indikasi
 // SIGAP 3 hari. Server BNPB membagi indeks 0–1 menjadi kelas dengan Remap yang
 // sama dengan peta (web/src/layers/hazards.js) dan config/rules.json:
-// 1 rendah, 2 sedang, 3 tinggi; indeks 0 dan laut menjadi NoData (0).
+// 1 rendah (≤ 1/3), 2 sedang (≤ 2/3), 3 tinggi; indeks 0 dan laut menjadi NoData (0).
 const SERVICE_URL = 'https://gis.bnpb.go.id/server/rest/services/inarisk';
 export const RASTER_HAZARDS = [
   { id: 'banjir', service: 'INDEKS_BAHAYA_BANJIR' },
@@ -33,9 +33,12 @@ const SAMPLE_BATCH = 500;
 const SAMPLE_PAUSE_MS = 1_000;
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+// Versi Remap ikut menjadi nama berkas cache raster, supaya raster lama (batas
+// kelas aturan v0.1: 0,3335 dan 0,6665) tidak terpakai lagi setelah batasnya berubah.
+const REMAP_VERSION = 2;
 const REMAP = {
   rasterFunction: 'Remap',
-  rasterFunctionArguments: { InputRanges: [0, 0.3335, 0.3335, 0.6665, 0.6665, 1.01], OutputValues: [1, 2, 3], NoDataRanges: [-1, 0.0001] },
+  rasterFunctionArguments: { InputRanges: [0, 0.3334, 0.3334, 0.6667, 0.6667, 1.01], OutputValues: [1, 2, 3], NoDataRanges: [-1, 0.0001] },
   outputPixelType: 'U8',
 };
 
@@ -162,10 +165,12 @@ export async function sampleIndices(hazard, points, { log = () => {} } = {}) {
 // Titik pantau satu sel: kandidat pertama yang kelas aslinya (100 m) setidaknya
 // kelas sel; bila tidak ada, kandidat dengan kelas asli tertinggi (kelas titik
 // ikut turun); sel tanpa zona asli di semua kandidat dibuang. kelasAt(kandidat)
-// → 0 (luar zona) sampai 3.
-export function pickPoint(cell, kelasAt) {
+// → 0 (luar zona) sampai 3. isInside(kandidat) menolak kandidat yang setelah
+// dibulatkan 3 desimal jatuh di luar kab/kotanya (batas yang di-clip disederhanakan).
+export function pickPoint(cell, kelasAt, isInside = () => true) {
   let best = null;
   for (const candidate of cell.candidates) {
+    if (!isInside(candidate)) continue;
     const kelas = kelasAt(candidate);
     if (kelas >= cell.kelas) return { ...candidate, kelas };
     if (kelas > (best?.kelas ?? 0)) best = { ...candidate, kelas };
@@ -183,6 +188,23 @@ export async function loadRaster(hazard, tiff) {
     await client.query('INSERT INTO bahaya_raster (hazard, rast) SELECT $1, ST_Tile(ST_FromGDALRaster($2::bytea), 256, 256)', [hazard, tiff]);
     await client.query('DELETE FROM bahaya_raster WHERE hazard = $1 AND ST_BandIsNoData(rast, 1, true)', [hazard]);
   });
+}
+
+// Kandidat (koordinat 3 desimal) yang benar-benar di dalam poligon kab/kotanya.
+// Sebelum pemeriksaan ini, 4 dari 3.222 titik pantau berada 7–46 m di luar
+// kab/kotanya karena clip memakai batas yang disederhanakan ±100 m.
+export async function insideCandidates(cells) {
+  const items = cells.flatMap((cell) => cell.candidates.map((c) => ({ kode: cell.kode, lon: c.lon, lat: c.lat })));
+  if (!items.length) return () => true;
+  const { rows } = await query(
+    `SELECT t.kode, t.lon, t.lat
+     FROM unnest($1::text[], $2::float8[], $3::float8[]) AS t(kode, lon, lat)
+     JOIN wilayah w ON w.kode = t.kode
+     WHERE ST_Intersects(w.geom, ST_SetSRID(ST_MakePoint(t.lon, t.lat), 4326))`,
+    [items.map((i) => i.kode), items.map((i) => i.lon), items.map((i) => i.lat)],
+  );
+  const inside = new Set(rows.map((r) => `${r.kode}|${r.lon},${r.lat}`));
+  return (kode) => (candidate) => inside.has(`${kode}|${candidate.lon},${candidate.lat}`);
 }
 
 // Titik pantau dan statistik zona disimpan ulang seluruhnya dalam satu transaksi.
@@ -231,21 +253,24 @@ export async function computeZones({ log = () => {}, sample = sampleIndices } = 
     if ((index + 1) % 100 === 0) log(`zona bahaya: ${index + 1}/${regions.length} kab/kota`);
   }
 
+  const insideOf = await insideCandidates(cells);
   for (const { id } of RASTER_HAZARDS) {
     const hazardCells = cells.filter((cell) => cell.hazard === id);
+    // Kandidat yang dibulatkan ke luar kab/kotanya tidak pernah dipakai.
+    const usable = new Map(hazardCells.map((cell) => [cell, cell.candidates.filter(insideOf(cell.kode))]));
     // Tahap 1: kandidat pertama tiap sel; tahap 2: kandidat lain untuk sel yang belum cocok.
     const kelas = new Map();
     const measure = async (candidates) => {
       const indices = await sample(id, candidates, { log });
       candidates.forEach((candidate, k) => kelas.set(candidate, hazardClassValue(indices[k])));
     };
-    await measure(hazardCells.map((cell) => cell.candidates[0]));
-    const pending = hazardCells.filter((cell) => kelas.get(cell.candidates[0]) < cell.kelas);
-    await measure(pending.flatMap((cell) => cell.candidates.slice(1)));
+    await measure(hazardCells.map((cell) => usable.get(cell)[0]).filter(Boolean));
+    const pending = hazardCells.filter((cell) => usable.get(cell).length && kelas.get(usable.get(cell)[0]) < cell.kelas);
+    await measure(pending.flatMap((cell) => usable.get(cell).slice(1)));
 
     const tally = { cocok: 0, turun: 0, dibuang: 0 };
     for (const cell of hazardCells) {
-      const point = pickPoint(cell, (candidate) => kelas.get(candidate));
+      const point = pickPoint(cell, (candidate) => kelas.get(candidate), insideOf(cell.kode));
       if (!point) {
         tally.dibuang++;
         continue;
@@ -260,7 +285,7 @@ export async function computeZones({ log = () => {}, sample = sampleIndices } = 
 
 export async function seedBahaya({ log = console.log } = {}) {
   for (const { id, service } of RASTER_HAZARDS) {
-    const tiff = await loadRawBuffer(`inarisk-${id}-kelas.tif`, exportUrl(service), { validate: assertGeoTiff });
+    const tiff = await loadRawBuffer(`inarisk-${id}-kelas-v${REMAP_VERSION}.tif`, exportUrl(service), { validate: assertGeoTiff });
     await loadRaster(id, tiff);
     log(`raster ${id}: ${Math.round(tiff.length / 1024)} KB dimuat`);
   }

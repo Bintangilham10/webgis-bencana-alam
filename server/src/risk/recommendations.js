@@ -50,7 +50,10 @@ function landslideTips(landslide, place) {
   return tips;
 }
 
-export function recommendations({ hazards, indications, fault, volcanoes, landslide = null, place = null }) {
+export function recommendations({ hazards, indications, fault, volcanoes, landslide = null, place = null, status = 'indonesia' }) {
+  if (status === 'luar_indonesia') {
+    return ['Lokasi ini di luar wilayah Indonesia. SIGAP hanya menilai risiko di Indonesia; ikuti informasi otoritas setempat.'];
+  }
   const tips = [];
 
   for (const indication of indications.filter((i) => i.level > 0)) {

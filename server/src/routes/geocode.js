@@ -6,7 +6,26 @@ import { searchNominatim } from '../sources/nominatim.js';
 const MIN_QUERY_LENGTH = 2;
 const MAX_QUERY_LENGTH = 100;
 const LOCAL_LIMIT = 4;
+// Kandidat wilayah diambil lebih banyak dari yang ditampilkan, supaya nama yang
+// cocok di awal kata tidak terpotong oleh nama yang hanya cocok di tengah kata.
+const LOCAL_CANDIDATES = 8;
 const ONE_DAY_MS = 24 * 60 * 60_000;
+
+const escapeRegExp = (text) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+// "Lembang" cocok di awal kata pada "Lembang" tetapi tidak pada "Kota Palembang".
+export const matchesWordStart = (name, q) => new RegExp(`(^|[^\\p{L}\\p{N}])${escapeRegExp(q)}`, 'iu').test(name);
+
+// Urutan hasil: wilayah yang cocok di awal kata, lalu tempat dari OSM, lalu
+// wilayah yang hanya cocok di tengah kata (mis. "Lembang" → Kota Palembang,
+// yang dulu tampil di urutan pertama). Tempat OSM yang namanya sama dengan
+// wilayah cukup ditampilkan sekali (versi database).
+export function rankResults(q, wilayah, places) {
+  const wilayahNames = new Set(wilayah.map((w) => w.name.toLowerCase()));
+  const otherPlaces = places.filter((p) => !wilayahNames.has(p.name.toLowerCase()));
+  const atWordStart = wilayah.filter((w) => matchesWordStart(w.name, q)).slice(0, LOCAL_LIMIT);
+  const inWord = wilayah.filter((w) => !matchesWordStart(w.name, q)).slice(0, LOCAL_LIMIT - atWordStart.length);
+  return [...atWordStart, ...otherPlaces, ...inWord];
+}
 
 // Nama kab/kota/provinsi dicari dulu di database sendiri (instan, tanpa beban
 // ke Nominatim); tempat lain (kelurahan, jalan, fasilitas) dicari di OSM.
@@ -18,7 +37,7 @@ async function searchWilayah(q) {
      FROM wilayah
      WHERE nama ILIKE $1
      ORDER BY position(lower($2) IN lower(nama)), length(nama)
-     LIMIT ${LOCAL_LIMIT}`,
+     LIMIT ${LOCAL_CANDIDATES}`,
     [pattern, q],
   );
   return rows.map((r) => ({
@@ -46,12 +65,9 @@ export function createGeocodeRouter({ searchPlaces = searchNominatim } = {}) {
       searchWilayah(q),
       searchPlacesCached(q.toLowerCase()).catch((err) => ({ error: err.message })),
     ]);
-    // Kab/kota yang juga ditemukan OSM cukup ditampilkan sekali (versi database).
-    const wilayahNames = new Set(wilayah.map((w) => w.name.toLowerCase()));
-    const otherPlaces = Array.isArray(places) ? places.filter((p) => !wilayahNames.has(p.name.toLowerCase())) : [];
     res.json({
       query: q,
-      results: [...wilayah, ...otherPlaces],
+      results: rankResults(q, wilayah, Array.isArray(places) ? places : []),
       warning: places.error ? 'Pencarian OpenStreetMap sedang tidak tersedia; hanya nama wilayah yang dicari.' : null,
     });
   });

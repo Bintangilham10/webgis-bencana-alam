@@ -1,10 +1,10 @@
 {
-  "version": "v0.1",
-  "description": "Ambang awal sebelum dikalibrasi dengan hindcast (RQ-L2). Kategori hujan mengikuti BMKG (mm/hari); kelas indeks bahaya mengikuti BNPB (nilai dibulatkan 3 desimal). v0.1 (29 Sep 2026): menambah indikasi hujan lebat dan akumulasi hujan bergulir yang ikut menghitung hujan beberapa hari terakhir; dipakai juga untuk indikasi SIGAP 3 hari per kab/kota.",
+  "version": "v0.2",
+  "description": "Ambang awal sebelum dikalibrasi dengan hindcast (RQ-L2). Kategori hujan mengikuti BMKG (mm/hari); kelas indeks bahaya BNPB 0–1 dibagi sepertiga dengan batas atas inklusif. v0.1 (29 Sep 2026): menambah indikasi hujan lebat dan akumulasi hujan bergulir yang ikut menghitung hujan beberapa hari terakhir; dipakai juga untuk indikasi SIGAP 3 hari per kab/kota. v0.2 (1 Okt 2026): batas kelas bahaya menjadi rendah ≤ 1/3, sedang ≤ 2/3, tinggi > 2/3. Indeks tanah longsor InaRISK menyandikan zona kerentanan PVMBG tepat sebagai 1/3 (rendah), 2/3 (menengah), dan 1; aturan v0.1 (pembulatan 3 desimal) membaca 2/3 = 0,667 sebagai tinggi.",
   "hazardClasses": [
-    { "id": "rendah", "label": "Rendah", "max": 0.333 },
-    { "id": "sedang", "label": "Sedang", "max": 0.666 },
-    { "id": "tinggi", "label": "Tinggi", "max": 1 }
+    { "id": "rendah", "label": "Rendah", "below": 0.3334 },
+    { "id": "sedang", "label": "Sedang", "below": 0.6667 },
+    { "id": "tinggi", "label": "Tinggi" }
   ],
   "rainCategories": [
     { "id": "ringan", "label": "Hujan ringan", "min": 0.5 },

@@ -14,11 +14,12 @@ const previousMonth = ({ year, month }) => (month === 1 ? { year: year - 1, mont
 export const monthLabel = ({ year, month }) => `${year}-${pad2(month)}`;
 
 // Firewall situs ESDM membalas halaman "Request Rejected" dengan status 200,
-// dan GeoServer membalas XML untuk layer yang rusak (mis. 2025-12).
-export function parseFeatureInfoText(text) {
+// dan GeoServer membalas XML untuk layer yang rusak (mis. 2025-12). `point` =
+// titik yang ditanyakan, untuk memilih poligon yang memuatnya (lihat parseFeatureInfo).
+export function parseFeatureInfoText(text, point) {
   if (/Request Rejected/i.test(text.slice(0, 500))) throw new Error('permintaan diblokir firewall situs ESDM');
   if (text.trimStart().startsWith('<')) throw new Error('layer prakiraan PVMBG bulan ini rusak di server sumber');
-  return parseFeatureInfo(JSON.parse(text));
+  return parseFeatureInfo(JSON.parse(text), point);
 }
 
 // Prakiraan bulan ini; pada awal bulan layer baru kadang belum terbit (404),
@@ -33,7 +34,7 @@ export async function fetchLandslidePotential(lat, lon, now = new Date()) {
       if (err instanceof HttpError && err.status === 404) continue;
       throw err;
     }
-    const info = parseFeatureInfoText(text);
+    const info = parseFeatureInfoText(text, { lat, lon });
     return {
       month: monthLabel(month),
       current: month === thisMonth,

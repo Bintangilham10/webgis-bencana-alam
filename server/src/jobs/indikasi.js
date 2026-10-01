@@ -1,17 +1,25 @@
 import { query, withTransaction } from '../db.js';
 import { RULES_VERSION } from '../lib/warning-rules.js';
-import { rainPoint, regionOutlook } from '../risk/outlook.js';
+import { OUTLOOK_WINDOW_DAYS, rainPoint, regionDailyOutlook, summarizeDays } from '../risk/outlook.js';
 import { fetchRainPoints } from '../sources/open-meteo.js';
 
-// Indikasi SIGAP 3 hari (hujan lebat, banjir, tanah longsor) untuk seluruh
-// kab/kota: hujan Open-Meteo di titik pantau × kelas bahaya InaRISK. Setiap run
-// disimpan utuh, termasuk kab/kota yang Normal, untuk uji prospektif.
-const SAVE_RESULTS = `
+// Indikasi SIGAP (hujan lebat, banjir, tanah longsor) untuk seluruh kab/kota:
+// hujan Open-Meteo di titik pantau × kelas bahaya InaRISK. Setiap run disimpan
+// utuh, termasuk kab/kota yang Normal, untuk uji prospektif: level per hari di
+// indikasi_hari, dan ringkasan 3 hari pertama di indikasi_wilayah.
+const SAVE_SUMMARY = `
   INSERT INTO indikasi_wilayah (run_id, kode, hazard, level, peak_date, reason, titik)
   SELECT $1, kode, hazard, level, peak_date, reason,
          CASE WHEN lon IS NULL THEN NULL ELSE ST_SetSRID(ST_MakePoint(lon, lat), 4326) END
   FROM unnest($2::text[], $3::text[], $4::smallint[], $5::date[], $6::text[], $7::float8[], $8::float8[])
     AS t(kode, hazard, level, peak_date, reason, lon, lat)`;
+
+const SAVE_DAYS = `
+  INSERT INTO indikasi_hari (run_id, kode, hazard, tanggal, level, hujan_mm, reason, titik)
+  SELECT $1, kode, hazard, tanggal, level, hujan_mm, reason,
+         CASE WHEN lon IS NULL THEN NULL ELSE ST_SetSRID(ST_MakePoint(lon, lat), 4326) END
+  FROM unnest($2::text[], $3::text[], $4::date[], $5::smallint[], $6::real[], $7::text[], $8::float8[], $9::float8[])
+    AS t(kode, hazard, tanggal, level, hujan_mm, reason, lon, lat)`;
 
 async function loadPoints() {
   const { rows } = await query(
@@ -41,23 +49,25 @@ export async function runIndikasi({ fetchRain = fetchRainPoints, onProgress } = 
   const { rain, failed, error } = await fetchRain([...locations.values()], { onProgress });
   if (!rain.size) throw new Error(`Hujan gagal dimuat untuk semua titik: ${error}`);
 
-  const results = [];
-  for (const [kode, regionPoints] of regions) {
-    for (const indication of regionOutlook(regionPoints, (point) => rain.get(point.rainKey))) results.push({ kode, ...indication });
-  }
   // Semua lokasi memakai zona waktu WIB, jadi tanggal prakiraannya sama.
-  const { days } = rain.values().next().value;
+  const dates = rain.values().next().value.days.map((d) => d.date);
+  const daily = [];
+  const summary = [];
+  for (const [kode, regionPoints] of regions) {
+    const days = regionDailyOutlook(regionPoints, (point) => rain.get(point.rainKey), dates);
+    for (const day of days) daily.push({ kode, ...day });
+    for (const item of summarizeDays(days, dates.slice(0, OUTLOOK_WINDOW_DAYS))) summary.push({ kode, ...item });
+  }
 
   await withTransaction(async (client) => {
     const { rows } = await client.query(
       `INSERT INTO indikasi_run (started_at, finished_at, rules_version, forecast_from, forecast_to, locations, locations_failed)
        VALUES ($1, now(), $2, $3, $4, $5, $6) RETURNING id`,
-      [startedAt, RULES_VERSION, days[0].date, days.at(-1).date, locations.size, failed],
+      [startedAt, RULES_VERSION, dates[0], dates.at(-1), locations.size, failed],
     );
-    await client.query(SAVE_RESULTS, [
-      rows[0].id,
-      ...['kode', 'hazard', 'level', 'peakDate', 'reason', 'lon', 'lat'].map((key) => column(results, key)),
-    ]);
+    const runId = rows[0].id;
+    await client.query(SAVE_SUMMARY, [runId, ...['kode', 'hazard', 'level', 'peakDate', 'reason', 'lon', 'lat'].map((key) => column(summary, key))]);
+    await client.query(SAVE_DAYS, [runId, ...['kode', 'hazard', 'date', 'level', 'rainMm', 'reason', 'lon', 'lat'].map((key) => column(daily, key))]);
   });
 
   return {

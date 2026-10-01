@@ -28,7 +28,7 @@ export function createApp({ services = {} } = {}) {
     referenceRouter,
     createRiskRouter({ rainWarnings, ...services.risk }),
     createLandslideRouter({ rainWarnings, rainNow: services.rainNow }),
-    createOutlookRouter(),
+    createOutlookRouter(services.outlook),
     createGeocodeRouter(services.geocode),
   );
   app.use('/api', (req, res) => res.status(404).json({ error: 'Endpoint tidak ditemukan' }));

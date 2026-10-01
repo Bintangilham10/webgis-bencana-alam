@@ -10,11 +10,15 @@ export const WARNING_LEVELS = rules.warningLevels;
 const CLASS_IDS = rules.hazardClasses.map((c) => c.id);
 const RAIN_IDS = rules.rainCategories.map((c) => c.id);
 
-// Kelas BNPB dari indeks 0–1. NoData/0 berarti di luar zona bahaya (null).
+// Kelas BNPB dari indeks 0–1, sepertiga dengan batas atas inklusif: rendah ≤ 1/3,
+// sedang ≤ 2/3, tinggi > 2/3. Batas di rules.json (0,3334 dan 0,6667) sedikit di
+// atas 1/3 dan 2/3 karena indeks tanah longsor InaRISK menyandikan zona kerentanan
+// PVMBG tepat sebagai 1/3, 2/3, dan 1, yang dibaca dari server sebagai 0,333333 dan
+// 0,666667. Batasnya sama dengan Remap peta (web/src/layers/hazards.js) dan raster
+// seed-bahaya.js. NoData/0 berarti di luar zona bahaya (null).
 export function hazardClass(index) {
   if (!Number.isFinite(index) || index <= 0) return null;
-  const rounded = Math.round(index * 1000) / 1000;
-  return rules.hazardClasses.find((c) => rounded <= c.max) ?? rules.hazardClasses.at(-1);
+  return rules.hazardClasses.find((c) => c.below === undefined || index < c.below);
 }
 
 // Kelas BNPB dari nilai raster kelas (1 rendah, 2 sedang, 3 tinggi; 0 di luar zona),
@@ -44,8 +48,8 @@ export function warningLevel(rainCategoryId, hazardClassId) {
 }
 
 const formatMm = (mm) => `${Math.round(mm * 10) / 10} mm`.replace('.', ',');
-// 3 desimal = presisi yang dipakai aturan kelas BNPB, supaya angka dan label kelas
-// tidak tampak bertentangan (mis. 0,6664 tidak tampil "0,67 sedang").
+// 3 desimal cukup untuk membedakan kelas di sekitar batasnya (mis. 0,6664 tidak
+// tampil "0,67"); 2/3 tampil 0,667 dan berkelas sedang (lihat hazardClass).
 const indexFormat = new Intl.NumberFormat('id-ID', { maximumFractionDigits: 3 });
 const formatIndex = (index) => indexFormat.format(index);
 
@@ -66,6 +70,10 @@ function wettestWindow(pastDays, days, windowDays) {
   return best;
 }
 
+// "hujan tertinggi 72 mm/hari" untuk beberapa hari, "hujan 72 mm/hari" untuk satu hari.
+const rainText = (rainy, peak) =>
+  `hujan ${rainy.length > 1 ? 'tertinggi ' : ''}${formatMm(peak.precipitationMm)}/hari (${rainCategory(peak.precipitationMm)?.label.toLowerCase() ?? 'tidak hujan'})`;
+
 // Indikasi hujan lebat: kategori hujan harian tertinggi dalam prakiraan → level.
 export function heavyRainIndication(days) {
   const rainy = known(days);
@@ -77,7 +85,7 @@ export function heavyRainIndication(days) {
     hazard: 'hujan',
     level,
     label: WARNING_LEVELS[level],
-    reason: `hujan tertinggi ${formatMm(peak.precipitationMm)}/hari (${rain?.label.toLowerCase() ?? 'tidak hujan'})`,
+    reason: rainText(rainy, peak),
     peakDate: peak.date,
     rainMm: peak.precipitationMm,
   };
@@ -98,19 +106,19 @@ export function rainHazardIndications(hazards, days, pastDays = []) {
     const index = hazards[hazard]?.index ?? null;
     const cls = hazards[hazard]?.class ?? hazardClass(index);
     let rain = rainCategory(peak.precipitationMm);
-    let rainText = `hujan tertinggi ${formatMm(peak.precipitationMm)}/hari (${rain?.label.toLowerCase() ?? 'tidak hujan'})`;
+    let why = rainText(rainy, peak);
     let peakDate = peak.date;
 
     if (hazard === 'longsor' && wettest.total >= minTotalMm && rainRank(rain) < RAIN_IDS.indexOf('lebat')) {
       rain = rainCategoryById('lebat');
-      rainText = `akumulasi hujan ${windowDays} hari ${formatMm(wettest.total)} (setara hujan lebat untuk longsor)`;
+      why = `akumulasi hujan ${windowDays} hari ${formatMm(wettest.total)} (setara hujan lebat untuk longsor)`;
       peakDate = wettest.date;
     }
 
     const level = cls ? warningLevel(rain?.id, cls.id) : 0;
     let hazardText = 'lokasi di luar zona bahaya InaRISK';
     if (cls) hazardText = index == null ? `zona bahaya ${cls.label.toLowerCase()} (InaRISK)` : `indeks bahaya ${cls.label.toLowerCase()} (${formatIndex(index)})`;
-    return { hazard, level, label: WARNING_LEVELS[level], reason: `${rainText}; ${hazardText}`, peakDate, rainMm: peak.precipitationMm };
+    return { hazard, level, label: WARNING_LEVELS[level], reason: `${why}; ${hazardText}`, peakDate, rainMm: peak.precipitationMm };
   });
 }
 

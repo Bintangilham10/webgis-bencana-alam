@@ -5,6 +5,22 @@ import { recommendations } from './recommendations.js';
 
 const round1 = (x) => Math.round(x * 10) / 10;
 
+// Garis pantai data batas wilayah lebih kasar dari kenyataan, jadi titik pantai
+// sampai 1 km di luar poligon dianggap masih di kab/kota terdekat.
+export const COAST_TOLERANCE_KM = 1;
+
+// Status lokasi titik: di kab/kota Indonesia, di pesisirnya, di perairan, di
+// daratan negara lain (elevasi DEM > 0 jauh dari batas Indonesia), atau tidak
+// diketahui (elevasi tidak tersedia). place = hasil placeAt (dengan distance_km).
+export function regionStatus(place, elevationM) {
+  if (!place) return 'luar_batas';
+  const distanceKm = place.distance_km ?? 0;
+  if (distanceKm === 0) return 'indonesia';
+  if (distanceKm <= COAST_TOLERANCE_KM) return 'pesisir';
+  if (!Number.isFinite(elevationM)) return 'luar_batas';
+  return elevationM > 0 ? 'luar_indonesia' : 'perairan';
+}
+
 // Bagian tanah longsor & hujan: produk resmi (PVMBG, BMKG CEWS), hujan
 // anteseden, peluang ensemble, lereng, dan riwayat kejadian. Tiap bagian yang
 // sumbernya gagal hanya berisi `error`, bagian lain tetap tampil.
@@ -51,12 +67,25 @@ export function buildRiskProfile({ lat, lon, place, hazardIndices, forecast, fau
   });
 
   const days = forecast.days ?? [];
+  const status = regionStatus(place, forecast.elevationM);
+  const inRegion = status === 'indonesia' || status === 'pesisir';
   // Hujan lebat, banjir, dan longsor 3 hari; aturan yang sama dengan indikasi kab/kota.
-  const indications = forecast.error ? [] : outlookIndications(hazardIndices, days, forecast.pastDays ?? []);
+  // Di negara lain indikasi tidak dihitung: zona bahaya InaRISK hanya ada di Indonesia.
+  const indications =
+    forecast.error || status === 'luar_indonesia' ? [] : outlookIndications(hazardIndices, days, forecast.pastDays ?? []);
   const landslideInfo = landslide && landslideSection({ ...landslide, pastDays: forecast.pastDays ?? [] });
+  const wilayah = inRegion ? { kode: place.kode, nama: place.nama, provinsi: place.provinsi } : null;
 
   return {
-    location: { lat, lon, elevation_m: forecast.elevationM ?? null, wilayah: place },
+    location: {
+      lat,
+      lon,
+      elevation_m: forecast.elevationM ?? null,
+      status,
+      wilayah,
+      // Kab/kota terdekat bila titik di luar semua batas (jarak dalam km).
+      wilayah_terdekat: place && place.distance_km > 0 ? place : null,
+    },
     hazards,
     rain: {
       days: days.map((d) => ({
@@ -72,7 +101,7 @@ export function buildRiskProfile({ lat, lon, place, hazardIndices, forecast, fau
     nearest_fault: fault,
     nearest_volcanoes: volcanoes,
     recent_quakes: quakes,
-    recommendations: recommendations({ hazards, indications, fault, volcanoes, landslide: landslideInfo, place }),
+    recommendations: recommendations({ hazards, indications, fault, volcanoes, landslide: landslideInfo, place: wilayah, status }),
     rules_version: RULES_VERSION,
     generated_at: new Date().toISOString(),
   };

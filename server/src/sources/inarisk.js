@@ -11,6 +11,13 @@ export const HAZARDS = [
   { id: 'gunungapi', label: 'Gunung api', service: 'INDEKS_BAHAYA_GUNUNGAPI' },
 ];
 
+// Server BNPB kadang butuh ±8 detik saat "dingin", jadi batasnya 10 detik.
+const IDENTIFY_TIMEOUT_MS = 10_000;
+// Layanan yang gagal dilewati sementara. Tanpa ini, satu layanan yang mati
+// (1 Okt 2026: cuaca ekstrem membalas HTTP 525 setelah ±26 detik) membuat setiap
+// cek risiko menunggu sampai batas waktu.
+export const OUTAGE_MS = 5 * 60_000;
+
 // "NoData" = titik di luar zona bahaya (bukan data hilang).
 export function parseIdentifyValue(json) {
   const value = json?.value;
@@ -34,18 +41,30 @@ function identifyUrl(service, lat, lon) {
 
 // Kelima layanan diminta paralel. Satu layanan yang gagal/lambat tidak
 // menggagalkan yang lain: hasilnya ditandai error dan sisanya tetap dipakai.
-// Tanpa coba ulang: pengguna sedang menunggu, dan server BNPB kadang butuh
-// ±8 detik saat "dingin" sehingga coba ulang bisa melipatgandakan waktu tunggu.
-export async function identifyHazards(lat, lon) {
-  const entries = await Promise.all(
-    HAZARDS.map(async ({ id, service }) => {
-      try {
-        const json = await fetchJson(identifyUrl(service, lat, lon), { timeoutMs: 15_000, retries: 0 });
-        return [id, { index: parseIdentifyValue(json) }];
-      } catch (err) {
-        return [id, { index: null, error: err.message }];
-      }
-    }),
-  );
-  return Object.fromEntries(entries);
+// Tanpa coba ulang, karena pengguna sedang menunggu. Layanan yang baru saja gagal
+// tidak diminta lagi selama OUTAGE_MS; permintaan pertama sesudahnya mencoba lagi.
+export function createHazardIdentifier({ getJson = fetchJson, now = Date.now } = {}) {
+  const outages = new Map();
+  return async function identifyHazards(lat, lon) {
+    const entries = await Promise.all(
+      HAZARDS.map(async ({ id, service }) => {
+        const outage = outages.get(service);
+        if (outage && now() - outage.at < OUTAGE_MS) {
+          return [id, { index: null, error: `layanan InaRISK sedang bermasalah (${outage.message}); dicoba lagi otomatis` }];
+        }
+        try {
+          const json = await getJson(identifyUrl(service, lat, lon), { timeoutMs: IDENTIFY_TIMEOUT_MS, retries: 0 });
+          const index = parseIdentifyValue(json);
+          outages.delete(service);
+          return [id, { index }];
+        } catch (err) {
+          outages.set(service, { at: now(), message: err.message.slice(0, 120) });
+          return [id, { index: null, error: err.message }];
+        }
+      }),
+    );
+    return Object.fromEntries(entries);
+  };
 }
+
+export const identifyHazards = createHazardIdentifier();
