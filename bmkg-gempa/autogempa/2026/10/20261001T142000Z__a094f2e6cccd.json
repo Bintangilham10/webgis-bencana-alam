@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-01T14:30:36.500Z",
+  "data": {
+    "Tanggal": "01 Okt 2026",
+    "Jam": "21:20:00 WIB",
+    "DateTime": "2026-10-01T14:20:00+00:00",
+    "Coordinates": "-7.07,120.80",
+    "Lintang": "7.07 LS",
+    "Bujur": "120.80 BT",
+    "Magnitude": "5.1",
+    "Kedalaman": "10 km",
+    "Wilayah": "111 km Tenggara SELAYAR-SULSEL",
+    "Potensi": "Tidak berpotensi tsunami",
+    "Dirasakan": "-",
+    "Shakemap": "20261001212228.mmi.jpg"
+  }
+}
