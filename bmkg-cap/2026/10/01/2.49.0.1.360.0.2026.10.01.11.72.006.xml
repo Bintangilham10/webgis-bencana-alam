@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.01.11.72.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-01T19:23:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-01T19:35:00+08:00</effective>
+    <expires>2026-10-01T21:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 01 October 2026, 19:35 WITA di sebagian wilayah Sulawesi Tengah, khususnya di KULAWI, KULAWI SELATAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 01 October 2026, 21:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSG/2026/10/01/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tengah</areaDesc>
+      <polygon>-1.340,120.012 -1.358,120.015 -1.374,120.006 -1.386,120.019 -1.413,120.024 -1.438,120.062 -1.455,120.099 -1.483,120.111 -1.502,120.131 -1.520,120.111 -1.533,120.109 -1.558,120.099 -1.567,120.080 -1.556,120.061 -1.558,120.049 -1.563,120.036 -1.572,120.037 -1.567,120.004 -1.596,119.969 -1.602,119.934 -1.618,119.927 -1.623,119.909 -1.615,119.898 -1.624,119.888 -1.653,119.866 -1.640,119.861 -1.632,119.826 -1.643,119.823 -1.660,119.829 -1.676,119.829 -1.710,119.817 -1.725,119.806 -1.741,119.809 -1.744,119.804 -1.739,119.798 -1.721,119.792 -1.711,119.778 -1.690,119.779 -1.679,119.764 -1.646,119.750 -1.643,119.747 -1.645,119.729 -1.635,119.726 -1.622,119.729 -1.614,119.736 -1.605,119.733 -1.594,119.717 -1.569,119.702 -1.546,119.673 -1.531,119.667 -1.508,119.672 -1.459,119.700 -1.453,119.697 -1.436,119.708 -1.425,119.724 -1.423,119.732 -1.429,119.746 -1.424,119.764 -1.407,119.781 -1.404,119.790 -1.401,119.822 -1.370,119.891 -1.370,119.901 -1.376,119.911 -1.363,119.938 -1.348,119.965 -1.348,119.989 -1.339,120.007 -1.340,120.012</polygon>
+      <polygon>-1.558,120.099 -1.563,120.106 -1.564,120.117 -1.557,120.134 -1.560,120.139 -1.571,120.143 -1.618,120.146 -1.628,120.138 -1.646,120.137 -1.683,120.152 -1.693,120.149 -1.719,120.156 -1.722,120.152 -1.744,120.171 -1.757,120.167 -1.768,120.170 -1.777,120.177 -1.783,120.176 -1.798,120.124 -1.797,120.112 -1.804,120.107 -1.815,120.109 -1.805,120.098 -1.785,120.098 -1.760,120.086 -1.755,120.079 -1.757,120.075 -1.752,120.043 -1.740,119.990 -1.731,119.993 -1.713,120.023 -1.690,120.037 -1.682,120.024 -1.672,120.017 -1.660,120.015 -1.653,120.002 -1.654,119.992 -1.675,119.957 -1.677,119.937 -1.659,119.924 -1.652,119.926 -1.648,119.932 -1.618,119.927 -1.602,119.934 -1.596,119.969 -1.567,120.004 -1.572,120.037 -1.563,120.036 -1.558,120.049 -1.556,120.061 -1.567,120.080 -1.558,120.099</polygon>
+    </area>
+  </info>
+</alert>
