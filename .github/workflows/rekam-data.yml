@@ -21,8 +21,9 @@ jobs:
   rekam:
     runs-on: ubuntu-latest
     # Satu run biasanya 1–4 menit; sumber longsor/hujan dicicil dengan jeda
-    # supaya sopan ke server sumber, jadi beri ruang cadangan.
-    timeout-minutes: 15
+    # supaya sopan ke server sumber. Saat ada siklus ECMWF baru (dua kali sehari),
+    # arsip indikasi SIGAP menambah ±8 menit (±3.200 titik hujan), jadi beri ruang.
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v7
         with:
