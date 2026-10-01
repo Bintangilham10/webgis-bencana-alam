@@ -1,4 +1,4 @@
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -16,6 +16,7 @@ import { recordOpenMeteoEns } from './sources/open-meteo-ens.js';
 import { recordPetaBencana } from './sources/petabencana.js';
 import { recordPvmbgLaporan } from './sources/pvmbg-laporan.js';
 import { recordPvmbgPrakiraan } from './sources/pvmbg-prakiraan.js';
+import { recordSigapIndikasi } from './sources/sigap-indikasi.js';
 
 export const SOURCES = {
   'bmkg-cap': recordBmkgCap,
@@ -28,15 +29,20 @@ export const SOURCES = {
   'open-meteo-ens': recordOpenMeteoEns,
   'bnpb-mingguan': recordBnpbMingguan,
   'berita-longsor': recordBeritaLongsor,
+  // Paling akhir: saat ada siklus model baru, run ini butuh ±8 menit (±3.200 titik hujan).
+  'sigap-indikasi': recordSigapIndikasi,
 };
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-// Titik kab/kota dan gazeter nama wilayah untuk sumber yang membutuhkannya.
+// Titik kab/kota, gazeter nama wilayah, dan titik pantau indikasi SIGAP untuk
+// sumber yang membutuhkannya (diekspor dari database server: npm run export:recorder).
 export function defaultData() {
   const file = new URL('../data/wilayah.json', import.meta.url);
   const wilayah = existsSync(file) ? loadWilayah(file) : [];
-  return { wilayah, gazetteer: wilayah.length ? createGazetteer(wilayah) : null };
+  const titikFile = new URL('../data/titik-pantau.json', import.meta.url);
+  const titikPantau = existsSync(titikFile) ? JSON.parse(readFileSync(titikFile, 'utf8')) : [];
+  return { wilayah, gazetteer: wilayah.length ? createGazetteer(wilayah) : null, titikPantau };
 }
 
 // Satu sumber yang gagal tidak menghentikan sumber lain. Hasil tiap run,
