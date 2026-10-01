@@ -20,9 +20,9 @@ concurrency:
 jobs:
   rekam:
     runs-on: ubuntu-latest
-    # Satu run biasanya 1–4 menit; sumber longsor/hujan dicicil dengan jeda
-    # supaya sopan ke server sumber. Saat ada siklus ECMWF baru (dua kali sehari),
-    # arsip indikasi SIGAP menambah ±8 menit (±3.200 titik hujan), jadi beri ruang.
+    # Sumber utama biasanya selesai dalam 1–4 menit (dicicil dengan jeda supaya
+    # sopan ke server sumber). Arsip indikasi SIGAP berjalan di langkah terpisah
+    # dengan batas waktunya sendiri (lihat di bawah).
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v7
@@ -52,7 +52,7 @@ jobs:
         id: rekam
         continue-on-error: true
         working-directory: recorder
-        run: npm run record
+        run: npm run record -- --kecuali sigap-indikasi
         env:
           ARSIP_DIR: ${{ github.workspace }}/arsip
 
@@ -68,6 +68,32 @@ jobs:
           git -c user.name="github-actions[bot]" \
               -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
               commit -q -m "arsip: $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push origin arsip-data
+
+      # Indikasi SIGAP di langkah terpisah, sesudah arsip utama aman ter-commit:
+      # mengambil hujan ±3.200 titik dari runner GitHub bisa butuh lebih dari 15
+      # menit (uji 1 Okt 2026), jadi tiap run memakai jatah ±8 menit dan sisanya
+      # dicicil di run berikutnya (sigap-indikasi/pending.json).
+      - name: Rekam indikasi SIGAP
+        id: indikasi
+        continue-on-error: true
+        timeout-minutes: 12
+        working-directory: recorder
+        run: npm run record -- --hanya sigap-indikasi
+        env:
+          ARSIP_DIR: ${{ github.workspace }}/arsip
+
+      - name: Commit & push indikasi
+        working-directory: arsip
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Tidak ada perubahan."
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "arsip indikasi: $(date -u +%Y-%m-%dT%H:%MZ)"
           git push origin arsip-data
 
       - name: Tandai gagal bila semua sumber gagal
