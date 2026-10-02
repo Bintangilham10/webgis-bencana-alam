@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-02T12:00:39.603Z",
+  "data": {
+    "Tanggal": "02 Okt 2026",
+    "Jam": "18:34:10 WIB",
+    "DateTime": "2026-10-02T11:34:10+00:00",
+    "Coordinates": "-4.06,121.60",
+    "Lintang": "4.06 LS",
+    "Bujur": "121.60 BT",
+    "Magnitude": "2.1",
+    "Kedalaman": "5 km",
+    "Wilayah": "Pusat gempa berada di darat 2 km Barat Kolaka",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "II - III Kolaka",
+    "Shakemap": "20261002183410.mmi.jpg"
+  }
+}
