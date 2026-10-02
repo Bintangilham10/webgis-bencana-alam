@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-02T01:16:04.431Z",
+  "data": {
+    "Tanggal": "02 Okt 2026",
+    "Jam": "07:46:54 WIB",
+    "DateTime": "2026-10-02T00:46:54+00:00",
+    "Coordinates": "-8.67,114.89",
+    "Lintang": "8.67 LS",
+    "Bujur": "114.89 BT",
+    "Magnitude": "3.8",
+    "Kedalaman": "86 km",
+    "Wilayah": "Pusat gempa berada di laut 29 km barat daya Tabanan",
+    "Dirasakan": "II - III Kuta"
+  }
+}

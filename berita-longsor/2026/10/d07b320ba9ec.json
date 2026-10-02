@@ -1,0 +1,21 @@
+{
+  "guid": "CBMigAFBVV95cUxPdlhQR2Z4c2k0Z1BMc2syV0kxVjRaNU9uRHhxcll3RWZYaDBzak1hYV9wYkh4NkRiVEdnQXliczBZeDFZYm5lNDhBVEsyZWxkWG5YOGNGeEdFaTJ2S0NydjNyNDZTd0xlRlZoWG9wWXF4YUhGT2F6dUFCYkxqZ0doWg",
+  "title": "Polres Trenggalek Imbau Pengguna Jalan Waspadai Longsor di Jalur Alternatif Dompyong - Suara Trenggalek",
+  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdlhQR2Z4c2k0Z1BMc2syV0kxVjRaNU9uRHhxcll3RWZYaDBzak1hYV9wYkh4NkRiVEdnQXliczBZeDFZYm5lNDhBVEsyZWxkWG5YOGNGeEdFaTJ2S0NydjNyNDZTd0xlRlZoWG9wWXF4YUhGT2F6dUFCYkxqZ0doWg?oc=5",
+  "source": "Suara Trenggalek",
+  "source_url": "https://suaratrenggalek.com",
+  "published_at": "2026-10-02T00:08:08.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-02T01:16:04.431Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

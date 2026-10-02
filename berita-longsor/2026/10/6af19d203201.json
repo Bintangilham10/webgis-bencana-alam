@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiygFBVV95cUxNY1ltTmVKQ3d1YXctdnROYV9UbkI0ZFBnYlBpNDRiR1Y1VTA0d29WLVM1OHNuNDQtN1RPWmVSZlREWlhZOVlzUlFELWQ1N0k0dm1EWWkwZ2Nvc0N0Mm4wbkNFNHY2Z1JxMzEtbHE1ODMtLUhqdzZ4M0piS2JOOVNsTVVnV3E5TkxyazFBbkFEZUh0ck9wSExBbFdRLVc1TG5oSW10ZWZPOWVTLXlwakhOUk5ybTdDRHU0TWVwS3NYUlFjTklNb2ZSQmpn",
+  "title": "DPC PDI Perjuangan Aceh Tengah Inisiasi Bantu Alat Berat Untuk Warga Terdampak Longsor - gesuri.id",
+  "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNY1ltTmVKQ3d1YXctdnROYV9UbkI0ZFBnYlBpNDRiR1Y1VTA0d29WLVM1OHNuNDQtN1RPWmVSZlREWlhZOVlzUlFELWQ1N0k0dm1EWWkwZ2Nvc0N0Mm4wbkNFNHY2Z1JxMzEtbHE1ODMtLUhqdzZ4M0piS2JOOVNsTVVnV3E5TkxyazFBbkFEZUh0ck9wSExBbFdRLVc1TG5oSW10ZWZPOWVTLXlwakhOUk5ybTdDRHU0TWVwS3NYUlFjTklNb2ZSQmpn?oc=5",
+  "source": "gesuri.id",
+  "source_url": "https://www.gesuri.id",
+  "published_at": "2026-10-01T19:00:35.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-02T01:16:04.431Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
