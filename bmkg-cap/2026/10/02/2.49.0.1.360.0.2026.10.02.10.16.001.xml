@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.02.10.16.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-02T14:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-02T15:10:00+07:00</effective>
+    <expires>2026-10-02T17:20:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 02 October 2026, 15:10 WIB di sebagian wilayah Sumatera Selatan, khususnya di TANJUNGSAKTI PUMU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 02 October 2026, 17:20 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSS/2026/10/02/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Selatan</areaDesc>
+      <polygon>-4.011,103.080 -4.049,103.087 -4.097,103.086 -4.110,103.068 -4.138,103.062 -4.156,103.026 -4.167,103.021 -4.167,103.013 -4.158,103.000 -4.153,102.998 -4.124,102.971 -4.097,102.920 -4.076,102.922 -4.063,102.914 -4.057,102.916 -4.049,102.929 -4.055,102.958 -4.045,102.968 -4.042,102.981 -4.031,102.985 -4.019,102.997 -4.016,103.009 -4.020,103.030 -4.013,103.047 -4.016,103.053 -4.011,103.080</polygon>
+    </area>
+  </info>
+</alert>
