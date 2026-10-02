@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.02.16.64.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-02T23:36:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-02T23:40:00+08:00</effective>
+    <expires>2026-10-03T02:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 02 October 2026, 23:40 WITA di sebagian wilayah Kalimantan Timur, khususnya di SEGAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 October 2026, 02:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKT/2026/10/02/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Timur</areaDesc>
+      <polygon>2.587,117.426 2.564,117.443 2.551,117.402 2.537,117.371 2.523,117.362 2.509,117.344 2.495,117.336 2.454,117.330 2.449,117.319 2.433,117.311 2.402,117.311 2.373,117.316 2.318,117.301 2.300,117.287 2.274,117.281 2.234,117.292 2.198,117.295 2.121,117.265 2.099,117.267 2.056,117.255 2.048,117.244 2.035,117.210 1.997,117.179 1.969,117.165 1.931,117.159 1.918,117.153 1.892,117.162 1.868,117.159 1.850,117.147 1.838,117.153 1.829,117.152 1.832,117.148 1.821,117.140 1.819,117.126 1.841,117.103 1.867,117.083 1.869,117.049 1.895,116.988 1.923,116.954 1.951,116.928 1.964,116.901 1.951,116.869 1.950,116.838 1.940,116.820 1.943,116.806 1.971,116.813 1.985,116.810 2.004,116.789 2.024,116.785 2.038,116.761 2.049,116.732 2.044,116.718 2.044,116.695 2.055,116.679 2.052,116.661 2.054,116.608 2.049,116.583 2.049,116.550 2.054,116.527 2.096,116.512 2.120,116.508 2.176,116.510 2.186,116.516 2.201,116.519 2.228,116.508 2.282,116.529 2.291,116.540 2.305,116.547 2.325,116.550 2.366,116.547 2.418,116.564 2.449,116.568 2.436,116.576 2.418,116.607 2.417,116.618 2.429,116.628 2.448,116.633 2.517,116.713 2.530,116.733 2.527,116.740 2.439,116.775 2.387,116.786 2.379,116.796 2.383,116.808 2.399,116.823 2.461,116.846 2.469,116.860 2.479,116.894 2.507,116.942 2.521,117.024 2.528,117.034 2.548,117.043 2.581,117.061 2.591,117.070 2.598,117.094 2.595,117.145 2.588,117.168 2.577,117.243 2.583,117.259 2.597,117.279 2.605,117.303 2.605,117.337 2.601,117.354 2.598,117.386 2.607,117.401 2.587,117.426</polygon>
+    </area>
+  </info>
+</alert>
