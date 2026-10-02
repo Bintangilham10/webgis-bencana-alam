@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.02.22.62.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-03T04:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-03T04:30:00+07:00</effective>
+    <expires>2026-10-03T06:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 03 October 2026, 04:30 WIB di sebagian wilayah Kalimantan Tengah, khususnya di BARITO TUHUP RAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 October 2026, 06:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/03/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-0.166,115.067 -0.247,115.054 -0.323,115.057 -0.367,115.052 -0.405,115.031 -0.512,115.043 -0.576,115.004 -0.587,114.997 -0.623,114.971 -0.647,114.955 -0.652,114.951 -0.699,114.914 -0.736,114.874 -0.736,114.868 -0.744,114.786 -0.744,114.784 -0.718,114.787 -0.702,114.783 -0.671,114.795 -0.584,114.884 -0.567,114.883 -0.523,114.845 -0.461,114.826 -0.430,114.811 -0.374,114.824 -0.346,114.819 -0.318,114.809 -0.167,114.814 0.016,114.795 0.057,114.857 0.057,114.873 0.039,114.895 0.019,114.890 -0.012,114.899 -0.035,114.898 -0.099,114.924 -0.114,114.926 -0.134,114.920 -0.164,114.933 -0.182,114.929 -0.188,114.931 -0.190,114.951 -0.180,114.962 -0.178,114.979 -0.173,114.987 -0.179,114.994 -0.184,114.989 -0.186,114.992 -0.185,115.024 -0.192,115.039 -0.190,115.045 -0.166,115.067</polygon>
+    </area>
+  </info>
+</alert>
