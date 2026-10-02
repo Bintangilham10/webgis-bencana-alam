@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.02.10.16.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-02T17:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-02T17:20:00+07:00</effective>
+    <expires>2026-10-02T19:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 02 October 2026, 17:20 WIB di sebagian wilayah Sumatera Selatan, khususnya di WARKUK RANAU SELATAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 02 October 2026, 19:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSS/2026/10/02/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Selatan</areaDesc>
+      <polygon>-4.877,104.236 -4.879,104.233 -4.859,104.216 -4.863,104.189 -4.887,104.184 -4.917,104.149 -4.913,104.135 -4.920,104.109 -4.901,104.070 -4.889,104.065 -4.886,104.060 -4.886,104.054 -4.894,104.054 -4.904,104.044 -4.910,103.972 -4.911,103.965 -4.885,103.935 -4.874,103.952 -4.868,103.978 -4.879,103.984 -4.881,103.996 -4.873,104.011 -4.865,104.016 -4.858,104.014 -4.846,104.024 -4.847,104.034 -4.833,104.061 -4.833,104.066 -4.842,104.072 -4.820,104.101 -4.798,104.141 -4.749,104.138 -4.756,104.154 -4.805,104.218 -4.877,104.236</polygon>
+    </area>
+  </info>
+</alert>
