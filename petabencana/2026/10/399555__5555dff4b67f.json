@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-03T13:40:27.909Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        116.0664696017,
+        -8.5257751125
+      ]
+    },
+    "properties": {
+      "pkey": "399555",
+      "created_at": "2026-10-03T13:34:55.443Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "b61a255c-0e8a-487f-bbec-0c374244cfbf",
+      "image_url": "https://images.petabencana.id/b61a255c-0e8a-487f-bbec-0c374244cfbf.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 40.480557267735186,
+        "fireLocation": {
+          "lng": 116.0664696017351,
+          "lat": -8.52577511249163
+        },
+        "personLocation": {
+          "lat": "-8.5258123",
+          "lng": "116.0668394"
+        },
+        "fireRadius": {
+          "lng": 116.06612091456009,
+          "lat": -8.525891825494355
+        }
+      },
+      "tags": {
+        "city": "LOMBOK BARAT",
+        "district_id": null,
+        "region_code": "5201",
+        "local_area_id": null,
+        "instance_region_code": "ID-NB"
+      },
+      "title": null,
+      "text": "Kebakaran lahan perbukitan  terjadi di kawasan Batu Bolong, Desa Batulayar, Kecamatan Batulayar, Kabupaten Lombok Barat, NTB",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
