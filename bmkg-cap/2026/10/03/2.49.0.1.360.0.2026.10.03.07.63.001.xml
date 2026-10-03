@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.03.07.63.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-03T15:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-03T15:10:00+08:00</effective>
+    <expires>2026-10-03T16:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 03 October 2026, 15:10 WITA di sebagian wilayah Kalimantan Selatan, khususnya di BATANG ALAI TIMUR, BINTANG ARA, LIMPASU, TEBING TINGGI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 October 2026, 16:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKS/2026/10/03/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Selatan</areaDesc>
+      <polygon>-2.479,115.562 -2.484,115.587 -2.491,115.598 -2.504,115.603 -2.508,115.618 -2.510,115.657 -2.524,115.680 -2.521,115.697 -2.527,115.711 -2.524,115.719 -2.532,115.750 -2.559,115.746 -2.597,115.725 -2.591,115.738 -2.572,115.757 -2.529,115.771 -2.510,115.798 -2.503,115.803 -2.504,115.824 -2.527,115.878 -2.556,115.888 -2.595,115.887 -2.600,115.892 -2.615,115.888 -2.616,115.857 -2.606,115.829 -2.633,115.812 -2.639,115.791 -2.648,115.777 -2.652,115.778 -2.659,115.764 -2.671,115.746 -2.703,115.722 -2.706,115.711 -2.723,115.699 -2.710,115.690 -2.709,115.684 -2.718,115.667 -2.712,115.646 -2.712,115.626 -2.722,115.599 -2.713,115.587 -2.712,115.574 -2.659,115.568 -2.614,115.544 -2.604,115.533 -2.598,115.512 -2.600,115.509 -2.598,115.510 -2.576,115.494 -2.547,115.516 -2.538,115.509 -2.525,115.513 -2.509,115.522 -2.481,115.545 -2.483,115.551 -2.479,115.562</polygon>
+      <polygon>-2.482,115.551 -2.483,115.551 -2.481,115.545 -2.509,115.522 -2.525,115.513 -2.531,115.491 -2.520,115.461 -2.526,115.446 -2.488,115.437 -2.463,115.438 -2.455,115.443 -2.462,115.471 -2.462,115.501 -2.478,115.551 -2.482,115.551</polygon>
+      <polygon>-1.871,115.483 -1.959,115.481 -1.963,115.464 -2.007,115.466 -2.008,115.453 -2.034,115.450 -2.018,115.436 -2.007,115.444 -1.981,115.446 -1.971,115.440 -1.969,115.434 -1.964,115.432 -1.948,115.442 -1.931,115.426 -1.924,115.431 -1.908,115.418 -1.893,115.419 -1.894,115.412 -1.898,115.410 -1.887,115.405 -1.886,115.400 -1.894,115.397 -1.890,115.384 -1.892,115.320 -1.878,115.321 -1.852,115.316 -1.846,115.308 -1.825,115.302 -1.825,115.313 -1.801,115.310 -1.766,115.322 -1.748,115.334 -1.727,115.336 -1.716,115.334 -1.710,115.338 -1.719,115.352 -1.719,115.370 -1.733,115.403 -1.772,115.430 -1.788,115.431 -1.794,115.438 -1.817,115.426 -1.844,115.454 -1.852,115.457 -1.862,115.455 -1.871,115.483</polygon>
+      <polygon>-2.380,115.681 -2.385,115.693 -2.399,115.712 -2.398,115.722 -2.408,115.738 -2.406,115.768 -2.435,115.794 -2.440,115.806 -2.450,115.808 -2.484,115.813 -2.503,115.803 -2.510,115.798 -2.529,115.771 -2.572,115.757 -2.591,115.738 -2.597,115.725 -2.559,115.746 -2.532,115.750 -2.524,115.719 -2.527,115.711 -2.521,115.697 -2.524,115.680 -2.510,115.657 -2.508,115.618 -2.504,115.603 -2.491,115.598 -2.484,115.587 -2.479,115.562 -2.462,115.570 -2.426,115.569 -2.417,115.611 -2.403,115.617 -2.368,115.618 -2.380,115.681</polygon>
+    </area>
+  </info>
+</alert>
