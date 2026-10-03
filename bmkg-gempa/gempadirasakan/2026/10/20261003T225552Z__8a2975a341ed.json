@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-03T23:30:29.770Z",
+  "data": {
+    "Tanggal": "04 Okt 2026",
+    "Jam": "05:55:52 WIB",
+    "DateTime": "2026-10-03T22:55:52+00:00",
+    "Coordinates": "-9.70,118.92",
+    "Lintang": "9.70 LS",
+    "Bujur": "118.92 BT",
+    "Magnitude": "6.1",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di Laut 14 km baratdaya Kodi-Sumba baratdaya",
+    "Dirasakan": "V Sumba Barat, IV - V Manggarai Barat, IV Kab. Sumba Timur , III-IV Kab. Manggarai"
+  }
+}
