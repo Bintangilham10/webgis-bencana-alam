@@ -1,0 +1,26 @@
+{
+  "guid": "CBMihAFBVV95cUxONE41WnBBM09mXzhTeXFKRXJ3NDNwelJtTnlrbnQyd1Y5TEZaWVVvWVB4Sk96cjlNaXpibU1BTkVkYVFLZTkxSW1WQUFaaHVuX1Z0VTFFYVctTEYtMVViX1V5bHhIX0ljMFJPV0RfMno0UlpfdlNoYmxNUWNCRHRQZVpVNmnSAYcBQVVfeXFMT3NMSlA2UGVKU0F1bTR3dmdqVHk1TlpUUjVpcXpZX0JMWTdqQVZ6UmtTQUpSRFJaQ0IwVm93N0R5R2VDYS05ZWp6SnRiV0Z2NS1rV2lKb2hVbThOSEpzSHpjLVptZTFmdmJ3Wmp3WVdNVlBlb05jRm5wQUNTQ1JDYjF1SkRFd1pR",
+  "title": "Tanah Galian Longsor, Petugas PU di Bandung Tertimbun - jpnn.com",
+  "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONE41WnBBM09mXzhTeXFKRXJ3NDNwelJtTnlrbnQyd1Y5TEZaWVVvWVB4Sk96cjlNaXpibU1BTkVkYVFLZTkxSW1WQUFaaHVuX1Z0VTFFYVctTEYtMVViX1V5bHhIX0ljMFJPV0RfMno0UlpfdlNoYmxNUWNCRHRQZVpVNmnSAYcBQVVfeXFMT3NMSlA2UGVKU0F1bTR3dmdqVHk1TlpUUjVpcXpZX0JMWTdqQVZ6UmtTQUpSRFJaQ0IwVm93N0R5R2VDYS05ZWp6SnRiV0Z2NS1rV2lKb2hVbThOSEpzSHpjLVptZTFmdmJ3Wmp3WVdNVlBlb05jRm5wQUNTQ1JDYjF1SkRFd1pR?oc=5",
+  "source": "jpnn.com",
+  "source_url": "https://www.jpnn.com",
+  "published_at": "2026-10-03T14:01:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-03T14:45:26.925Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
