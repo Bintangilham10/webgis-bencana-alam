@@ -1,0 +1,26 @@
+{
+  "guid": "CBMilwFBVV95cUxQcnpXZGs0RnIzMlN6SnAtQ3FwckhId1h5cUNVYlg0NFpCbENLQnJpaUo3NGRpZ3Y5by1BcGFrZHFzTVJma1NuSHVuWExpY3hGMkpuWUlhWjdtbjdxREdSM1FWcDFjM09CZjNwYWRBU1RqbDY1UzkyYmszQXhqSXJxcUtjN1pXSkYydnIwaFhYNXdGdEJURmdr",
+  "title": "Tanah Galian Longsor, Petugas PU di Bandung Tertimbun - Head Topics",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQcnpXZGs0RnIzMlN6SnAtQ3FwckhId1h5cUNVYlg0NFpCbENLQnJpaUo3NGRpZ3Y5by1BcGFrZHFzTVJma1NuSHVuWExpY3hGMkpuWUlhWjdtbjdxREdSM1FWcDFjM09CZjNwYWRBU1RqbDY1UzkyYmszQXhqSXJxcUtjN1pXSkYydnIwaFhYNXdGdEJURmdr?oc=5",
+  "source": "Head Topics",
+  "source_url": "https://id.headtopics.com",
+  "published_at": "2026-10-03T14:34:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-03T21:00:42.293Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
