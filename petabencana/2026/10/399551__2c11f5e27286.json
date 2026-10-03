@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-03T09:15:21.932Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        111.0038327093,
+        -7.0861856963
+      ]
+    },
+    "properties": {
+      "pkey": "399551",
+      "created_at": "2026-10-03T09:13:20.499Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "7cc2496f-2d4e-4e1c-a1b1-816427e7a71b",
+      "image_url": "https://images.petabencana.id/7cc2496f-2d4e-4e1c-a1b1-816427e7a71b.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 81.68781340243484,
+        "fireLocation": {
+          "lng": 111.00383270929586,
+          "lat": -7.0861856962622625
+        },
+        "personLocation": {
+          "lat": "-7.0859500",
+          "lng": "111.0037672"
+        },
+        "fireRadius": {
+          "lng": 111.00309241960792,
+          "lat": -7.086185696260898
+        }
+      },
+      "tags": {
+        "city": "GROBOGAN",
+        "district_id": null,
+        "region_code": "3315",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Kebakaran lahan dilaporkan terjadi di Dusun Gandok, Desa Pulongrambe, Kecamatan Tawangharjo, Kabupaten Grobogan, Jawa Tengah pada Jumat ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
