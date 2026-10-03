@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.03.12.17.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-03T19:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-03T19:40:00+07:00</effective>
+    <expires>2026-10-03T21:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bengkulu</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 03 October 2026, 19:40 WIB di sebagian wilayah Bengkulu, khususnya di PADANG JAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 October 2026, 21:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBK/2026/10/03/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bengkulu</areaDesc>
+      <polygon>-3.280,102.289 -3.322,102.298 -3.337,102.280 -3.359,102.274 -3.366,102.265 -3.334,102.226 -3.325,102.200 -3.324,102.180 -3.331,102.174 -3.353,102.179 -3.379,102.175 -3.407,102.163 -3.391,102.132 -3.390,102.121 -3.363,102.094 -3.357,102.107 -3.351,102.108 -3.346,102.103 -3.334,102.086 -3.340,102.068 -3.330,102.050 -3.310,102.068 -3.294,102.093 -3.276,102.071 -3.271,102.083 -3.264,102.088 -3.266,102.100 -3.251,102.121 -3.244,102.143 -3.226,102.160 -3.227,102.160 -3.229,102.168 -3.219,102.193 -3.221,102.206 -3.262,102.249 -3.277,102.271 -3.280,102.289</polygon>
+    </area>
+  </info>
+</alert>

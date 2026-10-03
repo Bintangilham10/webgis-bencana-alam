@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.03.13.16.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-03T18:35:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-03T19:05:00+07:00</effective>
+    <expires>2026-10-03T20:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 03 October 2026, 19:05 WIB di sebagian wilayah Sumatera Selatan, khususnya di BETUNG, LAHAT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 October 2026, 20:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSS/2026/10/03/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Selatan</areaDesc>
+      <polygon>-3.643,103.568 -3.723,103.595 -3.783,103.591 -3.794,103.598 -3.813,103.599 -3.836,103.556 -3.841,103.540 -3.836,103.529 -3.810,103.526 -3.803,103.521 -3.803,103.515 -3.794,103.507 -3.769,103.498 -3.736,103.492 -3.716,103.496 -3.686,103.483 -3.664,103.489 -3.664,103.500 -3.650,103.507 -3.623,103.532 -3.594,103.538 -3.593,103.538 -3.603,103.552 -3.643,103.568</polygon>
+      <polygon>-3.808,103.511 -3.804,103.515 -3.812,103.513 -3.808,103.511</polygon>
+      <polygon>-2.666,104.286 -2.718,104.354 -2.750,104.385 -2.731,104.366 -2.751,104.323 -2.773,104.297 -2.784,104.287 -2.831,104.262 -2.848,104.278 -2.870,104.269 -2.898,104.245 -2.895,104.235 -2.878,104.216 -2.883,104.174 -2.864,104.132 -2.855,104.132 -2.819,104.164 -2.774,104.199 -2.725,104.247 -2.709,104.228 -2.704,104.231 -2.662,104.283 -2.666,104.286</polygon>
+    </area>
+  </info>
+</alert>
