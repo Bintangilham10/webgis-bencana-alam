@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.03.05.15.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-03T11:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-03T12:00:00+07:00</effective>
+    <expires>2026-10-03T14:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jambi</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 03 October 2026, 12:00 WIB di sebagian wilayah Jambi, khususnya di KUALA BETARA, TUNGKAL ILIR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 October 2026, 14:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJI/2026/10/03/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jambi</areaDesc>
+      <polygon>-0.856,103.550 -0.868,103.536 -0.869,103.521 -0.853,103.516 -0.860,103.503 -0.844,103.479 -0.846,103.474 -0.862,103.470 -0.859,103.455 -0.886,103.456 -0.900,103.438 -0.894,103.433 -0.892,103.435 -0.878,103.430 -0.871,103.436 -0.860,103.435 -0.845,103.442 -0.832,103.439 -0.831,103.430 -0.825,103.428 -0.797,103.488 -0.801,103.518 -0.811,103.548 -0.844,103.559 -0.855,103.556 -0.856,103.550</polygon>
+      <polygon>-0.889,103.426 -0.894,103.416 -0.882,103.415 -0.879,103.421 -0.889,103.426</polygon>
+      <polygon>-0.856,103.550 -0.863,103.564 -0.875,103.574 -0.882,103.568 -0.909,103.561 -0.926,103.563 -0.964,103.552 -0.965,103.546 -0.971,103.543 -0.975,103.545 -0.993,103.534 -1.015,103.496 -0.981,103.457 -0.926,103.459 -0.909,103.454 -0.907,103.460 -0.886,103.456 -0.859,103.455 -0.862,103.470 -0.846,103.474 -0.844,103.479 -0.860,103.503 -0.853,103.516 -0.869,103.521 -0.868,103.536 -0.856,103.550</polygon>
+    </area>
+  </info>
+</alert>
