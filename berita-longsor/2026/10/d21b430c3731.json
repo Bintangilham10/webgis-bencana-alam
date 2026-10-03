@@ -1,0 +1,26 @@
+{
+  "guid": "CBMioAFBVV95cUxNSExMNUlhYlFyX0szRkEteHZ4S25IRmhmTkRqYXA4N3VqekN6blR3aW9Nb2ZJZ2xIWkhJNkoyVS13cThLU1c3R2JLc01XbUxEMHdtLURwYTJ3M2ZveFdjYkpMYnBpbmNFNzEzcWlZSGFYUXQ5YmVwczZvWjZFanVURHE2MENkV1NRdFR6UW9YVTlVSXE4RGUtbE1lTU82RWhH0gGmAUFVX3lxTE5XYVltRnNOQ2kwbjA0c3pvbmRUVEFrU0JYR1JzV3U2MmduSmhlekFRdW0wdU1ib2FISk1Fa292VW0tNkRfaGZ6ZVNhOUFtU0VQRmwtbHpyZzAzeTNUVWZoVGhULVBLcWRtb25PbVBVMXNPYTI1NHdlY2tzSmFkcnM4QlRlZzJBQmtHeGVvQkdjRDQ1T2VWYVZ3UjNYTWV4STUzd1ZZN2c",
+  "title": "Pekerja Tertimbun Longsor Kirmir di Cisaranten Bandung - detikcom",
+  "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSExMNUlhYlFyX0szRkEteHZ4S25IRmhmTkRqYXA4N3VqekN6blR3aW9Nb2ZJZ2xIWkhJNkoyVS13cThLU1c3R2JLc01XbUxEMHdtLURwYTJ3M2ZveFdjYkpMYnBpbmNFNzEzcWlZSGFYUXQ5YmVwczZvWjZFanVURHE2MENkV1NRdFR6UW9YVTlVSXE4RGUtbE1lTU82RWhH0gGmAUFVX3lxTE5XYVltRnNOQ2kwbjA0c3pvbmRUVEFrU0JYR1JzV3U2MmduSmhlekFRdW0wdU1ib2FISk1Fa292VW0tNkRfaGZ6ZVNhOUFtU0VQRmwtbHpyZzAzeTNUVWZoVGhULVBLcWRtb25PbVBVMXNPYTI1NHdlY2tzSmFkcnM4QlRlZzJBQmtHeGVvQkdjRDQ1T2VWYVZ3UjNYTWV4STUzd1ZZN2c?oc=5",
+  "source": "detikcom",
+  "source_url": "https://www.detik.com",
+  "published_at": "2026-10-03T09:35:12.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-03T11:45:25.125Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

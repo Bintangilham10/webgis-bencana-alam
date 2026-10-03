@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirgFBVV95cUxPUUhjS0RrQXhSV05zV2V6TFJMcnBPOS1nM0VSMTNlcGxYTG5mTHJ4eDlMVzNYWVdmNEVCZHVLNmlMb2tFcFI5TDJ4WEJidkhfSWtkeC11WTNGMjIzTTQxQlplbU1taU1NU19PMk1VQjJRRTRmbk1HOEpNMFN3X0lmLVc0eXZXR2lVakk3Nkw3cHNweDFkWW15QzJwODFhcktHWkdRdTlNQTFobWhCZ2c",
+  "title": "Detik-Detik Pekerja PU Bandung Tertimbun Longsor di Cisaranten - Merdeka",
+  "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUUhjS0RrQXhSV05zV2V6TFJMcnBPOS1nM0VSMTNlcGxYTG5mTHJ4eDlMVzNYWVdmNEVCZHVLNmlMb2tFcFI5TDJ4WEJidkhfSWtkeC11WTNGMjIzTTQxQlplbU1taU1NU19PMk1VQjJRRTRmbk1HOEpNMFN3X0lmLVc0eXZXR2lVakk3Nkw3cHNweDFkWW15QzJwODFhcktHWkdRdTlNQTFobWhCZ2c?oc=5",
+  "source": "Merdeka",
+  "source_url": "https://www.merdeka.com",
+  "published_at": "2026-10-03T11:03:27.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-03T11:45:25.125Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
