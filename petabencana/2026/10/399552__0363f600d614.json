@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-03T09:30:26.842Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.4991489438,
+        -7.0387649951
+      ]
+    },
+    "properties": {
+      "pkey": "399552",
+      "created_at": "2026-10-03T09:24:18.319Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "f5f8b5f8-3ea1-4462-9550-68192436cd14",
+      "image_url": "https://images.petabencana.id/f5f8b5f8-3ea1-4462-9550-68192436cd14.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 96.71569954206329,
+        "fireLocation": {
+          "lng": 110.49914894375223,
+          "lat": -7.0387649950842786
+        },
+        "personLocation": {
+          "lat": "-7.0387347",
+          "lng": "110.4999999"
+        },
+        "fireRadius": {
+          "lng": 110.49827454361093,
+          "lat": -7.0388235589575885
+        }
+      },
+      "tags": {
+        "city": "DEMAK",
+        "district_id": null,
+        "region_code": "3321",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Kebakaran \nLokasi batursari Mranggen Demak\nSabtu 03 okt 2026",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
