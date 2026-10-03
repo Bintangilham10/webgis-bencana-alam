@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-03T03:45:23.890Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.8681729829,
+        -6.6423564758
+      ]
+    },
+    "properties": {
+      "pkey": "399549",
+      "created_at": "2026-10-03T03:41:28.163Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "1d4ac697-a51a-4103-a343-89b0d16dfd41",
+      "image_url": "https://images.petabencana.id/1d4ac697-a51a-4103-a343-89b0d16dfd41.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 90.06671697951982,
+        "fireLocation": {
+          "lng": 106.86817298285786,
+          "lat": -6.642356475810871
+        },
+        "personLocation": {
+          "lat": "-6.6422528",
+          "lng": "106.8684647"
+        },
+        "fireRadius": {
+          "lng": 106.86735759133524,
+          "lat": -6.642367132620663
+        }
+      },
+      "tags": {
+        "city": "BOGOR",
+        "district_id": null,
+        "region_code": "3201",
+        "local_area_id": null,
+        "instance_region_code": "ID-JB"
+      },
+      "title": null,
+      "text": "Kebakaran hebat dilaporkan terjadi di Desa Pasir Angin, Kecamatan Megamendung, Kabupaten Bogor, Jawa Barat pada Sabtu dini hari (03/10).",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
