@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-03T14:15:25.117Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.6698420403,
+        -3.4047654536
+      ]
+    },
+    "properties": {
+      "pkey": "399558",
+      "created_at": "2026-10-03T14:08:57.754Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "06cb1182-5dde-4d8a-9075-b605b8cb9d02",
+      "image_url": "https://images.petabencana.id/06cb1182-5dde-4d8a-9075-b605b8cb9d02.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 91.22738353944584,
+        "fireLocation": {
+          "lng": 114.66984204028745,
+          "lat": -3.404765453567549
+        },
+        "personLocation": {
+          "lat": "-3.4047020",
+          "lng": "114.6706279"
+        },
+        "fireRadius": {
+          "lng": 114.66902128433361,
+          "lat": -3.40480829316094
+        }
+      },
+      "tags": {
+        "city": "BANJAR",
+        "district_id": null,
+        "region_code": "6303",
+        "local_area_id": null,
+        "instance_region_code": "ID-KS"
+      },
+      "title": null,
+      "text": "Kebakaran lahan di Karang Anyar Gambut, Kabupaten Banjar Prov. Kalsel, Sabtu (3/10/2026).",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
