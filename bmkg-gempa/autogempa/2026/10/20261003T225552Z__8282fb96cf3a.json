@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-03T23:00:34.534Z",
+  "data": {
+    "Tanggal": "04 Okt 2026",
+    "Jam": "05:55:52 WIB",
+    "DateTime": "2026-10-03T22:55:52+00:00",
+    "Coordinates": "-9.70,118.92",
+    "Lintang": "9.70 LS",
+    "Bujur": "118.92 BT",
+    "Magnitude": "6.1",
+    "Kedalaman": "10 km",
+    "Wilayah": "14 km BaratDaya KODI-SUMBABARATDAYA-NTT",
+    "Potensi": "Tidak berpotensi tsunami",
+    "Dirasakan": "-",
+    "Shakemap": "20261004055834.mmi.jpg"
+  }
+}
