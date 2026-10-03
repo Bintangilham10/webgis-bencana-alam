@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.03.08.15.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-03T13:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-03T14:00:00+07:00</effective>
+    <expires>2026-10-03T16:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jambi</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 03 October 2026, 14:00 WIB di sebagian wilayah Jambi, khususnya di DENDANG, KUALA JAMBI, MUARA SABAK BARAT, MUARA SABAK TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 October 2026, 16:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJI/2026/10/03/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jambi</areaDesc>
+      <polygon>-1.017,104.062 -1.103,104.038 -1.105,104.057 -1.114,104.054 -1.125,104.043 -1.130,104.043 -1.133,104.052 -1.146,104.037 -1.148,104.032 -1.141,104.020 -1.148,104.012 -1.159,104.010 -1.142,103.987 -1.154,103.970 -1.168,103.938 -1.165,103.931 -1.148,103.926 -1.143,103.911 -1.157,103.883 -1.155,103.877 -1.142,103.872 -1.146,103.862 -1.144,103.855 -1.120,103.845 -1.102,103.846 -1.092,103.842 -1.086,103.841 -1.063,103.811 -1.045,103.818 -1.050,103.847 -1.029,103.849 -1.009,103.843 -0.996,103.869 -0.999,103.872 -0.997,103.881 -0.982,103.908 -0.992,103.947 -0.992,103.974 -0.999,104.021 -1.017,104.062</polygon>
+      <polygon>-1.154,103.970 -1.195,104.026 -1.203,104.024 -1.314,104.023 -1.330,103.877 -1.330,103.877 -1.333,103.852 -1.334,103.843 -1.270,103.846 -1.255,103.850 -1.243,103.860 -1.213,103.858 -1.208,103.867 -1.197,103.873 -1.184,103.874 -1.173,103.877 -1.168,103.883 -1.157,103.883 -1.143,103.911 -1.148,103.926 -1.165,103.931 -1.168,103.938 -1.154,103.970</polygon>
+      <polygon>-1.092,103.842 -1.102,103.846 -1.120,103.845 -1.144,103.855 -1.146,103.862 -1.142,103.872 -1.155,103.877 -1.157,103.883 -1.168,103.883 -1.173,103.877 -1.184,103.874 -1.197,103.873 -1.208,103.867 -1.213,103.858 -1.243,103.860 -1.255,103.850 -1.270,103.846 -1.334,103.843 -1.348,103.766 -1.283,103.765 -1.276,103.761 -1.273,103.749 -1.239,103.753 -1.239,103.767 -1.225,103.767 -1.220,103.755 -1.212,103.751 -1.194,103.765 -1.185,103.759 -1.164,103.769 -1.137,103.771 -1.128,103.764 -1.131,103.756 -1.119,103.753 -1.107,103.786 -1.095,103.809 -1.092,103.842</polygon>
+      <polygon>-1.009,103.843 -1.029,103.849 -1.050,103.847 -1.045,103.818 -1.063,103.811 -1.086,103.841 -1.092,103.842 -1.095,103.809 -1.107,103.786 -1.119,103.753 -1.107,103.750 -1.093,103.758 -1.075,103.746 -1.061,103.756 -1.053,103.752 -1.054,103.740 -1.045,103.739 -1.029,103.729 -1.028,103.734 -1.016,103.741 -1.024,103.748 -1.020,103.754 -1.010,103.748 -0.992,103.750 -0.994,103.802 -1.002,103.807 -1.014,103.809 -1.009,103.843</polygon>
+    </area>
+  </info>
+</alert>

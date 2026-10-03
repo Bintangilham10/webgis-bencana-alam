@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.03.08.62.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-03T14:55:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-03T15:05:00+07:00</effective>
+    <expires>2026-10-03T17:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 03 October 2026, 15:05 WIB di sebagian wilayah Kalimantan Tengah, khususnya di KOTA BESI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 October 2026, 17:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/03/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-2.217,112.795 -2.239,112.836 -2.264,112.875 -2.287,112.892 -2.305,112.913 -2.325,112.921 -2.365,112.953 -2.389,112.988 -2.380,113.009 -2.385,113.021 -2.417,113.011 -2.430,113.003 -2.435,112.994 -2.463,112.879 -2.434,112.881 -2.429,112.869 -2.423,112.820 -2.425,112.709 -2.399,112.713 -2.384,112.720 -2.379,112.716 -2.372,112.703 -2.364,112.702 -2.353,112.693 -2.304,112.681 -2.298,112.700 -2.298,112.721 -2.273,112.745 -2.255,112.742 -2.239,112.696 -2.225,112.639 -2.217,112.650 -2.206,112.722 -2.191,112.742 -2.202,112.758 -2.217,112.795</polygon>
+    </area>
+  </info>
+</alert>
