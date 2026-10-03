@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-03T23:45:31.915Z",
+  "data": {
+    "Tanggal": "04 Okt 2026",
+    "Jam": "06:37:31 WIB",
+    "DateTime": "2026-10-03T23:37:31+00:00",
+    "Coordinates": "4.56,94.97",
+    "Lintang": "4.56 LU",
+    "Bujur": "94.97 BT",
+    "Magnitude": "5.9",
+    "Kedalaman": "26 km",
+    "Wilayah": "68 km BaratDaya CALANG-ACEHJAYA",
+    "Potensi": "Tidak berpotensi tsunami",
+    "Dirasakan": "-",
+    "Shakemap": "20261004064022.mmi.jpg"
+  }
+}
