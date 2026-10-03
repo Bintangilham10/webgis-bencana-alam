@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-03T10:30:26.953Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        105.2526960625,
+        -5.4176642
+      ]
+    },
+    "properties": {
+      "pkey": "399554",
+      "created_at": "2026-10-03T10:15:55.750Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "e300d706-04c1-4aae-9343-58ea2cf30e07",
+      "image_url": "https://images.petabencana.id/e300d706-04c1-4aae-9343-58ea2cf30e07.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 68.47892326772318,
+        "fireLocation": {
+          "lat": "-5.4176642",
+          "lng": 105.25269606251399
+        },
+        "personLocation": {
+          "lng": 105.25348177513831,
+          "lat": -5.417626556635696
+        },
+        "fireRadius": {
+          "lng": 105.25208988327972,
+          "lat": -5.417787030446888
+        }
+      },
+      "tags": {
+        "city": "KOTA BANDAR LAMPUNG",
+        "district_id": null,
+        "region_code": "1871",
+        "local_area_id": null,
+        "instance_region_code": "ID-LA"
+      },
+      "title": null,
+      "text": "Kebakaran rumah tinggal dilaporkan terjadi di Jalan Sultan Badarudin, Kecamatan Tanjung Karang Barat, Kota Bandar Lampung, Lampung",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
