@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-03T14:00:34.948Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        96.8454644316,
+        4.6292134808
+      ]
+    },
+    "properties": {
+      "pkey": "399557",
+      "created_at": "2026-10-03T13:54:29.113Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "66d8f25a-23e9-4d9d-ac79-82c9daa346b3",
+      "image_url": "https://images.petabencana.id/66d8f25a-23e9-4d9d-ac79-82c9daa346b3.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 79.05517337734206,
+        "fireLocation": {
+          "lng": 96.84546443155745,
+          "lat": 4.629213480837905
+        },
+        "personLocation": {
+          "lng": 96.84573876099182,
+          "lat": 4.6292528105797714
+        },
+        "fireRadius": {
+          "lng": 96.84475632837928,
+          "lat": 4.629127930134899
+        }
+      },
+      "tags": {
+        "city": "ACEH TENGAH",
+        "district_id": null,
+        "region_code": "1104",
+        "local_area_id": null,
+        "instance_region_code": "ID-AC"
+      },
+      "title": null,
+      "text": "Kebakaran sedang berlangsung di kawasan Kemili (sekitar Simpang Lemah, dekat SPBU Kemili dan kantor BPBD Aceh Tengah) ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
