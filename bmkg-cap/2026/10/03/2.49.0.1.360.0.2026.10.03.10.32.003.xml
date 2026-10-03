@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.03.10.32.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-03T17:24:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-03T17:34:00+07:00</effective>
+    <expires>2026-10-03T19:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 03 October 2026, 17:34 WIB di sebagian wilayah Jawa Barat, khususnya di CARINGIN, CIKIDANG, KABANDUNGAN, KADUDAMPIT, NAGRAK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 October 2026, 19:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/10/03/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.842,106.632 -6.853,106.645 -6.838,106.656 -6.850,106.674 -6.864,106.678 -6.860,106.693 -6.861,106.701 -6.874,106.705 -6.877,106.713 -6.884,106.716 -6.916,106.715 -6.935,106.709 -6.925,106.695 -6.939,106.692 -6.946,106.686 -6.928,106.635 -6.945,106.631 -6.946,106.611 -6.943,106.605 -6.945,106.593 -6.939,106.592 -6.928,106.592 -6.916,106.587 -6.898,106.569 -6.877,106.561 -6.862,106.561 -6.853,106.554 -6.827,106.555 -6.852,106.592 -6.842,106.632</polygon>
+      <polygon>-6.772,106.932 -6.778,106.932 -6.796,106.921 -6.838,106.871 -6.871,106.852 -6.879,106.838 -6.876,106.835 -6.890,106.793 -6.883,106.780 -6.872,106.778 -6.820,106.818 -6.813,106.850 -6.806,106.860 -6.809,106.884 -6.787,106.921 -6.781,106.928 -6.772,106.932 -6.772,106.932</polygon>
+      <polygon>-6.743,106.588 -6.749,106.598 -6.753,106.636 -6.748,106.656 -6.732,106.660 -6.734,106.671 -6.746,106.683 -6.756,106.682 -6.762,106.665 -6.772,106.660 -6.777,106.647 -6.791,106.642 -6.812,106.644 -6.830,106.633 -6.842,106.632 -6.852,106.592 -6.827,106.555 -6.818,106.547 -6.768,106.526 -6.762,106.525 -6.751,106.533 -6.750,106.549 -6.718,106.576 -6.722,106.583 -6.743,106.588</polygon>
+      <polygon>-6.770,106.965 -6.787,106.980 -6.790,106.984 -6.791,106.985 -6.821,106.964 -6.847,106.953 -6.895,106.916 -6.893,106.914 -6.879,106.917 -6.872,106.904 -6.881,106.888 -6.876,106.882 -6.868,106.882 -6.865,106.879 -6.827,106.914 -6.795,106.935 -6.772,106.932 -6.772,106.932 -6.769,106.934 -6.760,106.950 -6.762,106.959 -6.770,106.965</polygon>
+      <polygon>-6.876,106.882 -6.898,106.869 -6.899,106.842 -6.893,106.834 -6.887,106.835 -6.879,106.838 -6.871,106.852 -6.838,106.871 -6.796,106.921 -6.778,106.932 -6.772,106.932 -6.795,106.935 -6.827,106.914 -6.865,106.879 -6.868,106.882 -6.876,106.882</polygon>
+    </area>
+  </info>
+</alert>
