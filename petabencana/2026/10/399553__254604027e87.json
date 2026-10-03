@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-03T10:00:36.075Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        120.5096817911,
+        -6.0547743
+      ]
+    },
+    "properties": {
+      "pkey": "399553",
+      "created_at": "2026-10-03T09:52:16.725Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "ad21bf41-53df-49e5-bc44-fdf4e9a1d904",
+      "image_url": "https://images.petabencana.id/ad21bf41-53df-49e5-bc44-fdf4e9a1d904.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 71.0739606443051,
+        "fireLocation": {
+          "lat": "-6.0547743",
+          "lng": 120.509681791131
+        },
+        "personLocation": {
+          "lng": 120.51192183389963,
+          "lat": -6.053862035252493
+        },
+        "fireRadius": {
+          "lng": 120.50904342538485,
+          "lat": -6.054848982891343
+        }
+      },
+      "tags": {
+        "city": null,
+        "district_id": null,
+        "region_code": null,
+        "local_area_id": null,
+        "instance_region_code": "ID-SN"
+      },
+      "title": null,
+      "text": "Kebakaran gunung kembali terjadi di kawasan Kampung Bontomanai (akses jalan arah Leang-Kassi), Kelurahan Leang-Kassi",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
