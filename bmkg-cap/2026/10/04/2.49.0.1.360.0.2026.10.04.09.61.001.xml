@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.04.09.61.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-04T15:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-04T15:30:00+07:00</effective>
+    <expires>2026-10-04T17:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 04 October 2026, 15:30 WIB di sebagian wilayah Kalimantan Barat, khususnya di SEMPARUK, SUNGAI BETUNG, TUJUH BELAS.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 04 October 2026, 17:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/10/04/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>1.099,109.119 1.091,109.101 1.092,109.081 1.105,109.077 1.108,109.070 1.136,109.048 1.144,109.036 1.205,109.032 1.204,109.067 1.214,109.082 1.199,109.085 1.169,109.101 1.099,109.119</polygon>
+      <polygon>0.888,109.442 0.868,109.456 0.859,109.458 0.855,109.436 0.850,109.435 0.845,109.438 0.835,109.453 0.819,109.443 0.819,109.431 0.805,109.413 0.787,109.416 0.759,109.406 0.751,109.410 0.738,109.423 0.732,109.411 0.732,109.400 0.758,109.377 0.760,109.365 0.767,109.358 0.764,109.345 0.781,109.340 0.807,109.324 0.845,109.312 0.858,109.303 0.863,109.301 0.871,109.306 0.885,109.362 0.892,109.376 0.899,109.382 0.886,109.433 0.888,109.442</polygon>
+      <polygon>1.060,109.828 1.038,109.912 1.029,109.912 1.016,109.927 1.008,109.930 0.994,109.919 0.962,109.926 0.934,109.907 0.947,109.876 0.958,109.816 0.985,109.813 0.997,109.778 1.035,109.729 1.040,109.715 1.026,109.705 1.004,109.698 1.025,109.646 1.061,109.622 1.070,109.652 1.081,109.665 1.099,109.697 1.100,109.710 1.112,109.732 1.108,109.746 1.119,109.774 1.089,109.791 1.074,109.806 1.060,109.828</polygon>
+    </area>
+  </info>
+</alert>
