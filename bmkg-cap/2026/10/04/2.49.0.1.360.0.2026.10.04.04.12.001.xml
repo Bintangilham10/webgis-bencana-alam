@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.04.04.12.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-04T10:55:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-04T11:00:00+07:00</effective>
+    <expires>2026-10-04T14:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 04 October 2026, 11:00 WIB di sebagian wilayah Sumatera Utara, khususnya di DOLOK MASIHUL, SEI. RAMPAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 04 October 2026, 14:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSU/2026/10/04/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Utara</areaDesc>
+      <polygon>3.535,99.140 3.496,99.174 3.488,99.175 3.481,99.181 3.476,99.178 3.486,99.162 3.481,99.152 3.467,99.145 3.430,99.114 3.425,99.112 3.412,99.115 3.391,99.108 3.397,99.101 3.383,99.086 3.377,99.064 3.384,99.052 3.409,99.028 3.407,99.023 3.380,99.017 3.390,99.007 3.424,98.973 3.425,98.977 3.438,98.983 3.450,98.998 3.458,99.005 3.466,99.007 3.472,99.016 3.501,99.023 3.511,99.037 3.527,99.042 3.541,99.049 3.500,99.089 3.516,99.105 3.510,99.114 3.535,99.140</polygon>
+      <polygon>3.391,99.108 3.378,99.096 3.361,99.079 3.356,99.080 3.351,99.085 3.362,99.097 3.355,99.105 3.324,99.083 3.315,99.083 3.301,99.074 3.287,99.071 3.285,99.071 3.281,99.066 3.263,99.043 3.260,99.002 3.255,99.000 3.222,98.953 3.275,98.963 3.282,98.955 3.288,98.971 3.304,98.986 3.334,98.956 3.379,98.956 3.390,98.978 3.390,99.007 3.380,99.017 3.407,99.023 3.409,99.028 3.384,99.052 3.377,99.064 3.383,99.086 3.397,99.101 3.391,99.108</polygon>
+    </area>
+  </info>
+</alert>
