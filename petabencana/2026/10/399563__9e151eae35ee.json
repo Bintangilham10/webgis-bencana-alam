@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-04T10:00:40.138Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        117.4549121612,
+        -8.5539239
+      ]
+    },
+    "properties": {
+      "pkey": "399563",
+      "created_at": "2026-10-04T09:48:22.323Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "4abdcf86-ce1b-46c0-b8cc-20f6afb3cce3",
+      "image_url": "https://images.petabencana.id/4abdcf86-ce1b-46c0-b8cc-20f6afb3cce3.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 82.60168456694436,
+        "fireLocation": {
+          "lng": 117.45491216123975,
+          "lat": -8.553923900002133
+        },
+        "personLocation": {
+          "lat": "-8.5539239",
+          "lng": "117.4556149"
+        },
+        "fireRadius": {
+          "lng": 117.45416650713724,
+          "lat": -8.554014080673653
+        }
+      },
+      "tags": {
+        "city": "SUMBAWA",
+        "district_id": null,
+        "region_code": "5204",
+        "local_area_id": null,
+        "instance_region_code": "ID-NB"
+      },
+      "title": null,
+      "text": "Kebakaran lahan dilaporkan terjadi di jalan tembusan Bukit Permai – Simpang Boak, Kabupaten Sumbawa, Nusa Tenggara Barat pada Minggu sore ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
