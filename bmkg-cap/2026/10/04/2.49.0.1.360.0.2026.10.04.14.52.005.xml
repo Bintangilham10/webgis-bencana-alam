@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.04.14.52.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-04T20:35:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-04T20:45:00+08:00</effective>
+    <expires>2026-10-04T22:45:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 04 October 2026, 20:45 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di MOYO UTARA, SUMBAWA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 04 October 2026, 22:45 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/10/04/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.495,117.457 -8.515,117.449 -8.532,117.448 -8.530,117.433 -8.522,117.431 -8.517,117.420 -8.495,117.415 -8.492,117.404 -8.483,117.394 -8.472,117.413 -8.468,117.408 -8.465,117.404 -8.452,117.407 -8.411,117.436 -8.405,117.436 -8.396,117.427 -8.408,117.443 -8.464,117.441 -8.486,117.457 -8.495,117.457</polygon>
+      <polygon>-8.408,117.567 -8.447,117.537 -8.462,117.513 -8.474,117.502 -8.491,117.507 -8.496,117.502 -8.490,117.487 -8.495,117.457 -8.486,117.457 -8.464,117.441 -8.408,117.443 -8.396,117.427 -8.398,117.440 -8.412,117.455 -8.414,117.503 -8.410,117.532 -8.404,117.551 -8.408,117.567</polygon>
+    </area>
+  </info>
+</alert>
