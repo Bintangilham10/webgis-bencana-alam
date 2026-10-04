@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-04T13:00:38.424Z",
+  "data": {
+    "Tanggal": "04 Okt 2026",
+    "Jam": "19:36:47 WIB",
+    "DateTime": "2026-10-04T12:36:47+00:00",
+    "Coordinates": "-9.47,112.76",
+    "Lintang": "9.47 LS",
+    "Bujur": "112.76 BT",
+    "Magnitude": "4.6",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di laut 149 km selatan Kab. Malang",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Malang, III Lumajang, II Tulungagung, II Blitar, II Jember",
+    "Shakemap": "20261004193647.mmi.jpg"
+  }
+}
