@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.04.11.35.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-04T17:15:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-04T17:45:00+07:00</effective>
+    <expires>2026-10-04T19:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 04 October 2026, 17:45 WIB di sebagian wilayah Jawa Timur, khususnya di AJUNG, DANDER.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 04 October 2026, 19:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/10/04/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-8.214,113.685 -8.217,113.687 -8.211,113.701 -8.213,113.712 -8.207,113.725 -8.210,113.731 -8.217,113.726 -8.224,113.709 -8.243,113.698 -8.243,113.685 -8.249,113.680 -8.249,113.667 -8.254,113.650 -8.288,113.630 -8.282,113.610 -8.284,113.600 -8.270,113.606 -8.264,113.612 -8.255,113.614 -8.255,113.595 -8.249,113.595 -8.241,113.621 -8.221,113.623 -8.221,113.631 -8.218,113.636 -8.205,113.640 -8.197,113.664 -8.199,113.674 -8.214,113.685</polygon>
+      <polygon>-7.164,111.858 -7.171,111.854 -7.184,111.872 -7.194,111.869 -7.211,111.873 -7.236,111.871 -7.241,111.896 -7.250,111.900 -7.274,111.893 -7.303,111.875 -7.290,111.862 -7.284,111.820 -7.268,111.804 -7.264,111.803 -7.264,111.791 -7.238,111.791 -7.212,111.799 -7.200,111.808 -7.188,111.820 -7.177,111.813 -7.163,111.838 -7.154,111.843 -7.152,111.851 -7.139,111.857 -7.164,111.858</polygon>
+    </area>
+  </info>
+</alert>
