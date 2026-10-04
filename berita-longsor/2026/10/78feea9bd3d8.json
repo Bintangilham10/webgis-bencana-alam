@@ -1,0 +1,26 @@
+{
+  "guid": "CBMimwFBVV95cUxQbmpPeWIzNVgzNGE4Y1JYd0VNUnZ1YWRuUHNKMUo4MWR3VklsQndyc3dTR0VIUHNES0oxSDYzQU0zTlYycGxnSmxnN2NLb3FabnZlQkhObmVmUkpqTXZ2LTRUWUVYNGxSRWNGVjJGdnVGT3JRNk9yZ2JxWWpuc3V5aEpfVjBLVURvcGdwUHFKY0hObU1pQUlEaGdMQQ",
+  "title": "Antisipasi Longsor, Pemkab Malang Bangun TPT di Desa Sidodadi Gedangan - Klikwarta.com",
+  "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbmpPeWIzNVgzNGE4Y1JYd0VNUnZ1YWRuUHNKMUo4MWR3VklsQndyc3dTR0VIUHNES0oxSDYzQU0zTlYycGxnSmxnN2NLb3FabnZlQkhObmVmUkpqTXZ2LTRUWUVYNGxSRWNGVjJGdnVGT3JRNk9yZ2JxWWpuc3V5aEpfVjBLVURvcGdwUHFKY0hObU1pQUlEaGdMQQ?oc=5",
+  "source": "Klikwarta.com",
+  "source_url": "https://www.klikwarta.com",
+  "published_at": "2026-10-03T22:23:38.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-04T00:15:23.792Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

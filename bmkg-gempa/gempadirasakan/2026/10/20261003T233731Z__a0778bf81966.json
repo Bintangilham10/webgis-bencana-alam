@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-04T00:15:23.792Z",
+  "data": {
+    "Tanggal": "04 Okt 2026",
+    "Jam": "06:37:31 WIB",
+    "DateTime": "2026-10-03T23:37:31+00:00",
+    "Coordinates": "4.56,94.97",
+    "Lintang": "4.56 LU",
+    "Bujur": "94.97 BT",
+    "Magnitude": "5.9",
+    "Kedalaman": "26 km",
+    "Wilayah": "Pusat gempa berada di laut 68 km barat daya Calang",
+    "Dirasakan": "III-IV Aceh Besar, III Banda Aceh, III Aceh Barat, II Aceh Selatan, II Pidie Jaya , II Bener Meriah, II Nagan Raya, II Aceh Tengah, II Sigli"
+  }
+}
