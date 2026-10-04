@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-04T15:30:26.962Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.0415212073,
+        -2.2998743988
+      ]
+    },
+    "properties": {
+      "pkey": "399565",
+      "created_at": "2026-10-04T15:27:09.690Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "1c81b98e-907f-410b-befb-c85e2d9de78c",
+      "image_url": "https://images.petabencana.id/1c81b98e-907f-410b-befb-c85e2d9de78c.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 9.744428779667125,
+        "fireLocation": {
+          "lng": 114.0415212073263,
+          "lat": -2.299874398787381
+        },
+        "personLocation": {
+          "lng": 114.03401835909978,
+          "lat": -2.2852464126232803
+        },
+        "fireRadius": {
+          "lng": 114.04167835097695,
+          "lat": -2.3003835823253382
+        }
+      },
+      "tags": {
+        "city": "PULANG PISAU",
+        "district_id": null,
+        "region_code": "6211",
+        "local_area_id": null,
+        "instance_region_code": "ID-KT"
+      },
+      "title": null,
+      "text": "Terjadi kebakaran lahan di  pinggir jalan sekitar kawasan Tanjung Taruna, dekat perbatasan Palangka Raya, Kalimantan Tengah (04/10) ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
