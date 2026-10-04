@@ -1,0 +1,26 @@
+{
+  "guid": "CBMizgFBVV95cUxPNGc1VWQyMHMyY1NjWk1mNHJRWk9hY1kxUVpDSnJPTTNvM0RrM2dpRzFtNkRMZkkxUlI3S2RUaFZlcDdzbnJtSThYenpmcVVIMzNLSGVmXzhkdGJaOEpsRXE2T1cxTkZ1VHZjdDlweEFHNGlyQ19LLWFzRGNkWFVuODR6UEpNM0pXbGdjOWVJZnlSbWpuR0xWcFBhRmNCOWFSUDFpYlM4QXkyMDdBNjZ5RHhOUFZoVjVsWXZKd0pWdDNDeVcxQlNVOS1ybWstZw",
+  "title": "Pipa SPAM Tancam-Tiris-Probolinggo Rawan Longsor dan Voltase Listrik Naik Turun - Radar Bromo",
+  "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNGc1VWQyMHMyY1NjWk1mNHJRWk9hY1kxUVpDSnJPTTNvM0RrM2dpRzFtNkRMZkkxUlI3S2RUaFZlcDdzbnJtSThYenpmcVVIMzNLSGVmXzhkdGJaOEpsRXE2T1cxTkZ1VHZjdDlweEFHNGlyQ19LLWFzRGNkWFVuODR6UEpNM0pXbGdjOWVJZnlSbWpuR0xWcFBhRmNCOWFSUDFpYlM4QXkyMDdBNjZ5RHhOUFZoVjVsWXZKd0pWdDNDeVcxQlNVOS1ybWstZw?oc=5",
+  "source": "Radar Bromo",
+  "source_url": "https://radarbromo.jawapos.com",
+  "published_at": "2026-10-04T12:14:51.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-04T16:01:12.962Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.13",
+      "nama": "Kabupaten Probolinggo",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.74",
+      "nama": "Kota Probolinggo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
