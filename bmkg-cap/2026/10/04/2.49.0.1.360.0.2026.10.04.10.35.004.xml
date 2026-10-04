@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.04.10.35.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-04T16:45:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-04T17:15:00+07:00</effective>
+    <expires>2026-10-04T19:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 04 October 2026, 17:15 WIB di sebagian wilayah Jawa Timur, khususnya di SUKOSEWU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 04 October 2026, 19:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/10/04/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.205,111.929 -7.219,111.933 -7.223,111.942 -7.238,111.941 -7.245,111.964 -7.241,111.965 -7.241,111.972 -7.246,111.976 -7.257,111.981 -7.280,111.981 -7.277,111.972 -7.264,111.969 -7.262,111.955 -7.275,111.955 -7.277,111.944 -7.284,111.938 -7.277,111.932 -7.278,111.927 -7.283,111.925 -7.274,111.893 -7.250,111.900 -7.241,111.896 -7.223,111.905 -7.206,111.906 -7.202,111.921 -7.205,111.929</polygon>
+    </area>
+  </info>
+</alert>
