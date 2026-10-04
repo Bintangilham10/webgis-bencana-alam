@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-04T10:15:23.141Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        102.71297696,
+        -1.7069965
+      ]
+    },
+    "properties": {
+      "pkey": "399564",
+      "created_at": "2026-10-04T10:00:56.812Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "7438d348-cb3b-4a99-a511-1c7ea1fad1bf",
+      "image_url": "https://images.petabencana.id/7438d348-cb3b-4a99-a511-1c7ea1fad1bf.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 56.6546087478125,
+        "fireLocation": {
+          "lat": "-1.7069965",
+          "lng": 102.712976959959
+        },
+        "personLocation": {
+          "lat": "-1.7069965",
+          "lng": "102.7140041"
+        },
+        "fireRadius": {
+          "lng": 102.71246734024555,
+          "lat": -1.7069857759245792
+        }
+      },
+      "tags": {
+        "city": "BATANGHARI",
+        "district_id": null,
+        "region_code": "1504",
+        "local_area_id": null,
+        "instance_region_code": "ID-JA"
+      },
+      "title": null,
+      "text": "Kebakaran hutan dan lahan (karhutla) dilaporkan terjadi di kawasan Cluster Casablanca Blok K, Simpang III Sipin, Kecamatan Kota Baru, Jambi",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
