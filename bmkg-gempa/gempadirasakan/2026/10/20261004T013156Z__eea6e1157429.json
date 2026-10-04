@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-04T01:45:24.351Z",
+  "data": {
+    "Tanggal": "04 Okt 2026",
+    "Jam": "08:31:56 WIB",
+    "DateTime": "2026-10-04T01:31:56+00:00",
+    "Coordinates": "-7.51,106.73",
+    "Lintang": "7.51 LS",
+    "Bujur": "106.73 BT",
+    "Magnitude": "4.2",
+    "Kedalaman": "36 km",
+    "Wilayah": "Pusat gempa berada di laut 61 km selatan Kab. Sukabumi",
+    "Dirasakan": "II - III Pelabuhan Ratu, II - III Cianjur, II Cidolog"
+  }
+}
