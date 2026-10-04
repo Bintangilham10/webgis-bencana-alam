@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-04T11:30:37.864Z",
+  "data": {
+    "Tanggal": "04 Okt 2026",
+    "Jam": "17:52:27 WIB",
+    "DateTime": "2026-10-04T10:52:27+00:00",
+    "Coordinates": "-8.16,120.46",
+    "Lintang": "8.16 LS",
+    "Bujur": "120.46 BT",
+    "Magnitude": "4.6",
+    "Kedalaman": "4 km",
+    "Wilayah": "Pusat gempa berada di laut 51 Km utara Ruteng, Manggarai",
+    "Dirasakan": "II-III Kab. Manggarai"
+  }
+}
