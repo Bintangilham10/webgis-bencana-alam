@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.04.11.33.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-04T18:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-04T18:30:00+07:00</effective>
+    <expires>2026-10-04T19:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 04 October 2026, 18:30 WIB di sebagian wilayah Jawa Tengah, khususnya di JATINEGARA, WATUMALANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 04 October 2026, 19:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJH/2026/10/04/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Tengah</areaDesc>
+      <polygon>-7.256,109.888 -7.292,109.874 -7.322,109.875 -7.324,109.861 -7.335,109.861 -7.346,109.869 -7.348,109.897 -7.363,109.891 -7.364,109.872 -7.352,109.850 -7.348,109.847 -7.350,109.825 -7.343,109.823 -7.341,109.801 -7.335,109.792 -7.325,109.798 -7.320,109.809 -7.292,109.835 -7.281,109.842 -7.271,109.843 -7.250,109.853 -7.261,109.876 -7.256,109.888</polygon>
+      <polygon>-6.982,109.299 -6.988,109.301 -7.005,109.288 -7.020,109.288 -7.049,109.276 -7.056,109.272 -7.065,109.253 -7.081,109.234 -7.097,109.227 -7.102,109.224 -7.111,109.197 -7.108,109.191 -7.104,109.190 -7.097,109.198 -7.094,109.197 -7.099,109.188 -7.099,109.173 -7.098,109.162 -7.070,109.161 -7.057,109.172 -7.049,109.163 -7.042,109.161 -7.049,109.178 -7.038,109.191 -7.031,109.190 -7.017,109.198 -7.017,109.206 -7.011,109.206 -7.012,109.214 -7.020,109.223 -7.018,109.231 -7.000,109.234 -6.993,109.250 -6.984,109.260 -6.982,109.299</polygon>
+    </area>
+  </info>
+</alert>
