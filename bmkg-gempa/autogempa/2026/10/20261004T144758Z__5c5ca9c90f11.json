@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-04T15:15:23.242Z",
+  "data": {
+    "Tanggal": "04 Okt 2026",
+    "Jam": "21:47:58 WIB",
+    "DateTime": "2026-10-04T14:47:58+00:00",
+    "Coordinates": "-7.45,106.76",
+    "Lintang": "7.45 LS",
+    "Bujur": "106.76 BT",
+    "Magnitude": "4.0",
+    "Kedalaman": "30 km",
+    "Wilayah": "Pusat gempa berada di laut 56 km Tenggara Kab. Sukabumi",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Lengkong, III Waluran, III Cimanggu, II-III Kab. Sukabumi",
+    "Shakemap": "20261004214758.mmi.jpg"
+  }
+}
