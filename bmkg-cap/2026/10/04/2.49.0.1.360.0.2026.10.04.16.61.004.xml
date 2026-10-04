@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.04.16.61.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-04T23:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-05T00:00:00+07:00</effective>
+    <expires>2026-10-05T02:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 05 October 2026, 00:00 WIB di sebagian wilayah Kalimantan Barat, khususnya di TAYAN HULU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 05 October 2026, 02:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/10/04/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>0.424,110.427 0.420,110.426 0.416,110.415 0.390,110.393 0.352,110.373 0.307,110.361 0.288,110.364 0.250,110.362 0.185,110.323 0.175,110.308 0.178,110.283 0.217,110.204 0.242,110.187 0.265,110.143 0.319,110.132 0.331,110.138 0.338,110.148 0.357,110.145 0.375,110.152 0.380,110.155 0.384,110.169 0.379,110.181 0.382,110.188 0.407,110.198 0.413,110.210 0.420,110.213 0.426,110.209 0.427,110.186 0.433,110.174 0.441,110.162 0.450,110.159 0.466,110.181 0.481,110.187 0.479,110.202 0.484,110.207 0.498,110.208 0.527,110.200 0.537,110.218 0.543,110.248 0.542,110.258 0.529,110.273 0.524,110.287 0.509,110.293 0.496,110.288 0.484,110.289 0.464,110.305 0.455,110.309 0.447,110.308 0.435,110.316 0.426,110.339 0.430,110.374 0.419,110.406 0.424,110.427</polygon>
+    </area>
+  </info>
+</alert>
