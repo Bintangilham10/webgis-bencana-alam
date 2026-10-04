@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.04.18.14.009</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-04T23:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-04T23:10:00+07:00</effective>
+    <expires>2026-10-05T02:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Riau</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 04 October 2026, 23:10 WIB di sebagian wilayah Riau, khususnya di SINGINGI HILIR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 05 October 2026, 02:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CRU/2026/10/04/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Riau</areaDesc>
+      <polygon>-0.127,101.451 -0.157,101.454 -0.183,101.450 -0.202,101.464 -0.213,101.468 -0.231,101.465 -0.295,101.479 -0.312,101.492 -0.320,101.490 -0.314,101.384 -0.317,101.360 -0.309,101.343 -0.319,101.331 -0.349,101.259 -0.361,101.199 -0.380,101.174 -0.389,101.154 -0.389,101.116 -0.381,101.121 -0.356,101.126 -0.334,101.143 -0.306,101.139 -0.289,101.142 -0.261,101.166 -0.249,101.158 -0.239,101.157 -0.231,101.161 -0.238,101.170 -0.236,101.175 -0.231,101.177 -0.226,101.175 -0.214,101.178 -0.183,101.202 -0.150,101.203 -0.118,101.194 -0.114,101.199 -0.098,101.204 -0.089,101.215 -0.072,101.224 -0.045,101.247 -0.041,101.256 -0.018,101.259 -0.009,101.268 -0.005,101.272 -0.006,101.279 -0.017,101.289 -0.061,101.312 -0.092,101.320 -0.106,101.337 -0.109,101.349 -0.145,101.367 -0.143,101.372 -0.129,101.377 -0.127,101.389 -0.099,101.394 -0.089,101.405 -0.074,101.410 -0.127,101.451</polygon>
+    </area>
+  </info>
+</alert>
