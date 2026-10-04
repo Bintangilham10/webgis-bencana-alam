@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.04.11.61.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-04T17:15:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-04T17:25:00+07:00</effective>
+    <expires>2026-10-04T19:25:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 04 October 2026, 17:25 WIB di sebagian wilayah Kalimantan Barat, khususnya di KUALA MANDOR B, SAMALANTAN, TERIAK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 04 October 2026, 19:25 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/10/04/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>0.858,109.303 0.845,109.312 0.807,109.324 0.781,109.340 0.764,109.345 0.751,109.329 0.719,109.306 0.712,109.293 0.717,109.282 0.727,109.276 0.743,109.275 0.751,109.266 0.730,109.250 0.722,109.233 0.727,109.215 0.721,109.210 0.750,109.186 0.759,109.184 0.764,109.191 0.767,109.190 0.782,109.177 0.778,109.158 0.788,109.149 0.804,109.150 0.813,109.146 0.815,109.141 0.825,109.150 0.828,109.158 0.827,109.182 0.843,109.188 0.858,109.213 0.866,109.223 0.865,109.239 0.864,109.245 0.850,109.250 0.858,109.303</polygon>
+      <polygon>0.901,109.587 0.867,109.590 0.852,109.596 0.846,109.604 0.846,109.657 0.841,109.687 0.803,109.676 0.761,109.676 0.752,109.668 0.747,109.653 0.743,109.633 0.720,109.585 0.719,109.565 0.719,109.553 0.712,109.533 0.731,109.523 0.732,109.507 0.738,109.500 0.762,109.484 0.764,109.498 0.776,109.511 0.792,109.499 0.801,109.496 0.809,109.471 0.821,109.476 0.829,109.494 0.827,109.516 0.846,109.524 0.842,109.528 0.850,109.540 0.865,109.548 0.866,109.560 0.898,109.570 0.909,109.585 0.901,109.587</polygon>
+      <polygon>0.222,109.496 0.215,109.488 0.203,109.491 0.169,109.487 0.163,109.490 0.164,109.495 0.139,109.507 0.116,109.510 0.099,109.501 0.077,109.501 0.038,109.522 0.013,109.510 0.003,109.507 -0.011,109.510 -0.022,109.503 -0.015,109.467 -0.020,109.453 0.042,109.440 0.042,109.366 0.054,109.364 0.069,109.371 0.089,109.359 0.118,109.359 0.132,109.351 0.166,109.351 0.207,109.351 0.218,109.355 0.255,109.384 0.255,109.447 0.247,109.474 0.230,109.494 0.222,109.496</polygon>
+      <polygon>0.033,109.635 0.023,109.643 0.002,109.608 -0.018,109.596 -0.021,109.560 -0.020,109.553 -0.009,109.549 -0.000,109.547 0.002,109.562 -0.005,109.557 -0.014,109.562 -0.003,109.568 -0.004,109.581 0.006,109.570 0.010,109.572 0.015,109.580 0.010,109.588 0.024,109.588 0.028,109.585 0.025,109.578 0.030,109.572 0.035,109.569 0.039,109.572 0.036,109.578 0.040,109.592 0.024,109.594 0.033,109.602 0.024,109.623 0.034,109.632 0.033,109.635</polygon>
+    </area>
+  </info>
+</alert>
