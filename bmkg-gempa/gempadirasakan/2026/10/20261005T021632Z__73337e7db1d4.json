@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-05T02:30:31.750Z",
+  "data": {
+    "Tanggal": "05 Okt 2026",
+    "Jam": "09:16:32 WIB",
+    "DateTime": "2026-10-05T02:16:32+00:00",
+    "Coordinates": "-9.13,113.07",
+    "Lintang": "9.13 LS",
+    "Bujur": "113.07 BT",
+    "Magnitude": "4.6",
+    "Kedalaman": "4 km",
+    "Wilayah": "Pusat gempa berada di laut 112 km selatan Lumajang",
+    "Dirasakan": "III Lumajang, II Blitar, II Malang, II Jember"
+  }
+}
