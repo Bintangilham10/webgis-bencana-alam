@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-05T10:00:41.246Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.9946195019,
+        -6.2347778252
+      ]
+    },
+    "properties": {
+      "pkey": "399568",
+      "created_at": "2026-10-05T09:48:51.768Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "05d69d59-69e8-472d-a970-d00b7a065ebb",
+      "image_url": "https://images.petabencana.id/05d69d59-69e8-472d-a970-d00b7a065ebb.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 1,
+        "airQuality": 0
+      },
+      "tags": {
+        "city": "KOTA BEKASI",
+        "district_id": null,
+        "region_code": "3275",
+        "local_area_id": null,
+        "instance_region_code": "ID-JB"
+      },
+      "title": null,
+      "text": "Kebakaran tumpukan sampah terjadi di kawasan Tarumajaya, Kabupaten Bekasi, Jawa Barat pada Senin pagi (05/10). Kepulan asap tebal",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
