@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.05.08.76.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-05T15:30:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-05T15:45:00+08:00</effective>
+    <expires>2026-10-05T17:45:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 05 October 2026, 15:45 WITA di sebagian wilayah Sulawesi Barat, khususnya di BAMBALAMOTU, PASANGKAYU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 05 October 2026, 17:45 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSK/2026/10/05/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Barat</areaDesc>
+      <polygon>-1.025,119.576 -1.047,119.574 -1.078,119.581 -1.093,119.588 -1.124,119.593 -1.118,119.602 -1.120,119.609 -1.135,119.611 -1.147,119.608 -1.159,119.603 -1.149,119.572 -1.150,119.544 -1.139,119.527 -1.138,119.518 -1.143,119.511 -1.137,119.497 -1.149,119.483 -1.163,119.483 -1.169,119.454 -1.178,119.453 -1.139,119.394 -1.127,119.404 -1.122,119.417 -1.112,119.422 -1.103,119.440 -1.097,119.445 -1.062,119.467 -1.021,119.474 -1.027,119.492 -1.027,119.509 -1.025,119.516 -1.013,119.523 -1.013,119.541 -1.024,119.561 -1.025,119.576</polygon>
+      <polygon>-1.149,119.572 -1.181,119.570 -1.201,119.565 -1.205,119.554 -1.201,119.542 -1.224,119.540 -1.275,119.506 -1.260,119.483 -1.259,119.448 -1.249,119.434 -1.247,119.425 -1.234,119.417 -1.243,119.399 -1.251,119.392 -1.249,119.373 -1.239,119.372 -1.237,119.366 -1.237,119.353 -1.244,119.351 -1.247,119.339 -1.245,119.314 -1.188,119.337 -1.168,119.340 -1.174,119.359 -1.171,119.367 -1.153,119.381 -1.138,119.387 -1.142,119.391 -1.139,119.394 -1.178,119.453 -1.169,119.454 -1.163,119.483 -1.149,119.483 -1.137,119.497 -1.143,119.511 -1.138,119.518 -1.139,119.527 -1.150,119.544 -1.149,119.572</polygon>
+    </area>
+  </info>
+</alert>
