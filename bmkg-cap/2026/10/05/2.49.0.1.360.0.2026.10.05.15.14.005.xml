@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.05.15.14.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-05T22:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-05T22:10:00+07:00</effective>
+    <expires>2026-10-06T00:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Riau</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 05 October 2026, 22:10 WIB di sebagian wilayah Riau, khususnya di ROKAN IV KOTO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 06 October 2026, 00:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CRU/2026/10/05/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Riau</areaDesc>
+      <polygon>0.749,100.321 0.740,100.336 0.709,100.361 0.720,100.389 0.706,100.416 0.711,100.426 0.721,100.420 0.727,100.422 0.733,100.430 0.731,100.442 0.743,100.449 0.726,100.467 0.688,100.493 0.656,100.505 0.629,100.511 0.603,100.524 0.580,100.535 0.580,100.476 0.546,100.481 0.544,100.451 0.527,100.466 0.490,100.430 0.475,100.408 0.422,100.422 0.407,100.399 0.401,100.383 0.392,100.378 0.384,100.347 0.403,100.318 0.398,100.313 0.397,100.301 0.398,100.289 0.408,100.274 0.420,100.265 0.444,100.255 0.475,100.233 0.490,100.235 0.505,100.220 0.516,100.216 0.521,100.216 0.534,100.235 0.543,100.233 0.555,100.223 0.561,100.184 0.592,100.168 0.663,100.216 0.680,100.246 0.738,100.243 0.734,100.248 0.735,100.258 0.769,100.292 0.777,100.311 0.749,100.321</polygon>
+    </area>
+  </info>
+</alert>
