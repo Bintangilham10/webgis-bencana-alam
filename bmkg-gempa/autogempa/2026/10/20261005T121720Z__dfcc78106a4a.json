@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-05T12:45:25.883Z",
+  "data": {
+    "Tanggal": "05 Okt 2026",
+    "Jam": "19:17:20 WIB",
+    "DateTime": "2026-10-05T12:17:20+00:00",
+    "Coordinates": "-9.77,118.94",
+    "Lintang": "9.77 LS",
+    "Bujur": "118.94 BT",
+    "Magnitude": "4.3",
+    "Kedalaman": "16 km",
+    "Wilayah": "Pusat gempa berada di laut 20 km selatan Kodi, Sumba Barat Daya",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III-IV Kab. Sumba Barat Daya, III Kab. Bima",
+    "Shakemap": "20261005191720.mmi.jpg"
+  }
+}
