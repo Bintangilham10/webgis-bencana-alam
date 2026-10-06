@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-06T20:30:36.816Z",
+  "data": {
+    "Tanggal": "07 Okt 2026",
+    "Jam": "03:15:26 WIB",
+    "DateTime": "2026-10-06T20:15:26+00:00",
+    "Coordinates": "-8.77,116.14",
+    "Lintang": "8.77 LS",
+    "Bujur": "116.14 BT",
+    "Magnitude": "5.2",
+    "Kedalaman": "92 km",
+    "Wilayah": "9 km Tenggara LOMBOKBARAT-NTB",
+    "Potensi": "Tidak berpotensi tsunami",
+    "Dirasakan": "-",
+    "Shakemap": "20261007031751.mmi.jpg"
+  }
+}
