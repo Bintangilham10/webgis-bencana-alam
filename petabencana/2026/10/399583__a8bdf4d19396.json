@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-06T14:00:41.456Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        104.8807388821,
+        -2.9250749
+      ]
+    },
+    "properties": {
+      "pkey": "399583",
+      "created_at": "2026-10-06T13:51:19.666Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "4514d6be-c348-48fc-91d0-bcb1bc2c1296",
+      "image_url": "https://images.petabencana.id/4514d6be-c348-48fc-91d0-bcb1bc2c1296.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 85.0524172363183,
+        "fireLocation": {
+          "lat": "-2.9250749",
+          "lng": 104.880738882123
+        },
+        "personLocation": {
+          "lng": 104.88159458094981,
+          "lat": -2.9251552614279746
+        },
+        "fireRadius": {
+          "lng": 104.87998786359628,
+          "lat": -2.9252249079952577
+        }
+      },
+      "tags": {
+        "city": "BANYUASIN",
+        "district_id": null,
+        "region_code": "1607",
+        "local_area_id": null,
+        "instance_region_code": "ID-SS"
+      },
+      "title": null,
+      "text": "Kebakaran di Banyuasin I malam ini",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
