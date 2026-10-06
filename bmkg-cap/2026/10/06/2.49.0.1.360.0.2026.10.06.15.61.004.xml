@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.06.15.61.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-06T22:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-06T22:40:00+07:00</effective>
+    <expires>2026-10-07T00:40:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 06 October 2026, 22:40 WIB di sebagian wilayah Kalimantan Barat, khususnya di BUNUT HILIR, EMBALOH HILIR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 October 2026, 00:40 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/10/06/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>0.938,112.808 0.872,112.781 0.842,112.756 0.831,112.742 0.823,112.722 0.793,112.730 0.798,112.718 0.814,112.706 0.816,112.681 0.806,112.665 0.806,112.629 0.796,112.619 0.788,112.600 0.797,112.599 0.834,112.572 0.873,112.556 0.883,112.542 0.869,112.530 0.844,112.531 0.844,112.501 0.850,112.489 0.921,112.490 0.957,112.486 0.999,112.465 1.007,112.473 1.011,112.483 1.010,112.514 1.025,112.557 1.026,112.577 1.036,112.607 1.084,112.658 1.107,112.673 1.096,112.681 1.082,112.684 1.027,112.668 0.998,112.668 0.979,112.664 0.980,112.681 0.967,112.696 0.969,112.716 0.965,112.728 0.945,112.730 0.941,112.753 0.936,112.761 0.926,112.767 0.938,112.808</polygon>
+      <polygon>0.793,112.730 0.728,112.723 0.713,112.732 0.694,112.755 0.680,112.754 0.659,112.698 0.659,112.659 0.636,112.642 0.623,112.619 0.632,112.582 0.646,112.565 0.669,112.549 0.684,112.523 0.688,112.507 0.673,112.507 0.665,112.494 0.650,112.484 0.663,112.443 0.679,112.439 0.686,112.430 0.688,112.387 0.701,112.368 0.719,112.368 0.771,112.381 0.783,112.370 0.816,112.356 0.821,112.369 0.808,112.395 0.814,112.431 0.826,112.463 0.850,112.489 0.844,112.501 0.844,112.531 0.869,112.530 0.883,112.542 0.873,112.556 0.834,112.572 0.797,112.599 0.788,112.600 0.796,112.619 0.806,112.629 0.806,112.665 0.816,112.681 0.814,112.706 0.798,112.718 0.793,112.730</polygon>
+    </area>
+  </info>
+</alert>
