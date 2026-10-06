@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-06T13:45:25.731Z",
+  "data": {
+    "Tanggal": "06 Okt 2026",
+    "Jam": "20:11:23 WIB",
+    "DateTime": "2026-10-06T13:11:23+00:00",
+    "Coordinates": "4.94,118.77",
+    "Lintang": "4.94 LU",
+    "Bujur": "118.77 BT",
+    "Magnitude": "5.3",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di laut 219 Km timur laut Tarakan",
+    "Dirasakan": "II-III Tarakan"
+  }
+}
