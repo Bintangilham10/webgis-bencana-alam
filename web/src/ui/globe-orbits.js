@@ -385,8 +385,11 @@ export function createOrbits({ scene, group, sun, uniforms, reduced }) {
       uniforms.uOrbS.value.copy(inSpace(pointAt(u, 1, tmp))).normalize();
       uniforms.uOrbF.value.copy(inSpace(dirAt(u, tmp)));
 
-      const orbitIn = smooth((intro - 0.45) / 0.3);
-      const satIn = smooth((intro - 0.6) / 0.3);
+      // vis: 1 di hero dan penutup, 0 di bagian tengah (lihat globe-scene.js).
+      const vis = L.vis ?? 1;
+      const orbitIn = smooth((intro - 0.45) / 0.3) * vis;
+      const satIntro = smooth((intro - 0.6) / 0.3);
+      const satIn = satIntro * vis;
       state.pass = reduced ? 1 : state.pass + ((shown ? 1 : 0) - state.pass) * Math.min(1, dt * 2.5);
       uniforms.uSwath.value.w = orbitIn * state.pass;
       for (const l of Object.values(lines)) l.material.opacity = l.userData.opacity * orbitIn;
@@ -400,9 +403,9 @@ export function createOrbits({ scene, group, sun, uniforms, reduced }) {
       const hVisible = !hPos.hidden && onScreen(hPos, size, -24);
       const sizePx = gpm.userData.size * radius;
       for (const [obj, p, id, seed] of [[gpm, g, 'gpm', 1.3], [himawari, hPos, 'himawari', 2.1]]) {
-        obj.visible = satIn > 0;
-        obj.scale.setScalar(Math.max(1e-5, obj.userData.size * satIn));
-        setOpacity(obj, fade(id, p, sizePx * 3, blocks));
+        obj.visible = satIn > 0.01;
+        obj.scale.setScalar(Math.max(1e-5, obj.userData.size * satIntro));
+        setOpacity(obj, Math.round(fade(id, p, sizePx * 3, blocks) * vis * 50) / 50);
         for (const w of obj.userData.wings) w.rotation.x = -0.4 + 0.22 * Math.sin(t * 0.22 + seed);
         if (obj.userData.spin) obj.userData.spin.rotation.y = reduced ? 0.6 : t * (32 / 60) * Math.PI * 2;
       }
@@ -425,14 +428,15 @@ export function createOrbits({ scene, group, sun, uniforms, reduced }) {
         gpm: { x: g.x, y: g.y, visible: gVisible, coords: `${fmtLat(Math.asin(ground.y) / RAD)} · ${fmtLon(Math.atan2(ground.x, ground.z) / RAD)}` },
         himawari: { x: hPos.x, y: hPos.y, visible: hVisible, edge },
         satIn,
+        vis,
         sizePx,
       };
     },
     // Keterangan di kanvas 2D di atas bumi; tidak pernah menimpa teks halaman.
     drawLabels(ctx, size, intro, ink, blocks) {
       if (!info) return;
-      const labIn = smooth((intro - 0.85) / 0.15);
-      if (labIn <= 0) return;
+      const labIn = smooth((intro - 0.85) / 0.15) * info.vis;
+      if (labIn <= 0.01) return;
       const small = size.w < 760;
       const placed = [];
       const nameFont = `750 ${small ? 12 : 13}px ${ink.font}`;

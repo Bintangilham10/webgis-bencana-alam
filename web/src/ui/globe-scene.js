@@ -393,7 +393,7 @@ export function createGlobeScene({ box, canvas, marks, root }) {
   const radiusFor = (w) => (w < 760 ? w * 1.7 : w * 1.25);
   // Teks dan mockup halaman yang tidak boleh tertimpa keterangan satelit; posisinya dibaca
   // tiap bingkai karena laptop di tur fitur menempel saat digulir.
-  const BLOCK_SEL = 'h1, h2, h3, h4, p, li, figure, .lp-btn, .lp-nav, .lp-tablet, .lp-laptop, .lp-phone';
+  const BLOCK_SEL = 'h1, h2, h3, h4, p, li, a, button, figure, form, .lp-nav, .lp-tablet, .lp-laptop, .lp-phone, .lp-footer';
   let blockEls = [];
   function textBlocks() {
     const origin = root.getBoundingClientRect();
@@ -426,9 +426,13 @@ export function createGlobeScene({ box, canvas, marks, root }) {
     invalidate();
   }
 
-  // Cakrawala: jari-jari tetap (tanpa zoom). Di hero lengkungnya setinggi 42% layar,
-  // setelah hero turun ke 13% (HP: 22% dan 10%). k = tinggi Indonesia di atas pusat bola,
-  // dipilih supaya Indonesia di tengah lengkung.
+  // Cakrawala: jari-jari tetap (tanpa zoom). Di hero lengkungnya setinggi 42% layar; di
+  // bagian tengah turun menjadi garis tipis 8% (HP: 22% dan 7%) dan orbit memudar supaya
+  // tidak melintas di belakang teks. Di penutup cakrawala menempel di atas ruang
+  // .lp-final__earth dan naik bersama halaman sampai kaki halaman, orbit muncul lagi.
+  // k = tinggi Indonesia di atas pusat bola, dipilih supaya Indonesia di tengah bagian
+  // bumi yang terlihat.
+  const earthEl = root.querySelector('.lp-final__earth');
   let intro = reduced ? 1 : 0;
   // Putaran dari menahan dan menggeser bumi (derajat), plus laju bujur untuk inersia
   // setelah dilepas. swayT = jam ayunan; berhenti selama bumi dipegang.
@@ -439,10 +443,21 @@ export function createGlobeScene({ box, canvas, marks, root }) {
     const narrow = w < 760;
     const r = radiusFor(w);
     const cap = h * (narrow ? 0.22 : 0.42);
-    const lowCap = h * (narrow ? 0.1 : 0.13);
+    const lowCap = h * (narrow ? 0.07 : 0.08);
     const sink = smooth((root.scrollTop - h * 0.2) / (h * 0.9));
-    const c = mix(cap, lowCap, sink);
-    const kAt = mix(1 - (cap * 0.5) / r, 1 - (lowCap * 0.55) / r, sink);
+    let c = mix(cap, lowCap, sink);
+    let visible = c;
+    let end = 0;
+    if (earthEl) {
+      const origin = root.getBoundingClientRect().top;
+      const er = earthEl.getBoundingClientRect();
+      // Cakrawala 16 px di bawah tepi atas ruang itu, tidak menempel ke teks di atasnya.
+      const top = er.top - origin + 16;
+      if (h - top > c) c = h - top;
+      visible = Math.min(c, Math.max(1, er.bottom - origin - (h - c)));
+      end = smooth((h - top) / Math.max(1, er.height));
+    }
+    const kAt = 1 - (visible * 0.5) / r;
     const rise = 1 - easeOutCubic(clamp01(intro * 1.6));
     const cy = h - c + r + rise * h * 0.45;
     // Bujur di tengah: berayun ±18° tiap 90 detik di sekitar Indonesia (mulai ke timur, ke
@@ -450,7 +465,7 @@ export function createGlobeScene({ box, canvas, marks, root }) {
     const sway = reduced ? 0 : 18 * Math.sin((swayT * Math.PI * 2) / 90);
     const lon = 118 + sway - Math.min(15, root.scrollTop * 0.006) + rise * 60 + drag.lon;
     const lat0 = -2 - Math.asin(Math.min(0.999, kAt)) / RAD + drag.lat;
-    return { cx: w / 2, cy, r, lon, lat0, show: clamp01(intro * 3) };
+    return { cx: w / 2, cy, r, lon, lat0, show: clamp01(intro * 3), vis: Math.max(1 - sink, end) };
   }
 
   // ---------- Gambar ----------

@@ -1463,26 +1463,40 @@ a.lp-src__name:hover .icon {
 }
 
 /* ---------- Penutup ---------- */
-/* Ajakan akhir: judul dan penjelasan di kiri, pencarian di kanan. Di bawahnya
-   baris keselamatan (catatan resmi + nomor darurat) berupa teks biasa. */
+/* Pasangan hero: ajakan dan pencarian di tengah, catatan keselamatan di bawahnya, lalu
+   ruang kosong (.lp-final__earth) tempat cakrawala bumi naik dari balik kaki halaman. */
 .lp-final {
-  padding-block: clamp(80px, 13vh, 140px) clamp(40px, 6vh, 64px);
+  padding-block: clamp(48px, 8vh, 88px) 0;
   border-top: 1px solid var(--lp-line);
 }
 
 .lp-final__grid {
   display: grid;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
-  align-items: end;
-  gap: clamp(32px, 5vw, 80px);
+  justify-items: center;
+  gap: clamp(20px, 3vh, 28px);
+  max-width: 760px;
+  text-align: center;
+}
+
+.lp-final__copy {
+  display: grid;
+  justify-items: center;
+}
+
+.lp-final__copy .lp-eyebrow {
+  justify-content: center;
 }
 
 .lp-final__lead {
-  max-width: 40ch;
-  margin-top: 16px;
+  max-width: 64ch;
+  margin-top: 14px;
   font-size: 16px;
   line-height: 1.65;
   color: var(--ink-2);
+}
+
+.lp-final__action {
+  width: min(100%, 620px);
 }
 
 .lp-search {
@@ -1527,6 +1541,7 @@ a.lp-src__name:hover .icon {
 .lp-examples {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: baseline;
   gap: 4px 16px;
   margin-top: 14px;
@@ -1556,19 +1571,71 @@ a.lp-src__name:hover .icon {
 .lp-final__links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px 28px;
-  margin-top: 26px;
+  margin-top: 18px;
 }
 
 .lp-final__safety {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px 40px;
-  margin-top: clamp(56px, 9vh, 96px);
-  padding-top: 22px;
-  border-top: 1px solid var(--lp-line);
+  justify-content: center;
+  margin-top: clamp(20px, 3.5vh, 32px);
+}
+
+/* Jendela cakrawala: kosong, ±seperempat tinggi layar; bumi di belakangnya. Penutup,
+   jendela, dan kaki halaman dirancang muat dalam satu layar laptop. */
+.lp-final__earth {
+  height: clamp(180px, 26svh, 300px);
+}
+
+/* Laptop berlayar pendek (termasuk pratinjau di editor): ajakan dua kolom, judul di kiri
+   dan pencarian di kanan, supaya penutup, jendela bumi, dan kaki halaman tetap muat dalam
+   satu layar. */
+@media (min-width: 1100px) and (max-height: 820px) {
+  .lp-final {
+    padding-top: 40px;
+  }
+
+  .lp-final__grid {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    align-items: end;
+    justify-items: stretch;
+    gap: clamp(32px, 5vw, 80px);
+    max-width: none;
+    text-align: left;
+  }
+
+  .lp-final__copy {
+    justify-items: start;
+  }
+
+  .lp-final__copy .lp-eyebrow,
+  .lp-examples,
+  .lp-final__links {
+    justify-content: flex-start;
+  }
+
+  .lp-final__lead {
+    max-width: 44ch;
+    margin-top: 10px;
+  }
+
+  .lp-final__action {
+    width: auto;
+  }
+
+  .lp-final__earth {
+    height: clamp(150px, 22svh, 200px);
+  }
+
+  .lp-footer {
+    padding-block: 20px 18px;
+  }
+
+  .lp-footer__bottom {
+    margin-top: 14px;
+    padding-top: 12px;
+  }
 }
 
 .lp-final__warn {
@@ -1591,10 +1658,13 @@ a.lp-src__name:hover .icon {
 }
 
 /* ---------- Kaki halaman ---------- */
-/* Sederhana: merek, beberapa tautan, kembali ke atas; lalu satu baris kecil. */
+/* Sederhana: merek, beberapa tautan, kembali ke atas; lalu satu baris kecil. Berlatar
+   warna halaman supaya menutup bagian bawah bumi: cakrawala seolah naik dari baliknya. */
 .lp-footer {
+  position: relative;
   padding-block: 32px 28px;
   border-top: 1px solid var(--lp-line);
+  background: var(--lp-bg);
 }
 
 .lp-footer__wrap {
@@ -1700,14 +1770,10 @@ a.lp-src__name:hover .icon {
   text-decoration: none;
 }
 
-@media (max-width: 1099.98px) {
-  .lp-final__grid {
-    grid-template-columns: minmax(0, 1fr);
-    align-items: start;
-  }
-}
-
 @media (max-width: 767.98px) {
+  .lp-final__earth {
+    height: clamp(180px, 26svh, 260px);
+  }
 
   .lp-search {
     padding-left: 14px;
