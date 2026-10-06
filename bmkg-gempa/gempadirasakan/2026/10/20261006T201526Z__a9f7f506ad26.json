@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-06T20:55:26.939Z",
+  "data": {
+    "Tanggal": "07 Okt 2026",
+    "Jam": "03:15:26 WIB",
+    "DateTime": "2026-10-06T20:15:26+00:00",
+    "Coordinates": "-8.77,116.14",
+    "Lintang": "8.77 LS",
+    "Bujur": "116.14 BT",
+    "Magnitude": "5.2",
+    "Kedalaman": "92 km",
+    "Wilayah": "Pusat gempa berada di darat 9 km tenggara Lombok Barat",
+    "Dirasakan": "IV-V Mataram, III-IV Kab. Lombok Tengah, III Kab. Lombok Timur, III Kab. Lombok Utara, III Sumbawa Barat, III Sumbawa, II-III Kuta, II Denpasar"
+  }
+}
