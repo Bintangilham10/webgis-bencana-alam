@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiygFBVV95cUxOZEJOOHVGclRxSWVDNU9raEZYZXpzaWxrcE53NjdtTFJLbW5ndlBjRmJZYmgzYmVHTlBrMHVTal9XMS1seWYtYXpFemdBWGNfdmJLTVY2dlZ5bFVsbnhDMlhXUmVrNmd6M3cwd0pWbGI2aGN5ZDlrVHdONFphQ3VnN2lIOVBWT1hIVFZNSURDZXc1MUlXSXpjMG1VNmltQkx1QXlWbDRzVHRvS2pSckpKeFZiWGRPZFRNS2o4aUV4OWY2TGlldnVlNUVR0gHKAUFVX3lxTE5kQk44dUZyVHFJZUM1T2toRlhlenNpbGtwTnc2N21MUkttbmd2UGNGYlliaDNiZUdOUGswdVNqX1cxLWx5Zi1hekV6Z0FYY192YktNVjZ2VnlsVWxueEMyWFdSZWs2Z3ozdzB3SlZsYjZoY3lkOWtUd040WmFDdWc3aUg5UFZPWEhUVk1JRENldzUxSVdJemMwbVU2aW1CTHVBeVZsNHNUdG9LalJySkp4VmJYZE9kVE1LajhpRXg5ZjZMaWV2dWU1RVE",
+  "title": "Jalur Gumitir Jember–Banyuwangi Retak Lagi, Warga Khawatirkan Ancaman Longsor - Radar Jember",
+  "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOZEJOOHVGclRxSWVDNU9raEZYZXpzaWxrcE53NjdtTFJLbW5ndlBjRmJZYmgzYmVHTlBrMHVTal9XMS1seWYtYXpFemdBWGNfdmJLTVY2dlZ5bFVsbnhDMlhXUmVrNmd6M3cwd0pWbGI2aGN5ZDlrVHdONFphQ3VnN2lIOVBWT1hIVFZNSURDZXc1MUlXSXpjMG1VNmltQkx1QXlWbDRzVHRvS2pSckpKeFZiWGRPZFRNS2o4aUV4OWY2TGlldnVlNUVR0gHKAUFVX3lxTE5kQk44dUZyVHFJZUM1T2toRlhlenNpbGtwTnc2N21MUkttbmd2UGNGYlliaDNiZUdOUGswdVNqX1cxLWx5Zi1hekV6Z0FYY192YktNVjZ2VnlsVWxueEMyWFdSZWs2Z3ozdzB3SlZsYjZoY3lkOWtUd040WmFDdWc3aUg5UFZPWEhUVk1JRENldzUxSVdJemMwbVU2aW1CTHVBeVZsNHNUdG9LalJySkp4VmJYZE9kVE1LajhpRXg5ZjZMaWV2dWU1RVE?oc=5",
+  "source": "Radar Jember",
+  "source_url": "https://radarjember.jawapos.com",
+  "published_at": "2026-10-05T23:00:25.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-06T09:00:43.915Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.10",
+      "nama": "Kabupaten Banyuwangi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.09",
+      "nama": "Kabupaten Jember",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

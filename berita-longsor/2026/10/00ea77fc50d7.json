@@ -1,0 +1,36 @@
+{
+  "guid": "CBMi5wFBVV95cUxON0x3VlYwU0hJMnFVUHR0aXZJOHNwazNSbUd5RWRRSVVyclRsbkhablpnRlVzLWYyTWNOOFplNVFMd2tZWkhaT1JPck96eUZyU1JibDZPS0VadzhLYXpnQUltWXAxSHRNLTRsM2tDbjBRSjFrOHRveFBDcnhKcEtGT1Y1NzBoM0N2bmtJN0VRLWprMDlUcW1tdWphenRlczVsMnRIM0hhRWpaa1pVMFo4YTNfX1VuQmxFMk1TT0RQWW14a2tIbU5oNTlwYTMyTGxxVEhFcV9fanA5emhKWGZCUTdQeGhXenc",
+  "title": "3 KK dan Pengendara Terancam Nyawa, Pemdes Ciptasari Minta Tebing Jalur Bandung-Cirebon yang Kembali Longsor Diperbaiki Permanen - Tahu Ekspres",
+  "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxON0x3VlYwU0hJMnFVUHR0aXZJOHNwazNSbUd5RWRRSVVyclRsbkhablpnRlVzLWYyTWNOOFplNVFMd2tZWkhaT1JPck96eUZyU1JibDZPS0VadzhLYXpnQUltWXAxSHRNLTRsM2tDbjBRSjFrOHRveFBDcnhKcEtGT1Y1NzBoM0N2bmtJN0VRLWprMDlUcW1tdWphenRlczVsMnRIM0hhRWpaa1pVMFo4YTNfX1VuQmxFMk1TT0RQWW14a2tIbU5oNTlwYTMyTGxxVEhFcV9fanA5emhKWGZCUTdQeGhXenc?oc=5",
+  "source": "Tahu Ekspres",
+  "source_url": "https://tahuekspres.com",
+  "published_at": "2026-10-06T07:51:38.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-06T09:00:43.915Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.09",
+      "nama": "Kabupaten Cirebon",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.74",
+      "nama": "Kota Cirebon",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

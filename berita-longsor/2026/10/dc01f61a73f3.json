@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiiwFBVV95cUxQalFTN3JmbFo3cmZoem44SVQybzBTUnFvekNYaktHZWxNVzdVeHdPVk1WTDBvVVVXNDhJcDl4VjlqemFTNG1DeWdDOHZlemE2UTRrZU1GUzd0aHFyazNuanUzb2J6aVFyb0Q0dEhmNGRZNG5peHZfdU5rd0lOekRuLWFfRy1kenZscDdZ",
+  "title": "Sanggau, Bengkayang dan Sintang Dipetakan Berisiko Longsor - Jurnal Borneo",
+  "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQalFTN3JmbFo3cmZoem44SVQybzBTUnFvekNYaktHZWxNVzdVeHdPVk1WTDBvVVVXNDhJcDl4VjlqemFTNG1DeWdDOHZlemE2UTRrZU1GUzd0aHFyazNuanUzb2J6aVFyb0Q0dEhmNGRZNG5peHZfdU5rd0lOekRuLWFfRy1kenZscDdZ?oc=5",
+  "source": "Jurnal Borneo",
+  "source_url": "https://jurnalborneo.com",
+  "published_at": "2026-10-06T06:06:24.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-06T09:00:43.915Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "61.07",
+      "nama": "Kabupaten Bengkayang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "61.03",
+      "nama": "Kabupaten Sanggau",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "61.05",
+      "nama": "Kabupaten Sintang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
