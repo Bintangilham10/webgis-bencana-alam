@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-06T11:00:45.608Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        113.9164050135,
+        -2.2075116779
+      ]
+    },
+    "properties": {
+      "pkey": "399575",
+      "created_at": "2026-10-06T10:47:40.591Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "a96d93a0-4cc7-4e9e-ac58-0dc9f8d8c14b",
+      "image_url": "https://images.petabencana.id/a96d93a0-4cc7-4e9e-ac58-0dc9f8d8c14b.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 2,
+        "airQuality": 4
+      },
+      "tags": {
+        "city": "KOTA PALANGKARAYA",
+        "district_id": null,
+        "region_code": "6271",
+        "local_area_id": null,
+        "instance_region_code": "ID-KT"
+      },
+      "title": null,
+      "text": "Hari ini udara di Palangka Raya dan beberapa wilayah Kalimantan Tengah kembali memburuk lagi dan sangat berbahaya.",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
