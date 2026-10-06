@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-06T14:15:27.785Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        115.8128959595,
+        -0.2427179
+      ]
+    },
+    "properties": {
+      "pkey": "399585",
+      "created_at": "2026-10-06T14:09:04.482Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "1444d682-8c15-4980-86da-e7f8bec6dc2a",
+      "image_url": "https://images.petabencana.id/1444d682-8c15-4980-86da-e7f8bec6dc2a.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 105.20088398724835,
+        "fireLocation": {
+          "lat": "-0.2427179",
+          "lng": 115.81289595945901
+        },
+        "personLocation": {
+          "lng": 115.81375909911299,
+          "lat": -0.24271168237322627
+        },
+        "fireRadius": {
+          "lng": 115.81197327955692,
+          "lat": -0.24292711042467374
+        }
+      },
+      "tags": {
+        "city": "KUTAI BARAT",
+        "district_id": null,
+        "region_code": "6407",
+        "local_area_id": null,
+        "instance_region_code": "ID-KI"
+      },
+      "title": null,
+      "text": "Upaya pemadaman kebakaran hutan dan lahan (karhutla) di Kampung Merayaq, Kecamatan Mook Manaar Bulatn, Kabupaten Kutai Barat",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
