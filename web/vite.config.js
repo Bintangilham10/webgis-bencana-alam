@@ -6,4 +6,7 @@ const apiProxy = { '/api': 'http://localhost:3000' };
 export default defineConfig({
   server: { port: 5173, proxy: apiProxy },
   preview: { port: 4173, proxy: apiProxy },
+  // three.js untuk latar halaman depan (ui/globe-scene.js) ±540 kB, tetapi dimuat
+  // terpisah setelah halaman tampil.
+  build: { chunkSizeWarningLimit: 600 },
 });
