@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.06.08.32.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-06T15:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-06T15:45:00+07:00</effective>
+    <expires>2026-10-06T18:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 06 October 2026, 15:45 WIB di sebagian wilayah Jawa Barat, khususnya di CICURUG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 06 October 2026, 18:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/10/06/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.782,106.872 -6.785,106.863 -6.793,106.793 -6.813,106.779 -6.806,106.771 -6.798,106.767 -6.795,106.771 -6.787,106.765 -6.773,106.763 -6.772,106.755 -6.749,106.740 -6.744,106.731 -6.717,106.729 -6.717,106.731 -6.716,106.734 -6.715,106.740 -6.728,106.758 -6.754,106.777 -6.753,106.792 -6.763,106.801 -6.769,106.814 -6.767,106.831 -6.776,106.845 -6.782,106.872</polygon>
+    </area>
+  </info>
+</alert>
