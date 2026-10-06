@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-10-06T13:30:34.937Z",
+  "data": {
+    "Tanggal": "06 Okt 2026",
+    "Jam": "20:11:23 WIB",
+    "DateTime": "2026-10-06T13:11:23+00:00",
+    "Coordinates": "4.94,118.77",
+    "Lintang": "4.94 LU",
+    "Bujur": "118.77 BT",
+    "Magnitude": "5.3",
+    "Kedalaman": "10 km",
+    "Wilayah": "219 km TimurLaut TARAKAN-KALTARA",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}
