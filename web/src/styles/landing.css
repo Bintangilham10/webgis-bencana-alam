@@ -19,6 +19,10 @@
   --lp-panel: #15181c;
   --lp-line: rgb(255 255 255 / 0.09);
   --lp-line-2: rgb(255 255 255 / 0.16);
+  /* Latar bumi: pita atmosfer rata di luar bola dan garis tepinya (warna permukaan
+     bumi ada di ui/globe-scene.js). */
+  --lp-globe-atmo: #16223a;
+  --lp-globe-rim: #2a3a58;
 }
 
 [data-theme='light'] {
@@ -26,6 +30,8 @@
   --lp-panel: #ffffff;
   --lp-line: rgb(20 22 26 / 0.09);
   --lp-line-2: rgb(20 22 26 / 0.16);
+  --lp-globe-atmo: #d9e4f2;
+  --lp-globe-rim: #8fa5c4;
 }
 
 /* ---------- Aplikasi di belakangnya ---------- */
@@ -173,6 +179,48 @@ body.is-arriving #map .leaflet-control:not(.leaflet-control-attribution) {
 .lp-wrap {
   width: min(1240px, 100% - var(--lp-x) * 2);
   margin-inline: auto;
+}
+
+/* ---------- Latar: cakrawala bumi ---------- */
+/* Menempel setinggi layar di belakang semua bagian (z-index −1 di dalam
+   .landing yang membentuk konteks tumpukan sendiri). Tinggi dan margin negatif
+   diatur dari JS supaya sama persis dengan tinggi area gulir. */
+.lp-globe {
+  position: sticky;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  margin-bottom: -100vh;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1.4s ease;
+}
+
+.lp-globe.is-ready {
+  opacity: 1;
+}
+
+/* Bumi diputar dengan menahan dan menggeser (ui/globe-scene.js). Di layar sentuh
+   hanya geser mendatar yang memutar; geser tegak tetap menggulir halaman. */
+.landing {
+  touch-action: pan-y pinch-zoom;
+}
+
+.landing.can-grab {
+  cursor: grab;
+}
+
+.landing.is-grabbing {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.lp-globe canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* ---------- Tombol dan tautan ---------- */
@@ -781,9 +829,11 @@ body.is-arriving #map .leaflet-control:not(.leaflet-control-attribution) {
   color: var(--ink);
 }
 
+/* Jarak lebar di atas tablet: layar pertama hanya berisi teks hero dan lengkung
+   cakrawala bumi di bawahnya; tablet masuk saat mulai digulir. */
 .lp-hero__stage {
   container-type: inline-size;
-  margin-top: clamp(40px, 7vh, 72px);
+  margin-top: clamp(40px, 44vh, 480px);
   perspective: 1800px;
 }
 
@@ -919,8 +969,9 @@ body.is-arriving #map .leaflet-control:not(.leaflet-control-attribution) {
   scroll-margin-top: var(--lp-nav-h);
 }
 
+/* Tanpa pita panel: cakrawala bumi terlihat tanpa putus di semua bagian. */
 .lp-section--alt {
-  background: var(--lp-panel);
+  background: transparent;
 }
 
 .lp-section:focus,

@@ -35,6 +35,13 @@
          atas aplikasi yang sudah berjalan; "Buka peta" membuka lubang lingkaran
          sampai aplikasi di belakangnya terlihat. Gerak diatur ui/landing.js. -->
     <div id="landing" class="landing">
+      <!-- Latar seluruh halaman: cakrawala bumi "Atlas alam" di bawah hero, Indonesia
+           berwarna hijau, gunung api dan gempa terkini di permukaannya
+           (ui/globe-backdrop.js). Kanvas kedua untuk pita atmosfer dan garis tepi bola. -->
+      <div class="lp-globe" aria-hidden="true">
+        <canvas class="lp-globe__map"></canvas>
+        <canvas class="lp-globe__marks"></canvas>
+      </div>
       <header class="lp-nav">
         <div class="lp-wrap lp-nav__inner">
           <a class="lp-brand" href="./">
@@ -398,6 +405,7 @@
           <div class="lp-footer__bottom">
             <p>© 2026 SIGAP Bencana · Tugas Besar TPBW, Telkom University · <a href="https://github.com/Bintangilham10/webgis-bencana-alam" target="_blank" rel="noopener">Kode sumber</a> · Bukan peringatan resmi</p>
             <p>Data: BMKG, BNPB, PVMBG, PuSGeN, Open-Meteo, NASA, © kontributor OpenStreetMap</p>
+            <p>Latar bumi: garis pantai <a href="https://www.naturalearthdata.com" target="_blank" rel="noopener">Natural Earth</a>, kedalaman laut dari NASA Blue Marble, ketinggian AWS Terrain Tiles</p>
           </div>
         </div>
       </footer>

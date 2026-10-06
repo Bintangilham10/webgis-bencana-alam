@@ -1,14 +1,17 @@
 import { formatDasarian, formatDecimal, formatNumber } from '../lib/format.js';
 import { prefersReducedMotion, tween } from '../lib/motion.js';
 import { WARNING_LEVEL_STYLES } from '../lib/symbology.js';
+import { createGlobeBackdrop } from './globe-backdrop.js';
 
 // Halaman depan: tur produk di atas aplikasi yang sudah berjalan. Tangkapan
 // layar aplikasi asli dalam bingkai browser dan HP, ditambah angka langsung
 // dari data yang sama dengan Ikhtisar (tanpa request tambahan).
 //
 // Gerak (dilewati bila pengguna meminta "kurangi gerakan"):
-// 1. play(), saat layar pembuka memudar: teks hero muncul dan angka menghitung naik;
-// 2. bingkai hero mulai miring lalu tegak mengikuti gulir;
+// 1. play(), saat layar pembuka memudar: teks hero muncul, angka menghitung naik,
+//    dan cakrawala bumi naik dari bawah layar (ui/globe-backdrop.js); menggulir
+//    memutarnya sedikit dan menurunkannya, menahan dan menggeser memutarnya;
+// 2. bingkai hero masuk dari bawah dalam keadaan miring, lalu tegak mengikuti gulir;
 // 3. tur fitur: bingkai menempel di layar, tangkapan layarnya berganti mengikuti
 //    fitur yang sedang dibaca;
 // 4. enter(): lubang lingkaran membesar dari tombol yang ditekan sampai
@@ -48,6 +51,12 @@ export function createLanding({ element, app, focusAfter, onSearch, onLocate }) 
   if (!reduced) element.classList.add('lp-motion');
 
   const nav = $('.lp-nav');
+  const globe = createGlobeBackdrop({
+    box: $('.lp-globe'),
+    canvas: $('.lp-globe__map'),
+    marks: $('.lp-globe__marks'),
+    root: element,
+  });
 
   // ---------- Angka langsung ----------
   const stats = {};
@@ -93,8 +102,10 @@ export function createLanding({ element, app, focusAfter, onSearch, onLocate }) 
     const max = element.scrollHeight - element.clientHeight;
     nav.style.setProperty('--read', max > 0 ? (element.scrollTop / max).toFixed(4) : '0');
     if (reduced) return;
-    // Miring saat hero baru tampil, tegak setelah digulir ±45% tinggi layar.
-    const p = clamp(element.scrollTop / (element.clientHeight * 0.45));
+    // Miring saat tepi atasnya baru masuk dari bawah layar, tegak setelah naik ±70%
+    // tinggi layar.
+    const top = tilt.getBoundingClientRect().top - element.getBoundingClientRect().top;
+    const p = clamp((element.clientHeight - top) / (element.clientHeight * 0.7));
     tilt.style.setProperty('--tilt', (1 - p).toFixed(3));
   }
   element.addEventListener('scroll', () => (frame ||= requestAnimationFrame(onScroll)), { passive: true });
@@ -166,6 +177,7 @@ export function createLanding({ element, app, focusAfter, onSearch, onLocate }) 
     played = true;
     clearTimeout(fallback);
     element.classList.add('is-playing');
+    globe.play();
     // Angka yang sudah tiba sebelum intro ikut menghitung naik.
     for (const [key, value] of Object.entries(stats)) {
       if (value !== null) countUp($(`[data-stat="${key}"]`), value);
@@ -191,6 +203,7 @@ export function createLanding({ element, app, focusAfter, onSearch, onLocate }) 
       element.classList.remove('is-leaving');
       ring?.remove();
       for (const observer of [reveal, spy, tourSpy]) observer.disconnect();
+      globe.stop();
       if (then) then();
       else (typeof focusAfter === 'function' ? focusAfter() : focusAfter)?.focus({ preventScroll: true });
     };
@@ -255,6 +268,7 @@ export function createLanding({ element, app, focusAfter, onSearch, onLocate }) 
       const quakes = collection.features.map((f) => f.properties);
       const strongest = quakes.reduce((max, q) => (!max || q.magnitude > max.magnitude ? q : max), null);
       setStat('quakes', quakes.length);
+      globe.setQuakes(collection.features);
       setLive('overview', 'quakes', strongest ? `Saat ini: ${quakes.length} gempa dirasakan atau M5+ dalam 7 hari, terbesar M ${formatDecimal(strongest.magnitude)}` : 'Saat ini: belum ada gempa dirasakan atau M5+ dalam 7 hari');
       setStamp('quakes', collection.meta.synced_at);
       setSync('quakes', collection.meta.synced_at);
@@ -263,6 +277,7 @@ export function createLanding({ element, app, focusAfter, onSearch, onLocate }) 
       const volcanoes = collection.features.map((f) => f.properties);
       const high = volcanoes.filter((v) => v.level >= 3).length;
       setStat('volcanoes', high);
+      globe.setVolcanoes(collection.features);
       setSync('volcanoes', collection.meta.synced_at);
       setLive('overview', 'volcanoes', `${high} gunung api Siaga ke atas`);
     },
