@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-06T11:15:27.738Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        101.4513788874,
+        0.5261433398
+      ]
+    },
+    "properties": {
+      "pkey": "399577",
+      "created_at": "2026-10-06T11:01:55.953Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "64bd6e18-38db-42bf-98bc-329138cca0ec",
+      "image_url": "https://images.petabencana.id/64bd6e18-38db-42bf-98bc-329138cca0ec.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 1,
+        "airQuality": 2
+      },
+      "tags": {
+        "city": "KOTA PEKANBARU",
+        "district_id": null,
+        "region_code": "1471",
+        "local_area_id": null,
+        "instance_region_code": "ID-RI"
+      },
+      "title": null,
+      "text": "Kabut asap pekat menyelimuti kawasan Kota Pekanbaru, Riau pada Selasa (06/10). Sejak siang hingga sore hari, jarak pandang berkurang ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
