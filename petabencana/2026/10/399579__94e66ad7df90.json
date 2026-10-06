@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-06T11:30:33.952Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        104.7592579948,
+        -2.3945633194
+      ]
+    },
+    "properties": {
+      "pkey": "399579",
+      "created_at": "2026-10-06T11:16:51.057Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "836bdc7a-e272-442a-b190-931546084de1",
+      "image_url": "https://images.petabencana.id/836bdc7a-e272-442a-b190-931546084de1.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 87.85341518164105,
+        "fireLocation": {
+          "lng": 104.75925799483309,
+          "lat": -2.3945633194370117
+        },
+        "personLocation": {
+          "lat": "-2.3938935",
+          "lng": "104.7548031"
+        },
+        "fireRadius": {
+          "lng": 104.7584694253809,
+          "lat": -2.394622276505359
+        }
+      },
+      "tags": {
+        "city": null,
+        "district_id": null,
+        "region_code": null,
+        "local_area_id": null,
+        "instance_region_code": "ID-SS"
+      },
+      "title": null,
+      "text": "Kebakaran lahan terjadi di kawasan Mariana, Kecamatan Banyuasin I, Kabupaten Banyuasin, Sumatera Selatan",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

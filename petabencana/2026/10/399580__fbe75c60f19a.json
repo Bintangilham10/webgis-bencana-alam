@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-06T11:30:33.952Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.5164184992,
+        -6.2181683545
+      ]
+    },
+    "properties": {
+      "pkey": "399580",
+      "created_at": "2026-10-06T11:26:06.317Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "73bfa28f-26fe-4dde-81d3-e6e490f139a7",
+      "image_url": "https://images.petabencana.id/73bfa28f-26fe-4dde-81d3-e6e490f139a7.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 80.66592009568242,
+        "fireLocation": {
+          "lng": 106.51641849916882,
+          "lat": -6.218168354466528
+        },
+        "personLocation": {
+          "lat": "-6.2180813",
+          "lng": "106.5171524"
+        },
+        "fireRadius": {
+          "lng": 106.51568893831825,
+          "lat": -6.218152355895583
+        }
+      },
+      "tags": {
+        "city": "TANGERANG",
+        "district_id": null,
+        "region_code": "3603",
+        "local_area_id": null,
+        "instance_region_code": "ID-BT"
+      },
+      "title": null,
+      "text": "Kebakaran industri melanda pabrik kemasan plastik dan kertas PT Respati Kemasindah di Jalan Raya Otonom, Kecamatan Cikupa, Tangerang ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
