@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-06T22:45:28.415Z",
+  "data": {
+    "Tanggal": "07 Okt 2026",
+    "Jam": "04:56:46 WIB",
+    "DateTime": "2026-10-06T21:56:46+00:00",
+    "Coordinates": "-3.80,139.66",
+    "Lintang": "3.80 LS",
+    "Bujur": "139.66 BT",
+    "Magnitude": "4.8",
+    "Kedalaman": "50 km",
+    "Wilayah": "Pusat gempa berada di darat 31 km tenggara Yalimo",
+    "Dirasakan": "II Wamena"
+  }
+}
