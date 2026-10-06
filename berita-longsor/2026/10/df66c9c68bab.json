@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixgFBVV95cUxQaVZXUGdjeTRnZ1VJMC03RWxEdVVHblowQUJPNXVaQUxpSUpuMmNVeFVjTTgyUUpFRUs2UjVSeDRPMnJBQWZvb0xfNHFHdG84UGhfOU5RNkxwZ0FLczkwcTVRdTBZWTlQQVcxcy12UmRDUmJxOGJXZTBYQ1JjNll2U3I0VHlZR0Q5TWNYQVp3T0RPTnZjSVRsNnhsWTJBWm11bE00azRjdVAtNFhiUGtfRVM0Z3BYNk5kSmVEN3Y3Qzh0Tk5Bb0E",
+  "title": "Badan Geologi Ingatkan Ancaman Lahar Hujan Gunung Talang, Material Longsor Masih Mengintai Solok - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQaVZXUGdjeTRnZ1VJMC03RWxEdVVHblowQUJPNXVaQUxpSUpuMmNVeFVjTTgyUUpFRUs2UjVSeDRPMnJBQWZvb0xfNHFHdG84UGhfOU5RNkxwZ0FLczkwcTVRdTBZWTlQQVcxcy12UmRDUmJxOGJXZTBYQ1JjNll2U3I0VHlZR0Q5TWNYQVp3T0RPTnZjSVRsNnhsWTJBWm11bE00azRjdVAtNFhiUGtfRVM0Z3BYNk5kSmVEN3Y3Qzh0Tk5Bb0E?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://regional.kompas.com",
+  "published_at": "2026-10-06T10:00:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-06T12:15:27.607Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.02",
+      "nama": "Kabupaten Solok",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.72",
+      "nama": "Kota Solok",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

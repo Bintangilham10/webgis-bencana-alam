@@ -1,0 +1,21 @@
+{
+  "guid": "CBMivwFBVV95cUxPRGlTc3NFbFhhVXZNV3JKWWlnWHFzdmVqbEhfaUVRRUNtQU1oM0ZBeWJULXUyVkpuaEJRdEZPcEdndTRXRDk4ZkhrSGRPS3ZjVU9qTlJFcnk2N2hsQ2xZOXhIMWgzUy1zZnE0LVEtZmxxdFdTNERrTlRlR3lqbXR6ZzdQZEdRdXIxdHpZdXRTcDVRS25PYXFXbEF3LUVLbUlkei10Uy1PdTlQX002QjV4TWhKV1lZRDBDYUVsRU42TQ",
+  "title": "BMKG Ingatkan Potensi Tanah Longsor di Sejumlah Wilayah di Kepulauan Nias - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRGlTc3NFbFhhVXZNV3JKWWlnWHFzdmVqbEhfaUVRRUNtQU1oM0ZBeWJULXUyVkpuaEJRdEZPcEdndTRXRDk4ZkhrSGRPS3ZjVU9qTlJFcnk2N2hsQ2xZOXhIMWgzUy1zZnE0LVEtZmxxdFdTNERrTlRlR3lqbXR6ZzdQZEdRdXIxdHpZdXRTcDVRS25PYXFXbEF3LUVLbUlkei10Uy1PdTlQX002QjV4TWhKV1lZRDBDYUVsRU42TQ?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-10-06T07:37:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-06T12:15:27.607Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "12.04",
+      "nama": "Kabupaten Nias",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

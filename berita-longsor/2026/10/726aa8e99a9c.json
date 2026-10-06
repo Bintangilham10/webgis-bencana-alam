@@ -1,0 +1,36 @@
+{
+  "guid": "CBMi7wFBVV95cUxNR3dhSXU5bXpsbGsxaXF3djNlSW5vWE9MU19ZeDdzMW9ERm1oQlR0OC03Q05rMWwwTHAtQlpINUU2RHdKRGlaQ3NTekdMNWV6U2o1eVJOY0tjX2ZIeWxtYU9SMVZqRzVkRGdid25rOGJUT0c4NEFXZk42alk1YmlPSHVzMXRodDNiaFluOFhyMXBwVFpiaVZ3cXBLQy1lR2NSeDljbG5XNko1b1BLdjNGRUQtS0xtcUtSWURtenNtdDBrNUhrSUlVNE8xNC1Zci1qbjNYMkVHZXdHa0FsczJ0TEdLd21lcTZlaG9fc1lfWQ",
+  "title": "Setahun Setengah Dibiarkan, Tebing Jalur Bandung-Cirebon Kembali Longsor, Pemotor Jadi Korban, Pemdes Ciptasari Minta Perbaikan Permanen - Tahu Ekspres",
+  "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNR3dhSXU5bXpsbGsxaXF3djNlSW5vWE9MU19ZeDdzMW9ERm1oQlR0OC03Q05rMWwwTHAtQlpINUU2RHdKRGlaQ3NTekdMNWV6U2o1eVJOY0tjX2ZIeWxtYU9SMVZqRzVkRGdid25rOGJUT0c4NEFXZk42alk1YmlPSHVzMXRodDNiaFluOFhyMXBwVFpiaVZ3cXBLQy1lR2NSeDljbG5XNko1b1BLdjNGRUQtS0xtcUtSWURtenNtdDBrNUhrSUlVNE8xNC1Zci1qbjNYMkVHZXdHa0FsczJ0TEdLd21lcTZlaG9fc1lfWQ?oc=5",
+  "source": "Tahu Ekspres",
+  "source_url": "https://tahuekspres.com",
+  "published_at": "2026-10-06T07:26:29.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-06T12:15:27.607Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.09",
+      "nama": "Kabupaten Cirebon",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.74",
+      "nama": "Kota Cirebon",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
