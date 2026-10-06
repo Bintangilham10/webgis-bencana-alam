@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-06T04:15:28.358Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        104.8038839316,
+        -2.9159472403
+      ]
+    },
+    "properties": {
+      "pkey": "399574",
+      "created_at": "2026-10-06T04:05:40.723Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "3189c463-d4fe-4b8d-85eb-35842f6ac7a5",
+      "image_url": null,
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 2,
+        "airQuality": 4
+      },
+      "tags": {
+        "city": "KOTA PALEMBANG",
+        "district_id": null,
+        "region_code": "1671",
+        "local_area_id": null,
+        "instance_region_code": "ID-SS"
+      },
+      "title": null,
+      "text": "KABUT SUDAH BERBULAN BULAN DENGAN INDEKS KUALITAS UDARA YANG SUDAH SANGAT BERBAHAYA DI ANGKA 1300+++, BANYAK KORBAN BERJATUHAN",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
