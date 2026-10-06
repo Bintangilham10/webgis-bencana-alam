@@ -10,6 +10,9 @@ server/data/raw/
 # Hasil build frontend
 web/dist/
 
+# Unduhan mentah untuk tekstur bumi halaman depan (bisa diunduh ulang)
+web/scripts/.cache-globe/
+
 # Snapshot halaman dari alat uji browser (playwright-cli)
 .playwright-cli/
 
