@@ -1,0 +1,52 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-06T15:30:40.302Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.5985056619,
+        -3.2721779262
+      ]
+    },
+    "properties": {
+      "pkey": "399586",
+      "created_at": "2026-10-06T14:21:31.943Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "9f941565-a333-46d7-b0db-8da212c46aef",
+      "image_url": "https://images.petabencana.id/9f941565-a333-46d7-b0db-8da212c46aef.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "points": 1,
+        "fireRadius": {
+          "lat": -3.272220771572762,
+          "lng": 114.59778146545455
+        },
+        "report_type": "fire",
+        "fireDistance": 80.53682876339175,
+        "fireLocation": {
+          "lat": -3.2721779261971733,
+          "lng": 114.59850566188408
+        },
+        "personLocation": {
+          "lat": -3.271992527058927,
+          "lng": 114.59828246668917
+        }
+      },
+      "tags": {
+        "city": "BARITO KUALA",
+        "district_id": null,
+        "region_code": "6304",
+        "local_area_id": null,
+        "instance_region_code": "ID-KS"
+      },
+      "title": null,
+      "text": "Kebakaran Lahan (Karhutla) Di Jalan Trans Kalimantan Komplek Handil Bakti Indah Kab. Batola.",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
