@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-06T11:45:29.186Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.8668022209,
+        -6.7978494
+      ]
+    },
+    "properties": {
+      "pkey": "399581",
+      "created_at": "2026-10-06T11:35:04.235Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "7a08f71c-c174-4aeb-9f0a-bf237406512d",
+      "image_url": "https://images.petabencana.id/7a08f71c-c174-4aeb-9f0a-bf237406512d.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 101.25444094499112,
+        "fireLocation": {
+          "lat": "-6.7978494",
+          "lng": 110.866802220891
+        },
+        "personLocation": {
+          "lng": 110.86755499483701,
+          "lat": -6.797977885471312
+        },
+        "fireRadius": {
+          "lng": 110.86589026982296,
+          "lat": -6.797945280694947
+        }
+      },
+      "tags": {
+        "city": "KUDUS",
+        "district_id": null,
+        "region_code": "3319",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Kebakaran melanda lantai tiga sebuah bangunan di Kelurahan Wergu Wetan, Kecamatan Kudus Kota, Kabupaten Kudus, Jawa Tengah pada Selas",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
