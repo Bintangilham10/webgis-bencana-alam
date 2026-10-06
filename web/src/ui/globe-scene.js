@@ -3,6 +3,7 @@ import { GLOBE_TIERS } from '../lib/globe-tiers.js';
 import { easeOutCubic, prefersReducedMotion, tween } from '../lib/motion.js';
 import { depthColor, VOLCANO_LEVELS } from '../lib/symbology.js';
 import { cssVar, currentTheme, onThemeChange } from '../lib/theme.js';
+import { createOrbits } from './globe-orbits.js';
 
 // Latar halaman depan "Atlas alam": bumi besar yang hanya terlihat lengkungnya di bawah
 // hero, seperti cakrawala dilihat dari orbit. Permukaannya datar dengan warna yang
@@ -16,7 +17,8 @@ import { cssVar, currentTheme, onThemeChange } from '../lib/theme.js';
 // Gunung api Waspada ke atas berdiri sebagai kerucut, gempa terkini sebagai cincin yang
 // membesar. Bumi berayun pelan di sekitar Indonesia; menggulir memutarnya sedikit dan
 // menurunkan cakrawala supaya bagian berisi teks tetap lega. Pengunjung bisa memutarnya
-// sendiri dengan menahan dan menggeser.
+// sendiri dengan menahan dan menggeser. Di atasnya satelit GPM dan Himawari-9 di orbit 3D
+// sungguhan (ui/globe-orbits.js); pita sapuan GPM digambar di shader permukaan ini.
 const RAD = Math.PI / 180;
 const ASSETS = '/images/landing/bumi/';
 // Wilayah rinci yang selalu terlihat di cakrawala; di luar itu tekstur seluruh bumi.
@@ -80,6 +82,11 @@ const SURFACE_FS = `uniform sampler2D uRegion, uWorld, uSeaW, uSeaI;
   uniform vec3 uSea[4], uIdn[3], uRest, uShade, uFogCol;
   uniform float uShadeAmt, uFogAmt;
   uniform vec3 uSun;
+  // Pita sapuan GPM (ui/globe-orbits.js): normal bidang orbit, titik di bawah satelit, arah
+  // terbangnya; uSwath = setengah lebar GMI dan DPR (radian), panjang jejak (radian), kekuatan.
+  uniform vec3 uOrbN, uOrbS, uOrbF, uSwathCol, uDprCol, uTrackCol;
+  uniform vec4 uSwath;
+  uniform vec2 uSwathA; // kepekatan pita GMI dan DPR (per tema)
   ${INTRO_GLSL}
   varying vec3 vDir; varying vec3 vN;
   float aaStep(float v, float e) { return clamp((v - e) / max(fwidth(v), 1e-4) + 0.5, 0.0, 1.0); }
@@ -112,6 +119,27 @@ const SURFACE_FS = `uniform sampler2D uRegion, uWorld, uSeaW, uSeaI;
     sea = mix(sea, uSea[3], aaStep(sl, 0.035));
     vec3 green = mix(mix(uIdn[0], uIdn[1], aaStep(elev, 400.0)), uIdn[2], aaStep(elev, 1500.0));
     vec3 c = mix(sea, mix(uRest, green, idnLand * reveal), land);
+    // Sapuan GPM digambar sebelum cahaya dan kabut supaya menyatu dengan peta.
+    if (uSwath.w > 0.0) {
+      float cr = asin(clamp(dot(d, uOrbN), -1.0, 1.0));
+      vec3 pp = d - uOrbN * dot(d, uOrbN);
+      float al = atan(dot(pp, uOrbF), dot(pp, uOrbS));
+      // Ujung jejak tanpa antialias: atan melompat di sisi seberang bumi.
+      float tail = step(-uSwath.z, al) * step(al, 0.0);
+      float older = step(al, -uSwath.z * 0.5);
+      float gmi = 1.0 - aaStep(abs(cr), uSwath.x);
+      float dpr = 1.0 - aaStep(abs(cr), uSwath.y);
+      // Pita GMI lebar dan jalur radar DPR di tengahnya, dua warna rata; separuh yang lebih
+      // lama lebih pucat.
+      float strength = tail * mix(1.0, 0.55, older) * uSwath.w;
+      c = mix(c, uSwathCol, gmi * uSwathA.x * strength);
+      c = mix(c, uDprCol, dpr * uSwathA.y * strength);
+      // Jejak tanah dan titik tepat di bawah satelit (lingkaran kecil dengan titik tengah).
+      float track = (1.0 - clamp(abs(cr) / max(fwidth(cr), 1e-6) - 0.4, 0.0, 1.0)) * tail;
+      float rr = length(d - uOrbS);
+      float pip = max(1.0 - clamp(abs(rr - 0.012) / max(fwidth(rr), 1e-6) - 0.4, 0.0, 1.0), 1.0 - aaStep(rr, 0.0035));
+      c = mix(c, uTrackCol, max(track * 0.7, pip * 0.9) * uSwath.w);
+    }
     vec3 n = normalize(vN);
     float q = floor(clamp((dot(n, uSun) + 0.2) / 1.1, 0.0, 0.9999) * 4.0) / 3.0;
     c = mix(c, uShade, (1.0 - q) * uShadeAmt);
@@ -158,6 +186,27 @@ const RING_VS = `attribute vec3 aDir; attribute vec3 aColor; attribute float aM;
 const RING_FS = `varying vec3 vColor; varying float vA;
   void main() {
     gl_FragColor = vec4(vColor, vA);
+    #include <colorspace_fragment>
+  }`;
+// Pita atmosfer 9 px dan garis tepi 1 px di luar bola, satu warna rata. Digambar di bidang
+// cakrawala (z = 0) supaya orbit di depan bumi lewat di depannya dan yang di belakang tertutup.
+const BAND_VS = `varying vec2 vP;
+  void main() {
+    vP = position.xy;
+    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+  }`;
+const BAND_FS = `uniform vec3 uAtmo, uRim;
+  uniform float uPx, uShow;
+  varying vec2 vP;
+  void main() {
+    float r = length(vP);
+    if (r < 1.0) discard;
+    float aa = max(fwidth(r), 1e-6);
+    float band = 1.0 - clamp((r - (1.0 + 9.0 * uPx)) / aa + 0.5, 0.0, 1.0);
+    float rim = clamp(1.0 - abs(r - (1.0 + 0.5 * uPx)) / aa, 0.0, 1.0);
+    float a = max(band, rim) * uShow;
+    if (a < 0.003) discard;
+    gl_FragColor = vec4(mix(uAtmo, uRim, rim), a);
     #include <colorspace_fragment>
   }`;
 
@@ -220,12 +269,14 @@ function buildData(small) {
   });
 }
 
-// box: wadah latar yang menempel; canvas: kanvas WebGL; marks: kanvas 2D untuk pita
-// atmosfer dan garis tepi bola; root: elemen gulir halaman depan.
+// box: wadah latar yang menempel; canvas: kanvas WebGL; marks: kanvas 2D untuk keterangan
+// satelit; root: elemen gulir halaman depan.
 export function createGlobeScene({ box, canvas, marks, root }) {
   const reduced = prefersReducedMotion();
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'low-power' });
   renderer.setClearColor(0x000000, 0);
+  // Garis orbit dipotong di bidang cakrawala (ui/globe-orbits.js).
+  renderer.localClippingEnabled = true;
   const aniso = Math.min(8, renderer.capabilities.getMaxAnisotropy());
   const mctx = marks.getContext('2d');
 
@@ -251,13 +302,31 @@ export function createGlobeScene({ box, canvas, marks, root }) {
     uFogAmt: { value: 0 },
     uSun: { value: SUN },
     uIntro: { value: reduced ? 1 : 0 },
+    uOrbN: { value: new THREE.Vector3(0, 1, 0) },
+    uOrbS: { value: new THREE.Vector3(0, 0, 1) },
+    uOrbF: { value: new THREE.Vector3(1, 0, 0) },
+    uSwathCol: { value: black() },
+    uDprCol: { value: black() },
+    uSwathA: { value: new THREE.Vector2(0.3, 0.3) },
+    uTrackCol: { value: black() },
+    uSwath: { value: new THREE.Vector4() },
   };
   const surface = mesh(new THREE.SphereGeometry(1, 320, 220), new THREE.ShaderMaterial({ vertexShader: SURFACE_VS, fragmentShader: SURFACE_FS, uniforms: u }));
   surface.visible = false;
   group.add(surface);
+  const bandU = { uAtmo: { value: black() }, uRim: { value: black() }, uPx: { value: 0.001 }, uShow: { value: 0 } };
+  const band = mesh(new THREE.PlaneGeometry(2.1, 2.1), new THREE.ShaderMaterial({ vertexShader: BAND_VS, fragmentShader: BAND_FS, uniforms: bandU, transparent: true }));
+  band.renderOrder = 1;
+  band.visible = false;
+  scene.add(band);
+  const orbits = createOrbits({ scene, group, sun: SUN, uniforms: u, reduced });
 
   // ---------- Warna per tema ----------
-  let rim = { atmo: '#000', rim: '#000' };
+  let ink = null;
+  const withAlpha = (hex, a) => {
+    const n = Number.parseInt(hex.replace('#', ''), 16) || 0;
+    return `rgb(${(n >> 16) & 255} ${(n >> 8) & 255} ${n & 255} / ${a})`;
+  };
   function applyTheme() {
     const p = PALETTE[currentTheme()];
     p.sea.forEach((hex, i) => u.uSea.value[i].set(hex));
@@ -267,7 +336,17 @@ export function createGlobeScene({ box, canvas, marks, root }) {
     u.uShadeAmt.value = p.shade[1];
     u.uFogAmt.value = p.fog;
     u.uFogCol.value.set(cssVar('--lp-bg', root) || '#0e1013');
-    rim = { atmo: cssVar('--lp-globe-atmo', root), rim: cssVar('--lp-globe-rim', root) };
+    bandU.uAtmo.value.set(cssVar('--lp-globe-atmo', root) || '#16223a');
+    bandU.uRim.value.set(cssVar('--lp-globe-rim', root) || '#2a3a58');
+    orbits.applyTheme(currentTheme());
+    ink = {
+      ink: cssVar('--ink', root),
+      ink2: cssVar('--ink-2', root),
+      ink3: cssVar('--ink-3', root),
+      halo: withAlpha(cssVar('--lp-bg', root) || '#0e1013', 0.9),
+      font: cssVar('--font', root) || 'sans-serif',
+      mono: cssVar('--mono', root) || 'monospace',
+    };
   }
   applyTheme();
 
@@ -311,6 +390,21 @@ export function createGlobeScene({ box, canvas, marks, root }) {
 
   // ---------- Ukuran dan posisi ----------
   let size = { w: 1, h: 1, dpr: 1 };
+  const radiusFor = (w) => (w < 760 ? w * 1.7 : w * 1.25);
+  // Teks dan mockup halaman yang tidak boleh tertimpa keterangan satelit; posisinya dibaca
+  // tiap bingkai karena laptop di tur fitur menempel saat digulir.
+  const BLOCK_SEL = 'h1, h2, h3, h4, p, li, figure, .lp-btn, .lp-nav, .lp-tablet, .lp-laptop, .lp-phone';
+  let blockEls = [];
+  function textBlocks() {
+    const origin = root.getBoundingClientRect();
+    const out = [];
+    for (const el of blockEls) {
+      const r = el.getBoundingClientRect();
+      if (r.bottom < origin.top || r.top > origin.bottom || !r.width) continue;
+      out.push({ x0: r.left - origin.left - 8, x1: r.right - origin.left + 8, y0: r.top - origin.top - 6, y1: r.bottom - origin.top + 6 });
+    }
+    return out;
+  }
   function layout() {
     const w = root.clientWidth;
     const h = root.clientHeight;
@@ -327,6 +421,8 @@ export function createGlobeScene({ box, canvas, marks, root }) {
     camera.right = w;
     camera.bottom = -h;
     camera.updateProjectionMatrix();
+    orbits.resize(size, radiusFor(w));
+    blockEls = [...root.querySelectorAll(BLOCK_SEL)].filter((el) => !el.closest('.lp-globe'));
     invalidate();
   }
 
@@ -341,7 +437,7 @@ export function createGlobeScene({ box, canvas, marks, root }) {
   function placement() {
     const { w, h } = size;
     const narrow = w < 760;
-    const r = narrow ? w * 1.7 : w * 1.25;
+    const r = radiusFor(w);
     const cap = h * (narrow ? 0.22 : 0.42);
     const lowCap = h * (narrow ? 0.1 : 0.13);
     const sink = smooth((root.scrollTop - h * 0.2) / (h * 0.9));
@@ -349,10 +445,10 @@ export function createGlobeScene({ box, canvas, marks, root }) {
     const kAt = mix(1 - (cap * 0.5) / r, 1 - (lowCap * 0.55) / r, sink);
     const rise = 1 - easeOutCubic(clamp01(intro * 1.6));
     const cy = h - c + r + rise * h * 0.45;
-    // Bujur di tengah: berayun ±18° tiap 90 detik di sekitar Indonesia, gulir memutarnya
-    // sampai 15°, lalu ditambah putaran dari menggeser.
+    // Bujur di tengah: berayun ±18° tiap 90 detik di sekitar Indonesia (mulai ke timur, ke
+    // arah Himawari-9), gulir memutarnya sampai 15°, lalu ditambah putaran dari menggeser.
     const sway = reduced ? 0 : 18 * Math.sin((swayT * Math.PI * 2) / 90);
-    const lon = 118 - sway - Math.min(15, root.scrollTop * 0.006) + rise * 60 + drag.lon;
+    const lon = 118 + sway - Math.min(15, root.scrollTop * 0.006) + rise * 60 + drag.lon;
     const lat0 = -2 - Math.asin(Math.min(0.999, kAt)) / RAD + drag.lat;
     return { cx: w / 2, cy, r, lon, lat0, show: clamp01(intro * 3) };
   }
@@ -365,34 +461,31 @@ export function createGlobeScene({ box, canvas, marks, root }) {
   let lastDraw = 0;
   let dirty = true;
   let lastTick = 0;
+  let lastRender = 0;
   let lastL = null;
   const t0 = performance.now();
 
   function render(now) {
     const t = reduced ? 6 : (now - t0) / 1000;
+    const dt = lastRender ? Math.min(0.1, (now - lastRender) / 1000) : 0;
+    lastRender = now;
     const L = placement();
     lastL = L;
     group.position.set(L.cx, -L.cy, 0);
     group.scale.setScalar(L.r);
     group.rotation.set(L.lat0 * RAD, -L.lon * RAD, 0);
+    band.position.set(L.cx, -L.cy, 0);
+    band.scale.setScalar(L.r);
+    bandU.uPx.value = 1 / L.r;
+    bandU.uShow.value = L.show;
     ringTime.value = t;
     const scale = Math.min(1.5, 430 / L.r);
     for (const m of markers) m.material.uniforms.uScale.value = scale;
+    const blocks = textBlocks();
+    orbits.update(t, dt, L, size, intro, blocks);
     renderer.render(scene, camera);
-    // Pita atmosfer satu warna dan garis tepi tipis, tanpa cahaya berpendar.
     mctx.clearRect(0, 0, size.w, size.h);
-    mctx.globalAlpha = L.show;
-    mctx.strokeStyle = rim.atmo;
-    mctx.lineWidth = 9;
-    mctx.beginPath();
-    mctx.arc(L.cx, L.cy, L.r + 4.5, 0, Math.PI * 2);
-    mctx.stroke();
-    mctx.strokeStyle = rim.rim;
-    mctx.lineWidth = 1;
-    mctx.beginPath();
-    mctx.arc(L.cx, L.cy, L.r + 0.5, 0, Math.PI * 2);
-    mctx.stroke();
-    mctx.globalAlpha = 1;
+    orbits.drawLabels(mctx, size, intro, ink, blocks);
   }
 
   function tick(now) {
@@ -503,6 +596,7 @@ export function createGlobeScene({ box, canvas, marks, root }) {
       u.uSeaW.value = seaW;
       u.uSeaI.value = seaI;
       surface.visible = true;
+      band.visible = true;
       ready = true;
       box.classList.add('is-ready');
       startIntro();
