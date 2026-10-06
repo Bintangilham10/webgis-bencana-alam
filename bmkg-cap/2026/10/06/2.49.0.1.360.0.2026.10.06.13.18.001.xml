@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.06.13.18.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-06T18:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-06T19:00:00+07:00</effective>
+    <expires>2026-10-06T21:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Lampung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 06 October 2026, 19:00 WIB di sebagian wilayah Lampung, khususnya di SUKAU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 06 October 2026, 21:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CLG/2026/10/06/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Lampung</areaDesc>
+      <polygon>-4.917,104.149 -4.925,104.143 -4.922,104.132 -4.937,104.103 -4.951,104.104 -4.961,104.086 -4.979,104.092 -4.998,104.087 -5.010,104.071 -4.993,104.039 -4.967,104.024 -4.965,104.019 -4.972,104.003 -4.969,103.991 -4.976,103.981 -5.001,103.979 -4.989,103.961 -4.958,103.975 -4.938,103.967 -4.910,103.972 -4.904,104.044 -4.894,104.054 -4.886,104.054 -4.886,104.060 -4.889,104.065 -4.901,104.070 -4.920,104.109 -4.913,104.135 -4.917,104.149</polygon>
+    </area>
+  </info>
+</alert>
