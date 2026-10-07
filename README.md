@@ -308,7 +308,7 @@ TEST_DATABASE_URL=postgres://sigap:sigap@localhost:5433/sigap_test npm test
 
 In PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/sigap_test"; npm test`
 
-Current counts: 86 server tests (with the integration database), 46 recorder tests, and 22 research tests. One research test reproduces the worked example of the EDuMaP paper.
+Current counts: 87 server tests (with the integration database), 55 recorder tests, and 22 research tests. One research test reproduces the worked example of the EDuMaP paper.
 
 </details>
 
