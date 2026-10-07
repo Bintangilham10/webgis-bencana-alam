@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.07.11.35.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-07T16:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-07T16:30:00+07:00</effective>
+    <expires>2026-10-07T18:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 07 October 2026, 16:30 WIB di sebagian wilayah Jawa Timur, khususnya di KEDUNGPRING, LAWANG, SUGIO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 October 2026, 18:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/10/07/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.867,112.773 -7.881,112.755 -7.885,112.754 -7.896,112.736 -7.894,112.712 -7.890,112.707 -7.883,112.709 -7.880,112.715 -7.873,112.715 -7.870,112.711 -7.876,112.700 -7.867,112.688 -7.837,112.656 -7.824,112.648 -7.818,112.650 -7.804,112.624 -7.794,112.615 -7.788,112.616 -7.797,112.653 -7.805,112.661 -7.815,112.700 -7.821,112.706 -7.821,112.734 -7.828,112.736 -7.835,112.734 -7.845,112.740 -7.859,112.760 -7.865,112.761 -7.867,112.773</polygon>
+      <polygon>-7.144,112.233 -7.160,112.234 -7.164,112.245 -7.178,112.239 -7.217,112.240 -7.249,112.231 -7.240,112.213 -7.228,112.209 -7.232,112.200 -7.230,112.179 -7.217,112.168 -7.200,112.160 -7.200,112.166 -7.180,112.171 -7.168,112.166 -7.139,112.170 -7.133,112.167 -7.133,112.203 -7.144,112.233</polygon>
+      <polygon>-7.124,112.314 -7.147,112.323 -7.152,112.321 -7.157,112.316 -7.177,112.316 -7.192,112.309 -7.194,112.311 -7.205,112.309 -7.225,112.298 -7.217,112.287 -7.216,112.275 -7.226,112.266 -7.245,112.264 -7.245,112.243 -7.248,112.240 -7.249,112.231 -7.217,112.240 -7.178,112.239 -7.164,112.245 -7.160,112.234 -7.144,112.233 -7.142,112.248 -7.135,112.253 -7.136,112.268 -7.141,112.279 -7.127,112.287 -7.126,112.295 -7.131,112.296 -7.132,112.299 -7.124,112.314</polygon>
+    </area>
+  </info>
+</alert>
