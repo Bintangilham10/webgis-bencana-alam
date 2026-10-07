@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiqgFBVV95cUxPV184Y2tqaUNPVDZiTm5CWkxwNDl6Zi1uaUtVU2tYYlhiMlB0M3I1U1dkS2RnZTBPdUZLRndadUhHQzE1ZFpDOVpBdWRQd0ZzVmtKRGdwdWk0NFBPWW5qWS0xSXd1ZjZoVkFma014QlM5WnFQbl9pWC1yZ1B4V0xIeVFvWFAydk9xZWRHTHkzVVN2YWdNY2kxOFJrTGF1U09qYWtud0gta2VmUQ",
+  "title": "Dua Pekerja di Watukumpul Pemalang Tewas Tertimbun Longsor Fondasi Rumah - Radar CBS",
+  "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPV184Y2tqaUNPVDZiTm5CWkxwNDl6Zi1uaUtVU2tYYlhiMlB0M3I1U1dkS2RnZTBPdUZLRndadUhHQzE1ZFpDOVpBdWRQd0ZzVmtKRGdwdWk0NFBPWW5qWS0xSXd1ZjZoVkFma014QlM5WnFQbl9pWC1yZ1B4V0xIeVFvWFAydk9xZWRHTHkzVVN2YWdNY2kxOFJrTGF1U09qYWtud0gta2VmUQ?oc=5",
+  "source": "Radar CBS",
+  "source_url": "https://radarcbs.com",
+  "published_at": "2026-10-07T00:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-07T00:37:12.753Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.27",
+      "nama": "Kabupaten Pemalang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
