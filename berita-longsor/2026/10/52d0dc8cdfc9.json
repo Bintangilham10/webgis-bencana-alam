@@ -1,0 +1,26 @@
+{
+  "guid": "CBMidEFVX3lxTE1RbkRIS1lBUWpUS1dQRlhaVW9BX2xnRktSaDYxcE8yTHdRMXI2T0k5Rm5sNnRsMmZWMGl3ZlY1Ym5vZ0hrbE5ZZ0N6NDY0WW9SeTJCeHVValR1VVJxdmhqSklzbDJlYmpielZ6SHpUb25XWmdL",
+  "title": "BNPB: Dua Korban Longsor Pekalongan Meninggal - Radio DMS Ambon",
+  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1RbkRIS1lBUWpUS1dQRlhaVW9BX2xnRktSaDYxcE8yTHdRMXI2T0k5Rm5sNnRsMmZWMGl3ZlY1Ym5vZ0hrbE5ZZ0N6NDY0WW9SeTJCeHVValR1VVJxdmhqSklzbDJlYmpielZ6SHpUb25XWmdL?oc=5",
+  "source": "Radio DMS Ambon",
+  "source_url": "https://radiodms.com",
+  "published_at": "2026-10-07T04:56:49.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-07T10:00:43.189Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.26",
+      "nama": "Kabupaten Pekalongan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.75",
+      "nama": "Kota Pekalongan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

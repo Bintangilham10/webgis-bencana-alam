@@ -1,0 +1,23 @@
+{
+  "guid": "CBMi0gFBVV95cUxPRVdsX1pta0VoTExzZlhqTUxiNjd5QlBjcl9pYnJqSklJYzhTZURKbzFlOVdxVE1oZkVkSEJNOUNPNzRva2VnaURyYWxOX0lfT0h0Z2d5MTRQaS1hckhzaERxQ215TXBwMGhJVHo0bG9DMEIwT3NhenlDbTNnZC1YR0h6dnpGSEhiSnpjUEh6NkYyR1pGUEZBRUhVbC03eWl6b3EtN2M5Znk0WEZDb3VVZjYwcmdmWE0xVEw3UGYtVGJWdm9JeEUxbU5QWEJ4ZWtHSUE",
+  "title": "Daftar Lokasi di Jambi Rawan Longsor, Banjir, Cuaca Ekstrem saat Musim Hujan Oktober-November - Tribunjambi.com",
+  "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPRVdsX1pta0VoTExzZlhqTUxiNjd5QlBjcl9pYnJqSklJYzhTZURKbzFlOVdxVE1oZkVkSEJNOUNPNzRva2VnaURyYWxOX0lfT0h0Z2d5MTRQaS1hckhzaERxQ215TXBwMGhJVHo0bG9DMEIwT3NhenlDbTNnZC1YR0h6dnpGSEhiSnpjUEh6NkYyR1pGUEZBRUhVbC03eWl6b3EtN2M5Znk0WEZDb3VVZjYwcmdmWE0xVEw3UGYtVGJWdm9JeEUxbU5QWEJ4ZWtHSUE?oc=5",
+  "source": "Tribunjambi.com",
+  "source_url": "https://jambi.tribunnews.com",
+  "published_at": "2026-10-07T08:05:51.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-07T10:00:43.189Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}
