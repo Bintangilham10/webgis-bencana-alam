@@ -1,0 +1,31 @@
+{
+  "guid": "CBMimAFBVV95cUxNQXp1UTFDc1ZhMmpERVloWkx2Q3hyMjFBNnUzVlJIeUp5anBjeTlkSkt6SnUwWmZWZzRNR2R5bjNDUjhLM0h3QXE5UW5ILWRiamhfSEFZdFpBWGpNbWp6SzhuemFOYU9rc2NsVHBicWFUVlB3MC14azJ6M3hfVWdGWHJram9ERGpORjF2bHJ0eXJFdFdfR1FLNA",
+  "title": "TPT Jalan Sumedang-Bandung Longsor, Perbaikan Permanen Ditarget Januari 2027 - ruber.id",
+  "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNQXp1UTFDc1ZhMmpERVloWkx2Q3hyMjFBNnUzVlJIeUp5anBjeTlkSkt6SnUwWmZWZzRNR2R5bjNDUjhLM0h3QXE5UW5ILWRiamhfSEFZdFpBWGpNbWp6SzhuemFOYU9rc2NsVHBicWFUVlB3MC14azJ6M3hfVWdGWHJram9ERGpORjF2bHJ0eXJFdFdfR1FLNA?oc=5",
+  "source": "ruber.id",
+  "source_url": "https://ruber.id",
+  "published_at": "2026-10-07T13:08:25.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-07T19:30:34.311Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.11",
+      "nama": "Kabupaten Sumedang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
