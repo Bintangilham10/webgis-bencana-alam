@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.07.23.15.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-08T04:45:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-08T05:15:00+07:00</effective>
+    <expires>2026-10-08T07:15:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jambi</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 08 October 2026, 05:15 WIB di sebagian wilayah Jambi, khususnya di BANGKO  BARAT, RENAH PEMBARAP, TIANG PUMPUNG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 08 October 2026, 07:15 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJI/2026/10/08/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jambi</areaDesc>
+      <polygon>-2.178,102.302 -2.210,102.301 -2.212,102.330 -2.258,102.334 -2.258,102.327 -2.260,102.285 -2.240,102.248 -2.204,102.195 -2.127,102.143 -2.088,102.232 -2.140,102.236 -2.145,102.241 -2.145,102.282 -2.178,102.302</polygon>
+      <polygon>-1.994,102.047 -2.054,102.045 -2.080,102.101 -2.106,102.130 -2.127,102.143 -2.204,102.195 -2.229,102.162 -2.204,102.121 -2.207,102.098 -2.194,102.076 -2.195,102.017 -2.129,102.014 -2.103,102.007 -2.073,101.986 -2.039,101.974 -2.014,101.971 -1.991,101.978 -1.998,102.001 -1.991,102.033 -1.994,102.047</polygon>
+      <polygon>-2.258,102.327 -2.308,102.336 -2.346,102.327 -2.382,102.330 -2.386,102.301 -2.372,102.295 -2.352,102.295 -2.352,102.287 -2.365,102.257 -2.397,102.222 -2.410,102.183 -2.369,102.188 -2.291,102.169 -2.229,102.162 -2.204,102.195 -2.240,102.248 -2.260,102.285 -2.258,102.327</polygon>
+    </area>
+  </info>
+</alert>
