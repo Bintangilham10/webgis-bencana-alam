@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixgFBVV95cUxQM0k0bkg0MURBTHVERG84SWhGT0s2LW1nQnY2cThrQV85VFpPY3ZIR2hXcHhxM2pzOUJsUzlJRDE2Y190WEVrcjBKeVltR2NKZjg5OHhXZGIyR1lPNUw1OGc1RFl6azd2R1lYNS1qeVAyR3VTRUE4RWR6TnRIU0dVTjdrREtoNlh6YlVtanZ5a2hiUjNfV2FBbzllbzJPSVM2Q20zbDNQVDV3UjZFNEpqVXNiQjZnOXotLW5sVXgxaVhPcVdvZlE",
+  "title": "Musim Hujan Bandung, 8 Desa Rawan Longsor dan Banjir Bandang Jadi Perhatian - Pikiran Rakyat Koran",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQM0k0bkg0MURBTHVERG84SWhGT0s2LW1nQnY2cThrQV85VFpPY3ZIR2hXcHhxM2pzOUJsUzlJRDE2Y190WEVrcjBKeVltR2NKZjg5OHhXZGIyR1lPNUw1OGc1RFl6azd2R1lYNS1qeVAyR3VTRUE4RWR6TnRIU0dVTjdrREtoNlh6YlVtanZ5a2hiUjNfV2FBbzllbzJPSVM2Q20zbDNQVDV3UjZFNEpqVXNiQjZnOXotLW5sVXgxaVhPcVdvZlE?oc=5",
+  "source": "Pikiran Rakyat Koran",
+  "source_url": "https://koran.pikiran-rakyat.com",
+  "published_at": "2026-10-07T22:00:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-07T22:45:26.410Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

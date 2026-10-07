@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-07T22:45:26.410Z",
-  "hash": "38fd6bd606fe",
+  "captured_at": "2026-10-07T22:45:26.410Z",
+  "source_url": "https://magma.esdm.go.id/v1/gunung-api/tingkat-aktivitas",
   "volcanoes": [
     {
       "name": "Merapi",
