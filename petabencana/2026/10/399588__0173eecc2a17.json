@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-07T21:45:24.860Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        107.0046141257,
+        -6.1827618325
+      ]
+    },
+    "properties": {
+      "pkey": "399588",
+      "created_at": "2026-10-07T21:34:32.842Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "d6462c31-5d48-4ff6-9339-b27dae4a5ddf",
+      "image_url": "https://images.petabencana.id/d6462c31-5d48-4ff6-9339-b27dae4a5ddf.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 80.06088454681655,
+        "fireLocation": {
+          "lng": 107.00461412565664,
+          "lat": -6.182761832508234
+        },
+        "personLocation": {
+          "lat": "-6.1827245",
+          "lng": "107.0053115"
+        },
+        "fireRadius": {
+          "lng": 107.00388992922223,
+          "lat": -6.182756499293305
+        }
+      },
+      "tags": {
+        "city": "BEKASI",
+        "district_id": null,
+        "region_code": "3216",
+        "local_area_id": null,
+        "instance_region_code": "ID-JB"
+      },
+      "title": null,
+      "text": "Kebakaran melanda area permukiman warga di Jalan Kaliabang Tengah Gg. Simbang, Kelurahan Kaliabang Tengah, Kecamatan Bekasi Utara",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
