@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-07T22:15:27.319Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        104.7561425968,
+        -2.9888725141
+      ]
+    },
+    "properties": {
+      "pkey": "399591",
+      "created_at": "2026-10-07T22:00:55.288Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "6e8d0afc-7ff4-4ada-ae89-d3cb98b12098",
+      "image_url": "https://images.petabencana.id/6e8d0afc-7ff4-4ada-ae89-d3cb98b12098.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 75.51825583214703,
+        "fireLocation": {
+          "lng": 104.7561425968197,
+          "lat": -2.9888725140884986
+        },
+        "personLocation": {
+          "lat": "-2.9888243",
+          "lng": "104.7568507"
+        },
+        "fireRadius": {
+          "lng": 104.75546668014874,
+          "lat": -2.9889475137753863
+        }
+      },
+      "tags": {
+        "city": "KOTA PALEMBANG",
+        "district_id": null,
+        "region_code": "1671",
+        "local_area_id": null,
+        "instance_region_code": "ID-SS"
+      },
+      "title": null,
+      "text": "Sebaran kabut asap pekat akibat kebakaran hutan dan lahan (karhutla) semakin mengganggu serta memicu keluhan sesak napas ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-07T22:15:27.319Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        103.9635108545,
+        -3.3930371
+      ]
+    },
+    "properties": {
+      "pkey": "399592",
+      "created_at": "2026-10-07T22:10:45.687Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "f484fab0-1537-47e5-8bba-8f5a0b0e4e9f",
+      "image_url": "https://images.petabencana.id/f484fab0-1537-47e5-8bba-8f5a0b0e4e9f.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 122.0456960712138,
+        "fireLocation": {
+          "lat": "-3.3930371",
+          "lng": 103.963510854495
+        },
+        "personLocation": {
+          "lng": 103.96419644841222,
+          "lat": -3.393026389973855
+        },
+        "fireRadius": {
+          "lng": 103.96247552181848,
+          "lat": -3.3934065959220163
+        }
+      },
+      "tags": {
+        "city": "MUARA ENIM",
+        "district_id": null,
+        "region_code": "1603",
+        "local_area_id": null,
+        "instance_region_code": "ID-SS"
+      },
+      "title": null,
+      "text": "Izin mohon bantuan dan solusi ny untuk pemerintah kabupaten PALI ,Lokasi di talang bulang hari ini sudah 50hektar lebih\nlahan terbakar ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
