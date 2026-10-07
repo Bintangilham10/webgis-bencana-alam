@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi2AFBVV95cUxOR21oS0pNVENZZkp3MDluN25faTdDWlBDaC0tSFlKbHUtYXU0Z284NFZBVXlRT3R6ZXR3dmVCMkFfOWpsWlpneWdCVTZGZWFpdm81MTJJa0FxZjhZV2Mzd09oekdMa2pRZ2owOVZOc1FFZkxwejVRN3BHSzI2Qk1oZ2M2ckp6Z3JFLWFkSFRKaXBPWXlHdHI0QzdDcUJJRGU4UV9OWWZjYVBmMEtndFRTTk9VQzNpM2wxQ3FxU3I5cUVrckE1bVdLR2w3elJMZzVwQUF4b0MyWnI",
+  "title": "HUJAN INTENSITAS TINGGI PICU TANAH LONGSOR DI GAYO LUES, AKSES JALAN DI DUA DESA TERDAMPAK - BADAN PENANGGULANGAN BENCANA ACEH",
+  "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOR21oS0pNVENZZkp3MDluN25faTdDWlBDaC0tSFlKbHUtYXU0Z284NFZBVXlRT3R6ZXR3dmVCMkFfOWpsWlpneWdCVTZGZWFpdm81MTJJa0FxZjhZV2Mzd09oekdMa2pRZ2owOVZOc1FFZkxwejVRN3BHSzI2Qk1oZ2M2ckp6Z3JFLWFkSFRKaXBPWXlHdHI0QzdDcUJJRGU4UV9OWWZjYVBmMEtndFRTTk9VQzNpM2wxQ3FxU3I5cUVrckE1bVdLR2w3elJMZzVwQUF4b0MyWnI?oc=5",
+  "source": "BADAN PENANGGULANGAN BENCANA ACEH",
+  "source_url": "https://bpba.acehprov.go.id",
+  "published_at": "2026-10-07T03:06:49.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-07T03:45:25.478Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.13",
+      "nama": "Kabupaten Gayo Lues",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

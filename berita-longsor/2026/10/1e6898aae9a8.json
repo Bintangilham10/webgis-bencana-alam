@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiogFBVV95cUxQTktTbU9lSDBjcVFhWTRSd3d4a2hIRjBqME1nTmZ2NlB0dTZRM2JPc0xRNEdtYXlrRE5zQWZ4cS05dncwMlA0QVl6ZUFVVDBPNDlDQ2pERmtGMm5ienBTTlpRellubXYzSS1ZRGRvR21lMnJWZ25XZ0NDRV9kdHQxYzFUZE9wRTVITTM2ZzZHOVp4eGhiMlA2U3VTcHE3T3ZXeEHSAacBQVVfeXFMT3V1SUpqQTNLQy1jZ2pIdmVmRDQwOFR1Qjd5b0c5OEt0UVY5SHkyZUc3Z040YXUybzFYcVBhaS1XUTg1NW8zTzdCYnk4X0NqcXozRXN4dWNIbXFKR3cxQVRUVTBRVk9DSDVsV1hfSGdxd0RJdzVIbXQ4Uk82Znk2dlZoRGNYMkhrdW5qQm51WjdSMjlTM1hEWU1SYWxSZFctREhZa1plTVk",
+  "title": "BNPB Sebut 2 Orang Tewas Tertimbun Tanah Longsor di Pekalongan - Kompas.tv",
+  "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTktTbU9lSDBjcVFhWTRSd3d4a2hIRjBqME1nTmZ2NlB0dTZRM2JPc0xRNEdtYXlrRE5zQWZ4cS05dncwMlA0QVl6ZUFVVDBPNDlDQ2pERmtGMm5ienBTTlpRellubXYzSS1ZRGRvR21lMnJWZ25XZ0NDRV9kdHQxYzFUZE9wRTVITTM2ZzZHOVp4eGhiMlA2U3VTcHE3T3ZXeEHSAacBQVVfeXFMT3V1SUpqQTNLQy1jZ2pIdmVmRDQwOFR1Qjd5b0c5OEt0UVY5SHkyZUc3Z040YXUybzFYcVBhaS1XUTg1NW8zTzdCYnk4X0NqcXozRXN4dWNIbXFKR3cxQVRUVTBRVk9DSDVsV1hfSGdxd0RJdzVIbXQ4Uk82Znk2dlZoRGNYMkhrdW5qQm51WjdSMjlTM1hEWU1SYWxSZFctREhZa1plTVk?oc=5",
+  "source": "Kompas.tv",
+  "source_url": "https://www.kompas.tv",
+  "published_at": "2026-10-07T03:25:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-07T03:45:25.478Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.26",
+      "nama": "Kabupaten Pekalongan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.75",
+      "nama": "Kota Pekalongan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMixgFBVV95cUxNMlVNSmc3ZDNtUjJHWHJJWWpsRWhicU9JVkFHa0FlUnZQOElTa0E5OW1VTHhDaUJjVEhJdDl4MEhmLXpvX1Z0b1dGQUFSeVpDQ3hpbEtQYXloSDNOTzRDV3h6R3FUUlBVU1hqbXlvOTVsaWdkaVN3bTVrVm54YldRTHFJOW03S3ZqQ2lLYW13VXFXdU0yM2FnTXRWdWVHR1lQRXp6YnE0WWJ2UVlmNFczNzBiTGxkUUtKRlZUV28yTVhZYzhOdEE",
+  "title": "Pemkab Sumedang dan BBPJN Percepat Penanganan Longsor TPT Jalan Nasional Ciptasari-Ciherang - Suara Pemerintah",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMlVNSmc3ZDNtUjJHWHJJWWpsRWhicU9JVkFHa0FlUnZQOElTa0E5OW1VTHhDaUJjVEhJdDl4MEhmLXpvX1Z0b1dGQUFSeVpDQ3hpbEtQYXloSDNOTzRDV3h6R3FUUlBVU1hqbXlvOTVsaWdkaVN3bTVrVm54YldRTHFJOW03S3ZqQ2lLYW13VXFXdU0yM2FnTXRWdWVHR1lQRXp6YnE0WWJ2UVlmNFczNzBiTGxkUUtKRlZUV28yTVhZYzhOdEE?oc=5",
+  "source": "Suara Pemerintah",
+  "source_url": "https://suarapemerintah.id",
+  "published_at": "2026-10-07T02:04:44.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-07T03:45:25.478Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.11",
+      "nama": "Kabupaten Sumedang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
