@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.07.16.35.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-07T21:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-07T21:20:00+07:00</effective>
+    <expires>2026-10-07T23:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 07 October 2026, 21:20 WIB di sebagian wilayah Jawa Timur, khususnya di NGRAHO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 October 2026, 23:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/10/07/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.205,111.567 -7.213,111.582 -7.217,111.612 -7.220,111.602 -7.230,111.592 -7.243,111.589 -7.255,111.594 -7.263,111.588 -7.267,111.583 -7.262,111.572 -7.264,111.568 -7.276,111.565 -7.291,111.569 -7.303,111.565 -7.309,111.553 -7.307,111.539 -7.301,111.534 -7.275,111.542 -7.268,111.535 -7.263,111.523 -7.275,111.510 -7.293,111.508 -7.300,111.513 -7.309,111.509 -7.307,111.498 -7.303,111.496 -7.297,111.484 -7.285,111.478 -7.273,111.480 -7.262,111.469 -7.256,111.473 -7.254,111.480 -7.260,111.490 -7.251,111.486 -7.243,111.488 -7.249,111.501 -7.240,111.513 -7.236,111.523 -7.227,111.528 -7.227,111.536 -7.223,111.542 -7.218,111.537 -7.215,111.539 -7.202,111.554 -7.207,111.562 -7.205,111.567</polygon>
+    </area>
+  </info>
+</alert>
