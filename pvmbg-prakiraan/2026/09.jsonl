@@ -998,3 +998,31 @@
 {"kode":"92.06","lat":-2.1869,"lon":133.1519,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:30:36.374Z"}
 {"kode":"92.07","lat":-2.6317,"lon":134.5671,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:30:36.374Z"}
 {"kode":"92.08","lat":-3.5201,"lon":134.3174,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:30:36.374Z"}
+{"kode":"92.11","lat":-1.5261,"lon":134.0727,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"92.12","lat":-1.2561,"lon":133.6593,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"93.01","lat":-7.8795,"lon":139.9958,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"93.02","lat":-6.0391,"lon":140.4303,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"93.03","lat":-6.3295,"lon":139.2884,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"93.04","lat":-5.5464,"lon":138.7988,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"94.01","lat":-3.3249,"lon":136.0073,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"94.02","lat":-3.4434,"lon":137.8751,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"94.03","lat":-3.7449,"lon":136.4278,"potensi":"Tinggi","zkgt":"Tinggi","zona":"004","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"94.04","lat":-4.5984,"lon":136.9584,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"94.05","lat":-3.6296,"lon":137.4856,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"94.06","lat":-4.0386,"lon":135.6557,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"94.07","lat":-3.5259,"lon":136.7193,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"94.08","lat":-4.1906,"lon":136.3675,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"95.01","lat":-4.1089,"lon":138.9441,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"95.02","lat":-4.5116,"lon":140.5219,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"95.03","lat":-4.4542,"lon":139.3915,"potensi":"Tinggi","zkgt":"Tinggi","zona":"004","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"95.04","lat":-3.4607,"lon":138.4498,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"95.05","lat":-3.5638,"lon":139.0789,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"95.06","lat":-3.8324,"lon":139.4051,"potensi":"Tinggi","zkgt":"Tinggi","zona":"004","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"95.07","lat":-3.9973,"lon":138.3493,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"95.08","lat":-4.4198,"lon":138.262,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"96.01","lat":-0.9344,"lon":132.0779,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"96.02","lat":-1.6636,"lon":132.1522,"potensi":"Rendah","zkgt":"Sangat Rendah","zona":"001","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"96.03","lat":-1.8724,"lon":130.0704,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"96.04","lat":-0.8491,"lon":132.854,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"96.05","lat":-1.4035,"lon":132.5677,"potensi":"Rendah","zkgt":"Rendah","zona":"002","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
+{"kode":"96.71","lat":-0.8608,"lon":131.3091,"potensi":"Menengah","zkgt":"Menengah","zona":"003","tahun_zkgt":0,"wilayah_zkgt":null,"n_poligon":1,"pembaca":2,"checked_at":"2026-10-07T05:45:25.323Z"}
