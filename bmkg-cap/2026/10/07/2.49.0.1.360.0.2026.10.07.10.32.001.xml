@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.07.10.32.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-07T17:25:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-07T17:30:00+07:00</effective>
+    <expires>2026-10-07T19:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 07 October 2026, 17:30 WIB di sebagian wilayah Jawa Barat, khususnya di BOJONGPICUNG, CIBEBER, RONGGA, SUKALUYU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 October 2026, 19:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/10/07/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.882,107.210 -6.886,107.208 -6.889,107.214 -6.897,107.215 -6.917,107.205 -6.943,107.215 -6.949,107.219 -6.964,107.196 -6.973,107.190 -6.961,107.175 -6.987,107.153 -7.000,107.130 -6.967,107.131 -6.948,107.124 -6.946,107.115 -6.948,107.110 -6.941,107.097 -6.944,107.090 -6.951,107.086 -6.956,107.089 -6.960,107.106 -6.978,107.097 -6.979,107.091 -6.975,107.081 -6.959,107.078 -6.951,107.067 -6.950,107.061 -6.953,107.058 -6.942,107.049 -6.909,107.047 -6.916,107.061 -6.911,107.091 -6.914,107.110 -6.900,107.110 -6.889,107.116 -6.891,107.125 -6.902,107.134 -6.896,107.147 -6.903,107.176 -6.900,107.187 -6.883,107.203 -6.882,107.210</polygon>
+      <polygon>-6.826,107.282 -6.830,107.287 -6.860,107.295 -6.879,107.291 -6.889,107.297 -6.897,107.314 -6.908,107.307 -6.911,107.294 -6.923,107.283 -6.929,107.250 -6.937,107.235 -6.943,107.215 -6.917,107.205 -6.897,107.215 -6.889,107.214 -6.886,107.208 -6.882,107.210 -6.873,107.212 -6.874,107.216 -6.863,107.232 -6.849,107.236 -6.852,107.252 -6.828,107.268 -6.820,107.263 -6.820,107.273 -6.826,107.282</polygon>
+      <polygon>-6.770,107.259 -6.774,107.261 -6.794,107.250 -6.803,107.250 -6.801,107.247 -6.810,107.243 -6.849,107.236 -6.863,107.232 -6.874,107.216 -6.873,107.212 -6.882,107.210 -6.883,107.203 -6.884,107.192 -6.875,107.178 -6.864,107.180 -6.857,107.188 -6.858,107.191 -6.848,107.197 -6.850,107.203 -6.844,107.207 -6.823,107.197 -6.819,107.214 -6.814,107.214 -6.808,107.207 -6.802,107.209 -6.791,107.227 -6.777,107.232 -6.766,107.249 -6.775,107.248 -6.770,107.259</polygon>
+      <polygon>-6.977,107.313 -7.002,107.310 -7.006,107.300 -7.016,107.293 -7.018,107.288 -7.005,107.270 -7.007,107.260 -7.014,107.252 -7.009,107.227 -7.017,107.221 -7.022,107.211 -7.011,107.206 -7.008,107.199 -7.018,107.194 -7.013,107.190 -6.997,107.186 -6.982,107.185 -6.973,107.190 -6.964,107.196 -6.949,107.219 -6.943,107.215 -6.937,107.235 -6.929,107.250 -6.923,107.283 -6.911,107.294 -6.908,107.307 -6.908,107.312 -6.919,107.323 -6.932,107.320 -6.957,107.301 -6.975,107.305 -6.977,107.313</polygon>
+    </area>
+  </info>
+</alert>
