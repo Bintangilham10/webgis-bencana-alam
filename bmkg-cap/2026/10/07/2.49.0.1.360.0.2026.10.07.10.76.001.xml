@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.07.10.76.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-07T17:18:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-07T17:50:00+08:00</effective>
+    <expires>2026-10-07T19:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 07 October 2026, 17:50 WITA di sebagian wilayah Sulawesi Barat, khususnya di TABULAHAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 October 2026, 19:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSK/2026/10/07/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Barat</areaDesc>
+      <polygon>-2.662,119.167 -2.660,119.183 -2.663,119.194 -2.676,119.206 -2.699,119.219 -2.712,119.233 -2.708,119.298 -2.729,119.305 -2.744,119.349 -2.747,119.377 -2.766,119.388 -2.772,119.396 -2.797,119.385 -2.822,119.393 -2.837,119.392 -2.857,119.364 -2.874,119.352 -2.879,119.293 -2.872,119.271 -2.857,119.261 -2.848,119.256 -2.822,119.258 -2.802,119.222 -2.799,119.198 -2.788,119.187 -2.787,119.171 -2.805,119.164 -2.805,119.154 -2.815,119.136 -2.815,119.123 -2.791,119.071 -2.791,119.057 -2.765,119.052 -2.745,119.042 -2.705,119.062 -2.697,119.082 -2.670,119.102 -2.663,119.112 -2.656,119.135 -2.668,119.143 -2.672,119.152 -2.671,119.161 -2.662,119.167</polygon>
+    </area>
+  </info>
+</alert>
