@@ -1,0 +1,26 @@
+{
+  "guid": "CBMinwFBVV95cUxQdmpEUVAyOGdsOVBocXlZQ3lWOWk0dmhWUkNpWnJPQ0RHWGFzY0NXaWM5eVZfRW0xWGdVYTgwb0ExbGNFaW1CVUpRWFVjeWlLSEVwUHpKcUNiMy1EQlBleWZLTTNjYzB3bTFxcUV3ek5DY1UyWVlwTDVCdW42NS1KbEpQOURYVWFqaGdaZWRZblB4RkJMME9iSzNfaDJiVDDSAZsBQVVfeXFMTTFPeG9OWjhpVmZESXVod3NHVXBxYllFa0d2X204bFhzNGdzS1QwV1BFU191OXl5TGJEMWk0M1AySzJZR1NESTk0Uy1OSUlYMGxhWVZHZTg4MHBBTlU3SEk5Z3p0YTBpR2xZV0NhWjRiM0ZIQUNMeGZVNmY4OGN4TDdiVFJ6UElGNU5OaFlmRk14eFJfNHBFQ3d2SXM",
+  "title": "2 Warga Pekalongan Tewas Tertimbun Longsor, Karhutla Landa Tiga Daerah - VOI.ID",
+  "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQdmpEUVAyOGdsOVBocXlZQ3lWOWk0dmhWUkNpWnJPQ0RHWGFzY0NXaWM5eVZfRW0xWGdVYTgwb0ExbGNFaW1CVUpRWFVjeWlLSEVwUHpKcUNiMy1EQlBleWZLTTNjYzB3bTFxcUV3ek5DY1UyWVlwTDVCdW42NS1KbEpQOURYVWFqaGdaZWRZblB4RkJMME9iSzNfaDJiVDDSAZsBQVVfeXFMTTFPeG9OWjhpVmZESXVod3NHVXBxYllFa0d2X204bFhzNGdzS1QwV1BFU191OXl5TGJEMWk0M1AySzJZR1NESTk0Uy1OSUlYMGxhWVZHZTg4MHBBTlU3SEk5Z3p0YTBpR2xZV0NhWjRiM0ZIQUNMeGZVNmY4OGN4TDdiVFJ6UElGNU5OaFlmRk14eFJfNHBFQ3d2SXM?oc=5",
+  "source": "VOI.ID",
+  "source_url": "https://voi.id",
+  "published_at": "2026-10-07T10:38:18.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-07T13:00:43.645Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.26",
+      "nama": "Kabupaten Pekalongan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.75",
+      "nama": "Kota Pekalongan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

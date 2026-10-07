@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqgFBVV95cUxNSDY4SE9iSE9MZjc0cDhfenIwOGNzS3dTQ0xmeWVYeDNfVEZDU2k3SHRfc1NDNTJtem05ZHFObUIyUExEZy11bkxjR1M3cEtfekF5UmFoaFZTSFdqbmgxellkMXpmcVNlLXJYbDNTNkdLcVNteW1IY1ZtMGpKNW1RX2ZqcTlZcWw0bkgzbU1mQkVNdEdBdTJaSVJYTDNfUEdtLVlDZW5XUjh1Z9IBrAFBVV95cUxPSG1DQXZMbEtnVjZhb2RvRXlDZXZfQUVyQ0wxbEU0Ym16RjdLLUF1alFlWnRfTVZJY1lHeDFyQzJ1SXhZSjNOc19aOUxqRF9TSGEya3RsanlJUjdJQkpHaTJNbVZtTFNuakphVkxDaHdmNmlPT1JGRWpjRWdHYmNRaHVmMkVBeEFSaVh6VzZCcC1uVExWTkZVSW1NQTRvQ3hYOVhwbGtmcGQ4U1Fh",
+  "title": "BPBD: 8 desa di Bandung rawan banjir dan longsor saat musim hujan - ANTARA News",
+  "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSDY4SE9iSE9MZjc0cDhfenIwOGNzS3dTQ0xmeWVYeDNfVEZDU2k3SHRfc1NDNTJtem05ZHFObUIyUExEZy11bkxjR1M3cEtfekF5UmFoaFZTSFdqbmgxellkMXpmcVNlLXJYbDNTNkdLcVNteW1IY1ZtMGpKNW1RX2ZqcTlZcWw0bkgzbU1mQkVNdEdBdTJaSVJYTDNfUEdtLVlDZW5XUjh1Z9IBrAFBVV95cUxPSG1DQXZMbEtnVjZhb2RvRXlDZXZfQUVyQ0wxbEU0Ym16RjdLLUF1alFlWnRfTVZJY1lHeDFyQzJ1SXhZSjNOc19aOUxqRF9TSGEya3RsanlJUjdJQkpHaTJNbVZtTFNuakphVkxDaHdmNmlPT1JGRWpjRWdHYmNRaHVmMkVBeEFSaVh6VzZCcC1uVExWTkZVSW1NQTRvQ3hYOVhwbGtmcGQ4U1Fh?oc=5",
+  "source": "ANTARA News",
+  "source_url": "https://www.antaranews.com",
+  "published_at": "2026-10-07T09:56:54.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-07T13:00:43.645Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

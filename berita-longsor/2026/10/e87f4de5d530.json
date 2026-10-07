@@ -1,0 +1,26 @@
+{
+  "guid": "CBMif0FVX3lxTE5QTFBxbHdQYnU5NW9EcHI3YUx3clF4aDF2UExUaHVTZEtQZWRBSk9iQm0zai1BYkZMcHNtaFVxUVJHSkZVM2dWSTlRdGU3TTY4dVM4NGl6WXFRam9GOW9kS2d4MFNKVERpQmhzWXBvaUJhWmwwemVnR1VFWDl1dzQ",
+  "title": "BPBD Bandung Petakan 8 Desa Rawan Banjir dan Longsor - VISI.NEWS",
+  "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5QTFBxbHdQYnU5NW9EcHI3YUx3clF4aDF2UExUaHVTZEtQZWRBSk9iQm0zai1BYkZMcHNtaFVxUVJHSkZVM2dWSTlRdGU3TTY4dVM4NGl6WXFRam9GOW9kS2d4MFNKVERpQmhzWXBvaUJhWmwwemVnR1VFWDl1dzQ?oc=5",
+  "source": "VISI.NEWS",
+  "source_url": "https://www.visi.news",
+  "published_at": "2026-10-07T10:01:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-07T13:00:43.645Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
