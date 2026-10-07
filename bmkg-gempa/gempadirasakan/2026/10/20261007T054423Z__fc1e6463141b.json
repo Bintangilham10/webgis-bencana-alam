@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-07T06:00:43.465Z",
+  "data": {
+    "Tanggal": "07 Okt 2026",
+    "Jam": "12:44:23 WIB",
+    "DateTime": "2026-10-07T05:44:23+00:00",
+    "Coordinates": "-0.88,134.16",
+    "Lintang": "0.88 LS",
+    "Bujur": "134.16 BT",
+    "Magnitude": "4.0",
+    "Kedalaman": "16 km",
+    "Wilayah": "Pusat gempa berada di laut 13 km Timur Manokwari",
+    "Dirasakan": "III Manokwari"
+  }
+}
