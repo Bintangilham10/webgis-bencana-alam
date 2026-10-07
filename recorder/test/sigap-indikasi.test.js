@@ -7,11 +7,13 @@ import { HttpError } from '../src/lib/http.js';
 import { MODEL_META_URL, rainBatchUrl } from '../src/lib/open-meteo-hujan.js';
 import { createArchive } from '../src/lib/store.js';
 import { RULES_VERSION } from '../src/lib/warning-rules.js';
-import { BUDGET_MS, MAX_RUNS, recordSigapIndikasi } from '../src/sources/sigap-indikasi.js';
+import { BUDGET_MS, MAX_RUNS, recordSigapIndikasi, SETTLE_MS } from '../src/sources/sigap-indikasi.js';
 
 // Siklus ECMWF 00Z 1 Okt 2026, tersedia 06:32 UTC (nilai asli meta.json Open-Meteo),
-// dan siklus 12Z berikutnya.
+// siklus 18Z sebelumnya, serta siklus 06Z dan 12Z berikutnya (tersedia ±6,5 jam setelah inisialisasi).
 const META_00Z = { last_run_initialisation_time: 1790812800, last_run_availability_time: 1790836340 };
+const META_18Z_LALU = { last_run_initialisation_time: 1790791200, last_run_availability_time: 1790814740 };
+const META_06Z = { last_run_initialisation_time: 1790834400, last_run_availability_time: 1790857940 };
 const META_12Z = { last_run_initialisation_time: 1790856000, last_run_availability_time: 1790879540 };
 const PAST = ['2026-09-28', '2026-09-29', '2026-09-30'];
 const DAYS = ['2026-10-01', '2026-10-02', '2026-10-03', '2026-10-04'];
@@ -66,7 +68,9 @@ beforeEach(async () => {
 });
 afterEach(() => rm(tmpDir, { recursive: true, force: true }));
 
-const NOW = '2026-10-01T06:45:00.000Z';
+// Run pertama yang boleh mengambil hujan: lebih dari SETTLE_MS setelah 00Z tersedia.
+const NOW = '2026-10-01T07:30:00.000Z';
+const LATER = '2026-10-01T07:45:00.000Z';
 const record = (http, { titik = TITIK, now = NOW, clock } = {}) =>
   recordSigapIndikasi({ archive, http, now, data: { titikPantau: titik }, ...(clock ? { clock } : {}) });
 const readCycle = (file = 'sigap-indikasi/2026/10/01/00Z.json') => archive.readJson(file);
@@ -116,7 +120,7 @@ describe('arsip indikasi SIGAP per siklus model', () => {
   test('siklus yang sama tidak direkam dua kali', async () => {
     await record(fakeHttp());
     const http = fakeHttp();
-    const again = await record(http, { now: '2026-10-01T07:00:00.000Z' });
+    const again = await record(http, { now: LATER });
     assert.match(again.skipped, /sudah direkam/);
     assert.deepEqual(http.calls, [MODEL_META_URL]);
   });
@@ -135,7 +139,7 @@ describe('arsip indikasi SIGAP per siklus model', () => {
 
     const http2 = fakeHttp({ onRain: () => (now += BUDGET_MS) });
     now = 10 * BUDGET_MS;
-    const second = await record(http2, { titik: TITIK_BANYAK, clock, now: '2026-10-01T07:00:00.000Z' });
+    const second = await record(http2, { titik: TITIK_BANYAK, clock, now: LATER });
     assert.equal(second.new, 1);
     assert.deepEqual(keysOf(http2.rainCalls()[0]).length, 3);
     const cycle = await readCycle();
@@ -151,7 +155,7 @@ describe('arsip indikasi SIGAP per siklus model', () => {
     assert.equal(first.new, 0);
     assert.match(first.errors[0], /3 titik gagal diambil \(HTTP 502/);
 
-    const second = await record(fakeHttp(), { titik: TITIK_BANYAK, now: '2026-10-01T07:00:00.000Z' });
+    const second = await record(fakeHttp(), { titik: TITIK_BANYAK, now: LATER });
     assert.equal(second.new, 1);
     const cycle = await readCycle();
     assert.equal(cycle.locations_missing, 0);
@@ -172,7 +176,7 @@ describe('arsip indikasi SIGAP per siklus model', () => {
 
   test('siklus baru terbit sebelum siklus lama lengkap: siklus lama disimpan apa adanya', async () => {
     await record(fakeHttp({ failKeys: new Set([KERING]) }), { titik: TITIK_BANYAK });
-    const result = await record(fakeHttp({ meta: META_12Z }), { titik: TITIK_BANYAK, now: '2026-10-01T19:00:00.000Z' });
+    const result = await record(fakeHttp({ meta: META_12Z }), { titik: TITIK_BANYAK, now: '2026-10-01T19:30:00.000Z' });
     assert.equal(result.new, 2);
     assert.match(result.errors[0], /siklus 2026-10-01T00:00:00.000Z disimpan dengan 3 titik tanpa hujan karena siklus baru terbit/);
     assert.equal((await readCycle()).locations_missing, 3);
@@ -188,6 +192,49 @@ describe('arsip indikasi SIGAP per siklus model', () => {
     assert.match(result.errors[0], /siklus model berganti/);
     assert.equal(await readCycle(), null);
     assert.equal(await archive.readText('sigap-indikasi/pending.json'), null);
+  });
+
+  test('hujan baru diambil setelah semua server Open-Meteo sempat memuat siklus', async () => {
+    const early = fakeHttp();
+    const result = await record(early, { now: new Date(Date.parse('2026-10-01T06:32:20Z') + SETTLE_MS - 60_000).toISOString() });
+    assert.match(result.skipped, /hujan diambil mulai 2026-10-01T07:17:20/);
+    assert.deepEqual(early.calls, [MODEL_META_URL]);
+    assert.equal((await record(fakeHttp())).new, 1);
+  });
+
+  test('siklus 06Z dan 18Z tidak direkam; cicilan 00Z yang belum lengkap disimpan apa adanya', async () => {
+    await record(fakeHttp({ failKeys: new Set([KERING]) }), { titik: TITIK_BANYAK });
+    const http = fakeHttp({ meta: META_06Z });
+    const result = await record(http, { titik: TITIK_BANYAK, now: '2026-10-01T13:30:00.000Z' });
+    assert.equal(result.new, 1);
+    assert.equal(http.rainCalls().length, 0);
+    assert.equal((await readCycle()).locations_missing, 3);
+    assert.equal(await readCycle('sigap-indikasi/2026/10/01/06Z.json'), null);
+
+    const again = await record(fakeHttp({ meta: META_06Z }), { titik: TITIK_BANYAK, now: '2026-10-01T13:45:00.000Z' });
+    assert.match(again.skipped, /tidak direkam \(hanya 00Z dan 12Z\)/);
+  });
+
+  test('meta.json yang mundur ke siklus lama tidak menutup cicilan siklus baru', async () => {
+    // 5 Okt 2026 19:00 UTC: cicilan 12Z ditutup dengan 100 titik kosong karena
+    // meta.json sesaat menyebut siklus sebelumnya.
+    await record(fakeHttp({ failKeys: new Set([KERING]) }), { titik: TITIK_BANYAK });
+    const stale = fakeHttp({ meta: META_18Z_LALU });
+    const result = await record(stale, { titik: TITIK_BANYAK, now: LATER });
+    assert.match(result.skipped, /lebih lama dari 2026-10-01T00:00:00.000Z; server Open-Meteo belum sinkron/);
+    assert.equal(stale.rainCalls().length, 0);
+    assert.equal(await readCycle(), null);
+
+    // meta.json mundur di tengah run: hujan run itu dibuang, cicilan tetap.
+    const flip = fakeHttp({ meta: (n) => (n === 0 ? META_00Z : META_18Z_LALU) });
+    const mid = await record(flip, { titik: TITIK_BANYAK, now: LATER });
+    assert.match(mid.errors[0], /siklus model berganti dari 2026-10-01T00:00:00.000Z ke 2026-09-30T18:00:00.000Z/);
+    assert.equal(await readCycle(), null);
+    assert.equal(Object.keys((await archive.readJson('sigap-indikasi/pending.json')).hujan).length, 100);
+
+    const done = await record(fakeHttp(), { titik: TITIK_BANYAK, now: '2026-10-01T08:00:00.000Z' });
+    assert.equal(done.new, 1);
+    assert.equal((await readCycle()).locations_missing, 0);
   });
 
   test('tanpa daftar titik pantau, sumber dilewati', async () => {

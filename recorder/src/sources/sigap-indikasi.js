@@ -23,6 +23,16 @@ export const BUDGET_MS = 8 * 60_000;
 // Siklus yang belum lengkap setelah sekian run disimpan apa adanya; titik yang
 // tidak terambil bernilai null dan dihitung di locations_missing.
 export const MAX_RUNS = 6;
+// ECMWF IFS di Open-Meteo diperbarui tiap 6 jam (00/06/12/18Z). Empat siklus ×
+// ±3.200 titik = ±12.900 panggilan kuota per hari, di atas batas gratis 10.000,
+// jadi hanya siklus 00Z dan 12Z yang direkam (lead time per 12 jam). 1–7 Okt 2026
+// siklus 06Z dan 18Z ikut terekam.
+export const RECORDED_HOURS = [0, 12];
+// Beberapa menit setelah siklus baru tersedia, meta.json Open-Meteo kadang masih
+// menyebut siklus sebelumnya (5–6 Okt 2026: 14–24 menit setelah tersedia),
+// kemungkinan karena servernya tidak diperbarui serentak. Supaya hujan satu siklus
+// tidak tercampur data siklus lama, pengambilan dimulai sekian lama setelah tersedia.
+export const SETTLE_MS = 45 * 60_000;
 const COUNT_KEYS = ['normal', 'waspada', 'siaga', 'awas'];
 
 // Level tertinggi dari ketiga bahaya pada satu hari; null bila semua tanpa data.
@@ -119,6 +129,12 @@ export async function recordSigapIndikasi({ archive, http, now, data = {}, pause
   const notes = [];
   let saved = 0;
 
+  // meta.json yang mundur ke siklus lebih lama berasal dari server yang belum
+  // diperbarui: tidak dianggap siklus baru, dan cicilan yang ada tidak disentuh.
+  const latest = [pending?.init, status.last_init].filter(Boolean).sort().at(-1);
+  if (latest && run.init < latest) {
+    return { items: 0, new: 0, skipped: `meta.json menyebut siklus ${run.init}, lebih lama dari ${latest}; server Open-Meteo belum sinkron` };
+  }
   // Siklus baru terbit sebelum siklus lama lengkap: siklus lama disimpan apa adanya,
   // tidak dilanjutkan dengan hujan dari siklus baru.
   if (pending && pending.init !== run.init) {
@@ -127,8 +143,12 @@ export async function recordSigapIndikasi({ archive, http, now, data = {}, pause
     notes.push(`siklus ${pending.init} disimpan dengan ${old.missing} titik tanpa hujan karena siklus baru terbit`);
     pending = null;
   }
-  if (status.last_init && status.last_init >= run.init && !pending) {
-    return saved ? { items: 0, new: saved, errors: notes } : { items: 0, new: 0, skipped: `siklus ${run.init} sudah direkam` };
+  const skip = (reason) => (saved ? { items: 0, new: saved, errors: notes } : { items: 0, new: 0, skipped: reason });
+  if (status.last_init && status.last_init >= run.init && !pending) return skip(`siklus ${run.init} sudah direkam`);
+  if (!RECORDED_HOURS.includes(new Date(run.init).getUTCHours())) return skip(`siklus ${run.init} tidak direkam (hanya 00Z dan 12Z)`);
+  const settled = run.available ? Date.parse(run.available) + SETTLE_MS : null;
+  if (!pending && settled && Date.parse(now) < settled) {
+    return skip(`siklus ${run.init} tersedia ${run.available}; hujan diambil mulai ${new Date(settled).toISOString()}`);
   }
 
   const { locations } = layout(points);
@@ -143,9 +163,11 @@ export async function recordSigapIndikasi({ archive, http, now, data = {}, pause
   });
 
   // Model berganti di tengah run: hujan run ini bisa campuran dua siklus, jadi dibuang.
+  // Bila yang terbit siklus lebih baru, cicilan siklus lama disimpan apa adanya; bila
+  // meta.json mundur ke siklus lama, cicilan tetap menunggu run berikutnya.
   const after = await readModel();
   if (after.init !== run.init) {
-    if (pending) {
+    if (pending && after.init > run.init) {
       const old = await finalize(archive, pending, points, now);
       saved += old.saved ? 1 : 0;
     }
