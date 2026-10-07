@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.07.21.91.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-08T05:30:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-08T05:45:00+09:00</effective>
+    <expires>2026-10-08T08:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 08 October 2026, 05:45 WIT di sebagian wilayah Papua, khususnya di ABEPURA, HERAM, JAYAPURA SELATAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 08 October 2026, 08:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPU/2026/10/08/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua</areaDesc>
+      <polygon>-2.542,140.707 -2.551,140.717 -2.559,140.718 -2.573,140.709 -2.588,140.714 -2.590,140.706 -2.573,140.702 -2.574,140.698 -2.586,140.700 -2.595,140.690 -2.581,140.668 -2.583,140.665 -2.558,140.640 -2.549,140.623 -2.532,140.625 -2.520,140.631 -2.517,140.632 -2.548,140.690 -2.542,140.707</polygon>
+      <polygon>-2.545,140.724 -2.547,140.726 -2.545,140.719 -2.545,140.724</polygon>
+      <polygon>-2.595,140.690 -2.605,140.692 -2.613,140.687 -2.619,140.699 -2.625,140.700 -2.634,140.727 -2.633,140.734 -2.627,140.737 -2.608,140.721 -2.603,140.712 -2.596,140.711 -2.618,140.735 -2.628,140.761 -2.650,140.761 -2.650,140.771 -2.655,140.778 -2.679,140.776 -2.695,140.787 -2.708,140.788 -2.724,140.782 -2.714,140.745 -2.714,140.745 -2.707,140.730 -2.707,140.707 -2.721,140.690 -2.725,140.658 -2.685,140.658 -2.661,140.651 -2.650,140.654 -2.611,140.655 -2.601,140.668 -2.583,140.665 -2.581,140.668 -2.595,140.690</polygon>
+      <polygon>-2.598,140.710 -2.601,140.709 -2.597,140.706 -2.598,140.710</polygon>
+      <polygon>-2.583,140.665 -2.601,140.668 -2.611,140.655 -2.650,140.654 -2.661,140.651 -2.685,140.658 -2.725,140.658 -2.723,140.633 -2.716,140.632 -2.704,140.627 -2.615,140.621 -2.613,140.614 -2.581,140.626 -2.549,140.623 -2.558,140.640 -2.583,140.665</polygon>
+    </area>
+  </info>
+</alert>
