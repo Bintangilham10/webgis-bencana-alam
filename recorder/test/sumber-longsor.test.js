@@ -268,6 +268,25 @@ describe('PVMBG prakiraan bulanan', () => {
     assert.equal(again.new, 0);
   });
 
+  test('rekam ulang bulan lama yang terpotong jatah run dilanjutkan di run berikutnya', async () => {
+    // Keadaan arsip 1–7 Okt 2026: run pertama rekam ulang September menandai bulan
+    // itu dengan pembaca baru tanpa completed_at, lalu bulan itu tidak pernah disentuh lagi.
+    await archive.writeJson('pvmbg-prakiraan/status.json', {
+      months: {
+        '2026-09': { layer: 'pmbgi:prakiraan_2026_9', total: 2, done: 1, pembaca: PARSER_VERSION },
+        '2026-10': { layer: 'pmbgi:prakiraan_2026_10', total: 2, done: 2, pembaca: PARSER_VERSION, completed_at: '2026-10-01T05:00:35.448Z' },
+      },
+    });
+    await archive.appendLine('pvmbg-prakiraan/2026/09.jsonl', { kode: '32.05', potensi: 'Menengah', pembaca: PARSER_VERSION });
+    const http = fakeHttp({ get: [[isPvmbg('2026_9'), fixture('pvmbg-prakiraan-garut.json')], [isPvmbg('2026_11'), notFound]] });
+    const result = await recordPvmbgPrakiraan({ archive, http, now: '2026-10-07T04:00:00.000Z', data: DATA, pause: noPause });
+    assert.equal(result.new, 1);
+    const status = await archive.readJson('pvmbg-prakiraan/status.json');
+    assert.equal(status.months['2026-09'].done, 2);
+    assert.equal(status.months['2026-09'].completed_at, '2026-10-07T04:00:00.000Z');
+    assert.ok(!http.calls.some((u) => u.includes('prakiraan_2026_10&')), 'bulan yang sudah lengkap tidak diminta lagi');
+  });
+
   test('melanjutkan dari titik yang belum direkam', async () => {
     await archive.appendLine('pvmbg-prakiraan/2026/09.jsonl', { kode: '32.05', potensi: 'Menengah', pembaca: PARSER_VERSION });
     const http = fakeHttp({ get: [[isPvmbg('2026_9'), fixture('pvmbg-prakiraan-garut.json')], [isPvmbg('2026_10'), notFound]] });

@@ -87,6 +87,7 @@ async function doneCodes(archive, month) {
 }
 
 const isCurrentParser = (monthStatus) => (monthStatus?.pembaca ?? 1) >= PARSER_VERSION;
+const isComplete = (monthStatus) => Boolean(monthStatus?.completed_at) && isCurrentParser(monthStatus);
 const parseMonthKey = (key) => {
   const [year, month] = key.split('-').map(Number);
   return { year, month };
@@ -105,12 +106,14 @@ export async function recordPvmbgPrakiraan({ archive, http, now, data = {}, paus
   const errors = [];
 
   // Bulan berjalan dan bulan depan (prakiraan terbit menjelang bulannya), lalu
-  // bulan lama yang direkam dengan pembaca versi sebelumnya.
-  const outdated = Object.keys(status.months).filter((key) => !isCurrentParser(status.months[key])).map(parseMonthKey);
-  const targets = [...new Map([current, nextMonth(current), ...outdated].map((m) => [monthKey(m), m])).values()];
+  // bulan lama yang belum lengkap dengan pembaca versi sekarang. Bulan yang sedang
+  // direkam ulang sudah bertanda pembaca baru sejak run pertamanya, jadi yang
+  // menentukan adalah completed_at, bukan versi pembaca saja.
+  const unfinished = Object.keys(status.months).filter((key) => !isComplete(status.months[key])).map(parseMonthKey);
+  const targets = [...new Map([current, nextMonth(current), ...unfinished].map((m) => [monthKey(m), m])).values()];
   for (const target of targets) {
     const key = monthKey(target);
-    if ((status.months[key]?.completed_at && isCurrentParser(status.months[key])) || budget === 0) continue;
+    if (isComplete(status.months[key]) || budget === 0) continue;
     const layer = layerName(target);
     try {
       if (!(await isPublished(http, layer))) continue;
