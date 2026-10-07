@@ -1,0 +1,26 @@
+{
+  "guid": "CBMimgFBVV95cUxNMFBSNDA1NlJOdjIwcFlwSkszdmpseXBaaUhIeE5RbGpRU2ZfOXRRTWJzNlFuUTRXYXhzeW5IUE80VEhlTmxCcU1BQ0FJdE1CYnotdDdrRkVPSjNNb3ZaR3hmd1J1Tzl6M1hjNThXbndoX0lYbVdkRmJPRUhobUlhc1hkLWlrQUttWUw5UjBrN0VSQmhCTEpuY0tn",
+  "title": "Antisipasi Longsor, Pemkab Malang Bangun Tembok Penahan Tanah di Sidodadi - kabarbaik.co",
+  "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMFBSNDA1NlJOdjIwcFlwSkszdmpseXBaaUhIeE5RbGpRU2ZfOXRRTWJzNlFuUTRXYXhzeW5IUE80VEhlTmxCcU1BQ0FJdE1CYnotdDdrRkVPSjNNb3ZaR3hmd1J1Tzl6M1hjNThXbndoX0lYbVdkRmJPRUhobUlhc1hkLWlrQUttWUw5UjBrN0VSQmhCTEpuY0tn?oc=5",
+  "source": "kabarbaik.co",
+  "source_url": "https://kabarbaik.co",
+  "published_at": "2026-10-07T05:30:50.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-07T06:45:29.370Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

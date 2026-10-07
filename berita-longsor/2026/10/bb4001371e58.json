@@ -1,0 +1,21 @@
+{
+  "guid": "CBMisAFBVV95cUxPRGZvb3lDWEs4ejZyQnQwWWdzMk96VUVBaDNKT1U5TG1odkVnMlFWOFlTcnlfM0lISWtxdlhwRkwwN0tIcUJaZ0JSaG5oZXNfd1YyNTN2ZlBjTEVva2RzTmRIeTZwRkxoclRoUHFzYlVya3RPT1pQWGZDV182b0JVOElZbmlpQjEwSXc0ZUhqVVF6aEZtNW1XQmhhNE9xckZQckNTWXNRTDk1a0tFeG0wMg",
+  "title": "BPBD Cilacap memperkuat mitigasi potensi longsor jelang musim hujan - ANTARA News Jateng",
+  "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPRGZvb3lDWEs4ejZyQnQwWWdzMk96VUVBaDNKT1U5TG1odkVnMlFWOFlTcnlfM0lISWtxdlhwRkwwN0tIcUJaZ0JSaG5oZXNfd1YyNTN2ZlBjTEVva2RzTmRIeTZwRkxoclRoUHFzYlVya3RPT1pQWGZDV182b0JVOElZbmlpQjEwSXc0ZUhqVVF6aEZtNW1XQmhhNE9xckZQckNTWXNRTDk1a0tFeG0wMg?oc=5",
+  "source": "ANTARA News Jateng",
+  "source_url": "https://jateng.antaranews.com",
+  "published_at": "2026-10-07T06:23:11.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-07T06:45:29.370Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.01",
+      "nama": "Kabupaten Cilacap",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,28 @@
+{
+  "guid": "CBMinwFBVV95cUxOTjZENlhtWm1zQnZxN2YzRXYzSDlRYlJhaENNUDlRempENmhLcHY5VkZ4aXpMWnRXRjU0WWFsSHJXZ3NCX05SUWw0V3JKRTFEaUJOYWNQZGp5c1lIMHhhUi0xUk9LQXhYcldTejdIV1JzSFo4a3lPXzZLeVJlQU5YZGtyZkRCYUNZN1hhQkR2bmNGaXp6YUtyUlFEeGpORWvSAZ4BQVVfeXFMTkpJMWxvWHRmOGlXZzNmUWs1UkxDUmVkelVycTJNWTd4SWNQc3d3bGt0SGd5V3dJX205S256RXhtWDRhMlJKOTlqQzZJOW8zSC1Tb3JidWloYmZkSk1fbFI3SW1HRU5SWWtySnhueGt4NXZzMnRJXy1KMFBzY2gtNGpINFJPUDQtSHd2NUljeTNwQmRCOEJOVjRzeDJTRmc",
+  "title": "2 Orang Meninggal Tertimbun Longsor di Pekalongan Jawa Tengah - MerahPutih",
+  "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOTjZENlhtWm1zQnZxN2YzRXYzSDlRYlJhaENNUDlRempENmhLcHY5VkZ4aXpMWnRXRjU0WWFsSHJXZ3NCX05SUWw0V3JKRTFEaUJOYWNQZGp5c1lIMHhhUi0xUk9LQXhYcldTejdIV1JzSFo4a3lPXzZLeVJlQU5YZGtyZkRCYUNZN1hhQkR2bmNGaXp6YUtyUlFEeGpORWvSAZ4BQVVfeXFMTkpJMWxvWHRmOGlXZzNmUWs1UkxDUmVkelVycTJNWTd4SWNQc3d3bGt0SGd5V3dJX205S256RXhtWDRhMlJKOTlqQzZJOW8zSC1Tb3JidWloYmZkSk1fbFI3SW1HRU5SWWtySnhueGt4NXZzMnRJXy1KMFBzY2gtNGpINFJPUDQtSHd2NUljeTNwQmRCOEJOVjRzeDJTRmc?oc=5",
+  "source": "MerahPutih",
+  "source_url": "https://www.merahputih.com",
+  "published_at": "2026-10-07T05:06:06.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-07T06:45:29.370Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.26",
+      "nama": "Kabupaten Pekalongan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.75",
+      "nama": "Kota Pekalongan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jawa Tengah"
+  ]
+}

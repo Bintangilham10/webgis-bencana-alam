@@ -1,0 +1,26 @@
+{
+  "guid": "CBMilwFBVV95cUxOaVhrNjIzVm9kU1NZYVdNUlpDUFlFTmJKMEl5M2FtVWs2S1dfczhVZFJqNGVwNFk4T3lncFZCTGhaZlA3ZHllNU80eDNQYUJIMFNhOTlybC0wWkhUUXNBS0hKRjNLU3dpLWoydEo4Q0hBQnExdGJvLXp3Y3QwQVV3X0ptZHR3TmNTcmhsN0pRbDBmR3AyWGQ0",
+  "title": "Longsor di Pekalongan, dua korban meninggal dunia - ANTARA News Jateng",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOaVhrNjIzVm9kU1NZYVdNUlpDUFlFTmJKMEl5M2FtVWs2S1dfczhVZFJqNGVwNFk4T3lncFZCTGhaZlA3ZHllNU80eDNQYUJIMFNhOTlybC0wWkhUUXNBS0hKRjNLU3dpLWoydEo4Q0hBQnExdGJvLXp3Y3QwQVV3X0ptZHR3TmNTcmhsN0pRbDBmR3AyWGQ0?oc=5",
+  "source": "ANTARA News Jateng",
+  "source_url": "https://jateng.antaranews.com",
+  "published_at": "2026-10-07T04:58:43.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-07T06:45:29.370Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.26",
+      "nama": "Kabupaten Pekalongan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.75",
+      "nama": "Kota Pekalongan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
