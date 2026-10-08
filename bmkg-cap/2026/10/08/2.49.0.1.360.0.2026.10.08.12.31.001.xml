@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.08.12.31.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-08T18:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-08T18:20:00+07:00</effective>
+    <expires>2026-10-08T20:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 08 October 2026, 18:20 WIB di sebagian wilayah Jakarta, khususnya di BABAKAN MADANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 08 October 2026, 20:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJK/2026/10/08/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jakarta</areaDesc>
+      <polygon>-6.505,106.856 -6.517,106.854 -6.539,106.859 -6.556,106.869 -6.569,106.882 -6.573,106.892 -6.569,106.901 -6.572,106.913 -6.559,106.938 -6.561,106.941 -6.581,106.940 -6.590,106.954 -6.610,106.965 -6.617,106.976 -6.642,106.976 -6.634,106.968 -6.635,106.951 -6.629,106.943 -6.633,106.915 -6.632,106.910 -6.636,106.904 -6.624,106.888 -6.624,106.873 -6.615,106.858 -6.607,106.856 -6.603,106.862 -6.596,106.862 -6.597,106.853 -6.580,106.852 -6.563,106.839 -6.533,106.845 -6.522,106.846 -6.519,106.842 -6.503,106.852 -6.505,106.856</polygon>
+    </area>
+  </info>
+</alert>
