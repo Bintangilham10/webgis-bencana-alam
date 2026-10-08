@@ -1,0 +1,21 @@
+{
+  "guid": "CBMipAFBVV95cUxOTmhPYVdfMk13WkMxbXhsTnNlcExvaU94U0NTN3dSSC1Fbm55N1U2QXFreVE2OUZXcXR1VTlmdG96NW4wdE1wS3QtS055RHQzb2hadjJyVEpjMC1qNzJ1eGxTRmpwSkYxRG1rUjBua2Rxcl9IUTBMU1pLY0xoMDk5NkNKOVhfRTctcS1BeEhQS0N5UHNXOE9mY0JTWXdURnZjNmQ2YtIBpAFBVV95cUxOTmhPYVdfMk13WkMxbXhsTnNlcExvaU94U0NTN3dSSC1Fbm55N1U2QXFreVE2OUZXcXR1VTlmdG96NW4wdE1wS3QtS055RHQzb2hadjJyVEpjMC1qNzJ1eGxTRmpwSkYxRG1rUjBua2Rxcl9IUTBMU1pLY0xoMDk5NkNKOVhfRTctcS1BeEhQS0N5UHNXOE9mY0JTWXdURnZjNmQ2Yg",
+  "title": "8 Titik Rawan Banjir dan Longsor di Kabupaten Bandung - detikcom",
+  "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTmhPYVdfMk13WkMxbXhsTnNlcExvaU94U0NTN3dSSC1Fbm55N1U2QXFreVE2OUZXcXR1VTlmdG96NW4wdE1wS3QtS055RHQzb2hadjJyVEpjMC1qNzJ1eGxTRmpwSkYxRG1rUjBua2Rxcl9IUTBMU1pLY0xoMDk5NkNKOVhfRTctcS1BeEhQS0N5UHNXOE9mY0JTWXdURnZjNmQ2YtIBpAFBVV95cUxOTmhPYVdfMk13WkMxbXhsTnNlcExvaU94U0NTN3dSSC1Fbm55N1U2QXFreVE2OUZXcXR1VTlmdG96NW4wdE1wS3QtS055RHQzb2hadjJyVEpjMC1qNzJ1eGxTRmpwSkYxRG1rUjBua2Rxcl9IUTBMU1pLY0xoMDk5NkNKOVhfRTctcS1BeEhQS0N5UHNXOE9mY0JTWXdURnZjNmQ2Yg?oc=5",
+  "source": "detikcom",
+  "source_url": "https://www.detik.com",
+  "published_at": "2026-10-08T10:30:30.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-08T14:30:43.205Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}
