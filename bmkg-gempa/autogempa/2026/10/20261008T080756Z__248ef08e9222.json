@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-08T08:15:31.410Z",
+  "data": {
+    "Tanggal": "08 Okt 2026",
+    "Jam": "15:07:56 WIB",
+    "DateTime": "2026-10-08T08:07:56+00:00",
+    "Coordinates": "5.66,125.19",
+    "Lintang": "5.66 LU",
+    "Bujur": "125.19 BT",
+    "Magnitude": "5.8",
+    "Kedalaman": "10 km",
+    "Wilayah": "230 km BaratLaut TAHUNA-KEP.SANGIHE-SULUT",
+    "Potensi": "Tidak berpotensi tsunami",
+    "Dirasakan": "-",
+    "Shakemap": "20261008151052.mmi.jpg"
+  }
+}
