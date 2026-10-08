@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-08T09:30:33.379Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.8532179571,
+        -6.156322
+      ]
+    },
+    "properties": {
+      "pkey": "399601",
+      "created_at": "2026-10-08T09:20:02.622Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "32520bfe-48a1-4515-b9b8-0f6a13c94300",
+      "image_url": "https://images.petabencana.id/32520bfe-48a1-4515-b9b8-0f6a13c94300.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 95.2516518143061,
+        "fireLocation": {
+          "lat": "-6.1563220",
+          "lng": 106.853217957135
+        },
+        "personLocation": {
+          "lng": 106.8534238334903,
+          "lat": -6.156391240662074
+        },
+        "fireRadius": {
+          "lng": 106.85235965025055,
+          "lat": -6.1563966687326825
+        }
+      },
+      "tags": {
+        "city": "JAKARTA PUSAT",
+        "district_id": null,
+        "region_code": "3171",
+        "local_area_id": "30326",
+        "instance_region_code": "ID-JK"
+      },
+      "title": null,
+      "text": "Kebakaran melanda sejumlah bangunan di kawasan Kebon Kosong, tepatnya di sekitar area Kantor Kelurahan Kebon Kosong, Kecamatan Kemayoran",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
