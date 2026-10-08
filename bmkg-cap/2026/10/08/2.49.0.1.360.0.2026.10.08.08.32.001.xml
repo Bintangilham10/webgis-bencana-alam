@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.08.08.32.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-08T15:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-08T15:20:00+07:00</effective>
+    <expires>2026-10-08T16:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 08 October 2026, 15:20 WIB di sebagian wilayah Jawa Barat, khususnya di CIJAMBE, KASOMALANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 08 October 2026, 16:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/10/08/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.618,107.823 -6.621,107.825 -6.625,107.818 -6.633,107.822 -6.635,107.847 -6.652,107.850 -6.664,107.841 -6.671,107.826 -6.670,107.818 -6.672,107.798 -6.666,107.778 -6.670,107.764 -6.657,107.748 -6.658,107.739 -6.627,107.712 -6.626,107.703 -6.613,107.709 -6.604,107.726 -6.585,107.748 -6.586,107.766 -6.579,107.789 -6.596,107.794 -6.612,107.792 -6.618,107.823</polygon>
+      <polygon>-6.670,107.818 -6.677,107.813 -6.684,107.816 -6.688,107.802 -6.699,107.788 -6.698,107.783 -6.702,107.776 -6.699,107.764 -6.705,107.748 -6.739,107.729 -6.746,107.721 -6.739,107.714 -6.732,107.712 -6.721,107.716 -6.700,107.729 -6.704,107.710 -6.708,107.703 -6.705,107.695 -6.697,107.703 -6.684,107.704 -6.690,107.715 -6.691,107.733 -6.684,107.739 -6.682,107.749 -6.666,107.748 -6.658,107.739 -6.657,107.748 -6.670,107.764 -6.666,107.778 -6.672,107.798 -6.670,107.818</polygon>
+    </area>
+  </info>
+</alert>
