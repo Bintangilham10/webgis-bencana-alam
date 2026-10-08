@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.08.23.71.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-09T05:40:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-09T05:50:00+08:00</effective>
+    <expires>2026-10-09T08:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 09 October 2026, 05:50 WITA di sebagian wilayah Sulawesi Utara, khususnya di AMURANG BARAT, KEPULAUAN MARORE, MIANGAS, TATAPAAN, TENGA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 09 October 2026, 08:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/10/09/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>4.745,125.491 4.733,125.487 4.728,125.478 4.736,125.478 4.745,125.491</polygon>
+      <polygon>4.651,125.438 4.649,125.434 4.663,125.435 4.651,125.438</polygon>
+      <polygon>5.565,126.590 5.555,126.589 5.546,126.580 5.557,126.577 5.566,126.582 5.565,126.590</polygon>
+      <polygon>1.184,124.490 1.167,124.492 1.148,124.486 1.138,124.492 1.116,124.495 1.115,124.490 1.120,124.487 1.121,124.481 1.109,124.473 1.100,124.458 1.073,124.446 1.069,124.439 1.071,124.434 1.085,124.428 1.098,124.411 1.108,124.390 1.134,124.389 1.150,124.367 1.152,124.360 1.164,124.352 1.184,124.404 1.195,124.416 1.188,124.438 1.184,124.490</polygon>
+      <polygon>1.180,124.565 1.170,124.578 1.144,124.574 1.136,124.580 1.123,124.583 1.110,124.583 1.109,124.580 1.103,124.574 1.094,124.573 1.095,124.563 1.087,124.551 1.102,124.528 1.100,124.506 1.116,124.495 1.138,124.492 1.148,124.486 1.167,124.492 1.184,124.490 1.190,124.501 1.188,124.517 1.193,124.521 1.201,124.517 1.210,124.519 1.215,124.528 1.209,124.548 1.180,124.565</polygon>
+      <polygon>1.378,124.564 1.358,124.582 1.352,124.600 1.336,124.625 1.279,124.630 1.278,124.609 1.264,124.599 1.265,124.595 1.270,124.577 1.279,124.570 1.273,124.564 1.271,124.552 1.301,124.515 1.318,124.515 1.328,124.518 1.335,124.529 1.352,124.532 1.374,124.550 1.378,124.564</polygon>
+      <polygon>1.296,124.508 1.301,124.503 1.305,124.510 1.298,124.511 1.296,124.508</polygon>
+    </area>
+  </info>
+</alert>
