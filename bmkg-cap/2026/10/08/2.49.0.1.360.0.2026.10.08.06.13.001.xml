@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.08.06.13.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-08T12:45:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-08T13:00:00+07:00</effective>
+    <expires>2026-10-08T15:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 08 October 2026, 13:00 WIB di sebagian wilayah Sumatera Barat, khususnya di AMPEK NAGARI, IV KOTO AUR MALINTANG, LUBUK BASUNG, MALALAK, TANJUNG RAYA, V KOTO TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 08 October 2026, 15:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSB/2026/10/08/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Barat</areaDesc>
+      <polygon>-0.383,100.156 -0.404,100.104 -0.399,100.080 -0.405,100.050 -0.415,100.031 -0.415,100.023 -0.401,99.996 -0.398,100.000 -0.392,100.000 -0.371,99.986 -0.366,99.986 -0.358,100.001 -0.364,100.046 -0.361,100.049 -0.356,100.048 -0.349,100.057 -0.329,100.067 -0.325,100.087 -0.332,100.101 -0.330,100.118 -0.317,100.129 -0.320,100.136 -0.357,100.156 -0.383,100.156</polygon>
+      <polygon>-0.415,100.217 -0.434,100.218 -0.443,100.225 -0.450,100.239 -0.460,100.246 -0.468,100.246 -0.485,100.236 -0.490,100.219 -0.504,100.206 -0.516,100.183 -0.527,100.171 -0.541,100.173 -0.541,100.159 -0.572,100.150 -0.571,100.131 -0.560,100.136 -0.551,100.133 -0.532,100.136 -0.518,100.134 -0.501,100.159 -0.483,100.175 -0.483,100.186 -0.491,100.184 -0.489,100.191 -0.469,100.202 -0.437,100.184 -0.414,100.190 -0.415,100.217</polygon>
+      <polygon>-0.253,100.130 -0.273,100.128 -0.290,100.123 -0.308,100.107 -0.332,100.101 -0.325,100.087 -0.329,100.067 -0.349,100.057 -0.356,100.048 -0.361,100.049 -0.364,100.046 -0.358,100.001 -0.366,99.986 -0.364,99.980 -0.372,99.959 -0.356,99.967 -0.358,99.954 -0.355,99.950 -0.329,99.947 -0.309,99.938 -0.258,99.897 -0.232,99.917 -0.222,99.917 -0.223,99.926 -0.214,99.939 -0.218,99.953 -0.236,99.971 -0.247,99.990 -0.254,100.013 -0.259,100.046 -0.253,100.055 -0.252,100.085 -0.249,100.091 -0.253,100.130</polygon>
+      <polygon>-0.257,100.235 -0.284,100.240 -0.297,100.233 -0.311,100.235 -0.349,100.260 -0.353,100.261 -0.370,100.247 -0.402,100.233 -0.415,100.217 -0.414,100.190 -0.407,100.175 -0.396,100.162 -0.383,100.156 -0.357,100.156 -0.320,100.136 -0.317,100.129 -0.330,100.118 -0.332,100.101 -0.308,100.107 -0.290,100.123 -0.273,100.128 -0.253,100.130 -0.237,100.133 -0.218,100.144 -0.207,100.157 -0.205,100.169 -0.209,100.173 -0.214,100.172 -0.219,100.185 -0.231,100.197 -0.230,100.208 -0.240,100.212 -0.246,100.226 -0.257,100.235</polygon>
+      <polygon>-0.218,100.144 -0.237,100.133 -0.253,100.130 -0.249,100.091 -0.252,100.085 -0.253,100.055 -0.259,100.046 -0.254,100.013 -0.247,99.990 -0.236,99.971 -0.218,99.953 -0.214,99.939 -0.223,99.926 -0.222,99.917 -0.232,99.917 -0.258,99.897 -0.227,99.877 -0.163,99.848 -0.158,99.906 -0.161,99.910 -0.149,99.933 -0.149,99.951 -0.139,99.967 -0.142,99.995 -0.136,100.004 -0.152,100.013 -0.169,100.062 -0.168,100.094 -0.165,100.107 -0.183,100.126 -0.218,100.144</polygon>
+      <polygon>-0.393,100.332 -0.403,100.332 -0.408,100.326 -0.429,100.316 -0.432,100.306 -0.463,100.281 -0.470,100.270 -0.472,100.261 -0.468,100.246 -0.460,100.246 -0.450,100.239 -0.443,100.225 -0.434,100.218 -0.415,100.217 -0.402,100.233 -0.370,100.247 -0.353,100.261 -0.357,100.274 -0.372,100.288 -0.383,100.322 -0.393,100.332</polygon>
+    </area>
+  </info>
+</alert>
