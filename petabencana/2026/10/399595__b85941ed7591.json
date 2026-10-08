@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-08T01:00:39.161Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.7604166134,
+        -6.1229883014
+      ]
+    },
+    "properties": {
+      "pkey": "399595",
+      "created_at": "2026-10-08T00:56:27.951Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "2406641d-8bc3-4b1f-9e8a-2d317a2e7ea1",
+      "image_url": "https://images.petabencana.id/2406641d-8bc3-4b1f-9e8a-2d317a2e7ea1.jpg",
+      "disaster_type": "fire",
+      "is_training": true,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 91.02205411706447,
+        "fireLocation": {
+          "lng": 106.7604166133537,
+          "lat": -6.1229883014457585
+        },
+        "personLocation": {
+          "lat": "-6.1229723",
+          "lng": "106.7613232"
+        },
+        "fireRadius": {
+          "lng": 106.75959585739366,
+          "lat": -6.123052307222565
+        }
+      },
+      "tags": {
+        "city": "JAKARTA UTARA",
+        "district_id": null,
+        "region_code": "3172",
+        "local_area_id": null,
+        "instance_region_code": "ID-JK"
+      },
+      "title": null,
+      "text": "Kebakaran terjadi di kawasan Duta Harapan Indah, Kapuk Muara, Kecamatan Penjaringan, Jakarta Utara, Kamis\n(8/10/2026) pagi. Peristiwa dilapo",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
