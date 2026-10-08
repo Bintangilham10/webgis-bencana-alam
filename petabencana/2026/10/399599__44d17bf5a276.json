@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-08T09:00:44.999Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        109.9781653012,
+        -1.8447031765
+      ]
+    },
+    "properties": {
+      "pkey": "399599",
+      "created_at": "2026-10-08T08:48:50.550Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "ab97112e-eb45-4604-8476-7777d3320b49",
+      "image_url": "https://images.petabencana.id/ab97112e-eb45-4604-8476-7777d3320b49.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 1,
+        "airQuality": 1
+      },
+      "tags": {
+        "city": "KETAPANG",
+        "district_id": null,
+        "region_code": "6104",
+        "local_area_id": null,
+        "instance_region_code": "ID-KB"
+      },
+      "title": null,
+      "text": "Kebakaran hutan dan lahan (karhutla) memicu sebaran kabut asap pekat yang menyelimuti kawasan Kabupaten Ketapang, Kalimantan Barat ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
