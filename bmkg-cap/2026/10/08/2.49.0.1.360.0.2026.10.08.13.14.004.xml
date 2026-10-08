@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.08.13.14.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-08T20:05:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-08T20:15:00+07:00</effective>
+    <expires>2026-10-08T23:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Riau</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 08 October 2026, 20:15 WIB di sebagian wilayah Riau, khususnya di KEPENUHAN, KEPENUHAN HULU, KUNTO DARUSSALAM.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 08 October 2026, 23:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CRU/2026/10/08/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Riau</areaDesc>
+      <polygon>1.246,100.790 1.192,100.742 1.142,100.712 1.067,100.678 0.982,100.640 1.054,100.523 1.077,100.496 1.140,100.450 1.149,100.497 1.153,100.505 1.151,100.525 1.158,100.557 1.182,100.598 1.229,100.626 1.255,100.648 1.282,100.654 1.291,100.664 1.246,100.700 1.242,100.768 1.246,100.790</polygon>
+      <polygon>0.949,100.841 0.851,100.756 0.848,100.745 0.833,100.728 0.841,100.724 0.832,100.703 0.822,100.691 0.811,100.700 0.804,100.692 0.813,100.680 0.828,100.640 0.823,100.618 0.817,100.618 0.806,100.609 0.809,100.603 0.807,100.566 0.814,100.541 0.841,100.546 0.865,100.537 0.865,100.543 0.859,100.554 0.868,100.561 0.877,100.548 0.899,100.537 0.907,100.542 0.911,100.554 0.903,100.572 0.949,100.625 0.982,100.640 1.067,100.678 1.003,100.787 0.949,100.841</polygon>
+      <polygon>1.140,100.450 1.077,100.496 1.054,100.523 0.982,100.640 0.949,100.625 0.903,100.572 0.911,100.554 0.907,100.542 0.899,100.537 0.877,100.548 0.868,100.561 0.859,100.554 0.865,100.543 0.865,100.537 0.883,100.519 0.901,100.512 0.904,100.508 0.906,100.498 0.888,100.479 0.887,100.449 0.903,100.451 0.929,100.442 0.944,100.441 0.949,100.453 0.948,100.465 0.959,100.479 0.971,100.476 0.976,100.478 0.978,100.485 0.989,100.481 1.015,100.455 1.014,100.435 1.032,100.431 1.034,100.417 1.139,100.437 1.140,100.450</polygon>
+    </area>
+  </info>
+</alert>
