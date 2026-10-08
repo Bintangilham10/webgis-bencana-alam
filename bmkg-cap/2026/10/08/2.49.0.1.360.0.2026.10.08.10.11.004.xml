@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.08.10.11.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-08T14:55:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-08T15:05:00+07:00</effective>
+    <expires>2026-10-08T18:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Aceh</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 08 October 2026, 15:05 WIB di sebagian wilayah Aceh, khususnya di KOTA COT GLIE, LONGKIB, SEUNAGAN TIMUR, SURO MAKMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 08 October 2026, 18:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CAH/2026/10/08/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Aceh</areaDesc>
+      <polygon>5.319,95.558 5.317,95.552 5.301,95.551 5.286,95.538 5.276,95.541 5.266,95.532 5.240,95.522 5.226,95.520 5.216,95.527 5.220,95.498 5.213,95.488 5.212,95.486 5.212,95.467 5.223,95.437 5.222,95.418 5.210,95.402 5.250,95.375 5.257,95.383 5.266,95.382 5.283,95.393 5.293,95.386 5.302,95.388 5.333,95.419 5.378,95.450 5.400,95.482 5.424,95.499 5.435,95.518 5.469,95.544 5.475,95.557 5.468,95.562 5.450,95.560 5.432,95.569 5.409,95.565 5.387,95.539 5.371,95.533 5.353,95.534 5.330,95.558 5.319,95.558</polygon>
+      <polygon>2.583,98.079 2.572,98.077 2.557,98.083 2.549,98.082 2.514,98.082 2.485,98.095 2.485,98.065 2.478,98.048 2.476,98.045 2.465,98.050 2.461,98.048 2.451,98.034 2.465,98.029 2.471,98.022 2.465,98.014 2.466,97.997 2.473,97.987 2.475,97.973 2.487,97.967 2.488,97.960 2.493,97.964 2.533,97.994 2.558,97.971 2.566,97.956 2.577,97.954 2.580,97.957 2.572,97.962 2.538,98.006 2.545,98.008 2.558,98.005 2.560,97.995 2.590,97.966 2.610,97.988 2.599,98.004 2.587,98.036 2.583,98.079</polygon>
+      <polygon>4.224,96.360 4.238,96.344 4.252,96.338 4.246,96.316 4.250,96.311 4.256,96.310 4.271,96.286 4.286,96.282 4.289,96.286 4.334,96.293 4.368,96.296 4.367,96.327 4.371,96.336 4.380,96.342 4.382,96.350 4.398,96.373 4.417,96.372 4.423,96.433 4.430,96.449 4.444,96.464 4.435,96.488 4.416,96.501 4.409,96.500 4.389,96.483 4.391,96.465 4.377,96.451 4.374,96.435 4.383,96.426 4.375,96.409 4.359,96.395 4.349,96.397 4.343,96.380 4.333,96.387 4.302,96.376 4.266,96.379 4.255,96.383 4.245,96.397 4.224,96.360</polygon>
+      <polygon>2.620,97.977 2.610,97.988 2.590,97.966 2.580,97.957 2.577,97.954 2.579,97.951 2.594,97.948 2.573,97.925 2.563,97.895 2.550,97.886 2.548,97.879 2.548,97.875 2.556,97.871 2.561,97.863 2.563,97.853 2.557,97.843 2.539,97.843 2.525,97.850 2.505,97.840 2.509,97.792 2.547,97.795 2.597,97.812 2.591,97.874 2.592,97.891 2.608,97.918 2.613,97.906 2.635,97.906 2.636,97.932 2.628,97.951 2.632,97.960 2.641,97.968 2.640,97.973 2.620,97.977</polygon>
+    </area>
+  </info>
+</alert>
