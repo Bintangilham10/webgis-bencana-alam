@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-08T01:15:25.251Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.7663657257,
+        -6.1172651
+      ]
+    },
+    "properties": {
+      "pkey": "399597",
+      "created_at": "2026-10-08T01:03:37.888Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "eb522d35-b9ce-4d7b-82d5-468f7461a9df",
+      "image_url": "https://images.petabencana.id/eb522d35-b9ce-4d7b-82d5-468f7461a9df.jpg",
+      "disaster_type": "fire",
+      "is_training": true,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 94.87565662710415,
+        "fireLocation": {
+          "lat": "-6.1172651",
+          "lng": 106.766365725666
+        },
+        "personLocation": {
+          "lng": 106.76686477168926,
+          "lat": -6.117649138674537
+        },
+        "fireRadius": {
+          "lng": 106.76551814762001,
+          "lat": -6.117398446793757
+        }
+      },
+      "tags": {
+        "city": "JAKARTA UTARA",
+        "district_id": null,
+        "region_code": "3172",
+        "local_area_id": "16661",
+        "instance_region_code": "ID-JK"
+      },
+      "title": null,
+      "text": "Kebakaran melanda kawasan Duta Harapan Indah (tepatnya di belakang Masjid Al Muhajirin), Kelurahan Kapuk Muara, Kecamatan Penjaringan, ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
