@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-08T11:00:41.253Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        124.3941653459,
+        -1.7616334
+      ]
+    },
+    "properties": {
+      "pkey": "399602",
+      "created_at": "2026-10-08T10:56:40.951Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "481c58a6-a1c9-491d-b971-b3033939f8d6",
+      "image_url": "https://images.petabencana.id/481c58a6-a1c9-491d-b971-b3033939f8d6.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 405.9883284272532,
+        "fireLocation": {
+          "lat": "-1.7616334",
+          "lng": 124.394165345907
+        },
+        "personLocation": {
+          "lat": -1.7616334,
+          "lng": 124.3954093
+        },
+        "fireRadius": {
+          "lng": 124.39505168163345,
+          "lat": -1.7580913748888207
+        }
+      },
+      "tags": {
+        "city": "PULAU TALIABU",
+        "district_id": null,
+        "region_code": "8208",
+        "local_area_id": null,
+        "instance_region_code": "ID-MU"
+      },
+      "title": null,
+      "text": "Kebakaran HUtan Terjadi di Kabupaten Pulau Taliabu Provinsi Maluku Utara sejak 4 Oktober sampai dengan saat ini masih terjadi kebakaran.",
+      "partner_code": "bpbdtaliabu2023",
+      "partner_icon": "https://petabencana-partner-images.s3.ap-southeast-1.amazonaws.com/bpbdtaliabu2023_BPBD_Taliabu-removebg-preview.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIXMLJXIZ7FKDDYZA%2F20230328%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230328T100522Z&X-Amz-Expires=900&X-Amz-Signature=b49fcbe644e0ca48b4bef3a8244700b1b7db78a2ead30406a91f8f3197f65a79&X-Amz-SignedHeaders=host"
+    }
+  }
+}

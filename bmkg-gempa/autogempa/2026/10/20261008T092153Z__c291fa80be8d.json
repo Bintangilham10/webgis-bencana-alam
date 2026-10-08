@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-08T11:00:41.253Z",
+  "data": {
+    "Tanggal": "08 Okt 2026",
+    "Jam": "16:21:53 WIB",
+    "DateTime": "2026-10-08T09:21:53+00:00",
+    "Coordinates": "0.56,120.44",
+    "Lintang": "0.56 LU",
+    "Bujur": "120.44 BT",
+    "Magnitude": "3.0",
+    "Kedalaman": "13 km",
+    "Wilayah": "Pusat gempa berada di darat 40 km Barat Parigi Moutong",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "II-III Palasa",
+    "Shakemap": "20261008162153.mmi.jpg"
+  }
+}
