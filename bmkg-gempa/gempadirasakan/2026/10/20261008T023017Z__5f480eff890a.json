@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-08T03:00:40.634Z",
+  "data": {
+    "Tanggal": "08 Okt 2026",
+    "Jam": "09:30:17 WIB",
+    "DateTime": "2026-10-08T02:30:17+00:00",
+    "Coordinates": "-9.62,119.44",
+    "Lintang": "9.62 LS",
+    "Bujur": "119.44 BT",
+    "Magnitude": "3.9",
+    "Kedalaman": "5 km",
+    "Wilayah": "Pusat gempa berada di darat 6 km Timur Laut Waikabubak",
+    "Dirasakan": "IV-V Kab. Sumba Barat, III-IV Kab. Sumba Tengah"
+  }
+}
