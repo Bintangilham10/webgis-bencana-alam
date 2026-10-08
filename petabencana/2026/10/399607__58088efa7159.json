@@ -1,0 +1,43 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-08T12:30:34.947Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        105.4222095705,
+        -6.1025956049
+      ]
+    },
+    "properties": {
+      "pkey": "399607",
+      "created_at": "2026-10-08T12:18:20.639Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "4ea396d5-d1f1-4d73-add8-0754be93770b",
+      "image_url": "https://images.petabencana.id/4ea396d5-d1f1-4d73-add8-0754be93770b.jpg",
+      "disaster_type": "volcano",
+      "is_training": false,
+      "report_data": {
+        "report_type": "volcano",
+        "volcanicSigns": [
+          0
+        ],
+        "evacuationNumber": 1,
+        "evacuationArea": true
+      },
+      "tags": {
+        "city": null,
+        "district_id": null,
+        "region_code": null,
+        "local_area_id": null,
+        "instance_region_code": "ID-LA"
+      },
+      "title": null,
+      "text": "Gunung Anak Krakatau kembali erupsi hari ini, Kamis, 08 Oktober 2026, pukul 18:28 WIB. Tinggi kolom erupsi belum teramati",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
