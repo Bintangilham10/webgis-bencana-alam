@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-08T13:00:43.397Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        98.2984903386,
+        2.8529629731
+      ]
+    },
+    "properties": {
+      "pkey": "399608",
+      "created_at": "2026-10-08T12:55:58.792Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "95029d20-9626-499c-b606-7821b282e863",
+      "image_url": "https://images.petabencana.id/95029d20-9626-499c-b606-7821b282e863.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 88.86578544174907,
+        "fireLocation": {
+          "lng": 98.29849033857994,
+          "lat": 2.852962973140407
+        },
+        "personLocation": {
+          "lat": "2.8530340",
+          "lng": "98.2991409"
+        },
+        "fireRadius": {
+          "lng": 98.29769104029168,
+          "lat": 2.8529254687563252
+        }
+      },
+      "tags": {
+        "city": "DAIRI",
+        "district_id": null,
+        "region_code": "1211",
+        "local_area_id": null,
+        "instance_region_code": "ID-SU"
+      },
+      "title": null,
+      "text": "Kebakaran melanda kawasan Tanjung Barangan, Kelurahan Bukit Baru, Kecamatan Ilir Barat I, Kota Palembang, Sumatera Selatan pd Kamis mlm ini",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
