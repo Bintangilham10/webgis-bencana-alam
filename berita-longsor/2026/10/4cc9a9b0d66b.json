@@ -1,0 +1,21 @@
+{
+  "guid": "CBMioAFBVV95cUxQX3pWN294SnQzOURwcEJ6TFpxNUpqaXJCeExaYUIxRXJjNmlKc0tTVlBsckRRQV8xMjhkZ2N1MFFZaklZYlQ2cHd3VG9iSHB5cVdRd05ReU9vOFd6TDNBeUZueXJxMldQbnlIMW83bkpybUdrQXZGbHAtYjJHTUNoTWI0b0s3c2U5Ry0yNktrd0pERm5GMk5MLWJTUUVhMy0t",
+  "title": "Satu dari 10 EWS Longsor di Kota Batu Rusak - Radar Batu",
+  "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQX3pWN294SnQzOURwcEJ6TFpxNUpqaXJCeExaYUIxRXJjNmlKc0tTVlBsckRRQV8xMjhkZ2N1MFFZaklZYlQ2cHd3VG9iSHB5cVdRd05ReU9vOFd6TDNBeUZueXJxMldQbnlIMW83bkpybUdrQXZGbHAtYjJHTUNoTWI0b0s3c2U5Ry0yNktrd0pERm5GMk5MLWJTUUVhMy0t?oc=5",
+  "source": "Radar Batu",
+  "source_url": "https://radarbatu.jawapos.com",
+  "published_at": "2026-10-08T13:00:21.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-08T17:30:45.776Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.79",
+      "nama": "Kota Batu",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}
