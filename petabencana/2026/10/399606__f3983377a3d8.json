@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-08T12:15:29.831Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        124.3693913779,
+        -1.7831991904
+      ]
+    },
+    "properties": {
+      "pkey": "399606",
+      "created_at": "2026-10-08T12:12:07.547Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "838edb2a-87f6-410c-9b68-8f265edfd170",
+      "image_url": "https://images.petabencana.id/838edb2a-87f6-410c-9b68-8f265edfd170.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 226.09130385070685,
+        "fireLocation": {
+          "lng": 124.36939137790137,
+          "lat": -1.7831991903601647
+        },
+        "personLocation": {
+          "lng": 124.36912564384221,
+          "lat": -1.7832655917018343
+        },
+        "fireRadius": {
+          "lng": 124.37125819537249,
+          "lat": -1.7840070375418549
+        }
+      },
+      "tags": {
+        "city": "PULAU TALIABU",
+        "district_id": null,
+        "region_code": "8208",
+        "local_area_id": null,
+        "instance_region_code": "ID-MU"
+      },
+      "title": null,
+      "text": "Kebakaran terjadi dekat pemukiman warga di desa Salati Kec. Taliabu Barat Laut Kab. Pulau Taliabu Maluku Utara mulai tgl. 4 Oktober 2026 ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
