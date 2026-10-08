@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.08.11.32.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-08T17:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-08T17:40:00+07:00</effective>
+    <expires>2026-10-08T19:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 08 October 2026, 17:40 WIB di sebagian wilayah Jawa Barat, khususnya di ARJASARI, BALEENDAH, BOJONGSOANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 08 October 2026, 19:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/10/08/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.965,107.651 -6.966,107.661 -6.969,107.686 -6.969,107.699 -6.965,107.710 -6.975,107.709 -6.987,107.707 -6.988,107.702 -6.991,107.684 -6.994,107.681 -7.002,107.662 -7.009,107.657 -7.010,107.647 -6.999,107.633 -6.994,107.631 -6.992,107.634 -6.990,107.631 -6.966,107.637 -6.965,107.651</polygon>
+      <polygon>-7.048,107.680 -7.052,107.686 -7.057,107.687 -7.085,107.683 -7.093,107.679 -7.107,107.661 -7.108,107.651 -7.119,107.633 -7.103,107.632 -7.082,107.613 -7.060,107.605 -7.045,107.592 -7.033,107.592 -7.029,107.593 -7.032,107.602 -7.026,107.618 -7.027,107.630 -7.039,107.647 -7.048,107.680</polygon>
+      <polygon>-6.990,107.631 -6.992,107.634 -6.994,107.631 -6.999,107.633 -7.010,107.647 -7.009,107.657 -7.002,107.662 -6.994,107.681 -7.002,107.685 -7.011,107.679 -7.048,107.680 -7.039,107.647 -7.027,107.630 -7.026,107.618 -7.015,107.612 -7.013,107.601 -6.998,107.603 -7.003,107.593 -7.001,107.589 -6.993,107.588 -6.988,107.581 -6.986,107.589 -6.979,107.590 -6.982,107.602 -6.977,107.614 -6.986,107.617 -6.991,107.627 -6.990,107.631</polygon>
+    </area>
+  </info>
+</alert>
