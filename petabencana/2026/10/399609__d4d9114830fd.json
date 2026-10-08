@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-08T14:00:41.344Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7797801067,
+        -7.1123034283
+      ]
+    },
+    "properties": {
+      "pkey": "399609",
+      "created_at": "2026-10-08T13:49:08.127Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "b748e43d-dc56-4435-b87d-3d9d798ff015",
+      "image_url": "https://images.petabencana.id/b748e43d-dc56-4435-b87d-3d9d798ff015.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 78.5096943065802,
+        "fireLocation": {
+          "lng": 110.77978010674616,
+          "lat": -7.112303428318327
+        },
+        "personLocation": {
+          "lat": "-7.1118829",
+          "lng": "110.7797962"
+        },
+        "fireRadius": {
+          "lng": 110.77920074960036,
+          "lat": -7.112713309980876
+        }
+      },
+      "tags": {
+        "city": "GROBOGAN",
+        "district_id": null,
+        "region_code": "3315",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Kebakaran melanda satu unit rumah milik warga (Bapak Leko) di Dusun Pangkalan RT 04 RW 02, Desa Pangkalan, Kecamatan Karangrayung",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

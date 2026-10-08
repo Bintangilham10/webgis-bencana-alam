@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-08T14:00:41.344Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.8453341524,
+        -6.1841730723
+      ]
+    },
+    "properties": {
+      "pkey": "399610",
+      "created_at": "2026-10-08T14:00:41.383Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "566193a4-da10-4b2b-b158-720f43526a51",
+      "image_url": "https://images.petabencana.id/566193a4-da10-4b2b-b158-720f43526a51.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 76.80998532541219,
+        "fireLocation": {
+          "lng": 106.84533415236052,
+          "lat": -6.184173072339277
+        },
+        "personLocation": {
+          "lat": "-6.1838194",
+          "lng": "106.8459650"
+        },
+        "fireRadius": {
+          "lng": 106.84465823568974,
+          "lat": -6.18433306835054
+        }
+      },
+      "tags": {
+        "city": "JAKARTA PUSAT",
+        "district_id": null,
+        "region_code": "3171",
+        "local_area_id": "12662",
+        "instance_region_code": "ID-JK"
+      },
+      "title": null,
+      "text": "Kebakaran besar melanda kawasan permukiman warga di Kramat Pulo Dalam Gang 2, Kelurahan Kramat, Kecamatan Senen, Jakarta Pusat pada malm ini",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
