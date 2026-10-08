@@ -1,0 +1,23 @@
+{
+  "guid": "CBMipAFBVV95cUxPTW04cXhPdmhDRVRiX1ZaaHZ5WEhYR1M5bzZNNm9uMEV1dEVnbU5KNWpQRU9WdUh6X0p5YTYwdU5LMzZaSTJMXzUyX0NiUTJQdzVnaVZGNjVwY2g4bDZoM3JjcW5KZ2o2d0lzLVRYdTl1VEthWmZRZ21FaGg4alh6TVhJM1BrNGwwRXpaZ0tjZnFFNzQxSTJ5SW5ZUDAzVkxlbVBPQg",
+  "title": "BPBD Bengkulu Selatan Evakuasi Longsor di Tebing Air Manna - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTW04cXhPdmhDRVRiX1ZaaHZ5WEhYR1M5bzZNNm9uMEV1dEVnbU5KNWpQRU9WdUh6X0p5YTYwdU5LMzZaSTJMXzUyX0NiUTJQdzVnaVZGNjVwY2g4bDZoM3JjcW5KZ2o2d0lzLVRYdTl1VEthWmZRZ21FaGg4alh6TVhJM1BrNGwwRXpaZ0tjZnFFNzQxSTJ5SW5ZUDAzVkxlbVBPQg?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-10-07T22:59:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-08T02:00:38.948Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "17.01",
+      "nama": "Kabupaten Bengkulu Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bengkulu"
+  ]
+}
