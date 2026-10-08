@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-08T11:30:32.488Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        112.3485856729,
+        -7.5380370639
+      ]
+    },
+    "properties": {
+      "pkey": "399604",
+      "created_at": "2026-10-08T11:19:33.155Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "2f602292-d4c0-4a6d-9bb1-0644e7bb77af",
+      "image_url": "https://images.petabencana.id/2f602292-d4c0-4a6d-9bb1-0644e7bb77af.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 58.53089539176012,
+        "fireLocation": {
+          "lng": 112.34858567287813,
+          "lat": -7.53803706388365
+        },
+        "personLocation": {
+          "lat": "-7.5380477",
+          "lng": "112.3493957"
+        },
+        "fireRadius": {
+          "lng": 112.34808141758464,
+          "lat": -7.538201923672105
+        }
+      },
+      "tags": {
+        "city": "JOMBANG",
+        "district_id": null,
+        "region_code": "3517",
+        "local_area_id": null,
+        "instance_region_code": "ID-JI"
+      },
+      "title": null,
+      "text": "Kebakaran melanda bangunan gudang sepatu di kawasan Karobelah 3, Desa Karobelah, Kecamatan Mojoagung, Kabupaten Jombang, Jawa Timur ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
