@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-09T22:56:26.719Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        113.9163567337,
+        -2.2074366318
+      ]
+    },
+    "properties": {
+      "pkey": "399618",
+      "created_at": "2026-10-09T22:48:45.576Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "e3524a87-989a-42c2-99de-8aa87ed29758",
+      "image_url": "https://images.petabencana.id/e3524a87-989a-42c2-99de-8aa87ed29758.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 1,
+        "airQuality": 4
+      },
+      "tags": {
+        "city": "KOTA PALANGKARAYA",
+        "district_id": null,
+        "region_code": "6271",
+        "local_area_id": null,
+        "instance_region_code": "ID-KT"
+      },
+      "title": null,
+      "text": "Lebih dari 3 bulan Palangka Raya diselimuti kabut asap.",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
