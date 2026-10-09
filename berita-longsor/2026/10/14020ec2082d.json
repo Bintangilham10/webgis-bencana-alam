@@ -1,0 +1,23 @@
+{
+  "guid": "CBMimgFBVV95cUxNSTBURFgzVkFfbWdSY0Nnb2FBVHJubE56dlNoRm93ck1NZWxxOEl6VjhETjBYU2dhb3pHZzV4NnR4bF93eHhtcmdWSUZqbzhxTjVmRWM4M1VveExHQzZneFVVUlI2VUFpQlVTWHBrTTQ4alQzMFR2WDlkUC1Nb2tmd3lCMW9yNk5ib2lsbTBXVWs2UHZWeGtYYXF3",
+  "title": "BMKG Ingatkan Potensi Longsor di Enam Kabupaten Jambi - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSTBURFgzVkFfbWdSY0Nnb2FBVHJubE56dlNoRm93ck1NZWxxOEl6VjhETjBYU2dhb3pHZzV4NnR4bF93eHhtcmdWSUZqbzhxTjVmRWM4M1VveExHQzZneFVVUlI2VUFpQlVTWHBrTTQ4alQzMFR2WDlkUC1Nb2tmd3lCMW9yNk5ib2lsbTBXVWs2UHZWeGtYYXF3?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-10-09T02:49:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-09T05:45:29.238Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}
