@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-09T22:45:27.885Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.8321065637,
+        -3.7570506687
+      ]
+    },
+    "properties": {
+      "pkey": "399617",
+      "created_at": "2026-10-09T22:40:21.055Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "3fabf9bc-6776-4b06-b3de-62a45e8b3d95",
+      "image_url": "https://images.petabencana.id/3fabf9bc-6776-4b06-b3de-62a45e8b3d95.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 101.20229552973915,
+        "fireLocation": {
+          "lng": 114.83210656374513,
+          "lat": -3.7570506686735428
+        },
+        "personLocation": {
+          "lat": "-3.7569307",
+          "lng": "114.8325302"
+        },
+        "fireRadius": {
+          "lng": 114.83119461268052,
+          "lat": -3.7570346100065137
+        }
+      },
+      "tags": {
+        "city": "TANAH LAUT",
+        "district_id": null,
+        "region_code": "6301",
+        "local_area_id": null,
+        "instance_region_code": "ID-KS"
+      },
+      "title": null,
+      "text": "Kebakaran lahan melanda kawasan Desa Sungai Bakar RT 07, Kecamatan Bajuin, Kabupaten Tanah Laut, Kalimantan Selatan pada Sabtu",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
