@@ -1,0 +1,43 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-09T16:30:33.235Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        105.4234664363,
+        -6.1022562559
+      ]
+    },
+    "properties": {
+      "pkey": "399611",
+      "created_at": "2026-10-09T16:20:49.095Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "e98551dd-eb7a-4304-9ac7-6e2d9c44470e",
+      "image_url": "https://images.petabencana.id/e98551dd-eb7a-4304-9ac7-6e2d9c44470e.jpg",
+      "disaster_type": "volcano",
+      "is_training": false,
+      "report_data": {
+        "report_type": "volcano",
+        "volcanicSigns": [
+          0
+        ],
+        "evacuationNumber": 1,
+        "evacuationArea": true
+      },
+      "tags": {
+        "city": null,
+        "district_id": null,
+        "region_code": null,
+        "local_area_id": null,
+        "instance_region_code": "ID-LA"
+      },
+      "title": null,
+      "text": "Gunung Anak Krakatau mengalami erupsi tiga kali sejak kamis malam hingga jumat sore (09/10) tinggi kolom letusan capai ± 250 m diatas puncak",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
