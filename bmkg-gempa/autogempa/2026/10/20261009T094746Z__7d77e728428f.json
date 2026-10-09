@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-09T10:15:25.799Z",
+  "data": {
+    "Tanggal": "09 Okt 2026",
+    "Jam": "16:47:46 WIB",
+    "DateTime": "2026-10-09T09:47:46+00:00",
+    "Coordinates": "-1.89,100.12",
+    "Lintang": "1.89 LS",
+    "Bujur": "100.12 BT",
+    "Magnitude": "4.6",
+    "Kedalaman": "8 km",
+    "Wilayah": "Pusat gempa berada di laut 56 km timur laut Pulau Sipora, Kepulauan Mentawai",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Kepulauan Mentawai",
+    "Shakemap": "20261009164746.mmi.jpg"
+  }
+}
