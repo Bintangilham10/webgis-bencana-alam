@@ -1,0 +1,43 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-09T22:00:40.557Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        105.4235811363,
+        -6.0980150237
+      ]
+    },
+    "properties": {
+      "pkey": "399612",
+      "created_at": "2026-10-09T21:51:49.825Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "7f8a7b95-5218-4cd1-a957-0f4d278ce74f",
+      "image_url": "https://images.petabencana.id/7f8a7b95-5218-4cd1-a957-0f4d278ce74f.jpg",
+      "disaster_type": "volcano",
+      "is_training": false,
+      "report_data": {
+        "report_type": "volcano",
+        "volcanicSigns": [
+          4
+        ],
+        "evacuationNumber": 1,
+        "evacuationArea": true
+      },
+      "tags": {
+        "city": null,
+        "district_id": null,
+        "region_code": null,
+        "local_area_id": null,
+        "instance_region_code": "ID-LA"
+      },
+      "title": null,
+      "text": "Status aktivitas Gunung Anak Krakatau di perairan Selat Sunda resmi dinaikkan dari Level II (Waspada) menjadi Level III (Siaga) sejak Jumat ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
