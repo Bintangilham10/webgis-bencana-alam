@@ -1,0 +1,21 @@
+{
+  "guid": "CBMivAFBVV95cUxOaE5lXzd5VW9fclpTWkM5OFVLSmtBOGk1QmpTdDE3V3ROcDhNSmdsWVdUeVNSeHYtWUhsd2NlRzhNUVB6LU83a1hkeEFaNnNIRzk3OWlHWWdCcFplbGlORVQtbkhsU3N2RG1LQWYtZ2lpM0owRDk1UkRrYVQ5dnAwRVVpcm9ra1ZoaGJGOFRLcTNyM3ZjYWZGN2ZqY2ZVZWdCTU94bUlhMWIxcVoyR2hoY2dEZGtoRkppUEdIadIBwgFBVV95cUxQUUMzMThBa1AtR05sdHowWHZMZ0J1R2NWeU9Rc2YzcWlQa1dibmpLel9mbE1DTklIb0QtZ3dGd0duaXd6RGZ0NnhISFh4UXVnR3B6UUtZdjgwcVgtMXgzaFhtdXFGcmtWM0hkOW9zRjdVRThFVmJMbUExRE50Y2Q5QlRjZHRFSV9jREJvLXFkUWxFNDkya2JmVFE1OTRZMEk5RXhvTFRKY2hreUstM0JLd3U0RkFsNGs1U1AzT01PSzBJQQ",
+  "title": "Rekahan Tanah Muncul saat Kemarau, Risiko Longsor di Pacitan Meningkat - Radar Madiun",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaE5lXzd5VW9fclpTWkM5OFVLSmtBOGk1QmpTdDE3V3ROcDhNSmdsWVdUeVNSeHYtWUhsd2NlRzhNUVB6LU83a1hkeEFaNnNIRzk3OWlHWWdCcFplbGlORVQtbkhsU3N2RG1LQWYtZ2lpM0owRDk1UkRrYVQ5dnAwRVVpcm9ra1ZoaGJGOFRLcTNyM3ZjYWZGN2ZqY2ZVZWdCTU94bUlhMWIxcVoyR2hoY2dEZGtoRkppUEdIadIBwgFBVV95cUxQUUMzMThBa1AtR05sdHowWHZMZ0J1R2NWeU9Rc2YzcWlQa1dibmpLel9mbE1DTklIb0QtZ3dGd0duaXd6RGZ0NnhISFh4UXVnR3B6UUtZdjgwcVgtMXgzaFhtdXFGcmtWM0hkOW9zRjdVRThFVmJMbUExRE50Y2Q5QlRjZHRFSV9jREJvLXFkUWxFNDkya2JmVFE1OTRZMEk5RXhvTFRKY2hreUstM0JLd3U0RkFsNGs1U1AzT01PSzBJQQ?oc=5",
+  "source": "Radar Madiun",
+  "source_url": "https://radarmadiun.jawapos.com",
+  "published_at": "2026-10-09T02:59:47.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-09T12:00:43.252Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.01",
+      "nama": "Kabupaten Pacitan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

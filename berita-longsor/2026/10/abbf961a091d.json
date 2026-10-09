@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi2AFBVV95cUxQd2QyeDg2MjNkb0UyZVhCc1hmMy1KZEZXN1JKZGRjaHFkVHo5MTJRQllnNlBkVldrd1JXZmhSWnNFTGFuUWtBSy1ZRWNTdUFaNFk1Q2xjeVFhVXcwdjJhTjRRenU2OTIzdXAxcmFWSFo0NVZlUWxPb0g3RFA0Z05TZ2IwS25MYVV6bENaZjVsWVd6OWlrdFNhMFp5T2xfQ0RXQlg2OFVYWVdiQklPZGJQcjhlR0ZCRUc5R1RvWFNybDc4ekd6SE5EbG0wSThnR1Bic1dxU3ZMSXo",
+  "title": "Pemerintah Kota Bersama Instansi Teknis Ambil Langkah Cepat Tangani Banjir dan Longsor di Kota Jayapura - Nokenlive",
+  "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQd2QyeDg2MjNkb0UyZVhCc1hmMy1KZEZXN1JKZGRjaHFkVHo5MTJRQllnNlBkVldrd1JXZmhSWnNFTGFuUWtBSy1ZRWNTdUFaNFk1Q2xjeVFhVXcwdjJhTjRRenU2OTIzdXAxcmFWSFo0NVZlUWxPb0g3RFA0Z05TZ2IwS25MYVV6bENaZjVsWVd6OWlrdFNhMFp5T2xfQ0RXQlg2OFVYWVdiQklPZGJQcjhlR0ZCRUc5R1RvWFNybDc4ekd6SE5EbG0wSThnR1Bic1dxU3ZMSXo?oc=5",
+  "source": "Nokenlive",
+  "source_url": "https://www.nokenlive.com",
+  "published_at": "2026-10-09T11:59:28.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-09T12:00:43.252Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "91.71",
+      "nama": "Kota Jayapura",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}
