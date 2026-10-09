@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.09.14.61.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-09T21:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-09T22:00:00+07:00</effective>
+    <expires>2026-10-10T00:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 09 October 2026, 22:00 WIB di sebagian wilayah Kalimantan Barat, khususnya di SUNGAI RAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 October 2026, 00:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/10/09/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>-0.127,109.901 -0.137,109.907 -0.145,109.920 -0.150,109.915 -0.151,109.925 -0.143,109.939 -0.220,109.941 -0.241,109.949 -0.259,109.949 -0.271,109.898 -0.283,109.878 -0.282,109.871 -0.272,109.858 -0.270,109.842 -0.281,109.838 -0.285,109.830 -0.273,109.816 -0.246,109.815 -0.241,109.809 -0.245,109.803 -0.268,109.804 -0.275,109.797 -0.272,109.788 -0.251,109.790 -0.245,109.797 -0.243,109.788 -0.249,109.773 -0.258,109.769 -0.279,109.775 -0.291,109.767 -0.307,109.740 -0.348,109.723 -0.351,109.712 -0.347,109.704 -0.330,109.703 -0.311,109.708 -0.307,109.705 -0.306,109.698 -0.315,109.689 -0.334,109.690 -0.343,109.686 -0.352,109.677 -0.353,109.659 -0.357,109.647 -0.370,109.636 -0.373,109.617 -0.370,109.606 -0.359,109.597 -0.331,109.598 -0.325,109.581 -0.334,109.570 -0.374,109.566 -0.374,109.552 -0.371,109.549 -0.364,109.546 -0.340,109.546 -0.339,109.543 -0.348,109.535 -0.366,109.532 -0.381,109.523 -0.382,109.517 -0.371,109.505 -0.372,109.499 -0.389,109.509 -0.397,109.507 -0.399,109.501 -0.387,109.483 -0.386,109.475 -0.379,109.456 -0.361,109.459 -0.339,109.427 -0.321,109.421 -0.315,109.430 -0.319,109.436 -0.305,109.449 -0.305,109.457 -0.299,109.464 -0.292,109.463 -0.235,109.414 -0.195,109.345 -0.183,109.344 -0.159,109.351 -0.132,109.352 -0.095,109.340 -0.098,109.343 -0.059,109.368 -0.062,109.373 -0.052,109.384 -0.055,109.394 -0.066,109.404 -0.079,109.407 -0.088,109.419 -0.083,109.431 -0.082,109.444 -0.088,109.461 -0.115,109.476 -0.131,109.492 -0.169,109.550 -0.204,109.590 -0.207,109.606 -0.202,109.614 -0.202,109.635 -0.165,109.694 -0.157,109.713 -0.134,109.738 -0.115,109.749 -0.103,109.772 -0.100,109.809 -0.105,109.844 -0.127,109.901</polygon>
+    </area>
+  </info>
+</alert>
