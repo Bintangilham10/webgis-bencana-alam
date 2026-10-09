@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-10-09T05:30:35.077Z",
+  "data": {
+    "Tanggal": "09 Okt 2026",
+    "Jam": "12:11:04 WIB",
+    "DateTime": "2026-10-09T05:11:04+00:00",
+    "Coordinates": "0.77,126.03",
+    "Lintang": "0.77 LU",
+    "Bujur": "126.03 BT",
+    "Magnitude": "5.1",
+    "Kedalaman": "10 km",
+    "Wilayah": "125 km Tenggara BITUNG-SULUT",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}
