@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.09.07.35.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-09T14:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-09T14:30:00+07:00</effective>
+    <expires>2026-10-09T16:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 09 October 2026, 14:30 WIB di sebagian wilayah Jawa Timur, khususnya di CURAHDAMI, KEDUNGKANDANG, TAMBELANGAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 09 October 2026, 16:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/10/09/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.902,113.809 -7.930,113.804 -7.942,113.791 -7.948,113.796 -7.949,113.803 -7.970,113.793 -7.962,113.779 -7.956,113.779 -7.968,113.757 -7.955,113.734 -7.938,113.723 -7.913,113.760 -7.907,113.782 -7.880,113.789 -7.881,113.806 -7.902,113.809</polygon>
+      <polygon>-7.014,113.198 -7.016,113.193 -7.048,113.193 -7.088,113.175 -7.095,113.175 -7.100,113.173 -7.100,113.166 -7.092,113.147 -7.091,113.130 -7.086,113.122 -7.089,113.111 -7.082,113.108 -7.077,113.109 -7.082,113.117 -7.079,113.120 -7.067,113.120 -7.049,113.111 -7.045,113.116 -7.032,113.115 -7.036,113.127 -7.034,113.134 -7.010,113.141 -7.005,113.139 -6.997,113.146 -6.990,113.145 -6.988,113.187 -6.991,113.192 -7.002,113.190 -7.010,113.198 -7.014,113.198</polygon>
+      <polygon>-8.005,112.684 -8.013,112.673 -8.025,112.672 -8.028,112.675 -8.048,112.657 -8.050,112.642 -8.046,112.632 -8.033,112.629 -7.994,112.633 -7.987,112.635 -7.993,112.646 -7.965,112.657 -7.977,112.690 -7.983,112.695 -8.005,112.684</polygon>
+    </area>
+  </info>
+</alert>

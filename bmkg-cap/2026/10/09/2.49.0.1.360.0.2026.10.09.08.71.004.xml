@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.09.08.71.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-09T15:12:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-09T15:20:00+08:00</effective>
+    <expires>2026-10-09T18:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 09 October 2026, 15:20 WITA di sebagian wilayah Sulawesi Utara, khususnya di MOOAT, MOTONGKAD.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 09 October 2026, 18:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/10/09/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>0.696,124.582 0.671,124.577 0.662,124.563 0.625,124.543 0.622,124.551 0.618,124.543 0.626,124.532 0.639,124.528 0.657,124.494 0.669,124.493 0.687,124.483 0.701,124.485 0.723,124.480 0.735,124.484 0.736,124.489 0.763,124.486 0.774,124.508 0.763,124.516 0.755,124.533 0.741,124.549 0.703,124.566 0.696,124.582</polygon>
+      <polygon>0.563,124.441 0.568,124.438 0.567,124.429 0.590,124.436 0.599,124.448 0.599,124.456 0.589,124.465 0.579,124.484 0.558,124.475 0.556,124.467 0.564,124.451 0.563,124.441</polygon>
+      <polygon>0.774,124.508 0.763,124.486 0.736,124.489 0.735,124.484 0.723,124.480 0.701,124.485 0.704,124.476 0.693,124.472 0.700,124.451 0.705,124.445 0.711,124.447 0.727,124.430 0.728,124.406 0.741,124.413 0.747,124.398 0.762,124.381 0.768,124.396 0.769,124.417 0.784,124.421 0.793,124.434 0.776,124.446 0.763,124.483 0.766,124.489 0.786,124.493 0.803,124.488 0.809,124.495 0.821,124.498 0.824,124.516 0.812,124.540 0.794,124.558 0.778,124.540 0.774,124.508</polygon>
+    </area>
+  </info>
+</alert>
