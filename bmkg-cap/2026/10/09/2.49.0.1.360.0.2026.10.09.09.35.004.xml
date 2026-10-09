@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.09.09.35.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-09T16:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-09T16:30:00+07:00</effective>
+    <expires>2026-10-09T18:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 09 October 2026, 16:30 WIB di sebagian wilayah Jawa Timur, khususnya di NGIMBANG, SUKORAME.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 09 October 2026, 18:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/10/09/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.308,112.086 -7.313,112.092 -7.321,112.091 -7.324,112.094 -7.326,112.103 -7.321,112.107 -7.322,112.112 -7.334,112.120 -7.349,112.118 -7.344,112.147 -7.349,112.154 -7.366,112.154 -7.367,112.144 -7.385,112.100 -7.383,112.082 -7.358,112.089 -7.334,112.073 -7.307,112.083 -7.308,112.086</polygon>
+      <polygon>-7.249,112.231 -7.248,112.240 -7.260,112.238 -7.301,112.217 -7.317,112.220 -7.327,112.230 -7.351,112.229 -7.353,112.189 -7.366,112.154 -7.349,112.154 -7.344,112.147 -7.316,112.157 -7.296,112.155 -7.280,112.165 -7.273,112.165 -7.273,112.158 -7.262,112.153 -7.263,112.164 -7.255,112.176 -7.230,112.179 -7.232,112.200 -7.228,112.209 -7.240,112.213 -7.249,112.231</polygon>
+    </area>
+  </info>
+</alert>
