@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-09T22:15:33.108Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        105.2811675257,
+        -3.2574573133
+      ]
+    },
+    "properties": {
+      "pkey": "399613",
+      "created_at": "2026-10-09T22:05:09.312Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "04e1336b-5de8-4615-941b-f3cbc895a4bc",
+      "image_url": "https://images.petabencana.id/04e1336b-5de8-4615-941b-f3cbc895a4bc.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 75.43549911213955,
+        "fireLocation": {
+          "lng": 105.28116752565433,
+          "lat": -3.257457313257973
+        },
+        "personLocation": {
+          "lat": "-3.2573984",
+          "lng": "105.2818649"
+        },
+        "fireRadius": {
+          "lng": 105.28049160898149,
+          "lat": -3.257526938015019
+        }
+      },
+      "tags": {
+        "city": "OGAN KOMERING ILIR",
+        "district_id": null,
+        "region_code": "1602",
+        "local_area_id": null,
+        "instance_region_code": "ID-SS"
+      },
+      "title": null,
+      "text": "Personel Manggala Agni Daops Sumatera VI beserta Satgas Gabungan Karhutla saat ini terus berjibaku memadamkan kebakaran hutan dan lahan ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
