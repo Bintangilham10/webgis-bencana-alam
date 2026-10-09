@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixgFBVV95cUxOTkphWU9KQVVQY0J4OGQ4cEQ5T21iQ0tscHRKbk5ZblVySXc5blVYNTlKeUthSjRYREhCRDI3R1h4MUxnM1Jfa195TEJZbTRncWJ6cTZZa1dkSnhwYk9LejlScmhjVmh4Qm9Tdmc5RmViNFN5dWN4WmlUZWp4N3lHdkdmcnI3dDZ5V001Ym41NlRreVVJNEIzcWR2YVhiRFNZd3V2QVEwSzM3TjZHckhMY1pmSU80NUdZU1paOGxkSFFPY3hSOEE",
+  "title": "Foto : BPBD Bandung Petakan 8 Desa Rawan Banjir Bandang dan Longsor Jelang Musim Hujan - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOTkphWU9KQVVQY0J4OGQ4cEQ5T21iQ0tscHRKbk5ZblVySXc5blVYNTlKeUthSjRYREhCRDI3R1h4MUxnM1Jfa195TEJZbTRncWJ6cTZZa1dkSnhwYk9LejlScmhjVmh4Qm9Tdmc5RmViNFN5dWN4WmlUZWp4N3lHdkdmcnI3dDZ5V001Ym41NlRreVVJNEIzcWR2YVhiRFNZd3V2QVEwSzM3TjZHckhMY1pmSU80NUdZU1paOGxkSFFPY3hSOEE?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://bandung.kompas.com",
+  "published_at": "2026-10-09T06:25:43.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-09T18:00:45.301Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
