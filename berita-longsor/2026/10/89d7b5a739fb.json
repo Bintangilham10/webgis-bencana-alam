@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi5AFBVV95cUxNbFphRWZvSnJCUlhtVHVHOW4wNURVSkUzU21RVVFhck5PVWttTEJPa2UxRl96Mm5iZ3JxSUZDaGtIa3EtZmZUa1BKV1pIOVpCeGZaYW9XUXQ4cVFVa01mYlg5Z0l5TTdqMk4zbmNtNnNtbU81OWV3VkRfMUlGRjJNNGlRak5SOU90TU1VNVo3TjdtMzFKQmNmU0lhU1NVVG5Jd1F0VHdVd2NhaXpSQmZPVDJfeU1GMnpSNkJLbmhZbjROSkxXMzRHQzQzd3N6M19nbUphZzlsRGt5V1J1WV9nX1FJWnDSAeQBQVVfeXFMTWxaYUVmb0pyQlJYbVR1RzluMDVEVUpFM1NtUVVRYXJOT1VrbUxCT2tlMUZfejJuYmdycUlGQ2hrSGtxLWZmVGtQSldaSDlaQnhmWmFvV1F0OHFRVWtNZmJYOWdJeU03ajJOM25jbTZzbW1PNTlld1ZEXzFJRkYyTTRpUWpOUjlPdE1NVTVaN043bTMxSkJjZlNJYVNTVVRuSXdRdFR3VXdjYWl6UkJmT1QyX3lNRjJ6UjZCS25oWW40TkpMVzM0R0M0M3dzejNfZ21KYWc5bERreVdSdVlfZ19RSVpw",
+  "title": "Ancaman Longsor Jalur Vital Jember–Banyuwangi, BPBD Kaji Risiko Retakan Jalan 30 Meter di Gumitir - Radar Jember",
+  "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNbFphRWZvSnJCUlhtVHVHOW4wNURVSkUzU21RVVFhck5PVWttTEJPa2UxRl96Mm5iZ3JxSUZDaGtIa3EtZmZUa1BKV1pIOVpCeGZaYW9XUXQ4cVFVa01mYlg5Z0l5TTdqMk4zbmNtNnNtbU81OWV3VkRfMUlGRjJNNGlRak5SOU90TU1VNVo3TjdtMzFKQmNmU0lhU1NVVG5Jd1F0VHdVd2NhaXpSQmZPVDJfeU1GMnpSNkJLbmhZbjROSkxXMzRHQzQzd3N6M19nbUphZzlsRGt5V1J1WV9nX1FJWnDSAeQBQVVfeXFMTWxaYUVmb0pyQlJYbVR1RzluMDVEVUpFM1NtUVVRYXJOT1VrbUxCT2tlMUZfejJuYmdycUlGQ2hrSGtxLWZmVGtQSldaSDlaQnhmWmFvV1F0OHFRVWtNZmJYOWdJeU03ajJOM25jbTZzbW1PNTlld1ZEXzFJRkYyTTRpUWpOUjlPdE1NVTVaN043bTMxSkJjZlNJYVNTVVRuSXdRdFR3VXdjYWl6UkJmT1QyX3lNRjJ6UjZCS25oWW40TkpMVzM0R0M0M3dzejNfZ21KYWc5bERreVdSdVlfZ19RSVpw?oc=5",
+  "source": "Radar Jember",
+  "source_url": "https://radarjember.jawapos.com",
+  "published_at": "2026-10-08T22:49:04.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-09T02:45:27.895Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.10",
+      "nama": "Kabupaten Banyuwangi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.09",
+      "nama": "Kabupaten Jember",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
