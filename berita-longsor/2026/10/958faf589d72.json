@@ -1,0 +1,23 @@
+{
+  "guid": "CBMidEFVX3lxTE9UeEI4akJ6RkYyYXNfalZYQXFycll6SmxjTFJjOGxLZUtpaFFnN0hWNEsxdWhSYlZnRTItR3ZTdUZKOTUyV01qMDc3cmg3Z2dPS0hOMmFYOHhYTnlST2RUTnFCaFhTbjhfbGQwY2FVNG0yYnlW",
+  "title": "BMKG Ingatkan Risiko Banjir dan Longsor di Aceh Singkil - CentralBatam",
+  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9UeEI4akJ6RkYyYXNfalZYQXFycll6SmxjTFJjOGxLZUtpaFFnN0hWNEsxdWhSYlZnRTItR3ZTdUZKOTUyV01qMDc3cmg3Z2dPS0hOMmFYOHhYTnlST2RUTnFCaFhTbjhfbGQwY2FVNG0yYnlW?oc=5",
+  "source": "CentralBatam",
+  "source_url": "https://centralbatam.co.id",
+  "published_at": "2026-10-09T00:13:28.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-09T15:00:44.431Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "11.10",
+      "nama": "Kabupaten Aceh Singkil",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
