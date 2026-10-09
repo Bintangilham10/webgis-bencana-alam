@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.09.21.62.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-10T04:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-10T04:20:00+07:00</effective>
+    <expires>2026-10-10T06:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 October 2026, 04:20 WIB di sebagian wilayah Kalimantan Tengah, khususnya di MURUNG, TANAH SIANG SELATAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 October 2026, 06:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-0.784,114.662 -0.858,114.569 -0.848,114.508 -0.834,114.459 -0.833,114.430 -0.775,114.430 -0.757,114.424 -0.746,114.413 -0.721,114.369 -0.704,114.353 -0.695,114.350 -0.688,114.353 -0.687,114.371 -0.700,114.405 -0.700,114.424 -0.694,114.443 -0.697,114.483 -0.694,114.502 -0.680,114.540 -0.657,114.551 -0.646,114.551 -0.609,114.551 -0.594,114.560 -0.554,114.657 -0.616,114.647 -0.750,114.662 -0.784,114.662</polygon>
+      <polygon>-0.646,114.551 -0.657,114.551 -0.680,114.540 -0.694,114.502 -0.697,114.483 -0.694,114.443 -0.700,114.424 -0.700,114.405 -0.687,114.371 -0.688,114.353 -0.666,114.369 -0.652,114.385 -0.620,114.383 -0.594,114.391 -0.625,114.483 -0.637,114.508 -0.646,114.551</polygon>
+    </area>
+  </info>
+</alert>
