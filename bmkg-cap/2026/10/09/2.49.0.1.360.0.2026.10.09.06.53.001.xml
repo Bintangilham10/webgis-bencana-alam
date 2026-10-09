@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.09.06.53.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-09T14:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-09T14:15:00+08:00</effective>
+    <expires>2026-10-09T16:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 09 October 2026, 14:15 WITA di sebagian wilayah Nusa Tenggara Timur, khususnya di AMFOANG TENGAH, MUTIS, SABU BARAT, SABU LIAE.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 09 October 2026, 16:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNT/2026/10/09/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Timur</areaDesc>
+      <polygon>-9.481,124.117 -9.510,124.139 -9.533,124.147 -9.540,124.155 -9.557,124.158 -9.564,124.149 -9.553,124.122 -9.569,124.109 -9.586,124.079 -9.610,124.089 -9.625,124.087 -9.629,124.086 -9.636,124.068 -9.647,124.054 -9.668,124.058 -9.692,124.082 -9.693,124.091 -9.726,124.089 -9.738,124.086 -9.747,124.072 -9.757,124.067 -9.754,124.063 -9.731,124.037 -9.722,124.032 -9.707,124.010 -9.699,123.991 -9.676,123.966 -9.667,123.932 -9.662,123.926 -9.635,123.942 -9.625,123.941 -9.619,123.948 -9.611,123.950 -9.580,123.940 -9.559,123.962 -9.550,123.963 -9.542,123.970 -9.523,123.982 -9.520,123.980 -9.522,123.994 -9.533,124.000 -9.532,124.013 -9.510,124.041 -9.481,124.068 -9.478,124.075 -9.486,124.083 -9.481,124.117</polygon>
+      <polygon>-9.503,124.278 -9.511,124.259 -9.541,124.255 -9.548,124.249 -9.544,124.234 -9.561,124.228 -9.545,124.213 -9.541,124.214 -9.531,124.222 -9.525,124.238 -9.507,124.223 -9.502,124.212 -9.485,124.202 -9.483,124.190 -9.474,124.178 -9.452,124.161 -9.449,124.144 -9.417,124.096 -9.412,124.093 -9.406,124.096 -9.410,124.110 -9.407,124.120 -9.425,124.133 -9.425,124.151 -9.416,124.162 -9.394,124.169 -9.376,124.204 -9.370,124.207 -9.367,124.218 -9.395,124.259 -9.414,124.271 -9.453,124.286 -9.475,124.287 -9.490,124.280 -9.503,124.278</polygon>
+      <polygon>-10.419,121.912 -10.441,121.910 -10.471,121.920 -10.495,121.915 -10.525,121.923 -10.542,121.919 -10.557,121.911 -10.558,121.890 -10.570,121.883 -10.574,121.877 -10.577,121.837 -10.597,121.806 -10.581,121.795 -10.564,121.778 -10.536,121.761 -10.517,121.789 -10.495,121.835 -10.490,121.840 -10.450,121.844 -10.440,121.854 -10.422,121.892 -10.419,121.912</polygon>
+      <polygon>-10.558,121.934 -10.563,121.938 -10.589,121.913 -10.595,121.897 -10.617,121.874 -10.622,121.860 -10.621,121.849 -10.626,121.838 -10.611,121.804 -10.597,121.806 -10.577,121.837 -10.574,121.877 -10.570,121.883 -10.558,121.890 -10.557,121.911 -10.542,121.919 -10.558,121.934</polygon>
+    </area>
+  </info>
+</alert>
