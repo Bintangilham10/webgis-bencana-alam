@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.09.10.31.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-09T15:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-09T15:20:00+07:00</effective>
+    <expires>2026-10-09T18:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 09 October 2026, 15:20 WIB di sebagian wilayah Jakarta, khususnya di RUMPIN, SAWANGAN, TAJURHALANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 09 October 2026, 18:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJK/2026/10/09/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jakarta</areaDesc>
+      <polygon>-6.362,106.651 -6.374,106.656 -6.390,106.642 -6.411,106.650 -6.416,106.649 -6.420,106.647 -6.429,106.651 -6.439,106.651 -6.443,106.658 -6.455,106.657 -6.462,106.652 -6.469,106.654 -6.476,106.672 -6.506,106.676 -6.509,106.680 -6.515,106.678 -6.513,106.685 -6.523,106.691 -6.532,106.684 -6.537,106.659 -6.542,106.655 -6.538,106.641 -6.546,106.635 -6.548,106.622 -6.554,106.615 -6.551,106.606 -6.538,106.595 -6.530,106.601 -6.515,106.599 -6.473,106.612 -6.458,106.602 -6.441,106.603 -6.428,106.594 -6.422,106.594 -6.419,106.599 -6.414,106.593 -6.400,106.595 -6.392,106.589 -6.378,106.594 -6.359,106.593 -6.363,106.597 -6.362,106.651</polygon>
+      <polygon>-6.438,106.765 -6.447,106.770 -6.454,106.783 -6.481,106.785 -6.488,106.792 -6.494,106.779 -6.492,106.775 -6.501,106.761 -6.499,106.759 -6.493,106.759 -6.492,106.748 -6.487,106.741 -6.475,106.731 -6.466,106.732 -6.457,106.736 -6.452,106.734 -6.439,106.738 -6.439,106.753 -6.438,106.765</polygon>
+      <polygon>-6.361,106.769 -6.376,106.762 -6.384,106.762 -6.386,106.767 -6.394,106.766 -6.399,106.775 -6.415,106.786 -6.434,106.790 -6.438,106.788 -6.438,106.765 -6.439,106.753 -6.424,106.748 -6.388,106.752 -6.377,106.746 -6.361,106.748 -6.361,106.769</polygon>
+    </area>
+  </info>
+</alert>
