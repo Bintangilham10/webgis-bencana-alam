@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.09.09.35.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-09T15:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-09T16:00:00+07:00</effective>
+    <expires>2026-10-09T18:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 09 October 2026, 16:00 WIB di sebagian wilayah Jawa Timur, khususnya di SAMBENG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 09 October 2026, 18:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/10/09/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.225,112.298 -7.253,112.321 -7.291,112.330 -7.308,112.328 -7.325,112.336 -7.328,112.348 -7.333,112.355 -7.341,112.346 -7.344,112.347 -7.345,112.346 -7.346,112.338 -7.350,112.338 -7.352,112.331 -7.348,112.328 -7.347,112.335 -7.344,112.333 -7.359,112.288 -7.357,112.273 -7.363,112.251 -7.351,112.229 -7.327,112.230 -7.317,112.220 -7.301,112.217 -7.260,112.238 -7.248,112.240 -7.245,112.243 -7.245,112.264 -7.226,112.266 -7.216,112.275 -7.217,112.287 -7.225,112.298</polygon>
+    </area>
+  </info>
+</alert>
