@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-10T10:15:24.525Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        103.6053171788,
+        -1.3393391409
+      ]
+    },
+    "properties": {
+      "pkey": "399632",
+      "created_at": "2026-10-10T10:15:34.838Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "d1d06b68-1f59-499f-9aa4-3e2d257ba6ec",
+      "image_url": "https://images.petabencana.id/d1d06b68-1f59-499f-9aa4-3e2d257ba6ec.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 2,
+        "airQuality": 4
+      },
+      "tags": {
+        "city": "TANJUNG JABUNG TIMUR",
+        "district_id": null,
+        "region_code": "1507",
+        "local_area_id": null,
+        "instance_region_code": "ID-JA"
+      },
+      "title": null,
+      "text": "",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
