@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.10.11.32.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-10T16:56:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-10T17:06:00+07:00</effective>
+    <expires>2026-10-10T18:56:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 October 2026, 17:06 WIB di sebagian wilayah Jawa Barat, khususnya di CIATER, CISALAK, LEMBANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 October 2026, 18:56 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/10/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.699,107.788 -6.704,107.794 -6.710,107.794 -6.711,107.788 -6.719,107.784 -6.728,107.799 -6.740,107.801 -6.775,107.786 -6.802,107.782 -6.803,107.775 -6.813,107.753 -6.813,107.750 -6.811,107.727 -6.800,107.721 -6.794,107.709 -6.798,107.688 -6.779,107.672 -6.766,107.685 -6.765,107.695 -6.739,107.714 -6.746,107.721 -6.739,107.729 -6.705,107.748 -6.699,107.764 -6.702,107.776 -6.698,107.783 -6.699,107.788</polygon>
+      <polygon>-6.683,107.656 -6.699,107.664 -6.700,107.680 -6.712,107.672 -6.712,107.682 -6.704,107.689 -6.713,107.693 -6.708,107.703 -6.704,107.710 -6.700,107.729 -6.721,107.716 -6.732,107.712 -6.739,107.714 -6.765,107.695 -6.766,107.685 -6.779,107.672 -6.773,107.657 -6.774,107.628 -6.761,107.618 -6.761,107.621 -6.743,107.625 -6.723,107.647 -6.693,107.651 -6.683,107.656</polygon>
+      <polygon>-6.761,107.618 -6.774,107.628 -6.773,107.657 -6.779,107.672 -6.798,107.688 -6.794,107.709 -6.800,107.721 -6.811,107.727 -6.834,107.718 -6.833,107.713 -6.837,107.709 -6.840,107.703 -6.832,107.694 -6.831,107.686 -6.832,107.662 -6.855,107.636 -6.856,107.629 -6.850,107.625 -6.849,107.617 -6.859,107.605 -6.845,107.603 -6.843,107.599 -6.837,107.598 -6.813,107.599 -6.805,107.590 -6.761,107.601 -6.761,107.618</polygon>
+    </area>
+  </info>
+</alert>

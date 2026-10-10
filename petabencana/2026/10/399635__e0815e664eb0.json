@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-10T11:15:42.226Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        113.6044165884,
+        1.1570116335
+      ]
+    },
+    "properties": {
+      "pkey": "399635",
+      "created_at": "2026-10-10T11:02:14.106Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "2cd855c0-a7f0-416f-b9e7-3a9fa4157bd1",
+      "image_url": null,
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 2,
+        "airQuality": 4
+      },
+      "tags": {
+        "city": "KAPUAS HULU",
+        "district_id": null,
+        "region_code": "6106",
+        "local_area_id": null,
+        "instance_region_code": "ID-KB"
+      },
+      "title": null,
+      "text": "sudah beberapa bulan Kalimantan diselimuti asap beracun. Udara kian berbahaya, mengancam pernapasan, kesehatan, dan kehidupan jutaan orang. ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
