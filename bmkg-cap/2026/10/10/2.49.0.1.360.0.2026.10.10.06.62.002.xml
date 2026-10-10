@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.10.06.62.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-10T12:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-10T12:40:00+07:00</effective>
+    <expires>2026-10-10T14:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 October 2026, 12:40 WIB di sebagian wilayah Kalimantan Tengah, khususnya di UUT MURUNG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 October 2026, 14:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>0.405,115.136 0.372,115.127 0.348,115.096 0.331,115.082 0.316,115.053 0.308,115.054 0.301,115.048 0.303,115.040 0.325,115.025 0.327,115.014 0.320,114.995 0.325,114.977 0.316,114.965 0.313,114.953 0.327,114.953 0.331,114.944 0.319,114.913 0.297,114.888 0.282,114.889 0.274,114.883 0.270,114.873 0.233,114.861 0.224,114.832 0.196,114.826 0.176,114.801 0.171,114.802 0.166,114.810 0.159,114.811 0.117,114.791 0.091,114.792 0.071,114.807 0.069,114.817 0.078,114.832 0.069,114.848 0.057,114.857 0.016,114.795 -0.008,114.757 -0.077,114.671 -0.081,114.602 -0.078,114.561 -0.096,114.494 -0.119,114.456 -0.169,114.430 -0.281,114.417 -0.252,114.337 -0.234,114.269 -0.231,114.228 -0.164,114.196 -0.046,114.170 -0.011,114.150 0.031,114.085 0.075,114.059 0.142,114.068 0.248,114.094 0.363,114.094 0.398,114.109 0.457,114.144 0.522,114.196 0.533,114.210 0.530,114.234 0.536,114.246 0.530,114.259 0.537,114.266 0.541,114.279 0.537,114.295 0.541,114.316 0.536,114.334 0.531,114.352 0.507,114.377 0.506,114.391 0.496,114.404 0.502,114.427 0.512,114.433 0.530,114.431 0.538,114.424 0.545,114.429 0.558,114.452 0.571,114.460 0.567,114.474 0.573,114.491 0.564,114.505 0.565,114.518 0.594,114.540 0.614,114.534 0.630,114.539 0.629,114.591 0.647,114.605 0.642,114.613 0.656,114.621 0.682,114.650 0.707,114.661 0.709,114.679 0.727,114.699 0.729,114.706 0.725,114.707 0.709,114.696 0.705,114.714 0.717,114.736 0.739,114.756 0.742,114.762 0.731,114.779 0.750,114.811 0.752,114.823 0.730,114.843 0.715,114.846 0.700,114.869 0.699,114.877 0.706,114.882 0.722,114.865 0.739,114.865 0.757,114.882 0.764,114.887 0.771,114.906 0.784,114.911 0.791,114.908 0.793,114.912 0.778,114.927 0.772,114.946 0.742,114.981 0.714,114.992 0.611,115.011 0.554,115.040 0.504,115.081 0.468,115.095 0.450,115.109 0.430,115.135 0.405,115.136</polygon>
+    </area>
+  </info>
+</alert>
