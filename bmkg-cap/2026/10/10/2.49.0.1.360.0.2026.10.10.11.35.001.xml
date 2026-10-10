@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.10.11.35.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-10T18:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-10T18:40:00+07:00</effective>
+    <expires>2026-10-10T20:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 October 2026, 18:40 WIB di sebagian wilayah Jawa Timur, khususnya di KEDUNGADEM.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 October 2026, 20:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/10/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.239,112.003 -7.251,112.004 -7.267,112.020 -7.265,112.025 -7.252,112.033 -7.244,112.032 -7.247,112.052 -7.256,112.060 -7.256,112.066 -7.264,112.070 -7.268,112.076 -7.283,112.080 -7.284,112.086 -7.304,112.090 -7.308,112.086 -7.307,112.083 -7.334,112.073 -7.358,112.089 -7.383,112.082 -7.397,112.069 -7.394,112.046 -7.400,112.048 -7.401,112.042 -7.401,112.035 -7.396,112.025 -7.409,112.019 -7.404,112.006 -7.396,112.009 -7.356,112.007 -7.340,111.996 -7.300,111.992 -7.287,111.983 -7.281,111.985 -7.280,111.981 -7.257,111.981 -7.246,111.976 -7.246,111.982 -7.237,111.990 -7.239,112.003</polygon>
+    </area>
+  </info>
+</alert>
