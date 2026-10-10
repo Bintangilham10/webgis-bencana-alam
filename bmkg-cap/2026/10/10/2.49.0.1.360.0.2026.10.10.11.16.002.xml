@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.10.11.16.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-10T18:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-10T18:30:00+07:00</effective>
+    <expires>2026-10-10T20:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 October 2026, 18:30 WIB di sebagian wilayah Sumatera Selatan, khususnya di MEKAKAU ILIR, PULAU BERINGIN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 October 2026, 20:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSS/2026/10/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Selatan</areaDesc>
+      <polygon>-4.403,103.651 -4.438,103.680 -4.433,103.703 -4.436,103.713 -4.451,103.727 -4.462,103.731 -4.472,103.743 -4.519,103.764 -4.524,103.762 -4.545,103.730 -4.561,103.717 -4.565,103.708 -4.564,103.682 -4.580,103.667 -4.595,103.640 -4.594,103.620 -4.596,103.603 -4.594,103.598 -4.589,103.598 -4.574,103.614 -4.570,103.624 -4.557,103.624 -4.556,103.634 -4.551,103.635 -4.545,103.613 -4.552,103.591 -4.550,103.581 -4.512,103.588 -4.479,103.586 -4.470,103.590 -4.450,103.613 -4.439,103.620 -4.405,103.627 -4.403,103.651</polygon>
+      <polygon>-4.602,103.848 -4.618,103.857 -4.633,103.859 -4.649,103.865 -4.668,103.879 -4.675,103.894 -4.681,103.925 -4.684,103.927 -4.690,103.915 -4.693,103.897 -4.706,103.875 -4.757,103.844 -4.778,103.820 -4.788,103.814 -4.795,103.779 -4.781,103.777 -4.772,103.781 -4.748,103.771 -4.741,103.763 -4.739,103.732 -4.730,103.722 -4.723,103.702 -4.730,103.686 -4.728,103.682 -4.714,103.697 -4.699,103.706 -4.658,103.699 -4.634,103.686 -4.595,103.640 -4.580,103.667 -4.564,103.682 -4.565,103.708 -4.561,103.717 -4.545,103.730 -4.524,103.762 -4.569,103.784 -4.602,103.848</polygon>
+    </area>
+  </info>
+</alert>
