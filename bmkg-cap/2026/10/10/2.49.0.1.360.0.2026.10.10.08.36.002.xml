@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.10.08.36.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-10T14:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-10T14:20:00+07:00</effective>
+    <expires>2026-10-10T15:45:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Banten</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 October 2026, 14:20 WIB di sebagian wilayah Banten, khususnya di GUNUNG SARI, WARINGINKURUNG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 October 2026, 15:45 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBT/2026/10/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Banten</areaDesc>
+      <polygon>-6.089,106.107 -6.116,106.089 -6.119,106.077 -6.132,106.070 -6.136,106.055 -6.130,106.044 -6.120,106.037 -6.113,106.039 -6.098,106.050 -6.087,106.046 -6.084,106.035 -6.081,106.036 -6.075,106.050 -6.061,106.054 -6.056,106.063 -6.049,106.064 -6.055,106.077 -6.045,106.084 -6.046,106.090 -6.061,106.101 -6.078,106.095 -6.090,106.098 -6.089,106.107</polygon>
+      <polygon>-6.113,106.039 -6.120,106.037 -6.130,106.044 -6.136,106.055 -6.132,106.070 -6.134,106.073 -6.148,106.075 -6.174,106.066 -6.183,106.076 -6.191,106.077 -6.188,106.074 -6.193,106.063 -6.190,106.051 -6.193,106.035 -6.196,106.025 -6.189,106.021 -6.172,106.024 -6.157,106.001 -6.157,105.988 -6.152,105.996 -6.133,105.999 -6.118,106.006 -6.108,106.028 -6.113,106.039</polygon>
+    </area>
+  </info>
+</alert>

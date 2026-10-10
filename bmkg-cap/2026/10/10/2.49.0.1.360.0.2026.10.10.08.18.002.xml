@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.10.08.18.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-10T14:05:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-10T14:15:00+07:00</effective>
+    <expires>2026-10-10T15:45:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Lampung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 October 2026, 14:15 WIB di sebagian wilayah Lampung, khususnya di BELALAU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 October 2026, 15:45 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CLG/2026/10/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Lampung</areaDesc>
+      <polygon>-4.877,104.236 -4.882,104.243 -4.881,104.250 -4.891,104.246 -4.900,104.247 -4.933,104.241 -4.948,104.217 -4.992,104.209 -4.997,104.203 -5.028,104.224 -5.031,104.235 -5.038,104.234 -5.064,104.218 -5.065,104.203 -5.074,104.195 -5.071,104.190 -5.054,104.190 -5.042,104.202 -5.034,104.201 -5.022,104.192 -5.014,104.178 -4.999,104.176 -4.995,104.155 -4.972,104.149 -4.962,104.143 -4.925,104.143 -4.917,104.149 -4.887,104.184 -4.863,104.189 -4.859,104.216 -4.879,104.233 -4.877,104.236</polygon>
+      <polygon>-5.057,104.271 -5.058,104.269 -5.053,104.266 -5.057,104.271</polygon>
+      <polygon>-5.067,104.280 -5.058,104.275 -5.058,104.280 -5.067,104.280</polygon>
+    </area>
+  </info>
+</alert>
