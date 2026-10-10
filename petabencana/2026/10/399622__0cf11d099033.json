@@ -1,0 +1,41 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-10T06:00:44.076Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        111.6242506029,
+        -2.6882282857
+      ]
+    },
+    "properties": {
+      "pkey": "399622",
+      "created_at": "2026-10-10T01:21:20.588Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "7619e3ca-eb17-4a22-a7f8-b14adb7c4cef",
+      "image_url": "https://images.petabencana.id/7619e3ca-eb17-4a22-a7f8-b14adb7c4cef.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "points": 4,
+        "airQuality": 4,
+        "visibility": 1,
+        "report_type": "haze"
+      },
+      "tags": {
+        "city": "KOTAWARINGIN BARAT",
+        "district_id": null,
+        "region_code": "6201",
+        "local_area_id": null,
+        "instance_region_code": "ID-KT"
+      },
+      "title": null,
+      "text": "sudah 4 bulan kami mengalami bencana kebakaran hutan yg mengakibatkan kabut aasap. sudah banyak orang meninggal, anak kecil terkena ispa,dll",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
