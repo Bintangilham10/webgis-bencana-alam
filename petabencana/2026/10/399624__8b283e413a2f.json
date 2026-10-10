@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-10T03:15:23.673Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        124.3981728048,
+        1.0018502758
+      ]
+    },
+    "properties": {
+      "pkey": "399624",
+      "created_at": "2026-10-10T03:01:43.049Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "1b90cc9f-97ec-4aff-acab-814a5a34292f",
+      "image_url": "https://images.petabencana.id/1b90cc9f-97ec-4aff-acab-814a5a34292f.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 209.71571009761115,
+        "fireLocation": {
+          "lng": 124.39817280483834,
+          "lat": 1.0018502757636867
+        },
+        "personLocation": {
+          "lng": 124.40068461475477,
+          "lat": 1.0014918826915675
+        },
+        "fireRadius": {
+          "lng": 124.39672620011225,
+          "lat": 1.0030606608171553
+        }
+      },
+      "tags": {
+        "city": "MINAHASA SELATAN",
+        "district_id": null,
+        "region_code": "7105",
+        "local_area_id": null,
+        "instance_region_code": "ID-SA"
+      },
+      "title": null,
+      "text": "KEBAKARAN HUTAN DAN LAHAN PERKEBUNAN DI DESA TOYOPON, KECAMATAN MOTOLING BARAT, KABUPATEN MINAHASA SELATAN, PROVINSI SULAWESI UTARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
