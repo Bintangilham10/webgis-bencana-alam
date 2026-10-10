@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-10T12:15:30.335Z",
+  "data": {
+    "Tanggal": "10 Okt 2026",
+    "Jam": "18:53:23 WIB",
+    "DateTime": "2026-10-10T11:53:23+00:00",
+    "Coordinates": "-8.98,110.69",
+    "Lintang": "8.98 LS",
+    "Bujur": "110.69 BT",
+    "Magnitude": "4.4",
+    "Kedalaman": "75 km",
+    "Wilayah": "Pusat gempa berada di laut 100 km barat daya Pacitan",
+    "Dirasakan": "II Pacitan"
+  }
+}
