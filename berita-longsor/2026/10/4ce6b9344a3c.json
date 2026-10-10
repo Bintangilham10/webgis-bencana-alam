@@ -1,0 +1,23 @@
+{
+  "guid": "CBMid0FVX3lxTE5hVkpZMkt4M2x1dXRmcHhCUko5Z2VRLUNHaDUtNWx6TGd2SWlRcVY3eDhPY1hPbWR5ODZ5NDRkSWYzdExXYTFoeGtrVURyTTVubmJvNjF4MEJHbWF1TURXTjhDQS1LUlBxS2xLTm9Na3Zidmtlallv",
+  "title": "Banjir dan Longsor Terjang Aceh Tenggara - Nusantaraterkini.co",
+  "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5hVkpZMkt4M2x1dXRmcHhCUko5Z2VRLUNHaDUtNWx6TGd2SWlRcVY3eDhPY1hPbWR5ODZ5NDRkSWYzdExXYTFoeGtrVURyTTVubmJvNjF4MEJHbWF1TURXTjhDQS1LUlBxS2xLTm9Na3Zidmtlallv?oc=5",
+  "source": "Nusantaraterkini.co",
+  "source_url": "https://nusantaraterkini.co",
+  "published_at": "2026-10-10T11:24:15.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-10T12:45:29.381Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.02",
+      "nama": "Kabupaten Aceh Tenggara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

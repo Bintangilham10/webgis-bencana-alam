@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.10.12.63.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-10T20:10:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-10T20:20:00+08:00</effective>
+    <expires>2026-10-10T21:05:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 October 2026, 20:20 WITA di sebagian wilayah Kalimantan Selatan, khususnya di CANDI LARAS UTARA, CERBON, SIMPANG EMPAT, TAPIN TENGAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 October 2026, 21:05 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKS/2026/10/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Selatan</areaDesc>
+      <polygon>-3.102,114.970 -3.163,115.057 -3.184,115.089 -3.194,115.113 -3.267,115.102 -3.303,115.095 -3.312,115.091 -3.325,115.073 -3.324,115.024 -3.311,115.005 -3.302,115.003 -3.298,115.007 -3.288,115.028 -3.275,115.040 -3.264,115.036 -3.246,115.037 -3.232,115.021 -3.231,115.010 -3.244,114.955 -3.250,114.865 -3.254,114.837 -3.254,114.781 -3.229,114.780 -3.216,114.788 -3.178,114.792 -3.201,114.811 -3.199,114.823 -3.130,114.831 -3.015,114.828 -3.022,114.845 -3.102,114.970</polygon>
+      <polygon>-2.998,114.783 -2.997,114.793 -3.007,114.815 -3.015,114.827 -3.015,114.828 -3.130,114.831 -3.110,114.795 -3.085,114.764 -3.062,114.752 -3.053,114.740 -3.055,114.726 -3.017,114.707 -2.975,114.711 -2.976,114.726 -2.990,114.728 -3.000,114.744 -2.997,114.762 -3.010,114.775 -2.998,114.783</polygon>
+      <polygon>-2.936,115.127 -2.954,115.133 -2.967,115.139 -2.971,115.139 -2.971,115.134 -2.969,115.107 -2.977,115.097 -2.991,115.095 -3.008,115.048 -3.036,114.996 -3.045,114.989 -3.075,114.979 -3.102,114.970 -3.022,114.845 -3.015,114.828 -3.015,114.827 -2.975,114.921 -2.919,115.046 -2.907,115.037 -2.892,115.050 -2.869,115.081 -2.897,115.099 -2.914,115.086 -2.927,115.089 -2.933,115.098 -2.936,115.127</polygon>
+      <polygon>-2.532,114.867 -2.582,114.896 -2.735,114.980 -2.771,115.013 -2.772,115.015 -2.789,114.974 -2.819,114.929 -2.820,114.915 -2.853,114.891 -2.859,114.888 -2.879,114.935 -2.884,114.931 -2.975,114.921 -3.015,114.827 -3.007,114.815 -2.990,114.815 -2.970,114.805 -2.941,114.802 -2.930,114.815 -2.871,114.840 -2.807,114.812 -2.743,114.804 -2.522,114.860 -2.532,114.867</polygon>
+    </area>
+  </info>
+</alert>

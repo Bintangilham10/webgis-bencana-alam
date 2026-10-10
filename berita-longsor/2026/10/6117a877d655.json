@@ -1,0 +1,23 @@
+{
+  "guid": "CBMinwFBVV95cUxQM1B5dURPc195S3JmN0tGdEE4b3psbC0zNjRJdHlGeGE3azk4ZFpLSTl2b1FsNWRoMWtNN3ozWEtjRHI2WmNyRU5MZ3FvMkNRcHlhTzNCRFlDOElLLWNneG9IQk9xMi1oRUtDWlY3V0RhYURfcldfd3FTQkxLSG9Hclk5MllsMVN4Wl9LUG5zYm93TEp0ZVNRUEZkZ3VMMmc",
+  "title": "Berita Foto - Banjir dan Longsor Terjang Tiga Desa di Aceh Tenggara - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQM1B5dURPc195S3JmN0tGdEE4b3psbC0zNjRJdHlGeGE3azk4ZFpLSTl2b1FsNWRoMWtNN3ozWEtjRHI2WmNyRU5MZ3FvMkNRcHlhTzNCRFlDOElLLWNneG9IQk9xMi1oRUtDWlY3V0RhYURfcldfd3FTQkxLSG9Hclk5MllsMVN4Wl9LUG5zYm93TEp0ZVNRUEZkZ3VMMmc?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-10-10T10:01:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-10T12:45:29.381Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.02",
+      "nama": "Kabupaten Aceh Tenggara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
