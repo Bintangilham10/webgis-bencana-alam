@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirAFBVV95cUxOdkZTUnlhY0wtZHZDM09RMzYxYWdVZ1J5RkpBU0hKVnIybVpDQ0NxZDdpMENHWmRJQ0swd1BTc1ZyZ0ZaR1ExaVB4c3dDVEJwcE1XTWJ1ZXFld25NNnZUZTladXRwZHRXNS1NVW5HZEhCaE9rMXBBZ2FHRlVaZFdiQ2tDejN5TVRHQ09wSEk4NGtlUDRZdGhnQTkyNm9Bd19XS0tXQVJrNDhDOEFk",
+  "title": "Pemkot Jayapura Perkuat Penanganan Banjir dan Antisipasi Longsor - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdkZTUnlhY0wtZHZDM09RMzYxYWdVZ1J5RkpBU0hKVnIybVpDQ0NxZDdpMENHWmRJQ0swd1BTc1ZyZ0ZaR1ExaVB4c3dDVEJwcE1XTWJ1ZXFld25NNnZUZTladXRwZHRXNS1NVW5HZEhCaE9rMXBBZ2FHRlVaZFdiQ2tDejN5TVRHQ09wSEk4NGtlUDRZdGhnQTkyNm9Bd19XS0tXQVJrNDhDOEFk?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-10-10T00:28:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-10T03:30:35.967Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "91.03",
+      "nama": "Kabupaten Jayapura",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "91.71",
+      "nama": "Kota Jayapura",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
