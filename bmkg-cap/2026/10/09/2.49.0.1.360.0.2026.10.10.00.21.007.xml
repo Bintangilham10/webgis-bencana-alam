@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.10.00.21.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-10T06:21:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-10T06:31:00+07:00</effective>
+    <expires>2026-10-10T08:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Riau</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 October 2026, 06:31 WIB di sebagian wilayah Kep. Riau, khususnya di MERAL BARAT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 October 2026, 08:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKR/2026/10/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Riau</areaDesc>
+      <polygon>1.134,103.355 1.117,103.359 1.108,103.356 1.105,103.355 1.102,103.355 1.094,103.354 1.088,103.352 1.086,103.346 1.086,103.346 1.083,103.345 1.080,103.343 1.073,103.339 1.076,103.358 1.067,103.372 1.040,103.371 1.040,103.371 1.041,103.370 1.041,103.370 1.043,103.369 1.044,103.368 1.044,103.368 1.044,103.368 1.044,103.367 1.044,103.367 1.045,103.366 1.045,103.365 1.046,103.364 1.047,103.363 1.047,103.363 1.050,103.360 1.043,103.353 1.036,103.325 1.037,103.321 1.054,103.312 1.066,103.322 1.073,103.311 1.087,103.312 1.087,103.319 1.098,103.327 1.112,103.328 1.117,103.339 1.134,103.351 1.134,103.355</polygon>
+      <polygon>1.141,103.301 1.139,103.307 1.131,103.310 1.114,103.303 1.116,103.294 1.132,103.301 1.140,103.298 1.141,103.301</polygon>
+      <polygon>1.122,103.334 1.120,103.333 1.125,103.331 1.122,103.334</polygon>
+      <polygon>1.088,103.288 1.089,103.285 1.101,103.289 1.096,103.293 1.088,103.288</polygon>
+    </area>
+  </info>
+</alert>
