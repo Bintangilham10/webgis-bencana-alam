@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.10.14.63.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-10T21:25:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-10T21:35:00+08:00</effective>
+    <expires>2026-10-10T22:20:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 October 2026, 21:35 WITA di sebagian wilayah Kalimantan Selatan, khususnya di CANDI LARAS SELATAN, CANDI LARAS UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 October 2026, 22:20 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKS/2026/10/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Selatan</areaDesc>
+      <polygon>-2.785,115.072 -2.790,115.076 -2.810,115.073 -2.840,115.063 -2.846,115.068 -2.869,115.081 -2.892,115.050 -2.907,115.037 -2.919,115.046 -2.975,114.921 -2.884,114.931 -2.879,114.935 -2.859,114.888 -2.853,114.891 -2.820,114.915 -2.819,114.929 -2.789,114.974 -2.772,115.015 -2.780,115.025 -2.785,115.044 -2.783,115.066 -2.785,115.072</polygon>
+      <polygon>-2.532,114.867 -2.582,114.896 -2.735,114.980 -2.771,115.013 -2.772,115.015 -2.789,114.974 -2.819,114.929 -2.820,114.915 -2.853,114.891 -2.859,114.888 -2.879,114.935 -2.884,114.931 -2.975,114.921 -3.015,114.827 -3.007,114.815 -2.990,114.815 -2.970,114.805 -2.941,114.802 -2.930,114.815 -2.871,114.840 -2.807,114.812 -2.743,114.804 -2.522,114.860 -2.532,114.867</polygon>
+    </area>
+  </info>
+</alert>

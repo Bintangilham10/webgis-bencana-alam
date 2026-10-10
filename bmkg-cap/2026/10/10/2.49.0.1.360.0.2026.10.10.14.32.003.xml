@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.10.14.32.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-10T19:21:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-10T19:31:00+07:00</effective>
+    <expires>2026-10-10T21:21:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 October 2026, 19:31 WIB di sebagian wilayah Jawa Barat, khususnya di CAMPAKA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 October 2026, 21:21 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/10/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.973,107.190 -6.982,107.185 -6.997,107.186 -7.013,107.190 -7.018,107.194 -7.049,107.186 -7.045,107.169 -7.035,107.155 -7.046,107.143 -7.041,107.123 -7.053,107.116 -7.065,107.115 -7.061,107.103 -7.053,107.099 -7.056,107.081 -7.053,107.071 -7.038,107.060 -7.035,107.044 -7.031,107.047 -7.006,107.048 -6.981,107.032 -6.963,107.042 -6.967,107.064 -6.959,107.064 -6.953,107.058 -6.950,107.061 -6.951,107.067 -6.959,107.078 -6.975,107.081 -6.979,107.091 -6.978,107.097 -6.960,107.106 -6.956,107.089 -6.951,107.086 -6.944,107.090 -6.941,107.097 -6.948,107.110 -6.946,107.115 -6.948,107.124 -6.967,107.131 -7.000,107.130 -6.987,107.153 -6.961,107.175 -6.973,107.190</polygon>
+    </area>
+  </info>
+</alert>
