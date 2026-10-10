@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-10T07:15:31.915Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        101.7030647934,
+        3.2668882514
+      ]
+    },
+    "properties": {
+      "pkey": "399628",
+      "created_at": "2026-10-10T07:13:49.076Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "2ac80447-46ff-49c2-8110-82e79a45e1a3",
+      "image_url": "https://images.petabencana.id/2ac80447-46ff-49c2-8110-82e79a45e1a3.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 0,
+        "airQuality": 1
+      },
+      "tags": {
+        "city": null,
+        "district_id": null,
+        "region_code": null,
+        "local_area_id": null,
+        "instance_region_code": null
+      },
+      "title": null,
+      "text": "The Haze issue have been existed since decades ago. It wasn't solved but instead the situation worsen. INDONESIA NEEDS DO BE RESPONSIBLE!",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
