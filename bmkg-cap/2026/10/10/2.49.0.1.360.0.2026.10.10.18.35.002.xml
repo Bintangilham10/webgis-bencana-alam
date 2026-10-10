@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.10.18.35.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-10T22:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-10T23:20:00+07:00</effective>
+    <expires>2026-10-11T01:15:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 October 2026, 23:20 WIB di sebagian wilayah Jawa Timur, khususnya di JENU, TAMBAKBOYO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 11 October 2026, 01:15 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/10/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-6.822,111.891 -6.830,111.853 -6.842,111.843 -6.843,111.822 -6.865,111.808 -6.876,111.797 -6.883,111.796 -6.889,111.788 -6.893,111.772 -6.906,111.760 -6.912,111.764 -6.907,111.742 -6.895,111.750 -6.875,111.737 -6.866,111.738 -6.867,111.741 -6.857,111.758 -6.840,111.771 -6.836,111.792 -6.824,111.802 -6.817,111.818 -6.798,111.822 -6.800,111.855 -6.791,111.893 -6.822,111.891</polygon>
+      <polygon>-6.882,112.048 -6.886,112.049 -6.870,112.025 -6.877,112.022 -6.874,112.015 -6.865,112.011 -6.855,111.993 -6.849,111.961 -6.843,111.958 -6.818,111.963 -6.814,111.957 -6.821,111.926 -6.829,111.928 -6.839,111.916 -6.836,111.905 -6.839,111.902 -6.822,111.891 -6.791,111.893 -6.779,111.922 -6.764,111.947 -6.768,111.973 -6.774,111.980 -6.795,111.987 -6.817,112.005 -6.840,112.014 -6.882,112.048</polygon>
+    </area>
+  </info>
+</alert>
