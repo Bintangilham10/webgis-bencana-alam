@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.10.05.71.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-10T13:04:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-10T13:10:00+08:00</effective>
+    <expires>2026-10-10T15:15:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 October 2026, 13:10 WITA di sebagian wilayah Sulawesi Utara, khususnya di MANGANITU, TABUKAN TENGAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 October 2026, 15:15 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/10/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>3.516,125.542 3.513,125.535 3.499,125.526 3.480,125.522 3.470,125.488 3.477,125.490 3.486,125.486 3.527,125.489 3.567,125.513 3.577,125.502 3.573,125.491 3.583,125.494 3.594,125.535 3.571,125.542 3.560,125.541 3.553,125.535 3.526,125.546 3.516,125.542</polygon>
+      <polygon>3.635,125.573 3.632,125.563 3.626,125.564 3.625,125.585 3.618,125.585 3.612,125.591 3.608,125.582 3.602,125.577 3.597,125.580 3.589,125.573 3.590,125.564 3.578,125.560 3.580,125.581 3.572,125.588 3.555,125.590 3.554,125.601 3.540,125.617 3.538,125.615 3.523,125.594 3.516,125.595 3.504,125.567 3.513,125.555 3.516,125.542 3.526,125.546 3.553,125.535 3.560,125.541 3.571,125.542 3.594,125.535 3.610,125.527 3.628,125.545 3.633,125.557 3.635,125.573</polygon>
+    </area>
+  </info>
+</alert>
