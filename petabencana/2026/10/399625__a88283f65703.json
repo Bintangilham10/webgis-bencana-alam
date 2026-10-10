@@ -1,0 +1,41 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-10T11:00:44.813Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        132.2996038971,
+        -2.9299555052
+      ]
+    },
+    "properties": {
+      "pkey": "399625",
+      "created_at": "2026-10-10T06:35:15.253Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "bfda53ad-a8c7-4d0a-a464-2c330524cc8a",
+      "image_url": "https://images.petabencana.id/bfda53ad-a8c7-4d0a-a464-2c330524cc8a.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "points": 1,
+        "airQuality": 2,
+        "visibility": 0,
+        "report_type": "haze"
+      },
+      "tags": {
+        "city": "FAKFAK",
+        "district_id": null,
+        "region_code": "9203",
+        "local_area_id": null,
+        "instance_region_code": "ID-PB"
+      },
+      "title": null,
+      "text": "Asap di Kab Fakfak, Papua Barat. Belum tercium bau tapi sudah cukup membuat perih mata",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
