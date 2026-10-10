@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.10.09.19.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-10T15:15:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-10T15:20:00+07:00</effective>
+    <expires>2026-10-10T17:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 October 2026, 15:20 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di TANJUNG PANDAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 October 2026, 17:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/10/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-2.711,107.784 -2.720,107.786 -2.729,107.775 -2.743,107.771 -2.757,107.777 -2.778,107.769 -2.796,107.755 -2.806,107.756 -2.814,107.764 -2.836,107.746 -2.837,107.737 -2.824,107.731 -2.803,107.704 -2.796,107.705 -2.793,107.715 -2.786,107.716 -2.775,107.703 -2.780,107.691 -2.795,107.675 -2.789,107.663 -2.798,107.659 -2.801,107.652 -2.798,107.638 -2.752,107.643 -2.746,107.640 -2.746,107.624 -2.723,107.629 -2.715,107.628 -2.706,107.622 -2.700,107.632 -2.705,107.649 -2.693,107.665 -2.709,107.692 -2.716,107.724 -2.724,107.739 -2.711,107.784</polygon>
+      <polygon>-2.798,107.637 -2.795,107.631 -2.799,107.613 -2.790,107.600 -2.786,107.596 -2.769,107.614 -2.761,107.612 -2.748,107.636 -2.753,107.642 -2.798,107.637</polygon>
+      <polygon>-2.765,107.596 -2.769,107.604 -2.771,107.599 -2.765,107.594 -2.765,107.596</polygon>
+      <polygon>-2.779,107.537 -2.784,107.541 -2.782,107.529 -2.778,107.531 -2.779,107.537</polygon>
+    </area>
+  </info>
+</alert>

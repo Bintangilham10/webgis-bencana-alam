@@ -1,0 +1,52 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-10T09:15:26.447Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        113.9185986222,
+        -2.2336632123
+      ]
+    },
+    "properties": {
+      "pkey": "399627",
+      "created_at": "2026-10-10T07:07:41.002Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "5bbcda09-3b1c-4506-81df-38fb560cec70",
+      "image_url": null,
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "points": 1,
+        "fireRadius": {
+          "lat": -2.2374583056245427,
+          "lng": 113.92087195870386
+        },
+        "report_type": "fire",
+        "fireDistance": 491.81583488563774,
+        "fireLocation": {
+          "lat": -2.2336632122537736,
+          "lng": 113.91859862222339
+        },
+        "personLocation": {
+          "lat": -7.778237943344706,
+          "lng": 110.38045952199269
+        }
+      },
+      "tags": {
+        "city": "KOTA PALANGKARAYA",
+        "district_id": null,
+        "region_code": "6271",
+        "local_area_id": null,
+        "instance_region_code": "ID-KT"
+      },
+      "title": null,
+      "text": "kebakaran hutan - kabut asap",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

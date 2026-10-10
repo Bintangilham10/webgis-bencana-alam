@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.10.09.75.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-10T16:48:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-10T17:00:00+08:00</effective>
+    <expires>2026-10-10T19:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 October 2026, 17:00 WITA di sebagian wilayah Gorontalo, khususnya di TOLINGGULA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 October 2026, 19:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/10/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>1.038,122.196 1.034,122.194 1.021,122.209 1.019,122.213 1.025,122.223 1.014,122.229 1.007,122.221 0.992,122.191 0.995,122.189 0.994,122.184 0.977,122.155 0.938,122.125 0.919,122.117 0.934,122.106 0.924,122.097 0.921,122.083 0.900,122.079 0.900,122.054 0.887,122.038 0.887,122.021 0.890,122.014 0.891,121.998 0.907,121.983 0.917,121.986 0.927,121.983 0.937,121.989 0.966,122.028 0.987,122.042 1.002,122.068 1.004,122.079 0.999,122.084 1.000,122.091 1.018,122.126 1.018,122.141 1.028,122.158 1.029,122.168 1.036,122.176 1.038,122.196</polygon>
+    </area>
+  </info>
+</alert>
