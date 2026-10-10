@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-10T17:00:42.969Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        100.3704800126,
+        -0.8400565225
+      ]
+    },
+    "properties": {
+      "pkey": "399637",
+      "created_at": "2026-10-10T16:52:48.113Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "ca13e12f-1ff7-4fc0-a726-d2967910a03c",
+      "image_url": "https://images.petabencana.id/ca13e12f-1ff7-4fc0-a726-d2967910a03c.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 30
+      },
+      "tags": {
+        "city": "KOTA PADANG",
+        "district_id": null,
+        "region_code": "1371",
+        "local_area_id": null,
+        "instance_region_code": "ID-SB"
+      },
+      "title": null,
+      "text": "Bajir di daerah Lubuk Minturun, Kota Padang, Sumatera Barat (10/10) Sore ini.",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
