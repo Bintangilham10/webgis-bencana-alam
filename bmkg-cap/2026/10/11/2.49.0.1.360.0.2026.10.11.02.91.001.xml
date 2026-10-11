@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.11.02.91.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-11T09:23:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-11T10:00:00+09:00</effective>
+    <expires>2026-10-11T11:10:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 11 October 2026, 10:00 WIT di sebagian wilayah Papua, khususnya di BIAK KOTA, BIAK TIMUR, ORIDEK, PADAIDO, SAMOFA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 11 October 2026, 11:10 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPU/2026/10/11/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua</areaDesc>
+      <polygon>-1.181,136.157 -1.186,136.162 -1.195,136.154 -1.200,136.142 -1.186,136.077 -1.175,136.053 -1.156,136.047 -1.147,136.036 -1.139,136.039 -1.149,136.065 -1.171,136.067 -1.179,136.081 -1.176,136.114 -1.183,136.135 -1.181,136.157</polygon>
+      <polygon>-1.042,136.195 -1.062,136.209 -1.081,136.209 -1.091,136.217 -1.083,136.235 -1.133,136.252 -1.163,136.259 -1.171,136.241 -1.173,136.207 -1.186,136.162 -1.181,136.157 -1.119,136.133 -1.037,136.164 -1.045,136.176 -1.042,136.195</polygon>
+      <polygon>-1.230,136.224 -1.232,136.231 -1.239,136.227 -1.257,136.205 -1.258,136.199 -1.248,136.189 -1.234,136.201 -1.230,136.224</polygon>
+      <polygon>-1.313,136.210 -1.307,136.205 -1.307,136.210 -1.313,136.210</polygon>
+      <polygon>-1.218,136.326 -1.223,136.341 -1.235,136.343 -1.229,136.328 -1.236,136.309 -1.245,136.301 -1.237,136.293 -1.233,136.293 -1.223,136.308 -1.218,136.326</polygon>
+      <polygon>-1.209,136.447 -1.221,136.451 -1.233,136.446 -1.213,136.430 -1.201,136.441 -1.201,136.444 -1.209,136.447</polygon>
+      <polygon>-1.249,136.375 -1.251,136.378 -1.260,136.378 -1.250,136.370 -1.249,136.375</polygon>
+      <polygon>-1.271,136.419 -1.277,136.414 -1.288,136.411 -1.309,136.413 -1.284,136.410 -1.271,136.415 -1.268,136.418 -1.271,136.419</polygon>
+      <polygon>-1.287,136.315 -1.277,136.319 -1.279,136.324 -1.287,136.315</polygon>
+      <polygon>-1.119,136.133 -1.181,136.157 -1.183,136.135 -1.176,136.114 -1.179,136.081 -1.171,136.067 -1.149,136.065 -1.139,136.039 -1.099,136.038 -1.099,136.062 -1.105,136.083 -1.112,136.087 -1.116,136.098 -1.119,136.133</polygon>
+      <polygon>-1.163,136.259 -1.133,136.252 -1.083,136.235 -1.091,136.217 -1.081,136.209 -1.062,136.209 -1.042,136.195 -1.031,136.208 -1.029,136.237 -1.018,136.257 -1.023,136.280 -1.030,136.290 -1.055,136.296 -1.065,136.315 -1.074,136.324 -1.076,136.332 -1.068,136.343 -1.063,136.360 -1.073,136.386 -1.079,136.387 -1.089,136.381 -1.090,136.369 -1.096,136.360 -1.111,136.355 -1.134,136.326 -1.163,136.259</polygon>
+    </area>
+  </info>
+</alert>
