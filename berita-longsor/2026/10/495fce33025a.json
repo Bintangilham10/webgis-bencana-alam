@@ -1,0 +1,21 @@
+{
+  "guid": "CBMirwFBVV95cUxNXzBJckc0OUZibFFLX3JVclFGOVlUMy03SVpHUHZEZ3RKV1RQUUZUQU90eExVc0cyck8yWWVuSkx1X2QwMWktUXZndm5CUkg2S0tjUWFtOXF1TUplckYxbU5DWWNmOGNSNFMwV21zaXB3SkQ4alduQ2F2YVlVNE9UVnczMElFdXpDRzVhRkFwa3hYeGhVT01xNVI2OWIzUG1BVklvdGRWUlJEanM1WEpn0gG0AUFVX3lxTFBKR1pCX1ZvcmNKSGxiN1ZaRk1yNVVkVzJDdG11cktoWHpxQ29VUWF0YU96clQ0V3ZUNVMxSl96bFM3akphVUt1el91MzBRdGhQZmpfWXRsUHlMazRYY2tIMmJPRTRyWms4M3Zicm1GRmdLT3B1YTRBWjJ3MExGVU1sS1poTEVXOHhNMjhtQ0tITlVxQ1p4eVlwcVFZdm01SFQ1SjUxS3hXWlpFWFIyTV9WTE5HYw",
+  "title": "Empat Desa di Kota Batu Rawan Longsor saat Musim Hujan - Radar Batu",
+  "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNXzBJckc0OUZibFFLX3JVclFGOVlUMy03SVpHUHZEZ3RKV1RQUUZUQU90eExVc0cyck8yWWVuSkx1X2QwMWktUXZndm5CUkg2S0tjUWFtOXF1TUplckYxbU5DWWNmOGNSNFMwV21zaXB3SkQ4alduQ2F2YVlVNE9UVnczMElFdXpDRzVhRkFwa3hYeGhVT01xNVI2OWIzUG1BVklvdGRWUlJEanM1WEpn0gG0AUFVX3lxTFBKR1pCX1ZvcmNKSGxiN1ZaRk1yNVVkVzJDdG11cktoWHpxQ29VUWF0YU96clQ0V3ZUNVMxSl96bFM3akphVUt1el91MzBRdGhQZmpfWXRsUHlMazRYY2tIMmJPRTRyWms4M3Zicm1GRmdLT3B1YTRBWjJ3MExGVU1sS1poTEVXOHhNMjhtQ0tITlVxQ1p4eVlwcVFZdm01SFQ1SjUxS3hXWlpFWFIyTV9WTE5HYw?oc=5",
+  "source": "Radar Batu",
+  "source_url": "https://radarbatu.jawapos.com",
+  "published_at": "2026-10-11T08:00:34.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-11T10:45:25.549Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.79",
+      "nama": "Kota Batu",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

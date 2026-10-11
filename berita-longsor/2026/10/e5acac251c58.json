@@ -1,0 +1,23 @@
+{
+  "guid": "CBMimgFBVV95cUxORzRJSmFpenZUQkRtRE5UZDEwZFNxTDRMQVhXYVRONUZVZHF0aW9FaWtVNzgxTXpkVHhyVXdtemVWQXMxaEFVUVN6UWI2M3p5dUx6S1lFeFZOcmg1M05aLU1LVmFUSEY0OW4xUGZwVWlZUjlGemRfUTRMcXBlRW84Sm9fVlNoejMtbEFiTXd5WkhOSGxtaWZLdkhn",
+  "title": "Banjir dan Longsor Kembali Terjang Aceh Tenggara, Tutup Jalan Nasional - Waspada Aceh",
+  "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORzRJSmFpenZUQkRtRE5UZDEwZFNxTDRMQVhXYVRONUZVZHF0aW9FaWtVNzgxTXpkVHhyVXdtemVWQXMxaEFVUVN6UWI2M3p5dUx6S1lFeFZOcmg1M05aLU1LVmFUSEY0OW4xUGZwVWlZUjlGemRfUTRMcXBlRW84Sm9fVlNoejMtbEFiTXd5WkhOSGxtaWZLdkhn?oc=5",
+  "source": "Waspada Aceh",
+  "source_url": "https://waspadaaceh.com",
+  "published_at": "2026-10-11T09:04:14.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-11T10:45:25.549Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.02",
+      "nama": "Kabupaten Aceh Tenggara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
