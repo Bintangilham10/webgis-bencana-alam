@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivAFBVV95cUxOMVlXVGZ6M0Z4Mld6TWwxcTVGdERaVHZRVlJFd1pxVTBQQkRDNS1Yb21jLWtBaHpCc1kwb0FOMFFTQjNxQWROUHR5OFJ4YzFPTUp1dTVBSFdzYU5iRndSODhUaUpRamJKcTdXOEUwQjNaSEJNOHR1S0dUZDY4UG5MaUZuNWdMcDBBM3Zia2xQR0RjOFdUVmZlWF9raTRWRXg1QmdoMHVQSmcxbkhYdWMySVRORzFleFRTbnhrWNIBwgFBVV95cUxNaWQ3bGZkN1pYUVRYMXVxNEtRZTh3NFBmTVU3UGh2VEUwbGQ4QXh5Ym50UGpqci00dW1ZWFhTQmVESnBDRl96b0xONDFiRFl1MmJMU3JiVjVRTTdEMENWZG9jY2Zsa3VZVWNCdzMyYXR2Z0RsblBxRzlRbkt2djFxTlVCY2o0N2pxbWFDU29rRW41WUFVSmppdVU2aXJITEdEbmphdi1mWWF6Y3VXUk0tZ2pua3ZvWTdqWUNMTlY0T2NZdw",
+  "title": "Permukiman di Bibir Tebing Kawasan Pacet Mojokerto Rawan Longsor - Radar Mojokerto",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMVlXVGZ6M0Z4Mld6TWwxcTVGdERaVHZRVlJFd1pxVTBQQkRDNS1Yb21jLWtBaHpCc1kwb0FOMFFTQjNxQWROUHR5OFJ4YzFPTUp1dTVBSFdzYU5iRndSODhUaUpRamJKcTdXOEUwQjNaSEJNOHR1S0dUZDY4UG5MaUZuNWdMcDBBM3Zia2xQR0RjOFdUVmZlWF9raTRWRXg1QmdoMHVQSmcxbkhYdWMySVRORzFleFRTbnhrWNIBwgFBVV95cUxNaWQ3bGZkN1pYUVRYMXVxNEtRZTh3NFBmTVU3UGh2VEUwbGQ4QXh5Ym50UGpqci00dW1ZWFhTQmVESnBDRl96b0xONDFiRFl1MmJMU3JiVjVRTTdEMENWZG9jY2Zsa3VZVWNCdzMyYXR2Z0RsblBxRzlRbkt2djFxTlVCY2o0N2pxbWFDU29rRW41WUFVSmppdVU2aXJITEdEbmphdi1mWWF6Y3VXUk0tZ2pua3ZvWTdqWUNMTlY0T2NZdw?oc=5",
+  "source": "Radar Mojokerto",
+  "source_url": "https://radarmojokerto.jawapos.com",
+  "published_at": "2026-10-10T01:32:07.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-11T01:16:11.888Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.16",
+      "nama": "Kabupaten Mojokerto",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.76",
+      "nama": "Kota Mojokerto",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
