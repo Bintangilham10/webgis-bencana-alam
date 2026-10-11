@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-10-11T03:45:27.803Z",
+  "data": {
+    "Tanggal": "11 Okt 2026",
+    "Jam": "10:30:20 WIB",
+    "DateTime": "2026-10-11T03:30:20+00:00",
+    "Coordinates": "-8.73,106.47",
+    "Lintang": "8.73 LS",
+    "Bujur": "106.47 BT",
+    "Magnitude": "5.7",
+    "Kedalaman": "10 km",
+    "Wilayah": "193 km BaratDaya KAB-SUKABUMI-JABAR",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}
