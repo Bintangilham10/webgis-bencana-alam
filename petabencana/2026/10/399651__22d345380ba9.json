@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-11T17:45:32.509Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        128.166395426,
+        -3.7333619706
+      ]
+    },
+    "properties": {
+      "pkey": "399651",
+      "created_at": "2026-10-11T17:31:31.923Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "0912c2e5-1a1f-444a-814c-0f9ac310d039",
+      "image_url": "https://images.petabencana.id/0912c2e5-1a1f-444a-814c-0f9ac310d039.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 42.79480717329896,
+        "fireLocation": {
+          "lng": 128.16639542602974,
+          "lat": -3.73336197061073
+        },
+        "personLocation": {
+          "lat": "-3.6959434",
+          "lng": "128.1787850"
+        },
+        "fireRadius": {
+          "lng": 128.16603597759865,
+          "lat": -3.7335014830253357
+        }
+      },
+      "tags": {
+        "city": "KOTA AMBON",
+        "district_id": null,
+        "region_code": "8171",
+        "local_area_id": null,
+        "instance_region_code": "ID-MA"
+      },
+      "title": null,
+      "text": "",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
