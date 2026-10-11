@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-11T22:30:33.394Z",
+  "data": {
+    "Tanggal": "12 Okt 2026",
+    "Jam": "05:07:28 WIB",
+    "DateTime": "2026-10-11T22:07:28+00:00",
+    "Coordinates": "-4.08,136.34",
+    "Lintang": "4.08 LS",
+    "Bujur": "136.34 BT",
+    "Magnitude": "4.5",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di darat 7 km tenggara Deiyai",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Enarotali",
+    "Shakemap": "20261012050728.mmi.jpg"
+  }
+}
