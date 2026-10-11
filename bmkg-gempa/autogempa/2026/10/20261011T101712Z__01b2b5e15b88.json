@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-11T10:30:31.949Z",
+  "data": {
+    "Tanggal": "11 Okt 2026",
+    "Jam": "17:17:12 WIB",
+    "DateTime": "2026-10-11T10:17:12+00:00",
+    "Coordinates": "0.09,100.16",
+    "Lintang": "0.09 LU",
+    "Bujur": "100.16 BT",
+    "Magnitude": "4.0",
+    "Kedalaman": "16 km",
+    "Wilayah": "Pusat gempa berada di darat 5 km selatan Pasaman",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "II - III Padang Panjang",
+    "Shakemap": "20261011171712.mmi.jpg"
+  }
+}
