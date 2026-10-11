@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi1AFBVV95cUxQdmc3LXVma0hjOWhDUWxwV1duVFU2dmVtVk9TbnhLYW51UmRWWHZXdXZmUG5nQUlFSHU5ZFZFQ0N3UVQwMUViM19NbXNsMXh6aHZhanRaa190UEtRd1pVWUctYWpmUERxVmxRbTZNdUY4T2IxUGNBVl85OG1kbXpQSG5yaENucWNQSU03QXVoaTZyMnlOUDVVU0FJSGdQWWswYTNibENYQ3NaLXQ4NVB0RUtzUkNhd1plSDBBbENTTlpYeWdjWE1ZYVFEUW9neVVURmZuedIB1AFBVV95cUxQdmc3LXVma0hjOWhDUWxwV1duVFU2dmVtVk9TbnhLYW51UmRWWHZXdXZmUG5nQUlFSHU5ZFZFQ0N3UVQwMUViM19NbXNsMXh6aHZhanRaa190UEtRd1pVWUctYWpmUERxVmxRbTZNdUY4T2IxUGNBVl85OG1kbXpQSG5yaENucWNQSU03QXVoaTZyMnlOUDVVU0FJSGdQWWswYTNibENYQ3NaLXQ4NVB0RUtzUkNhd1plSDBBbENTTlpYeWdjWE1ZYVFEUW9neVVURmZueQ",
+  "title": "Jalur Gumitir Banyuwangi–Jember Terancam Longsor, Retakan 40 Meter Disorot - Radar Banyuwangi",
+  "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdmc3LXVma0hjOWhDUWxwV1duVFU2dmVtVk9TbnhLYW51UmRWWHZXdXZmUG5nQUlFSHU5ZFZFQ0N3UVQwMUViM19NbXNsMXh6aHZhanRaa190UEtRd1pVWUctYWpmUERxVmxRbTZNdUY4T2IxUGNBVl85OG1kbXpQSG5yaENucWNQSU03QXVoaTZyMnlOUDVVU0FJSGdQWWswYTNibENYQ3NaLXQ4NVB0RUtzUkNhd1plSDBBbENTTlpYeWdjWE1ZYVFEUW9neVVURmZuedIB1AFBVV95cUxQdmc3LXVma0hjOWhDUWxwV1duVFU2dmVtVk9TbnhLYW51UmRWWHZXdXZmUG5nQUlFSHU5ZFZFQ0N3UVQwMUViM19NbXNsMXh6aHZhanRaa190UEtRd1pVWUctYWpmUERxVmxRbTZNdUY4T2IxUGNBVl85OG1kbXpQSG5yaENucWNQSU03QXVoaTZyMnlOUDVVU0FJSGdQWWswYTNibENYQ3NaLXQ4NVB0RUtzUkNhd1plSDBBbENTTlpYeWdjWE1ZYVFEUW9neVVURmZueQ?oc=5",
+  "source": "Radar Banyuwangi",
+  "source_url": "https://radarbanyuwangi.jawapos.com",
+  "published_at": "2026-10-11T14:00:52.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-11T17:00:44.295Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.10",
+      "nama": "Kabupaten Banyuwangi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.09",
+      "nama": "Kabupaten Jember",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

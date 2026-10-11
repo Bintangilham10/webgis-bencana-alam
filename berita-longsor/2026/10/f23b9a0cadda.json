@@ -1,0 +1,21 @@
+{
+  "guid": "CBMizgFBVV95cUxOUW9vQmk5dWZuNmt5ajZScDQyRGV4Q2RRSm5UVWdVYUVlb1gtVnYyU1J4cXNBNDU5WVpNT0hrY1JSZElqSGhGNHFTZXJXNm1KbnVzTzRsdE1NelB1bk9EYjh1N2tuRm15MDBRdDZxSUFhbnNCaWo2WGhxSGo1T1FpcG85M29raDRhMmpYNE1rdzhISktxZXhzSFl4TFpXM1pHV01iNFVER2twVzA2MnloYzRxbXRnYWFXWEhsdVJjUzUtODN5MVdkOHpNa0FqQQ",
+  "title": "Cuaca Ekstrem di Pesisir Selatan Bupati Hendrajoni Minta Warga Waspada Banjir dan Longsor - Media Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOUW9vQmk5dWZuNmt5ajZScDQyRGV4Q2RRSm5UVWdVYUVlb1gtVnYyU1J4cXNBNDU5WVpNT0hrY1JSZElqSGhGNHFTZXJXNm1KbnVzTzRsdE1NelB1bk9EYjh1N2tuRm15MDBRdDZxSUFhbnNCaWo2WGhxSGo1T1FpcG85M29raDRhMmpYNE1rdzhISktxZXhzSFl4TFpXM1pHV01iNFVER2twVzA2MnloYzRxbXRnYWFXWEhsdVJjUzUtODN5MVdkOHpNa0FqQQ?oc=5",
+  "source": "Media Indonesia",
+  "source_url": "https://mediaindonesia.com",
+  "published_at": "2026-10-11T14:18:22.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-11T17:00:44.295Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "13.01",
+      "nama": "Kabupaten Pesisir Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

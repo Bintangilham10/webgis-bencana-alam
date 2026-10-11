@@ -1,0 +1,23 @@
+{
+  "guid": "CBMi2wFBVV95cUxPZUpsTVRiMzc0elR3RURYWk9hbjJ0eXZDRUEtZENPQmE4OFp4aVJTU2lsNl9HTVlrdlhYUXVHQXpPUXl1LXlxbFcwWUgxNjNtUXVINHZOSzRUNDRrc0FPM0RQaUQxdGRUcnNKZUVFUnlsTVAybmJlWEhhbmRBTENDcDVrcHFfOE9DS3A0WU1pbEpRSXZ4YnAyZHRkQUZqNHR6X3Nhd3l2bmRaX3FSZTBxU2FIZ3dkRU5qU09lRHlNV1pEQnJaNGdDU1pQOWtrblJiVWQ1dUl2WnlUNDA",
+  "title": "Sumut Diterjang Cuaca Ekstrem: Tebing Samosir Longsor, Banjir Selutut Rendam Tapteng, Rumah Rusak - Wartakotalive.com",
+  "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPZUpsTVRiMzc0elR3RURYWk9hbjJ0eXZDRUEtZENPQmE4OFp4aVJTU2lsNl9HTVlrdlhYUXVHQXpPUXl1LXlxbFcwWUgxNjNtUXVINHZOSzRUNDRrc0FPM0RQaUQxdGRUcnNKZUVFUnlsTVAybmJlWEhhbmRBTENDcDVrcHFfOE9DS3A0WU1pbEpRSXZ4YnAyZHRkQUZqNHR6X3Nhd3l2bmRaX3FSZTBxU2FIZ3dkRU5qU09lRHlNV1pEQnJaNGdDU1pQOWtrblJiVWQ1dUl2WnlUNDA?oc=5",
+  "source": "Wartakotalive.com",
+  "source_url": "https://wartakota.tribunnews.com",
+  "published_at": "2026-10-11T15:16:14.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-11T17:00:44.295Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "12.17",
+      "nama": "Kabupaten Samosir",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Sumatera Utara"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "guid": "CBMixwFBVV95cUxPZlRvbzJtX1VVNEJ6VU1Qbllkak9YNmRpd0ZTWnlUblZ6QlNjTk0xSnJnRU1hX2U0X0FpbHRsbGVwSXJXOEZOOFFkdnprQXVZSWtlVG9ISFQySDFoRjNLUnJRR2hYbTNIZmx2MFNxbEpCd2dUaTlkUFp4dy1DZXBXMVJtTnRYOG5SRVNGaFJydmVmd053OWhhMlVYYmJ1LXp6dXczaFBhT2Nic1dRX3puRUpGUnBmM0NkVWR1UUN4dmtNWksxNF9r",
+  "title": "Cuaca Ekstrem Terjang Sumut: Samosir Dihantam Longsor, sedangkan Tapteng Banjir - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZlRvbzJtX1VVNEJ6VU1Qbllkak9YNmRpd0ZTWnlUblZ6QlNjTk0xSnJnRU1hX2U0X0FpbHRsbGVwSXJXOEZOOFFkdnprQXVZSWtlVG9ISFQySDFoRjNLUnJRR2hYbTNIZmx2MFNxbEpCd2dUaTlkUFp4dy1DZXBXMVJtTnRYOG5SRVNGaFJydmVmd053OWhhMlVYYmJ1LXp6dXczaFBhT2Nic1dRX3puRUpGUnBmM0NkVWR1UUN4dmtNWksxNF9r?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://medan.kompas.com",
+  "published_at": "2026-10-11T15:04:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-11T17:00:44.295Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "12.17",
+      "nama": "Kabupaten Samosir",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Sumatera Utara"
+  ]
+}
