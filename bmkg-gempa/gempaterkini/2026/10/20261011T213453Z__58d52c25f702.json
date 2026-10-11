@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-10-11T21:45:31.476Z",
+  "data": {
+    "Tanggal": "12 Okt 2026",
+    "Jam": "04:34:53 WIB",
+    "DateTime": "2026-10-11T21:34:53+00:00",
+    "Coordinates": "0.64,121.75",
+    "Lintang": "0.64 LU",
+    "Bujur": "121.75 BT",
+    "Magnitude": "5.7",
+    "Kedalaman": "76 km",
+    "Wilayah": "29 km BaratLaut POHUWATO-GORONTALO",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}
