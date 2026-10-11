@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-11T01:45:25.753Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        113.8769683529,
+        -1.7270945349
+      ]
+    },
+    "properties": {
+      "pkey": "399639",
+      "created_at": "2026-10-11T01:34:42.418Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "f17c2553-72bc-4a08-a904-7dd5e848c2e7",
+      "image_url": null,
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 2,
+        "airQuality": 4
+      },
+      "tags": {
+        "city": "PULANG PISAU",
+        "district_id": null,
+        "region_code": "6211",
+        "local_area_id": null,
+        "instance_region_code": "ID-KT"
+      },
+      "title": null,
+      "text": "kemana pemerintah?? kenapa bencana kabut asap gak beres” tapi sibuk melantik menteri. kabut asap di kalimantan udah parah dari bulan” lalu",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
