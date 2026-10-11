@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.11.06.15.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-11T13:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-11T13:30:00+07:00</effective>
+    <expires>2026-10-11T15:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jambi</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 11 October 2026, 13:30 WIB di sebagian wilayah Jambi, khususnya di KUALA JAMBI, MUARA SABAK TIMUR, NIPAH PANJANG, SEBERANG KOTA, TUNGKAL ILIR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 11 October 2026, 15:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJI/2026/10/11/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jambi</areaDesc>
+      <polygon>-0.856,103.550 -0.868,103.536 -0.869,103.521 -0.853,103.516 -0.860,103.503 -0.844,103.479 -0.846,103.474 -0.862,103.470 -0.859,103.455 -0.886,103.456 -0.900,103.438 -0.894,103.433 -0.892,103.435 -0.878,103.430 -0.871,103.436 -0.860,103.435 -0.845,103.442 -0.832,103.439 -0.831,103.430 -0.825,103.428 -0.797,103.488 -0.801,103.518 -0.811,103.548 -0.844,103.559 -0.855,103.556 -0.856,103.550</polygon>
+      <polygon>-0.889,103.426 -0.894,103.416 -0.882,103.415 -0.879,103.421 -0.889,103.426</polygon>
+      <polygon>-0.797,103.488 -0.825,103.428 -0.829,103.412 -0.827,103.362 -0.836,103.335 -0.811,103.306 -0.820,103.291 -0.795,103.265 -0.794,103.248 -0.772,103.243 -0.768,103.240 -0.773,103.253 -0.779,103.313 -0.796,103.376 -0.777,103.409 -0.771,103.440 -0.752,103.446 -0.740,103.442 -0.734,103.447 -0.733,103.456 -0.748,103.477 -0.764,103.487 -0.797,103.488</polygon>
+      <polygon>-1.017,104.062 -1.103,104.038 -1.105,104.057 -1.114,104.054 -1.125,104.043 -1.130,104.043 -1.133,104.052 -1.146,104.037 -1.148,104.032 -1.141,104.020 -1.148,104.012 -1.159,104.010 -1.142,103.987 -1.154,103.970 -1.168,103.938 -1.165,103.931 -1.148,103.926 -1.143,103.911 -1.157,103.883 -1.155,103.877 -1.142,103.872 -1.146,103.862 -1.144,103.855 -1.120,103.845 -1.102,103.846 -1.092,103.842 -1.086,103.841 -1.063,103.811 -1.045,103.818 -1.050,103.847 -1.029,103.849 -1.009,103.843 -0.996,103.869 -0.999,103.872 -0.997,103.881 -0.982,103.908 -0.992,103.947 -0.992,103.974 -0.999,104.021 -1.017,104.062</polygon>
+      <polygon>-1.048,104.334 -1.051,104.336 -1.054,104.326 -1.092,104.291 -1.105,104.298 -1.113,104.308 -1.114,104.319 -1.121,104.328 -1.129,104.332 -1.152,104.330 -1.143,104.315 -1.142,104.251 -1.148,104.242 -1.148,104.233 -1.133,104.226 -1.130,104.211 -1.136,104.187 -1.147,104.162 -1.145,104.160 -1.134,104.162 -1.116,104.152 -1.097,104.130 -1.101,104.101 -1.123,104.062 -1.106,104.061 -1.105,104.057 -1.103,104.038 -1.017,104.062 -1.028,104.085 -1.032,104.109 -1.051,104.135 -1.050,104.173 -1.036,104.180 -1.032,104.205 -1.033,104.250 -1.042,104.266 -1.043,104.280 -1.048,104.288 -1.048,104.299 -1.041,104.326 -1.048,104.334</polygon>
+      <polygon>-1.009,103.843 -1.029,103.849 -1.050,103.847 -1.045,103.818 -1.063,103.811 -1.086,103.841 -1.092,103.842 -1.095,103.809 -1.107,103.786 -1.119,103.753 -1.107,103.750 -1.093,103.758 -1.075,103.746 -1.061,103.756 -1.053,103.752 -1.054,103.740 -1.045,103.739 -1.029,103.729 -1.028,103.734 -1.016,103.741 -1.024,103.748 -1.020,103.754 -1.010,103.748 -0.992,103.750 -0.994,103.802 -1.002,103.807 -1.014,103.809 -1.009,103.843</polygon>
+    </area>
+  </info>
+</alert>
