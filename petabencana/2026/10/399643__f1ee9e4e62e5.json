@@ -1,0 +1,41 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-11T05:15:26.944Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        127.8705430467,
+        0.3314534679
+      ]
+    },
+    "properties": {
+      "pkey": "399643",
+      "created_at": "2026-10-11T05:00:59.042Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "07cfc788-dbb4-46f0-9a8c-1b7d7520f454",
+      "image_url": "https://images.petabencana.id/07cfc788-dbb4-46f0-9a8c-1b7d7520f454.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "points": 1,
+        "airQuality": 1,
+        "visibility": 0,
+        "report_type": "haze"
+      },
+      "tags": {
+        "city": "HALMAHERA TENGAH",
+        "district_id": null,
+        "region_code": "8202",
+        "local_area_id": null,
+        "instance_region_code": "ID-MU"
+      },
+      "title": null,
+      "text": "Kabut asap mulai terasa pekat di kota weda Kabupaten halmahera tengah akibat kargutla",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
