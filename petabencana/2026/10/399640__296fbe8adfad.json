@@ -1,0 +1,41 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-11T05:45:30.403Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        113.8180260089,
+        -1.9696581609
+      ]
+    },
+    "properties": {
+      "pkey": "399640",
+      "created_at": "2026-10-11T02:07:58.077Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "3b81e16f-e5b2-4c83-8206-c40cf40477c1",
+      "image_url": null,
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "points": 4,
+        "airQuality": 4,
+        "visibility": 2,
+        "report_type": "haze"
+      },
+      "tags": {
+        "city": "KOTA PALANGKARAYA",
+        "district_id": null,
+        "region_code": "6271",
+        "local_area_id": null,
+        "instance_region_code": "ID-KT"
+      },
+      "title": null,
+      "text": "segera atasi kabut asap dan karhutla yang ada, please! be humanissssss! ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
