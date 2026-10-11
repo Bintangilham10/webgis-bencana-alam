@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-11T15:30:31.875Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.9890358837,
+        -2.3255719371
+      ]
+    },
+    "properties": {
+      "pkey": "399649",
+      "created_at": "2026-10-11T15:26:49.480Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "79c4fde1-a0d8-42b2-9036-2ea959f60ea4",
+      "image_url": "https://images.petabencana.id/79c4fde1-a0d8-42b2-9036-2ea959f60ea4.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 0,
+        "airQuality": 4
+      },
+      "tags": {
+        "city": "KETAPANG",
+        "district_id": null,
+        "region_code": "6104",
+        "local_area_id": null,
+        "instance_region_code": "ID-KB"
+      },
+      "title": null,
+      "text": "",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
