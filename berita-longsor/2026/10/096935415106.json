@@ -1,0 +1,29 @@
+{
+  "guid": "CBMitgFBVV95cUxOZXVTQWpXYXpIWTlNVFphR3ZIc1BMRWhVRmZGdHNUcFlKUDJxWUZ6b08tdTRGN0JoWmxaTm9rQy04NHR0YUFhMWFKcF9KVVNkbkNTSXp1TEQ5Wk1iREZxVnNEaXFUWmZHTktEczAtbFk2V1pWMWNTSEJaSnp3dWZQVC1uSXNVRkZwbjdCdWlDUUtVN1BKN1paNXRVTWVPWW5qc3FkblBROHVnWjRwS3lWTk51TEFDUQ",
+  "title": "Longsor di Pesisir Selatan Sumbar, Jalan Nasional Tapan–Batas Jambi Dibuka Satu Jalur - Majalah Lintas",
+  "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZXVTQWpXYXpIWTlNVFphR3ZIc1BMRWhVRmZGdHNUcFlKUDJxWUZ6b08tdTRGN0JoWmxaTm9rQy04NHR0YUFhMWFKcF9KVVNkbkNTSXp1TEQ5Wk1iREZxVnNEaXFUWmZHTktEczAtbFk2V1pWMWNTSEJaSnp3dWZQVC1uSXNVRkZwbjdCdWlDUUtVN1BKN1paNXRVTWVPWW5qc3FkblBROHVnWjRwS3lWTk51TEFDUQ?oc=5",
+  "source": "Majalah Lintas",
+  "source_url": "https://www.majalahlintas.com",
+  "published_at": "2026-10-11T12:42:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-11T14:00:37.774Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "13.01",
+      "nama": "Kabupaten Pesisir Selatan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi",
+    "Sumatera Barat"
+  ]
+}
