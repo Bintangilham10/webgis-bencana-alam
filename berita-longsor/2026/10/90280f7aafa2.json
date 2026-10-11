@@ -1,0 +1,23 @@
+{
+  "guid": "CBMijgFBVV95cUxPMGY5dFVfMHFMcXdUampNVWwxLXpXY1kybVhZYXEwQ3ZCQ2pkNmJDMTBaMlctUDMzbW5ZaVNhbGt6V2tnSDlOUUJHNzl1a3JMdGJBTUpwUW5iVmN0Rks4ZUVVZE1NMlZsTXVBMXVEN1MxMkk5SWV2WjRERHVRQVFuRkV0YUJCN0V4QmF3TUt3",
+  "title": "Banjir dan Longsor Terjang 4 Kecamatan di Aceh Tenggara - Waspada.id",
+  "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMGY5dFVfMHFMcXdUampNVWwxLXpXY1kybVhZYXEwQ3ZCQ2pkNmJDMTBaMlctUDMzbW5ZaVNhbGt6V2tnSDlOUUJHNzl1a3JMdGJBTUpwUW5iVmN0Rks4ZUVVZE1NMlZsTXVBMXVEN1MxMkk5SWV2WjRERHVRQVFuRkV0YUJCN0V4QmF3TUt3?oc=5",
+  "source": "Waspada.id",
+  "source_url": "https://www.waspada.id",
+  "published_at": "2026-10-11T06:50:46.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-11T07:30:32.200Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.02",
+      "nama": "Kabupaten Aceh Tenggara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

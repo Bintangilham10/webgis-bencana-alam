@@ -1,0 +1,23 @@
+{
+  "guid": "CBMixAFBVV95cUxPVlZLc3E1UGZEMDIyZnV5VFBJWWNWMHBtWC1jdHotT05VUVZnVENhTUZkVnFYVVV2YUpaU0ctWGtzZzJKQWVNMFZWeFhQTEhOTldCX0FjcHdZSFhoVWF0bUc2ZTZ5UDhBWVBtbHFDaWdxU0lOckt6VVZVMEJKUUt4ZWp0VW9RMjRFSDNmR3dFcDJYNWhoU2tVSnJBMTZGVGcydktDSEkwM2hNb29mU3g3Y3dfblVHeVlTT20xRWhJNWdHczBx",
+  "title": "Banjir dan Longsor Terjang Empat Kecamatan di Aceh Tenggara, Tanggul Jebol dan Jalan Nasional Terendam - baraNews",
+  "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVlZLc3E1UGZEMDIyZnV5VFBJWWNWMHBtWC1jdHotT05VUVZnVENhTUZkVnFYVVV2YUpaU0ctWGtzZzJKQWVNMFZWeFhQTEhOTldCX0FjcHdZSFhoVWF0bUc2ZTZ5UDhBWVBtbHFDaWdxU0lOckt6VVZVMEJKUUt4ZWp0VW9RMjRFSDNmR3dFcDJYNWhoU2tVSnJBMTZGVGcydktDSEkwM2hNb29mU3g3Y3dfblVHeVlTT20xRWhJNWdHczBx?oc=5",
+  "source": "baraNews",
+  "source_url": "https://baranewsaceh.co",
+  "published_at": "2026-10-10T23:11:15.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-11T07:30:32.200Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.02",
+      "nama": "Kabupaten Aceh Tenggara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

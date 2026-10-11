@@ -1,0 +1,21 @@
+{
+  "guid": "CBMipwFBVV95cUxPaTBqWXRaeTl2VFF5X2xLT0dJX1B5dkpWVmdKS05tbnM0a2ZKbXJsUW9BVVFNYjMzN0laT1E4UnhXajJ6MEp4WUFfNjlHOHNmZkxYVk9WS3BlMDdRWUdxdzMwaXBDcHN3WjJkWFRMaVJteldhVmNqVGlsUVpkTlZYeXMwMDNHWlNKb3BRV2wzMXVPQkJ6Uzh6VlFLLVRGYk1oTkU2ZzBnZw",
+  "title": "1.248 Warga Kota Padang Mengungsi, Terjadi 7 Titik Banjir dan 14 Lokasi Longsor - swarajombang.com",
+  "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPaTBqWXRaeTl2VFF5X2xLT0dJX1B5dkpWVmdKS05tbnM0a2ZKbXJsUW9BVVFNYjMzN0laT1E4UnhXajJ6MEp4WUFfNjlHOHNmZkxYVk9WS3BlMDdRWUdxdzMwaXBDcHN3WjJkWFRMaVJteldhVmNqVGlsUVpkTlZYeXMwMDNHWlNKb3BRV2wzMXVPQkJ6Uzh6VlFLLVRGYk1oTkU2ZzBnZw?oc=5",
+  "source": "swarajombang.com",
+  "source_url": "https://swarajombang.com",
+  "published_at": "2026-10-11T05:11:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-11T07:30:32.200Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.71",
+      "nama": "Kota Padang",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}
