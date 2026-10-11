@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.11.08.32.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-11T14:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-11T14:30:00+07:00</effective>
+    <expires>2026-10-11T17:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 11 October 2026, 14:30 WIB di sebagian wilayah Jawa Barat, khususnya di SERANGPANJANG, TEGALWARU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 11 October 2026, 17:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/10/11/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.586,107.624 -6.595,107.621 -6.620,107.625 -6.630,107.637 -6.623,107.653 -6.656,107.649 -6.670,107.636 -6.734,107.601 -6.729,107.596 -6.712,107.589 -6.704,107.594 -6.685,107.590 -6.668,107.600 -6.654,107.602 -6.647,107.590 -6.636,107.580 -6.599,107.588 -6.581,107.572 -6.580,107.592 -6.576,107.593 -6.586,107.624</polygon>
+      <polygon>-6.454,107.301 -6.485,107.293 -6.497,107.298 -6.506,107.286 -6.530,107.284 -6.536,107.273 -6.570,107.251 -6.578,107.234 -6.591,107.221 -6.588,107.208 -6.578,107.193 -6.568,107.191 -6.562,107.197 -6.551,107.189 -6.533,107.190 -6.528,107.186 -6.515,107.189 -6.517,107.203 -6.508,107.222 -6.490,107.227 -6.485,107.238 -6.473,107.246 -6.457,107.247 -6.462,107.263 -6.453,107.288 -6.454,107.301</polygon>
+    </area>
+  </info>
+</alert>
