@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.12.18.18.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-12T22:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-12T23:00:00+07:00</effective>
+    <expires>2026-10-13T02:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Lampung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 12 October 2026, 23:00 WIB di sebagian wilayah Lampung, khususnya di SEMAKA, WONOSOBO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 13 October 2026, 02:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CLG/2026/10/12/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Lampung</areaDesc>
+      <polygon>-5.302,104.478 -5.308,104.500 -5.327,104.533 -5.348,104.553 -5.367,104.561 -5.382,104.588 -5.401,104.584 -5.406,104.587 -5.414,104.585 -5.417,104.580 -5.441,104.563 -5.517,104.554 -5.529,104.547 -5.527,104.545 -5.505,104.519 -5.474,104.496 -5.452,104.505 -5.435,104.507 -5.429,104.498 -5.408,104.502 -5.397,104.496 -5.387,104.466 -5.365,104.461 -5.356,104.465 -5.346,104.486 -5.341,104.489 -5.318,104.489 -5.302,104.478</polygon>
+      <polygon>-5.474,104.496 -5.505,104.519 -5.527,104.545 -5.542,104.532 -5.549,104.504 -5.547,104.488 -5.534,104.470 -5.529,104.455 -5.521,104.447 -5.522,104.440 -5.511,104.431 -5.503,104.431 -5.482,104.414 -5.456,104.411 -5.429,104.388 -5.380,104.350 -5.359,104.365 -5.382,104.380 -5.443,104.442 -5.454,104.457 -5.447,104.464 -5.449,104.470 -5.460,104.486 -5.474,104.496</polygon>
+    </area>
+  </info>
+</alert>
