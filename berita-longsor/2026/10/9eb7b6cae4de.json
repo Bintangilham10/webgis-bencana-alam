@@ -1,0 +1,29 @@
+{
+  "guid": "CBMiwgFBVV95cUxQbk5YU2gxLTAtbFIzclNVNmMzOWwyYmhvVVRTUlNVTGRYN0l1S2gtOWpsd1BDbndNaWtnVHROZ0Z4MlpWM3BJSG5qLXlFbGc0c1B5c0RHZV9Dck5uaDVzUHFGLVRWcVU5UFlJT2N5a0lLV1kydVBPd0dvRk1FaUlxTG1jd05WS0ZrSmV0Yk1rdk9JZGlUZDlNRFROYWZ2SnB6ankxRDMxTVJzNElyNGltRWVKaFRvdHlPQXdyaUxkYkhGZw",
+  "title": "Jalur Sungai Penuh-Tapan Masih Lumpuh karena Longsor, Akses Sumbar-Jambi Terganggu - Tribunjambi.com",
+  "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbk5YU2gxLTAtbFIzclNVNmMzOWwyYmhvVVRTUlNVTGRYN0l1S2gtOWpsd1BDbndNaWtnVHROZ0Z4MlpWM3BJSG5qLXlFbGc0c1B5c0RHZV9Dck5uaDVzUHFGLVRWcVU5UFlJT2N5a0lLV1kydVBPd0dvRk1FaUlxTG1jd05WS0ZrSmV0Yk1rdk9JZGlUZDlNRFROYWZ2SnB6ankxRDMxTVJzNElyNGltRWVKaFRvdHlPQXdyaUxkYkhGZw?oc=5",
+  "source": "Tribunjambi.com",
+  "source_url": "https://jambi.tribunnews.com",
+  "published_at": "2026-10-12T00:01:02.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-12T02:45:24.258Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "15.72",
+      "nama": "Kota Sungai Penuh",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi",
+    "Sumatera Barat"
+  ]
+}

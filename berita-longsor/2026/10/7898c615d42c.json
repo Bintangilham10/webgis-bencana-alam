@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiwgFBVV95cUxNd3ktQVU1RGxUZ3VjX0hmeFFBTHh5NlludWp2THpoTFF3amdZMEloSm9XaU1sWUJpbmI5UVhadFh2LXNUVGlhNnRLcndjZC15S0xNVjNaSDQ5NE4wZ2hMUVhEekw4VEd4QlUwOTBrVzNxUnFHT212d0dGaGpJQzZlblhXcHphTTBBMk9Gc0FGQkpzN0FmVU9tM0lUYTZZY2NrTnl2d2tHTER6b3p1dXpTLXpEeENYQU9EamVteGlnX2xiUQ",
+  "title": "Banjir dan Longsor Terjang Pesisir Selatan Sumbar, 4.240 Warga Terdampak - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNd3ktQVU1RGxUZ3VjX0hmeFFBTHh5NlludWp2THpoTFF3amdZMEloSm9XaU1sWUJpbmI5UVhadFh2LXNUVGlhNnRLcndjZC15S0xNVjNaSDQ5NE4wZ2hMUVhEekw4VEd4QlUwOTBrVzNxUnFHT212d0dGaGpJQzZlblhXcHphTTBBMk9Gc0FGQkpzN0FmVU9tM0lUYTZZY2NrTnl2d2tHTER6b3p1dXpTLXpEeENYQU9EamVteGlnX2xiUQ?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://regional.kompas.com",
+  "published_at": "2026-10-12T01:11:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-12T02:45:24.258Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.01",
+      "nama": "Kabupaten Pesisir Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Sumatera Barat"
+  ]
+}
