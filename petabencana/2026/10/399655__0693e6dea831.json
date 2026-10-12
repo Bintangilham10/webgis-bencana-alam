@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-12T03:45:29.235Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.6945223857,
+        -3.6633117263
+      ]
+    },
+    "properties": {
+      "pkey": "399655",
+      "created_at": "2026-10-12T03:32:31.302Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "0623bcfb-56a9-461f-bf6f-ad7a514f44b2",
+      "image_url": "https://images.petabencana.id/0623bcfb-56a9-461f-bf6f-ad7a514f44b2.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 1,
+        "airQuality": 2
+      },
+      "tags": {
+        "city": null,
+        "district_id": null,
+        "region_code": null,
+        "local_area_id": null,
+        "instance_region_code": "ID-PB"
+      },
+      "title": null,
+      "text": "Jarak pandang sangat dekat",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
