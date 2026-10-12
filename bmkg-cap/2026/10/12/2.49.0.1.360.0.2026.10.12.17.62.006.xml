@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.12.17.62.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-13T00:05:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-13T00:15:00+07:00</effective>
+    <expires>2026-10-13T02:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 13 October 2026, 00:15 WIB di sebagian wilayah Kalimantan Tengah, khususnya di TANAH SIANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 13 October 2026, 02:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/13/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-0.554,114.657 -0.594,114.560 -0.609,114.551 -0.646,114.551 -0.637,114.508 -0.625,114.483 -0.594,114.391 -0.515,114.426 -0.473,114.450 -0.450,114.452 -0.404,114.437 -0.372,114.427 -0.281,114.417 -0.169,114.430 -0.119,114.456 -0.096,114.494 -0.078,114.561 -0.081,114.602 -0.077,114.671 -0.158,114.653 -0.199,114.638 -0.236,114.608 -0.287,114.588 -0.344,114.593 -0.429,114.641 -0.480,114.625 -0.513,114.625 -0.531,114.635 -0.554,114.657</polygon>
+    </area>
+  </info>
+</alert>

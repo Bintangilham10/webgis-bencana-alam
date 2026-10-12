@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-12T17:30:34.664Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.0568890859,
+        -1.8151758203
+      ]
+    },
+    "properties": {
+      "pkey": "399670",
+      "created_at": "2026-10-12T17:15:36.665Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "8c8b3539-dbbf-4efa-acc1-55b12f6eeb25",
+      "image_url": "https://images.petabencana.id/8c8b3539-dbbf-4efa-acc1-55b12f6eeb25.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 1,
+        "airQuality": 4
+      },
+      "tags": {
+        "city": "PULANG PISAU",
+        "district_id": null,
+        "region_code": "6211",
+        "local_area_id": null,
+        "instance_region_code": "ID-KT"
+      },
+      "title": null,
+      "text": "tolong segera ditindak lanjuti keadaan saudara saudara kami di Kalimantan Tengah ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
