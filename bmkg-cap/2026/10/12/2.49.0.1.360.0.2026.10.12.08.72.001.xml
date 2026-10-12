@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.12.08.72.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-12T14:47:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-12T14:59:00+08:00</effective>
+    <expires>2026-10-12T17:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 12 October 2026, 14:59 WITA di sebagian wilayah Sulawesi Tengah, khususnya di BANAWA SELATAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 12 October 2026, 17:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSG/2026/10/12/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tengah</areaDesc>
+      <polygon>-0.834,119.760 -0.834,119.760 -0.840,119.762 -0.840,119.763 -0.844,119.766 -0.844,119.766 -0.845,119.767 -0.845,119.767 -0.845,119.767 -0.847,119.767 -0.851,119.765 -0.851,119.765 -0.853,119.765 -0.856,119.767 -0.857,119.767 -0.857,119.767 -0.858,119.768 -0.859,119.770 -0.860,119.770 -0.861,119.770 -0.861,119.770 -0.861,119.770 -0.861,119.770 -0.862,119.770 -0.864,119.770 -0.864,119.770 -0.865,119.770 -0.865,119.770 -0.865,119.771 -0.865,119.771 -0.864,119.771 -0.864,119.771 -0.864,119.771 -0.864,119.771 -0.864,119.772 -0.864,119.773 -0.867,119.771 -0.869,119.769 -0.878,119.767 -0.882,119.767 -0.883,119.767 -0.894,119.770 -0.894,119.771 -0.894,119.773 -0.895,119.775 -0.895,119.776 -0.897,119.780 -0.898,119.781 -0.898,119.781 -0.904,119.785 -0.909,119.754 -0.919,119.746 -0.901,119.731 -0.935,119.705 -0.941,119.672 -0.953,119.654 -0.970,119.648 -0.994,119.650 -1.002,119.652 -1.010,119.646 -1.011,119.629 -1.003,119.600 -1.010,119.581 -1.018,119.575 -1.019,119.566 -1.010,119.557 -0.985,119.560 -0.949,119.555 -0.930,119.554 -0.914,119.563 -0.901,119.561 -0.889,119.570 -0.881,119.571 -0.871,119.571 -0.851,119.561 -0.849,119.563 -0.845,119.592 -0.834,119.614 -0.820,119.621 -0.802,119.622 -0.795,119.631 -0.786,119.651 -0.790,119.655 -0.795,119.651 -0.805,119.649 -0.803,119.662 -0.798,119.664 -0.786,119.657 -0.779,119.660 -0.773,119.668 -0.768,119.666 -0.768,119.678 -0.762,119.683 -0.751,119.685 -0.752,119.710 -0.761,119.712 -0.775,119.708 -0.790,119.689 -0.810,119.720 -0.820,119.751 -0.834,119.760</polygon>
+    </area>
+  </info>
+</alert>
