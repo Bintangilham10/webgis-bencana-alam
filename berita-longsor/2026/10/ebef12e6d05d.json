@@ -1,0 +1,23 @@
+{
+  "guid": "CBMi0gFBVV95cUxQRXBTZjYxREc0WFVYVWx6RGpYam82NTlJdl9Hcm9EbzFUWnN4VnVrczQ3ZlVCeUVfbkIzUFI0eTVNb2oxWWFXRTJZVHhVcnNqSE1nS0lEWmNsN1dpTXduTk9kR3dwX0Z5VUVCYW9VN3duSi1zQ2QwSl9sTThXOXJuczBycDlmUndtU1VzZl85MWpaQUVGYlBEMVlpUnNSeEphd3hDUXJXTXRPb1YzS0pCRnhHV0ZKNFlCcE9vTFFSbEdSZVRVRFRyc2loLWdPcUZyVkE",
+  "title": "Cegah Warga Terisolasi, Pemulihan Akses di 8 Titik Tapan–Jambi Akibat Longsor Dipercepat - Jawa Pos",
+  "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQRXBTZjYxREc0WFVYVWx6RGpYam82NTlJdl9Hcm9EbzFUWnN4VnVrczQ3ZlVCeUVfbkIzUFI0eTVNb2oxWWFXRTJZVHhVcnNqSE1nS0lEWmNsN1dpTXduTk9kR3dwX0Z5VUVCYW9VN3duSi1zQ2QwSl9sTThXOXJuczBycDlmUndtU1VzZl85MWpaQUVGYlBEMVlpUnNSeEphd3hDUXJXTXRPb1YzS0pCRnhHV0ZKNFlCcE9vTFFSbEdSZVRVRFRyc2loLWdPcUZyVkE?oc=5",
+  "source": "Jawa Pos",
+  "source_url": "https://www.jawapos.com",
+  "published_at": "2026-10-12T15:19:29.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-12T18:00:38.841Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}

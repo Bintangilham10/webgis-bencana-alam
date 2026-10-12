@@ -1,0 +1,26 @@
+{
+  "guid": "CBMipwFBVV95cUxOSXpzM0tnbHluLW1WNzRya3NsREZpa21JMU9tMkpMYnZvVTR3ang4aFoyS1lXVWFnS0xsb05Wb0VEUFU2bGR5OUNaUWJhc01hYXVmazkzbUZ4NVgyVlhGM0JNY1AxRGlJR2VtWVFBM0oyZDN5VXd3OUMtQ2k1bjh0alhHOEEzWGJoM1VyWnB6bkNUdEhSZjAyblh6SHRoQU1yMTRfZEFaTQ",
+  "title": "Dialog Siskamling Polresta Malang Kota Bahas Curanmor dan Longsor - BANGSAONLINE.com",
+  "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSXpzM0tnbHluLW1WNzRya3NsREZpa21JMU9tMkpMYnZvVTR3ang4aFoyS1lXVWFnS0xsb05Wb0VEUFU2bGR5OUNaUWJhc01hYXVmazkzbUZ4NVgyVlhGM0JNY1AxRGlJR2VtWVFBM0oyZDN5VXd3OUMtQ2k1bjh0alhHOEEzWGJoM1VyWnB6bkNUdEhSZjAyblh6SHRoQU1yMTRfZEFaTQ?oc=5",
+  "source": "BANGSAONLINE.com",
+  "source_url": "https://bangsaonline.com",
+  "published_at": "2026-10-12T06:31:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-12T18:00:38.841Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

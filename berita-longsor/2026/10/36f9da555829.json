@@ -1,0 +1,23 @@
+{
+  "guid": "CBMi0gFBVV95cUxNbjhuZG9sRjExYVpuNGJHUUYyUV96WC11cWFUcFpUNVFwd0lpcDZnWFMtYmMtRFRpOXFHQ1p1ZkFGaHFUT1Y1TElyN2JieTZDMVRucVRpMjJDU09fVUFzcFVvaW1rejAzamw5Q1F6aGF0QkpHLTJibGdPR2g3Tzk2MWFHSHBpcmcxNjgtLUViSm00RjlFZkExbkttem5xV1ZqcHdjOXAwLTBZemczQmRmN0pKQkZqZDd5UGJJazlGclJSUk5TSlA3REJHZkZ1bXFiX1E",
+  "title": "Kementerian Pekerjaan Umum Percepat Pemulihan 8 Titik Longsor Ruas Tapan-Jambi - Banda Sapuluah",
+  "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNbjhuZG9sRjExYVpuNGJHUUYyUV96WC11cWFUcFpUNVFwd0lpcDZnWFMtYmMtRFRpOXFHQ1p1ZkFGaHFUT1Y1TElyN2JieTZDMVRucVRpMjJDU09fVUFzcFVvaW1rejAzamw5Q1F6aGF0QkpHLTJibGdPR2g3Tzk2MWFHSHBpcmcxNjgtLUViSm00RjlFZkExbkttem5xV1ZqcHdjOXAwLTBZemczQmRmN0pKQkZqZDd5UGJJazlGclJSUk5TSlA3REJHZkZ1bXFiX1E?oc=5",
+  "source": "Banda Sapuluah",
+  "source_url": "https://bandasapuluah.com",
+  "published_at": "2026-10-12T15:50:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-12T18:00:38.841Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}
