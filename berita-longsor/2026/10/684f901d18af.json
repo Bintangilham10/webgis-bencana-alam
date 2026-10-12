@@ -1,0 +1,21 @@
+{
+  "guid": "CBMijwFBVV95cUxOaTVVNTJuRW5WRlk5bEcwamRvRTJWYzEyWE82UTBlNHJHeE9sQmd3Q0R2TjNOTEdla1ZjclF1M1F3RTN4ZTd5X2dwa3A0Qzh4MEV0RzZtUTF0Uzl5ckFWbDNheVJuS3RkSWFpLUZaY3ZDYnE2bExQbkpyNm55c1VnWG52cmNtTTM1bzFncGZVbw",
+  "title": "BPBD Bener Meriah Imbau Warga Waspadai Hujan Lebat dan Longsor - Lintas Gayo",
+  "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaTVVNTJuRW5WRlk5bEcwamRvRTJWYzEyWE82UTBlNHJHeE9sQmd3Q0R2TjNOTEdla1ZjclF1M1F3RTN4ZTd5X2dwa3A0Qzh4MEV0RzZtUTF0Uzl5ckFWbDNheVJuS3RkSWFpLUZaY3ZDYnE2bExQbkpyNm55c1VnWG52cmNtTTM1bzFncGZVbw?oc=5",
+  "source": "Lintas Gayo",
+  "source_url": "https://lintasgayo.com",
+  "published_at": "2026-10-12T04:18:01.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-12T05:45:25.017Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "11.17",
+      "nama": "Kabupaten Bener Meriah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

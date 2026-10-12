@@ -1,0 +1,28 @@
+{
+  "guid": "CBMitAFBVV95cUxOMjFlYTV5bGlFVzJ6UXc3U3VpS2FKYXBKNHI2OUlrYnNBRDN0NldhRW5PbEVvWkMxVHNkeXNnZEp5UUhRV2VZd1VFNzR5dXpqNFVZdmlBazc0c1NwOUZja0laeFpZaHRmWFdlUkFRMHRhcTE3cmxQbUdWeXFPanRYZFJ0am41d0tJTG9lTWFqbWIxUEJZeGFEa3B4d1BlUlYyMWZrd0RPUHF2MGZKeFQ4OGxYV3o",
+  "title": "BNPB: Banjir dan Longsor Terjang Aceh, Karhutla Meluas di Merauke, Padang Masih Terendam - ACEH INDEPENDENT",
+  "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMjFlYTV5bGlFVzJ6UXc3U3VpS2FKYXBKNHI2OUlrYnNBRDN0NldhRW5PbEVvWkMxVHNkeXNnZEp5UUhRV2VZd1VFNzR5dXpqNFVZdmlBazc0c1NwOUZja0laeFpZaHRmWFdlUkFRMHRhcTE3cmxQbUdWeXFPanRYZFJ0am41d0tJTG9lTWFqbWIxUEJZeGFEa3B4d1BlUlYyMWZrd0RPUHF2MGZKeFQ4OGxYV3o?oc=5",
+  "source": "ACEH INDEPENDENT",
+  "source_url": "https://acehindependent.com",
+  "published_at": "2026-10-12T05:29:23.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-12T05:45:25.017Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "93.01",
+      "nama": "Kabupaten Merauke",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.71",
+      "nama": "Kota Padang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

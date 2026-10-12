@@ -1,0 +1,34 @@
+{
+  "guid": "CBMi3wFBVV95cUxNOHFfTW9WWlJsa0J4WTZwWXVHamZBT2dhOW92cURWNUx4ZVZHQkw5ZzlBZXdGZVpEcHlHZ19rZDNRcjNMcUN2cXhaMGxuaHRhVi1nVndCRS12b19GVWhSUTllNC1naE5majBSa0N4Q09MTkYwZ2VDOVZpdXJNVVNQWE1ydFA1aEFRdlZlb3F0QV9zUnZKTFBjejNsQW9lRWZuTkJmWFdBMjh1VFg5eFp0YXpEVmg3V1hPUGdmdHFWdmxRUmdXYmJPeDg5NjRxaGQ5MzZMSHE3bHhXTWNWZFZR0gHkAUFVX3lxTE1GekxhNUJoNTFaZGNiMUsxMGhwUE4wOFg5cEJaMjltVEFZVDBTcEpkWXR2RzBQQXFJcWg2NmNGVGYyRnlxSURSZGNtNmV0Nlk3WHRsanFlSGlJUGxGX2JMSzM1WmhxNGFQelFPWmtyNGJKLTl3VmRmMno4a3AtSkZrdGRxd09ldlhVUDZwWEIzSWtxbkxoRVYzSXFWeVN6dXI0VUJ3ZHlqQTR0VmtnMFpjZzdIbTE4OFhDQUdEOUxpdmUzbzZjMFdzSmxnUF9jTF9aT0tSVUhqc0VRSWdhelVHUXFvMQ",
+  "title": "Update Bencana Nasional BNPB: Aceh Diterjang Longsor, Padang Dilanda Banjir Bandang, Merauke Terbakar - Bengkulu Network - Bengkulu Network",
+  "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNOHFfTW9WWlJsa0J4WTZwWXVHamZBT2dhOW92cURWNUx4ZVZHQkw5ZzlBZXdGZVpEcHlHZ19rZDNRcjNMcUN2cXhaMGxuaHRhVi1nVndCRS12b19GVWhSUTllNC1naE5majBSa0N4Q09MTkYwZ2VDOVZpdXJNVVNQWE1ydFA1aEFRdlZlb3F0QV9zUnZKTFBjejNsQW9lRWZuTkJmWFdBMjh1VFg5eFp0YXpEVmg3V1hPUGdmdHFWdmxRUmdXYmJPeDg5NjRxaGQ5MzZMSHE3bHhXTWNWZFZR0gHkAUFVX3lxTE1GekxhNUJoNTFaZGNiMUsxMGhwUE4wOFg5cEJaMjltVEFZVDBTcEpkWXR2RzBQQXFJcWg2NmNGVGYyRnlxSURSZGNtNmV0Nlk3WHRsanFlSGlJUGxGX2JMSzM1WmhxNGFQelFPWmtyNGJKLTl3VmRmMno4a3AtSkZrdGRxd09ldlhVUDZwWEIzSWtxbkxoRVYzSXFWeVN6dXI0VUJ3ZHlqQTR0VmtnMFpjZzdIbTE4OFhDQUdEOUxpdmUzbzZjMFdzSmxnUF9jTF9aT0tSVUhqc0VRSWdhelVHUXFvMQ?oc=5",
+  "source": "Bengkulu Network",
+  "source_url": "https://www.bengkulunetwork.com",
+  "published_at": "2026-10-12T01:50:47.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-12T05:45:25.017Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "17.71",
+      "nama": "Kota Bengkulu",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "93.01",
+      "nama": "Kabupaten Merauke",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.71",
+      "nama": "Kota Padang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh",
+    "Bengkulu"
+  ]
+}

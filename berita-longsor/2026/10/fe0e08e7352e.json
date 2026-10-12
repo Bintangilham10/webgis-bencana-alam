@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiyAFBVV95cUxPUnNRVVFDajJaTGphQWhjRXU3ZVlzY0EzOUwyUUN2dURjUDZpRVFSbGpGLW1uYUhQU09GWTI5OWw0dERWdUtRYnJGRjI1dW9fclVBNU5IS1V1cmpXZVZyQUg3N1dmMXE4alpnT2VEdFF2dExzVHdPMEVZWlpXeE5GT0J3TnN3NzN6UlJXREEtQlFLT0E4ZmVCQTR5aGZnUFVaUTRCVkl6WTNZNWRtMzdUaGFHRGM5Y2VpRzlnTk5KTW1ZcXh0MGFHM9IByAFBVV95cUxPUnNRVVFDajJaTGphQWhjRXU3ZVlzY0EzOUwyUUN2dURjUDZpRVFSbGpGLW1uYUhQU09GWTI5OWw0dERWdUtRYnJGRjI1dW9fclVBNU5IS1V1cmpXZVZyQUg3N1dmMXE4alpnT2VEdFF2dExzVHdPMEVZWlpXeE5GT0J3TnN3NzN6UlJXREEtQlFLT0E4ZmVCQTR5aGZnUFVaUTRCVkl6WTNZNWRtMzdUaGFHRGM5Y2VpRzlnTk5KTW1ZcXh0MGFHMw",
+  "title": "Banjir Bandang dan Tanah Longsor Terjang Gayo Lues dan Aceh Tenggara, Akses Jalan Terputus - NU Online",
+  "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUnNRVVFDajJaTGphQWhjRXU3ZVlzY0EzOUwyUUN2dURjUDZpRVFSbGpGLW1uYUhQU09GWTI5OWw0dERWdUtRYnJGRjI1dW9fclVBNU5IS1V1cmpXZVZyQUg3N1dmMXE4alpnT2VEdFF2dExzVHdPMEVZWlpXeE5GT0J3TnN3NzN6UlJXREEtQlFLT0E4ZmVCQTR5aGZnUFVaUTRCVkl6WTNZNWRtMzdUaGFHRGM5Y2VpRzlnTk5KTW1ZcXh0MGFHM9IByAFBVV95cUxPUnNRVVFDajJaTGphQWhjRXU3ZVlzY0EzOUwyUUN2dURjUDZpRVFSbGpGLW1uYUhQU09GWTI5OWw0dERWdUtRYnJGRjI1dW9fclVBNU5IS1V1cmpXZVZyQUg3N1dmMXE4alpnT2VEdFF2dExzVHdPMEVZWlpXeE5GT0J3TnN3NzN6UlJXREEtQlFLT0E4ZmVCQTR5aGZnUFVaUTRCVkl6WTNZNWRtMzdUaGFHRGM5Y2VpRzlnTk5KTW1ZcXh0MGFHMw?oc=5",
+  "source": "NU Online",
+  "source_url": "https://www.nu.or.id",
+  "published_at": "2026-10-12T05:00:58.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-12T05:45:25.017Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.02",
+      "nama": "Kabupaten Aceh Tenggara",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "11.13",
+      "nama": "Kabupaten Gayo Lues",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

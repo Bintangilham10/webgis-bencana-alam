@@ -1,0 +1,23 @@
+{
+  "guid": "CBMikgFBVV95cUxOSFZhdnJoQ2dmRk5jdTBOVVJLeDJRYWxBeXl3S1JCRnNSampxUkd2TmR3N3RraEV1MjFIRjYweG5hRTZTazVzc2t2QklHXzhtdzJ1YTFKY2cwX1otb2Q3bUZabzBLZWdNTElYUGtKZEI4YWJIQmZwdW5KQ0RjNUhqZGk2V09oYkVqMXpRcmR0al9LUQ",
+  "title": "Banjir dan Longsor Terjang Aceh Tengah, Lalu Lintas Lumpuh 3 Jam - Waspada Aceh",
+  "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSFZhdnJoQ2dmRk5jdTBOVVJLeDJRYWxBeXl3S1JCRnNSampxUkd2TmR3N3RraEV1MjFIRjYweG5hRTZTazVzc2t2QklHXzhtdzJ1YTFKY2cwX1otb2Q3bUZabzBLZWdNTElYUGtKZEI4YWJIQmZwdW5KQ0RjNUhqZGk2V09oYkVqMXpRcmR0al9LUQ?oc=5",
+  "source": "Waspada Aceh",
+  "source_url": "https://waspadaaceh.com",
+  "published_at": "2026-10-12T04:15:57.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-12T05:45:25.017Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
