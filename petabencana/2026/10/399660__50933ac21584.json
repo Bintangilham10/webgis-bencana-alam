@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-12T07:00:41.258Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        122.9842510862,
+        0.6296275033
+      ]
+    },
+    "properties": {
+      "pkey": "399660",
+      "created_at": "2026-10-12T06:56:54.510Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "f7ed6e57-44cf-4c02-9be3-b5958ebee614",
+      "image_url": "https://images.petabencana.id/f7ed6e57-44cf-4c02-9be3-b5958ebee614.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 61
+      },
+      "tags": {
+        "city": "GORONTALO",
+        "district_id": null,
+        "region_code": "7501",
+        "local_area_id": null,
+        "instance_region_code": "ID-GO"
+      },
+      "title": null,
+      "text": "Banjir\n",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
