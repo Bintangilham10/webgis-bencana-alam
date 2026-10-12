@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-12T05:00:45.667Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        101.1975837678,
+        1.2750141646
+      ]
+    },
+    "properties": {
+      "pkey": "399659",
+      "created_at": "2026-10-12T04:51:14.797Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "5f31958b-43b5-48aa-8f77-db5be9239570",
+      "image_url": "https://images.petabencana.id/5f31958b-43b5-48aa-8f77-db5be9239570.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 0,
+        "airQuality": 2
+      },
+      "tags": {
+        "city": "BENGKALIS",
+        "district_id": null,
+        "region_code": "1403",
+        "local_area_id": null,
+        "instance_region_code": "ID-RI"
+      },
+      "title": null,
+      "text": "",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
