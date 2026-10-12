@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.12.06.32.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-12T12:46:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-12T12:56:00+07:00</effective>
+    <expires>2026-10-12T14:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 12 October 2026, 12:56 WIB di sebagian wilayah Jawa Barat, khususnya di CIAMBAR, CICURUG, JAMPANG TENGAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 12 October 2026, 14:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/10/12/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-7.026,106.872 -7.045,106.864 -7.053,106.851 -7.057,106.837 -7.076,106.849 -7.076,106.839 -7.086,106.840 -7.124,106.830 -7.134,106.831 -7.138,106.827 -7.136,106.819 -7.146,106.806 -7.140,106.784 -7.143,106.780 -7.142,106.773 -7.138,106.775 -7.131,106.771 -7.129,106.756 -7.125,106.758 -7.118,106.755 -7.114,106.735 -7.102,106.724 -7.103,106.713 -7.110,106.709 -7.109,106.703 -7.098,106.695 -7.101,106.689 -7.093,106.692 -7.074,106.708 -7.074,106.733 -7.059,106.731 -7.058,106.738 -7.049,106.748 -7.044,106.736 -7.033,106.741 -7.034,106.751 -7.017,106.741 -7.018,106.751 -7.006,106.769 -7.005,106.777 -7.009,106.779 -7.004,106.787 -7.005,106.797 -7.012,106.815 -7.007,106.820 -7.003,106.840 -7.005,106.844 -7.001,106.850 -6.982,106.849 -6.980,106.852 -6.988,106.855 -6.994,106.856 -6.995,106.872 -7.025,106.864 -7.026,106.872</polygon>
+      <polygon>-6.782,106.872 -6.785,106.863 -6.793,106.793 -6.813,106.779 -6.806,106.771 -6.798,106.767 -6.795,106.771 -6.787,106.765 -6.773,106.763 -6.772,106.755 -6.749,106.740 -6.744,106.731 -6.717,106.729 -6.717,106.731 -6.716,106.734 -6.715,106.740 -6.728,106.758 -6.754,106.777 -6.753,106.792 -6.763,106.801 -6.769,106.814 -6.767,106.831 -6.776,106.845 -6.782,106.872</polygon>
+      <polygon>-6.788,106.913 -6.787,106.921 -6.809,106.884 -6.806,106.860 -6.813,106.850 -6.820,106.818 -6.872,106.778 -6.870,106.773 -6.848,106.763 -6.836,106.762 -6.814,106.780 -6.813,106.779 -6.813,106.779 -6.793,106.793 -6.785,106.863 -6.782,106.872 -6.788,106.913</polygon>
+    </area>
+  </info>
+</alert>
