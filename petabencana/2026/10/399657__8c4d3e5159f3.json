@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-12T04:00:38.880Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        133.7307731912,
+        -3.6103723874
+      ]
+    },
+    "properties": {
+      "pkey": "399657",
+      "created_at": "2026-10-12T03:55:39.735Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "f9938387-5481-40cd-96cc-662df2986220",
+      "image_url": "https://images.petabencana.id/f9938387-5481-40cd-96cc-662df2986220.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 0,
+        "airQuality": 3
+      },
+      "tags": {
+        "city": "KAIMANA",
+        "district_id": null,
+        "region_code": "9208",
+        "local_area_id": null,
+        "instance_region_code": "ID-PB"
+      },
+      "title": null,
+      "text": "",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
