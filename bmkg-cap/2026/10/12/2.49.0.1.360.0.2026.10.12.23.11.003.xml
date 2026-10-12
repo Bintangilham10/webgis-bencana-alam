@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.12.23.11.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-13T03:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-13T03:30:00+07:00</effective>
+    <expires>2026-10-13T06:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Aceh</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 13 October 2026, 03:30 WIB di sebagian wilayah Aceh, khususnya di LEMBAH SEULAWAH, SEULIMEUM.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 13 October 2026, 06:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CAH/2026/10/13/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Aceh</areaDesc>
+      <polygon>5.569,95.746 5.559,95.743 5.549,95.728 5.533,95.724 5.524,95.725 5.513,95.737 5.499,95.725 5.494,95.727 5.490,95.696 5.474,95.666 5.446,95.661 5.416,95.649 5.397,95.630 5.363,95.624 5.317,95.625 5.319,95.602 5.311,95.591 5.309,95.580 5.319,95.558 5.330,95.558 5.353,95.534 5.371,95.533 5.387,95.539 5.409,95.565 5.432,95.569 5.450,95.560 5.468,95.562 5.475,95.557 5.483,95.553 5.488,95.565 5.497,95.572 5.509,95.577 5.536,95.561 5.561,95.576 5.575,95.579 5.604,95.604 5.628,95.607 5.627,95.615 5.618,95.621 5.585,95.685 5.569,95.746</polygon>
+      <polygon>5.453,95.791 5.450,95.784 5.436,95.780 5.429,95.772 5.426,95.762 5.420,95.754 5.411,95.755 5.401,95.765 5.380,95.756 5.365,95.760 5.350,95.751 5.331,95.747 5.316,95.750 5.314,95.763 5.308,95.768 5.302,95.758 5.292,95.763 5.282,95.790 5.273,95.791 5.259,95.785 5.257,95.775 5.249,95.779 5.242,95.761 5.241,95.716 5.249,95.704 5.276,95.702 5.286,95.696 5.317,95.643 5.317,95.625 5.363,95.624 5.397,95.630 5.416,95.649 5.446,95.661 5.474,95.666 5.490,95.696 5.494,95.727 5.481,95.743 5.479,95.754 5.464,95.766 5.461,95.783 5.453,95.791</polygon>
+    </area>
+  </info>
+</alert>
