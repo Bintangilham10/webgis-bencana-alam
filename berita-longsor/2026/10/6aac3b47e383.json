@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixgFBVV95cUxNU3hLVzctUXE3VmxmeDY4Ry1IQUROS3B3bWt3NUY4eC1BR093dGRJckRTRjAtaEFhRGdFVDRRTnJqU3R1aGNQZzJjZlRPaWdSYkR6aFk4ZWYtNXE2REJEaG5sUTdwV2F1LUFkOHB5MXJtLVpEV0V4YWh6aHYxV3dKb0FuaTVISEdvMllPV2djQUVZUmt5Z29fSVBkT3NpNVFiTThNMW1mSm5LLWYtWmd2MVhwdmV6eXlEMjBqRy0xMUpEUEFpWHc",
+  "title": "Jalur Nasional Sungai Penuh–Tapan Kembali Normal, Satlantas Polres Kerinci Gerak Cepat Tangani Longsor - Koran Sakti",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNU3hLVzctUXE3VmxmeDY4Ry1IQUROS3B3bWt3NUY4eC1BR093dGRJckRTRjAtaEFhRGdFVDRRTnJqU3R1aGNQZzJjZlRPaWdSYkR6aFk4ZWYtNXE2REJEaG5sUTdwV2F1LUFkOHB5MXJtLVpEV0V4YWh6aHYxV3dKb0FuaTVISEdvMllPV2djQUVZUmt5Z29fSVBkT3NpNVFiTThNMW1mSm5LLWYtWmd2MVhwdmV6eXlEMjBqRy0xMUpEUEFpWHc?oc=5",
+  "source": "Koran Sakti",
+  "source_url": "https://koransakti.co.id",
+  "published_at": "2026-10-12T07:30:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-12T08:45:26.642Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.72",
+      "nama": "Kota Sungai Penuh",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "15.01",
+      "nama": "Kabupaten Kerinci",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
