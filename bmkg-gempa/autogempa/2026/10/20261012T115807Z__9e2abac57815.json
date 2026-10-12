@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-12T12:30:35.166Z",
+  "data": {
+    "Tanggal": "12 Okt 2026",
+    "Jam": "18:58:07 WIB",
+    "DateTime": "2026-10-12T11:58:07+00:00",
+    "Coordinates": "-9.20,113.02",
+    "Lintang": "9.20 LS",
+    "Bujur": "113.02 BT",
+    "Magnitude": "4.6",
+    "Kedalaman": "21 km",
+    "Wilayah": "Pusat gempa berada di laut 121 km BaratDaya Lumajang, Jawa Timur",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Lumajang, III Malang, III Jember, II Blitar",
+    "Shakemap": "20261012185807.mmi.jpg"
+  }
+}
