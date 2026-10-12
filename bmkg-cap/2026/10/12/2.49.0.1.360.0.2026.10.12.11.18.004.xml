@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.12.11.18.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-12T17:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-12T18:00:00+07:00</effective>
+    <expires>2026-10-12T21:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Lampung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 12 October 2026, 18:00 WIB di sebagian wilayah Lampung, khususnya di BANDAR NEGERI SUOH, BATU KETULIS, NGAMBUR, SUOH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 12 October 2026, 21:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CLG/2026/10/12/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Lampung</areaDesc>
+      <polygon>-5.197,104.237 -5.236,104.278 -5.248,104.285 -5.253,104.295 -5.285,104.304 -5.299,104.298 -5.302,104.308 -5.346,104.354 -5.343,104.363 -5.335,104.370 -5.328,104.339 -5.324,104.335 -5.281,104.323 -5.277,104.316 -5.268,104.319 -5.262,104.335 -5.266,104.345 -5.264,104.393 -5.257,104.394 -5.283,104.389 -5.337,104.380 -5.359,104.365 -5.380,104.350 -5.373,104.339 -5.350,104.328 -5.343,104.313 -5.283,104.261 -5.259,104.254 -5.240,104.239 -5.219,104.223 -5.203,104.205 -5.196,104.221 -5.197,104.237</polygon>
+      <polygon>-4.872,104.287 -4.909,104.279 -4.929,104.282 -4.935,104.273 -4.951,104.286 -4.964,104.280 -5.007,104.276 -5.029,104.278 -5.035,104.262 -5.053,104.266 -5.058,104.269 -5.057,104.271 -5.058,104.275 -5.067,104.280 -5.081,104.290 -5.091,104.278 -5.086,104.267 -5.088,104.263 -5.102,104.264 -5.107,104.270 -5.106,104.273 -5.089,104.287 -5.104,104.292 -5.099,104.312 -5.107,104.317 -5.113,104.310 -5.121,104.307 -5.123,104.300 -5.148,104.285 -5.160,104.256 -5.124,104.238 -5.114,104.226 -5.074,104.195 -5.065,104.203 -5.064,104.218 -5.038,104.234 -5.031,104.235 -5.028,104.224 -4.997,104.203 -4.992,104.209 -4.948,104.217 -4.933,104.241 -4.900,104.247 -4.891,104.246 -4.881,104.250 -4.875,104.273 -4.869,104.279 -4.858,104.280 -4.856,104.287 -4.872,104.287</polygon>
+      <polygon>-5.122,104.349 -5.127,104.354 -5.141,104.357 -5.148,104.364 -5.154,104.379 -5.171,104.407 -5.184,104.402 -5.203,104.410 -5.240,104.396 -5.257,104.394 -5.264,104.393 -5.266,104.345 -5.262,104.335 -5.268,104.319 -5.277,104.316 -5.281,104.323 -5.324,104.335 -5.328,104.339 -5.335,104.370 -5.343,104.363 -5.346,104.354 -5.302,104.308 -5.299,104.298 -5.285,104.304 -5.253,104.295 -5.248,104.285 -5.236,104.278 -5.197,104.237 -5.198,104.243 -5.191,104.259 -5.182,104.266 -5.160,104.256 -5.148,104.285 -5.123,104.300 -5.121,104.307 -5.124,104.310 -5.123,104.325 -5.128,104.334 -5.127,104.340 -5.120,104.343 -5.122,104.349</polygon>
+      <polygon>-5.343,104.313 -5.358,104.292 -5.372,104.288 -5.381,104.278 -5.386,104.257 -5.400,104.246 -5.417,104.242 -5.425,104.237 -5.436,104.216 -5.455,104.216 -5.461,104.203 -5.497,104.199 -5.481,104.177 -5.457,104.121 -5.446,104.112 -5.430,104.108 -5.407,104.076 -5.407,104.072 -5.403,104.073 -5.406,104.084 -5.402,104.096 -5.384,104.102 -5.374,104.118 -5.366,104.119 -5.351,104.134 -5.306,104.149 -5.290,104.190 -5.280,104.199 -5.265,104.205 -5.254,104.229 -5.240,104.239 -5.259,104.254 -5.283,104.261 -5.343,104.313</polygon>
+    </area>
+  </info>
+</alert>
