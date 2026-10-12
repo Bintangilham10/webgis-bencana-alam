@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.12.10.61.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-12T15:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-12T16:00:00+07:00</effective>
+    <expires>2026-10-12T18:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 12 October 2026, 16:00 WIB di sebagian wilayah Kalimantan Barat, khususnya di TUMBANG TITI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 12 October 2026, 18:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/10/12/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>-1.628,110.863 -1.636,110.854 -1.645,110.857 -1.674,110.855 -1.683,110.864 -1.679,110.882 -1.689,110.893 -1.719,110.878 -1.745,110.854 -1.755,110.808 -1.766,110.792 -1.817,110.781 -1.832,110.770 -1.856,110.764 -1.885,110.763 -1.903,110.754 -1.963,110.705 -1.975,110.683 -1.985,110.648 -1.981,110.612 -1.958,110.544 -1.960,110.513 -1.968,110.495 -1.913,110.502 -1.891,110.510 -1.827,110.481 -1.806,110.485 -1.784,110.483 -1.778,110.515 -1.766,110.635 -1.690,110.697 -1.685,110.735 -1.627,110.822 -1.622,110.855 -1.628,110.863</polygon>
+    </area>
+  </info>
+</alert>
