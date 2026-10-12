@@ -1,0 +1,21 @@
+{
+  "guid": "CBMizgFBVV95cUxNSkkzeTRaMWtjNXNQeExhSEZiNENMWm9TQ2phejhMTUYxeEVtM014T0xUbHAweEY0U2NPQzhwcTd3QjdROTNuWDhKYWNJWGVoS09RalBsd3JuQVRkX1NBVExlTEN2RTlXWW1TMDVNQW1mYXhtajVQQUNVa2NPck1KQ2kxOXVHc0w0SkdsLWo2UDlHeFcyVkgxYWpTRHVUMG56cTMySVZmSTAtTC1zYmJBb1hqNVRoSlVza09FdjNNV0M0bHNCZHVoY09TME1EZw",
+  "title": "Banjir dan Longsor Ganggu Akses Jalan di Pesisir Selatan, Pemkab Percepat Koordinasi Penanganan - Pemerintah Kabupaten Pesisir Selatan",
+  "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSkkzeTRaMWtjNXNQeExhSEZiNENMWm9TQ2phejhMTUYxeEVtM014T0xUbHAweEY0U2NPQzhwcTd3QjdROTNuWDhKYWNJWGVoS09RalBsd3JuQVRkX1NBVExlTEN2RTlXWW1TMDVNQW1mYXhtajVQQUNVa2NPck1KQ2kxOXVHc0w0SkdsLWo2UDlHeFcyVkgxYWpTRHVUMG56cTMySVZmSTAtTC1zYmJBb1hqNVRoSlVza09FdjNNV0M0bHNCZHVoY09TME1EZw?oc=5",
+  "source": "Pemerintah Kabupaten Pesisir Selatan",
+  "source_url": "https://pesisirselatankab.go.id",
+  "published_at": "2026-10-12T03:21:17.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-12T14:45:34.041Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.01",
+      "nama": "Kabupaten Pesisir Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,23 @@
+{
+  "guid": "CBMitwFBVV95cUxNbVdTZnNDNFlZWG9qelhsSjJENWUzQUswTEo0Y0R6M1IzSjFLSXBjUDFaZFdVei0yQ2tSZFY2TlEyZ3pFV25KaTkyWlA5SFItZjRWUEZYZ0YwVXpZTDFXZTV5VUstSUVxSGtKaGt6Y0Q1YkxFODZndXJLbU9mb01WaWF6QkoxMUpTMUZOb1A3WUsyRTJoSFd4Q2xHbkpFeXN5NVJyN1BCc3V4TVluM3hUWnY0Z0xrRFU",
+  "title": "Menteri PU Percepat Penanganan 8 Titik Longsor Di Ruas Tapan-Jambi - RM.ID",
+  "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbVdTZnNDNFlZWG9qelhsSjJENWUzQUswTEo0Y0R6M1IzSjFLSXBjUDFaZFdVei0yQ2tSZFY2TlEyZ3pFV25KaTkyWlA5SFItZjRWUEZYZ0YwVXpZTDFXZTV5VUstSUVxSGtKaGt6Y0Q1YkxFODZndXJLbU9mb01WaWF6QkoxMUpTMUZOb1A3WUsyRTJoSFd4Q2xHbkpFeXN5NVJyN1BCc3V4TVluM3hUWnY0Z0xrRFU?oc=5",
+  "source": "RM.ID",
+  "source_url": "https://rm.id",
+  "published_at": "2026-10-12T14:24:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-12T14:45:34.041Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}

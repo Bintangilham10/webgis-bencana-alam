@@ -1,0 +1,23 @@
+{
+  "guid": "CBMimAFBVV95cUxQWE9SeThrMjAtMFBPSV81bmRFUjRuVVVfZElvcG51T2FUZ3RDNlYyOERzRDBJTmwtNldCb09nMGJaNWtlTmZJcWx0NW5vTUJ2c000VXF2UHBpRm1wUEFWaHdiOTFXOGhBb2Y2azZhUkNHSVQxc2M2TlZBWWlIcVZKVnJBYS02eGpQZGRLOXEycEVheVlBeG51NQ",
+  "title": "BPBD Siagakan Posko dan Alat Berat Tangani Banjir Longsor di Aceh Tenggara - Editor.id",
+  "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWE9SeThrMjAtMFBPSV81bmRFUjRuVVVfZElvcG51T2FUZ3RDNlYyOERzRDBJTmwtNldCb09nMGJaNWtlTmZJcWx0NW5vTUJ2c000VXF2UHBpRm1wUEFWaHdiOTFXOGhBb2Y2azZhUkNHSVQxc2M2TlZBWWlIcVZKVnJBYS02eGpQZGRLOXEycEVheVlBeG51NQ?oc=5",
+  "source": "Editor.id",
+  "source_url": "https://editor.id",
+  "published_at": "2026-10-12T11:16:20.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-12T14:45:34.041Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.02",
+      "nama": "Kabupaten Aceh Tenggara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

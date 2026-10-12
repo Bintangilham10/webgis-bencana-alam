@@ -1,0 +1,23 @@
+{
+  "guid": "CBMilAFBVV95cUxOUS1Ec213Mm5hODJBZ2U4czI5MVBpZ1pqdEw3VUgwNkxOM0ZFbmpsVGNCelBoQ1F1TDlMOGVCQVVTdkpNdjhuczdWQk41WlhyVlN4NDZDcGhBNVhDbGdzVm8tUmxqM21Rcnh1Y1h3T3JJOXBpUVRpdlg4Q2lYckJYV04tNXJ0SmhaOUhRcXRHQzVVcGMx",
+  "title": "Kementerian PU Tangani Longsor, Akses Tapan – Batas Jambi Terputus - SinPo.id",
+  "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUS1Ec213Mm5hODJBZ2U4czI5MVBpZ1pqdEw3VUgwNkxOM0ZFbmpsVGNCelBoQ1F1TDlMOGVCQVVTdkpNdjhuczdWQk41WlhyVlN4NDZDcGhBNVhDbGdzVm8tUmxqM21Rcnh1Y1h3T3JJOXBpUVRpdlg4Q2lYckJYV04tNXJ0SmhaOUhRcXRHQzVVcGMx?oc=5",
+  "source": "SinPo.id",
+  "source_url": "https://tv.sinpo.id",
+  "published_at": "2026-10-12T13:40:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-12T14:45:34.041Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}

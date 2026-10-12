@@ -1,0 +1,23 @@
+{
+  "guid": "CBMixgFBVV95cUxNX1ZULXJyQXZpaWlybnN4OW5ZaEtTZ3Y2RTFla3ZUOFV1alUwR2paemttV2h2OWZ6dlNhWGdfOWViSElLRnNDc184WVdjSVlXUXFwYVNPdDRYcmNiZTNWNlltZnZWdWlFNGJMb3BOZGQydmZkelQtRzFDWnpNSVNFeUNCZ2lSVGg4c3ZaQUZzODZyaWFYRm1saVBTY1V2OUM5LTlXOUxRd3JhbTNJX1JDa3V6VTBMc0ZFTXRQNERTdVdudzlRdkE",
+  "title": "VIDEO: Update Penanganan Banjir dan Longsor di Pesisir Selatan Sumbar - CNN Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNX1ZULXJyQXZpaWlybnN4OW5ZaEtTZ3Y2RTFla3ZUOFV1alUwR2paemttV2h2OWZ6dlNhWGdfOWViSElLRnNDc184WVdjSVlXUXFwYVNPdDRYcmNiZTNWNlltZnZWdWlFNGJMb3BOZGQydmZkelQtRzFDWnpNSVNFeUNCZ2lSVGg4c3ZaQUZzODZyaWFYRm1saVBTY1V2OUM5LTlXOUxRd3JhbTNJX1JDa3V6VTBMc0ZFTXRQNERTdVdudzlRdkE?oc=5",
+  "source": "CNN Indonesia",
+  "source_url": "https://www.cnnindonesia.com",
+  "published_at": "2026-10-12T11:52:59.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-12T14:45:34.041Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.01",
+      "nama": "Kabupaten Pesisir Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Sumatera Barat"
+  ]
+}
