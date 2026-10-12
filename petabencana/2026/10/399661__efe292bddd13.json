@@ -1,0 +1,41 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-12T07:45:34.310Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        138.6401062009,
+        -6.1364486462
+      ]
+    },
+    "properties": {
+      "pkey": "399661",
+      "created_at": "2026-10-12T07:25:12.567Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "b3086f33-d909-4116-8dea-08671f41ec3f",
+      "image_url": "https://images.petabencana.id/b3086f33-d909-4116-8dea-08671f41ec3f.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "points": 1,
+        "airQuality": 3,
+        "visibility": 2,
+        "report_type": "haze"
+      },
+      "tags": {
+        "city": "ASMAT",
+        "district_id": null,
+        "region_code": "9118",
+        "local_area_id": null,
+        "instance_region_code": "ID-PA"
+      },
+      "title": null,
+      "text": "Kabut asap akibat kebakaran hutan di merauke, di Kamur, Asmat, papua selatan, Asap tebal, membuat mata dan tenggorokan perih, butuh masker !",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
