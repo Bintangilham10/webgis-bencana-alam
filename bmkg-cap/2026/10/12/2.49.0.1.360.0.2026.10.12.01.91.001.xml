@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.12.01.91.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-12T09:30:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-12T09:35:00+09:00</effective>
+    <expires>2026-10-12T10:35:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 12 October 2026, 09:35 WIT di sebagian wilayah Papua, khususnya di BIAK UTARA, SAMOFA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 12 October 2026, 10:35 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPU/2026/10/12/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua</areaDesc>
+      <polygon>-1.037,136.164 -1.119,136.133 -1.116,136.098 -1.112,136.087 -1.105,136.083 -1.099,136.062 -1.099,136.038 -1.089,136.033 -1.076,136.018 -1.036,136.010 -1.022,135.995 -1.007,135.966 -0.990,135.967 -0.966,135.989 -0.943,136.002 -0.933,136.001 -0.905,136.009 -0.894,136.028 -0.873,136.026 -0.862,136.016 -0.853,136.023 -0.848,136.039 -0.857,136.036 -0.855,136.045 -0.859,136.052 -0.896,136.040 -0.900,136.048 -0.892,136.050 -0.887,136.060 -0.895,136.069 -0.912,136.077 -0.917,136.092 -0.930,136.097 -0.948,136.094 -0.961,136.099 -0.990,136.135 -0.996,136.152 -1.007,136.158 -1.028,136.159 -1.037,136.164</polygon>
+      <polygon>-1.119,136.133 -1.181,136.157 -1.183,136.135 -1.176,136.114 -1.179,136.081 -1.171,136.067 -1.149,136.065 -1.139,136.039 -1.099,136.038 -1.099,136.062 -1.105,136.083 -1.112,136.087 -1.116,136.098 -1.119,136.133</polygon>
+    </area>
+  </info>
+</alert>
