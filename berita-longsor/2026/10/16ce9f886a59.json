@@ -1,0 +1,21 @@
+{
+  "guid": "CBMivAFBVV95cUxNWWlpdW0tYy1YTktoeFFDS01VQzUwU256OW1KajVWSTZMUkZkY042VE9TZksteGtNN3RHTVlYMmdyVkZzdlJFT3lBTUdVR2FUc0hXT3BrQ2FmdzFYMHFiSHd6cmRIaVgxWi00NTczdXpJZjd4amtUdE9OWkpmX0dfMFowOTNPazZKRGVSQmhvMGRSZkd6VThZNVhyd0dSSVF5TXdOTS1Mdy0ybnFRTlRSRV9lamQxaEZxWklNUdIBwgFBVV95cUxQS3JBcG84c0NsQk1rTU1vZ2s1ZmFybGxFNmtfOExpaHFreVEtNG1aa0psU2RIaTlUVmc0QWNKb21HZzlIZnhURmdNSEswSnEtSGpvM1V4UWg0Sm1xY3JhWWRwN1RuX2JsVFp4VW5jWkc3SXpWbW1oMTlTWTFRdGxVa3dhUGs2bEtkbHVTc3o4YUhSNVRCaTB3aXQwRnhaUTM5SGZhZktRNGRYSE1hU2c0SGZzb21DQkUwM0R3a01QSGN1Zw",
+  "title": "Canggih! Deteksi Tanah Longsor di Sukoharjo Pakai EWS Berbasis Satelit - Radar Solo",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWWlpdW0tYy1YTktoeFFDS01VQzUwU256OW1KajVWSTZMUkZkY042VE9TZksteGtNN3RHTVlYMmdyVkZzdlJFT3lBTUdVR2FUc0hXT3BrQ2FmdzFYMHFiSHd6cmRIaVgxWi00NTczdXpJZjd4amtUdE9OWkpmX0dfMFowOTNPazZKRGVSQmhvMGRSZkd6VThZNVhyd0dSSVF5TXdOTS1Mdy0ybnFRTlRSRV9lamQxaEZxWklNUdIBwgFBVV95cUxQS3JBcG84c0NsQk1rTU1vZ2s1ZmFybGxFNmtfOExpaHFreVEtNG1aa0psU2RIaTlUVmc0QWNKb21HZzlIZnhURmdNSEswSnEtSGpvM1V4UWg0Sm1xY3JhWWRwN1RuX2JsVFp4VW5jWkc3SXpWbW1oMTlTWTFRdGxVa3dhUGs2bEtkbHVTc3o4YUhSNVRCaTB3aXQwRnhaUTM5SGZhZktRNGRYSE1hU2c0SGZzb21DQkUwM0R3a01QSGN1Zw?oc=5",
+  "source": "Radar Solo",
+  "source_url": "https://radarsolo.jawapos.com",
+  "published_at": "2026-10-12T09:58:30.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-12T11:45:31.411Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "33.11",
+      "nama": "Kabupaten Sukoharjo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

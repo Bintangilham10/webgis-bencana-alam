@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiyAFBVV95cUxOQ2h2T2RVdFBIb3kyUEVWQzVST3k3VnFWSWo3bElTeWdwRWJRb0FXb0xYNW5UR3Zmc0pwSDExdVM5RVNRNDQ1X05BWmg1d3VRbmVXM0xwcmF0MUlGVi1JcXNHLTkxVWVHbVJZTFBta256ZFg5b0xiSjVRQWphS1hISlhaUEZ0Zk9xaTByY3huR0JtOGEzRjBxN3lwWUtiaFJHQmRJU3NudHJSQ3E0R2VOQkdoODFVT0FFUHdGeWtRelVsaGtFY0dnTQ",
+  "title": "BNPB: 1.170 Jiwa Terdampak Banjir Padang, 63 Hektare Terbakar di Merauke, Banjir dan Longsor Terjang Aceh - lintastungkal",
+  "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQ2h2T2RVdFBIb3kyUEVWQzVST3k3VnFWSWo3bElTeWdwRWJRb0FXb0xYNW5UR3Zmc0pwSDExdVM5RVNRNDQ1X05BWmg1d3VRbmVXM0xwcmF0MUlGVi1JcXNHLTkxVWVHbVJZTFBta256ZFg5b0xiSjVRQWphS1hISlhaUEZ0Zk9xaTByY3huR0JtOGEzRjBxN3lwWUtiaFJHQmRJU3NudHJSQ3E0R2VOQkdoODFVT0FFUHdGeWtRelVsaGtFY0dnTQ?oc=5",
+  "source": "lintastungkal",
+  "source_url": "https://lintastungkal.com",
+  "published_at": "2026-10-12T10:33:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-12T11:45:31.411Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "93.01",
+      "nama": "Kabupaten Merauke",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.71",
+      "nama": "Kota Padang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
