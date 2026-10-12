@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.12.14.12.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-12T19:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-12T20:10:00+07:00</effective>
+    <expires>2026-10-12T23:10:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 12 October 2026, 20:10 WIB di sebagian wilayah Sumatera Utara, khususnya di JORLANG HATARAN, SIANJAR MULA MULA, SIDAMANIK, SILAHISABUNGAN, TAPIAN DOLOK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 12 October 2026, 23:10 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSU/2026/10/12/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Utara</areaDesc>
+      <polygon>2.869,99.100 2.846,99.052 2.823,99.028 2.818,99.013 2.809,99.003 2.770,98.974 2.735,98.956 2.749,98.944 2.757,98.929 2.790,98.939 2.818,98.964 2.825,98.976 2.837,98.993 2.882,99.020 2.868,99.029 2.895,99.084 2.885,99.089 2.876,99.098 2.869,99.100</polygon>
+      <polygon>2.892,99.025 2.882,99.020 2.837,98.993 2.825,98.976 2.829,98.972 2.818,98.952 2.797,98.931 2.782,98.908 2.799,98.908 2.788,98.894 2.791,98.893 2.794,98.880 2.797,98.877 2.804,98.883 2.811,98.889 2.816,98.902 2.826,98.907 2.832,98.905 2.829,98.896 2.834,98.894 2.850,98.898 2.879,98.899 2.883,98.923 2.873,98.936 2.870,98.962 2.879,98.990 2.893,99.017 2.891,99.017 2.892,99.025</polygon>
+      <polygon>3.014,99.112 3.016,99.111 3.014,99.072 3.006,99.058 3.006,99.037 3.002,99.036 3.000,99.029 3.003,99.021 3.021,99.016 3.027,99.000 3.048,99.010 3.072,99.008 3.095,99.032 3.109,99.033 3.119,99.050 3.141,99.110 3.121,99.109 3.096,99.100 3.067,99.114 3.051,99.105 3.014,99.112</polygon>
+      <polygon>2.735,98.575 2.674,98.565 2.667,98.544 2.666,98.526 2.698,98.531 2.748,98.525 2.783,98.501 2.829,98.487 2.839,98.480 2.845,98.468 2.853,98.475 2.872,98.478 2.868,98.501 2.874,98.521 2.864,98.530 2.791,98.535 2.762,98.569 2.748,98.576 2.735,98.575</polygon>
+      <polygon>2.625,98.672 2.605,98.654 2.598,98.654 2.582,98.679 2.572,98.677 2.571,98.687 2.566,98.690 2.564,98.676 2.568,98.674 2.570,98.656 2.558,98.650 2.558,98.641 2.580,98.608 2.586,98.587 2.587,98.558 2.591,98.555 2.674,98.565 2.735,98.575 2.731,98.591 2.726,98.597 2.709,98.604 2.685,98.624 2.666,98.628 2.650,98.615 2.643,98.616 2.643,98.632 2.633,98.637 2.625,98.672</polygon>
+      <polygon>2.641,98.648 2.642,98.644 2.646,98.644 2.641,98.648</polygon>
+    </area>
+  </info>
+</alert>
