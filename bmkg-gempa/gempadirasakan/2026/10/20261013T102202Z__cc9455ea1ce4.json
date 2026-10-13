@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-13T11:00:43.643Z",
+  "data": {
+    "Tanggal": "13 Okt 2026",
+    "Jam": "17:22:02 WIB",
+    "DateTime": "2026-10-13T10:22:02+00:00",
+    "Coordinates": "-9.06,111.37",
+    "Lintang": "9.06 LS",
+    "Bujur": "111.37 BT",
+    "Magnitude": "4.5",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di laut 103 km selatan Pacitan",
+    "Dirasakan": "III Trenggalek"
+  }
+}
