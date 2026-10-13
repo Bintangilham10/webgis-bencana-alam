@@ -1,0 +1,21 @@
+{
+  "guid": "CBMitAFBVV95cUxQRDUyOS1reUpUR0FXdmNIY0dmbWZlUDZNOGFVRzhsOHZhcUJGenZaVWxvMUM0M0Y0QjFFdXEzc3NMWExnMEhIR0RnSjlyeDB6UkphemxRUXBqbUtTbzhveVBGUllfNkUyYnVLcllPdFRuTFJpT3VWN3REbFVUakU4U3VTQlgyYXJjT2tGMktGRERETHhLeU9ZSldTU3JCSkVxVGFNTklKNExOdy1oN3JxbUYyZFM",
+  "title": "BPBD Jember Perkuat Mitigasi Longsor di Jalur Gumitir Jelang Musim Hujan - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRDUyOS1reUpUR0FXdmNIY0dmbWZlUDZNOGFVRzhsOHZhcUJGenZaVWxvMUM0M0Y0QjFFdXEzc3NMWExnMEhIR0RnSjlyeDB6UkphemxRUXBqbUtTbzhveVBGUllfNkUyYnVLcllPdFRuTFJpT3VWN3REbFVUakU4U3VTQlgyYXJjT2tGMktGRERETHhLeU9ZSldTU3JCSkVxVGFNTklKNExOdy1oN3JxbUYyZFM?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-10-13T14:15:11.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-13T16:15:31.045Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.09",
+      "nama": "Kabupaten Jember",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

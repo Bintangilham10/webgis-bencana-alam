@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi0AFBVV95cUxOWmdLYmR6c0M2UTFFckZXOHFZSE5aeHoyVHBLX25NcUV4WWJ5elZyZDZyVXNUTkNiVHk3YXdOeEdVMFVFWDBGTWpGYmlKZDJkQjlBWkZ4MTNFeWQ2MlJwT1Y1TExZRnZwcnNLNTNRLTdPdW1ydGc5aEFZeWpOaDJRcE8zLUdvdzc0VEdYdHBta1RrdjEwbHk5QnNGYmhTTWtPdkpFTVZjVWdhRE51TmpEd2E0cjVKLXBjd1d6MVhXVF9XTlRRX3l6ZkF4UTdQREJi",
+  "title": "Banjir dan Longsor Melanda 7 Kecamatan, Pesisir Selatan Percepat Bantuan Warga - Banda Sapuluah",
+  "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOWmdLYmR6c0M2UTFFckZXOHFZSE5aeHoyVHBLX25NcUV4WWJ5elZyZDZyVXNUTkNiVHk3YXdOeEdVMFVFWDBGTWpGYmlKZDJkQjlBWkZ4MTNFeWQ2MlJwT1Y1TExZRnZwcnNLNTNRLTdPdW1ydGc5aEFZeWpOaDJRcE8zLUdvdzc0VEdYdHBta1RrdjEwbHk5QnNGYmhTTWtPdkpFTVZjVWdhRE51TmpEd2E0cjVKLXBjd1d6MVhXVF9XTlRRX3l6ZkF4UTdQREJi?oc=5",
+  "source": "Banda Sapuluah",
+  "source_url": "https://bandasapuluah.com",
+  "published_at": "2026-10-13T04:10:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-13T16:15:31.045Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.01",
+      "nama": "Kabupaten Pesisir Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

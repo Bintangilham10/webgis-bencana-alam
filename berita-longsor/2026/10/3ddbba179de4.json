@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiywFBVV95cUxQdk8yaTBVdGdOZjJRaUM1OUJlVWxkWXhCSHRnbFRIeGtUdVBZSXlPSWRZdGxldlJSaVZ3aTZSU2ZoWnBZc2VJUUp0WmpybkNWM1BGNWNXeUJ0N2plNjJXcXdqNllQNUozWWYtcjBqTzR0Qk9SVGM4dklSdmxsTXJRZnJ2cW9OZDNOVXFWN2NLelhvYy1WNHRobm9UeHM5dDhiNEZ0ajcxSUtqTkVzUE1OOTVjU1RCSk12LWRuOWFsSktXSkJEeVJWbXc1cw",
+  "title": "Menteri PU Instruksikan Penanganan Banjir Padang & 14 Titik Longsor Tapan-Jambi - RM.ID",
+  "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdk8yaTBVdGdOZjJRaUM1OUJlVWxkWXhCSHRnbFRIeGtUdVBZSXlPSWRZdGxldlJSaVZ3aTZSU2ZoWnBZc2VJUUp0WmpybkNWM1BGNWNXeUJ0N2plNjJXcXdqNllQNUozWWYtcjBqTzR0Qk9SVGM4dklSdmxsTXJRZnJ2cW9OZDNOVXFWN2NLelhvYy1WNHRobm9UeHM5dDhiNEZ0ajcxSUtqTkVzUE1OOTVjU1RCSk12LWRuOWFsSktXSkJEeVJWbXc1cw?oc=5",
+  "source": "RM.ID",
+  "source_url": "https://rm.id",
+  "published_at": "2026-10-13T11:49:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-13T16:15:31.045Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.71",
+      "nama": "Kota Padang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}
