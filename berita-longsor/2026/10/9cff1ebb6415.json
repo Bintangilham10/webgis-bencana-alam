@@ -1,0 +1,24 @@
+{
+  "guid": "CBMisgFBVV95cUxPVG1sOFMwM1N3Q1pnbk9YYUVFWFhOUkdQVUNwb1ljWC04SmpNdk5RMkNCSlZxTy1hNjdKb3JJU1ZJYWVPMkIxdElUcDRhblhZRGFYQ3ZHMVplbnJNdEhDT1Vqbmw0YzRTUHBJbXZUWVlOVE9aZ3dCY1d4UFZ2SkpsVm1rRF9NajZUSXF4Q011S29LRVhkWjBXRkRSMENvZ1dFTWlvZ1k2NzM5dXVUdzl0cFN3",
+  "title": "Kementerian PU Tangani Titik Longsor di Perbatasan Sumbar - Jambi - Harian Singgalang",
+  "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVG1sOFMwM1N3Q1pnbk9YYUVFWFhOUkdQVUNwb1ljWC04SmpNdk5RMkNCSlZxTy1hNjdKb3JJU1ZJYWVPMkIxdElUcDRhblhZRGFYQ3ZHMVplbnJNdEhDT1Vqbmw0YzRTUHBJbXZUWVlOVE9aZ3dCY1d4UFZ2SkpsVm1rRF9NajZUSXF4Q011S29LRVhkWjBXRkRSMENvZ1dFTWlvZ1k2NzM5dXVUdzl0cFN3?oc=5",
+  "source": "Harian Singgalang",
+  "source_url": "https://www.hariansinggalang.co.id",
+  "published_at": "2026-10-13T02:19:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-13T22:45:26.504Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi",
+    "Sumatera Barat"
+  ]
+}
