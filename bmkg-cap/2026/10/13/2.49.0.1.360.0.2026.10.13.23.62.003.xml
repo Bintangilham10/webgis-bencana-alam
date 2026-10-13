@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.13.23.62.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-14T06:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-14T06:20:00+07:00</effective>
+    <expires>2026-10-14T08:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 October 2026, 06:20 WIB di sebagian wilayah Kalimantan Tengah, khususnya di DAMANG BATU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 October 2026, 08:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-0.308,113.452 -0.325,113.445 -0.392,113.444 -0.406,113.438 -0.417,113.440 -0.439,113.433 -0.447,113.425 -0.502,113.449 -0.535,113.452 -0.571,113.449 -0.635,113.419 -0.717,113.434 -0.818,113.458 -0.878,113.466 -0.909,113.463 -0.948,113.450 -0.981,113.417 -0.976,113.386 -0.979,113.332 -0.993,113.279 -1.006,113.245 -1.010,113.209 -1.006,113.165 -0.981,113.134 -0.935,113.092 -0.929,113.076 -0.925,113.049 -0.909,113.031 -0.885,113.020 -0.844,113.018 -0.814,113.032 -0.766,113.076 -0.692,113.131 -0.562,113.206 -0.503,113.220 -0.492,113.226 -0.474,113.229 -0.447,113.251 -0.438,113.264 -0.418,113.267 -0.382,113.307 -0.319,113.365 -0.305,113.407 -0.303,113.442 -0.308,113.452</polygon>
+    </area>
+  </info>
+</alert>

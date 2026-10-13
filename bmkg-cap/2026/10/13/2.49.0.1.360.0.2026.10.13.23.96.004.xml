@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.13.23.96.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-14T06:10:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-14T06:40:00+09:00</effective>
+    <expires>2026-10-14T09:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua Barat Daya</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 October 2026, 06:40 WIT di sebagian wilayah Papua Barat Daya, khususnya di KOTA WAISAI, SALAWATI BARAT, WAIGEO TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 October 2026, 09:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPD/2026/10/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua Barat Daya</areaDesc>
+      <polygon>-0.378,130.921 -0.383,130.922 -0.388,130.929 -0.393,130.927 -0.412,130.895 -0.411,130.889 -0.431,130.873 -0.428,130.862 -0.431,130.846 -0.446,130.807 -0.443,130.798 -0.451,130.790 -0.442,130.772 -0.444,130.766 -0.450,130.766 -0.449,130.761 -0.444,130.758 -0.382,130.775 -0.368,130.775 -0.366,130.775 -0.352,130.867 -0.360,130.883 -0.374,130.899 -0.378,130.921</polygon>
+      <polygon>-0.933,130.926 -0.952,130.893 -0.965,130.822 -0.978,130.798 -1.121,130.764 -1.167,130.757 -1.177,130.738 -1.183,130.735 -1.186,130.734 -1.182,130.728 -1.174,130.734 -1.164,130.736 -1.134,130.700 -1.127,130.696 -1.123,130.698 -1.111,130.679 -1.094,130.692 -1.098,130.714 -1.094,130.719 -1.082,130.716 -1.068,130.701 -1.060,130.708 -1.056,130.707 -1.050,130.696 -1.011,130.672 -0.993,130.643 -0.979,130.635 -0.960,130.638 -0.955,130.652 -0.953,130.687 -0.943,130.705 -0.941,130.723 -0.930,130.740 -0.928,130.792 -0.915,130.801 -0.908,130.826 -0.898,130.834 -0.900,130.849 -0.905,130.858 -0.895,130.864 -0.897,130.884 -0.891,130.896 -0.891,130.900 -0.896,130.897 -0.899,130.901 -0.893,130.918 -0.890,130.919 -0.893,130.925 -0.913,130.919 -0.933,130.926</polygon>
+      <polygon>-0.951,130.661 -0.951,130.648 -0.947,130.637 -0.939,130.636 -0.941,130.655 -0.945,130.660 -0.951,130.661</polygon>
+      <polygon>-0.346,131.035 -0.281,131.042 -0.235,131.028 -0.238,131.044 -0.286,131.149 -0.265,131.157 -0.213,131.189 -0.143,131.245 -0.140,131.253 -0.155,131.263 -0.169,131.295 -0.188,131.307 -0.194,131.303 -0.201,131.311 -0.213,131.311 -0.229,131.290 -0.247,131.293 -0.260,131.299 -0.269,131.308 -0.281,131.328 -0.291,131.338 -0.301,131.334 -0.303,131.311 -0.307,131.305 -0.324,131.300 -0.325,131.291 -0.333,131.281 -0.343,131.281 -0.350,131.276 -0.352,131.265 -0.346,131.244 -0.353,131.243 -0.370,131.252 -0.382,131.253 -0.387,131.241 -0.374,131.221 -0.369,131.205 -0.373,131.199 -0.353,131.193 -0.342,131.176 -0.335,131.153 -0.335,131.124 -0.329,131.114 -0.329,131.103 -0.316,131.095 -0.331,131.067 -0.350,131.053 -0.354,131.042 -0.346,131.035</polygon>
+    </area>
+  </info>
+</alert>
