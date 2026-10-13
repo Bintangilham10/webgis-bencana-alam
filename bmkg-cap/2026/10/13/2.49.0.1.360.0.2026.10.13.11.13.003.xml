@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.13.11.13.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-13T18:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-13T18:45:00+07:00</effective>
+    <expires>2026-10-13T20:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 13 October 2026, 18:45 WIB di sebagian wilayah Sumatera Barat, khususnya di GUNUNGTULEH, SUNGAIAUR, V KOTO KAMPUNG DALAM, V KOTO TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 13 October 2026, 20:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSB/2026/10/13/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Barat</areaDesc>
+      <polygon>-0.414,100.190 -0.437,100.184 -0.469,100.202 -0.489,100.191 -0.491,100.184 -0.483,100.186 -0.483,100.175 -0.501,100.159 -0.518,100.134 -0.532,100.136 -0.551,100.133 -0.549,100.129 -0.562,100.103 -0.562,100.097 -0.537,100.108 -0.521,100.105 -0.489,100.131 -0.470,100.142 -0.446,100.140 -0.430,100.150 -0.407,100.175 -0.414,100.190</polygon>
+      <polygon>-0.415,100.217 -0.434,100.218 -0.443,100.225 -0.450,100.239 -0.460,100.246 -0.468,100.246 -0.485,100.236 -0.490,100.219 -0.504,100.206 -0.516,100.183 -0.527,100.171 -0.541,100.173 -0.541,100.159 -0.572,100.150 -0.571,100.131 -0.560,100.136 -0.551,100.133 -0.532,100.136 -0.518,100.134 -0.501,100.159 -0.483,100.175 -0.483,100.186 -0.491,100.184 -0.489,100.191 -0.469,100.202 -0.437,100.184 -0.414,100.190 -0.415,100.217</polygon>
+      <polygon>0.461,99.820 0.441,99.830 0.428,99.830 0.417,99.825 0.413,99.815 0.419,99.778 0.401,99.774 0.397,99.750 0.385,99.743 0.357,99.776 0.349,99.773 0.346,99.760 0.336,99.754 0.317,99.757 0.310,99.768 0.320,99.782 0.321,99.787 0.302,99.791 0.298,99.795 0.300,99.811 0.308,99.825 0.260,99.852 0.237,99.858 0.230,99.853 0.226,99.854 0.213,99.846 0.187,99.813 0.182,99.801 0.185,99.782 0.163,99.758 0.159,99.749 0.157,99.734 0.162,99.719 0.166,99.708 0.172,99.710 0.219,99.713 0.232,99.708 0.254,99.687 0.303,99.673 0.319,99.673 0.331,99.686 0.355,99.687 0.372,99.669 0.388,99.676 0.460,99.679 0.473,99.679 0.468,99.686 0.468,99.701 0.455,99.714 0.452,99.722 0.455,99.729 0.478,99.742 0.482,99.784 0.461,99.820</polygon>
+      <polygon>0.172,99.710 0.163,99.675 0.151,99.646 0.143,99.655 0.139,99.646 0.132,99.650 0.127,99.641 0.107,99.632 0.139,99.565 0.101,99.545 0.124,99.494 0.141,99.514 0.154,99.519 0.183,99.534 0.221,99.580 0.237,99.593 0.278,99.605 0.338,99.600 0.390,99.615 0.409,99.622 0.450,99.648 0.458,99.664 0.460,99.679 0.388,99.676 0.372,99.669 0.355,99.687 0.331,99.686 0.319,99.673 0.303,99.673 0.254,99.687 0.232,99.708 0.219,99.713 0.172,99.710</polygon>
+    </area>
+  </info>
+</alert>
