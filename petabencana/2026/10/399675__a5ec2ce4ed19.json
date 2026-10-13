@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-13T09:00:40.558Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.7663657257,
+        -6.1172651
+      ]
+    },
+    "properties": {
+      "pkey": "399675",
+      "created_at": "2026-10-13T08:54:28.456Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "c22ccdd7-291a-4288-b042-0cfeeca684bd",
+      "image_url": "https://images.petabencana.id/c22ccdd7-291a-4288-b042-0cfeeca684bd.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 87.4978666136408,
+        "fireLocation": {
+          "lat": "-6.1172651",
+          "lng": 106.766365725666
+        },
+        "personLocation": {
+          "lng": 106.76681827309511,
+          "lat": -6.1174692562344575
+        },
+        "fireRadius": {
+          "lng": 106.76560397830764,
+          "lat": -6.117478454854037
+        }
+      },
+      "tags": {
+        "city": "JAKARTA UTARA",
+        "district_id": null,
+        "region_code": "3172",
+        "local_area_id": "16661",
+        "instance_region_code": "ID-JK"
+      },
+      "title": null,
+      "text": "kebakaran rumah di sekitar Jalan Kerta Jaya IV, Kelurahan Penjaringan, Kecamatan Penjaringan, Kota Administrasi Jakarta Utara,",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
