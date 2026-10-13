@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi1wFBVV95cUxQZG5zY3BrR1BScTZGdDNzeDhYOFRjRjhsVWpLc3pZa2VVNEg0d1NMY09pZTkzak5zYnYzS2tFdTFlWnJtM3lNM3lvZThkRGZJQ2w2WmNHMXZ2STFrcWVtdUlRWFV0QVBnRTlWNUNLU2RnUmp4OV9fSzVTVWp3b3JCRTNTM05POEdkMkVTbklsQVJiQ3cwWHN6UzRXN3VmX3VhbDdJSmtEVU9nZHdBLTdIS3ZmdnhvUy1GT01vSUFqZDkzNXRKcnR5UmJOcGxfek43MjZyak5udw",
+  "title": "Pemerintah Kabupaten Pesisir Selatan Percepat Penanganan Darurat Bencana Banjir dan Tanah Longsor - Pemerintah Kabupaten Pesisir Selatan",
+  "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQZG5zY3BrR1BScTZGdDNzeDhYOFRjRjhsVWpLc3pZa2VVNEg0d1NMY09pZTkzak5zYnYzS2tFdTFlWnJtM3lNM3lvZThkRGZJQ2w2WmNHMXZ2STFrcWVtdUlRWFV0QVBnRTlWNUNLU2RnUmp4OV9fSzVTVWp3b3JCRTNTM05POEdkMkVTbklsQVJiQ3cwWHN6UzRXN3VmX3VhbDdJSmtEVU9nZHdBLTdIS3ZmdnhvUy1GT01vSUFqZDkzNXRKcnR5UmJOcGxfek43MjZyak5udw?oc=5",
+  "source": "Pemerintah Kabupaten Pesisir Selatan",
+  "source_url": "https://www.pesisirselatankab.go.id",
+  "published_at": "2026-10-13T03:45:07.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-13T06:45:25.686Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.01",
+      "nama": "Kabupaten Pesisir Selatan",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}
