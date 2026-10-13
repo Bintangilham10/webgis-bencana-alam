@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-13T13:30:33.655Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.7320772802,
+        -3.1920810744
+      ]
+    },
+    "properties": {
+      "pkey": "399677",
+      "created_at": "2026-10-13T13:21:43.548Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "8238ba7d-a6d6-4fbd-bbdc-41970a48a5ae",
+      "image_url": "https://images.petabencana.id/8238ba7d-a6d6-4fbd-bbdc-41970a48a5ae.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 1,
+        "airQuality": 2
+      },
+      "tags": {
+        "city": "BARITO KUALA",
+        "district_id": null,
+        "region_code": "6304",
+        "local_area_id": null,
+        "instance_region_code": "ID-KS"
+      },
+      "title": null,
+      "text": "Kabut asap akhibat kebakaran lahan di desa Sampurna, Jejangkit, Barito Kuala, Kalsel hari ini, (13/10) ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

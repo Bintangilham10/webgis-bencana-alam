@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-13T13:30:33.655Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        98.1589001066,
+        4.4004979419
+      ]
+    },
+    "properties": {
+      "pkey": "399678",
+      "created_at": "2026-10-13T13:25:58.465Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "538b8e70-23fd-4463-b51a-7f14ad69e265",
+      "image_url": "https://images.petabencana.id/538b8e70-23fd-4463-b51a-7f14ad69e265.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 20
+      },
+      "tags": {
+        "city": "ACEH TAMIANG",
+        "district_id": null,
+        "region_code": "1116",
+        "local_area_id": null,
+        "instance_region_code": "ID-AC"
+      },
+      "title": null,
+      "text": "Kondisi banjir setelah hujan di daerah Lambung Blang, Bendahara, Aceh Tamiang hari ini (13/10)",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
