@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-13T07:00:40.942Z",
+  "data": {
+    "Tanggal": "13 Okt 2026",
+    "Jam": "13:42:29 WIB",
+    "DateTime": "2026-10-13T06:42:29+00:00",
+    "Coordinates": "-9.72,119.02",
+    "Lintang": "9.72 LS",
+    "Bujur": "119.02 BT",
+    "Magnitude": "4.1",
+    "Kedalaman": "16 km",
+    "Wilayah": "Pusat gempa berada di laut 15 km selatan Kodi-Sumba Barat Daya",
+    "Dirasakan": "III Kab. Sumba Barat Daya"
+  }
+}
