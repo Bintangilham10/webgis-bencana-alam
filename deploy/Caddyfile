@@ -1,0 +1,26 @@
+# SITE_ADDRESS = nama domain server: Caddy mengambil sertifikat HTTPS (Let's Encrypt)
+# sendiri dan mengalihkan HTTP ke HTTPS. ":80" = uji lokal tanpa HTTPS.
+{$SITE_ADDRESS} {
+	encode zstd gzip
+
+	handle /api/* {
+		reverse_proxy api:3000
+	}
+
+	handle {
+		root * /srv
+		# Nama berkas di /assets memuat hash isinya, jadi aman disimpan browser selamanya;
+		# halaman utama selalu diperiksa ulang supaya versi baru langsung terpakai.
+		header /assets/* Cache-Control "public, max-age=31536000, immutable"
+		@page path / /index.html
+		header @page Cache-Control "no-cache"
+		file_server
+	}
+
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		-Server
+	}
+}

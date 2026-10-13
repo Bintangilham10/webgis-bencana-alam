@@ -1,0 +1,12 @@
+# Konteks build image produksi (deploy/) = root repo; yang tidak dipakai image tidak dikirim.
+**/node_modules
+**/.env
+.git
+web/dist
+web/scripts/.cache-globe
+server/data/raw
+research
+docs
+arsip
+.playwright-cli
+**/*.pdf

@@ -1,0 +1,19 @@
+#cloud-config
+# Persiapan VM Ubuntu 24.04 untuk SIGAP Bencana (az vm create --custom-data).
+# Docker dan Compose dari repositori Ubuntu, swap 2 GB karena RAM VM hanya 1 GB, lalu
+# kode diambil dari GitHub. Basis data dan deploy/.env diisi sesudahnya (deploy/README.md).
+package_update: true
+package_upgrade: true
+packages:
+  - docker.io
+  - docker-compose-v2
+  - git
+swap:
+  filename: /swapfile
+  size: 2G
+  maxsize: 2G
+runcmd:
+  - systemctl enable --now docker
+  - usermod -aG docker azureuser
+  - git clone https://github.com/Bintangilham10/webgis-bencana-alam.git /opt/sigap
+  - chown -R azureuser:azureuser /opt/sigap

@@ -26,3 +26,6 @@ __pycache__/
 
 # Tugas kuliah (slide PPTX/PDF kebutuhan sistem)
 docs/tugas-1-kebutuhan-sistem/
+
+# Salinan basis data untuk dipindahkan ke server (deploy/restore-db.sh)
+*.dump
