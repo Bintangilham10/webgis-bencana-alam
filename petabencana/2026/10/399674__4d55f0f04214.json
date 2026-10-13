@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-13T08:17:33.214Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        119.5916236779,
+        -5.0670491357
+      ]
+    },
+    "properties": {
+      "pkey": "399674",
+      "created_at": "2026-10-13T08:17:12.100Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "96399134-0011-4fe4-adc6-822869bcdf95",
+      "image_url": "https://images.petabencana.id/96399134-0011-4fe4-adc6-822869bcdf95.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 51.118974947009704,
+        "fireLocation": {
+          "lng": 119.59162367791129,
+          "lat": -5.067049135684073
+        },
+        "personLocation": {
+          "lat": "-5.0672415",
+          "lng": "119.5916505"
+        },
+        "fireRadius": {
+          "lng": 119.59118916005127,
+          "lat": -5.067204095832125
+        }
+      },
+      "tags": {
+        "city": "MAROS",
+        "district_id": null,
+        "region_code": "7309",
+        "local_area_id": null,
+        "instance_region_code": "ID-SN"
+      },
+      "title": null,
+      "text": "Terjadi Kebakaran Rumah di\nTambua Maros. Selasa 13/0ktober/2026",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

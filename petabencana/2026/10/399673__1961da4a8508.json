@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-13T08:17:33.214Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.4749777996,
+        -1.7246383147
+      ]
+    },
+    "properties": {
+      "pkey": "399673",
+      "created_at": "2026-10-13T08:05:45.998Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "694402ae-4e4b-4d2f-9dbf-ccc8717b26a2",
+      "image_url": "https://images.petabencana.id/694402ae-4e4b-4d2f-9dbf-ccc8717b26a2.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 1,
+        "airQuality": 4
+      },
+      "tags": {
+        "city": "KAPUAS",
+        "district_id": null,
+        "region_code": "6203",
+        "local_area_id": null,
+        "instance_region_code": "ID-KT"
+      },
+      "title": null,
+      "text": "Kondisi yang katanya masih berjalan normal, ini penuh asap, jam 11 siang di kecamatan Timpah, kab.Kuala Kapuas Kalteng jam.11 siang selasa ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
