@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-13T04:30:29.930Z",
+  "data": {
+    "Tanggal": "13 Okt 2026",
+    "Jam": "11:00:21 WIB",
+    "DateTime": "2026-10-13T04:00:21+00:00",
+    "Coordinates": "-9.45,113.95",
+    "Lintang": "9.45 LS",
+    "Bujur": "113.95 BT",
+    "Magnitude": "4.9",
+    "Kedalaman": "12 km",
+    "Wilayah": "Pusat gempa berada di laut 141 km barat daya Jembrana",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Jember, II - III Kuta Selatan, II - III Denpasar, II - III Karangasem, II Lumajang, II Malang, II Blitar, II Bondowoso",
+    "Shakemap": "20261013110021.mmi.jpg"
+  }
+}
