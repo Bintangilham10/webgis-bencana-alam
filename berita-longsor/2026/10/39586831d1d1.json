@@ -1,0 +1,29 @@
+{
+  "guid": "CBMiwwFBVV95cUxQWnFsdmJzcHlkUmFJM2YzYUNZYnctRElaemhzQTd3S0xGbXp5N0xJbVlUY0E5WmxSelIzQmhCQUJEZE9fV3h3eTdSLWRVTk9VWGVwR2RkZUwwaW1ISUdPS0c0SHBEQ19oNzFNMU5FaW1lRWswVWxTWnlFd1pseU5kSEJGbzhfdU4zSVVBSmkzcFpxSnNkTVIzRVVxdTU0NzVKN284akV0U2ZpU2N6ZHZiNWVoNHNoT05YVUdWbDlISVFvOGM",
+  "title": "PU Bangun Tanggul Darurat di Padang, 14 Titik Longsor Sumbar-Jambi Kembali Fungsional - InvestorTrust",
+  "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWnFsdmJzcHlkUmFJM2YzYUNZYnctRElaemhzQTd3S0xGbXp5N0xJbVlUY0E5WmxSelIzQmhCQUJEZE9fV3h3eTdSLWRVTk9VWGVwR2RkZUwwaW1ISUdPS0c0SHBEQ19oNzFNMU5FaW1lRWswVWxTWnlFd1pseU5kSEJGbzhfdU4zSVVBSmkzcFpxSnNkTVIzRVVxdTU0NzVKN284akV0U2ZpU2N6ZHZiNWVoNHNoT05YVUdWbDlISVFvOGM?oc=5",
+  "source": "InvestorTrust",
+  "source_url": "https://investortrust.id",
+  "published_at": "2026-10-13T07:43:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-13T10:00:39.742Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "13.71",
+      "nama": "Kota Padang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi",
+    "Sumatera Barat"
+  ]
+}

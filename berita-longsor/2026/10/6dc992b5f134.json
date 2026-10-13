@@ -1,0 +1,38 @@
+{
+  "guid": "CBMi2wFBVV95cUxOVjNUSVo0amJ1MC1MV2s3amNmZ1BYRFpqeVJsa3lQbXJWbXBHdDVCWDYxRjlsdzB4eFY1VzJUeUd4QkVNRUdwSEpJNzd2WFhfTTNOV2FIZS01ZVNZVFNDckYtbExnSzJqRllrZTJJZVFocHEtRDBMV0RGQ0dGbWZOcEc3dm80ZElZTVUyOGt3ZUMzenhOUlFSV1hYUVNGWVVvTy1BVGxMdzdSdW1ySHYzRTBQRkNLcHpTYlgyVXNqN0NOekRMZm94MjJPQUxxS0ZfZDVuZXFxd2N0SzQ",
+  "title": "BNPB Update Bencana: Banjir-Longsor Landa Gayo Lues & Aceh Tenggara, Karhutla 63 Hektare di Merauke, Padang Masih Terendam - Media Literasi",
+  "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOVjNUSVo0amJ1MC1MV2s3amNmZ1BYRFpqeVJsa3lQbXJWbXBHdDVCWDYxRjlsdzB4eFY1VzJUeUd4QkVNRUdwSEpJNzd2WFhfTTNOV2FIZS01ZVNZVFNDckYtbExnSzJqRllrZTJJZVFocHEtRDBMV0RGQ0dGbWZOcEc3dm80ZElZTVUyOGt3ZUMzenhOUlFSV1hYUVNGWVVvTy1BVGxMdzdSdW1ySHYzRTBQRkNLcHpTYlgyVXNqN0NOekRMZm94MjJPQUxxS0ZfZDVuZXFxd2N0SzQ?oc=5",
+  "source": "Media Literasi",
+  "source_url": "https://medialiterasi.id",
+  "published_at": "2026-10-13T05:02:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-13T10:00:39.742Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.02",
+      "nama": "Kabupaten Aceh Tenggara",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "11.13",
+      "nama": "Kabupaten Gayo Lues",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "93.01",
+      "nama": "Kabupaten Merauke",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.71",
+      "nama": "Kota Padang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

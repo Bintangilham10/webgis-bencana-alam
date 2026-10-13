@@ -1,0 +1,28 @@
+{
+  "guid": "CBMirwFBVV95cUxQeE1DXzdyU2IxeUpLcGlnVmZ0bjJSRkoxOFlmSVAzWjBBZUVKNkNBYjREOFJ4RXdPSjlwWFhadjJuY1VwMVdCYTVkekNKV1ltWk1NNEdIcVhrLVVZVHlaaWJrYzhpVGl2UTRYR19fejZ5a2V4YVZNN0FKTjA5Wkk2cTRkc2F4RTJFX21WM1hnWEplUDRiT05ZcHRVVWxnVFVkVUVxR0lpSW9OOVZrOVVF0gGyAUFVX3lxTE9FRUxZeFpkMjFZaTZvOEVjM2FJVWY2djNkUXhYNGpSM29XSGhBdUw4bTdpN0tPaThLVUl5SjB2MWNVaGpIZl9nSjdxaUUxdjRXZ0VMUFMxZlRwNGUyQWtLai15VnR5bXcwckpwWGFKOGdPdE5QU2RIRzRLMjZ1bHA5Qm4zdGU5TW90b1BJRVczQks1T1VrdGQxZjNhUmNlWEMwcDdhRW9jZzA4eUg5dW9Yd2c",
+  "title": "Menteri PU Instruksikan Penanganan Menyeluruh Banjir Padang & Longsor Tapan–Batas Jambi - JPNN.com",
+  "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQeE1DXzdyU2IxeUpLcGlnVmZ0bjJSRkoxOFlmSVAzWjBBZUVKNkNBYjREOFJ4RXdPSjlwWFhadjJuY1VwMVdCYTVkekNKV1ltWk1NNEdIcVhrLVVZVHlaaWJrYzhpVGl2UTRYR19fejZ5a2V4YVZNN0FKTjA5Wkk2cTRkc2F4RTJFX21WM1hnWEplUDRiT05ZcHRVVWxnVFVkVUVxR0lpSW9OOVZrOVVF0gGyAUFVX3lxTE9FRUxZeFpkMjFZaTZvOEVjM2FJVWY2djNkUXhYNGpSM29XSGhBdUw4bTdpN0tPaThLVUl5SjB2MWNVaGpIZl9nSjdxaUUxdjRXZ0VMUFMxZlRwNGUyQWtLai15VnR5bXcwckpwWGFKOGdPdE5QU2RIRzRLMjZ1bHA5Qm4zdGU5TW90b1BJRVczQks1T1VrdGQxZjNhUmNlWEMwcDdhRW9jZzA4eUg5dW9Yd2c?oc=5",
+  "source": "JPNN.com",
+  "source_url": "https://www.jpnn.com",
+  "published_at": "2026-10-13T07:38:39.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-13T10:00:39.742Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.71",
+      "nama": "Kota Padang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}
