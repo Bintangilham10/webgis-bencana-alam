@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-13T07:30:35.287Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        119.565092566,
+        -4.9810477099
+      ]
+    },
+    "properties": {
+      "pkey": "399672",
+      "created_at": "2026-10-13T07:16:17.309Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "1b5d71a4-d556-4554-a323-b4a25f7b998a",
+      "image_url": "https://images.petabencana.id/1b5d71a4-d556-4554-a323-b4a25f7b998a.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 0,
+        "airQuality": 2
+      },
+      "tags": {
+        "city": "MAROS",
+        "district_id": null,
+        "region_code": "7309",
+        "local_area_id": null,
+        "instance_region_code": "ID-SN"
+      },
+      "title": null,
+      "text": "Kabut Asap di kel.soreang makin pekat.",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
