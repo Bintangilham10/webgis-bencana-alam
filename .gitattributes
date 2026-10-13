@@ -1,0 +1,4 @@
+# Berkas yang dijalankan di server Linux (deploy/) selalu berakhir baris LF,
+# juga bila repo di-checkout di Windows dengan core.autocrlf.
+deploy/** text eol=lf
+*.sh text eol=lf

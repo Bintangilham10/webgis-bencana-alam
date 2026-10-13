@@ -7,7 +7,9 @@ dump=${1:?pakai: bash deploy/restore-db.sh <berkas.dump>}
 compose="docker compose -f deploy/compose.yaml"
 
 $compose up -d --wait db
-if [ "$($compose exec -T db psql -U sigap -d sigap -Atc "select to_regclass('public.wilayah') is not null")" = t ]; then
+# Penugasan terpisah supaya galat psql menghentikan skrip (set -e), bukan dianggap "kosong".
+has_tables=$($compose exec -T db psql -U sigap -d sigap -Atc "select to_regclass('public.wilayah') is not null")
+if [ "$has_tables" = t ]; then
   echo "Basis data server sudah berisi tabel SIGAP; pemulihan dibatalkan supaya data tidak tertimpa." >&2
   exit 1
 fi
@@ -16,9 +18,10 @@ $compose cp "$dump" db:/tmp/sigap.dump
 # Skema tiger dan topology sudah dibuat image PostGIS saat basis data pertama kali
 # dibuat, jadi entri CREATE SCHEMA keduanya dilewati supaya pemulihan bebas galat.
 $compose exec -T db sh -c '
+  set -e
+  trap "rm -f /tmp/sigap.dump /tmp/sigap.list" EXIT
   pg_restore -l /tmp/sigap.dump | grep -vE "SCHEMA - (tiger|topology) " > /tmp/sigap.list
-  pg_restore -U sigap -d sigap --no-owner --no-privileges --exit-on-error -L /tmp/sigap.list /tmp/sigap.dump
-  rm /tmp/sigap.dump /tmp/sigap.list'
+  pg_restore -U sigap -d sigap --no-owner --no-privileges --exit-on-error -L /tmp/sigap.list /tmp/sigap.dump'
 
 # Log sinkronisasi laptop tidak dibawa: ketersediaan server (RQ2) dihitung sejak
 # server ini berjalan. Riwayat laptop tetap ada di basis data lokal.

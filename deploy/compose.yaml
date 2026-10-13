@@ -22,8 +22,11 @@ services:
     # Hanya dari mesin ini (mis. tunnel SSH untuk riset), tidak dari internet.
     ports:
       - "127.0.0.1:${DB_PORT:-5432}:5432"
+    # Lewat TCP: saat volume baru diinisialisasi, image Postgres menjalankan server
+    # sementara yang hanya mendengar soket lokal lalu mematikannya. Pemeriksaan lewat
+    # soket akan menganggap server sementara itu sudah siap.
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U sigap -d sigap"]
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U sigap -d sigap"]
       interval: 5s
       timeout: 5s
       retries: 12
