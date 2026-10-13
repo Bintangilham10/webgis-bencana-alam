@@ -10,6 +10,8 @@
 Sistem web pemetaan **peringatan dini dan mitigasi bencana alam Indonesia** berbasis data spasial terbuka.
 Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom University.
 
+**Situs: [sigap-bencana.malaysiawest.cloudapp.azure.com](https://sigap-bencana.malaysiawest.cloudapp.azure.com)**
+
 > **Bukan sumber peringatan resmi.** Untuk keputusan keselamatan, ikuti BMKG, PVMBG/MAGMA, dan BNPB/BPBD setempat.
 
 ## Fitur saat ini
@@ -87,7 +89,8 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
 | `server/` | API Express + PostGIS, penjadwal sinkronisasi, migrasi, dan seed data |
 | `web/` | Frontend Vite + Leaflet |
 | `recorder/` | Perekam arsip data (berjalan di GitHub Actions) |
-| `docker-compose.yml` | Database PostgreSQL 18 + PostGIS 3.6 |
+| `deploy/` | Server produksi: Docker Compose berisi PostGIS, API, dan Caddy (HTTPS) di satu VM Azure |
+| `docker-compose.yml` | Database PostgreSQL 18 + PostGIS 3.6 untuk pengembangan |
 
 ## Menjalankan secara lokal
 
@@ -116,6 +119,8 @@ Buka alamat itu di browser biasa (Chrome, Edge, Brave, atau Firefox). Di browser
 Server menghitung indikasi 3 hari tiap 12 jam dan tidak mengulanginya saat dimulai ulang bila run terakhir masih segar. Untuk memperbarui kapan saja (mis. sebelum demo), jalankan `npm run indikasi` di folder `server/`. Satu run memakai ±sepertiga kuota harian gratis Open-Meteo.
 
 Konfigurasi bawaan sudah cocok dengan `docker-compose.yml`. Salin `.env.example` menjadi `.env` hanya bila perlu mengubahnya.
+
+Situs publik menjalankan kode yang sama di satu VM Azure kecil dengan Docker Compose: PostGIS, API beserta penjadwalnya, dan Caddy untuk hasil build web dan HTTPS. Cara membangun, memperbarui, dan biayanya ada di [`deploy/README.md`](deploy/README.md).
 
 ### Test
 

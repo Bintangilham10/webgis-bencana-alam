@@ -9,6 +9,8 @@
 
 **Open-data web GIS for disaster early warning and mitigation across Indonesia**
 
+**Live: [sigap-bencana.malaysiawest.cloudapp.azure.com](https://sigap-bencana.malaysiawest.cloudapp.azure.com)**
+
 Earthquakes, volcanoes, floods, landslides, and heavy rain on one map, checked against official data from BMKG, PVMBG, and BNPB.
 
 [![Node.js 22+](https://img.shields.io/badge/Node.js-22%2B-3c873a?logo=nodedotjs&logoColor=white)](server/package.json)
@@ -289,6 +291,8 @@ After re-seeding the hazard zones, run `npm run export:recorder` in `server/` an
 
 The defaults match `docker-compose.yml`. Copy `.env.example` to `.env` only if you need to change them.
 
+The public site runs the same code on one small Azure VM with Docker Compose: PostGIS, the API with its scheduler, and Caddy for the web build and HTTPS. Setup, updates, and costs are in [`deploy/README.md`](deploy/README.md) (in Indonesian).
+
 <details>
 <summary><strong>Running the tests</strong></summary>
 
@@ -358,7 +362,8 @@ Shortened from the real response. If one source fails, only its own part carries
 | [`recorder/`](recorder) | Data recorder that runs on GitHub Actions, plus the outlook rules (`src/lib/rules.json`) shared with the server |
 | [`research/`](research) | Python analysis for SIGAP-L, the preregistered protocol, and results |
 | [`docs/images/`](docs/images) | Screenshots and charts used in this README |
-| [`docker-compose.yml`](docker-compose.yml) | PostgreSQL 18 + PostGIS 3.6 |
+| [`deploy/`](deploy) | Production server: Docker Compose with PostGIS, the API, and Caddy (HTTPS) on one Azure VM |
+| [`docker-compose.yml`](docker-compose.yml) | PostgreSQL 18 + PostGIS 3.6 for development |
 
 ## Data sources and attribution
 
