@@ -1,5 +1,6 @@
 import compression from 'compression';
 import express from 'express';
+import { rateLimit } from './lib/rate-limit.js';
 import { earthquakesRouter } from './routes/earthquakes.js';
 import { createGeocodeRouter } from './routes/geocode.js';
 import { healthRouter } from './routes/health.js';
@@ -17,8 +18,31 @@ export function createApp({ services = {} } = {}) {
   // Satu cache peringatan CEWS untuk cek risiko dan layer peta.
   const rainWarnings = services.rainWarnings ?? createRainWarnings();
   app.disable('x-powered-by');
+  // Di server produksi API berada di belakang Caddy (deploy/), jadi IP pengguna
+  // dibaca dari X-Forwarded-For yang dikirim proxy di jaringan lokal/Docker.
+  app.set('trust proxy', 'loopback, uniquelocal');
   // GeoJSON batas wilayah dan sesar berukuran besar; gzip memangkasnya ±80%.
   app.use(compression());
+
+  // Satu cek risiko memanggil ±8 layanan luar; jawaban yang sama di-cache 10 menit.
+  app.use(
+    '/api/risk',
+    rateLimit({
+      limit: 120,
+      windowMs: 10 * 60_000,
+      message: 'Terlalu banyak cek risiko dari jaringan ini. Coba lagi beberapa menit lagi.',
+      ...services.rateLimit,
+    }),
+  );
+  app.use(
+    '/api/geocode',
+    rateLimit({
+      limit: 60,
+      windowMs: 60_000,
+      message: 'Terlalu banyak pencarian dari jaringan ini. Coba lagi sebentar lagi.',
+      ...services.rateLimit,
+    }),
+  );
 
   app.use(
     '/api',
