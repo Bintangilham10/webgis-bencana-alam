@@ -1,0 +1,28 @@
+{
+  "guid": "CBMi1AFBVV95cUxOTjBrSjRvR2wzUlNfM0ctLXlIY3JvaEFrZDVZSXhCbGxnRFJHTmRKdFhBZjRXZUtKa0VIb1BiUGVrYU1ycGdVVWM5TldMWTVkV2dGa2FqT1Ezak00THVwUk1EMUFGVEEwWDZud0JtOWlKZzhmZ25MeGc0NVhHQ01jVTRUT3hWVDNkS3Q4NWxlM0ZhUXJTTktBN3JaRXJZS3doZWd5US1oalhUMG9YcXVmU3YxYXhTOV8xdXBESUFraU00UzYtZDM4bzZ3SjBVMjUzTzZvYQ",
+  "title": "Kementerian PU Rampungkan Tanggul Padang, Pulihkan Jalan Tapan–Batas Jambi Usai Longsor - Tribunnews.com",
+  "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOTjBrSjRvR2wzUlNfM0ctLXlIY3JvaEFrZDVZSXhCbGxnRFJHTmRKdFhBZjRXZUtKa0VIb1BiUGVrYU1ycGdVVWM5TldMWTVkV2dGa2FqT1Ezak00THVwUk1EMUFGVEEwWDZud0JtOWlKZzhmZ25MeGc0NVhHQ01jVTRUT3hWVDNkS3Q4NWxlM0ZhUXJTTktBN3JaRXJZS3doZWd5US1oalhUMG9YcXVmU3YxYXhTOV8xdXBESUFraU00UzYtZDM4bzZ3SjBVMjUzTzZvYQ?oc=5",
+  "source": "Tribunnews.com",
+  "source_url": "https://www.tribunnews.com",
+  "published_at": "2026-10-13T02:28:47.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-13T03:30:34.382Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "13.71",
+      "nama": "Kota Padang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}

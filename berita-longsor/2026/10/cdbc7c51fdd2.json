@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi0gFBVV95cUxQNml4d2tnY2NxQXNGVjlwZ1lpUTJUa1h1djZreDFHWVZuZ0Z0YnQ0cDlERXFUTTBqcy1Mb3RTNEZ6Y3JVMTBMaXhzRVhsN1ozakxlS3BaSXNKTTFUNHBQSXNHV281azRYRWFURWRCX1pDcWg4bmZhTmljMXhoVHBaaFpSY1FFbVFjM3pZUVFGWkgtdjE4OGd2TDd5MmVHRlhYYmVxNDlXYVVodXNUU0hZRUdZUDNNUGhUdnVIcW1zdExDT0NYbWw2WGNCckhBMWNLOFE",
+  "title": "Tangani Banjir Padang dqn Longsor Pessel, PU Gerak - Monitor Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNml4d2tnY2NxQXNGVjlwZ1lpUTJUa1h1djZreDFHWVZuZ0Z0YnQ0cDlERXFUTTBqcy1Mb3RTNEZ6Y3JVMTBMaXhzRVhsN1ozakxlS3BaSXNKTTFUNHBQSXNHV281azRYRWFURWRCX1pDcWg4bmZhTmljMXhoVHBaaFpSY1FFbVFjM3pZUVFGWkgtdjE4OGd2TDd5MmVHRlhYYmVxNDlXYVVodXNUU0hZRUdZUDNNUGhUdnVIcW1zdExDT0NYbWw2WGNCckhBMWNLOFE?oc=5",
+  "source": "Monitor Indonesia",
+  "source_url": "https://monitorindonesia.com",
+  "published_at": "2026-10-13T01:17:28.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-13T03:30:34.382Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.71",
+      "nama": "Kota Padang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
