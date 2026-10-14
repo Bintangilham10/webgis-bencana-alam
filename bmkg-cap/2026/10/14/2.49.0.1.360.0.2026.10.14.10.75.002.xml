@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.14.09.75.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-14T17:01:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-14T17:13:00+08:00</effective>
+    <expires>2026-10-14T19:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 October 2026, 17:13 WITA di sebagian wilayah Gorontalo, khususnya di SUWAWA TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 October 2026, 19:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/10/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.652,123.364 0.649,123.370 0.540,123.356 0.536,123.363 0.529,123.364 0.518,123.348 0.487,123.329 0.476,123.316 0.433,123.311 0.431,123.314 0.434,123.292 0.444,123.270 0.460,123.273 0.464,123.267 0.465,123.263 0.448,123.252 0.459,123.227 0.455,123.219 0.468,123.216 0.504,123.218 0.515,123.209 0.559,123.209 0.617,123.237 0.629,123.258 0.648,123.279 0.698,123.312 0.695,123.324 0.678,123.343 0.653,123.358 0.652,123.364</polygon>
+    </area>
+  </info>
+</alert>
