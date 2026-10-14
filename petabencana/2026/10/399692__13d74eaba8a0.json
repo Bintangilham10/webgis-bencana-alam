@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-14T08:15:24.399Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.4074262486,
+        -2.9991200009
+      ]
+    },
+    "properties": {
+      "pkey": "399692",
+      "created_at": "2026-10-14T08:14:34.468Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "8b9bf393-b6d6-47bb-814d-49dc3c0c1b53",
+      "image_url": "https://images.petabencana.id/8b9bf393-b6d6-47bb-814d-49dc3c0c1b53.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 838.5649233807469,
+        "fireLocation": {
+          "lng": 114.40742624859223,
+          "lat": -2.999120000922886
+        },
+        "personLocation": {
+          "lat": -6.175392,
+          "lng": 106.827153
+        },
+        "fireRadius": {
+          "lng": 114.40782267528749,
+          "lat": -2.9915890139682233
+        }
+      },
+      "tags": {
+        "city": "KAPUAS",
+        "district_id": null,
+        "region_code": "6203",
+        "local_area_id": null,
+        "instance_region_code": "ID-KT"
+      },
+      "title": null,
+      "text": "Kebakaran hutan menimpa seluruh kalimantan, sudah terjadi lebih dari 4 bulan, api hingga sekarang belum padam. Kabut asap berbahaya.",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.14.08.71.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-14T15:56:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-14T16:00:00+08:00</effective>
+    <expires>2026-10-14T18:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 October 2026, 16:00 WITA di sebagian wilayah Sulawesi Utara, khususnya di BINTAUNA, KALONGAN, TOMBARIRI TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 October 2026, 18:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/10/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>1.388,124.733 1.377,124.738 1.368,124.770 1.367,124.770 1.365,124.769 1.365,124.769 1.355,124.769 1.338,124.749 1.337,124.748 1.324,124.742 1.323,124.742 1.319,124.741 1.317,124.741 1.313,124.740 1.309,124.741 1.308,124.741 1.308,124.741 1.305,124.742 1.303,124.742 1.301,124.742 1.299,124.736 1.298,124.734 1.302,124.729 1.301,124.726 1.301,124.725 1.318,124.722 1.325,124.718 1.327,124.712 1.327,124.709 1.330,124.705 1.343,124.710 1.343,124.710 1.365,124.693 1.372,124.704 1.383,124.708 1.389,124.715 1.388,124.733</polygon>
+      <polygon>3.960,126.664 3.953,126.655 3.975,126.640 3.972,126.634 3.982,126.630 3.986,126.620 4.001,126.612 4.021,126.618 4.030,126.616 4.039,126.608 4.043,126.612 4.042,126.621 4.024,126.640 3.985,126.644 3.977,126.647 3.960,126.664</polygon>
+      <polygon>0.898,123.590 0.898,123.595 0.887,123.592 0.876,123.597 0.867,123.593 0.856,123.600 0.854,123.607 0.840,123.618 0.844,123.619 0.841,123.629 0.839,123.625 0.832,123.625 0.820,123.634 0.823,123.643 0.818,123.650 0.822,123.664 0.819,123.676 0.815,123.682 0.778,123.695 0.760,123.710 0.734,123.700 0.720,123.720 0.696,123.729 0.685,123.741 0.679,123.740 0.667,123.731 0.653,123.731 0.637,123.724 0.635,123.717 0.614,123.701 0.611,123.679 0.617,123.666 0.601,123.634 0.588,123.634 0.582,123.642 0.573,123.644 0.563,123.627 0.562,123.611 0.585,123.589 0.576,123.554 0.579,123.537 0.577,123.533 0.588,123.506 0.600,123.490 0.623,123.491 0.643,123.498 0.657,123.515 0.671,123.519 0.692,123.509 0.706,123.519 0.725,123.516 0.776,123.525 0.793,123.517 0.821,123.531 0.871,123.517 0.887,123.518 0.887,123.552 0.896,123.573 0.898,123.590</polygon>
+      <polygon>0.897,123.584 0.896,123.582 0.900,123.581 0.897,123.584</polygon>
+    </area>
+  </info>
+</alert>
