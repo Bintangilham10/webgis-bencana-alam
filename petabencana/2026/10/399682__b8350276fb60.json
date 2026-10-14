@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-14T04:00:38.650Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        109.9782243098,
+        -1.8443274168
+      ]
+    },
+    "properties": {
+      "pkey": "399682",
+      "created_at": "2026-10-14T03:46:51.066Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "3e1aef10-1d3a-417b-9ab0-4f4d447632e2",
+      "image_url": "https://images.petabencana.id/3e1aef10-1d3a-417b-9ab0-4f4d447632e2.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 1,
+        "airQuality": 4
+      },
+      "tags": {
+        "city": "KETAPANG",
+        "district_id": null,
+        "region_code": "6104",
+        "local_area_id": null,
+        "instance_region_code": "ID-KB"
+      },
+      "title": null,
+      "text": "kabut asap tebal di ketapang kalbar",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
