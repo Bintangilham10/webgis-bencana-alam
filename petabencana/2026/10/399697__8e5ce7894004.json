@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-14T23:00:44.619Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        104.672273541,
+        -3.0089948216
+      ]
+    },
+    "properties": {
+      "pkey": "399697",
+      "created_at": "2026-10-14T22:53:46.349Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "a2fa67c5-605b-4e14-929d-8d996d39713e",
+      "image_url": "https://images.petabencana.id/a2fa67c5-605b-4e14-929d-8d996d39713e.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 148.87120940196684,
+        "fireLocation": {
+          "lng": 104.67227354103784,
+          "lat": -3.0089948215636753
+        },
+        "personLocation": {
+          "lng": 104.6730650176226,
+          "lat": -3.0082489488530797
+        },
+        "fireRadius": {
+          "lng": 104.67117443148885,
+          "lat": -3.0097614708667066
+        }
+      },
+      "tags": {
+        "city": "KOTA PALEMBANG",
+        "district_id": null,
+        "region_code": "1671",
+        "local_area_id": null,
+        "instance_region_code": "ID-SS"
+      },
+      "title": null,
+      "text": "Setiap tengah malm asapnya slalu muncul subuh makin pekat daerah talang kepuh dan gandus.Sesak,Ispa.tolng ditinjau😭 ga mungkin bkn karhutla",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
