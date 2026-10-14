@@ -1,0 +1,26 @@
+{
+  "guid": "CBMisAFBVV95cUxQYVMxY3JDa2U0RndpWV9tVWVraGtZWjJlN2F3WlE1emF5TG94eDZSVU82SndIYjE3NjdsU0lTLU5jMGZlV2RRaE9Pa3R2clJFRFZmOHdkcDFDamd4bnlVd2V5d04yRXVEUllkZU1ZMV9WNElCOUxsLUhKRnlDRDJqcGI5ckw2ZHVFcGVpUkJOamdlNk16bkN2WkhzODZwaEFleWgyLWpXVGM4OVBnREMyWA",
+  "title": "Eceng Gondok Bawa Harapan untuk Warga Korban Longsor di Pasirlangu Bandung - Poskota",
+  "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYVMxY3JDa2U0RndpWV9tVWVraGtZWjJlN2F3WlE1emF5TG94eDZSVU82SndIYjE3NjdsU0lTLU5jMGZlV2RRaE9Pa3R2clJFRFZmOHdkcDFDamd4bnlVd2V5d04yRXVEUllkZU1ZMV9WNElCOUxsLUhKRnlDRDJqcGI5ckw2ZHVFcGVpUkJOamdlNk16bkN2WkhzODZwaEFleWgyLWpXVGM4OVBnREMyWA?oc=5",
+  "source": "Poskota",
+  "source_url": "https://www.poskota.co.id",
+  "published_at": "2026-10-14T11:43:45.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-14T14:30:36.398Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

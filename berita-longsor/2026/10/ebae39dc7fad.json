@@ -1,0 +1,23 @@
+{
+  "guid": "CBMidkFVX3lxTE1FcVgwc1hhWG5iaTJjQ1ZXbXRZY0w0RzhOYnd1Y2dsNTFzR0p1ckc5S3pmX09VcnZjVEx2a2ViT2V5dV8wLWFFRlE4QVp1QUttZ21BTm9xSmM3dTBkZ1BIdmpIOFVlOGk5SXZEN2xEYkplTm5YWmc",
+  "title": "Kementerian PU Tangani 14 Titik Longsor di Tapan Batas Jambi - Lensa Hukum",
+  "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1FcVgwc1hhWG5iaTJjQ1ZXbXRZY0w0RzhOYnd1Y2dsNTFzR0p1ckc5S3pmX09VcnZjVEx2a2ViT2V5dV8wLWFFRlE4QVp1QUttZ21BTm9xSmM3dTBkZ1BIdmpIOFVlOGk5SXZEN2xEYkplTm5YWmc?oc=5",
+  "source": "Lensa Hukum",
+  "source_url": "https://lensahukum.co.id",
+  "published_at": "2026-10-14T13:05:31.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-14T14:30:36.398Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}

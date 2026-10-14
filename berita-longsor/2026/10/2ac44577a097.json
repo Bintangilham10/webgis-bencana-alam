@@ -1,0 +1,26 @@
+{
+  "guid": "CBMizAFBVV95cUxOXzJ1bU9qeFlmRnZSZmYzRXcxWTVPX3dPUGZjUUgwQ3RwY3djNENMdjZCdjlVWHFudEViVkFOdUVFNEZyRGFZVUNjb1VyUkZtcTBPZHVJbHlCbE94dThqN0FtaGZVWVEyVWh4cTUyVlg0a0hGU3d5cEduOUFJTUEyZGlrTjdZTkktZmV5T0w4SVFwN2kxT3dSV2dGdzlzN010NnNVNFEzVUxYY29hOGI5UlVsU21uMWM2RjZYWklrdW5QVnlTdU9YcjdQWXLSAdIBQVVfeXFMTkpmUVZfaUw4SU5Bb1Fza2ljQ3RLLVBVQjBXT0Q1aWxJZEVrT1ROT0pnaHM4RXgtQUQ4Nks0X2ZHU2djaVBiVmZvZ0xNRmFWM2wtakt2YU5LZ3V4ekFZVGtWLXhqYlRYYzh4YTBSWjJ1QWpfY2lZSGRzWk1GLU5IQndhZktqTFgyZGVZLW1DYll5ZzQwN0N3blNMWUJZT3B5VHZsdjI1Wm1GU3JPRWlQX2lKTW85aXNJRlM5a0hmQ1ZWbk1MY2tpMldFRS1yYTdYekNn",
+  "title": "Rawan Longsor dan Banjir, Siswa SMPN 1 Kare Madiun Dibekali Edukasi Kebencanaan - Radar Madiun",
+  "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOXzJ1bU9qeFlmRnZSZmYzRXcxWTVPX3dPUGZjUUgwQ3RwY3djNENMdjZCdjlVWHFudEViVkFOdUVFNEZyRGFZVUNjb1VyUkZtcTBPZHVJbHlCbE94dThqN0FtaGZVWVEyVWh4cTUyVlg0a0hGU3d5cEduOUFJTUEyZGlrTjdZTkktZmV5T0w4SVFwN2kxT3dSV2dGdzlzN010NnNVNFEzVUxYY29hOGI5UlVsU21uMWM2RjZYWklrdW5QVnlTdU9YcjdQWXLSAdIBQVVfeXFMTkpmUVZfaUw4SU5Bb1Fza2ljQ3RLLVBVQjBXT0Q1aWxJZEVrT1ROT0pnaHM4RXgtQUQ4Nks0X2ZHU2djaVBiVmZvZ0xNRmFWM2wtakt2YU5LZ3V4ekFZVGtWLXhqYlRYYzh4YTBSWjJ1QWpfY2lZSGRzWk1GLU5IQndhZktqTFgyZGVZLW1DYll5ZzQwN0N3blNMWUJZT3B5VHZsdjI1Wm1GU3JPRWlQX2lKTW85aXNJRlM5a0hmQ1ZWbk1MY2tpMldFRS1yYTdYekNn?oc=5",
+  "source": "Radar Madiun",
+  "source_url": "https://radarmadiun.jawapos.com",
+  "published_at": "2026-10-14T09:51:04.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-14T14:30:36.398Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.19",
+      "nama": "Kabupaten Madiun",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.77",
+      "nama": "Kota Madiun",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
