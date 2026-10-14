@@ -1,0 +1,41 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-14T10:15:30.430Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        113.9160107841,
+        -2.2065572369
+      ]
+    },
+    "properties": {
+      "pkey": "399683",
+      "created_at": "2026-10-14T04:21:02.588Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "49a07608-63e2-4e15-b02f-01638b0d292b",
+      "image_url": "https://images.petabencana.id/49a07608-63e2-4e15-b02f-01638b0d292b.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "points": 1,
+        "airQuality": 4,
+        "visibility": 1,
+        "report_type": "haze"
+      },
+      "tags": {
+        "city": "KOTA PALANGKARAYA",
+        "district_id": null,
+        "region_code": "6271",
+        "local_area_id": null,
+        "instance_region_code": "ID-KT"
+      },
+      "title": null,
+      "text": "Kondisi palangka raya hari ini masih sama, kabut asap tebal😭",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
