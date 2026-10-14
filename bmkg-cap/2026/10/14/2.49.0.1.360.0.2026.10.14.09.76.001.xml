@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.14.09.76.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-14T17:20:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-14T17:35:00+08:00</effective>
+    <expires>2026-10-14T19:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 October 2026, 17:35 WITA di sebagian wilayah Sulawesi Barat, khususnya di TAPALANG, TAPALANG BARAT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 October 2026, 19:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSK/2026/10/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Barat</areaDesc>
+      <polygon>-2.797,119.021 -2.806,119.025 -2.840,119.022 -2.858,119.013 -2.867,119.014 -2.884,119.025 -2.909,119.025 -2.931,119.032 -2.961,119.026 -2.964,119.027 -2.955,119.007 -2.927,118.993 -2.925,118.967 -2.928,118.957 -2.917,118.941 -2.914,118.930 -2.929,118.894 -2.923,118.878 -2.902,118.888 -2.887,118.886 -2.858,118.859 -2.850,118.846 -2.852,118.839 -2.839,118.841 -2.785,118.837 -2.788,118.862 -2.799,118.875 -2.799,118.884 -2.799,118.913 -2.783,118.933 -2.773,118.971 -2.795,119.001 -2.797,119.021</polygon>
+      <polygon>-2.785,118.837 -2.839,118.841 -2.852,118.839 -2.855,118.827 -2.851,118.810 -2.867,118.769 -2.854,118.767 -2.811,118.773 -2.798,118.758 -2.764,118.758 -2.749,118.763 -2.750,118.775 -2.748,118.781 -2.743,118.784 -2.718,118.774 -2.703,118.778 -2.684,118.778 -2.675,118.784 -2.670,118.810 -2.677,118.815 -2.701,118.817 -2.721,118.824 -2.735,118.822 -2.752,118.810 -2.760,118.821 -2.767,118.819 -2.777,118.836 -2.785,118.837</polygon>
+    </area>
+  </info>
+</alert>
