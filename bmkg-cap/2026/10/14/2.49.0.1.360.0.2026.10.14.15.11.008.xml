@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.14.15.11.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-14T20:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-14T20:10:00+07:00</effective>
+    <expires>2026-10-14T23:27:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Aceh</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 October 2026, 20:10 WIB di sebagian wilayah Aceh, khususnya di JEUMPA, JEUNIEB, JULI, PANDRAH, PEUDADA, PEULIMBANG, SIMPANG MAMPLAM.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 October 2026, 23:27 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CAH/2026/10/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Aceh</areaDesc>
+      <polygon>5.199,96.528 5.190,96.520 5.180,96.520 5.159,96.532 5.130,96.517 5.119,96.522 5.106,96.513 5.080,96.511 5.047,96.487 5.034,96.483 5.008,96.482 4.925,96.450 4.925,96.450 4.940,96.426 5.137,96.474 5.159,96.471 5.167,96.483 5.196,96.491 5.205,96.500 5.200,96.513 5.199,96.528</polygon>
+      <polygon>5.063,96.614 5.022,96.594 5.011,96.604 4.997,96.598 4.973,96.596 4.954,96.609 4.952,96.591 4.935,96.536 4.895,96.506 4.890,96.497 4.892,96.489 5.001,96.502 5.029,96.517 5.048,96.515 5.067,96.519 5.102,96.535 5.119,96.535 5.163,96.561 5.204,96.559 5.209,96.578 5.214,96.637 5.149,96.642 5.136,96.637 5.132,96.630 5.085,96.625 5.063,96.614</polygon>
+      <polygon>5.213,96.692 5.200,96.685 5.189,96.688 5.176,96.689 5.136,96.678 5.139,96.658 5.129,96.653 5.115,96.651 5.094,96.659 5.091,96.664 5.071,96.655 5.061,96.658 5.058,96.648 5.063,96.614 5.085,96.625 5.132,96.630 5.136,96.637 5.149,96.642 5.214,96.637 5.233,96.691 5.216,96.689 5.213,96.692</polygon>
+      <polygon>5.205,96.500 5.196,96.491 5.167,96.483 5.159,96.471 5.137,96.474 4.940,96.426 4.942,96.400 5.027,96.421 5.064,96.424 5.119,96.437 5.171,96.444 5.188,96.451 5.201,96.462 5.204,96.471 5.199,96.481 5.210,96.489 5.205,96.500</polygon>
+      <polygon>5.163,96.737 5.160,96.746 5.145,96.744 5.109,96.745 5.043,96.738 5.012,96.739 4.969,96.731 4.974,96.663 4.955,96.657 4.954,96.609 4.973,96.596 4.997,96.598 5.011,96.604 5.022,96.594 5.063,96.614 5.058,96.648 5.061,96.658 5.071,96.655 5.091,96.664 5.094,96.659 5.115,96.651 5.129,96.653 5.139,96.658 5.136,96.678 5.176,96.689 5.189,96.688 5.188,96.697 5.195,96.702 5.194,96.706 5.180,96.724 5.163,96.729 5.163,96.737</polygon>
+      <polygon>5.210,96.489 5.199,96.481 5.204,96.471 5.201,96.462 5.188,96.451 5.171,96.444 5.119,96.437 5.064,96.424 5.027,96.421 4.942,96.400 4.931,96.376 4.932,96.371 4.937,96.369 5.063,96.390 5.077,96.390 5.119,96.380 5.168,96.380 5.179,96.385 5.189,96.381 5.202,96.388 5.213,96.388 5.209,96.404 5.213,96.421 5.238,96.472 5.228,96.482 5.210,96.489</polygon>
+      <polygon>4.892,96.489 4.895,96.467 4.914,96.462 4.925,96.450 5.008,96.482 5.034,96.483 5.047,96.487 5.080,96.511 5.106,96.513 5.119,96.522 5.130,96.517 5.159,96.532 5.180,96.520 5.190,96.520 5.199,96.528 5.204,96.559 5.163,96.561 5.119,96.535 5.102,96.535 5.067,96.519 5.048,96.515 5.029,96.517 5.001,96.502 4.892,96.489</polygon>
+    </area>
+  </info>
+</alert>

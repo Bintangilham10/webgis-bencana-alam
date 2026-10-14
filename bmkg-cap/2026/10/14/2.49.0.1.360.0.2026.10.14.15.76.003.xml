@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.14.15.76.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-14T22:31:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-14T23:05:00+08:00</effective>
+    <expires>2026-10-15T00:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 October 2026, 23:05 WITA di sebagian wilayah Sulawesi Barat, khususnya di BINUANG, MATAKALI, TUTAR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 15 October 2026, 00:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSK/2026/10/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Barat</areaDesc>
+      <polygon>-3.109,119.071 -3.109,119.072 -3.139,119.078 -3.148,119.071 -3.174,119.075 -3.178,119.065 -3.185,119.070 -3.192,119.068 -3.201,119.077 -3.212,119.077 -3.221,119.074 -3.230,119.064 -3.241,119.065 -3.241,119.072 -3.234,119.079 -3.251,119.083 -3.258,119.092 -3.274,119.085 -3.285,119.098 -3.293,119.095 -3.292,119.090 -3.316,119.075 -3.316,119.065 -3.328,119.074 -3.341,119.075 -3.347,119.062 -3.383,119.042 -3.383,119.042 -3.382,119.011 -3.347,119.007 -3.335,118.991 -3.282,118.991 -3.272,118.995 -3.272,118.980 -3.278,118.966 -3.287,118.955 -3.293,118.925 -3.256,118.917 -3.249,118.910 -3.247,118.910 -3.246,118.909 -3.227,118.916 -3.201,118.901 -3.187,118.901 -3.171,118.909 -3.155,118.954 -3.126,118.953 -3.106,118.946 -3.088,118.956 -3.087,118.962 -3.096,118.976 -3.088,119.005 -3.091,119.026 -3.086,119.043 -3.109,119.071</polygon>
+      <polygon>-3.503,119.474 -3.479,119.453 -3.478,119.440 -3.472,119.429 -3.459,119.427 -3.458,119.419 -3.467,119.411 -3.451,119.384 -3.454,119.378 -3.460,119.379 -3.463,119.374 -3.442,119.356 -3.414,119.350 -3.391,119.353 -3.388,119.384 -3.373,119.406 -3.372,119.422 -3.354,119.445 -3.356,119.451 -3.372,119.461 -3.388,119.463 -3.416,119.472 -3.431,119.470 -3.450,119.478 -3.457,119.476 -3.474,119.491 -3.483,119.491 -3.503,119.474</polygon>
+      <polygon>-3.465,119.391 -3.466,119.395 -3.477,119.394 -3.471,119.389 -3.465,119.391</polygon>
+      <polygon>-3.469,119.419 -3.478,119.414 -3.474,119.409 -3.467,119.415 -3.469,119.419</polygon>
+      <polygon>-3.467,119.371 -3.482,119.374 -3.485,119.365 -3.471,119.363 -3.467,119.371</polygon>
+      <polygon>-3.291,119.357 -3.308,119.345 -3.324,119.340 -3.351,119.320 -3.369,119.319 -3.377,119.309 -3.397,119.308 -3.404,119.294 -3.429,119.295 -3.431,119.284 -3.441,119.282 -3.431,119.277 -3.424,119.282 -3.417,119.281 -3.404,119.273 -3.396,119.261 -3.394,119.250 -3.379,119.236 -3.361,119.245 -3.350,119.241 -3.340,119.248 -3.329,119.306 -3.293,119.333 -3.289,119.345 -3.291,119.357</polygon>
+    </area>
+  </info>
+</alert>
