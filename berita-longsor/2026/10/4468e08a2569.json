@@ -1,0 +1,23 @@
+{
+  "guid": "CBMi3wFBVV95cUxQS3RmOE5MVDZ1UktYUXU2N3BBZ2FYU1RqYWVqc1JqUGZ2Z2hzRV9TUWdIZFJFQU9GbXhiVHY2LURVTzRLM1pONm5LOVhfZEpwU29vekxZa0FveUp3YVg0Sk12ejVNT19PbG9JenVDV090U3lOOEVQZ2ZPYlV6TXUxdXBESlY4WVNjMUhRbmV1alNydDd5bmNUWVVXUFBmQjFWcG5KYUVCRmgzemtVSDl2dzhRb3BCSUthTXBWa1JRSURUU1FoalBoajdXZWVLdHpvQ2Z2VThBSVdTYjNlWVZJ",
+  "title": "Demi Kelancaran Lalu Lintas, Kementerian PU Percepat Pembersihan Longsor Tapan–Batas Jambi - Monitor Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQS3RmOE5MVDZ1UktYUXU2N3BBZ2FYU1RqYWVqc1JqUGZ2Z2hzRV9TUWdIZFJFQU9GbXhiVHY2LURVTzRLM1pONm5LOVhfZEpwU29vekxZa0FveUp3YVg0Sk12ejVNT19PbG9JenVDV090U3lOOEVQZ2ZPYlV6TXUxdXBESlY4WVNjMUhRbmV1alNydDd5bmNUWVVXUFBmQjFWcG5KYUVCRmgzemtVSDl2dzhRb3BCSUthTXBWa1JRSURUU1FoalBoajdXZWVLdHpvQ2Z2VThBSVdTYjNlWVZJ?oc=5",
+  "source": "Monitor Indonesia",
+  "source_url": "https://monitorindonesia.com",
+  "published_at": "2026-10-14T10:14:32.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-14T11:15:28.670Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}
