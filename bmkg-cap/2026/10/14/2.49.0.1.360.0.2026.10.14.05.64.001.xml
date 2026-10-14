@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.14.05.64.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-14T13:41:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-14T13:53:00+08:00</effective>
+    <expires>2026-10-14T15:40:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 October 2026, 13:53 WITA di sebagian wilayah Kalimantan Timur, khususnya di LOA JANAN, TENGGARONG SEBERANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 October 2026, 15:40 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKT/2026/10/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Timur</areaDesc>
+      <polygon>-0.576,117.085 -0.580,117.097 -0.591,117.097 -0.595,117.101 -0.600,117.110 -0.599,117.119 -0.621,117.142 -0.649,117.138 -0.656,117.130 -0.663,117.130 -0.674,117.138 -0.687,117.139 -0.689,117.153 -0.726,117.142 -0.740,117.134 -0.746,117.125 -0.780,117.099 -0.799,117.088 -0.799,117.068 -0.815,117.055 -0.835,117.032 -0.844,117.011 -0.867,117.005 -0.911,116.981 -0.926,116.955 -0.851,116.885 -0.831,116.893 -0.826,116.880 -0.798,116.907 -0.784,116.915 -0.769,116.918 -0.742,116.932 -0.673,116.949 -0.668,116.952 -0.669,116.966 -0.646,116.983 -0.609,116.995 -0.603,117.003 -0.605,117.018 -0.586,117.032 -0.566,117.033 -0.550,117.059 -0.587,117.076 -0.576,117.085</polygon>
+      <polygon>-0.240,117.245 -0.315,117.213 -0.312,117.202 -0.315,117.193 -0.338,117.170 -0.350,117.145 -0.388,117.136 -0.409,117.123 -0.424,117.101 -0.433,117.072 -0.434,117.069 -0.460,117.011 -0.450,117.004 -0.428,117.003 -0.409,116.995 -0.370,116.990 -0.353,117.012 -0.350,117.022 -0.355,117.029 -0.367,117.030 -0.378,117.053 -0.366,117.059 -0.337,117.059 -0.331,117.071 -0.337,117.074 -0.331,117.080 -0.322,117.076 -0.310,117.056 -0.310,117.046 -0.321,117.036 -0.322,117.031 -0.314,117.022 -0.297,117.047 -0.282,117.058 -0.215,117.070 -0.198,117.082 -0.099,117.119 -0.109,117.122 -0.136,117.150 -0.169,117.174 -0.178,117.190 -0.187,117.228 -0.199,117.250 -0.220,117.250 -0.240,117.245</polygon>
+    </area>
+  </info>
+</alert>
