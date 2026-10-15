@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-15T00:15:32.985Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        140.5659339773,
+        -2.5740314885
+      ]
+    },
+    "properties": {
+      "pkey": "399699",
+      "created_at": "2026-10-15T00:04:19.598Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "ba4d9748-dea3-46db-b589-480bf9409994",
+      "image_url": "https://images.petabencana.id/ba4d9748-dea3-46db-b589-480bf9409994.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 0,
+        "airQuality": 2
+      },
+      "tags": {
+        "city": "JAYAPURA",
+        "district_id": null,
+        "region_code": "9103",
+        "local_area_id": null,
+        "instance_region_code": "ID-PA"
+      },
+      "title": null,
+      "text": "Kabut lumayan parah, murid\" batuk dan bersin setiap saat, view pegunungan cyclops full buram",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
