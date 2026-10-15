@@ -1,0 +1,23 @@
+{
+  "guid": "CBMizgFBVV95cUxOYXljcEJjQjJiRmhZZDY1TVRCenNVZ1o5MlA3QUdhR1V0bi1xd2YxbnBTLVB3YzQyVEpncTJnV2xUdFBOdVJLYmhIVlN4OGlQNktZcWltYkthYzBzOWZOeE1iR3JkdnppWWFvaWl1bldvMnpNeVZWWkp4TDE1eC1ER0JWNllDaG5OdUZicEpEN3pSLTlWWkJ5amtWcHUxZmtTQ3FyTnpTQzV1Vy10djhMQkx6UmFvM0lSWUdhWGNkVnkwcDlXM1pELU1lbGlidw",
+  "title": "Kementerian PU Kerahkan 10 Alat Berat untuk Tangani 14 Titik Longsor di Jalan Tapan–Batas Jambi - pantau.com",
+  "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOYXljcEJjQjJiRmhZZDY1TVRCenNVZ1o5MlA3QUdhR1V0bi1xd2YxbnBTLVB3YzQyVEpncTJnV2xUdFBOdVJLYmhIVlN4OGlQNktZcWltYkthYzBzOWZOeE1iR3JkdnppWWFvaWl1bldvMnpNeVZWWkp4TDE1eC1ER0JWNllDaG5OdUZicEpEN3pSLTlWWkJ5amtWcHUxZmtTQ3FyTnpTQzV1Vy10djhMQkx6UmFvM0lSWUdhWGNkVnkwcDlXM1pELU1lbGlidw?oc=5",
+  "source": "pantau.com",
+  "source_url": "https://www.pantau.com",
+  "published_at": "2026-10-15T02:16:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-15T06:30:33.852Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}
