@@ -1,0 +1,41 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-15T04:30:38.151Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        122.1806243521,
+        -2.8259796205
+      ]
+    },
+    "properties": {
+      "pkey": "399700",
+      "created_at": "2026-10-15T00:30:01.455Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "752666d3-cbfb-4346-a230-8f7f0c5926a8",
+      "image_url": "https://images.petabencana.id/752666d3-cbfb-4346-a230-8f7f0c5926a8.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "points": 3,
+        "airQuality": 4,
+        "visibility": 1,
+        "report_type": "haze"
+      },
+      "tags": {
+        "city": "MOROWALI",
+        "district_id": null,
+        "region_code": "7206",
+        "local_area_id": null,
+        "instance_region_code": "ID-ST"
+      },
+      "title": null,
+      "text": "polusi udara entah dari mana. mungkin karhutla dari kalimantan dan papua",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
