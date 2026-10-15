@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-15T14:30:39.949Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        119.8527785044,
+        -3.0964863814
+      ]
+    },
+    "properties": {
+      "pkey": "399717",
+      "created_at": "2026-10-15T14:37:02.663Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "f6e45fad-aec5-49ca-8d9b-dbcd40f6389b",
+      "image_url": "https://images.petabencana.id/f6e45fad-aec5-49ca-8d9b-dbcd40f6389b.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 0,
+        "airQuality": 3
+      },
+      "tags": {
+        "city": "TANA TORAJA",
+        "district_id": null,
+        "region_code": "7318",
+        "local_area_id": null,
+        "instance_region_code": "ID-SN"
+      },
+      "title": null,
+      "text": "Kabut asap di langit Makale jam 10-an pagi",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
