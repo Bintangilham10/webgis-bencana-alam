@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-15T08:00:43.422Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        99.7909657369,
+        2.9769933284
+      ]
+    },
+    "properties": {
+      "pkey": "399705",
+      "created_at": "2026-10-15T07:56:25.822Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "9f5ae6ef-e310-4fc2-b0e5-c702e6615cce",
+      "image_url": null,
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 0,
+        "airQuality": 2
+      },
+      "tags": {
+        "city": "KOTA TANJUNG BALAI",
+        "district_id": null,
+        "region_code": "1274",
+        "local_area_id": null,
+        "instance_region_code": "ID-SU"
+      },
+      "title": null,
+      "text": "Kabut asap sudah sangat banyak sehingga membuat mata dan radang tenggorokan ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
