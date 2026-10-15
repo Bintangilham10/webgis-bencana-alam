@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.15.18.62.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-16T00:15:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-16T00:25:00+07:00</effective>
+    <expires>2026-10-16T03:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 16 October 2026, 00:25 WIB di sebagian wilayah Kalimantan Tengah, khususnya di PASAK TALAWANG, TASIK PAYAWAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 16 October 2026, 03:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/16/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-0.854,114.312 -1.049,114.296 -1.131,114.275 -1.185,114.275 -1.234,114.283 -1.232,114.253 -1.237,114.187 -1.249,114.133 -1.238,114.120 -1.187,114.082 -1.144,114.023 -1.112,113.970 -1.064,113.977 -1.077,114.042 -0.999,114.114 -0.969,114.131 -0.897,114.158 -0.814,114.184 -0.812,114.184 -0.859,114.228 -0.867,114.246 -0.865,114.270 -0.854,114.312</polygon>
+      <polygon>-1.925,113.598 -1.950,113.614 -1.980,113.618 -1.997,113.627 -2.026,113.617 -2.079,113.582 -2.115,113.566 -2.151,113.564 -2.145,113.447 -2.147,113.387 -2.165,113.291 -2.164,113.245 -2.145,113.235 -2.123,113.230 -2.103,113.231 -2.085,113.244 -2.072,113.262 -2.046,113.282 -2.018,113.283 -2.006,113.316 -2.003,113.339 -1.982,113.409 -1.956,113.455 -1.894,113.534 -1.915,113.568 -1.925,113.598</polygon>
+    </area>
+  </info>
+</alert>
