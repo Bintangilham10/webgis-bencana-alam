@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-15T13:15:28.988Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        98.627280004,
+        3.6162108742
+      ]
+    },
+    "properties": {
+      "pkey": "399715",
+      "created_at": "2026-10-15T13:04:36.341Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "3cd05bde-6c94-4b2d-ad16-3b68eda77626",
+      "image_url": null,
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 1,
+        "airQuality": 2
+      },
+      "tags": {
+        "city": "DELI SERDANG",
+        "district_id": null,
+        "region_code": "1207",
+        "local_area_id": null,
+        "instance_region_code": "ID-SU"
+      },
+      "title": null,
+      "text": "Tolong kami",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
