@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.15.10.36.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-15T15:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-15T15:50:00+07:00</effective>
+    <expires>2026-10-15T17:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Banten</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 15 October 2026, 15:50 WIB di sebagian wilayah Banten, khususnya di BANJAR, CIKULUR, CIMANUK, CIPEUCANG, KADUHEJO, MEKARJAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 15 October 2026, 17:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBT/2026/10/15/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Banten</areaDesc>
+      <polygon>-6.340,106.022 -6.370,106.033 -6.389,106.030 -6.391,106.033 -6.414,106.031 -6.420,106.032 -6.422,106.037 -6.428,106.030 -6.401,106.005 -6.392,106.002 -6.387,106.009 -6.372,106.005 -6.364,105.996 -6.361,105.985 -6.342,105.978 -6.342,105.978 -6.344,106.000 -6.340,106.022</polygon>
+      <polygon>-6.316,106.021 -6.321,106.029 -6.323,106.047 -6.347,106.051 -6.352,106.062 -6.361,106.071 -6.369,106.072 -6.372,106.060 -6.380,106.058 -6.381,106.046 -6.394,106.040 -6.391,106.033 -6.389,106.030 -6.370,106.033 -6.340,106.022 -6.316,106.009 -6.320,106.019 -6.316,106.021</polygon>
+      <polygon>-6.276,106.055 -6.311,106.070 -6.318,106.069 -6.326,106.073 -6.330,106.076 -6.330,106.089 -6.342,106.095 -6.361,106.079 -6.361,106.071 -6.352,106.062 -6.347,106.051 -6.323,106.047 -6.321,106.029 -6.316,106.021 -6.311,106.025 -6.280,106.031 -6.275,106.038 -6.269,106.050 -6.276,106.055</polygon>
+      <polygon>-6.342,106.111 -6.357,106.117 -6.357,106.124 -6.376,106.131 -6.387,106.121 -6.419,106.113 -6.424,106.104 -6.376,106.088 -6.369,106.072 -6.361,106.071 -6.361,106.079 -6.342,106.095 -6.347,106.096 -6.347,106.101 -6.340,106.106 -6.342,106.111</polygon>
+      <polygon>-6.424,106.104 -6.427,106.101 -6.424,106.087 -6.413,106.080 -6.410,106.065 -6.412,106.046 -6.422,106.037 -6.420,106.032 -6.414,106.031 -6.391,106.033 -6.394,106.040 -6.381,106.046 -6.380,106.058 -6.372,106.060 -6.369,106.072 -6.376,106.088 -6.424,106.104</polygon>
+      <polygon>-6.366,106.184 -6.371,106.182 -6.377,106.192 -6.382,106.189 -6.384,106.191 -6.399,106.190 -6.413,106.171 -6.412,106.164 -6.418,106.162 -6.440,106.136 -6.445,106.127 -6.443,106.124 -6.432,106.118 -6.437,106.107 -6.427,106.101 -6.424,106.104 -6.419,106.113 -6.387,106.121 -6.376,106.131 -6.357,106.124 -6.358,106.130 -6.345,106.132 -6.344,106.145 -6.366,106.184</polygon>
+    </area>
+  </info>
+</alert>
