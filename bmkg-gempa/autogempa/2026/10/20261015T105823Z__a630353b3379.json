@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-15T11:30:33.602Z",
+  "data": {
+    "Tanggal": "15 Okt 2026",
+    "Jam": "17:58:23 WIB",
+    "DateTime": "2026-10-15T10:58:23+00:00",
+    "Coordinates": "-6.73,106.61",
+    "Lintang": "6.73 LS",
+    "Bujur": "106.61 BT",
+    "Magnitude": "4.1",
+    "Kedalaman": "5 km",
+    "Wilayah": "Pusat gempa berada di darat 26 km barat daya kota Bogor",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "IV Pamijahan, IV Kabandungan",
+    "Shakemap": "20261015175823.mmi.jpg"
+  }
+}
