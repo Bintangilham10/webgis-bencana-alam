@@ -1,0 +1,28 @@
+{
+  "guid": "CBMikAFBVV95cUxQaWNVSENHYUNyaVpodGpjbVZoUGllWU1pY0dBMW1ueU94MmdsZl9SZWdRWk9KVkR4bmtMM3ZPMjRUUXFEVWtXUFFKMmhyclZpampyeHZwQk9RdGFxbmh0UjFRRklMb0F5dENRTlVMT1czNzFWTDhGYVQybXBxUjJoRVlUbE1ZNTZLNURYNTJBM3E",
+  "title": "Banjir dan Longsor Terjang Gayo Lues dan Aceh Tengah - Atjeh Watch",
+  "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaWNVSENHYUNyaVpodGpjbVZoUGllWU1pY0dBMW1ueU94MmdsZl9SZWdRWk9KVkR4bmtMM3ZPMjRUUXFEVWtXUFFKMmhyclZpampyeHZwQk9RdGFxbmh0UjFRRklMb0F5dENRTlVMT1czNzFWTDhGYVQybXBxUjJoRVlUbE1ZNTZLNURYNTJBM3E?oc=5",
+  "source": "Atjeh Watch",
+  "source_url": "https://atjehwatch.com",
+  "published_at": "2026-10-15T02:38:36.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-15T09:30:38.305Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "11.13",
+      "nama": "Kabupaten Gayo Lues",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

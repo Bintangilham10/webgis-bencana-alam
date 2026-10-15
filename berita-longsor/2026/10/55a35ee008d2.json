@@ -1,0 +1,26 @@
+{
+  "guid": "CBMitwFBVV95cUxNTkxHTTRPVjRQc09BNDBWQXZYQ2FtRlBubHU4V3h2U2YtQmhLZWp1TTR5MmdxMDdJZEk4ek5zbUhvVjI0c3VWUEpqQ2x6LWx1Wkdld1N3empWd3M3XzR6Y1RaSVhOcnpzTW5xYlNNZnFFeENjVEJETkFjelFSYzJRVHk3cmRRMDZkQVJSVDJQYXJFai02WkhkY25sUHB2OGNrek5fenNBWjE4UVpTYkxsLXlnTDdHYzA",
+  "title": "Hadapi Musim Hujan, BPBD Bandung Petakan Wilayah Rawan Banjir dan Longsor - jabarekspres.com",
+  "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTkxHTTRPVjRQc09BNDBWQXZYQ2FtRlBubHU4V3h2U2YtQmhLZWp1TTR5MmdxMDdJZEk4ek5zbUhvVjI0c3VWUEpqQ2x6LWx1Wkdld1N3empWd3M3XzR6Y1RaSVhOcnpzTW5xYlNNZnFFeENjVEJETkFjelFSYzJRVHk3cmRRMDZkQVJSVDJQYXJFai02WkhkY25sUHB2OGNrek5fenNBWjE4UVpTYkxsLXlnTDdHYzA?oc=5",
+  "source": "jabarekspres.com",
+  "source_url": "https://jabarekspres.com",
+  "published_at": "2026-10-15T09:04:35.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-15T09:30:38.305Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
