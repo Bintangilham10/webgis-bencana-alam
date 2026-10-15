@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-15T11:15:29.028Z",
+  "data": {
+    "Tanggal": "15 Okt 2026",
+    "Jam": "17:49:43 WIB",
+    "DateTime": "2026-10-15T10:49:43+00:00",
+    "Coordinates": "-6.77,106.60",
+    "Lintang": "6.77 LS",
+    "Bujur": "106.60 BT",
+    "Magnitude": "3.5",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di darat 25 km utara Kab. Sukabumi",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Kalapanunggal, III Leuwiliang, III Cipeuteuy",
+    "Shakemap": "20261015174943.mmi.jpg"
+  }
+}
