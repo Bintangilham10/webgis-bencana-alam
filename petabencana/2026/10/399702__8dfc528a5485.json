@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-15T07:15:31.794Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        103.4769935469,
+        -0.8354691326
+      ]
+    },
+    "properties": {
+      "pkey": "399702",
+      "created_at": "2026-10-15T07:06:35.058Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "a6190f80-24e8-46a9-855a-8e3523c02add",
+      "image_url": "https://images.petabencana.id/a6190f80-24e8-46a9-855a-8e3523c02add.jpg",
+      "disaster_type": "haze",
+      "is_training": true,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 0,
+        "airQuality": 2
+      },
+      "tags": {
+        "city": "TANJUNG JABUNG BARAT",
+        "district_id": null,
+        "region_code": "1506",
+        "local_area_id": null,
+        "instance_region_code": "ID-JA"
+      },
+      "title": null,
+      "text": "Kabut asap bercampur asap pembakaran Tempurung kelapa setiap hari di manunggal 1 Ujung kota kuala tungkal kab. Tanjung jabung barat",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
