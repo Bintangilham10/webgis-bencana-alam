@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.15.14.72.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-15T21:45:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-15T21:57:00+08:00</effective>
+    <expires>2026-10-16T00:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 15 October 2026, 21:57 WITA di sebagian wilayah Sulawesi Tengah, khususnya di DOLO SELATAN, PARIGI SELATAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 16 October 2026, 00:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSG/2026/10/15/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tengah</areaDesc>
+      <polygon>-0.849,120.198 -0.850,120.208 -0.846,120.215 -0.847,120.222 -0.892,120.248 -0.913,120.278 -0.939,120.288 -0.940,120.282 -0.957,120.263 -0.973,120.262 -0.979,120.256 -0.998,120.215 -1.024,120.197 -1.052,120.171 -1.048,120.166 -1.050,120.160 -1.047,120.152 -1.043,120.147 -1.044,120.129 -1.016,120.113 -1.021,120.095 -1.017,120.083 -1.008,120.074 -0.992,120.078 -0.976,120.072 -0.970,120.066 -0.968,120.057 -0.952,120.066 -0.914,120.072 -0.906,120.059 -0.887,120.063 -0.859,120.159 -0.854,120.168 -0.839,120.170 -0.843,120.175 -0.858,120.182 -0.858,120.193 -0.849,120.198</polygon>
+      <polygon>-1.112,119.893 -1.114,119.903 -1.122,119.905 -1.150,119.900 -1.179,119.917 -1.184,119.924 -1.187,119.922 -1.200,119.934 -1.234,119.936 -1.260,119.945 -1.276,119.939 -1.363,119.938 -1.376,119.911 -1.370,119.901 -1.370,119.891 -1.401,119.822 -1.404,119.790 -1.407,119.781 -1.424,119.764 -1.383,119.746 -1.367,119.731 -1.348,119.728 -1.319,119.743 -1.291,119.750 -1.261,119.743 -1.241,119.751 -1.230,119.769 -1.220,119.767 -1.210,119.775 -1.198,119.770 -1.185,119.787 -1.151,119.794 -1.143,119.805 -1.134,119.806 -1.131,119.796 -1.108,119.799 -1.098,119.868 -1.098,119.873 -1.110,119.880 -1.112,119.893</polygon>
+    </area>
+  </info>
+</alert>
