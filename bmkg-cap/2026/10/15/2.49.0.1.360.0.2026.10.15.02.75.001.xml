@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.15.02.75.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-15T09:52:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-15T10:00:00+08:00</effective>
+    <expires>2026-10-15T11:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 15 October 2026, 10:00 WITA di sebagian wilayah Gorontalo, khususnya di BONE.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 15 October 2026, 11:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/10/15/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.434,123.550 0.426,123.540 0.412,123.532 0.382,123.498 0.356,123.490 0.354,123.480 0.325,123.483 0.319,123.479 0.317,123.476 0.325,123.467 0.338,123.459 0.316,123.434 0.311,123.415 0.315,123.401 0.313,123.369 0.346,123.379 0.407,123.388 0.425,123.458 0.431,123.469 0.441,123.476 0.441,123.484 0.428,123.508 0.427,123.520 0.434,123.550</polygon>
+    </area>
+  </info>
+</alert>
