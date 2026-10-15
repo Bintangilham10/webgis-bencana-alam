@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.15.05.75.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-15T12:35:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-15T12:55:00+08:00</effective>
+    <expires>2026-10-15T13:55:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 15 October 2026, 12:55 WITA di sebagian wilayah Gorontalo, khususnya di BULANGO ULU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 15 October 2026, 13:55 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/10/15/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.754,123.251 0.734,123.246 0.718,123.250 0.699,123.273 0.696,123.290 0.698,123.312 0.648,123.279 0.629,123.258 0.617,123.237 0.618,123.173 0.637,123.134 0.644,123.125 0.647,123.123 0.640,123.100 0.662,123.100 0.695,123.107 0.708,123.120 0.733,123.132 0.768,123.133 0.771,123.161 0.754,123.167 0.754,123.192 0.763,123.227 0.755,123.241 0.754,123.251</polygon>
+    </area>
+  </info>
+</alert>
