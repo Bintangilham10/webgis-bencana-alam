@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.15.20.82.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-16T04:19:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-16T04:50:00+09:00</effective>
+    <expires>2026-10-16T06:50:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Maluku Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 16 October 2026, 04:50 WIT di sebagian wilayah Maluku Utara, khususnya di JAILOLO, JAILOLO SELATAN, KOTA TERNATE UTARA, TIDORE TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 16 October 2026, 06:50 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CMU/2026/10/16/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Maluku Utara</areaDesc>
+      <polygon>1.132,127.453 1.120,127.472 1.133,127.483 1.129,127.495 1.129,127.592 1.138,127.621 1.133,127.623 1.116,127.625 1.108,127.604 1.081,127.615 1.071,127.602 1.063,127.602 1.035,127.610 1.028,127.618 0.987,127.598 0.969,127.595 0.970,127.511 0.976,127.511 0.994,127.496 0.995,127.484 1.006,127.473 1.016,127.483 1.015,127.494 1.042,127.501 1.056,127.494 1.064,127.479 1.046,127.438 1.051,127.425 1.048,127.422 1.041,127.428 1.032,127.423 1.041,127.401 1.049,127.399 1.044,127.404 1.047,127.413 1.060,127.398 1.083,127.400 1.108,127.421 1.121,127.434 1.139,127.440 1.137,127.447 1.132,127.453</polygon>
+      <polygon>0.969,127.595 0.916,127.606 0.878,127.633 0.831,127.676 0.818,127.695 0.821,127.709 0.806,127.719 0.786,127.720 0.769,127.733 0.759,127.731 0.764,127.715 0.763,127.705 0.756,127.700 0.759,127.684 0.770,127.671 0.776,127.658 0.776,127.653 0.769,127.647 0.768,127.639 0.778,127.622 0.784,127.623 0.790,127.618 0.803,127.622 0.807,127.633 0.813,127.637 0.822,127.639 0.840,127.634 0.852,127.639 0.847,127.628 0.849,127.625 0.861,127.625 0.862,127.618 0.854,127.619 0.854,127.613 0.865,127.603 0.866,127.564 0.878,127.560 0.873,127.551 0.879,127.547 0.872,127.543 0.862,127.543 0.859,127.526 0.863,127.527 0.867,127.539 0.869,127.535 0.876,127.537 0.881,127.546 0.883,127.537 0.878,127.527 0.886,127.525 0.887,127.520 0.887,127.497 0.896,127.493 0.925,127.491 0.953,127.511 0.970,127.511 0.969,127.595</polygon>
+      <polygon>0.883,127.503 0.880,127.507 0.866,127.500 0.874,127.498 0.883,127.503</polygon>
+      <polygon>0.879,127.524 0.880,127.517 0.883,127.523 0.879,127.524</polygon>
+      <polygon>0.873,127.548 0.865,127.554 0.866,127.547 0.873,127.545 0.873,127.548</polygon>
+      <polygon>0.859,127.511 0.864,127.512 0.860,127.514 0.859,127.511</polygon>
+      <polygon>0.798,127.389 0.798,127.373 0.809,127.369 0.812,127.361 0.811,127.351 0.804,127.338 0.807,127.334 0.829,127.356 0.847,127.365 0.839,127.379 0.829,127.389 0.798,127.389</polygon>
+      <polygon>0.685,127.455 0.694,127.442 0.689,127.417 0.701,127.405 0.712,127.421 0.724,127.426 0.741,127.404 0.756,127.398 0.759,127.406 0.751,127.405 0.748,127.409 0.752,127.417 0.746,127.446 0.719,127.458 0.685,127.455</polygon>
+    </area>
+  </info>
+</alert>
