@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiY0FVX3lxTE9tbXVEX1lVcVA1RFlUR19WTXlVYTQwOThUdVZOWUtyWHRTSXZoMEc2ZDlYekctaVRISzBLMER6ZFZVTVpacHNOT0F0blVPc01pMWRQakpOTEM1aWJEVnNUb3hTUQ",
+  "title": "Tiga Korban Longsor Gunung Kuda Cirebon Ditemukan Meninggal, Total 17 Jiwa Tertimbun - SinPo.id",
+  "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9tbXVEX1lVcVA1RFlUR19WTXlVYTQwOThUdVZOWUtyWHRTSXZoMEc2ZDlYekctaVRISzBLMER6ZFZVTVpacHNOT0F0blVPc01pMWRQakpOTEM1aWJEVnNUb3hTUQ?oc=5",
+  "source": "SinPo.id",
+  "source_url": "https://sinpo.id",
+  "published_at": "2026-10-15T09:29:46.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-15T16:00:45.478Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.09",
+      "nama": "Kabupaten Cirebon",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.74",
+      "nama": "Kota Cirebon",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
