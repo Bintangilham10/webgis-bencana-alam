@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiZEFVX3lxTE5kVmdrdFl0dHJHS3RrcXpyQlUyTlR5M2d4eGhLY05sQ2lkWkl1Q2lXcXNPVnRpYkZfa213WmpIZzc3X3ZKcEttMW04a296cjlRVWhSeEhOY2ZRQ0FqRzJMOFhPZ2U",
+  "title": "Usai Tanah Longsor, Arus Lalin dari Kota Padang ke Solok Berangsur Pulih - SinPo.id",
+  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5kVmdrdFl0dHJHS3RrcXpyQlUyTlR5M2d4eGhLY05sQ2lkWkl1Q2lXcXNPVnRpYkZfa213WmpIZzc3X3ZKcEttMW04a296cjlRVWhSeEhOY2ZRQ0FqRzJMOFhPZ2U?oc=5",
+  "source": "SinPo.id",
+  "source_url": "https://sinpo.id",
+  "published_at": "2026-10-14T21:09:01.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-15T19:04:07.210Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "13.71",
+      "nama": "Kota Padang",
+      "keyakinan": "tinggi"
+    },
+    {
+      "kode": "13.02",
+      "nama": "Kabupaten Solok",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.72",
+      "nama": "Kota Solok",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
