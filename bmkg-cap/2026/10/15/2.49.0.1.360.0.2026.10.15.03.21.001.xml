@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.15.03.21.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-15T08:29:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-15T08:30:00+07:00</effective>
+    <expires>2026-10-15T10:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Riau</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 15 October 2026, 08:30 WIB di sebagian wilayah Kep. Riau, khususnya di GUNUNG KIJANG, TOAPAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 15 October 2026, 10:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKR/2026/10/15/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Riau</areaDesc>
+      <polygon>0.895,104.617 0.897,104.605 0.913,104.587 0.913,104.576 0.921,104.579 0.929,104.568 0.974,104.597 0.985,104.593 0.997,104.595 1.042,104.575 1.071,104.579 1.102,104.558 1.131,104.528 1.187,104.577 1.154,104.579 1.125,104.598 1.118,104.621 1.108,104.634 1.081,104.639 1.067,104.648 1.043,104.657 1.030,104.656 1.000,104.647 0.992,104.642 0.992,104.636 0.988,104.635 0.969,104.645 0.953,104.645 0.946,104.649 0.943,104.657 0.926,104.655 0.914,104.660 0.906,104.649 0.906,104.629 0.895,104.617</polygon>
+      <polygon>1.072,104.671 1.067,104.678 1.047,104.678 1.072,104.671</polygon>
+      <polygon>1.049,104.710 1.054,104.707 1.053,104.714 1.049,104.710</polygon>
+      <polygon>0.908,104.660 0.908,104.657 0.913,104.658 0.914,104.663 0.908,104.660</polygon>
+      <polygon>0.929,104.568 0.918,104.562 0.922,104.553 0.954,104.522 0.977,104.520 0.975,104.514 0.977,104.502 0.979,104.502 1.029,104.513 1.052,104.534 1.066,104.516 1.079,104.505 1.102,104.507 1.131,104.528 1.102,104.558 1.071,104.579 1.042,104.575 0.997,104.595 0.985,104.593 0.974,104.597 0.929,104.568</polygon>
+    </area>
+  </info>
+</alert>
