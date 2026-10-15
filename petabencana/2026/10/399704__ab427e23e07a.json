@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-15T07:30:40.922Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        112.4850713895,
+        -7.8520184411
+      ]
+    },
+    "properties": {
+      "pkey": "399704",
+      "created_at": "2026-10-15T07:22:58.499Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "c00ad06f-d633-4bd7-bcdf-8a51f7533747",
+      "image_url": "https://images.petabencana.id/c00ad06f-d633-4bd7-bcdf-8a51f7533747.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 335608.7718763812,
+        "fireLocation": {
+          "lng": 112.48507138946866,
+          "lat": -7.852018441052351
+        },
+        "personLocation": {
+          "lat": -7.8520193,
+          "lng": 112.4850711
+        },
+        "fireRadius": {
+          "lng": 115.45128734703877,
+          "lat": -8.5522430533686
+        }
+      },
+      "tags": {
+        "city": "KOTA BATU",
+        "district_id": null,
+        "region_code": "3579",
+        "local_area_id": null,
+        "instance_region_code": "ID-JI"
+      },
+      "title": null,
+      "text": "Kebakaran terjadi di hutan pinus Desa Pandesari ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
