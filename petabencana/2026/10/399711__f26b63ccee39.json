@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-15T12:15:30.692Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        111.1979373904,
+        -7.6293999603
+      ]
+    },
+    "properties": {
+      "pkey": "399711",
+      "created_at": "2026-10-15T12:05:50.838Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "4796b210-dbb7-4739-9819-6a1d59f21570",
+      "image_url": "https://images.petabencana.id/4796b210-dbb7-4739-9819-6a1d59f21570.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 76.00752934345128,
+        "fireLocation": {
+          "lng": 111.19793739035737,
+          "lat": -7.629399960257871
+        },
+        "personLocation": {
+          "lat": "-7.6273820",
+          "lng": "111.1943158"
+        },
+        "fireRadius": {
+          "lng": 111.19725074484921,
+          "lat": -7.62946376341101
+        }
+      },
+      "tags": {
+        "city": "MAGETAN",
+        "district_id": null,
+        "region_code": "3520",
+        "local_area_id": null,
+        "instance_region_code": "ID-JI"
+      },
+      "title": null,
+      "text": "Kebakaran bukit gondosuli di area gunung lawu dkt cemoro kandang sore ini sampai skrg blm padam",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

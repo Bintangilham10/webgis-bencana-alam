@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-15T12:15:30.692Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        104.8182761247,
+        -3.0487403088
+      ]
+    },
+    "properties": {
+      "pkey": "399712",
+      "created_at": "2026-10-15T12:07:37.611Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "29fefc83-c858-4cea-8a1c-8bb7066d03ac",
+      "image_url": "https://images.petabencana.id/29fefc83-c858-4cea-8a1c-8bb7066d03ac.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 0,
+        "airQuality": 2
+      },
+      "tags": {
+        "city": "BANYUASIN",
+        "district_id": null,
+        "region_code": "1607",
+        "local_area_id": null,
+        "instance_region_code": "ID-SS"
+      },
+      "title": null,
+      "text": "Kabut asap jarak pandang terbatas",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

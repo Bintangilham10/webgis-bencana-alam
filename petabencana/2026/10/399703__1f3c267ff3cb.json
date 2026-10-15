@@ -1,0 +1,41 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-15T12:15:30.692Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        103.4778742932,
+        -0.8366552698
+      ]
+    },
+    "properties": {
+      "pkey": "399703",
+      "created_at": "2026-10-15T07:12:55.977Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "096b5513-11a7-4d95-a299-51fa4cfef9b4",
+      "image_url": "https://images.petabencana.id/096b5513-11a7-4d95-a299-51fa4cfef9b4.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "points": 2,
+        "airQuality": 2,
+        "visibility": 0,
+        "report_type": "haze"
+      },
+      "tags": {
+        "city": "TANJUNG JABUNG BARAT",
+        "district_id": null,
+        "region_code": "1506",
+        "local_area_id": null,
+        "instance_region_code": "ID-JA"
+      },
+      "title": null,
+      "text": "Kabut asap dan ada pembakaran tempurung kelapa setiap hari di jln manunggal 1 ujung kota kuala tungkal",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
