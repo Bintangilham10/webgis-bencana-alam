@@ -1,0 +1,21 @@
+{
+  "guid": "CBMic0FVX3lxTE8tdGVYTUl6bzFOZlhmMnAyWE1XUzVNOFJiU0dtT1NUcXhpNzZqX05xMUh5aFVIdWZneUozU2lfVXh6Z3piNzVzelBqNC1maTN1Q0dMdjNMTVlUNnlGRU1HbzlETkdZV0g0OEVVQVNiQ0otZGc",
+  "title": "BPJN Percepat Penanganan Longsor Jalur Tapan Kerinci - bsinews.id",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8tdGVYTUl6bzFOZlhmMnAyWE1XUzVNOFJiU0dtT1NUcXhpNzZqX05xMUh5aFVIdWZneUozU2lfVXh6Z3piNzVzelBqNC1maTN1Q0dMdjNMTVlUNnlGRU1HbzlETkdZV0g0OEVVQVNiQ0otZGc?oc=5",
+  "source": "bsinews.id",
+  "source_url": "https://bsinews.id",
+  "published_at": "2026-10-16T05:48:18.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-16T07:15:30.064Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.01",
+      "nama": "Kabupaten Kerinci",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

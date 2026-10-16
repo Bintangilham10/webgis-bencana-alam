@@ -1,0 +1,34 @@
+{
+  "guid": "CBMivwFBVV95cUxORGhQMTV6a01nTHUtT1k0RmtzRFdiZkM1MkJFZE1qTFY3R1pPR25EdFVfcmhjVk45UDZodUVxVXEyZjlaV1RhSTRoUllKMHBHb3Qxbnp0eXZFTkxFNW9QNXBqVnYtSDdKaG92U3hpc3BYYjZCX0F1UmZpYlpNN3JmVkdsdlBRb1BLal9MZDhsN25vSWpKU3JBYXFCZjJ1MmZJVGJweFdMWXItX28zdjVzTjhPOTY1bDZKNHRVR1ZkTdIBxAFBVV95cUxPWERnUTJTLS1tMzJVcnB5OGFTR21HVzJFUmxDY2N2Z29XOHNudWwwU3JNdHVNcUhVQ1dfb2wyZzlVX2YyRXFlX21ndElkamF6d2s3MGpmYUtoWWhDVEFBNHVfZWxTa0owZi1yRGd6OGhpRUJxM2pTaE5qdUZjeGtuVmJyVFN3SmVja1NMSUZua2NmNXlrdWY5NGx0OU9YT1hDcE5yeVk1dHItOUtNZnZNbzIwakk2YzY0YXZnM2pIT0I5RWhB",
+  "title": "Kementerian PU Percepat Pembersihan Material Longsor Sungai Penuh - Tapan Sumbar - Metro Jambi - Metro Jambi",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxORGhQMTV6a01nTHUtT1k0RmtzRFdiZkM1MkJFZE1qTFY3R1pPR25EdFVfcmhjVk45UDZodUVxVXEyZjlaV1RhSTRoUllKMHBHb3Qxbnp0eXZFTkxFNW9QNXBqVnYtSDdKaG92U3hpc3BYYjZCX0F1UmZpYlpNN3JmVkdsdlBRb1BLal9MZDhsN25vSWpKU3JBYXFCZjJ1MmZJVGJweFdMWXItX28zdjVzTjhPOTY1bDZKNHRVR1ZkTdIBxAFBVV95cUxPWERnUTJTLS1tMzJVcnB5OGFTR21HVzJFUmxDY2N2Z29XOHNudWwwU3JNdHVNcUhVQ1dfb2wyZzlVX2YyRXFlX21ndElkamF6d2s3MGpmYUtoWWhDVEFBNHVfZWxTa0owZi1yRGd6OGhpRUJxM2pTaE5qdUZjeGtuVmJyVFN3SmVja1NMSUZua2NmNXlrdWY5NGx0OU9YT1hDcE5yeVk1dHItOUtNZnZNbzIwakk2YzY0YXZnM2pIT0I5RWhB?oc=5",
+  "source": "Metro Jambi",
+  "source_url": "https://www.metrojambi.com",
+  "published_at": "2026-10-15T11:00:29.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-16T07:15:30.064Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.72",
+      "nama": "Kota Sungai Penuh",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "18.72",
+      "nama": "Kota Metro",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi",
+    "Sumatera Barat"
+  ]
+}
