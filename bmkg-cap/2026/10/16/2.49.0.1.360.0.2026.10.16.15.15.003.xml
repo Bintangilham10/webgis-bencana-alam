@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.16.15.15.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-16T22:42:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-16T23:12:00+07:00</effective>
+    <expires>2026-10-17T01:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jambi</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 16 October 2026, 23:12 WIB di sebagian wilayah Jambi, khususnya di SADU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 17 October 2026, 01:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJI/2026/10/16/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jambi</areaDesc>
+      <polygon>-1.673,104.498 -1.635,104.454 -1.636,104.437 -1.628,104.424 -1.625,104.408 -1.632,104.396 -1.635,104.369 -1.437,104.352 -1.424,104.353 -1.407,104.360 -1.403,104.367 -1.386,104.366 -1.190,104.328 -1.172,104.326 -1.152,104.330 -1.129,104.332 -1.121,104.328 -1.114,104.319 -1.113,104.308 -1.105,104.298 -1.092,104.291 -1.054,104.326 -1.051,104.336 -1.048,104.334 -1.044,104.333 -1.027,104.356 -1.018,104.360 -1.019,104.364 -1.051,104.384 -1.090,104.399 -1.159,104.409 -1.180,104.404 -1.179,104.393 -1.198,104.390 -1.217,104.393 -1.278,104.422 -1.303,104.439 -1.313,104.443 -1.313,104.439 -1.333,104.456 -1.387,104.450 -1.403,104.457 -1.426,104.458 -1.434,104.450 -1.458,104.443 -1.485,104.438 -1.516,104.440 -1.551,104.452 -1.573,104.453 -1.627,104.470 -1.673,104.498</polygon>
+      <polygon>-0.861,104.404 -0.860,104.409 -0.864,104.407 -0.861,104.404</polygon>
+    </area>
+  </info>
+</alert>
