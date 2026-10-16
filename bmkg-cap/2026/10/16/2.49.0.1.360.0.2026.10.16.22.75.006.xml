@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.16.22.75.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-17T06:29:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-17T06:41:00+08:00</effective>
+    <expires>2026-10-17T07:41:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 17 October 2026, 06:41 WITA di sebagian wilayah Gorontalo, khususnya di TIBAWA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 17 October 2026, 07:41 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/10/17/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.713,122.899 0.657,122.888 0.644,122.886 0.624,122.890 0.619,122.855 0.607,122.853 0.603,122.836 0.612,122.804 0.628,122.804 0.648,122.829 0.658,122.825 0.680,122.825 0.695,122.830 0.714,122.798 0.734,122.800 0.747,122.786 0.754,122.782 0.756,122.788 0.758,122.801 0.751,122.805 0.751,122.819 0.759,122.837 0.764,122.869 0.758,122.902 0.735,122.907 0.713,122.899</polygon>
+    </area>
+  </info>
+</alert>
