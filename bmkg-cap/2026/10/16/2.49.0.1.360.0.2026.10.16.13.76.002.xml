@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.16.12.76.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-16T20:15:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-16T20:30:00+08:00</effective>
+    <expires>2026-10-16T21:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 16 October 2026, 20:30 WITA di sebagian wilayah Sulawesi Barat, khususnya di BAMBAIRA, SARJO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 16 October 2026, 21:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSK/2026/10/16/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Barat</areaDesc>
+      <polygon>-0.949,119.555 -0.985,119.560 -1.010,119.557 -1.019,119.566 -1.018,119.575 -1.025,119.576 -1.024,119.561 -1.013,119.541 -1.013,119.523 -1.025,119.516 -1.027,119.509 -1.027,119.492 -1.021,119.474 -1.000,119.480 -0.985,119.498 -0.952,119.510 -0.946,119.516 -0.949,119.555</polygon>
+      <polygon>-0.851,119.561 -0.871,119.571 -0.881,119.571 -0.889,119.570 -0.901,119.561 -0.914,119.563 -0.930,119.554 -0.949,119.555 -0.946,119.516 -0.934,119.522 -0.899,119.526 -0.864,119.548 -0.849,119.561 -0.851,119.561</polygon>
+    </area>
+  </info>
+</alert>
