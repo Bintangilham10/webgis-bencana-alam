@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-16T19:01:42.567Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        109.5403087506,
+        -7.5741404565
+      ]
+    },
+    "properties": {
+      "pkey": "399726",
+      "created_at": "2026-10-16T18:48:03.682Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "e7c6c25d-b593-447b-81e8-b3fbcb205171",
+      "image_url": "https://images.petabencana.id/e7c6c25d-b593-447b-81e8-b3fbcb205171.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 32.27681900827171,
+        "fireLocation": {
+          "lng": 109.54030875062932,
+          "lat": -7.574140456537904
+        },
+        "personLocation": {
+          "lat": -6.175470915767704,
+          "lng": 106.82719181158598
+        },
+        "fireRadius": {
+          "lng": 109.5406015277527,
+          "lat": -7.574135105677897
+        }
+      },
+      "tags": {
+        "city": "KEBUMEN",
+        "district_id": null,
+        "region_code": "3305",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Kebakaran di wilayah pegunungan belakang Desa Klopogodo/Kedungjati, Gombong Kebumen",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
