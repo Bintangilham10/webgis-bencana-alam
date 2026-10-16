@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.16.18.62.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-17T00:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-17T00:07:00+07:00</effective>
+    <expires>2026-10-17T02:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 17 October 2026, 00:07 WIB di sebagian wilayah Kalimantan Tengah, khususnya di DUSUN SELATAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 17 October 2026, 02:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/17/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-1.611,114.983 -1.599,115.007 -1.640,115.064 -1.679,115.082 -1.684,115.049 -1.692,115.034 -1.706,115.021 -1.796,114.971 -1.852,114.960 -1.807,114.877 -1.802,114.850 -1.830,114.849 -1.832,114.811 -1.836,114.798 -1.820,114.753 -1.782,114.715 -1.773,114.681 -1.784,114.636 -1.744,114.622 -1.706,114.601 -1.678,114.599 -1.644,114.615 -1.619,114.634 -1.522,114.674 -1.524,114.708 -1.515,114.811 -1.523,114.823 -1.551,114.849 -1.566,114.889 -1.582,114.919 -1.619,114.962 -1.611,114.983</polygon>
+    </area>
+  </info>
+</alert>
