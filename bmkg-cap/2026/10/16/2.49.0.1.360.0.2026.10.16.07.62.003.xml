@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.16.07.62.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-16T14:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-16T14:40:00+07:00</effective>
+    <expires>2026-10-16T16:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 16 October 2026, 14:40 WIB di sebagian wilayah Kalimantan Tengah, khususnya di KOTAWARINGIN LAMA, SERUYAN RAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 16 October 2026, 16:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/16/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-2.281,111.382 -2.301,111.408 -2.313,111.438 -2.310,111.477 -2.312,111.499 -2.307,111.518 -2.311,111.529 -2.312,111.532 -2.334,111.533 -2.348,111.539 -2.372,111.540 -2.468,111.541 -2.626,111.581 -2.626,111.483 -2.647,111.415 -2.648,111.398 -2.646,111.377 -2.626,111.344 -2.618,111.302 -2.594,111.300 -2.580,111.289 -2.542,111.279 -2.447,111.285 -2.373,111.284 -2.373,111.265 -2.344,111.268 -2.336,111.274 -2.336,111.305 -2.332,111.317 -2.312,111.317 -2.305,111.317 -2.307,111.356 -2.276,111.342 -2.263,111.368 -2.281,111.382</polygon>
+      <polygon>-2.383,112.435 -2.391,112.435 -2.401,112.455 -2.405,112.459 -2.405,112.459 -2.405,112.459 -2.422,112.461 -2.427,112.462 -2.432,112.462 -2.451,112.465 -2.475,112.467 -2.499,112.470 -2.521,112.472 -2.522,112.472 -2.536,112.473 -2.539,112.473 -2.545,112.474 -2.550,112.474 -2.581,112.481 -2.582,112.481 -2.584,112.483 -2.617,112.513 -2.628,112.530 -2.631,112.535 -2.636,112.543 -2.651,112.534 -2.656,112.535 -2.671,112.523 -2.683,112.514 -2.715,112.490 -2.681,112.417 -2.680,112.405 -2.638,112.345 -2.564,112.280 -2.527,112.292 -2.482,112.303 -2.446,112.294 -2.378,112.293 -2.385,112.363 -2.375,112.380 -2.356,112.395 -2.347,112.398 -2.333,112.419 -2.329,112.429 -2.357,112.435 -2.383,112.435</polygon>
+    </area>
+  </info>
+</alert>
