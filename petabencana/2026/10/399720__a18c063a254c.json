@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-16T03:45:25.435Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        98.6492280833,
+        3.8174818205
+      ]
+    },
+    "properties": {
+      "pkey": "399720",
+      "created_at": "2026-10-16T03:40:51.615Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "49fd6f72-d4c1-4e23-9a26-897ac1ebc559",
+      "image_url": "https://images.petabencana.id/49fd6f72-d4c1-4e23-9a26-897ac1ebc559.jpg",
+      "disaster_type": "haze",
+      "is_training": true,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 0,
+        "airQuality": 1
+      },
+      "tags": {
+        "city": "DELI SERDANG",
+        "district_id": null,
+        "region_code": "1207",
+        "local_area_id": null,
+        "instance_region_code": "ID-SU"
+      },
+      "title": null,
+      "text": "asap",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

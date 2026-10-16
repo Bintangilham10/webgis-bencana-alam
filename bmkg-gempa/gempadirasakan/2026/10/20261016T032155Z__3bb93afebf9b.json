@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-16T03:45:25.435Z",
+  "data": {
+    "Tanggal": "16 Okt 2026",
+    "Jam": "10:21:55 WIB",
+    "DateTime": "2026-10-16T03:21:55+00:00",
+    "Coordinates": "-6.69,106.63",
+    "Lintang": "6.69 LS",
+    "Bujur": "106.63 BT",
+    "Magnitude": "2.5",
+    "Kedalaman": "9 km",
+    "Wilayah": "Pusat gempa berada di darat 21 km Barat Daya Kota Bogor",
+    "Dirasakan": "II Kabandungan"
+  }
+}
