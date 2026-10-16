@@ -1,0 +1,33 @@
+{
+  "guid": "CBMixgFBVV95cUxQUFdmck8xN0ticlpFV2hrdTdaTjItbHdldURISFJTbjhGTkJqd3MzSnpBX0FLOWpYSTNOSTd5ekQ4UnFUZW9CSU1adVg5NUtxT2ZCSHZGT3N6amR6N3pXdXZHeW1mdWJWXzV1UjYwMTlOUm9FWG1kSG5qVS1BZVZUZ0E0bXBXT2thekVJMHR0c1NSYW1xZ085QWdqcHdyU3F2enlkcnlLOXNkbnBraHZLdUVmOUp1QTdiZGIwSzljNmltZEQ0a0HSAcYBQVVfeXFMUFBXZnJPMTdLYnJaRVdoa3U3Wk4yLWx3ZXVESEhSU244Rk5CandzM0p6QV9BSzlqWEkzTkk3eXpEOFJxVGVvQklNWnVYOTVLcU9mQkh2Rk9zempkejd6V3V2R3ltZnViVl81dVI2MDE5TlJvRVhtZEhualUtQWVWVGdBNG1wV09rYXpFSTB0dHNTUmFtcWdPOUFnanB3clNxdnp5ZHJ5SzlzZG5wa2h2S3VFZjlKdUE3YmRiMEs5YzZpbWRENGtB",
+  "title": "Kementerian PU Turunkan 13 Alat Berat Tangani 9 Titik Longsor Tapan-Sungai Penuh - Metro Jambi - Metro Jambi",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQUFdmck8xN0ticlpFV2hrdTdaTjItbHdldURISFJTbjhGTkJqd3MzSnpBX0FLOWpYSTNOSTd5ekQ4UnFUZW9CSU1adVg5NUtxT2ZCSHZGT3N6amR6N3pXdXZHeW1mdWJWXzV1UjYwMTlOUm9FWG1kSG5qVS1BZVZUZ0E0bXBXT2thekVJMHR0c1NSYW1xZ085QWdqcHdyU3F2enlkcnlLOXNkbnBraHZLdUVmOUp1QTdiZGIwSzljNmltZEQ0a0HSAcYBQVVfeXFMUFBXZnJPMTdLYnJaRVdoa3U3Wk4yLWx3ZXVESEhSU244Rk5CandzM0p6QV9BSzlqWEkzTkk3eXpEOFJxVGVvQklNWnVYOTVLcU9mQkh2Rk9zempkejd6V3V2R3ltZnViVl81dVI2MDE5TlJvRVhtZEhualUtQWVWVGdBNG1wV09rYXpFSTB0dHNTUmFtcWdPOUFnanB3clNxdnp5ZHJ5SzlzZG5wa2h2S3VFZjlKdUE3YmRiMEs5YzZpbWRENGtB?oc=5",
+  "source": "Metro Jambi",
+  "source_url": "https://www.metrojambi.com",
+  "published_at": "2026-10-16T13:35:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-16T16:45:25.340Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.72",
+      "nama": "Kota Sungai Penuh",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "18.72",
+      "nama": "Kota Metro",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}
