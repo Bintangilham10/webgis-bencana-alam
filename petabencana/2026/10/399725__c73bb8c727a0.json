@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-16T17:15:24.380Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.8389579471,
+        -6.1743185839
+      ]
+    },
+    "properties": {
+      "pkey": "399725",
+      "created_at": "2026-10-16T17:01:28.912Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "8aac1243-e9e6-40e9-98d7-86b21ae781e0",
+      "image_url": "https://images.petabencana.id/8aac1243-e9e6-40e9-98d7-86b21ae781e0.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 96
+      },
+      "tags": {
+        "city": "JAKARTA PUSAT",
+        "district_id": null,
+        "region_code": "3171",
+        "local_area_id": "29052",
+        "instance_region_code": "ID-JK"
+      },
+      "title": null,
+      "text": "lala",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
