@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.16.06.75.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-16T13:35:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-16T13:40:00+08:00</effective>
+    <expires>2026-10-16T15:40:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 16 October 2026, 13:40 WITA di sebagian wilayah Gorontalo, khususnya di KWANDANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 16 October 2026, 15:40 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/10/16/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.856,122.911 0.844,122.916 0.838,122.930 0.846,122.974 0.841,122.983 0.838,123.003 0.828,123.006 0.797,123.001 0.790,123.010 0.769,123.004 0.755,122.983 0.740,122.979 0.727,122.981 0.716,122.969 0.713,122.959 0.711,122.944 0.714,122.932 0.710,122.928 0.694,122.926 0.689,122.919 0.700,122.901 0.710,122.904 0.713,122.899 0.735,122.907 0.758,122.902 0.764,122.869 0.759,122.837 0.751,122.819 0.760,122.825 0.776,122.824 0.785,122.827 0.807,122.842 0.802,122.849 0.814,122.860 0.827,122.860 0.829,122.875 0.853,122.901 0.856,122.911</polygon>
+    </area>
+  </info>
+</alert>
