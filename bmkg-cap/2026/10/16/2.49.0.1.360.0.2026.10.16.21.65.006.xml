@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.16.21.65.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-17T05:20:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-17T05:25:00+08:00</effective>
+    <expires>2026-10-17T07:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 17 October 2026, 05:25 WITA di sebagian wilayah Kalimantan Utara, khususnya di MALINAU UTARA, TARAKAN TENGAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 17 October 2026, 07:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKU/2026/10/17/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Utara</areaDesc>
+      <polygon>3.884,116.419 3.867,116.421 3.830,116.451 3.817,116.456 3.808,116.466 3.794,116.468 3.781,116.478 3.763,116.477 3.745,116.489 3.743,116.499 3.748,116.503 3.748,116.512 3.721,116.542 3.722,116.570 3.720,116.573 3.693,116.580 3.691,116.589 3.693,116.618 3.703,116.661 3.700,116.716 3.691,116.731 3.675,116.738 3.658,116.739 3.642,116.761 3.611,116.770 3.601,116.767 3.596,116.764 3.601,116.744 3.619,116.726 3.607,116.697 3.612,116.693 3.632,116.692 3.634,116.675 3.627,116.669 3.612,116.667 3.609,116.663 3.608,116.653 3.586,116.609 3.564,116.593 3.560,116.564 3.577,116.542 3.597,116.508 3.594,116.494 3.600,116.473 3.600,116.437 3.607,116.420 3.632,116.414 3.630,116.397 3.634,116.387 3.648,116.379 3.666,116.384 3.665,116.365 3.684,116.353 3.718,116.318 3.746,116.316 3.755,116.326 3.787,116.336 3.823,116.333 3.828,116.339 3.828,116.349 3.840,116.353 3.861,116.349 3.855,116.375 3.870,116.385 3.876,116.400 3.887,116.410 3.884,116.419</polygon>
+      <polygon>3.391,117.667 3.368,117.667 3.363,117.648 3.365,117.622 3.362,117.615 3.355,117.619 3.339,117.639 3.314,117.614 3.308,117.611 3.294,117.613 3.291,117.609 3.301,117.599 3.294,117.594 3.289,117.586 3.298,117.578 3.318,117.601 3.325,117.592 3.339,117.587 3.384,117.576 3.390,117.597 3.391,117.667</polygon>
+    </area>
+  </info>
+</alert>
