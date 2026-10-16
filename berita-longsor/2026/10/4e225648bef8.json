@@ -1,0 +1,24 @@
+{
+  "guid": "CBMiswFBVV95cUxQQk1xOGZvMXEyTXpCajRtdk43YnEwZHJiVHZkYTRpSm5VWGRKQmhhbHg3NnZhaG5rZkdJNDFGUTBPNjlvdW5fMHNCNG1tSm53aWFJRGw0djhhVk5YQmp0MHYzNm5PbzBVd29TTXhQVS1GWVhCSDdla0pYTjZvaWl4WE5IWTQ1dHhiUEFvZG15czUyc0JPY25YZk5JXzRhZlVtRTdUeVJGakJpbjh1MmZlX0t3OA",
+  "title": "BPJN Sumbar Kerahkan 13 Alat Berat Tangani Longsor di Jalur Nasional Sumbar-Jambi - Radar Sumbar",
+  "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQk1xOGZvMXEyTXpCajRtdk43YnEwZHJiVHZkYTRpSm5VWGRKQmhhbHg3NnZhaG5rZkdJNDFGUTBPNjlvdW5fMHNCNG1tSm53aWFJRGw0djhhVk5YQmp0MHYzNm5PbzBVd29TTXhQVS1GWVhCSDdla0pYTjZvaWl4WE5IWTQ1dHhiUEFvZG15czUyc0JPY25YZk5JXzRhZlVtRTdUeVJGakJpbjh1MmZlX0t3OA?oc=5",
+  "source": "Radar Sumbar",
+  "source_url": "https://radarsumbar.com",
+  "published_at": "2026-10-16T13:31:17.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-16T20:00:44.552Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi",
+    "Sumatera Barat"
+  ]
+}
