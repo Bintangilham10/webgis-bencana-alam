@@ -1,0 +1,23 @@
+{
+  "guid": "CBMipgFBVV95cUxPNjJ6MzMxMGQ2NlJ1ZzBXdTBQMnNsa2JYcGtWelpnbnZlcmRCZUdQMDJsWm9MQ09YZXpTdTZaenFCeEhkVEJkZTdLUVI3Y2dyRDZDOFZFZFBJazFaVmV1RnE0WC1KRjUwUy1zT2RjazU1eTVqUlVtWC1PZmZzWEoxY1BaaHo4Z3JHTVV4Sm90SklPVTRETGp6VXRTcUwwUk1uLWhCS2tR",
+  "title": "Kementerian PU Tangani 14 Titik Longsor di Tapan–Batas Jambi - Rakyatterkini.com",
+  "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNjJ6MzMxMGQ2NlJ1ZzBXdTBQMnNsa2JYcGtWelpnbnZlcmRCZUdQMDJsWm9MQ09YZXpTdTZaenFCeEhkVEJkZTdLUVI3Y2dyRDZDOFZFZFBJazFaVmV1RnE0WC1KRjUwUy1zT2RjazU1eTVqUlVtWC1PZmZzWEoxY1BaaHo4Z3JHTVV4Sm90SklPVTRETGp6VXRTcUwwUk1uLWhCS2tR?oc=5",
+  "source": "Rakyatterkini.com",
+  "source_url": "https://www.rakyatterkini.com",
+  "published_at": "2026-10-16T10:22:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-16T13:30:41.422Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}
