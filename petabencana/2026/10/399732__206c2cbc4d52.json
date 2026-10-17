@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T06:00:35.539Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.2797362297,
+        -8.3328630792
+      ]
+    },
+    "properties": {
+      "pkey": "399732",
+      "created_at": "2026-10-17T05:47:37.894Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "13876b8a-9e9e-41a9-990f-e76d3f3095b1",
+      "image_url": "https://images.petabencana.id/13876b8a-9e9e-41a9-990f-e76d3f3095b1.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 50.84288035982339,
+        "fireLocation": {
+          "lng": 114.27973622971604,
+          "lat": -8.332863079225646
+        },
+        "personLocation": {
+          "lat": "-8.3330574",
+          "lng": "114.2797895"
+        },
+        "fireRadius": {
+          "lng": 114.27928025418544,
+          "lat": -8.33278877022859
+        }
+      },
+      "tags": {
+        "city": "BANYUWANGI",
+        "district_id": null,
+        "region_code": "3510",
+        "local_area_id": null,
+        "instance_region_code": "ID-JI"
+      },
+      "title": null,
+      "text": "Kebakaran melanda tempat usaha rongsokan di Dusun Banje, Desa Bubuk, Kecamatan Rogojampi, Kabupaten Banyuwangi tadi malam",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.17.05.61.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-17T12:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-17T13:00:00+07:00</effective>
+    <expires>2026-10-17T15:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 17 October 2026, 13:00 WIB di sebagian wilayah Kalimantan Barat, khususnya di LUMAR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 17 October 2026, 15:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/10/17/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>1.020,109.469 1.017,109.467 1.005,109.508 1.018,109.518 1.024,109.519 1.016,109.538 0.998,109.541 0.993,109.553 0.986,109.554 0.971,109.547 0.954,109.549 0.952,109.541 0.923,109.527 0.917,109.516 0.911,109.490 0.888,109.442 0.886,109.433 0.899,109.382 0.910,109.386 0.921,109.378 0.947,109.331 1.045,109.308 1.047,109.368 1.044,109.389 1.053,109.408 1.048,109.423 1.020,109.469</polygon>
+    </area>
+  </info>
+</alert>
