@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-17T08:45:26.119Z",
+  "data": {
+    "Tanggal": "17 Okt 2026",
+    "Jam": "15:20:52 WIB",
+    "DateTime": "2026-10-17T08:20:52+00:00",
+    "Coordinates": "-0.75,131.38",
+    "Lintang": "0.75 LS",
+    "Bujur": "131.38 BT",
+    "Magnitude": "4.2",
+    "Kedalaman": "3 km",
+    "Wilayah": "Pusat gempa berada di Laut 11 km TimurLaut Kota Sorong",
+    "Dirasakan": "III Sorong"
+  }
+}
