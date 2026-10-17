@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-14T16:00:41.110Z",
-  "hash": "072eaaa2357f",
+  "updated_at": "2026-10-17T17:15:24.328Z",
+  "hash": "7d606ff4ecae",
   "volcanoes": [
     {
       "name": "Anak Krakatau",
@@ -15,11 +15,6 @@
     {
       "name": "Semeru",
       "region": "Jawa Timur",
-      "level": 3
-    },
-    {
-      "name": "Sinabung",
-      "region": "Sumatera Utara",
       "level": 3
     },
     {
@@ -115,6 +110,11 @@
     {
       "name": "Sangeangapi",
       "region": "Nusa Tenggara Barat",
+      "level": 2
+    },
+    {
+      "name": "Sinabung",
+      "region": "Sumatera Utara",
       "level": 2
     },
     {
