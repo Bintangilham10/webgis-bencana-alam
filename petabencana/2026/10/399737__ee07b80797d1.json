@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T07:45:23.022Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7245811728,
+        -6.7318353366
+      ]
+    },
+    "properties": {
+      "pkey": "399737",
+      "created_at": "2026-10-17T07:44:11.845Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "b6485c8d-8a03-43de-ab57-bbd97ca9d464",
+      "image_url": "https://images.petabencana.id/b6485c8d-8a03-43de-ab57-bbd97ca9d464.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 43
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "banjir sudah setinggi lutut\n",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

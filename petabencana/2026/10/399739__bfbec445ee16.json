@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T07:45:23.022Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.6462050969,
+        -6.5753375407
+      ]
+    },
+    "properties": {
+      "pkey": "399739",
+      "created_at": "2026-10-17T07:44:51.880Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "33f98592-c9f2-4f78-b8a2-4d9c5cfa6135",
+      "image_url": "https://images.petabencana.id/33f98592-c9f2-4f78-b8a2-4d9c5cfa6135.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": null,
+        "district_id": null,
+        "region_code": null,
+        "local_area_id": null,
+        "instance_region_code": null
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t:\nNTA \t:\nJID\t:\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
