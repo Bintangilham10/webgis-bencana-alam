@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.17.15.13.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-17T21:25:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-17T21:35:00+07:00</effective>
+    <expires>2026-10-17T23:35:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 17 October 2026, 21:35 WIB di sebagian wilayah Sumatera Barat, khususnya di KAPUR IX, MAPAT TUNGGUL.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 17 October 2026, 23:35 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSB/2026/10/17/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Barat</areaDesc>
+      <polygon>0.419,100.448 0.418,100.435 0.407,100.450 0.331,100.463 0.313,100.473 0.308,100.494 0.321,100.517 0.319,100.532 0.307,100.541 0.297,100.564 0.279,100.577 0.269,100.591 0.261,100.600 0.241,100.615 0.234,100.621 0.224,100.626 0.215,100.630 0.206,100.622 0.183,100.622 0.175,100.618 0.156,100.598 0.140,100.550 0.121,100.545 0.103,100.518 0.116,100.488 0.114,100.470 0.122,100.428 0.108,100.407 0.080,100.394 0.047,100.370 0.043,100.361 0.043,100.338 0.085,100.316 0.102,100.325 0.114,100.320 0.150,100.328 0.171,100.350 0.180,100.351 0.219,100.333 0.253,100.332 0.274,100.318 0.283,100.318 0.300,100.309 0.333,100.330 0.349,100.332 0.368,100.319 0.384,100.303 0.397,100.301 0.398,100.313 0.403,100.318 0.384,100.347 0.392,100.378 0.401,100.383 0.407,100.399 0.422,100.422 0.415,100.431 0.419,100.448</polygon>
+      <polygon>0.764,100.179 0.756,100.198 0.740,100.214 0.743,100.222 0.738,100.243 0.680,100.246 0.663,100.216 0.592,100.168 0.561,100.184 0.555,100.223 0.543,100.233 0.547,100.206 0.543,100.199 0.536,100.196 0.528,100.173 0.529,100.169 0.532,100.172 0.536,100.169 0.530,100.160 0.530,100.154 0.553,100.123 0.558,100.121 0.573,100.126 0.596,100.125 0.604,100.122 0.627,100.123 0.634,100.118 0.646,100.119 0.669,100.097 0.728,100.077 0.738,100.077 0.744,100.071 0.749,100.053 0.763,100.054 0.776,100.063 0.790,100.060 0.806,100.067 0.786,100.120 0.776,100.136 0.764,100.179</polygon>
+    </area>
+  </info>
+</alert>
