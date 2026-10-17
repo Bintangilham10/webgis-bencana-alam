@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-17T13:30:29.562Z",
+  "data": {
+    "Tanggal": "17 Okt 2026",
+    "Jam": "19:46:17 WIB",
+    "DateTime": "2026-10-17T12:46:17+00:00",
+    "Coordinates": "-9.52,118.54",
+    "Lintang": "9.52 LS",
+    "Bujur": "118.54 BT",
+    "Magnitude": "4.6",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di laut 49 km Barat KODI-SUMBABARATDAYA",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Sumba Barat Daya, III Kota Bima, III Kab. Bima, III Sumbawa",
+    "Shakemap": "20261017194617.mmi.jpg"
+  }
+}
