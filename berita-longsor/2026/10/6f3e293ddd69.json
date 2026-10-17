@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi0AFBVV95cUxQbl9JckFpZDZOUGdtTkNxU25kb3F2ZVlkZ3YwTXpnanhJVnpHSmt1N2hnVFgxZjZFM1JzaWxCai1icy1vcTdneVRZWHdRRlVFY3pra3ViX2FPWVNTWGU3TDh6YVRsZWZBd0twVldXclFxNTRmWEp0ZW1ZTF9BS3hiUlAtZV9OZEV4WnhjaDNNa0JzcWN3ZkdSVGM0UnZjMDc0UFZRSGhFT3V3eDRPRjh2SjA1WXlLZzhRSFpxOHBRVU9zMWJlTU9qcWpvZlctM2ZE0gHWAUFVX3lxTE1JRk94TUs0WXlfTlhlVDFoUU1ycU10WVUxU2tvdzdFU1AtcURUQUkzSElCNk9RQkY5dEtTS1ZzU1EzbWdnaTEzc1k4R05XbXpEVTd1eUhDR0ZlblRpN3RwU2c1SmNpYWFtTFpoSWxVNHZaaVI2M1JlcVFlUkEtNkhIOWlLcUV3OXp5TGlNZ1dBZGFoZnNfV1BTZ202a3VJT3VvWUhXSUJpa282MmlfYjBSeU55MDA0cWRIcmFIa0xVNGIxVTY2U0dKNEFHbUNLdHFpQ2JMYmc",
+  "title": "Jelang Musim Hujan, KAI Daop 4 Semarang Awasi 13 Titik Rawan Banjir dan Longsor - Radar Banyuwangi",
+  "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQbl9JckFpZDZOUGdtTkNxU25kb3F2ZVlkZ3YwTXpnanhJVnpHSmt1N2hnVFgxZjZFM1JzaWxCai1icy1vcTdneVRZWHdRRlVFY3pra3ViX2FPWVNTWGU3TDh6YVRsZWZBd0twVldXclFxNTRmWEp0ZW1ZTF9BS3hiUlAtZV9OZEV4WnhjaDNNa0JzcWN3ZkdSVGM0UnZjMDc0UFZRSGhFT3V3eDRPRjh2SjA1WXlLZzhRSFpxOHBRVU9zMWJlTU9qcWpvZlctM2ZE0gHWAUFVX3lxTE1JRk94TUs0WXlfTlhlVDFoUU1ycU10WVUxU2tvdzdFU1AtcURUQUkzSElCNk9RQkY5dEtTS1ZzU1EzbWdnaTEzc1k4R05XbXpEVTd1eUhDR0ZlblRpN3RwU2c1SmNpYWFtTFpoSWxVNHZaaVI2M1JlcVFlUkEtNkhIOWlLcUV3OXp5TGlNZ1dBZGFoZnNfV1BTZ202a3VJT3VvWUhXSUJpa282MmlfYjBSeU55MDA0cWRIcmFIa0xVNGIxVTY2U0dKNEFHbUNLdHFpQ2JMYmc?oc=5",
+  "source": "Radar Banyuwangi",
+  "source_url": "https://radarbanyuwangi.jawapos.com",
+  "published_at": "2026-10-17T09:15:59.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-17T12:00:38.661Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.22",
+      "nama": "Kabupaten Semarang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.74",
+      "nama": "Kota Semarang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
