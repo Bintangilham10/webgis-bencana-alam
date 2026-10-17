@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:15:24.776Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7631552373,
+        -6.7758933282
+      ]
+    },
+    "properties": {
+      "pkey": "399845",
+      "created_at": "2026-10-17T08:02:19.398Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "ba054dc6-791b-4ead-b9a7-a9c57cbd50d6",
+      "image_url": "https://images.petabencana.id/ba054dc6-791b-4ead-b9a7-a9c57cbd50d6.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t:Batian Jefri Pratama\nNTA \t:11.20.11.010610.0002\nJID\t:3ID028XVR\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

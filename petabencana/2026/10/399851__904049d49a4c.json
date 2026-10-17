@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:15:24.776Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.752841233,
+        -6.631346968
+      ]
+    },
+    "properties": {
+      "pkey": "399851",
+      "created_at": "2026-10-17T08:04:04.349Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "eeb91c98-624c-4c68-b611-00be20f4f9e7",
+      "image_url": null,
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 45
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t:Aprilla Nasywa Zhafira\nNTA \t:11.20.21042013.0003\nJID\t:3ID078XYE\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
