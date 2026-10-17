@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.17.08.71.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-17T14:48:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-17T15:00:00+08:00</effective>
+    <expires>2026-10-17T17:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 17 October 2026, 15:00 WITA di sebagian wilayah Sulawesi Utara, khususnya di BOLANGITANG TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 17 October 2026, 17:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/10/17/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>0.887,123.518 0.871,123.517 0.821,123.531 0.793,123.517 0.776,123.525 0.725,123.516 0.706,123.519 0.692,123.509 0.671,123.519 0.657,123.515 0.643,123.498 0.623,123.491 0.639,123.439 0.640,123.391 0.649,123.370 0.652,123.364 0.659,123.364 0.729,123.404 0.745,123.404 0.766,123.409 0.789,123.398 0.797,123.403 0.807,123.402 0.809,123.406 0.816,123.406 0.833,123.399 0.847,123.398 0.879,123.369 0.903,123.371 0.910,123.368 0.913,123.373 0.898,123.394 0.915,123.401 0.906,123.410 0.899,123.409 0.891,123.417 0.895,123.426 0.901,123.426 0.904,123.444 0.892,123.471 0.887,123.518</polygon>
+    </area>
+  </info>
+</alert>
