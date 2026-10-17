@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:30:28.961Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7194235011,
+        -6.737356108
+      ]
+    },
+    "properties": {
+      "pkey": "399856",
+      "created_at": "2026-10-17T08:16:30.113Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "d768c39d-620e-4dc6-ab44-6f750f5c7d54",
+      "image_url": "https://images.petabencana.id/d768c39d-620e-4dc6-ab44-6f750f5c7d54.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t: syahni aulia putri \nNTA \t:11.20.10.180711.002\nJID\t:3ID006DXA\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

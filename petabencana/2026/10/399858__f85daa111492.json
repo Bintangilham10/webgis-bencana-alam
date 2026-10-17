@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:30:28.961Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.8395305771,
+        -6.5137065676
+      ]
+    },
+    "properties": {
+      "pkey": "399858",
+      "created_at": "2026-10-17T08:27:05.320Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "1caeadb1-8e48-4108-be59-3d8c9f3368e2",
+      "image_url": "https://images.petabencana.id/1caeadb1-8e48-4108-be59-3d8c9f3368e2.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t:Febryan Satria Pratama \nNTA \t:11.20.02.120214.0001\nJID\t:3ID06ZTV\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
