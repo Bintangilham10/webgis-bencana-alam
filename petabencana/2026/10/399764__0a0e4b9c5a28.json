@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7502453814,
+        -6.6312687405
+      ]
+    },
+    "properties": {
+      "pkey": "399764",
+      "created_at": "2026-10-17T07:48:27.906Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "84cf55aa-149f-4348-aa4f-1cba1e988acd",
+      "image_url": "https://images.petabencana.id/84cf55aa-149f-4348-aa4f-1cba1e988acd.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 45
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Nama :Salwa Shidqia Kamil \nBB:35\nTB:150",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

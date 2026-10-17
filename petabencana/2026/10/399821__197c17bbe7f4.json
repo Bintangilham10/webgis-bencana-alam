@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.6870753328,
+        -6.610316274
+      ]
+    },
+    "properties": {
+      "pkey": "399821",
+      "created_at": "2026-10-17T07:55:48.016Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "84863bfb-db2b-4b08-a72e-83b97a5bfbd0",
+      "image_url": "https://images.petabencana.id/84863bfb-db2b-4b08-a72e-83b97a5bfbd0.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama : Marcelleo Dimas Aditya \nNTA  : 11.20.05.100511.0002\nJID  :  3ID168\n#JOJOJEPARA2026#SARJEPARA#PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

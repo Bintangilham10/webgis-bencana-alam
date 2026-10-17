@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7530044399,
+        -6.6318579597
+      ]
+    },
+    "properties": {
+      "pkey": "399787",
+      "created_at": "2026-10-17T07:51:07.291Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "58d034ac-92e4-4f63-a7c8-615efaa7cb0f",
+      "image_url": "https://images.petabencana.id/58d034ac-92e4-4f63-a7c8-615efaa7cb0f.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 43
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nnama:cinta ayu yastafia\nnta:11.20.08.081212.0001\njid:3ID100KNP\n",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

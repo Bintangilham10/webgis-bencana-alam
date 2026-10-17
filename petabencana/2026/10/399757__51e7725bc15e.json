@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.6486074486,
+        -6.5741059337
+      ]
+    },
+    "properties": {
+      "pkey": "399757",
+      "created_at": "2026-10-17T07:47:10.332Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "bd2d7079-87ce-4b5a-afd9-16a486328b50",
+      "image_url": "https://images.petabencana.id/bd2d7079-87ce-4b5a-afd9-16a486328b50.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": null,
+        "district_id": null,
+        "region_code": null,
+        "local_area_id": null,
+        "instance_region_code": null
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t:ATMAM NAQIBA DEVANO\nNTA \t:11.20.02.130514.0001\nJID\t:12524\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

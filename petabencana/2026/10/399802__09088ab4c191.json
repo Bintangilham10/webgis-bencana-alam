@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.8382856602,
+        -6.5138221401
+      ]
+    },
+    "properties": {
+      "pkey": "399802",
+      "created_at": "2026-10-17T07:52:01.354Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "6c7d4fc6-3f6d-49cb-b7e9-4b1aec2f5c01",
+      "image_url": "https://images.petabencana.id/6c7d4fc6-3f6d-49cb-b7e9-4b1aec2f5c01.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 42
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t:Fadendra Yusril Khoirunnas\nNTA \t:11.20.02.171011.0001\nJID\t:3ID166MTY\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJE",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

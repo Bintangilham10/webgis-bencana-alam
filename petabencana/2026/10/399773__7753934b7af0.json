@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.8388922308,
+        -6.5108066447
+      ]
+    },
+    "properties": {
+      "pkey": "399773",
+      "created_at": "2026-10-17T07:49:32.692Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "52432361-6408-4321-8b02-ad66b253161b",
+      "image_url": "https://images.petabencana.id/52432361-6408-4321-8b02-ad66b253161b.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "\nSIMULASI PELAPORAN BENCANA\nNama \t:M.SAIFUL RAFI ARJUNAIDI\nNTA \t:11.20.02050512.0001\nJID\t:3ID086HW\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

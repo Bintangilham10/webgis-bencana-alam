@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.8390716885,
+        -6.5111304269
+      ]
+    },
+    "properties": {
+      "pkey": "399804",
+      "created_at": "2026-10-17T07:53:11.201Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "abf08ea7-76ef-4dcf-818e-d72f5553c7f5",
+      "image_url": "https://images.petabencana.id/abf08ea7-76ef-4dcf-818e-d72f5553c7f5.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 53
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Simulasi Laporan Bencana \nNAMA:LILA PUSPA AGUSTIN \nNTA:11.20.02.270313.0001\nJID:3ID050HUC\n#JOJOJEPARA2026\n#SARJEPARA\n#PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

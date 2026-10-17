@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.8293982093,
+        -6.173390247
+      ]
+    },
+    "properties": {
+      "pkey": "399796",
+      "created_at": "2026-10-17T07:52:13.402Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "2c5b406c-a52e-4073-861e-124fa1d4a45f",
+      "image_url": "https://images.petabencana.id/2c5b406c-a52e-4073-861e-124fa1d4a45f.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JAKARTA PUSAT",
+        "district_id": null,
+        "region_code": "3171",
+        "local_area_id": "11017",
+        "instance_region_code": "ID-JK"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t: Achmad Farhan Maulana \nNTA \t:11.20.02.180214.0001\nJID\t:79108\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

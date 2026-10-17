@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7327504074,
+        -6.7323331836
+      ]
+    },
+    "properties": {
+      "pkey": "399769",
+      "created_at": "2026-10-17T07:48:58.160Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "2d0f957e-d6fd-49c7-996a-a42d8ed1b54f",
+      "image_url": "https://images.petabencana.id/2d0f957e-d6fd-49c7-996a-a42d8ed1b54f.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "banjir selutut sengon bugel simulasi",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

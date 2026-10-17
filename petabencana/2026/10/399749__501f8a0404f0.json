@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.6658025469,
+        -6.5875074784
+      ]
+    },
+    "properties": {
+      "pkey": "399749",
+      "created_at": "2026-10-17T07:46:03.237Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "c2d95161-cdf0-4674-b78e-f0e5f695c47a",
+      "image_url": "https://images.petabencana.id/c2d95161-cdf0-4674-b78e-f0e5f695c47a.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Simulasi Pelaporan Bencana\nNama : Ilham Athrizza Putra\nNTA : 11.20.05.180611.0001\nJID :3ID200CCC\n#JOJOJEPARA2026#SARJEPARA#PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

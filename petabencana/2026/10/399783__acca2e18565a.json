@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.8244350674,
+        -6.1754282389
+      ]
+    },
+    "properties": {
+      "pkey": "399783",
+      "created_at": "2026-10-17T07:50:28.216Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "24422601-f447-4438-b486-32259d284373",
+      "image_url": "https://images.petabencana.id/24422601-f447-4438-b486-32259d284373.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 21
+      },
+      "tags": {
+        "city": "JAKARTA PUSAT",
+        "district_id": null,
+        "region_code": "3171",
+        "local_area_id": "11017",
+        "instance_region_code": "ID-JK"
+      },
+      "title": null,
+      "text": "Simulasi laporan bencana\nNAMA:FAUZIA PEBRIANTI\nNTA:\nJID:\n#JOJOJEPARA2026\n#SARJEPARA\n#PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

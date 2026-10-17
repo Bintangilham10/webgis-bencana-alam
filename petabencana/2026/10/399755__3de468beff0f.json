@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.679775009,
+        -6.5943033026
+      ]
+    },
+    "properties": {
+      "pkey": "399755",
+      "created_at": "2026-10-17T07:47:11.444Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "8c17984b-5110-49db-bc74-0092da4bfe6e",
+      "image_url": "https://images.petabencana.id/8c17984b-5110-49db-bc74-0092da4bfe6e.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": " SIMULASI PELAPORAN BENCANA\nNama \t:FABIAN ALRIC MAHARDHIKA \nNTA \t:11.20.071211.0001\nJID\t:3ID082FEZ\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

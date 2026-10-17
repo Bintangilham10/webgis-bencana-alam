@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.78384371,
+        -6.5972633872
+      ]
+    },
+    "properties": {
+      "pkey": "399813",
+      "created_at": "2026-10-17T07:54:00.858Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "949a806e-7379-43f3-9155-0e23e91005bf",
+      "image_url": "https://images.petabencana.id/949a806e-7379-43f3-9155-0e23e91005bf.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama: Radisty zhafira zahra\nNTA: 10.20.02.210114.0001\nJID: 3ID182FMW\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

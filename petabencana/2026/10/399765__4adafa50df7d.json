@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7446983359,
+        -6.6245721963
+      ]
+    },
+    "properties": {
+      "pkey": "399765",
+      "created_at": "2026-10-17T07:48:29.138Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "81877de8-c8a6-49c5-88bd-e368298de5c3",
+      "image_url": "https://images.petabencana.id/81877de8-c8a6-49c5-88bd-e368298de5c3.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Nama: Ahmad Ferdi Eka Ma'arif \nBB:49\nTB:155",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

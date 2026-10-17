@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7149851347,
+        -6.7223246592
+      ]
+    },
+    "properties": {
+      "pkey": "399806",
+      "created_at": "2026-10-17T07:53:23.500Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "14636e93-9358-4ad4-ba73-c400c9516ae0",
+      "image_url": "https://images.petabencana.id/14636e93-9358-4ad4-ba73-c400c9516ae0.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t:NAILA AULIA\nNTA    :11.20.12.090511.0003\nJID\t:3ID080CWR\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

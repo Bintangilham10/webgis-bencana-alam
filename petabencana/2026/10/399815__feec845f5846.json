@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7362962608,
+        -6.6240415893
+      ]
+    },
+    "properties": {
+      "pkey": "399815",
+      "created_at": "2026-10-17T07:54:35.406Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "e2a78deb-81c8-4c09-934c-6e1c155b7081",
+      "image_url": "https://images.petabencana.id/e2a78deb-81c8-4c09-934c-6e1c155b7081.jpg",
+      "disaster_type": "haze",
+      "is_training": true,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 2,
+        "airQuality": 3
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "kepala pusing karena terlalu panas",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

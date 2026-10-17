@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.6788950233,
+        -6.580457396
+      ]
+    },
+    "properties": {
+      "pkey": "399807",
+      "created_at": "2026-10-17T07:53:27.796Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "b4519df0-b335-46d5-8f94-8859bf96bfb0",
+      "image_url": "https://images.petabencana.id/b4519df0-b335-46d5-8f94-8859bf96bfb0.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 46
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t: Junia Shelomita Aulia Salim \nNTA \t:11.20.08.160610.0001\nJID\t:3ID084PCT\n#JOJOJEPARA2026 #SARJEPARA #PRAMUK",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

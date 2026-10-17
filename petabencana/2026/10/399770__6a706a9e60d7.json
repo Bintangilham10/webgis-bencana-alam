@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.6812942128,
+        -6.6311576193
+      ]
+    },
+    "properties": {
+      "pkey": "399770",
+      "created_at": "2026-10-17T07:49:09.934Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "3e7e9054-be7a-4806-a231-25753c02ba2d",
+      "image_url": "https://images.petabencana.id/3e7e9054-be7a-4806-a231-25753c02ba2d.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNAMA : ANINDYA AURA SALWA\nNTA : 11.20.05.061111.0003\nJID : 3ID024KFP\n#JOJOJEPARA2026#SARJEPARA#PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

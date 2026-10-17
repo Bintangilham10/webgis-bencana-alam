@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7828999721,
+        -6.5993219583
+      ]
+    },
+    "properties": {
+      "pkey": "399779",
+      "created_at": "2026-10-17T07:50:15.570Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "4632280f-4da9-4b43-b567-5800ac4591b3",
+      "image_url": "https://images.petabencana.id/4632280f-4da9-4b43-b567-5800ac4591b3.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t:Teguh Pranowo A.H\nNTA \t:11.20.09.130413.0003\nJID\t:3ID052MBB\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7320832304,
+        -6.7155138392
+      ]
+    },
+    "properties": {
+      "pkey": "399794",
+      "created_at": "2026-10-17T07:52:00.563Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "3b104d5b-99b3-4c9c-8af3-29b2b3774204",
+      "image_url": "https://images.petabencana.id/3b104d5b-99b3-4c9c-8af3-29b2b3774204.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 38
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t:MUHAMAD VITRA SEPTIAWAN\nNTA \t:11.20.10.250910.0001\nJID\t:3ID182PKK\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPAR",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

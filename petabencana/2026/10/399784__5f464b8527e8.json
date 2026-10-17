@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.8387695499,
+        -6.5104063593
+      ]
+    },
+    "properties": {
+      "pkey": "399784",
+      "created_at": "2026-10-17T07:50:38.794Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "38bb0e28-a2e1-400c-a15f-bb38033e4927",
+      "image_url": "https://images.petabencana.id/38bb0e28-a2e1-400c-a15f-bb38033e4927.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "NAMA:NAFEEZA ZAINA AZKADINA MECCA\nNTA:11.20.021211.0001\nJID:3IDI04NEM\nJJID:64991\n#JOJOJEPARA2026#SARJEPARA\n#PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

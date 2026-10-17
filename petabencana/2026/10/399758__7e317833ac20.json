@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7787268066,
+        -6.4732314289
+      ]
+    },
+    "properties": {
+      "pkey": "399758",
+      "created_at": "2026-10-17T07:47:26.039Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "7ce73698-59d9-4506-8be6-d00f15ed9bd9",
+      "image_url": "https://images.petabencana.id/7ce73698-59d9-4506-8be6-d00f15ed9bd9.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 45
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t:RADEN ANNISA C. M\nNTA \t:11.20.03.160310.0001\nJID\t:3ID086HZH\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

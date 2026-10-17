@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.8388897565,
+        -6.5110479874
+      ]
+    },
+    "properties": {
+      "pkey": "399801",
+      "created_at": "2026-10-17T07:52:48.448Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "a46c5b39-2075-454b-8b85-10c8b274e9f0",
+      "image_url": "https://images.petabencana.id/a46c5b39-2075-454b-8b85-10c8b274e9f0.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 58
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Simulasi pelaporan \nBencanA\nNama :Vebiyola putri julia \nNTA : 11.20.02.310713.0002\nJID : 3ID132GDA\n#JOJOJEPARA2026\n#SARJEPARA\n#PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7216941492,
+        -6.73594445
+      ]
+    },
+    "properties": {
+      "pkey": "399792",
+      "created_at": "2026-10-17T07:51:42.635Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "28081362-c383-4998-baa0-ac179b373819",
+      "image_url": "https://images.petabencana.id/28081362-c383-4998-baa0-ac179b373819.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 67
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t:Divanka Zilvanna Latisya\nNTA \t:11.20.10.111010.0002\nJID\t:31D006M\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

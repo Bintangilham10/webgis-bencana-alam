@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7240644175,
+        -6.7327055187
+      ]
+    },
+    "properties": {
+      "pkey": "399788",
+      "created_at": "2026-10-17T07:51:06.709Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "04de8b97-0eca-45f7-aa78-dddb42bf8c3f",
+      "image_url": "https://images.petabencana.id/04de8b97-0eca-45f7-aa78-dddb42bf8c3f.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 46
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t: Helsen Yusufa B.p\nNTA \t:11.20.060710.0002\nJID\t:3ID078AYT\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

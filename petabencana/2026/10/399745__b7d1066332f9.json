@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.6673046536,
+        -6.5886549111
+      ]
+    },
+    "properties": {
+      "pkey": "399745",
+      "created_at": "2026-10-17T07:45:30.710Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "b469e68c-7249-47a3-bc5f-825991c4978d",
+      "image_url": "https://images.petabencana.id/b469e68c-7249-47a3-bc5f-825991c4978d.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama: Atika Abir Edelweis\nNTA:11.20.08.090412.0003\nJID :3ID096AZB\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

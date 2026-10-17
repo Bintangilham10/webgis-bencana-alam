@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.6811831764,
+        -6.5523808943
+      ]
+    },
+    "properties": {
+      "pkey": "399768",
+      "created_at": "2026-10-17T07:48:57.062Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "33473184-c00e-4981-8b4f-78e5af0381ee",
+      "image_url": "https://images.petabencana.id/33473184-c00e-4981-8b4f-78e5af0381ee.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 130
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

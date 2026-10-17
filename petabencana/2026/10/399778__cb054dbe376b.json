@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.699902807,
+        -6.5513063713
+      ]
+    },
+    "properties": {
+      "pkey": "399778",
+      "created_at": "2026-10-17T07:50:12.883Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "85942ffd-cf3a-4c78-9c60-e886a068d00c",
+      "image_url": "https://images.petabencana.id/85942ffd-cf3a-4c78-9c60-e886a068d00c.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 41
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t:maura mifrotun nikmah\nNTA \t:11.20.270110.0002\nJID\t:09177\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

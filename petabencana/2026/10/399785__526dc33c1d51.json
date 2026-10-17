@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7426868872,
+        -6.7427250502
+      ]
+    },
+    "properties": {
+      "pkey": "399785",
+      "created_at": "2026-10-17T07:50:48.440Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "e486f622-0016-424e-befb-6a079930a163",
+      "image_url": "https://images.petabencana.id/e486f622-0016-424e-befb-6a079930a163.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 44
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Bencana Banjir Simulasi",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

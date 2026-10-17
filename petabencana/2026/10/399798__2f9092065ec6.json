@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.7979328448,
+        -6.5112038164
+      ]
+    },
+    "properties": {
+      "pkey": "399798",
+      "created_at": "2026-10-17T07:52:24.776Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "49974c7e-47ff-4b35-8b17-2f7c49a5ce06",
+      "image_url": "https://images.petabencana.id/49974c7e-47ff-4b35-8b17-2f7c49a5ce06.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 46
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI PELAPORAN BENCANA\nNama \t: DAFFA ADI PRATAMA \nNTA \t:11.20.02.060414.0001\nJID\t:54181\n#JOJOJEPARA2026 #SARJEPARA #PRAMUKAJEPARA",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T08:00:36.677Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.8390686085,
+        -6.5108148826
+      ]
+    },
+    "properties": {
+      "pkey": "399775",
+      "created_at": "2026-10-17T07:49:58.415Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "16c05012-97b5-4f23-9266-f600462848d6",
+      "image_url": "https://images.petabencana.id/16c05012-97b5-4f23-9266-f600462848d6.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 64
+      },
+      "tags": {
+        "city": "JEPARA",
+        "district_id": null,
+        "region_code": "3320",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "SIMULASI LAPORAN BENCANA\nNAMA: ANDIN ALIFATUN NAZWA\nNTA: 11.20.010513.0001\nJID:3ID120MVY\n# JOJOJEPARA2026\n# SARJEPARA\n#PRAMUKAJEPARA\n",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
