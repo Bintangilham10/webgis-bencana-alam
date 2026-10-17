@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T01:45:22.074Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.8274384937,
+        -6.1749328587
+      ]
+    },
+    "properties": {
+      "pkey": "399730",
+      "created_at": "2026-10-17T01:39:15.809Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "9f0538aa-b9f1-4967-8240-239230597f9c",
+      "image_url": null,
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 1,
+        "airQuality": 0
+      },
+      "tags": {
+        "city": "JAKARTA PUSAT",
+        "district_id": null,
+        "region_code": "3171",
+        "local_area_id": "11017",
+        "instance_region_code": "ID-JK"
+      },
+      "title": null,
+      "text": "Kabut asap tebal dii wilayah Jakarta dan sekitarnya pada Sabtu 17/10",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
