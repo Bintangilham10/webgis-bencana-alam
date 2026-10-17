@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-17T06:15:28.471Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        140.3945746323,
+        -8.4904011243
+      ]
+    },
+    "properties": {
+      "pkey": "399734",
+      "created_at": "2026-10-17T06:10:46.584Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "bad15612-0c98-4b0f-9c94-b346b0ccedab",
+      "image_url": "https://images.petabencana.id/bad15612-0c98-4b0f-9c94-b346b0ccedab.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 104.46947804073508,
+        "fireLocation": {
+          "lng": 140.3945746323351,
+          "lat": -8.490401124266569
+        },
+        "personLocation": {
+          "lat": "-8.4902766",
+          "lng": "140.3955820"
+        },
+        "fireRadius": {
+          "lng": 140.39365731685444,
+          "lat": -8.490645183043341
+        }
+      },
+      "tags": {
+        "city": "MERAUKE",
+        "district_id": null,
+        "region_code": "9101",
+        "local_area_id": null,
+        "instance_region_code": "ID-PA"
+      },
+      "title": null,
+      "text": "Kebakaran lahan (karhutla) kembali melanda kawasan Merauke, Provinsi Papua Selatan, pada Sabtu siang hari ini",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
