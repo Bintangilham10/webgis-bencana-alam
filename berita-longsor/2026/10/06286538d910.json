@@ -1,0 +1,21 @@
+{
+  "guid": "CBMipwFBVV95cUxPQWxfckYwc1BqWlpmYkFIcDR0Nm1TYXZhZ0wxbmVNR3hpMlZMdjVsaDRIQlJiTTgxNVlncXpObU4wNjZoVFVrcm8wOXBYeURjQVMyUEZTZGRVOHVsbmIzYlFhd2FTdVJnYXplclFCZzBrX0hibS1KcVVBdFlVLTh0LXdUcnJGb3Z1YmlwcFlUVkRPNlE0enFDbHRqdmRjOWpPSGlKU3YtTQ",
+  "title": "Kementerian PU Percepat Penanganan Longsor di Pesisir Selatan - Akurat.co",
+  "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQWxfckYwc1BqWlpmYkFIcDR0Nm1TYXZhZ0wxbmVNR3hpMlZMdjVsaDRIQlJiTTgxNVlncXpObU4wNjZoVFVrcm8wOXBYeURjQVMyUEZTZGRVOHVsbmIzYlFhd2FTdVJnYXplclFCZzBrX0hibS1KcVVBdFlVLTh0LXdUcnJGb3Z1YmlwcFlUVkRPNlE0enFDbHRqdmRjOWpPSGlKU3YtTQ?oc=5",
+  "source": "Akurat.co",
+  "source_url": "https://www.akurat.co",
+  "published_at": "2026-10-17T09:25:14.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-17T15:00:41.061Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.01",
+      "nama": "Kabupaten Pesisir Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
