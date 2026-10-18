@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.18.12.62.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-18T17:15:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-18T17:25:00+07:00</effective>
+    <expires>2026-10-18T19:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 18 October 2026, 17:25 WIB di sebagian wilayah Kalimantan Tengah, khususnya di DUSUN TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 18 October 2026, 19:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/18/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-2.035,115.282 -2.056,115.273 -2.102,115.271 -2.112,115.275 -2.143,115.243 -2.177,115.229 -2.182,115.208 -2.198,115.191 -2.202,115.170 -2.202,115.121 -2.220,115.072 -2.221,115.040 -2.200,115.058 -2.098,115.104 -2.071,115.121 -2.023,115.129 -2.019,115.129 -2.013,115.143 -1.991,115.159 -1.973,115.165 -1.982,115.186 -2.001,115.194 -2.027,115.231 -2.029,115.267 -2.035,115.282</polygon>
+    </area>
+  </info>
+</alert>
