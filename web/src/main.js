@@ -24,6 +24,8 @@ import {
   zkgtLegend,
 } from "./layers/hazards.js";
 import {
+  cloudLegend,
+  createCloudLayer,
   createImergLayer,
   createLandslideHistoryLayer,
   createRainWarningLayer,
@@ -46,6 +48,7 @@ import {
   faultLegend,
   plateLegend,
 } from "./layers/reference.js";
+import { createUsgsLayer, usgsLegend } from "./layers/usgs.js";
 import {
   createVolcanoLayer,
   volcanoLegend,
@@ -55,7 +58,12 @@ import { getJson } from "./lib/api.js";
 import { formatDasarian } from "./lib/format.js";
 import { icons } from "./lib/icons.js";
 import { flyToBounds } from "./lib/motion.js";
-import { CEWS_LEVELS, DEPTH_CLASSES, IMERG_RAMP } from "./lib/symbology.js";
+import {
+  CEWS_LEVELS,
+  CLOUD_RAMP,
+  DEPTH_CLASSES,
+  IMERG_RAMP,
+} from "./lib/symbology.js";
 import { cssVar, currentTheme, onThemeChange, setTheme } from "./lib/theme.js";
 import { createMap, INDONESIA_BOUNDS } from "./map/create-map.js";
 import { LegendControl } from "./map/legend-control.js";
@@ -293,6 +301,17 @@ const rainNow = createImergLayer({
 const landslideHistory = createLandslideHistoryLayer({
   onError: reportLoadError("Riwayat longsor"),
 });
+// Data luar negeri sebagai pembanding, mati bawaan: katalog gempa USGS (Amerika
+// Serikat) dan citra awan Himawari-9 (JMA, Jepang). Data BMKG tetap yang utama.
+const usgsQuakes = createUsgsLayer(map, {
+  viewPadding: markerPadding,
+  onLoad: (collection) => freshness.ok("Gempa USGS", collection.meta.synced_at),
+  onError: reportLoadError("Gempa USGS"),
+});
+// Seperti IMERG, waktu citra yang gagal dibaca tidak fatal.
+const clouds = createCloudLayer({
+  onError: (err) => console.warn("Waktu citra Himawari-9 tidak terbaca", err),
+});
 // Indikasi SIGAP 3 hari per kab/kota. Popup membandingkannya dengan peringatan
 // resmi CEWS BMKG dan bisa membuka cek risiko di titik pantau terparah.
 const outlook = createOutlookLayer({
@@ -318,6 +337,7 @@ const outlook = createOutlookLayer({
 
 const symbol = {
   quake: `<span class="sym quake-swatch" style="--c:${DEPTH_CLASSES[0].color}"></span>`,
+  usgs: `<span class="sym usgs-swatch" style="--c:${DEPTH_CLASSES[0].color}"></span>`,
   volcano: volcanoSwatch(3),
   fault: '<span class="sym sym-line" style="--sym:var(--fault-color)"></span>',
   plate:
@@ -326,6 +346,7 @@ const symbol = {
     '<span class="sym sym-line sym-line--thin" style="--sym:var(--boundary-color)"></span>',
   rain: `<span class="sym rain-swatch" style="--c:${CEWS_LEVELS[1].color}"></span>`,
   imerg: `<span class="sym ramp-swatch">${[0, 3, 5].map((i) => `<span style="background:${IMERG_RAMP[i].color}"></span>`).join("")}</span>`,
+  clouds: `<span class="sym ramp-swatch">${[1, 2, 4, 6].map((i) => `<span style="background:${CLOUD_RAMP[i].color}"></span>`).join("")}</span>`,
   landslide: landslideSymbol(),
 };
 
@@ -363,6 +384,14 @@ createLayerPanel({
           on: true,
         },
         {
+          label: "Gempa USGS (pembanding)",
+          description: "Amerika Serikat · mulai ±M4 · 7 hari · tiap menit",
+          legendTitle: "Gempa USGS (7 hari)",
+          symbol: symbol.usgs,
+          layer: usgsQuakes.layer,
+          legend: usgsLegend,
+        },
+        {
           label: "Status gunung api",
           description: "PVMBG — MAGMA · diperbarui tiap 30 menit",
           legendTitle: "Status gunung api (PVMBG)",
@@ -376,7 +405,7 @@ createLayerPanel({
     {
       id: "hujan",
       title: "Hujan dan longsor",
-      note: "BMKG · NASA · PVMBG",
+      note: "BMKG · NASA · JMA · PVMBG",
       items: [
         {
           label: "Peringatan hujan tinggi BMKG",
@@ -393,6 +422,14 @@ createLayerPanel({
           symbol: symbol.imerg,
           layer: rainNow,
           legend: imergLegend,
+        },
+        {
+          label: "Citra awan Himawari-9",
+          description: "JMA Jepang · inframerah tiap 10 menit, terlambat ±1 jam",
+          legendTitle: "Awan dari satelit (Himawari-9, JMA)",
+          symbol: symbol.clouds,
+          layer: clouds,
+          legend: cloudLegend,
         },
         {
           label: "Riwayat longsor",

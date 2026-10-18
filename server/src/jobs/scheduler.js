@@ -1,9 +1,10 @@
 import { lastSuccessfulSync, recordSync } from '../sync-logs.js';
 import { runIndikasi } from './indikasi.js';
-import { syncEarthquakes } from './sync-earthquakes.js';
+import { syncEarthquakes, syncUsgsEarthquakes } from './sync-earthquakes.js';
 import { syncVolcanoes } from './sync-volcanoes.js';
 
 // BMKG membatasi 60 request/menit per IP; tiga feed tiap 60 detik jauh di bawahnya.
+// Feed USGS juga diperbarui tiap menit (feed harian ±20 KB per ambil).
 // Indikasi SIGAP memakai ±3.200 panggilan kuota Open-Meteo per run (satu per titik
 // pantau), jadi dijalankan tiap 12 jam (±6.400/hari dari kuota gratis 10.000) dan
 // memakai skipIfFresh: penjadwal memeriksa tiap checkMs dan hanya menjalankannya
@@ -12,6 +13,7 @@ import { syncVolcanoes } from './sync-volcanoes.js';
 // pemeriksaan berikutnya.
 export const JOBS = [
   { source: 'bmkg-gempa', intervalMs: 60_000, run: syncEarthquakes },
+  { source: 'usgs-gempa', intervalMs: 60_000, run: syncUsgsEarthquakes },
   { source: 'magma', intervalMs: 30 * 60_000, run: syncVolcanoes },
   { source: 'indikasi-sigap', intervalMs: 12 * 60 * 60_000, checkMs: 15 * 60_000, skipIfFresh: true, run: runIndikasi },
 ];

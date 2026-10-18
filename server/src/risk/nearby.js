@@ -82,7 +82,9 @@ export async function recentQuakes(lat, lon, { radiusKm = 100, days = 7 } = {}) 
     `SELECT magnitude, depth_km, occurred_at, props->>'wilayah' AS wilayah,
             ST_Distance(geom::geography, ${POINT}::geography) AS distance_m
      FROM events
-     WHERE hazard = 'gempa'
+     -- Hanya BMKG: gempa USGS adalah pembanding di peta dan sebagian besar
+     -- tercatat juga oleh BMKG, jadi tidak ikut dihitung.
+     WHERE hazard = 'gempa' AND source = 'bmkg'
        AND occurred_at >= now() - make_interval(days => $4)
        AND ST_DWithin(geom::geography, ${POINT}::geography, $3)
      ORDER BY magnitude DESC`,

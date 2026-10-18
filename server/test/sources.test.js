@@ -5,6 +5,7 @@ import { depthClass, hasTsunamiPotential } from '../src/lib/classify.js';
 import { extractEvents, normalizeEvent } from '../src/sources/bmkg-gempa.js';
 import { createHazardIdentifier, OUTAGE_MS } from '../src/sources/inarisk.js';
 import { extractJsonLiteral, extractVolcanoes } from '../src/sources/magma.js';
+import { extractEvents as extractUsgsEvents } from '../src/sources/usgs-gempa.js';
 import { parseBoundarySql, toRings } from '../scripts/seed-wilayah.js';
 
 // Fixture = respons asli sumber (diambil 26 Sep 2026).
@@ -36,6 +37,39 @@ describe('BMKG gempa', () => {
       () => normalizeEvent({ Coordinates: 'x,y', Magnitude: '5', Kedalaman: '10 km', DateTime: '2026-09-25T00:00:00Z' }),
       /tidak lengkap/,
     );
+  });
+});
+
+// Fixture USGS = feed 2.5_week asli (18 Okt 2026), dipangkas menjadi dua gempa di
+// kawasan Indonesia dan satu di Karibia.
+describe('USGS gempa', () => {
+  const feed = () => JSON.parse(fixture('usgs-2.5_week.json'));
+
+  test('hanya gempa di kawasan Indonesia yang diambil, termasuk yang di bawah M4,5', () => {
+    assert.deepEqual(extractUsgsEvents(feed()).map((e) => [e.id, e.magnitude]), [
+      ['usgs:us6000u34e', 5.2],
+      ['usgs:us6000u2rv', 4.4],
+    ]);
+  });
+
+  test('koordinat [lon, lat, kedalaman] GeoJSON, waktu milidetik, dan jenis magnitudo', () => {
+    const [event] = extractUsgsEvents(feed());
+    assert.equal(event.source, 'usgs');
+    assert.equal(event.lon, 120.2734);
+    assert.equal(event.lat, -8.1449);
+    assert.equal(event.depthKm, 10);
+    assert.equal(event.occurredAt, '2026-10-18T08:00:06.054Z');
+    assert.equal(event.props.wilayah, '55 km NNW of Ruteng, Indonesia');
+    assert.equal(event.props.mag_type, 'mb');
+    assert.equal(event.props.status, 'reviewed');
+    // Penanda tsunami USGS bukan peringatan, jadi tidak disimpan.
+    assert.ok(!('tsunami' in event.props));
+  });
+
+  test('gempa tanpa magnitudo dilewati; respons lain ditolak', () => {
+    const noMagnitude = { id: 'us0', geometry: { coordinates: [120, -8, 10] }, properties: { mag: null, time: 1 } };
+    assert.deepEqual(extractUsgsEvents({ features: [noMagnitude] }), []);
+    assert.throws(() => extractUsgsEvents({ error: 'maintenance' }), /format tidak dikenal/);
   });
 });
 

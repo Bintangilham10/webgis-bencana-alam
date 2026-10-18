@@ -33,7 +33,7 @@ from sigap_riset.db import connect
 from sigap_riset.paths import RESULTS
 
 # Interval penjadwal server (server/src/jobs/scheduler.js).
-EXPECTED_INTERVAL_S = {'bmkg-gempa': 60, 'magma': 30 * 60, 'indikasi-sigap': 12 * 60 * 60}
+EXPECTED_INTERVAL_S = {'bmkg-gempa': 60, 'usgs-gempa': 60, 'magma': 30 * 60, 'indikasi-sigap': 12 * 60 * 60}
 MONITORING_GAP_S = 120
 CLIENT_NETWORK = r'ENOTFOUND|EAI_AGAIN|ENETUNREACH|getaddrinfo'
 
@@ -54,7 +54,7 @@ def load() -> tuple[pd.DataFrame, pd.DataFrame]:
              SELECT id, magnitude, occurred_at, first_seen_at, props->>'dirasakan' IS NOT NULL AS dirasakan,
                     (SELECT max(s.started_at) FROM sync_logs s
                      WHERE s.source = 'bmkg-gempa' AND s.started_at <= events.first_seen_at) AS sync_penemu
-             FROM events WHERE hazard = 'gempa'
+             FROM events WHERE hazard = 'gempa' AND source = 'bmkg'
            )
            SELECT e.*, (SELECT max(s.started_at) FROM sync_logs s
                         WHERE s.source = 'bmkg-gempa' AND s.ok AND s.started_at < e.sync_penemu) AS sync_sebelumnya

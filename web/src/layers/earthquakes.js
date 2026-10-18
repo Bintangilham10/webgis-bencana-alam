@@ -64,6 +64,7 @@ export function earthquakePopup(p) {
         <dt>Kedalaman</dt><dd>${p.depth_km} km (${escapeHtml(p.depth_class)})</dd>
         ${p.dirasakan ? `<dt>Dirasakan</dt><dd>${escapeHtml(p.dirasakan)} <span class="muted">skala MMI</span></dd>` : ''}
         ${!p.tsunami && p.potensi ? `<dt>Keterangan</dt><dd>${escapeHtml(p.potensi)}</dd>` : ''}
+        ${p.usgs ? `<dt>USGS</dt><dd>M ${formatDecimal(p.usgs.magnitude)}${p.usgs.mag_type ? ` <span class="muted">${escapeHtml(p.usgs.mag_type)}</span>` : ''}</dd>` : ''}
       </dl>
       ${p.shakemap ? `<a class="popup-link" href="${escapeHtml(p.shakemap)}" target="_blank" rel="noopener">Peta guncangan BMKG${icons.external}</a>` : ''}
       <p class="popup-source">Sumber: ${escapeHtml(p.source)}</p>
@@ -173,7 +174,10 @@ export function createEarthquakeLayer(map, { viewPadding } = {}) {
     async load() {
       const collection = await getJson('/api/earthquakes?days=7');
       loaded = true;
-      const next = JSON.stringify(collection.features.map((f) => [f.properties.id, f.properties.magnitude, f.properties.depth_km]));
+      // Pasangan USGS biasanya baru ada ±15 menit setelah gempa BMKG terbit.
+      const next = JSON.stringify(
+        collection.features.map((f) => [f.properties.id, f.properties.magnitude, f.properties.depth_km, f.properties.usgs?.id]),
+      );
       if (next !== signature) {
         signature = next;
         render(collection);

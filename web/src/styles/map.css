@@ -729,9 +729,34 @@
   animation-delay: 1.73s;
 }
 
+/* ---------- Gempa USGS: cincin kosong seukuran magnitudo ---------- */
+/* Pembanding BMKG dengan warna kedalaman yang sama. Cincin tanpa isi dan sedikit
+   lebih besar dari cakram BMKG, jadi gempa yang tercatat di kedua katalog tampak
+   sebagai cakram BMKG bercincin. */
+.usgs-symbol {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2.5px solid var(--c);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1px var(--glyph-outline),
+    inset 0 0 0 1px var(--glyph-outline);
+  animation: pop-in 0.5s var(--ease-spring) backwards;
+  animation-delay: calc(var(--i, 0) * 30ms);
+  transition: transform 0.2s var(--ease-spring);
+}
+
+.usgs-icon:hover .usgs-symbol,
+.usgs-icon:focus-visible .usgs-symbol {
+  transform: scale(1.15);
+}
+
 /* Penanda yang baru dituju (diklik atau dipilih dari daftar): cincin biru,
    warna pilihan di antarmuka, memancar dua kali setelah peta berhenti. */
 .quake-symbol.is-focused::after,
+.usgs-symbol.is-focused::after,
 .volcano-marker.is-focused::after {
   content: '';
   position: absolute;

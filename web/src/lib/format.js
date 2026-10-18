@@ -37,6 +37,31 @@ export const capitalize = (text) => (text ? text[0].toUpperCase() + text.slice(1
 // menjadi "Laut 46 km utara Ruteng" untuk daftar dan popup.
 export const shortQuakeRegion = (text) => capitalize(String(text ?? '').replace(/^pusat gempa berada di\s+/i, '').trim());
 
+// Teks lokasi USGS "55 km NNW of Ruteng, Indonesia" → "55 km utara barat laut
+// Ruteng" (negara lain tetap disebut, mis. "…, Filipina"). Teks berpola lain,
+// mis. "Banda Sea", ditampilkan apa adanya.
+const COMPASS = {
+  N: 'utara', NNE: 'utara timur laut', NE: 'timur laut', ENE: 'timur timur laut',
+  E: 'timur', ESE: 'timur tenggara', SE: 'tenggara', SSE: 'selatan tenggara',
+  S: 'selatan', SSW: 'selatan barat daya', SW: 'barat daya', WSW: 'barat barat daya',
+  W: 'barat', WNW: 'barat barat laut', NW: 'barat laut', NNW: 'utara barat laut',
+};
+const COUNTRIES = {
+  Indonesia: '',
+  Philippines: 'Filipina',
+  'Papua New Guinea': 'Papua Nugini',
+  'East Timor': 'Timor Leste',
+  'Solomon Islands': 'Kepulauan Solomon',
+};
+export function usgsPlace(text) {
+  const raw = String(text ?? '').trim();
+  const match = raw.match(/^(\d+) km ([NESW]{1,3}) of (.+?)(?:, ([^,]+))?$/);
+  if (!match || !COMPASS[match[2]]) return raw;
+  const [, km, direction, place, country] = match;
+  const name = country === undefined ? '' : (COUNTRIES[country] ?? country);
+  return `${km} km ${COMPASS[direction]} ${place}${name ? `, ${name}` : ''}`;
+}
+
 const relativeFormat = new Intl.RelativeTimeFormat('id-ID', { numeric: 'auto' });
 const UNITS = [
   ['day', 86_400],

@@ -44,7 +44,8 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
   Semua animasi mati otomatis bila pengguna mengaktifkan "kurangi gerakan".
 - **Peta dasar:** kanvas abu-abu terang dan gelap (Esri), kemanusiaan (HOT), OpenStreetMap, relief (OpenTopoMap), dan citra satelit (Esri), dipilih lewat menu bergambar. Peta dasar awal menyesuaikan tema saat halaman dibuka. Warna garis sesar, lempeng, batas wilayah, dan tepi simbol mengikuti terang-gelapnya peta dasar supaya tetap kontras.
 - **Elemen kartografi:** legenda dinamis yang bisa dilipat, skala batang, arah utara, angka skala 1:n beserta klasifikasinya, dan koordinat kursor dalam WGS84, UTM, dan EPSG:3857.
-- **Gempa BMKG:** disinkronkan tiap 60 detik. Feed publik BMKG hanya memuat gempa M ≥ 5 dan gempa dirasakan, jadi gempa kecil yang tidak dirasakan tidak tampil dan tidak ikut dihitung. Simbolnya cakram berlapis seukuran magnitudo, berwarna kelas kedalaman, dan makin pudar seiring umur (sampai 7 hari). Popup memuat penanda potensi tsunami dan tautan shakemap.
+- **Gempa BMKG:** disinkronkan tiap 60 detik. Feed publik BMKG hanya memuat gempa M ≥ 5 dan gempa dirasakan, jadi gempa kecil yang tidak dirasakan tidak tampil dan tidak ikut dihitung. Simbolnya cakram berlapis seukuran magnitudo, berwarna kelas kedalaman, dan makin pudar seiring umur (sampai 7 hari). Popup memuat penanda potensi tsunami, tautan shakemap, dan magnitudo USGS bila gempanya juga tercatat USGS.
+- **Gempa USGS sebagai pembanding** (mati bawaan): katalog U.S. Geological Survey untuk kawasan yang sama, disinkronkan tiap menit. USGS mencatat gempa tidak dirasakan mulai ±M4 yang tidak ada di feed publik BMKG; sebaliknya gempa kecil yang dirasakan hanya ada di BMKG. Simbolnya cincin kosong seukuran magnitudo. Gempa yang tercatat di kedua katalog (waktu berselisih ≤ 60 detik dan pusatnya ≤ 100 km) tampak sebagai cakram BMKG bercincin, dan popup masing-masing menyebut pasangannya. Gempa USGS tidak ikut dihitung di Ikhtisar maupun cek risiko.
 - **Status gunung api:** 69 gunung api dari MAGMA/PVMBG, disinkronkan tiap 30 menit. Simbolnya kerucut berfaset berwarna level PVMBG (gaya terinspirasi ikon peta MAGMA, digambar sendiri); Siaga/Awas lebih besar. Status sedang erupsi dan VONA (peringatan abu vulkanik untuk penerbangan) ikut diambil dari MAGMA.
 - **Filter penanda:** tombol corong di bilah alat kanan menyalakan atau mematikan penanda gempa dan gunung api, serta menyaring gempa menurut kedalaman, magnitudo minimum, dan waktu (24 jam, 3 hari, 7 hari), dan gunung api menurut tingkat aktivitas. Menu menunjukkan jumlah titik yang tampil; titik biru di tombol menandakan ada penanda yang disembunyikan. Gempa atau gunung api yang dipilih dari daftar tetap ditampilkan walau tersaring.
 - **Peta rawan InaRISK BNPB:** gempa bumi, cuaca ekstrem, banjir, tanah longsor, dan gunung api, masing-masing dalam 3 kelas bahaya. Ditambah zona kerentanan gerakan tanah (ZKGT) PVMBG dengan warna kelas yang sama.
@@ -58,6 +59,7 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
 - **Hujan dan longsor:**
   - peringatan dini curah hujan tinggi BMKG (CEWS) dasarian berjalan, digambar di batas kab/kota (Waspada, Siaga, Awas) dan didaftar di Ikhtisar; klik untuk menuju wilayahnya;
   - hujan terkini dari satelit NASA GPM IMERG (rata-rata 30 menit, terlambat ±4–6 jam; waktu datanya tertulis di legenda);
+  - citra awan satelit Himawari-9 milik JMA Jepang (mati bawaan): suhu puncak awan dari kanal inframerah tiap 10 menit, terlambat ±30–75 menit, lewat NASA GIBS. Browser membuat permukaan tanpa awan transparan supaya peta dasar tetap terlihat; puncak awan konvektif yang dingin tetap berwarna;
   - riwayat 1.884 kejadian longsor PVMBG dan MAGMA, segitiga ungu yang makin gelap makin baru.
 - **Logo Kontur:** huruf S dari tiga garis kontur di sekitar titik puncak amber. Di layar pembuka, titik muncul lebih dulu, garis kontur tergambar bergantian, lalu sinyal memancar dari titik itu.
 - **Data geologi dan wilayah:** sesar aktif PuSGeN 2024, batas lempeng tektonik, dan batas 514 kabupaten/kota (Kepmendagri 2025).
@@ -144,7 +146,7 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 | Endpoint | Isi |
 |---|---|
 | `GET /api/health` | Status database dan sinkronisasi tiap sumber |
-| `GET /api/earthquakes?days=7` | Gempa dalam 1–90 hari terakhir (GeoJSON) |
+| `GET /api/earthquakes?days=7` | Gempa BMKG dalam 1–90 hari terakhir (GeoJSON); tambahkan `&source=usgs` untuk katalog USGS. Tiap gempa membawa pasangannya di katalog lain (`usgs` atau `bmkg`), atau `null` |
 | `GET /api/volcanoes` | Gunung api beserta status level, erupsi, dan VONA |
 | `GET /api/faults` | Segmen sesar aktif PuSGeN 2024 |
 | `GET /api/wilayah?tingkat=provinsi` atau `kabkota` | Batas wilayah, disederhanakan untuk tampilan |
@@ -153,6 +155,7 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 | `GET /api/landslides` | Riwayat kejadian gerakan tanah PVMBG dan MAGMA (GeoJSON) |
 | `GET /api/rain-warnings/summary` | Peringatan hujan BMKG tanpa geometri, dengan provinsi dan batas wilayah, untuk daftar |
 | `GET /api/rain-now` | Waktu dan URL petak peta hujan satelit NASA IMERG terbaru |
+| `GET /api/clouds-now` | Waktu dan URL petak citra awan inframerah Himawari-9 terbaru |
 | `GET /api/outlook` | Indikasi SIGAP 3 hari terbaru: level hujan lebat, banjir, dan tanah longsor per kab/kota beserta alasan, hari puncak, dan titik pantau terparah, plus jumlah kab/kota per level |
 | `GET /api/geocode?q=bandung` | Pencarian kab/kota (database) dan tempat lain (Nominatim) |
 
@@ -161,6 +164,7 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 | Data | Sumber | Ketentuan |
 |---|---|---|
 | Gempa bumi | [BMKG](https://data.bmkg.go.id/) | Wajib mencantumkan BMKG sebagai sumber |
+| Gempa bumi (pembanding) | Feed GeoJSON waktu nyata [USGS](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) | Public domain; cantumkan USGS |
 | Indeks bahaya (cek titik, sampel, dan raster kelas ±550 m untuk indikasi 3 hari), sesar aktif | [InaRISK BNPB](https://inarisk.bnpb.go.id/); model sesar PuSGeN 2024 | Cantumkan BNPB dan PuSGeN |
 | Status gunung api | [MAGMA Indonesia](https://magma.esdm.go.id/), PVMBG Kementerian ESDM | Cantumkan PVMBG |
 | Prakiraan potensi gerakan tanah bulanan, ZKGT, dan riwayat kejadian longsor | PVMBG, Badan Geologi, Kementerian ESDM ([Portal MBG](https://vsi.esdm.go.id/portalmbg/) dan MAGMA Indonesia) | Cantumkan PVMBG. Riwayat disusun ulang oleh `research/01_inventaris.py` tanpa data pribadi |
@@ -170,5 +174,6 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 | Laporan warga (arsip riset) | [PetaBencana.id](https://petabencana.id/) | CC BY-NC 4.0 |
 | Prakiraan hujan (juga untuk indikasi 3 hari) dan elevasi | [Open-Meteo](https://open-meteo.com/) (elevasi dari Copernicus DEM 90 m) | CC BY 4.0, gratis untuk nonkomersial |
 | Hujan satelit | [NASA GPM IMERG](https://gpm.nasa.gov/data/imerg) Early Run, lewat NASA GIBS | Data terbuka NASA; cantumkan NASA |
+| Citra awan satelit | Himawari-9 kanal 13 (inframerah), [Japan Meteorological Agency](https://www.jma.go.jp/), lewat NASA GIBS | Cantumkan JMA dan NASA |
 | Pencarian tempat | [Nominatim](https://nominatim.org/) © OpenStreetMap contributors | ODbL; maksimal 1 request/detik, tanpa autocomplete |
 | Peta dasar | Esri; © OpenStreetMap contributors (ODbL); Humanitarian OpenStreetMap Team; OpenTopoMap | CC-BY-SA untuk OpenTopoMap |

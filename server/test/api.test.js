@@ -54,6 +54,7 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       },
     },
     rainNow: async () => ({ layer: 'IMERG_Precipitation_Rate_30min', time: '2026-09-27T11:30:00Z', tile_url: 'https://contoh/{z}/{y}/{x}.png' }),
+    cloudsNow: async () => ({ layer: 'Himawari_AHI_Band13_Clean_Infrared', time: '2026-10-18T16:30:00Z', tile_url: 'https://contoh/awan/{z}/{y}/{x}.png' }),
     // CEWS palsu: Kabupaten Uji berstatus Siaga pada dasarian III September 2026.
     rainWarnings: async () => ({
       dasarian: { year: 2026, month: 9, num: 3, start: '2026-09-21', end: '2026-09-30' },
@@ -138,6 +139,64 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
     assert.deepEqual(await read(), before);
   });
 
+  test('gempa USGS tampil terpisah dari BMKG, dengan pasangan gempa yang sama di katalog lain', async () => {
+    const { syncUsgsEarthquakes } = await import('../src/jobs/sync-earthquakes.js');
+    const { runJob } = await import('../src/jobs/scheduler.js');
+    const at = Date.now() - 3_600_000;
+    const iso = (ms) => new Date(ms).toISOString();
+    await syncEarthquakes({
+      fetchEvents: async () => ({
+        events: [quake({ id: 'bmkg:uji-ruteng', magnitude: 5.3, occurredAt: iso(at), lat: -8.14, lon: 120.29, props: { wilayah: '60 km TimurLaut LABUANBAJO' } })],
+        errors: [],
+      }),
+    });
+    const usgs = (overrides) => ({
+      source: 'usgs', hazard: 'gempa', magnitude: 5.2, depthKm: 10, lat: -8.1449, lon: 120.2734,
+      props: { wilayah: '55 km NNW of Ruteng, Indonesia', mag_type: 'mb', status: 'reviewed' },
+      ...overrides,
+    });
+    const feeds = [];
+    const fetchEvents = async ({ feed }) => {
+      feeds.push(feed);
+      return {
+        events: [
+          usgs({ id: 'usgs:uji-ruteng', occurredAt: iso(at - 2_000) }),
+          // Dua menit lebih awal: gempa lain, bukan pasangan gempa BMKG.
+          usgs({ id: 'usgs:uji-sebelum', magnitude: 4.6, occurredAt: iso(at - 120_000) }),
+          // Dekat titik uji cek risiko; tidak boleh ikut dihitung di sana.
+          usgs({ id: 'usgs:uji-dekat-titik', magnitude: 6.1, occurredAt: iso(at), lat: -7.05, lon: 107.05 }),
+        ],
+        errors: [],
+      };
+    };
+    // Belum pernah sinkron: feed mingguan; setelah ada sinkronisasi sukses: feed harian.
+    await runJob({ source: 'usgs-gempa', run: () => syncUsgsEarthquakes({ fetchEvents }) });
+    await syncUsgsEarthquakes({ fetchEvents });
+    assert.deepEqual(feeds, ['week', 'day']);
+
+    const { body } = await getJson('/earthquakes?source=usgs');
+    assert.equal(body.meta.source, 'usgs');
+    assert.ok(body.meta.synced_at);
+    assert.match(body.attribution, /USGS/);
+    const usgsById = Object.fromEntries(body.features.map((f) => [f.properties.id, f.properties]));
+    assert.deepEqual(Object.keys(usgsById).sort(), ['usgs:uji-dekat-titik', 'usgs:uji-ruteng', 'usgs:uji-sebelum']);
+    const ruteng = usgsById['usgs:uji-ruteng'];
+    assert.equal(ruteng.source, 'USGS');
+    assert.equal(ruteng.mag_type, 'mb');
+    assert.equal(ruteng.bmkg.id, 'bmkg:uji-ruteng');
+    assert.equal(ruteng.bmkg.magnitude, 5.3);
+    assert.equal(ruteng.bmkg.time_diff_s, 2);
+    assert.ok(ruteng.bmkg.distance_km < 5, `jarak ${ruteng.bmkg.distance_km}`);
+    assert.equal(usgsById['usgs:uji-sebelum'].bmkg, null);
+
+    // Tampilan BMKG tetap hanya gempa BMKG; pasangannya dari USGS ikut dikirim.
+    const { body: bmkg } = await getJson('/earthquakes');
+    assert.ok(bmkg.features.every((f) => f.properties.source === 'BMKG'));
+    const { distance_km: distanceKm, ...pair } = bmkg.features.find((f) => f.properties.id === 'bmkg:uji-ruteng').properties.usgs;
+    assert.deepEqual(pair, { id: 'usgs:uji-ruteng', magnitude: 5.2, mag_type: 'mb', url: null, time_diff_s: -2 });
+    assert.equal(distanceKm, ruteng.bmkg.distance_km);
+  });
+
   test('perubahan level gunung api mengisi level_changed_at', async () => {
     const merapi = (level) => [{ kode: 'MER', nama: 'Merapi', kabupaten: 'Sleman', provinsi: 'DIY', elevasiM: 2968, level, lat: -7.542, lon: 110.442 }];
     await syncVolcanoes({ fetchVolcanoes: async () => merapi(2) });
@@ -170,6 +229,7 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
 
   test('parameter tidak valid dan endpoint tak dikenal dijawab dengan jelas', async () => {
     assert.equal((await getJson('/wilayah?tingkat=desa')).status, 400);
+    assert.equal((await getJson('/earthquakes?source=jma')).status, 400);
     assert.equal((await getJson('/tidak-ada')).status, 404);
   });
 
@@ -223,7 +283,8 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       assert.deepEqual(body.nearest_fault.closest_point, [107, -6.8]);
       assert.ok(Math.abs(body.nearest_volcanoes[0].distance_km - 33.2) < 0.3);
       assert.equal(body.nearest_volcanoes[0].level_label, 'Waspada');
-      // Gempa uji pertama (Selat Sunda, ±196 km) berada di luar radius 100 km.
+      // Gempa uji pertama (Selat Sunda, ±196 km) berada di luar radius 100 km, dan
+      // gempa USGS M6,1 di dekat titik ini tidak dihitung (hanya BMKG).
       assert.equal(body.recent_quakes.count, 1);
       assert.equal(body.recent_quakes.strongest.magnitude, 5.2);
       assert.ok(body.recommendations.some((t) => t.startsWith('Indikasi waspada banjir')));
@@ -267,6 +328,13 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       const { status, body } = await getJson('/rain-now');
       assert.equal(status, 200);
       assert.equal(body.time, '2026-09-27T11:30:00Z');
+    });
+
+    test('waktu citra awan Himawari-9 terbaru diteruskan dari layanan GIBS', async () => {
+      const { status, body } = await getJson('/clouds-now');
+      assert.equal(status, 200);
+      assert.equal(body.layer, 'Himawari_AHI_Band13_Clean_Infrared');
+      assert.equal(body.time, '2026-10-18T16:30:00Z');
     });
 
     test('riwayat longsor tampil sebagai GeoJSON [lon, lat]', async () => {

@@ -51,7 +51,7 @@ export function createApp({ services = {} } = {}) {
     volcanoesRouter,
     referenceRouter,
     createRiskRouter({ rainWarnings, ...services.risk }),
-    createLandslideRouter({ rainWarnings, rainNow: services.rainNow }),
+    createLandslideRouter({ rainWarnings, rainNow: services.rainNow, cloudsNow: services.cloudsNow }),
     createOutlookRouter(services.outlook),
     createGeocodeRouter(services.geocode),
   );

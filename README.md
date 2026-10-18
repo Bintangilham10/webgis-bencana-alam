@@ -49,10 +49,12 @@ The logo is an **S drawn from three contour lines** around an amber summit point
 
 ### Live hazards on one map
 - **SIGAP 3-day outlook** for all 514 regencies and cities, recomputed every 12 hours: heavy rain, flood, and landslide levels from Open-Meteo rain at 3,219 monitoring points × InaRISK hazard classes. The map always covers today and the next two days. It is on by default, and each popup shows BMKG's official warning next to it. It is a system indication, not an official warning.
-- **Earthquakes** from BMKG, synced every 60 seconds. BMKG's public feeds list M 5+ and felt earthquakes only, so smaller unfelt events are not shown or counted. Circles are sized by magnitude, coloured by depth class, and fade over 7 days. Popups carry the tsunami flag and the ShakeMap.
+- **Earthquakes** from BMKG, synced every 60 seconds. BMKG's public feeds list M 5+ and felt earthquakes only, so smaller unfelt events are not shown or counted. Circles are sized by magnitude, coloured by depth class, and fade over 7 days. Popups carry the tsunami flag, the ShakeMap, and the USGS magnitude when USGS recorded the same event.
+- **USGS earthquakes for comparison** (off by default): the U.S. Geological Survey catalogue for the same region, synced every minute. USGS lists unfelt events from about M 4 that BMKG's public feeds leave out, while small felt earthquakes appear only in BMKG. Hollow rings are sized by magnitude; an event in both catalogues (origin times within 60 s, epicentres within 100 km) shows as a BMKG disc inside a ring, and each popup names its counterpart. USGS events are not counted in the overview or in risk checks.
 - **Volcanoes** from MAGMA Indonesia, synced every 30 minutes, with alert level I–IV, eruption status, and aviation ash warnings (VONA).
 - **Heavy-rain warnings** from BMKG CEWS for the current dasarian (10-day period), drawn on regency boundaries and listed in the overview.
 - **Rain from satellite**: the latest 30-minute NASA GPM IMERG rainfall, about 4–6 hours behind real time (the legend shows the data time).
+- **Clouds from Himawari-9** (JMA, Japan; off by default): infrared cloud-top temperature every 10 minutes, about 30–75 minutes behind, through NASA GIBS. The browser makes cloud-free ground transparent so the basemap stays visible, while cold convective tops keep their colours.
 - **Landslides**: 1,884 past events from PVMBG and MAGMA, coloured by age.
 - **Hazard maps** from BNPB InaRISK for earthquake, extreme weather, flood, landslide, and volcano, in the three official BNPB classes, plus the PVMBG landslide susceptibility zones (ZKGT) in the same colours.
 - **Geology and boundaries**: active faults, tectonic plate boundaries (Bird 2003), and 514 regency and city boundaries.
@@ -323,7 +325,7 @@ Every endpoint returns JSON; spatial data is GeoJSON with `[lon, lat]` coordinat
 | Endpoint | Returns |
 |---|---|
 | `GET /api/health` | Database status and the last sync of each source |
-| `GET /api/earthquakes?days=7` | Earthquakes from the last 1–90 days |
+| `GET /api/earthquakes?days=7` | BMKG earthquakes from the last 1–90 days; `&source=usgs` returns the USGS catalogue instead. Each event carries its counterpart in the other catalogue (`usgs` or `bmkg`), or `null` |
 | `GET /api/volcanoes` | Volcanoes with alert level, eruption status, and VONA |
 | `GET /api/faults` | PuSGeN 2024 active fault segments |
 | `GET /api/wilayah?tingkat=provinsi` or `kabkota` | Province or regency boundaries, simplified for display |
@@ -331,6 +333,7 @@ Every endpoint returns JSON; spatial data is GeoJSON with `[lon, lat]` coordinat
 | `GET /api/rain-warnings` | Regencies under a BMKG heavy-rain warning (Waspada or higher) for the current dasarian |
 | `GET /api/rain-warnings/summary` | The same warnings without geometry, with province and bounds, for lists |
 | `GET /api/rain-now` | Time and tile URL of the latest NASA IMERG rainfall map |
+| `GET /api/clouds-now` | Time and tile URL of the latest Himawari-9 infrared image |
 | `GET /api/outlook` | Latest SIGAP 3-day outlook: heavy rain, flood, and landslide level per regency, with reason, peak day, and worst monitoring point, plus counts per level |
 | `GET /api/landslides` | Landslide history from PVMBG and MAGMA |
 | `GET /api/geocode?q=bandung` | Regency search in the database, other places through Nominatim |
@@ -370,6 +373,7 @@ Shortened from the real response. If one source fails, only its own part carries
 | Data | Source | Terms |
 |---|---|---|
 | Earthquakes | [BMKG](https://data.bmkg.go.id/) | Credit BMKG as the source |
+| Earthquakes (comparison) | [USGS](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) real-time GeoJSON feeds | Public domain; credit USGS |
 | Heavy-rain early warnings | [BMKG CEWS](https://cews.bmkg.go.id/) | Credit BMKG as the source |
 | Hazard indices (point lookups, samples, and ~550 m class rasters for the outlook), active faults | [BNPB InaRISK](https://inarisk.bnpb.go.id/); PuSGeN 2024 fault model | Credit BNPB and PuSGeN |
 | Volcano alert levels | [MAGMA Indonesia](https://magma.esdm.go.id/), PVMBG, Ministry of Energy and Mineral Resources | Credit PVMBG |
@@ -379,6 +383,7 @@ Shortened from the real response. If one source fails, only its own part carries
 | Citizen reports (research archive) | [PetaBencana.id](https://petabencana.id/) | CC BY-NC 4.0 |
 | Rain forecast (also for the 3-day outlook), ensemble, elevation | [Open-Meteo](https://open-meteo.com/) (ECMWF; Copernicus DEM 90 m) | CC BY 4.0, free for non-commercial use |
 | Satellite rainfall | [NASA GPM IMERG](https://gpm.nasa.gov/data/imerg) Early Run through [NASA GIBS](https://www.earthdata.nasa.gov/engage/open-data-services-software/earthdata-developer-portal/gibs-api) | Open NASA data; credit NASA |
+| Satellite clouds | Himawari-9 band 13 infrared, [Japan Meteorological Agency](https://www.jma.go.jp/), through NASA GIBS | Credit JMA and NASA |
 | Place search | [Nominatim](https://nominatim.org/), © OpenStreetMap contributors | ODbL; at most 1 request per second, no autocomplete |
 | Basemaps | Esri; © OpenStreetMap contributors (ODbL); Humanitarian OpenStreetMap Team; OpenTopoMap | CC-BY-SA for OpenTopoMap |
 

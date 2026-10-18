@@ -3,7 +3,7 @@ import { query } from '../db.js';
 import { memoize } from '../lib/cache.js';
 import { featureCollection } from '../lib/geojson.js';
 import { ATTRIBUTION as CEWS_ATTRIBUTION, LEVEL_LABELS } from '../sources/bmkg-cews.js';
-import { fetchLatestImerg } from '../sources/gibs.js';
+import { fetchLatestHimawari, fetchLatestImerg } from '../sources/gibs.js';
 
 const ONE_HOUR_MS = 60 * 60 * 1000;
 // Sama dengan toleransi batas kab/kota di reference.js.
@@ -76,8 +76,8 @@ const header = (warnings) => ({
   fetched_at: warnings.fetched_at,
 });
 
-// rainNow dapat diganti saat test supaya tidak memanggil NASA GIBS.
-export function createLandslideRouter({ rainWarnings, rainNow = fetchLatestImerg }) {
+// rainNow dan cloudsNow dapat diganti saat test supaya tidak memanggil NASA GIBS.
+export function createLandslideRouter({ rainWarnings, rainNow = fetchLatestImerg, cloudsNow = fetchLatestHimawari }) {
   const router = Router();
   // Data CEWS sendiri di-cache 3 jam; lapisan ini disusun ulang paling sering tiap 10 menit.
   const loadWarningLayer = memoize(async () => {
@@ -90,6 +90,8 @@ export function createLandslideRouter({ rainWarnings, rainNow = fetchLatestImerg
   }, 10 * 60 * 1000);
   // IMERG terbit tiap 30 menit dengan jeda ±5 jam.
   const loadRainNow = memoize(() => rainNow(), 15 * 60 * 1000);
+  // Citra awan Himawari-9 terbit tiap 10 menit dengan jeda ±30–75 menit.
+  const loadCloudsNow = memoize(() => cloudsNow(), 5 * 60 * 1000);
 
   const sendOr502 = (load, source) => async (req, res) => {
     let body;
@@ -107,6 +109,7 @@ export function createLandslideRouter({ rainWarnings, rainNow = fetchLatestImerg
   router.get('/rain-warnings', sendOr502(loadWarningLayer, 'CEWS BMKG'));
   router.get('/rain-warnings/summary', sendOr502(loadWarningSummary, 'CEWS BMKG'));
   router.get('/rain-now', sendOr502(loadRainNow, 'NASA GIBS'));
+  router.get('/clouds-now', sendOr502(loadCloudsNow, 'NASA GIBS'));
 
   return router;
 }

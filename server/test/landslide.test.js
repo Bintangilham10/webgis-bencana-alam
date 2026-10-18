@@ -8,7 +8,7 @@ import { slopeClass } from '../src/lib/warning-rules.js';
 import { buildRiskProfile } from '../src/risk/profile.js';
 import { codeLevels, dasarianRange, levelFor } from '../src/sources/bmkg-cews.js';
 import { parseForecast, slopeDegrees, slopeStencil } from '../src/sources/open-meteo.js';
-import { latestTime } from '../src/sources/gibs.js';
+import { HIMAWARI, latestTime, tileUrl } from '../src/sources/gibs.js';
 import { monthOf, parseFeatureInfoText } from '../src/sources/pvmbg.js';
 
 // Fixture = respons asli sumber, sama dengan fixture perekam (diambil 27 Sep 2026).
@@ -217,5 +217,16 @@ describe('NASA GIBS', () => {
     assert.equal(latestTime(xml('2026-09-27/2026-09-27T11:30:00Z/PT30M')), '2026-09-27T11:30:00Z');
     assert.equal(latestTime(xml('2026-09-25T00:00:00Z/2026-09-25T06:00:00Z/PT30M,2026-09-26T10:00:00Z/2026-09-26T23:30:00Z/PT30M')), '2026-09-26T23:30:00Z');
     assert.throws(() => latestTime('<Domains></Domains>'), /tidak dikenal/);
+  });
+
+  test('citra Himawari-9: waktu terbaru melewati jeda citra harian, petak memakai waktu itu', () => {
+    // Domain asli 18 Okt 2026: Himawari tidak memotret pukul 02.40 dan 14.40 UTC.
+    const domain = '2026-10-17T17:10:00Z/2026-10-18T02:30:00Z/PT10M,2026-10-18T02:50:00Z/2026-10-18T14:30:00Z/PT10M,2026-10-18T14:50:00Z/2026-10-18T16:30:00Z/PT10M';
+    const time = latestTime(`<Domains><DimensionDomain><Domain>${domain}</Domain></DimensionDomain></Domains>`);
+    assert.equal(time, '2026-10-18T16:30:00Z');
+    assert.equal(
+      tileUrl(HIMAWARI, time),
+      'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/Himawari_AHI_Band13_Clean_Infrared/default/2026-10-18T16:30:00Z/GoogleMapsCompatible_Level6/{z}/{y}/{x}.png',
+    );
   });
 });

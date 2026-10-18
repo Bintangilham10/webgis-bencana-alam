@@ -1,14 +1,17 @@
 import { fetchText } from '../lib/http.js';
 
-// Hujan satelit NASA GPM IMERG (Early Run, rata-rata 30 menit) lewat NASA GIBS.
-// Petak peta diambil langsung oleh browser; server hanya mencari waktu data
-// terbaru supaya peta dan legendanya menyebut jam pengamatan yang sama.
-export const IMERG_LAYER = 'IMERG_Precipitation_Rate_30min';
+// Citra satelit lewat NASA GIBS: hujan NASA GPM IMERG (Early Run, rata-rata 30
+// menit) dan awan inframerah Himawari-9 milik JMA Jepang (tiap 10 menit). Petak
+// peta diambil langsung oleh browser; server hanya mencari waktu data terbaru
+// supaya peta dan legendanya menyebut jam pengamatan yang sama.
 const GIBS = 'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best';
-const MATRIX_SET = 'GoogleMapsCompatible_Level6';
-const LOOKBACK_MS = 2 * 24 * 60 * 60 * 1000;
+const DAY_MS = 24 * 60 * 60 * 1000;
 
-export const imergTileUrl = (time) => `${GIBS}/${IMERG_LAYER}/default/${time}/${MATRIX_SET}/{z}/{y}/{x}.png`;
+export const IMERG = { layer: 'IMERG_Precipitation_Rate_30min', matrixSet: 'GoogleMapsCompatible_Level6', lookbackMs: 2 * DAY_MS };
+// Kanal 13 (inframerah ±10,4 µm): suhu puncak awan, siang maupun malam.
+export const HIMAWARI = { layer: 'Himawari_AHI_Band13_Clean_Infrared', matrixSet: 'GoogleMapsCompatible_Level6', lookbackMs: DAY_MS };
+
+export const tileUrl = ({ layer, matrixSet }, time) => `${GIBS}/${layer}/default/${time}/${matrixSet}/{z}/{y}/{x}.png`;
 
 const iso = (date) => `${date.toISOString().slice(0, 19)}Z`;
 
@@ -21,9 +24,12 @@ export function latestTime(domainsXml) {
   return iso(new Date(end));
 }
 
-export async function fetchLatestImerg(now = new Date()) {
-  const from = iso(new Date(now.getTime() - LOOKBACK_MS));
-  const url = `${GIBS}/1.0.0/${IMERG_LAYER}/default/${MATRIX_SET}/all/${from}--${iso(now)}.xml`;
+async function fetchLatest(product, now) {
+  const from = iso(new Date(now.getTime() - product.lookbackMs));
+  const url = `${GIBS}/1.0.0/${product.layer}/default/${product.matrixSet}/all/${from}--${iso(now)}.xml`;
   const time = latestTime(await fetchText(url, { timeoutMs: 15_000 }));
-  return { layer: IMERG_LAYER, time, tile_url: imergTileUrl(time) };
+  return { layer: product.layer, time, tile_url: tileUrl(product, time) };
 }
+
+export const fetchLatestImerg = (now = new Date()) => fetchLatest(IMERG, now);
+export const fetchLatestHimawari = (now = new Date()) => fetchLatest(HIMAWARI, now);

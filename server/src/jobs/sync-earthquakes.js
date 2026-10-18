@@ -1,5 +1,12 @@
 import { query } from '../db.js';
 import { fetchBmkgEarthquakes } from '../sources/bmkg-gempa.js';
+import { fetchUsgsEarthquakes } from '../sources/usgs-gempa.js';
+import { lastSuccessfulSync } from '../sync-logs.js';
+
+// Feed USGS harian hanya memuat 24 jam terakhir. Bila sinkronisasi USGS terakhir
+// yang berhasil lebih lama dari ini (atau belum pernah), feed mingguan diambil
+// supaya gempa saat server mati tetap terisi.
+const USGS_BACKFILL_AFTER_MS = 20 * 60 * 60_000;
 
 // Baris hanya diperbarui bila ada perubahan, supaya updated_at mencerminkan
 // revisi BMKG (mis. magnitudo dikoreksi), bukan sekadar sinkronisasi ulang.
@@ -24,4 +31,12 @@ export async function syncEarthquakes({ fetchEvents = fetchBmkgEarthquakes } = {
     ]);
   }
   return { items: events.length, message: errors.length ? errors.join('; ') : null };
+}
+
+// Gempa USGS disimpan di tabel yang sama dengan source 'usgs'; tampilan BMKG
+// dan cek risiko hanya membaca source 'bmkg', jadi gempa yang sama tidak terhitung dua kali.
+export async function syncUsgsEarthquakes({ fetchEvents = fetchUsgsEarthquakes, now = Date.now() } = {}) {
+  const last = await lastSuccessfulSync('usgs-gempa');
+  const feed = last && now - new Date(last).getTime() < USGS_BACKFILL_AFTER_MS ? 'day' : 'week';
+  return syncEarthquakes({ fetchEvents: () => fetchEvents({ feed }) });
 }

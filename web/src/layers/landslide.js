@@ -1,12 +1,14 @@
 import L from 'leaflet';
 import { getJson } from '../lib/api.js';
+import { cloudsOnly } from '../lib/clouds.js';
 import { escapeHtml, formatDasarian, formatNumber } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
-import { CEWS_LEVELS, IMERG_RAMP, LANDSLIDE_AGES, landslideAgeColor, pillStyle } from '../lib/symbology.js';
+import { CEWS_LEVELS, CLOUD_RAMP, IMERG_RAMP, LANDSLIDE_AGES, landslideAgeColor, pillStyle } from '../lib/symbology.js';
 import { cssVar } from '../lib/theme.js';
 
 // Lapisan grup "Hujan dan longsor": peringatan dini curah hujan tinggi BMKG
-// (CEWS), hujan satelit NASA IMERG, dan riwayat kejadian gerakan tanah PVMBG.
+// (CEWS), hujan satelit NASA IMERG, citra awan Himawari-9 (JMA), dan riwayat
+// kejadian gerakan tanah PVMBG.
 
 const CEWS_PAGE = 'https://cews.bmkg.go.id/';
 const RELOAD_AFTER_MS = 30 * 60_000;
@@ -24,6 +26,7 @@ function fillLegend(key, text) {
 const legendText = {
   cews: 'Dasarian berjalan',
   imerg: 'Data terbaru NASA',
+  clouds: 'Citra terbaru Himawari-9',
   history: 'Kejadian PVMBG dan MAGMA; yang terbaru digambar paling atas.',
 };
 
@@ -118,6 +121,99 @@ export const imergLegend = () => `
   <div class="legend-ramp" aria-hidden="true">${IMERG_RAMP.map((c) => `<span style="background:${c.color}"></span>`).join('')}</div>
   <div class="legend-ramp-labels"><span>${IMERG_RAMP[0].mm}</span><span>${IMERG_RAMP[3].mm}</span><span>${IMERG_RAMP.at(-1).mm}+ mm/jam</span></div>
   <p class="legend-note">Rata-rata 30 menit dari satelit, terlambat ±4–6 jam (waktu data tertulis di atas). Hujan lokal yang singkat bisa terlewat.</p>`;
+
+// ---------- Citra awan Himawari-9 (JMA) ----------
+
+const CLOUDS_REFRESH_MS = 10 * 60_000;
+const CLOUDS_FALLBACK_URL =
+  'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/Himawari_AHI_Band13_Clean_Infrared/default/default/GoogleMapsCompatible_Level6/{z}/{y}/{x}.png';
+
+// Petak inframerah GIBS berupa gambar penuh; di browser permukaan tanpa awan
+// dibuat transparan (lib/clouds.js) supaya peta dasar tetap terlihat. GIBS
+// mengizinkan CORS, jadi piksel petak boleh dibaca kanvas.
+const CloudTiles = L.GridLayer.extend({
+  createTile(coords, done) {
+    const tile = L.DomUtil.create('canvas', 'leaflet-tile');
+    const size = this.getTileSize();
+    tile.width = size.x;
+    tile.height = size.y;
+    const image = new Image();
+    image.crossOrigin = 'anonymous';
+    image.onload = () => {
+      try {
+        const context = tile.getContext('2d', { willReadFrequently: true });
+        context.drawImage(image, 0, 0, size.x, size.y);
+        const pixels = context.getImageData(0, 0, size.x, size.y);
+        cloudsOnly(pixels.data, size.x);
+        context.putImageData(pixels, 0, 0);
+        done(null, tile);
+      } catch (err) {
+        done(err, tile);
+      }
+    };
+    image.onerror = () => done(new Error('Petak Himawari-9 gagal dimuat'), tile);
+    image.src = L.Util.template(this.options.url, coords);
+    return tile;
+  },
+  setUrl(url) {
+    this.options.url = url;
+    return this.redraw();
+  },
+});
+
+export function createCloudLayer({ onError } = {}) {
+  const group = L.layerGroup();
+  const options = {
+    pane: 'warnings',
+    maxNativeZoom: 6,
+    maxZoom: 19,
+    attribution: 'Citra awan: Himawari-9 (JMA) via NASA GIBS',
+  };
+  let tiles = null;
+  let time = null;
+  let timer = null;
+
+  // Waktu citra terbaru dari server; petak hanya digambar ulang bila citranya baru.
+  async function refresh() {
+    let url;
+    let next;
+    try {
+      const now = await getJson('/api/clouds-now');
+      url = now.tile_url;
+      next = now.time;
+      const at = new Date(now.time);
+      legendText.clouds = `Citra ${shortDate.format(at)}, ${clock.format(at).replace(':', '.')} WIB`;
+    } catch (err) {
+      // Waktu terbaru tidak diketahui: GIBS tetap bisa memberi citra terbarunya.
+      url = CLOUDS_FALLBACK_URL;
+      next = 'default';
+      legendText.clouds = 'Citra terbaru Himawari-9';
+      onError?.(err);
+    }
+    fillLegend('clouds', legendText.clouds);
+    if (!tiles) group.addLayer((tiles = new CloudTiles({ ...options, url })));
+    else if (next !== time) tiles.setUrl(url);
+    time = next;
+  }
+
+  group.on('add', () => {
+    refresh();
+    timer ??= setInterval(refresh, CLOUDS_REFRESH_MS);
+  });
+  group.on('remove', () => {
+    clearInterval(timer);
+    timer = null;
+  });
+  return group;
+}
+
+const celsius = (value) => String(value).replace('-', '−');
+
+export const cloudLegend = () => `
+  <p class="legend-note" data-legend-live="clouds">${escapeHtml(legendText.clouds)}</p>
+  <div class="legend-ramp" aria-hidden="true">${CLOUD_RAMP.map((c) => `<span style="background:${c.color}"></span>`).join('')}</div>
+  <div class="legend-ramp-labels"><span>${celsius(CLOUD_RAMP[0].c)}</span><span>${celsius(CLOUD_RAMP[4].c)}</span><span>${celsius(CLOUD_RAMP.at(-1).c)} °C</span></div>
+  <p class="legend-note">Suhu puncak awan dari kanal inframerah, tiap 10 menit, terlambat ±1 jam. Makin dingin makin tinggi awannya; puncak di bawah ±−40 °C (hijau sampai merah) umumnya awan hujan konvektif. Abu-abu di tengah merah: inti badai di bawah −70 °C. Permukaan tanpa awan transparan.</p>`;
 
 // ---------- Riwayat longsor ----------
 

@@ -491,6 +491,16 @@
   outline-offset: 3px;
 }
 
+/* Contoh cincin gempa USGS (pembanding BMKG). */
+.usgs-swatch {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--c, var(--ink-3));
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--glyph-outline);
+}
+
 /* Contoh kerucut gunung api (SVG sama dengan penanda di peta, versi kecil).
    Varian --erupting diberi kepulan abu diam di atas kawah. */
 .volcano-swatch {
