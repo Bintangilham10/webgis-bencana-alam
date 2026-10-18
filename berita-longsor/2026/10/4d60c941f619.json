@@ -1,0 +1,26 @@
+{
+  "guid": "CBMikwFBVV95cUxNdldyekpPRkVDcndoYk9jVFBLZGJEX3B5VDZOMTBOQ25KQlVZSDJWa2huVU1FVUUxYm9qWEJLSTVnV2pqSzNWUV9qNHdrcHlzVXlyb0V2TkQyakFGc2ZjR3lKT1p2V1oxWFhmbXUwMlhlUXctajMyQ0VCRGxLdWdWZFNLVUNDSXdTRkI3US1LN0dNVm8",
+  "title": "Jalan Padang Koto Gadang–Matur di Agam Lumpuh Total akibat Longsor - Sumbarkita.id",
+  "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdldyekpPRkVDcndoYk9jVFBLZGJEX3B5VDZOMTBOQ25KQlVZSDJWa2huVU1FVUUxYm9qWEJLSTVnV2pqSzNWUV9qNHdrcHlzVXlyb0V2TkQyakFGc2ZjR3lKT1p2V1oxWFhmbXUwMlhlUXctajMyQ0VCRGxLdWdWZFNLVUNDSXdTRkI3US1LN0dNVm8?oc=5",
+  "source": "Sumbarkita.id",
+  "source_url": "https://sumbarkita.id",
+  "published_at": "2026-10-18T14:12:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-18T19:30:33.554Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.71",
+      "nama": "Kota Padang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.06",
+      "nama": "Kabupaten Agam",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
