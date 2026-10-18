@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.18.18.62.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-19T00:25:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-19T00:35:00+07:00</effective>
+    <expires>2026-10-19T03:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 19 October 2026, 00:35 WIB di sebagian wilayah Kalimantan Tengah, khususnya di TEWEH BARU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 19 October 2026, 03:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/19/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-0.911,115.169 -0.911,115.169 -0.911,115.175 -0.911,115.175 -0.913,115.189 -0.913,115.190 -0.913,115.195 -0.914,115.195 -0.914,115.195 -0.913,115.199 -0.913,115.203 -0.913,115.205 -0.913,115.214 -0.913,115.221 -0.913,115.235 -0.913,115.241 -1.135,115.215 -1.136,115.200 -1.136,115.199 -1.136,115.198 -1.136,115.195 -1.137,115.180 -1.137,115.178 -1.137,115.172 -1.137,115.161 -1.137,115.160 -1.137,115.132 -1.137,115.132 -1.137,115.132 -1.137,115.132 -1.140,115.112 -1.140,115.110 -1.141,115.107 -1.142,115.097 -1.142,115.095 -1.138,115.073 -1.138,115.072 -1.137,115.070 -1.110,115.074 -1.091,115.064 -1.072,115.006 -1.061,114.998 -1.052,114.974 -1.049,114.948 -1.022,114.932 -1.002,114.911 -0.984,114.884 -0.976,114.863 -0.964,114.862 -0.952,114.867 -0.949,114.880 -0.965,114.884 -0.969,114.892 -0.959,114.909 -0.943,114.914 -0.944,114.934 -0.938,114.939 -0.935,114.940 -0.934,114.924 -0.926,114.905 -0.919,114.905 -0.912,114.914 -0.913,114.914 -0.913,114.915 -0.918,114.921 -0.920,114.944 -0.921,114.948 -0.923,114.968 -0.923,114.968 -0.923,114.969 -0.921,114.985 -0.921,114.985 -0.921,114.993 -0.919,115.016 -0.919,115.016 -0.908,115.123 -0.909,115.151 -0.909,115.152 -0.910,115.159 -0.910,115.165 -0.911,115.169</polygon>
+    </area>
+  </info>
+</alert>
