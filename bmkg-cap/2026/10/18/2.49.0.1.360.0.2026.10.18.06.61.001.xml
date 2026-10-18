@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.18.06.61.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-18T13:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-18T13:30:00+07:00</effective>
+    <expires>2026-10-18T15:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 18 October 2026, 13:30 WIB di sebagian wilayah Kalimantan Barat, khususnya di MEMPAWAH HULU, PONTIANAK BARAT, SUNGAI KUNYIT, SUNGAI RAYA, TUJUH BELAS.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 18 October 2026, 15:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/10/18/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>0.529,109.087 0.510,109.052 0.483,109.031 0.477,109.021 0.475,108.991 0.459,108.973 0.450,108.937 0.460,108.930 0.473,108.911 0.484,108.908 0.510,108.909 0.561,108.926 0.549,108.931 0.528,108.956 0.531,108.971 0.554,108.990 0.545,108.993 0.542,108.999 0.563,109.011 0.569,109.029 0.573,109.031 0.574,109.031 0.574,109.031 0.575,109.030 0.575,109.030 0.575,109.031 0.576,109.032 0.577,109.032 0.579,109.034 0.579,109.034 0.581,109.034 0.582,109.034 0.585,109.033 0.588,109.034 0.558,109.059 0.539,109.084 0.529,109.087</polygon>
+      <polygon>0.508,108.858 0.487,108.864 0.475,108.858 0.487,108.854 0.499,108.838 0.517,108.857 0.513,108.861 0.508,108.858</polygon>
+      <polygon>0.585,109.033 0.582,109.034 0.581,109.034 0.579,109.034 0.579,109.034 0.577,109.032 0.576,109.032 0.575,109.031 0.575,109.030 0.575,109.030 0.574,109.031 0.574,109.031 0.573,109.031 0.569,109.029 0.563,109.011 0.542,108.999 0.545,108.993 0.554,108.990 0.531,108.971 0.528,108.956 0.549,108.931 0.561,108.926 0.602,108.930 0.659,108.918 0.664,108.942 0.679,108.960 0.679,108.969 0.656,108.952 0.646,108.957 0.615,108.983 0.591,108.993 0.603,109.024 0.601,109.030 0.585,109.033</polygon>
+      <polygon>1.060,109.828 1.038,109.912 1.029,109.912 1.016,109.927 1.008,109.930 0.994,109.919 0.962,109.926 0.934,109.907 0.947,109.876 0.958,109.816 0.985,109.813 0.997,109.778 1.035,109.729 1.040,109.715 1.026,109.705 1.004,109.698 1.025,109.646 1.061,109.622 1.070,109.652 1.081,109.665 1.099,109.697 1.100,109.710 1.112,109.732 1.108,109.746 1.119,109.774 1.089,109.791 1.074,109.806 1.060,109.828</polygon>
+      <polygon>0.762,109.484 0.738,109.500 0.729,109.497 0.704,109.500 0.693,109.497 0.662,109.472 0.654,109.470 0.619,109.466 0.602,109.472 0.591,109.469 0.582,109.476 0.531,109.434 0.515,109.437 0.478,109.412 0.480,109.380 0.488,109.361 0.513,109.359 0.554,109.340 0.588,109.304 0.607,109.290 0.626,109.278 0.636,109.263 0.645,109.260 0.635,109.245 0.643,109.229 0.643,109.213 0.655,109.190 0.671,109.181 0.671,109.167 0.686,109.149 0.685,109.143 0.694,109.149 0.701,109.193 0.706,109.200 0.721,109.210 0.727,109.215 0.722,109.233 0.730,109.250 0.751,109.266 0.743,109.275 0.727,109.276 0.717,109.282 0.712,109.293 0.719,109.306 0.751,109.329 0.764,109.345 0.767,109.358 0.760,109.365 0.758,109.377 0.732,109.400 0.732,109.411 0.738,109.423 0.741,109.432 0.777,109.471 0.777,109.477 0.762,109.484</polygon>
+      <polygon>-0.016,109.334 -0.027,109.301 -0.041,109.285 -0.043,109.282 -0.027,109.272 -0.017,109.281 -0.017,109.285 0.002,109.287 -0.003,109.314 -0.016,109.334</polygon>
+    </area>
+  </info>
+</alert>
