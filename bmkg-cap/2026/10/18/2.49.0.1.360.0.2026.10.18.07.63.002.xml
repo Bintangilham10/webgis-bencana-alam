@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.18.07.63.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-18T15:25:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-18T15:35:00+08:00</effective>
+    <expires>2026-10-18T16:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 18 October 2026, 15:35 WITA di sebagian wilayah Kalimantan Selatan, khususnya di BANUA LAWAS, KELUA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 18 October 2026, 16:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKS/2026/10/18/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Selatan</areaDesc>
+      <polygon>-2.302,115.289 -2.341,115.309 -2.350,115.307 -2.359,115.285 -2.357,115.272 -2.352,115.247 -2.333,115.201 -2.292,115.132 -2.215,115.243 -2.257,115.262 -2.265,115.278 -2.283,115.276 -2.302,115.289</polygon>
+      <polygon>-2.224,115.291 -2.228,115.300 -2.226,115.310 -2.248,115.322 -2.250,115.329 -2.258,115.333 -2.290,115.318 -2.309,115.306 -2.302,115.289 -2.283,115.276 -2.265,115.278 -2.257,115.262 -2.215,115.243 -2.209,115.249 -2.200,115.239 -2.196,115.241 -2.205,115.252 -2.222,115.264 -2.224,115.291</polygon>
+    </area>
+  </info>
+</alert>
