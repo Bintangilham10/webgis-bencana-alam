@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-10-18T08:15:29.751Z",
+  "data": {
+    "Tanggal": "18 Okt 2026",
+    "Jam": "15:00:08 WIB",
+    "DateTime": "2026-10-18T08:00:08+00:00",
+    "Coordinates": "-8.09,120.26",
+    "Lintang": "8.09 LS",
+    "Bujur": "120.26 BT",
+    "Magnitude": "5.3",
+    "Kedalaman": "10 km",
+    "Wilayah": "60 km TimurLaut LABUANBAJO-NTT",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}

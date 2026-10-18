@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-18T08:15:29.751Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.5914368742,
+        -3.3187496
+      ]
+    },
+    "properties": {
+      "pkey": "399869",
+      "created_at": "2026-10-18T08:04:25.062Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "4ecb2dd5-a23e-40d0-a217-71d38a88089f",
+      "image_url": "https://images.petabencana.id/4ecb2dd5-a23e-40d0-a217-71d38a88089f.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 79.77208235398739,
+        "fireLocation": {
+          "lat": "-3.3187496",
+          "lng": 114.591436874172
+        },
+        "personLocation": {
+          "lng": 114.59137108838627,
+          "lat": -3.3201264509636843
+        },
+        "fireRadius": {
+          "lng": 114.59073413540966,
+          "lat": -3.318899551788732
+        }
+      },
+      "tags": {
+        "city": "KOTA BANJARMASIN",
+        "district_id": null,
+        "region_code": "6371",
+        "local_area_id": null,
+        "instance_region_code": "ID-KS"
+      },
+      "title": null,
+      "text": "Kebakaran lahan (Karhutla) Dikawasan JI.\nLingkar dalam selatan dekat Pom Bensin kedua Kota Banjarmasin",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
