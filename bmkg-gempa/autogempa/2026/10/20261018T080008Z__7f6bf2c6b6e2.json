@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-18T08:30:33.918Z",
+  "data": {
+    "Tanggal": "18 Okt 2026",
+    "Jam": "15:00:08 WIB",
+    "DateTime": "2026-10-18T08:00:08+00:00",
+    "Coordinates": "-8.09,120.26",
+    "Lintang": "8.09 LS",
+    "Bujur": "120.26 BT",
+    "Magnitude": "5.3",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di laut 60 km timur laut Labuan Bajo",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "IV-V Kab. Manggarai, III Kab. Manggarai Barat, II-III Kab. Bima, II-III Kota Bima, I-II Kab. Nagekeo",
+    "Shakemap": "20261018150008.mmi.jpg"
+  }
+}
