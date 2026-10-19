@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.19.08.15.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-19T13:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-19T13:50:00+07:00</effective>
+    <expires>2026-10-19T15:50:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jambi</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 19 October 2026, 13:50 WIB di sebagian wilayah Jambi, khususnya di GERAGAI, SEBERANG KOTA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 19 October 2026, 15:50 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJI/2026/10/19/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jambi</areaDesc>
+      <polygon>-0.797,103.488 -0.825,103.428 -0.829,103.412 -0.827,103.362 -0.836,103.335 -0.811,103.306 -0.820,103.291 -0.795,103.265 -0.794,103.248 -0.772,103.243 -0.768,103.240 -0.773,103.253 -0.779,103.313 -0.796,103.376 -0.777,103.409 -0.771,103.440 -0.752,103.446 -0.740,103.442 -0.734,103.447 -0.733,103.456 -0.748,103.477 -0.764,103.487 -0.797,103.488</polygon>
+      <polygon>-1.363,103.687 -1.383,103.585 -1.345,103.585 -1.331,103.579 -1.299,103.585 -1.280,103.581 -1.270,103.574 -1.268,103.590 -1.271,103.602 -1.252,103.647 -1.124,103.647 -1.122,103.654 -1.109,103.662 -1.070,103.674 -1.059,103.735 -1.054,103.740 -1.053,103.752 -1.061,103.756 -1.075,103.746 -1.093,103.758 -1.107,103.750 -1.119,103.753 -1.131,103.756 -1.128,103.764 -1.137,103.771 -1.164,103.769 -1.185,103.759 -1.194,103.765 -1.212,103.751 -1.220,103.755 -1.225,103.767 -1.239,103.767 -1.239,103.753 -1.273,103.749 -1.276,103.761 -1.283,103.765 -1.348,103.766 -1.363,103.687</polygon>
+    </area>
+  </info>
+</alert>
