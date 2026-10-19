@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwwFBVV95cUxNLTlab3BSeHp0RjlLdUI5UEZtWC15N1VFbjVob1lrVlA1Vk9NbHhKNGZrTHR3VkNVYnFqYVVYQXg0LVZjTndWV3VsWDZkY1NWOHZuY0xGamdtcUhnRGpwSktYeF9iYXZKcGJXQ1drUC1rUllXNmd2Y0FxRGlNQnNXZ2lGVUtrR1p3azFhVE1TTl80czJLU1lDUUJQTE9jaGRiY2QxaVBoeTd6d0xWVnFYMEQtal9la1E3SFk4Z2h0eEVoQWfSAcgBQVVfeXFMUFN2MGw5ZzNIOHdHcVlNR1d2VzJ3aVZuUWJFc1BOdU1tRmMzY193WmZKcUp0THRHYzhudm9mX1dOZEhJTjVLR282dU5ZVWE4OWxRSmdydVEyREVtYjItdmlBQ01CcklEOUFTZ2ZBNHR2czRraEZJcjlSc3VGVzAxZGJvdFlnUU1lQWtsQTVMYU5FMFVqVncwYXl1Q0hSbW5Hd2FQRGoyNjZLd2kweGY2T0RuMm9DY2k3WUticFM4ajZCSkxKRHVoZFk",
+  "title": "BMKG Puncak Ingatkan Potensi Cuaca Ekstrem di Bogor, Waspada Hujan Lebat dan Longsor - VIVA Bogor",
+  "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNLTlab3BSeHp0RjlLdUI5UEZtWC15N1VFbjVob1lrVlA1Vk9NbHhKNGZrTHR3VkNVYnFqYVVYQXg0LVZjTndWV3VsWDZkY1NWOHZuY0xGamdtcUhnRGpwSktYeF9iYXZKcGJXQ1drUC1rUllXNmd2Y0FxRGlNQnNXZ2lGVUtrR1p3azFhVE1TTl80czJLU1lDUUJQTE9jaGRiY2QxaVBoeTd6d0xWVnFYMEQtal9la1E3SFk4Z2h0eEVoQWfSAcgBQVVfeXFMUFN2MGw5ZzNIOHdHcVlNR1d2VzJ3aVZuUWJFc1BOdU1tRmMzY193WmZKcUp0THRHYzhudm9mX1dOZEhJTjVLR282dU5ZVWE4OWxRSmdydVEyREVtYjItdmlBQ01CcklEOUFTZ2ZBNHR2czRraEZJcjlSc3VGVzAxZGJvdFlnUU1lQWtsQTVMYU5FMFVqVncwYXl1Q0hSbW5Hd2FQRGoyNjZLd2kweGY2T0RuMm9DY2k3WUticFM4ajZCSkxKRHVoZFk?oc=5",
+  "source": "VIVA Bogor",
+  "source_url": "https://bogor.viva.co.id",
+  "published_at": "2026-10-19T07:25:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-19T08:00:42.487Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
