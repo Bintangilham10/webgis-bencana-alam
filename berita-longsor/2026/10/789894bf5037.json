@@ -1,0 +1,21 @@
+{
+  "guid": "CBMizAFBVV95cUxQZ1FFc1cwOFQtZ2ZrejJjSnZ1XzkxM2hMR3hrUklUb2lQb1k3a196dWdGOThKVld4dUdWRVVDN3hWWmxqQWVqVnNEcjJBYXBiOUxCOXJ5OGFORW5GM0hVVE80eGVCcHE3TW5OXzFNaWo5Q09YNkpYMXRwT2dvTk52NnY1aFpLUFp6NThfVDN4eFo3c3NoLW1QZFQ3UEttOWZrZWJzdmhTM1dqUDMtMC1zMGZFdlI2MTZOOFhYMDJBSko5cF9QeDhsM1FSX2U",
+  "title": "BMKG Prakirakan Hujan Ringan Guyur Kota Subulussalam, Waspada Potensi Banjir dan Longsor - Serambinews.com",
+  "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZ1FFc1cwOFQtZ2ZrejJjSnZ1XzkxM2hMR3hrUklUb2lQb1k3a196dWdGOThKVld4dUdWRVVDN3hWWmxqQWVqVnNEcjJBYXBiOUxCOXJ5OGFORW5GM0hVVE80eGVCcHE3TW5OXzFNaWo5Q09YNkpYMXRwT2dvTk52NnY1aFpLUFp6NThfVDN4eFo3c3NoLW1QZFQ3UEttOWZrZWJzdmhTM1dqUDMtMC1zMGZFdlI2MTZOOFhYMDJBSko5cF9QeDhsM1FSX2U?oc=5",
+  "source": "Serambinews.com",
+  "source_url": "https://aceh.tribunnews.com",
+  "published_at": "2026-10-19T03:25:21.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-19T05:00:38.720Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "11.75",
+      "nama": "Kota Subulussalam",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

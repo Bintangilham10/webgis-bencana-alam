@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiogFBVV95cUxNUEtWWkxBN1FsbjN2YzlZVTJ3cjQwTzZKT2k1MDJkVU40VWhWYWZuZy0xYnZWaGFHaDJvajg5WFBqckpqZXBWM0lRMTVzdy1yYXFYTm9ySTJBZEdYREJPNUswZ2xpWTlUY1FLa0tHYi1lWEE1MU84Q2hCNGM4MkRmMmswZW0yRlNvY1BpUnpiUkpSWF9zemFSTVZQSV9uZG0yVUE",
+  "title": "Antisipasi Longsor, Pemkot Bandung Dorong Penghijauan dan Kesiapsiagaan Warga - tugubandung.id",
+  "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUEtWWkxBN1FsbjN2YzlZVTJ3cjQwTzZKT2k1MDJkVU40VWhWYWZuZy0xYnZWaGFHaDJvajg5WFBqckpqZXBWM0lRMTVzdy1yYXFYTm9ySTJBZEdYREJPNUswZ2xpWTlUY1FLa0tHYi1lWEE1MU84Q2hCNGM4MkRmMmswZW0yRlNvY1BpUnpiUkpSWF9zemFSTVZQSV9uZG0yVUE?oc=5",
+  "source": "tugubandung.id",
+  "source_url": "https://tugubandung.id",
+  "published_at": "2026-10-19T03:37:56.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-19T05:00:38.720Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
