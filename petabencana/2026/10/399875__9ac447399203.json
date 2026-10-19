@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-19T08:30:37.538Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        119.8505863393,
+        -3.1046824044
+      ]
+    },
+    "properties": {
+      "pkey": "399875",
+      "created_at": "2026-10-19T08:26:43.900Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "91a222c5-0833-49ed-9994-f4ff8b955535",
+      "image_url": "https://images.petabencana.id/91a222c5-0833-49ed-9994-f4ff8b955535.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 109.63478899535362,
+        "fireLocation": {
+          "lng": 119.85058633931834,
+          "lat": -3.104682404358755
+        },
+        "personLocation": {
+          "lng": 119.85036925177388,
+          "lat": -3.1053925203359967
+        },
+        "fireRadius": {
+          "lng": 119.84959928640183,
+          "lat": -3.1047091870809993
+        }
+      },
+      "tags": {
+        "city": "TANA TORAJA",
+        "district_id": null,
+        "region_code": "7318",
+        "local_area_id": null,
+        "instance_region_code": "ID-SN"
+      },
+      "title": null,
+      "text": "Kebakaran hutan bambu di kawasan Kelurahan Santung, Kecamatan Makale, Kabupaten Tana Toraja, Sulawesi Selatan, pada Senin (19/10/2026).",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
