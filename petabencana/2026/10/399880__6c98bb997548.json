@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-19T09:15:25.680Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        107.1501228505,
+        -6.2581625644
+      ]
+    },
+    "properties": {
+      "pkey": "399880",
+      "created_at": "2026-10-19T09:08:09.423Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "4d3b2c07-547a-4da8-ae42-de4c9cfd0caa",
+      "image_url": "https://images.petabencana.id/4d3b2c07-547a-4da8-ae42-de4c9cfd0caa.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 83.60696074127085,
+        "fireLocation": {
+          "lng": 107.15012285047533,
+          "lat": -6.2581625643722845
+        },
+        "personLocation": {
+          "lng": 107.15217785860386,
+          "lat": -6.25800441503489
+        },
+        "fireRadius": {
+          "lng": 107.14936646753404,
+          "lat": -6.258167896823366
+        }
+      },
+      "tags": {
+        "city": "BEKASI",
+        "district_id": null,
+        "region_code": "3216",
+        "local_area_id": null,
+        "instance_region_code": "ID-JB"
+      },
+      "title": null,
+      "text": "Kebakaran melanda tempat penyimpanan/gudang limbah dan palet di kawasan industri tidak jauh dari pabrik motor, Kawasan Industri MM2100",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
