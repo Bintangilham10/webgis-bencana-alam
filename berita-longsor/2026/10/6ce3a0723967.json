@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiyAFBVV95cUxPWlpZMURXb3BCVjM5UFN0dXpkUDllcTNDMWM3MGdqX29mbGV4ejk4TnE5UExvTHVYSm5LZTd1V0VjejIxMTZRckMyWTVINVF5cklZMHlPLVVZUHFZVk9DN1phTWpZRERqSVJMTEd0N3Y2d2VzUkJoeDZ4WGdicW9ZWVMxZzZrTmpESDYyTlNvQ1A4VnhsejlDSEpwaXh2MGJnRXN3UWZCbldKaUZGcWZaeURQZmFOeHdRemxsNHJaeE9JOUZzdG5uQg",
+  "title": "Hujan Deras Picu Longsor di Seulimuem, Setengah Badan Jalan Banda Aceh-Medan Tertutup - Serambinews.com",
+  "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPWlpZMURXb3BCVjM5UFN0dXpkUDllcTNDMWM3MGdqX29mbGV4ejk4TnE5UExvTHVYSm5LZTd1V0VjejIxMTZRckMyWTVINVF5cklZMHlPLVVZUHFZVk9DN1phTWpZRERqSVJMTEd0N3Y2d2VzUkJoeDZ4WGdicW9ZWVMxZzZrTmpESDYyTlNvQ1A4VnhsejlDSEpwaXh2MGJnRXN3UWZCbldKaUZGcWZaeURQZmFOeHdRemxsNHJaeE9JOUZzdG5uQg?oc=5",
+  "source": "Serambinews.com",
+  "source_url": "https://aceh.tribunnews.com",
+  "published_at": "2026-10-19T11:14:52.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-19T14:15:33.099Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.71",
+      "nama": "Kota Banda Aceh",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "12.71",
+      "nama": "Kota Medan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

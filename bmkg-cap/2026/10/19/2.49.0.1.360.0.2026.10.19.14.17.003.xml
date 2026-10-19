@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.19.14.17.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-19T20:05:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-19T20:15:00+07:00</effective>
+    <expires>2026-10-19T22:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bengkulu</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 19 October 2026, 20:15 WIB di sebagian wilayah Bengkulu, khususnya di SELAGAN RAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 19 October 2026, 22:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBK/2026/10/19/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bengkulu</areaDesc>
+      <polygon>-2.402,101.474 -2.450,101.558 -2.463,101.562 -2.489,101.556 -2.497,101.549 -2.506,101.548 -2.511,101.512 -2.532,101.489 -2.532,101.484 -2.524,101.475 -2.523,101.443 -2.518,101.430 -2.552,101.343 -2.547,101.328 -2.560,101.320 -2.596,101.322 -2.602,101.293 -2.602,101.285 -2.581,101.287 -2.571,101.280 -2.541,101.275 -2.512,101.275 -2.505,101.274 -2.497,101.266 -2.487,101.247 -2.478,101.274 -2.458,101.278 -2.454,101.283 -2.439,101.356 -2.429,101.377 -2.431,101.395 -2.420,101.402 -2.409,101.427 -2.387,101.449 -2.402,101.474</polygon>
+    </area>
+  </info>
+</alert>

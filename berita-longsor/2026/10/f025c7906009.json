@@ -1,0 +1,28 @@
+{
+  "guid": "CBMilgFBVV95cUxOSHhQamI0Q0d6dDU1X0h6d1NGMEcwSVVFc0RiMnAwckg4cFM4cEZJWDdkQnM2SWZ0dzFTVXNmQjE1RlhnV2UtY01jTkFSU2lwRWNfWmlKb2ZxZGZHRUJQdUlmd2pVREdaMldFYTM3aEY4aHdjMTc3YlRoSGJNeFBHQUl1Vlpid0hYNE5wRDNQcGhKbm5zWlE",
+  "title": "Longsor Tutupi Separuh Jalan Nasional Banda Aceh-Medan di Seulimum - Waspada Aceh",
+  "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSHhQamI0Q0d6dDU1X0h6d1NGMEcwSVVFc0RiMnAwckg4cFM4cEZJWDdkQnM2SWZ0dzFTVXNmQjE1RlhnV2UtY01jTkFSU2lwRWNfWmlKb2ZxZGZHRUJQdUlmd2pVREdaMldFYTM3aEY4aHdjMTc3YlRoSGJNeFBHQUl1Vlpid0hYNE5wRDNQcGhKbm5zWlE?oc=5",
+  "source": "Waspada Aceh",
+  "source_url": "https://waspadaaceh.com",
+  "published_at": "2026-10-19T11:52:20.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-19T14:15:33.099Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "11.71",
+      "nama": "Kota Banda Aceh",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "12.71",
+      "nama": "Kota Medan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

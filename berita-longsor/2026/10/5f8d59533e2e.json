@@ -1,0 +1,28 @@
+{
+  "guid": "CBMinAFBVV95cUxNUGdIWVViUW1kNms3MUtqcWd5cHEzVTJjdUVhZGZjMGZNRWZfblVKcGtUOFFlcnBSdHd0bHJhZUxYSDFMY25tZi0tMm9CUHU3ZWNkYXRIdmZCb2Z3RWNyLUxNZ0ZpZF9kMWJYblBtakhQS1h1WGNna1IwNkhvTU15aWRDUzNQVHFPdDdFd2FrMG1kOEhPODFJQjhScmE",
+  "title": "Longsor Tutupi Setengah Badan Jalan Nasional Banda Aceh–Medan di Seulimum - Waspada Online",
+  "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUGdIWVViUW1kNms3MUtqcWd5cHEzVTJjdUVhZGZjMGZNRWZfblVKcGtUOFFlcnBSdHd0bHJhZUxYSDFMY25tZi0tMm9CUHU3ZWNkYXRIdmZCb2Z3RWNyLUxNZ0ZpZF9kMWJYblBtakhQS1h1WGNna1IwNkhvTU15aWRDUzNQVHFPdDdFd2FrMG1kOEhPODFJQjhScmE?oc=5",
+  "source": "Waspada Online",
+  "source_url": "https://waspada.co.id",
+  "published_at": "2026-10-19T12:43:44.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-19T14:15:33.099Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "11.71",
+      "nama": "Kota Banda Aceh",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "12.71",
+      "nama": "Kota Medan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
