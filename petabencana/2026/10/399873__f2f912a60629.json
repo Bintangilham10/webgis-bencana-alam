@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-19T07:30:35.695Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        112.9472595739,
+        -7.9387851804
+      ]
+    },
+    "properties": {
+      "pkey": "399873",
+      "created_at": "2026-10-19T07:28:52.748Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "7816bb2d-6211-407e-b696-0a9bacc07fee",
+      "image_url": "https://images.petabencana.id/7816bb2d-6211-407e-b696-0a9bacc07fee.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 64.49252361002719,
+        "fireLocation": {
+          "lng": 112.94725957394638,
+          "lat": -7.938785180374566
+        },
+        "personLocation": {
+          "lng": 112.9552769576839,
+          "lat": -7.946725650321582
+        },
+        "fireRadius": {
+          "lng": 112.9466748523829,
+          "lat": -7.938817058414557
+        }
+      },
+      "tags": {
+        "city": "PROBOLINGGO",
+        "district_id": null,
+        "region_code": "3513",
+        "local_area_id": null,
+        "instance_region_code": "ID-JI"
+      },
+      "title": null,
+      "text": "Kebakaran hutan dan lahan (karhutla) kembali melanda kawasan konservasi Gunung Bromo, Jawa Timur, pada Senin pagi (19/10/2026). ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
