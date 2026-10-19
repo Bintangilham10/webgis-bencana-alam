@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-19T12:30:36.082Z",
+  "data": {
+    "Tanggal": "19 Okt 2026",
+    "Jam": "19:06:02 WIB",
+    "DateTime": "2026-10-19T12:06:02+00:00",
+    "Coordinates": "-7.99,120.09",
+    "Lintang": "7.99 LS",
+    "Bujur": "120.09 BT",
+    "Magnitude": "4.5",
+    "Kedalaman": "6 km",
+    "Wilayah": "Pusat gempa berada di laut 60 km Utara Labuanbajo",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "II Kab. Manggarai",
+    "Shakemap": "20261019190602.mmi.jpg"
+  }
+}
