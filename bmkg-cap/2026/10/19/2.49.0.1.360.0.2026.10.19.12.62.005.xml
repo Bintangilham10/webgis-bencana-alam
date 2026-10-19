@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.19.11.62.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-19T17:25:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-19T17:35:00+07:00</effective>
+    <expires>2026-10-19T19:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 19 October 2026, 17:35 WIB di sebagian wilayah Kalimantan Tengah, khususnya di PANGKALAN BANTENG, PANGKALAN LADA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 19 October 2026, 19:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/19/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-2.619,111.809 -2.619,111.793 -2.603,111.785 -2.606,111.768 -2.599,111.750 -2.600,111.740 -2.604,111.734 -2.635,111.728 -2.643,111.723 -2.582,111.699 -2.545,111.692 -2.513,111.697 -2.480,111.698 -2.454,111.715 -2.407,111.793 -2.415,111.813 -2.412,111.817 -2.415,111.827 -2.422,111.842 -2.433,111.851 -2.447,111.852 -2.454,111.865 -2.466,111.872 -2.474,111.867 -2.482,111.871 -2.494,111.869 -2.501,111.853 -2.510,111.846 -2.529,111.850 -2.541,111.845 -2.554,111.826 -2.586,111.826 -2.619,111.809</polygon>
+      <polygon>-2.343,112.041 -2.365,112.044 -2.409,112.059 -2.476,112.044 -2.521,112.020 -2.520,111.973 -2.571,111.930 -2.580,111.928 -2.589,111.921 -2.617,111.894 -2.625,111.828 -2.631,111.817 -2.631,111.807 -2.619,111.809 -2.586,111.826 -2.554,111.826 -2.541,111.845 -2.529,111.850 -2.510,111.846 -2.501,111.853 -2.494,111.869 -2.482,111.871 -2.474,111.867 -2.466,111.872 -2.454,111.865 -2.447,111.852 -2.433,111.851 -2.422,111.842 -2.415,111.827 -2.412,111.817 -2.415,111.813 -2.407,111.793 -2.344,111.843 -2.327,111.871 -2.340,111.931 -2.331,111.931 -2.328,111.986 -2.343,112.041</polygon>
+    </area>
+  </info>
+</alert>
