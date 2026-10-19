@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiogFBVV95cUxQUXVVZGF4aVVELU42VjlVaE93NVRFazVaaTFTak1aUlNld3VLUlA0ZTY1bzdhalhDaEdfQTdac2NFOWVxdjR2czVMUVZJOXlyd29tWnhwOFotdEdDb09DUVBDVjFsdTNEYUI5LXIwSG5xaEE2ckowbnQyOEx2N2p0SXc4RFQ5VDRhOFNiR3NxWUxFeXVVeDkxTFpNNzBxcEhaSWc",
+  "title": "Jalinsum Sipirok Amblas dan Longsor, Arus Medan–Padangsidimpuan Terganggu - HARIAN MISTAR",
+  "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUXVVZGF4aVVELU42VjlVaE93NVRFazVaaTFTak1aUlNld3VLUlA0ZTY1bzdhalhDaEdfQTdac2NFOWVxdjR2czVMUVZJOXlyd29tWnhwOFotdEdDb09DUVBDVjFsdTNEYUI5LXIwSG5xaEE2ckowbnQyOEx2N2p0SXc4RFQ5VDRhOFNiR3NxWUxFeXVVeDkxTFpNNzBxcEhaSWc?oc=5",
+  "source": "HARIAN MISTAR",
+  "source_url": "https://mistar.id",
+  "published_at": "2026-10-19T00:58:51.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-19T01:45:28.984Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "12.77",
+      "nama": "Kota Padangsidimpuan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "12.71",
+      "nama": "Kota Medan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
