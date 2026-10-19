@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-19T10:30:38.467Z",
+  "data": {
+    "Tanggal": "19 Okt 2026",
+    "Jam": "17:10:56 WIB",
+    "DateTime": "2026-10-19T10:10:56+00:00",
+    "Coordinates": "-7.97,120.06",
+    "Lintang": "7.97 LS",
+    "Bujur": "120.06 BT",
+    "Magnitude": "4.7",
+    "Kedalaman": "5 km",
+    "Wilayah": "Pusat gempa berada di laut 61 km utara Labuan Bajo",
+    "Dirasakan": "II Kab. Manggarai"
+  }
+}
