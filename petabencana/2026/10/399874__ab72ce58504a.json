@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-19T07:45:24.620Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        109.9221288619,
+        -7.2294490806
+      ]
+    },
+    "properties": {
+      "pkey": "399874",
+      "created_at": "2026-10-19T07:37:55.169Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "88085b5d-1724-4b4e-bab8-0f2af940b5b9",
+      "image_url": "https://images.petabencana.id/88085b5d-1724-4b4e-bab8-0f2af940b5b9.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 161.79082056768672,
+        "fireLocation": {
+          "lng": 109.92212886190288,
+          "lat": -7.229449080620569
+        },
+        "personLocation": {
+          "lat": "-7.2290872",
+          "lng": "109.9225151"
+        },
+        "fireRadius": {
+          "lng": 109.92161387777048,
+          "lat": -7.228086705004543
+        }
+      },
+      "tags": {
+        "city": "WONOSOBO",
+        "district_id": null,
+        "region_code": "3307",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Kebakaran di area lereng Gunung Pakuwaja, Kecamatan Kejajar, Kabupaten Wonosobo, Jawa Tengah, pada Senin siang ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

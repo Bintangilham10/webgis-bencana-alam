@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.19.07.71.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-19T15:14:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-19T15:20:00+08:00</effective>
+    <expires>2026-10-19T17:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 19 October 2026, 15:20 WITA di sebagian wilayah Sulawesi Utara, khususnya di TOMBULU, TOMPASO BARU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 19 October 2026, 17:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/10/19/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>1.462,124.879 1.461,124.879 1.461,124.881 1.462,124.881 1.461,124.883 1.459,124.882 1.457,124.884 1.456,124.884 1.456,124.884 1.456,124.884 1.456,124.885 1.458,124.890 1.458,124.890 1.458,124.891 1.455,124.900 1.457,124.907 1.448,124.913 1.416,124.917 1.400,124.920 1.389,124.935 1.375,124.931 1.351,124.916 1.345,124.905 1.337,124.903 1.335,124.899 1.340,124.890 1.344,124.888 1.352,124.893 1.358,124.889 1.353,124.863 1.365,124.856 1.381,124.859 1.401,124.853 1.439,124.850 1.442,124.862 1.447,124.861 1.462,124.879</polygon>
+      <polygon>0.934,124.581 0.913,124.577 0.877,124.559 0.884,124.546 0.894,124.497 0.911,124.479 0.911,124.466 0.907,124.456 0.912,124.446 0.910,124.420 0.914,124.402 0.934,124.383 0.953,124.377 0.957,124.376 0.963,124.401 0.954,124.433 0.960,124.437 0.954,124.493 0.955,124.499 0.962,124.501 0.965,124.507 0.962,124.529 0.965,124.539 0.955,124.553 0.943,124.553 0.938,124.557 0.934,124.581</polygon>
+    </area>
+  </info>
+</alert>
