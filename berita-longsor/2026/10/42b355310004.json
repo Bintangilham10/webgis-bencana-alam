@@ -1,0 +1,33 @@
+{
+  "guid": "CBMitAFBVV95cUxPVXNhX0E0YWxuazZINW9ER3U4d05xZjl4ZnY2elRuZFB6TjNjWXZuMnRoU28tRWQwQUI0LWFzNzNEcm5WSVdsYVBRZFdNc3ptb1NIWGlDY2xFX1BtMXBBQ09xaU9FYU1sdkN6dzBNMmY5MXFDN2xKZVpENV9sSTEtbWVHdXAtVFVSN2NtRXdoRDdBMXJyd0xPc1VKTzFuZko4RC02b1Y2bkpjQ2l4clZqME9RWUM",
+  "title": "Longsor di Seulimum Aceh Besar, Jalan Nasional Banda Aceh-Medan Terganggu - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVXNhX0E0YWxuazZINW9ER3U4d05xZjl4ZnY2elRuZFB6TjNjWXZuMnRoU28tRWQwQUI0LWFzNzNEcm5WSVdsYVBRZFdNc3ptb1NIWGlDY2xFX1BtMXBBQ09xaU9FYU1sdkN6dzBNMmY5MXFDN2xKZVpENV9sSTEtbWVHdXAtVFVSN2NtRXdoRDdBMXJyd0xPc1VKTzFuZko4RC02b1Y2bkpjQ2l4clZqME9RWUM?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-10-19T13:49:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-19T17:26:07.622Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "11.06",
+      "nama": "Kabupaten Aceh Besar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "11.71",
+      "nama": "Kota Banda Aceh",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "12.71",
+      "nama": "Kota Medan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
