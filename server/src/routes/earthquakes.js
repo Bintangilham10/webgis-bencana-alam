@@ -31,6 +31,7 @@ const QUAKES = `
              'magnitude', o.magnitude,
              'mag_type', o.props->>'mag_type',
              'url', o.props->>'url',
+             'pager_alert', o.props->>'alert',
              'time_diff_s', round(extract(epoch FROM o.occurred_at - e.occurred_at)::numeric, 1),
              'distance_km', round((ST_Distance(o.geom::geography, e.geom::geography) / 1000)::numeric, 1)
            ) AS match
@@ -71,6 +72,10 @@ const PROPERTIES = {
     status: r.props.status ?? null,
     alert: r.props.alert ?? null,
     url: r.props.url ?? null,
+    // PAGER dan ground failure hanya ada untuk gempa yang cukup besar, ±20–60
+    // menit setelah kejadian (jobs/sync-earthquakes.js).
+    pager: r.props.pager ?? null,
+    ground_failure: r.props.ground_failure ?? null,
     bmkg: r.match,
   }),
 };

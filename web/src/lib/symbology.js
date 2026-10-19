@@ -40,6 +40,27 @@ export const WARNING_LEVEL_STYLES = [
   { label: 'Awas', color: '#c62828', text: '#fff' },
 ];
 
+// Level PAGER dan ground failure USGS (warna sama dengan level peringatan di atas).
+// PAGER: perkiraan korban jiwa 0 / 1–99 / 100–999 / ≥ 1.000 dan kerugian ekonomi
+// < US$1 juta / 1–100 juta / 100 juta–1 miliar / ≥ 1 miliar.
+export const USGS_ALERTS = {
+  green: { label: 'Hijau', color: WARNING_LEVEL_STYLES[0].color, text: '#fff' },
+  yellow: { label: 'Kuning', color: WARNING_LEVEL_STYLES[1].color, text: INK },
+  orange: { label: 'Oranye', color: WARNING_LEVEL_STYLES[2].color, text: INK },
+  red: { label: 'Merah', color: WARNING_LEVEL_STYLES[3].color, text: '#fff' },
+};
+
+// Kelas proporsi area yang longsor atau mengalami likuefaksi pada gambar ground
+// failure USGS (warna dari legenda resmi USGS). Kelas terendah tidak digambar.
+export const GROUND_FAILURE_RAMP = [
+  { label: '0,2–1%', color: '#f3f3c2' },
+  { label: '1–2%', color: '#ebd258' },
+  { label: '2–5%', color: '#ef8f3a' },
+  { label: '5–10%', color: '#cb607d' },
+  { label: '10–20%', color: '#7d54c2' },
+  { label: '> 20%', color: '#4c4c82' },
+];
+
 // Kab/kota tanpa data hujan pada indikasi SIGAP 3 hari (abu-abu, bukan level).
 export const NO_DATA_STYLE = { label: 'Tanpa data', color: '#98a2b3', text: INK };
 

@@ -3,7 +3,7 @@ import { getJson } from '../lib/api.js';
 import { escapeHtml, formatDateTime, formatDecimal, shortQuakeRegion, timeAgo } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
 import { makeFocusable } from '../lib/marker-focus.js';
-import { DEPTH_CLASSES, depthClass, magnitudeRadius, pillStyle } from '../lib/symbology.js';
+import { DEPTH_CLASSES, depthClass, magnitudeRadius, pillStyle, USGS_ALERTS } from '../lib/symbology.js';
 
 // Zoom tujuan saat gempa diklik: sekitar ±150 km terlihat di layar desktop.
 const FOCUS_ZOOM = 10;
@@ -65,6 +65,7 @@ export function earthquakePopup(p) {
         ${p.dirasakan ? `<dt>Dirasakan</dt><dd>${escapeHtml(p.dirasakan)} <span class="muted">skala MMI</span></dd>` : ''}
         ${!p.tsunami && p.potensi ? `<dt>Keterangan</dt><dd>${escapeHtml(p.potensi)}</dd>` : ''}
         ${p.usgs ? `<dt>USGS</dt><dd>M ${formatDecimal(p.usgs.magnitude)}${p.usgs.mag_type ? ` <span class="muted">${escapeHtml(p.usgs.mag_type)}</span>` : ''}</dd>` : ''}
+        ${USGS_ALERTS[p.usgs?.pager_alert] ? `<dt>Dampak</dt><dd><span class="level-pill" style="${pillStyle(USGS_ALERTS[p.usgs.pager_alert])}">${USGS_ALERTS[p.usgs.pager_alert].label}</span> <span class="muted">perkiraan USGS PAGER</span></dd>` : ''}
       </dl>
       ${p.shakemap ? `<a class="popup-link" href="${escapeHtml(p.shakemap)}" target="_blank" rel="noopener">Peta guncangan BMKG${icons.external}</a>` : ''}
       <p class="popup-source">Sumber: ${escapeHtml(p.source)}</p>
@@ -176,7 +177,9 @@ export function createEarthquakeLayer(map, { viewPadding } = {}) {
       loaded = true;
       // Pasangan USGS biasanya baru ada ±15 menit setelah gempa BMKG terbit.
       const next = JSON.stringify(
-        collection.features.map((f) => [f.properties.id, f.properties.magnitude, f.properties.depth_km, f.properties.usgs?.id]),
+        collection.features.map((f) => [
+          f.properties.id, f.properties.magnitude, f.properties.depth_km, f.properties.usgs?.id, f.properties.usgs?.pager_alert,
+        ]),
       );
       if (next !== signature) {
         signature = next;

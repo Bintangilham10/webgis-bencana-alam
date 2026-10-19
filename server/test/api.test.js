@@ -193,8 +193,63 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
     const { body: bmkg } = await getJson('/earthquakes');
     assert.ok(bmkg.features.every((f) => f.properties.source === 'BMKG'));
     const { distance_km: distanceKm, ...pair } = bmkg.features.find((f) => f.properties.id === 'bmkg:uji-ruteng').properties.usgs;
-    assert.deepEqual(pair, { id: 'usgs:uji-ruteng', magnitude: 5.2, mag_type: 'mb', url: null, time_diff_s: -2 });
+    assert.deepEqual(pair, { id: 'usgs:uji-ruteng', magnitude: 5.2, mag_type: 'mb', url: null, pager_alert: null, time_diff_s: -2 });
     assert.equal(distanceKm, ruteng.bmkg.distance_km);
+  });
+
+  test('detail PAGER dan ground failure USGS disimpan, dikirim API, dan diambil ulang hanya bila gempa direvisi', async () => {
+    const { syncUsgsEarthquakes } = await import('../src/jobs/sync-earthquakes.js');
+    const at = Date.now() - 2 * 3_600_000;
+    const palu = (revision) => ({
+      id: 'usgs:uji-palu', source: 'usgs', hazard: 'gempa', magnitude: 6.7, depthKm: 10,
+      occurredAt: new Date(at).toISOString(), lat: -1.15, lon: 120.23,
+      props: { wilayah: '40 km SE of Palu, Indonesia', alert: 'yellow' },
+      code: 'uji-palu', revision, hasDetail: true,
+    });
+    const detail = {
+      pager: { alert: 'yellow', max_mmi: 8, reviewed: false, onepager_url: 'https://contoh/onepager.pdf', fatality: 'yellow', economic: 'green' },
+      ground_failure: {
+        landslide: { alert: 'orange', area_km2: 18, population: 310, overlay_url: 'https://contoh/ls.png', bounds: [[-3.27, 118.02], [1.05, 122.35]] },
+        liquefaction: { alert: 'orange', area_km2: 91, population: 39000, overlay_url: 'https://contoh/lq.png', bounds: [[-3.27, 118.02], [1.05, 122.35]] },
+        focus: [[-1.52, 119.86], [-0.77, 120.6]],
+        rupture_warning: true,
+      },
+    };
+    const requested = [];
+    const fetchDetail = async (code) => {
+      requested.push(code);
+      return detail;
+    };
+    let now = Date.now();
+    const sync = (revision) =>
+      syncUsgsEarthquakes({ fetchEvents: async () => ({ events: [palu(revision)], errors: [] }), fetchDetail, now });
+
+    await sync(1000);
+    const { body } = await getJson('/earthquakes?source=usgs');
+    const props = body.features.find((f) => f.properties.id === 'usgs:uji-palu').properties;
+    assert.deepEqual(props.pager, detail.pager);
+    assert.deepEqual(props.ground_failure, detail.ground_failure);
+    assert.ok(!('detail_revision' in props));
+
+    // Tanpa revisi: tidak diambil lagi. Revisi dalam 10 menit: menunggu. Setelahnya: diambil.
+    await sync(1000);
+    await sync(2000);
+    assert.deepEqual(requested, ['uji-palu']);
+    now += 11 * 60_000;
+    await sync(2000);
+    assert.deepEqual(requested, ['uji-palu', 'uji-palu']);
+
+    // Detail gagal: gempanya tetap tersimpan, kegagalan dicatat di pesan sinkronisasi.
+    now += 11 * 60_000;
+    const failed = await syncUsgsEarthquakes({
+      fetchEvents: async () => ({ events: [palu(3000)], errors: [] }),
+      fetchDetail: async () => {
+        throw new Error('HTTP 503');
+      },
+      now,
+    });
+    assert.equal(failed.items, 1);
+    assert.match(failed.message, /detail uji-palu: HTTP 503/);
   });
 
   test('perubahan level gunung api mengisi level_changed_at', async () => {

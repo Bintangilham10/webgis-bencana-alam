@@ -385,7 +385,7 @@ createLayerPanel({
         },
         {
           label: "Gempa USGS (pembanding)",
-          description: "Amerika Serikat · mulai ±M4 · 7 hari · tiap menit",
+          description: "Amerika Serikat · mulai ±M4 · 7 hari · tiap menit · dampak dan longsor akibat gempa",
           legendTitle: "Gempa USGS (7 hari)",
           symbol: symbol.usgs,
           layer: usgsQuakes.layer,

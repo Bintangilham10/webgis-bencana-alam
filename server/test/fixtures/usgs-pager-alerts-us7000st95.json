@@ -1,0 +1,104 @@
+{
+ "fatality": {
+  "type": "fatality",
+  "units": "fatalities",
+  "gvalue": 1.9849944455347979,
+  "summary": false,
+  "level": "yellow",
+  "bins": [
+   {
+    "color": "green",
+    "min": "0",
+    "max": "1",
+    "probability": 0.13416582336178318
+   },
+   {
+    "color": "yellow",
+    "min": "1",
+    "max": "10",
+    "probability": 0.3869994710165076
+   },
+   {
+    "color": "yellow",
+    "min": "10",
+    "max": "100",
+    "probability": 0.3662838874772838
+   },
+   {
+    "color": "orange",
+    "min": "100",
+    "max": "1000",
+    "probability": 0.10373034393869673
+   },
+   {
+    "color": "red",
+    "min": "1000",
+    "max": "10000",
+    "probability": 0.00861508858211757
+   },
+   {
+    "color": "red",
+    "min": "10000",
+    "max": "100000",
+    "probability": 0.00020403988437101006
+   },
+   {
+    "color": "red",
+    "min": "100000",
+    "max": "10000000",
+    "probability": 1.3457367632474515e-06
+   }
+  ]
+ },
+ "economic": {
+  "type": "economic",
+  "units": "USD",
+  "gvalue": 1.901480198187717,
+  "summary": true,
+  "level": "yellow",
+  "bins": [
+   {
+    "color": "green",
+    "min": "0",
+    "max": "1",
+    "probability": 0.08560698990383742
+   },
+   {
+    "color": "yellow",
+    "min": "1",
+    "max": "10",
+    "probability": 0.35186779044225514
+   },
+   {
+    "color": "yellow",
+    "min": "10",
+    "max": "100",
+    "probability": 0.4164849248002807
+   },
+   {
+    "color": "orange",
+    "min": "100",
+    "max": "1000",
+    "probability": 0.1342689673778451
+   },
+   {
+    "color": "red",
+    "min": "1000",
+    "max": "10000",
+    "probability": 0.01151633398425067
+   },
+   {
+    "color": "red",
+    "min": "10000",
+    "max": "100000",
+    "probability": 0.00025360322042111694
+   },
+   {
+    "color": "red",
+    "min": "100000",
+    "max": "10000000",
+    "probability": 1.3902710526147999e-06
+   }
+  ]
+ }
+}

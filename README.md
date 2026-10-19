@@ -51,6 +51,9 @@ The logo is an **S drawn from three contour lines** around an amber summit point
 - **SIGAP 3-day outlook** for all 514 regencies and cities, recomputed every 12 hours: heavy rain, flood, and landslide levels from Open-Meteo rain at 3,219 monitoring points × InaRISK hazard classes. The map always covers today and the next two days. It is on by default, and each popup shows BMKG's official warning next to it. It is a system indication, not an official warning.
 - **Earthquakes** from BMKG, synced every 60 seconds. BMKG's public feeds list M 5+ and felt earthquakes only, so smaller unfelt events are not shown or counted. Circles are sized by magnitude, coloured by depth class, and fade over 7 days. Popups carry the tsunami flag, the ShakeMap, and the USGS magnitude when USGS recorded the same event.
 - **USGS earthquakes for comparison** (off by default): the U.S. Geological Survey catalogue for the same region, synced every minute. USGS lists unfelt events from about M 4 that BMKG's public feeds leave out, while small felt earthquakes appear only in BMKG. Hollow rings are sized by magnitude; an event in both catalogues (origin times within 60 s, epicentres within 100 km) shows as a BMKG disc inside a ring, and each popup names its counterpart. USGS events are not counted in the overview or in risk checks.
+  - For larger earthquakes (about 120 a year in the Indonesian region) the popup adds the **PAGER impact estimate**: a green, yellow, orange, or red level for fatalities and economic losses, with the USGS PDF summary. BMKG popups with a USGS counterpart show the level too.
+  - For about 55 earthquakes a year the popup adds the **USGS Ground Failure estimate** of earthquake-triggered landslides and liquefaction: alert level, affected area (km²), and exposed population. "Landslide map" and "liquefaction map" buttons draw the estimated share of area affected on the map, in the official USGS legend colours.
+  - Both products arrive about 20–60 minutes after an earthquake. The server fetches the detail only when USGS revises the event, at most every 10 minutes per event.
 - **Volcanoes** from MAGMA Indonesia, synced every 30 minutes, with alert level I–IV, eruption status, and aviation ash warnings (VONA).
 - **Heavy-rain warnings** from BMKG CEWS for the current dasarian (10-day period), drawn on regency boundaries and listed in the overview.
 - **Rain from satellite**: the latest 30-minute NASA GPM IMERG rainfall, about 4–6 hours behind real time (the legend shows the data time).
@@ -325,7 +328,7 @@ Every endpoint returns JSON; spatial data is GeoJSON with `[lon, lat]` coordinat
 | Endpoint | Returns |
 |---|---|
 | `GET /api/health` | Database status and the last sync of each source |
-| `GET /api/earthquakes?days=7` | BMKG earthquakes from the last 1–90 days; `&source=usgs` returns the USGS catalogue instead. Each event carries its counterpart in the other catalogue (`usgs` or `bmkg`), or `null` |
+| `GET /api/earthquakes?days=7` | BMKG earthquakes from the last 1–90 days; `&source=usgs` returns the USGS catalogue instead. Each event carries its counterpart in the other catalogue (`usgs` or `bmkg`), or `null`. USGS events also carry `pager` (impact estimate) and `ground_failure` (landslide and liquefaction estimates with overlay URLs and bounds), or `null` |
 | `GET /api/volcanoes` | Volcanoes with alert level, eruption status, and VONA |
 | `GET /api/faults` | PuSGeN 2024 active fault segments |
 | `GET /api/wilayah?tingkat=provinsi` or `kabkota` | Province or regency boundaries, simplified for display |
@@ -374,6 +377,7 @@ Shortened from the real response. If one source fails, only its own part carries
 |---|---|---|
 | Earthquakes | [BMKG](https://data.bmkg.go.id/) | Credit BMKG as the source |
 | Earthquakes (comparison) | [USGS](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) real-time GeoJSON feeds | Public domain; credit USGS |
+| Earthquake impact, landslide, and liquefaction estimates | [USGS PAGER](https://earthquake.usgs.gov/data/pager/) and [USGS Ground Failure](https://earthquake.usgs.gov/data/ground-failure/), through the USGS event detail API | Public domain; credit USGS |
 | Heavy-rain early warnings | [BMKG CEWS](https://cews.bmkg.go.id/) | Credit BMKG as the source |
 | Hazard indices (point lookups, samples, and ~550 m class rasters for the outlook), active faults | [BNPB InaRISK](https://inarisk.bnpb.go.id/); PuSGeN 2024 fault model | Credit BNPB and PuSGeN |
 | Volcano alert levels | [MAGMA Indonesia](https://magma.esdm.go.id/), PVMBG, Ministry of Energy and Mineral Resources | Credit PVMBG |

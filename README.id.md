@@ -46,6 +46,9 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
 - **Elemen kartografi:** legenda dinamis yang bisa dilipat, skala batang, arah utara, angka skala 1:n beserta klasifikasinya, dan koordinat kursor dalam WGS84, UTM, dan EPSG:3857.
 - **Gempa BMKG:** disinkronkan tiap 60 detik. Feed publik BMKG hanya memuat gempa M ≥ 5 dan gempa dirasakan, jadi gempa kecil yang tidak dirasakan tidak tampil dan tidak ikut dihitung. Simbolnya cakram berlapis seukuran magnitudo, berwarna kelas kedalaman, dan makin pudar seiring umur (sampai 7 hari). Popup memuat penanda potensi tsunami, tautan shakemap, dan magnitudo USGS bila gempanya juga tercatat USGS.
 - **Gempa USGS sebagai pembanding** (mati bawaan): katalog U.S. Geological Survey untuk kawasan yang sama, disinkronkan tiap menit. USGS mencatat gempa tidak dirasakan mulai ±M4 yang tidak ada di feed publik BMKG; sebaliknya gempa kecil yang dirasakan hanya ada di BMKG. Simbolnya cincin kosong seukuran magnitudo. Gempa yang tercatat di kedua katalog (waktu berselisih ≤ 60 detik dan pusatnya ≤ 100 km) tampak sebagai cakram BMKG bercincin, dan popup masing-masing menyebut pasangannya. Gempa USGS tidak ikut dihitung di Ikhtisar maupun cek risiko.
+  - Untuk gempa yang cukup besar (±120 gempa per tahun di kawasan Indonesia), popup juga memuat **perkiraan dampak PAGER**: level hijau, kuning, oranye, atau merah untuk korban jiwa dan kerugian ekonomi, beserta ringkasan PDF dari USGS. Level ini juga tampil di popup gempa BMKG yang punya pasangan USGS.
+  - Untuk ±55 gempa per tahun, popup memuat **perkiraan longsor dan likuefaksi akibat gempa** (USGS Ground Failure): level, luas area terdampak (km²), dan penduduk terpapar. Tombol "Peta longsor" atau "Peta likuefaksi" menggambar perkiraan proporsi area terdampak di peta, dengan warna legenda resmi USGS.
+  - Kedua produk ini terbit ±20–60 menit setelah gempa. Server mengambil detailnya hanya bila gempa direvisi USGS, paling sering tiap 10 menit per gempa.
 - **Status gunung api:** 69 gunung api dari MAGMA/PVMBG, disinkronkan tiap 30 menit. Simbolnya kerucut berfaset berwarna level PVMBG (gaya terinspirasi ikon peta MAGMA, digambar sendiri); Siaga/Awas lebih besar. Status sedang erupsi dan VONA (peringatan abu vulkanik untuk penerbangan) ikut diambil dari MAGMA.
 - **Filter penanda:** tombol corong di bilah alat kanan menyalakan atau mematikan penanda gempa dan gunung api, serta menyaring gempa menurut kedalaman, magnitudo minimum, dan waktu (24 jam, 3 hari, 7 hari), dan gunung api menurut tingkat aktivitas. Menu menunjukkan jumlah titik yang tampil; titik biru di tombol menandakan ada penanda yang disembunyikan. Gempa atau gunung api yang dipilih dari daftar tetap ditampilkan walau tersaring.
 - **Peta rawan InaRISK BNPB:** gempa bumi, cuaca ekstrem, banjir, tanah longsor, dan gunung api, masing-masing dalam 3 kelas bahaya. Ditambah zona kerentanan gerakan tanah (ZKGT) PVMBG dengan warna kelas yang sama.
@@ -146,7 +149,7 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 | Endpoint | Isi |
 |---|---|
 | `GET /api/health` | Status database dan sinkronisasi tiap sumber |
-| `GET /api/earthquakes?days=7` | Gempa BMKG dalam 1–90 hari terakhir (GeoJSON); tambahkan `&source=usgs` untuk katalog USGS. Tiap gempa membawa pasangannya di katalog lain (`usgs` atau `bmkg`), atau `null` |
+| `GET /api/earthquakes?days=7` | Gempa BMKG dalam 1–90 hari terakhir (GeoJSON); tambahkan `&source=usgs` untuk katalog USGS. Tiap gempa membawa pasangannya di katalog lain (`usgs` atau `bmkg`), atau `null`. Gempa USGS juga membawa `pager` (perkiraan dampak) dan `ground_failure` (perkiraan longsor dan likuefaksi beserta URL gambar dan batasnya), atau `null` |
 | `GET /api/volcanoes` | Gunung api beserta status level, erupsi, dan VONA |
 | `GET /api/faults` | Segmen sesar aktif PuSGeN 2024 |
 | `GET /api/wilayah?tingkat=provinsi` atau `kabkota` | Batas wilayah, disederhanakan untuk tampilan |
@@ -165,6 +168,7 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 |---|---|---|
 | Gempa bumi | [BMKG](https://data.bmkg.go.id/) | Wajib mencantumkan BMKG sebagai sumber |
 | Gempa bumi (pembanding) | Feed GeoJSON waktu nyata [USGS](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) | Public domain; cantumkan USGS |
+| Perkiraan dampak gempa, longsor, dan likuefaksi | [USGS PAGER](https://earthquake.usgs.gov/data/pager/) dan [USGS Ground Failure](https://earthquake.usgs.gov/data/ground-failure/), lewat API detail gempa USGS | Public domain; cantumkan USGS |
 | Indeks bahaya (cek titik, sampel, dan raster kelas ±550 m untuk indikasi 3 hari), sesar aktif | [InaRISK BNPB](https://inarisk.bnpb.go.id/); model sesar PuSGeN 2024 | Cantumkan BNPB dan PuSGeN |
 | Status gunung api | [MAGMA Indonesia](https://magma.esdm.go.id/), PVMBG Kementerian ESDM | Cantumkan PVMBG |
 | Prakiraan potensi gerakan tanah bulanan, ZKGT, dan riwayat kejadian longsor | PVMBG, Badan Geologi, Kementerian ESDM ([Portal MBG](https://vsi.esdm.go.id/portalmbg/) dan MAGMA Indonesia) | Cantumkan PVMBG. Riwayat disusun ulang oleh `research/01_inventaris.py` tanpa data pribadi |

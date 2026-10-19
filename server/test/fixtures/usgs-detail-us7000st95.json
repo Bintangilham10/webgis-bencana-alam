@@ -1,0 +1,143 @@
+{
+ "type": "Feature",
+ "id": "us7000st95",
+ "properties": {
+  "mag": 6.7,
+  "place": "40 km SE of Palu, Indonesia",
+  "time": 1781580464276,
+  "updated": 1788212799040,
+  "alert": "yellow",
+  "types": ",dyfi,ground-failure,impact-text,internal-moment-tensor,internal-origin,losspager,moment-tensor,origin,phase-data,shakemap,",
+  "products": {
+   "losspager": [
+    {
+     "id": "urn:usgs-product:us:losspager:us7000st95:1783652725644",
+     "type": "losspager",
+     "code": "us7000st95",
+     "source": "us",
+     "status": "UPDATE",
+     "updateTime": 1783652725644,
+     "properties": {
+      "alertlevel": "yellow",
+      "depth": "11.0",
+      "eventsource": "us",
+      "eventsourcecode": "7000st95",
+      "eventtime": "2026-06-16T09:27:44.000Z",
+      "latitude": "-1.1245",
+      "longitude": "120.1842",
+      "magnitude": "6.7",
+      "maxmmi": "8",
+      "pdl-client-version": "Version 3.5.4 2026-01-22",
+      "release": "false",
+      "review-status": "automatic"
+     },
+     "contents": {
+      "onepager.pdf": {
+       "contentType": "application/pdf",
+       "lastModified": 1783652724000,
+       "length": 1583295,
+       "url": "https://earthquake.usgs.gov/product/losspager/us7000st95/us/1783652725644/onepager.pdf"
+      },
+      "alerts.json": {
+       "contentType": "application/json",
+       "lastModified": 1783652724000,
+       "length": 1455,
+       "url": "https://earthquake.usgs.gov/product/losspager/us7000st95/us/1783652725644/alerts.json"
+      }
+     }
+    }
+   ],
+   "ground-failure": [
+    {
+     "id": "urn:usgs-product:us:ground-failure:7000st95:1783652764398",
+     "type": "ground-failure",
+     "code": "7000st95",
+     "source": "us",
+     "status": "WARNING",
+     "updateTime": 1783652764398,
+     "properties": {
+      "depth": "11.0",
+      "eventsource": "us",
+      "eventsourcecode": "7000st95",
+      "eventtime": "2026-06-16T03:27:44.000Z",
+      "landslide-alert": "orange",
+      "landslide-hazard-1std": "14.44773952433011, 21.327013084735313",
+      "landslide-hazard-2std": "11.634341648357523, 25.415638361353924",
+      "landslide-hazard-alert-color": "orange",
+      "landslide-hazard-alert-parameter": "Aggregate Hazard",
+      "landslide-hazard-alert-value": "18.0",
+      "landslide-hazard-std": "3.4565",
+      "landslide-maximum-latitude": "1.0510416666666638",
+      "landslide-maximum-longitude": "122.35104166666271",
+      "landslide-minimum-latitude": "-3.2677083333330907",
+      "landslide-minimum-longitude": "118.01562499999999",
+      "landslide-overlay": "jessee_2018.png",
+      "landslide-population-1std": "282.3052280081734, 337.485691949481",
+      "landslide-population-2std": "257.02203335065286, 367.40833831946156",
+      "landslide-population-alert-color": "yellow",
+      "landslide-population-alert-parameter": "Population exposure",
+      "landslide-population-alert-value": "310",
+      "landslide-population-std": "27.6159",
+      "latitude": "-1.1245",
+      "liquefaction-alert": "orange",
+      "liquefaction-hazard-1std": "83.56932921680047, 97.96661268271194",
+      "liquefaction-hazard-2std": "76.80641162439333, 105.57312437861772",
+      "liquefaction-hazard-alert-color": "yellow",
+      "liquefaction-hazard-alert-parameter": "Aggregate Hazard",
+      "liquefaction-hazard-alert-value": "91.0",
+      "liquefaction-hazard-std": "7.2",
+      "liquefaction-maximum-latitude": "1.0499999999999992",
+      "liquefaction-maximum-longitude": "122.3541666666627",
+      "liquefaction-minimum-latitude": "-3.270833333333549",
+      "liquefaction-minimum-longitude": "118.01666666666665",
+      "liquefaction-overlay": "zhu_2017_general.png",
+      "liquefaction-population-1std": "33030.20972604551, 45290.832607618184",
+      "liquefaction-population-2std": "27704.966659239977, 52172.58487526875",
+      "liquefaction-population-alert-color": "orange",
+      "liquefaction-population-alert-parameter": "Population exposure",
+      "liquefaction-population-alert-value": "39000",
+      "liquefaction-population-std": "6132.31",
+      "longitude": "120.1842",
+      "magnitude": "6.7",
+      "maximum-latitude": "-0.7729166666666676",
+      "maximum-longitude": "120.60208333333331",
+      "minimum-latitude": "-1.5229166666666676",
+      "minimum-longitude": "119.86041666666665",
+      "pdl-client-version": "Version 3.5.4 2026-01-22",
+      "rupture-warning": "True",
+      "shakemap-version": "5",
+      "version": "5"
+     },
+     "contents": {
+      "jessee_2018.png": {
+       "contentType": "image/png",
+       "lastModified": 1783652761000,
+       "length": 74201,
+       "url": "https://earthquake.usgs.gov/product/ground-failure/7000st95/us/1783652764398/jessee_2018.png"
+      },
+      "zhu_2017_general.png": {
+       "contentType": "image/png",
+       "lastModified": 1783652761000,
+       "length": 16151,
+       "url": "https://earthquake.usgs.gov/product/ground-failure/7000st95/us/1783652764398/zhu_2017_general.png"
+      },
+      "info.json": {
+       "contentType": "application/json",
+       "lastModified": 1783652760000,
+       "length": 6063,
+       "url": "https://earthquake.usgs.gov/product/ground-failure/7000st95/us/1783652764398/info.json"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "geometry": {
+  "type": "Point",
+  "coordinates": [
+   120.125,
+   -1.1735,
+   11
+  ]
+ }
+}

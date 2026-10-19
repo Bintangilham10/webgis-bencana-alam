@@ -1105,6 +1105,75 @@
   color: var(--ink-3);
 }
 
+/* Beberapa tautan di satu popup tersusun ke bawah. */
+.popup-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+/* Gempa USGS: perkiraan longsor dan likuefaksi akibat gempa (ground failure). */
+.popup-gf {
+  margin: 10px 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+.popup .popup-gf-title {
+  font-size: 12.5px;
+  font-weight: 750;
+}
+
+.popup-gf .popup-facts {
+  margin: 6px 0;
+}
+
+.popup-gf .popup-facts dd {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 6px;
+}
+
+.popup .popup-gf-note {
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--ink-3);
+}
+
+.gf-toggles {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.gf-toggles .btn {
+  flex: 1;
+  min-height: 34px;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+/* Gambar ground failure USGS dibuat tegas di piksel, tidak dihaluskan. */
+.gf-overlay {
+  image-rendering: pixelated;
+}
+
+.legend-subtitle {
+  margin-top: 8px;
+  font-size: 11.5px;
+  font-weight: 750;
+  color: var(--ink-2);
+}
+
+.legend-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 4px 0 2px;
+}
+
 /* ---------- Layar sempit ---------- */
 @media (max-width: 767.98px) {
   .tool,

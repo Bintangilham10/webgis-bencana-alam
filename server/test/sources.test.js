@@ -5,7 +5,7 @@ import { depthClass, hasTsunamiPotential } from '../src/lib/classify.js';
 import { extractEvents, normalizeEvent } from '../src/sources/bmkg-gempa.js';
 import { createHazardIdentifier, OUTAGE_MS } from '../src/sources/inarisk.js';
 import { extractJsonLiteral, extractVolcanoes } from '../src/sources/magma.js';
-import { extractEvents as extractUsgsEvents } from '../src/sources/usgs-gempa.js';
+import { extractEvents as extractUsgsEvents, fetchUsgsDetail, normalizeEvent as normalizeUsgsEvent } from '../src/sources/usgs-gempa.js';
 import { parseBoundarySql, toRings } from '../scripts/seed-wilayah.js';
 
 // Fixture = respons asli sumber (diambil 26 Sep 2026).
@@ -64,6 +64,60 @@ describe('USGS gempa', () => {
     assert.equal(event.props.status, 'reviewed');
     // Penanda tsunami USGS bukan peringatan, jadi tidak disimpan.
     assert.ok(!('tsunami' in event.props));
+  });
+
+  test('gempa yang punya PAGER atau ground failure ditandai untuk diambil detailnya', () => {
+    const detail = JSON.parse(fixture('usgs-detail-us7000st95.json'));
+    const event = normalizeUsgsEvent(detail);
+    assert.equal(event.code, 'us7000st95');
+    assert.equal(event.revision, detail.properties.updated);
+    assert.equal(event.hasDetail, true);
+    // Gempa di fixture feed hanya punya origin, phase-data, dan dyfi.
+    assert.ok(extractUsgsEvents(feed()).every((e) => !e.hasDetail));
+  });
+
+  // Fixture detail = gempa M6,7 dekat Palu, 16 Jun 2026 (dipangkas ke PAGER dan
+  // ground failure), dan alerts.json PAGER-nya.
+  test('detail: PAGER dengan level korban jiwa dan kerugian, ground failure longsor dan likuefaksi', async () => {
+    const urls = [];
+    const getJson = async (url) => {
+      urls.push(url);
+      return JSON.parse(fixture(url.endsWith('alerts.json') ? 'usgs-pager-alerts-us7000st95.json' : 'usgs-detail-us7000st95.json'));
+    };
+    const { pager, ground_failure: gf } = await fetchUsgsDetail('us7000st95', { getJson });
+    assert.match(urls[0], /fdsnws\/event\/1\/query\?eventid=us7000st95&format=geojson$/);
+    assert.match(urls[1], /losspager.*alerts\.json$/);
+
+    assert.deepEqual({ ...pager, onepager_url: undefined }, {
+      alert: 'yellow', max_mmi: 8, reviewed: false, fatality: 'yellow', economic: 'yellow', onepager_url: undefined,
+    });
+    assert.match(pager.onepager_url, /onepager\.pdf$/);
+
+    assert.equal(gf.landslide.alert, 'orange');
+    assert.equal(gf.landslide.area_km2, 18);
+    assert.equal(gf.landslide.population, 310);
+    assert.match(gf.landslide.overlay_url, /jessee_2018\.png$/);
+    assert.deepEqual(gf.landslide.bounds, [[-3.2677083333330907, 118.01562499999999], [1.0510416666666638, 122.35104166666271]]);
+    assert.equal(gf.liquefaction.alert, 'orange');
+    assert.equal(gf.liquefaction.area_km2, 91);
+    assert.equal(gf.liquefaction.population, 39000);
+    assert.match(gf.liquefaction.overlay_url, /zhu_2017_general\.png$/);
+    assert.deepEqual(gf.focus, [[-1.5229166666666676, 119.86041666666665], [-0.7729166666666676, 120.60208333333331]]);
+    assert.equal(gf.rupture_warning, true);
+  });
+
+  test('detail: alerts.json PAGER gagal tidak menggagalkan detail; gempa tanpa produk = null', async () => {
+    const getJson = async (url) => {
+      if (url.endsWith('alerts.json')) throw new Error('HTTP 503');
+      return JSON.parse(fixture('usgs-detail-us7000st95.json'));
+    };
+    const { pager } = await fetchUsgsDetail('us7000st95', { getJson });
+    assert.equal(pager.alert, 'yellow');
+    assert.equal(pager.fatality, null);
+
+    const bare = await fetchUsgsDetail('us0', { getJson: async () => ({ properties: { products: { origin: [{}] } } }) });
+    assert.deepEqual(bare, { pager: null, ground_failure: null });
+    await assert.rejects(() => fetchUsgsDetail('us0', { getJson: async () => ({}) }), /format detail USGS/);
   });
 
   test('gempa tanpa magnitudo dilewati; respons lain ditolak', () => {
