@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.19.04.72.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-19T11:41:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-19T11:53:00+08:00</effective>
+    <expires>2026-10-19T14:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 19 October 2026, 11:53 WITA di sebagian wilayah Sulawesi Tengah, khususnya di SINDUE TOBATA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 19 October 2026, 14:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSG/2026/10/19/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tengah</areaDesc>
+      <polygon>-0.285,119.777 -0.291,119.799 -0.316,119.813 -0.304,119.845 -0.348,119.867 -0.360,119.863 -0.366,119.866 -0.356,119.890 -0.356,119.914 -0.375,119.916 -0.394,119.926 -0.413,119.921 -0.413,119.918 -0.444,119.923 -0.448,119.927 -0.448,119.936 -0.452,119.938 -0.452,119.919 -0.431,119.903 -0.432,119.888 -0.428,119.869 -0.436,119.825 -0.424,119.807 -0.424,119.793 -0.416,119.788 -0.408,119.792 -0.397,119.807 -0.390,119.839 -0.384,119.830 -0.379,119.808 -0.382,119.794 -0.393,119.779 -0.393,119.763 -0.367,119.752 -0.325,119.770 -0.285,119.777</polygon>
+    </area>
+  </info>
+</alert>

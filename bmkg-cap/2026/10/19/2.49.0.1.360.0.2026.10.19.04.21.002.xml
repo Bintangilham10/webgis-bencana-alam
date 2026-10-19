@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.19.04.21.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-19T09:59:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-19T10:09:00+07:00</effective>
+    <expires>2026-10-19T11:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Riau</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 19 October 2026, 10:09 WIB di sebagian wilayah Kep. Riau, khususnya di SINGKEP, SINGKEP PESISIR, TELUK BINTAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 19 October 2026, 11:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKR/2026/10/19/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Riau</areaDesc>
+      <polygon>1.102,104.507 1.079,104.505 1.066,104.516 1.052,104.534 1.029,104.513 0.979,104.502 0.989,104.499 0.991,104.493 0.988,104.476 0.979,104.474 0.986,104.468 0.987,104.452 0.995,104.443 1.014,104.444 1.017,104.446 1.015,104.452 1.023,104.465 1.014,104.481 1.019,104.488 1.029,104.487 1.027,104.476 1.054,104.453 1.053,104.428 1.043,104.424 1.040,104.417 1.054,104.412 1.054,104.404 1.034,104.404 1.022,104.386 1.012,104.381 1.010,104.374 1.020,104.360 1.036,104.370 1.049,104.376 1.058,104.394 1.066,104.393 1.089,104.404 1.077,104.420 1.108,104.472 1.105,104.482 1.111,104.490 1.112,104.502 1.102,104.507</polygon>
+      <polygon>1.016,104.393 1.002,104.392 0.998,104.398 0.992,104.384 0.990,104.366 0.993,104.365 1.004,104.379 1.014,104.383 1.016,104.393</polygon>
+      <polygon>1.008,104.442 1.009,104.437 1.015,104.438 1.008,104.442</polygon>
+      <polygon>0.997,104.433 0.996,104.429 0.999,104.426 0.997,104.433</polygon>
+      <polygon>0.859,104.390 0.856,104.387 0.859,104.386 0.859,104.390</polygon>
+      <polygon>0.848,104.363 0.821,104.365 0.814,104.358 0.816,104.352 0.835,104.361 0.846,104.356 0.848,104.363</polygon>
+      <polygon>-0.470,104.600 -0.496,104.590 -0.494,104.580 -0.502,104.565 -0.539,104.535 -0.593,104.510 -0.642,104.505 -0.645,104.501 -0.621,104.490 -0.577,104.486 -0.538,104.488 -0.508,104.497 -0.470,104.509 -0.468,104.577 -0.481,104.588 -0.470,104.600</polygon>
+      <polygon>-0.470,104.600 -0.481,104.588 -0.468,104.577 -0.470,104.509 -0.439,104.522 -0.404,104.500 -0.353,104.484 -0.350,104.486 -0.363,104.506 -0.363,104.528 -0.371,104.539 -0.396,104.544 -0.420,104.563 -0.446,104.574 -0.458,104.597 -0.470,104.600</polygon>
+    </area>
+  </info>
+</alert>
