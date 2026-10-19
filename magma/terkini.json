@@ -1,10 +1,15 @@
 {
-  "updated_at": "2026-10-17T17:15:24.328Z",
-  "hash": "7d606ff4ecae",
+  "updated_at": "2026-10-19T22:30:32.641Z",
+  "hash": "736e979d0a38",
   "volcanoes": [
     {
       "name": "Anak Krakatau",
       "region": "Lampung",
+      "level": 3
+    },
+    {
+      "name": "Lokon",
+      "region": "Sulawesi Utara",
       "level": 3
     },
     {
@@ -85,11 +90,6 @@
     {
       "name": "Lewotobi Laki-laki",
       "region": "Nusa Tenggara Timur",
-      "level": 2
-    },
-    {
-      "name": "Lokon",
-      "region": "Sulawesi Utara",
       "level": 2
     },
     {
