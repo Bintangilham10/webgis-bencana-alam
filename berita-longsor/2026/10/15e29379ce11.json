@@ -1,0 +1,21 @@
+{
+  "guid": "CBMitgFBVV95cUxQUTkwNFBmMlZrMnFhVkVJZDFYakRSU000V255X0dZdHJza2FabXdNSEVCbFhDaG1IMUduQWFKaWpWQkFrV3FNZUhJc1lMVkVsd3FaY3ZpWWZFU0Q5bnl3NTFxVFBPVjd4eFIyZUhYTEVJYVltOWVyY051Wk5ESFI5X2pDQ0RFUTJCUDFEcTRYVmY4X3Q3T3Y1V3k2RG1CN0tvTTQzbENVUDlQeUFqbVgzNUJ6TVhTZw",
+  "title": "Intensitas Hujan Tinggi, Banjir dan Longsor Landa Tiga Desa di Gayo Lues - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUTkwNFBmMlZrMnFhVkVJZDFYakRSU000V255X0dZdHJza2FabXdNSEVCbFhDaG1IMUduQWFKaWpWQkFrV3FNZUhJc1lMVkVsd3FaY3ZpWWZFU0Q5bnl3NTFxVFBPVjd4eFIyZUhYTEVJYVltOWVyY051Wk5ESFI5X2pDQ0RFUTJCUDFEcTRYVmY4X3Q3T3Y1V3k2RG1CN0tvTTQzbENVUDlQeUFqbVgzNUJ6TVhTZw?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-10-20T00:55:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-20T03:00:40.472Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.13",
+      "nama": "Kabupaten Gayo Lues",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,23 @@
+{
+  "guid": "CBMi8AFBVV95cUxOZnNvY21MbUFxTTdhZWhoZFRJSDcyMi04OWRMZDJXMUpFczBoSEp1dlR3NGhkRHhHYnVwWmtNQU56MVZDbnZxNFFFeXZFZGphWDB0YlVfOVhWalVMbGZnWjYwUW5jTGZTVVBoWTNrWGlRM0ZnS0x0Nm9MaVFfUTlaMmNzVFhZcldZNlJQaURxOVhmdHVmZEI3dzhhMVBIVXpaT1VvZ0lDckdMOHJHS3Fja2p3MThUTVpnTDFlM3dta2ttOUVRamFSNVNjalUzemtZcTFBVkhnVE5SbFNyYVhBczd2dXNUTDBUVWkzc3lQNGo",
+  "title": "Tinjau Penanganan Longsor di Ruas Tapan–Batas Jambi, Menteri PU Instruksikan Cek Hulu Sungai Antisipasi Longsor Susulan - Berita Nasional - Media Pencerah Bangsa",
+  "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOZnNvY21MbUFxTTdhZWhoZFRJSDcyMi04OWRMZDJXMUpFczBoSEp1dlR3NGhkRHhHYnVwWmtNQU56MVZDbnZxNFFFeXZFZGphWDB0YlVfOVhWalVMbGZnWjYwUW5jTGZTVVBoWTNrWGlRM0ZnS0x0Nm9MaVFfUTlaMmNzVFhZcldZNlJQaURxOVhmdHVmZEI3dzhhMVBIVXpaT1VvZ0lDckdMOHJHS3Fja2p3MThUTVpnTDFlM3dta2ttOUVRamFSNVNjalUzemtZcTFBVkhnVE5SbFNyYVhBczd2dXNUTDBUVWkzc3lQNGo?oc=5",
+  "source": "Berita Nasional - Media Pencerah Bangsa",
+  "source_url": "https://beritanasional.com",
+  "published_at": "2026-10-20T00:34:23.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-20T03:00:40.472Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}
