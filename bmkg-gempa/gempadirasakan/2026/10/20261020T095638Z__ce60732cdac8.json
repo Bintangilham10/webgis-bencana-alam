@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-20T10:15:27.657Z",
+  "data": {
+    "Tanggal": "20 Okt 2026",
+    "Jam": "16:56:38 WIB",
+    "DateTime": "2026-10-20T09:56:38+00:00",
+    "Coordinates": "-10.19,123.71",
+    "Lintang": "10.19 LS",
+    "Bujur": "123.71 BT",
+    "Magnitude": "3.4",
+    "Kedalaman": "4 km",
+    "Wilayah": "Pusat gempa berada di darat 30km Barat Daya Kab. Kupang",
+    "Dirasakan": "III Kab. Kupang, III Kota Kupang"
+  }
+}
