@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-20T08:00:41.214Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        115.3700075397,
+        -2.9283529101
+      ]
+    },
+    "properties": {
+      "pkey": "399886",
+      "created_at": "2026-10-20T07:52:14.889Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "12541979-aaec-4fab-aa17-32bc70074c5d",
+      "image_url": "https://images.petabencana.id/12541979-aaec-4fab-aa17-32bc70074c5d.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 2,
+        "airQuality": 4
+      },
+      "tags": {
+        "city": "TAPIN",
+        "district_id": null,
+        "region_code": "6305",
+        "local_area_id": null,
+        "instance_region_code": "ID-KS"
+      },
+      "title": null,
+      "text": "Kondisi udara hari ini sangat buruk banget, foto ini dikirimkan oleh Ibu saya yang sedang berada di Kalimantan ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
