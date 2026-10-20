@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.20.16.14.010</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-20T22:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-20T23:00:00+07:00</effective>
+    <expires>2026-10-21T00:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Riau</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 20 October 2026, 23:00 WIB di sebagian wilayah Riau, khususnya di KUANTAN TENGAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 October 2026, 00:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CRU/2026/10/20/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Riau</areaDesc>
+      <polygon>-0.510,101.632 -0.518,101.651 -0.534,101.658 -0.560,101.679 -0.596,101.745 -0.652,101.788 -0.671,101.794 -0.678,101.793 -0.685,101.752 -0.684,101.713 -0.680,101.670 -0.665,101.644 -0.637,101.603 -0.637,101.584 -0.625,101.563 -0.603,101.543 -0.590,101.542 -0.570,101.513 -0.543,101.512 -0.536,101.485 -0.520,101.474 -0.520,101.465 -0.528,101.439 -0.528,101.435 -0.524,101.434 -0.516,101.438 -0.505,101.438 -0.490,101.428 -0.474,101.433 -0.450,101.451 -0.441,101.466 -0.415,101.484 -0.412,101.498 -0.434,101.514 -0.456,101.525 -0.469,101.541 -0.478,101.544 -0.487,101.559 -0.514,101.578 -0.512,101.590 -0.519,101.607 -0.509,101.603 -0.513,101.621 -0.510,101.632</polygon>
+    </area>
+  </info>
+</alert>
