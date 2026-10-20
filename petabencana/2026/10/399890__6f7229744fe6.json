@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-20T10:00:45.442Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        137.4881148078,
+        -3.6257088905
+      ]
+    },
+    "properties": {
+      "pkey": "399890",
+      "created_at": "2026-10-20T09:53:24.219Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "33936a02-0ec3-416a-aade-c164713129cb",
+      "image_url": "https://images.petabencana.id/33936a02-0ec3-416a-aade-c164713129cb.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 459.42916078267103,
+        "fireLocation": {
+          "lng": 137.48811480779875,
+          "lat": -3.625708890492774
+        },
+        "personLocation": {
+          "lat": "-3.6256500",
+          "lng": "137.4892467"
+        },
+        "fireRadius": {
+          "lng": 137.48397919197606,
+          "lat": -3.625899569380067
+        }
+      },
+      "tags": {
+        "city": "PUNCAK",
+        "district_id": null,
+        "region_code": "9125",
+        "local_area_id": null,
+        "instance_region_code": "ID-PA"
+      },
+      "title": null,
+      "text": "Kebakaran hutan dan lahan (karhutla) yang kian meluas di kawasan Pegunungan Tengah, Kabupaten Puncak, Papua Tengah, kini memicu kabut asap ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
