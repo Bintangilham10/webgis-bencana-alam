@@ -1,0 +1,26 @@
+{
+  "guid": "CBMinAFBVV95cUxOTW96cVVkX2k4U2kyd2pabGVhMVVmOFd2NTQzSDdIMldZOWNaN3g2TTl3c0RXbm1ENjBudE96ZjJuMTA4N3dZcHYzLWIzOWh6OXdCRHR1VzI5UG8yNUVua0I4Vkw1MHU3alBoc2hxbGw5dEU4RE14OHhCdEtGVXNpN0JMdE9na0M1QkhSSFRKa3JHQW95ZmFSREJYZmTSAaIBQVVfeXFMTlBiNjNDcHZyZVRsRE1BTC1ZTEZTeWpHNEZiTzdObWpZNGRuLU5URTBuUXA1WkdJbGhGcjVsU2l6YXdmWlhFdVduRktzVERzS2ZZNjItbFVPUGpadUluYlYwNWp2NnlXZlBJbWw5ZHFUaWg2U1BJY3BVSkhEYlBaRWhXM2tZSGdXX0VBLWtQMHBmdHFBeFJVTk1BeTlsLUNLS2VR",
+  "title": "Longsor di Kediri, Dua Rumah Rusak, Seorang Warga Terluka - Denpost - Denpost",
+  "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTW96cVVkX2k4U2kyd2pabGVhMVVmOFd2NTQzSDdIMldZOWNaN3g2TTl3c0RXbm1ENjBudE96ZjJuMTA4N3dZcHYzLWIzOWh6OXdCRHR1VzI5UG8yNUVua0I4Vkw1MHU3alBoc2hxbGw5dEU4RE14OHhCdEtGVXNpN0JMdE9na0M1QkhSSFRKa3JHQW95ZmFSREJYZmTSAaIBQVVfeXFMTlBiNjNDcHZyZVRsRE1BTC1ZTEZTeWpHNEZiTzdObWpZNGRuLU5URTBuUXA1WkdJbGhGcjVsU2l6YXdmWlhFdVduRktzVERzS2ZZNjItbFVPUGpadUluYlYwNWp2NnlXZlBJbWw5ZHFUaWg2U1BJY3BVSkhEYlBaRWhXM2tZSGdXX0VBLWtQMHBmdHFBeFJVTk1BeTlsLUNLS2VR?oc=5",
+  "source": "Denpost",
+  "source_url": "https://www.denpost.id",
+  "published_at": "2026-10-20T08:45:23.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-20T15:30:33.820Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.06",
+      "nama": "Kabupaten Kediri",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.71",
+      "nama": "Kota Kediri",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
