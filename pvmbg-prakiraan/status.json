@@ -13,6 +13,12 @@
       "done": 514,
       "pembaca": 2,
       "completed_at": "2026-10-01T05:00:35.448Z"
+    },
+    "2026-11": {
+      "layer": "pmbgi:prakiraan_2026_11",
+      "total": 514,
+      "done": 100,
+      "pembaca": 2
     }
   }
 }
