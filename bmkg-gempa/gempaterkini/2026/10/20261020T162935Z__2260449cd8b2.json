@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-10-20T16:45:28.507Z",
+  "data": {
+    "Tanggal": "20 Okt 2026",
+    "Jam": "23:29:35 WIB",
+    "DateTime": "2026-10-20T16:29:35+00:00",
+    "Coordinates": "3.79,95.72",
+    "Lintang": "3.79 LU",
+    "Bujur": "95.72 BT",
+    "Magnitude": "5.4",
+    "Kedalaman": "74 km",
+    "Wilayah": "59 km BaratDaya MEULABOH-ACEHBARAT",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}
