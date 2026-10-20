@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.20.13.72.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-20T17:53:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-20T18:05:00+08:00</effective>
+    <expires>2026-10-20T21:54:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 20 October 2026, 18:05 WITA di sebagian wilayah Sulawesi Tengah, khususnya di BANAWA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 20 October 2026, 21:54 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSG/2026/10/20/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tengah</areaDesc>
+      <polygon>-0.808,119.803 -0.816,119.798 -0.819,119.791 -0.821,119.782 -0.821,119.779 -0.823,119.776 -0.826,119.771 -0.816,119.762 -0.751,119.746 -0.724,119.729 -0.712,119.707 -0.695,119.709 -0.687,119.706 -0.667,119.721 -0.646,119.727 -0.645,119.740 -0.663,119.741 -0.682,119.761 -0.702,119.759 -0.709,119.770 -0.746,119.780 -0.764,119.792 -0.774,119.791 -0.791,119.803 -0.808,119.803</polygon>
+    </area>
+  </info>
+</alert>
