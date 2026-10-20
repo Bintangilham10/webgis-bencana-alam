@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.20.12.62.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-20T19:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-20T19:10:00+07:00</effective>
+    <expires>2026-10-20T21:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 20 October 2026, 19:10 WIB di sebagian wilayah Kalimantan Tengah, khususnya di BULIK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 20 October 2026, 21:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/20/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-1.969,111.385 -1.985,111.393 -1.989,111.408 -1.982,111.431 -1.974,111.484 -1.987,111.486 -2.000,111.493 -2.007,111.516 -2.011,111.561 -2.033,111.579 -2.052,111.575 -2.079,111.578 -2.099,111.576 -2.109,111.584 -2.119,111.601 -2.142,111.607 -2.169,111.555 -2.177,111.547 -2.185,111.545 -2.238,111.479 -2.233,111.462 -2.237,111.452 -2.271,111.453 -2.294,111.478 -2.295,111.489 -2.272,111.517 -2.276,111.525 -2.273,111.534 -2.289,111.538 -2.301,111.548 -2.311,111.529 -2.307,111.518 -2.312,111.499 -2.310,111.477 -2.313,111.438 -2.301,111.408 -2.281,111.382 -2.267,111.391 -2.198,111.386 -2.192,111.379 -2.194,111.368 -2.188,111.363 -2.152,111.355 -2.149,111.293 -2.141,111.265 -2.126,111.252 -2.121,111.223 -2.100,111.201 -2.092,111.200 -2.089,111.205 -2.075,111.203 -2.063,111.258 -2.049,111.262 -2.034,111.283 -2.017,111.291 -2.010,111.301 -1.992,111.300 -1.986,111.310 -1.985,111.329 -1.969,111.385</polygon>
+    </area>
+  </info>
+</alert>

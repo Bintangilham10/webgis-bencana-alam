@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiogFBVV95cUxPVUEyTzVHQzZBdC0ySTRvYzBXMXd5Rl9JZ0EtQ18tbDktaHpVWkNhRUhHXzk3dzc5U0l3VlFseFRXUVN3QVA0LXNsZUF4MjVDcE53V1d3WGU3d3NUeVdKc0hYMzg3SVRfWm9oTW9abVV6WEVMZFhPcE1sTVNBdURNeFBEUWpJSEN0R3F4TGVSWkJfZlV0OV81ZnFTUEpvdFJMT2fSAaIBQVVfeXFMT1VBMk81R0M2QXQtMkk0b2MwVzF3eUZfSWdBLUNfLWw5LWh6VVpDYUVIR185N3c3OVNJd1ZRbHhUV1FTd0FQNC1zbGVBeDI1Q3BOd1dXd1hlN3dzVHlXSnNIWDM4N0lUX1pvaE1vWm1VelhFTGRYT3BNbE1TQXVETXhQRFFqSUhDdEdxeExlUlpCX2ZVdDlfNWZxU1BKb3RSTE9n",
+  "title": "Longsor di Kediri Tabanan, 2 Rumah Rusak-1 Orang Luka - detikcom",
+  "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVUEyTzVHQzZBdC0ySTRvYzBXMXd5Rl9JZ0EtQ18tbDktaHpVWkNhRUhHXzk3dzc5U0l3VlFseFRXUVN3QVA0LXNsZUF4MjVDcE53V1d3WGU3d3NUeVdKc0hYMzg3SVRfWm9oTW9abVV6WEVMZFhPcE1sTVNBdURNeFBEUWpJSEN0R3F4TGVSWkJfZlV0OV81ZnFTUEpvdFJMT2fSAaIBQVVfeXFMT1VBMk81R0M2QXQtMkk0b2MwVzF3eUZfSWdBLUNfLWw5LWh6VVpDYUVIR185N3c3OVNJd1ZRbHhUV1FTd0FQNC1zbGVBeDI1Q3BOd1dXd1hlN3dzVHlXSnNIWDM4N0lUX1pvaE1vWm1VelhFTGRYT3BNbE1TQXVETXhQRFFqSUhDdEdxeExlUlpCX2ZVdDlfNWZxU1BKb3RSTE9n?oc=5",
+  "source": "detikcom",
+  "source_url": "https://www.detik.com",
+  "published_at": "2026-10-20T08:13:39.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-20T12:30:33.261Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "51.02",
+      "nama": "Kabupaten Tabanan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.06",
+      "nama": "Kabupaten Kediri",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.71",
+      "nama": "Kota Kediri",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
