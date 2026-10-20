@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-20T07:45:25.869Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.5626605241,
+        -6.1928745071
+      ]
+    },
+    "properties": {
+      "pkey": "399885",
+      "created_at": "2026-10-20T07:43:48.392Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "70566bf6-828e-4899-8c47-a1f0f72845e8",
+      "image_url": "https://images.petabencana.id/70566bf6-828e-4899-8c47-a1f0f72845e8.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 55.89784821031324,
+        "fireLocation": {
+          "lng": 106.56266052413577,
+          "lat": -6.19287450711181
+        },
+        "personLocation": {
+          "lng": 106.56337479673556,
+          "lat": -6.192895189763419
+        },
+        "fireRadius": {
+          "lng": 106.56215626883937,
+          "lat": -6.192911838903058
+        }
+      },
+      "tags": {
+        "city": "KOTA TANGERANG",
+        "district_id": null,
+        "region_code": "3671",
+        "local_area_id": null,
+        "instance_region_code": "ID-BT"
+      },
+      "title": null,
+      "text": "Kebakaran melanda bangunan gudang Momoyo yang berlokasi di Jalan Industri Raya VIII, Kelurahan Pasir Jaya, Kecamatan Jatiuwung,  Tangerang ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
