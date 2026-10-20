@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.20.08.62.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-20T14:45:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-20T14:54:00+07:00</effective>
+    <expires>2026-10-20T16:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 20 October 2026, 14:54 WIB di sebagian wilayah Kalimantan Tengah, khususnya di SERUYAN RAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 20 October 2026, 16:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/20/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-2.383,112.435 -2.391,112.435 -2.401,112.455 -2.405,112.459 -2.405,112.459 -2.405,112.459 -2.422,112.461 -2.427,112.462 -2.432,112.462 -2.451,112.465 -2.475,112.467 -2.499,112.470 -2.521,112.472 -2.522,112.472 -2.536,112.473 -2.539,112.473 -2.545,112.474 -2.550,112.474 -2.581,112.481 -2.582,112.481 -2.584,112.483 -2.617,112.513 -2.628,112.530 -2.631,112.535 -2.636,112.543 -2.651,112.534 -2.656,112.535 -2.671,112.523 -2.683,112.514 -2.715,112.490 -2.681,112.417 -2.680,112.405 -2.638,112.345 -2.564,112.280 -2.527,112.292 -2.482,112.303 -2.446,112.294 -2.378,112.293 -2.385,112.363 -2.375,112.380 -2.356,112.395 -2.347,112.398 -2.333,112.419 -2.329,112.429 -2.357,112.435 -2.383,112.435</polygon>
+    </area>
+  </info>
+</alert>

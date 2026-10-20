@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.20.08.61.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-20T13:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-20T14:00:00+07:00</effective>
+    <expires>2026-10-20T16:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 20 October 2026, 14:00 WIB di sebagian wilayah Kalimantan Barat, khususnya di SAMBAS, SELAKAU, SINGKAWANG UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 20 October 2026, 16:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/10/20/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>1.290,109.393 1.277,109.372 1.261,109.368 1.237,109.337 1.256,109.303 1.294,109.252 1.304,109.248 1.330,109.262 1.342,109.250 1.321,109.213 1.337,109.196 1.361,109.217 1.387,109.231 1.393,109.243 1.382,109.265 1.409,109.278 1.402,109.287 1.403,109.309 1.414,109.345 1.399,109.350 1.393,109.366 1.352,109.379 1.337,109.389 1.301,109.395 1.290,109.393</polygon>
+      <polygon>1.100,109.054 1.082,109.041 1.068,109.023 1.063,109.030 1.070,109.041 1.063,109.043 1.016,109.040 1.015,109.050 1.006,109.066 1.001,109.085 0.990,109.063 0.989,108.979 1.031,108.973 1.064,108.958 1.091,108.941 1.088,108.952 1.088,108.998 1.101,109.008 1.105,109.017 1.100,109.054</polygon>
+      <polygon>0.990,109.063 0.982,109.058 0.966,109.059 0.934,109.032 0.929,109.024 0.934,109.020 0.940,109.003 0.931,108.992 0.932,108.967 0.970,108.977 0.989,108.979 0.990,109.063</polygon>
+    </area>
+  </info>
+</alert>
