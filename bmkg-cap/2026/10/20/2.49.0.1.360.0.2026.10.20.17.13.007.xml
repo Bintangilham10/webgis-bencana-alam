@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.20.17.13.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-21T00:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-21T00:30:00+07:00</effective>
+    <expires>2026-10-21T03:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 October 2026, 00:30 WIB di sebagian wilayah Sumatera Barat, khususnya di KAPUR IX, SIPORA UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 October 2026, 03:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSB/2026/10/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Barat</areaDesc>
+      <polygon>0.419,100.448 0.418,100.435 0.407,100.450 0.331,100.463 0.313,100.473 0.308,100.494 0.321,100.517 0.319,100.532 0.307,100.541 0.297,100.564 0.279,100.577 0.269,100.591 0.261,100.600 0.241,100.615 0.234,100.621 0.224,100.626 0.215,100.630 0.206,100.622 0.183,100.622 0.175,100.618 0.156,100.598 0.140,100.550 0.121,100.545 0.103,100.518 0.116,100.488 0.114,100.470 0.122,100.428 0.108,100.407 0.080,100.394 0.047,100.370 0.043,100.361 0.043,100.338 0.085,100.316 0.102,100.325 0.114,100.320 0.150,100.328 0.171,100.350 0.180,100.351 0.219,100.333 0.253,100.332 0.274,100.318 0.283,100.318 0.300,100.309 0.333,100.330 0.349,100.332 0.368,100.319 0.384,100.303 0.397,100.301 0.398,100.313 0.403,100.318 0.384,100.347 0.392,100.378 0.401,100.383 0.407,100.399 0.422,100.422 0.415,100.431 0.419,100.448</polygon>
+      <polygon>-2.094,99.703 -2.104,99.691 -2.119,99.654 -2.117,99.644 -2.103,99.621 -2.162,99.599 -2.174,99.603 -2.183,99.612 -2.201,99.646 -2.221,99.644 -2.239,99.664 -2.255,99.671 -2.286,99.665 -2.281,99.643 -2.290,99.632 -2.287,99.629 -2.274,99.629 -2.273,99.626 -2.293,99.615 -2.290,99.608 -2.281,99.601 -2.264,99.598 -2.258,99.599 -2.253,99.610 -2.247,99.610 -2.242,99.604 -2.252,99.592 -2.228,99.598 -2.222,99.589 -2.224,99.584 -2.244,99.579 -2.246,99.575 -2.234,99.572 -2.227,99.575 -2.209,99.551 -2.192,99.548 -2.177,99.536 -2.153,99.528 -2.144,99.538 -2.154,99.566 -2.149,99.573 -2.121,99.562 -2.119,99.558 -2.105,99.551 -2.071,99.547 -2.064,99.566 -2.060,99.567 -2.049,99.557 -2.037,99.569 -2.034,99.581 -2.025,99.588 -2.030,99.594 -2.033,99.588 -2.040,99.585 -2.028,99.599 -2.032,99.604 -2.029,99.626 -2.036,99.624 -2.034,99.617 -2.040,99.617 -2.037,99.639 -2.042,99.641 -2.045,99.635 -2.051,99.638 -2.046,99.646 -2.047,99.651 -2.061,99.663 -2.077,99.692 -2.091,99.704 -2.094,99.703</polygon>
+      <polygon>-1.969,99.583 -1.975,99.593 -1.991,99.606 -1.996,99.606 -1.991,99.587 -1.975,99.577 -1.969,99.578 -1.969,99.583</polygon>
+      <polygon>-1.994,99.579 -2.004,99.578 -1.996,99.572 -2.001,99.567 -1.999,99.564 -1.989,99.570 -1.989,99.574 -1.994,99.579</polygon>
+      <polygon>-2.005,99.565 -2.008,99.571 -2.025,99.576 -2.019,99.559 -2.023,99.556 -2.018,99.552 -2.010,99.549 -2.006,99.551 -2.005,99.565</polygon>
+      <polygon>-2.020,99.613 -2.024,99.612 -2.021,99.609 -2.020,99.613</polygon>
+      <polygon>-2.128,99.531 -2.131,99.540 -2.134,99.528 -2.128,99.526 -2.128,99.531</polygon>
+      <polygon>-2.223,99.542 -2.219,99.537 -2.211,99.541 -2.213,99.544 -2.223,99.542</polygon>
+    </area>
+  </info>
+</alert>
