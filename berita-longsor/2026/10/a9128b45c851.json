@@ -1,0 +1,28 @@
+{
+  "guid": "CBMixAFBVV95cUxNQXJUeDlBaDhUU0pweDBXN3hEajBXR2ExQ0VNVlk0ZkpNN2pqMk82eFBONlZwcUpvV09nOWNlTEJWWTM5RjNyWjJNQ054Umpxa01kUl9tYjBNc19KUjczdElGZE1zZkJlU1FBUlJLa3Y5azBsMlBZd1N0RG0taDFMNEZPNVVPNGFzRlFKSTJ4bmQxYW5qWkZCUWZrV0lWRExTUlBjSkFhT3F2enFuQTV5eUdtZDhUZlFJNlJ2SXRYc3RBRTN1",
+  "title": "Longsor Tutupi Setengah Badan Jalan di Seulimuem, Arus Banda Aceh–Medan Terganggu - Prohaba.co",
+  "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQXJUeDlBaDhUU0pweDBXN3hEajBXR2ExQ0VNVlk0ZkpNN2pqMk82eFBONlZwcUpvV09nOWNlTEJWWTM5RjNyWjJNQ054Umpxa01kUl9tYjBNc19KUjczdElGZE1zZkJlU1FBUlJLa3Y5azBsMlBZd1N0RG0taDFMNEZPNVVPNGFzRlFKSTJ4bmQxYW5qWkZCUWZrV0lWRExTUlBjSkFhT3F2enFuQTV5eUdtZDhUZlFJNlJ2SXRYc3RBRTN1?oc=5",
+  "source": "Prohaba.co",
+  "source_url": "https://prohaba.tribunnews.com",
+  "published_at": "2026-10-20T07:16:11.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-20T09:15:29.399Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "11.71",
+      "nama": "Kota Banda Aceh",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "12.71",
+      "nama": "Kota Medan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

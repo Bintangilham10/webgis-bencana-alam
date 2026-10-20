@@ -1,0 +1,31 @@
+{
+  "guid": "CBMijAFBVV95cUxPWHVlVnBmYkN0QWFxbWpGVy1sOUtFOWZKYmJaVzhHU3AzVVludmM5SFpmblU2M1k3bnNPNElvcHYxbGNyaHQzMXlpaW1KSENSdER2VXktWUViV2x5SngxdDJyV0lPeS1qSktaX1FMRXQzaUxETGlGX1BtcTZtSEMzUGVjWDZ4NUsyRFVYVg",
+  "title": "Longsor di Kediri Tabanan, Dua Rumah Rusak dan Satu Warga Luka-luka - BALIPOST.com",
+  "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWHVlVnBmYkN0QWFxbWpGVy1sOUtFOWZKYmJaVzhHU3AzVVludmM5SFpmblU2M1k3bnNPNElvcHYxbGNyaHQzMXlpaW1KSENSdER2VXktWUViV2x5SngxdDJyV0lPeS1qSktaX1FMRXQzaUxETGlGX1BtcTZtSEMzUGVjWDZ4NUsyRFVYVg?oc=5",
+  "source": "BALIPOST.com",
+  "source_url": "https://www.balipost.com",
+  "published_at": "2026-10-20T07:59:06.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-20T09:15:29.399Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "51.02",
+      "nama": "Kabupaten Tabanan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.06",
+      "nama": "Kabupaten Kediri",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.71",
+      "nama": "Kota Kediri",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

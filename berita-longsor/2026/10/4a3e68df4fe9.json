@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiuAFBVV95cUxQWXdhc2tWZ2VvblNiVGVoSEprby1TczRCZjlxbTdkSjh6eU9LSUtSN2V0WG45c1FmckhwN0ppSmFoX0xpN3hXX1lseldFOXAySThXX2JfalZHSHNqQ1h2RlVzZVZKTnpMalJJV3BldHJLbjRCdkpRV2ViR2xsRTFZTW15QVJ0cUkxTWExVWUzdVZxVHEyQjczbWE3eGJ0LUlDbjBtNlFCZUpPMS1peXVNM3FTWVFqNmc1",
+  "title": "Menteri PU Cek Hulu Sungai Batang Tapan, Antisipasi Longsor Susulan di Jalur Tapan–Jambi - Pojoksatu",
+  "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWXdhc2tWZ2VvblNiVGVoSEprby1TczRCZjlxbTdkSjh6eU9LSUtSN2V0WG45c1FmckhwN0ppSmFoX0xpN3hXX1lseldFOXAySThXX2JfalZHSHNqQ1h2RlVzZVZKTnpMalJJV3BldHJLbjRCdkpRV2ViR2xsRTFZTW15QVJ0cUkxTWExVWUzdVZxVHEyQjczbWE3eGJ0LUlDbjBtNlFCZUpPMS1peXVNM3FTWVFqNmc1?oc=5",
+  "source": "Pojoksatu",
+  "source_url": "https://pojoksatu.id",
+  "published_at": "2026-10-20T07:52:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-20T09:15:29.399Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.25",
+      "nama": "Kabupaten Batang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "guid": "CBMitgFBVV95cUxOdzY1QlltdVpBbm02bjlWV1RCMkRqdmRkaFZkd2ltM0llWW9jZEJ3WTZLaEppeHlLTGt3dzV5Q2ZBa0NHU24xYnZfcjNRN2tOOS02N05fMDVNMmpBWllNY2RDa3hSZzFaZkNPdmpyRHJNRnYzS3poQ05Mdk1DQ0gzZ040ajRndk8zYjVYRWY0Rml4LVNEbXpaa2tZNjNSbk4xUEZidllrckJOa3VtVXFPa1h4YUd0QQ",
+  "title": "BPJN Sumbar Telah Pulihkan 14 Titik Longsor Di Tapan-Batas Jambi - Monitor Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdzY1QlltdVpBbm02bjlWV1RCMkRqdmRkaFZkd2ltM0llWW9jZEJ3WTZLaEppeHlLTGt3dzV5Q2ZBa0NHU24xYnZfcjNRN2tOOS02N05fMDVNMmpBWllNY2RDa3hSZzFaZkNPdmpyRHJNRnYzS3poQ05Mdk1DQ0gzZ040ajRndk8zYjVYRWY0Rml4LVNEbXpaa2tZNjNSbk4xUEZidllrckJOa3VtVXFPa1h4YUd0QQ?oc=5",
+  "source": "Monitor Indonesia",
+  "source_url": "https://monitorindonesia.com",
+  "published_at": "2026-10-20T08:44:40.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-20T09:15:29.399Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi",
+    "Sumatera Barat"
+  ]
+}
