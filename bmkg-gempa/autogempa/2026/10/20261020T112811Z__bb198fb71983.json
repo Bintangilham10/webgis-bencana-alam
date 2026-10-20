@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-20T12:00:44.899Z",
+  "data": {
+    "Tanggal": "20 Okt 2026",
+    "Jam": "18:28:11 WIB",
+    "DateTime": "2026-10-20T11:28:11+00:00",
+    "Coordinates": "-8.37,116.99",
+    "Lintang": "8.37 LS",
+    "Bujur": "116.99 BT",
+    "Magnitude": "3.7",
+    "Kedalaman": "15 km",
+    "Wilayah": "Pusat gempa berada di laut 6 km Barat Laut Pulau Saringi",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Kab. Sumbawa",
+    "Shakemap": "20261020182811.mmi.jpg"
+  }
+}
