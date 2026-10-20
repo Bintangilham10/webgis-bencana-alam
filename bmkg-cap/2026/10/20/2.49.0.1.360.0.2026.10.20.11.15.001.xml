@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.20.11.15.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-20T16:45:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-20T17:15:00+07:00</effective>
+    <expires>2026-10-20T18:15:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jambi</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 20 October 2026, 17:15 WIB di sebagian wilayah Jambi, khususnya di TEBO ILIR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 20 October 2026, 18:15 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJI/2026/10/20/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jambi</areaDesc>
+      <polygon>-1.423,102.814 -1.445,102.817 -1.453,102.825 -1.464,102.823 -1.499,102.823 -1.539,102.802 -1.579,102.805 -1.619,102.783 -1.633,102.782 -1.641,102.771 -1.666,102.758 -1.678,102.747 -1.690,102.744 -1.695,102.738 -1.689,102.734 -1.702,102.727 -1.704,102.713 -1.694,102.710 -1.680,102.712 -1.659,102.700 -1.635,102.679 -1.630,102.669 -1.615,102.665 -1.611,102.627 -1.598,102.612 -1.563,102.602 -1.554,102.628 -1.538,102.658 -1.505,102.671 -1.443,102.722 -1.436,102.739 -1.439,102.761 -1.430,102.773 -1.412,102.777 -1.407,102.803 -1.423,102.814</polygon>
+    </area>
+  </info>
+</alert>
