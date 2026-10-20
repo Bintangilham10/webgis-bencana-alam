@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-20T09:30:32.831Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        101.4505581843,
+        0.5262455
+      ]
+    },
+    "properties": {
+      "pkey": "399887",
+      "created_at": "2026-10-20T09:30:28.725Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "e5031865-602f-4c4a-a938-b3e21202f465",
+      "image_url": "https://images.petabencana.id/e5031865-602f-4c4a-a938-b3e21202f465.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 85.37050494221361,
+        "fireLocation": {
+          "lat": "0.5262455",
+          "lng": 101.450558184273
+        },
+        "personLocation": {
+          "lng": 101.45096006612778,
+          "lat": 0.5262646653135619
+        },
+        "fireRadius": {
+          "lng": 101.44979107249532,
+          "lat": 0.5262776851501201
+        }
+      },
+      "tags": {
+        "city": "KOTA PEKANBARU",
+        "district_id": null,
+        "region_code": "1471",
+        "local_area_id": null,
+        "instance_region_code": "ID-RI"
+      },
+      "title": null,
+      "text": "Kebakaran melanda kawasan pemukiman padat penduduk di Jalan Nilam, area dekat Ramayana, Kecamatan Pekanbaru Kota, Pekanbaru, Riau",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
