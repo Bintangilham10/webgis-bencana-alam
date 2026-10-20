@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.20.21.61.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-21T04:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-21T04:30:00+07:00</effective>
+    <expires>2026-10-21T06:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 October 2026, 04:30 WIB di sebagian wilayah Kalimantan Barat, khususnya di SIMPANG HULU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 October 2026, 06:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/10/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>-0.366,110.562 -0.379,110.566 -0.405,110.593 -0.444,110.612 -0.459,110.617 -0.468,110.613 -0.515,110.616 -0.572,110.512 -0.593,110.486 -0.620,110.465 -0.634,110.460 -0.703,110.457 -0.704,110.392 -0.680,110.338 -0.664,110.323 -0.667,110.274 -0.664,110.264 -0.676,110.238 -0.682,110.212 -0.679,110.194 -0.686,110.191 -0.690,110.178 -0.688,110.175 -0.701,110.149 -0.698,110.134 -0.705,110.099 -0.698,110.084 -0.671,110.076 -0.651,110.056 -0.640,110.052 -0.631,110.040 -0.641,110.031 -0.639,110.022 -0.651,110.016 -0.651,110.006 -0.658,109.988 -0.665,109.987 -0.671,109.994 -0.675,109.991 -0.669,109.986 -0.673,109.964 -0.694,109.984 -0.701,110.003 -0.710,110.016 -0.712,110.007 -0.755,109.990 -0.752,109.932 -0.734,109.941 -0.720,109.934 -0.732,109.903 -0.727,109.889 -0.715,109.879 -0.700,109.885 -0.691,109.884 -0.658,109.859 -0.659,109.846 -0.675,109.838 -0.672,109.825 -0.682,109.819 -0.680,109.813 -0.668,109.810 -0.641,109.816 -0.611,109.860 -0.594,109.868 -0.586,109.881 -0.565,109.879 -0.554,109.885 -0.531,109.919 -0.513,109.938 -0.500,109.947 -0.496,109.964 -0.497,109.977 -0.471,109.999 -0.470,110.006 -0.447,110.015 -0.445,110.026 -0.436,110.036 -0.414,110.044 -0.396,110.043 -0.386,110.051 -0.388,110.074 -0.398,110.086 -0.397,110.099 -0.401,110.100 -0.426,110.110 -0.422,110.118 -0.433,110.145 -0.419,110.181 -0.420,110.215 -0.442,110.248 -0.437,110.277 -0.449,110.300 -0.415,110.313 -0.409,110.318 -0.394,110.344 -0.396,110.367 -0.401,110.371 -0.412,110.371 -0.422,110.356 -0.434,110.351 -0.440,110.351 -0.445,110.356 -0.446,110.370 -0.467,110.372 -0.472,110.392 -0.449,110.401 -0.442,110.412 -0.436,110.413 -0.400,110.411 -0.378,110.403 -0.363,110.427 -0.344,110.442 -0.331,110.458 -0.326,110.472 -0.339,110.528 -0.366,110.562</polygon>
+    </area>
+  </info>
+</alert>

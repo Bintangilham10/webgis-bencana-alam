@@ -1,0 +1,33 @@
+{
+  "guid": "CBMi1gFBVV95cUxPUmJONW5FbTZRMDAwQk81NmJqcTk0NGRUTVBhRjlFZ0hNNktOZlZranRkNUEtck5PTFd1bXVvLVdvUExHZ2hMOWJsc0MteUJvdUtVdkhNemhscGhKemFPY3paMU8xdXVIblQxX3hmYVlVdHhmQnRJbjhTRFZabm91bjNseXl2RDFDazl5dFZJalBtUTZjMVlodjlib0xRUWptZ002WkpxaXE3SHVpeDRaYXRaSHhubTIySldRTUlRTE9kZU5Xa1dRMW9JWUdtTnAwdUotdXpR",
+  "title": "LONGSOR TUTUPI SEBAGIAN BADAN JALAN NASIONAL BANDA ACEH–MEDAN DI SEULIMUM, ACEH BESAR - BADAN PENANGGULANGAN BENCANA ACEH",
+  "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPUmJONW5FbTZRMDAwQk81NmJqcTk0NGRUTVBhRjlFZ0hNNktOZlZranRkNUEtck5PTFd1bXVvLVdvUExHZ2hMOWJsc0MteUJvdUtVdkhNemhscGhKemFPY3paMU8xdXVIblQxX3hmYVlVdHhmQnRJbjhTRFZabm91bjNseXl2RDFDazl5dFZJalBtUTZjMVlodjlib0xRUWptZ002WkpxaXE3SHVpeDRaYXRaSHhubTIySldRTUlRTE9kZU5Xa1dRMW9JWUdtTnAwdUotdXpR?oc=5",
+  "source": "BADAN PENANGGULANGAN BENCANA ACEH",
+  "source_url": "https://www.bpba.acehprov.go.id",
+  "published_at": "2026-10-20T09:20:17.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-20T21:45:27.537Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "11.06",
+      "nama": "Kabupaten Aceh Besar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "11.71",
+      "nama": "Kota Banda Aceh",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "12.71",
+      "nama": "Kota Medan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
