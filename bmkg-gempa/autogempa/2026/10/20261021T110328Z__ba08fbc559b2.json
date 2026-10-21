@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-21T11:30:32.042Z",
+  "data": {
+    "Tanggal": "21 Okt 2026",
+    "Jam": "18:03:28 WIB",
+    "DateTime": "2026-10-21T11:03:28+00:00",
+    "Coordinates": "-5.39,104.68",
+    "Lintang": "5.39 LS",
+    "Bujur": "104.68 BT",
+    "Magnitude": "3.9",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di darat 10 km utara Tanggamus",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Ulu Belu, Tanggamus, III Pulau Panggung, Tanggamus",
+    "Shakemap": "20261021180328.mmi.jpg"
+  }
+}
