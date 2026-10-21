@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.21.05.11.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-21T12:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-21T12:10:00+07:00</effective>
+    <expires>2026-10-21T15:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Aceh</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 October 2026, 12:10 WIB di sebagian wilayah Aceh, khususnya di INDRAPURI, MONTASIK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 October 2026, 15:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CAH/2026/10/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Aceh</areaDesc>
+      <polygon>5.497,95.572 5.488,95.565 5.483,95.553 5.475,95.557 5.469,95.544 5.435,95.518 5.424,95.499 5.400,95.482 5.378,95.450 5.333,95.419 5.302,95.388 5.329,95.370 5.341,95.369 5.351,95.353 5.369,95.343 5.372,95.356 5.392,95.379 5.397,95.393 5.412,95.403 5.428,95.403 5.431,95.408 5.439,95.409 5.454,95.408 5.453,95.428 5.443,95.431 5.443,95.450 5.450,95.451 5.464,95.461 5.479,95.486 5.492,95.492 5.514,95.512 5.527,95.516 5.534,95.527 5.497,95.572</polygon>
+      <polygon>5.550,95.496 5.540,95.501 5.534,95.527 5.527,95.516 5.514,95.512 5.492,95.492 5.479,95.486 5.464,95.461 5.450,95.451 5.443,95.450 5.443,95.431 5.453,95.428 5.454,95.408 5.458,95.404 5.463,95.412 5.469,95.412 5.461,95.400 5.460,95.396 5.467,95.392 5.483,95.395 5.493,95.406 5.494,95.410 5.486,95.419 5.485,95.432 5.493,95.454 5.550,95.496</polygon>
+    </area>
+  </info>
+</alert>
