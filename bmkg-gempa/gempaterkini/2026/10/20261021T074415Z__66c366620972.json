@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-10-21T08:00:45.968Z",
+  "data": {
+    "Tanggal": "21 Okt 2026",
+    "Jam": "14:44:15 WIB",
+    "DateTime": "2026-10-21T07:44:15+00:00",
+    "Coordinates": "-7.75,128.18",
+    "Lintang": "7.75 LS",
+    "Bujur": "128.18 BT",
+    "Magnitude": "5.1",
+    "Kedalaman": "96 km",
+    "Wilayah": "62 km TimurLaut MALUKUBRTDAYA",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}
