@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.21.04.72.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-21T11:29:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-21T11:40:00+08:00</effective>
+    <expires>2026-10-21T14:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 October 2026, 11:40 WITA di sebagian wilayah Sulawesi Tengah, khususnya di AMPIBABO, BALAESANG TANJUNG, SIRENJA, TORIBULU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 October 2026, 14:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSG/2026/10/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tengah</areaDesc>
+      <polygon>-0.168,119.914 -0.174,119.924 -0.212,119.933 -0.236,119.913 -0.249,119.917 -0.259,119.922 -0.270,119.905 -0.284,119.910 -0.288,119.924 -0.296,119.921 -0.302,119.927 -0.314,119.921 -0.324,119.930 -0.334,119.930 -0.356,119.914 -0.356,119.890 -0.366,119.866 -0.360,119.863 -0.348,119.867 -0.304,119.845 -0.316,119.813 -0.291,119.799 -0.285,119.777 -0.264,119.786 -0.256,119.795 -0.214,119.805 -0.195,119.818 -0.176,119.813 -0.165,119.801 -0.155,119.799 -0.143,119.810 -0.151,119.824 -0.171,119.903 -0.168,119.914</polygon>
+      <polygon>-0.109,119.789 -0.125,119.784 -0.138,119.752 -0.143,119.719 -0.135,119.702 -0.118,119.682 -0.115,119.672 -0.093,119.654 -0.066,119.644 -0.029,119.614 -0.013,119.606 -0.004,119.606 -0.017,119.666 0.003,119.672 0.007,119.662 0.018,119.660 0.020,119.665 0.007,119.682 -0.005,119.716 -0.036,119.742 -0.048,119.743 -0.061,119.738 -0.073,119.752 -0.072,119.762 -0.077,119.769 -0.094,119.775 -0.104,119.773 -0.112,119.777 -0.109,119.789</polygon>
+      <polygon>0.090,119.624 0.088,119.621 0.092,119.617 0.098,119.618 0.090,119.624</polygon>
+      <polygon>-0.038,119.798 -0.045,119.803 -0.039,119.795 -0.038,119.798</polygon>
+      <polygon>-0.056,119.806 -0.058,119.804 -0.052,119.801 -0.050,119.804 -0.056,119.806</polygon>
+      <polygon>-0.516,119.943 -0.514,119.938 -0.500,119.934 -0.452,119.938 -0.448,119.936 -0.448,119.927 -0.444,119.923 -0.413,119.918 -0.413,119.921 -0.406,119.998 -0.395,120.044 -0.403,120.053 -0.418,120.060 -0.417,120.065 -0.450,120.072 -0.471,120.066 -0.481,120.055 -0.493,120.049 -0.517,120.052 -0.517,120.045 -0.523,119.947 -0.516,119.943</polygon>
+      <polygon>-0.258,120.010 -0.273,120.007 -0.286,120.009 -0.292,120.013 -0.301,120.028 -0.312,120.033 -0.348,120.032 -0.395,120.044 -0.406,119.998 -0.413,119.921 -0.394,119.926 -0.375,119.916 -0.356,119.914 -0.334,119.930 -0.324,119.930 -0.314,119.921 -0.302,119.927 -0.296,119.921 -0.288,119.924 -0.284,119.910 -0.270,119.905 -0.259,119.922 -0.249,119.917 -0.258,119.970 -0.258,120.010</polygon>
+    </area>
+  </info>
+</alert>
