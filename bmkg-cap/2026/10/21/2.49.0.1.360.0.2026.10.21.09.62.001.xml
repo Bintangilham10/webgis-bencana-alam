@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.21.09.62.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-21T14:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-21T14:40:00+07:00</effective>
+    <expires>2026-10-21T16:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 October 2026, 14:40 WIB di sebagian wilayah Kalimantan Tengah, khususnya di HANAU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 October 2026, 16:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-2.527,112.292 -2.564,112.280 -2.588,112.273 -2.627,112.277 -2.699,112.215 -2.704,112.194 -2.703,112.145 -2.678,112.079 -2.661,111.995 -2.621,112.004 -2.529,112.015 -2.521,112.020 -2.476,112.044 -2.409,112.059 -2.365,112.044 -2.343,112.041 -2.341,112.040 -2.345,112.095 -2.338,112.134 -2.401,112.135 -2.406,112.145 -2.423,112.156 -2.427,112.212 -2.449,112.213 -2.480,112.244 -2.493,112.264 -2.509,112.260 -2.520,112.269 -2.527,112.292</polygon>
+    </area>
+  </info>
+</alert>
