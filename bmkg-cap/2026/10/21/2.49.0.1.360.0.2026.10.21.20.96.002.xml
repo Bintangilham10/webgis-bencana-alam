@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.21.20.96.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-22T03:10:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-22T03:40:00+09:00</effective>
+    <expires>2026-10-22T06:40:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua Barat Daya</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 22 October 2026, 03:40 WIT di sebagian wilayah Papua Barat Daya, khususnya di MAKBON.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 22 October 2026, 06:40 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPD/2026/10/22/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua Barat Daya</areaDesc>
+      <polygon>-0.727,131.740 -0.746,131.744 -0.784,131.740 -0.790,131.744 -0.810,131.733 -0.830,131.698 -0.864,131.663 -0.869,131.648 -0.867,131.638 -0.877,131.626 -0.873,131.603 -0.875,131.594 -0.914,131.580 -0.926,131.567 -0.930,131.551 -0.866,131.530 -0.857,131.523 -0.863,131.507 -0.871,131.498 -0.868,131.490 -0.859,131.481 -0.878,131.461 -0.873,131.447 -0.879,131.428 -0.869,131.429 -0.862,131.437 -0.864,131.412 -0.863,131.411 -0.861,131.409 -0.860,131.409 -0.859,131.408 -0.860,131.408 -0.861,131.406 -0.861,131.405 -0.861,131.405 -0.860,131.402 -0.860,131.402 -0.859,131.400 -0.859,131.399 -0.859,131.398 -0.858,131.398 -0.857,131.397 -0.856,131.397 -0.856,131.397 -0.856,131.397 -0.856,131.398 -0.854,131.399 -0.854,131.400 -0.853,131.401 -0.853,131.402 -0.851,131.405 -0.850,131.405 -0.849,131.405 -0.846,131.403 -0.846,131.403 -0.846,131.401 -0.846,131.401 -0.845,131.401 -0.845,131.401 -0.842,131.402 -0.842,131.401 -0.842,131.401 -0.841,131.400 -0.841,131.399 -0.840,131.398 -0.840,131.397 -0.840,131.396 -0.839,131.396 -0.839,131.395 -0.838,131.395 -0.837,131.394 -0.837,131.394 -0.836,131.394 -0.835,131.393 -0.834,131.393 -0.833,131.393 -0.832,131.392 -0.829,131.392 -0.828,131.392 -0.827,131.391 -0.827,131.389 -0.827,131.389 -0.826,131.389 -0.826,131.388 -0.825,131.388 -0.825,131.388 -0.824,131.388 -0.823,131.389 -0.823,131.389 -0.822,131.403 -0.816,131.408 -0.808,131.398 -0.806,131.397 -0.805,131.397 -0.803,131.398 -0.800,131.398 -0.800,131.398 -0.799,131.399 -0.796,131.400 -0.796,131.400 -0.795,131.401 -0.781,131.399 -0.777,131.399 -0.777,131.398 -0.769,131.412 -0.758,131.422 -0.752,131.461 -0.730,131.510 -0.727,131.539 -0.731,131.544 -0.748,131.543 -0.761,131.532 -0.770,131.513 -0.775,131.519 -0.766,131.562 -0.749,131.588 -0.741,131.616 -0.743,131.672 -0.742,131.687 -0.731,131.710 -0.727,131.740</polygon>
+      <polygon>-0.777,131.395 -0.779,131.391 -0.779,131.390 -0.777,131.396 -0.777,131.395</polygon>
+      <polygon>-0.783,131.356 -0.784,131.352 -0.787,131.348 -0.787,131.347 -0.783,131.356 -0.783,131.356</polygon>
+    </area>
+  </info>
+</alert>
