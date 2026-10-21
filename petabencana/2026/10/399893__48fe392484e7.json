@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-21T08:15:28.585Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        107.0263678757,
+        -6.2103806813
+      ]
+    },
+    "properties": {
+      "pkey": "399893",
+      "created_at": "2026-10-21T08:12:36.851Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "1ab2df40-1bab-459e-8717-fbf45d94829e",
+      "image_url": "https://images.petabencana.id/1ab2df40-1bab-459e-8717-fbf45d94829e.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 82.70117784844574,
+        "fireLocation": {
+          "lng": 107.02636787568264,
+          "lat": -6.210380681279162
+        },
+        "personLocation": {
+          "lng": 107.02667278209924,
+          "lat": -6.210081774116546
+        },
+        "fireRadius": {
+          "lng": 107.0256436792476,
+          "lat": -6.210567334013447
+        }
+      },
+      "tags": {
+        "city": "KOTA BEKASI",
+        "district_id": null,
+        "region_code": "3275",
+        "local_area_id": null,
+        "instance_region_code": "ID-JB"
+      },
+      "title": null,
+      "text": "Kebakaran lahan kosong menyebabkan asap tebal membumbung tinggi di kawasan Jembatan KCM, Wisma Asri, Bekasi Utara, Rabu siang, 21 Oktober",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
