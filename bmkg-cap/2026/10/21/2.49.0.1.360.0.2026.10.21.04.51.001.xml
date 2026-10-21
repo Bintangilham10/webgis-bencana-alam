@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.21.04.51.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-21T12:34:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-21T12:45:00+08:00</effective>
+    <expires>2026-10-21T15:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bali</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 October 2026, 12:45 WITA di sebagian wilayah Bali, khususnya di KINTAMANI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 October 2026, 15:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBL/2026/10/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bali</areaDesc>
+      <polygon>-8.171,115.288 -8.173,115.306 -8.151,115.317 -8.147,115.325 -8.156,115.333 -8.149,115.338 -8.145,115.362 -8.167,115.368 -8.177,115.388 -8.186,115.390 -8.189,115.399 -8.188,115.429 -8.178,115.441 -8.181,115.436 -8.198,115.454 -8.214,115.441 -8.222,115.442 -8.243,115.448 -8.242,115.455 -8.252,115.453 -8.264,115.435 -8.273,115.429 -8.280,115.430 -8.319,115.418 -8.323,115.410 -8.336,115.410 -8.344,115.400 -8.357,115.396 -8.352,115.394 -8.349,115.390 -8.340,115.389 -8.331,115.392 -8.334,115.397 -8.340,115.397 -8.339,115.402 -8.322,115.401 -8.311,115.394 -8.331,115.392 -8.320,115.382 -8.302,115.375 -8.301,115.366 -8.302,115.358 -8.315,115.351 -8.334,115.347 -8.332,115.339 -8.321,115.339 -8.321,115.334 -8.346,115.331 -8.334,115.327 -8.329,115.313 -8.333,115.295 -8.316,115.291 -8.316,115.283 -8.326,115.264 -8.315,115.259 -8.315,115.251 -8.292,115.245 -8.261,115.251 -8.242,115.233 -8.201,115.245 -8.175,115.244 -8.179,115.255 -8.165,115.266 -8.161,115.279 -8.168,115.282 -8.171,115.288</polygon>
+    </area>
+  </info>
+</alert>
