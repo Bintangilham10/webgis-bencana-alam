@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-21T07:45:33.365Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.6119984819,
+        -3.248077617
+      ]
+    },
+    "properties": {
+      "pkey": "399892",
+      "created_at": "2026-10-21T07:36:50.238Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "3af23ec3-2b4e-478d-bb50-7032813c68e5",
+      "image_url": "https://images.petabencana.id/3af23ec3-2b4e-478d-bb50-7032813c68e5.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 43.62091973709373,
+        "fireLocation": {
+          "lng": 114.6119984819448,
+          "lat": -3.248077617037282
+        },
+        "personLocation": {
+          "lng": 114.61088196926892,
+          "lat": -3.2454677443878523
+        },
+        "fireRadius": {
+          "lng": 114.61160687942885,
+          "lat": -3.248109751839934
+        }
+      },
+      "tags": {
+        "city": "BARITO KUALA",
+        "district_id": null,
+        "region_code": "6304",
+        "local_area_id": null,
+        "instance_region_code": "ID-KS"
+      },
+      "title": null,
+      "text": "Terjadi kebakaran lahan di sekitar jl, Trans Kalimantan, Handil Bakti, Barito Kuala, Kalimantan Selatan (21/10)",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
