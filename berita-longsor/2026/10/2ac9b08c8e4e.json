@@ -1,0 +1,26 @@
+{
+  "guid": "CBMitAFBVV95cUxPYW1GRENHSmtBdzNLaHJ1S241SEZrM3VCUmZwN0VUUmdYb1V1TE0ySjBsbko2TFZOcDZsZ3F4WEwwb09NZHliWlR5cWRJZVdXeWtZNXByem5PXzV6bmE1aVZqM0dyclFCUGpiMTdfY0EyaGVOczBtNTRGX2d5RkZZamRlUXdKRGp2Qmg1czNQVHBSOUMxbmJoUFA4UUpJdUJGTkFMYko3WFpfdGtEZG12OEU5am0",
+  "title": "Cuaca Ekstrem Bogor, Warga Diminta Waspadai Banjir dan Longsor - Pikiran Rakyat Koran",
+  "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPYW1GRENHSmtBdzNLaHJ1S241SEZrM3VCUmZwN0VUUmdYb1V1TE0ySjBsbko2TFZOcDZsZ3F4WEwwb09NZHliWlR5cWRJZVdXeWtZNXByem5PXzV6bmE1aVZqM0dyclFCUGpiMTdfY0EyaGVOczBtNTRGX2d5RkZZamRlUXdKRGp2Qmg1czNQVHBSOUMxbmJoUFA4UUpJdUJGTkFMYko3WFpfdGtEZG12OEU5am0?oc=5",
+  "source": "Pikiran Rakyat Koran",
+  "source_url": "https://koran.pikiran-rakyat.com",
+  "published_at": "2026-10-20T22:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-21T00:55:21.032Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
