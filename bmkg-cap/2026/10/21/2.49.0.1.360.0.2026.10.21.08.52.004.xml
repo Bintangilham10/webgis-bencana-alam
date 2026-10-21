@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.21.08.52.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-21T16:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-21T16:05:00+08:00</effective>
+    <expires>2026-10-21T18:05:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 October 2026, 16:05 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di BAYAN, KILO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 October 2026, 18:05 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/10/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.344,118.494 -8.361,118.475 -8.378,118.463 -8.387,118.433 -8.400,118.413 -8.427,118.388 -8.435,118.353 -8.447,118.343 -8.450,118.321 -8.448,118.316 -8.434,118.307 -8.459,118.274 -8.457,118.257 -8.437,118.263 -8.436,118.281 -8.420,118.306 -8.400,118.320 -8.383,118.322 -8.377,118.317 -8.370,118.317 -8.365,118.335 -8.345,118.338 -8.344,118.347 -8.348,118.352 -8.346,118.359 -8.337,118.366 -8.332,118.386 -8.327,118.389 -8.305,118.388 -8.296,118.410 -8.269,118.444 -8.271,118.448 -8.290,118.460 -8.300,118.473 -8.329,118.481 -8.344,118.494</polygon>
+      <polygon>-8.246,116.494 -8.272,116.470 -8.301,116.472 -8.330,116.467 -8.394,116.422 -8.403,116.431 -8.408,116.423 -8.417,116.421 -8.423,116.427 -8.435,116.406 -8.413,116.379 -8.411,116.353 -8.386,116.360 -8.344,116.360 -8.290,116.343 -8.267,116.329 -8.224,116.317 -8.212,116.346 -8.213,116.375 -8.222,116.428 -8.228,116.447 -8.229,116.463 -8.246,116.494</polygon>
+    </area>
+  </info>
+</alert>
