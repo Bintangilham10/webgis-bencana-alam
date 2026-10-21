@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.21.11.16.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-21T16:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-21T17:20:00+07:00</effective>
+    <expires>2026-10-21T18:50:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 October 2026, 17:20 WIB di sebagian wilayah Sumatera Selatan, khususnya di PULAU RIMAU, SUAK TAPEH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 October 2026, 18:50 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSS/2026/10/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Selatan</areaDesc>
+      <polygon>-2.442,104.614 -2.473,104.604 -2.516,104.603 -2.557,104.594 -2.583,104.582 -2.613,104.551 -2.628,104.525 -2.639,104.477 -2.641,104.454 -2.616,104.372 -2.620,104.365 -2.646,104.374 -2.675,104.396 -2.690,104.414 -2.727,104.495 -2.739,104.490 -2.744,104.472 -2.765,104.475 -2.778,104.465 -2.790,104.444 -2.790,104.437 -2.783,104.436 -2.750,104.385 -2.718,104.354 -2.666,104.286 -2.647,104.306 -2.623,104.321 -2.581,104.328 -2.555,104.353 -2.545,104.371 -2.533,104.369 -2.531,104.361 -2.534,104.356 -2.521,104.348 -2.456,104.359 -2.437,104.462 -2.418,104.506 -2.396,104.536 -2.383,104.577 -2.346,104.628 -2.413,104.623 -2.442,104.614</polygon>
+      <polygon>-2.896,104.255 -2.898,104.245 -2.870,104.269 -2.848,104.278 -2.831,104.262 -2.784,104.287 -2.773,104.297 -2.751,104.323 -2.731,104.366 -2.750,104.385 -2.783,104.436 -2.790,104.437 -2.797,104.430 -2.826,104.370 -2.859,104.339 -2.880,104.365 -2.892,104.354 -2.881,104.327 -2.874,104.325 -2.897,104.284 -2.901,104.284 -2.904,104.270 -2.901,104.258 -2.896,104.255</polygon>
+    </area>
+  </info>
+</alert>
