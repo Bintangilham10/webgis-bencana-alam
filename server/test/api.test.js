@@ -15,7 +15,16 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
   let syncVolcanoes;
 
   // Layanan luar diganti versi palsu; jumlah panggilan dicatat untuk menguji cache.
-  const calls = { identify: 0, places: 0 };
+  const calls = { identify: 0, places: 0, river: 0 };
+  // Debit historis sintetis untuk ambang GloFAS: tahun ke-i berpuncak 2i m³/s
+  // (ambang 2 tahunan 21, 5 tahunan ±32, 20 tahunan ±38).
+  const riverHistory = { time: [], river_discharge: [] };
+  for (let y = 1; y <= 20; y++) {
+    for (let d = 0; d < 365; d++) {
+      riverHistory.time.push(`${1990 + y}-06-01`);
+      riverHistory.river_discharge.push(d === 0 ? 2 * y : 1);
+    }
+  }
   let placesShouldFail = false;
   // Router menyimpan referensi fungsi saat dibuat, jadi hasil palsu diatur lewat variabel ini.
   let placesOverride = null;
@@ -54,6 +63,33 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       },
     },
     rainNow: async () => ({ layer: 'IMERG_Precipitation_Rate_30min', time: '2026-09-27T11:30:00Z', tile_url: 'https://contoh/{z}/{y}/{x}.png' }),
+    gdacs: {
+      fetchEvents: async () => [
+        {
+          id: 'FL-1', type: 'FL', type_label: 'Banjir', level: 'orange', name: null,
+          from: '2026-10-01T00:00:00.000Z', to: '2026-10-05T00:00:00.000Z', current: false, severity: null,
+          countries: ['Indonesia'], origin: 'GLOFAS', report_url: null, icon_url: null, modified: '2026-10-05T00:00:00.000Z',
+          lon: 106.8, lat: -6.2,
+        },
+      ],
+    },
+    river: {
+      forecast: async () => {
+        calls.river++;
+        return {
+          latitude: -6.225,
+          longitude: 106.825,
+          daily: {
+            time: ['2026-10-19', '2026-10-20'],
+            river_discharge_median: [5, 30],
+            river_discharge_p25: [4, 20],
+            river_discharge_p75: [6, 40],
+            river_discharge_max: [8, 60],
+          },
+        };
+      },
+      history: async () => ({ daily: riverHistory }),
+    },
     cloudsNow: async () => ({ layer: 'Himawari_AHI_Band13_Clean_Infrared', time: '2026-10-18T16:30:00Z', tile_url: 'https://contoh/awan/{z}/{y}/{x}.png' }),
     // CEWS palsu: Kabupaten Uji berstatus Siaga pada dasarian III September 2026.
     rainWarnings: async () => ({
@@ -250,6 +286,73 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
     });
     assert.equal(failed.items, 1);
     assert.match(failed.message, /detail uji-palu: HTTP 503/);
+  });
+
+  test('gempa EMSC tampil terpisah, dengan lembaga penentu dan pasangannya di feed BMKG', async () => {
+    const { syncEmscEarthquakes } = await import('../src/jobs/sync-earthquakes.js');
+    const at = Date.now() - 30 * 60_000;
+    const iso = (ms) => new Date(ms).toISOString();
+    await syncEarthquakes({
+      fetchEvents: async () => ({
+        events: [quake({ id: 'bmkg:uji-flores', magnitude: 5.1, occurredAt: iso(at), lat: -8.27, lon: 120.63, props: { wilayah: 'Laut Flores' } })],
+        errors: [],
+      }),
+    });
+    const emsc = (id, magnitude, ms, props) => ({
+      id, source: 'emsc', hazard: 'gempa', magnitude, depthKm: 10, occurredAt: iso(ms), lat: -8.3, lon: 120.6,
+      props: { wilayah: 'FLORES REGION, INDONESIA', mag_type: 'm', ...props },
+    });
+    const feeds = [];
+    await syncEmscEarthquakes({
+      fetchEvents: async ({ feed }) => {
+        feeds.push(feed);
+        return {
+          events: [
+            emsc('emsc:uji-sama', 5.1, at + 1_000, { auth: 'BMKG' }),
+            // Gempa kecil yang tidak ada di feed publik BMKG.
+            emsc('emsc:uji-kecil', 2.4, at - 600_000, { auth: 'BMKG' }),
+          ],
+          errors: [],
+        };
+      },
+    });
+    assert.deepEqual(feeds, ['week']);
+
+    const { body } = await getJson('/earthquakes?source=emsc');
+    assert.equal(body.meta.source, 'emsc');
+    assert.match(body.attribution, /EMSC/);
+    const byId = Object.fromEntries(body.features.map((f) => [f.properties.id, f.properties]));
+    assert.deepEqual(Object.keys(byId).sort(), ['emsc:uji-kecil', 'emsc:uji-sama']);
+    assert.equal(byId['emsc:uji-sama'].auth, 'BMKG');
+    assert.equal(byId['emsc:uji-sama'].bmkg.id, 'bmkg:uji-flores');
+    assert.equal(byId['emsc:uji-kecil'].bmkg, null);
+    // Tampilan BMKG tidak berubah: EMSC tidak ikut.
+    const { body: bmkg } = await getJson('/earthquakes');
+    assert.ok(bmkg.features.every((f) => f.properties.source === 'BMKG'));
+    assert.equal((await getJson('/earthquakes?source=jma')).status, 400);
+  });
+
+  test('peringatan GDACS dikirim sebagai GeoJSON [lon, lat]', async () => {
+    const { status, body } = await getJson('/gdacs');
+    assert.equal(status, 200);
+    assert.match(body.attribution, /GDACS/);
+    assert.equal(body.meta.alert_days, 365);
+    assert.deepEqual(body.features[0].geometry.coordinates, [106.8, -6.2]);
+    assert.equal(body.features[0].properties.level, 'orange');
+    assert.ok(!('lon' in body.features[0].properties));
+  });
+
+  test('debit sungai GloFAS: level dari ambang sel, cache per ±1 km, koordinat di luar kawasan ditolak', async () => {
+    const { status, body } = await getJson('/river?lat=-6.25&lon=106.83');
+    assert.equal(status, 200);
+    assert.equal(body.thresholds.rp2, 21);
+    assert.deepEqual(body.days.map((d) => d.level), [0, 1]);
+    assert.equal(body.level, 1);
+    assert.equal(body.level_max, 3);
+    assert.deepEqual(body.peak, { date: '2026-10-20', median_m3s: 30, level: 1 });
+    await getJson('/river?lat=-6.251&lon=106.832');
+    assert.equal(calls.river, 1);
+    assert.equal((await getJson('/river?lat=50&lon=10')).status, 400);
   });
 
   test('perubahan level gunung api mengisi level_changed_at', async () => {

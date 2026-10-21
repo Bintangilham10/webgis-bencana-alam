@@ -2,12 +2,14 @@ import compression from 'compression';
 import express from 'express';
 import { rateLimit } from './lib/rate-limit.js';
 import { earthquakesRouter } from './routes/earthquakes.js';
+import { createGdacsRouter } from './routes/gdacs.js';
 import { createGeocodeRouter } from './routes/geocode.js';
 import { healthRouter } from './routes/health.js';
 import { createLandslideRouter } from './routes/landslides.js';
 import { createOutlookRouter } from './routes/outlook.js';
 import { referenceRouter } from './routes/reference.js';
 import { createRiskRouter } from './routes/risk.js';
+import { createRiverRouter } from './routes/river.js';
 import { volcanoesRouter } from './routes/volcanoes.js';
 import { createRainWarnings } from './sources/bmkg-cews.js';
 
@@ -34,6 +36,16 @@ export function createApp({ services = {} } = {}) {
       ...services.rateLimit,
     }),
   );
+  // Debit sungai GloFAS dimuat sekali per cek risiko, jadi batasnya sama.
+  app.use(
+    '/api/river',
+    rateLimit({
+      limit: 120,
+      windowMs: 10 * 60_000,
+      message: 'Terlalu banyak permintaan debit sungai dari jaringan ini. Coba lagi beberapa menit lagi.',
+      ...services.rateLimit,
+    }),
+  );
   app.use(
     '/api/geocode',
     rateLimit({
@@ -54,6 +66,8 @@ export function createApp({ services = {} } = {}) {
     createLandslideRouter({ rainWarnings, rainNow: services.rainNow, cloudsNow: services.cloudsNow }),
     createOutlookRouter(services.outlook),
     createGeocodeRouter(services.geocode),
+    createGdacsRouter(services.gdacs),
+    createRiverRouter(services.river),
   );
   app.use('/api', (req, res) => res.status(404).json({ error: 'Endpoint tidak ditemukan' }));
 

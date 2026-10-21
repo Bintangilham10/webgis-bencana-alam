@@ -1,6 +1,6 @@
 import { lastSuccessfulSync, recordSync } from '../sync-logs.js';
 import { runIndikasi } from './indikasi.js';
-import { syncEarthquakes, syncUsgsEarthquakes } from './sync-earthquakes.js';
+import { syncEarthquakes, syncEmscEarthquakes, syncUsgsEarthquakes } from './sync-earthquakes.js';
 import { syncVolcanoes } from './sync-volcanoes.js';
 
 // BMKG membatasi 60 request/menit per IP; tiga feed tiap 60 detik jauh di bawahnya.
@@ -14,6 +14,8 @@ import { syncVolcanoes } from './sync-volcanoes.js';
 export const JOBS = [
   { source: 'bmkg-gempa', intervalMs: 60_000, run: syncEarthquakes },
   { source: 'usgs-gempa', intervalMs: 60_000, run: syncUsgsEarthquakes },
+  // Gempa kecil katalog BMKG baru masuk EMSC ±10 menit setelah kejadian; tiap 2 menit cukup.
+  { source: 'emsc-gempa', intervalMs: 2 * 60_000, run: syncEmscEarthquakes },
   { source: 'magma', intervalMs: 30 * 60_000, run: syncVolcanoes },
   { source: 'indikasi-sigap', intervalMs: 12 * 60 * 60_000, checkMs: 15 * 60_000, skipIfFresh: true, run: runIndikasi },
 ];

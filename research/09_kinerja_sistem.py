@@ -33,7 +33,7 @@ from sigap_riset.db import connect
 from sigap_riset.paths import RESULTS
 
 # Interval penjadwal server (server/src/jobs/scheduler.js).
-EXPECTED_INTERVAL_S = {'bmkg-gempa': 60, 'usgs-gempa': 60, 'magma': 30 * 60, 'indikasi-sigap': 12 * 60 * 60}
+EXPECTED_INTERVAL_S = {'bmkg-gempa': 60, 'usgs-gempa': 60, 'emsc-gempa': 2 * 60, 'magma': 30 * 60, 'indikasi-sigap': 12 * 60 * 60}
 MONITORING_GAP_S = 120
 CLIENT_NETWORK = r'ENOTFOUND|EAI_AGAIN|ENETUNREACH|getaddrinfo'
 

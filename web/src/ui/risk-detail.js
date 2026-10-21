@@ -137,6 +137,55 @@ function rainDays(rain) {
   return `<div class="rain-days">${days}</div><p class="section-note">Batang dibandingkan dengan 150 mm/hari (batas hujan ekstrem BMKG).</p>`;
 }
 
+// ---------- Prakiraan debit sungai (GloFAS) ----------
+// Dimuat terpisah dari /api/river setelah profil tampil (lihat features/risk-check.js).
+const RIVER_LEVELS = [
+  { label: 'Di bawah ambang banjir 2 tahunan', color: '#98a2b3', text: '#fff' },
+  { label: '≥ debit banjir 2 tahunan', ...WARNING_LEVEL_STYLES[1] },
+  { label: '≥ debit banjir 5 tahunan', ...WARNING_LEVEL_STYLES[2] },
+  { label: '≥ debit banjir 20 tahunan', ...WARNING_LEVEL_STYLES[3] },
+];
+const RIVER_SHORT = ['< 2 th', '≥ 2 th', '≥ 5 th', '≥ 20 th'];
+const FORECAST_LABEL = '7 hari ke depan';
+const m3s = (value) => (value == null ? '–' : `${formatDecimal(value)}<small> m³/s</small>`);
+
+export function riverHtml(river) {
+  const known = river.days.filter((d) => d.median_m3s != null);
+  if (!known.length) return '<p class="empty-note">Tidak ada data debit sungai GloFAS di sekitar titik ini (mis. di laut).</p>';
+  const t = river.thresholds;
+  // Skala batang: ambang 20 tahunan, atau debit tertinggi bila ambang tidak ada.
+  const scale = Math.max(t?.rp20 ?? 0, ...known.map((d) => d.max_m3s ?? d.median_m3s)) || 1;
+  const summary =
+    river.level == null
+      ? '<p class="hazard-summary">Ambang banjir tidak tersedia untuk sel ini, jadi debit hanya ditampilkan tanpa penilaian.</p>'
+      : `<p class="hazard-summary"><span class="level-pill" style="${pillStyle(RIVER_LEVELS[river.level])}">${RIVER_LEVELS[river.level].label}</span>
+          <span class="muted">median ensemble, ${FORECAST_LABEL}</span></p>
+          ${river.level_max > river.level ? `<p class="section-note">Skenario terburuk (anggota ensemble tertinggi) mencapai ${escapeHtml(RIVER_LEVELS[river.level_max].label.replace('≥ ', '').toLowerCase())}.</p>` : ''}`;
+  const rows = river.days
+    .map((d, i) => {
+      const width = d.median_m3s > 0 ? Math.max(3, Math.min(100, (d.median_m3s / scale) * 100)) : 0;
+      const level = d.level == null ? '' : `<span class="river-level" style="${pillStyle(RIVER_LEVELS[d.level])}">${RIVER_SHORT[d.level]}</span>`;
+      return `
+        <div class="rain-day river-day">
+          <span class="rain-date">${formatDay(d.date)}</span>
+          <span class="rain-mm">${m3s(d.median_m3s)}</span>
+          <span class="rain-bar" aria-hidden="true"><span style="width:${width}%;--i:${i}"></span></span>
+          ${level}
+          <span class="rain-prob">${d.p25_m3s == null ? '' : `Rentang ${formatDecimal(d.p25_m3s)}–${formatDecimal(d.p75_m3s)}, tertinggi ${formatDecimal(d.max_m3s)}`}</span>
+        </div>`;
+    })
+    .join('');
+  const thresholds = t
+    ? `Ambang dihitung SIGAP dari debit maksimum tahunan 1984–2024 (${t.years} tahun) di sel yang sama: 2 tahunan ${formatDecimal(t.rp2)}, 5 tahunan ${formatDecimal(t.rp5)}, 20 tahunan ${formatDecimal(t.rp20)} m³/s.`
+    : '';
+  return `
+    ${summary}
+    <div class="rain-days river-days">${rows}</div>
+    <p class="section-note">Debit sungai dari model GloFAS (Copernicus, Uni Eropa), median dan rentang 25–75% dari 50 anggota ensemble.
+      Sel GloFAS ±5 km terdekat berjarak ±${formatDecimal(river.cell.distance_km)} km dari titik; sungai kecil bisa tidak terwakili. ${thresholds}
+      Pembanding, bukan peringatan resmi.</p>`;
+}
+
 // ---------- Tanah longsor dan hujan ----------
 // Produk resmi (PVMBG, BMKG), hujan beberapa hari terakhir, peluang hujan lebat
 // dari ensemble, lereng, dan riwayat kejadian. Bagian yang sumbernya gagal
@@ -326,13 +375,14 @@ function profileHtml(profile, { label, lat = profile.location.lat, lon = profile
       ${indicationList(profile.indications, profile.rules_version)}
       ${section('Bahaya di titik ini', 'InaRISK BNPB', `${hazardSummary(profile.hazards)}<ul class="hazard-list">${profile.hazards.map((h, i) => hazardRow(h, i)).join('')}</ul>`)}
       ${section('Prakiraan hujan', 'Open-Meteo', rainDays(profile.rain))}
+      ${section('Prakiraan debit sungai', 'GloFAS · Copernicus', '<div data-river aria-live="polite"><p class="empty-note">Memuat prakiraan debit sungai…</p></div>')}
       ${landslideSection(profile.landslide, wilayah)}
       ${section('Sekitar lokasi', '', nearby(profile))}
       ${section('Saran kesiapsiagaan', '', `<ul class="tip-list">${profile.recommendations.map((t) => `<li>${icons.check}<span>${escapeHtml(t)}</span></li>`).join('')}</ul>`)}
       <footer class="detail-footer">
         Indikasi sistem, bukan peringatan resmi — ikuti BMKG, PVMBG, dan BPBD setempat.
         Sumber: InaRISK BNPB, PVMBG (prakiraan gerakan tanah, ZKGT, MAGMA), BMKG (gempa, CEWS), Open-Meteo (CC BY 4.0, ECMWF),
-        PuSGeN 2024. Aturan ${escapeHtml(profile.rules_version)}.
+        GloFAS Copernicus (debit sungai), PuSGeN 2024. Aturan ${escapeHtml(profile.rules_version)}.
       </footer>
     </div>`;
 }
@@ -392,6 +442,15 @@ export function createRiskDetail(element, { sidebar, onClose, onFit, onRetry }) 
       open(header({ title: label ?? 'Titik pilihan', coords: coordinateText(lat, lon), status: 'Menganalisis bahaya, cuaca, dan kedekatan…' }) + skeleton());
     },
     render: (profile, options = {}) => open(profileHtml(profile, options)),
+    // Bagian debit sungai diisi belakangan, setelah /api/river menjawab.
+    renderRiver(river) {
+      const target = element.querySelector('[data-river]');
+      if (target) target.innerHTML = riverHtml(river);
+    },
+    riverError(message) {
+      const target = element.querySelector('[data-river]');
+      if (target) target.innerHTML = `<p class="empty-note">Prakiraan debit sungai gagal dimuat: ${escapeHtml(message)}</p>`;
+    },
     showError: (message) => open(header({ title: 'Cek risiko gagal' }) + stateCard(message, { retry: true })),
     showMessage: (message) => open(header({ title: 'Cek risiko lokasi' }) + stateCard(message)),
     hide() {

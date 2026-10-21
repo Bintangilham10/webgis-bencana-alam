@@ -112,8 +112,20 @@ export function createRiskCheck({ map, card, onPickingChange, viewPadding = () =
       point?.getElement()?.classList.remove('is-loading');
       card.render(profile, { label, lat: latlng.lat, lon: latlng.lng });
       drawProximity(profile, latlng);
+      loadRiver(latlng, controller.signal);
     } catch (err) {
       if (err.name !== 'AbortError') card.showError(err.message);
+    }
+  }
+
+  // Prakiraan debit sungai GloFAS dimuat setelah profil tampil, supaya cek risiko
+  // tidak menunggu debit historis yang lambat saat sel pertama kali diminta.
+  async function loadRiver(latlng, signal) {
+    try {
+      const river = await getJson(`/api/river?lat=${latlng.lat.toFixed(5)}&lon=${latlng.lng.toFixed(5)}`, { signal });
+      card.renderRiver(river);
+    } catch (err) {
+      if (err.name !== 'AbortError') card.riverError(err.message);
     }
   }
 

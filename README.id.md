@@ -49,6 +49,8 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
   - Untuk gempa yang cukup besar (±120 gempa per tahun di kawasan Indonesia), popup juga memuat **perkiraan dampak PAGER**: level hijau, kuning, oranye, atau merah untuk korban jiwa dan kerugian ekonomi, beserta ringkasan PDF dari USGS. Level ini juga tampil di popup gempa BMKG yang punya pasangan USGS.
   - Untuk ±55 gempa per tahun, popup memuat **perkiraan longsor dan likuefaksi akibat gempa** (USGS Ground Failure): level, luas area terdampak (km²), dan penduduk terpapar. Tombol "Peta longsor" atau "Peta likuefaksi" menggambar perkiraan proporsi area terdampak di peta, dengan warna legenda resmi USGS.
   - Kedua produk ini terbit ±20–60 menit setelah gempa. Server mengambil detailnya hanya bila gempa direvisi USGS, paling sering tiap 10 menit per gempa.
+- **Gempa EMSC sebagai pembanding** (mati bawaan): katalog European-Mediterranean Seismological Centre untuk kawasan yang sama, disinkronkan tiap 2 menit. Di Indonesia sebagian besar gempanya berasal dari katalog lengkap BMKG (1.160 dari 1.344 gempa, 19 Sep–19 Okt 2026), termasuk gempa kecil mulai ±M1 yang tidak dimuat feed publik BMKG; sisanya dari EMSC, USGS, MetMalaysia, GFZ, dan lainnya. Simbolnya titik kecil berwarna kelas kedalaman, dan popup menyebut lembaga penentunya. Tidak ikut dihitung di Ikhtisar maupun cek risiko.
+- **Peringatan GDACS** (mati bawaan): peringatan bencana Global Disaster Alert and Coordination System (Komisi Eropa JRC dan PBB OCHA) untuk Indonesia, yaitu banjir, gempa, gunung api, siklon tropis, kekeringan, dan kebakaran hutan. Ditampilkan level Oranye dan Merah 12 bulan terakhir serta Hijau 7 hari terakhir (gempa Hijau tidak, karena sudah ada di lapisan gempa), dengan ikon peta resmi GDACS. Level GDACS adalah perkiraan dampak kemanusiaan, bukan level peringatan nasional.
 - **Status gunung api:** 69 gunung api dari MAGMA/PVMBG, disinkronkan tiap 30 menit. Simbolnya kerucut berfaset berwarna level PVMBG (gaya terinspirasi ikon peta MAGMA, digambar sendiri); Siaga/Awas lebih besar. Status sedang erupsi dan VONA (peringatan abu vulkanik untuk penerbangan) ikut diambil dari MAGMA.
 - **Filter penanda:** tombol corong di bilah alat kanan menyalakan atau mematikan penanda gempa dan gunung api, serta menyaring gempa menurut kedalaman, magnitudo minimum, dan waktu (24 jam, 3 hari, 7 hari), dan gunung api menurut tingkat aktivitas. Menu menunjukkan jumlah titik yang tampil; titik biru di tombol menandakan ada penanda yang disembunyikan. Gempa atau gunung api yang dipilih dari daftar tetap ditampilkan walau tersaring.
 - **Peta rawan InaRISK BNPB:** gempa bumi, cuaca ekstrem, banjir, tanah longsor, dan gunung api, masing-masing dalam 3 kelas bahaya. Ditambah zona kerentanan gerakan tanah (ZKGT) PVMBG dengan warna kelas yang sama.
@@ -71,6 +73,7 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
   - indeks lima bahaya InaRISK dengan kelas BNPB;
   - indikasi 3 hari untuk hujan lebat, banjir, dan tanah longsor (hujan × kelas bahaya, aturan v0.2 di `recorder/src/lib/rules.json`, sama dengan indikasi per kab/kota). Titik di luar batas kab/kota diberi status: pesisir (≤ 1 km, memakai kab/kota terdekat), perairan, atau di luar wilayah Indonesia (indikasi tidak dihitung);
   - prakiraan hujan dan elevasi;
+  - prakiraan debit sungai 7 hari dari GloFAS (Copernicus) sebagai pembanding indikasi banjir: median dan rentang ensemble di sel ±5 km terdekat, dinilai terhadap ambang debit banjir 2, 5, dan 20 tahunan yang dihitung SIGAP dari debit maksimum tahunan 1984–2024 di sel yang sama. Bagian ini dimuat terpisah (`/api/river`), jadi tidak memperlambat cek risiko;
   - jarak ke sesar aktif dan gunung api terdekat, digambar sebagai garis di peta;
   - gempa di sekitar lokasi dan saran kesiapsiagaan;
   - tanah longsor dan hujan: potensi gerakan tanah bulanan PVMBG dan ZKGT, peringatan hujan tinggi BMKG untuk kab/kota itu, hujan 3 hari terakhir, peluang hujan ≥ 50 mm dari 51 anggota ensemble ECMWF, kemiringan lereng, dan riwayat longsor dalam 5 km.
@@ -150,6 +153,9 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 |---|---|
 | `GET /api/health` | Status database dan sinkronisasi tiap sumber |
 | `GET /api/earthquakes?days=7` | Gempa BMKG dalam 1–90 hari terakhir (GeoJSON); tambahkan `&source=usgs` untuk katalog USGS. Tiap gempa membawa pasangannya di katalog lain (`usgs` atau `bmkg`), atau `null`. Gempa USGS juga membawa `pager` (perkiraan dampak) dan `ground_failure` (perkiraan longsor dan likuefaksi beserta URL gambar dan batasnya), atau `null` |
+| `GET /api/earthquakes?source=emsc` | Gempa katalog EMSC (sebagian besar katalog lengkap BMKG) dengan lembaga penentunya (`auth`) dan pasangannya di feed BMKG |
+| `GET /api/gdacs` | Peringatan GDACS untuk Indonesia: Oranye/Merah 12 bulan, Hijau 7 hari (GeoJSON) |
+| `GET /api/river?lat=-6.25&lon=106.83` | Prakiraan debit sungai GloFAS 7 hari di sel terdekat, ambang 2/5/20 tahunan, dan levelnya |
 | `GET /api/volcanoes` | Gunung api beserta status level, erupsi, dan VONA |
 | `GET /api/faults` | Segmen sesar aktif PuSGeN 2024 |
 | `GET /api/wilayah?tingkat=provinsi` atau `kabkota` | Batas wilayah, disederhanakan untuk tampilan |
@@ -179,5 +185,8 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 | Prakiraan hujan (juga untuk indikasi 3 hari) dan elevasi | [Open-Meteo](https://open-meteo.com/) (elevasi dari Copernicus DEM 90 m) | CC BY 4.0, gratis untuk nonkomersial |
 | Hujan satelit | [NASA GPM IMERG](https://gpm.nasa.gov/data/imerg) Early Run, lewat NASA GIBS | Data terbuka NASA; cantumkan NASA |
 | Citra awan satelit | Himawari-9 kanal 13 (inframerah), [Japan Meteorological Agency](https://www.jma.go.jp/), lewat NASA GIBS | Cantumkan JMA dan NASA |
+| Gempa bumi (pembanding, termasuk katalog lengkap BMKG) | [EMSC](https://www.emsc-csem.org/), API FDSN [seismicportal.eu](https://www.seismicportal.eu/) | Cantumkan EMSC dan lembaga penentunya |
+| Peringatan bencana internasional | [GDACS](https://www.gdacs.org/) (Komisi Eropa JRC dan PBB OCHA) | Cantumkan GDACS |
+| Prakiraan debit sungai | [GloFAS](https://global-flood.emergency.copernicus.eu/), Copernicus Emergency Management Service, lewat [Open-Meteo Flood API](https://open-meteo.com/en/docs/flood-api) | CC BY 4.0; cantumkan Copernicus dan Open-Meteo |
 | Pencarian tempat | [Nominatim](https://nominatim.org/) © OpenStreetMap contributors | ODbL; maksimal 1 request/detik, tanpa autocomplete |
 | Peta dasar | Esri; © OpenStreetMap contributors (ODbL); Humanitarian OpenStreetMap Team; OpenTopoMap | CC-BY-SA untuk OpenTopoMap |

@@ -13,6 +13,11 @@ const MAX_DAYS = 90;
 const SOURCES = {
   bmkg: { sync: 'bmkg-gempa', other: 'usgs' },
   usgs: { sync: 'usgs-gempa', other: 'bmkg', attribution: 'Gempa: U.S. Geological Survey (USGS)' },
+  emsc: {
+    sync: 'emsc-gempa',
+    other: 'bmkg',
+    attribution: 'Gempa: European-Mediterranean Seismological Centre (EMSC), sebagian besar dari katalog BMKG',
+  },
 };
 
 // Gempa yang sama di dua katalog: waktu berselisih ≤ 60 detik dan pusatnya ≤ 100 km.
@@ -78,13 +83,22 @@ const PROPERTIES = {
     ground_failure: r.props.ground_failure ?? null,
     bmkg: r.match,
   }),
+  // wilayah EMSC = nama wilayah Flinn-Engdahl, mis. "FLORES REGION, INDONESIA";
+  // auth = lembaga penentu lokasi dan magnitudo, mis. "BMKG".
+  emsc: (r) => ({
+    ...common(r),
+    mag_type: r.props.mag_type ?? null,
+    auth: r.props.auth ?? null,
+    url: r.props.url ?? null,
+    bmkg: r.match,
+  }),
 };
 
 earthquakesRouter.get('/earthquakes', async (req, res) => {
   const days = Math.min(Math.max(Number.parseInt(req.query.days, 10) || DEFAULT_DAYS, 1), MAX_DAYS);
   const source = req.query.source ?? 'bmkg';
   if (!Object.hasOwn(SOURCES, source)) {
-    return res.status(400).json({ error: 'Parameter source harus bmkg atau usgs' });
+    return res.status(400).json({ error: 'Parameter source harus bmkg, usgs, atau emsc' });
   }
   const { sync, other, attribution } = SOURCES[source];
   const { rows } = await query(QUAKES, [days, source, other, MATCH_SECONDS, MATCH_METERS]);

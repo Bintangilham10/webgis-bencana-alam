@@ -33,6 +33,10 @@ export const formatDay = (isoDate) => dayFormat.format(new Date(`${isoDate}T12:0
 
 export const capitalize = (text) => (text ? text[0].toUpperCase() + text.slice(1) : '');
 
+// Teks huruf besar semua dari katalog luar ("FLORES REGION, INDONESIA") →
+// "Flores Region, Indonesia".
+export const titleCase = (text) => String(text ?? '').toLowerCase().replace(/(^|[\s,(/-])(\p{L})/gu, (_, sep, ch) => sep + ch.toUpperCase());
+
 // Teks wilayah BMKG "Pusat gempa berada di laut 46 km utara Ruteng" dipersingkat
 // menjadi "Laut 46 km utara Ruteng" untuk daftar dan popup.
 export const shortQuakeRegion = (text) => capitalize(String(text ?? '').replace(/^pusat gempa berada di\s+/i, '').trim());

@@ -1,5 +1,6 @@
 import { query } from '../db.js';
 import { fetchBmkgEarthquakes } from '../sources/bmkg-gempa.js';
+import { fetchEmscEarthquakes } from '../sources/emsc-gempa.js';
 import { fetchUsgsDetail, fetchUsgsEarthquakes } from '../sources/usgs-gempa.js';
 import { lastSuccessfulSync } from '../sync-logs.js';
 
@@ -78,13 +79,26 @@ async function syncUsgsDetails(events, { fetchDetail, now }) {
 
 // Gempa USGS disimpan di tabel yang sama dengan source 'usgs'; tampilan BMKG
 // dan cek risiko hanya membaca source 'bmkg', jadi gempa yang sama tidak terhitung dua kali.
+// Rentang harian bila sinkronisasi terakhir yang berhasil masih baru; rentang
+// mingguan untuk mengisi celah setelah server lama mati (atau belum pernah sinkron).
+async function feedFor(source, now) {
+  const last = await lastSuccessfulSync(source);
+  return last && now - new Date(last).getTime() < USGS_BACKFILL_AFTER_MS ? 'day' : 'week';
+}
+
 export async function syncUsgsEarthquakes({ fetchEvents = fetchUsgsEarthquakes, fetchDetail = fetchUsgsDetail, now = Date.now() } = {}) {
-  const last = await lastSuccessfulSync('usgs-gempa');
-  const feed = last && now - new Date(last).getTime() < USGS_BACKFILL_AFTER_MS ? 'day' : 'week';
+  const feed = await feedFor('usgs-gempa', now);
   const fetched = await fetchEvents({ feed });
   const result = await syncEarthquakes({ fetchEvents: async () => fetched });
   // Detail yang gagal tidak menggagalkan sinkronisasi gempa; dicatat di pesan dan dicoba lagi berikutnya.
   const details = await syncUsgsDetails(fetched.events, { fetchDetail, now });
   const messages = [result.message, ...details.errors].filter(Boolean);
   return { items: result.items, message: messages.length ? messages.join('; ') : null };
+}
+
+// Gempa EMSC (sebagian besar katalog lengkap BMKG) disimpan dengan source 'emsc';
+// seperti USGS, tidak ikut dihitung di Ikhtisar maupun cek risiko.
+export async function syncEmscEarthquakes({ fetchEvents = fetchEmscEarthquakes, now = Date.now() } = {}) {
+  const feed = await feedFor('emsc-gempa', now);
+  return syncEarthquakes({ fetchEvents: () => fetchEvents({ feed, now }) });
 }

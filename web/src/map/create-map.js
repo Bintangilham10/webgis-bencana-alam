@@ -95,8 +95,9 @@ const NorthArrow = L.Control.extend({
 // Raster bahaya di bawah garis, lalu peringatan hujan BMKG dan hujan satelit,
 // batas wilayah di bawah sesar, label peta dasar
 // di atas raster, titik gempa di atas garis supaya tetap bisa diklik, dan hasil
-// analisis cek risiko di atas gempa.
-const PANES = { hazard: 250, warnings: 300, boundaries: 350, labels: 420, quakes: 450, analysis: 460 };
+// analisis cek risiko di atas gempa. Titik kecil gempa EMSC (SVG) tepat di bawah
+// penanda gempa lain, supaya cakram BMKG dan cincin USGS tetap di atasnya.
+const PANES = { hazard: 250, warnings: 300, boundaries: 350, labels: 420, smallQuakes: 440, quakes: 450, analysis: 460 };
 
 // Tombol zoom dan pemilih peta dasar ada di bilah alat (map/toolbar.js).
 export function createMap(element, { theme = 'dark' } = {}) {

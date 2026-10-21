@@ -501,6 +501,32 @@
   box-shadow: 0 0 0 1px var(--glyph-outline);
 }
 
+/* Titik kecil gempa EMSC (sama dengan penanda di peta). */
+.emsc-swatch {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--c, var(--ink-3)) 80%, transparent);
+  box-shadow: 0 0 0 1px var(--glyph-outline);
+}
+
+.switch-symbol > .emsc-swatch {
+  margin: auto;
+}
+
+/* Ikon pin resmi GDACS di daftar lapisan dan legenda. */
+.gdacs-legend-icon {
+  flex: none;
+  width: 15px;
+  height: 19px;
+}
+
+.switch-symbol > .gdacs-legend-icon {
+  display: block;
+  margin: auto;
+}
+
 /* Contoh kerucut gunung api (SVG sama dengan penanda di peta, versi kecil).
    Varian --erupting diberi kepulan abu diam di atas kawah. */
 .volcano-swatch {

@@ -54,6 +54,8 @@ The logo is an **S drawn from three contour lines** around an amber summit point
   - For larger earthquakes (about 120 a year in the Indonesian region) the popup adds the **PAGER impact estimate**: a green, yellow, orange, or red level for fatalities and economic losses, with the USGS PDF summary. BMKG popups with a USGS counterpart show the level too.
   - For about 55 earthquakes a year the popup adds the **USGS Ground Failure estimate** of earthquake-triggered landslides and liquefaction: alert level, affected area (km²), and exposed population. "Landslide map" and "liquefaction map" buttons draw the estimated share of area affected on the map, in the official USGS legend colours.
   - Both products arrive about 20–60 minutes after an earthquake. The server fetches the detail only when USGS revises the event, at most every 10 minutes per event.
+- **EMSC earthquakes for comparison** (off by default): the European-Mediterranean Seismological Centre catalogue for the same region, synced every 2 minutes. In Indonesia most of its events come from BMKG's full catalogue (1,160 of 1,344 events, 19 Sep–19 Oct 2026), including small events from about M 1 that BMKG's public feeds leave out; the rest come from EMSC, USGS, MetMalaysia, GFZ, and others. Small dots are coloured by depth class, and each popup names the agency that located the event. Not counted in the overview or risk checks.
+- **GDACS alerts** (off by default): Global Disaster Alert and Coordination System (European Commission JRC and UN OCHA) alerts for Indonesia covering floods, earthquakes, volcanoes, tropical cyclones, droughts, and wildfires. Orange and red alerts from the last 12 months and green alerts from the last 7 days are shown (green earthquakes are left to the earthquake layers), with the official GDACS map icons. GDACS levels estimate humanitarian impact; they are not national warning levels.
 - **Volcanoes** from MAGMA Indonesia, synced every 30 minutes, with alert level I–IV, eruption status, and aviation ash warnings (VONA).
 - **Heavy-rain warnings** from BMKG CEWS for the current dasarian (10-day period), drawn on regency boundaries and listed in the overview.
 - **Rain from satellite**: the latest 30-minute NASA GPM IMERG rainfall, about 4–6 hours behind real time (the legend shows the data time).
@@ -71,6 +73,7 @@ Pick a point by search, GPS, right-click, or long press. SIGAP runs 11 lookups i
 - the five InaRISK hazard indices;
 - the nearest active fault and volcanoes, drawn as distance lines;
 - recent earthquakes within 100 km;
+- a 7-day GloFAS (Copernicus) river discharge forecast to compare with the flood outlook: ensemble median and range at the nearest ~5 km cell, rated against 2-, 5-, and 20-year flood discharges that SIGAP derives from the cell's 1984–2024 annual maxima. It loads separately (`/api/river`), so it does not slow the risk check;
 - **landslide and rain**: the PVMBG monthly landslide forecast and susceptibility zone, the BMKG heavy-rain warning for the regency, rain over the last 3 days, the odds of ≥ 50 mm from 51 ECMWF ensemble members, terrain slope, and past landslides within 5 km.
 
 </td>
@@ -330,6 +333,9 @@ Every endpoint returns JSON; spatial data is GeoJSON with `[lon, lat]` coordinat
 | `GET /api/health` | Database status and the last sync of each source |
 | `GET /api/earthquakes?days=7` | BMKG earthquakes from the last 1–90 days; `&source=usgs` returns the USGS catalogue instead. Each event carries its counterpart in the other catalogue (`usgs` or `bmkg`), or `null`. USGS events also carry `pager` (impact estimate) and `ground_failure` (landslide and liquefaction estimates with overlay URLs and bounds), or `null` |
 | `GET /api/volcanoes` | Volcanoes with alert level, eruption status, and VONA |
+| `GET /api/earthquakes?source=emsc` | EMSC catalogue events (mostly BMKG's full catalogue) with the locating agency (`auth`) and the BMKG feed counterpart |
+| `GET /api/gdacs` | GDACS alerts for Indonesia: orange/red from 12 months, green from 7 days |
+| `GET /api/river?lat=-6.25&lon=106.83` | 7-day GloFAS river discharge forecast at the nearest cell, with 2/5/20-year thresholds and levels |
 | `GET /api/faults` | PuSGeN 2024 active fault segments |
 | `GET /api/wilayah?tingkat=provinsi` or `kabkota` | Province or regency boundaries, simplified for display |
 | `GET /api/risk?lat=-6.81&lon=107.62` | Risk profile for one point, cached 10 minutes per ±100 m cell, including the `landslide` section |
@@ -388,6 +394,9 @@ Shortened from the real response. If one source fails, only its own part carries
 | Rain forecast (also for the 3-day outlook), ensemble, elevation | [Open-Meteo](https://open-meteo.com/) (ECMWF; Copernicus DEM 90 m) | CC BY 4.0, free for non-commercial use |
 | Satellite rainfall | [NASA GPM IMERG](https://gpm.nasa.gov/data/imerg) Early Run through [NASA GIBS](https://www.earthdata.nasa.gov/engage/open-data-services-software/earthdata-developer-portal/gibs-api) | Open NASA data; credit NASA |
 | Satellite clouds | Himawari-9 band 13 infrared, [Japan Meteorological Agency](https://www.jma.go.jp/), through NASA GIBS | Credit JMA and NASA |
+| Earthquakes (comparison, including BMKG's full catalogue) | [EMSC](https://www.emsc-csem.org/) FDSN service at [seismicportal.eu](https://www.seismicportal.eu/) | Credit EMSC and the locating agency |
+| International disaster alerts | [GDACS](https://www.gdacs.org/) (European Commission JRC and UN OCHA) | Credit GDACS |
+| River discharge forecast | [GloFAS](https://global-flood.emergency.copernicus.eu/), Copernicus Emergency Management Service, through the [Open-Meteo Flood API](https://open-meteo.com/en/docs/flood-api) | CC BY 4.0; credit Copernicus and Open-Meteo |
 | Place search | [Nominatim](https://nominatim.org/), © OpenStreetMap contributors | ODbL; at most 1 request per second, no autocomplete |
 | Basemaps | Esri; © OpenStreetMap contributors (ODbL); Humanitarian OpenStreetMap Team; OpenTopoMap | CC-BY-SA for OpenTopoMap |
 

@@ -6,6 +6,9 @@ import { extractEvents, normalizeEvent } from '../src/sources/bmkg-gempa.js';
 import { createHazardIdentifier, OUTAGE_MS } from '../src/sources/inarisk.js';
 import { extractJsonLiteral, extractVolcanoes } from '../src/sources/magma.js';
 import { extractEvents as extractUsgsEvents, fetchUsgsDetail, normalizeEvent as normalizeUsgsEvent } from '../src/sources/usgs-gempa.js';
+import { fetchEmscEarthquakes, queryUrl as emscQueryUrl } from '../src/sources/emsc-gempa.js';
+import { fetchGdacsEvents } from '../src/sources/gdacs.js';
+import { buildRiverForecast, returnPeriodLevel, returnPeriodThresholds } from '../src/sources/glofas.js';
 import { parseBoundarySql, toRings } from '../scripts/seed-wilayah.js';
 
 // Fixture = respons asli sumber (diambil 26 Sep 2026).
@@ -124,6 +127,117 @@ describe('USGS gempa', () => {
     const noMagnitude = { id: 'us0', geometry: { coordinates: [120, -8, 10] }, properties: { mag: null, time: 1 } };
     assert.deepEqual(extractUsgsEvents({ features: [noMagnitude] }), []);
     assert.throws(() => extractUsgsEvents({ error: 'maintenance' }), /format tidak dikenal/);
+  });
+});
+
+// Fixture EMSC, GDACS, dan GloFAS = respons asli (19 Okt 2026), dipangkas.
+describe('EMSC gempa', () => {
+  test('kedalaman positif dari properties, lembaga penentu, dan tautan EMSC', async () => {
+    const { events } = await fetchEmscEarthquakes({ getJson: async () => JSON.parse(fixture('emsc-indonesia.json')) });
+    assert.deepEqual(events.map((e) => [e.id, e.props.auth, e.magnitude]), [
+      ['emsc:20261019_0000205', 'BMKG', 3.3],
+      ['emsc:20261019_0000165', 'EMSC', 4.8],
+      ['emsc:20261019_0000069', 'MMD', 2.3],
+    ]);
+    const [bmkg] = events;
+    assert.equal(bmkg.source, 'emsc');
+    assert.equal(bmkg.depthKm, 10);
+    assert.equal(bmkg.lat, -8.27);
+    assert.equal(bmkg.lon, 120.63);
+    assert.equal(bmkg.occurredAt, '2026-10-19T14:25:32.000Z');
+    assert.equal(bmkg.props.wilayah, 'FLORES REGION, INDONESIA');
+    assert.match(bmkg.props.url, /eventdetails\.html\?unid=20261019_0000205$/);
+  });
+
+  test('rentang waktu: 1 hari rutin, 8 hari untuk mengisi celah; kawasan sama dengan USGS', () => {
+    const now = Date.parse('2026-10-19T12:00:00Z');
+    assert.match(emscQueryUrl({ feed: 'day', now }), /starttime=2026-10-18T12%3A00%3A00/);
+    assert.match(emscQueryUrl({ feed: 'week', now }), /starttime=2026-10-11T12%3A00%3A00/);
+    assert.match(emscQueryUrl({ now }), /minlat=-12&maxlat=7&minlon=94&maxlon=142/);
+  });
+
+  test('balasan tanpa gempa (HTTP 204) = daftar kosong; format lain ditolak', async () => {
+    assert.deepEqual((await fetchEmscEarthquakes({ getJson: async () => ({ features: [] }) })).events, []);
+    await assert.rejects(() => fetchEmscEarthquakes({ getJson: async () => ({}) }), /format EMSC/);
+  });
+});
+
+describe('GDACS', () => {
+  const real = () => JSON.parse(fixture('gdacs-indonesia.json')).features;
+  const greenQuake = { ...real()[1], properties: { ...real()[1].properties, eventid: 9, alertlevel: 'Green' } };
+
+  test('Oranye/Merah setahun ditambah Hijau 7 hari kecuali gempa, terbaru dulu', async () => {
+    const urls = [];
+    const getJson = async (url) => {
+      urls.push(url);
+      const [volcano, quake, fire] = real();
+      return { features: url.includes('alertlevel=Orange%3BRed') ? [volcano, quake] : [fire, greenQuake] };
+    };
+    const events = await fetchGdacsEvents({ now: new Date('2026-10-19T12:00:00Z'), getJson });
+    assert.ok(urls.every((u) => u.includes('country=Indonesia')));
+    assert.ok(urls.some((u) => u.includes('fromdate=2025-10-19') && u.includes('alertlevel=Orange%3BRed')));
+    assert.ok(urls.some((u) => u.includes('fromdate=2026-10-12') && u.includes('alertlevel=Green')));
+    assert.deepEqual(events.map((e) => [e.id, e.level]), [
+      ['WF-1032893', 'green'],
+      ['VO-1000148', 'orange'],
+      ['EQ-1558059', 'red'],
+    ]);
+    const quake = events.find((e) => e.type === 'EQ');
+    assert.equal(quake.type_label, 'Gempa bumi');
+    assert.equal(quake.from, '2026-08-14T21:58:21.000Z');
+    assert.equal(quake.severity, 'Magnitude 7.7M, Depth:10km');
+    assert.match(quake.report_url, /^https:\/\/www\.gdacs\.org\/report\.aspx/);
+    assert.match(quake.icon_url, /\/Red\/EQ\.png$/);
+    // Erupsi tanpa keterangan keparahan.
+    assert.equal(events.find((e) => e.type === 'VO').severity, null);
+  });
+
+  test('kejadian yang sama di dua halaman: versi yang paling akhir diubah', async () => {
+    const [volcano] = real();
+    const older = { ...volcano, properties: { ...volcano.properties, alertlevel: 'Red', datemodified: '2020-01-01T00:00:00' } };
+    const events = await fetchGdacsEvents({ getJson: async (url) => ({ features: url.includes('Orange') ? [older, volcano] : [] }) });
+    assert.deepEqual(events.map((e) => [e.id, e.level]), [['VO-1000148', 'orange']]);
+  });
+});
+
+describe('GloFAS debit sungai', () => {
+  // Debit harian sintetis: tahun ke-i (i = 1..n) berpuncak i m³/s.
+  const history = (years, daysPerYear = 365) => {
+    const time = [];
+    const discharge = [];
+    for (let y = 1; y <= years; y++) {
+      for (let d = 0; d < daysPerYear; d++) {
+        time.push(`${1990 + y}-01-01`);
+        discharge.push(d === 0 ? y : 0.5);
+      }
+    }
+    return { time, river_discharge: discharge };
+  };
+
+  test('ambang 2, 5, 20 tahunan dari debit maksimum tahunan; tahun tidak lengkap dilewati', () => {
+    const t = returnPeriodThresholds(history(20));
+    assert.equal(t.years, 20);
+    assert.equal(t.rp2, 10.5);
+    assert.equal(t.rp5, 16.2);
+    assert.ok(Math.abs(t.rp20 - 19.05) < 0.06);
+    assert.equal(returnPeriodThresholds(history(9)), null);
+    assert.equal(returnPeriodThresholds(history(20, 200)), null);
+    assert.deepEqual([9, 10.5, 17, 20].map((v) => returnPeriodLevel(v, t)), [0, 1, 2, 3]);
+  });
+
+  test('prakiraan: level per hari dari median, puncak, dan jarak ke sel GloFAS', () => {
+    const forecast = JSON.parse(fixture('glofas-forecast-jakarta.json'));
+    const river = buildRiverForecast({ lat: -6.25, lon: 106.83, forecast, history: { daily: history(20) } });
+    assert.deepEqual(river.days.map((d) => d.median_m3s), [3.3, 3, 2.7, 3.4, 9.5, 11.3, 15]);
+    assert.deepEqual(river.days.map((d) => d.level), [0, 0, 0, 0, 0, 1, 1]);
+    assert.equal(river.level, 1);
+    assert.deepEqual(river.peak, { date: '2026-10-25', median_m3s: 15, level: 1 });
+    assert.ok(Math.abs(river.cell.distance_km - 2.8) < 0.2, `jarak ${river.cell.distance_km}`);
+
+    const noHistory = buildRiverForecast({ lat: -6.25, lon: 106.83, forecast, history: null });
+    assert.equal(noHistory.thresholds, null);
+    assert.equal(noHistory.level, null);
+    assert.ok(noHistory.days.every((d) => d.level === null));
   });
 });
 

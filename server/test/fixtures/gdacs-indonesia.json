@@ -1,0 +1,180 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "bbox": [
+    105.4233,
+    -6.1009,
+    105.4233,
+    -6.1009
+   ],
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     105.4233,
+     -6.1009
+    ]
+   },
+   "properties": {
+    "eventtype": "VO",
+    "eventid": 1000148,
+    "episodeid": 1,
+    "eventname": "Krakatau",
+    "glide": "VO-2026-000171-IDN",
+    "name": "Eruption  Krakatau",
+    "icon": "https://www.gdacs.org/images/gdacs_icons/maps/Orange/VO.png",
+    "iconoverall": "https://www.gdacs.org/images/gdacs_icons/maps/Orange/VO.png",
+    "url": {
+     "geometry": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=VO&eventid=1000148&episodeid=1",
+     "report": "https://www.gdacs.org/report.aspx?eventid=1000148&episodeid=1&eventtype=VO",
+     "details": "https://www.gdacs.org/gdacsapi/api/events/geteventdata?eventtype=VO&eventid=1000148"
+    },
+    "alertlevel": "Orange",
+    "alertscore": 2,
+    "episodealertlevel": "Orange",
+    "episodealertscore": 1.5,
+    "istemporary": "false",
+    "iscurrent": "false",
+    "country": "Indonesia",
+    "fromdate": "2026-09-04T21:00:00",
+    "todate": "2026-09-04T21:00:00",
+    "datemodified": "2026-09-30T09:40:21",
+    "iso3": "IDN",
+    "source": "DARWIN",
+    "sourceid": "",
+    "polygonlabel": "Centroid",
+    "Class": "Point_Centroid",
+    "affectedcountries": [
+     {
+      "iso2": "ID",
+      "iso3": "IDN",
+      "countryname": "Indonesia"
+     }
+    ],
+    "severitydata": {
+     "severity": 0.0,
+     "severitytext": "",
+     "severityunit": ""
+    }
+   }
+  },
+  {
+   "type": "Feature",
+   "bbox": [
+    121.3517,
+    -8.3101,
+    121.3517,
+    -8.3101
+   ],
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.3517,
+     -8.3101
+    ]
+   },
+   "properties": {
+    "eventtype": "EQ",
+    "eventid": 1558059,
+    "episodeid": 1725109,
+    "eventname": "",
+    "glide": "",
+    "name": "Earthquake in Indonesia",
+    "icon": "https://www.gdacs.org/images/gdacs_icons/maps/Red/EQ.png",
+    "iconoverall": "https://www.gdacs.org/images/gdacs_icons/maps/Red/EQ.png",
+    "url": {
+     "geometry": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=EQ&eventid=1558059&episodeid=1725109",
+     "report": "https://www.gdacs.org/report.aspx?eventid=1558059&episodeid=1725109&eventtype=EQ",
+     "details": "https://www.gdacs.org/gdacsapi/api/events/geteventdata?eventtype=EQ&eventid=1558059"
+    },
+    "alertlevel": "Red",
+    "alertscore": 3,
+    "episodealertlevel": "Red",
+    "episodealertscore": 2.14589742473401,
+    "istemporary": "false",
+    "iscurrent": "false",
+    "country": "Indonesia",
+    "fromdate": "2026-08-14T21:58:21",
+    "todate": "2026-08-14T21:58:21",
+    "datemodified": "2026-09-30T09:40:22",
+    "iso3": "IDN",
+    "source": "NEIC",
+    "sourceid": "",
+    "polygonlabel": "Centroid",
+    "Class": "Point_Centroid",
+    "affectedcountries": [
+     {
+      "iso2": "ID",
+      "iso3": "IDN",
+      "countryname": "Indonesia"
+     }
+    ],
+    "severitydata": {
+     "severity": 7.7,
+     "severitytext": "Magnitude 7.7M, Depth:10km",
+     "severityunit": "M"
+    }
+   }
+  },
+  {
+   "type": "Feature",
+   "bbox": [
+    138.4045,
+    -4.084,
+    138.4045,
+    -4.084
+   ],
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     138.4045,
+     -4.084
+    ]
+   },
+   "properties": {
+    "eventtype": "WF",
+    "eventid": 1032893,
+    "episodeid": 4,
+    "eventname": "",
+    "glide": "",
+    "name": "Forest fires in Indonesia",
+    "icon": "https://www.gdacs.org/images/gdacs_icons/maps/Green/WF.png",
+    "iconoverall": "https://www.gdacs.org/images/gdacs_icons/maps/Green/WF.png",
+    "url": {
+     "geometry": "https://www.gdacs.org/gdacsapi/api/polygons/getgeometry?eventtype=WF&eventid=1032893&episodeid=4",
+     "report": "https://www.gdacs.org/report.aspx?eventid=1032893&episodeid=4&eventtype=WF",
+     "details": "https://www.gdacs.org/gdacsapi/api/events/geteventdata?eventtype=WF&eventid=1032893"
+    },
+    "alertlevel": "Green",
+    "alertscore": 1,
+    "episodealertlevel": "Green",
+    "episodealertscore": 0.5,
+    "istemporary": "false",
+    "iscurrent": "true",
+    "country": "Indonesia",
+    "fromdate": "2026-10-12T00:00:00",
+    "todate": "2026-10-19T00:00:00",
+    "datemodified": "2026-10-19T14:48:31",
+    "iso3": "IDN",
+    "source": "GWIS",
+    "sourceid": "",
+    "polygonlabel": "Centroid",
+    "Class": "Point_Centroid",
+    "affectedcountries": [
+     {
+      "iso2": "ID",
+      "iso3": "IDN",
+      "countryname": "Indonesia"
+     }
+    ],
+    "severitydata": {
+     "severity": 8157.0,
+     "severitytext": "Green impact for forestfire in 8157 ha",
+     "severityunit": "ha"
+    }
+   }
+  }
+ ],
+ "bbox": null
+}

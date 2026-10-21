@@ -49,6 +49,8 @@ import {
   plateLegend,
 } from "./layers/reference.js";
 import { createUsgsLayer, usgsLegend } from "./layers/usgs.js";
+import { createEmscLayer, emscLegend } from "./layers/emsc.js";
+import { createGdacsLayer, gdacsIconUrl, gdacsLegend } from "./layers/gdacs.js";
 import {
   createVolcanoLayer,
   volcanoLegend,
@@ -308,6 +310,18 @@ const usgsQuakes = createUsgsLayer(map, {
   onLoad: (collection) => freshness.ok("Gempa USGS", collection.meta.synced_at),
   onError: reportLoadError("Gempa USGS"),
 });
+// Pembanding dari Eropa, juga mati bawaan: katalog gempa EMSC (sebagian besar
+// katalog lengkap BMKG, termasuk gempa kecil) dan peringatan bencana GDACS.
+const emscQuakes = createEmscLayer(map, {
+  viewPadding: markerPadding,
+  onLoad: (collection) => freshness.ok("Gempa EMSC", collection.meta.synced_at),
+  onError: reportLoadError("Gempa EMSC"),
+});
+const gdacsAlerts = createGdacsLayer(map, {
+  viewPadding: markerPadding,
+  onLoad: (collection) => freshness.ok("Peringatan GDACS", collection.meta.fetched_at),
+  onError: reportLoadError("Peringatan GDACS"),
+});
 // Seperti IMERG, waktu citra yang gagal dibaca tidak fatal.
 const clouds = createCloudLayer({
   onError: (err) => console.warn("Waktu citra Himawari-9 tidak terbaca", err),
@@ -338,6 +352,8 @@ const outlook = createOutlookLayer({
 const symbol = {
   quake: `<span class="sym quake-swatch" style="--c:${DEPTH_CLASSES[0].color}"></span>`,
   usgs: `<span class="sym usgs-swatch" style="--c:${DEPTH_CLASSES[0].color}"></span>`,
+  emsc: `<span class="sym emsc-swatch" style="--c:${DEPTH_CLASSES[0].color}"></span>`,
+  gdacs: `<img class="gdacs-legend-icon" src="${gdacsIconUrl("FL", "orange")}" width="15" height="19" alt="" />`,
   volcano: volcanoSwatch(3),
   fault: '<span class="sym sym-line" style="--sym:var(--fault-color)"></span>',
   plate:
@@ -390,6 +406,22 @@ createLayerPanel({
           symbol: symbol.usgs,
           layer: usgsQuakes.layer,
           legend: usgsLegend,
+        },
+        {
+          label: "Gempa EMSC (katalog lengkap)",
+          description: "Eropa · sebagian besar katalog BMKG · mulai ±M1 · 7 hari · tiap 2 menit",
+          legendTitle: "Gempa EMSC (7 hari)",
+          symbol: symbol.emsc,
+          layer: emscQuakes.layer,
+          legend: emscLegend,
+        },
+        {
+          label: "Peringatan GDACS (Uni Eropa–PBB)",
+          description: "Banjir, gempa, gunung api, siklon, kebakaran hutan · Oranye/Merah 12 bulan, Hijau 7 hari",
+          legendTitle: "Peringatan GDACS",
+          symbol: symbol.gdacs,
+          layer: gdacsAlerts.layer,
+          legend: gdacsLegend,
         },
         {
           label: "Status gunung api",
