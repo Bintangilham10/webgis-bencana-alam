@@ -1,0 +1,26 @@
+{
+  "guid": "CBMizgFBVV95cUxOVEszZEx1OFRnc09YNTJzQUdUN0dRU0NJN2IxWmZVY3NEVzNQM3RXdXNnY0NyNnU1ZXhxRDZBNl9rdng3eUJLOUNCOV91VGN3MG02aU5qLWx0N0JkXzZpbDhiMDVjWXdMUEpXVjZ3ejVFR3Rqd2lZcGNxbnJwRWtPejJZUW10Q3EtNjQ0dF82V2t5V2JaS1N2MXhlTlBXQkI0emtTZm14UE84OEc2eHBnRlNMSmZBclVrUVZqUGdNcGhsWlJDMF9jaHNGWTB4Zw",
+  "title": "2.000 Pohon Ditanam di RTH Pasirwangi, Mitigasi Longsor Bandung Tak Cukup Berhenti pada Penghijauan - Suara Desa",
+  "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOVEszZEx1OFRnc09YNTJzQUdUN0dRU0NJN2IxWmZVY3NEVzNQM3RXdXNnY0NyNnU1ZXhxRDZBNl9rdng3eUJLOUNCOV91VGN3MG02aU5qLWx0N0JkXzZpbDhiMDVjWXdMUEpXVjZ3ejVFR3Rqd2lZcGNxbnJwRWtPejJZUW10Q3EtNjQ0dF82V2t5V2JaS1N2MXhlTlBXQkI0emtTZm14UE84OEc2eHBnRlNMSmZBclVrUVZqUGdNcGhsWlJDMF9jaHNGWTB4Zw?oc=5",
+  "source": "Suara Desa",
+  "source_url": "https://suaradesa.co",
+  "published_at": "2026-10-21T16:42:43.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-21T19:15:30.674Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
