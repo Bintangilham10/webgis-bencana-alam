@@ -1,0 +1,26 @@
+{
+  "guid": "CBMizgFBVV95cUxOUjVodm1ROXF4Y0hVZEVQZGRqdFczcGMwNE5LLUNOTzBQTGt5Zi1BYlZzSlFibS00VjdfZlIwWGdkV1dNNHozMGFpaWxtSE5GM0x1ZzNUNVg5dHNkZ1NvdUMzZ0g0MlVlU3FWZXlkVE9xcHM2aV9tZzI0Z2h5UmxuMl9hNWZTdjh6TV91S25TV3hIRk1lNGcwXzBxZjIxMEVoRHFES29qN0RPcmROZlNBcUl4YWRmRGJOUXZIaWVWSzNpd0JoY212bGZrYm5TZ9IBzgFBVV95cUxOUjVodm1ROXF4Y0hVZEVQZGRqdFczcGMwNE5LLUNOTzBQTGt5Zi1BYlZzSlFibS00VjdfZlIwWGdkV1dNNHozMGFpaWxtSE5GM0x1ZzNUNVg5dHNkZ1NvdUMzZ0g0MlVlU3FWZXlkVE9xcHM2aV9tZzI0Z2h5UmxuMl9hNWZTdjh6TV91S25TV3hIRk1lNGcwXzBxZjIxMEVoRHFES29qN0RPcmROZlNBcUl4YWRmRGJOUXZIaWVWSzNpd0JoY212bGZrYm5TZw",
+  "title": "Musim Hujan Segera Tiba, Warga Malang Raya Diminta Siaga Banjir dan Longsor - Radar Malang",
+  "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOUjVodm1ROXF4Y0hVZEVQZGRqdFczcGMwNE5LLUNOTzBQTGt5Zi1BYlZzSlFibS00VjdfZlIwWGdkV1dNNHozMGFpaWxtSE5GM0x1ZzNUNVg5dHNkZ1NvdUMzZ0g0MlVlU3FWZXlkVE9xcHM2aV9tZzI0Z2h5UmxuMl9hNWZTdjh6TV91S25TV3hIRk1lNGcwXzBxZjIxMEVoRHFES29qN0RPcmROZlNBcUl4YWRmRGJOUXZIaWVWSzNpd0JoY212bGZrYm5TZ9IBzgFBVV95cUxOUjVodm1ROXF4Y0hVZEVQZGRqdFczcGMwNE5LLUNOTzBQTGt5Zi1BYlZzSlFibS00VjdfZlIwWGdkV1dNNHozMGFpaWxtSE5GM0x1ZzNUNVg5dHNkZ1NvdUMzZ0g0MlVlU3FWZXlkVE9xcHM2aV9tZzI0Z2h5UmxuMl9hNWZTdjh6TV91S25TV3hIRk1lNGcwXzBxZjIxMEVoRHFES29qN0RPcmROZlNBcUl4YWRmRGJOUXZIaWVWSzNpd0JoY212bGZrYm5TZw?oc=5",
+  "source": "Radar Malang",
+  "source_url": "https://radarmalang.jawapos.com",
+  "published_at": "2026-10-21T06:55:20.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-21T10:00:44.726Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

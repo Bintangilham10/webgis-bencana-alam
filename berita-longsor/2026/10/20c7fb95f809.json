@@ -1,0 +1,23 @@
+{
+  "guid": "CBMi0gFBVV95cUxPaGJDOU1fYWZudTRRRmtqeGRCTkJqZWUwLUZrZGhEMndvT0s0YlNvc2FSTTFzUld6bm9UUHNsVXYtMkYweGRNSTU5akQ0S1lpV0h4S1Z2SlBzRER1U25IalVYYmt4NlptUlVPQ1o4RXNtUkxfb3UxUk5jVW83eDhIaUdEWW1yc1VFMzJDN3d6LTRFdFBhNHpoVjdrRm1OMXFJM0ZyandnNkppZHh2dXFteTJLM0xvR01zOWJqdUstM1YzeDB6R08xTUUwNndFSHBRaFE",
+  "title": "Tanah Longsor Rusak 2 Rumah di Tabanan Bali, 1 Warga Terluka - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPaGJDOU1fYWZudTRRRmtqeGRCTkJqZWUwLUZrZGhEMndvT0s0YlNvc2FSTTFzUld6bm9UUHNsVXYtMkYweGRNSTU5akQ0S1lpV0h4S1Z2SlBzRER1U25IalVYYmt4NlptUlVPQ1o4RXNtUkxfb3UxUk5jVW83eDhIaUdEWW1yc1VFMzJDN3d6LTRFdFBhNHpoVjdrRm1OMXFJM0ZyandnNkppZHh2dXFteTJLM0xvR01zOWJqdUstM1YzeDB6R08xTUUwNndFSHBRaFE?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://denpasar.kompas.com",
+  "published_at": "2026-10-20T13:05:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-21T10:00:44.726Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "51.02",
+      "nama": "Kabupaten Tabanan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bali"
+  ]
+}

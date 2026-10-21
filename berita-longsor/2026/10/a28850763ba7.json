@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiaEFVX3lxTE5uRDZRWmpibThoYVZVeHd3ZWR3YkptdG8wRE5ibmtKRGpnZHhJNDZpcElWWHhXUXlvRElnLWJtWUZlbllucWZqWl9MMjRmNTRfM0hHeG9CMzZGZDhCeDV3NzVFN1pEWDJs",
+  "title": "Longsor Tebing 8 Meter Rusak Rumah Warga di Bogor Selatan - Lensa Hukum",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5uRDZRWmpibThoYVZVeHd3ZWR3YkptdG8wRE5ibmtKRGpnZHhJNDZpcElWWHhXUXlvRElnLWJtWUZlbllucWZqWl9MMjRmNTRfM0hHeG9CMzZGZDhCeDV3NzVFN1pEWDJs?oc=5",
+  "source": "Lensa Hukum",
+  "source_url": "https://lensahukum.co.id",
+  "published_at": "2026-10-21T09:48:25.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-21T10:00:44.726Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
