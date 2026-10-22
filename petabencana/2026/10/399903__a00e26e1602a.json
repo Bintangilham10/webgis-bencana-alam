@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-22T13:15:28.469Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        104.7502936677,
+        -3.0172477045
+      ]
+    },
+    "properties": {
+      "pkey": "399903",
+      "created_at": "2026-10-22T13:05:53.134Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "e6fb1208-8c37-4588-9aca-712263e7d102",
+      "image_url": "https://images.petabencana.id/e6fb1208-8c37-4588-9aca-712263e7d102.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 89.40012316205336,
+        "fireLocation": {
+          "lng": 104.7502936677148,
+          "lat": -3.0172477045161656
+        },
+        "personLocation": {
+          "lat": "-3.0169256",
+          "lng": "104.7511497"
+        },
+        "fireRadius": {
+          "lng": 104.74948900500743,
+          "lat": -3.017274489423599
+        }
+      },
+      "tags": {
+        "city": "KOTA PALEMBANG",
+        "district_id": null,
+        "region_code": "1671",
+        "local_area_id": null,
+        "instance_region_code": "ID-SS"
+      },
+      "title": null,
+      "text": "Kebakaran lahan dan vegetasi melanda kawasan Kelurahan Karya Jaya, Kecamatan Kertapati, Kota Palembang, Sumatra Selatan, sejak Kamis",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
