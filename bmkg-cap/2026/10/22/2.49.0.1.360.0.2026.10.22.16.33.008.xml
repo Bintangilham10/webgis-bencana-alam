@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.22.16.33.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-22T23:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-22T23:10:00+07:00</effective>
+    <expires>2026-10-23T01:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 22 October 2026, 23:10 WIB di sebagian wilayah Jawa Tengah, khususnya di CLUWAK, DONOROJO, DUKUHSETI, KELING, KEMBANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 October 2026, 01:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJH/2026/10/22/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Tengah</areaDesc>
+      <polygon>-6.477,110.954 -6.481,110.968 -6.504,110.973 -6.502,110.977 -6.510,110.996 -6.521,111.002 -6.525,111.000 -6.531,110.986 -6.535,110.986 -6.544,110.996 -6.556,110.971 -6.549,110.965 -6.553,110.957 -6.574,110.926 -6.577,110.925 -6.581,110.931 -6.587,110.922 -6.602,110.912 -6.557,110.909 -6.537,110.918 -6.524,110.909 -6.497,110.914 -6.496,110.929 -6.477,110.954</polygon>
+      <polygon>-6.505,111.058 -6.509,111.049 -6.508,111.039 -6.496,111.037 -6.502,111.027 -6.511,111.024 -6.517,111.017 -6.521,111.002 -6.510,110.996 -6.502,110.977 -6.504,110.973 -6.481,110.968 -6.477,110.954 -6.467,110.959 -6.463,110.969 -6.457,110.972 -6.412,110.975 -6.412,110.988 -6.407,110.999 -6.426,111.049 -6.431,111.045 -6.441,111.045 -6.505,111.058</polygon>
+      <polygon>-6.497,110.914 -6.524,110.909 -6.537,110.918 -6.557,110.909 -6.602,110.912 -6.624,110.902 -6.617,110.874 -6.619,110.871 -6.616,110.865 -6.611,110.861 -6.586,110.875 -6.556,110.866 -6.537,110.865 -6.520,110.853 -6.507,110.850 -6.507,110.830 -6.497,110.829 -6.488,110.834 -6.470,110.833 -6.462,110.829 -6.440,110.802 -6.427,110.800 -6.425,110.815 -6.408,110.836 -6.438,110.860 -6.470,110.875 -6.480,110.898 -6.489,110.902 -6.497,110.914</polygon>
+      <polygon>-6.427,110.800 -6.440,110.802 -6.462,110.829 -6.470,110.833 -6.488,110.834 -6.497,110.829 -6.507,110.830 -6.507,110.850 -6.520,110.853 -6.537,110.865 -6.556,110.866 -6.586,110.875 -6.611,110.861 -6.603,110.843 -6.597,110.841 -6.583,110.849 -6.570,110.844 -6.560,110.832 -6.518,110.805 -6.502,110.785 -6.507,110.774 -6.485,110.761 -6.481,110.753 -6.481,110.744 -6.471,110.734 -6.444,110.733 -6.441,110.759 -6.426,110.785 -6.427,110.800</polygon>
+      <polygon>-6.412,110.975 -6.457,110.972 -6.463,110.969 -6.467,110.959 -6.477,110.954 -6.496,110.929 -6.497,110.914 -6.489,110.902 -6.480,110.898 -6.470,110.875 -6.438,110.860 -6.408,110.836 -6.409,110.885 -6.404,110.917 -6.411,110.951 -6.412,110.975</polygon>
+      <polygon>-6.385,110.920 -6.382,110.919 -6.381,110.924 -6.385,110.920</polygon>
+    </area>
+  </info>
+</alert>
