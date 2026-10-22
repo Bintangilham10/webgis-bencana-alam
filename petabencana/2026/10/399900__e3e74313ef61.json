@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-22T10:30:35.605Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        113.9152980356,
+        -2.2072919
+      ]
+    },
+    "properties": {
+      "pkey": "399900",
+      "created_at": "2026-10-22T10:26:53.745Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "1afe728a-6671-423c-aba2-a28dfcec2afb",
+      "image_url": "https://images.petabencana.id/1afe728a-6671-423c-aba2-a28dfcec2afb.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 106.58044073699826,
+        "fireLocation": {
+          "lat": "-2.2072919",
+          "lng": 113.915298035628
+        },
+        "personLocation": {
+          "lng": 113.91625396327879,
+          "lat": -2.2075913636445534
+        },
+        "fireRadius": {
+          "lng": 113.91434316921544,
+          "lat": -2.207383027438965
+        }
+      },
+      "tags": {
+        "city": "KOTA PALANGKARAYA",
+        "district_id": null,
+        "region_code": "6271",
+        "local_area_id": null,
+        "instance_region_code": "ID-KT"
+      },
+      "title": null,
+      "text": "Kebakaran hutan dan lahan (karhutla) melanda area di sekitar kompleks pemukiman warga di Kota Palangka Raya, Kalimantan Tengah, hari ini",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
