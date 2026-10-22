@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-22T02:15:25.883Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        128.1981239755,
+        -3.6599852511
+      ]
+    },
+    "properties": {
+      "pkey": "399894",
+      "created_at": "2026-10-22T02:16:32.261Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "5ded36ae-d670-43eb-8c3e-a701d005f703",
+      "image_url": "https://images.petabencana.id/5ded36ae-d670-43eb-8c3e-a701d005f703.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 0,
+        "airQuality": 1
+      },
+      "tags": {
+        "city": null,
+        "district_id": null,
+        "region_code": null,
+        "local_area_id": null,
+        "instance_region_code": null
+      },
+      "title": null,
+      "text": "Foto Teluk Ambon ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
