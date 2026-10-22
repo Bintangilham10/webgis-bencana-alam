@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.22.07.32.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-22T13:54:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-22T14:04:00+07:00</effective>
+    <expires>2026-10-22T15:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 22 October 2026, 14:04 WIB di sebagian wilayah Jawa Barat, khususnya di RONGGA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 22 October 2026, 15:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/10/22/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.977,107.313 -7.002,107.310 -7.006,107.300 -7.016,107.293 -7.018,107.288 -7.005,107.270 -7.007,107.260 -7.014,107.252 -7.009,107.227 -7.017,107.221 -7.022,107.211 -7.011,107.206 -7.008,107.199 -7.018,107.194 -7.013,107.190 -6.997,107.186 -6.982,107.185 -6.973,107.190 -6.964,107.196 -6.949,107.219 -6.943,107.215 -6.937,107.235 -6.929,107.250 -6.923,107.283 -6.911,107.294 -6.908,107.307 -6.908,107.312 -6.919,107.323 -6.932,107.320 -6.957,107.301 -6.975,107.305 -6.977,107.313</polygon>
+    </area>
+  </info>
+</alert>

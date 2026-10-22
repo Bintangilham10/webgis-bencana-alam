@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.22.07.31.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-22T14:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-22T14:50:00+07:00</effective>
+    <expires>2026-10-22T17:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 22 October 2026, 14:50 WIB di sebagian wilayah Jakarta, khususnya di CISAUK, LEGOK, PAGEDANGAN, PARUNG PANJANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 22 October 2026, 17:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJK/2026/10/22/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jakarta</areaDesc>
+      <polygon>-6.340,106.575 -6.347,106.588 -6.356,106.588 -6.359,106.593 -6.378,106.594 -6.392,106.589 -6.400,106.595 -6.414,106.593 -6.419,106.599 -6.422,106.594 -6.419,106.591 -6.418,106.548 -6.398,106.512 -6.390,106.516 -6.379,106.511 -6.359,106.522 -6.355,106.519 -6.347,106.529 -6.339,106.531 -6.332,106.515 -6.324,106.515 -6.340,106.575</polygon>
+      <polygon>-6.266,106.583 -6.273,106.599 -6.284,106.595 -6.292,106.602 -6.298,106.601 -6.304,106.591 -6.319,106.589 -6.320,106.581 -6.340,106.575 -6.324,106.515 -6.316,106.516 -6.313,106.519 -6.312,106.535 -6.316,106.547 -6.308,106.554 -6.281,106.552 -6.267,106.546 -6.275,106.565 -6.266,106.583</polygon>
+      <polygon>-6.247,106.644 -6.268,106.649 -6.279,106.646 -6.285,106.654 -6.293,106.655 -6.292,106.646 -6.321,106.642 -6.327,106.614 -6.337,106.610 -6.343,106.590 -6.347,106.588 -6.340,106.575 -6.320,106.581 -6.319,106.589 -6.304,106.591 -6.298,106.601 -6.292,106.602 -6.284,106.595 -6.273,106.599 -6.252,106.609 -6.255,106.614 -6.265,106.619 -6.264,106.626 -6.261,106.635 -6.247,106.629 -6.247,106.644</polygon>
+      <polygon>-6.293,106.655 -6.325,106.658 -6.327,106.661 -6.340,106.647 -6.357,106.657 -6.362,106.651 -6.362,106.651 -6.363,106.597 -6.359,106.593 -6.356,106.588 -6.347,106.588 -6.343,106.590 -6.337,106.610 -6.327,106.614 -6.321,106.642 -6.292,106.646 -6.293,106.655</polygon>
+    </area>
+  </info>
+</alert>
