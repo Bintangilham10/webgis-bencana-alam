@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.22.14.32.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-22T19:55:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-22T20:05:00+07:00</effective>
+    <expires>2026-10-22T22:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 22 October 2026, 20:05 WIB di sebagian wilayah Jawa Barat, khususnya di CAMPAKAMULYA, GUNUNGHALU, KABANDUNGAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 22 October 2026, 22:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/10/22/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.743,106.588 -6.749,106.598 -6.753,106.636 -6.748,106.656 -6.732,106.660 -6.734,106.671 -6.746,106.683 -6.756,106.682 -6.762,106.665 -6.772,106.660 -6.777,106.647 -6.791,106.642 -6.812,106.644 -6.830,106.633 -6.842,106.632 -6.852,106.592 -6.827,106.555 -6.818,106.547 -6.768,106.526 -6.762,106.525 -6.751,106.533 -6.750,106.549 -6.718,106.576 -6.722,106.583 -6.743,106.588</polygon>
+      <polygon>-7.049,107.186 -7.058,107.182 -7.061,107.190 -7.056,107.204 -7.058,107.222 -7.049,107.227 -7.049,107.253 -7.071,107.271 -7.087,107.291 -7.105,107.266 -7.098,107.235 -7.108,107.205 -7.110,107.187 -7.107,107.172 -7.090,107.170 -7.063,107.160 -7.046,107.143 -7.035,107.155 -7.045,107.169 -7.049,107.186</polygon>
+      <polygon>-6.998,107.368 -7.014,107.365 -7.051,107.368 -7.065,107.363 -7.085,107.369 -7.102,107.365 -7.115,107.371 -7.108,107.344 -7.108,107.312 -7.097,107.311 -7.090,107.306 -7.085,107.300 -7.089,107.295 -7.087,107.291 -7.071,107.271 -7.049,107.253 -7.049,107.227 -7.058,107.222 -7.056,107.204 -7.061,107.190 -7.058,107.182 -7.049,107.186 -7.018,107.194 -7.008,107.199 -7.011,107.206 -7.022,107.211 -7.017,107.221 -7.009,107.227 -7.014,107.252 -7.007,107.260 -7.005,107.270 -7.018,107.288 -7.016,107.293 -7.006,107.300 -7.002,107.310 -6.977,107.313 -6.974,107.342 -6.978,107.357 -6.996,107.353 -6.998,107.368</polygon>
+    </area>
+  </info>
+</alert>
