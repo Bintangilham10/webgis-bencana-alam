@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-22T11:00:42.583Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        112.5786797769,
+        -7.9829281994
+      ]
+    },
+    "properties": {
+      "pkey": "399901",
+      "created_at": "2026-10-22T10:56:55.174Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "9b5e3142-45a3-4f50-bbd7-82a3484bf32c",
+      "image_url": "https://images.petabencana.id/9b5e3142-45a3-4f50-bbd7-82a3484bf32c.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 161.57796283850743,
+        "fireLocation": {
+          "lng": 112.57867977691865,
+          "lat": -7.982928199399339
+        },
+        "personLocation": {
+          "lng": 112.57973177700944,
+          "lat": -7.983137692878387
+        },
+        "fireRadius": {
+          "lng": 112.5772152907935,
+          "lat": -7.98301851076809
+        }
+      },
+      "tags": {
+        "city": "MALANG",
+        "district_id": null,
+        "region_code": "3507",
+        "local_area_id": null,
+        "instance_region_code": "ID-JI"
+      },
+      "title": null,
+      "text": "kebakaran di kawasan TPA Supit Urang, Kota Malang, Jawa Timur, sejak Rabu (21/10/2026) sore sekitar pukul 16.35 WIB. ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
