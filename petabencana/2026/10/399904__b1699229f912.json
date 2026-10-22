@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-22T13:30:40.192Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.8096162184,
+        -6.6260580426
+      ]
+    },
+    "properties": {
+      "pkey": "399904",
+      "created_at": "2026-10-22T13:15:56.402Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "a3b076a1-ebf8-4f0c-8eb2-480be7ba0405",
+      "image_url": "https://images.petabencana.id/a3b076a1-ebf8-4f0c-8eb2-480be7ba0405.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 52
+      },
+      "tags": {
+        "city": "KOTA BOGOR",
+        "district_id": null,
+        "region_code": "3271",
+        "local_area_id": null,
+        "instance_region_code": "ID-JB"
+      },
+      "title": null,
+      "text": "Banjir di Permukiman warga, Kelurahan Batutulis, Kecamatan Bogor Selatan, Kota Bogor, Jawa Barat",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
