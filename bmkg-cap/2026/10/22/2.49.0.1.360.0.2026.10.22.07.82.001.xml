@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.22.07.82.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-22T14:00:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-22T14:30:00+09:00</effective>
+    <expires>2026-10-22T16:30:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Maluku Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 22 October 2026, 14:30 WIT di sebagian wilayah Maluku Utara, khususnya di MOROTAI TIMUR, WEDA UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 22 October 2026, 16:30 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CMU/2026/10/22/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Maluku Utara</areaDesc>
+      <polygon>0.551,128.271 0.525,128.264 0.443,128.225 0.427,128.203 0.432,128.198 0.429,128.179 0.440,128.184 0.441,128.176 0.454,128.174 0.457,128.169 0.455,128.157 0.464,128.141 0.454,128.120 0.461,128.095 0.477,128.079 0.469,128.065 0.479,128.040 0.473,128.027 0.476,128.024 0.488,128.027 0.509,128.017 0.521,128.004 0.542,128.001 0.551,127.991 0.586,127.998 0.599,127.994 0.628,127.995 0.651,127.985 0.655,127.995 0.655,128.005 0.644,128.024 0.645,128.038 0.639,128.044 0.643,128.057 0.640,128.063 0.616,128.068 0.615,128.084 0.593,128.118 0.593,128.155 0.589,128.167 0.601,128.205 0.598,128.216 0.586,128.237 0.571,128.251 0.570,128.264 0.551,128.271</polygon>
+      <polygon>0.402,128.280 0.418,128.284 0.402,128.280 0.402,128.280</polygon>
+      <polygon>0.443,128.172 0.440,128.173 0.441,128.167 0.445,128.165 0.443,128.172</polygon>
+      <polygon>0.512,128.371 0.512,128.371 0.512,128.371 0.502,128.370 0.512,128.371</polygon>
+      <polygon>2.248,128.628 2.231,128.622 2.214,128.623 2.190,128.602 2.137,128.575 2.127,128.579 2.111,128.577 2.104,128.568 2.103,128.548 2.090,128.541 2.069,128.522 2.059,128.503 2.081,128.500 2.125,128.510 2.171,128.492 2.186,128.478 2.220,128.478 2.226,128.497 2.277,128.439 2.306,128.479 2.248,128.609 2.248,128.628</polygon>
+    </area>
+  </info>
+</alert>
