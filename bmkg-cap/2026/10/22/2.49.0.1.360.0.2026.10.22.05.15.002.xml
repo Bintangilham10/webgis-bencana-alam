@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.22.05.15.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-22T10:58:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-22T11:08:00+07:00</effective>
+    <expires>2026-10-22T13:08:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jambi</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 22 October 2026, 11:08 WIB di sebagian wilayah Jambi, khususnya di KUMPEH, TAMAN RAJO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 22 October 2026, 13:08 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJI/2026/10/22/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jambi</areaDesc>
+      <polygon>-1.643,104.358 -1.648,104.359 -1.652,104.349 -1.713,104.151 -1.753,104.022 -1.754,104.004 -1.714,104.006 -1.698,103.982 -1.677,103.967 -1.676,103.925 -1.643,103.907 -1.612,103.906 -1.599,103.913 -1.591,103.912 -1.585,103.887 -1.563,103.871 -1.570,103.862 -1.563,103.856 -1.551,103.853 -1.540,103.867 -1.508,103.856 -1.502,103.839 -1.520,103.805 -1.520,103.785 -1.444,103.784 -1.412,103.791 -1.406,103.796 -1.407,103.807 -1.397,103.826 -1.382,103.841 -1.385,103.855 -1.379,103.859 -1.379,103.869 -1.367,103.875 -1.364,103.869 -1.358,103.868 -1.330,103.877 -1.314,104.023 -1.305,104.075 -1.323,104.095 -1.342,104.111 -1.446,104.171 -1.475,104.197 -1.549,104.254 -1.554,104.260 -1.561,104.284 -1.571,104.297 -1.607,104.312 -1.626,104.332 -1.643,104.358</polygon>
+      <polygon>-1.520,103.785 -1.513,103.767 -1.513,103.724 -1.521,103.696 -1.521,103.696 -1.531,103.680 -1.554,103.666 -1.561,103.655 -1.558,103.654 -1.552,103.652 -1.550,103.640 -1.534,103.626 -1.525,103.630 -1.503,103.629 -1.499,103.636 -1.499,103.647 -1.490,103.646 -1.476,103.685 -1.465,103.664 -1.446,103.669 -1.435,103.665 -1.409,103.688 -1.363,103.687 -1.348,103.766 -1.334,103.843 -1.333,103.852 -1.330,103.877 -1.330,103.877 -1.358,103.868 -1.364,103.869 -1.367,103.875 -1.379,103.869 -1.379,103.859 -1.385,103.855 -1.382,103.841 -1.397,103.826 -1.407,103.807 -1.406,103.796 -1.412,103.791 -1.444,103.784 -1.520,103.785</polygon>
+    </area>
+  </info>
+</alert>
