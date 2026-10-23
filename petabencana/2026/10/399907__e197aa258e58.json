@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-23T11:00:43.860Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        96.8178800064,
+        4.7157776365
+      ]
+    },
+    "properties": {
+      "pkey": "399907",
+      "created_at": "2026-10-23T10:46:23.157Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "7da9a084-6934-402e-ae97-e2a6c290d9ab",
+      "image_url": "https://images.petabencana.id/7da9a084-6934-402e-ae97-e2a6c290d9ab.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 30
+      },
+      "tags": {
+        "city": "BENER MERIAH",
+        "district_id": null,
+        "region_code": "1117",
+        "local_area_id": null,
+        "instance_region_code": "ID-AC"
+      },
+      "title": null,
+      "text": "kondisi terkini banjir dan tanah longsor yang melanda Kampung Wonosobo, Kecamatan Wih Pesam, Kabupaten Bener Meriah, Aceh.",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
