@@ -58,6 +58,7 @@ The logo is an **S drawn from three contour lines** around an amber summit point
 - **GDACS alerts** (off by default): Global Disaster Alert and Coordination System (European Commission JRC and UN OCHA) alerts for Indonesia covering floods, earthquakes, volcanoes, tropical cyclones, droughts, and wildfires. Orange and red alerts from the last 12 months and green alerts from the last 7 days are shown (green earthquakes are left to the earthquake layers), with the official GDACS map icons in the colour of the alert level. Multi-country events whose GDACS point lies outside the Indonesian region are left out. GDACS levels estimate humanitarian impact; they are not national warning levels.
 - **Volcanoes** from MAGMA Indonesia, synced every 30 minutes, with alert level I–IV, eruption status, and aviation ash warnings (VONA).
 - **Heavy-rain warnings** from BMKG CEWS for the current dasarian (10-day period), drawn on regency boundaries and listed in the overview.
+- **BMKG nowcast weather warnings** (CAP 1.2), synced every 5 minutes: hatched sub-district polygons where BMKG expects heavy rain and thunderstorms within about 2 hours, mapped to regencies and listed in the overview. BMKG republishes the same warning file under new identifiers, so SIGAP keys each warning on its file URL; that leaves about 80 warnings a day.
 - **Rain from satellite**: the latest 30-minute NASA GPM IMERG rainfall, about 4–6 hours behind real time (the legend shows the data time).
 - **Clouds from Himawari-9** (JMA, Japan; off by default): infrared cloud-top temperature every 10 minutes, about 30–75 minutes behind, through NASA GIBS. The browser makes cloud-free ground transparent so the basemap stays visible, while cold convective tops keep their colours. GIBS lists a new image before all its tiles exist, so the server picks the newest time whose test tiles over Indonesia are published, and any tile still missing falls back to the image 10–30 minutes earlier.
 - **Landslides**: 1,884 past events from PVMBG and MAGMA, coloured by age.
@@ -68,13 +69,15 @@ The logo is an **S drawn from three contour lines** around an amber summit point
 <td width="50%" valign="top">
 
 ### Risk check for any point
-Pick a point by search, GPS, right-click, or long press. SIGAP runs 11 lookups in parallel (web services and PostGIS queries) and returns one profile:
+Pick a point by search, GPS, right-click, or long press. SIGAP runs 12 lookups in parallel (web services and PostGIS queries) and returns one profile:
+- any BMKG nowcast weather warning in force at the point, as a banner above the profile and the first tip;
 - a 3-day outlook (Normal, Waspada, Siaga, Awas) for heavy rain, flood, and landslide, from rainfall × hazard class, with the same rules as the regency outlook. Points outside every regency are labelled coast (within 1 km, using the nearest regency), sea, or outside Indonesia, where no outlook is computed;
 - the five InaRISK hazard indices;
 - the nearest active fault and volcanoes, drawn as distance lines;
 - recent earthquakes within 100 km;
 - a 7-day GloFAS (Copernicus) river discharge forecast to compare with the flood outlook: ensemble median and range at the nearest ~5 km cell, rated against 2-, 5-, and 20-year flood discharges that SIGAP derives from the cell's 1997–2024 annual maxima (stored per cell, so the long history is fetched once). It loads separately (`/api/river`), so it does not slow the risk check;
-- **landslide and rain**: the PVMBG monthly landslide forecast and susceptibility zone, the BMKG heavy-rain warning for the regency, rain over the last 3 days, the odds of ≥ 50 mm from 51 ECMWF ensemble members, terrain slope, and past landslides within 5 km.
+- **landslide and rain**: the PVMBG monthly landslide forecast and susceptibility zone, the BMKG heavy-rain warning for the regency, rain over the last 3 days, the odds of ≥ 50 mm from 51 ECMWF ensemble members, terrain slope, and past landslides within 5 km;
+- **evacuation and a safe route**: the nearest evacuation sites and assembly points mapped in OpenStreetMap, plus hospitals, clinics, police, and fire stations. OSM does not say whether a site is safe, so sites inside a high InaRISK flood or landslide class are flagged. Each one can be routed to on foot, by motorbike, or by car (Valhalla, with OSRM as a fallback). Every candidate route is scored by the metres it runs through high flood and landslide classes; when all of them cross one, SIGAP asks Valhalla again with those zone blocks excluded. The suggested route is the least exposed one that takes at most 1.75 times the fastest time plus 2 minutes, and red segments mark what cannot be avoided, such as a destination inside a zone.
 
 </td>
 </tr>
@@ -83,6 +86,8 @@ Pick a point by search, GPS, right-click, or long press. SIGAP runs 11 lookups i
 
 ### Built for the field
 - An opening page that tours the product before the map: real screenshots in tablet, laptop, and phone mockups, live counts, the features, how the outlook is computed, and the data sources. Opening the map reveals it through an expanding circle.
+- **Live notifications** over Server-Sent Events for new BMKG earthquakes, volcano level changes, and BMKG weather warnings: a bell with a badge, toasts, and an optional sound and browser notification. They can be limited to the area around you (earthquakes within 150 km, volcanoes within 100 km, weather warnings in your regency or within 30 km). A browser that reconnects receives what it missed in the last 24 hours, and a simulation button demonstrates the flow without touching the server.
+- **Position tracking** with `watchPosition`: the map follows you, and on a safe route a status chip shows the distance left and warns when you are more than 60 m off the route or on a red segment. The position stays in the browser unless you ask for a risk check or a route.
 - Full-bleed map with floating panels; on phones the panel becomes a bottom sheet.
 - Dark and light themes, flat colours, and one blue accent. Bright colours are reserved for hazard data.
 - Cartographic essentials: collapsible legend, scale bar with a 1:n reading, north arrow, and cursor coordinates in WGS84, UTM, and EPSG:3857.
@@ -156,14 +161,15 @@ flowchart LR
     ESDM["PVMBG / MAGMA<br/>volcanoes, landslide forecast"]
     BNPB["BNPB InaRISK<br/>hazard index, ZKGT"]
     OM["Open-Meteo<br/>rain, ECMWF ensemble, DEM"]
-    OSMN["OpenStreetMap<br/>Nominatim"]
+    OSMN["OpenStreetMap<br/>Nominatim, Overpass"]
+    ROUTING["FOSSGIS<br/>Valhalla, OSRM"]
     NASA["NASA GIBS<br/>IMERG rain"]
   end
 
   subgraph server["server/ (Node.js, Express)"]
-    SYNC["Scheduler<br/>quakes 60 s, volcanoes 30 min,<br/>3-day outlook 12 h"]
-    API["REST API<br/>GeoJSON"]
-    RISK["Risk check<br/>11 lookups in parallel"]
+    SYNC["Scheduler<br/>quakes 60 s, CAP 5 min, volcanoes 30 min,<br/>3-day outlook 12 h, OSM facilities weekly"]
+    API["REST API<br/>GeoJSON, SSE notifications"]
+    RISK["Risk check<br/>12 lookups in parallel"]
   end
 
   DB[("PostgreSQL 18<br/>PostGIS 3.6")]
@@ -184,6 +190,8 @@ flowchart LR
   BMKG --> RISK
   RISK --> API
   OSMN --> API
+  OSMN -->|evacuation sites| SYNC
+  ROUTING -->|safe route| API
   NASA -->|latest time| API
   NASA -->|map tiles| WEB
   API --> WEB
@@ -320,7 +328,7 @@ TEST_DATABASE_URL=postgres://sigap:sigap@localhost:5433/sigap_test npm test
 
 In PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/sigap_test"; npm test`
 
-Current counts: 87 server tests (with the integration database), 55 recorder tests, and 22 research tests. One research test reproduces the worked example of the EDuMaP paper.
+Current counts: 136 server tests (with the integration database), 55 recorder tests, and 22 research tests. One research test reproduces the worked example of the EDuMaP paper.
 
 </details>
 
@@ -345,6 +353,12 @@ Every endpoint returns JSON; spatial data is GeoJSON with `[lon, lat]` coordinat
 | `GET /api/clouds-now` | Time and tile URL of the latest Himawari-9 infrared image whose tiles are published, plus fallback tile URLs of the previous images |
 | `GET /api/outlook` | Latest SIGAP 3-day outlook: heavy rain, flood, and landslide level per regency, with reason, peak day, and worst monitoring point, plus counts per level |
 | `GET /api/landslides` | Landslide history from PVMBG and MAGMA |
+| `GET /api/cap` | BMKG nowcast weather warnings in force: sub-district polygons with event, severity, validity in local time, and regencies |
+| `GET /api/notifications?limit=30` | Notifications from the last 24 hours (earthquakes, volcano level changes, weather warnings), newest first, and the number of live listeners |
+| `GET /api/stream` | Server-Sent Events stream of new notifications; a reconnect with `Last-Event-ID` replays those missed in the last 24 hours |
+| `GET /api/evacuation?lat=-6.22&lon=106.87` | Nearest OpenStreetMap evacuation sites and assembly points (up to 6), hospitals, clinics, police, and fire stations, each with the high hazard classes at its location (`zona_tinggi`) |
+| `GET /api/evacuation-sites` | All OpenStreetMap evacuation sites and assembly points in Indonesia (about 1,600) |
+| `POST /api/route` | Safe route for `{"from": {"lat", "lon"}, "to": {"lat", "lon"}, "mode"}` with mode `jalan_kaki`, `motor`, or `mobil`: candidate routes with metres per hazard class, the fastest and the suggested one, and high zones at the start or destination. At most 30 requests per 10 minutes from one IP address |
 | `GET /api/geocode?q=bandung` | Regency search in the database, other places through Nominatim |
 
 <details>
@@ -385,6 +399,7 @@ Shortened from the real response. If one source fails, only its own part carries
 | Earthquakes (comparison) | [USGS](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) real-time GeoJSON feeds | Public domain; credit USGS |
 | Earthquake impact, landslide, and liquefaction estimates | [USGS PAGER](https://earthquake.usgs.gov/data/pager/) and [USGS Ground Failure](https://earthquake.usgs.gov/data/ground-failure/), through the USGS event detail API | Public domain; credit USGS |
 | Heavy-rain early warnings | [BMKG CEWS](https://cews.bmkg.go.id/) | Credit BMKG as the source |
+| Nowcast weather warnings | [BMKG](https://www.bmkg.go.id/) CAP 1.2 feed (`/alerts/nowcast/id`) | Credit BMKG as the source |
 | Hazard indices (point lookups, samples, and ~550 m class rasters for the outlook), active faults | [BNPB InaRISK](https://inarisk.bnpb.go.id/); PuSGeN 2024 fault model | Credit BNPB and PuSGeN |
 | Volcano alert levels | [MAGMA Indonesia](https://magma.esdm.go.id/), PVMBG, Ministry of Energy and Mineral Resources | Credit PVMBG |
 | Monthly landslide forecast, ZKGT, landslide events | PVMBG, Geological Agency ([Portal MBG](https://vsi.esdm.go.id/portalmbg/) and MAGMA Indonesia) | Credit PVMBG. The event history is rebuilt by `research/01_inventaris.py` without personal data |
@@ -398,6 +413,8 @@ Shortened from the real response. If one source fails, only its own part carries
 | International disaster alerts | [GDACS](https://www.gdacs.org/) (European Commission JRC and UN OCHA) | Credit GDACS |
 | River discharge forecast | [GloFAS](https://global-flood.emergency.copernicus.eu/), Copernicus Emergency Management Service, through the [Open-Meteo Flood API](https://open-meteo.com/en/docs/flood-api) | CC BY 4.0; credit Copernicus and Open-Meteo |
 | Place search | [Nominatim](https://nominatim.org/), © OpenStreetMap contributors | ODbL; at most 1 request per second, no autocomplete |
+| Evacuation sites and facilities | © OpenStreetMap contributors, one national [Overpass API](https://overpass-api.de/) query a week | ODbL |
+| Safe routes | [Valhalla](https://valhalla1.openstreetmap.de/) and [OSRM](https://routing.openstreetmap.de/) on FOSSGIS servers, on OpenStreetMap data | ODbL data; FOSSGIS fair use (light, non-commercial load) |
 | Basemaps | Esri; © OpenStreetMap contributors (ODbL); Humanitarian OpenStreetMap Team; OpenTopoMap | CC-BY-SA for OpenTopoMap |
 
 Portal MBG and CEWS endpoints are internal site APIs, not documented services. SIGAP sends an identifying User-Agent, keeps request rates low, and caches every response.

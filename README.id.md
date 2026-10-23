@@ -63,6 +63,7 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
   - setiap run disimpan (`indikasi_run`, `indikasi_wilayah`, dan level per hari di `indikasi_hari`), termasuk kab/kota yang Normal, untuk uji prospektif per lead time. Aturannya belum dikalibrasi, jadi selalu diberi label indikasi sistem, bukan peringatan resmi.
 - **Hujan dan longsor:**
   - peringatan dini curah hujan tinggi BMKG (CEWS) dasarian berjalan, digambar di batas kab/kota (Waspada, Siaga, Awas) dan didaftar di Ikhtisar; klik untuk menuju wilayahnya;
+  - peringatan dini cuaca BMKG (CAP 1.2, *nowcast*), disinkronkan tiap 5 menit: poligon kecamatan berarsir yang menurut BMKG akan dilanda hujan lebat dan petir dalam ±2 jam, dipetakan ke kab/kota dan didaftar di Ikhtisar. BMKG menerbitkan ulang berkas peringatan yang sama dengan identifier baru, jadi SIGAP memakai URL berkas sebagai kunci; hasilnya ±80 peringatan per hari;
   - hujan terkini dari satelit NASA GPM IMERG (rata-rata 30 menit, terlambat ±4–6 jam; waktu datanya tertulis di legenda);
   - citra awan satelit Himawari-9 milik JMA Jepang (mati bawaan): suhu puncak awan dari kanal inframerah tiap 10 menit, terlambat ±30–75 menit, lewat NASA GIBS. Browser membuat permukaan tanpa awan transparan supaya peta dasar tetap terlihat; puncak awan konvektif yang dingin tetap berwarna. GIBS mendaftarkan citra baru sebelum semua petaknya terbit, jadi server memilih waktu terbaru yang petak ujinya di atas Indonesia sudah ada, dan petak yang masih belum ada memakai citra 10–30 menit sebelumnya;
   - riwayat 1.884 kejadian longsor PVMBG dan MAGMA, segitiga ungu yang makin gelap makin baru.
@@ -70,13 +71,17 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
 - **Data geologi dan wilayah:** sesar aktif PuSGeN 2024, batas lempeng tektonik, dan batas 514 kabupaten/kota (Kepmendagri 2025).
 - **Pencarian lokasi:** nama kab/kota dicari di database sendiri, tempat lain lewat Nominatim OpenStreetMap. Pencarian berjalan saat Enter ditekan, sesuai kebijakan Nominatim.
 - **Cek risiko lokasi:** pilih titik dengan pencarian, tombol "lokasi saya", mode pilih titik, atau klik kanan/tekan lama di peta. Profil tampil di panel samping (peta tidak tertutup) dan dibuka dengan satu status 3 hari ke depan (Normal/Waspada/Siaga/Awas). Isinya:
+  - peringatan dini cuaca BMKG yang sedang berlaku di titik itu, sebagai banner di atas profil dan saran pertama;
   - indeks lima bahaya InaRISK dengan kelas BNPB;
   - indikasi 3 hari untuk hujan lebat, banjir, dan tanah longsor (hujan × kelas bahaya, aturan v0.2 di `recorder/src/lib/rules.json`, sama dengan indikasi per kab/kota). Titik di luar batas kab/kota diberi status: pesisir (≤ 1 km, memakai kab/kota terdekat), perairan, atau di luar wilayah Indonesia (indikasi tidak dihitung);
   - prakiraan hujan dan elevasi;
   - prakiraan debit sungai 7 hari dari GloFAS (Copernicus) sebagai pembanding indikasi banjir: median dan rentang ensemble di sel ±5 km terdekat, dinilai terhadap ambang debit banjir 2, 5, dan 20 tahunan yang dihitung SIGAP dari debit maksimum tahunan 1997–2024 di sel yang sama (disimpan per sel, jadi riwayat panjangnya cukup diminta sekali). Bagian ini dimuat terpisah (`/api/river`), jadi tidak memperlambat cek risiko;
   - jarak ke sesar aktif dan gunung api terdekat, digambar sebagai garis di peta;
   - gempa di sekitar lokasi dan saran kesiapsiagaan;
-  - tanah longsor dan hujan: potensi gerakan tanah bulanan PVMBG dan ZKGT, peringatan hujan tinggi BMKG untuk kab/kota itu, hujan 3 hari terakhir, peluang hujan ≥ 50 mm dari 51 anggota ensemble ECMWF, kemiringan lereng, dan riwayat longsor dalam 5 km.
+  - tanah longsor dan hujan: potensi gerakan tanah bulanan PVMBG dan ZKGT, peringatan hujan tinggi BMKG untuk kab/kota itu, hujan 3 hari terakhir, peluang hujan ≥ 50 mm dari 51 anggota ensemble ECMWF, kemiringan lereng, dan riwayat longsor dalam 5 km;
+  - evakuasi dan rute aman: tempat evakuasi dan titik kumpul terdekat yang terpetakan di OpenStreetMap, ditambah rumah sakit, puskesmas/klinik, polisi, dan pemadam kebakaran. OSM tidak menilai keamanan tempat, jadi tempat yang berada di zona banjir atau longsor kelas tinggi InaRISK diberi tanda. Tiap tempat bisa dicarikan rute jalan kaki, motor, atau mobil (Valhalla, cadangan OSRM). Setiap kandidat rute dinilai panjangnya di zona banjir dan longsor tinggi; bila semuanya melewati zona, SIGAP meminta rute lagi ke Valhalla dengan blok zona itu sebagai area terlarang. Rute yang disarankan adalah yang paparannya terkecil dengan waktu tempuh paling lama 1,75 × rute tercepat + 2 menit; ruas merah menandai bagian yang tidak bisa dihindari, mis. tujuan yang berada di dalam zona.
+- **Notifikasi langsung (SSE):** gempa BMKG baru, perubahan level gunung api, dan peringatan dini cuaca BMKG dikirim server lewat Server-Sent Events: lonceng dengan badge, toast, serta bunyi dan notifikasi browser (opsional). Bisa dibatasi ke sekitar lokasi pengguna (gempa ≤ 150 km, gunung api ≤ 100 km, peringatan cuaca di kab/kota yang sama atau ≤ 30 km). Browser yang tersambung ulang menerima notifikasi yang terlewat dalam 24 jam terakhir. Tombol simulasi menunjukkan alurnya tanpa menyentuh server.
+- **Pantau posisi** (`watchPosition`): peta mengikuti posisi pengguna. Saat ada rute aman, chip status menunjukkan sisa jarak dan memperingatkan bila pengguna keluar rute lebih dari 60 m atau berada di ruas merah. Posisi tetap di browser kecuali pengguna meminta cek risiko atau rute.
 - **Perekam arsip data riset** (`recorder/`): GitHub Actions merekam tiap 15 menit ke branch `arsip-data`. Yang direkam:
   - peringatan dini cuaca dan gempa BMKG, status gunung api MAGMA, dan laporan PetaBencana;
   - untuk riset longsor dan hujan: peringatan dini curah hujan tinggi BMKG (CEWS, per dasarian, termasuk arsip sejak 2022), prakiraan bulanan potensi gerakan tanah PVMBG di titik tiap kab/kota, laporan pemeriksaan lapangan PVMBG (baru/berubah), ringkasan ensemble hujan ECMWF 3 hari, kejadian mingguan BNPB, dan berita longsor yang dicocokkan ke kab/kota;
@@ -166,6 +171,12 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 | `GET /api/rain-now` | Waktu dan URL petak peta hujan satelit NASA IMERG terbaru |
 | `GET /api/clouds-now` | Waktu dan URL petak citra awan inframerah Himawari-9 terbaru yang petaknya sudah terbit, plus URL petak cadangan dari citra sebelumnya |
 | `GET /api/outlook` | Indikasi SIGAP 3 hari terbaru: level hujan lebat, banjir, dan tanah longsor per kab/kota beserta alasan, hari puncak, dan titik pantau terparah, plus jumlah kab/kota per level |
+| `GET /api/cap` | Peringatan dini cuaca BMKG yang sedang berlaku: poligon kecamatan beserta jenis, tingkat, masa berlaku (waktu setempat), dan kab/kota (GeoJSON) |
+| `GET /api/notifications?limit=30` | Notifikasi 24 jam terakhir (gempa, perubahan level gunung api, peringatan cuaca), terbaru dulu, dan jumlah pendengar yang tersambung |
+| `GET /api/stream` | Aliran Server-Sent Events untuk notifikasi baru; sambungan ulang dengan `Last-Event-ID` menerima yang terlewat dalam 24 jam terakhir |
+| `GET /api/evacuation?lat=-6.22&lon=106.87` | Tempat evakuasi dan titik kumpul OpenStreetMap terdekat (maks. 6), rumah sakit, puskesmas/klinik, polisi, dan pemadam, masing-masing dengan kelas bahaya tinggi di lokasinya (`zona_tinggi`) |
+| `GET /api/evacuation-sites` | Semua tempat evakuasi dan titik kumpul OpenStreetMap di Indonesia (±1.600, GeoJSON) |
+| `POST /api/route` | Rute aman untuk `{"from": {"lat", "lon"}, "to": {"lat", "lon"}, "mode"}` dengan mode `jalan_kaki`, `motor`, atau `mobil`: kandidat rute beserta panjangnya per kelas bahaya, rute tercepat dan yang disarankan, serta zona tinggi di titik asal atau tujuan. Maksimal 30 permintaan per 10 menit dari satu alamat IP |
 | `GET /api/geocode?q=bandung` | Pencarian kab/kota (database) dan tempat lain (Nominatim) |
 
 ## Sumber data dan atribusi
@@ -179,6 +190,7 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 | Status gunung api | [MAGMA Indonesia](https://magma.esdm.go.id/), PVMBG Kementerian ESDM | Cantumkan PVMBG |
 | Prakiraan potensi gerakan tanah bulanan, ZKGT, dan riwayat kejadian longsor | PVMBG, Badan Geologi, Kementerian ESDM ([Portal MBG](https://vsi.esdm.go.id/portalmbg/) dan MAGMA Indonesia) | Cantumkan PVMBG. Riwayat disusun ulang oleh `research/01_inventaris.py` tanpa data pribadi |
 | Peringatan dini curah hujan tinggi | [BMKG CEWS](https://cews.bmkg.go.id/) | Wajib mencantumkan BMKG sebagai sumber |
+| Peringatan dini cuaca (*nowcast*) | Feed CAP 1.2 [BMKG](https://www.bmkg.go.id/) (`/alerts/nowcast/id`) | Wajib mencantumkan BMKG sebagai sumber |
 | Batas lempeng | Bird (2003) PB2002, konversi H. Ahlenius/Nordpil | ODC-By |
 | Batas wilayah | Kepmendagri No 300.2.2-2430 Tahun 2025, [cahyadsn/wilayah_boundaries](https://github.com/cahyadsn/wilayah_boundaries) | MIT |
 | Laporan warga (arsip riset) | [PetaBencana.id](https://petabencana.id/) | CC BY-NC 4.0 |
@@ -189,4 +201,6 @@ Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/si
 | Peringatan bencana internasional | [GDACS](https://www.gdacs.org/) (Komisi Eropa JRC dan PBB OCHA) | Cantumkan GDACS |
 | Prakiraan debit sungai | [GloFAS](https://global-flood.emergency.copernicus.eu/), Copernicus Emergency Management Service, lewat [Open-Meteo Flood API](https://open-meteo.com/en/docs/flood-api) | CC BY 4.0; cantumkan Copernicus dan Open-Meteo |
 | Pencarian tempat | [Nominatim](https://nominatim.org/) © OpenStreetMap contributors | ODbL; maksimal 1 request/detik, tanpa autocomplete |
+| Tempat evakuasi dan fasilitas penting | © OpenStreetMap contributors, satu query nasional [Overpass API](https://overpass-api.de/) per minggu | ODbL |
+| Rute aman | [Valhalla](https://valhalla1.openstreetmap.de/) dan [OSRM](https://routing.openstreetmap.de/) di server FOSSGIS, dengan data OpenStreetMap | Data ODbL; pemakaian wajar FOSSGIS (beban ringan, nonkomersial) |
 | Peta dasar | Esri; © OpenStreetMap contributors (ODbL); Humanitarian OpenStreetMap Team; OpenTopoMap | CC-BY-SA untuk OpenTopoMap |
