@@ -1,7 +1,9 @@
 # SITE_ADDRESS = nama domain server: Caddy mengambil sertifikat HTTPS (Let's Encrypt)
 # sendiri dan mengalihkan HTTP ke HTTPS. ":80" = uji lokal tanpa HTTPS.
 {$SITE_ADDRESS} {
-	encode zstd gzip
+	# Aliran notifikasi (SSE) tidak dikompresi supaya tiap notifikasi langsung terkirim.
+	@compress not path /api/stream
+	encode @compress zstd gzip
 
 	handle /api/* {
 		reverse_proxy api:3000
