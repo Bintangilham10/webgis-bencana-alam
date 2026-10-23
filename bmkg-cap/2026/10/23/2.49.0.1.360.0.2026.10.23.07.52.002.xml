@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.23.07.52.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-23T15:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-23T15:10:00+08:00</effective>
+    <expires>2026-10-23T17:10:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 October 2026, 15:10 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di BRANG REA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 October 2026, 17:10 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/10/23/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.618,116.985 -8.625,117.000 -8.672,117.040 -8.670,117.049 -8.677,117.056 -8.676,117.061 -8.681,117.071 -8.700,117.086 -8.731,117.091 -8.762,117.084 -8.769,117.074 -8.780,117.065 -8.783,117.048 -8.791,117.041 -8.803,117.045 -8.804,117.060 -8.810,117.065 -8.822,117.060 -8.822,117.050 -8.828,117.040 -8.775,116.993 -8.782,116.982 -8.786,116.966 -8.786,116.939 -8.765,116.916 -8.747,116.910 -8.745,116.904 -8.753,116.895 -8.757,116.895 -8.756,116.886 -8.729,116.885 -8.690,116.915 -8.671,116.923 -8.653,116.918 -8.642,116.909 -8.614,116.932 -8.600,116.935 -8.595,116.942 -8.618,116.985</polygon>
+    </area>
+  </info>
+</alert>
