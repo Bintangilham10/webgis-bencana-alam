@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.23.22.33.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-24T04:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-24T04:20:00+07:00</effective>
+    <expires>2026-10-24T06:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 October 2026, 04:20 WIB di sebagian wilayah Jawa Tengah, khususnya di BRUNO, GEBANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 October 2026, 06:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJH/2026/10/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Tengah</areaDesc>
+      <polygon>-7.533,109.975 -7.554,109.968 -7.563,109.969 -7.577,109.978 -7.577,109.983 -7.583,109.975 -7.592,109.980 -7.606,109.978 -7.609,109.968 -7.621,109.963 -7.619,109.959 -7.609,109.960 -7.613,109.952 -7.623,109.949 -7.621,109.947 -7.599,109.946 -7.599,109.940 -7.615,109.931 -7.615,109.923 -7.610,109.889 -7.595,109.884 -7.593,109.873 -7.584,109.873 -7.583,109.863 -7.569,109.861 -7.562,109.855 -7.547,109.873 -7.535,109.867 -7.527,109.874 -7.527,109.875 -7.536,109.884 -7.528,109.886 -7.520,109.898 -7.521,109.922 -7.526,109.935 -7.533,109.940 -7.529,109.958 -7.533,109.975</polygon>
+      <polygon>-7.586,110.017 -7.597,110.019 -7.608,110.013 -7.623,110.016 -7.624,110.032 -7.639,110.035 -7.638,110.012 -7.645,110.014 -7.648,110.023 -7.658,110.031 -7.663,110.030 -7.662,110.010 -7.673,110.015 -7.689,110.015 -7.693,110.004 -7.700,109.996 -7.702,109.988 -7.701,109.981 -7.692,109.977 -7.684,109.963 -7.682,109.949 -7.676,109.951 -7.664,109.963 -7.656,109.965 -7.623,109.970 -7.620,109.967 -7.621,109.963 -7.609,109.968 -7.606,109.978 -7.592,109.980 -7.583,109.975 -7.577,109.983 -7.575,109.995 -7.588,109.995 -7.591,109.999 -7.586,110.017</polygon>
+    </area>
+  </info>
+</alert>
