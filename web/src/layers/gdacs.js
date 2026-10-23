@@ -8,7 +8,8 @@ import { pillStyle, USGS_ALERTS } from '../lib/symbology.js';
 // Peringatan GDACS (Komisi Eropa JRC dan PBB OCHA) untuk Indonesia: banjir, gempa,
 // gunung api, siklon tropis, kekeringan, dan kebakaran hutan. Level Hijau, Oranye,
 // atau Merah = perkiraan dampak kemanusiaan, bukan level peringatan nasional.
-// Penanda memakai ikon peta resmi GDACS (30 × 38 px, ujung pin di bawah tengah).
+// Penanda memakai ikon peta resmi GDACS (30 × 38 px, ujung pin di bawah tengah),
+// dipilih dari jenis dan level kejadian supaya warnanya selalu sama dengan level.
 
 const FOCUS_ZOOM = 8;
 const REFRESH_MS = 15 * 60_000;
@@ -34,7 +35,7 @@ export function gdacsPopup(p) {
   return `
     <div class="popup">
       <div class="popup-head">
-        <img class="gdacs-popup-icon" src="${escapeHtml(p.icon_url ?? gdacsIconUrl(p.type, p.level))}" width="30" height="38" alt="" />
+        <img class="gdacs-popup-icon" src="${gdacsIconUrl(p.type, p.level)}" width="30" height="38" alt="" />
         <div class="popup-heading">
           <h3>${escapeHtml(p.type_label)}${p.name ? ` ${escapeHtml(p.name)}` : ''}</h3>
           <p class="popup-sub">${p.current ? 'Masih berlangsung' : 'Sudah berakhir'} · peringatan GDACS</p>
@@ -64,7 +65,7 @@ export function createGdacsLayer(map, { viewPadding, onLoad, onError } = {}) {
       const [lon, lat] = geometry.coordinates;
       const marker = L.marker([lat, lon], {
         pane: 'quakes',
-        icon: pin(p.icon_url ?? gdacsIconUrl(p.type, p.level)),
+        icon: pin(gdacsIconUrl(p.type, p.level)),
         // Merah di atas Oranye di atas Hijau; yang berlangsung di atas yang selesai.
         zIndexOffset: 40_000 + LEVEL_ORDER[p.level] * 2_000 + (p.current ? 1_000 : 0),
         alt: `${p.type_label}, level ${USGS_ALERTS[p.level].label}`,

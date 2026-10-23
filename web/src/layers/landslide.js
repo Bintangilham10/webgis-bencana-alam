@@ -130,33 +130,40 @@ const CLOUDS_FALLBACK_URL =
 
 // Petak inframerah GIBS berupa gambar penuh; di browser permukaan tanpa awan
 // dibuat transparan (lib/clouds.js) supaya peta dasar tetap terlihat. GIBS
-// mengizinkan CORS, jadi piksel petak boleh dibaca kanvas.
+// mengizinkan CORS, jadi piksel petak boleh dibaca kanvas. Petak yang belum
+// terbit (404) diambil dari waktu sebelumnya (fallbackUrls dari server), supaya
+// tidak bolong dan tampak seperti langit cerah.
 const CloudTiles = L.GridLayer.extend({
   createTile(coords, done) {
     const tile = L.DomUtil.create('canvas', 'leaflet-tile');
     const size = this.getTileSize();
     tile.width = size.x;
     tile.height = size.y;
-    const image = new Image();
-    image.crossOrigin = 'anonymous';
-    image.onload = () => {
-      try {
-        const context = tile.getContext('2d', { willReadFrequently: true });
-        context.drawImage(image, 0, 0, size.x, size.y);
-        const pixels = context.getImageData(0, 0, size.x, size.y);
-        cloudsOnly(pixels.data, size.x);
-        context.putImageData(pixels, 0, 0);
-        done(null, tile);
-      } catch (err) {
-        done(err, tile);
-      }
+    const urls = [this.options.url, ...this.options.fallbackUrls];
+    const load = (index) => {
+      const image = new Image();
+      image.crossOrigin = 'anonymous';
+      image.onload = () => {
+        try {
+          const context = tile.getContext('2d', { willReadFrequently: true });
+          context.drawImage(image, 0, 0, size.x, size.y);
+          const pixels = context.getImageData(0, 0, size.x, size.y);
+          cloudsOnly(pixels.data, size.x);
+          context.putImageData(pixels, 0, 0);
+          done(null, tile);
+        } catch (err) {
+          done(err, tile);
+        }
+      };
+      image.onerror = () =>
+        index + 1 < urls.length ? load(index + 1) : done(new Error('Petak Himawari-9 gagal dimuat'), tile);
+      image.src = L.Util.template(urls[index], coords);
     };
-    image.onerror = () => done(new Error('Petak Himawari-9 gagal dimuat'), tile);
-    image.src = L.Util.template(this.options.url, coords);
+    load(0);
     return tile;
   },
-  setUrl(url) {
-    this.options.url = url;
+  setUrls(url, fallbackUrls) {
+    Object.assign(this.options, { url, fallbackUrls });
     return this.redraw();
   },
 });
@@ -176,10 +183,12 @@ export function createCloudLayer({ onError } = {}) {
   // Waktu citra terbaru dari server; petak hanya digambar ulang bila citranya baru.
   async function refresh() {
     let url;
+    let fallbackUrls = [];
     let next;
     try {
       const now = await getJson('/api/clouds-now');
       url = now.tile_url;
+      fallbackUrls = now.fallback_urls ?? [];
       next = now.time;
       const at = new Date(now.time);
       legendText.clouds = `Citra ${shortDate.format(at)}, ${clock.format(at).replace(':', '.')} WIB`;
@@ -191,8 +200,8 @@ export function createCloudLayer({ onError } = {}) {
       onError?.(err);
     }
     fillLegend('clouds', legendText.clouds);
-    if (!tiles) group.addLayer((tiles = new CloudTiles({ ...options, url })));
-    else if (next !== time) tiles.setUrl(url);
+    if (!tiles) group.addLayer((tiles = new CloudTiles({ ...options, url, fallbackUrls })));
+    else if (next !== time) tiles.setUrls(url, fallbackUrls);
     time = next;
   }
 
@@ -213,7 +222,7 @@ export const cloudLegend = () => `
   <p class="legend-note" data-legend-live="clouds">${escapeHtml(legendText.clouds)}</p>
   <div class="legend-ramp" aria-hidden="true">${CLOUD_RAMP.map((c) => `<span style="background:${c.color}"></span>`).join('')}</div>
   <div class="legend-ramp-labels"><span>${celsius(CLOUD_RAMP[0].c)}</span><span>${celsius(CLOUD_RAMP[4].c)}</span><span>${celsius(CLOUD_RAMP.at(-1).c)} °C</span></div>
-  <p class="legend-note">Suhu puncak awan dari kanal inframerah, tiap 10 menit, terlambat ±1 jam. Makin dingin makin tinggi awannya; puncak di bawah ±−40 °C (hijau sampai merah) umumnya awan hujan konvektif. Abu-abu di tengah merah: inti badai di bawah −70 °C. Permukaan tanpa awan transparan.</p>`;
+  <p class="legend-note">Suhu puncak awan dari kanal inframerah, tiap 10 menit, terlambat ±1 jam. Makin dingin makin tinggi awannya; puncak di bawah ±−40 °C (hijau sampai merah) umumnya awan hujan konvektif. Abu-abu di tengah merah: inti badai di bawah −70 °C. Permukaan tanpa awan transparan. Petak yang belum terbit memakai citra 10–30 menit sebelumnya.</p>`;
 
 // ---------- Riwayat longsor ----------
 

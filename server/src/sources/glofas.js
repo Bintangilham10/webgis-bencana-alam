@@ -6,8 +6,10 @@ import { fetchJson } from '../lib/http.js';
 // terdekat belum tentu berada di sungai yang dimaksud. CC BY 4.0.
 const FLOOD_URL = 'https://flood-api.open-meteo.com/v1/flood';
 export const FORECAST_DAYS = 7;
-// Debit historis (reanalisis GloFAS) untuk ambang banjir per sel.
-const HISTORY_FROM = '1984-01-01';
+// Debit historis (reanalisis GloFAS) untuk ambang banjir per sel. Di Open-Meteo
+// datanya baru ada mulai 1997; 1984–1996 bernilai null (dicek 23 Okt 2026 di sel
+// Jakarta, Bogor, dan Palembang).
+const HISTORY_FROM = '1997-01-01';
 const HISTORY_TO = '2024-12-31';
 const MIN_DAYS_PER_YEAR = 300;
 const MIN_YEARS = 10;
@@ -36,10 +38,14 @@ export function returnPeriodThresholds({ time = [], river_discharge: discharge =
     entry.max = Math.max(entry.max, value);
     byYear.set(year, entry);
   });
-  const maxima = [...byYear.values()].filter((y) => y.count >= MIN_DAYS_PER_YEAR).map((y) => y.max).sort((a, b) => a - b);
-  if (maxima.length < MIN_YEARS) return null;
+  const complete = [...byYear].filter(([, y]) => y.count >= MIN_DAYS_PER_YEAR);
+  if (complete.length < MIN_YEARS) return null;
+  const maxima = complete.map(([, y]) => y.max).sort((a, b) => a - b);
+  const years = complete.map(([year]) => Number(year));
   return {
     years: maxima.length,
+    from_year: Math.min(...years),
+    to_year: Math.max(...years),
     ...Object.fromEntries(RETURN_PERIODS.map((t) => [`rp${t}`, round(quantile(maxima, 1 - 1 / t))])),
   };
 }
@@ -58,10 +64,10 @@ const distanceKm = (lat1, lon1, lat2, lon2) => {
   return 2 * 6371 * Math.asin(Math.sqrt(h));
 };
 
-export function buildRiverForecast({ lat, lon, forecast, history }) {
+// thresholds = hasil returnPeriodThresholds untuk sel prakiraan, atau null.
+export function buildRiverForecast({ lat, lon, forecast, thresholds = null }) {
   const daily = forecast?.daily;
   if (!Array.isArray(daily?.time)) throw new Error('format prakiraan GloFAS tidak dikenal');
-  const thresholds = history ? returnPeriodThresholds(history.daily ?? {}) : null;
   const value = (key, i) => round(daily[key]?.[i]);
   const days = daily.time.map((date, i) => {
     const median = value('river_discharge_median', i);
@@ -112,6 +118,8 @@ export const historyUrl = (lat, lon) =>
   })}`;
 
 export const fetchRiverForecastJson = (lat, lon, { getJson = fetchJson } = {}) => getJson(forecastUrl(lat, lon), { timeoutMs: 20_000 });
-// ±300 KB dan ±6 detik per sel; hasilnya disimpan lama di cache (routes/river.js).
+// ±190 KB dan ±2 detik per sel. Open-Meteo menghitung permintaan sepanjang ini
+// sebagai banyak panggilan kuota, jadi ambang hasilnya disimpan permanen di
+// database dan tiap sel cukup diminta sekali (routes/river.js).
 export const fetchRiverHistoryJson = (lat, lon, { getJson = fetchJson } = {}) =>
   getJson(historyUrl(lat, lon), { timeoutMs: 45_000, retries: 0 });

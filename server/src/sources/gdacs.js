@@ -1,4 +1,5 @@
-import { fetchJson } from '../lib/http.js';
+import { fetchText } from '../lib/http.js';
+import { REGION } from './usgs-gempa.js';
 
 // GDACS (Global Disaster Alert and Coordination System), sistem peringatan
 // bencana Komisi Eropa (JRC) dan PBB (OCHA): gempa, tsunami, banjir, gunung api,
@@ -32,7 +33,16 @@ const day = (date) => date.toISOString().slice(0, 10);
 // Waktu GDACS tanpa zona waktu = UTC.
 const utc = (value) => (value ? new Date(/Z|[+-]\d\d:?\d\d$/.test(value) ? value : `${value}Z`).toISOString() : null);
 const gdacsUrl = (value) => (typeof value === 'string' && /^https:\/\/www\.gdacs\.org\//.test(value) ? value : null);
+// Banjir GDACS selalu berketerangan "Magnitude 0", yang tidak berarti apa-apa.
+const severityText = (text) => (text && !/^magnitude 0(\.0+)?$/i.test(text) ? text : null);
 
+// Kejadian lintas negara bisa bertitik di negara lain, mis. banjir Indonesia–
+// Malaysia–Thailand Desember 2025 di Bangkok; yang di luar kawasan Indonesia dilewati.
+const inRegion = ({ lon, lat }) => lat >= REGION.south && lat <= REGION.north && lon >= REGION.west && lon <= REGION.east;
+
+// Ikon pin tidak diambil dari field `icon` GDACS: ikon itu mengikuti episode
+// terakhir dan bisa berbeda dari level kejadian (mis. banjir Oranye berikon Hijau).
+// Web menurunkannya dari jenis dan level (layers/gdacs.js).
 export function normalizeEvent(feature) {
   const p = feature?.properties ?? {};
   const [lon, lat] = feature?.geometry?.coordinates ?? [];
@@ -47,12 +57,11 @@ export function normalizeEvent(feature) {
     from: utc(p.fromdate),
     to: utc(p.todate),
     current: p.iscurrent === 'true',
-    severity: p.severitydata?.severitytext?.trim() || null,
+    severity: severityText(p.severitydata?.severitytext?.trim()),
     countries: (p.affectedcountries ?? []).map((c) => c.countryname).filter(Boolean),
     // Sumber pemicu GDACS, mis. GLOFAS untuk banjir.
     origin: p.source || null,
     report_url: gdacsUrl(p.url?.report),
-    icon_url: gdacsUrl(p.icon),
     modified: utc(p.datemodified),
     lon,
     lat,
@@ -61,7 +70,14 @@ export function normalizeEvent(feature) {
 
 export function extractEvents(json) {
   if (!Array.isArray(json?.features)) throw new Error('format GDACS tidak dikenal: features tidak ada');
-  return json.features.map(normalizeEvent).filter(Boolean);
+  return json.features.map(normalizeEvent).filter((event) => event && inRegion(event));
+}
+
+// GDACS membalas HTTP 204 tanpa isi bila tidak ada kejadian, juga untuk halaman
+// sesudah halaman terakhir.
+async function fetchGdacsJson(url, options) {
+  const text = await fetchText(url, options);
+  return text.trim() ? JSON.parse(text) : { type: 'FeatureCollection', features: [] };
 }
 
 // Satu kejadian bisa muncul lagi di halaman lain atau sebagai episode baru; yang
@@ -87,7 +103,7 @@ async function search(params, getJson) {
   return events;
 }
 
-export async function fetchGdacsEvents({ now = new Date(), getJson = fetchJson } = {}) {
+export async function fetchGdacsEvents({ now = new Date(), getJson = fetchGdacsJson } = {}) {
   const todate = day(new Date(now.getTime() + DAY_MS));
   const [alerts, green] = await Promise.all([
     search({ fromdate: day(new Date(now.getTime() - ALERT_DAYS * DAY_MS)), todate, alertlevel: 'Orange;Red' }, getJson),

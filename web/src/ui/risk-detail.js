@@ -147,7 +147,9 @@ const RIVER_LEVELS = [
 ];
 const RIVER_SHORT = ['< 2 th', '≥ 2 th', '≥ 5 th', '≥ 20 th'];
 const FORECAST_LABEL = '7 hari ke depan';
-const m3s = (value) => (value == null ? '–' : `${formatDecimal(value)}<small> m³/s</small>`);
+// Sungai besar bisa ribuan m³/s; tanpa desimal supaya barisnya tetap ringkas.
+const discharge = (value) => formatDecimal(value, value >= 100 ? 0 : 1);
+const m3s = (value) => (value == null ? '–' : `${discharge(value)}<small> m³/s</small>`);
 
 export function riverHtml(river) {
   const known = river.days.filter((d) => d.median_m3s != null);
@@ -161,26 +163,29 @@ export function riverHtml(river) {
       : `<p class="hazard-summary"><span class="level-pill" style="${pillStyle(RIVER_LEVELS[river.level])}">${RIVER_LEVELS[river.level].label}</span>
           <span class="muted">median ensemble, ${FORECAST_LABEL}</span></p>
           ${river.level_max > river.level ? `<p class="section-note">Skenario terburuk (anggota ensemble tertinggi) mencapai ${escapeHtml(RIVER_LEVELS[river.level_max].label.replace('≥ ', '').toLowerCase())}.</p>` : ''}`;
+  // Satu baris per hari: tanggal, median, batang, level; rentang ensemble di bawahnya.
   const rows = river.days
     .map((d, i) => {
       const width = d.median_m3s > 0 ? Math.max(3, Math.min(100, (d.median_m3s / scale) * 100)) : 0;
       const level = d.level == null ? '' : `<span class="river-level" style="${pillStyle(RIVER_LEVELS[d.level])}">${RIVER_SHORT[d.level]}</span>`;
+      const range =
+        d.p25_m3s == null ? '' : `<span class="river-range">Rentang ${discharge(d.p25_m3s)}–${discharge(d.p75_m3s)}, tertinggi ${discharge(d.max_m3s)}</span>`;
       return `
-        <div class="rain-day river-day">
-          <span class="rain-date">${formatDay(d.date)}</span>
-          <span class="rain-mm">${m3s(d.median_m3s)}</span>
+        <li class="river-day">
+          <span class="river-date">${formatDay(d.date)}</span>
+          <span class="river-value">${m3s(d.median_m3s)}</span>
           <span class="rain-bar" aria-hidden="true"><span style="width:${width}%;--i:${i}"></span></span>
           ${level}
-          <span class="rain-prob">${d.p25_m3s == null ? '' : `Rentang ${formatDecimal(d.p25_m3s)}–${formatDecimal(d.p75_m3s)}, tertinggi ${formatDecimal(d.max_m3s)}`}</span>
-        </div>`;
+          ${range}
+        </li>`;
     })
     .join('');
   const thresholds = t
-    ? `Ambang dihitung SIGAP dari debit maksimum tahunan 1984–2024 (${t.years} tahun) di sel yang sama: 2 tahunan ${formatDecimal(t.rp2)}, 5 tahunan ${formatDecimal(t.rp5)}, 20 tahunan ${formatDecimal(t.rp20)} m³/s.`
+    ? `Ambang dihitung SIGAP dari debit maksimum tahunan ${t.from_year}–${t.to_year} (${t.years} tahun) di sel yang sama: 2 tahunan ${discharge(t.rp2)}, 5 tahunan ${discharge(t.rp5)}, 20 tahunan ${discharge(t.rp20)} m³/s.`
     : '';
   return `
     ${summary}
-    <div class="rain-days river-days">${rows}</div>
+    <ul class="river-days">${rows}</ul>
     <p class="section-note">Debit sungai dari model GloFAS (Copernicus, Uni Eropa), median dan rentang 25–75% dari 50 anggota ensemble.
       Sel GloFAS ±5 km terdekat berjarak ±${formatDecimal(river.cell.distance_km)} km dari titik; sungai kecil bisa tidak terwakili. ${thresholds}
       Pembanding, bukan peringatan resmi.</p>`;

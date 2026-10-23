@@ -31,10 +31,17 @@ function usgsIcon(p, index) {
   });
 }
 
-function bmkgComparison(match) {
-  if (!match) {
-    return 'Tidak ada di feed publik BMKG <span class="muted">(feed itu hanya memuat M ≥ 5 dan gempa dirasakan)</span>';
-  }
+// Alasan gempa katalog luar tidak berpasangan dengan feed publik BMKG (M ≥ 5 dan
+// gempa dirasakan). Untuk M ≥ 5 bukan soal batas feed: magnitudo BMKG bisa di
+// bawah 5 (dan tidak dirasakan), atau waktu/lokasinya berselisih melebihi batas
+// pencocokan di server.
+export const bmkgMissingReason = (magnitude) =>
+  magnitude >= 5
+    ? '<span class="muted">(magnitudo BMKG bisa di bawah 5, atau waktu/lokasinya berselisih lebih dari 60 detik/100 km)</span>'
+    : '<span class="muted">(feed itu hanya memuat M ≥ 5 dan gempa dirasakan)</span>';
+
+function bmkgComparison(match, magnitude) {
+  if (!match) return `Tidak ada di feed publik BMKG ${bmkgMissingReason(magnitude)}`;
   const seconds = formatDecimal(Math.abs(match.time_diff_s), 0);
   return `M ${formatDecimal(match.magnitude)} <span class="muted">· selisih ${seconds} detik, ${formatDecimal(match.distance_km, 0)} km</span>`;
 }
@@ -105,7 +112,7 @@ export function usgsPopup(p, { shownGroundFailure = null } = {}) {
       <dl class="popup-facts">
         <dt>Waktu</dt><dd>${formatDateTime(p.occurred_at)}</dd>
         <dt>Kedalaman</dt><dd>${formatDecimal(p.depth_km)} km (${escapeHtml(p.depth_class)})</dd>
-        <dt>BMKG</dt><dd>${bmkgComparison(p.bmkg)}</dd>
+        <dt>BMKG</dt><dd>${bmkgComparison(p.bmkg, p.magnitude)}</dd>
         <dt>Status</dt><dd>${p.status === 'reviewed' ? 'Sudah ditinjau seismolog USGS' : 'Otomatis, masih bisa berubah'}</dd>
         ${pagerFacts(p.pager ?? (p.alert ? { alert: p.alert } : null))}
       </dl>

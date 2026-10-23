@@ -68,7 +68,7 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
         {
           id: 'FL-1', type: 'FL', type_label: 'Banjir', level: 'orange', name: null,
           from: '2026-10-01T00:00:00.000Z', to: '2026-10-05T00:00:00.000Z', current: false, severity: null,
-          countries: ['Indonesia'], origin: 'GLOFAS', report_url: null, icon_url: null, modified: '2026-10-05T00:00:00.000Z',
+          countries: ['Indonesia'], origin: 'GLOFAS', report_url: null, modified: '2026-10-05T00:00:00.000Z',
           lon: 106.8, lat: -6.2,
         },
       ],
@@ -117,7 +117,7 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
     const { migrate } = await import('../db/migrate.js');
     await migrate();
     await pool.query(
-      'TRUNCATE events, volcanoes, sync_logs, faults, wilayah, wilayah_bahaya, titik_pantau, bahaya_raster, indikasi_run, indikasi_wilayah, indikasi_hari',
+      'TRUNCATE events, volcanoes, sync_logs, faults, wilayah, wilayah_bahaya, titik_pantau, bahaya_raster, indikasi_run, indikasi_wilayah, indikasi_hari, glofas_thresholds',
     );
     ({ syncEarthquakes } = await import('../src/jobs/sync-earthquakes.js'));
     ({ syncVolcanoes } = await import('../src/jobs/sync-volcanoes.js'));
@@ -346,6 +346,7 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
     const { status, body } = await getJson('/river?lat=-6.25&lon=106.83');
     assert.equal(status, 200);
     assert.equal(body.thresholds.rp2, 21);
+    assert.deepEqual([body.thresholds.from_year, body.thresholds.to_year], [1991, 2010]);
     assert.deepEqual(body.days.map((d) => d.level), [0, 1]);
     assert.equal(body.level, 1);
     assert.equal(body.level_max, 3);
@@ -353,6 +354,24 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
     await getJson('/river?lat=-6.251&lon=106.832');
     assert.equal(calls.river, 1);
     assert.equal((await getJson('/river?lat=50&lon=10')).status, 400);
+  });
+
+  test('ambang GloFAS disimpan per sel, jadi server yang baru dimulai tidak meminta riwayat lagi', async () => {
+    const { rows } = await pool.query('SELECT lat, lon, years, from_year, to_year, rp2 FROM glofas_thresholds');
+    assert.deepEqual(rows, [{ lat: -6.225, lon: 106.825, years: 20, from_year: 1991, to_year: 2010, rp2: 21 }]);
+
+    const express = (await import('express')).default;
+    const { createRiverRouter } = await import('../src/routes/river.js');
+    const history = async () => {
+      throw new Error('riwayat tidak boleh diminta lagi');
+    };
+    const fresh = express().use('/api', createRiverRouter({ forecast: services.river.forecast, history })).listen(0);
+    try {
+      const res = await fetch(`http://localhost:${fresh.address().port}/api/river?lat=-6.25&lon=106.83`);
+      assert.equal((await res.json()).thresholds.rp2, 21);
+    } finally {
+      fresh.close();
+    }
   });
 
   test('perubahan level gunung api mengisi level_changed_at', async () => {

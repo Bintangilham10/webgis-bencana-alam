@@ -5,6 +5,7 @@ import { icons } from '../lib/icons.js';
 import { makeFocusable } from '../lib/marker-focus.js';
 import { DEPTH_CLASSES, depthClass, pillStyle } from '../lib/symbology.js';
 import { cssVar } from '../lib/theme.js';
+import { bmkgMissingReason } from './usgs.js';
 
 // Gempa dari katalog EMSC (Eropa). Di Indonesia sebagian besar berasal dari
 // katalog lengkap BMKG, termasuk gempa kecil mulai ±M1 yang tidak dimuat feed
@@ -20,6 +21,7 @@ const AUTHORITIES = {
   EMSC: 'EMSC',
   NEIC: 'USGS (NEIC)',
   MMD: 'MetMalaysia (MMD)',
+  PIVS: 'PHIVOLCS Filipina',
   GFZ: 'GFZ Jerman',
 };
 
@@ -28,9 +30,7 @@ export const emscRadius = (magnitude) => Math.max(2.5, 1.4 * magnitude);
 export function emscPopup(p) {
   const depth = depthClass(p.depth_class);
   const magnitude = formatDecimal(p.magnitude);
-  const bmkg = p.bmkg
-    ? `Ada, M ${formatDecimal(p.bmkg.magnitude)}`
-    : 'Tidak ada <span class="muted">(feed itu hanya memuat M ≥ 5 dan gempa dirasakan)</span>';
+  const bmkg = p.bmkg ? `Ada, M ${formatDecimal(p.bmkg.magnitude)}` : `Tidak ada ${bmkgMissingReason(p.magnitude)}`;
   return `
     <div class="popup">
       <div class="popup-head">

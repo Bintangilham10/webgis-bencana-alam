@@ -40,5 +40,15 @@ export async function fetchJson(url, options) {
   return JSON.parse(await fetchText(url, options));
 }
 
+// Ada tidaknya berkas (HEAD, tanpa mengunduh isinya), mis. petak peta: 404 = false.
+export async function urlExists(url, options) {
+  try {
+    return await request(url, { method: 'HEAD' }, { retries: 0, ...options }, () => true);
+  } catch (err) {
+    if (err instanceof HttpError && err.status === 404) return false;
+    throw err;
+  }
+}
+
 // Formulir POST (application/x-www-form-urlencoded), mis. endpoint CEWS BMKG.
 export const postForm = (url, fields, options) => request(url, { method: 'POST', body: new URLSearchParams(fields) }, options);

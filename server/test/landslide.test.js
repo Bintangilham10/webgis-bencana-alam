@@ -8,7 +8,7 @@ import { slopeClass } from '../src/lib/warning-rules.js';
 import { buildRiskProfile } from '../src/risk/profile.js';
 import { codeLevels, dasarianRange, levelFor } from '../src/sources/bmkg-cews.js';
 import { parseForecast, slopeDegrees, slopeStencil } from '../src/sources/open-meteo.js';
-import { HIMAWARI, latestTime, tileUrl } from '../src/sources/gibs.js';
+import { fetchLatestHimawari, HIMAWARI, latestTime, recentTimes, tileUrl } from '../src/sources/gibs.js';
 import { monthOf, parseFeatureInfoText } from '../src/sources/pvmbg.js';
 
 // Fixture = respons asli sumber, sama dengan fixture perekam (diambil 27 Sep 2026).
@@ -228,5 +228,42 @@ describe('NASA GIBS', () => {
       tileUrl(HIMAWARI, time),
       'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/Himawari_AHI_Band13_Clean_Infrared/default/2026-10-18T16:30:00Z/GoogleMapsCompatible_Level6/{z}/{y}/{x}.png',
     );
+  });
+
+  const himawariDomain = (domain) => `<Domains><DimensionDomain><Domain>${domain}</Domain></DimensionDomain></Domains>`;
+  const DOMAIN = '2026-10-18T02:00:00Z/2026-10-18T02:30:00Z/PT10M,2026-10-18T02:50:00Z/2026-10-18T03:20:00Z/PT10M';
+
+  test('waktu-waktu terbaru di domain, dari yang paling baru, melewati jeda citra', () => {
+    assert.deepEqual(recentTimes(himawariDomain(DOMAIN), 6), [
+      '2026-10-18T03:20:00Z', '2026-10-18T03:10:00Z', '2026-10-18T03:00:00Z',
+      '2026-10-18T02:50:00Z', '2026-10-18T02:30:00Z', '2026-10-18T02:20:00Z',
+    ]);
+    assert.deepEqual(recentTimes(himawariDomain('2026-10-18T03:20:00Z'), 3), ['2026-10-18T03:20:00Z']);
+  });
+
+  test('petak waktu terbaru yang belum terbit dilewati; waktu sebelumnya jadi cadangan per petak', async () => {
+    const probed = new Set();
+    const ready = (missing) => async (url) => {
+      probed.add(url.match(/default\/([^/]+)\//)[1]);
+      return !missing.some((time) => url.includes(time));
+    };
+    const getText = async () => himawariDomain(DOMAIN);
+
+    // 03.20 baru sebagian petaknya ada (petak uji di Papua belum terbit).
+    const partial = async (url) => !(url.includes('03:20') && url.endsWith('/5/16/28.png'));
+    const latest = await fetchLatestHimawari(new Date('2026-10-18T04:00:00Z'), { getText, tileExists: partial });
+    assert.equal(latest.time, '2026-10-18T03:10:00Z');
+    assert.equal(latest.tile_url, tileUrl(HIMAWARI, '2026-10-18T03:10:00Z'));
+    assert.deepEqual(latest.fallback_urls, ['03:00', '02:50', '02:30'].map((t) => tileUrl(HIMAWARI, `2026-10-18T${t}:00Z`)));
+
+    // Semua petak ada: waktu terbaru langsung dipakai.
+    assert.equal((await fetchLatestHimawari(new Date(), { getText, tileExists: ready([]) })).time, '2026-10-18T03:20:00Z');
+
+    // Tiga waktu terbaru belum lengkap: yang ketiga tetap dipakai (cadangan per petak
+    // di browser), dan waktu yang lebih lama tidak ikut diperiksa.
+    probed.clear();
+    const stale = await fetchLatestHimawari(new Date(), { getText, tileExists: ready(['03:20', '03:10', '03:00']) });
+    assert.equal(stale.time, '2026-10-18T03:00:00Z');
+    assert.deepEqual([...probed].sort(), ['2026-10-18T03:10:00Z', '2026-10-18T03:20:00Z']);
   });
 });

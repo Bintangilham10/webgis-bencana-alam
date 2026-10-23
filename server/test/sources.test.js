@@ -187,9 +187,32 @@ describe('GDACS', () => {
     assert.equal(quake.from, '2026-08-14T21:58:21.000Z');
     assert.equal(quake.severity, 'Magnitude 7.7M, Depth:10km');
     assert.match(quake.report_url, /^https:\/\/www\.gdacs\.org\/report\.aspx/);
-    assert.match(quake.icon_url, /\/Red\/EQ\.png$/);
+    // Ikon pin diturunkan web dari jenis dan level, bukan dari field icon GDACS.
+    assert.ok(!('icon_url' in quake));
     // Erupsi tanpa keterangan keparahan.
     assert.equal(events.find((e) => e.type === 'VO').severity, null);
+  });
+
+  test('balasan tanpa isi (HTTP 204) = tidak ada kejadian; titik di luar kawasan dan "Magnitude 0" dilewati', async (t) => {
+    const [volcano] = real();
+    const flood = (eventid, coordinates) => ({
+      ...volcano,
+      geometry: { ...volcano.geometry, coordinates },
+      properties: {
+        ...volcano.properties, eventtype: 'FL', eventid, alertlevel: 'Red',
+        severitydata: { severity: 0, severitytext: 'Magnitude 0', severityunit: '' },
+      },
+    });
+    const urls = [];
+    t.mock.method(globalThis, 'fetch', async (url) => {
+      urls.push(String(url));
+      if (String(url).includes('alertlevel=Green')) return new Response(null, { status: 204 });
+      // Banjir lintas negara Desember 2025 bertitik di Bangkok.
+      return Response.json({ features: [flood(1, [101.6, -0.9]), flood(2, [100.57, 13.83])] });
+    });
+    const events = await fetchGdacsEvents({ now: new Date('2026-10-19T12:00:00Z') });
+    assert.equal(urls.length, 2);
+    assert.deepEqual(events.map((e) => [e.id, e.severity]), [['FL-1', null]]);
   });
 
   test('kejadian yang sama di dua halaman: versi yang paling akhir diubah', async () => {
@@ -217,6 +240,7 @@ describe('GloFAS debit sungai', () => {
   test('ambang 2, 5, 20 tahunan dari debit maksimum tahunan; tahun tidak lengkap dilewati', () => {
     const t = returnPeriodThresholds(history(20));
     assert.equal(t.years, 20);
+    assert.deepEqual([t.from_year, t.to_year], [1991, 2010]);
     assert.equal(t.rp2, 10.5);
     assert.equal(t.rp5, 16.2);
     assert.ok(Math.abs(t.rp20 - 19.05) < 0.06);
@@ -227,14 +251,14 @@ describe('GloFAS debit sungai', () => {
 
   test('prakiraan: level per hari dari median, puncak, dan jarak ke sel GloFAS', () => {
     const forecast = JSON.parse(fixture('glofas-forecast-jakarta.json'));
-    const river = buildRiverForecast({ lat: -6.25, lon: 106.83, forecast, history: { daily: history(20) } });
+    const river = buildRiverForecast({ lat: -6.25, lon: 106.83, forecast, thresholds: returnPeriodThresholds(history(20)) });
     assert.deepEqual(river.days.map((d) => d.median_m3s), [3.3, 3, 2.7, 3.4, 9.5, 11.3, 15]);
     assert.deepEqual(river.days.map((d) => d.level), [0, 0, 0, 0, 0, 1, 1]);
     assert.equal(river.level, 1);
     assert.deepEqual(river.peak, { date: '2026-10-25', median_m3s: 15, level: 1 });
     assert.ok(Math.abs(river.cell.distance_km - 2.8) < 0.2, `jarak ${river.cell.distance_km}`);
 
-    const noHistory = buildRiverForecast({ lat: -6.25, lon: 106.83, forecast, history: null });
+    const noHistory = buildRiverForecast({ lat: -6.25, lon: 106.83, forecast, thresholds: null });
     assert.equal(noHistory.thresholds, null);
     assert.equal(noHistory.level, null);
     assert.ok(noHistory.days.every((d) => d.level === null));

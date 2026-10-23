@@ -97,7 +97,6 @@ export const LANDSLIDE_AGES = [
 ];
 export const landslideAgeColor = (year) => LANDSLIDE_AGES.find((age) => year >= age.from).color;
 
-// Skala warna hujan satelit NASA GPM IMERG (colormap GIBS), mm/jam.
 // Suhu puncak awan Himawari-9 (°C), warna sama dengan palet petak NASA GIBS
 // (lihat lib/clouds.js). Elemen tengah = −40 °C supaya label tengah legenda pas.
 export const CLOUD_RAMP = [
@@ -112,6 +111,7 @@ export const CLOUD_RAMP = [
   { c: -70, color: '#1a0000' },
 ];
 
+// Skala warna hujan satelit NASA GPM IMERG (colormap GIBS), mm/jam.
 export const IMERG_RAMP = [
   { mm: '0,1', color: '#00764e' },
   { mm: '0,3', color: '#17b000' },
