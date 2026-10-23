@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.23.23.34.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-24T05:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-24T06:00:00+07:00</effective>
+    <expires>2026-10-24T08:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di DI Yogyakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 October 2026, 06:00 WIB di sebagian wilayah DI Yogyakarta, khususnya di GIRIMULYO, JETIS, PLERET, SEMANU, SEWON, TEPUS.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 October 2026, 08:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CYG/2026/10/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>DI Yogyakarta</areaDesc>
+      <polygon>-7.720,110.186 -7.736,110.200 -7.760,110.200 -7.782,110.188 -7.789,110.172 -7.782,110.158 -7.778,110.159 -7.759,110.147 -7.765,110.140 -7.780,110.137 -7.780,110.133 -7.786,110.132 -7.783,110.129 -7.797,110.129 -7.797,110.123 -7.788,110.123 -7.777,110.111 -7.765,110.114 -7.758,110.119 -7.758,110.120 -7.740,110.132 -7.712,110.134 -7.717,110.148 -7.720,110.186</polygon>
+      <polygon>-7.874,110.381 -7.878,110.384 -7.879,110.397 -7.897,110.400 -7.905,110.382 -7.926,110.367 -7.945,110.366 -7.946,110.350 -7.938,110.333 -7.919,110.347 -7.908,110.346 -7.898,110.361 -7.887,110.363 -7.883,110.374 -7.875,110.377 -7.874,110.381</polygon>
+      <polygon>-7.864,110.421 -7.873,110.455 -7.901,110.431 -7.893,110.422 -7.897,110.400 -7.879,110.397 -7.878,110.384 -7.874,110.381 -7.854,110.376 -7.856,110.390 -7.861,110.396 -7.856,110.409 -7.864,110.421</polygon>
+      <polygon>-7.827,110.367 -7.824,110.375 -7.831,110.375 -7.846,110.382 -7.854,110.376 -7.874,110.381 -7.875,110.377 -7.883,110.374 -7.887,110.363 -7.880,110.338 -7.862,110.324 -7.861,110.324 -7.858,110.328 -7.853,110.329 -7.850,110.325 -7.848,110.328 -7.850,110.342 -7.846,110.346 -7.832,110.353 -7.826,110.352 -7.827,110.367</polygon>
+      <polygon>-8.057,110.644 -8.065,110.658 -8.079,110.667 -8.082,110.691 -8.103,110.713 -8.112,110.714 -8.127,110.697 -8.185,110.689 -8.174,110.656 -8.145,110.600 -8.124,110.602 -8.097,110.622 -8.080,110.616 -8.075,110.636 -8.064,110.638 -8.061,110.628 -8.055,110.630 -8.057,110.644</polygon>
+      <polygon>-7.976,110.675 -7.992,110.678 -8.005,110.685 -8.025,110.679 -8.029,110.684 -8.033,110.704 -8.038,110.704 -8.045,110.712 -8.050,110.724 -8.057,110.723 -8.071,110.712 -8.096,110.718 -8.103,110.713 -8.082,110.691 -8.079,110.667 -8.065,110.658 -8.057,110.644 -8.043,110.642 -8.043,110.610 -8.057,110.601 -8.058,110.591 -8.010,110.592 -8.005,110.597 -8.009,110.608 -7.982,110.630 -7.982,110.639 -7.974,110.642 -7.973,110.653 -7.982,110.665 -7.976,110.667 -7.976,110.675</polygon>
+    </area>
+  </info>
+</alert>
