@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.23.15.63.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-23T22:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-23T22:10:00+08:00</effective>
+    <expires>2026-10-23T23:50:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 October 2026, 22:10 WITA di sebagian wilayah Kalimantan Selatan, khususnya di BATANG ALAI TIMUR, HALONG, TEBING TINGGI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 October 2026, 23:50 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKS/2026/10/23/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Selatan</areaDesc>
+      <polygon>-2.479,115.562 -2.484,115.587 -2.491,115.598 -2.504,115.603 -2.508,115.618 -2.510,115.657 -2.524,115.680 -2.521,115.697 -2.527,115.711 -2.524,115.719 -2.532,115.750 -2.559,115.746 -2.597,115.725 -2.591,115.738 -2.572,115.757 -2.529,115.771 -2.510,115.798 -2.503,115.803 -2.504,115.824 -2.527,115.878 -2.556,115.888 -2.595,115.887 -2.600,115.892 -2.615,115.888 -2.616,115.857 -2.606,115.829 -2.633,115.812 -2.639,115.791 -2.648,115.777 -2.652,115.778 -2.659,115.764 -2.671,115.746 -2.703,115.722 -2.706,115.711 -2.723,115.699 -2.710,115.690 -2.709,115.684 -2.718,115.667 -2.712,115.646 -2.712,115.626 -2.722,115.599 -2.713,115.587 -2.712,115.574 -2.659,115.568 -2.614,115.544 -2.604,115.533 -2.598,115.512 -2.600,115.509 -2.598,115.510 -2.576,115.494 -2.547,115.516 -2.538,115.509 -2.525,115.513 -2.509,115.522 -2.481,115.545 -2.483,115.551 -2.479,115.562</polygon>
+      <polygon>-2.388,115.850 -2.394,115.847 -2.395,115.835 -2.410,115.822 -2.416,115.809 -2.429,115.803 -2.440,115.806 -2.435,115.794 -2.406,115.768 -2.408,115.738 -2.398,115.722 -2.399,115.712 -2.385,115.693 -2.380,115.681 -2.361,115.671 -2.307,115.664 -2.301,115.659 -2.293,115.637 -2.280,115.646 -2.247,115.628 -2.237,115.631 -2.233,115.649 -2.200,115.651 -2.182,115.619 -2.172,115.615 -2.151,115.617 -2.155,115.627 -2.151,115.638 -2.126,115.633 -2.130,115.640 -2.126,115.646 -2.099,115.662 -2.077,115.684 -2.046,115.688 -2.022,115.714 -1.996,115.718 -1.981,115.719 -1.982,115.730 -1.995,115.748 -2.006,115.746 -2.021,115.728 -2.029,115.725 -2.034,115.728 -2.037,115.743 -2.050,115.754 -2.051,115.770 -2.043,115.792 -2.044,115.807 -2.055,115.822 -2.055,115.832 -2.059,115.837 -2.085,115.830 -2.097,115.810 -2.169,115.809 -2.188,115.799 -2.211,115.805 -2.237,115.827 -2.246,115.828 -2.258,115.822 -2.287,115.836 -2.292,115.842 -2.294,115.855 -2.301,115.851 -2.307,115.839 -2.317,115.834 -2.335,115.847 -2.346,115.844 -2.380,115.854 -2.388,115.850</polygon>
+      <polygon>-2.380,115.681 -2.385,115.693 -2.399,115.712 -2.398,115.722 -2.408,115.738 -2.406,115.768 -2.435,115.794 -2.440,115.806 -2.450,115.808 -2.484,115.813 -2.503,115.803 -2.510,115.798 -2.529,115.771 -2.572,115.757 -2.591,115.738 -2.597,115.725 -2.559,115.746 -2.532,115.750 -2.524,115.719 -2.527,115.711 -2.521,115.697 -2.524,115.680 -2.510,115.657 -2.508,115.618 -2.504,115.603 -2.491,115.598 -2.484,115.587 -2.479,115.562 -2.462,115.570 -2.426,115.569 -2.417,115.611 -2.403,115.617 -2.368,115.618 -2.380,115.681</polygon>
+    </area>
+  </info>
+</alert>
