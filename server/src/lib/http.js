@@ -17,7 +17,7 @@ const isRetryable = (err) => !(err instanceof HttpError) || err.status === 429 |
 async function request(url, init, { timeoutMs = 20_000, retries = 1 } = {}, read = (res) => res.text()) {
   for (let attempt = 0; ; attempt++) {
     try {
-      const res = await fetch(url, { ...init, headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(timeoutMs) });
+      const res = await fetch(url, { ...init, headers: { 'User-Agent': USER_AGENT, ...init.headers }, signal: AbortSignal.timeout(timeoutMs) });
       if (!res.ok) throw new HttpError(url, res.status);
       return await read(res);
     } catch (err) {
@@ -52,3 +52,9 @@ export async function urlExists(url, options) {
 
 // Formulir POST (application/x-www-form-urlencoded), mis. endpoint CEWS BMKG.
 export const postForm = (url, fields, options) => request(url, { method: 'POST', body: new URLSearchParams(fields) }, options);
+
+// POST JSON dengan jawaban JSON, mis. layanan rute Valhalla.
+export async function postJson(url, payload, options) {
+  const init = { method: 'POST', body: JSON.stringify(payload), headers: { 'Content-Type': 'application/json' } };
+  return JSON.parse(await request(url, init, options));
+}

@@ -1,7 +1,22 @@
 import { lastSuccessfulSync, recordSync } from '../sync-logs.js';
 import { runIndikasi } from './indikasi.js';
+import { notifyQuakes, notifyVolcanoes } from './notify.js';
+import { syncCapAlerts } from './sync-cap.js';
 import { syncEarthquakes, syncEmscEarthquakes, syncUsgsEarthquakes } from './sync-earthquakes.js';
+import { syncFacilities } from './sync-facilities.js';
 import { syncVolcanoes } from './sync-volcanoes.js';
+
+// Notifikasi (SSE) dibuat sesudah sinkronisasi. Kegagalannya hanya dicatat di
+// pesan log, supaya data sumber tetap tersimpan.
+const thenNotify = (sync, notify) => async () => {
+  const result = await sync();
+  try {
+    await notify();
+    return result;
+  } catch (err) {
+    return { ...result, message: [result.message, `notifikasi: ${err.message}`].filter(Boolean).join('; ') };
+  }
+};
 
 // BMKG membatasi 60 request/menit per IP; tiga feed tiap 60 detik jauh di bawahnya.
 // Feed USGS juga diperbarui tiap menit (feed harian ±20 KB per ambil).
@@ -12,12 +27,17 @@ import { syncVolcanoes } from './sync-volcanoes.js';
 // dimulai ulang tidak langsung memicu run baru, dan run yang gagal dicoba lagi di
 // pemeriksaan berikutnya.
 export const JOBS = [
-  { source: 'bmkg-gempa', intervalMs: 60_000, run: syncEarthquakes },
+  { source: 'bmkg-gempa', intervalMs: 60_000, run: thenNotify(syncEarthquakes, notifyQuakes) },
   { source: 'usgs-gempa', intervalMs: 60_000, run: syncUsgsEarthquakes },
   // Gempa kecil katalog BMKG baru masuk EMSC ±10 menit setelah kejadian; tiap 2 menit cukup.
   { source: 'emsc-gempa', intervalMs: 2 * 60_000, run: syncEmscEarthquakes },
-  { source: 'magma', intervalMs: 30 * 60_000, run: syncVolcanoes },
+  { source: 'magma', intervalMs: 30 * 60_000, run: thenNotify(syncVolcanoes, notifyVolcanoes) },
+  // Peringatan dini cuaca BMKG berlaku ±2 jam dan terbit ±80 kali sehari.
+  { source: 'bmkg-cap', intervalMs: 5 * 60_000, run: syncCapAlerts },
   { source: 'indikasi-sigap', intervalMs: 12 * 60 * 60_000, checkMs: 15 * 60_000, skipIfFresh: true, run: runIndikasi },
+  // Titik evakuasi dan fasilitas OSM: satu query nasional seminggu sekali; server
+  // yang baru dipasang langsung mengambilnya karena belum pernah sinkron.
+  { source: 'osm-fasilitas', intervalMs: 7 * 24 * 60 * 60_000, checkMs: 60 * 60_000, skipIfFresh: true, run: syncFacilities },
 ];
 
 export async function isFresh(job) {

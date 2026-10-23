@@ -2,7 +2,8 @@ import { withTransaction } from '../db.js';
 import { fetchMagmaVolcanoes } from '../sources/magma.js';
 
 // level_changed_at hanya diisi saat level berubah dibanding data sebelumnya;
-// gunung api yang baru pertama masuk belum dianggap "berubah".
+// gunung api yang baru pertama masuk belum dianggap "berubah". Level lamanya
+// disimpan untuk notifikasi "naik/turun" (jobs/notify.js).
 const UPSERT_VOLCANO = `
   INSERT INTO volcanoes (kode, nama, kabupaten, provinsi, elevasi_m, level, erupsi, vona, checked_at, geom)
   VALUES ($1, $2, $3, $4, $5, $6, $7, $8, now(), ST_SetSRID(ST_MakePoint($9, $10), 4326))
@@ -13,6 +14,7 @@ const UPSERT_VOLCANO = `
     elevasi_m = EXCLUDED.elevasi_m,
     geom = EXCLUDED.geom,
     level_changed_at = CASE WHEN volcanoes.level <> EXCLUDED.level THEN now() ELSE volcanoes.level_changed_at END,
+    level_sebelumnya = CASE WHEN volcanoes.level <> EXCLUDED.level THEN volcanoes.level ELSE volcanoes.level_sebelumnya END,
     level = EXCLUDED.level,
     erupsi = EXCLUDED.erupsi,
     vona = EXCLUDED.vona,

@@ -60,7 +60,7 @@ function landslideSection({ potential, rainWarning, pastDays, ensemble, slope, h
 
 // Menyusun profil risiko dari bahan mentah (identify InaRISK, prakiraan cuaca,
 // hasil query kedekatan). Fungsi murni supaya mudah diuji.
-export function buildRiskProfile({ lat, lon, place, hazardIndices, forecast, fault, volcanoes, quakes, landslide }) {
+export function buildRiskProfile({ lat, lon, place, hazardIndices, forecast, fault, volcanoes, quakes, landslide, capAlerts = [] }) {
   const hazards = HAZARDS.map(({ id, label }) => {
     const { index = null, error = null } = hazardIndices[id] ?? {};
     return { id, label, index, class: hazardClass(index), error };
@@ -97,11 +97,13 @@ export function buildRiskProfile({ lat, lon, place, hazardIndices, forecast, fau
       error: forecast.error ?? null,
     },
     indications,
+    // Peringatan dini cuaca BMKG (CAP) yang berlaku di titik ini.
+    cap_alerts: capAlerts,
     landslide: landslideInfo ?? null,
     nearest_fault: fault,
     nearest_volcanoes: volcanoes,
     recent_quakes: quakes,
-    recommendations: recommendations({ hazards, indications, fault, volcanoes, landslide: landslideInfo, place: wilayah, status }),
+    recommendations: recommendations({ hazards, indications, fault, volcanoes, landslide: landslideInfo, place: wilayah, status, capAlerts }),
     rules_version: RULES_VERSION,
     generated_at: new Date().toISOString(),
   };

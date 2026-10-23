@@ -1,3 +1,5 @@
+import { localClock, zoneName } from '../lib/time.js';
+
 // Saran kesiapsiagaan umum (mengacu panduan BNPB) untuk bahaya yang relevan
 // di lokasi. Bukan pengganti arahan resmi BPBD setempat.
 const BY_HAZARD = {
@@ -50,11 +52,20 @@ function landslideTips(landslide, place) {
   return tips;
 }
 
-export function recommendations({ hazards, indications, fault, volcanoes, landslide = null, place = null, status = 'indonesia' }) {
+export function recommendations({ hazards, indications, fault, volcanoes, landslide = null, place = null, status = 'indonesia', capAlerts = [] }) {
   if (status === 'luar_indonesia') {
     return ['Lokasi ini di luar wilayah Indonesia. SIGAP hanya menilai risiko di Indonesia; ikuti informasi otoritas setempat.'];
   }
   const tips = [];
+
+  // Peringatan resmi yang sedang berlaku didahulukan.
+  for (const alert of capAlerts) {
+    const offset = alert.utc_offset ?? 420;
+    tips.push(
+      `BMKG: peringatan dini ${alert.event.toLowerCase()} berlaku di lokasi ini sampai ${localClock(alert.expires, offset)} ${zoneName(offset)}. ` +
+        'Kurangi aktivitas di luar ruangan, jauhi pohon besar dan baliho, dan waspadai genangan atau banjir lokal.',
+    );
+  }
 
   for (const indication of indications.filter((i) => i.level > 0)) {
     tips.push(

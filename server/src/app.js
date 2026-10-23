@@ -1,15 +1,19 @@
 import compression from 'compression';
 import express from 'express';
 import { rateLimit } from './lib/rate-limit.js';
+import { capRouter } from './routes/cap.js';
 import { earthquakesRouter } from './routes/earthquakes.js';
+import { facilitiesRouter } from './routes/facilities.js';
 import { createGdacsRouter } from './routes/gdacs.js';
 import { createGeocodeRouter } from './routes/geocode.js';
 import { healthRouter } from './routes/health.js';
 import { createLandslideRouter } from './routes/landslides.js';
+import { createNotificationsRouter } from './routes/notifications.js';
 import { createOutlookRouter } from './routes/outlook.js';
 import { referenceRouter } from './routes/reference.js';
 import { createRiskRouter } from './routes/risk.js';
 import { createRiverRouter } from './routes/river.js';
+import { createRouteRouter } from './routes/route.js';
 import { volcanoesRouter } from './routes/volcanoes.js';
 import { createRainWarnings } from './sources/bmkg-cews.js';
 
@@ -24,7 +28,8 @@ export function createApp({ services = {} } = {}) {
   // dibaca dari X-Forwarded-For yang dikirim proxy di jaringan lokal/Docker.
   app.set('trust proxy', 'loopback, uniquelocal');
   // GeoJSON batas wilayah dan sesar berukuran besar; gzip memangkasnya ±80%.
-  app.use(compression());
+  // Aliran notifikasi (SSE) tidak dikompres: kompresi menahan event di buffer.
+  app.use(compression({ filter: (req, res) => req.path !== '/api/stream' && compression.filter(req, res) }));
 
   // Satu cek risiko memanggil ±8 layanan luar; jawaban yang sama di-cache 10 menit.
   app.use(
@@ -55,6 +60,16 @@ export function createApp({ services = {} } = {}) {
       ...services.rateLimit,
     }),
   );
+  // Rute dihitung layanan publik FOSSGIS; satu permintaan rute aman memanggilnya 1–2 kali.
+  app.use(
+    '/api/route',
+    rateLimit({
+      limit: 30,
+      windowMs: 10 * 60_000,
+      message: 'Terlalu banyak permintaan rute dari jaringan ini. Coba lagi beberapa menit lagi.',
+      ...services.rateLimit,
+    }),
+  );
 
   app.use(
     '/api',
@@ -68,6 +83,10 @@ export function createApp({ services = {} } = {}) {
     createGeocodeRouter(services.geocode),
     createGdacsRouter(services.gdacs),
     createRiverRouter(services.river),
+    capRouter,
+    createNotificationsRouter(services.notifications),
+    facilitiesRouter,
+    createRouteRouter(services.route),
   );
   app.use('/api', (req, res) => res.status(404).json({ error: 'Endpoint tidak ditemukan' }));
 

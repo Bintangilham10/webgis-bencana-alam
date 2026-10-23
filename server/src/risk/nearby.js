@@ -132,3 +132,15 @@ export async function nearbyLandslides(lat, lon, { radiusKm = 5 } = {}) {
     latest: latest && summary(latest),
   };
 }
+
+// Peringatan dini cuaca BMKG (CAP) yang sedang berlaku di titik ini.
+export async function activeCapAlerts(lat, lon) {
+  const { rows } = await query(
+    `SELECT identifier, event, severity, headline, effective, expires, utc_offset, web
+     FROM cap_alerts
+     WHERE expires > now() AND superseded_at IS NULL AND ST_Intersects(geom, ${POINT})
+     ORDER BY expires DESC`,
+    [lon, lat],
+  );
+  return rows;
+}

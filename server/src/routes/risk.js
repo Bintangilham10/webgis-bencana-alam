@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { memoize } from '../lib/cache.js';
 import { buildRiskProfile, COAST_TOLERANCE_KM } from '../risk/profile.js';
-import { nearbyLandslides, nearestFault, nearestVolcanoes, placeAt, recentQuakes } from '../risk/nearby.js';
+import { activeCapAlerts, nearbyLandslides, nearestFault, nearestVolcanoes, placeAt, recentQuakes } from '../risk/nearby.js';
 import { levelFor } from '../sources/bmkg-cews.js';
 import { identifyHazards } from '../sources/inarisk.js';
 import { fetchEnsemble, fetchForecast, fetchSlope } from '../sources/open-meteo.js';
@@ -38,7 +38,7 @@ export function createRiskRouter({
   const loadProfile = memoize(
     async (key) => {
       const [lat, lon] = key.split(',').map(Number);
-      const [hazardIndices, weather, place, fault, volcanoes, quakes, pvmbg, cews, members, terrain, history] = await Promise.all([
+      const [hazardIndices, weather, place, fault, volcanoes, quakes, pvmbg, cews, members, terrain, history, capAlerts] = await Promise.all([
         identify(lat, lon),
         forecast(lat, lon).catch((err) => ({ error: err.message, days: [] })),
         placeAt(lat, lon),
@@ -50,12 +50,14 @@ export function createRiskRouter({
         ensemble(lat, lon).catch(failed),
         slope(lat, lon).catch(failed),
         nearbyLandslides(lat, lon),
+        // Peringatan dini cuaca BMKG yang berlaku di titik ini (tabel dari jobs/sync-cap.js).
+        activeCapAlerts(lat, lon).catch(() => []),
       ]);
       // Peringatan CEWS berlaku per kab/kota: hanya untuk titik di dalam atau di pesisirnya.
       const regionCode = place && place.distance_km <= COAST_TOLERANCE_KM ? place.kode : null;
       const rainWarning = cews.error ? cews : { ...cews, level: levelFor(cews, regionCode) };
       const landslide = { potential: pvmbg, rainWarning, ensemble: members, slope: terrain, history };
-      return buildRiskProfile({ lat, lon, place, hazardIndices, forecast: weather, fault, volcanoes, quakes, landslide });
+      return buildRiskProfile({ lat, lon, place, hazardIndices, forecast: weather, fault, volcanoes, quakes, landslide, capAlerts });
     },
     CACHE_TTL_MS,
     { maxEntries: 1000 },
