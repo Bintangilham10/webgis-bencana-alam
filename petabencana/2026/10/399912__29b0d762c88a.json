@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-23T11:45:31.278Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        132.9904694808,
+        -2.6598233518
+      ]
+    },
+    "properties": {
+      "pkey": "399912",
+      "created_at": "2026-10-23T11:44:12.867Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "a631bbb5-b195-4a68-9809-f5bbb4f3c824",
+      "image_url": "https://images.petabencana.id/a631bbb5-b195-4a68-9809-f5bbb4f3c824.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 117.38931392460519,
+        "fireLocation": {
+          "lng": 132.99046948081264,
+          "lat": -2.6598233518337224
+        },
+        "personLocation": {
+          "lat": "-2.6597912",
+          "lng": "132.9915370"
+        },
+        "fireRadius": {
+          "lng": 132.98941269069235,
+          "lat": -2.6598126345428597
+        }
+      },
+      "tags": {
+        "city": "FAKFAK",
+        "district_id": null,
+        "region_code": "9203",
+        "local_area_id": null,
+        "instance_region_code": "ID-PB"
+      },
+      "title": null,
+      "text": "Kebakaran hutan dan lahan (karhutla) kembali membesar dan membaru di kawasan Tomage, Kabupaten Fakfak, Papua Barat",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
