@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.23.05.21.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-23T11:57:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-23T12:07:00+07:00</effective>
+    <expires>2026-10-23T14:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Riau</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 October 2026, 12:07 WIB di sebagian wilayah Kep. Riau, khususnya di BUNGURAN SELATAN, MIDAI, PULAU LAUT, PULAU TIGA, SUAK MIDAI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 October 2026, 14:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKR/2026/10/23/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Riau</areaDesc>
+      <polygon>3.019,107.777 3.002,107.773 2.992,107.787 2.979,107.792 2.974,107.761 2.978,107.753 3.008,107.752 3.019,107.777</polygon>
+      <polygon>4.775,108.007 4.756,108.006 4.737,107.996 4.699,107.985 4.679,107.974 4.672,107.966 4.672,107.958 4.680,107.929 4.694,107.928 4.698,107.943 4.707,107.957 4.719,107.967 4.743,107.977 4.752,107.987 4.769,107.992 4.774,107.999 4.775,108.007</polygon>
+      <polygon>4.794,108.022 4.780,108.010 4.781,108.008 4.793,108.011 4.798,108.018 4.794,108.022</polygon>
+      <polygon>4.520,107.732 4.511,107.731 4.513,107.724 4.520,107.723 4.520,107.732</polygon>
+      <polygon>3.637,108.104 3.632,108.115 3.623,108.125 3.607,108.121 3.601,108.103 3.592,108.107 3.586,108.104 3.598,108.088 3.596,108.083 3.585,108.080 3.583,108.069 3.589,108.066 3.611,108.075 3.619,108.090 3.635,108.095 3.637,108.104</polygon>
+      <polygon>3.679,108.156 3.664,108.161 3.630,108.155 3.661,108.145 3.663,108.133 3.673,108.127 3.671,108.124 3.664,108.127 3.673,108.112 3.703,108.126 3.709,108.117 3.700,108.136 3.679,108.156</polygon>
+      <polygon>3.621,108.136 3.625,108.134 3.628,108.138 3.621,108.136</polygon>
+      <polygon>3.599,108.042 3.602,108.038 3.606,108.038 3.613,108.044 3.599,108.042</polygon>
+      <polygon>3.588,108.046 3.561,108.049 3.557,108.043 3.574,108.033 3.591,108.044 3.588,108.046</polygon>
+      <polygon>3.583,108.087 3.573,108.094 3.574,108.081 3.582,108.082 3.583,108.087</polygon>
+      <polygon>3.630,108.155 3.664,108.161 3.679,108.156 3.690,108.170 3.700,108.195 3.715,108.217 3.738,108.227 3.738,108.227 3.749,108.234 3.735,108.249 3.730,108.260 3.718,108.265 3.710,108.276 3.718,108.275 3.739,108.260 3.764,108.251 3.768,108.246 3.781,108.253 3.789,108.263 3.791,108.277 3.801,108.297 3.804,108.304 3.822,108.313 3.830,108.321 3.828,108.339 3.834,108.351 3.845,108.359 3.855,108.377 3.882,108.398 3.886,108.408 3.876,108.407 3.861,108.399 3.853,108.400 3.847,108.396 3.830,108.395 3.793,108.385 3.784,108.367 3.766,108.348 3.764,108.336 3.731,108.310 3.717,108.305 3.673,108.305 3.658,108.296 3.663,108.281 3.664,108.241 3.659,108.203 3.657,108.196 3.642,108.182 3.641,108.170 3.630,108.155</polygon>
+      <polygon>2.979,107.792 2.992,107.787 3.002,107.773 3.019,107.777 3.021,107.785 3.017,107.798 3.006,107.807 2.980,107.814 2.979,107.792</polygon>
+    </area>
+  </info>
+</alert>
