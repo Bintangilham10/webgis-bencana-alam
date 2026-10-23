@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.23.11.52.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-23T18:10:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-23T18:20:00+08:00</effective>
+    <expires>2026-10-23T20:20:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 October 2026, 18:20 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di BATUKLIANG UTARA, LINGSAR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 October 2026, 20:20 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/10/23/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.589,116.160 -8.585,116.160 -8.584,116.151 -8.572,116.148 -8.566,116.142 -8.564,116.132 -8.555,116.134 -8.549,116.146 -8.518,116.153 -8.506,116.163 -8.491,116.188 -8.479,116.200 -8.480,116.214 -8.456,116.223 -8.451,116.265 -8.443,116.278 -8.456,116.279 -8.489,116.246 -8.514,116.246 -8.527,116.241 -8.548,116.221 -8.562,116.226 -8.569,116.221 -8.572,116.211 -8.587,116.194 -8.589,116.160</polygon>
+      <polygon>-8.411,116.353 -8.413,116.379 -8.435,116.406 -8.444,116.403 -8.447,116.398 -8.490,116.380 -8.499,116.380 -8.523,116.367 -8.528,116.371 -8.548,116.371 -8.618,116.353 -8.611,116.339 -8.595,116.344 -8.585,116.341 -8.590,116.333 -8.592,116.316 -8.586,116.307 -8.591,116.296 -8.589,116.275 -8.591,116.260 -8.583,116.269 -8.582,116.281 -8.576,116.289 -8.559,116.297 -8.551,116.295 -8.504,116.321 -8.462,116.304 -8.411,116.339 -8.411,116.353</polygon>
+    </area>
+  </info>
+</alert>

@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-23T11:15:27.107Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.603950136,
+        -3.2656661251
+      ]
+    },
+    "properties": {
+      "pkey": "399909",
+      "created_at": "2026-10-23T11:15:34.061Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "e8a3b1ee-d945-431d-83ed-b9c42da73643",
+      "image_url": "https://images.petabencana.id/e8a3b1ee-d945-431d-83ed-b9c42da73643.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 93.33098376391828,
+        "fireLocation": {
+          "lng": 114.60395013603818,
+          "lat": -3.2656661251030243
+        },
+        "personLocation": {
+          "lat": "-3.2656454",
+          "lng": "114.6043738"
+        },
+        "fireRadius": {
+          "lng": 114.60311078329983,
+          "lat": -3.2657137957416893
+        }
+      },
+      "tags": {
+        "city": "BARITO KUALA",
+        "district_id": null,
+        "region_code": "6304",
+        "local_area_id": null,
+        "instance_region_code": "ID-KS"
+      },
+      "title": null,
+      "text": "Kebakaran lahan (Karhutla) Dikawasan JI.Trans Kalimantan Batola Residence\nJum'at 23 Oktober 2026",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
