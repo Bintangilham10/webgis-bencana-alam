@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.23.19.32.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-24T01:44:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-24T01:50:00+07:00</effective>
+    <expires>2026-10-24T04:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 October 2026, 01:50 WIB di sebagian wilayah Jawa Barat, khususnya di CIBATU, CIBOGO, CILAMAYA WETAN, DAWUAN, PAGADEN BARAT, SUBANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 October 2026, 04:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/10/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.531,107.788 -6.532,107.785 -6.553,107.780 -6.562,107.791 -6.562,107.821 -6.570,107.830 -6.599,107.837 -6.608,107.835 -6.618,107.823 -6.612,107.792 -6.596,107.794 -6.579,107.789 -6.586,107.766 -6.585,107.748 -6.604,107.726 -6.613,107.709 -6.607,107.704 -6.602,107.715 -6.584,107.731 -6.538,107.736 -6.541,107.742 -6.540,107.750 -6.527,107.762 -6.523,107.776 -6.524,107.783 -6.531,107.788</polygon>
+      <polygon>-6.549,107.894 -6.550,107.898 -6.556,107.894 -6.556,107.888 -6.568,107.878 -6.572,107.851 -6.579,107.856 -6.581,107.849 -6.586,107.848 -6.598,107.856 -6.607,107.851 -6.624,107.855 -6.635,107.850 -6.652,107.850 -6.635,107.847 -6.633,107.822 -6.625,107.818 -6.621,107.825 -6.618,107.823 -6.608,107.835 -6.599,107.837 -6.570,107.830 -6.562,107.821 -6.562,107.791 -6.553,107.780 -6.532,107.785 -6.531,107.788 -6.535,107.815 -6.538,107.858 -6.535,107.870 -6.530,107.875 -6.549,107.894</polygon>
+      <polygon>-6.500,107.736 -6.538,107.736 -6.584,107.731 -6.602,107.715 -6.607,107.704 -6.614,107.687 -6.621,107.684 -6.624,107.678 -6.621,107.677 -6.618,107.664 -6.623,107.653 -6.630,107.637 -6.620,107.625 -6.595,107.621 -6.586,107.624 -6.572,107.660 -6.560,107.664 -6.545,107.676 -6.541,107.685 -6.535,107.686 -6.523,107.708 -6.511,107.714 -6.503,107.725 -6.508,107.729 -6.500,107.736</polygon>
+      <polygon>-6.437,107.761 -6.441,107.759 -6.443,107.767 -6.451,107.774 -6.464,107.811 -6.486,107.805 -6.496,107.786 -6.503,107.788 -6.514,107.782 -6.513,107.759 -6.527,107.762 -6.540,107.750 -6.541,107.742 -6.538,107.736 -6.500,107.736 -6.484,107.750 -6.472,107.750 -6.457,107.744 -6.440,107.752 -6.432,107.753 -6.437,107.761</polygon>
+      <polygon>-6.579,107.570 -6.585,107.557 -6.581,107.532 -6.581,107.529 -6.576,107.529 -6.568,107.520 -6.572,107.516 -6.571,107.505 -6.555,107.504 -6.537,107.521 -6.534,107.522 -6.532,107.510 -6.525,107.507 -6.490,107.513 -6.492,107.525 -6.489,107.540 -6.469,107.545 -6.479,107.560 -6.510,107.561 -6.517,107.556 -6.524,107.560 -6.539,107.557 -6.549,107.561 -6.562,107.555 -6.579,107.570</polygon>
+      <polygon>-6.217,107.641 -6.215,107.640 -6.237,107.602 -6.253,107.599 -6.253,107.584 -6.256,107.581 -6.261,107.583 -6.267,107.580 -6.280,107.579 -6.286,107.582 -6.275,107.555 -6.271,107.527 -6.264,107.528 -6.226,107.551 -6.222,107.542 -6.213,107.551 -6.201,107.551 -6.195,107.545 -6.180,107.551 -6.190,107.586 -6.189,107.620 -6.191,107.625 -6.208,107.634 -6.215,107.644 -6.217,107.641</polygon>
+    </area>
+  </info>
+</alert>
