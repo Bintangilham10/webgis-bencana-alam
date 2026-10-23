@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.23.14.16.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-23T20:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-23T21:00:00+07:00</effective>
+    <expires>2026-10-23T23:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 October 2026, 21:00 WIB di sebagian wilayah Sumatera Selatan, khususnya di BUANA PEMACA, BUNGA MAYANG, JAYAPURA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 October 2026, 23:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSS/2026/10/23/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Selatan</areaDesc>
+      <polygon>-4.271,104.240 -4.289,104.257 -4.314,104.272 -4.345,104.328 -4.349,104.329 -4.365,104.310 -4.380,104.284 -4.412,104.266 -4.427,104.272 -4.442,104.265 -4.452,104.266 -4.457,104.262 -4.462,104.238 -4.485,104.230 -4.494,104.232 -4.492,104.230 -4.445,104.207 -4.437,104.192 -4.417,104.168 -4.412,104.155 -4.408,104.152 -4.403,104.159 -4.353,104.219 -4.302,104.224 -4.281,104.228 -4.277,104.232 -4.271,104.231 -4.271,104.240</polygon>
+      <polygon>-4.399,104.350 -4.417,104.344 -4.436,104.333 -4.450,104.335 -4.461,104.328 -4.511,104.333 -4.512,104.316 -4.519,104.314 -4.535,104.318 -4.550,104.326 -4.577,104.330 -4.618,104.337 -4.624,104.330 -4.633,104.333 -4.639,104.325 -4.637,104.323 -4.635,104.323 -4.627,104.324 -4.606,104.326 -4.538,104.266 -4.520,104.255 -4.514,104.262 -4.504,104.250 -4.501,104.232 -4.492,104.229 -4.492,104.230 -4.494,104.232 -4.485,104.230 -4.462,104.238 -4.457,104.262 -4.452,104.266 -4.442,104.265 -4.427,104.272 -4.412,104.266 -4.380,104.284 -4.365,104.310 -4.369,104.324 -4.383,104.323 -4.394,104.329 -4.399,104.340 -4.399,104.350</polygon>
+      <polygon>-4.492,104.229 -4.501,104.232 -4.504,104.250 -4.514,104.262 -4.520,104.255 -4.538,104.266 -4.606,104.326 -4.627,104.324 -4.645,104.298 -4.646,104.234 -4.638,104.216 -4.607,104.192 -4.590,104.185 -4.557,104.181 -4.544,104.176 -4.540,104.172 -4.539,104.125 -4.536,104.117 -4.524,104.108 -4.509,104.102 -4.492,104.102 -4.442,104.123 -4.438,104.151 -4.444,104.158 -4.465,104.166 -4.494,104.157 -4.494,104.191 -4.486,104.208 -4.493,104.224 -4.492,104.229</polygon>
+    </area>
+  </info>
+</alert>

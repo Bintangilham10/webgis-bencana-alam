@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.23.13.34.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-23T19:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-23T19:50:00+07:00</effective>
+    <expires>2026-10-23T22:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di DI Yogyakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 October 2026, 19:50 WIB di sebagian wilayah DI Yogyakarta, khususnya di GIRIMULYO, GIRISUBO, IMOGIRI, PENGASIH, PUNDONG, PURWOSARI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 October 2026, 22:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CYG/2026/10/23/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>DI Yogyakarta</areaDesc>
+      <polygon>-7.789,110.172 -7.799,110.172 -7.820,110.164 -7.825,110.166 -7.825,110.182 -7.840,110.184 -7.852,110.191 -7.854,110.198 -7.870,110.202 -7.876,110.197 -7.874,110.184 -7.881,110.186 -7.883,110.182 -7.876,110.180 -7.875,110.174 -7.866,110.174 -7.842,110.143 -7.859,110.146 -7.872,110.134 -7.883,110.131 -7.891,110.110 -7.902,110.109 -7.883,110.105 -7.881,110.111 -7.873,110.130 -7.864,110.125 -7.808,110.131 -7.801,110.137 -7.799,110.147 -7.787,110.138 -7.786,110.132 -7.780,110.133 -7.780,110.137 -7.765,110.140 -7.759,110.147 -7.778,110.159 -7.782,110.158 -7.789,110.172</polygon>
+      <polygon>-7.720,110.186 -7.736,110.200 -7.760,110.200 -7.782,110.188 -7.789,110.172 -7.782,110.158 -7.778,110.159 -7.759,110.147 -7.765,110.140 -7.780,110.137 -7.780,110.133 -7.786,110.132 -7.783,110.129 -7.797,110.129 -7.797,110.123 -7.788,110.123 -7.777,110.111 -7.765,110.114 -7.758,110.119 -7.758,110.120 -7.740,110.132 -7.712,110.134 -7.717,110.148 -7.720,110.186</polygon>
+      <polygon>-7.945,110.366 -7.956,110.363 -7.973,110.367 -7.983,110.364 -7.979,110.352 -7.989,110.354 -7.995,110.348 -7.998,110.332 -8.006,110.329 -7.990,110.317 -7.979,110.327 -7.977,110.321 -7.973,110.323 -7.969,110.326 -7.963,110.321 -7.938,110.333 -7.946,110.350 -7.945,110.366</polygon>
+      <polygon>-7.901,110.431 -7.925,110.426 -7.930,110.414 -7.928,110.406 -7.937,110.409 -7.945,110.429 -7.954,110.425 -7.964,110.433 -7.974,110.422 -7.970,110.397 -7.980,110.398 -7.981,110.392 -7.982,110.381 -7.973,110.367 -7.956,110.363 -7.945,110.366 -7.926,110.367 -7.905,110.382 -7.897,110.400 -7.893,110.422 -7.901,110.431</polygon>
+      <polygon>-8.130,110.787 -8.149,110.786 -8.162,110.796 -8.156,110.810 -8.148,110.812 -8.144,110.817 -8.159,110.819 -8.177,110.834 -8.201,110.830 -8.204,110.829 -8.198,110.800 -8.192,110.796 -8.196,110.781 -8.196,110.749 -8.193,110.733 -8.199,110.725 -8.198,110.714 -8.201,110.709 -8.200,110.707 -8.193,110.709 -8.184,110.705 -8.185,110.689 -8.127,110.697 -8.133,110.711 -8.141,110.711 -8.144,110.717 -8.131,110.738 -8.138,110.744 -8.144,110.744 -8.146,110.750 -8.142,110.755 -8.116,110.758 -8.120,110.773 -8.132,110.773 -8.130,110.787</polygon>
+      <polygon>-7.981,110.392 -8.006,110.401 -8.012,110.409 -8.025,110.416 -8.070,110.403 -8.079,110.405 -8.072,110.381 -8.056,110.359 -8.028,110.340 -8.006,110.329 -7.998,110.332 -7.995,110.348 -7.989,110.354 -7.979,110.352 -7.983,110.364 -7.973,110.367 -7.982,110.381 -7.981,110.392</polygon>
+    </area>
+  </info>
+</alert>
