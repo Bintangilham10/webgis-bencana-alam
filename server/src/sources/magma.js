@@ -2,8 +2,10 @@ import { fetchText } from '../lib/http.js';
 
 // MAGMA tidak menyediakan API, tetapi halaman utamanya menyematkan data peta
 // sebagai literal JSON: `var markersGunungApi = [...]`, lengkap dengan
-// koordinat, status level, dan status erupsi setiap gunung api.
-export const HOME_URL = 'https://magma.esdm.go.id/';
+// koordinat, status level, dan status erupsi setiap gunung api. Sejak Oktober
+// 2026 alamat utama MAGMA berisi situs baru (Next.js) tanpa data itu; halaman
+// lama tetap ada di /v1.
+export const HOME_URL = 'https://magma.esdm.go.id/v1';
 
 const MIN_EXPECTED_VOLCANOES = 50;
 
