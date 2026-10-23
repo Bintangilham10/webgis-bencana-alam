@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.23.13.82.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-23T19:30:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-23T19:50:00+09:00</effective>
+    <expires>2026-10-23T23:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Maluku Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 October 2026, 19:50 WIT di sebagian wilayah Maluku Utara, khususnya di IBU, IBU SELATAN, JAILOLO, SAHU TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 October 2026, 23:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CMU/2026/10/23/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Maluku Utara</areaDesc>
+      <polygon>1.132,127.453 1.120,127.472 1.133,127.483 1.129,127.495 1.129,127.592 1.138,127.621 1.133,127.623 1.116,127.625 1.108,127.604 1.081,127.615 1.071,127.602 1.063,127.602 1.035,127.610 1.028,127.618 0.987,127.598 0.969,127.595 0.970,127.511 0.976,127.511 0.994,127.496 0.995,127.484 1.006,127.473 1.016,127.483 1.015,127.494 1.042,127.501 1.056,127.494 1.064,127.479 1.046,127.438 1.051,127.425 1.048,127.422 1.041,127.428 1.032,127.423 1.041,127.401 1.049,127.399 1.044,127.404 1.047,127.413 1.060,127.398 1.083,127.400 1.108,127.421 1.121,127.434 1.139,127.440 1.137,127.447 1.132,127.453</polygon>
+      <polygon>1.471,127.696 1.468,127.685 1.469,127.681 1.468,127.679 1.466,127.677 1.463,127.670 1.457,127.673 1.453,127.675 1.449,127.675 1.446,127.679 1.457,127.627 1.445,127.625 1.453,127.526 1.489,127.536 1.504,127.536 1.532,127.526 1.549,127.529 1.557,127.511 1.560,127.543 1.558,127.532 1.539,127.537 1.519,127.559 1.519,127.597 1.515,127.617 1.499,127.637 1.471,127.696</polygon>
+      <polygon>1.446,127.679 1.442,127.679 1.439,127.676 1.437,127.676 1.428,127.667 1.424,127.661 1.421,127.659 1.414,127.657 1.409,127.657 1.405,127.659 1.402,127.660 1.397,127.661 1.394,127.666 1.389,127.669 1.384,127.672 1.381,127.674 1.374,127.674 1.371,127.672 1.366,127.667 1.365,127.662 1.354,127.661 1.348,127.660 1.344,127.658 1.342,127.656 1.337,127.657 1.327,127.653 1.333,127.642 1.317,127.637 1.300,127.639 1.303,127.608 1.295,127.579 1.295,127.568 1.288,127.561 1.246,127.558 1.251,127.522 1.260,127.504 1.262,127.490 1.283,127.449 1.285,127.437 1.301,127.446 1.325,127.468 1.338,127.472 1.350,127.483 1.392,127.486 1.427,127.517 1.453,127.526 1.445,127.625 1.457,127.627 1.446,127.679</polygon>
+      <polygon>1.300,127.639 1.275,127.635 1.271,127.649 1.254,127.647 1.249,127.630 1.237,127.625 1.222,127.635 1.209,127.636 1.202,127.639 1.183,127.638 1.177,127.644 1.172,127.644 1.166,127.633 1.138,127.621 1.129,127.592 1.129,127.495 1.133,127.483 1.120,127.472 1.132,127.453 1.140,127.456 1.143,127.466 1.163,127.475 1.164,127.491 1.229,127.493 1.260,127.504 1.251,127.522 1.246,127.558 1.288,127.561 1.295,127.568 1.295,127.579 1.303,127.608 1.300,127.639</polygon>
+    </area>
+  </info>
+</alert>

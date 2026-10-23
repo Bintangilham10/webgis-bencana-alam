@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.23.13.15.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-23T18:49:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-23T18:59:00+07:00</effective>
+    <expires>2026-10-23T21:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jambi</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 October 2026, 18:59 WIB di sebagian wilayah Jambi, khususnya di BUKITKERMAN, DANAU KERINCI, GUNUNG RAYA, KELILING DANAU, KUMUN DEBAI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 October 2026, 21:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJI/2026/10/23/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jambi</areaDesc>
+      <polygon>-2.148,101.526 -2.154,101.529 -2.170,101.528 -2.178,101.498 -2.178,101.484 -2.173,101.477 -2.158,101.466 -2.152,101.448 -2.137,101.445 -2.134,101.450 -2.135,101.461 -2.132,101.462 -2.120,101.485 -2.117,101.511 -2.127,101.522 -2.143,101.521 -2.148,101.526</polygon>
+      <polygon>-2.266,101.745 -2.285,101.745 -2.306,101.726 -2.311,101.722 -2.325,101.720 -2.333,101.714 -2.345,101.696 -2.342,101.684 -2.341,101.677 -2.346,101.666 -2.344,101.657 -2.351,101.639 -2.347,101.627 -2.332,101.617 -2.334,101.604 -2.339,101.598 -2.361,101.595 -2.352,101.550 -2.370,101.556 -2.406,101.550 -2.422,101.561 -2.450,101.558 -2.402,101.474 -2.325,101.492 -2.252,101.530 -2.246,101.539 -2.251,101.559 -2.204,101.564 -2.208,101.599 -2.203,101.622 -2.207,101.631 -2.205,101.646 -2.210,101.662 -2.215,101.670 -2.236,101.681 -2.234,101.696 -2.244,101.704 -2.252,101.716 -2.255,101.731 -2.233,101.754 -2.217,101.761 -2.200,101.762 -2.184,101.787 -2.180,101.805 -2.182,101.809 -2.197,101.796 -2.199,101.780 -2.209,101.775 -2.233,101.769 -2.243,101.762 -2.253,101.748 -2.266,101.745</polygon>
+      <polygon>-2.107,101.439 -2.120,101.446 -2.132,101.462 -2.135,101.461 -2.134,101.450 -2.137,101.445 -2.152,101.448 -2.158,101.466 -2.173,101.477 -2.178,101.484 -2.178,101.498 -2.170,101.528 -2.154,101.529 -2.148,101.526 -2.144,101.532 -2.171,101.544 -2.244,101.471 -2.288,101.448 -2.349,101.389 -2.293,101.303 -2.277,101.285 -2.262,101.281 -2.250,101.283 -2.191,101.370 -2.175,101.368 -2.180,101.394 -2.171,101.408 -2.156,101.415 -2.118,101.409 -2.102,101.423 -2.107,101.439</polygon>
+      <polygon>-2.208,101.599 -2.204,101.564 -2.251,101.559 -2.246,101.539 -2.252,101.530 -2.325,101.492 -2.402,101.474 -2.387,101.449 -2.349,101.389 -2.288,101.448 -2.244,101.471 -2.171,101.544 -2.144,101.532 -2.128,101.527 -2.125,101.528 -2.126,101.537 -2.121,101.538 -2.116,101.545 -2.135,101.545 -2.149,101.555 -2.166,101.574 -2.167,101.601 -2.188,101.603 -2.208,101.599</polygon>
+      <polygon>-2.089,101.428 -2.089,101.435 -2.097,101.442 -2.107,101.439 -2.102,101.423 -2.118,101.409 -2.156,101.415 -2.171,101.408 -2.180,101.394 -2.175,101.368 -2.191,101.370 -2.250,101.283 -2.247,101.282 -2.246,101.282 -2.145,101.266 -2.145,101.270 -2.126,101.268 -2.121,101.312 -2.125,101.333 -2.121,101.349 -2.137,101.354 -2.154,101.354 -2.156,101.380 -2.162,101.391 -2.161,101.400 -2.147,101.393 -2.124,101.390 -2.108,101.389 -2.087,101.395 -2.081,101.419 -2.089,101.428</polygon>
+    </area>
+  </info>
+</alert>
