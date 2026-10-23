@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-stylesheet type="text/xsl" href="/cap/nowcast-rss-style.xsl"?>
+    <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+        <channel>
+            <title>Peringatan Dini Cuaca BMKG</title>
+            <link>https://www.bmkg.go.id/alerts/nowcast/id/rss.xml</link>
+            <description>Peringatan Dini Cuaca dari BMKG (Badan Meteorologi, Klimatologi, dan Geofisika)</description>
+            <atom:link href="https://www.bmkg.go.id/alerts/nowcast/id/rss.xml" rel="self" type="application/rss+xml"/>
+            <language>id</language>
+            <copyright>public domain</copyright>
+            <pubDate>Fri, 23 Oct 2026 14:30:40 +0000</pubDate>
+            <lastBuildDate>Fri, 23 Oct 2026 14:30:40 +0000</lastBuildDate>
+            <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+            
+        <item>
+            <title>Hujan Lebat disertai Petir di Aceh</title>
+            <link>https://www.bmkg.go.id/alerts/nowcast/id/CAH20261023007_alert.xml</link>
+            <description>Hujan lebat disertai petir akan terjadi pada 23 October 2026, 21:30 WIB di sebagian wilayah Aceh, khususnya di BABUL RAHMAH, BADAR, BANDAR BARU, BATEE, DELENG POKHKISEN, DELIMA, GEULUMPANG TIGA, GLUMPANG BARO, GRONG-GRONG, INDRA JAYA, INDRAPURI, KEMBANG TANJONG, KETAMBE, KEUMALA, KLUET SELATAN, KLUET TIMUR, KLUET UTARA, KOTA SIGLI, KRUENG SABEE, KUALA BARU, KUTA MALAKA, LAWE BULAN, LEUPUNG, LEUSER, LHOONG, MILA, MUARA TIGA, MUTIARA, MUTIARA TIMUR, PADANG TIJI, PANGA, PANTERAJA, PASI RAJA, PEUKAN BARO, PIDIE, PINING, PULAU BANYAK BARAT, SAKTI, SAMADUA, SIMPANG TIGA, SINGKIL, SUKAMAKMUR, TAMIANG HULU, TANOH ALAS, TAPAKTUAN, TENGGULUN, TIRO/TRUSEB, TITEUE, TRIENGGADENG, TRUMON.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 October 2026, 02:31 WIB.</description>
+            <author>cuaca.ekstrem@bmkg.go.id (BMKG)</author>
+            <category>Met</category>
+            <guid isPermaLink="false">2.49.0.1.360.0.2026.10.23.14.11.007</guid>
+            <pubDate>Fri, 23 Oct 2026 21:20:00 +0700</pubDate>
+        </item>
+
+        <item>
+            <title>Hujan Lebat disertai Petir di Jawa Barat</title>
+            <link>https://www.bmkg.go.id/alerts/nowcast/id/CJB20261023004_alert.xml</link>
+            <description>Hujan lebat disertai petir akan terjadi pada 23 October 2026, 21:25 WIB di sebagian wilayah Jawa Barat, khususnya di ANDIR, BANDUNG KULON, BANDUNG WETAN, BATUJAJAR, CICENDO, CIDADAP, CIKALONGWETAN, CIMAHI SELATAN, CIMAHI TENGAH, CIMAHI UTARA, CIPUNAGARA, COBLONG, COMPRENG, HAURGEULIS, LEMBANG, MARGAASIH, PARONGPONG, SUKAJADI, SUKASARI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 October 2026, 23:50 WIB.</description>
+            <author>cuaca.ekstrem@bmkg.go.id (BMKG)</author>
+            <category>Met</category>
+            <guid isPermaLink="false">2.49.0.1.360.0.2026.10.23.14.32.004</guid>
+            <pubDate>Fri, 23 Oct 2026 21:15:00 +0700</pubDate>
+        </item>
+
+        <item>
+            <title>Hujan Lebat disertai Petir di Kalimantan Selatan</title>
+            <link>https://www.bmkg.go.id/alerts/nowcast/id/CKS20261023001_alert.xml</link>
+            <description>Hujan lebat disertai petir akan terjadi pada 23 October 2026, 22:10 WITA di sebagian wilayah Kalimantan Selatan, khususnya di BATANG ALAI TIMUR, HALONG, TEBING TINGGI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 October 2026, 23:50 WITA.</description>
+            <author>cuaca.ekstrem@bmkg.go.id (BMKG)</author>
+            <category>Met</category>
+            <guid isPermaLink="false">2.49.0.1.360.0.2026.10.23.14.63.001</guid>
+            <pubDate>Fri, 23 Oct 2026 22:00:00 +0800</pubDate>
+        </item>
+    </channel>
+</rss>

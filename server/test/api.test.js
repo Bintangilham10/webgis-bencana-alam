@@ -30,8 +30,18 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
   let placesOverride = null;
   // Tanggal "hari ini" (WIB) untuk jendela indikasi SIGAP.
   let outlookToday = '2026-09-29';
+  // Layanan rute palsu (Valhalla, OSRM) dan paparan zona bahaya, diatur per test.
+  let routeFakes = {};
   const services = {
     outlook: { today: () => outlookToday },
+    route: {
+      valhalla: (...args) => routeFakes.valhalla(...args),
+      osrm: (...args) => routeFakes.osrm(...args),
+      exposure: (...args) => routeFakes.exposure(...args),
+      exclusions: (...args) => routeFakes.exclusions(...args),
+      // Tanpa nilai palsu: asal dan tujuan di luar zona tinggi.
+      zones: async (points) => (routeFakes.zones ? routeFakes.zones(points) : points.map(() => [])),
+    },
     risk: {
       identify: async () => {
         calls.identify++;
@@ -117,7 +127,7 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
     const { migrate } = await import('../db/migrate.js');
     await migrate();
     await pool.query(
-      'TRUNCATE events, volcanoes, sync_logs, faults, wilayah, wilayah_bahaya, titik_pantau, bahaya_raster, indikasi_run, indikasi_wilayah, indikasi_hari, glofas_thresholds',
+      'TRUNCATE events, volcanoes, sync_logs, faults, wilayah, wilayah_bahaya, titik_pantau, bahaya_raster, indikasi_run, indikasi_wilayah, indikasi_hari, glofas_thresholds, cap_alerts, cap_alert_wilayah, notifications, facilities',
     );
     ({ syncEarthquakes } = await import('../src/jobs/sync-earthquakes.js'));
     ({ syncVolcanoes } = await import('../src/jobs/sync-volcanoes.js'));
@@ -792,6 +802,385 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       await log(true);
       assert.equal(await isFresh(job), true);
       assert.equal(await isFresh({ ...job, skipIfFresh: false }), false);
+    });
+  });
+
+  describe('peringatan cuaca BMKG, notifikasi, evakuasi, dan rute aman', () => {
+    let notifications;
+    let parseCap;
+    let syncCapAlerts;
+    let notifyQuakes;
+    let notifyVolcanoes;
+    let syncFacilities;
+
+    // Kota Hujan dan Kabupaten Tetangga bersebelahan di bujur 121.
+    before(async () => {
+      notifications = await import('../src/notifications.js');
+      ({ parseCap } = await import('../src/sources/bmkg-cap.js'));
+      ({ syncCapAlerts } = await import('../src/jobs/sync-cap.js'));
+      ({ notifyQuakes, notifyVolcanoes } = await import('../src/jobs/notify.js'));
+      ({ syncFacilities } = await import('../src/jobs/sync-facilities.js'));
+      const square = (w, s, e, n) => `ST_Multi(ST_MakeEnvelope(${w}, ${s}, ${e}, ${n}, 4326))`;
+      await pool.query(`
+        INSERT INTO wilayah (kode, nama, tingkat, induk_kode, titik, geom) VALUES
+          ('97', 'Provinsi Cuaca', 'provinsi', NULL, ST_SetSRID(ST_MakePoint(121, -5.5), 4326), ${square(120, -6, 122, -5)}),
+          ('97.01', 'Kota Hujan', 'kota', '97', ST_SetSRID(ST_MakePoint(120.5, -5.5), 4326), ${square(120, -6, 121, -5)}),
+          ('97.02', 'Kabupaten Tetangga', 'kabupaten', '97', ST_SetSRID(ST_MakePoint(121.5, -5.5), 4326), ${square(121, -6, 122, -5)});`);
+    });
+
+    // XML CAP buatan dengan waktu relatif terhadap sekarang, dalam WITA.
+    const capXml = ({ identifier, msgType = 'Alert', references = '', polygons }) => {
+      const wita = (ms) => `${new Date(ms + 8 * 3_600_000).toISOString().slice(0, 19)}+08:00`;
+      const now = Date.now();
+      return `<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+        <identifier>${identifier}</identifier><sent>${wita(now - 600_000)}</sent><status>Actual</status><msgType>${msgType}</msgType>
+        ${references ? `<references>${references}</references>` : ''}
+        <info><event>Hujan Lebat dan Petir</event><urgency>Immediate</urgency><severity>Moderate</severity><certainty>Observed</certainty>
+          <effective>${wita(now - 300_000)}</effective><expires>${wita(now + 2 * 3_600_000)}</expires>
+          <headline>Hujan Lebat disertai Petir di Provinsi Cuaca</headline><description>Uji</description>
+          <area><areaDesc>Provinsi Cuaca</areaDesc>${polygons.map((p) => `<polygon>${p}</polygon>`).join('')}</area>
+        </info></alert>`;
+    };
+    // Poligon "lat,lon": A di dalam Kota Hujan; B melewati batas bujur 121 tetapi
+    // sebagian besar di Kota Hujan; C di dalam Kabupaten Tetangga.
+    const A = '-5.6,120.2 -5.6,120.4 -5.8,120.4 -5.8,120.2 -5.6,120.2';
+    const B = '-5.3,120.8 -5.3,121.02 -5.4,121.02 -5.4,120.8 -5.3,120.8';
+    const C = '-5.3,121.3 -5.3,121.5 -5.5,121.5 -5.5,121.3 -5.3,121.3';
+
+    test('peringatan cuaca BMKG disimpan, dipetakan ke kab/kota, dan diberitahukan sekali', async () => {
+      const heard = [];
+      const listen = (n) => heard.push(n);
+      notifications.notificationBus.on('notification', listen);
+      const xml = { 'CAP-1': capXml({ identifier: 'CAP-1', polygons: [A, B] }), 'CAP-2': capXml({ identifier: 'CAP-2', polygons: [C] }) };
+      const fetchFeed = async () => Object.keys(xml).map((id) => ({ identifier: id, url: `https://contoh/${id}.xml` }));
+      const fetched = [];
+      const fetchAlert = async (url) => {
+        fetched.push(url);
+        return parseCap(xml[url.match(/CAP-\d/)[0]]);
+      };
+      const first = await syncCapAlerts({ fetchFeed, fetchAlert });
+      assert.deepEqual([first.items, first.message, first.saved], [2, null, ['CAP-1', 'CAP-2']]);
+      // Kedua kali: peringatan yang sudah tersimpan tidak diunduh dan diberitahukan ulang.
+      await syncCapAlerts({ fetchFeed, fetchAlert });
+      // BMKG menerbitkan ulang berkas yang sama dengan identifier baru: juga dilewati.
+      const republished = await syncCapAlerts({
+        fetchFeed: async () => [{ identifier: 'CAP-1-ulang', url: 'https://contoh/CAP-1.xml' }],
+        fetchAlert,
+      });
+      assert.deepEqual(republished.saved, []);
+      assert.equal(fetched.length, 2);
+      notifications.notificationBus.off('notification', listen);
+
+      const { body } = await getJson('/cap');
+      assert.match(body.attribution, /BMKG/);
+      const byId = Object.fromEntries(body.features.map((f) => [f.properties.identifier, f]));
+      // Poligon B melewati batas, tetapi titik di dalamnya ada di Kota Hujan.
+      assert.deepEqual(byId['CAP-1'].properties.wilayah, [{ kode: '97.01', nama: 'Kota Hujan' }]);
+      assert.deepEqual(byId['CAP-2'].properties.wilayah, [{ kode: '97.02', nama: 'Kabupaten Tetangga' }]);
+      assert.equal(byId['CAP-1'].geometry.type, 'MultiPolygon');
+      assert.equal(byId['CAP-1'].properties.utc_offset, 480);
+
+      assert.deepEqual(heard.map((n) => [n.kind, n.ref, n.wilayah]), [['cuaca', 'CAP-1', ['97.01']], ['cuaca', 'CAP-2', ['97.02']]]);
+      assert.match(heard[0].body, /^Berlaku \d\d\.\d\d–\d\d\.\d\d WITA · Kota Hujan$/);
+
+      // Titik di dalam peringatan ikut tampil di cek risiko.
+      const { activeCapAlerts } = await import('../src/risk/nearby.js');
+      assert.deepEqual((await activeCapAlerts(-5.7, 120.3)).map((a) => a.identifier), ['CAP-1']);
+      assert.deepEqual(await activeCapAlerts(-5.7, 121.9), []);
+    });
+
+    test('CAP Cancel mengakhiri peringatan yang dirujuknya tanpa notifikasi baru', async () => {
+      const cancel = capXml({ identifier: 'CAP-3', msgType: 'Cancel', references: 'bmkg,CAP-2,2026-10-23T00:00:00+08:00', polygons: [C] });
+      const result = await syncCapAlerts({
+        fetchFeed: async () => [{ identifier: 'CAP-3', url: 'https://contoh/CAP-3.xml' }],
+        fetchAlert: async () => parseCap(cancel),
+      });
+      assert.deepEqual(result.saved, ['CAP-3']);
+      const { body } = await getJson('/cap');
+      assert.deepEqual(body.features.map((f) => f.properties.identifier), ['CAP-1']);
+      const { rows } = await pool.query("SELECT count(*)::int AS n FROM notifications WHERE ref = 'CAP-3'");
+      assert.equal(rows[0].n, 0);
+    });
+
+    test('gempa BMKG baru dan perubahan level gunung api diberitahukan sekali', async () => {
+      const minutesAgo = (m) => new Date(Date.now() - m * 60_000).toISOString();
+      // Gempa dari test sebelumnya juga baru terlihat; diberitahukan dulu.
+      await notifyQuakes();
+      await syncEarthquakes({
+        fetchEvents: async () => ({
+          events: [
+            quake({ id: 'bmkg:notif-baru', magnitude: 5.6, occurredAt: minutesAgo(10), props: { wilayah: 'Pusat gempa berada di laut 80 km BaratDaya Sumur' } }),
+            // Gempa lama yang baru terlihat (mis. server sempat mati) tidak diberitahukan.
+            quake({ id: 'bmkg:notif-lama', magnitude: 5.0, occurredAt: minutesAgo(5 * 60) }),
+          ],
+          errors: [],
+        }),
+      });
+      const quakes = await notifyQuakes();
+      assert.deepEqual(quakes.map((n) => n.ref), ['bmkg:notif-baru']);
+      assert.equal(quakes[0].level, 1);
+      assert.equal(quakes[0].title, 'Gempa M 5,6 · Laut 80 km barat daya Sumur');
+      assert.deepEqual(await notifyQuakes(), []);
+
+      const { recordSync } = await import('../src/sync-logs.js');
+      const volcano = (level) => [{ kode: 'NTF', nama: 'Notif', kabupaten: null, provinsi: null, elevasiM: 1000, level, lat: -8, lon: 115 }];
+      await syncVolcanoes({ fetchVolcanoes: async () => volcano(2) });
+      // Sinkronisasi sebelumnya (semenit lalu) tercatat, lalu level berubah pada sinkronisasi ini.
+      await recordSync({ source: 'magma', ok: true, items: 1, message: null, startedAt: new Date(Date.now() - 60_000), durationMs: 10 });
+      await syncVolcanoes({ fetchVolcanoes: async () => volcano(3) });
+      // Test lain di berkas ini juga mengubah level gunung api uji.
+      const ours = (list) => list.filter((n) => n.ref.startsWith('NTF:'));
+      // Bila sinkronisasi sebelumnya lebih dari 2 jam lalu, waktu perubahannya tidak diketahui.
+      assert.deepEqual(await notifyVolcanoes({ now: Date.now() + 3 * 3_600_000 }), []);
+      const [changed, ...rest] = ours(await notifyVolcanoes());
+      assert.deepEqual(rest, []);
+      assert.equal(changed.title, 'Gunung Notif naik ke Level III (Siaga)');
+      assert.match(changed.body, /^Sebelumnya Level II \(Waspada\) · /);
+      assert.equal(changed.level, 2);
+      assert.deepEqual(ours(await notifyVolcanoes()), []);
+
+      // Perubahan yang dilewati karena jeda (server sempat mati) tidak ikut muncul pada
+      // sinkronisasi berikutnya, walau terjadi sesudah awal run yang dilewati itu.
+      const skippedRunStart = new Date(Date.now() - 1_000);
+      await syncVolcanoes({ fetchVolcanoes: async () => volcano(4) });
+      assert.deepEqual(ours(await notifyVolcanoes({ now: Date.now() + 3 * 3_600_000 })), []);
+      await recordSync({ source: 'magma', ok: true, items: 1, message: null, startedAt: skippedRunStart, durationMs: 10 });
+      await syncVolcanoes({ fetchVolcanoes: async () => volcano(4) });
+      assert.deepEqual(ours(await notifyVolcanoes()), []);
+
+      const { body } = await getJson('/notifications?limit=100');
+      const refs = body.notifications.map((n) => n.ref);
+      assert.ok(refs.includes('bmkg:notif-baru') && refs.includes('CAP-1'));
+      assert.ok(body.notifications.every((n, i, all) => i === 0 || all[i - 1].id > n.id), 'terbaru dulu');
+    });
+
+    // Membaca aliran SSE sampai until(teks) terpenuhi (paling lama 5 detik).
+    // trigger dijalankan sekali setelah sambungan terbuka.
+    async function readStream(url, { headers = {}, until, trigger }) {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 5_000);
+      const res = await fetch(url, { headers, signal: controller.signal });
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let text = '';
+      try {
+        while (!until(text)) {
+          const { value, done } = await reader.read();
+          if (done) break;
+          text += decoder.decode(value, { stream: true });
+          if (trigger && text.includes('retry:')) {
+            await trigger();
+            trigger = null;
+          }
+        }
+      } finally {
+        clearTimeout(timeout);
+        controller.abort();
+      }
+      return { status: res.status, type: res.headers.get('content-type'), encoding: res.headers.get('content-encoding'), text };
+    }
+
+    test('aliran SSE: notifikasi langsung terkirim tanpa kompresi; sambungan ulang menerima yang terlewat', async () => {
+      let published;
+      const live = await readStream(`${baseUrl}/stream`, {
+        headers: { 'Accept-Encoding': 'gzip' },
+        until: (text) => text.includes('event: notification'),
+        trigger: async () => {
+          [published] = await notifications.publishNotifications([{ kind: 'gempa', ref: 'uji-sse', level: 1, title: 'Gempa uji', body: 'Uji SSE', lat: -7, lon: 107 }]);
+        },
+      });
+      assert.equal(live.status, 200);
+      assert.match(live.type, /^text\/event-stream/);
+      assert.equal(live.encoding, null);
+      assert.match(live.text, /^retry: 10000\n\n/);
+      const data = JSON.parse(live.text.match(/event: notification\ndata: (.*)\n\n/)[1]);
+      assert.deepEqual([data.id, data.title, data.kind], [published.id, 'Gempa uji', 'gempa']);
+
+      const resumed = await readStream(`${baseUrl}/stream`, {
+        headers: { 'Last-Event-ID': String(published.id - 1) },
+        until: (text) => text.includes(`id: ${published.id}\n`),
+      });
+      assert.match(resumed.text, /"ref":"uji-sse"/);
+    });
+
+    test('aliran SSE menolak koneksi di atas batas', async () => {
+      const express = (await import('express')).default;
+      const { createNotificationsRouter } = await import('../src/routes/notifications.js');
+      const app = express().use('/api', createNotificationsRouter({ maxClients: 1 })).listen(0);
+      const url = `http://localhost:${app.address().port}/api/stream`;
+      const first = new AbortController();
+      try {
+        assert.equal((await fetch(url, { signal: first.signal })).status, 200);
+        const busy = await fetch(url);
+        assert.equal(busy.status, 503);
+        assert.match((await busy.json()).error, /Terlalu banyak koneksi/);
+      } finally {
+        first.abort();
+        app.closeAllConnections();
+        app.close();
+      }
+    });
+
+    test('titik evakuasi dan fasilitas terdekat dalam radius per kategori; data terpotong ditolak', async () => {
+      const facility = (id, category, name, lat, lon) => ({ id, category, name, tags: { name }, lat, lon });
+      const list = [
+        facility('node/1', 'evakuasi', 'Masjid Raya', -5.705, 120.3),
+        facility('node/2', 'titik_kumpul', 'Lapangan', -5.7, 120.31),
+        facility('way/3', 'evakuasi', 'Sekolah', -5.72, 120.3),
+        // ±44 km: di luar radius 30 km titik evakuasi.
+        facility('node/4', 'titik_kumpul', 'Jauh', -5.7, 120.7),
+        facility('node/5', 'rumah_sakit', 'RS Uji', -5.71, 120.3),
+        // Rumah sakit yang sama dipetakan dua kali (titik dan gedung): cukup sekali,
+        // dan jatah dua rumah sakit tetap terisi oleh yang berikutnya.
+        facility('way/8', 'rumah_sakit', 'RS UJI', -5.7105, 120.3005),
+        facility('node/9', 'rumah_sakit', 'RS Kedua', -5.73, 120.3),
+        facility('node/6', 'klinik', 'Puskesmas Uji', -5.7, 120.305),
+        // ±33 km: di luar radius 25 km pemadam.
+        facility('node/7', 'pemadam', 'Damkar Jauh', -5.7, 120.6),
+        // Di blok longsor kelas tinggi raster buatan (blok indikasi SIGAP di atas).
+        facility('node/10', 'evakuasi', 'Balai Lereng', -7.0225, 110.0225),
+      ];
+      await syncFacilities({ fetch: async () => list });
+      const { status, body } = await getJson('/evacuation?lat=-5.7&lon=120.3');
+      assert.equal(status, 200);
+      assert.match(body.attribution, /OpenStreetMap/);
+      assert.deepEqual(body.evacuation.map((f) => f.name), ['Masjid Raya', 'Lapangan', 'Sekolah']);
+      assert.ok(Math.abs(body.evacuation[0].distance_m - 553) < 10, `jarak ${body.evacuation[0].distance_m} m`);
+      assert.deepEqual(body.facilities.map((f) => f.name), ['Puskesmas Uji', 'RS Uji', 'RS Kedua']);
+      assert.deepEqual(body.evacuation[0].zona_tinggi, []);
+      const slope = (await getJson('/evacuation?lat=-7.03&lon=110.03')).body;
+      assert.deepEqual(slope.evacuation.map((f) => [f.name, f.zona_tinggi]), [['Balai Lereng', ['longsor']]]);
+      assert.equal((await getJson('/evacuation-sites')).body.meta.count, 5);
+
+      await assert.rejects(syncFacilities({ fetch: async () => list.slice(0, 2) }), /data lama dipertahankan/);
+      assert.equal((await getJson('/evacuation-sites')).body.meta.count, 5);
+      assert.equal((await getJson('/evacuation?lat=50&lon=10')).status, 400);
+    });
+
+    // Rute palsu: `uji` di geometri menandai rutenya untuk exposure palsu.
+    const routeOf = (distance_m, duration_s) => ({
+      distance_m,
+      duration_s,
+      geometry: { type: 'LineString', coordinates: [[107, -7], [107.02, -6.99]], uji: distance_m },
+    });
+    const exposureOf = (tinggi_m) => ({
+      banjir: { tinggi_m, sedang_m: 0, rendah_m: 0 },
+      longsor: { tinggi_m: 0, sedang_m: 0, rendah_m: 0 },
+      tinggi_m,
+      tinggi_geometry: { banjir: null, longsor: null },
+    });
+    const postRoute = async (body) => {
+      const res = await fetch(`${baseUrl}/route`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+      return { status: res.status, body: await res.json() };
+    };
+    const FROM = { lat: -7, lon: 107 };
+    const TO = { lat: -6.99, lon: 107.02 };
+
+    test('rute aman: paparan terkecil dipilih; rute penghindar diminta bila semua rute melewati zona tinggi', async () => {
+      const log = [];
+      const exposures = { 1000: 400, 1100: 300, 1500: 0 };
+      routeFakes = {
+        valhalla: async (args) => {
+          log.push(args);
+          // Alternatif ketiga hampir sama dengan rute utama, jadi dibuang.
+          return args.exclude?.length ? [routeOf(1500, 700)] : [routeOf(1000, 600), routeOf(1100, 620), routeOf(1004, 605)];
+        },
+        osrm: async () => {
+          throw new Error('tidak dipakai');
+        },
+        exposure: async (geometry) => exposureOf(exposures[geometry.uji]),
+        exclusions: async (geometry, from, to, budget) => {
+          log.push({ exclusions: geometry.uji, budget });
+          return [[[107.005, -7.005], [107.006, -7.005], [107.006, -7.006], [107.005, -7.005]]];
+        },
+        zones: async ([from, to]) => (to.lat === TO.lat ? [[], ['banjir']] : [[], []]),
+      };
+      const { status, body } = await postRoute({ from: FROM, to: TO, mode: 'jalan_kaki' });
+      assert.equal(status, 200);
+      assert.equal(body.engine, 'Valhalla (FOSSGIS)');
+      assert.match(body.attribution, /OpenStreetMap/);
+      assert.deepEqual(body.zona_tinggi, { from: [], to: ['banjir'] });
+      assert.deepEqual(body.routes.map((r) => [r.id, r.source, r.distance_m, r.exposure.tinggi_m]), [
+        [0, 'utama', 1000, 400],
+        [1, 'alternatif', 1100, 300],
+        [2, 'menghindari_zona', 1500, 0],
+      ]);
+      assert.deepEqual([body.fastest, body.safest, body.avoidance], [0, 2, 'dicoba']);
+      // Blok zona diambil dari rute berpaparan terkecil, dalam batas keliling Valhalla.
+      assert.deepEqual(log.find((entry) => entry.exclusions), { exclusions: 1100, budget: 9500 });
+      assert.equal(log.find((entry) => entry.exclude)?.exclude.length, 1);
+
+      // Rute penghindar yang terlalu lama (> 1,75 × tercepat + 2 menit) tidak dipilih.
+      routeFakes.valhalla = async (args) => (args.exclude?.length ? [routeOf(1500, 1200)] : [routeOf(1000, 600), routeOf(1100, 620)]);
+      const slow = (await postRoute({ from: FROM, to: TO, mode: 'motor' })).body;
+      assert.deepEqual([slow.fastest, slow.safest], [0, 1]);
+
+      // Tidak ada zona tinggi: rute tercepat sekaligus teraman.
+      routeFakes.exposure = async () => exposureOf(0);
+      const clear = (await postRoute({ from: FROM, to: TO, mode: 'mobil' })).body;
+      assert.deepEqual([clear.fastest, clear.safest, clear.avoidance], [0, 0, 'tidak_perlu']);
+    });
+
+    test('rute: OSRM bila Valhalla gagal, 502/404 yang jelas, dan masukan yang ditolak', async () => {
+      routeFakes = {
+        valhalla: async () => {
+          throw new Error('ECONNRESET');
+        },
+        osrm: async () => [routeOf(1000, 600)],
+        exposure: async () => exposureOf(200),
+        exclusions: async () => {
+          throw new Error('OSRM tidak mendukung area terlarang');
+        },
+        zones: async () => {
+          throw new Error('basis data sibuk');
+        },
+      };
+      const fallback = await postRoute({ from: FROM, to: TO });
+      assert.equal(fallback.status, 200);
+      assert.deepEqual([fallback.body.engine, fallback.body.mode, fallback.body.avoidance], ['OSRM (FOSSGIS)', 'jalan_kaki', 'tidak_bisa']);
+      // Zona di ujung rute hanya pelengkap: bila gagal dibaca, rute tetap dikirim.
+      assert.deepEqual(fallback.body.zona_tinggi, { from: [], to: [] });
+
+      routeFakes.osrm = async () => {
+        throw new Error('ETIMEDOUT');
+      };
+      assert.equal((await postRoute({ from: FROM, to: TO })).status, 502);
+      routeFakes.valhalla = async () => null;
+      routeFakes.osrm = async () => null;
+      assert.equal((await postRoute({ from: FROM, to: TO })).status, 404);
+      assert.equal((await postRoute({ from: FROM, to: TO, mode: 'pesawat' })).status, 400);
+      assert.match((await postRoute({ from: FROM, to: { lat: -7.5, lon: 107.5 } })).body.error, /terlalu jauh/);
+      assert.equal((await postRoute({ from: { lat: 50, lon: 10 }, to: TO })).status, 400);
+    });
+
+    test('paparan rute dari raster kelas: panjang di zona tinggi dan blok yang bisa dihindari', async () => {
+      const { exclusionRings, highZonesAt, routeExposure } = await import('../src/risk/route-exposure.js');
+      // Garis barat–timur di lintang −7,0225 (tengah satu baris piksel) melintasi blok
+      // longsor kelas tinggi dan blok banjir kelas sedang buatan (110,00–110,05) dari
+      // blok indikasi SIGAP di atas.
+      const line = { type: 'LineString', coordinates: [[109.99, -7.0225], [110.06, -7.0225]] };
+      const exposure = await routeExposure(line);
+      const blockM = 0.05 * 111_320 * Math.cos((7.0225 * Math.PI) / 180);
+      assert.ok(Math.abs(exposure.longsor.tinggi_m - blockM) < 120, `longsor tinggi ${exposure.longsor.tinggi_m} m`);
+      assert.ok(Math.abs(exposure.banjir.sedang_m - blockM) < 120, `banjir sedang ${exposure.banjir.sedang_m} m`);
+      assert.deepEqual([exposure.banjir.tinggi_m, exposure.tinggi_m], [0, exposure.longsor.tinggi_m]);
+      assert.equal(exposure.tinggi_geometry.longsor.type, 'LineString');
+
+      const from = { lat: -7.0225, lon: 109.99 };
+      const to = { lat: -7.0225, lon: 110.06 };
+      // 10 piksel sebaris menyatu menjadi satu blok (±5,5 × 0,55 km) berkeliling
+      // ±12 km, melebihi batas 9,5 km; tanpa penyelarasan grid bloknya terpecah.
+      assert.deepEqual(await exclusionRings(line, from, to, 9_500), []);
+      const [ring] = await exclusionRings(line, from, to, 20_000);
+      const lons = ring.map(([lon]) => lon);
+      assert.deepEqual([Math.min(...lons), Math.max(...lons)], [110, 110.05]);
+
+      // Kelas tinggi per titik: blok longsor tinggi (banjirnya sedang), di luar
+      // blok, dan di luar cakupan raster.
+      assert.deepEqual(
+        await highZonesAt([{ lat: -7.0225, lon: 110.0225 }, { lat: -7.0225, lon: 110.2 }, { lat: -5.7, lon: 120.3 }]),
+        [['longsor'], [], []],
+      );
     });
   });
 });

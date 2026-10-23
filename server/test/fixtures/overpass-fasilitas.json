@@ -1,0 +1,148 @@
+{
+ "version": 0.6,
+ "generator": "Overpass API 0.7.62.11 87bfad18",
+ "osm3s": {
+  "timestamp_osm_base": "2026-10-23T14:47:06Z",
+  "timestamp_areas_base": "2026-10-23T08:15:02Z",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+ },
+ "elements": [
+  {
+   "type": "way",
+   "id": 28969780,
+   "center": {
+    "lat": -6.1415435,
+    "lon": 106.8196619
+   },
+   "tags": {
+    "addr:city": "DKI Jakarta",
+    "addr:full": "Jalan Ubi",
+    "evacuation_center": "yes",
+    "kitchen:facilities": "no",
+    "leisure": "pitch",
+    "name": "Lapangan UMS",
+    "shelter_type": "tent",
+    "source": "HOT_InAWARESurvey_2017",
+    "sport": "soccer",
+    "toilet:facilities": "no",
+    "water_source": "water_works"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4794550846,
+   "lat": -7.5843576,
+   "lon": 110.8421932,
+   "tags": {
+    "emergency": "assembly_point",
+    "name": "Titik Kumpul Rt.03/07 Ngemplak Ds. Ngadingan"
+   }
+  },
+  {
+   "type": "node",
+   "id": 6986428642,
+   "lat": -3.3107646,
+   "lon": 128.3340454,
+   "tags": {
+    "emergency": "rekomendasi titik pengungsian"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4208947379,
+   "lat": -4.1356187,
+   "lon": 120.0290333,
+   "tags": {
+    "amenity": "social_facility",
+    "name": "ceo",
+    "social_facility": "shelter",
+    "social_facility:for": "homeless"
+   }
+  },
+  {
+   "type": "way",
+   "id": 156917856,
+   "center": {
+    "lat": -6.1437715,
+    "lon": 106.8192284
+   },
+   "tags": {
+    "access:roof": "no",
+    "addr:city": "DKI Jakarta",
+    "addr:full": "Jalan Madu No.10",
+    "amenity": "hospital",
+    "backup_generator": "yes",
+    "building": "hospital",
+    "building:condition": "good",
+    "building:floor": "ceramics",
+    "building:levels": "6",
+    "building:roof": "concrete",
+    "building:structure": "steel_frame",
+    "building:walls": "concrete",
+    "capacity:persons": ">500",
+    "evacuation_center": "yes",
+    "healthcare": "hospital",
+    "kitchen:facilities": "no",
+    "name": "Rumah Sakit Umum Taman Sari",
+    "operator:type": "government",
+    "rooms": "62 kamar",
+    "shelter_type": "building",
+    "source": "HOT_InAWARESurvey_2017",
+    "toilet:facilities": "yes",
+    "toilets:number": "10",
+    "water_source": "water_works"
+   }
+  },
+  {
+   "type": "way",
+   "id": 30818753,
+   "center": {
+    "lat": 3.3282626,
+    "lon": 99.1626172
+   },
+   "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Rumah Sakit Umum Herna"
+   }
+  },
+  {
+   "type": "node",
+   "id": 298741226,
+   "lat": -8.0414251,
+   "lon": 112.1028528,
+   "tags": {
+    "addr:city": "Ponggok",
+    "addr:postcode": "64153",
+    "addr:street": "Jendral Sudirman",
+    "amenity": "clinic",
+    "ele": "185.0",
+    "name": "Puskesmas Ponggok",
+    "wpt_description": "Puskesmas Ponggok",
+    "wpt_symbol": "Medical Facility"
+   }
+  },
+  {
+   "type": "node",
+   "id": 32527727,
+   "lat": -6.9157412,
+   "lon": 107.6311105,
+   "tags": {
+    "amenity": "police",
+    "created_by": "JOSM",
+    "name": "Polres Bandung Tengah"
+   }
+  },
+  {
+   "type": "node",
+   "id": 702191760,
+   "lat": 1.0529128,
+   "lon": 103.9297479,
+   "tags": {
+    "amenity": "fire_station",
+    "name": "Fire Fighter (Pemadam Kebakaran Sagulung)",
+    "source": "Batam Mapping Project"
+   }
+  }
+ ]
+}
