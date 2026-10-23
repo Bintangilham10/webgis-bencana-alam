@@ -55,11 +55,11 @@ The logo is an **S drawn from three contour lines** around an amber summit point
   - For about 55 earthquakes a year the popup adds the **USGS Ground Failure estimate** of earthquake-triggered landslides and liquefaction: alert level, affected area (km²), and exposed population. "Landslide map" and "liquefaction map" buttons draw the estimated share of area affected on the map, in the official USGS legend colours.
   - Both products arrive about 20–60 minutes after an earthquake. The server fetches the detail only when USGS revises the event, at most every 10 minutes per event.
 - **EMSC earthquakes for comparison** (off by default): the European-Mediterranean Seismological Centre catalogue for the same region, synced every 2 minutes. In Indonesia most of its events come from BMKG's full catalogue (1,160 of 1,344 events, 19 Sep–19 Oct 2026), including small events from about M 1 that BMKG's public feeds leave out; the rest come from EMSC, USGS, MetMalaysia, GFZ, and others. Small dots are coloured by depth class, and each popup names the agency that located the event. Not counted in the overview or risk checks.
-- **GDACS alerts** (off by default): Global Disaster Alert and Coordination System (European Commission JRC and UN OCHA) alerts for Indonesia covering floods, earthquakes, volcanoes, tropical cyclones, droughts, and wildfires. Orange and red alerts from the last 12 months and green alerts from the last 7 days are shown (green earthquakes are left to the earthquake layers), with the official GDACS map icons. GDACS levels estimate humanitarian impact; they are not national warning levels.
+- **GDACS alerts** (off by default): Global Disaster Alert and Coordination System (European Commission JRC and UN OCHA) alerts for Indonesia covering floods, earthquakes, volcanoes, tropical cyclones, droughts, and wildfires. Orange and red alerts from the last 12 months and green alerts from the last 7 days are shown (green earthquakes are left to the earthquake layers), with the official GDACS map icons in the colour of the alert level. Multi-country events whose GDACS point lies outside the Indonesian region are left out. GDACS levels estimate humanitarian impact; they are not national warning levels.
 - **Volcanoes** from MAGMA Indonesia, synced every 30 minutes, with alert level I–IV, eruption status, and aviation ash warnings (VONA).
 - **Heavy-rain warnings** from BMKG CEWS for the current dasarian (10-day period), drawn on regency boundaries and listed in the overview.
 - **Rain from satellite**: the latest 30-minute NASA GPM IMERG rainfall, about 4–6 hours behind real time (the legend shows the data time).
-- **Clouds from Himawari-9** (JMA, Japan; off by default): infrared cloud-top temperature every 10 minutes, about 30–75 minutes behind, through NASA GIBS. The browser makes cloud-free ground transparent so the basemap stays visible, while cold convective tops keep their colours.
+- **Clouds from Himawari-9** (JMA, Japan; off by default): infrared cloud-top temperature every 10 minutes, about 30–75 minutes behind, through NASA GIBS. The browser makes cloud-free ground transparent so the basemap stays visible, while cold convective tops keep their colours. GIBS lists a new image before all its tiles exist, so the server picks the newest time whose test tiles over Indonesia are published, and any tile still missing falls back to the image 10–30 minutes earlier.
 - **Landslides**: 1,884 past events from PVMBG and MAGMA, coloured by age.
 - **Hazard maps** from BNPB InaRISK for earthquake, extreme weather, flood, landslide, and volcano, in the three official BNPB classes, plus the PVMBG landslide susceptibility zones (ZKGT) in the same colours.
 - **Geology and boundaries**: active faults, tectonic plate boundaries (Bird 2003), and 514 regency and city boundaries.
@@ -73,7 +73,7 @@ Pick a point by search, GPS, right-click, or long press. SIGAP runs 11 lookups i
 - the five InaRISK hazard indices;
 - the nearest active fault and volcanoes, drawn as distance lines;
 - recent earthquakes within 100 km;
-- a 7-day GloFAS (Copernicus) river discharge forecast to compare with the flood outlook: ensemble median and range at the nearest ~5 km cell, rated against 2-, 5-, and 20-year flood discharges that SIGAP derives from the cell's 1984–2024 annual maxima. It loads separately (`/api/river`), so it does not slow the risk check;
+- a 7-day GloFAS (Copernicus) river discharge forecast to compare with the flood outlook: ensemble median and range at the nearest ~5 km cell, rated against 2-, 5-, and 20-year flood discharges that SIGAP derives from the cell's 1997–2024 annual maxima (stored per cell, so the long history is fetched once). It loads separately (`/api/river`), so it does not slow the risk check;
 - **landslide and rain**: the PVMBG monthly landslide forecast and susceptibility zone, the BMKG heavy-rain warning for the regency, rain over the last 3 days, the odds of ≥ 50 mm from 51 ECMWF ensemble members, terrain slope, and past landslides within 5 km.
 
 </td>
@@ -342,7 +342,7 @@ Every endpoint returns JSON; spatial data is GeoJSON with `[lon, lat]` coordinat
 | `GET /api/rain-warnings` | Regencies under a BMKG heavy-rain warning (Waspada or higher) for the current dasarian |
 | `GET /api/rain-warnings/summary` | The same warnings without geometry, with province and bounds, for lists |
 | `GET /api/rain-now` | Time and tile URL of the latest NASA IMERG rainfall map |
-| `GET /api/clouds-now` | Time and tile URL of the latest Himawari-9 infrared image |
+| `GET /api/clouds-now` | Time and tile URL of the latest Himawari-9 infrared image whose tiles are published, plus fallback tile URLs of the previous images |
 | `GET /api/outlook` | Latest SIGAP 3-day outlook: heavy rain, flood, and landslide level per regency, with reason, peak day, and worst monitoring point, plus counts per level |
 | `GET /api/landslides` | Landslide history from PVMBG and MAGMA |
 | `GET /api/geocode?q=bandung` | Regency search in the database, other places through Nominatim |
