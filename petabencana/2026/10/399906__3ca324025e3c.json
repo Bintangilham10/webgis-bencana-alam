@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-23T10:00:38.862Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        124.7751890317,
+        1.4475300053
+      ]
+    },
+    "properties": {
+      "pkey": "399906",
+      "created_at": "2026-10-23T09:56:18.998Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "d2f2dbe1-4a8b-4343-8d77-35d41ff81150",
+      "image_url": "https://images.petabencana.id/d2f2dbe1-4a8b-4343-8d77-35d41ff81150.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 105.41310211665719,
+        "fireLocation": {
+          "lng": 124.77518903173802,
+          "lat": 1.4475300052918385
+        },
+        "personLocation": {
+          "lat": "1.4477177",
+          "lng": "124.7762190"
+        },
+        "fireRadius": {
+          "lng": 124.77425025858406,
+          "lat": 1.4473959376360455
+        }
+      },
+      "tags": {
+        "city": "MINAHASA",
+        "district_id": null,
+        "region_code": "7102",
+        "local_area_id": null,
+        "instance_region_code": "ID-SA"
+      },
+      "title": null,
+      "text": "Stop Jo kasing ja Bakar\" tu Kobong/ utang, So Pe siksa ini hidup kurang da Hirup\" ni Asap Akibat Karhutla!\nkalasey 2",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
