@@ -194,14 +194,16 @@ export function createEarthquakeLayer(map, { viewPadding } = {}) {
       applyFilter();
     },
     counts: () => ({ shown: group.getLayers().length, total: markers.size, loaded }),
+    // false bila gempanya tidak ada di data 7 hari yang sedang dimuat.
     focus(id) {
-      if (!markers.has(id)) return;
+      if (!markers.has(id)) return false;
       if (!map.hasLayer(group)) group.addTo(map);
       if (!group.hasLayer(markers.get(id))) {
         revealedId = id;
         applyFilter();
       }
       openers.get(id)();
+      return true;
     },
   };
 }

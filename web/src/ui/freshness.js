@@ -8,8 +8,12 @@ import { timeAgo } from '../lib/format.js';
 const STALE_AFTER_MS = {
   Gempa: 5 * 60_000,
   'Gunung api': 90 * 60_000,
+  // Peringatan dini cuaca BMKG (CAP) disinkronkan tiap 5 menit.
+  'Peringatan cuaca': 20 * 60_000,
   'Peringatan hujan': 6 * 60 * 60_000,
   'Indikasi SIGAP': 13 * 60 * 60_000,
+  // Titik evakuasi OSM diambil seminggu sekali.
+  'Titik evakuasi': 8 * 24 * 60 * 60_000,
 };
 const REFRESH_TEXT_MS = 30_000;
 

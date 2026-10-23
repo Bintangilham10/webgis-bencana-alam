@@ -11,7 +11,9 @@ const SECOND_LINE_DELAY_MS = 250;
 // Cek risiko lokasi (M2): memanggil /api/risk untuk sebuah titik, lalu
 // menampilkan profil di panel dan garis jarak ke sesar & gunung api terdekat.
 // viewPadding() memberi ruang peta yang tertutup panel saat membidik hasil.
-export function createRiskCheck({ map, card, onPickingChange, viewPadding = () => ({}) }) {
+// onResult dipanggil setelah profil tampil (titik evakuasi, wilayah notifikasi);
+// onClear saat hasil lama tidak berlaku lagi (titik baru atau panel ditutup).
+export function createRiskCheck({ map, card, onPickingChange, viewPadding = () => ({}), onResult, onClear }) {
   const layer = L.featureGroup().addTo(map);
   const hint = L.DomUtil.create('div', 'map-hint', map.getContainer());
   hint.textContent = window.matchMedia('(pointer: coarse)').matches
@@ -104,6 +106,7 @@ export function createRiskCheck({ map, card, onPickingChange, viewPadding = () =
     // Hanya hasil permintaan terakhir yang ditampilkan.
     controller?.abort();
     controller = new AbortController();
+    onClear?.();
     drawPoint(latlng, accuracyM);
     card.showLoading({ lat: latlng.lat, lon: latlng.lng, label });
     try {
@@ -113,6 +116,7 @@ export function createRiskCheck({ map, card, onPickingChange, viewPadding = () =
       card.render(profile, { label, lat: latlng.lat, lon: latlng.lng });
       drawProximity(profile, latlng);
       loadRiver(latlng, controller.signal);
+      onResult?.({ profile, latlng, label, signal: controller.signal });
     } catch (err) {
       if (err.name !== 'AbortError') card.showError(err.message);
     }
@@ -142,6 +146,10 @@ export function createRiskCheck({ map, card, onPickingChange, viewPadding = () =
     check,
     retry: () => lastRequest && check(...lastRequest),
     togglePicking: () => setPicking(!picking),
+    // Titik yang terakhir dianalisis (asal rute aman bila posisi tidak dipantau).
+    get point() {
+      return lastRequest?.[0] ?? null;
+    },
     fitToResult: () => {
       if (layer.getLayers().length) flyToBounds(map, layer.getBounds(), { maxZoom: 13, ...viewPadding() });
     },
@@ -150,6 +158,7 @@ export function createRiskCheck({ map, card, onPickingChange, viewPadding = () =
       clearLayer();
       card.hide();
       setPicking(false);
+      onClear?.();
     },
   };
 }

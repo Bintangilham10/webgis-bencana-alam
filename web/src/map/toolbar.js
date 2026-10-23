@@ -58,9 +58,9 @@ function retryThumbnail(img) {
 }
 
 // Bilah alat di kanan peta dengan tombol seragam: zoom, seluruh Indonesia,
-// cek risiko (lokasi saya / pilih titik), filter penanda, dan peta dasar.
+// cek risiko (lokasi saya / pilih titik), pantau posisi, filter penanda, dan peta dasar.
 export const MapToolbar = L.Control.extend({
-  options: { position: 'topright', basemaps: [], onHome() {}, onLocate() {}, onPick() {} },
+  options: { position: 'topright', basemaps: [], onHome() {}, onLocate() {}, onPick() {}, onTrack() {} },
 
   onAdd(map) {
     const el = L.DomUtil.create('div', 'map-toolbar');
@@ -73,6 +73,7 @@ export const MapToolbar = L.Control.extend({
       <div class="tool-group glass">
         ${toolButton('locate', 'Cek risiko di lokasi saya', icons.locate)}
         ${toolButton('pick', 'Cek risiko: pilih titik di peta', icons.pin, 'aria-pressed="false"')}
+        ${toolButton('track', 'Pantau posisi saya', icons.navigate, 'aria-pressed="false"')}
       </div>
       <div class="tool-group glass">
         ${toolButton('filter', 'Filter penanda peta', icons.filter, 'aria-expanded="false" aria-controls="filter-menu"')}
@@ -88,6 +89,7 @@ export const MapToolbar = L.Control.extend({
 
     this._map = map;
     this._pick = el.querySelector('[data-tool="pick"]');
+    this._track = el.querySelector('[data-tool="track"]');
     this._menus = MENUS.map((name) => ({
       name,
       button: el.querySelector(`[data-tool="${name}"]`),
@@ -107,6 +109,7 @@ export const MapToolbar = L.Control.extend({
       else if (tool === 'home') this.options.onHome();
       else if (tool === 'locate') this.options.onLocate();
       else if (tool === 'pick') this.options.onPick();
+      else if (tool === 'track') this.options.onTrack();
       else if (MENUS.includes(tool)) this._toggleMenu(tool);
     });
     this._basemapMenu.addEventListener('change', (event) => this._setBasemap(event.target.value));
@@ -142,6 +145,11 @@ export const MapToolbar = L.Control.extend({
   // Bisa dipanggil sebelum kontrol ditambahkan ke peta; saat itu belum ada tombol.
   setPicking(active) {
     this._pick?.setAttribute('aria-pressed', String(active));
+  },
+
+  setTracking(active) {
+    this._track?.setAttribute('aria-pressed', String(active));
+    this._track?.setAttribute('title', active ? 'Berhenti memantau posisi' : 'Pantau posisi saya');
   },
 
   // Titik penanda di tombol filter selama ada penanda yang disembunyikan.

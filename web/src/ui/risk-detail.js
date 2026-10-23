@@ -1,3 +1,5 @@
+import { zonePill } from '../features/evacuation.js';
+import { capClock, capZone } from '../layers/cap.js';
 import { faultDisplayName } from '../layers/reference.js';
 import {
   capitalize,
@@ -5,12 +7,23 @@ import {
   formatDasarian,
   formatDay,
   formatDecimal,
+  formatDistance,
   formatEventDate,
   formatMonth,
   formatNumber,
 } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
-import { CEWS_LEVELS, HAZARD_CLASSES, INK, landslideClass, pillStyle, VOLCANO_LEVELS, WARNING_LEVEL_STYLES } from '../lib/symbology.js';
+import {
+  capSeverity,
+  CEWS_LEVELS,
+  FACILITY_KINDS,
+  HAZARD_CLASSES,
+  INK,
+  landslideClass,
+  pillStyle,
+  VOLCANO_LEVELS,
+  WARNING_LEVEL_STYLES,
+} from '../lib/symbology.js';
 
 const INDICATION_NAMES = { hujan: 'hujan lebat', banjir: 'banjir', longsor: 'tanah longsor' };
 // Skala batang hujan: batas bawah hujan ekstrem BMKG (mm/hari).
@@ -52,7 +65,7 @@ function outlook(indications, rainError, status) {
   return banner(top, `${WARNING_LEVEL_STYLES[top].label}: potensi ${names}`, `${capitalize(worst[0].reason)}.`);
 }
 
-function banner(level, title, body) {
+function banner(level, title, body, { extra = '' } = {}) {
   const style = level === null ? { color: '#98a2b3', text: '#fff' } : WARNING_LEVEL_STYLES[level];
   return `
     <div class="outlook" style="--outlook:${style.color};--outlook-fg:${style.text}">
@@ -60,8 +73,25 @@ function banner(level, title, body) {
       <div>
         <p class="outlook-title">${escapeHtml(title)}</p>
         <p class="outlook-body">${escapeHtml(body)}</p>
+        ${extra}
       </div>
     </div>`;
+}
+
+// Peringatan resmi BMKG (CAP) yang sedang berlaku di titik ini, di atas indikasi SIGAP.
+function capBanners(alerts = []) {
+  return alerts
+    .map((a) => {
+      const offset = a.utc_offset ?? 420;
+      const link = a.web ? `<a class="outlook-link" href="${escapeHtml(a.web)}" target="_blank" rel="noopener">Infografis BMKG${icons.external}</a>` : '';
+      return banner(
+        capSeverity(a.severity).level,
+        `Peringatan dini BMKG: ${a.event.toLowerCase()}`,
+        `Berlaku di lokasi ini sampai ${capClock(a.expires, offset)} ${capZone(offset)}. Kurangi aktivitas di luar ruangan dan waspadai banjir lokal.`,
+        { extra: link },
+      );
+    })
+    .join('');
 }
 
 function indicationList(indications, rulesVersion) {
@@ -189,6 +219,110 @@ export function riverHtml(river) {
     <p class="section-note">Debit sungai dari model GloFAS (Copernicus, Uni Eropa), median dan rentang 25–75% dari 50 anggota ensemble.
       Sel GloFAS ±5 km terdekat berjarak ±${formatDecimal(river.cell.distance_km)} km dari titik; sungai kecil bisa tidak terwakili. ${thresholds}
       Pembanding, bukan peringatan resmi.</p>`;
+}
+
+// ---------- Evakuasi dan rute aman ----------
+// Titik evakuasi dimuat dari /api/evacuation setelah profil tampil
+// (features/evacuation.js); rute aman dari /api/route (features/safe-route.js).
+const ROUTE_MODES = [
+  { id: 'jalan_kaki', label: 'Jalan kaki' },
+  { id: 'motor', label: 'Motor' },
+  { id: 'mobil', label: 'Mobil' },
+];
+
+function facilityRow(f) {
+  const kind = FACILITY_KINDS[f.category];
+  const name = f.name ?? kind.label;
+  return `
+    <li class="nearby-row facility-row">
+      <span class="facility-pin" style="--c:${kind.color}">${icons[kind.icon]}</span>
+      <span class="nearby-text"><span class="nearby-title">${escapeHtml(name)}</span><span class="nearby-meta">${kind.label}${zonePill(f.zona_tinggi)}</span></span>
+      <span class="nearby-distance">${km(f.distance_m / 1000)}</span>
+      <button type="button" class="icon-btn route-btn" data-action="route" data-facility="${escapeHtml(f.id)}" aria-label="Rute aman ke ${escapeHtml(name)}" title="Rute aman">${icons.route}</button>
+    </li>`;
+}
+
+export function evacuationHtml(data) {
+  if (!data.synced_at && !data.evacuation.length && !data.facilities.length) {
+    return '<p class="empty-note">Data titik evakuasi OpenStreetMap belum dimuat server (diambil seminggu sekali).</p>';
+  }
+  const sites = data.evacuation.length
+    ? `<ul class="nearby-list">${data.evacuation.map(facilityRow).join('')}</ul>`
+    : `<p class="empty-note">Belum ada tempat evakuasi atau titik kumpul yang terpetakan di OpenStreetMap dalam ${data.radius_km.evakuasi} km. Tanyakan lokasi resminya ke BPBD atau kantor desa/kelurahan.</p>`;
+  const facilities = data.facilities.length
+    ? `<h3 class="detail-subhead">Fasilitas penting</h3><ul class="nearby-list">${data.facilities.map(facilityRow).join('')}</ul>`
+    : '';
+  return `${sites}${facilities}
+    <p class="section-note">Data OpenStreetMap (ODbL), belum lengkap di banyak daerah. Tombol rute mencari jalan yang paling sedikit melewati zona bahaya banjir dan longsor tinggi.</p>`;
+}
+
+const minutes = (seconds) => `${formatNumber(Math.max(1, Math.round(seconds / 60)))}<small> menit</small>`;
+
+// Ruas sependek apa pun tetap ditulis minimal 10 m, bukan "0 m".
+const exposedLength = (meters) => formatDistance(Math.max(10, meters));
+
+function exposureText({ tinggi_m: total, banjir, longsor }) {
+  if (!total) return 'Tidak melewati zona bahaya tinggi';
+  const parts = [
+    banjir.tinggi_m && `${exposedLength(banjir.tinggi_m)} zona banjir tinggi`,
+    longsor.tinggi_m && `${exposedLength(longsor.tinggi_m)} zona longsor tinggi`,
+  ].filter(Boolean);
+  return `Melewati ±${parts.join(' dan ±')}`;
+}
+
+function routeRow(label, swatch, route) {
+  return `
+    <li class="route-row">
+      <span class="route-swatch route-swatch--${swatch}" aria-hidden="true"></span>
+      <span class="nearby-text"><span class="nearby-title">${label}</span><span class="nearby-meta">${exposureText(route.exposure)}</span></span>
+      <span class="route-figures"><span class="route-distance">${km(route.distance_m / 1000)}</span><span class="route-time">${minutes(route.duration_s)}</span></span>
+    </li>`;
+}
+
+const zoneText = (hazards) => `zona ${hazards.join(' dan ')} tinggi`;
+
+function routeNote(data, safest) {
+  // Asal atau tujuan di zona tinggi: ruas merah di ujung rute tidak bisa dihindari.
+  const { from = [], to = [] } = data.zona_tinggi ?? {};
+  const ends = [
+    to.length && `Tempat tujuan ini berada di ${zoneText(to)}; bila ada, pilih tempat evakuasi lain di luar zona.`,
+    from.length && `Titik asal berada di ${zoneText(from)}; ruas merah di awal rute adalah jalan keluar dari zona itu.`,
+  ].filter(Boolean);
+  if (ends.length) {
+    return `${ends.join(' ')}${safest.exposure.tinggi_m ? ' Lewati ruas merah dengan hati-hati dan jangan berhenti di sana.' : ''}`;
+  }
+  if (!safest.exposure.tinggi_m) {
+    return data.safest === data.fastest
+      ? 'Rute tercepat tidak melewati zona bahaya banjir dan longsor tinggi.'
+      : 'Rute ini menghindari zona bahaya tinggi yang dilewati rute tercepat.';
+  }
+  if (data.avoidance === 'dicoba' && safest.source !== 'menghindari_zona') {
+    return 'Rute yang menghindari zona bahaya ternyata jauh lebih lama atau tetap melewati zona lain, jadi tidak disarankan.';
+  }
+  return 'Semua rute yang ada melewati zona bahaya tinggi; yang ini paling sedikit. Lewati ruas merah dengan hati-hati dan jangan berhenti di sana.';
+}
+
+const routeHead = (name, mode) => `
+  <p class="route-target">${icons.route}<span>Rute aman ke <strong>${escapeHtml(name)}</strong></span></p>
+  <div class="choice-chips route-modes" role="radiogroup" aria-label="Moda perjalanan">
+    ${ROUTE_MODES.map((m) => `<label class="choice"><input type="radio" name="route-mode" value="${m.id}" ${m.id === mode ? 'checked' : ''} /><span>${m.label}</span></label>`).join('')}
+  </div>`;
+
+export function routeHtml(data, { name, mode, tracking = false }) {
+  const safest = data.routes[data.safest];
+  const fastest = data.routes[data.fastest];
+  return `
+    ${routeHead(name, mode)}
+    <ul class="route-list">
+      ${routeRow('Disarankan', 'safe', safest)}
+      ${data.safest === data.fastest ? '' : routeRow('Tercepat', 'fast', fastest)}
+      ${safest.exposure.tinggi_m ? '<li class="route-row route-row--key"><span class="route-swatch route-swatch--hazard" aria-hidden="true"></span><span class="nearby-meta">Ruas merah: melewati zona bahaya tinggi</span></li>' : ''}
+    </ul>
+    <p class="section-note">${routeNote(data, safest)} Zona bahaya dari raster InaRISK ±550 m (perkiraan); jalan dari OpenStreetMap lewat ${escapeHtml(data.engine)}. Saat bencana, ikuti arahan petugas.</p>
+    <div class="button-row">
+      <button type="button" class="btn ${tracking ? 'btn-secondary' : 'btn-primary'}" data-action="track" aria-pressed="${tracking}">${icons.navigate}${tracking ? 'Berhenti pantau' : 'Pantau posisi'}</button>
+      <button type="button" class="btn btn-secondary" data-action="clear-route">Hapus rute</button>
+    </div>`;
 }
 
 // ---------- Tanah longsor dan hujan ----------
@@ -376,9 +510,11 @@ function profileHtml(profile, { label, lat = profile.location.lat, lon = profile
   return `
     ${header({ title: label ?? 'Titik pilihan', place, coords: `${coordinateText(lat, lon)}${elevation}` })}
     <div class="detail-body view-scroll">
+      ${capBanners(profile.cap_alerts)}
       ${outlook(profile.indications, profile.rain.error, location.status)}
       ${indicationList(profile.indications, profile.rules_version)}
       ${section('Bahaya di titik ini', 'InaRISK BNPB', `${hazardSummary(profile.hazards)}<ul class="hazard-list">${profile.hazards.map((h, i) => hazardRow(h, i)).join('')}</ul>`)}
+      ${section('Evakuasi dan fasilitas terdekat', 'OpenStreetMap', '<div class="route-summary" data-route hidden aria-live="polite"></div><div data-evacuation aria-live="polite"><p class="empty-note">Memuat titik evakuasi terdekat…</p></div>')}
       ${section('Prakiraan hujan', 'Open-Meteo', rainDays(profile.rain))}
       ${section('Prakiraan debit sungai', 'GloFAS · Copernicus', '<div data-river aria-live="polite"><p class="empty-note">Memuat prakiraan debit sungai…</p></div>')}
       ${landslideSection(profile.landslide, wilayah)}
@@ -386,8 +522,8 @@ function profileHtml(profile, { label, lat = profile.location.lat, lon = profile
       ${section('Saran kesiapsiagaan', '', `<ul class="tip-list">${profile.recommendations.map((t) => `<li>${icons.check}<span>${escapeHtml(t)}</span></li>`).join('')}</ul>`)}
       <footer class="detail-footer">
         Indikasi sistem, bukan peringatan resmi — ikuti BMKG, PVMBG, dan BPBD setempat.
-        Sumber: InaRISK BNPB, PVMBG (prakiraan gerakan tanah, ZKGT, MAGMA), BMKG (gempa, CEWS), Open-Meteo (CC BY 4.0, ECMWF),
-        GloFAS Copernicus (debit sungai), PuSGeN 2024. Aturan ${escapeHtml(profile.rules_version)}.
+        Sumber: InaRISK BNPB, PVMBG (prakiraan gerakan tanah, ZKGT, MAGMA), BMKG (gempa, CEWS, peringatan dini cuaca), Open-Meteo (CC BY 4.0, ECMWF),
+        GloFAS Copernicus (debit sungai), PuSGeN 2024, OpenStreetMap (titik evakuasi dan jalan, ODbL). Aturan ${escapeHtml(profile.rules_version)}.
       </footer>
     </div>`;
 }
@@ -415,13 +551,30 @@ function stateCard(message, { retry = false } = {}) {
 
 // Detail cek risiko menggantikan isi panel samping (seperti detail tempat di
 // Google Maps), jadi peta di kanan tidak tertutup.
-export function createRiskDetail(element, { sidebar, onClose, onFit, onRetry }) {
+export function createRiskDetail(element, { sidebar, onClose, onFit, onRetry, onRoute, onRouteMode, onClearRoute, onTrack }) {
   element.addEventListener('click', (event) => {
-    const action = event.target.closest('[data-action]')?.dataset.action;
+    const button = event.target.closest('[data-action]');
+    const action = button?.dataset.action;
     if (action === 'close') onClose();
     else if (action === 'fit') onFit();
     else if (action === 'retry') onRetry();
+    else if (action === 'route') onRoute(button.dataset.facility);
+    else if (action === 'clear-route') onClearRoute();
+    else if (action === 'track') onTrack();
   });
+  element.addEventListener('change', (event) => {
+    if (event.target.name === 'route-mode') onRouteMode(event.target.value);
+  });
+
+  const routeBox = () => element.querySelector('[data-route]');
+  // Ringkasan rute muncul di atas daftar titik evakuasi dan digulir supaya terlihat.
+  function showRoute(html) {
+    const box = routeBox();
+    if (!box) return;
+    box.hidden = false;
+    box.innerHTML = html;
+    box.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  }
 
   function open(html) {
     const opening = element.hidden;
@@ -455,6 +608,24 @@ export function createRiskDetail(element, { sidebar, onClose, onFit, onRetry }) 
     riverError(message) {
       const target = element.querySelector('[data-river]');
       if (target) target.innerHTML = `<p class="empty-note">Prakiraan debit sungai gagal dimuat: ${escapeHtml(message)}</p>`;
+    },
+    renderEvacuation(data) {
+      const target = element.querySelector('[data-evacuation]');
+      if (target) target.innerHTML = evacuationHtml(data);
+    },
+    evacuationError(message) {
+      const target = element.querySelector('[data-evacuation]');
+      if (target) target.innerHTML = `<p class="empty-note">Titik evakuasi gagal dimuat: ${escapeHtml(message)}</p>`;
+    },
+    routeLoading: (name, mode) => showRoute(`${routeHead(name, mode)}<p class="empty-note">Mencari rute dan menilai zona bahaya di sepanjang jalan…</p>`),
+    renderRoute: (data, options) => showRoute(routeHtml(data, options)),
+    routeError: (message, name, mode) => showRoute(`${routeHead(name, mode)}<p class="empty-note">Rute gagal dimuat: ${escapeHtml(message)}</p>`),
+    clearRoute() {
+      const box = routeBox();
+      if (box) {
+        box.hidden = true;
+        box.innerHTML = '';
+      }
     },
     showError: (message) => open(header({ title: 'Cek risiko gagal' }) + stateCard(message, { retry: true })),
     showMessage: (message) => open(header({ title: 'Cek risiko lokasi' }) + stateCard(message)),

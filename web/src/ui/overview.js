@@ -1,10 +1,12 @@
+import { capUntil } from '../layers/cap.js';
 import { capitalize, escapeHtml, formatDay, formatDecimal, outlookPeriod, shortQuakeRegion, timeAgo } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
 import { animateNumber } from '../lib/motion.js';
-import { CEWS_LEVELS, depthClass, pillStyle, VOLCANO_LEVELS, WARNING_LEVEL_STYLES } from '../lib/symbology.js';
+import { capSeverity, CEWS_LEVELS, depthClass, pillStyle, VOLCANO_LEVELS, WARNING_LEVEL_STYLES } from '../lib/symbology.js';
 
 const HOUR_MS = 3_600_000;
 const QUAKE_LIST_SIZE = 6;
+const CAP_LIST_SIZE = 5;
 const RAIN_LIST_SIZE = 5;
 const OUTLOOK_LIST_SIZE = 5;
 const COUNT_KEYS = ['normal', 'waspada', 'siaga', 'awas'];
@@ -38,6 +40,26 @@ function volcanoRow(v, index) {
           <span class="list-row__meta">${escapeHtml(v.provinsi ?? '')}</span>
         </span>
         <span class="level-pill" style="${pillStyle(level)}">${level.short}</span>
+      </button>
+    </li>`;
+}
+
+// Peringatan dini cuaca BMKG yang sedang berlaku: provinsi, jenis, batas waktu,
+// dan kab/kota yang terkena (nama pendek).
+const shortRegion = (nama) => nama.replace(/^Kabupaten /, 'Kab. ');
+
+function capRow(p, index) {
+  const style = capSeverity(p.severity);
+  const regions = p.wilayah.map((w) => shortRegion(w.nama));
+  const where = regions.length > 2 ? `${regions.slice(0, 2).join(', ')} +${regions.length - 2}` : regions.join(', ');
+  return `
+    <li style="--i:${index}">
+      <button type="button" class="list-row" data-cap="${escapeHtml(p.identifier)}">
+        <span class="row-icon"><span class="cap-swatch" style="--c:${style.color}"></span></span>
+        <span class="list-row__text">
+          <span class="list-row__title">${escapeHtml(p.area_desc ?? 'Peringatan cuaca')}</span>
+          <span class="list-row__meta">${escapeHtml(capitalize(p.event.toLowerCase()))} · ${escapeHtml(capUntil(p))}${where ? ` · ${escapeHtml(where)}` : ''}</span>
+        </span>
       </button>
     </li>`;
 }
@@ -95,17 +117,24 @@ export function createOverview({
   stats,
   quakeList,
   volcanoList,
+  capList,
+  capMeta,
   rainList,
   rainMeta,
   outlook,
   onSelectQuake,
   onSelectVolcano,
+  onSelectCapAlert,
   onSelectRainWarning,
   onSelectOutlook,
 }) {
   quakeList.addEventListener('click', (event) => {
     const button = event.target.closest('[data-quake]');
     if (button) onSelectQuake(button.dataset.quake);
+  });
+  capList.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-cap]');
+    if (button) onSelectCapAlert(button.dataset.cap);
   });
   volcanoList.addEventListener('click', (event) => {
     const button = event.target.closest('[data-volcano]');
@@ -172,6 +201,20 @@ export function createOverview({
           (waspada ? `<li class="list-note" style="--i:${high.length}">${waspada} gunung api lain berstatus Waspada (Level II).</li>` : ''),
         `${high.map((v) => `${v.kode}:${v.level}`).join('|')}#${waspada}`,
       );
+    },
+
+    // Peringatan dini cuaca BMKG yang sedang berlaku (±2 jam), terbaru dulu.
+    renderCapAlerts(collection) {
+      const alerts = collection.features.map((f) => f.properties).sort((a, b) => b.sent.localeCompare(a.sent));
+      capMeta.textContent = alerts.length ? `BMKG · ${alerts.length} berlaku` : 'BMKG';
+      const shown = alerts.slice(0, CAP_LIST_SIZE);
+      let html = shown.length
+        ? shown.map(capRow).join('')
+        : '<li class="empty-note">Tidak ada peringatan dini cuaca BMKG yang sedang berlaku.</li>';
+      if (alerts.length > shown.length) {
+        html += `<li class="list-note" style="--i:${shown.length}">${alerts.length - shown.length} peringatan lain juga berlaku. Lihat semuanya di peta.</li>`;
+      }
+      renderList(capList, html, alerts.map((a) => a.identifier).join('|'));
     },
 
     // Peringatan dini curah hujan tinggi BMKG (CEWS) untuk dasarian berjalan:

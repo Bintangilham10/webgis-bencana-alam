@@ -170,15 +170,17 @@ export function createVolcanoLayer(map, { viewPadding } = {}) {
       applyFilter();
     },
     counts: () => ({ shown: group.getLayers().length, total: entries.size, loaded }),
+    // false bila kode gunung api tidak dikenal.
     focus(kode) {
       const entry = entries.get(kode);
-      if (!entry) return;
+      if (!entry) return false;
       if (!map.hasLayer(group)) group.addTo(map);
       if (!group.hasLayer(entry.marker)) {
         revealed = kode;
         applyFilter();
       }
       entry.open();
+      return true;
     },
   };
 }

@@ -1286,3 +1286,159 @@
   color: var(--ink-2);
 }
 
+
+/* ---------- Titik evakuasi dan fasilitas di sekitar titik cek risiko ---------- */
+.facility-marker {
+  display: grid;
+  place-items: center;
+  transition: opacity 0.2s ease;
+}
+
+.facility-marker .facility-pin {
+  animation: pop-in 0.4s var(--ease-spring) both;
+}
+
+.facility-marker.is-dimmed {
+  opacity: 0.45;
+}
+
+/* Isi lengkap peringatan BMKG (daftar kecamatan) dilipat di popup CAP. */
+.popup-details {
+  margin: 8px 0;
+  font-size: 12px;
+  color: var(--ink-2);
+}
+
+.popup-details summary {
+  font-weight: 700;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.popup-details p {
+  max-height: 160px;
+  margin-top: 6px;
+  overflow-y: auto;
+  white-space: pre-line;
+}
+
+/* ---------- Pantau posisi ---------- */
+.track-marker {
+  position: relative;
+}
+
+.track-marker__dot {
+  position: absolute;
+  inset: 2px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: var(--primary-fill);
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 0.25), var(--shadow-1);
+}
+
+/* Segitiga arah gerak, berputar di pusat titik (11 px dari tepi atas ikon). */
+.track-marker__heading {
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-right: 7px solid transparent;
+  border-bottom: 12px solid var(--primary-fill);
+  border-left: 7px solid transparent;
+  opacity: 0;
+  transform: translateX(-50%) rotate(var(--heading, 0deg));
+  transform-origin: 50% 20px;
+}
+
+.track-marker.has-heading .track-marker__heading {
+  opacity: 0.9;
+}
+
+/* Status pantau posisi dan kemajuan rute, di tengah atas peta. */
+.track-chip {
+  position: fixed;
+  z-index: 50;
+  top: calc(var(--gap) + var(--topbar-h) + 14px);
+  left: 50%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: min(520px, calc(100vw - 2 * var(--gap)));
+  padding: 6px 6px 6px 8px;
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  background: var(--glass-strong);
+  box-shadow: var(--shadow-2);
+  translate: -50% 0;
+}
+
+.track-chip:not([hidden]) {
+  animation: drop-in 0.3s var(--ease-out) both;
+}
+
+.track-chip__icon {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--primary-fill);
+}
+
+.track-chip[data-tone='ok'] .track-chip__icon {
+  background: var(--ok);
+}
+
+.track-chip[data-tone='warn'] .track-chip__icon {
+  color: #111c2a;
+  background: #f9a825;
+}
+
+.track-chip[data-tone='danger'] .track-chip__icon {
+  background: #c62828;
+}
+
+.track-chip__icon .icon {
+  width: 15px;
+  height: 15px;
+}
+
+.track-chip__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding-right: 4px;
+  font-size: 12px;
+  line-height: 1.35;
+  color: var(--ink-2);
+}
+
+.track-chip__text strong {
+  font-size: 13.5px;
+  color: var(--ink);
+}
+
+.track-chip .btn {
+  min-height: 32px;
+  padding: 4px 12px;
+  font-size: 12.5px;
+}
+
+.track-chip .icon-btn {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 767.98px) {
+  /* Kolom tombol peta di kanan (kompas di paling atas) tetap terlihat. */
+  .track-chip {
+    right: calc(var(--gap) + 54px);
+    left: var(--gap);
+    max-width: none;
+    border-radius: var(--radius);
+    translate: none;
+  }
+}

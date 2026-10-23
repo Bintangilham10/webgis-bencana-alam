@@ -61,6 +61,30 @@ export const GROUND_FAILURE_RAMP = [
   { label: '> 20%', color: '#4c4c82' },
 ];
 
+// Peringatan dini cuaca BMKG (CAP) menurut severity, dengan warna level peringatan.
+// Arsip Sep–Okt 2026 hanya berisi Moderate; tingkat lain tetap disiapkan.
+export const CAP_SEVERITY = {
+  Minor: { ...WARNING_LEVEL_STYLES[1], label: 'Ringan', level: 1 },
+  Moderate: { ...WARNING_LEVEL_STYLES[1], label: 'Sedang', level: 1 },
+  Severe: { ...WARNING_LEVEL_STYLES[2], label: 'Berat', level: 2 },
+  Extreme: { ...WARNING_LEVEL_STYLES[3], label: 'Ekstrem', level: 3 },
+};
+export const capSeverity = (severity) => CAP_SEVERITY[severity] ?? CAP_SEVERITY.Moderate;
+
+// Titik evakuasi dan fasilitas penting dari OpenStreetMap: label, ikon, warna penanda.
+export const FACILITY_KINDS = {
+  evakuasi: { label: 'Tempat evakuasi', icon: 'shelter', color: '#2e7d32' },
+  titik_kumpul: { label: 'Titik kumpul', icon: 'flag', color: '#2e7d32' },
+  rumah_sakit: { label: 'Rumah sakit', icon: 'hospital', color: '#c62828' },
+  klinik: { label: 'Puskesmas/klinik', icon: 'hospital', color: '#c62828' },
+  polisi: { label: 'Kantor polisi', icon: 'police', color: '#455a64' },
+  pemadam: { label: 'Pemadam kebakaran', icon: 'fire', color: '#ef6c00' },
+};
+
+// Rute aman: rute yang disarankan memakai warna pilihan antarmuka, rute tercepat
+// abu-abu putus-putus, dan ruas yang melewati zona bahaya tinggi merah (kelas tinggi InaRISK).
+export const ROUTE_HAZARD_COLOR = 'rgb(230,0,0)';
+
 // Kab/kota tanpa data hujan pada indikasi SIGAP 3 hari (abu-abu, bukan level).
 export const NO_DATA_STYLE = { label: 'Tanpa data', color: '#98a2b3', text: INK };
 

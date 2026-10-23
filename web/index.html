@@ -454,6 +454,9 @@
     </div>
 
     <main id="map" aria-label="Peta interaktif"></main>
+    <!-- Notifikasi langsung (SSE) dan status pantau posisi, melayang di atas peta. -->
+    <div id="toasts" class="toasts"></div>
+    <div id="track-chip" class="track-chip" role="status" aria-live="polite" hidden></div>
 
     <header class="topbar">
       <a
@@ -487,6 +490,27 @@
           role="status"
           aria-live="polite"
         ></div>
+        <div class="notif">
+          <button
+            id="notif-toggle"
+            class="notif-toggle glass"
+            type="button"
+            aria-label="Notifikasi"
+            title="Notifikasi"
+            aria-expanded="false"
+            aria-controls="notif-panel"
+          >
+            <span data-icon="bell"></span>
+            <span class="notif-badge" hidden></span>
+          </button>
+          <div
+            id="notif-panel"
+            class="notif-panel"
+            role="dialog"
+            aria-label="Notifikasi"
+            hidden
+          ></div>
+        </div>
         <button
           id="theme-toggle"
           class="theme-toggle glass"
@@ -623,6 +647,16 @@
                   tekan lama di peta.
                 </p>
               </div>
+            </div>
+
+            <div class="section">
+              <div class="section-head">
+                <h2 class="section-title">Peringatan dini cuaca</h2>
+                <span class="section-meta" id="cap-meta">BMKG</span>
+              </div>
+              <ul id="cap-alerts" class="row-list" aria-busy="true">
+                <li class="skeleton skeleton--row"></li>
+              </ul>
             </div>
 
             <div class="section">

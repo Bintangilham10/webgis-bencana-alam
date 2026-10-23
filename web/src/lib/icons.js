@@ -7,6 +7,19 @@ export const icons = {
   activity: icon('<path d="M3 12h4l3-8 4 16 3-8h4"/>'),
   alert: icon('<path d="M10.3 4 2.6 17.5a2 2 0 0 0 1.7 3h15.4a2 2 0 0 0 1.7-3L13.7 4a2 2 0 0 0-3.4 0z"/><path d="M12 9.5v4"/><path d="M12 17h.01"/>'),
   arrowLeft: icon('<path d="M19 12H5"/><path d="m11 18-6-6 6-6"/>'),
+  bell: icon('<path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 21a2.2 2.2 0 0 0 4 0"/>'),
+  close: icon('<path d="M6 6l12 12"/><path d="M18 6 6 18"/>'),
+  // Bendera titik kumpul evakuasi.
+  flag: icon('<path d="M6 21.5V3.5"/><path d="M6 4h11.5l-2.5 4 2.5 4H6"/>'),
+  fire: icon('<path d="M12 21.5c-3.6 0-6.3-2.5-6.3-5.9 0-3.5 2.6-5.4 3.7-8.6 1.4 1.3 2 2.8 2 4.4 1.6-.9 2.5-2.8 2.5-5.4 2.8 2 4.4 5.6 4.4 9.6 0 3.4-2.7 5.9-6.3 5.9z"/>'),
+  hospital: icon('<rect x="3.5" y="3.5" width="17" height="17" rx="3.5"/><path d="M12 8v8M8 12h8"/>'),
+  // Panah navigasi (pantau posisi).
+  navigate: icon('<path d="M12 2.5 19.5 21 12 16.8 4.5 21z"/>'),
+  police: icon('<path d="M12 2.8 4.5 6v5.2c0 4.6 3.1 8.2 7.5 10 4.4-1.8 7.5-5.4 7.5-10V6z"/><path d="m9 12 2 2 4-4"/>'),
+  // Dua titik dihubungkan jalan berkelok (rute).
+  route: icon('<circle cx="6" cy="19" r="2.2"/><circle cx="18" cy="5" r="2.2"/><path d="M8.2 19h7.3a3.5 3.5 0 0 0 0-7h-7a3.5 3.5 0 0 1 0-7h6.3"/>'),
+  // Rumah dengan panah naik (tempat evakuasi).
+  shelter: icon('<path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.8V20h13V9.8"/><path d="M12 17.5v-6"/><path d="m9.5 14 2.5-2.5 2.5 2.5"/>'),
   building: icon('<path d="M5 21V4.5L12 2l7 2.5V21"/><path d="M3 21h18"/><path d="M9 8h.01M15 8h.01M9 12h.01M15 12h.01M9 16h.01M15 16h.01"/>'),
   check: icon('<path d="m5 12.5 4.5 4.5L19 7.5"/>'),
   chevronDown: icon('<path d="m6 9 6 6 6-6"/>'),

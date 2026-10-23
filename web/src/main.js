@@ -11,7 +11,17 @@ import "./styles/detail.css";
 import "./styles/landing.css";
 
 import L from "leaflet";
+import {
+  createEvacuation,
+  createEvacuationSitesLayer,
+  evacuationSitesLegend,
+  facilityName,
+} from "./features/evacuation.js";
+import { createNotifications } from "./features/notifications.js";
 import { createRiskCheck } from "./features/risk-check.js";
+import { createSafeRoute } from "./features/safe-route.js";
+import { createTracking } from "./features/tracking.js";
+import { capLegend, createCapLayer } from "./layers/cap.js";
 import {
   createEarthquakeLayer,
   earthquakeLegend,
@@ -87,6 +97,9 @@ const px = (name) => parseFloat(cssVar(name)) || 0;
 
 const EARTHQUAKE_REFRESH_MS = 60_000;
 const VOLCANO_REFRESH_MS = 10 * 60_000;
+// Peringatan dini cuaca BMKG disinkronkan server tiap 5 menit; notifikasi SSE
+// memicu pemuatan lebih awal saat ada peringatan baru.
+const CAP_REFRESH_MS = 5 * 60_000;
 // Produk CEWS dasarian di-cache server 3 jam; daftar di Ikhtisar cukup dicek tiap 30 menit.
 const RAIN_WARNING_REFRESH_MS = 30 * 60_000;
 // Indikasi SIGAP dihitung server tiap 12 jam; hasil run baru terlihat paling lambat 10 menit kemudian.
@@ -163,7 +176,7 @@ new ReadoutControl().addTo(map);
 // aplikasi di belakangnya dalam tampilan biasa.
 const landing = createLanding({
   element: $("#landing"),
-  app: [$(".topbar"), $("#sidebar"), $("#map")],
+  app: [$(".topbar"), $("#sidebar"), $("#map"), $("#toasts"), $("#track-chip")],
   // Di HP fokus ke pegangan lembar bawah: fokus di dalam lembar akan
   // membukanya dan menutupi peta.
   focusAfter: () => (sidebar.isMobile() ? $("#sheet-handle") : $("#sidebar")),
@@ -183,12 +196,21 @@ const riskDetail = createRiskDetail($("#detail-view"), {
   onClose: () => risk.clear(),
   onFit: () => risk.fitToResult(),
   onRetry: () => risk.retry(),
+  // Rute aman ke titik evakuasi/fasilitas di daftar kartu cek risiko.
+  onRoute: (id) => {
+    const facility = evacuation.get(id);
+    if (facility) requestRoute(facility);
+  },
+  onRouteMode: (mode) => route && requestRoute(route.facility, mode),
+  onClearRoute: clearRoute,
+  onTrack: toggleTracking,
 });
 const toolbar = new MapToolbar({
   basemaps,
   onHome: () => flyToBounds(map, INDONESIA_BOUNDS, viewPadding()),
   onLocate: locateUser,
   onPick: togglePicking,
+  onTrack: toggleTracking,
 }).addTo(map);
 const ctaPick = $('[data-action="pick"]');
 const risk = createRiskCheck({
@@ -199,7 +221,94 @@ const risk = createRiskCheck({
     toolbar.setPicking(active);
     ctaPick.setAttribute("aria-pressed", String(active));
   },
+  // Setelah profil tampil: titik evakuasi terdekat, wilayah notifikasi bila titik
+  // ini lokasi pengguna, dan rute yang menunggu titik asal.
+  onResult({ profile, latlng, label, signal }) {
+    evacuation.load(latlng, signal).then(() => {
+      if (!pendingRoute) return;
+      const facility = pendingRoute;
+      pendingRoute = null;
+      requestRoute(facility);
+    });
+    if (label === "Lokasi Anda" || label === "Posisi Anda") {
+      const wilayah = profile.location.wilayah;
+      notifications.setArea({ lat: latlng.lat, lon: latlng.lng, kode: wilayah?.kode ?? null, nama: wilayah?.nama ?? label, provinsi: wilayah?.provinsi ?? null });
+    }
+  },
+  onClear() {
+    evacuation.clear();
+    clearRoute();
+  },
 });
+
+// ---------- Titik evakuasi, rute aman, dan pantau posisi ----------
+const evacuation = createEvacuation({ map, card: riskDetail, onRoute: routeTo });
+const safeRoute = createSafeRoute({ map, viewPadding });
+const tracking = createTracking({
+  map,
+  chip: $("#track-chip"),
+  viewPadding: markerPadding,
+  progress: (latlng) => safeRoute.progress(latlng),
+  onPosition({ latlng, first }) {
+    // Posisi pertama menjadi wilayah notifikasi. Kab/kotanya belum diketahui,
+    // jadi peringatan cuaca dicocokkan dengan jarak (lihat features/notifications.js).
+    if (first) notifications.setArea({ lat: latlng.lat, lon: latlng.lng, kode: null, nama: "Posisi yang dipantau", provinsi: null });
+  },
+  onStop() {
+    toolbar.setTracking(false);
+    if (route?.data) riskDetail.renderRoute(route.data, { name: facilityName(route.facility), mode: route.mode, tracking: false });
+  },
+});
+
+let route = null; // { facility, mode, data }
+let pendingRoute = null;
+
+// Dari popup penanda (juga lapisan titik evakuasi nasional): bila kartu cek risiko
+// belum terbuka, titik asal ditentukan dulu (posisi dipantau atau "Lokasi saya").
+function routeTo(facility) {
+  if (sidebar.isDetailOpen() && risk.point) {
+    requestRoute(facility);
+    return;
+  }
+  pendingRoute = facility;
+  if (tracking.position) risk.check(tracking.position, { label: "Posisi Anda" });
+  else locateUser();
+}
+
+async function requestRoute(facility, mode = route?.mode ?? "jalan_kaki") {
+  const origin = tracking.position ?? risk.point;
+  if (!origin) return;
+  const name = facilityName(facility);
+  route = { facility, mode, data: null };
+  riskDetail.routeLoading(name, mode);
+  evacuation.highlight(facility.id);
+  try {
+    const data = await safeRoute.request({
+      from: { lat: origin.lat, lon: origin.lng },
+      to: { lat: facility.lat, lon: facility.lon },
+      mode,
+    });
+    route.data = data;
+    riskDetail.renderRoute(data, { name, mode, tracking: tracking.active });
+    tracking.refresh();
+  } catch (err) {
+    if (err.name !== "AbortError") riskDetail.routeError(err.message, name, mode);
+  }
+}
+
+function clearRoute() {
+  route = null;
+  safeRoute.clear();
+  riskDetail.clearRoute();
+  evacuation.highlight(null);
+  tracking.refresh();
+}
+
+function toggleTracking() {
+  const active = tracking.toggle();
+  toolbar.setTracking(active);
+  if (route?.data) riskDetail.renderRoute(route.data, { name: facilityName(route.facility), mode: route.mode, tracking: active });
+}
 
 // Di HP lembar bawah dikecilkan dulu supaya peta terlihat saat memilih titik.
 function togglePicking() {
@@ -322,6 +431,15 @@ const gdacsAlerts = createGdacsLayer(map, {
   onLoad: (collection) => freshness.ok("Peringatan GDACS", collection.meta.fetched_at),
   onError: reportLoadError("Peringatan GDACS"),
 });
+// Peringatan dini cuaca BMKG (CAP): datanya dimuat refreshCap() untuk peta dan Ikhtisar.
+const cap = createCapLayer(map, { viewPadding: markerPadding });
+// Semua titik evakuasi OSM se-Indonesia, mati bawaan; titik terdekat dari cek
+// risiko digambar terpisah (features/evacuation.js).
+const evacuationSites = createEvacuationSitesLayer({
+  onLoad: (collection) => freshness.ok("Titik evakuasi", collection.meta.synced_at),
+  onError: reportLoadError("Titik evakuasi"),
+  onRoute: routeTo,
+});
 // Seperti IMERG, waktu citra yang gagal dibaca tidak fatal.
 const clouds = createCloudLayer({
   onError: (err) => console.warn("Waktu citra Himawari-9 tidak terbaca", err),
@@ -350,6 +468,8 @@ const outlook = createOutlookLayer({
 });
 
 const symbol = {
+  cap: `<span class="sym cap-swatch" style="--c:${CEWS_LEVELS[1].color}"></span>`,
+  evacuation: '<span class="sym facility-dot" style="--c:#2e7d32"></span>',
   quake: `<span class="sym quake-swatch" style="--c:${DEPTH_CLASSES[0].color}"></span>`,
   usgs: `<span class="sym usgs-swatch" style="--c:${DEPTH_CLASSES[0].color}"></span>`,
   emsc: `<span class="sym emsc-swatch" style="--c:${DEPTH_CLASSES[0].color}"></span>`,
@@ -440,6 +560,15 @@ createLayerPanel({
       note: "BMKG · NASA · JMA · PVMBG",
       items: [
         {
+          label: "Peringatan dini cuaca BMKG",
+          description: "Kecamatan yang diperingatkan · berlaku ±2 jam · tiap 5 menit",
+          legendTitle: "Peringatan dini cuaca (BMKG)",
+          symbol: symbol.cap,
+          layer: cap.layer,
+          legend: capLegend,
+          on: true,
+        },
+        {
           label: "Peringatan hujan tinggi BMKG",
           description: "Per dasarian · kab/kota Waspada ke atas",
           legendTitle: "Peringatan hujan tinggi (BMKG)",
@@ -497,6 +626,21 @@ createLayerPanel({
       ],
     },
     {
+      id: "evakuasi",
+      title: "Evakuasi",
+      note: "OpenStreetMap",
+      items: [
+        {
+          label: "Titik evakuasi",
+          description: "Tempat evakuasi dan titik kumpul yang terpetakan · ±1.600 titik",
+          legendTitle: "Titik evakuasi (OpenStreetMap)",
+          symbol: symbol.evacuation,
+          layer: evacuationSites,
+          legend: evacuationSitesLegend,
+        },
+      ],
+    },
+    {
       id: "geologi",
       title: "Geologi & wilayah",
       items: [
@@ -548,6 +692,8 @@ const overview = createOverview({
   },
   quakeList: $("#quake-list"),
   volcanoList: $("#volcano-alerts"),
+  capList: $("#cap-alerts"),
+  capMeta: $("#cap-meta"),
   rainList: $("#rain-warnings"),
   rainMeta: $("#rain-warning-meta"),
   outlook: {
@@ -565,6 +711,10 @@ const overview = createOverview({
   },
   // Kab/kota dari daftar peringatan hujan: layer CEWS dinyalakan, peta terbang
   // ke wilayahnya, lalu rincian peringatannya dibuka.
+  onSelectCapAlert(identifier) {
+    sidebar.collapse();
+    cap.focus(identifier);
+  },
   onSelectRainWarning(kode) {
     const region = rainSummary?.regions.find((r) => r.kode === kode);
     if (!region) return;
@@ -664,6 +814,49 @@ async function refreshVolcanoes() {
   }
 }
 
+async function refreshCap() {
+  try {
+    const collection = await getJson("/api/cap");
+    cap.setData(collection);
+    overview.renderCapAlerts(collection);
+    freshness.ok("Peringatan cuaca", collection.meta.synced_at);
+  } catch (err) {
+    overview.showError(
+      $("#cap-alerts"),
+      "Peringatan dini cuaca BMKG gagal dimuat. Dicoba lagi otomatis.",
+    );
+    freshness.fail("Peringatan cuaca", err);
+  }
+}
+
+// ---------- Notifikasi langsung (SSE) ----------
+const notifications = createNotifications({
+  button: $("#notif-toggle"),
+  panel: $("#notif-panel"),
+  toasts: $("#toasts"),
+  // "Lihat": penanda/poligon kejadiannya dibuka; bila tidak ada (mis. simulasi),
+  // peta menuju koordinatnya.
+  onShow(n) {
+    if (!n) return;
+    sidebar.collapse();
+    if (!n.simulated) {
+      if (n.kind === "gempa" && earthquakes.focus(n.ref)) return;
+      if (n.kind === "gunung_api" && volcanoes.focus(n.ref.split(":")[0])) return;
+      if (n.kind === "cuaca" && cap.focus(n.ref)) return;
+    }
+    if (Number.isFinite(n.lat)) {
+      const radius = n.kind === "cuaca" ? 40_000 : 25_000;
+      flyToBounds(map, L.latLng(n.lat, n.lon).toBounds(radius), { maxZoom: 11, ...markerPadding() });
+    }
+  },
+  // Data kejadiannya dimuat ulang saat notifikasi masuk, tanpa menunggu jadwal.
+  onLive(n) {
+    if (n.kind === "gempa") refreshEarthquakes();
+    else if (n.kind === "gunung_api") refreshVolcanoes();
+    else if (n.kind === "cuaca") refreshCap();
+  },
+});
+
 // Layar pembuka hilang setelah data gempa dan gunung api pertama selesai dimuat;
 // halaman depan memulai intronya saat layar pembuka memudar.
 hideSplashWhen(
@@ -672,6 +865,8 @@ hideSplashWhen(
 ).then(() => landing.play());
 setInterval(refreshEarthquakes, EARTHQUAKE_REFRESH_MS);
 setInterval(refreshVolcanoes, VOLCANO_REFRESH_MS);
+refreshCap();
+setInterval(refreshCap, CAP_REFRESH_MS);
 refreshRainWarnings();
 setInterval(refreshRainWarnings, RAIN_WARNING_REFRESH_MS);
 refreshOutlook();
