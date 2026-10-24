@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.24.23.19.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-25T06:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-25T06:50:00+07:00</effective>
+    <expires>2026-10-25T08:50:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 25 October 2026, 06:50 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di TOBOALI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 25 October 2026, 08:50 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/10/25/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-2.755,106.646 -2.831,106.619 -2.862,106.602 -2.899,106.593 -2.928,106.591 -2.945,106.594 -2.957,106.601 -2.964,106.612 -2.974,106.567 -2.980,106.556 -3.027,106.558 -3.044,106.561 -3.078,106.581 -3.083,106.566 -3.095,106.551 -3.108,106.554 -3.108,106.547 -3.103,106.546 -3.101,106.540 -3.114,106.514 -3.093,106.492 -3.069,106.499 -3.051,106.492 -3.028,106.472 -3.011,106.442 -2.991,106.439 -2.974,106.428 -2.966,106.406 -2.967,106.386 -2.972,106.385 -2.968,106.374 -2.967,106.336 -2.963,106.330 -2.953,106.331 -2.933,106.321 -2.918,106.298 -2.894,106.330 -2.864,106.358 -2.842,106.391 -2.825,106.403 -2.817,106.416 -2.819,106.436 -2.831,106.451 -2.794,106.481 -2.782,106.482 -2.753,106.476 -2.728,106.485 -2.723,106.491 -2.721,106.502 -2.735,106.535 -2.732,106.540 -2.718,106.547 -2.714,106.562 -2.727,106.575 -2.734,106.600 -2.752,106.620 -2.757,106.643 -2.755,106.646</polygon>
+    </area>
+  </info>
+</alert>
