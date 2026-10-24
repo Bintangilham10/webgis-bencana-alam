@@ -340,6 +340,13 @@ function locateUser() {
     );
     return;
   }
+  // Browser menolak penentuan lokasi di situs http:// (kecuali localhost).
+  if (!window.isSecureContext) {
+    riskDetail.showMessage(
+      "Penentuan lokasi butuh koneksi aman (HTTPS). Buka situs lewat https://, atau cari lokasi secara manual.",
+    );
+    return;
+  }
   riskDetail.showMessage("Mencari lokasi Anda…");
   navigator.geolocation.getCurrentPosition(
     ({ coords }) => {

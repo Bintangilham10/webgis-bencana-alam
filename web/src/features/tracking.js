@@ -2,15 +2,13 @@ import L from 'leaflet';
 import { escapeHtml, formatDistance, formatNumber } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
 import { flyToPoint } from '../lib/motion.js';
+import { inRegion } from '../lib/region.js';
 
 // Pantau posisi (pelacakan kontinu dengan navigator.geolocation.watchPosition).
 // Posisi hanya dipakai di browser: digambar di peta, untuk kemajuan rute aman, dan
 // untuk "sekitar lokasi saya" pada notifikasi. Tidak dikirim ke server kecuali
 // pengguna meminta cek risiko atau rute.
 
-// Kawasan yang dinilai SIGAP (sama dengan server, routes/risk.js).
-const REGION = { south: -12, north: 7, west: 94, east: 142 };
-const inRegion = ({ lat, lng }) => lat >= REGION.south && lat <= REGION.north && lng >= REGION.west && lng <= REGION.east;
 // Di luar rute lebih dari ini dianggap menyimpang (akurasi GPS di kota ±10–30 m).
 const OFF_ROUTE_M = 60;
 const FOLLOW_ZOOM = 16;

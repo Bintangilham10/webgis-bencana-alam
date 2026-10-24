@@ -2,6 +2,7 @@ import L from 'leaflet';
 import { getJson } from '../lib/api.js';
 import { escapeHtml, formatDecimal } from '../lib/format.js';
 import { flyToBounds, tween } from '../lib/motion.js';
+import { inRegion } from '../lib/region.js';
 import { VOLCANO_LEVELS } from '../lib/symbology.js';
 import { cssVar } from '../lib/theme.js';
 
@@ -108,6 +109,12 @@ export function createRiskCheck({ map, card, onPickingChange, viewPadding = () =
     controller = new AbortController();
     onClear?.();
     drawPoint(latlng, accuracyM);
+    // Server hanya menilai kawasan Indonesia; di luarnya tidak ada yang bisa dicoba lagi.
+    if (!inRegion(latlng)) {
+      point?.getElement()?.classList.remove('is-loading');
+      card.showMessage('Titik ini di luar wilayah Indonesia. SIGAP hanya menilai risiko bencana di Indonesia.');
+      return;
+    }
     card.showLoading({ lat: latlng.lat, lon: latlng.lng, label });
     try {
       const url = `/api/risk?lat=${latlng.lat.toFixed(5)}&lon=${latlng.lng.toFixed(5)}`;

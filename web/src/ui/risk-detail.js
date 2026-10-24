@@ -56,13 +56,20 @@ function outlook(indications, rainError, status) {
   if (!indications.length) {
     return banner(null, 'Indikasi belum tersedia', rainError ? 'Prakiraan hujan gagal dimuat, jadi indikasi 3 hari tidak dapat dihitung.' : 'Tidak ada data prakiraan hujan.');
   }
-  const top = Math.max(...indications.map((i) => i.level));
+  // Level null: kelas bahaya InaRISK gagal dimuat padahal hujannya lebat, jadi
+  // indikasinya tidak diketahui. Titik itu tidak boleh disebut Normal.
+  const nameOf = (list) => list.map((i) => INDICATION_NAMES[i.hazard] ?? i.hazard).join(' dan ');
+  const unknown = indications.filter((i) => i.level === null);
+  const unknownNote = unknown.length ? ` Indikasi ${nameOf(unknown)} belum dapat dinilai karena kelas zona bahaya InaRISK gagal dimuat.` : '';
+  const top = Math.max(0, ...indications.map((i) => i.level ?? 0));
   if (top === 0) {
+    if (unknown.length) {
+      return banner(null, `Indikasi ${nameOf(unknown)} belum dapat dinilai`, `${capitalize(unknown[0].reason)}. Coba lagi beberapa menit lagi, dan pantau peringatan BMKG.`);
+    }
     return banner(0, 'Normal untuk 3 hari ke depan', 'Prakiraan hujan tidak memicu indikasi hujan lebat, banjir, atau tanah longsor di titik ini.');
   }
   const worst = indications.filter((i) => i.level === top);
-  const names = worst.map((i) => INDICATION_NAMES[i.hazard] ?? i.hazard).join(' dan ');
-  return banner(top, `${WARNING_LEVEL_STYLES[top].label}: potensi ${names}`, `${capitalize(worst[0].reason)}.`);
+  return banner(top, `${WARNING_LEVEL_STYLES[top].label}: potensi ${nameOf(worst)}`, `${capitalize(worst[0].reason)}.${unknownNote}`);
 }
 
 function banner(level, title, body, { extra = '' } = {}) {
@@ -100,7 +107,7 @@ function indicationList(indications, rulesVersion) {
     <ul class="indication-list">
       ${indications
         .map((i) => {
-          const style = WARNING_LEVEL_STYLES[i.level];
+          const style = i.level === null ? { ...NEUTRAL_PILL, label: 'Tidak diketahui' } : WARNING_LEVEL_STYLES[i.level];
           return `
             <li>
               <span class="level-pill" style="${pillStyle(style)}">${style.label}</span>

@@ -92,10 +92,16 @@
 }
 
 /* ---------- Bilah alat kanan ---------- */
+/* Grup yang tidak muat di atas kontrol pojok kanan bawah (angka skala, skala batang,
+   atribusi) pindah ke kolom baru di sebelah kirinya, jadi di layar pendek (HP kecil,
+   laptop mendatar) bilah alat tidak menimpa kontrol itu atau lembar bawah. Atasnya:
+   bilah atas, kompas 48 px, dan jarak antarkontrol (2 + 12 + 12 px). */
 .map-toolbar {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap-reverse;
   gap: 8px;
+  max-height: calc(100dvh - var(--gap) - var(--topbar-h) - 74px - var(--toolbar-bottom, 124px));
 }
 
 .tool-group {
@@ -877,6 +883,14 @@
   cursor: crosshair;
 }
 
+/* Popup Leaflet menghentikan klik sebelum sampai ke peta, jadi selama memilih titik
+   semua bidang (SVG dan kanvas) dan penanda dibuat tembus klik: klik di atas kab/kota
+   berindikasi, peringatan cuaca, atau penanda tetap memilih titik itu. */
+.leaflet-container.is-picking .leaflet-interactive,
+.leaflet-container.is-picking .leaflet-pane canvas {
+  pointer-events: none;
+}
+
 .map-hint {
   position: absolute;
   z-index: 1000;
@@ -1197,14 +1211,20 @@
     bottom: var(--sheet-peek);
   }
 
+  .map-toolbar {
+    --toolbar-bottom: calc(var(--sheet-peek) + 88px);
+  }
+
   .map-readout .readout-geo,
   .map-readout .readout-proj {
     display: none;
   }
 
+  /* Sebaris dengan skala batang di kanan bawah (lebar maks. 100 px + jarak tepi). */
   .map-legend {
     width: auto;
     min-width: 160px;
+    max-width: calc(100vw - 140px);
   }
 }
 
@@ -1375,6 +1395,11 @@
 
 .track-chip:not([hidden]) {
   animation: drop-in 0.3s var(--ease-out) both;
+}
+
+/* display: flex di atas mengalahkan atribut hidden. */
+.track-chip[hidden] {
+  display: none;
 }
 
 .track-chip__icon {

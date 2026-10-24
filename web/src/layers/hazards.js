@@ -1,7 +1,41 @@
 import { dynamicMapLayer, imageMapLayer } from 'esri-leaflet';
+import L from 'leaflet';
 import { DEBRIS_FLOW, HAZARD_CLASSES, LANDSLIDE_CLASSES } from '../lib/symbology.js';
 
 const INARISK_URL = 'https://gis.bnpb.go.id/server/rest/services/inarisk/';
+
+// esri-leaflet 3.0.19 memuat tiap gambar baru sebagai ImageOverlay transparan dan
+// baru menampilkannya setelah selesai dimuat. Bila gambar itu gagal setelah
+// lapisannya dilepas dari peta (pengguna sudah mengganti peta rawan sementara
+// server lambat), penangan galatnya memanggil this._map.removeLayer dengan _map
+// null. Karena itu gambar yang masih dimuat ikut dilepas, beserta penangannya,
+// saat lapisannya dilepas.
+function releasePendingImages(layer) {
+  const pending = new Set();
+  const render = layer._renderImage;
+  layer._renderImage = function renderImage(...args) {
+    const map = this._map;
+    const track = ({ layer: added }) => {
+      if (!(added instanceof L.ImageOverlay)) return;
+      pending.add(added);
+      added.once('load error', () => pending.delete(added));
+    };
+    map?.on('layeradd', track);
+    try {
+      return render.apply(this, args);
+    } finally {
+      map?.off('layeradd', track);
+    }
+  };
+  layer.on('remove', () => {
+    for (const image of pending) {
+      image.off('load error');
+      image.remove();
+    }
+    pending.clear();
+  });
+  return layer;
+}
 
 // Lima bahaya yang menjadi fokus sistem. "Curah hujan tinggi" diwakili
 // indeks bahaya cuaca ekstrem.
@@ -34,15 +68,17 @@ const RENDERING_RULE = {
 };
 
 export function createHazardLayer(hazard, opacity) {
-  return imageMapLayer({
-    url: `${INARISK_URL}${hazard.service}/ImageServer`,
-    renderingRule: RENDERING_RULE,
-    format: 'png32',
-    f: 'image',
-    pane: 'hazard',
-    opacity,
-    attribution: 'Indeks bahaya &copy; <a href="https://inarisk.bnpb.go.id/">InaRISK BNPB</a>',
-  });
+  return releasePendingImages(
+    imageMapLayer({
+      url: `${INARISK_URL}${hazard.service}/ImageServer`,
+      renderingRule: RENDERING_RULE,
+      format: 'png32',
+      f: 'image',
+      pane: 'hazard',
+      opacity,
+      attribution: 'Indeks bahaya &copy; <a href="https://inarisk.bnpb.go.id/">InaRISK BNPB</a>',
+    }),
+  );
 }
 
 export function hazardLegend() {
@@ -89,16 +125,18 @@ const ZKGT_RENDERER = JSON.stringify([
 ]);
 
 export function createZkgtLayer(opacity) {
-  return dynamicMapLayer({
-    url: ZKGT_URL,
-    dynamicLayers: ZKGT_RENDERER,
-    f: 'image',
-    format: 'png32',
-    transparent: true,
-    pane: 'hazard',
-    opacity,
-    attribution: 'Zona kerentanan gerakan tanah &copy; PVMBG, via <a href="https://gis.bnpb.go.id/">BNPB</a>',
-  });
+  return releasePendingImages(
+    dynamicMapLayer({
+      url: ZKGT_URL,
+      dynamicLayers: ZKGT_RENDERER,
+      f: 'image',
+      format: 'png32',
+      transparent: true,
+      pane: 'hazard',
+      opacity,
+      attribution: 'Zona kerentanan gerakan tanah &copy; PVMBG, via <a href="https://gis.bnpb.go.id/">BNPB</a>',
+    }),
+  );
 }
 
 export function zkgtLegend() {

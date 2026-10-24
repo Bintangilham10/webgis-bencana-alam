@@ -11,6 +11,8 @@ const MENUS = ['filter', 'basemap'];
 // Jarak menu dari tepi bawah layar (di HP: dari lembar bawah) dan dari bilah atas.
 const MENU_EDGE_GAP = 16;
 const MENU_TOP_GAP = 8;
+// Jarak menu dari grup tombolnya (right: calc(100% + 10px) di styles/map.css).
+const MENU_SIDE_GAP = 10;
 const MIN_MENU_HEIGHT = 200;
 const MOBILE_QUERY = '(max-width: 767.98px)';
 const px = (name) => parseFloat(cssVar(name)) || 0;
@@ -180,9 +182,15 @@ export const MapToolbar = L.Control.extend({
 
   // Menu sejajar tombolnya. Bila tidak muat ke bawah (di HP terpotong lembar
   // bawah), menu dinaikkan secukupnya tanpa melewati bilah atas; sisanya digulir.
+  // Di layar pendek bilah alat bisa bertambah kolom ke kiri (styles/map.css), jadi
+  // lebar menu dari kolom kiri dibatasi ruang di kiri grupnya; isinya membungkus.
   _placeMenu(menu) {
     const bottomLimit = window.innerHeight - MENU_EDGE_GAP - (window.matchMedia(MOBILE_QUERY).matches ? px('--sheet-peek') : 0);
     const topLimit = px('--gap') + px('--topbar-h') + MENU_TOP_GAP;
+    // offsetWidth, bukan getBoundingClientRect: menu sedang beranimasi skala.
+    menu.style.maxWidth = '';
+    const room = menu.parentElement.getBoundingClientRect().left - MENU_SIDE_GAP - px('--gap');
+    if (menu.offsetWidth > room) menu.style.maxWidth = `${Math.floor(room)}px`;
     menu.style.top = '';
     menu.style.maxHeight = '';
     const { top } = menu.getBoundingClientRect();
