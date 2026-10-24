@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.24.07.73.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-24T14:10:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-24T14:40:00+08:00</effective>
+    <expires>2026-10-24T16:40:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 October 2026, 14:40 WITA di sebagian wilayah Sulawesi Selatan, khususnya di PARIGI, SIMBANG, SINOA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 October 2026, 16:40 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSL/2026/10/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Selatan</areaDesc>
+      <polygon>-5.469,119.956 -5.489,119.963 -5.505,119.964 -5.508,119.944 -5.520,119.958 -5.523,119.955 -5.524,119.932 -5.512,119.928 -5.508,119.917 -5.514,119.908 -5.526,119.903 -5.526,119.892 -5.508,119.888 -5.503,119.904 -5.485,119.903 -5.476,119.910 -5.450,119.944 -5.459,119.946 -5.469,119.956</polygon>
+      <polygon>-5.316,119.942 -5.341,119.930 -5.341,119.921 -5.335,119.913 -5.326,119.880 -5.334,119.860 -5.327,119.846 -5.330,119.822 -5.341,119.800 -5.339,119.793 -5.333,119.790 -5.329,119.792 -5.327,119.789 -5.324,119.776 -5.313,119.785 -5.308,119.784 -5.302,119.771 -5.282,119.763 -5.286,119.786 -5.279,119.829 -5.279,119.851 -5.281,119.859 -5.300,119.877 -5.316,119.942</polygon>
+      <polygon>-5.035,119.732 -5.045,119.745 -5.070,119.762 -5.079,119.779 -5.086,119.778 -5.088,119.773 -5.084,119.766 -5.083,119.725 -5.087,119.684 -5.078,119.659 -5.059,119.642 -5.045,119.612 -5.044,119.594 -5.040,119.579 -5.019,119.591 -5.009,119.601 -5.018,119.612 -5.019,119.628 -5.011,119.634 -5.009,119.641 -5.010,119.647 -5.019,119.652 -5.021,119.676 -5.009,119.693 -5.015,119.700 -5.028,119.703 -5.036,119.713 -5.038,119.726 -5.035,119.732</polygon>
+    </area>
+  </info>
+</alert>
