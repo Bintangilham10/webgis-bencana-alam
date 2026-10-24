@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.24.10.61.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-24T15:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-24T16:00:00+07:00</effective>
+    <expires>2026-10-24T18:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 October 2026, 16:00 WIB di sebagian wilayah Kalimantan Barat, khususnya di MONTERADO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 October 2026, 18:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/10/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>0.858,109.213 0.843,109.188 0.827,109.182 0.828,109.158 0.825,109.150 0.815,109.141 0.813,109.146 0.804,109.150 0.788,109.149 0.778,109.158 0.782,109.177 0.767,109.190 0.764,109.191 0.759,109.184 0.750,109.186 0.721,109.210 0.706,109.200 0.701,109.193 0.694,109.149 0.685,109.143 0.660,109.133 0.645,109.108 0.635,109.104 0.715,109.051 0.740,109.031 0.767,109.024 0.779,109.036 0.832,109.041 0.848,109.054 0.853,109.067 0.873,109.113 0.882,109.124 0.884,109.132 0.901,109.144 0.903,109.157 0.942,109.161 0.960,109.170 0.962,109.175 0.941,109.185 0.932,109.194 0.924,109.216 0.921,109.217 0.870,109.205 0.858,109.213</polygon>
+    </area>
+  </info>
+</alert>
