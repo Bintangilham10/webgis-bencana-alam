@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.24.13.33.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-24T19:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-24T19:40:00+07:00</effective>
+    <expires>2026-10-24T22:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 October 2026, 19:40 WIB di sebagian wilayah Jawa Tengah, khususnya di JAPAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 October 2026, 22:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJH/2026/10/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Tengah</areaDesc>
+      <polygon>-6.855,111.263 -6.866,111.290 -6.865,111.314 -6.869,111.328 -6.875,111.339 -6.881,111.341 -6.940,111.344 -6.951,111.339 -6.966,111.342 -6.968,111.337 -6.966,111.332 -6.972,111.327 -6.965,111.315 -6.971,111.307 -6.981,111.306 -6.988,111.295 -6.983,111.286 -6.980,111.266 -6.959,111.268 -6.960,111.257 -6.954,111.234 -6.942,111.233 -6.928,111.238 -6.922,111.254 -6.914,111.257 -6.902,111.255 -6.882,111.243 -6.862,111.242 -6.861,111.249 -6.854,111.258 -6.855,111.263</polygon>
+    </area>
+  </info>
+</alert>
