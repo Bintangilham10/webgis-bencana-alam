@@ -1,0 +1,23 @@
+{
+  "guid": "CBMisAFBVV95cUxPa3B2QmlyYkhGYmwtTW1mc0hfUExkejV0a1VPbUlxZUd0WHczZzg3VC0zM1hzOTY0M05LTmxfbXpHaFNkdHhkR2dfalNzZTZEUnBpVHhSOTJlZDJqdnl2c184YmhFeFNQZ2ZtSVplRzIyV3gyeEFvcWhhVi14X1VBc1BDZExVVjZ2U05NX1Z1X3h1cmVzbER1RThDU0hXaGZhN28tYjBFU0MzZWlpMUNYSg",
+  "title": "BMKG Peringatkan Potensi Cuaca Ekstrem di Aceh, Bener Meriah Waspadai Banjir dan Longsor - satupena.co.id -",
+  "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPa3B2QmlyYkhGYmwtTW1mc0hfUExkejV0a1VPbUlxZUd0WHczZzg3VC0zM1hzOTY0M05LTmxfbXpHaFNkdHhkR2dfalNzZTZEUnBpVHhSOTJlZDJqdnl2c184YmhFeFNQZ2ZtSVplRzIyV3gyeEFvcWhhVi14X1VBc1BDZExVVjZ2U05NX1Z1X3h1cmVzbER1RThDU0hXaGZhN28tYjBFU0MzZWlpMUNYSg?oc=5",
+  "source": "satupena.co.id -",
+  "source_url": "https://satupena.co.id",
+  "published_at": "2026-10-24T09:33:03.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-24T09:45:25.830Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "11.17",
+      "nama": "Kabupaten Bener Meriah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
