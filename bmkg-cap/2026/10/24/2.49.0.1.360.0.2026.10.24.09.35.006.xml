@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.24.09.35.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-24T15:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-24T15:30:00+07:00</effective>
+    <expires>2026-10-24T18:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 October 2026, 15:30 WIB di sebagian wilayah Jawa Timur, khususnya di BAURENO, KANOR, SUMBERJAMBE.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 October 2026, 18:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/10/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-8.026,113.919 -8.055,113.959 -8.056,113.968 -8.075,114.009 -8.084,114.014 -8.094,114.025 -8.114,114.030 -8.124,114.036 -8.123,114.005 -8.116,113.995 -8.114,113.983 -8.119,113.914 -8.110,113.891 -8.111,113.876 -8.103,113.872 -8.095,113.859 -8.077,113.861 -8.077,113.880 -8.068,113.867 -8.063,113.864 -8.034,113.865 -8.035,113.869 -8.030,113.878 -8.015,113.889 -8.026,113.919</polygon>
+      <polygon>-7.097,112.130 -7.110,112.155 -7.120,112.155 -7.119,112.163 -7.132,112.162 -7.158,112.151 -7.158,112.143 -7.151,112.145 -7.145,112.128 -7.137,112.127 -7.131,112.113 -7.138,112.106 -7.155,112.102 -7.147,112.084 -7.155,112.082 -7.163,112.064 -7.163,112.058 -7.158,112.055 -7.160,112.051 -7.161,112.049 -7.146,112.043 -7.128,112.052 -7.114,112.053 -7.113,112.062 -7.083,112.076 -7.067,112.077 -7.067,112.084 -7.086,112.086 -7.088,112.121 -7.100,112.118 -7.108,112.123 -7.107,112.127 -7.097,112.130</polygon>
+      <polygon>-7.067,112.077 -7.083,112.076 -7.113,112.062 -7.114,112.053 -7.128,112.052 -7.146,112.043 -7.161,112.049 -7.162,112.029 -7.169,112.017 -7.161,111.993 -7.163,111.988 -7.155,111.983 -7.119,111.994 -7.115,111.998 -7.126,112.000 -7.132,112.006 -7.130,112.010 -7.110,112.003 -7.088,112.020 -7.074,112.015 -7.068,112.017 -7.068,112.024 -7.075,112.029 -7.071,112.043 -7.075,112.047 -7.078,112.040 -7.082,112.041 -7.075,112.053 -7.067,112.077</polygon>
+    </area>
+  </info>
+</alert>

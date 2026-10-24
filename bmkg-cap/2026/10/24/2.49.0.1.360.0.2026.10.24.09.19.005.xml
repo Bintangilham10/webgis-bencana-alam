@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.24.09.19.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-24T15:55:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-24T16:00:00+07:00</effective>
+    <expires>2026-10-24T18:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 October 2026, 16:00 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di NAMANG, SIJUK, SIMPANG KATIS.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 October 2026, 18:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/10/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-2.570,107.938 -2.585,107.940 -2.593,107.936 -2.609,107.912 -2.610,107.899 -2.636,107.902 -2.638,107.899 -2.664,107.896 -2.672,107.884 -2.690,107.876 -2.682,107.827 -2.673,107.805 -2.690,107.804 -2.704,107.792 -2.701,107.787 -2.711,107.784 -2.724,107.739 -2.716,107.724 -2.709,107.692 -2.693,107.665 -2.705,107.649 -2.700,107.632 -2.706,107.622 -2.705,107.611 -2.685,107.626 -2.673,107.630 -2.651,107.631 -2.645,107.640 -2.625,107.646 -2.615,107.644 -2.605,107.628 -2.596,107.628 -2.588,107.644 -2.561,107.658 -2.556,107.667 -2.563,107.676 -2.564,107.688 -2.559,107.705 -2.547,107.720 -2.556,107.737 -2.557,107.764 -2.541,107.804 -2.530,107.815 -2.529,107.830 -2.536,107.833 -2.540,107.827 -2.545,107.826 -2.556,107.838 -2.559,107.866 -2.575,107.909 -2.572,107.918 -2.563,107.921 -2.560,107.926 -2.565,107.937 -2.570,107.938</polygon>
+      <polygon>-2.540,107.863 -2.539,107.871 -2.544,107.870 -2.548,107.857 -2.540,107.857 -2.540,107.863</polygon>
+      <polygon>-2.551,107.653 -2.550,107.649 -2.545,107.650 -2.551,107.653</polygon>
+      <polygon>-2.255,106.121 -2.274,106.101 -2.277,106.105 -2.274,106.127 -2.289,106.123 -2.289,106.132 -2.279,106.144 -2.293,106.152 -2.306,106.176 -2.313,106.173 -2.325,106.179 -2.345,106.168 -2.360,106.169 -2.368,106.178 -2.391,106.172 -2.393,106.163 -2.396,106.161 -2.395,106.149 -2.353,106.105 -2.359,106.076 -2.339,106.077 -2.263,106.038 -2.263,106.026 -2.255,106.002 -2.238,105.981 -2.231,105.980 -2.222,105.992 -2.214,106.021 -2.208,106.021 -2.186,106.041 -2.174,106.074 -2.171,106.086 -2.181,106.096 -2.182,106.105 -2.196,106.105 -2.198,106.095 -2.214,106.083 -2.218,106.093 -2.226,106.097 -2.250,106.095 -2.250,106.110 -2.255,106.121</polygon>
+      <polygon>-2.209,106.206 -2.218,106.205 -2.240,106.213 -2.257,106.226 -2.271,106.223 -2.299,106.226 -2.316,106.232 -2.326,106.218 -2.352,106.215 -2.360,106.233 -2.359,106.240 -2.366,106.244 -2.370,106.234 -2.379,106.238 -2.381,106.245 -2.376,106.244 -2.373,106.249 -2.385,106.251 -2.392,106.257 -2.394,106.271 -2.407,106.277 -2.411,106.266 -2.420,106.264 -2.424,106.266 -2.425,106.277 -2.438,106.290 -2.460,106.268 -2.445,106.261 -2.451,106.248 -2.446,106.239 -2.452,106.229 -2.404,106.192 -2.391,106.172 -2.368,106.178 -2.360,106.169 -2.345,106.168 -2.325,106.179 -2.313,106.173 -2.306,106.176 -2.293,106.152 -2.279,106.144 -2.289,106.132 -2.289,106.123 -2.274,106.127 -2.277,106.105 -2.274,106.101 -2.255,106.121 -2.230,106.148 -2.227,106.164 -2.216,106.172 -2.216,106.184 -2.209,106.206</polygon>
+    </area>
+  </info>
+</alert>
