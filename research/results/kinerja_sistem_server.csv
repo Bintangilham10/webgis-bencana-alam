@@ -1,0 +1,7 @@
+sumber,dari,sampai,sinkronisasi,sukses,persen_sukses,gagal_jaringan_klien,gagal_sumber,persen_sukses_tanpa_gagal_klien,persen_slot_terjadwal_berjalan,tabel,gagal_pertama,gagal_terakhir,jumlah,pulih,pesan,kelompok,n,jeda_sumber_median_mnt,jeda_sumber_p90_mnt,jeda_sistem_maks_s,jeda_sistem_median_s
+bmkg-gempa,2026-10-13 06:28:43.167000+00:00,2026-10-23 10:30:35.510000+00:00,14640.0,14640.0,100.0,0.0,0.0,100.0,99.9803837439941,ketersediaan,,,,,,,,,,,
+indikasi-sigap,2026-10-13 06:28:43.287000+00:00,2026-10-23 06:28:45.990000+00:00,21.0,21.0,100.0,0.0,0.0,100.0,99.99970205115228,ketersediaan,,,,,,,,,,,
+magma,2026-10-13 06:28:43.252000+00:00,2026-10-23 10:28:45.605000+00:00,489.0,381.0,77.91411042944786,0.0,108.0,77.91411042944786,99.99973267510681,ketersediaan,,,,,,,,,,,
+magma,,,,,,,,,,gangguan,2026-10-21 04:58:45.255000+00:00,2026-10-23 10:28:45.605000+00:00,108.0,,Variabel markersGunungApi tidak ditemukan,,,,,,
+,,,,,,,,,,latensi,,,,,,semua terpantau,26.0,17.058375308333336,40.08024678333334,60.381609,60.143249
+,,,,,,,,,,latensi,,,,,,gempa dirasakan,26.0,17.058375308333336,40.08024678333334,60.381609,60.143249

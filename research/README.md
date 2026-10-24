@@ -7,7 +7,7 @@ Folder ini berisi skrip analisis untuk paper. Rancangan lengkapnya ada di rencan
 | RQ-L1 | Skill prakiraan bulanan potensi gerakan tanah PVMBG dan peringatan curah hujan tinggi BMKG (CEWS), 2022–2025 | Hasil di [`results/rq_l1_ringkasan.md`](results/rq_l1_ringkasan.md) dan EDuMaP CEWS di [`results/rq_l1_edumap_cews.md`](results/rq_l1_edumap_cews.md) |
 | RQ-L2 | Ambang hidrometeorologi (kelembapan tanah ERA5-Land × hujan) vs ambang hujan saja | Belum |
 | RQ-L3 | Skill model SIGAP-L harian pada lead 0–2 hari vs produk resmi | Belum |
-| RQ2 | Kinerja sistem: ketersediaan sinkronisasi dan latensi data | Ukuran di [`results/kinerja_sistem.md`](results/kinerja_sistem.md); perlu server yang selalu aktif untuk angka final |
+| RQ2 | Kinerja sistem: ketersediaan sinkronisasi dan latensi data | Server produksi Azure 13–23 Okt 2026 di [`results/kinerja_sistem_server.md`](results/kinerja_sistem_server.md); laptop pengembangan 26 Sep–1 Okt di [`results/kinerja_sistem.md`](results/kinerja_sistem.md) |
 
 ## Menjalankan
 
@@ -24,6 +24,8 @@ research/.venv/Scripts/python research/09_kinerja_sistem.py # ketersediaan dan l
 research/.venv/Scripts/python -m unittest discover -s research/tests
 ```
 
+Angka server produksi dihitung dari dump `sigap-produksi-2026-10-23.dump` yang dipulihkan ke basis data terpisah (tanpa `TRUNCATE sync_logs` seperti di `deploy/restore-db.sh`), dengan jendela waktu server berjalan; perintah lengkapnya ada di docstring `09_kinerja_sistem.py`.
+
 Semua respons sumber disimpan di cache `research/data/cache/`, beserta waktu pengambilan di `_manifest.jsonl`. Menjalankan ulang tidak mengunduh ulang dan memberi hasil yang sama. Skrip yang terhenti bisa langsung dijalankan lagi.
 
 Balasan yang bukan data tidak pernah masuk cache. Kalau firewall situs ESDM membalas halaman blokir, skrip berhenti dengan galat `Blocked`; tunggu beberapa jam, lalu jalankan ulang. Balasan GeoServer yang tak terduga dicoba ulang, dan skrip berhenti dengan `UnexpectedResponse` bila tetap gagal. Isi cache lama yang tidak lolos pemeriksaan ini diambil ulang secara otomatis.
@@ -34,7 +36,9 @@ Data CEWS dibaca dari arsip perekam (branch `arsip-data`, folder `bmkg-cews/`). 
 
 **Arsip prospektif (Tahap 4).** Perekam di GitHub Actions menyimpan indikasi SIGAP untuk setiap siklus model ECMWF (00Z dan 12Z) ke branch `arsip-data` (`sigap-indikasi/`), lengkap dengan hujan di 3.219 titik pantau, versi aturan, dan hash titik pantau. Commit git memberi cap waktu publik sebelum kejadian, jadi verifikasi musim hujan 2026/27 bisa dilakukan per lead time (tanggal prakiraan − tanggal inisialisasi model), dan indikasi bisa dihitung ulang dengan aturan versi baru pada prakiraan yang sama persis. Waktu terbit peringatan CEWS juga tercatat sampai ±1 jam.
 
-**Latensi (RQ2).** BMKG baru menerbitkan gempa di feed publik beberapa menit setelah kejadian: 15–31 menit (median 22,6) untuk 6 gempa dirasakan yang tertangkap saat server memantau, 26 Sep–1 Okt 2026. Karena itu latensi dilaporkan dalam dua bagian: jeda sumber (waktu kejadian → muncul di feed, diperkirakan dari event yang tertangkap saat server memantau) dan jeda sistem SIGAP (muncul di feed → tersimpan, paling lama satu interval sinkronisasi). Target "gempa masuk ≤ 2 menit dari kejadian" tidak bisa dicapai sistem mana pun yang memakai feed publik.
+**Latensi (RQ2).** BMKG baru menerbitkan gempa di feed publik beberapa menit setelah kejadian: median 17,1 menit (p90 40,1) untuk 26 gempa dirasakan yang tertangkap server produksi, 13–23 Okt 2026 (laptop, 26 Sep–1 Okt: median 22,6 menit dari 6 gempa). Karena itu latensi dilaporkan dalam dua bagian: jeda sumber (waktu kejadian → muncul di feed, diperkirakan dari event yang tertangkap saat server memantau) dan jeda sistem SIGAP (muncul di feed → tersimpan, paling lama satu interval sinkronisasi, ≤ 60 detik di server). Target "gempa masuk ≤ 2 menit dari kejadian" tidak bisa dicapai sistem mana pun yang memakai feed publik.
+
+**Ketersediaan (RQ2).** Di server yang menyala terus, sinkronisasi gempa BMKG berhasil 14.640 dari 14.640 kali dan semua slot jadwal berjalan, jauh di atas laptop (85,5%, karena laptop sering offline). MAGMA berhasil 77,9%: sejak 21 Okt 04:58Z halaman MAGMA berganti format, sehingga 108 sinkronisasi gagal beruntun sampai server dimatikan. Selama itu status 69 gunung api terakhir tetap dilayani, dan pembacanya diperbaiki untuk halaman baru pada 23 Okt.
 
 ## Struktur
 
