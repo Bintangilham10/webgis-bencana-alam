@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.24.16.13.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-24T22:25:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-24T22:35:00+07:00</effective>
+    <expires>2026-10-25T00:40:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 October 2026, 22:35 WIB di sebagian wilayah Sumatera Barat, khususnya di KOTO XI TARUSAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 25 October 2026, 00:40 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSB/2026/10/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Barat</areaDesc>
+      <polygon>-1.073,100.586 -1.086,100.585 -1.101,100.576 -1.114,100.573 -1.143,100.577 -1.168,100.559 -1.173,100.550 -1.185,100.552 -1.212,100.539 -1.249,100.497 -1.286,100.497 -1.293,100.486 -1.258,100.452 -1.259,100.447 -1.269,100.440 -1.274,100.428 -1.271,100.401 -1.237,100.407 -1.238,100.419 -1.255,100.424 -1.255,100.433 -1.234,100.435 -1.226,100.423 -1.201,100.432 -1.195,100.421 -1.200,100.417 -1.196,100.405 -1.188,100.398 -1.186,100.402 -1.182,100.400 -1.179,100.382 -1.155,100.384 -1.146,100.380 -1.161,100.356 -1.170,100.356 -1.171,100.349 -1.143,100.363 -1.109,100.421 -1.100,100.421 -1.094,100.412 -1.086,100.413 -1.081,100.421 -1.056,100.433 -1.030,100.462 -1.006,100.477 -1.002,100.484 -1.003,100.495 -0.991,100.520 -0.957,100.537 -0.982,100.551 -1.010,100.551 -1.041,100.557 -1.057,100.576 -1.070,100.579 -1.073,100.586</polygon>
+      <polygon>-1.159,100.351 -1.163,100.346 -1.156,100.349 -1.159,100.351</polygon>
+      <polygon>-1.188,100.392 -1.208,100.384 -1.209,100.390 -1.205,100.395 -1.201,100.393 -1.201,100.398 -1.221,100.401 -1.228,100.396 -1.222,100.386 -1.226,100.380 -1.219,100.376 -1.201,100.382 -1.191,100.381 -1.188,100.392</polygon>
+      <polygon>-1.188,100.340 -1.212,100.339 -1.206,100.328 -1.190,100.334 -1.188,100.340</polygon>
+    </area>
+  </info>
+</alert>
