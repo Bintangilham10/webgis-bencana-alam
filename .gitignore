@@ -29,3 +29,6 @@ docs/tugas-1-kebutuhan-sistem/
 
 # Salinan basis data untuk dipindahkan ke server (deploy/restore-db.sh)
 *.dump
+
+# Hasil pengujian e2e (bisa dibuat ulang: npm test, npm run akurasi, npm run kinerja di e2e/)
+e2e/hasil/

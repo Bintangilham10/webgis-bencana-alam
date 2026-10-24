@@ -9,4 +9,5 @@ research
 docs
 arsip
 .playwright-cli
+e2e
 **/*.pdf
