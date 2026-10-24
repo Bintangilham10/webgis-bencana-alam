@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.24.15.31.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-24T21:13:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-24T21:23:00+07:00</effective>
+    <expires>2026-10-25T00:44:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 October 2026, 21:23 WIB di sebagian wilayah Jakarta, khususnya di BOJONGMANGU, CARIU, DRAMAGA, PADEMANGAN, PANCORAN, TANJUNG PRIOK, TEBET, TENJOLAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 25 October 2026, 00:44 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJK/2026/10/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jakarta</areaDesc>
+      <polygon>-6.107,106.891 -6.136,106.892 -6.163,106.881 -6.163,106.877 -6.150,106.856 -6.126,106.851 -6.121,106.862 -6.104,106.879 -6.094,106.880 -6.097,106.891 -6.107,106.891</polygon>
+      <polygon>-6.121,106.862 -6.126,106.851 -6.150,106.856 -6.154,106.844 -6.136,106.829 -6.137,106.821 -6.130,106.815 -6.131,106.810 -6.116,106.808 -6.123,106.812 -6.116,106.817 -6.123,106.843 -6.110,106.867 -6.121,106.862</polygon>
+      <polygon>-6.208,106.849 -6.213,106.858 -6.218,106.858 -6.225,106.865 -6.243,106.862 -6.241,106.835 -6.222,106.838 -6.217,106.845 -6.208,106.848 -6.208,106.849</polygon>
+      <polygon>-6.241,106.835 -6.243,106.862 -6.243,106.862 -6.267,106.855 -6.263,106.843 -6.270,106.829 -6.266,106.827 -6.254,106.824 -6.252,106.836 -6.241,106.835 -6.241,106.835</polygon>
+      <polygon>-6.482,107.172 -6.491,107.174 -6.501,107.165 -6.509,107.165 -6.529,107.175 -6.549,107.178 -6.562,107.190 -6.568,107.191 -6.578,107.193 -6.569,107.169 -6.574,107.166 -6.573,107.157 -6.560,107.122 -6.559,107.102 -6.566,107.079 -6.539,107.087 -6.535,107.086 -6.530,107.096 -6.508,107.111 -6.484,107.104 -6.480,107.127 -6.466,107.132 -6.482,107.172</polygon>
+      <polygon>-6.540,106.742 -6.543,106.741 -6.554,106.736 -6.566,106.736 -6.576,106.745 -6.574,106.752 -6.588,106.750 -6.620,106.736 -6.632,106.735 -6.634,106.711 -6.628,106.716 -6.617,106.710 -6.604,106.716 -6.567,106.730 -6.556,106.716 -6.545,106.714 -6.540,106.742</polygon>
+      <polygon>-6.604,106.716 -6.617,106.710 -6.628,106.716 -6.634,106.711 -6.654,106.722 -6.716,106.734 -6.717,106.731 -6.681,106.694 -6.668,106.698 -6.630,106.685 -6.603,106.690 -6.605,106.694 -6.590,106.709 -6.590,106.713 -6.602,106.711 -6.604,106.716</polygon>
+      <polygon>-6.396,107.220 -6.402,107.222 -6.422,107.202 -6.462,107.217 -6.469,107.209 -6.461,107.197 -6.482,107.172 -6.466,107.132 -6.467,107.123 -6.459,107.126 -6.455,107.132 -6.458,107.146 -6.446,107.165 -6.442,107.165 -6.440,107.153 -6.436,107.150 -6.425,107.150 -6.393,107.182 -6.397,107.189 -6.396,107.220</polygon>
+    </area>
+  </info>
+</alert>
