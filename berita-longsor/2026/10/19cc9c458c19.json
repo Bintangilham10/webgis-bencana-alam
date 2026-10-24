@@ -1,0 +1,26 @@
+{
+  "guid": "CBMipwFBVV95cUxPMHlJRml1ejBqMzloU2MtV3AwTnkwQkxRdm8waUMtNXNEMkRuOWpRU1NkaUg3NFRoTWZFWlFtVTZkekR2S2JXSzFmU2FEZnpBbVlzdkhXZUxKQXYzNjBiZVlvWmlvMFhsci1XS0lGY3VxRkhWSHlPTmJfS3prTlFocktTYVFXSTEtZEYzRE1rWlpPVzhHMEpTN19vZ1pzYjZULVA1YzVzOA",
+  "title": "Retakan Tebing Sitiarjo Malang Kian Menganga, Ancaman Longsor Bayangi Empat RT - Suara Jatim Post",
+  "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMHlJRml1ejBqMzloU2MtV3AwTnkwQkxRdm8waUMtNXNEMkRuOWpRU1NkaUg3NFRoTWZFWlFtVTZkekR2S2JXSzFmU2FEZnpBbVlzdkhXZUxKQXYzNjBiZVlvWmlvMFhsci1XS0lGY3VxRkhWSHlPTmJfS3prTlFocktTYVFXSTEtZEYzRE1rWlpPVzhHMEpTN19vZ1pzYjZULVA1YzVzOA?oc=5",
+  "source": "Suara Jatim Post",
+  "source_url": "https://suarajatimpost.com",
+  "published_at": "2026-10-24T13:30:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-24T16:00:42.392Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
