@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-24T11:15:26.674Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        113.290291768,
+        -1.4993611879
+      ]
+    },
+    "properties": {
+      "pkey": "399917",
+      "created_at": "2026-10-24T11:05:42.437Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "179ee741-a407-4a1d-80bc-db1566bc0e62",
+      "image_url": "https://images.petabencana.id/179ee741-a407-4a1d-80bc-db1566bc0e62.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 2,
+        "airQuality": 4
+      },
+      "tags": {
+        "city": "KATINGAN",
+        "district_id": null,
+        "region_code": "6206",
+        "local_area_id": null,
+        "instance_region_code": "ID-KT"
+      },
+      "title": null,
+      "text": "Tingkat polusi udara akibat Karhutla di Provinsi Kalimantan Tengah mencapai level sangat berbahaya dan ekstrem pada Sabtu (24/10/2026)",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
