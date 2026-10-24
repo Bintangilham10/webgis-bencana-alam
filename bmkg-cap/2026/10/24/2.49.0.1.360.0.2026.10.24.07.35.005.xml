@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.24.07.35.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-24T14:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-24T14:40:00+07:00</effective>
+    <expires>2026-10-24T17:40:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 October 2026, 14:40 WIB di sebagian wilayah Jawa Timur, khususnya di PUJER, SUMBERWRINGIN, TAMBAKREJO, TLOGOSARI, WONOSARI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 October 2026, 17:40 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/10/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.955,113.922 -7.960,113.931 -7.976,113.937 -7.974,113.948 -7.967,113.950 -8.012,113.998 -8.046,114.024 -8.081,114.038 -8.112,114.066 -8.123,114.067 -8.122,114.060 -8.133,114.051 -8.133,114.044 -8.133,114.043 -8.134,114.043 -8.129,114.036 -8.124,114.036 -8.114,114.030 -8.094,114.025 -8.084,114.014 -8.075,114.009 -8.056,113.968 -8.055,113.959 -8.026,113.919 -8.002,113.922 -7.977,113.909 -7.977,113.900 -7.967,113.895 -7.957,113.899 -7.952,113.908 -7.955,113.922</polygon>
+      <polygon>-7.934,113.873 -7.936,113.883 -7.957,113.899 -7.967,113.895 -7.977,113.900 -7.977,113.909 -8.002,113.922 -8.026,113.919 -8.015,113.889 -7.993,113.865 -7.986,113.868 -7.959,113.858 -7.967,113.865 -7.970,113.877 -7.943,113.862 -7.939,113.861 -7.934,113.873</polygon>
+      <polygon>-7.927,113.938 -7.929,113.918 -7.938,113.914 -7.947,113.924 -7.955,113.922 -7.952,113.908 -7.957,113.899 -7.936,113.883 -7.934,113.873 -7.898,113.866 -7.869,113.898 -7.884,113.897 -7.900,113.908 -7.900,113.923 -7.911,113.933 -7.927,113.938</polygon>
+      <polygon>-7.901,113.998 -7.908,114.007 -7.946,114.024 -7.958,114.043 -7.977,114.058 -8.001,114.085 -8.015,114.094 -8.030,114.095 -8.052,114.098 -8.078,114.082 -8.103,114.075 -8.112,114.066 -8.081,114.038 -8.046,114.024 -8.012,113.998 -7.967,113.950 -7.956,113.943 -7.946,113.929 -7.944,113.936 -7.956,113.959 -7.952,113.969 -7.939,113.963 -7.930,113.962 -7.950,113.985 -7.946,113.986 -7.941,113.996 -7.924,113.988 -7.911,113.976 -7.904,113.975 -7.898,113.984 -7.901,113.998</polygon>
+      <polygon>-7.248,111.709 -7.259,111.712 -7.273,111.726 -7.279,111.725 -7.284,111.706 -7.299,111.697 -7.313,111.700 -7.335,111.696 -7.345,111.672 -7.370,111.614 -7.351,111.572 -7.360,111.561 -7.358,111.554 -7.309,111.553 -7.303,111.565 -7.291,111.569 -7.276,111.565 -7.264,111.568 -7.262,111.572 -7.267,111.583 -7.263,111.588 -7.255,111.594 -7.243,111.589 -7.230,111.592 -7.220,111.602 -7.217,111.612 -7.216,111.620 -7.211,111.624 -7.214,111.628 -7.231,111.632 -7.246,111.640 -7.242,111.654 -7.246,111.665 -7.269,111.673 -7.265,111.687 -7.255,111.687 -7.248,111.693 -7.248,111.709</polygon>
+    </area>
+  </info>
+</alert>
