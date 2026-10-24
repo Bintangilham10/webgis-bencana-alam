@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.24.04.91.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-24T12:44:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-24T13:00:00+09:00</effective>
+    <expires>2026-10-24T14:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 October 2026, 13:00 WIT di sebagian wilayah Papua, khususnya di ANDEY, BIAK BARAT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 October 2026, 14:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPU/2026/10/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua</areaDesc>
+      <polygon>-1.006,135.906 -1.027,135.905 -1.064,135.934 -1.166,135.857 -1.132,135.823 -1.119,135.819 -1.098,135.802 -1.093,135.804 -1.089,135.818 -1.085,135.820 -1.031,135.825 -1.011,135.815 -0.998,135.801 -0.982,135.794 -0.965,135.833 -0.962,135.863 -0.967,135.872 -1.006,135.906</polygon>
+      <polygon>-0.862,136.016 -0.873,136.026 -0.894,136.028 -0.905,136.009 -0.933,136.001 -0.943,136.002 -0.966,135.989 -0.990,135.967 -1.007,135.966 -1.006,135.906 -0.967,135.872 -0.962,135.863 -0.931,135.876 -0.919,135.877 -0.911,135.873 -0.893,135.880 -0.870,135.897 -0.824,135.951 -0.843,135.964 -0.849,135.995 -0.862,136.016</polygon>
+    </area>
+  </info>
+</alert>
