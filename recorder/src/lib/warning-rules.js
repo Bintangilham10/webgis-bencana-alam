@@ -95,9 +95,13 @@ export function heavyRainIndication(days) {
 }
 
 // Indikasi banjir dan longsor per titik: hujan tertinggi × kelas bahaya.
-// hazards: { banjir: { index } | { class }, longsor: ... } — index dari identify
-// InaRISK (cek risiko) atau class dari raster kelas (indikasi kab/kota).
+// hazards: { banjir: { index } | { class } | { error }, longsor: ... } — index dari
+// identify InaRISK (cek risiko) atau class dari raster kelas (indikasi kab/kota).
+// error = identify gagal: kelasnya tidak diketahui, bukan "di luar zona bahaya".
+// Bila hujannya cukup untuk memicu indikasi di salah satu kelas, levelnya null.
 // days: prakiraan [{ date, precipitationMm }]; pastDays: hujan hari-hari terakhir.
+export const UNKNOWN_LEVEL_LABEL = 'Tidak diketahui';
+
 export function rainHazardIndications(hazards, days, pastDays = []) {
   const rainy = known(days);
   if (!rainy.length) return [];
@@ -121,6 +125,12 @@ export function rainHazardIndications(hazards, days, pastDays = []) {
     const level = cls ? warningLevel(rain?.id, cls.id) : 0;
     let hazardText = 'lokasi di luar zona bahaya InaRISK';
     if (cls) hazardText = index == null ? `zona bahaya ${cls.label.toLowerCase()} (InaRISK)` : `indeks bahaya ${cls.label.toLowerCase()} (${formatIndex(index)})`;
+    else if (hazards[hazard]?.error) {
+      hazardText = 'kelas bahaya InaRISK tidak tersedia saat ini';
+      if (rules.rainHazardMatrix.levels[rain?.id]?.some((l) => l > 0)) {
+        return { hazard, level: null, label: UNKNOWN_LEVEL_LABEL, reason: `${why}; ${hazardText}`, peakDate, rainMm: peak.precipitationMm };
+      }
+    }
     return { hazard, level, label: WARNING_LEVELS[level], reason: `${why}; ${hazardText}`, peakDate, rainMm: peak.precipitationMm };
   });
 }

@@ -63,6 +63,19 @@ describe('aturan peringatan (baseline v0)', () => {
     assert.equal(banjir.label, 'Normal');
     assert.match(banjir.reason, /di luar zona bahaya/);
   });
+
+  // 24 Okt 2026: identify banjir dan longsor InaRISK mati semalaman, dan cek risiko
+  // menulis "Normal ... di luar zona bahaya" di titik pantau berzona tinggi.
+  test('kelas bahaya yang gagal dimuat tidak dianggap di luar zona', () => {
+    const failed = { banjir: { index: null, error: 'timeout' }, longsor: { index: null, error: 'timeout' } };
+    const heavy = rainHazardIndications(failed, [day(10), day(73.3)]);
+    assert.deepEqual(heavy.map((i) => [i.hazard, i.level, i.label]), [['banjir', null, 'Tidak diketahui'], ['longsor', null, 'Tidak diketahui']]);
+    assert.match(heavy[0].reason, /73,3 mm\/hari \(hujan lebat\); kelas bahaya InaRISK tidak tersedia/);
+    // Hujan di bawah lebat tidak memicu indikasi di zona mana pun, jadi tetap Normal.
+    const [light] = rainHazardIndications(failed, [day(12), day(20)]);
+    assert.deepEqual([light.level, light.label], [0, 'Normal']);
+    assert.match(light.reason, /kelas bahaya InaRISK tidak tersedia/);
+  });
 });
 
 describe('rekomendasi', () => {

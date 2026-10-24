@@ -13,10 +13,14 @@ export const HAZARDS = [
 
 // Server BNPB kadang butuh ±8 detik saat "dingin", jadi batasnya 10 detik.
 const IDENTIFY_TIMEOUT_MS = 10_000;
-// Layanan yang gagal dilewati sementara. Tanpa ini, satu layanan yang mati
-// (1 Okt 2026: cuaca ekstrem membalas HTTP 525 setelah ±26 detik) membuat setiap
-// cek risiko menunggu sampai batas waktu.
-export const OUTAGE_MS = 5 * 60_000;
+// Layanan yang gagal ditandai bermasalah dan dilewati semua cek risiko. Tanpa ini,
+// satu layanan yang mati (1 Okt 2026: cuaca ekstrem membalas HTTP 525 setelah ±26
+// detik; 23–24 Okt: banjir dan longsor tidak menjawab semalaman) membuat cek risiko
+// menunggu sampai batas waktu. Layanan itu dicoba lagi di latar belakang tiap
+// PROBE_MS di satu titik, bukan lewat permintaan pengguna, jadi pengunjung tidak
+// menunggu layanan yang sudah diketahui mati, sejarang apa pun mereka datang.
+export const PROBE_MS = 2 * 60_000;
+const PROBE_POINT = { lat: -6.9, lon: 107.6 };
 
 // "NoData" = titik di luar zona bahaya (bukan data hilang).
 export function parseIdentifyValue(json) {
@@ -41,24 +45,46 @@ function identifyUrl(service, lat, lon) {
 
 // Kelima layanan diminta paralel. Satu layanan yang gagal/lambat tidak
 // menggagalkan yang lain: hasilnya ditandai error dan sisanya tetap dipakai.
-// Tanpa coba ulang, karena pengguna sedang menunggu. Layanan yang baru saja gagal
-// tidak diminta lagi selama OUTAGE_MS; permintaan pertama sesudahnya mencoba lagi.
-export function createHazardIdentifier({ getJson = fetchJson, now = Date.now } = {}) {
+// Tanpa coba ulang, karena pengguna sedang menunggu. schedule dapat diganti saat test.
+export function createHazardIdentifier({ getJson = fetchJson, probeMs = PROBE_MS, schedule = setTimeout } = {}) {
   const outages = new Map();
+  let probeTimer = null;
+  const identify = async (service, lat, lon) =>
+    parseIdentifyValue(await getJson(identifyUrl(service, lat, lon), { timeoutMs: IDENTIFY_TIMEOUT_MS, retries: 0 }));
+
+  async function probe() {
+    probeTimer = null;
+    await Promise.all(
+      [...outages.keys()].map(async (service) => {
+        try {
+          await identify(service, PROBE_POINT.lat, PROBE_POINT.lon);
+          outages.delete(service);
+        } catch (err) {
+          outages.set(service, err.message.slice(0, 120));
+        }
+      }),
+    );
+    if (outages.size) scheduleProbe();
+  }
+
+  function scheduleProbe() {
+    if (probeTimer) return;
+    probeTimer = schedule(probe, probeMs);
+    // Pemeriksaan latar tidak menahan proses tetap hidup (mis. saat test selesai).
+    probeTimer?.unref?.();
+  }
+
   return async function identifyHazards(lat, lon) {
     const entries = await Promise.all(
       HAZARDS.map(async ({ id, service }) => {
-        const outage = outages.get(service);
-        if (outage && now() - outage.at < OUTAGE_MS) {
-          return [id, { index: null, error: `layanan InaRISK sedang bermasalah (${outage.message}); dicoba lagi otomatis` }];
+        if (outages.has(service)) {
+          return [id, { index: null, error: `layanan InaRISK sedang bermasalah (${outages.get(service)}); dicoba lagi otomatis` }];
         }
         try {
-          const json = await getJson(identifyUrl(service, lat, lon), { timeoutMs: IDENTIFY_TIMEOUT_MS, retries: 0 });
-          const index = parseIdentifyValue(json);
-          outages.delete(service);
-          return [id, { index }];
+          return [id, { index: await identify(service, lat, lon) }];
         } catch (err) {
-          outages.set(service, { at: now(), message: err.message.slice(0, 120) });
+          outages.set(service, err.message.slice(0, 120));
+          scheduleProbe();
           return [id, { index: null, error: err.message }];
         }
       }),

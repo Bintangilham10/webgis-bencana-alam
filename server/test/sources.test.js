@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import { describe, test } from 'node:test';
 import { depthClass, hasTsunamiPotential } from '../src/lib/classify.js';
 import { extractEvents, normalizeEvent } from '../src/sources/bmkg-gempa.js';
-import { createHazardIdentifier, OUTAGE_MS } from '../src/sources/inarisk.js';
+import { createHazardIdentifier, PROBE_MS } from '../src/sources/inarisk.js';
 import { extractJsonLiteral, extractVolcanoes } from '../src/sources/magma.js';
 import { extractEvents as extractUsgsEvents, fetchUsgsDetail, normalizeEvent as normalizeUsgsEvent } from '../src/sources/usgs-gempa.js';
 import { fetchEmscEarthquakes, queryUrl as emscQueryUrl } from '../src/sources/emsc-gempa.js';
@@ -333,33 +333,53 @@ describe('batas wilayah', () => {
 });
 
 describe('InaRISK identify', () => {
-  test('layanan yang gagal dilewati sementara supaya cek risiko tidak ikut menunggu', async () => {
-    let clock = 0;
+  test('layanan yang gagal dilewati sampai pemeriksaan latar mendapat jawaban', async () => {
     const requested = [];
+    let cuacaDown = true;
     const getJson = async (url) => {
       const service = url.match(/inarisk\/(\w+)\/ImageServer/)[1];
       requested.push(service);
-      if (service === 'INDEKS_BAHAYA_CUACAEKSTRIM') throw new Error('HTTP 525 dari gis.bnpb.go.id');
+      if (service === 'INDEKS_BAHAYA_CUACAEKSTRIM' && cuacaDown) throw new Error('HTTP 525 dari gis.bnpb.go.id');
       return { value: service === 'INDEKS_BAHAYA_BANJIR' ? 'NoData' : '0.666667' };
     };
-    const identify = createHazardIdentifier({ getJson, now: () => clock });
+    let probe = null;
+    const identify = createHazardIdentifier({
+      getJson,
+      schedule: (fn, ms) => {
+        assert.equal(ms, PROBE_MS);
+        probe = fn;
+        return { unref() {} };
+      },
+    });
 
     const first = await identify(-6.9, 107.6);
     assert.equal(requested.length, 5);
     assert.deepEqual(first.longsor, { index: 0.666667 });
     assert.deepEqual(first.banjir, { index: null });
     assert.match(first.cuaca.error, /HTTP 525/);
+    assert.ok(probe, 'pemeriksaan latar dijadwalkan');
 
-    // Dalam 5 menit, layanan yang gagal tidak diminta lagi.
-    clock = OUTAGE_MS - 1;
+    // Selama bermasalah, cek risiko tidak meminta layanan itu, berapa lama pun jedanya.
     const second = await identify(-6.9, 107.6);
     assert.equal(requested.length, 9);
     assert.match(second.cuaca.error, /sedang bermasalah.*dicoba lagi otomatis/);
     assert.equal(second.gempa.index, 0.666667);
 
-    // Setelahnya dicoba lagi.
-    clock = OUTAGE_MS;
-    await identify(-6.9, 107.6);
-    assert.equal(requested.length, 14);
+    // Pemeriksaan latar yang masih gagal menjadwalkan pemeriksaan berikutnya.
+    let run = probe;
+    probe = null;
+    await run();
+    assert.equal(requested.length, 10);
+    assert.ok(probe, 'diperiksa lagi nanti');
+
+    // Setelah layanan menjawab di pemeriksaan latar, cek risiko memakainya lagi.
+    cuacaDown = false;
+    run = probe;
+    probe = null;
+    await run();
+    assert.equal(probe, null, 'tidak ada pemeriksaan lagi');
+    const third = await identify(-6.9, 107.6);
+    assert.equal(requested.length, 16);
+    assert.equal(third.cuaca.index, 0.666667);
   });
 });
