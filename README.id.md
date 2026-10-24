@@ -102,6 +102,7 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
 | `server/` | API Express + PostGIS, penjadwal sinkronisasi, migrasi, dan seed data |
 | `web/` | Frontend Vite + Leaflet |
 | `recorder/` | Perekam arsip data (berjalan di GitHub Actions) |
+| `e2e/` | Pengujian end-to-end Playwright serta skrip akurasi dan kinerja untuk rencana pengujian Tugas 1; hasilnya di `docs/pengujian/` |
 | `deploy/` | Server produksi: Docker Compose berisi PostGIS, API, dan Caddy (HTTPS) di satu VM Azure |
 | `docker-compose.yml` | Database PostgreSQL 18 + PostGIS 3.6 untuk pengembangan |
 
@@ -151,6 +152,13 @@ TEST_DATABASE_URL=postgres://sigap:sigap@localhost:5433/sigap_test npm test
 ```
 
 Di PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/sigap_test"; npm test`
+
+Pengujian end-to-end di [`e2e/`](e2e) menjalankan rencana pengujian Tugas 1 (skenario P1–P8 dan L1–L6) dengan Playwright terhadap aplikasi yang sedang berjalan, di Chrome, Edge, Firefox, WebKit, dan dua profil HP 390 px, ditambah skrip akurasi data (BMKG, MAGMA, InaRISK) dan kinerja (waktu API dan Lighthouse). Hasil dan cacat yang ditemukannya ada di [`docs/pengujian/README.md`](docs/pengujian/README.md).
+
+```bash
+cd e2e && npm install && npx playwright install firefox webkit
+npm test && npm run akurasi && npm run kinerja   # saat API dan `npm run preview` (web/) berjalan
+```
 
 ## API
 

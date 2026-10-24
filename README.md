@@ -328,7 +328,14 @@ TEST_DATABASE_URL=postgres://sigap:sigap@localhost:5433/sigap_test npm test
 
 In PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/sigap_test"; npm test`
 
-Current counts: 136 server tests (with the integration database), 55 recorder tests, and 22 research tests. One research test reproduces the worked example of the EDuMaP paper.
+Current counts: 138 server tests (with the integration database), 55 recorder tests, and 22 research tests. One research test reproduces the worked example of the EDuMaP paper.
+
+End-to-end tests in [`e2e/`](e2e) run the test plan from the course proposal (scenarios P1–P8 and L1–L6) against a running app with Playwright, in Chrome, Edge, Firefox, WebKit, and two 390 px phone profiles, plus scripts for data accuracy against BMKG, MAGMA, and InaRISK and for performance (API timings and Lighthouse). Results and the defects they found are in [`docs/pengujian/README.md`](docs/pengujian/README.md) (in Indonesian).
+
+```bash
+cd e2e && npm install && npx playwright install firefox webkit
+npm test && npm run akurasi && npm run kinerja   # with the API and `npm run preview` (web/) running
+```
 
 </details>
 
@@ -387,6 +394,7 @@ Shortened from the real response. If one source fails, only its own part carries
 | [`web/`](web) | Vite + Leaflet frontend |
 | [`recorder/`](recorder) | Data recorder that runs on GitHub Actions, plus the outlook rules (`src/lib/rules.json`) shared with the server |
 | [`research/`](research) | Python analysis for SIGAP-L, the preregistered protocol, and results |
+| [`e2e/`](e2e) | Playwright end-to-end tests and accuracy/performance scripts for the course test plan; results in [`docs/pengujian/`](docs/pengujian) |
 | [`docs/images/`](docs/images) | Screenshots and charts used in this README |
 | [`deploy/`](deploy) | Production server: Docker Compose with PostGIS, the API, and Caddy (HTTPS) on one Azure VM |
 | [`docker-compose.yml`](docker-compose.yml) | PostgreSQL 18 + PostGIS 3.6 for development |
