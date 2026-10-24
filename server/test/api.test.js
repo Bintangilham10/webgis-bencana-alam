@@ -1183,4 +1183,77 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       );
     });
   });
+
+  // P8 rencana pengujian Tugas 1: galat 5xx, timeout, dan format halaman yang
+  // berubah tercatat di sync_logs, sedangkan API tetap melayani data terakhir.
+  describe('ketahanan sumber (P8)', () => {
+    let runJob;
+    let syncCapAlerts;
+    let HttpError;
+    before(async () => {
+      ({ runJob } = await import('../src/jobs/scheduler.js'));
+      ({ syncCapAlerts } = await import('../src/jobs/sync-cap.js'));
+      ({ HttpError } = await import('../src/lib/http.js'));
+    });
+
+    const lastLog = async (source) =>
+      (await pool.query('SELECT ok, message FROM sync_logs WHERE source = $1 ORDER BY id DESC LIMIT 1', [source])).rows[0];
+    const timeout = () => Object.assign(new Error('The operation was aborted due to timeout'), { name: 'TimeoutError' });
+
+    test('sumber gagal tercatat di sync_logs; data dan waktu sinkron terakhir tetap dilayani', async () => {
+      const cases = [
+        {
+          source: 'bmkg-gempa',
+          path: '/earthquakes',
+          ok: () => syncEarthquakes({ fetchEvents: async () => ({ events: [quake({ id: 'bmkg:p8-tahan' })], errors: [] }) }),
+          // Seperti fetchBmkgEarthquakes bila ketiga feed gagal.
+          fail: () =>
+            syncEarthquakes({
+              fetchEvents: async () => {
+                throw new Error(`autogempa: ${new HttpError('https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json', 503).message}; gempaterkini: ${timeout().message}`);
+              },
+            }),
+          expected: /HTTP 503 .*timeout/,
+        },
+        {
+          source: 'magma',
+          path: '/volcanoes',
+          ok: () => syncVolcanoes({ fetchVolcanoes: async () => [{ kode: 'P8T', nama: 'Tahan', kabupaten: null, provinsi: null, elevasiM: 900, level: 2, lat: -7.3, lon: 110.1 }] }),
+          // 21 Okt 2026 di server produksi: halaman MAGMA berganti format.
+          fail: () =>
+            syncVolcanoes({
+              fetchVolcanoes: async () => {
+                throw new Error('Variabel markersGunungApi tidak ditemukan');
+              },
+            }),
+          expected: /markersGunungApi/,
+        },
+        {
+          source: 'bmkg-cap',
+          path: '/cap',
+          ok: () => syncCapAlerts({ fetchFeed: async () => [], fetchAlert: async () => null }),
+          fail: () =>
+            syncCapAlerts({
+              fetchFeed: async () => {
+                throw timeout();
+              },
+            }),
+          expected: /timeout/,
+        },
+      ];
+      for (const c of cases) {
+        assert.equal((await runJob({ source: c.source, run: c.ok })).ok, true, c.source);
+        const before = (await getJson(c.path)).body;
+        const result = await runJob({ source: c.source, run: c.fail });
+        assert.equal(result.ok, false, c.source);
+        const log = await lastLog(c.source);
+        assert.equal(log.ok, false, c.source);
+        assert.match(log.message, c.expected, c.source);
+        const after = (await getJson(c.path)).body;
+        assert.deepEqual(after.features.map((f) => f.properties.id ?? f.properties.kode ?? f.properties.identifier), before.features.map((f) => f.properties.id ?? f.properties.kode ?? f.properties.identifier), c.source);
+        // Waktu sinkron terakhir tidak maju, jadi browser bisa menandai data tertunda.
+        assert.equal(after.meta.synced_at, before.meta.synced_at, c.source);
+      }
+    });
+  });
 });
