@@ -1,0 +1,21 @@
+{
+  "guid": "CBMirwFBVV95cUxQZHh3U284VW5xR1RYRF9tNEVfNVhobXlpenFjTlFLYXhQTUdFMlItamViTDA1NHNlMGdwWTJlckdFSDFtZEFLOGNROFl2dFNyVHZwNEdKby02UEFtdmJBbjBsWnY3RDhicGRHYW1lb1B3Y1RHTXhnUURZN1hEbkhQbzB5a3dMYmx4dU9BcXpKQUc3YWNHejJkUUJsRzFpdzB3SnlMdm54Vk9HYXFZeWdz",
+  "title": "Potensi Longsor Kabupaten Bandung, 25 Kecamatan Diwaspadai - Pikiran Rakyat Koran",
+  "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZHh3U284VW5xR1RYRF9tNEVfNVhobXlpenFjTlFLYXhQTUdFMlItamViTDA1NHNlMGdwWTJlckdFSDFtZEFLOGNROFl2dFNyVHZwNEdKby02UEFtdmJBbjBsWnY3RDhicGRHYW1lb1B3Y1RHTXhnUURZN1hEbkhQbzB5a3dMYmx4dU9BcXpKQUc3YWNHejJkUUJsRzFpdzB3SnlMdm54Vk9HYXFZeWdz?oc=5",
+  "source": "Pikiran Rakyat Koran",
+  "source_url": "https://koran.pikiran-rakyat.com",
+  "published_at": "2026-10-23T22:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-24T00:30:32.297Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

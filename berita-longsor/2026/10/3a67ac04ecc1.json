@@ -1,0 +1,26 @@
+{
+  "guid": "CBMilwFBVV95cUxQNU05SFNuTXo1ZGFtWlpodERnZUpDQU0tblFKTV9ISlgtSmNLNE8xMkUxcmdmMjZQODhEQ202aHpzUXRIV2JkR0MyZU1QMFU1dUdUQXVrWEExTnMwU2ZMLXRjaTAzX0lGVVc2TURIV0hxeUFFczRPSUdmZWVhUHkxQnh6T0FRb2hXd0F0cDEwV3JFY3BPenlJ",
+  "title": "8 ORANG TEWAS TERTIMBUN LONGSOR PENAMBANG PASIR MAGELANG - Basarnas",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNU05SFNuTXo1ZGFtWlpodERnZUpDQU0tblFKTV9ISlgtSmNLNE8xMkUxcmdmMjZQODhEQ202aHpzUXRIV2JkR0MyZU1QMFU1dUdUQXVrWEExTnMwU2ZMLXRjaTAzX0lGVVc2TURIV0hxeUFFczRPSUdmZWVhUHkxQnh6T0FRb2hXd0F0cDEwV3JFY3BPenlJ?oc=5",
+  "source": "Basarnas",
+  "source_url": "https://basarnas.go.id",
+  "published_at": "2026-10-23T21:12:38.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-24T00:30:32.297Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.08",
+      "nama": "Kabupaten Magelang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.71",
+      "nama": "Kota Magelang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
