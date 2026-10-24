@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.24.06.35.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-24T13:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-24T13:30:00+07:00</effective>
+    <expires>2026-10-24T15:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 October 2026, 13:30 WIB di sebagian wilayah Jawa Timur, khususnya di BARENG, KEDUNGDUNG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 October 2026, 15:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/10/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.659,112.353 -7.667,112.356 -7.669,112.352 -7.693,112.352 -7.702,112.356 -7.712,112.341 -7.710,112.336 -7.734,112.336 -7.742,112.332 -7.727,112.302 -7.726,112.279 -7.689,112.274 -7.666,112.281 -7.670,112.292 -7.647,112.292 -7.654,112.311 -7.643,112.324 -7.646,112.332 -7.652,112.331 -7.655,112.336 -7.659,112.353</polygon>
+      <polygon>-7.041,113.328 -7.047,113.329 -7.053,113.324 -7.051,113.311 -7.055,113.304 -7.065,113.307 -7.077,113.302 -7.080,113.292 -7.108,113.286 -7.137,113.271 -7.138,113.258 -7.118,113.253 -7.112,113.224 -7.097,113.206 -7.100,113.192 -7.098,113.181 -7.095,113.175 -7.088,113.175 -7.048,113.193 -7.016,113.193 -7.014,113.198 -7.017,113.219 -7.013,113.226 -7.000,113.225 -6.991,113.235 -7.012,113.245 -7.019,113.254 -7.028,113.251 -7.037,113.270 -7.051,113.279 -7.056,113.275 -7.062,113.277 -7.043,113.306 -7.041,113.328</polygon>
+    </area>
+  </info>
+</alert>
