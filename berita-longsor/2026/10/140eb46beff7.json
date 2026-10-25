@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiqgFBVV95cUxPMWpNYjJOa2JCOWhfWHZIX0FDM3I4eWhaVWFOQ2hCYUNQanVCVlFuRVJ2bTBtbEk3Mkp2WVBVQjgwZDdYaTJnM0pTckhuVkpQdmRIRWhUejg1a3JjRWNzMWtzN3JmSEJZQTZSTFRQUHpwb2ZHS2VGd19fY0FwTEVVN1RBR3hXanIwMl9STXcxXzBId3pvaHBaLV9LNkdBdm9VRlhHQmJhQmRlQQ",
+  "title": "Garut Siaga Hadapi Ancaman Longsor di Peralihan Musim - Pikiran Rakyat Koran",
+  "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMWpNYjJOa2JCOWhfWHZIX0FDM3I4eWhaVWFOQ2hCYUNQanVCVlFuRVJ2bTBtbEk3Mkp2WVBVQjgwZDdYaTJnM0pTckhuVkpQdmRIRWhUejg1a3JjRWNzMWtzN3JmSEJZQTZSTFRQUHpwb2ZHS2VGd19fY0FwTEVVN1RBR3hXanIwMl9STXcxXzBId3pvaHBaLV9LNkdBdm9VRlhHQmJhQmRlQQ?oc=5",
+  "source": "Pikiran Rakyat Koran",
+  "source_url": "https://koran.pikiran-rakyat.com",
+  "published_at": "2026-10-25T22:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-25T23:15:23.789Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
