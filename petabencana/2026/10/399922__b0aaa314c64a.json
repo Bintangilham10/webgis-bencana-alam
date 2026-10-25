@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-25T00:15:27.272Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.7942987836,
+        -6.5913703037
+      ]
+    },
+    "properties": {
+      "pkey": "399922",
+      "created_at": "2026-10-25T00:05:47.857Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "5e734f00-ec55-4c2a-915a-20da2fed8a70",
+      "image_url": "https://images.petabencana.id/5e734f00-ec55-4c2a-915a-20da2fed8a70.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 90.81749682883485,
+        "fireLocation": {
+          "lng": 106.79429878357632,
+          "lat": -6.5913703036942195
+        },
+        "personLocation": {
+          "lng": 106.79362568829714,
+          "lat": -6.591328665549824
+        },
+        "fireRadius": {
+          "lng": 106.79347802761885,
+          "lat": -6.5913223430571435
+        }
+      },
+      "tags": {
+        "city": "KOTA BOGOR",
+        "district_id": null,
+        "region_code": "3271",
+        "local_area_id": null,
+        "instance_region_code": "ID-JB"
+      },
+      "title": null,
+      "text": "Kebakaran hebat melanda kompleks pertokoan di Jalan Suryakencana, Kecamatan Bogor Tengah, Kota Bogor, Jawa Barat, pada Minggu (25/10/2026) ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
