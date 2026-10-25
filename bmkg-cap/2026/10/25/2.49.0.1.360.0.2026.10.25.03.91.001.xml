@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.25.03.91.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-25T11:24:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-25T11:25:00+09:00</effective>
+    <expires>2026-10-25T12:25:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 25 October 2026, 11:25 WIT di sebagian wilayah Papua, khususnya di BIAK KOTA, BIAK TIMUR, NIMBOKRANG, NUMFOR BARAT, ORKERI, SAMOFA, YENDIDORI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 25 October 2026, 12:25 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPU/2026/10/25/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua</areaDesc>
+      <polygon>-2.458,140.154 -2.525,140.227 -2.547,140.276 -2.577,140.251 -2.582,140.241 -2.581,140.220 -2.581,140.216 -2.555,140.206 -2.566,140.198 -2.568,140.147 -2.563,140.146 -2.563,140.136 -2.567,140.113 -2.581,140.106 -2.581,140.087 -2.581,140.084 -2.563,140.076 -2.556,140.076 -2.540,140.089 -2.526,140.095 -2.520,140.106 -2.517,140.122 -2.511,140.123 -2.499,140.113 -2.488,140.094 -2.484,140.096 -2.471,140.083 -2.466,140.085 -2.460,140.082 -2.477,140.066 -2.465,140.073 -2.458,140.064 -2.458,140.154</polygon>
+      <polygon>-1.181,136.157 -1.186,136.162 -1.195,136.154 -1.200,136.142 -1.186,136.077 -1.175,136.053 -1.156,136.047 -1.147,136.036 -1.139,136.039 -1.149,136.065 -1.171,136.067 -1.179,136.081 -1.176,136.114 -1.183,136.135 -1.181,136.157</polygon>
+      <polygon>-1.042,136.195 -1.062,136.209 -1.081,136.209 -1.091,136.217 -1.083,136.235 -1.133,136.252 -1.163,136.259 -1.171,136.241 -1.173,136.207 -1.186,136.162 -1.181,136.157 -1.119,136.133 -1.037,136.164 -1.045,136.176 -1.042,136.195</polygon>
+      <polygon>-1.230,136.224 -1.232,136.231 -1.239,136.227 -1.257,136.205 -1.258,136.199 -1.248,136.189 -1.234,136.201 -1.230,136.224</polygon>
+      <polygon>-1.313,136.210 -1.307,136.205 -1.307,136.210 -1.313,136.210</polygon>
+      <polygon>-1.003,134.884 -1.029,134.896 -1.037,134.900 -1.096,134.900 -1.087,134.844 -1.085,134.827 -1.066,134.823 -1.032,134.795 -1.007,134.797 -1.003,134.801 -0.989,134.799 -0.982,134.810 -0.984,134.795 -0.981,134.793 -0.970,134.805 -0.957,134.807 -0.949,134.819 -0.980,134.840 -0.993,134.845 -1.001,134.844 -1.003,134.884</polygon>
+      <polygon>-0.992,134.793 -0.997,134.790 -0.993,134.790 -0.992,134.793</polygon>
+      <polygon>-1.099,134.787 -1.090,134.784 -1.092,134.787 -1.099,134.787</polygon>
+      <polygon>-1.007,135.966 -1.022,135.995 -1.036,136.010 -1.076,136.018 -1.089,136.033 -1.099,136.038 -1.139,136.039 -1.147,136.036 -1.143,136.002 -1.149,135.956 -1.144,135.945 -1.154,135.933 -1.161,135.913 -1.168,135.907 -1.178,135.906 -1.174,135.880 -1.166,135.857 -1.064,135.934 -1.027,135.905 -1.006,135.906 -1.007,135.966</polygon>
+      <polygon>-1.119,136.133 -1.181,136.157 -1.183,136.135 -1.176,136.114 -1.179,136.081 -1.171,136.067 -1.149,136.065 -1.139,136.039 -1.099,136.038 -1.099,136.062 -1.105,136.083 -1.112,136.087 -1.116,136.098 -1.119,136.133</polygon>
+      <polygon>-1.096,134.900 -1.099,134.940 -1.110,134.963 -1.124,134.951 -1.128,134.950 -1.141,134.890 -1.131,134.862 -1.133,134.859 -1.138,134.860 -1.132,134.854 -1.118,134.854 -1.103,134.836 -1.087,134.844 -1.096,134.900</polygon>
+    </area>
+  </info>
+</alert>
