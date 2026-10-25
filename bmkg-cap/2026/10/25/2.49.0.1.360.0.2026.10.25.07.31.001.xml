@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.25.07.31.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-25T12:45:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-25T12:55:00+07:00</effective>
+    <expires>2026-10-25T14:25:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 25 October 2026, 12:55 WIB di sebagian wilayah Jakarta, khususnya di JONGGOL, KELAPA DUA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 25 October 2026, 14:25 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJK/2026/10/25/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jakarta</areaDesc>
+      <polygon>-6.459,107.126 -6.467,107.123 -6.466,107.132 -6.480,107.127 -6.484,107.104 -6.508,107.111 -6.530,107.096 -6.519,107.088 -6.522,107.076 -6.519,107.069 -6.508,107.070 -6.507,107.064 -6.519,107.055 -6.525,107.041 -6.557,107.026 -6.561,107.027 -6.570,107.043 -6.583,107.038 -6.583,107.031 -6.581,107.021 -6.560,107.006 -6.549,106.986 -6.537,106.987 -6.534,106.992 -6.522,106.995 -6.525,106.978 -6.517,106.981 -6.502,107.002 -6.460,106.999 -6.445,107.014 -6.445,107.024 -6.437,107.049 -6.430,107.056 -6.443,107.080 -6.447,107.081 -6.454,107.101 -6.462,107.108 -6.459,107.126</polygon>
+      <polygon>-6.226,106.630 -6.230,106.638 -6.247,106.644 -6.247,106.629 -6.261,106.635 -6.264,106.626 -6.265,106.619 -6.255,106.614 -6.252,106.609 -6.273,106.599 -6.266,106.583 -6.248,106.589 -6.243,106.587 -6.231,106.593 -6.218,106.593 -6.206,106.596 -6.215,106.611 -6.227,106.614 -6.226,106.630</polygon>
+    </area>
+  </info>
+</alert>

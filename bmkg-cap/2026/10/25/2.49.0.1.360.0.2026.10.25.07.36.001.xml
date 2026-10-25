@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.25.07.36.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-25T13:05:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-25T13:15:00+07:00</effective>
+    <expires>2026-10-25T15:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Banten</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 25 October 2026, 13:15 WIB di sebagian wilayah Banten, khususnya di CIPOCOK JAYA, CURUG, WALANTAKA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 25 October 2026, 15:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBT/2026/10/25/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Banten</areaDesc>
+      <polygon>-6.140,106.246 -6.152,106.255 -6.169,106.244 -6.174,106.231 -6.180,106.226 -6.195,106.227 -6.197,106.208 -6.184,106.209 -6.156,106.201 -6.132,106.207 -6.120,106.202 -6.104,106.212 -6.090,106.222 -6.099,106.230 -6.105,106.224 -6.113,106.228 -6.129,106.218 -6.133,106.241 -6.140,106.246</polygon>
+      <polygon>-6.156,106.201 -6.184,106.209 -6.197,106.208 -6.204,106.193 -6.218,106.197 -6.214,106.158 -6.211,106.158 -6.205,106.136 -6.192,106.135 -6.184,106.146 -6.170,106.151 -6.150,106.168 -6.146,106.176 -6.171,106.181 -6.168,106.191 -6.156,106.201</polygon>
+      <polygon>-6.104,106.212 -6.120,106.202 -6.132,106.207 -6.156,106.201 -6.168,106.191 -6.171,106.181 -6.146,106.176 -6.150,106.168 -6.170,106.151 -6.174,106.131 -6.168,106.121 -6.161,106.118 -6.152,106.122 -6.148,106.133 -6.137,106.142 -6.137,106.161 -6.133,106.162 -6.130,106.174 -6.135,106.182 -6.122,106.186 -6.120,106.178 -6.116,106.179 -6.108,106.197 -6.102,106.199 -6.104,106.212</polygon>
+    </area>
+  </info>
+</alert>
