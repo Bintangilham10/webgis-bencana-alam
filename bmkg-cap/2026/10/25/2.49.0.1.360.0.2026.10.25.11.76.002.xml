@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.25.11.76.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-25T17:15:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-25T17:30:00+08:00</effective>
+    <expires>2026-10-25T19:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 25 October 2026, 17:30 WITA di sebagian wilayah Sulawesi Barat, khususnya di ALLU, BULO, MATANGNGA, MESSAWA, SUMARORONG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 25 October 2026, 19:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSK/2026/10/25/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Barat</areaDesc>
+      <polygon>-3.097,119.391 -3.110,119.414 -3.132,119.436 -3.160,119.428 -3.173,119.430 -3.198,119.395 -3.197,119.372 -3.206,119.372 -3.209,119.329 -3.205,119.300 -3.196,119.287 -3.185,119.280 -3.177,119.265 -3.166,119.256 -3.144,119.252 -3.127,119.254 -3.093,119.226 -3.072,119.224 -3.068,119.239 -3.075,119.244 -3.089,119.246 -3.077,119.272 -3.076,119.286 -3.107,119.347 -3.105,119.365 -3.097,119.391</polygon>
+      <polygon>-3.206,119.372 -3.213,119.373 -3.233,119.392 -3.250,119.421 -3.268,119.432 -3.312,119.437 -3.332,119.445 -3.338,119.440 -3.322,119.432 -3.315,119.409 -3.306,119.402 -3.291,119.357 -3.289,119.345 -3.267,119.317 -3.263,119.305 -3.253,119.295 -3.240,119.291 -3.196,119.287 -3.205,119.300 -3.209,119.329 -3.206,119.372</polygon>
+      <polygon>-3.072,119.224 -3.093,119.226 -3.127,119.254 -3.144,119.252 -3.166,119.256 -3.177,119.265 -3.185,119.280 -3.196,119.287 -3.240,119.291 -3.253,119.295 -3.263,119.305 -3.264,119.300 -3.273,119.294 -3.274,119.289 -3.272,119.262 -3.258,119.256 -3.259,119.234 -3.265,119.229 -3.301,119.225 -3.295,119.202 -3.296,119.194 -3.255,119.190 -3.237,119.193 -3.234,119.197 -3.218,119.197 -3.191,119.178 -3.180,119.177 -3.166,119.167 -3.138,119.167 -3.133,119.162 -3.114,119.159 -3.074,119.214 -3.072,119.224</polygon>
+      <polygon>-3.383,119.042 -3.388,119.030 -3.420,119.035 -3.430,119.028 -3.454,118.992 -3.450,118.981 -3.453,118.952 -3.456,118.951 -3.456,118.951 -3.438,118.940 -3.416,118.922 -3.406,118.915 -3.372,118.919 -3.365,118.914 -3.328,118.905 -3.312,118.910 -3.297,118.921 -3.249,118.910 -3.256,118.917 -3.293,118.925 -3.287,118.955 -3.278,118.966 -3.272,118.980 -3.272,118.995 -3.282,118.991 -3.335,118.991 -3.347,119.007 -3.382,119.011 -3.383,119.042</polygon>
+      <polygon>-3.114,119.159 -3.133,119.162 -3.138,119.167 -3.166,119.167 -3.180,119.177 -3.191,119.178 -3.218,119.197 -3.234,119.197 -3.237,119.193 -3.255,119.190 -3.259,119.179 -3.278,119.167 -3.327,119.172 -3.333,119.165 -3.327,119.155 -3.311,119.152 -3.295,119.140 -3.295,119.117 -3.281,119.106 -3.281,119.097 -3.285,119.098 -3.274,119.085 -3.258,119.092 -3.251,119.083 -3.234,119.079 -3.241,119.072 -3.241,119.065 -3.230,119.064 -3.221,119.074 -3.212,119.077 -3.201,119.077 -3.192,119.068 -3.185,119.070 -3.178,119.065 -3.174,119.075 -3.148,119.071 -3.139,119.078 -3.109,119.072 -3.113,119.081 -3.104,119.089 -3.105,119.098 -3.093,119.112 -3.098,119.132 -3.106,119.134 -3.117,119.148 -3.114,119.159</polygon>
+    </area>
+  </info>
+</alert>

@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-25T11:15:27.777Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.6767855207,
+        -3.0192964
+      ]
+    },
+    "properties": {
+      "pkey": "399923",
+      "created_at": "2026-10-25T11:07:57.918Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "d724c6cf-e391-4204-8b68-eada10b40080",
+      "image_url": "https://images.petabencana.id/d724c6cf-e391-4204-8b68-eada10b40080.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 149.01368068007866,
+        "fireLocation": {
+          "lat": "-3.0192964",
+          "lng": 114.676785520677
+        },
+        "personLocation": {
+          "lng": 114.67776267981554,
+          "lat": -3.0195894486877393
+        },
+        "fireRadius": {
+          "lng": 114.67544441616911,
+          "lat": -3.019344612740383
+        }
+      },
+      "tags": {
+        "city": "BARITO KUALA",
+        "district_id": null,
+        "region_code": "6304",
+        "local_area_id": null,
+        "instance_region_code": "ID-KS"
+      },
+      "title": null,
+      "text": "Kebakaran lahan (Karhutla) Di JI. Trans Kalimantan Batola Residence Kab Batola Kalimantan selatan",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
