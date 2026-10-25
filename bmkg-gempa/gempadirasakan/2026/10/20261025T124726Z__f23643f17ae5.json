@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-25T13:00:39.637Z",
+  "data": {
+    "Tanggal": "25 Okt 2026",
+    "Jam": "19:47:26 WIB",
+    "DateTime": "2026-10-25T12:47:26+00:00",
+    "Coordinates": "-0.73,131.39",
+    "Lintang": "0.73 LS",
+    "Bujur": "131.39 BT",
+    "Magnitude": "3.8",
+    "Kedalaman": "6 km",
+    "Wilayah": "Pusat gempa berada di laut 13 km timur laut Kota Sorong",
+    "Dirasakan": "II Kota Sorong"
+  }
+}
