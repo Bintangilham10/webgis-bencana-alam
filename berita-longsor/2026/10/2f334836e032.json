@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi1gFBVV95cUxNRFpQeDRQTjY3aUxVQXlUcFduVnBnTTdmX3NkVUhSWU9ndXU3Znl5eDZqMl9qMlN1a2hBMlJveEZMdUtNY3ZlZlRhU1llWDMtTUZQQy1mcGVNV3pVZUR3LXZvOThpQWNGLUhXUUtGWGlSbnNHdGxYOEFBZHR6VjVhSzBZSkxqNE5EX1pLS2xIdjk3TlhCd0hKQTV5TXpNYS02eER1al82RTUydjBpRVlzWWFFSzVFZW9pNnF1WnpzZXctUENZQkZldG9HS3BNLTVBSGYxSXN3",
+  "title": "Penampakan Rumah Ambruk di Karadenan Cibinong Bogor, Terdampak Tanah Longsor Usai Hujan Deras - Tribunnewsbogor.com",
+  "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNRFpQeDRQTjY3aUxVQXlUcFduVnBnTTdmX3NkVUhSWU9ndXU3Znl5eDZqMl9qMlN1a2hBMlJveEZMdUtNY3ZlZlRhU1llWDMtTUZQQy1mcGVNV3pVZUR3LXZvOThpQWNGLUhXUUtGWGlSbnNHdGxYOEFBZHR6VjVhSzBZSkxqNE5EX1pLS2xIdjk3TlhCd0hKQTV5TXpNYS02eER1al82RTUydjBpRVlzWWFFSzVFZW9pNnF1WnpzZXctUENZQkZldG9HS3BNLTVBSGYxSXN3?oc=5",
+  "source": "Tribunnewsbogor.com",
+  "source_url": "https://bogor.tribunnews.com",
+  "published_at": "2026-10-25T13:05:58.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-25T13:54:13.949Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
