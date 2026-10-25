@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-25T08:00:42.434Z",
+  "data": {
+    "Tanggal": "25 Okt 2026",
+    "Jam": "14:40:01 WIB",
+    "DateTime": "2026-10-25T07:40:01+00:00",
+    "Coordinates": "4.24,97.65",
+    "Lintang": "4.24 LU",
+    "Bujur": "97.65 BT",
+    "Magnitude": "4.7",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di darat 44 km barat Kab. Aceh Tamiang",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "IV Gayo Lues",
+    "Shakemap": "20261025144001.mmi.jpg"
+  }
+}
