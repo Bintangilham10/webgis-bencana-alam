@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.26.05.34.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-26T11:36:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-26T11:46:00+07:00</effective>
+    <expires>2026-10-26T13:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di DI Yogyakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 October 2026, 11:46 WIB di sebagian wilayah DI Yogyakarta, khususnya di GIRIMULYO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 October 2026, 13:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CYG/2026/10/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>DI Yogyakarta</areaDesc>
+      <polygon>-7.720,110.186 -7.736,110.200 -7.760,110.200 -7.782,110.188 -7.789,110.172 -7.782,110.158 -7.778,110.159 -7.759,110.147 -7.765,110.140 -7.780,110.137 -7.780,110.133 -7.786,110.132 -7.783,110.129 -7.797,110.129 -7.797,110.123 -7.788,110.123 -7.777,110.111 -7.765,110.114 -7.758,110.119 -7.758,110.120 -7.740,110.132 -7.712,110.134 -7.717,110.148 -7.720,110.186</polygon>
+    </area>
+  </info>
+</alert>
