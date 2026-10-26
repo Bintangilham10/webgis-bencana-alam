@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwAFBVV95cUxOZnc3dnRKV0IxLWZNWjFmWDAwN2dLc0ItV0JXUlhfNDVSYmRNUTJSWkdqeVJMNVpDMllVdFpVbXJSNjREZkpOWTFXT25xM3o0ejVTamZZRk9LWkYwaHctTlFXZ29EUE52QTUtLURieVlYQmw1NDNUb0hhR3Q0TnFGNm9jWGNVYXhqcXRmeVc5bDQxUkJtYmdJTEhUTGw0aFpjYWVhamI0ZTRQSG1YQzEyYXRZSU92NnVqa2NocVZtcTbSAcYBQVVfeXFMTVB1eFlRLVRjaklRaGtSLXVuVDdWRTFRMmJBeDh5a3UwUnN3YkxyTXBYcXVib3kySjlQNFlOX1B3ay0zcUZnREg0VWdhZWhES01vV25VQzAxUlhnNHE3cWdjSGhVN1RIbWtTd21hX1EwVkp0UHNSQV94YmprajJZcG85cUZraGF3NWY2aHIyd3VJbE90WVB0SEpuUkFNSl9Na0NXZXFwVUFGd0I2SjI0S0JnZEhkY20tOEtzMFdEVTY5Z0trUVpR",
+  "title": "Pemdes Cibadak Sukamakmur Bogor Bangun TPT, Cegah Longsor Berulang - Radar Bogor",
+  "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZnc3dnRKV0IxLWZNWjFmWDAwN2dLc0ItV0JXUlhfNDVSYmRNUTJSWkdqeVJMNVpDMllVdFpVbXJSNjREZkpOWTFXT25xM3o0ejVTamZZRk9LWkYwaHctTlFXZ29EUE52QTUtLURieVlYQmw1NDNUb0hhR3Q0TnFGNm9jWGNVYXhqcXRmeVc5bDQxUkJtYmdJTEhUTGw0aFpjYWVhamI0ZTRQSG1YQzEyYXRZSU92NnVqa2NocVZtcTbSAcYBQVVfeXFMTVB1eFlRLVRjaklRaGtSLXVuVDdWRTFRMmJBeDh5a3UwUnN3YkxyTXBYcXVib3kySjlQNFlOX1B3ay0zcUZnREg0VWdhZWhES01vV25VQzAxUlhnNHE3cWdjSGhVN1RIbWtTd21hX1EwVkp0UHNSQV94YmprajJZcG85cUZraGF3NWY2aHIyd3VJbE90WVB0SEpuUkFNSl9Na0NXZXFwVUFGd0I2SjI0S0JnZEhkY20tOEtzMFdEVTY5Z0trUVpR?oc=5",
+  "source": "Radar Bogor",
+  "source_url": "https://radarbogor.jawapos.com",
+  "published_at": "2026-10-26T13:11:01.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-26T14:30:53.814Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

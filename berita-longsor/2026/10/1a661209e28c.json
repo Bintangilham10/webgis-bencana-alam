@@ -1,0 +1,21 @@
+{
+  "guid": "CBMioAFBVV95cUxPVlp4YlVzUUprUUdTX1JpU21xQTFkN2ZVY1RmM2VIUzBhNGtLREl1dTV1RWlCLVdaemkwV0NNeU9ZaUtUSUozSk9OZXZCZjNTOFdITGhYX3hiVUVyZVBpeFVqbXNTMGo1eXpjc1lmMU12SXRGTHYwTTRNX0ZCVXFpMkhzUnowdjhBdjBlNVNGV3YyS21EN1VIRGkyMElVcFpm",
+  "title": "Bencana Tanah Longsor di Maribaya, Polsek Karanganyar Bersihkan Longsoran - Tabloid Elemen",
+  "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVlp4YlVzUUprUUdTX1JpU21xQTFkN2ZVY1RmM2VIUzBhNGtLREl1dTV1RWlCLVdaemkwV0NNeU9ZaUtUSUozSk9OZXZCZjNTOFdITGhYX3hiVUVyZVBpeFVqbXNTMGo1eXpjc1lmMU12SXRGTHYwTTRNX0ZCVXFpMkhzUnowdjhBdjBlNVNGV3YyS21EN1VIRGkyMElVcFpm?oc=5",
+  "source": "Tabloid Elemen",
+  "source_url": "https://tabloidelemen.com",
+  "published_at": "2026-10-26T09:06:09.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-26T14:30:53.814Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.13",
+      "nama": "Kabupaten Karanganyar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
