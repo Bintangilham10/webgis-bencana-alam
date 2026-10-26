@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.26.12.52.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-26T20:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-26T20:05:00+08:00</effective>
+    <expires>2026-10-26T22:05:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 October 2026, 20:05 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di AIKMEL.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 October 2026, 22:05 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/10/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.447,116.496 -8.460,116.496 -8.487,116.506 -8.524,116.528 -8.533,116.537 -8.558,116.549 -8.560,116.554 -8.575,116.545 -8.588,116.571 -8.602,116.588 -8.621,116.575 -8.591,116.526 -8.597,116.512 -8.583,116.494 -8.584,116.488 -8.582,116.482 -8.575,116.479 -8.572,116.492 -8.567,116.495 -8.533,116.478 -8.512,116.473 -8.494,116.455 -8.468,116.451 -8.464,116.446 -8.454,116.448 -8.444,116.437 -8.424,116.434 -8.422,116.457 -8.417,116.467 -8.423,116.484 -8.430,116.490 -8.447,116.496</polygon>
+    </area>
+  </info>
+</alert>
