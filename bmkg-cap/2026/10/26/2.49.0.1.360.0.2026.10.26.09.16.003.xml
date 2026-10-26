@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.26.09.16.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-26T15:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-26T16:00:00+07:00</effective>
+    <expires>2026-10-26T18:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 October 2026, 16:00 WIB di sebagian wilayah Sumatera Selatan, khususnya di KISAM TINGGI, MUARA DUA KISAM, SEMENDE DARAT ULU, ULU OGAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 October 2026, 18:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSS/2026/10/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Selatan</areaDesc>
+      <polygon>-4.086,103.791 -4.161,103.771 -4.180,103.770 -4.205,103.776 -4.224,103.773 -4.241,103.744 -4.264,103.717 -4.307,103.680 -4.312,103.662 -4.314,103.647 -4.341,103.650 -4.354,103.647 -4.365,103.629 -4.373,103.641 -4.385,103.649 -4.403,103.651 -4.405,103.627 -4.394,103.602 -4.384,103.561 -4.393,103.525 -4.388,103.501 -4.408,103.468 -4.413,103.459 -4.439,103.439 -4.460,103.444 -4.469,103.436 -4.491,103.427 -4.525,103.425 -4.516,103.398 -4.485,103.411 -4.468,103.413 -4.458,103.424 -4.405,103.429 -4.372,103.448 -4.353,103.468 -4.344,103.467 -4.336,103.462 -4.331,103.444 -4.321,103.460 -4.329,103.467 -4.341,103.468 -4.345,103.474 -4.350,103.484 -4.347,103.501 -4.364,103.520 -4.356,103.530 -4.358,103.547 -4.347,103.554 -4.342,103.570 -4.343,103.588 -4.350,103.599 -4.328,103.606 -4.291,103.625 -4.266,103.627 -4.248,103.618 -4.233,103.616 -4.214,103.622 -4.211,103.639 -4.197,103.654 -4.184,103.691 -4.183,103.706 -4.090,103.704 -4.085,103.705 -4.085,103.708 -4.084,103.747 -4.070,103.773 -4.078,103.791 -4.086,103.791</polygon>
+      <polygon>-4.204,103.607 -4.214,103.622 -4.233,103.616 -4.248,103.618 -4.266,103.627 -4.291,103.625 -4.328,103.606 -4.350,103.599 -4.343,103.588 -4.342,103.570 -4.347,103.554 -4.358,103.547 -4.356,103.530 -4.364,103.520 -4.347,103.501 -4.350,103.484 -4.345,103.474 -4.341,103.468 -4.329,103.467 -4.321,103.460 -4.331,103.444 -4.320,103.411 -4.316,103.382 -4.298,103.351 -4.211,103.431 -4.210,103.452 -4.192,103.488 -4.185,103.519 -4.175,103.540 -4.181,103.589 -4.192,103.600 -4.204,103.607</polygon>
+      <polygon>-4.409,103.819 -4.418,103.821 -4.440,103.840 -4.449,103.853 -4.453,103.816 -4.443,103.790 -4.443,103.778 -4.447,103.766 -4.455,103.765 -4.472,103.743 -4.462,103.731 -4.451,103.727 -4.436,103.713 -4.433,103.703 -4.438,103.680 -4.403,103.651 -4.385,103.649 -4.373,103.641 -4.365,103.629 -4.354,103.647 -4.341,103.650 -4.314,103.647 -4.312,103.662 -4.342,103.666 -4.352,103.672 -4.355,103.680 -4.365,103.684 -4.375,103.709 -4.372,103.725 -4.383,103.735 -4.388,103.747 -4.388,103.752 -4.371,103.765 -4.377,103.776 -4.386,103.777 -4.405,103.796 -4.409,103.819</polygon>
+      <polygon>-4.239,103.820 -4.262,103.836 -4.291,103.846 -4.361,103.854 -4.377,103.851 -4.394,103.827 -4.409,103.819 -4.405,103.796 -4.386,103.777 -4.377,103.776 -4.371,103.765 -4.388,103.752 -4.388,103.747 -4.383,103.735 -4.372,103.725 -4.375,103.709 -4.365,103.684 -4.355,103.680 -4.352,103.672 -4.342,103.666 -4.312,103.662 -4.307,103.680 -4.264,103.717 -4.241,103.744 -4.224,103.773 -4.210,103.799 -4.239,103.820</polygon>
+    </area>
+  </info>
+</alert>
