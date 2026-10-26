@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.26.03.31.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-26T10:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-26T10:50:00+07:00</effective>
+    <expires>2026-10-26T12:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 October 2026, 10:50 WIB di sebagian wilayah Jakarta, khususnya di CIKARANG SELATAN, CIKARANG UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 October 2026, 12:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJK/2026/10/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jakarta</areaDesc>
+      <polygon>-6.249,107.198 -6.260,107.197 -6.270,107.185 -6.287,107.179 -6.290,107.172 -6.307,107.170 -6.304,107.165 -6.300,107.152 -6.292,107.143 -6.307,107.141 -6.306,107.117 -6.301,107.114 -6.290,107.119 -6.280,107.118 -6.268,107.136 -6.250,107.146 -6.247,107.151 -6.245,107.159 -6.249,107.176 -6.243,107.177 -6.249,107.198</polygon>
+      <polygon>-6.304,107.165 -6.309,107.165 -6.317,107.157 -6.326,107.172 -6.353,107.178 -6.355,107.150 -6.349,107.143 -6.369,107.130 -6.373,107.098 -6.365,107.097 -6.360,107.071 -6.347,107.076 -6.333,107.099 -6.310,107.118 -6.306,107.117 -6.307,107.141 -6.292,107.143 -6.300,107.152 -6.304,107.165</polygon>
+    </area>
+  </info>
+</alert>
