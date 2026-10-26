@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.26.09.91.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-26T17:55:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-26T18:00:00+09:00</effective>
+    <expires>2026-10-26T20:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 October 2026, 18:00 WIT di sebagian wilayah Papua, khususnya di BONGGO, BONGGO TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 October 2026, 20:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPU/2026/10/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua</areaDesc>
+      <polygon>-2.292,139.644 -2.298,139.643 -2.305,139.636 -2.308,139.631 -2.305,139.628 -2.325,139.609 -2.343,139.606 -2.348,139.609 -2.357,139.606 -2.372,139.592 -2.380,139.574 -2.379,139.549 -2.387,139.546 -2.396,139.551 -2.443,139.556 -2.471,139.423 -2.471,139.408 -2.449,139.378 -2.429,139.367 -2.416,139.369 -2.220,139.365 -2.167,139.367 -2.152,139.372 -2.190,139.447 -2.244,139.528 -2.268,139.574 -2.285,139.618 -2.292,139.644</polygon>
+      <polygon>-2.120,139.458 -2.119,139.453 -2.112,139.458 -2.114,139.460 -2.120,139.458</polygon>
+      <polygon>-2.124,139.473 -2.121,139.471 -2.113,139.477 -2.121,139.479 -2.124,139.473</polygon>
+      <polygon>-2.134,139.514 -2.140,139.516 -2.134,139.508 -2.125,139.507 -2.128,139.514 -2.134,139.514</polygon>
+      <polygon>-2.209,139.531 -2.207,139.528 -2.206,139.532 -2.209,139.531</polygon>
+      <polygon>-2.362,140.000 -2.373,140.001 -2.393,139.985 -2.404,139.983 -2.420,139.988 -2.430,139.984 -2.402,139.747 -2.443,139.556 -2.396,139.551 -2.387,139.546 -2.379,139.549 -2.380,139.574 -2.372,139.592 -2.357,139.606 -2.348,139.609 -2.343,139.606 -2.325,139.609 -2.305,139.628 -2.308,139.631 -2.305,139.636 -2.298,139.643 -2.292,139.644 -2.338,139.714 -2.356,139.749 -2.377,139.804 -2.375,139.884 -2.362,140.000</polygon>
+    </area>
+  </info>
+</alert>
