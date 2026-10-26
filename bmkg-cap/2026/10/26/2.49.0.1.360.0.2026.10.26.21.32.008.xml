@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.26.21.32.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-27T04:01:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-27T04:11:00+07:00</effective>
+    <expires>2026-10-27T06:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 October 2026, 04:11 WIB di sebagian wilayah Jawa Barat, khususnya di CIBUAYA, PATOKBEUSI, PEDES.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 October 2026, 06:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/10/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.358,107.707 -6.364,107.712 -6.383,107.710 -6.381,107.693 -6.383,107.685 -6.399,107.669 -6.400,107.656 -6.387,107.654 -6.389,107.645 -6.402,107.638 -6.385,107.591 -6.391,107.576 -6.403,107.577 -6.406,107.574 -6.400,107.555 -6.408,107.554 -6.417,107.540 -6.415,107.534 -6.402,107.539 -6.391,107.538 -6.353,107.565 -6.346,107.566 -6.321,107.579 -6.320,107.599 -6.326,107.616 -6.347,107.618 -6.340,107.632 -6.341,107.655 -6.353,107.657 -6.355,107.645 -6.365,107.657 -6.355,107.666 -6.354,107.686 -6.358,107.707</polygon>
+      <polygon>-6.064,107.417 -6.076,107.404 -6.092,107.404 -6.098,107.409 -6.109,107.405 -6.116,107.394 -6.132,107.386 -6.131,107.370 -6.138,107.368 -6.142,107.360 -6.140,107.348 -6.133,107.338 -6.114,107.335 -6.107,107.323 -6.098,107.323 -6.101,107.327 -6.084,107.333 -6.079,107.356 -6.063,107.353 -6.045,107.368 -6.059,107.379 -6.062,107.387 -6.055,107.391 -6.034,107.385 -6.024,107.394 -6.064,107.417</polygon>
+      <polygon>-6.024,107.394 -6.034,107.385 -6.055,107.391 -6.062,107.387 -6.059,107.379 -6.045,107.368 -6.063,107.353 -6.079,107.356 -6.084,107.333 -6.101,107.327 -6.098,107.323 -6.096,107.320 -6.075,107.320 -6.073,107.312 -6.063,107.312 -6.054,107.306 -6.041,107.308 -6.040,107.296 -6.036,107.293 -6.026,107.295 -6.020,107.287 -5.983,107.293 -5.989,107.279 -5.979,107.270 -5.982,107.256 -5.973,107.232 -5.958,107.298 -5.965,107.329 -5.970,107.341 -5.986,107.361 -6.024,107.394</polygon>
+    </area>
+  </info>
+</alert>
