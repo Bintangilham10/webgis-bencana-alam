@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.26.07.75.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-26T15:34:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-26T15:50:00+08:00</effective>
+    <expires>2026-10-26T17:50:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 October 2026, 15:50 WITA di sebagian wilayah Gorontalo, khususnya di TALUDITI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 October 2026, 17:50 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/10/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.977,121.888 0.729,121.889 0.690,121.891 0.645,121.909 0.632,121.897 0.590,121.840 0.586,121.810 0.590,121.803 0.590,121.780 0.596,121.768 0.609,121.768 0.609,121.772 0.621,121.773 0.636,121.761 0.648,121.757 0.648,121.752 0.679,121.729 0.923,121.724 0.931,121.739 0.932,121.761 0.950,121.808 0.951,121.813 0.961,121.823 0.961,121.831 0.993,121.851 0.977,121.888</polygon>
+    </area>
+  </info>
+</alert>
