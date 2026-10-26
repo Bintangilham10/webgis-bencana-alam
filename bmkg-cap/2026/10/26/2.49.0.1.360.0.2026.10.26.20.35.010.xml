@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.26.19.35.010</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-27T02:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-27T02:50:00+07:00</effective>
+    <expires>2026-10-27T05:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 October 2026, 02:50 WIB di sebagian wilayah Jawa Timur, khususnya di BAURENO, KEPOHBARU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 October 2026, 05:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/10/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.158,112.143 -7.182,112.131 -7.191,112.122 -7.213,112.116 -7.225,112.103 -7.226,112.092 -7.230,112.089 -7.260,112.084 -7.266,112.087 -7.269,112.094 -7.282,112.091 -7.284,112.086 -7.283,112.080 -7.268,112.076 -7.264,112.070 -7.256,112.066 -7.210,112.069 -7.191,112.066 -7.182,112.051 -7.160,112.051 -7.158,112.055 -7.163,112.058 -7.163,112.064 -7.155,112.082 -7.147,112.084 -7.155,112.102 -7.138,112.106 -7.131,112.113 -7.137,112.127 -7.145,112.128 -7.151,112.145 -7.158,112.143</polygon>
+      <polygon>-7.097,112.130 -7.110,112.155 -7.120,112.155 -7.119,112.163 -7.132,112.162 -7.158,112.151 -7.158,112.143 -7.151,112.145 -7.145,112.128 -7.137,112.127 -7.131,112.113 -7.138,112.106 -7.155,112.102 -7.147,112.084 -7.155,112.082 -7.163,112.064 -7.163,112.058 -7.158,112.055 -7.160,112.051 -7.161,112.049 -7.146,112.043 -7.128,112.052 -7.114,112.053 -7.113,112.062 -7.083,112.076 -7.067,112.077 -7.067,112.084 -7.086,112.086 -7.088,112.121 -7.100,112.118 -7.108,112.123 -7.107,112.127 -7.097,112.130</polygon>
+    </area>
+  </info>
+</alert>
