@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.26.06.34.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-26T13:05:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-26T13:10:00+07:00</effective>
+    <expires>2026-10-26T14:10:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di DI Yogyakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 October 2026, 13:10 WIB di sebagian wilayah DI Yogyakarta, khususnya di CANGKRINGAN, NGEMPLAK, PAKEM.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 October 2026, 14:10 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CYG/2026/10/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>DI Yogyakarta</areaDesc>
+      <polygon>-7.668,110.431 -7.673,110.431 -7.675,110.444 -7.684,110.462 -7.690,110.466 -7.689,110.469 -7.670,110.467 -7.672,110.474 -7.678,110.477 -7.703,110.483 -7.716,110.482 -7.722,110.476 -7.709,110.467 -7.719,110.440 -7.747,110.447 -7.745,110.440 -7.753,110.428 -7.751,110.412 -7.747,110.409 -7.722,110.412 -7.721,110.427 -7.709,110.435 -7.709,110.440 -7.689,110.436 -7.685,110.426 -7.690,110.423 -7.687,110.408 -7.670,110.418 -7.672,110.421 -7.668,110.431</polygon>
+      <polygon>-7.568,110.459 -7.572,110.444 -7.590,110.442 -7.608,110.431 -7.636,110.427 -7.668,110.431 -7.672,110.421 -7.670,110.418 -7.687,110.408 -7.702,110.399 -7.689,110.404 -7.675,110.390 -7.672,110.377 -7.600,110.414 -7.575,110.419 -7.565,110.413 -7.542,110.446 -7.568,110.459</polygon>
+      <polygon>-7.653,110.472 -7.678,110.477 -7.672,110.474 -7.670,110.467 -7.689,110.469 -7.690,110.466 -7.684,110.462 -7.675,110.444 -7.673,110.431 -7.668,110.431 -7.636,110.427 -7.608,110.431 -7.590,110.442 -7.572,110.444 -7.568,110.459 -7.653,110.472</polygon>
+    </area>
+  </info>
+</alert>
