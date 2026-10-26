@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-26T14:45:31.625Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        98.0654079371,
+        4.2759885931
+      ]
+    },
+    "properties": {
+      "pkey": "399928",
+      "created_at": "2026-10-26T14:36:58.794Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "12d3fc3d-d52e-472d-be95-d30bee6ec2d4",
+      "image_url": "https://images.petabencana.id/12d3fc3d-d52e-472d-be95-d30bee6ec2d4.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 20
+      },
+      "tags": {
+        "city": "ACEH TAMIANG",
+        "district_id": null,
+        "region_code": "1116",
+        "local_area_id": null,
+        "instance_region_code": "ID-AC"
+      },
+      "title": null,
+      "text": "Banjir di perumahan daerah Bukit Rata, Kejuruan Muda, Aceh Tamiang setelah hujan malam ini (26/10)",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

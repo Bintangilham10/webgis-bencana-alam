@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-26T14:45:31.625Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        97.9654604345,
+        4.2700669217
+      ]
+    },
+    "properties": {
+      "pkey": "399929",
+      "created_at": "2026-10-26T14:40:51.575Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "f07b2abb-d33b-45ef-8763-7ead46ada356",
+      "image_url": "https://images.petabencana.id/f07b2abb-d33b-45ef-8763-7ead46ada356.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 20
+      },
+      "tags": {
+        "city": "ACEH TAMIANG",
+        "district_id": null,
+        "region_code": "1116",
+        "local_area_id": null,
+        "instance_region_code": "ID-AC"
+      },
+      "title": null,
+      "text": "Terjadi banjir di Batang Ara, Bandar Pusaka, Aceh Tamiang setelah hujan ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
