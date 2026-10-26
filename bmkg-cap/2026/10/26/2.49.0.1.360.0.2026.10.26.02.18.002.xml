@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.26.02.18.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-26T07:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-26T07:30:00+07:00</effective>
+    <expires>2026-10-26T10:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Lampung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 October 2026, 07:30 WIB di sebagian wilayah Lampung, khususnya di GUNUNG SUGIH, LIMAU, PANCA JAYA, PUNGGUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 October 2026, 10:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CLG/2026/10/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Lampung</areaDesc>
+      <polygon>-4.924,105.312 -4.925,105.301 -4.941,105.306 -4.952,105.303 -4.973,105.315 -4.980,105.310 -4.989,105.286 -4.994,105.281 -4.991,105.275 -4.993,105.249 -5.004,105.234 -5.017,105.235 -5.024,105.241 -5.032,105.236 -5.055,105.233 -5.065,105.227 -5.045,105.216 -5.043,105.188 -5.051,105.180 -5.069,105.173 -5.062,105.161 -5.062,105.145 -5.047,105.151 -5.041,105.149 -5.041,105.145 -5.027,105.145 -5.027,105.139 -5.034,105.133 -5.032,105.129 -4.999,105.106 -4.990,105.119 -4.978,105.149 -4.979,105.159 -4.968,105.180 -4.955,105.195 -4.953,105.219 -4.958,105.243 -4.947,105.256 -4.953,105.264 -4.947,105.278 -4.939,105.283 -4.915,105.288 -4.899,105.298 -4.903,105.310 -4.915,105.314 -4.924,105.312</polygon>
+      <polygon>-4.994,105.281 -4.998,105.286 -5.010,105.285 -5.022,105.297 -5.030,105.294 -5.045,105.298 -5.036,105.324 -5.035,105.343 -5.039,105.345 -5.053,105.320 -5.056,105.310 -5.084,105.280 -5.083,105.270 -5.058,105.255 -5.059,105.242 -5.036,105.241 -5.032,105.236 -5.024,105.241 -5.017,105.235 -5.004,105.234 -4.993,105.249 -4.991,105.275 -4.994,105.281</polygon>
+      <polygon>-5.504,104.852 -5.533,104.866 -5.543,104.894 -5.550,104.895 -5.564,104.916 -5.577,104.906 -5.573,104.882 -5.577,104.876 -5.619,104.851 -5.632,104.838 -5.620,104.824 -5.605,104.777 -5.569,104.751 -5.560,104.734 -5.547,104.728 -5.524,104.751 -5.500,104.753 -5.501,104.760 -5.494,104.767 -5.497,104.782 -5.494,104.804 -5.504,104.852</polygon>
+      <polygon>-3.984,105.296 -3.985,105.275 -3.995,105.275 -3.994,105.270 -3.974,105.268 -3.974,105.251 -3.959,105.251 -3.959,105.218 -3.954,105.217 -3.966,105.211 -3.924,105.210 -3.923,105.179 -3.918,105.179 -3.918,105.170 -3.905,105.179 -3.893,105.202 -3.890,105.230 -3.904,105.237 -3.904,105.251 -3.886,105.263 -3.880,105.274 -3.872,105.279 -3.872,105.287 -3.878,105.287 -3.878,105.292 -3.872,105.301 -3.872,105.314 -3.908,105.314 -3.908,105.307 -3.926,105.307 -3.932,105.301 -3.944,105.297 -3.984,105.296</polygon>
+    </area>
+  </info>
+</alert>
