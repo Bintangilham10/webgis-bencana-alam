@@ -1,0 +1,23 @@
+{
+  "guid": "CBMijAFBVV95cUxPMGE0UEx0MGZHTUVpMC0xeFl4ejB0bXotc1JKSGl5cXNkazhGTlBaOEhxRTN5ZVZITUkwMnRPeEVsUEVSb3laZzl2T0paRUkySkpNMDVkUks3azdmek9vck5WZkhxNllJaTU1Rm5IYnhVaGp3QkFVNDNIaktGUk1ULV9LUUJYMGFrb21xUg",
+  "title": "Banjir dan Longsor Terjang Aceh Tengah, Sejumlah Warga Mengungsi - Pos Aceh",
+  "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMGE0UEx0MGZHTUVpMC0xeFl4ejB0bXotc1JKSGl5cXNkazhGTlBaOEhxRTN5ZVZITUkwMnRPeEVsUEVSb3laZzl2T0paRUkySkpNMDVkUks3azdmek9vck5WZkhxNllJaTU1Rm5IYnhVaGp3QkFVNDNIaktGUk1ULV9LUUJYMGFrb21xUg?oc=5",
+  "source": "Pos Aceh",
+  "source_url": "https://posaceh.com",
+  "published_at": "2026-10-26T01:09:13.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-26T05:28:31.482Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

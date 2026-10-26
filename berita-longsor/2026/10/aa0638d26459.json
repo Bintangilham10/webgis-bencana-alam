@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiiAFBVV95cUxOTk5Oak8ya3BBdS1RNTJlOXB4NFllZ25QZWZFeG9EQlJwR0JQa2RNdE1IQm1DMENKdUpKLXpCQUI5NWNpVkl4dUhhLURtRnFhYmU2RGZTOHFvTjVseXE5VXBpeTc4UlhBRlkwR1lVRDJyTUFiVmxsbG1BM21OdllrZ3JzTUt0ekZL",
+  "title": "Dipicu Hujan Deras, Longsor Susulan 15 Meter Terjadi di Kedung Badak Bogor - PELITA KARAWANG",
+  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTk5Oak8ya3BBdS1RNTJlOXB4NFllZ25QZWZFeG9EQlJwR0JQa2RNdE1IQm1DMENKdUpKLXpCQUI5NWNpVkl4dUhhLURtRnFhYmU2RGZTOHFvTjVseXE5VXBpeTc4UlhBRlkwR1lVRDJyTUFiVmxsbG1BM21OdllrZ3JzTUt0ekZL?oc=5",
+  "source": "PELITA KARAWANG",
+  "source_url": "https://www.pelitakarawang.com",
+  "published_at": "2026-10-26T02:32:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-26T05:28:31.482Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
