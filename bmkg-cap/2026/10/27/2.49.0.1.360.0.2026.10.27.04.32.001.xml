@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.27.04.32.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-27T11:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-27T11:40:00+07:00</effective>
+    <expires>2026-10-27T13:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 October 2026, 11:40 WIB di sebagian wilayah Jawa Barat, khususnya di CIKAUM, PATOKBEUSI, PURWADADI, SUKALARANG, SUKARAJA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 October 2026, 13:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/10/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.817,106.995 -6.829,106.992 -6.850,106.993 -6.887,107.000 -6.897,107.000 -6.911,106.991 -6.915,106.985 -6.927,106.993 -6.934,106.985 -6.923,106.959 -6.921,106.950 -6.915,106.955 -6.905,106.954 -6.900,106.957 -6.889,106.953 -6.857,106.968 -6.844,106.966 -6.810,106.994 -6.817,106.995</polygon>
+      <polygon>-6.909,107.042 -6.916,107.035 -6.920,107.012 -6.919,107.003 -6.911,106.991 -6.897,107.000 -6.887,107.000 -6.850,106.993 -6.829,106.992 -6.817,106.995 -6.848,107.005 -6.860,107.021 -6.874,107.032 -6.888,107.034 -6.891,107.029 -6.909,107.042</polygon>
+      <polygon>-6.383,107.710 -6.400,107.715 -6.410,107.703 -6.433,107.695 -6.443,107.709 -6.434,107.717 -6.436,107.729 -6.452,107.729 -6.456,107.723 -6.469,107.718 -6.483,107.723 -6.484,107.704 -6.499,107.701 -6.504,107.696 -6.502,107.679 -6.486,107.666 -6.471,107.669 -6.470,107.659 -6.453,107.648 -6.430,107.640 -6.430,107.655 -6.425,107.662 -6.417,107.663 -6.400,107.656 -6.399,107.669 -6.383,107.685 -6.381,107.693 -6.383,107.710</polygon>
+      <polygon>-6.358,107.707 -6.364,107.712 -6.383,107.710 -6.381,107.693 -6.383,107.685 -6.399,107.669 -6.400,107.656 -6.387,107.654 -6.389,107.645 -6.402,107.638 -6.385,107.591 -6.391,107.576 -6.403,107.577 -6.406,107.574 -6.400,107.555 -6.408,107.554 -6.417,107.540 -6.415,107.534 -6.402,107.539 -6.391,107.538 -6.353,107.565 -6.346,107.566 -6.321,107.579 -6.320,107.599 -6.326,107.616 -6.347,107.618 -6.340,107.632 -6.341,107.655 -6.353,107.657 -6.355,107.645 -6.365,107.657 -6.355,107.666 -6.354,107.686 -6.358,107.707</polygon>
+      <polygon>-6.361,107.770 -6.369,107.769 -6.382,107.780 -6.386,107.775 -6.419,107.767 -6.422,107.753 -6.432,107.753 -6.440,107.752 -6.457,107.744 -6.472,107.750 -6.484,107.750 -6.500,107.736 -6.508,107.729 -6.503,107.725 -6.483,107.723 -6.469,107.718 -6.456,107.723 -6.452,107.729 -6.436,107.729 -6.434,107.717 -6.443,107.709 -6.433,107.695 -6.410,107.703 -6.400,107.715 -6.383,107.710 -6.364,107.712 -6.358,107.707 -6.357,107.732 -6.347,107.746 -6.357,107.747 -6.361,107.770</polygon>
+    </area>
+  </info>
+</alert>
