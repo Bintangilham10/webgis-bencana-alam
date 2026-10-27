@@ -1,0 +1,52 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-27T15:30:40.118Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.8059553574,
+        -3.0247275004
+      ]
+    },
+    "properties": {
+      "pkey": "399937",
+      "created_at": "2026-10-27T10:32:08.034Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "b9b500da-f9c0-45e8-9827-4fc2ce5cfe1e",
+      "image_url": "https://images.petabencana.id/b9b500da-f9c0-45e8-9827-4fc2ce5cfe1e.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "points": 1,
+        "fireRadius": {
+          "lat": -3.0246632170829315,
+          "lng": 114.80547792421635
+        },
+        "report_type": "fire",
+        "fireDistance": 53.493982064345744,
+        "fireLocation": {
+          "lat": -3.0247275004192744,
+          "lng": 114.80595535742123
+        },
+        "personLocation": {
+          "lat": -3.0105155108888226,
+          "lng": 114.75246174226623
+        }
+      },
+      "tags": {
+        "city": "BARITO KUALA",
+        "district_id": null,
+        "region_code": "6304",
+        "local_area_id": null,
+        "instance_region_code": "ID-KS"
+      },
+      "title": null,
+      "text": "Terjadi kebakaran lahan di kawasan Nagara Hulu, Barito Kuala, Kalimantan Selatan ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
