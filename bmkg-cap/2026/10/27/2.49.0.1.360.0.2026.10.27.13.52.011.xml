@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.27.13.52.011</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-27T19:50:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-27T20:00:00+08:00</effective>
+    <expires>2026-10-27T21:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 October 2026, 20:00 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di LUNYUK, PRAYA BARAT DAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 October 2026, 21:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/10/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.712,116.218 -8.726,116.220 -8.740,116.230 -8.752,116.222 -8.765,116.205 -8.779,116.199 -8.784,116.204 -8.779,116.214 -8.780,116.220 -8.791,116.211 -8.813,116.206 -8.818,116.168 -8.822,116.163 -8.836,116.158 -8.850,116.137 -8.848,116.126 -8.855,116.108 -8.861,116.112 -8.873,116.109 -8.870,116.101 -8.858,116.100 -8.844,116.092 -8.817,116.107 -8.771,116.132 -8.766,116.142 -8.746,116.131 -8.730,116.139 -8.738,116.154 -8.733,116.166 -8.727,116.166 -8.728,116.172 -8.716,116.171 -8.712,116.177 -8.704,116.186 -8.708,116.213 -8.712,116.218</polygon>
+      <polygon>-8.828,117.303 -8.851,117.333 -8.875,117.355 -8.903,117.353 -8.952,117.359 -8.973,117.348 -9.006,117.342 -9.054,117.323 -9.043,117.307 -9.045,117.288 -9.020,117.221 -9.021,117.188 -9.024,117.177 -9.051,117.160 -9.068,117.137 -9.083,117.136 -9.098,117.067 -9.104,117.057 -9.101,117.040 -9.073,117.048 -9.065,117.056 -9.063,117.052 -9.046,117.059 -9.041,117.066 -9.013,117.062 -8.989,117.069 -8.946,117.067 -8.940,117.085 -8.928,117.088 -8.896,117.082 -8.871,117.062 -8.862,117.062 -8.857,117.072 -8.860,117.084 -8.851,117.105 -8.851,117.113 -8.831,117.142 -8.812,117.151 -8.829,117.199 -8.846,117.226 -8.852,117.243 -8.861,117.249 -8.844,117.268 -8.847,117.283 -8.844,117.290 -8.840,117.290 -8.837,117.297 -8.828,117.303</polygon>
+    </area>
+  </info>
+</alert>
