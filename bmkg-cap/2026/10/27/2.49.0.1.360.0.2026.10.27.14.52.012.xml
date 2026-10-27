@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.27.14.52.012</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-27T21:20:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-27T21:30:00+08:00</effective>
+    <expires>2026-10-27T23:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 October 2026, 21:30 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di PRAYA BARAT, SEKOTONG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 October 2026, 23:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/10/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.771,116.065 -8.782,116.087 -8.806,116.092 -8.816,116.099 -8.817,116.107 -8.844,116.092 -8.858,116.100 -8.870,116.101 -8.874,116.083 -8.891,116.077 -8.884,116.068 -8.885,116.050 -8.870,116.045 -8.865,116.052 -8.862,116.072 -8.856,116.073 -8.851,116.054 -8.864,116.037 -8.858,116.033 -8.860,116.019 -8.867,116.010 -8.873,116.010 -8.876,116.021 -8.884,116.028 -8.891,116.023 -8.890,116.019 -8.894,116.016 -8.899,116.019 -8.904,116.008 -8.877,115.981 -8.879,115.973 -8.869,115.970 -8.868,115.961 -8.862,115.964 -8.855,115.952 -8.841,115.944 -8.833,115.933 -8.834,115.925 -8.845,115.919 -8.845,115.914 -8.835,115.905 -8.828,115.879 -8.819,115.865 -8.825,115.845 -8.813,115.848 -8.811,115.834 -8.794,115.828 -8.782,115.832 -8.771,115.825 -8.755,115.823 -8.743,115.834 -8.727,115.840 -8.720,115.852 -8.721,115.866 -8.728,115.869 -8.743,115.865 -8.752,115.880 -8.763,115.882 -8.764,115.888 -8.746,115.898 -8.750,115.900 -8.759,115.895 -8.771,115.905 -8.775,115.917 -8.771,115.920 -8.770,115.935 -8.755,115.943 -8.746,115.951 -8.739,115.964 -8.731,115.967 -8.733,115.992 -8.749,116.007 -8.749,116.017 -8.740,116.027 -8.727,116.030 -8.722,116.035 -8.725,116.044 -8.764,116.039 -8.764,116.052 -8.771,116.065</polygon>
+      <polygon>-8.720,115.918 -8.721,115.915 -8.714,115.914 -8.720,115.918</polygon>
+      <polygon>-8.724,116.017 -8.724,116.013 -8.719,116.015 -8.724,116.017</polygon>
+      <polygon>-8.726,116.026 -8.724,116.021 -8.722,116.026 -8.725,116.029 -8.726,116.026</polygon>
+      <polygon>-8.729,115.911 -8.730,115.905 -8.724,115.902 -8.723,115.907 -8.729,115.911</polygon>
+      <polygon>-8.732,115.929 -8.739,115.925 -8.761,115.934 -8.759,115.927 -8.735,115.916 -8.726,115.921 -8.726,115.926 -8.732,115.929</polygon>
+      <polygon>-8.745,115.891 -8.740,115.884 -8.731,115.885 -8.734,115.891 -8.745,115.891</polygon>
+      <polygon>-8.704,116.254 -8.717,116.266 -8.716,116.272 -8.719,116.277 -8.724,116.276 -8.724,116.284 -8.733,116.276 -8.757,116.281 -8.754,116.271 -8.770,116.256 -8.806,116.254 -8.813,116.252 -8.815,116.245 -8.855,116.242 -8.874,116.223 -8.908,116.222 -8.909,116.219 -8.902,116.216 -8.901,116.207 -8.903,116.199 -8.914,116.194 -8.913,116.173 -8.904,116.163 -8.882,116.159 -8.873,116.162 -8.864,116.155 -8.863,116.150 -8.870,116.137 -8.867,116.116 -8.873,116.109 -8.861,116.112 -8.855,116.108 -8.848,116.126 -8.850,116.137 -8.836,116.158 -8.822,116.163 -8.818,116.168 -8.813,116.206 -8.791,116.211 -8.780,116.220 -8.779,116.214 -8.784,116.204 -8.779,116.199 -8.765,116.205 -8.752,116.222 -8.740,116.230 -8.726,116.220 -8.712,116.218 -8.704,116.254</polygon>
+    </area>
+  </info>
+</alert>
