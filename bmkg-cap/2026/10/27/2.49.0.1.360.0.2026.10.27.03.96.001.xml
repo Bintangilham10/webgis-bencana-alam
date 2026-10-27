@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.27.03.96.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-27T12:20:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-27T12:50:00+09:00</effective>
+    <expires>2026-10-27T15:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua Barat Daya</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 October 2026, 12:50 WIT di sebagian wilayah Papua Barat Daya, khususnya di SALAWATI BARAT, SALAWATI UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 October 2026, 15:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPD/2026/10/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua Barat Daya</areaDesc>
+      <polygon>-0.933,130.926 -0.952,130.893 -0.965,130.822 -0.978,130.798 -1.121,130.764 -1.167,130.757 -1.177,130.738 -1.183,130.735 -1.186,130.734 -1.182,130.728 -1.174,130.734 -1.164,130.736 -1.134,130.700 -1.127,130.696 -1.123,130.698 -1.111,130.679 -1.094,130.692 -1.098,130.714 -1.094,130.719 -1.082,130.716 -1.068,130.701 -1.060,130.708 -1.056,130.707 -1.050,130.696 -1.011,130.672 -0.993,130.643 -0.979,130.635 -0.960,130.638 -0.955,130.652 -0.953,130.687 -0.943,130.705 -0.941,130.723 -0.930,130.740 -0.928,130.792 -0.915,130.801 -0.908,130.826 -0.898,130.834 -0.900,130.849 -0.905,130.858 -0.895,130.864 -0.897,130.884 -0.891,130.896 -0.891,130.900 -0.896,130.897 -0.899,130.901 -0.893,130.918 -0.890,130.919 -0.893,130.925 -0.913,130.919 -0.933,130.926</polygon>
+      <polygon>-0.951,130.661 -0.951,130.648 -0.947,130.637 -0.939,130.636 -0.941,130.655 -0.945,130.660 -0.951,130.661</polygon>
+      <polygon>-0.985,131.064 -1.015,130.978 -1.183,130.932 -1.183,130.932 -1.201,130.918 -1.201,130.913 -1.197,130.903 -1.197,130.892 -1.201,130.885 -1.199,130.868 -1.206,130.848 -1.203,130.838 -1.191,130.831 -1.187,130.822 -1.179,130.816 -1.171,130.794 -1.166,130.780 -1.167,130.757 -1.121,130.764 -0.978,130.798 -0.965,130.822 -0.952,130.893 -0.933,130.926 -0.943,130.936 -0.941,130.942 -0.937,130.949 -0.936,130.964 -0.926,130.972 -0.921,130.981 -0.925,130.997 -0.912,131.024 -0.912,131.030 -0.936,131.051 -0.961,131.056 -0.969,131.079 -0.979,131.077 -0.980,131.067 -0.985,131.064</polygon>
+      <polygon>-0.894,131.029 -0.895,131.026 -0.884,131.028 -0.889,131.033 -0.894,131.029</polygon>
+      <polygon>-0.930,131.116 -0.930,131.113 -0.921,131.115 -0.915,131.128 -0.930,131.116</polygon>
+      <polygon>-0.952,131.095 -0.951,131.092 -0.943,131.097 -0.936,131.108 -0.940,131.108 -0.947,131.097 -0.952,131.095</polygon>
+      <polygon>-1.063,131.129 -1.020,131.090 -1.005,131.090 -1.000,131.094 -0.996,131.143 -1.016,131.147 -1.024,131.137 -1.022,131.132 -1.047,131.128 -1.044,131.117 -1.048,131.118 -1.050,131.127 -1.044,131.136 -1.056,131.139 -1.063,131.129</polygon>
+      <polygon>-1.035,131.159 -1.039,131.165 -1.056,131.167 -1.069,131.161 -1.072,131.155 -1.042,131.153 -1.035,131.159</polygon>
+      <polygon>-1.080,131.164 -1.081,131.159 -1.072,131.161 -1.062,131.169 -1.068,131.171 -1.080,131.164</polygon>
+      <polygon>-1.092,131.172 -1.092,131.166 -1.085,131.176 -1.092,131.172</polygon>
+    </area>
+  </info>
+</alert>
