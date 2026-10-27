@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.27.14.62.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-27T21:15:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-27T21:25:00+07:00</effective>
+    <expires>2026-10-27T23:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 October 2026, 21:25 WIB di sebagian wilayah Kalimantan Tengah, khususnya di JENAMAS, KARAU KUALA, RAREN BATUAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 October 2026, 23:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-2.400,115.003 -2.420,114.979 -2.460,114.913 -2.473,114.901 -2.504,114.886 -2.522,114.860 -2.530,114.852 -2.560,114.836 -2.583,114.802 -2.598,114.795 -2.624,114.792 -2.599,114.759 -2.584,114.734 -2.572,114.714 -2.493,114.769 -2.377,114.839 -2.349,114.847 -2.320,114.848 -2.299,114.856 -2.294,114.866 -2.294,114.910 -2.283,114.949 -2.400,115.003</polygon>
+      <polygon>-1.852,114.960 -1.890,114.956 -1.951,114.963 -1.978,114.959 -2.021,114.946 -2.048,114.943 -2.107,114.931 -2.106,114.899 -2.097,114.879 -2.064,114.865 -2.025,114.856 -1.993,114.833 -1.975,114.808 -1.976,114.768 -1.987,114.656 -1.975,114.640 -1.950,114.621 -1.915,114.616 -1.892,114.618 -1.813,114.636 -1.784,114.636 -1.773,114.681 -1.782,114.715 -1.820,114.753 -1.836,114.798 -1.832,114.811 -1.830,114.849 -1.802,114.850 -1.807,114.877 -1.852,114.960</polygon>
+      <polygon>-1.637,115.350 -1.654,115.355 -1.663,115.344 -1.678,115.349 -1.710,115.338 -1.716,115.334 -1.727,115.336 -1.729,115.280 -1.719,115.273 -1.724,115.261 -1.720,115.252 -1.702,115.257 -1.697,115.247 -1.719,115.242 -1.742,115.219 -1.753,115.188 -1.766,115.135 -1.766,115.118 -1.711,115.115 -1.684,115.101 -1.671,115.099 -1.649,115.131 -1.645,115.215 -1.630,115.246 -1.630,115.284 -1.637,115.350</polygon>
+    </area>
+  </info>
+</alert>
