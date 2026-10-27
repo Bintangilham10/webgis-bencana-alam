@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiU0FVX3lxTFBKenJldVppNkxOc2d0enNXcVVYUDI4U3lQS05Wa1Z3cnVyd1ZWQTVYSEJXalFkREpXUHhsRXk1SE5yQTlXMzRtNWVfR3EtYXpNNFJj",
+  "title": "Pemkot Bogor Uji Coba Jalan Batutulis Usai Longsor - شبكة تواصل الإخبارية",
+  "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBKenJldVppNkxOc2d0enNXcVVYUDI4U3lQS05Wa1Z3cnVyd1ZWQTVYSEJXalFkREpXUHhsRXk1SE5yQTlXMzRtNWVfR3EtYXpNNFJj?oc=5",
+  "source": "شبكة تواصل الإخبارية",
+  "source_url": "https://twaslnews1.twaslnews.com",
+  "published_at": "2026-10-27T09:44:14.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-27T12:30:40.141Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiiAFBVV95cUxPcGppcUJsYmJ5MlRlb0FMYk5TYTBKamhXcHVXR0UyUVdmbzNjbUpOX1BHMldwZUdPdjBzc2FDeVM5UnpNeHQ4QU5XUkZfUEZKcGJXSnZFbzVQTW52VXE5YVlvR1lycFZnRndKYlV3UTR4VUxzTF9BWVJ1V1JqR3dwTDk5ckRhYWsw",
+  "title": "BPBD Petakan Wilayah Rawan Banjir dan Longsor Aceh Utara - MEDIAACEH.CO.ID",
+  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcGppcUJsYmJ5MlRlb0FMYk5TYTBKamhXcHVXR0UyUVdmbzNjbUpOX1BHMldwZUdPdjBzc2FDeVM5UnpNeHQ4QU5XUkZfUEZKcGJXSnZFbzVQTW52VXE5YVlvR1lycFZnRndKYlV3UTR4VUxzTF9BWVJ1V1JqR3dwTDk5ckRhYWsw?oc=5",
+  "source": "MEDIAACEH.CO.ID",
+  "source_url": "https://mediaaceh.co.id",
+  "published_at": "2026-10-27T12:10:45.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-27T12:30:40.141Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "11.08",
+      "nama": "Kabupaten Aceh Utara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

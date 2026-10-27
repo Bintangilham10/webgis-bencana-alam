@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiuAFBVV95cUxQMThKOC0taklMZEY4NHVmMzlSRGZEdFJQQ3R0Z0ZDT0tETlRIMDZFUFEzampVN3pWRTk0aUNWaDJpa0N4X3JoS2Y0RkFQM2NyVF80cFZYTVJVOEx6RFI1TzRWRWpaSHFOVXRBZUF6dEJMbFhRdWNya0Z6OVdQck5ISERQVzVFTjZ6cWpxeWV0VkNqOTYyM25jV3lWdnhNTWtwaXJYX3E3V1ZrcnlxYjJnNklKVlh0YUY50gG-AUFVX3lxTE1IT0V6dmw2YVpqRmphaFRFSWJWMHF4cVI1c3ZGNGRaenhhMG9mX0U3RkRYVlVFS3pRSExnRU83djNMSWpiY1BreXFUeFIxTUNOMlNGYWJBZFdqTm1mMHRoeTZlcU9oN0JJSmlpb1FwZXpVU204bC05NjA3cmJHd0wzekFuVzlmMmdUZEpQbmlfNGVCTC1vRndoRldneXF2T1dOc3Z0NWZhTFlSWjgyVFhHUVdYakh4S21uNnF5dUE",
+  "title": "KemenPU Normalisasi Sungai-Tangani Longsor Pasca Banjir di Aceh Tenggara - detikcom",
+  "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQMThKOC0taklMZEY4NHVmMzlSRGZEdFJQQ3R0Z0ZDT0tETlRIMDZFUFEzampVN3pWRTk0aUNWaDJpa0N4X3JoS2Y0RkFQM2NyVF80cFZYTVJVOEx6RFI1TzRWRWpaSHFOVXRBZUF6dEJMbFhRdWNya0Z6OVdQck5ISERQVzVFTjZ6cWpxeWV0VkNqOTYyM25jV3lWdnhNTWtwaXJYX3E3V1ZrcnlxYjJnNklKVlh0YUY50gG-AUFVX3lxTE1IT0V6dmw2YVpqRmphaFRFSWJWMHF4cVI1c3ZGNGRaenhhMG9mX0U3RkRYVlVFS3pRSExnRU83djNMSWpiY1BreXFUeFIxTUNOMlNGYWJBZFdqTm1mMHRoeTZlcU9oN0JJSmlpb1FwZXpVU204bC05NjA3cmJHd0wzekFuVzlmMmdUZEpQbmlfNGVCTC1vRndoRldneXF2T1dOc3Z0NWZhTFlSWjgyVFhHUVdYakh4S21uNnF5dUE?oc=5",
+  "source": "detikcom",
+  "source_url": "https://www.detik.com",
+  "published_at": "2026-10-27T12:21:17.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-27T12:30:40.141Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.02",
+      "nama": "Kabupaten Aceh Tenggara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
