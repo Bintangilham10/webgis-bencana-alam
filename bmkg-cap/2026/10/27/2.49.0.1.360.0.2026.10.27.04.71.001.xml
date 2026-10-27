@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.27.04.71.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-27T12:14:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-27T12:20:00+08:00</effective>
+    <expires>2026-10-27T14:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 October 2026, 12:20 WITA di sebagian wilayah Sulawesi Utara, khususnya di TOMBATU UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 October 2026, 14:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/10/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>1.107,124.747 1.080,124.722 1.040,124.736 1.035,124.730 1.036,124.717 1.033,124.713 1.016,124.700 0.997,124.694 0.992,124.688 1.006,124.680 1.038,124.690 1.051,124.673 1.060,124.677 1.080,124.677 1.102,124.665 1.100,124.678 1.103,124.685 1.110,124.704 1.110,124.730 1.115,124.737 1.107,124.747</polygon>
+    </area>
+  </info>
+</alert>
