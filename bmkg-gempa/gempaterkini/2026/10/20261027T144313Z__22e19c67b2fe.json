@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-10-27T15:00:46.319Z",
+  "data": {
+    "Tanggal": "27 Okt 2026",
+    "Jam": "21:43:13 WIB",
+    "DateTime": "2026-10-27T14:43:13+00:00",
+    "Coordinates": "-9.20,110.39",
+    "Lintang": "9.20 LS",
+    "Bujur": "110.39 BT",
+    "Magnitude": "5.4",
+    "Kedalaman": "10 km",
+    "Wilayah": "136 km BaratDaya GUNUNGKIDUL-DIY",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}
