@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-27T00:45:25.022Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        115.8128959595,
+        -0.2427179
+      ]
+    },
+    "properties": {
+      "pkey": "399934",
+      "created_at": "2026-10-27T00:35:40.899Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "2c6e905f-49cf-4061-b89f-4ef327118852",
+      "image_url": "https://images.petabencana.id/2c6e905f-49cf-4061-b89f-4ef327118852.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 110.4669478524118,
+        "fireLocation": {
+          "lat": "-0.2427179",
+          "lng": 115.81289595945901
+        },
+        "personLocation": {
+          "lng": 115.81385536223587,
+          "lat": -0.24263196376847418
+        },
+        "fireRadius": {
+          "lng": 115.81190890653988,
+          "lat": -0.2428305517674687
+        }
+      },
+      "tags": {
+        "city": "KUTAI BARAT",
+        "district_id": null,
+        "region_code": "6407",
+        "local_area_id": null,
+        "instance_region_code": "ID-KI"
+      },
+      "title": null,
+      "text": "kebakaran lahan dan perkebunan sawit kering di Kampung Linggang Muara Batuq, Kecamatan Mook Manaar Buln, Kabupaten Kutai Barat",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
