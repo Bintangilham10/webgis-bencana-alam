@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.28.09.62.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-28T16:25:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-28T16:35:00+07:00</effective>
+    <expires>2026-10-28T18:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 October 2026, 16:35 WIB di sebagian wilayah Kalimantan Tengah, khususnya di GN. BINTANG AWAI, PULAU PETAK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 October 2026, 18:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-2.880,114.562 -2.924,114.542 -2.927,114.524 -2.947,114.546 -2.987,114.515 -2.952,114.477 -2.940,114.452 -2.967,114.430 -2.957,114.413 -2.836,114.486 -2.880,114.562</polygon>
+      <polygon>-1.360,115.459 -1.413,115.472 -1.416,115.476 -1.429,115.445 -1.425,115.414 -1.637,115.350 -1.630,115.284 -1.630,115.246 -1.645,115.215 -1.649,115.131 -1.671,115.099 -1.679,115.082 -1.640,115.064 -1.599,115.007 -1.611,114.983 -1.584,114.967 -1.564,114.967 -1.541,114.977 -1.522,115.003 -1.510,115.035 -1.497,115.144 -1.466,115.139 -1.460,115.173 -1.428,115.186 -1.400,115.175 -1.354,115.168 -1.337,115.157 -1.307,115.162 -1.312,115.236 -1.333,115.237 -1.336,115.315 -1.329,115.412 -1.340,115.434 -1.360,115.459</polygon>
+    </area>
+  </info>
+</alert>
