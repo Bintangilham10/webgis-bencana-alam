@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.28.13.36.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-28T20:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-28T20:50:00+07:00</effective>
+    <expires>2026-10-28T22:40:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Banten</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 October 2026, 20:50 WIB di sebagian wilayah Banten, khususnya di BOJONEGARA, GEROGOL, PULO AMPEL, PULOMERAK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 October 2026, 22:40 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBT/2026/10/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Banten</areaDesc>
+      <polygon>-5.951,106.101 -5.954,106.110 -5.959,106.104 -5.974,106.106 -5.981,106.098 -5.987,106.101 -5.993,106.089 -6.003,106.088 -5.990,106.063 -5.987,106.065 -5.980,106.060 -5.972,106.059 -5.957,106.062 -5.945,106.046 -5.938,106.037 -5.936,106.034 -5.919,106.040 -5.928,106.057 -5.918,106.065 -5.925,106.071 -5.941,106.072 -5.950,106.077 -5.951,106.101</polygon>
+      <polygon>-5.951,106.101 -5.950,106.077 -5.941,106.072 -5.925,106.071 -5.918,106.065 -5.928,106.057 -5.919,106.040 -5.911,106.044 -5.898,106.040 -5.878,106.041 -5.884,106.055 -5.881,106.069 -5.895,106.085 -5.923,106.104 -5.931,106.114 -5.939,106.112 -5.951,106.101</polygon>
+      <polygon>-5.932,106.168 -5.937,106.168 -5.945,106.153 -5.939,106.142 -5.922,106.139 -5.919,106.150 -5.922,106.161 -5.932,106.168</polygon>
+      <polygon>-5.878,106.041 -5.898,106.040 -5.911,106.044 -5.919,106.040 -5.936,106.034 -5.938,106.037 -5.947,106.032 -5.951,106.023 -5.949,106.002 -5.938,106.001 -5.922,105.992 -5.922,105.999 -5.891,106.022 -5.887,106.035 -5.878,106.041</polygon>
+      <polygon>-5.932,105.993 -5.937,105.991 -5.937,105.987 -5.932,105.986 -5.932,105.993</polygon>
+      <polygon>-5.945,106.046 -5.949,106.046 -5.951,106.040 -5.966,106.044 -5.977,106.042 -5.985,106.033 -5.999,106.028 -6.004,106.022 -5.981,105.994 -5.949,106.002 -5.951,106.023 -5.947,106.032 -5.938,106.037 -5.945,106.046</polygon>
+    </area>
+  </info>
+</alert>
