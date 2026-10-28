@@ -1,0 +1,26 @@
+{
+  "guid": "CBMitwFBVV95cUxNOTVIajNVdmJLc0otUG16eFhtZGVxTE9IX1J2Z0JYbU52UWNtU3prVnA1TDktTWtwS19sYVdEcG04cE8tZXNGdURfWUU2c2FoeUllMFBWSzJNU1FuTVdXclA2eWZYNWQ1R0l5TDc0ODIxVUQyTHNpRnJoY1lGZVhDYlZjcklRNWRXbXpZWnk0NG9oMllqbXJyY1NJMnAxSnAtWDA4UERoMmgxV1FzVkpfUlN2Z0JoNVU",
+  "title": "Longsor Terjang Tiga Rumah di Kediri, Nuning Kunjungi Warga Terdampak - PT Suara Dewata Media",
+  "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNOTVIajNVdmJLc0otUG16eFhtZGVxTE9IX1J2Z0JYbU52UWNtU3prVnA1TDktTWtwS19sYVdEcG04cE8tZXNGdURfWUU2c2FoeUllMFBWSzJNU1FuTVdXclA2eWZYNWQ1R0l5TDc0ODIxVUQyTHNpRnJoY1lGZVhDYlZjcklRNWRXbXpZWnk0NG9oMllqbXJyY1NJMnAxSnAtWDA4UERoMmgxV1FzVkpfUlN2Z0JoNVU?oc=5",
+  "source": "PT Suara Dewata Media",
+  "source_url": "https://www.suaradewata.com",
+  "published_at": "2026-10-28T13:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-28T16:30:40.986Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.06",
+      "nama": "Kabupaten Kediri",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.71",
+      "nama": "Kota Kediri",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
