@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-28T08:45:27.514Z",
+  "data": {
+    "Tanggal": "28 Okt 2026",
+    "Jam": "15:23:46 WIB",
+    "DateTime": "2026-10-28T08:23:46+00:00",
+    "Coordinates": "-5.45,104.62",
+    "Lintang": "5.45 LS",
+    "Bujur": "104.62 BT",
+    "Magnitude": "4.7",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di darat 8 km Barat Laut Tanggamus",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Kotaagung, II Kotabumi, II Pringsewu, II Ulu Belu, II Gisting",
+    "Shakemap": "20261028152346.mmi.jpg"
+  }
+}
