@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-28T14:45:32.260Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.8532819683,
+        -7.1681840933
+      ]
+    },
+    "properties": {
+      "pkey": "399942",
+      "created_at": "2026-10-28T14:43:46.245Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "87282df4-e636-479c-8a7b-0a4dd6c675c9",
+      "image_url": "https://images.petabencana.id/87282df4-e636-479c-8a7b-0a4dd6c675c9.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 101.19680635318477,
+        "fireLocation": {
+          "lng": 110.8532819682543,
+          "lat": -7.168184093343797
+        },
+        "personLocation": {
+          "lat": "-7.1680249",
+          "lng": "110.8541322"
+        },
+        "fireRadius": {
+          "lng": 110.85237538160658,
+          "lat": -7.168322478074742
+        }
+      },
+      "tags": {
+        "city": "GROBOGAN",
+        "district_id": null,
+        "region_code": "3315",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "kebakaran rumah terjadi di daerah Dusun Kuwojo, Desa Dimoro, Kecamatan Toroh, Kabupaten Grobogan, Jawa Tengah, pada Rabu (28/10/2026). ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
