@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-28T01:30:33.851Z",
+  "data": {
+    "Tanggal": "28 Okt 2026",
+    "Jam": "08:11:54 WIB",
+    "DateTime": "2026-10-28T01:11:54+00:00",
+    "Coordinates": "5.59,125.27",
+    "Lintang": "5.59 LU",
+    "Bujur": "125.27 BT",
+    "Magnitude": "5.4",
+    "Kedalaman": "10 km",
+    "Wilayah": "221 km BaratLaut PULAUKARATUNG-SULUT",
+    "Potensi": "Tidak berpotensi tsunami",
+    "Dirasakan": "-",
+    "Shakemap": "20261028081433.mmi.jpg"
+  }
+}
