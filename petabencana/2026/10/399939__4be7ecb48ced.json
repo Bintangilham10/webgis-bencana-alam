@@ -1,0 +1,52 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-28T12:15:30.678Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        115.7029032594,
+        -0.4539348
+      ]
+    },
+    "properties": {
+      "pkey": "399939",
+      "created_at": "2026-10-28T11:12:10.703Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "faf686d8-19bc-4cf8-87ee-f8e84c9399e3",
+      "image_url": "https://images.petabencana.id/faf686d8-19bc-4cf8-87ee-f8e84c9399e3.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "points": 2,
+        "fireRadius": {
+          "lat": -0.4541010917348842,
+          "lng": 115.70211468994336
+        },
+        "report_type": "fire",
+        "fireDistance": 89.61079532044482,
+        "fireLocation": {
+          "lat": "-0.4539348",
+          "lng": 115.70290325939699
+        },
+        "personLocation": {
+          "lat": -0.4541418250148155,
+          "lng": 115.70335953916066
+        }
+      },
+      "tags": {
+        "city": "KUTAI BARAT",
+        "district_id": null,
+        "region_code": "6407",
+        "local_area_id": null,
+        "instance_region_code": "ID-KI"
+      },
+      "title": null,
+      "text": "kebakaran hutan dan lahan muncul dikawasan kampung sempatn, Kecamatan Damai, Kutai Barat Rabu Sore (28/10/2026). ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
