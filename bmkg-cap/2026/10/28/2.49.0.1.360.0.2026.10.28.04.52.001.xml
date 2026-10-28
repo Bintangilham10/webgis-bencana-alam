@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.28.04.52.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-28T12:10:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-28T12:20:00+08:00</effective>
+    <expires>2026-10-28T15:20:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 October 2026, 12:20 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di LINGSAR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 October 2026, 15:20 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/10/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.589,116.160 -8.585,116.160 -8.584,116.151 -8.572,116.148 -8.566,116.142 -8.564,116.132 -8.555,116.134 -8.549,116.146 -8.518,116.153 -8.506,116.163 -8.491,116.188 -8.479,116.200 -8.480,116.214 -8.456,116.223 -8.451,116.265 -8.443,116.278 -8.456,116.279 -8.489,116.246 -8.514,116.246 -8.527,116.241 -8.548,116.221 -8.562,116.226 -8.569,116.221 -8.572,116.211 -8.587,116.194 -8.589,116.160</polygon>
+    </area>
+  </info>
+</alert>
