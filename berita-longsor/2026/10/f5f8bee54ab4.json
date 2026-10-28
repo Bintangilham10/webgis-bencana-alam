@@ -1,0 +1,26 @@
+{
+  "guid": "CBMitAFBVV95cUxOYVFhQmVSdEhPclZBRTNPODdITGRXUzhBUTJ2Mll5YkF0eTAxd3J1M3cxLWk1QnZnSUJtMTRxV3BZS2Jlbk94NFRsclpvWWtWS1p4Zm1lOVplRUNMM0hkZDNuZFZramp5QXA1M0lPdXlOY1daTmZBYXY3YTdqZ1MwSS03Z1YxZmRxQ0VHeG9EOE5BN2xwVjhTX19kdDJuOUp6UzRVcGJqZmNkWTRSTXIzZkh1Nnk",
+  "title": "Hadapi Musim Hujan, Farhan Antisipasi Banjir dan Longsor di Bandung Utara - MetroTVNews.com",
+  "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOYVFhQmVSdEhPclZBRTNPODdITGRXUzhBUTJ2Mll5YkF0eTAxd3J1M3cxLWk1QnZnSUJtMTRxV3BZS2Jlbk94NFRsclpvWWtWS1p4Zm1lOVplRUNMM0hkZDNuZFZramp5QXA1M0lPdXlOY1daTmZBYXY3YTdqZ1MwSS03Z1YxZmRxQ0VHeG9EOE5BN2xwVjhTX19kdDJuOUp6UzRVcGJqZmNkWTRSTXIzZkh1Nnk?oc=5",
+  "source": "MetroTVNews.com",
+  "source_url": "https://www.metrotvnews.com",
+  "published_at": "2026-10-28T09:23:50.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-28T10:15:30.044Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
