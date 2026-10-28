@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.28.03.19.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-28T10:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-28T10:20:00+07:00</effective>
+    <expires>2026-10-28T12:20:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 October 2026, 10:20 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di BUKITINTAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 October 2026, 12:20 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/10/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-2.086,106.159 -2.093,106.167 -2.126,106.183 -2.154,106.178 -2.155,106.163 -2.159,106.152 -2.147,106.131 -2.141,106.132 -2.136,106.122 -2.131,106.121 -2.129,106.126 -2.112,106.133 -2.105,106.138 -2.097,106.137 -2.083,106.149 -2.086,106.159</polygon>
+      <polygon>-2.148,106.105 -2.144,106.112 -2.133,106.117 -2.144,106.112 -2.148,106.105</polygon>
+      <polygon>-2.152,106.103 -2.154,106.104 -2.151,106.102 -2.152,106.103</polygon>
+    </area>
+  </info>
+</alert>
