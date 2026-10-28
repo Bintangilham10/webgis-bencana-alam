@@ -1,0 +1,26 @@
+{
+  "guid": "CBMipgFBVV95cUxOeGc2WWxsM21YVENkVEFXYWplbEpQTFFKVlczTXk0bzB6eUE2R0daWFJwWk9vY3pSbmVSYWs3cHljZW5oVldYQVdRSUpyem5oTnRSeUxSY3RVaWZwbnY4YkNHc0txeFVKdU5wdU1ucDNCaS16VnZYbk5UeVNRd2pIcENXVWhsZkZwQlJvVXRob0xhZnZQZC1iN2toa0RRanhFbmJsdndB0gGqAUFVX3lxTE5jRUx3YkVoSjRQZnVjZWgxNTlQSlBnT19yc3lQTVJqMHVxZ3BXN01JZ01obHlFZ3RTbkJEZURjaVJ4SlY0TE83djNCalJJdTNkaVo3YWpEY1ZxalVwR3BJUVZxWlVoOHZHYlZXRHMzc0xQOS1URUdqSXF0aFl6R3VZOWNIRk12VnpJRWdOR2k2UVBzUFo5V2hKLXl6R0JmTFpXVVlMZVp2UW93",
+  "title": "Hujan Mulai Turun, BPBD Ingatkan Ancaman Longsor di Banyumas dan Purbalingga - BANYUMAS EKSPRES",
+  "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeGc2WWxsM21YVENkVEFXYWplbEpQTFFKVlczTXk0bzB6eUE2R0daWFJwWk9vY3pSbmVSYWs3cHljZW5oVldYQVdRSUpyem5oTnRSeUxSY3RVaWZwbnY4YkNHc0txeFVKdU5wdU1ucDNCaS16VnZYbk5UeVNRd2pIcENXVWhsZkZwQlJvVXRob0xhZnZQZC1iN2toa0RRanhFbmJsdndB0gGqAUFVX3lxTE5jRUx3YkVoSjRQZnVjZWgxNTlQSlBnT19yc3lQTVJqMHVxZ3BXN01JZ01obHlFZ3RTbkJEZURjaVJ4SlY0TE83djNCalJJdTNkaVo3YWpEY1ZxalVwR3BJUVZxWlVoOHZHYlZXRHMzc0xQOS1URUdqSXF0aFl6R3VZOWNIRk12VnpJRWdOR2k2UVBzUFo5V2hKLXl6R0JmTFpXVVlMZVp2UW93?oc=5",
+  "source": "BANYUMAS EKSPRES",
+  "source_url": "https://banyumasekspres.id",
+  "published_at": "2026-10-27T22:00:41.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-28T13:15:33.078Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.03",
+      "nama": "Kabupaten Purbalingga",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

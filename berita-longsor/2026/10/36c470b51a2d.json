@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi0wFBVV95cUxNMU9XSlR0VFRkUm1tNVNnekFsd3R1R1M5eHlDNXB3ODVpMXlWd2FqT1FGSUllNDBWbEVqZGdGb2pXZFlvQjV5VDFJZERCb3lValBMMjdPQmxROGx3X0I1anBCbDZNLVJZS2RCRTRSeFRQdHVaQ2lZN0g4N0tCTDFxMnNEbnlqNHMtQW5JTWhMeTE1a1lyTS1zODhsYVBVY1B6VUhxNXJub1ZFUDAyYkpRaGFCV0toc3prSm1wSjNSSlFRTzhzR2h5Y3NBcFpxdHIzYjI00gHTAUFVX3lxTE0xT1dKVHRUVGRSbW01U2d6QWx3dHVHUzl4eUM1cHc4NWkxeVZ3YWpPUUZJSWU0MFZsRWpkZ0ZvaldkWW9CNXlUMUlkREJveVVqUEwyN09CbFE4bHdfQjVqcEJsNk0tUllLZEJFNFJ4VFB0dVpDaVk3SDg3S0JMMXEyc0RueWo0cy1BbklNaEx5MTVrWXJNLXM4OGxhUFVjUHpVSHE1cm5vVkVQMDJiSlFoYUJXS2hzemtKbXBKM1JKUVFPOHNHaHljc0FwWnF0cjNiMjQ",
+  "title": "Hujan Mulai Turun, BPBD Tabanan Ingatkan Warga Cermati Titik Rawan Longsor dan Banjir - Radar Bali",
+  "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNMU9XSlR0VFRkUm1tNVNnekFsd3R1R1M5eHlDNXB3ODVpMXlWd2FqT1FGSUllNDBWbEVqZGdGb2pXZFlvQjV5VDFJZERCb3lValBMMjdPQmxROGx3X0I1anBCbDZNLVJZS2RCRTRSeFRQdHVaQ2lZN0g4N0tCTDFxMnNEbnlqNHMtQW5JTWhMeTE1a1lyTS1zODhsYVBVY1B6VUhxNXJub1ZFUDAyYkpRaGFCV0toc3prSm1wSjNSSlFRTzhzR2h5Y3NBcFpxdHIzYjI00gHTAUFVX3lxTE0xT1dKVHRUVGRSbW01U2d6QWx3dHVHUzl4eUM1cHc4NWkxeVZ3YWpPUUZJSWU0MFZsRWpkZ0ZvaldkWW9CNXlUMUlkREJveVVqUEwyN09CbFE4bHdfQjVqcEJsNk0tUllLZEJFNFJ4VFB0dVpDaVk3SDg3S0JMMXEyc0RueWo0cy1BbklNaEx5MTVrWXJNLXM4OGxhUFVjUHpVSHE1cm5vVkVQMDJiSlFoYUJXS2hzemtKbXBKM1JKUVFPOHNHaHljc0FwWnF0cjNiMjQ?oc=5",
+  "source": "Radar Bali",
+  "source_url": "https://radarbali.jawapos.com",
+  "published_at": "2026-10-28T04:09:22.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-28T13:15:33.078Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "51.02",
+      "nama": "Kabupaten Tabanan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

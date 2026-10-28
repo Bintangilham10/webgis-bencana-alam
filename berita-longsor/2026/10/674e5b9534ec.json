@@ -1,0 +1,23 @@
+{
+  "guid": "CBMioAFBVV95cUxQQlluUFdCWjNtRzl2Q0MwYm1xMjZrMnV6WWpaVUJWdGxiZ21DeGdaclhfVlZrUjA0dHlINVlMbUhzaHJaeXV4LTRyT0c3Z1JReXRxWjU1aEg1SHpkY0xEQVVVcDNqWERBWkd4ZmcyakpQZlNjcWNxR0JVMThxaHRNM0M1Vlp2cXRCdy11VjRoX3hpQ1FHUFdrUzlsQ1BRUDBw0gGgAUFVX3lxTFBCWW5QV0JaM21HOXZDQzBibXEyNmsydXpZalpVQlZ0bGJnbUN4Z1pyWF9WVmtSMDR0eUg1WUxtSHNoclp5dXgtNHJPRzdnUlF5dHFaNTVoSDVIemRjTERBVVVwM2pYREFaR3hmZzJqSlBmU2NxY3FHQlUxOHFodE0zQzVWWnZxdEJ3LXVWNGhfeGlDUUdQV2tTOWxDUFFQMHA",
+  "title": "Normalisasi Sungai dan Penanganan Longsor di Aceh Tenggara - Koran Jakarta ®",
+  "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQlluUFdCWjNtRzl2Q0MwYm1xMjZrMnV6WWpaVUJWdGxiZ21DeGdaclhfVlZrUjA0dHlINVlMbUhzaHJaeXV4LTRyT0c3Z1JReXRxWjU1aEg1SHpkY0xEQVVVcDNqWERBWkd4ZmcyakpQZlNjcWNxR0JVMThxaHRNM0M1Vlp2cXRCdy11VjRoX3hpQ1FHUFdrUzlsQ1BRUDBw0gGgAUFVX3lxTFBCWW5QV0JaM21HOXZDQzBibXEyNmsydXpZalpVQlZ0bGJnbUN4Z1pyWF9WVmtSMDR0eUg1WUxtSHNoclp5dXgtNHJPRzdnUlF5dHFaNTVoSDVIemRjTERBVVVwM2pYREFaR3hmZzJqSlBmU2NxY3FHQlUxOHFodE0zQzVWWnZxdEJ3LXVWNGhfeGlDUUdQV2tTOWxDUFFQMHA?oc=5",
+  "source": "Koran Jakarta ®",
+  "source_url": "https://koran-jakarta.com",
+  "published_at": "2026-10-27T15:47:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-28T13:15:33.078Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.02",
+      "nama": "Kabupaten Aceh Tenggara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
