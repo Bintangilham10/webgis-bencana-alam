@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-28T21:00:40.902Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        97.3562799828,
+        4.0160437274
+      ]
+    },
+    "properties": {
+      "pkey": "399943",
+      "created_at": "2026-10-28T20:52:32.871Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "db94817c-74eb-49f0-9be6-72f19690545a",
+      "image_url": "https://images.petabencana.id/db94817c-74eb-49f0-9be6-72f19690545a.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 69
+      },
+      "tags": {
+        "city": "GAYO LUES",
+        "district_id": null,
+        "region_code": "1113",
+        "local_area_id": null,
+        "instance_region_code": "ID-AC"
+      },
+      "title": null,
+      "text": "Ratusan rumah warga di Desa Badak, Kecamatan Dabun Gelang, Kabupaten Gayo Lues, Provinsi Aceh, dikepung banjir akibat hujan deras ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
