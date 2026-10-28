@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiqgFBVV95cUxPWmR4VVdSMlp0anAxR0hkbU5DMDVhMFYzak1UZWpRbWxRN3hjZUZYMzFlRExmVjBGdXk1aWE2c0c5X2hkazZER21oZkF6eVVVcUpFOWpnU2tqR2NKd0VkZXRCUVhYeW8zOVRrcmhXeXBLTmpaOWl4OVdRLVU5cDJjSTNyWmhNeFVNSmxxZkdQT2R2Z283LXJzVHVCdDV2XzJ0dllWX1o3WEVtdw",
+  "title": "Kementerian PU Normalisasi Sungai Dan Tangani Longsor Pascabanjir Di Aceh Tenggara - PUJATV ACEH",
+  "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWmR4VVdSMlp0anAxR0hkbU5DMDVhMFYzak1UZWpRbWxRN3hjZUZYMzFlRExmVjBGdXk1aWE2c0c5X2hkazZER21oZkF6eVVVcUpFOWpnU2tqR2NKd0VkZXRCUVhYeW8zOVRrcmhXeXBLTmpaOWl4OVdRLVU5cDJjSTNyWmhNeFVNSmxxZkdQT2R2Z283LXJzVHVCdDV2XzJ0dllWX1o3WEVtdw?oc=5",
+  "source": "PUJATV ACEH",
+  "source_url": "https://pujatvaceh.com",
+  "published_at": "2026-10-28T03:00:32.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-28T04:15:25.375Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.02",
+      "nama": "Kabupaten Aceh Tenggara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
