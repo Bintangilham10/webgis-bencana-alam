@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.28.05.75.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-28T13:32:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-28T13:35:00+08:00</effective>
+    <expires>2026-10-28T15:35:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 October 2026, 13:35 WITA di sebagian wilayah Gorontalo, khususnya di TOLANGOHULA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 October 2026, 15:35 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/10/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.876,122.583 0.876,122.593 0.868,122.597 0.859,122.601 0.857,122.601 0.844,122.601 0.848,122.598 0.783,122.594 0.742,122.586 0.731,122.591 0.725,122.606 0.697,122.601 0.686,122.594 0.682,122.589 0.695,122.564 0.681,122.559 0.692,122.548 0.700,122.545 0.709,122.514 0.719,122.499 0.729,122.495 0.734,122.503 0.737,122.498 0.751,122.499 0.754,122.514 0.774,122.516 0.770,122.534 0.805,122.540 0.811,122.527 0.818,122.521 0.854,122.517 0.871,122.526 0.876,122.525 0.876,122.524 0.876,122.533 0.876,122.583</polygon>
+    </area>
+  </info>
+</alert>
