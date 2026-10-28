@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.28.12.62.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-28T19:25:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-28T19:30:00+07:00</effective>
+    <expires>2026-10-28T22:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 October 2026, 19:30 WIB di sebagian wilayah Kalimantan Tengah, khususnya di BUKIT BATU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 October 2026, 22:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-1.869,113.824 -1.955,113.815 -1.979,113.819 -2.016,113.838 -2.081,113.883 -2.131,113.817 -2.159,113.700 -2.087,113.695 -2.067,113.683 -2.037,113.656 -1.997,113.627 -1.980,113.618 -1.950,113.614 -1.925,113.598 -1.912,113.585 -1.915,113.715 -1.852,113.764 -1.852,113.823 -1.869,113.824</polygon>
+    </area>
+  </info>
+</alert>
