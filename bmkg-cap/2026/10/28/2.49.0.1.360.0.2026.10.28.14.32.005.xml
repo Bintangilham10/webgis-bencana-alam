@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.28.14.32.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-28T20:05:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-28T20:15:00+07:00</effective>
+    <expires>2026-10-28T22:20:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 October 2026, 20:15 WIB di sebagian wilayah Jawa Barat, khususnya di SUKASARI, TEGALWARU, TIRTAMULYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 October 2026, 22:20 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/10/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.500,107.390 -6.503,107.392 -6.524,107.389 -6.523,107.381 -6.506,107.355 -6.494,107.327 -6.497,107.323 -6.503,107.329 -6.499,107.318 -6.501,107.307 -6.507,107.308 -6.508,107.317 -6.512,107.322 -6.524,107.326 -6.531,107.316 -6.527,107.303 -6.544,107.296 -6.549,107.287 -6.596,107.295 -6.607,107.291 -6.614,107.299 -6.611,107.285 -6.615,107.291 -6.623,107.286 -6.627,107.291 -6.635,107.289 -6.630,107.298 -6.633,107.299 -6.645,107.291 -6.639,107.264 -6.631,107.260 -6.616,107.239 -6.602,107.227 -6.591,107.221 -6.578,107.234 -6.570,107.251 -6.536,107.273 -6.530,107.284 -6.506,107.286 -6.497,107.298 -6.491,107.306 -6.485,107.329 -6.487,107.347 -6.497,107.367 -6.500,107.390</polygon>
+      <polygon>-6.291,107.483 -6.304,107.490 -6.321,107.487 -6.338,107.485 -6.358,107.500 -6.361,107.499 -6.364,107.473 -6.377,107.470 -6.382,107.456 -6.381,107.431 -6.373,107.429 -6.371,107.434 -6.365,107.436 -6.347,107.431 -6.344,107.421 -6.338,107.427 -6.335,107.444 -6.300,107.459 -6.292,107.467 -6.291,107.483</polygon>
+      <polygon>-6.454,107.301 -6.485,107.293 -6.497,107.298 -6.506,107.286 -6.530,107.284 -6.536,107.273 -6.570,107.251 -6.578,107.234 -6.591,107.221 -6.588,107.208 -6.578,107.193 -6.568,107.191 -6.562,107.197 -6.551,107.189 -6.533,107.190 -6.528,107.186 -6.515,107.189 -6.517,107.203 -6.508,107.222 -6.490,107.227 -6.485,107.238 -6.473,107.246 -6.457,107.247 -6.462,107.263 -6.453,107.288 -6.454,107.301</polygon>
+    </area>
+  </info>
+</alert>
