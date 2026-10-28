@@ -1,0 +1,29 @@
+{
+  "guid": "CBMioAFBVV95cUxQWEs1TXg4ZXhhS0JPb2gzVHl3ZGloT0lSR05idnlVODd2RnYyLWhtVlM1ZHdINXFTRVBpeGF4ZkZER0JWdWxyMFhOVjlacmNxZ0M0bnVTdjhIeVZ3YXNLVkQ2VTIzMHVUVHNRNXhPNEg1UXotZERlOTU1aElSUFlQbzVJalZhTzlwZTRqREtQSUR5V0lJNkJfS2RYU3JicXM5",
+  "title": "Jalan Sumbar—Jambi Lumpuh Total Akibat Longsor dan Banjir di Pesisir Selatan - Sumbarkita.id",
+  "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWEs1TXg4ZXhhS0JPb2gzVHl3ZGloT0lSR05idnlVODd2RnYyLWhtVlM1ZHdINXFTRVBpeGF4ZkZER0JWdWxyMFhOVjlacmNxZ0M0bnVTdjhIeVZ3YXNLVkQ2VTIzMHVUVHNRNXhPNEg1UXotZERlOTU1aElSUFlQbzVJalZhTzlwZTRqREtQSUR5V0lJNkJfS2RYU3JicXM5?oc=5",
+  "source": "Sumbarkita.id",
+  "source_url": "https://sumbarkita.id",
+  "published_at": "2026-10-28T14:06:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-28T19:45:30.302Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.01",
+      "nama": "Kabupaten Pesisir Selatan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi",
+    "Sumatera Barat"
+  ]
+}

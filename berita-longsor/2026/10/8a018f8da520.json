@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiowFBVV95cUxQV1dPWFB3VVdrMzRGSDcxR1kzaXNLdnZIQkQ3QWYtSzBSQnRXcF83YUxVeXJRMHFNNDhEaDk4M2JmTFVJc0dwRGRiRDFvMll6bDVJeklpWGRXOTR0c3k5OTVNcVZ0ZTNPWndoMXZrOEY1cHBqZW1VTGREbDA0RlVVMGF6eFREZGRJRnpMSmwxVU10bUNYUkRXekhaQ1Z2NVh5eXln0gGjAUFVX3lxTFBXV09YUHdVV2szNEZINzFHWTNpc0t2dkhCRDdBZi1LMFJCdFdwXzdhTFV5clEwcU00OERoOTgzYmZMVUlzR3BEZGJEMW8yWXpsNUl6SWlYZFc5NHRzeTk5NU1xVnRlM09ad2gxdms4RjVwcGplbVVMZERsMDRGVVUwYXp4VERkZElGekxKbDFVTXRtQ1hSRFd6SFpDVnY1WHl5eWc",
+  "title": "Penanganan longsor pulihkan akses Aceh Timur-Gayo Lues - ANTARA Foto",
+  "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV1dPWFB3VVdrMzRGSDcxR1kzaXNLdnZIQkQ3QWYtSzBSQnRXcF83YUxVeXJRMHFNNDhEaDk4M2JmTFVJc0dwRGRiRDFvMll6bDVJeklpWGRXOTR0c3k5OTVNcVZ0ZTNPWndoMXZrOEY1cHBqZW1VTGREbDA0RlVVMGF6eFREZGRJRnpMSmwxVU10bUNYUkRXekhaQ1Z2NVh5eXln0gGjAUFVX3lxTFBXV09YUHdVV2szNEZINzFHWTNpc0t2dkhCRDdBZi1LMFJCdFdwXzdhTFV5clEwcU00OERoOTgzYmZMVUlzR3BEZGJEMW8yWXpsNUl6SWlYZFc5NHRzeTk5NU1xVnRlM09ad2gxdms4RjVwcGplbVVMZERsMDRGVVUwYXp4VERkZElGekxKbDFVTXRtQ1hSRFd6SFpDVnY1WHl5eWc?oc=5",
+  "source": "ANTARA Foto",
+  "source_url": "https://www.antarafoto.com",
+  "published_at": "2026-10-28T11:29:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-28T19:45:30.302Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.03",
+      "nama": "Kabupaten Aceh Timur",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "11.13",
+      "nama": "Kabupaten Gayo Lues",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
