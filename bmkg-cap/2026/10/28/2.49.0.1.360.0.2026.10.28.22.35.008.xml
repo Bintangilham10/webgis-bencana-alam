@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.28.21.35.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-29T03:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-29T04:20:00+07:00</effective>
+    <expires>2026-10-29T07:20:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 29 October 2026, 04:20 WIB di sebagian wilayah Jawa Timur, khususnya di GANDUSARI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 29 October 2026, 07:20 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/10/29/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-8.139,111.744 -8.143,111.733 -8.149,111.730 -8.148,111.724 -8.158,111.712 -8.185,111.701 -8.180,111.695 -8.160,111.680 -8.161,111.666 -8.145,111.670 -8.136,111.662 -8.124,111.675 -8.119,111.683 -8.110,111.689 -8.098,111.709 -8.111,111.733 -8.103,111.741 -8.103,111.749 -8.115,111.770 -8.126,111.764 -8.139,111.744</polygon>
+    </area>
+  </info>
+</alert>
