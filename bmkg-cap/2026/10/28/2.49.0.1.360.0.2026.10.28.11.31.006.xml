@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.28.12.31.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-28T18:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-28T18:20:00+07:00</effective>
+    <expires>2026-10-28T20:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 October 2026, 18:20 WIB di sebagian wilayah Jakarta, khususnya di PADEMANGAN, TANJUNG PRIOK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 October 2026, 20:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJK/2026/10/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jakarta</areaDesc>
+      <polygon>-6.107,106.891 -6.136,106.892 -6.163,106.881 -6.163,106.877 -6.150,106.856 -6.126,106.851 -6.121,106.862 -6.104,106.879 -6.094,106.880 -6.097,106.891 -6.107,106.891</polygon>
+      <polygon>-6.121,106.862 -6.126,106.851 -6.150,106.856 -6.154,106.844 -6.136,106.829 -6.137,106.821 -6.130,106.815 -6.131,106.810 -6.116,106.808 -6.123,106.812 -6.116,106.817 -6.123,106.843 -6.110,106.867 -6.121,106.862</polygon>
+    </area>
+  </info>
+</alert>
