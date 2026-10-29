@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.29.05.36.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-29T12:35:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-29T12:45:00+07:00</effective>
+    <expires>2026-10-29T15:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Banten</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 29 October 2026, 12:45 WIB di sebagian wilayah Banten, khususnya di CIBEBER, CIKEUSAL, PANGGARANGAN, PETIR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 29 October 2026, 15:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBT/2026/10/29/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Banten</areaDesc>
+      <polygon>-6.736,106.241 -6.759,106.246 -6.770,106.258 -6.772,106.266 -6.767,106.276 -6.763,106.299 -6.771,106.304 -6.789,106.304 -6.797,106.293 -6.811,106.275 -6.823,106.272 -6.831,106.264 -6.874,106.256 -6.882,106.246 -6.915,106.238 -6.920,106.229 -6.927,106.230 -6.915,106.203 -6.909,106.172 -6.867,106.170 -6.828,106.185 -6.824,106.163 -6.820,106.160 -6.812,106.170 -6.785,106.183 -6.767,106.206 -6.752,106.205 -6.747,106.209 -6.748,106.220 -6.743,106.223 -6.736,106.241</polygon>
+      <polygon>-6.697,106.410 -6.709,106.421 -6.726,106.423 -6.730,106.434 -6.728,106.451 -6.734,106.459 -6.738,106.464 -6.751,106.467 -6.752,106.495 -6.762,106.525 -6.768,106.526 -6.790,106.499 -6.804,106.458 -6.818,106.447 -6.819,106.436 -6.856,106.430 -6.843,106.391 -6.848,106.383 -6.858,106.384 -6.872,106.374 -6.878,106.357 -6.876,106.352 -6.865,106.347 -6.864,106.341 -6.878,106.314 -6.902,106.301 -6.899,106.296 -6.894,106.294 -6.881,106.301 -6.867,106.299 -6.856,106.277 -6.847,106.274 -6.830,106.278 -6.811,106.292 -6.797,106.293 -6.789,106.304 -6.771,106.304 -6.763,106.299 -6.767,106.276 -6.772,106.266 -6.770,106.258 -6.759,106.246 -6.736,106.241 -6.724,106.247 -6.713,106.263 -6.705,106.269 -6.680,106.269 -6.680,106.276 -6.692,106.295 -6.693,106.304 -6.674,106.359 -6.697,106.400 -6.697,106.410</polygon>
+      <polygon>-6.218,106.197 -6.216,106.207 -6.231,106.231 -6.227,106.247 -6.230,106.256 -6.235,106.255 -6.241,106.247 -6.252,106.251 -6.261,106.214 -6.274,106.211 -6.272,106.175 -6.251,106.175 -6.252,106.163 -6.252,106.153 -6.220,106.154 -6.214,106.158 -6.218,106.197</polygon>
+      <polygon>-6.176,106.285 -6.196,106.284 -6.201,106.282 -6.211,106.287 -6.217,106.285 -6.230,106.291 -6.234,106.290 -6.238,106.283 -6.267,106.285 -6.264,106.277 -6.254,106.261 -6.252,106.251 -6.241,106.247 -6.235,106.255 -6.230,106.256 -6.227,106.247 -6.231,106.231 -6.216,106.207 -6.218,106.197 -6.204,106.193 -6.197,106.208 -6.195,106.227 -6.172,106.271 -6.176,106.285</polygon>
+    </area>
+  </info>
+</alert>
