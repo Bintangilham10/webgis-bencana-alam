@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiwwFBVV95cUxObzgweXBBRXFRWkg5UHF0c2tZRWJpdGF3VnZ2M2FCU2pxbldmNkdYZUpDMDVHeE1GLXg4cy0yQXItbUtDNzgxcUNIZHpOb3BOUnBzV0RrTURDYnBkTmFjNFM2NXUtTGZKclQ5TnVkOS1HRVNYQmcwZVdyOGk0bFJuNHhiblRCUXpqaWc4UUdQTUJxYk54dVpybHQ1cFROWkxFeHhLQ2ktUDVja2ZLS2hQTkktd2JXaFVNeG9JUGg3MWtNQmM",
+  "title": "Foto : Tanah Longsor Timpa 3 Rumah di Tabanan Bali, Satu Korban Terluka Halaman 1 - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxObzgweXBBRXFRWkg5UHF0c2tZRWJpdGF3VnZ2M2FCU2pxbldmNkdYZUpDMDVHeE1GLXg4cy0yQXItbUtDNzgxcUNIZHpOb3BOUnBzV0RrTURDYnBkTmFjNFM2NXUtTGZKclQ5TnVkOS1HRVNYQmcwZVdyOGk0bFJuNHhiblRCUXpqaWc4UUdQTUJxYk54dVpybHQ1cFROWkxFeHhLQ2ktUDVja2ZLS2hQTkktd2JXaFVNeG9JUGg3MWtNQmM?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://denpasar.kompas.com",
+  "published_at": "2026-10-28T21:09:39.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-29T02:15:30.896Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "51.02",
+      "nama": "Kabupaten Tabanan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bali"
+  ]
+}

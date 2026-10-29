@@ -1,0 +1,28 @@
+{
+  "guid": "CBMitwFBVV95cUxNSkNrWDg0OGtfRVcxaEhKWGdENk56WWhvbGc5QXNJcW5PbHBXV094Y1ZCY2VfWUtYZlFJUEtUeHpGenJIY3JaSTdPOHA4Sl9zVDF3QVF0M09mRkVMNnJaZWQ0NGZTOGdQb2todk1KNjk1X1dSM0ttV1NEcTdvQUdlbmxVM2JiN1kyN3VSMUdkendROC1yTEMxLVlWYjdpcHByZkNEaFZoS1psb2xyb2hvVGJ3Y3FnSlXSAbcBQVVfeXFMTUpDa1g4NDhrX0VXMWhISlhnRDZOellob2xnOUFzSXFuT2xwV1dPeGNWQmNlX1lLWGZRSVBLVHh6RnpySGNyWkk3TzhwOEpfc1Qxd0FRdDNPZkZFTDZyWmVkNDRmUzhnUG9raHZNSjY5NV9XUjNLbVdTRHE3b0FHZW5sVTNiYjdZMjd1UjFHZHp3UTgtckxDMS1ZVmI3aXBwcmZDRGhWaEtabG9scm9ob1Rid2NxZ0pV",
+  "title": "Perlahan Pulih, Jalur Aceh Timur-Gayo Lues Dibuka Kembali Usai Longsor - detikNews",
+  "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSkNrWDg0OGtfRVcxaEhKWGdENk56WWhvbGc5QXNJcW5PbHBXV094Y1ZCY2VfWUtYZlFJUEtUeHpGenJIY3JaSTdPOHA4Sl9zVDF3QVF0M09mRkVMNnJaZWQ0NGZTOGdQb2todk1KNjk1X1dSM0ttV1NEcTdvQUdlbmxVM2JiN1kyN3VSMUdkendROC1yTEMxLVlWYjdpcHByZkNEaFZoS1psb2xyb2hvVGJ3Y3FnSlXSAbcBQVVfeXFMTUpDa1g4NDhrX0VXMWhISlhnRDZOellob2xnOUFzSXFuT2xwV1dPeGNWQmNlX1lLWGZRSVBLVHh6RnpySGNyWkk3TzhwOEpfc1Qxd0FRdDNPZkZFTDZyWmVkNDRmUzhnUG9raHZNSjY5NV9XUjNLbVdTRHE3b0FHZW5sVTNiYjdZMjd1UjFHZHp3UTgtckxDMS1ZVmI3aXBwcmZDRGhWaEtabG9scm9ob1Rid2NxZ0pV?oc=5",
+  "source": "detikNews",
+  "source_url": "https://news.detik.com",
+  "published_at": "2026-10-28T23:00:49.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-29T02:15:30.896Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "11.03",
+      "nama": "Kabupaten Aceh Timur",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "11.13",
+      "nama": "Kabupaten Gayo Lues",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
