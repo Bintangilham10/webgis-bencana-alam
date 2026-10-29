@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-29T02:30:33.647Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        138.4744809214,
+        -3.6841844861
+      ]
+    },
+    "properties": {
+      "pkey": "399945",
+      "created_at": "2026-10-29T02:27:14.823Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "26efe711-4e00-4650-9066-5e1cecd88b0a",
+      "image_url": "https://images.petabencana.id/26efe711-4e00-4650-9066-5e1cecd88b0a.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 53.390862777752396,
+        "fireLocation": {
+          "lng": 138.47448092136506,
+          "lat": -3.6841844860738036
+        },
+        "personLocation": {
+          "lng": 138.47855802963778,
+          "lat": -3.684507699111151
+        },
+        "fireRadius": {
+          "lng": 138.47405591278329,
+          "lat": -3.6844095689486807
+        }
+      },
+      "tags": {
+        "city": "TOLIKARA",
+        "district_id": null,
+        "region_code": "9114",
+        "local_area_id": null,
+        "instance_region_code": "ID-PA"
+      },
+      "title": null,
+      "text": "terjadi kebakaran lahan di pegunungan kawasan Karubaga, Tolikara, Papua Pegunungan (29/10)",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
