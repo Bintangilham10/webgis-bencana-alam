@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-29T07:30:37.076Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        98.7014290259,
+        3.6213554944
+      ]
+    },
+    "properties": {
+      "pkey": "399958",
+      "created_at": "2026-10-29T07:23:47.947Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "e4ebd8d5-ab14-4980-98ec-cf74bc3860d1",
+      "image_url": null,
+      "disaster_type": "earthquake",
+      "is_training": true,
+      "report_data": {
+        "report_type": "road",
+        "accessabilityFailure": 4,
+        "condition": 0
+      },
+      "tags": {
+        "city": "KOTA MEDAN",
+        "district_id": null,
+        "region_code": "1271",
+        "local_area_id": null,
+        "instance_region_code": "ID-SU"
+      },
+      "title": null,
+      "text": "Jalan nya merupakan hancur akibat gejadian bencana",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-29T07:30:37.076Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.8276565559,
+        -6.1751894648
+      ]
+    },
+    "properties": {
+      "pkey": "399957",
+      "created_at": "2026-10-29T07:23:14.089Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "158ecd70-cde0-47c7-b60c-d2f96f4b21f5",
+      "image_url": "https://images.petabencana.id/158ecd70-cde0-47c7-b60c-d2f96f4b21f5.jpg",
+      "disaster_type": "earthquake",
+      "is_training": true,
+      "report_data": {
+        "report_type": "road",
+        "accessabilityFailure": 3,
+        "condition": 1
+      },
+      "tags": {
+        "city": "JAKARTA PUSAT",
+        "district_id": null,
+        "region_code": "3171",
+        "local_area_id": "11017",
+        "instance_region_code": "ID-JK"
+      },
+      "title": null,
+      "text": "Terjadinya gempa bumi di desa sampali dusun 2 kecamatan Percut suituan, sehingga jalan sebagian rusak",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-29T07:30:37.076Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        98.7128624018,
+        3.6276741253
+      ]
+    },
+    "properties": {
+      "pkey": "399953",
+      "created_at": "2026-10-29T07:20:11.075Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "873a4882-b089-4295-a68c-fd9e1b0a5b5d",
+      "image_url": "https://images.petabencana.id/873a4882-b089-4295-a68c-fd9e1b0a5b5d.jpg",
+      "disaster_type": "wind",
+      "is_training": true,
+      "report_data": {
+        "report_type": "wind",
+        "impact": 1
+      },
+      "tags": {
+        "city": "DELI SERDANG",
+        "district_id": null,
+        "region_code": "1207",
+        "local_area_id": null,
+        "instance_region_code": "ID-SU"
+      },
+      "title": null,
+      "text": "desa sampali dusun 1 sma pab 4 sampali terkena angin kencang beserta hujan yang hebat",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

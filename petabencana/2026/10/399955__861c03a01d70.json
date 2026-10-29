@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-29T07:30:37.076Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        98.7126477357,
+        3.6278672902
+      ]
+    },
+    "properties": {
+      "pkey": "399955",
+      "created_at": "2026-10-29T07:20:32.273Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "e7feb6f9-176f-4028-9b2d-f5913b6af99b",
+      "image_url": "https://images.petabencana.id/e7feb6f9-176f-4028-9b2d-f5913b6af99b.jpg",
+      "disaster_type": "wind",
+      "is_training": true,
+      "report_data": {
+        "report_type": "wind",
+        "impact": 1
+      },
+      "tags": {
+        "city": "DELI SERDANG",
+        "district_id": null,
+        "region_code": "1207",
+        "local_area_id": null,
+        "instance_region_code": "ID-SU"
+      },
+      "title": null,
+      "text": "Desa sampali dusun 1\nSMA PAB 4 SAMPALI terkena\nbecana angin puting kencang",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

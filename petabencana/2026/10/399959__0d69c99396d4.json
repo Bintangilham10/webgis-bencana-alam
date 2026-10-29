@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-29T07:30:37.076Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        98.7128036636,
+        3.6279034187
+      ]
+    },
+    "properties": {
+      "pkey": "399959",
+      "created_at": "2026-10-29T07:23:57.259Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "00d5d59a-584f-4f31-b162-548a09525c6b",
+      "image_url": "https://images.petabencana.id/00d5d59a-584f-4f31-b162-548a09525c6b.jpg",
+      "disaster_type": "earthquake",
+      "is_training": true,
+      "report_data": {
+        "report_type": "road",
+        "accessabilityFailure": 2,
+        "condition": 1
+      },
+      "tags": {
+        "city": "DELI SERDANG",
+        "district_id": null,
+        "region_code": "1207",
+        "local_area_id": null,
+        "instance_region_code": "ID-SU"
+      },
+      "title": null,
+      "text": "desa sampali dusun 1 sma pab 4 sampali mengalami kerusakan jalan karna gempa bumi yang cukup dasyat tadinya",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
