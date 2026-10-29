@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.29.08.62.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-29T14:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-29T15:00:00+07:00</effective>
+    <expires>2026-10-29T17:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 29 October 2026, 15:00 WIB di sebagian wilayah Kalimantan Tengah, khususnya di BALAI RIAM, KOTAWARINGIN LAMA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 29 October 2026, 17:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/29/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-2.281,111.382 -2.301,111.408 -2.313,111.438 -2.310,111.477 -2.312,111.499 -2.307,111.518 -2.311,111.529 -2.312,111.532 -2.334,111.533 -2.348,111.539 -2.372,111.540 -2.468,111.541 -2.626,111.581 -2.626,111.483 -2.647,111.415 -2.648,111.398 -2.646,111.377 -2.626,111.344 -2.618,111.302 -2.594,111.300 -2.580,111.289 -2.542,111.279 -2.447,111.285 -2.373,111.284 -2.373,111.265 -2.344,111.268 -2.336,111.274 -2.336,111.305 -2.332,111.317 -2.312,111.317 -2.305,111.317 -2.307,111.356 -2.276,111.342 -2.263,111.368 -2.281,111.382</polygon>
+      <polygon>-2.312,111.317 -2.332,111.317 -2.336,111.305 -2.336,111.274 -2.344,111.268 -2.373,111.265 -2.389,111.237 -2.410,111.211 -2.425,111.161 -2.454,111.106 -2.433,111.105 -2.363,111.090 -2.309,111.072 -2.277,111.056 -2.265,111.093 -2.272,111.140 -2.283,111.148 -2.279,111.212 -2.285,111.228 -2.297,111.240 -2.302,111.256 -2.306,111.274 -2.306,111.302 -2.312,111.317</polygon>
+    </area>
+  </info>
+</alert>
