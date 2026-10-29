@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-29T01:45:24.034Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        98.7928627981,
+        3.5177017191
+      ]
+    },
+    "properties": {
+      "pkey": "399944",
+      "created_at": "2026-10-29T01:43:09.973Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "53aa4ea0-ed09-42c1-9f3e-6bf0b7334a8a",
+      "image_url": "https://images.petabencana.id/53aa4ea0-ed09-42c1-9f3e-6bf0b7334a8a.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 100
+      },
+      "tags": {
+        "city": "DELI SERDANG",
+        "district_id": null,
+        "region_code": "1207",
+        "local_area_id": null,
+        "instance_region_code": "ID-SU"
+      },
+      "title": null,
+      "text": "Rumah-rumah di Desa Dalu X B Kecamatan Tanjung Morawa terendam banjir, jalan terputus ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
