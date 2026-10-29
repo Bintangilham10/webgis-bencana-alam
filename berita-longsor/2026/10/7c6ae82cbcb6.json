@@ -1,0 +1,26 @@
+{
+  "guid": "CBMisAFBVV95cUxNSGpDMkxmRW9iNVJ5N3R6NTlsb3ozZG9VWWRCVkZseGZIbHBtS0oyVHJOUG5LZ0F2RTVIdHM5d3EtV2dSTjUwazg1OEVUWTBEUmNSSmNpMVdhQjZDYmVGS21xakpvdlZWLUdsSzNDRWF5Z29JbHQ0emIyeUVOSF9KSGt1d0EwZWhOYWotZkVWWFVGV0tUcG5JY2VLOGJlVy1UeWZOUzFvWTVvRUZ2SFpqTg",
+  "title": "Tebing Longsor di Sukabumi, Dua Rumah di Kabandungan Terancam Ambruk - Media Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSGpDMkxmRW9iNVJ5N3R6NTlsb3ozZG9VWWRCVkZseGZIbHBtS0oyVHJOUG5LZ0F2RTVIdHM5d3EtV2dSTjUwazg1OEVUWTBEUmNSSmNpMVdhQjZDYmVGS21xakpvdlZWLUdsSzNDRWF5Z29JbHQ0emIyeUVOSF9KSGt1d0EwZWhOYWotZkVWWFVGV0tUcG5JY2VLOGJlVy1UeWZOUzFvWTVvRUZ2SFpqTg?oc=5",
+  "source": "Media Indonesia",
+  "source_url": "https://mediaindonesia.com",
+  "published_at": "2026-10-29T10:33:43.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-29T12:00:43.886Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

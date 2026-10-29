@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi1wFBVV95cUxOZXBQXzBiNzBmNEhncFl3T1BSVU5IMWVzN1lFUm9NRW1GWVhtZWhGQ2ZuQkRycHRNaEdsbnpWWTlvWGJ1SzBqSGgtRzBVdUU1RTgycDdUVWdFVUd3QjN3MTZ1Q2hnZzlVRVJwOUpFYVZPbWN1UGV0RG16N1kxaGpqQ1lMNVFOa1ZBcUVpbXFTWnh3dmxCWU9Yc0V0M1lhdUNLS2Nua2h5Q1JXeU1vczlPWThiUEtGeU50LW1DSERHSkJFV0pZSVBTbmJVb1lsMGVnclFmeHE0MA",
+  "title": "KDM Ingatkan Ancaman Longsor jika Kebun Teh di Bandung Selatan Beralih Jadi Kebun Sayur - Bisnis.com",
+  "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZXBQXzBiNzBmNEhncFl3T1BSVU5IMWVzN1lFUm9NRW1GWVhtZWhGQ2ZuQkRycHRNaEdsbnpWWTlvWGJ1SzBqSGgtRzBVdUU1RTgycDdUVWdFVUd3QjN3MTZ1Q2hnZzlVRVJwOUpFYVZPbWN1UGV0RG16N1kxaGpqQ1lMNVFOa1ZBcUVpbXFTWnh3dmxCWU9Yc0V0M1lhdUNLS2Nua2h5Q1JXeU1vczlPWThiUEtGeU50LW1DSERHSkJFV0pZSVBTbmJVb1lsMGVnclFmeHE0MA?oc=5",
+  "source": "Bisnis.com",
+  "source_url": "https://bandung.bisnis.com",
+  "published_at": "2026-10-29T11:00:43.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-29T12:00:43.886Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

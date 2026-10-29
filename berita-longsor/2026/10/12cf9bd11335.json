@@ -1,0 +1,21 @@
+{
+  "guid": "CBMixgFBVV95cUxQNjFsM2tOUDlJWnZMYVVqYVd1ZzN6Z2xCUnhsLWRfRE43ZzJ5Nk83ZFBrZTNPQW9Xenk4LW5OYVB5Q0ZBejV2UUlYWFhRSk1IMDhpNVozVTJ0SF91alJzTk1xSC1yVXg4QlFnMWY1Z3hPeXdTRTZUVXNtZGdBRUt5VEtMcVpuQVJDOFQxVS1fLXN6Vm8tVGJvRHZhZ1NUcmJtQTc5d0Zra3pzOXdmZkRKODlRbkpwd0V5WmJGWFFuSmRrWmdNMHc",
+  "title": "BPBD Tabanan Tangani Longsor di Perumahan Puskopad 2, Wakil Bupati Serahkan Langsung Bantuan Logistik - Barometer Bali",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNjFsM2tOUDlJWnZMYVVqYVd1ZzN6Z2xCUnhsLWRfRE43ZzJ5Nk83ZFBrZTNPQW9Xenk4LW5OYVB5Q0ZBejV2UUlYWFhRSk1IMDhpNVozVTJ0SF91alJzTk1xSC1yVXg4QlFnMWY1Z3hPeXdTRTZUVXNtZGdBRUt5VEtMcVpuQVJDOFQxVS1fLXN6Vm8tVGJvRHZhZ1NUcmJtQTc5d0Zra3pzOXdmZkRKODlRbkpwd0V5WmJGWFFuSmRrWmdNMHc?oc=5",
+  "source": "Barometer Bali",
+  "source_url": "https://barometerbali.com",
+  "published_at": "2026-10-29T11:18:51.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-29T12:00:43.886Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "51.02",
+      "nama": "Kabupaten Tabanan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
