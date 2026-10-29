@@ -1,0 +1,26 @@
+{
+  "guid": "CBMif0FVX3lxTFBrY3V1Y3FRZWZuN2xqQlhxYUE2Y2RvNGZpUDJidE5OdjJ5SUFqOF9RQmNYcERkby1IaHc5QU90M2JYUG9yTkNJc1g1SkJ4alotb1pHal9pbV9Sa3B0aFZyOTVfc3pTanF6LWhxZlFRc0dOdFgwYmhQTGxzcGpWVHM",
+  "title": "Longsor Ancam Dua Rumah Warga Kabandungan Sukabumi - lingkar pena",
+  "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBrY3V1Y3FRZWZuN2xqQlhxYUE2Y2RvNGZpUDJidE5OdjJ5SUFqOF9RQmNYcERkby1IaHc5QU90M2JYUG9yTkNJc1g1SkJ4alotb1pHal9pbV9Sa3B0aFZyOTVfc3pTanF6LWhxZlFRc0dOdFgwYmhQTGxzcGpWVHM?oc=5",
+  "source": "lingkar pena",
+  "source_url": "https://lingkarpena.id",
+  "published_at": "2026-10-29T04:05:41.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-29T05:30:39.218Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

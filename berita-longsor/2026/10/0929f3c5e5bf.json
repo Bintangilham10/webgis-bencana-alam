@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiX0FVX3lxTE1ObjhvSUZjdklsMTBLaEpDTVdNNXh0UFhpanRYbjc3VU01QTZoZUtwTDUycVpWSWw4WTQ2SGl1LTg4TGMySUl2SVM3R2FFLWI1TGlqSWZBbnN3T2dDVm8w",
+  "title": "BPBD Kota Batu Catat Tujuh Titik Banjir dan Longsor - ChatNews.id",
+  "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ObjhvSUZjdklsMTBLaEpDTVdNNXh0UFhpanRYbjc3VU01QTZoZUtwTDUycVpWSWw4WTQ2SGl1LTg4TGMySUl2SVM3R2FFLWI1TGlqSWZBbnN3T2dDVm8w?oc=5",
+  "source": "ChatNews.id",
+  "source_url": "https://chatnews.id",
+  "published_at": "2026-10-29T02:48:15.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-29T05:30:39.218Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.79",
+      "nama": "Kota Batu",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

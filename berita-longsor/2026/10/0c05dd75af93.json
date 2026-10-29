@@ -1,0 +1,21 @@
+{
+  "guid": "CBMikAFBVV95cUxQOWdZVmlaSHpaNlFTY2ZhLTdwME42TnFhUW1nMFdwMmJ1Z2RRUnlSSUlJTUNyMlQxM1hfSEVQd2RSM2ZmUHBfNzY0d2Y0UXBuM3JYcHhNZDdLbW1xTUZORHJWdy1ZRVV1NFZXdldoZnItN1BMXzAtSTNOWGNla3VTOFNtdE9QNWJwTEViUVh0d1c",
+  "title": "Hujan Deras, Banjir dan Longsor Terjadi di Kota Batu - Akurat Jatim",
+  "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOWdZVmlaSHpaNlFTY2ZhLTdwME42TnFhUW1nMFdwMmJ1Z2RRUnlSSUlJTUNyMlQxM1hfSEVQd2RSM2ZmUHBfNzY0d2Y0UXBuM3JYcHhNZDdLbW1xTUZORHJWdy1ZRVV1NFZXdldoZnItN1BMXzAtSTNOWGNla3VTOFNtdE9QNWJwTEViUVh0d1c?oc=5",
+  "source": "Akurat Jatim",
+  "source_url": "https://jatim.akurat.co",
+  "published_at": "2026-10-29T03:28:41.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-29T05:30:39.218Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.79",
+      "nama": "Kota Batu",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}
