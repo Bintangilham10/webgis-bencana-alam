@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-29T07:15:31.148Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        98.7136648737,
+        3.6285172009
+      ]
+    },
+    "properties": {
+      "pkey": "399950",
+      "created_at": "2026-10-29T07:15:35.975Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "05d008bb-77e4-4eb9-8d19-80f6d6598174",
+      "image_url": "https://images.petabencana.id/05d008bb-77e4-4eb9-8d19-80f6d6598174.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 45
+      },
+      "tags": {
+        "city": "DELI SERDANG",
+        "district_id": null,
+        "region_code": "1207",
+        "local_area_id": null,
+        "instance_region_code": "ID-SU"
+      },
+      "title": null,
+      "text": "desa sampali dusun 1 sekola \nSMA PAB 4 SAMPALI banjir genangan akibat ujan semalaman ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

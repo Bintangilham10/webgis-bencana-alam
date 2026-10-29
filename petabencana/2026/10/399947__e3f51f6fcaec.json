@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-29T07:15:31.148Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        98.713665302,
+        3.6271455493
+      ]
+    },
+    "properties": {
+      "pkey": "399947",
+      "created_at": "2026-10-29T07:15:35.110Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "ced78fec-23c5-428a-ac91-e958eff58d79",
+      "image_url": "https://images.petabencana.id/ced78fec-23c5-428a-ac91-e958eff58d79.jpg",
+      "disaster_type": "flood",
+      "is_training": true,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 45
+      },
+      "tags": {
+        "city": "DELI SERDANG",
+        "district_id": null,
+        "region_code": "1207",
+        "local_area_id": null,
+        "instance_region_code": "ID-SU"
+      },
+      "title": null,
+      "text": "Sempali dusun 1 terkena banjir sma pab 4 sampali banjir genangan akibat hujan semalaman ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
