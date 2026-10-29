@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.29.03.12.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-29T10:15:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-29T10:45:00+07:00</effective>
+    <expires>2026-10-29T13:45:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 29 October 2026, 10:45 WIB di sebagian wilayah Sumatera Utara, khususnya di AIR PUTIH, BANDAR, BANDAR MASILAM, LIMA PULUH, MEDANG DERAS, SEI SUKA, TALAWI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 29 October 2026, 13:45 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSU/2026/10/29/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Utara</areaDesc>
+      <polygon>3.253,99.404 3.252,99.407 3.223,99.398 3.175,99.375 3.169,99.344 3.154,99.321 3.141,99.313 3.097,99.303 3.070,99.289 3.095,99.270 3.107,99.271 3.129,99.284 3.135,99.283 3.135,99.273 3.139,99.268 3.152,99.263 3.151,99.244 3.155,99.241 3.166,99.245 3.203,99.272 3.202,99.304 3.214,99.309 3.222,99.307 3.240,99.324 3.250,99.345 3.237,99.343 3.213,99.358 3.240,99.370 3.253,99.404</polygon>
+      <polygon>3.287,99.344 3.275,99.348 3.250,99.345 3.240,99.324 3.222,99.307 3.214,99.309 3.202,99.304 3.203,99.272 3.214,99.275 3.227,99.258 3.241,99.254 3.233,99.241 3.234,99.236 3.245,99.245 3.253,99.244 3.256,99.267 3.269,99.278 3.282,99.307 3.298,99.308 3.287,99.344</polygon>
+      <polygon>3.372,99.443 3.364,99.437 3.368,99.428 3.356,99.434 3.342,99.424 3.338,99.407 3.347,99.399 3.349,99.392 3.320,99.367 3.341,99.361 3.350,99.344 3.368,99.333 3.382,99.340 3.386,99.337 3.385,99.314 3.369,99.286 3.444,99.315 3.433,99.320 3.420,99.345 3.399,99.369 3.385,99.421 3.372,99.443</polygon>
+      <polygon>3.372,99.443 3.354,99.462 3.346,99.486 3.318,99.486 3.316,99.492 3.312,99.487 3.315,99.469 3.318,99.462 3.337,99.450 3.342,99.441 3.325,99.411 3.322,99.395 3.312,99.372 3.298,99.364 3.297,99.355 3.310,99.357 3.308,99.352 3.302,99.347 3.287,99.344 3.298,99.308 3.282,99.307 3.269,99.278 3.256,99.267 3.253,99.244 3.245,99.245 3.234,99.236 3.215,99.230 3.200,99.230 3.212,99.218 3.219,99.212 3.224,99.208 3.225,99.214 3.252,99.235 3.267,99.235 3.311,99.260 3.329,99.261 3.363,99.282 3.369,99.286 3.385,99.314 3.386,99.337 3.382,99.340 3.368,99.333 3.350,99.344 3.341,99.361 3.320,99.367 3.349,99.392 3.347,99.399 3.338,99.407 3.342,99.424 3.356,99.434 3.368,99.428 3.364,99.437 3.372,99.443</polygon>
+      <polygon>3.315,99.469 3.314,99.461 3.295,99.451 3.290,99.434 3.274,99.425 3.253,99.404 3.240,99.370 3.213,99.358 3.237,99.343 3.250,99.345 3.275,99.348 3.287,99.344 3.302,99.347 3.308,99.352 3.310,99.357 3.297,99.355 3.298,99.364 3.312,99.372 3.322,99.395 3.325,99.411 3.342,99.441 3.337,99.450 3.318,99.462 3.315,99.469</polygon>
+      <polygon>3.251,99.540 3.251,99.531 3.240,99.522 3.224,99.532 3.210,99.549 3.200,99.537 3.196,99.515 3.129,99.471 3.147,99.422 3.151,99.363 3.175,99.375 3.223,99.398 3.252,99.407 3.253,99.404 3.274,99.425 3.290,99.434 3.295,99.451 3.314,99.461 3.315,99.469 3.312,99.487 3.316,99.492 3.251,99.540</polygon>
+      <polygon>3.251,99.540 3.238,99.559 3.234,99.575 3.214,99.575 3.204,99.590 3.197,99.587 3.194,99.577 3.189,99.576 3.174,99.592 3.166,99.591 3.161,99.568 3.150,99.565 3.140,99.555 3.123,99.555 3.099,99.537 3.108,99.518 3.101,99.508 3.112,99.482 3.121,99.493 3.125,99.482 3.129,99.471 3.196,99.515 3.200,99.537 3.210,99.549 3.224,99.532 3.240,99.522 3.251,99.531 3.251,99.540</polygon>
+    </area>
+  </info>
+</alert>
