@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-29T03:30:37.855Z",
+  "data": {
+    "Tanggal": "29 Okt 2026",
+    "Jam": "10:26:49 WIB",
+    "DateTime": "2026-10-29T03:26:49+00:00",
+    "Coordinates": "-5.45,141.90",
+    "Lintang": "5.45 LS",
+    "Bujur": "141.90 BT",
+    "Magnitude": "6.0",
+    "Kedalaman": "120 km",
+    "Wilayah": "153 km Tenggara OKSIBIL-PAPUAPGNGN",
+    "Potensi": "Tidak berpotensi tsunami",
+    "Dirasakan": "-",
+    "Shakemap": "20261029102932.mmi.jpg"
+  }
+}
