@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.29.05.19.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-29T10:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-29T10:40:00+07:00</effective>
+    <expires>2026-10-29T12:40:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 29 October 2026, 10:40 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di KELAPA KAMPIT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 29 October 2026, 12:40 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/10/29/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-2.674,108.153 -2.677,108.146 -2.690,108.137 -2.697,108.140 -2.704,108.121 -2.724,108.112 -2.747,108.126 -2.758,108.124 -2.769,108.131 -2.778,108.130 -2.780,108.114 -2.792,108.105 -2.791,108.101 -2.803,108.093 -2.811,108.094 -2.823,108.081 -2.828,108.007 -2.827,107.995 -2.807,108.002 -2.800,107.997 -2.786,108.001 -2.777,107.994 -2.756,107.995 -2.752,107.992 -2.751,107.982 -2.758,107.967 -2.757,107.958 -2.750,107.955 -2.742,107.963 -2.727,107.939 -2.722,107.935 -2.711,107.933 -2.710,107.907 -2.690,107.876 -2.672,107.884 -2.664,107.896 -2.638,107.899 -2.636,107.902 -2.610,107.899 -2.609,107.912 -2.593,107.936 -2.585,107.940 -2.570,107.938 -2.572,107.954 -2.578,107.960 -2.572,107.989 -2.585,108.008 -2.598,108.013 -2.616,108.006 -2.635,108.022 -2.637,108.030 -2.655,108.020 -2.667,108.019 -2.659,108.028 -2.641,108.038 -2.611,108.038 -2.599,108.043 -2.607,108.072 -2.603,108.089 -2.614,108.097 -2.615,108.105 -2.628,108.110 -2.631,108.115 -2.629,108.128 -2.645,108.139 -2.654,108.155 -2.671,108.149 -2.674,108.153</polygon>
+      <polygon>-2.554,107.988 -2.554,107.986 -2.551,107.988 -2.553,107.991 -2.554,107.988</polygon>
+      <polygon>-2.651,108.028 -2.656,108.028 -2.666,108.019 -2.654,108.021 -2.651,108.028</polygon>
+    </area>
+  </info>
+</alert>
