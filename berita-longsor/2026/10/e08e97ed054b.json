@@ -1,0 +1,21 @@
+{
+  "guid": "CBMivgFBVV95cUxQVUFITElPVmRJYWhCbHk5TlRSbm0yMU0zZWtqTEJETnhPSndEV2tkeW5ub3NaYVNiSGdFRkJMb3duQkoyN2FncEliYi1XejMzb29ndksyOHlXNXVKZEFOdXU0RmY3TVMwWkxWckgwakVtMUVJbDhHQnV0SXlUczZhWXRsUkJQYUgtTVRoR0F0bVVOQkFqUERFM1FLVUptU29DQlBYaUVDZ0VJTTNzRHpyLUt4Ym9YQVpuMUhJOWdn",
+  "title": "Longsor Ancam Permukiman di Cisarua Bandung Barat, Sejumlah Warga Mengungsi - Media Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVUFITElPVmRJYWhCbHk5TlRSbm0yMU0zZWtqTEJETnhPSndEV2tkeW5ub3NaYVNiSGdFRkJMb3duQkoyN2FncEliYi1XejMzb29ndksyOHlXNXVKZEFOdXU0RmY3TVMwWkxWckgwakVtMUVJbDhHQnV0SXlUczZhWXRsUkJQYUgtTVRoR0F0bVVOQkFqUERFM1FLVUptU29DQlBYaUVDZ0VJTTNzRHpyLUt4Ym9YQVpuMUhJOWdn?oc=5",
+  "source": "Media Indonesia",
+  "source_url": "https://mediaindonesia.com",
+  "published_at": "2026-10-29T12:39:38.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-29T15:00:43.991Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.17",
+      "nama": "Kabupaten Bandung Barat",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

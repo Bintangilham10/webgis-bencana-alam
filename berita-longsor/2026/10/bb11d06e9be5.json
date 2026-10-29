@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirAFBVV95cUxPZTBLNGZGRFdYaDVEbVhWQ1hzLUhlYzRiV3JwUXFnY1B3STZ0SzNhb09EQTlLb29Xdi1QWlB6S19aWTQwMS1nV0pvSmViZzBMeHNFRFQxWjZYQVdGN09GM1hvTDB2dFNyVklISHpFejl5VEJEMGJJN1M1Rm5fSnRhUjFtSVg4YWk0QXA4TEhIU3NNdS1vUHl4QnlDLXFxeUx2dVRUcVJpM0RTUjJT",
+  "title": "Pengamat: Alih Fungsi Kebun Teh di Bandung Selatan Ancam Banjir Lumpur dan Longsor - Inilahkoran.id",
+  "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZTBLNGZGRFdYaDVEbVhWQ1hzLUhlYzRiV3JwUXFnY1B3STZ0SzNhb09EQTlLb29Xdi1QWlB6S19aWTQwMS1nV0pvSmViZzBMeHNFRFQxWjZYQVdGN09GM1hvTDB2dFNyVklISHpFejl5VEJEMGJJN1M1Rm5fSnRhUjFtSVg4YWk0QXA4TEhIU3NNdS1vUHl4QnlDLXFxeUx2dVRUcVJpM0RTUjJT?oc=5",
+  "source": "Inilahkoran.id",
+  "source_url": "https://www.inilahkoran.id",
+  "published_at": "2026-10-29T12:00:52.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-29T15:00:43.991Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
