@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.29.16.35.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-29T19:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-29T20:20:00+07:00</effective>
+    <expires>2026-10-29T23:20:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 29 October 2026, 20:20 WIB di sebagian wilayah Jawa Timur, khususnya di GUCIALIT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 29 October 2026, 23:20 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/10/29/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.973,113.164 -7.977,113.170 -7.983,113.170 -8.008,113.188 -8.040,113.185 -8.046,113.187 -8.048,113.193 -8.054,113.198 -8.057,113.188 -8.067,113.169 -8.068,113.153 -8.074,113.146 -8.078,113.149 -8.083,113.145 -8.089,113.126 -8.037,113.114 -8.008,113.083 -7.982,113.071 -7.981,113.102 -7.992,113.116 -7.977,113.136 -7.980,113.150 -7.970,113.158 -7.973,113.164</polygon>
+    </area>
+  </info>
+</alert>
