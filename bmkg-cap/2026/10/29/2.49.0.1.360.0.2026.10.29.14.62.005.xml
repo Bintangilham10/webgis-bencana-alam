@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.29.14.62.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-29T19:45:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-29T19:55:00+07:00</effective>
+    <expires>2026-10-29T22:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 29 October 2026, 19:55 WIB di sebagian wilayah Kalimantan Tengah, khususnya di MENTHOBI RAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 29 October 2026, 22:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/29/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-2.111,111.721 -2.158,111.691 -2.177,111.668 -2.182,111.655 -2.173,111.651 -2.158,111.621 -2.142,111.607 -2.119,111.601 -2.109,111.584 -2.099,111.576 -2.079,111.578 -2.052,111.575 -2.033,111.579 -2.011,111.561 -2.007,111.516 -1.996,111.555 -1.989,111.559 -1.982,111.572 -1.959,111.595 -1.954,111.614 -1.943,111.625 -1.930,111.658 -1.934,111.692 -1.925,111.700 -1.916,111.715 -1.896,111.720 -1.885,111.718 -1.856,111.726 -1.842,111.733 -1.831,111.766 -1.809,111.793 -1.739,111.822 -1.776,111.824 -1.874,111.820 -1.893,111.815 -1.972,111.791 -2.111,111.721</polygon>
+    </area>
+  </info>
+</alert>
