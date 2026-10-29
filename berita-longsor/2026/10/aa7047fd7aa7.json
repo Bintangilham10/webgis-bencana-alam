@@ -1,0 +1,31 @@
+{
+  "guid": "CBMivwFBVV95cUxOVzM5UDRUcmdBdXlUc2FVeDBsVDV5dWRXZWpjSTNMMmJRYVVWSmhsb2h4Q0hhSmhkVGg0ZElkUDc3bEpaNTVHOUtSMlFCaFhGand4cDZEV3pEcU90djBLdjg3SkdMdXp6ZE1OWWZ3VDhRS3JwajNhVTJDRTRUUEd0V2Y3SThUaHF6NTczRVhOVVp0eXVKMG9vQnlmREpDbTd6SnNRRHhscVAyNXJNUW5xUXc4UHd3UjJza0pyT2t5Yw",
+  "title": "Longsor Terjang Tiga Rumah di Kediri Tabanan, BPBD dan Tim Gabungan Lakukan Penanganan - Media Pelangi",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVzM5UDRUcmdBdXlUc2FVeDBsVDV5dWRXZWpjSTNMMmJRYVVWSmhsb2h4Q0hhSmhkVGg0ZElkUDc3bEpaNTVHOUtSMlFCaFhGand4cDZEV3pEcU90djBLdjg3SkdMdXp6ZE1OWWZ3VDhRS3JwajNhVTJDRTRUUEd0V2Y3SThUaHF6NTczRVhOVVp0eXVKMG9vQnlmREpDbTd6SnNRRHhscVAyNXJNUW5xUXc4UHd3UjJza0pyT2t5Yw?oc=5",
+  "source": "Media Pelangi",
+  "source_url": "https://mediapelangi.com",
+  "published_at": "2026-10-29T08:14:53.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-29T08:45:29.421Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "51.02",
+      "nama": "Kabupaten Tabanan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.06",
+      "nama": "Kabupaten Kediri",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.71",
+      "nama": "Kota Kediri",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,28 @@
+{
+  "guid": "CBMizwFBVV95cUxQcEtPc0xOdWlOTll4ZFBabFpHcnQ0bXZhbXc0NEV1RFVMVHpQOFpYc0hodGR4ckRzWDVVeXZFSC1aemZ0SmVSbnF1dEZqN19JaDNJTGlfVnFETk9RUU85RGQxQ0lIdjhjclJVYk5VQVZiZVJvbTFKNkpEbWRiUHVnXzd3MXB2ZkxOQkpSLWN4WnZjcERwQXNtbXBjVlUxai11cDUtNkdLWmdibXlJRXdTdnZ3QzJ1bFlhQnF0SzJWWld3M0FlalFLZWJvdG9IelU",
+  "title": "Bogor Status Siaga Hujan Lebat, BMKG Peringatkan Potensi Banjir dan Longsor di Jabar - Tribunjabar.id",
+  "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQcEtPc0xOdWlOTll4ZFBabFpHcnQ0bXZhbXc0NEV1RFVMVHpQOFpYc0hodGR4ckRzWDVVeXZFSC1aemZ0SmVSbnF1dEZqN19JaDNJTGlfVnFETk9RUU85RGQxQ0lIdjhjclJVYk5VQVZiZVJvbTFKNkpEbWRiUHVnXzd3MXB2ZkxOQkpSLWN4WnZjcERwQXNtbXBjVlUxai11cDUtNkdLWmdibXlJRXdTdnZ3QzJ1bFlhQnF0SzJWWld3M0FlalFLZWJvdG9IelU?oc=5",
+  "source": "Tribunjabar.id",
+  "source_url": "https://jabar.tribunnews.com",
+  "published_at": "2026-10-29T07:59:05.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-29T08:45:29.421Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jawa Barat"
+  ]
+}
