@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.29.20.31.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-30T01:17:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-30T01:27:00+07:00</effective>
+    <expires>2026-10-30T03:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 October 2026, 01:27 WIB di sebagian wilayah Jakarta, khususnya di CIBINONG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 October 2026, 03:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJK/2026/10/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jakarta</areaDesc>
+      <polygon>-6.436,106.853 -6.456,106.856 -6.458,106.876 -6.470,106.874 -6.484,106.863 -6.505,106.856 -6.503,106.852 -6.519,106.842 -6.521,106.821 -6.529,106.818 -6.529,106.810 -6.513,106.798 -6.503,106.799 -6.490,106.811 -6.476,106.816 -6.450,106.816 -6.444,106.812 -6.444,106.812 -6.444,106.819 -6.460,106.824 -6.450,106.840 -6.437,106.845 -6.436,106.853</polygon>
+    </area>
+  </info>
+</alert>
