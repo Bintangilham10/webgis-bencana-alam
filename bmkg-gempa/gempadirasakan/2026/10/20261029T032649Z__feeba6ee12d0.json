@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-10-29T04:00:40.599Z",
+  "data": {
+    "Tanggal": "29 Okt 2026",
+    "Jam": "10:26:49 WIB",
+    "DateTime": "2026-10-29T03:26:49+00:00",
+    "Coordinates": "-5.45,141.90",
+    "Lintang": "5.45 LS",
+    "Bujur": "141.90 BT",
+    "Magnitude": "6.0",
+    "Kedalaman": "120 km",
+    "Wilayah": "Pusat gempa berada di darat 153 km tenggara Oksibil",
+    "Dirasakan": "III Boven Digoel, II Jayapura, II Merauke"
+  }
+}
