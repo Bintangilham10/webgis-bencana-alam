@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.29.03.72.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-29T10:30:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-29T10:45:00+08:00</effective>
+    <expires>2026-10-29T12:45:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 29 October 2026, 10:45 WITA di sebagian wilayah Sulawesi Tengah, khususnya di LABUAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 29 October 2026, 12:45 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSG/2026/10/29/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tengah</areaDesc>
+      <polygon>-0.592,120.002 -0.599,119.997 -0.606,119.975 -0.615,119.970 -0.624,119.951 -0.627,119.934 -0.636,119.925 -0.636,119.924 -0.637,119.922 -0.636,119.919 -0.636,119.918 -0.636,119.916 -0.636,119.911 -0.637,119.910 -0.636,119.908 -0.635,119.903 -0.636,119.899 -0.639,119.892 -0.639,119.892 -0.643,119.889 -0.644,119.887 -0.645,119.882 -0.645,119.882 -0.646,119.879 -0.647,119.877 -0.648,119.875 -0.658,119.870 -0.658,119.867 -0.659,119.862 -0.659,119.861 -0.660,119.859 -0.660,119.858 -0.663,119.855 -0.667,119.845 -0.680,119.844 -0.692,119.835 -0.689,119.823 -0.656,119.811 -0.650,119.829 -0.602,119.859 -0.569,119.902 -0.556,119.911 -0.551,119.924 -0.557,119.945 -0.554,119.954 -0.547,119.957 -0.553,119.969 -0.583,119.988 -0.592,120.002</polygon>
+    </area>
+  </info>
+</alert>
