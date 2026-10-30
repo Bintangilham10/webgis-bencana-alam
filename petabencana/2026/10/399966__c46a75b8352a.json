@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-30T20:45:30.796Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        107.602972833,
+        -6.88602639
+      ]
+    },
+    "properties": {
+      "pkey": "399966",
+      "created_at": "2026-10-30T20:36:09.632Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "79c85f8a-a59e-4eba-94f7-5e8d6175bbe3",
+      "image_url": "https://images.petabencana.id/79c85f8a-a59e-4eba-94f7-5e8d6175bbe3.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 200
+      },
+      "tags": {
+        "city": "KOTA BANDUNG",
+        "district_id": null,
+        "region_code": "3273",
+        "local_area_id": null,
+        "instance_region_code": "ID-JB"
+      },
+      "title": null,
+      "text": "Sungai Cikalintu di kawasan Cipaganti, Kecamatan Coblong, Kota Bandung meluap. Rumah warga terendam, tanggul rusak.",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
