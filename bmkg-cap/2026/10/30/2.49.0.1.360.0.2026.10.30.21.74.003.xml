@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.30.21.74.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-31T05:30:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-31T05:45:00+08:00</effective>
+    <expires>2026-10-31T07:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tenggara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 31 October 2026, 05:45 WITA di sebagian wilayah Sulawesi Tenggara, khususnya di LEMBO, MOTUI, SAWA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 31 October 2026, 07:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CST/2026/10/31/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tenggara</areaDesc>
+      <polygon>-3.746,122.399 -3.773,122.377 -3.797,122.366 -3.817,122.347 -3.862,122.312 -3.837,122.311 -3.833,122.308 -3.813,122.281 -3.777,122.277 -3.768,122.266 -3.729,122.325 -3.735,122.326 -3.734,122.336 -3.738,122.335 -3.745,122.341 -3.744,122.348 -3.753,122.363 -3.739,122.383 -3.732,122.387 -3.727,122.384 -3.727,122.393 -3.738,122.394 -3.746,122.399</polygon>
+      <polygon>-3.798,122.460 -3.797,122.390 -3.804,122.386 -3.806,122.423 -3.812,122.417 -3.817,122.347 -3.797,122.366 -3.773,122.377 -3.746,122.399 -3.750,122.402 -3.752,122.417 -3.746,122.431 -3.750,122.444 -3.778,122.449 -3.798,122.460</polygon>
+      <polygon>-3.798,122.460 -3.809,122.470 -3.821,122.473 -3.820,122.469 -3.819,122.459 -3.835,122.459 -3.836,122.454 -3.834,122.447 -3.840,122.440 -3.838,122.432 -3.845,122.429 -3.848,122.423 -3.858,122.429 -3.863,122.416 -3.864,122.416 -3.867,122.414 -3.868,122.400 -3.864,122.399 -3.864,122.357 -3.875,122.344 -3.876,122.335 -3.870,122.330 -3.870,122.318 -3.869,122.314 -3.862,122.312 -3.817,122.347 -3.812,122.417 -3.806,122.423 -3.804,122.386 -3.797,122.390 -3.798,122.460</polygon>
+    </area>
+  </info>
+</alert>
