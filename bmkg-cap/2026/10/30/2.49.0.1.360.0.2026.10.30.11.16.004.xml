@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.30.11.16.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-30T17:15:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-30T17:45:00+07:00</effective>
+    <expires>2026-10-30T18:45:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 October 2026, 17:45 WIB di sebagian wilayah Sumatera Selatan, khususnya di MESUJI RAYA, SALING.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 October 2026, 18:45 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSS/2026/10/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Selatan</areaDesc>
+      <polygon>-3.659,105.220 -3.666,105.220 -3.670,105.223 -3.668,105.237 -3.671,105.243 -3.696,105.247 -3.706,105.259 -3.719,105.256 -3.724,105.249 -3.732,105.259 -3.755,105.243 -3.758,105.237 -3.756,105.222 -3.766,105.200 -3.776,105.194 -3.806,105.146 -3.824,105.131 -3.820,105.120 -3.826,105.115 -3.826,105.105 -3.834,105.101 -3.836,105.063 -3.866,105.064 -3.879,105.052 -3.859,104.998 -3.850,105.001 -3.843,104.970 -3.826,104.969 -3.817,104.970 -3.817,104.980 -3.804,104.988 -3.797,104.987 -3.800,104.970 -3.729,104.970 -3.726,104.982 -3.712,104.983 -3.712,105.014 -3.711,105.021 -3.705,105.025 -3.703,105.041 -3.692,105.038 -3.686,105.023 -3.681,105.027 -3.660,105.013 -3.643,105.025 -3.643,105.032 -3.644,105.075 -3.665,105.086 -3.664,105.106 -3.670,105.119 -3.679,105.121 -3.680,105.152 -3.651,105.163 -3.659,105.220</polygon>
+      <polygon>-3.453,103.075 -3.457,103.067 -3.481,103.055 -3.484,103.055 -3.483,103.064 -3.511,103.065 -3.549,103.097 -3.565,103.084 -3.563,103.078 -3.551,103.080 -3.544,103.077 -3.552,103.051 -3.600,102.941 -3.589,102.922 -3.588,102.923 -3.578,102.936 -3.576,102.937 -3.571,102.940 -3.569,102.941 -3.566,102.942 -3.560,102.941 -3.552,102.941 -3.551,102.942 -3.549,102.943 -3.539,102.944 -3.535,102.948 -3.529,102.960 -3.528,102.966 -3.527,102.973 -3.527,102.976 -3.527,102.976 -3.526,102.981 -3.523,102.984 -3.522,102.985 -3.513,102.992 -3.511,102.991 -3.494,102.988 -3.469,102.998 -3.461,102.991 -3.451,102.990 -3.439,102.993 -3.435,102.999 -3.429,102.999 -3.427,102.999 -3.424,102.997 -3.412,102.991 -3.424,103.042 -3.434,103.058 -3.453,103.075</polygon>
+    </area>
+  </info>
+</alert>
