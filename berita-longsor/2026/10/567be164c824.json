@@ -1,0 +1,31 @@
+{
+  "guid": "CBMitwFBVV95cUxPbGNFbzNPckhfZndHN0tUMGlRczlQN18wVmtwb1NXSlBJSl90Z180bVRNMVpvcFpwRFBRRGt0WE9OYzJwMkZoNU9xOWF0ckd6VXB4WERJd1hJbzE0ellZOFdsOGc0eHdOLWY2TVc4RmpST3pOUkVzVjFyYlMwU3V0ckpTeWtkRU9nVmlyU05STWJiTEJNcUI1ZnNzV1puTzlDRTJYY01RSnZiaElpSk5aTW05OXc1bjjSAbwBQVVfeXFMUEFTUTdCNDF6NTNPUHRZdXJuYi03ZmZ4NVpMcXBqLXZmcXYwUm1RY2J5WlNuVlg5bHhFNUhFYS1sWV9LRUdkSmVLZWY4bkFQc2NwdWRndzZZbHYwcEtyd0FvdWQxVzMzWFpmYy0yYXRMTWhOZmFLNXRDYlEzTnItRDZ6N01ETTdvbHRpRld5MzNaVnpYUFQ4bmNDTjBvQjVXX252eWFGWVNMdjZwMVYyUnBQYXJJcklDRlN2NTI",
+  "title": "Empat Rumah Rusak Diterjang Longsor di Cimahi, Enam Bangunan Lain Terancam - Ayo Bandung - Ayo Bandung",
+  "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbGNFbzNPckhfZndHN0tUMGlRczlQN18wVmtwb1NXSlBJSl90Z180bVRNMVpvcFpwRFBRRGt0WE9OYzJwMkZoNU9xOWF0ckd6VXB4WERJd1hJbzE0ellZOFdsOGc0eHdOLWY2TVc4RmpST3pOUkVzVjFyYlMwU3V0ckpTeWtkRU9nVmlyU05STWJiTEJNcUI1ZnNzV1puTzlDRTJYY01RSnZiaElpSk5aTW05OXc1bjjSAbwBQVVfeXFMUEFTUTdCNDF6NTNPUHRZdXJuYi03ZmZ4NVpMcXBqLXZmcXYwUm1RY2J5WlNuVlg5bHhFNUhFYS1sWV9LRUdkSmVLZWY4bkFQc2NwdWRndzZZbHYwcEtyd0FvdWQxVzMzWFpmYy0yYXRMTWhOZmFLNXRDYlEzTnItRDZ6N01ETTdvbHRpRld5MzNaVnpYUFQ4bmNDTjBvQjVXX252eWFGWVNMdjZwMVYyUnBQYXJJcklDRlN2NTI?oc=5",
+  "source": "Ayo Bandung",
+  "source_url": "https://www.ayobandung.com",
+  "published_at": "2026-10-30T12:27:48.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-30T13:00:38.129Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.77",
+      "nama": "Kota Cimahi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

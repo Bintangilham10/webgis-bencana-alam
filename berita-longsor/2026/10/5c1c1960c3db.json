@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiwgFBVV95cUxQekxtdkxvU3JtSzJoemVVY3M5M0pjNTdab29PS05PckZUZHE5WGRmZndnX0Q4ZDBGa2xiSXBlanBkX1hHMmdERnBKMWd4RFB4R2k5cEtpVWRSVmxXQVRvNDh6MVNraUgzNVNlWFh6bjU4RWZYRjVFaDhrZTVOVEZvTkYwM3BITWx0SXJYUjdBR2N6Q0hPa0RnNTVHQ09fTlFJMmxiVy1iUk1RT1JaeWwwdGprVzF0VlNqY0wzWS1ZRDZJUQ",
+  "title": "Hujan Deras Picu Longsor di Garut, Jalan Penghubung Peundeuy-Cibalong Tertutup - Media Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQekxtdkxvU3JtSzJoemVVY3M5M0pjNTdab29PS05PckZUZHE5WGRmZndnX0Q4ZDBGa2xiSXBlanBkX1hHMmdERnBKMWd4RFB4R2k5cEtpVWRSVmxXQVRvNDh6MVNraUgzNVNlWFh6bjU4RWZYRjVFaDhrZTVOVEZvTkYwM3BITWx0SXJYUjdBR2N6Q0hPa0RnNTVHQ09fTlFJMmxiVy1iUk1RT1JaeWwwdGprVzF0VlNqY0wzWS1ZRDZJUQ?oc=5",
+  "source": "Media Indonesia",
+  "source_url": "https://mediaindonesia.com",
+  "published_at": "2026-10-30T11:45:43.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-30T13:00:38.129Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

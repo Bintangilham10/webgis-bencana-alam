@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiuwFBVV95cUxOZUZSVHBhdVZ6RVRqQnI3VlAwOXJnSzZxd0JWMl8yYmwwTDVzaXlxYmNPZlJSTWotbVdMMUxndjJGOTRFWGFOVFlqdjZ0RlBGR0ktQ0VOY25zYjFSQkZwYVU2VlhPX05heE9FMTR5cGs3ZWM1Szdqc0o2REhLc3Vna0x6dHlBdFZNZ2t2UHIxWVBVWDJ1VW9LV3QwamQ3eEx5OHVfb0JtNmE2YWZVaUdJMXBFdnNlWkZLYkIw",
+  "title": "Tebing Setinggi 7 Meter Longsor di Tasikmalaya, Akses Jalan Desa Terputus - Media Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZUZSVHBhdVZ6RVRqQnI3VlAwOXJnSzZxd0JWMl8yYmwwTDVzaXlxYmNPZlJSTWotbVdMMUxndjJGOTRFWGFOVFlqdjZ0RlBGR0ktQ0VOY25zYjFSQkZwYVU2VlhPX05heE9FMTR5cGs3ZWM1Szdqc0o2REhLc3Vna0x6dHlBdFZNZ2t2UHIxWVBVWDJ1VW9LV3QwamQ3eEx5OHVfb0JtNmE2YWZVaUdJMXBFdnNlWkZLYkIw?oc=5",
+  "source": "Media Indonesia",
+  "source_url": "https://mediaindonesia.com",
+  "published_at": "2026-10-30T11:50:32.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-30T13:00:38.129Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

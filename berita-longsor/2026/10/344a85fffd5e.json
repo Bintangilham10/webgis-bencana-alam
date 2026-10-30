@@ -1,0 +1,28 @@
+{
+  "guid": "CBMigAFBVV95cUxPbGw2eExPTlJaYXBZZVU1R3RJdkFzSHgtYWJybGcyMlZVOS1kWktzVDc2dFhMWER5aEhWSjlLV1JJZFJwajBlTExoUG5WUmpQOWU2NWk2MDc4VnZ2b1d5Q1dGRFQ2cEpDN3RsRkQ0Umh6WEVyU1RwR1pNMUt1UlBRSA",
+  "title": "Ancaman Banjir dan Longsor Bandung Raya, DPRD Jabar Soroti Pembangunan di Kawasan Bandung Utara - inilahbandung.com",
+  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbGw2eExPTlJaYXBZZVU1R3RJdkFzSHgtYWJybGcyMlZVOS1kWktzVDc2dFhMWER5aEhWSjlLV1JJZFJwajBlTExoUG5WUmpQOWU2NWk2MDc4VnZ2b1d5Q1dGRFQ2cEpDN3RsRkQ0Umh6WEVyU1RwR1pNMUt1UlBRSA?oc=5",
+  "source": "inilahbandung.com",
+  "source_url": "https://inilahbandung.com",
+  "published_at": "2026-10-30T12:00:23.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-30T13:00:38.129Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jawa Barat"
+  ]
+}
