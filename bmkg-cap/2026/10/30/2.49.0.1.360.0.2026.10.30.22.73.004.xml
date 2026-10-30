@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.30.22.73.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-31T05:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-31T05:30:00+08:00</effective>
+    <expires>2026-10-31T07:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 31 October 2026, 05:30 WITA di sebagian wilayah Sulawesi Selatan, khususnya di KEERA, PENRANG, SAJOANGING.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 31 October 2026, 07:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSL/2026/10/31/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Selatan</areaDesc>
+      <polygon>-3.915,120.341 -3.939,120.336 -3.974,120.353 -3.999,120.344 -4.022,120.361 -4.031,120.355 -4.065,120.356 -4.071,120.348 -4.065,120.336 -4.054,120.334 -4.052,120.329 -4.055,120.305 -4.075,120.297 -4.065,120.273 -4.044,120.284 -4.044,120.295 -4.039,120.299 -4.007,120.304 -4.001,120.296 -4.003,120.288 -3.996,120.266 -3.998,120.259 -3.979,120.258 -3.984,120.236 -3.971,120.226 -3.971,120.204 -3.959,120.203 -3.947,120.209 -3.917,120.214 -3.915,120.236 -3.909,120.259 -3.916,120.266 -3.922,120.283 -3.915,120.306 -3.915,120.341</polygon>
+      <polygon>-4.071,120.348 -4.091,120.339 -4.096,120.331 -4.098,120.322 -4.094,120.317 -4.114,120.301 -4.113,120.272 -4.120,120.262 -4.118,120.250 -4.101,120.219 -4.093,120.212 -4.084,120.210 -4.077,120.199 -4.102,120.193 -4.114,120.194 -4.123,120.183 -4.132,120.178 -4.152,120.164 -4.150,120.162 -4.122,120.166 -4.112,120.163 -4.091,120.172 -4.069,120.173 -4.064,120.177 -4.061,120.201 -4.040,120.243 -4.026,120.256 -3.998,120.259 -3.996,120.266 -4.003,120.288 -4.001,120.296 -4.007,120.304 -4.039,120.299 -4.044,120.295 -4.044,120.284 -4.065,120.273 -4.075,120.297 -4.055,120.305 -4.052,120.329 -4.054,120.334 -4.065,120.336 -4.071,120.348</polygon>
+      <polygon>-3.719,120.281 -3.726,120.276 -3.753,120.288 -3.768,120.305 -3.766,120.321 -3.762,120.322 -3.776,120.346 -3.784,120.403 -3.841,120.374 -3.859,120.358 -3.891,120.345 -3.915,120.341 -3.915,120.306 -3.922,120.283 -3.916,120.266 -3.909,120.259 -3.900,120.252 -3.885,120.257 -3.871,120.250 -3.853,120.264 -3.834,120.245 -3.799,120.246 -3.796,120.232 -3.807,120.221 -3.812,120.208 -3.811,120.201 -3.795,120.186 -3.796,120.169 -3.785,120.165 -3.784,120.159 -3.788,120.155 -3.785,120.151 -3.778,120.146 -3.770,120.157 -3.774,120.193 -3.752,120.207 -3.730,120.213 -3.725,120.227 -3.708,120.237 -3.722,120.263 -3.719,120.281</polygon>
+    </area>
+  </info>
+</alert>
