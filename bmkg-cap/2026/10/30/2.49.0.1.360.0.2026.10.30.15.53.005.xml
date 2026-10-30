@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.30.15.53.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-30T22:20:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-30T22:40:00+08:00</effective>
+    <expires>2026-10-31T00:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 October 2026, 22:40 WITA di sebagian wilayah Nusa Tenggara Timur, khususnya di AMARASI BARAT, AMARASI SELATAN, NEKAMESE.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 31 October 2026, 00:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNT/2026/10/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Timur</areaDesc>
+      <polygon>-10.229,123.665 -10.236,123.664 -10.234,123.675 -10.247,123.684 -10.252,123.697 -10.250,123.712 -10.238,123.726 -10.242,123.732 -10.263,123.723 -10.274,123.685 -10.290,123.664 -10.297,123.663 -10.328,123.671 -10.351,123.667 -10.350,123.655 -10.355,123.630 -10.369,123.610 -10.353,123.599 -10.344,123.575 -10.333,123.569 -10.332,123.565 -10.305,123.562 -10.302,123.575 -10.289,123.585 -10.287,123.595 -10.293,123.610 -10.288,123.625 -10.285,123.630 -10.271,123.632 -10.244,123.639 -10.231,123.621 -10.225,123.634 -10.218,123.640 -10.229,123.665</polygon>
+      <polygon>-10.258,123.818 -10.267,123.800 -10.295,123.815 -10.304,123.802 -10.312,123.777 -10.329,123.777 -10.352,123.785 -10.348,123.764 -10.355,123.751 -10.365,123.707 -10.351,123.667 -10.328,123.671 -10.297,123.663 -10.290,123.664 -10.274,123.685 -10.263,123.723 -10.242,123.732 -10.240,123.754 -10.230,123.783 -10.224,123.789 -10.238,123.794 -10.245,123.813 -10.258,123.818</polygon>
+      <polygon>-10.257,123.960 -10.262,123.970 -10.274,123.976 -10.284,123.949 -10.297,123.942 -10.294,123.931 -10.296,123.919 -10.310,123.889 -10.334,123.861 -10.343,123.821 -10.354,123.799 -10.355,123.788 -10.352,123.785 -10.329,123.777 -10.312,123.777 -10.304,123.802 -10.295,123.815 -10.267,123.800 -10.258,123.818 -10.263,123.825 -10.265,123.860 -10.252,123.863 -10.240,123.860 -10.233,123.867 -10.232,123.890 -10.226,123.905 -10.252,123.925 -10.262,123.942 -10.257,123.960</polygon>
+    </area>
+  </info>
+</alert>

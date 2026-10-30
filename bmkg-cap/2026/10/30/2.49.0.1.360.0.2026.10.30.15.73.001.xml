@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.30.15.73.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-30T22:10:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-30T22:30:00+08:00</effective>
+    <expires>2026-10-31T00:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 October 2026, 22:30 WITA di sebagian wilayah Sulawesi Selatan, khususnya di WALENRANG, WALENRANG BARAT, WALENRANG UTARA, WARA BARAT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 31 October 2026, 00:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSL/2026/10/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Selatan</areaDesc>
+      <polygon>-2.835,120.180 -2.835,120.180 -2.853,120.159 -2.862,120.158 -2.878,120.173 -2.887,120.171 -2.911,120.114 -2.920,120.093 -2.928,120.088 -2.938,120.069 -2.953,120.056 -2.954,120.048 -2.938,120.043 -2.930,120.046 -2.925,120.044 -2.919,120.052 -2.904,120.061 -2.899,120.086 -2.872,120.102 -2.854,120.102 -2.843,120.124 -2.830,120.136 -2.824,120.152 -2.832,120.166 -2.835,120.180</polygon>
+      <polygon>-2.702,119.994 -2.731,120.006 -2.757,120.033 -2.768,120.030 -2.783,120.049 -2.815,120.056 -2.834,120.056 -2.849,120.074 -2.854,120.102 -2.872,120.102 -2.899,120.086 -2.904,120.061 -2.919,120.052 -2.925,120.044 -2.911,120.024 -2.908,120.015 -2.896,120.003 -2.871,119.990 -2.860,119.983 -2.859,119.968 -2.847,119.955 -2.826,119.953 -2.815,119.960 -2.806,119.960 -2.781,119.941 -2.776,119.898 -2.754,119.874 -2.741,119.872 -2.734,119.896 -2.723,119.908 -2.728,119.927 -2.723,119.938 -2.709,119.986 -2.702,119.994</polygon>
+      <polygon>-2.767,120.187 -2.772,120.177 -2.803,120.151 -2.814,120.133 -2.827,120.133 -2.830,120.136 -2.843,120.124 -2.854,120.102 -2.849,120.074 -2.834,120.056 -2.815,120.056 -2.783,120.049 -2.768,120.030 -2.757,120.033 -2.731,120.006 -2.702,119.994 -2.698,120.016 -2.701,120.046 -2.692,120.059 -2.697,120.072 -2.695,120.083 -2.666,120.102 -2.672,120.111 -2.674,120.130 -2.688,120.140 -2.703,120.131 -2.719,120.145 -2.726,120.160 -2.727,120.154 -2.731,120.157 -2.736,120.170 -2.751,120.175 -2.767,120.187</polygon>
+      <polygon>-2.929,120.151 -2.967,120.160 -2.976,120.169 -2.998,120.179 -2.996,120.191 -3.009,120.182 -3.002,120.161 -2.989,120.148 -2.993,120.133 -3.006,120.107 -3.006,120.084 -2.984,120.053 -2.968,120.059 -2.954,120.048 -2.953,120.056 -2.938,120.069 -2.928,120.088 -2.920,120.093 -2.911,120.114 -2.918,120.134 -2.912,120.145 -2.908,120.143 -2.906,120.150 -2.915,120.154 -2.929,120.151</polygon>
+    </area>
+  </info>
+</alert>

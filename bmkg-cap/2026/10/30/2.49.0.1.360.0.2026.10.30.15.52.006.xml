@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.30.15.52.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-30T22:50:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-30T22:55:00+08:00</effective>
+    <expires>2026-10-31T00:55:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 October 2026, 22:55 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di PRAYA BARAT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 31 October 2026, 00:55 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/10/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.704,116.254 -8.717,116.266 -8.716,116.272 -8.719,116.277 -8.724,116.276 -8.724,116.284 -8.733,116.276 -8.757,116.281 -8.754,116.271 -8.770,116.256 -8.806,116.254 -8.813,116.252 -8.815,116.245 -8.855,116.242 -8.874,116.223 -8.908,116.222 -8.909,116.219 -8.902,116.216 -8.901,116.207 -8.903,116.199 -8.914,116.194 -8.913,116.173 -8.904,116.163 -8.882,116.159 -8.873,116.162 -8.864,116.155 -8.863,116.150 -8.870,116.137 -8.867,116.116 -8.873,116.109 -8.861,116.112 -8.855,116.108 -8.848,116.126 -8.850,116.137 -8.836,116.158 -8.822,116.163 -8.818,116.168 -8.813,116.206 -8.791,116.211 -8.780,116.220 -8.779,116.214 -8.784,116.204 -8.779,116.199 -8.765,116.205 -8.752,116.222 -8.740,116.230 -8.726,116.220 -8.712,116.218 -8.704,116.254</polygon>
+    </area>
+  </info>
+</alert>
