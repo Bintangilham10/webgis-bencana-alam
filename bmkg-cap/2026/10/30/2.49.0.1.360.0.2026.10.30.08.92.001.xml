@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.30.08.92.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-30T16:51:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-30T17:04:00+09:00</effective>
+    <expires>2026-10-30T19:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 October 2026, 17:04 WIT di sebagian wilayah Papua Barat, khususnya di BISCOOP, DATARAN BEIMES, MEYADO, TEMBUNI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 October 2026, 19:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPB/2026/10/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua Barat</areaDesc>
+      <polygon>-1.815,133.595 -1.825,133.591 -1.882,133.591 -1.939,133.571 -1.953,133.559 -1.986,133.482 -2.006,133.452 -2.019,133.421 -2.038,133.388 -1.941,133.344 -1.864,133.316 -1.821,133.289 -1.815,133.340 -1.804,133.378 -1.774,133.437 -1.735,133.518 -1.712,133.556 -1.734,133.562 -1.815,133.595</polygon>
+      <polygon>-1.778,133.839 -1.780,133.839 -1.789,133.770 -1.795,133.747 -1.788,133.748 -1.789,133.724 -1.803,133.697 -1.825,133.652 -1.825,133.599 -1.815,133.595 -1.734,133.562 -1.712,133.556 -1.706,133.570 -1.674,133.608 -1.644,133.629 -1.588,133.652 -1.594,133.684 -1.595,133.760 -1.600,133.814 -1.600,133.855 -1.597,133.866 -1.657,133.873 -1.692,133.869 -1.715,133.862 -1.759,133.843 -1.778,133.839</polygon>
+      <polygon>-1.335,133.562 -1.364,133.663 -1.410,133.660 -1.511,133.666 -1.543,133.664 -1.588,133.652 -1.644,133.629 -1.674,133.608 -1.706,133.570 -1.712,133.556 -1.735,133.518 -1.774,133.437 -1.701,133.302 -1.644,133.333 -1.609,133.364 -1.531,133.415 -1.467,133.438 -1.377,133.436 -1.309,133.454 -1.335,133.562</polygon>
+      <polygon>-1.701,133.302 -1.774,133.437 -1.804,133.378 -1.815,133.340 -1.821,133.289 -1.831,133.177 -1.840,133.030 -1.841,133.020 -1.798,133.034 -1.677,133.041 -1.606,133.036 -1.582,133.015 -1.582,133.064 -1.578,133.073 -1.582,133.117 -1.567,133.180 -1.542,133.228 -1.623,133.221 -1.657,133.238 -1.689,133.280 -1.701,133.289 -1.701,133.302</polygon>
+    </area>
+  </info>
+</alert>
