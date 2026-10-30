@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.30.15.71.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-30T22:35:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-30T22:50:00+08:00</effective>
+    <expires>2026-10-31T00:50:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 October 2026, 22:50 WITA di sebagian wilayah Sulawesi Utara, khususnya di BUNAKEN KEPULAUAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 31 October 2026, 00:50 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/10/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>1.642,124.714 1.642,124.714 1.640,124.716 1.637,124.716 1.637,124.716 1.628,124.716 1.623,124.710 1.617,124.698 1.619,124.687 1.620,124.687 1.622,124.684 1.624,124.683 1.625,124.682 1.630,124.682 1.631,124.682 1.642,124.684 1.647,124.691 1.649,124.702 1.642,124.714</polygon>
+      <polygon>1.624,124.737 1.625,124.736 1.634,124.744 1.629,124.752 1.629,124.773 1.624,124.777 1.619,124.779 1.619,124.779 1.617,124.780 1.617,124.780 1.613,124.782 1.613,124.782 1.608,124.781 1.608,124.781 1.606,124.781 1.606,124.781 1.605,124.781 1.605,124.781 1.601,124.782 1.601,124.781 1.595,124.781 1.601,124.773 1.602,124.773 1.603,124.772 1.603,124.772 1.604,124.771 1.604,124.771 1.604,124.771 1.610,124.770 1.611,124.770 1.612,124.770 1.622,124.760 1.620,124.747 1.619,124.747 1.616,124.740 1.616,124.739 1.616,124.738 1.618,124.736 1.619,124.736 1.621,124.736 1.624,124.737 1.624,124.737</polygon>
+      <polygon>1.627,124.803 1.630,124.799 1.636,124.801 1.630,124.805 1.627,124.803</polygon>
+    </area>
+  </info>
+</alert>

@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.30.15.51.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-30T22:30:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-30T22:38:00+08:00</effective>
+    <expires>2026-10-31T00:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bali</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 October 2026, 22:38 WITA di sebagian wilayah Bali, khususnya di MELAYA, NEGARA, SALAMADEG TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 31 October 2026, 00:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBL/2026/10/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bali</areaDesc>
+      <polygon>-8.400,114.605 -8.403,114.596 -8.398,114.582 -8.384,114.576 -8.365,114.556 -8.347,114.545 -8.334,114.524 -8.329,114.554 -8.322,114.558 -8.325,114.566 -8.320,114.587 -8.308,114.593 -8.296,114.590 -8.288,114.602 -8.252,114.619 -8.226,114.652 -8.226,114.652 -8.237,114.654 -8.263,114.642 -8.279,114.641 -8.303,114.627 -8.319,114.623 -8.364,114.624 -8.374,114.618 -8.394,114.623 -8.400,114.605</polygon>
+      <polygon>-8.172,114.459 -8.187,114.456 -8.194,114.459 -8.196,114.483 -8.194,114.494 -8.206,114.514 -8.205,114.519 -8.191,114.532 -8.196,114.557 -8.190,114.573 -8.176,114.589 -8.177,114.599 -8.186,114.619 -8.212,114.632 -8.226,114.652 -8.252,114.619 -8.288,114.602 -8.296,114.590 -8.308,114.593 -8.320,114.587 -8.325,114.566 -8.322,114.558 -8.329,114.554 -8.334,114.524 -8.330,114.520 -8.314,114.521 -8.306,114.518 -8.277,114.486 -8.248,114.470 -8.217,114.448 -8.171,114.432 -8.160,114.439 -8.164,114.445 -8.176,114.445 -8.175,114.453 -8.166,114.460 -8.172,114.459</polygon>
+      <polygon>-8.376,115.083 -8.387,115.084 -8.403,115.078 -8.433,115.089 -8.477,115.093 -8.492,115.078 -8.537,115.073 -8.553,115.056 -8.560,115.042 -8.559,115.033 -8.543,115.011 -8.539,115.023 -8.511,115.046 -8.505,115.048 -8.499,115.044 -8.477,115.052 -8.464,115.052 -8.424,115.064 -8.415,115.073 -8.376,115.083</polygon>
+    </area>
+  </info>
+</alert>
