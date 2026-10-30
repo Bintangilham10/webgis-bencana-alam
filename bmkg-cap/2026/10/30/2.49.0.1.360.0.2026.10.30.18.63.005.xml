@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.30.18.63.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-31T00:55:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-31T01:05:00+08:00</effective>
+    <expires>2026-10-31T03:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 31 October 2026, 01:05 WITA di sebagian wilayah Kalimantan Selatan, khususnya di ANGSANA, SATUI, SUNGAI LOBAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 31 October 2026, 03:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKS/2026/10/31/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Selatan</areaDesc>
+      <polygon>-3.553,115.803 -3.596,115.792 -3.599,115.806 -3.620,115.818 -3.633,115.834 -3.660,115.798 -3.680,115.787 -3.712,115.733 -3.726,115.719 -3.732,115.717 -3.743,115.662 -3.733,115.655 -3.712,115.649 -3.634,115.649 -3.608,115.650 -3.608,115.676 -3.594,115.692 -3.594,115.699 -3.596,115.714 -3.614,115.720 -3.614,115.743 -3.608,115.747 -3.595,115.745 -3.596,115.761 -3.589,115.774 -3.579,115.766 -3.557,115.770 -3.546,115.792 -3.553,115.803</polygon>
+      <polygon>-3.558,115.650 -3.608,115.650 -3.634,115.649 -3.628,115.643 -3.608,115.637 -3.602,115.585 -3.607,115.570 -3.631,115.570 -3.645,115.544 -3.668,115.544 -3.668,115.556 -3.692,115.556 -3.707,115.548 -3.726,115.548 -3.741,115.553 -3.744,115.558 -3.784,115.563 -3.817,115.484 -3.816,115.477 -3.823,115.457 -3.864,115.374 -3.856,115.378 -3.854,115.368 -3.848,115.367 -3.833,115.372 -3.818,115.368 -3.814,115.354 -3.787,115.345 -3.736,115.317 -3.720,115.312 -3.711,115.301 -3.683,115.282 -3.596,115.247 -3.590,115.260 -3.572,115.273 -3.562,115.296 -3.550,115.311 -3.532,115.318 -3.514,115.334 -3.509,115.349 -3.508,115.374 -3.502,115.391 -3.525,115.402 -3.522,115.412 -3.506,115.422 -3.504,115.436 -3.492,115.436 -3.494,115.454 -3.504,115.478 -3.520,115.489 -3.535,115.475 -3.572,115.475 -3.568,115.482 -3.557,115.487 -3.558,115.650</polygon>
+      <polygon>-3.634,115.649 -3.712,115.649 -3.733,115.655 -3.743,115.662 -3.753,115.636 -3.770,115.608 -3.776,115.579 -3.784,115.563 -3.744,115.558 -3.741,115.553 -3.726,115.548 -3.707,115.548 -3.692,115.556 -3.668,115.556 -3.668,115.544 -3.645,115.544 -3.631,115.570 -3.607,115.570 -3.602,115.585 -3.608,115.637 -3.628,115.643 -3.634,115.649</polygon>
+    </area>
+  </info>
+</alert>
