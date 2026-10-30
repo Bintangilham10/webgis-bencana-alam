@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi1AFBVV95cUxONmFsdTUtcVBHUmM3cDFNM1ZKUzZmRTRRN3N6VHFkYndSVkRmaTZ1N2QyYk4yVnU4QXpmSE9rT2tZX0hudUR3di1JbE1rc2ZyMzNrdFRvV1pWMkRsWUpxc0NUZ2xjekd4aDk0UFI0cDFYcnB1czI1djR0cHVGOW1Bd2szVmRWVHZIRm5JTDVnUS0wVjNzamFHRWdJSUFTNTRNMnZsSENrcFI0WTd6VVlHNDd3NlA1Ri1ESEhzZkN6MVgydWx5T3NJSUFmQ0RMUDhHMjhCYw",
+  "title": "Hujan Guyur Tasikmalaya, Rentetan Bencana Longsor dan Pohon Tumbang Terjadi di Sejumlah Wilayah - jabarekspres.com",
+  "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxONmFsdTUtcVBHUmM3cDFNM1ZKUzZmRTRRN3N6VHFkYndSVkRmaTZ1N2QyYk4yVnU4QXpmSE9rT2tZX0hudUR3di1JbE1rc2ZyMzNrdFRvV1pWMkRsWUpxc0NUZ2xjekd4aDk0UFI0cDFYcnB1czI1djR0cHVGOW1Bd2szVmRWVHZIRm5JTDVnUS0wVjNzamFHRWdJSUFTNTRNMnZsSENrcFI0WTd6VVlHNDd3NlA1Ri1ESEhzZkN6MVgydWx5T3NJSUFmQ0RMUDhHMjhCYw?oc=5",
+  "source": "jabarekspres.com",
+  "source_url": "https://jabarekspres.com",
+  "published_at": "2026-10-30T08:46:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-30T09:45:28.646Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

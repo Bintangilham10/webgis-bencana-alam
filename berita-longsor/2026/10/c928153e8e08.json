@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixwFBVV95cUxPbjZneXF1NVFFTElKRnFObmZGUzczeVloaS1fZjJSd1d0YlZTeUtXbC1DRGRORlBhOTAtOGhtNkpseGVmUEFyU2lJaVlvRTBzYzBJemMxbWVRSjh5Nm9uTGFFZGpuOGMzTzh4QjVkSW1GNG9raDAxOWQ2U0d6T1N2aUF2ajZPN0ozVDN4TlVBZDhwbzBKS0p6VlNSMkctLVctMnNRZE40YUlXTTl3SE93dmlyRG5fVDVoVVBvZVlaM21EWURtNXpV",
+  "title": "BPBD Sukabumi Peringatkan Potensi Cuaca Ekstrem, Warga Diminta Waspada Banjir dan Longsor - TINTAHIJAU.com",
+  "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPbjZneXF1NVFFTElKRnFObmZGUzczeVloaS1fZjJSd1d0YlZTeUtXbC1DRGRORlBhOTAtOGhtNkpseGVmUEFyU2lJaVlvRTBzYzBJemMxbWVRSjh5Nm9uTGFFZGpuOGMzTzh4QjVkSW1GNG9raDAxOWQ2U0d6T1N2aUF2ajZPN0ozVDN4TlVBZDhwbzBKS0p6VlNSMkctLVctMnNRZE40YUlXTTl3SE93dmlyRG5fVDVoVVBvZVlaM21EWURtNXpV?oc=5",
+  "source": "TINTAHIJAU.com",
+  "source_url": "https://www.tintahijau.com",
+  "published_at": "2026-10-30T07:19:55.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-30T09:45:28.646Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

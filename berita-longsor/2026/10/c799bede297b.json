@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiwwFBVV95cUxNczBEZ3drRkN6RVY5Vjh4RWQtaGRDRmZKMlFsMnN1Y3RMVkhFTFdOMFVpS1B3U3prcURmOHp5SHV1ckJrMHByM2xEWFp2dzVWTk9Pa1lfNjNJTEZpZnhYLVo4N1RKUGFzY1JkN3Q0R0hMV3J1bV9wd1FsWWV3WWJoajVTUUJPRXlwNzBsRHpSZXhVeF9GdzBqU1RMWERhaTdEUnNmRmtqUzBwWnJtbUNseng2Z3V3Y2VQajdUS0kzdkoyNkE",
+  "title": "Video: Banjir dan Longsor di Trenggalek Jatim Akibat Hujan Deras Semalaman - 20detik",
+  "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNczBEZ3drRkN6RVY5Vjh4RWQtaGRDRmZKMlFsMnN1Y3RMVkhFTFdOMFVpS1B3U3prcURmOHp5SHV1ckJrMHByM2xEWFp2dzVWTk9Pa1lfNjNJTEZpZnhYLVo4N1RKUGFzY1JkN3Q0R0hMV3J1bV9wd1FsWWV3WWJoajVTUUJPRXlwNzBsRHpSZXhVeF9GdzBqU1RMWERhaTdEUnNmRmtqUzBwWnJtbUNseng2Z3V3Y2VQajdUS0kzdkoyNkE?oc=5",
+  "source": "20detik",
+  "source_url": "https://20.detik.com",
+  "published_at": "2026-10-30T08:36:12.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-30T09:45:28.646Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jawa Timur"
+  ]
+}
