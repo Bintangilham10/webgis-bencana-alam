@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-30T08:30:34.390Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        121.3578692687,
+        -2.5298778475
+      ]
+    },
+    "properties": {
+      "pkey": "399961",
+      "created_at": "2026-10-30T08:17:49.271Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "4f39e288-1ac4-4438-922a-9c158d5622f0",
+      "image_url": "https://images.petabencana.id/4f39e288-1ac4-4438-922a-9c158d5622f0.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 52.02243584458092,
+        "fireLocation": {
+          "lng": 121.3578692687231,
+          "lat": -2.529877847451573
+        },
+        "personLocation": {
+          "lat": "-2.5297864",
+          "lng": "121.3584581"
+        },
+        "fireRadius": {
+          "lng": 121.35740792877357,
+          "lat": -2.5297974596064563
+        }
+      },
+      "tags": {
+        "city": "LUWU TIMUR",
+        "district_id": null,
+        "region_code": "7324",
+        "local_area_id": null,
+        "instance_region_code": "ID-SN"
+      },
+      "title": null,
+      "text": "Kebakaran lahan terpantau melanda kawasan Sorowako, Kecamatan Nuha, Kabupaten Luwu Timur, Provinsi Sulawesi Selatan, pada Jumat (30/10/2026)",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
