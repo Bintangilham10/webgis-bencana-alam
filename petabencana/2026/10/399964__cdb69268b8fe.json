@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-30T09:30:34.825Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        100.7850851926,
+        -1.0747836854
+      ]
+    },
+    "properties": {
+      "pkey": "399964",
+      "created_at": "2026-10-30T09:19:34.584Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "62ebf8e2-6373-4e85-b16b-9c920f50a588",
+      "image_url": "https://images.petabencana.id/62ebf8e2-6373-4e85-b16b-9c920f50a588.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 65
+      },
+      "tags": {
+        "city": "SOLOK",
+        "district_id": null,
+        "region_code": "1302",
+        "local_area_id": null,
+        "instance_region_code": "ID-SB"
+      },
+      "title": null,
+      "text": "Luapan air sungai melanda kawasan Kebun Teh Rawang Gadang, Nagari Jirak, Alahan Panjang, Kabupaten Solok, Sumatera Barat, pada Jumat 30/10",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
