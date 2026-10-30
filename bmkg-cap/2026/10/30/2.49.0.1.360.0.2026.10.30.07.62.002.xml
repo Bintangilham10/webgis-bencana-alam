@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.30.07.62.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-30T13:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-30T14:00:00+07:00</effective>
+    <expires>2026-10-30T16:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 October 2026, 14:00 WIB di sebagian wilayah Kalimantan Tengah, khususnya di HANAU, SERUYAN RAYA, TAMBAN CATUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 October 2026, 16:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/10/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-3.174,114.429 -3.210,114.450 -3.218,114.437 -3.248,114.421 -3.257,114.407 -3.252,114.403 -3.268,114.384 -3.285,114.382 -3.275,114.362 -3.253,114.380 -3.234,114.364 -3.257,114.325 -3.236,114.281 -3.227,114.287 -3.188,114.358 -3.164,114.425 -3.174,114.429</polygon>
+      <polygon>-2.527,112.292 -2.564,112.280 -2.588,112.273 -2.627,112.277 -2.699,112.215 -2.704,112.194 -2.703,112.145 -2.678,112.079 -2.661,111.995 -2.621,112.004 -2.529,112.015 -2.521,112.020 -2.476,112.044 -2.409,112.059 -2.365,112.044 -2.343,112.041 -2.341,112.040 -2.345,112.095 -2.338,112.134 -2.401,112.135 -2.406,112.145 -2.423,112.156 -2.427,112.212 -2.449,112.213 -2.480,112.244 -2.493,112.264 -2.509,112.260 -2.520,112.269 -2.527,112.292</polygon>
+      <polygon>-2.383,112.435 -2.391,112.435 -2.401,112.455 -2.405,112.459 -2.405,112.459 -2.405,112.459 -2.422,112.461 -2.427,112.462 -2.432,112.462 -2.451,112.465 -2.475,112.467 -2.499,112.470 -2.521,112.472 -2.522,112.472 -2.536,112.473 -2.539,112.473 -2.545,112.474 -2.550,112.474 -2.581,112.481 -2.582,112.481 -2.584,112.483 -2.617,112.513 -2.628,112.530 -2.631,112.535 -2.636,112.543 -2.651,112.534 -2.656,112.535 -2.671,112.523 -2.683,112.514 -2.715,112.490 -2.681,112.417 -2.680,112.405 -2.638,112.345 -2.564,112.280 -2.527,112.292 -2.482,112.303 -2.446,112.294 -2.378,112.293 -2.385,112.363 -2.375,112.380 -2.356,112.395 -2.347,112.398 -2.333,112.419 -2.329,112.429 -2.357,112.435 -2.383,112.435</polygon>
+    </area>
+  </info>
+</alert>
