@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.30.06.13.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-30T11:45:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-30T12:00:00+07:00</effective>
+    <expires>2026-10-30T14:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 October 2026, 12:00 WIB di sebagian wilayah Sumatera Barat, khususnya di MALALAK, X KOTO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 October 2026, 14:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSB/2026/10/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Barat</areaDesc>
+      <polygon>-0.391,100.457 -0.429,100.433 -0.465,100.434 -0.456,100.425 -0.455,100.404 -0.452,100.404 -0.451,100.397 -0.459,100.390 -0.464,100.375 -0.477,100.366 -0.486,100.380 -0.485,100.406 -0.480,100.404 -0.484,100.409 -0.488,100.433 -0.518,100.439 -0.524,100.434 -0.529,100.418 -0.549,100.406 -0.564,100.410 -0.561,100.396 -0.528,100.384 -0.506,100.386 -0.491,100.393 -0.486,100.330 -0.479,100.322 -0.459,100.316 -0.446,100.313 -0.429,100.316 -0.408,100.326 -0.403,100.332 -0.393,100.332 -0.392,100.333 -0.390,100.370 -0.384,100.381 -0.385,100.398 -0.392,100.417 -0.391,100.457</polygon>
+      <polygon>-0.393,100.332 -0.403,100.332 -0.408,100.326 -0.429,100.316 -0.432,100.306 -0.463,100.281 -0.470,100.270 -0.472,100.261 -0.468,100.246 -0.460,100.246 -0.450,100.239 -0.443,100.225 -0.434,100.218 -0.415,100.217 -0.402,100.233 -0.370,100.247 -0.353,100.261 -0.357,100.274 -0.372,100.288 -0.383,100.322 -0.393,100.332</polygon>
+    </area>
+  </info>
+</alert>
