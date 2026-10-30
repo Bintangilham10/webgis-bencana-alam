@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwAFBVV95cUxNeVRvdGNpV0hpUFBQTlFvdkxmR1JzY2ZRQjl5Y3hMZi1lbDlJaFFib19RTjdjOXczem1sYkExV25oSXRfVWRMZ3V2eFptdmZvUXhCSHZGS2lRTGF2T252OFZnMzBYRm1RQ1pkamhDcXFnUzcxSHNxdXk0Z0pZLUwxQUEyM1ZhNnh4T1kyQ3I0ZU9KSHJFNU96ak9iVjk0ZmVDTmphQUdFdDN6Q0o5RmN5cElzUGxwcE9LLVlYZm5uc2E",
+  "title": "Longsor di Bantaran Sungai Sukabumi, Rumah Warga Ambruk dan Rusak Berat - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeVRvdGNpV0hpUFBQTlFvdkxmR1JzY2ZRQjl5Y3hMZi1lbDlJaFFib19RTjdjOXczem1sYkExV25oSXRfVWRMZ3V2eFptdmZvUXhCSHZGS2lRTGF2T252OFZnMzBYRm1RQ1pkamhDcXFnUzcxSHNxdXk0Z0pZLUwxQUEyM1ZhNnh4T1kyQ3I0ZU9KSHJFNU96ak9iVjk0ZmVDTmphQUdFdDN6Q0o5RmN5cElzUGxwcE9LLVlYZm5uc2E?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://bandung.kompas.com",
+  "published_at": "2026-10-30T14:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-30T16:00:43.156Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

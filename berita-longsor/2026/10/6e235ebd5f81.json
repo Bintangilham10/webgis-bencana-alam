@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiuwFBVV95cUxPdkxLTExZcmV2Mnl4TDhTUWpnbHJuaGE1RHpURUNXTHVFOGhyWFA5Zng0R2MyVlR2dm9CR2ZuZlRESmU1bFJVRjdfREFxWXE2N0FCR0lsa1djWG5CQ2JTOU5RdjdSRWM0bmdVUHJRRU94RVY2SURhWWdBeC1QU1Fid2hTbFVwRVdlSTRKbEd0U2ZhX3NtRllzbm9PcFBPSzM0S3pIR1huaGM4bEw5OHpvQzFJRmp0eFQyZ3pJ",
+  "title": "Dedi Mulyadi Peringatkan Ancaman Longsor di Bandung Selatan akibat Alih Fungsi Kebun Teh - Jabar News",
+  "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdkxLTExZcmV2Mnl4TDhTUWpnbHJuaGE1RHpURUNXTHVFOGhyWFA5Zng0R2MyVlR2dm9CR2ZuZlRESmU1bFJVRjdfREFxWXE2N0FCR0lsa1djWG5CQ2JTOU5RdjdSRWM0bmdVUHJRRU94RVY2SURhWWdBeC1QU1Fid2hTbFVwRVdlSTRKbEd0U2ZhX3NtRllzbm9PcFBPSzM0S3pIR1huaGM4bEw5OHpvQzFJRmp0eFQyZ3pJ?oc=5",
+  "source": "Jabar News",
+  "source_url": "https://www.jabarnews.com",
+  "published_at": "2026-10-30T14:42:45.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-30T16:00:43.156Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
