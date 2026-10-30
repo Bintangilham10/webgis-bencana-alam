@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.30.17.61.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-30T22:25:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-30T22:35:00+07:00</effective>
+    <expires>2026-10-31T00:35:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 October 2026, 22:35 WIB di sebagian wilayah Kalimantan Barat, khususnya di SEGEDONG, TANAH PINOH BARAT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 31 October 2026, 00:35 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/10/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>0.290,109.200 0.280,109.218 0.277,109.246 0.264,109.260 0.267,109.321 0.263,109.362 0.255,109.384 0.218,109.355 0.207,109.351 0.166,109.351 0.157,109.305 0.139,109.288 0.130,109.264 0.123,109.226 0.125,109.182 0.149,109.178 0.149,109.166 0.162,109.140 0.162,109.133 0.196,109.124 0.204,109.146 0.221,109.162 0.254,109.179 0.293,109.180 0.290,109.200</polygon>
+      <polygon>-0.587,111.574 -0.599,111.562 -0.618,111.555 -0.632,111.555 -0.667,111.561 -0.684,111.568 -0.709,111.568 -0.734,111.577 -0.748,111.575 -0.754,111.559 -0.780,111.522 -0.822,111.496 -0.834,111.476 -0.848,111.465 -0.852,111.465 -0.874,111.442 -0.885,111.423 -0.902,111.420 -0.903,111.414 -0.928,111.415 -0.919,111.408 -0.919,111.402 -0.938,111.396 -0.946,111.383 -0.937,111.376 -0.942,111.358 -0.937,111.354 -0.936,111.345 -0.941,111.339 -0.958,111.336 -0.958,111.328 -0.950,111.315 -0.950,111.290 -0.963,111.274 -0.966,111.254 -0.940,111.236 -0.905,111.229 -0.886,111.211 -0.875,111.208 -0.864,111.218 -0.842,111.217 -0.832,111.212 -0.784,111.234 -0.741,111.229 -0.734,111.237 -0.719,111.241 -0.691,111.241 -0.664,111.222 -0.659,111.222 -0.619,111.251 -0.615,111.258 -0.628,111.273 -0.631,111.285 -0.615,111.327 -0.611,111.347 -0.614,111.363 -0.627,111.393 -0.629,111.410 -0.637,111.423 -0.637,111.439 -0.634,111.447 -0.607,111.477 -0.592,111.511 -0.589,111.544 -0.579,111.563 -0.581,111.571 -0.587,111.574</polygon>
+    </area>
+  </info>
+</alert>

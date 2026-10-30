@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.30.17.31.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-30T22:28:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-30T22:38:00+07:00</effective>
+    <expires>2026-10-31T02:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 October 2026, 22:38 WIB di sebagian wilayah Jakarta, khususnya di CIPONDOH, KARANG TENGAH, KEMAYORAN, PADEMANGAN, PINANG, TANJUNG PRIOK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 31 October 2026, 02:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJK/2026/10/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jakarta</areaDesc>
+      <polygon>-6.163,106.881 -6.166,106.879 -6.174,106.858 -6.175,106.852 -6.169,106.852 -6.168,106.849 -6.172,106.840 -6.159,106.838 -6.154,106.844 -6.150,106.856 -6.163,106.877 -6.163,106.881</polygon>
+      <polygon>-6.107,106.891 -6.136,106.892 -6.163,106.881 -6.163,106.877 -6.150,106.856 -6.126,106.851 -6.121,106.862 -6.104,106.879 -6.094,106.880 -6.097,106.891 -6.107,106.891</polygon>
+      <polygon>-6.121,106.862 -6.126,106.851 -6.150,106.856 -6.154,106.844 -6.136,106.829 -6.137,106.821 -6.130,106.815 -6.131,106.810 -6.116,106.808 -6.123,106.812 -6.116,106.817 -6.123,106.843 -6.110,106.867 -6.121,106.862</polygon>
+      <polygon>-6.173,106.689 -6.177,106.700 -6.187,106.717 -6.190,106.716 -6.201,106.695 -6.195,106.652 -6.187,106.648 -6.181,106.662 -6.164,106.659 -6.164,106.670 -6.181,106.670 -6.173,106.689</polygon>
+      <polygon>-6.201,106.695 -6.227,106.695 -6.229,106.693 -6.230,106.638 -6.226,106.630 -6.216,106.627 -6.214,106.642 -6.210,106.647 -6.195,106.652 -6.201,106.695</polygon>
+      <polygon>-6.224,106.721 -6.229,106.723 -6.225,106.708 -6.227,106.695 -6.201,106.695 -6.190,106.716 -6.191,106.724 -6.194,106.725 -6.220,106.718 -6.224,106.721</polygon>
+    </area>
+  </info>
+</alert>
