@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.30.03.51.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-30T10:56:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-30T11:00:00+08:00</effective>
+    <expires>2026-10-30T14:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bali</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 October 2026, 11:00 WITA di sebagian wilayah Bali, khususnya di SERIRIT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 October 2026, 14:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBL/2026/10/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bali</areaDesc>
+      <polygon>-8.183,114.961 -8.195,114.965 -8.220,114.955 -8.239,114.972 -8.240,114.977 -8.236,114.982 -8.256,115.011 -8.261,115.012 -8.265,115.005 -8.258,114.981 -8.244,114.956 -8.246,114.949 -8.269,114.942 -8.286,114.946 -8.296,114.944 -8.283,114.933 -8.282,114.921 -8.285,114.911 -8.283,114.892 -8.285,114.889 -8.294,114.891 -8.319,114.860 -8.337,114.848 -8.338,114.834 -8.332,114.823 -8.318,114.824 -8.288,114.872 -8.260,114.870 -8.237,114.886 -8.196,114.871 -8.184,114.912 -8.183,114.961</polygon>
+    </area>
+  </info>
+</alert>
