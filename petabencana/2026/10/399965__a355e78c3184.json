@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-30T11:30:34.952Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        107.1059657877,
+        -6.3857739858
+      ]
+    },
+    "properties": {
+      "pkey": "399965",
+      "created_at": "2026-10-30T11:25:50.807Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "ad432fa6-ee6a-49b2-a39e-966c59e5645c",
+      "image_url": "https://images.petabencana.id/ad432fa6-ee6a-49b2-a39e-966c59e5645c.jpg",
+      "disaster_type": "wind",
+      "is_training": false,
+      "report_data": {
+        "report_type": "wind",
+        "impact": 1
+      },
+      "tags": {
+        "city": "BEKASI",
+        "district_id": null,
+        "region_code": "3216",
+        "local_area_id": null,
+        "instance_region_code": "ID-JB"
+      },
+      "title": null,
+      "text": "Hujan deras disertai angin kencang dan petir melanda wilayah Kecamatan Serang Baru dan sekitarnya, Kabupaten Bekasi, Jawa Barat, pada Jumat ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
