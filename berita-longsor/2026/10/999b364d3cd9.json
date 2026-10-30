@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiwAFBVV95cUxQQWVzZjg2MkhKWGNkeFNid3hpTFNjdW4xU0ZqQ0dvVjhreTktS1NxWFNHckhNend1N1ROcm5vSDFKOXNCaU5qWG5Pd3F1YjRudHJoVnNFMmpBMXdNWkV2cTBrZGhYemt4NFFqTW5XZThyeVlTd21jeWg3UmZGSnhzTDlfTkxYRTRycXdFRnpZcW9tRmdTMVA0OW5XMHdYYVl0QXV6dVNacjB2Z1E1dF9ObXQ0YkpUa1pZRkxpZ2VQZWY",
+  "title": "Longsor Terjang Tiga Rumah di Tabanan, 11 Warga Terdampak dan Satu Orang Dilarikan ke Rumah Sakit - Barometer Bali",
+  "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQWVzZjg2MkhKWGNkeFNid3hpTFNjdW4xU0ZqQ0dvVjhreTktS1NxWFNHckhNend1N1ROcm5vSDFKOXNCaU5qWG5Pd3F1YjRudHJoVnNFMmpBMXdNWkV2cTBrZGhYemt4NFFqTW5XZThyeVlTd21jeWg3UmZGSnhzTDlfTkxYRTRycXdFRnpZcW9tRmdTMVA0OW5XMHdYYVl0QXV6dVNacjB2Z1E1dF9ObXQ0YkpUa1pZRkxpZ2VQZWY?oc=5",
+  "source": "Barometer Bali",
+  "source_url": "https://barometerbali.com",
+  "published_at": "2026-10-30T02:07:13.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-30T03:30:35.240Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "51.02",
+      "nama": "Kabupaten Tabanan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

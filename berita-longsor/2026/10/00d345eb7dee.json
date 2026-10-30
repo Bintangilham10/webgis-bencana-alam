@@ -1,0 +1,26 @@
+{
+  "guid": "CBMizwFBVV95cUxQSE91cmdCdUhhUUFUQjFBdUdMSW94eVBEZFJDa3pLQXFTcnp0aGVaZ0tFcHZoc3VWcHY0NzdxX3d4NmJGY1pzN21yblgzQXNoX2ZCUkd3WUREMWNDbzlRLW1nY2Y3bWZSZXlLclNoVVVtdWVoQmNhRXZTaTZFSVFoT1p4czJ4SjJqcFFIaXVfUndraVkzcV9aRmxFSlVXbVFKdEEyLUVnMDhPdEMxWHpweTZ2eUJNX3BTbzhuLTNiaXZHVVQ3cFpkcXVhWC1rY2_SAc8BQVVfeXFMUEhPdXJnQnVIYVFBVEIxQXVHTElveHlQRGRSQ2t6S0FxU3J6dGhlWmdLRXB2aHN1VnB2NDc3cV93eDZiRmNaczdtcm5YM0FzaF9mQlJHd1lERDFjQ285US1tZ2NmN21mUmV5S3JTaFVVbXVlaEJjYUV2U2k2RUlRaE9aeHMyeEoyanBRSGl1X1J3a2lZM3FfWkZsRUpVV21RSnRBMi1FZzA4T3RDMVh6cHk2dnlCTV9wU284bi0zYml2R1VUN3BaZHF1YVgta2Nv",
+  "title": "BPBD KBB Catat Kebutuhan Terpal hingga Sembako untuk Warga Terdampak Longsor di Cisarua - Ayo Bandung - Ayo Bandung",
+  "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQSE91cmdCdUhhUUFUQjFBdUdMSW94eVBEZFJDa3pLQXFTcnp0aGVaZ0tFcHZoc3VWcHY0NzdxX3d4NmJGY1pzN21yblgzQXNoX2ZCUkd3WUREMWNDbzlRLW1nY2Y3bWZSZXlLclNoVVVtdWVoQmNhRXZTaTZFSVFoT1p4czJ4SjJqcFFIaXVfUndraVkzcV9aRmxFSlVXbVFKdEEyLUVnMDhPdEMxWHpweTZ2eUJNX3BTbzhuLTNiaXZHVVQ3cFpkcXVhWC1rY2_SAc8BQVVfeXFMUEhPdXJnQnVIYVFBVEIxQXVHTElveHlQRGRSQ2t6S0FxU3J6dGhlWmdLRXB2aHN1VnB2NDc3cV93eDZiRmNaczdtcm5YM0FzaF9mQlJHd1lERDFjQ285US1tZ2NmN21mUmV5S3JTaFVVbXVlaEJjYUV2U2k2RUlRaE9aeHMyeEoyanBRSGl1X1J3a2lZM3FfWkZsRUpVV21RSnRBMi1FZzA4T3RDMVh6cHk2dnlCTV9wU284bi0zYml2R1VUN3BaZHF1YVgta2Nv?oc=5",
+  "source": "Ayo Bandung",
+  "source_url": "https://www.ayobandung.com",
+  "published_at": "2026-10-30T01:18:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-30T03:30:35.240Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
