@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.30.00.72.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-30T06:28:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-30T06:40:00+08:00</effective>
+    <expires>2026-10-30T09:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 30 October 2026, 06:40 WITA di sebagian wilayah Sulawesi Tengah, khususnya di BALINGGI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 30 October 2026, 09:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSG/2026/10/30/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tengah</areaDesc>
+      <polygon>-0.972,120.443 -0.981,120.425 -0.994,120.425 -1.029,120.438 -1.057,120.421 -1.105,120.410 -1.158,120.407 -1.189,120.336 -1.187,120.342 -1.168,120.343 -1.147,120.357 -1.145,120.349 -1.151,120.343 -1.137,120.327 -1.134,120.311 -1.117,120.320 -1.052,120.339 -1.009,120.356 -0.995,120.353 -0.963,120.356 -0.956,120.347 -0.943,120.352 -0.936,120.368 -0.928,120.374 -0.923,120.407 -0.939,120.429 -0.963,120.434 -0.972,120.443</polygon>
+    </area>
+  </info>
+</alert>
