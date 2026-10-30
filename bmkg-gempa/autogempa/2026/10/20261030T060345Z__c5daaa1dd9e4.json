@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-30T06:30:35.245Z",
+  "data": {
+    "Tanggal": "30 Okt 2026",
+    "Jam": "13:03:45 WIB",
+    "DateTime": "2026-10-30T06:03:45+00:00",
+    "Coordinates": "-0.72,131.38",
+    "Lintang": "0.72 LS",
+    "Bujur": "131.38 BT",
+    "Magnitude": "3.7",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di 20 km Timur Laut Kota Sorong",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "II-III Sorong",
+    "Shakemap": "20261030130345.mmi.jpg"
+  }
+}
