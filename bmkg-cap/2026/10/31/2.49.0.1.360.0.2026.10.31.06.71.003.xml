@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.31.06.71.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-31T12:32:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-31T12:45:00+08:00</effective>
+    <expires>2026-10-31T14:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 31 October 2026, 12:45 WITA di sebagian wilayah Sulawesi Utara, khususnya di MAESAAN, PINELENG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 31 October 2026, 14:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/10/31/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>1.439,124.849 1.439,124.850 1.401,124.853 1.381,124.859 1.365,124.856 1.382,124.838 1.402,124.841 1.405,124.828 1.394,124.811 1.372,124.811 1.361,124.806 1.352,124.788 1.351,124.779 1.359,124.774 1.367,124.770 1.368,124.770 1.391,124.774 1.391,124.774 1.410,124.775 1.432,124.771 1.443,124.788 1.447,124.785 1.457,124.784 1.445,124.788 1.443,124.802 1.431,124.823 1.430,124.831 1.439,124.849</polygon>
+      <polygon>1.403,124.748 1.403,124.748 1.402,124.746 1.416,124.735 1.403,124.748</polygon>
+      <polygon>0.877,124.559 0.867,124.560 0.861,124.555 0.854,124.550 0.851,124.539 0.824,124.516 0.821,124.498 0.809,124.495 0.803,124.488 0.808,124.482 0.825,124.480 0.828,124.475 0.822,124.467 0.833,124.450 0.855,124.441 0.859,124.407 0.861,124.391 0.871,124.379 0.912,124.377 0.922,124.366 0.946,124.371 0.953,124.377 0.934,124.383 0.914,124.402 0.910,124.420 0.912,124.446 0.907,124.456 0.911,124.466 0.911,124.479 0.894,124.497 0.884,124.546 0.877,124.559</polygon>
+    </area>
+  </info>
+</alert>
