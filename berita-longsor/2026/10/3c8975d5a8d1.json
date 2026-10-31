@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiswFBVV95cUxNQ0hRZUxTSUNLV1h3V2pzdXpsdUNYOVBVUkprREJjS1pYN2ZaZlNOalpEbUFjaFdTd2liV2ZqM2U5THJSbWZNeC1QY0gtZHRiVXpzLW5mVW5TSHhUVWVaczh1RkxBb3kyQmZTZTJUb0gwc2NrSnlrQ3RJN1NDb0ZXazNLSk1oenJwbUdIc2s2R3pWcjFveGJPa3hwLVl3Y2Y2R0ZYTWtaU3Jfb3NGMzF2R2tDSQ",
+  "title": "Diguyur Hujan, Banjir dan Longsor Landa Cilacap dan Banyumas - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQ0hRZUxTSUNLV1h3V2pzdXpsdUNYOVBVUkprREJjS1pYN2ZaZlNOalpEbUFjaFdTd2liV2ZqM2U5THJSbWZNeC1QY0gtZHRiVXpzLW5mVW5TSHhUVWVaczh1RkxBb3kyQmZTZTJUb0gwc2NrSnlrQ3RJN1NDb0ZXazNLSk1oenJwbUdIc2s2R3pWcjFveGJPa3hwLVl3Y2Y2R0ZYTWtaU3Jfb3NGMzF2R2tDSQ?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://regional.kompas.com",
+  "published_at": "2026-10-31T02:48:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-31T04:30:32.042Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.01",
+      "nama": "Kabupaten Cilacap",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

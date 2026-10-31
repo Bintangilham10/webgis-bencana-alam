@@ -1,0 +1,26 @@
+{
+  "guid": "CBMibEFVX3lxTE1BaDZOYzQ4bktadWttZUkxdi1LZEJHWXFkVUFYV2VSN29zYVVKT1Vzb1ZBaURqVlFJb3BzWVBtMjFVM0EwTHh1SFhvQjlyeU95X1kxNHNnRnV3d0pkMzdPUTl6ME1CRzBrcV9PVg",
+  "title": "Longsor di Sukabumi Rusak Sebuah Rumah - VISI.NEWS",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1BaDZOYzQ4bktadWttZUkxdi1LZEJHWXFkVUFYV2VSN29zYVVKT1Vzb1ZBaURqVlFJb3BzWVBtMjFVM0EwTHh1SFhvQjlyeU95X1kxNHNnRnV3d0pkMzdPUTl6ME1CRzBrcV9PVg?oc=5",
+  "source": "VISI.NEWS",
+  "source_url": "https://www.visi.news",
+  "published_at": "2026-10-31T02:06:39.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-31T04:30:32.042Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

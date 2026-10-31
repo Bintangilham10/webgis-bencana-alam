@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiuwFBVV95cUxPNlVXTnN2a2dVekhNc1VQNEs4TmF2bVNYTUJRS25HanhKRkJYU3dialNpTUF0bkpYbWVOWHpkMVF4N2xlUGV3SURicWFRV3RtRlo0aWZ2a25Hb1pvTk80T1o2LUlCN0pTbzNjY3J3a056dk9EbWZPYVVjSWVtcTQ4T195bGlCdS1EcnQ0d1p0UlNXRE4yRmM5WVhUU3VHbk1CX2lWRGI2Y1BvRzhETHhoMko0QnoxXzdvc3hn",
+  "title": "Hujan Picu 29 Kejadian Banjir dan Longsor di Cilacap dan Banyumas - Tribunbanyumas.com",
+  "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNlVXTnN2a2dVekhNc1VQNEs4TmF2bVNYTUJRS25HanhKRkJYU3dialNpTUF0bkpYbWVOWHpkMVF4N2xlUGV3SURicWFRV3RtRlo0aWZ2a25Hb1pvTk80T1o2LUlCN0pTbzNjY3J3a056dk9EbWZPYVVjSWVtcTQ4T195bGlCdS1EcnQ0d1p0UlNXRE4yRmM5WVhUU3VHbk1CX2lWRGI2Y1BvRzhETHhoMko0QnoxXzdvc3hn?oc=5",
+  "source": "Tribunbanyumas.com",
+  "source_url": "https://banyumas.tribunnews.com",
+  "published_at": "2026-10-31T03:54:09.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-31T04:30:32.042Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.01",
+      "nama": "Kabupaten Cilacap",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

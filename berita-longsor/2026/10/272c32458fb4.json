@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi3AFBVV95cUxQaWJlZmptMDJsVkFYUmtjNWl4QzJGallOQWtfT3hSWVQwVlh3MnRiVXdVem9pdVRnVVd0V2V6UTFmZnFzZG5sU0hlSU81MG5RNUxDcmtwQTVNWV93R1A0TVFuMjlyMGJTdE1UQlBUUjdHZzEzZDhZWVo3ckxoY2pXaFFNWVViemdNQWVvQUhaZTZDNFZGR0pMMmFzOEpUUV9Za3pBNnlzaFk0bmE3aHZtTERhSVJGUVRuV0VnVEN6alJjNXUyUE5QajRKOVBTdldHdTc4WnpyUTRqZkxu",
+  "title": "Hujan Semalaman Picu 29 Bencana di Cilacap dan Banyumas, Banjir Hingga Longsor di Sejumlah Wilayah - Tribunjateng.com",
+  "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQaWJlZmptMDJsVkFYUmtjNWl4QzJGallOQWtfT3hSWVQwVlh3MnRiVXdVem9pdVRnVVd0V2V6UTFmZnFzZG5sU0hlSU81MG5RNUxDcmtwQTVNWV93R1A0TVFuMjlyMGJTdE1UQlBUUjdHZzEzZDhZWVo3ckxoY2pXaFFNWVViemdNQWVvQUhaZTZDNFZGR0pMMmFzOEpUUV9Za3pBNnlzaFk0bmE3aHZtTERhSVJGUVRuV0VnVEN6alJjNXUyUE5QajRKOVBTdldHdTc4WnpyUTRqZkxu?oc=5",
+  "source": "Tribunjateng.com",
+  "source_url": "https://jateng.tribunnews.com",
+  "published_at": "2026-10-31T04:05:42.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-31T04:30:32.042Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.01",
+      "nama": "Kabupaten Cilacap",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMimgFBVV95cUxNWXRTZEQ0MVpsbGlDbkhQRTQ2aEcwRXJ3NXY3WGtTNEFQcTZVNjYxRGJSdzJHNUktLXpPZ1praFdabWdJMzYxSkdmT20wbm9BTUhETC1ka0tsbVNwV2tYcGFPVlFDUHIwVGpaNE5RWnp2Y2U1RjJfNFNrajNfZU1Vcm1MQ0RiM2VhZ1ppWElMYVN4bWVOTTNMT0NB",
+  "title": "Banjir dan Tanah Longsor Rusak Puluhan Rumah di Trenggalek - Akurat Jatim",
+  "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWXRTZEQ0MVpsbGlDbkhQRTQ2aEcwRXJ3NXY3WGtTNEFQcTZVNjYxRGJSdzJHNUktLXpPZ1praFdabWdJMzYxSkdmT20wbm9BTUhETC1ka0tsbVNwV2tYcGFPVlFDUHIwVGpaNE5RWnp2Y2U1RjJfNFNrajNfZU1Vcm1MQ0RiM2VhZ1ppWElMYVN4bWVOTTNMT0NB?oc=5",
+  "source": "Akurat Jatim",
+  "source_url": "https://jatim.akurat.co",
+  "published_at": "2026-10-31T01:08:18.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-31T04:30:32.042Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
