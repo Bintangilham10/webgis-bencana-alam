@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.31.14.21.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-31T19:58:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-31T19:59:00+07:00</effective>
+    <expires>2026-10-31T22:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Riau</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 31 October 2026, 19:59 WIB di sebagian wilayah Kep. Riau, khususnya di PULAU LAUT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 31 October 2026, 22:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKR/2026/10/31/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Riau</areaDesc>
+      <polygon>4.775,108.007 4.756,108.006 4.737,107.996 4.699,107.985 4.679,107.974 4.672,107.966 4.672,107.958 4.680,107.929 4.694,107.928 4.698,107.943 4.707,107.957 4.719,107.967 4.743,107.977 4.752,107.987 4.769,107.992 4.774,107.999 4.775,108.007</polygon>
+      <polygon>4.794,108.022 4.780,108.010 4.781,108.008 4.793,108.011 4.798,108.018 4.794,108.022</polygon>
+      <polygon>4.520,107.732 4.511,107.731 4.513,107.724 4.520,107.723 4.520,107.732</polygon>
+    </area>
+  </info>
+</alert>
