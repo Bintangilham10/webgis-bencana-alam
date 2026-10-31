@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirgFBVV95cUxQdThlOXplcGl3Sm5FTFd6MjR2UnRya3dLbXRjMlNXQ1NmbjdhYVhVcEtsOGV0UmRmM1hKTEVCRHZEMHpBeFRRcW9yY2MxNC1KaVdPY1JrUHhpYnR1QTRpb1NwRlNidm9Ia1VfUUxycUYwd0dsZ2x1N0UwWTlvY0J4WW9wLTZJQ19IVVBMbDhtTDRJWDdmVnd5WTdyZDNLUWpMMHFZQ0JXYjVzNEh3RXc",
+  "title": "Tanah Bergerak Sejauh Satu Meter, Puluhan Rumah di Bumirejo Blitar Terancam Longsor - Portal JTV",
+  "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdThlOXplcGl3Sm5FTFd6MjR2UnRya3dLbXRjMlNXQ1NmbjdhYVhVcEtsOGV0UmRmM1hKTEVCRHZEMHpBeFRRcW9yY2MxNC1KaVdPY1JrUHhpYnR1QTRpb1NwRlNidm9Ia1VfUUxycUYwd0dsZ2x1N0UwWTlvY0J4WW9wLTZJQ19IVVBMbDhtTDRJWDdmVnd5WTdyZDNLUWpMMHFZQ0JXYjVzNEh3RXc?oc=5",
+  "source": "Portal JTV",
+  "source_url": "https://portaljtv.com",
+  "published_at": "2026-10-31T08:43:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-31T10:45:24.366Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.05",
+      "nama": "Kabupaten Blitar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.72",
+      "nama": "Kota Blitar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

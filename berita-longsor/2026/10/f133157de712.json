@@ -1,0 +1,21 @@
+{
+  "guid": "CBMimAFBVV95cUxOeUpjNTdQNWVhWWhQM1ZIZU9Sa2t4WlFSOGpsOEQzVy1UMlQ0T3lMN08wRWFsazRkQWZ4MkE0MklwMGFiOUZJc0NOYVZGNXhyR0JadE00ZWE2emlpNXIwV0NWMWVtUFU1dl8ybS1yRks1dnM5eHl5TTY2b290dDJYTGJpWUhtRWo5U1VRUmw4YWZJNEVpbF92cw",
+  "title": "Banjir dan Longsor Melanda Sejumlah Kecamatan di Banyumas - Lentera.co",
+  "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeUpjNTdQNWVhWWhQM1ZIZU9Sa2t4WlFSOGpsOEQzVy1UMlQ0T3lMN08wRWFsazRkQWZ4MkE0MklwMGFiOUZJc0NOYVZGNXhyR0JadE00ZWE2emlpNXIwV0NWMWVtUFU1dl8ybS1yRks1dnM5eHl5TTY2b290dDJYTGJpWUhtRWo5U1VRUmw4YWZJNEVpbF92cw?oc=5",
+  "source": "Lentera.co",
+  "source_url": "https://lentera.co",
+  "published_at": "2026-10-31T03:55:21.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-31T10:45:24.366Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,33 @@
+{
+  "guid": "CBMiugFBVV95cUxQcXloNmlRaGd2ZFIyT3JNZ3MyYnFPNnE2S1hlOV9IVlV6NW8xcG5vSUZNRVo4b2Z2dFhSU0E0c2Q2VlNNUEVqU204alNld0JaSm54Y3lTSDgwUVhXTlR4TnhwNVFoLUtDT08ydjZBT181djl5RnZ4UWYwcHUweHZPTnZxY0NOT1RIT1cwQ0R1Y01xUERXY3JnSHY2ajlmWUR2QVRra3RGM2JFYUdwUWwySWdXdHlubWNGWFE",
+  "title": "Hujan Deras Terjang Jateng, Banjir dan Longsor Landa Banyumas, Cilacap hingga Banjarnegara - rmol jateng",
+  "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcXloNmlRaGd2ZFIyT3JNZ3MyYnFPNnE2S1hlOV9IVlV6NW8xcG5vSUZNRVo4b2Z2dFhSU0E0c2Q2VlNNUEVqU204alNld0JaSm54Y3lTSDgwUVhXTlR4TnhwNVFoLUtDT08ydjZBT181djl5RnZ4UWYwcHUweHZPTnZxY0NOT1RIT1cwQ0R1Y01xUERXY3JnSHY2ajlmWUR2QVRra3RGM2JFYUdwUWwySWdXdHlubWNGWFE?oc=5",
+  "source": "rmol jateng",
+  "source_url": "https://www.rmoljawatengah.id",
+  "published_at": "2026-10-31T07:46:56.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-31T10:45:24.366Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.04",
+      "nama": "Kabupaten Banjarnegara",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.01",
+      "nama": "Kabupaten Cilacap",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jawa Tengah"
+  ]
+}

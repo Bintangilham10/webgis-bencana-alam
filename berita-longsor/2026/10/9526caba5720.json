@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqwFBVV95cUxNaDNwZU9TYWN1ZkFTVVdYQWpMT1gzSmROOTIwbXJjYWNxRGFuRFZzX05DbFRlNElPcThtbm1vZ3RmS1Zuc2E3Rk5vOFRiXzNOUU5Ya01QZThudWpJTXhnRDdRVzNnTHdtMFFwUEhXb2hYTmxUUXJFc3V5ZFlkbHhvV3M4czRocXRuMFNwUUpTbVpncnFoM0QtVUhyanA5MHhfUkxCci1EN1ZOcTQ",
+  "title": "Danramil Kediri Pimpin Karya Bakti Pembersihan Material Longsor - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaDNwZU9TYWN1ZkFTVVdYQWpMT1gzSmROOTIwbXJjYWNxRGFuRFZzX05DbFRlNElPcThtbm1vZ3RmS1Zuc2E3Rk5vOFRiXzNOUU5Ya01QZThudWpJTXhnRDdRVzNnTHdtMFFwUEhXb2hYTmxUUXJFc3V5ZFlkbHhvV3M4czRocXRuMFNwUUpTbVpncnFoM0QtVUhyanA5MHhfUkxCci1EN1ZOcTQ?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-10-31T09:03:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-31T10:45:24.366Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.06",
+      "nama": "Kabupaten Kediri",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.71",
+      "nama": "Kota Kediri",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiREFVX3lxTE5DTHBpRnRnY2hTenctXzNhQ24tVEdaWUdvcmlCVHh6ay16VVJvWW1BcFNBOTcwOUZnd0ZybDJBcTB1c2ZO",
+  "title": "Musim Hujan Mulai Tiba, BPBD Magetan Petakan Daerah Rawan Banjir dan Longsor - JTV Madiun -",
+  "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5DTHBpRnRnY2hTenctXzNhQ24tVEdaWUdvcmlCVHh6ay16VVJvWW1BcFNBOTcwOUZnd0ZybDJBcTB1c2ZO?oc=5",
+  "source": "JTV Madiun -",
+  "source_url": "https://jtvmadiun.com",
+  "published_at": "2026-10-31T08:40:11.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-31T10:45:24.366Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.20",
+      "nama": "Kabupaten Magetan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.31.10.94.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-31T19:15:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-31T19:30:00+09:00</effective>
+    <expires>2026-10-31T21:30:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 31 October 2026, 19:30 WIT di sebagian wilayah Papua Tengah, khususnya di HOYA, MIMIKA TIMUR JAUH, TEMBAGAPURA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 31 October 2026, 21:30 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPT/2026/10/31/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua Tengah</areaDesc>
+      <polygon>-4.024,137.204 -4.032,137.291 -4.033,137.292 -4.047,137.295 -4.115,137.310 -4.120,137.311 -4.161,137.322 -4.225,137.293 -4.264,137.312 -4.304,137.318 -4.346,137.310 -4.396,137.328 -4.437,137.383 -4.449,137.342 -4.449,137.306 -4.467,137.168 -4.487,137.113 -4.484,137.005 -4.495,136.952 -4.495,136.952 -4.433,136.937 -4.396,136.933 -4.326,136.980 -4.287,136.965 -4.248,136.963 -4.223,136.945 -4.173,136.928 -4.130,136.919 -4.125,136.972 -4.088,137.027 -4.021,137.124 -4.024,137.204</polygon>
+      <polygon>-4.449,137.306 -4.510,137.313 -4.576,137.306 -4.627,137.315 -4.673,137.338 -4.710,137.338 -4.792,137.351 -4.846,137.377 -4.971,137.344 -5.026,137.325 -5.013,137.306 -5.012,137.297 -5.014,137.289 -5.024,137.288 -5.023,137.280 -5.011,137.259 -4.988,137.234 -4.982,137.222 -4.982,137.211 -4.997,137.200 -5.000,137.185 -5.009,137.184 -5.006,137.175 -4.974,137.151 -4.970,137.133 -4.962,137.123 -4.963,137.112 -4.974,137.108 -4.974,137.092 -4.939,137.058 -4.929,137.065 -4.918,137.059 -4.923,137.025 -4.937,137.005 -4.932,136.984 -4.939,136.976 -4.921,136.961 -4.896,136.925 -4.868,136.930 -4.856,136.925 -4.859,136.918 -4.869,136.917 -4.874,136.911 -4.899,136.866 -4.907,136.837 -4.901,136.831 -4.890,136.828 -4.876,136.828 -4.868,136.828 -4.855,136.826 -4.840,136.828 -4.830,136.834 -4.820,136.841 -4.812,136.836 -4.808,136.834 -4.734,136.836 -4.711,136.848 -4.684,136.847 -4.674,136.885 -4.663,136.900 -4.634,136.900 -4.614,136.905 -4.607,136.911 -4.604,136.913 -4.591,136.954 -4.562,136.953 -4.552,136.948 -4.551,136.947 -4.551,136.947 -4.547,136.945 -4.545,136.944 -4.539,136.940 -4.539,136.938 -4.535,136.935 -4.495,136.952 -4.484,137.005 -4.487,137.113 -4.467,137.168 -4.449,137.306</polygon>
+      <polygon>-4.870,136.925 -4.865,136.923 -4.859,136.926 -4.870,136.925</polygon>
+      <polygon>-5.029,137.186 -5.045,137.197 -5.033,137.181 -5.027,137.180 -5.029,137.186</polygon>
+      <polygon>-4.164,137.416 -4.190,137.418 -4.208,137.414 -4.224,137.403 -4.238,137.402 -4.286,137.378 -4.287,137.391 -4.305,137.401 -4.313,137.416 -4.313,137.435 -4.320,137.460 -4.346,137.474 -4.363,137.484 -4.377,137.498 -4.389,137.498 -4.398,137.486 -4.413,137.491 -4.435,137.492 -4.441,137.491 -4.442,137.486 -4.445,137.453 -4.437,137.383 -4.396,137.328 -4.346,137.310 -4.304,137.318 -4.264,137.312 -4.225,137.293 -4.161,137.322 -4.164,137.416</polygon>
+      <polygon>-4.168,137.594 -4.172,137.678 -4.221,137.676 -4.221,137.615 -4.216,137.570 -4.221,137.556 -4.228,137.489 -4.210,137.479 -4.164,137.476 -4.168,137.594</polygon>
+    </area>
+  </info>
+</alert>

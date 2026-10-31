@@ -1,0 +1,21 @@
+{
+  "guid": "CBMisAFBVV95cUxObkptRVQtNFZWTTBmMVJYRkJVbWswRnpreDJCWGU4Mk1ZdTVvWkFYUXZZeWhMMEhVN0Nud05vcUlXQWxzVlNJU0g4SGZuSjM5T2tCWGpBdUZqcE9oa3FhYmpaaXF6and6aTE5TzU0VmtDRGRRNGViYklDTlVMTEZlTHVxWlU4RlA2WTcxRjBhV1JKV0FZbmh0Zkk3NlBkM19tNE0td1RyVDdDZm1YSTQ1eQ",
+  "title": "BPBD: Hujan lebat picu banjir dan longsor di wilayah Cilacap - Elshinta",
+  "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObkptRVQtNFZWTTBmMVJYRkJVbWswRnpreDJCWGU4Mk1ZdTVvWkFYUXZZeWhMMEhVN0Nud05vcUlXQWxzVlNJU0g4SGZuSjM5T2tCWGpBdUZqcE9oa3FhYmpaaXF6and6aTE5TzU0VmtDRGRRNGViYklDTlVMTEZlTHVxWlU4RlA2WTcxRjBhV1JKV0FZbmh0Zkk3NlBkM19tNE0td1RyVDdDZm1YSTQ1eQ?oc=5",
+  "source": "Elshinta",
+  "source_url": "https://elshinta.com",
+  "published_at": "2026-10-31T07:50:58.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-31T10:45:24.366Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.01",
+      "nama": "Kabupaten Cilacap",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

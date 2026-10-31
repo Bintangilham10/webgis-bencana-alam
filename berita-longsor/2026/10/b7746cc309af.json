@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiigFBVV95cUxQc19IVVNqZ0N5WTVtcm5SRVRZMTJJd3pzX2RpWlNjS0tlSXRKNU93Mk5IWGxBSF9IRi1pdUI4OUhoU29IM29vTXVHV0ZkNXhjekptX3UtR05vR2FpSnlpRGRKTTlsR0RjQkZjcEt0bFlGUU00Wmh1RGNoanBtb1cwbmZVeXJhYmtsWEE",
+  "title": "Berita Terkini Harian Cilacap Dan Banyumas Diterjang Banjir Dan Tanah Longsor Terbaru Hari Ini - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQc19IVVNqZ0N5WTVtcm5SRVRZMTJJd3pzX2RpWlNjS0tlSXRKNU93Mk5IWGxBSF9IRi1pdUI4OUhoU29IM29vTXVHV0ZkNXhjekptX3UtR05vR2FpSnlpRGRKTTlsR0RjQkZjcEt0bFlGUU00Wmh1RGNoanBtb1cwbmZVeXJhYmtsWEE?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://www.kompas.com",
+  "published_at": "2026-10-31T06:31:08.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-31T10:45:24.366Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.01",
+      "nama": "Kabupaten Cilacap",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

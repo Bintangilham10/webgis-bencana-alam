@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixwFBVV95cUxQV3d3WlJDdzdnWHRIZlphbGJ5VFJ3em5TbWJSdmg3akJhODR3a0dhNVFkU0JPTDExTDZVem9KQjVzMGRHbDM5VFBfT3dieHdhdTBjNEczSFJsOF9DVFgwT3loSS1GRlZtYXVxcFZZZW9DWi03MVAtcHdHUTAwU0o1WEQ1QzdxSnA3WFJSbzNacWh2TUpHRVU2aUtoNERWSERjUXBvaXk0ZTNrRndaREdEeWlDVTdfTHdvODR2RnZFQ2htbG5NMjdr",
+  "title": "BMKG Ungkap Hujan Ekstrem yang Picu Banjir dan Longsor di Cilacap-Banyumas - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQV3d3WlJDdzdnWHRIZlphbGJ5VFJ3em5TbWJSdmg3akJhODR3a0dhNVFkU0JPTDExTDZVem9KQjVzMGRHbDM5VFBfT3dieHdhdTBjNEczSFJsOF9DVFgwT3loSS1GRlZtYXVxcFZZZW9DWi03MVAtcHdHUTAwU0o1WEQ1QzdxSnA3WFJSbzNacWh2TUpHRVU2aUtoNERWSERjUXBvaXk0ZTNrRndaREdEeWlDVTdfTHdvODR2RnZFQ2htbG5NMjdr?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://regional.kompas.com",
+  "published_at": "2026-10-31T08:59:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-31T10:45:24.366Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.01",
+      "nama": "Kabupaten Cilacap",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
