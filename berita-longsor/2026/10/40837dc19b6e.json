@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiowFBVV95cUxPOWpjX3NhQmkzM0wzVkZIR1lTZ18xbGNGUW1ZbDl4dEJ0YUVESzhFNTBQT1A3dy1BbTA1NkdVc0RPTW85YnYxN3VoTHVBaXlCQ1dKS2hmbGVGZnhJVWhYT0JGby0xMmhtWGI0VmFobmQwZHUwQUlscFBiakJnazNtQlptQ1ZGN3J5UkRZVkRKYXhnZE84bXYwSlZqSHo5bk8xSy1F",
+  "title": "Hujan ekstrem picu banjir-longsor di Cilacap dan Banyumas - ANTARA News Jateng",
+  "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPOWpjX3NhQmkzM0wzVkZIR1lTZ18xbGNGUW1ZbDl4dEJ0YUVESzhFNTBQT1A3dy1BbTA1NkdVc0RPTW85YnYxN3VoTHVBaXlCQ1dKS2hmbGVGZnhJVWhYT0JGby0xMmhtWGI0VmFobmQwZHUwQUlscFBiakJnazNtQlptQ1ZGN3J5UkRZVkRKYXhnZE84bXYwSlZqSHo5bk8xSy1F?oc=5",
+  "source": "ANTARA News Jateng",
+  "source_url": "https://jateng.antaranews.com",
+  "published_at": "2026-10-31T15:10:57.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-31T16:45:26.920Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.01",
+      "nama": "Kabupaten Cilacap",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwwFBVV95cUxPMXhmNHl2UlVvM2Nvc3NxZEV6c1lVNGE0YmtqZllRaFlJR3N0MkdUZzViVl83RTlPUGNRZGszLXQzUUZLVjQ4Q2RtZGtsYV9WejRZQlNOY1R5REFlTzQ1dTlXR1FPMGFSSHBvbk9ydWRxdUVkN01IZnN1N05hdlBtTDFsMFlabGNmcGpWUExLbGJxTnljUlI2dng4Q0I4NXZGaUdYVjcyamFoSUZxR3Q2Z01lWTBiSXJzRkNRUG1nSmVsQ1XSAcMBQVVfeXFMTzF4ZjR5dlJVbzNjb3NzcWRFenNZVTRhNGJramZZUWhZSUdzdDJHVGc1YlZfN0U5T1BjUWRrMy10M1FGS1Y0OENkbWRrbGFfVno0WUJTTmNUeURBZU80NXU5V0dRTzBhUkhwb25PcnVkcXVFZDdNSGZzdTdOYXZQbUwxbDBZWmxjZnBqVlBMS2xicU55Y1JSNnZ4OENCODV2RmlHWFY3MmphaElGcUd0NmdNZVkwYklyc0ZDUVBtZ0plbENV",
+  "title": "BMKG sebut hujan ekstrem picu banjir dan longsor di Cilacap dan Banyumas - ANTARA News Megapolitan",
+  "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPMXhmNHl2UlVvM2Nvc3NxZEV6c1lVNGE0YmtqZllRaFlJR3N0MkdUZzViVl83RTlPUGNRZGszLXQzUUZLVjQ4Q2RtZGtsYV9WejRZQlNOY1R5REFlTzQ1dTlXR1FPMGFSSHBvbk9ydWRxdUVkN01IZnN1N05hdlBtTDFsMFlabGNmcGpWUExLbGJxTnljUlI2dng4Q0I4NXZGaUdYVjcyamFoSUZxR3Q2Z01lWTBiSXJzRkNRUG1nSmVsQ1XSAcMBQVVfeXFMTzF4ZjR5dlJVbzNjb3NzcWRFenNZVTRhNGJramZZUWhZSUdzdDJHVGc1YlZfN0U5T1BjUWRrMy10M1FGS1Y0OENkbWRrbGFfVno0WUJTTmNUeURBZU80NXU5V0dRTzBhUkhwb25PcnVkcXVFZDdNSGZzdTdOYXZQbUwxbDBZWmxjZnBqVlBMS2xicU55Y1JSNnZ4OENCODV2RmlHWFY3MmphaElGcUd0NmdNZVkwYklyc0ZDUVBtZ0plbENV?oc=5",
+  "source": "ANTARA News Megapolitan",
+  "source_url": "https://megapolitan.antaranews.com",
+  "published_at": "2026-10-31T03:57:44.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-31T16:45:26.920Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.01",
+      "nama": "Kabupaten Cilacap",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

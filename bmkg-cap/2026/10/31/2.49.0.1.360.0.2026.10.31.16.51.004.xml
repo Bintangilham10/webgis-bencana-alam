@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.31.16.51.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-01T00:20:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-01T00:32:00+08:00</effective>
+    <expires>2026-11-01T03:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bali</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 01 November 2026, 00:32 WITA di sebagian wilayah Bali, khususnya di BEBANDEM, MANGGIS.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 01 November 2026, 03:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBL/2026/11/01/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bali</areaDesc>
+      <polygon>-8.468,115.584 -8.474,115.586 -8.509,115.564 -8.500,115.535 -8.505,115.520 -8.513,115.509 -8.534,115.514 -8.533,115.509 -8.541,115.508 -8.550,115.479 -8.516,115.474 -8.504,115.463 -8.499,115.467 -8.463,115.472 -8.468,115.482 -8.477,115.486 -8.478,115.490 -8.466,115.497 -8.468,115.504 -8.463,115.518 -8.446,115.561 -8.469,115.581 -8.468,115.584</polygon>
+      <polygon>-8.344,115.518 -8.355,115.544 -8.357,115.558 -8.364,115.569 -8.363,115.580 -8.370,115.569 -8.368,115.550 -8.371,115.548 -8.380,115.563 -8.391,115.570 -8.410,115.573 -8.424,115.584 -8.431,115.588 -8.440,115.574 -8.453,115.596 -8.463,115.592 -8.468,115.584 -8.469,115.581 -8.446,115.561 -8.463,115.518 -8.447,115.514 -8.432,115.519 -8.421,115.519 -8.406,115.500 -8.393,115.506 -8.346,115.506 -8.345,115.507 -8.344,115.518</polygon>
+    </area>
+  </info>
+</alert>
