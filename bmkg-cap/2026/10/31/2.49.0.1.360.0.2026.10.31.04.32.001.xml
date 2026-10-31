@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.31.04.32.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-31T09:55:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-31T10:05:00+07:00</effective>
+    <expires>2026-10-31T12:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 31 October 2026, 10:05 WIB di sebagian wilayah Jawa Barat, khususnya di CIPATUJAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 31 October 2026, 12:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/10/31/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-7.642,108.066 -7.642,108.077 -7.635,108.085 -7.638,108.099 -7.651,108.101 -7.680,108.087 -7.689,108.078 -7.690,108.088 -7.698,108.098 -7.706,108.097 -7.707,108.113 -7.726,108.135 -7.737,108.126 -7.742,108.130 -7.749,108.129 -7.750,108.120 -7.777,108.113 -7.768,108.064 -7.754,108.038 -7.746,108.000 -7.734,107.943 -7.732,107.910 -7.687,107.931 -7.682,107.931 -7.677,107.925 -7.673,107.927 -7.665,107.961 -7.645,107.961 -7.627,107.978 -7.648,107.994 -7.629,108.005 -7.626,108.008 -7.627,108.015 -7.638,108.027 -7.658,108.030 -7.657,108.040 -7.648,108.045 -7.651,108.056 -7.642,108.066</polygon>
+    </area>
+  </info>
+</alert>
