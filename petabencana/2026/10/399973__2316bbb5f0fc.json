@@ -1,0 +1,44 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-31T22:00:44.118Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        105.4219864814,
+        -6.102920891
+      ]
+    },
+    "properties": {
+      "pkey": "399973",
+      "created_at": "2026-10-31T21:54:32.549Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "452ec16e-6093-4573-8621-41b1fa846c01",
+      "image_url": "https://images.petabencana.id/452ec16e-6093-4573-8621-41b1fa846c01.jpg",
+      "disaster_type": "volcano",
+      "is_training": false,
+      "report_data": {
+        "report_type": "volcano",
+        "volcanicSigns": [
+          4,
+          3
+        ],
+        "evacuationNumber": null,
+        "evacuationArea": true
+      },
+      "tags": {
+        "city": null,
+        "district_id": null,
+        "region_code": null,
+        "local_area_id": null,
+        "instance_region_code": "ID-LA"
+      },
+      "title": null,
+      "text": "Peningkatan aktivitas vulkanik tercatat pada Gunung Anak Krakatau dengan serangkaian erupsi beruntun (sebanyak 12 kali letusan tercatat) ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
