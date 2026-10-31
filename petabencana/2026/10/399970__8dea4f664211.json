@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-31T11:30:30.745Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.5978093324,
+        -3.326038323
+      ]
+    },
+    "properties": {
+      "pkey": "399970",
+      "created_at": "2026-10-31T11:29:22.791Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "c75ece82-5b7d-40c4-bdbd-64d6a5f3a544",
+      "image_url": "https://images.petabencana.id/c75ece82-5b7d-40c4-bdbd-64d6a5f3a544.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 100.04444906454533,
+        "fireLocation": {
+          "lng": 114.59780933240017,
+          "lat": -3.3260383229699215
+        },
+        "personLocation": {
+          "lat": "-3.3257170",
+          "lng": "114.5985228"
+        },
+        "fireRadius": {
+          "lng": 114.5969081101722,
+          "lat": -3.3260436783510983
+        }
+      },
+      "tags": {
+        "city": "KOTA BANJARMASIN",
+        "district_id": null,
+        "region_code": "6371",
+        "local_area_id": null,
+        "instance_region_code": "ID-KS"
+      },
+      "title": null,
+      "text": "Kebakaran pemukiman melanda kawasan Jl. Pekapuran B Laut, Gang Penghulu, Kelurahan Pekapuran Laut, Kota Banjarmasin, Kalimantan Selatan, ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

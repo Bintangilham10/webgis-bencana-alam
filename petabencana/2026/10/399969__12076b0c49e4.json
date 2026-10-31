@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-31T11:30:30.745Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.5976054845,
+        -3.3257759092
+      ]
+    },
+    "properties": {
+      "pkey": "399969",
+      "created_at": "2026-10-31T11:19:07.165Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "d2256401-a62f-4cbc-a2a2-46c51fe8d30c",
+      "image_url": "https://images.petabencana.id/d2256401-a62f-4cbc-a2a2-46c51fe8d30c.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 72.84747101989255,
+        "fireLocation": {
+          "lng": 114.59760548451521,
+          "lat": -3.3257759092191748
+        },
+        "personLocation": {
+          "lat": "-3.3257170",
+          "lng": "114.5985228"
+        },
+        "fireRadius": {
+          "lng": 114.59695638993207,
+          "lat": -3.325872306116125
+        }
+      },
+      "tags": {
+        "city": "KOTA BANJARMASIN",
+        "district_id": null,
+        "region_code": "6371",
+        "local_area_id": null,
+        "instance_region_code": "ID-KS"
+      },
+      "title": null,
+      "text": "Kebakaran permukiman terjadi di kawasan Gang Penghulu, Kelurahan Pekapuran Laut, Kecamatan Banjarmasin Tengah, Kota Banjarmasin",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
