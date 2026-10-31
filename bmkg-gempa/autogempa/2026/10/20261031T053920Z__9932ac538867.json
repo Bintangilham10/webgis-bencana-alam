@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-10-31T06:00:37.427Z",
+  "data": {
+    "Tanggal": "31 Okt 2026",
+    "Jam": "12:39:20 WIB",
+    "DateTime": "2026-10-31T05:39:20+00:00",
+    "Coordinates": "-9.45,118.11",
+    "Lintang": "9.45 LS",
+    "Bujur": "118.11 BT",
+    "Magnitude": "4.8",
+    "Kedalaman": "28 km",
+    "Wilayah": "Pusat gempa berada di laut 97 km barat Kodi, Sumba Barat Daya",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Sumbawa",
+    "Shakemap": "20261031123920.mmi.jpg"
+  }
+}
