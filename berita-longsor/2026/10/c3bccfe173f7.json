@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiwwFBVV95cUxQYlNoVjFLekpudndSVWpkcG9JWjJFc0NfOGdiVTJ4eTVFZ01OODUzR2hpMHVOQy01N3EwdnFLdm5GQmdpalpYenA0V2RaZDF1NFhvM2s4Z0FtWmhCcVUxTGFFaGVqc1QzZE5EYmFqUFJnUmlFWDFyZENDRGctZU1HV3VLcmVzdlJBZk5STTM4UUlnckZrbXF3MkRDVkRPbElyYjFPSF9pc2Ztemw4eExKOE04Z3JqQWxzOXQxQy03S2ZCclU",
+  "title": "19 Titik Longsor Terjang 5 Desa di Trenggalek Jatim, 103 Warga Terdampak - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYlNoVjFLekpudndSVWpkcG9JWjJFc0NfOGdiVTJ4eTVFZ01OODUzR2hpMHVOQy01N3EwdnFLdm5GQmdpalpYenA0V2RaZDF1NFhvM2s4Z0FtWmhCcVUxTGFFaGVqc1QzZE5EYmFqUFJnUmlFWDFyZENDRGctZU1HV3VLcmVzdlJBZk5STTM4UUlnckZrbXF3MkRDVkRPbElyYjFPSF9pc2Ztemw4eExKOE04Z3JqQWxzOXQxQy03S2ZCclU?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://regional.kompas.com",
+  "published_at": "2026-10-31T04:49:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-31T07:30:33.130Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jawa Timur"
+  ]
+}

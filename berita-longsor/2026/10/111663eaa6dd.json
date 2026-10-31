@@ -1,0 +1,26 @@
+{
+  "guid": "CBMipAFBVV95cUxOSFpPTGVEOWRMaVdJY0VMWGdvS1p4TzFoMUFVbGVPT3pxR1RJOE5GWEtLd0NCMGhHLWtNNmtZZkpveFFuX1ZwYTYxZXVGSGNfeFBRSlYwUWlpNG51MEY3T0djbDdaMEhtQUJjZ3JhbjlvMXZObnp3VHhfMUlFcjFsOW03QUltWmtEdlVnZFRlX2Z3U1lQOHJlVm5uOGlTeWpuZ1VsUg",
+  "title": "BMKG: Hujan Ekstrem Picu Banjir dan Longsor di Cilacap dan Banyumas - investor.id",
+  "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSFpPTGVEOWRMaVdJY0VMWGdvS1p4TzFoMUFVbGVPT3pxR1RJOE5GWEtLd0NCMGhHLWtNNmtZZkpveFFuX1ZwYTYxZXVGSGNfeFBRSlYwUWlpNG51MEY3T0djbDdaMEhtQUJjZ3JhbjlvMXZObnp3VHhfMUlFcjFsOW03QUltWmtEdlVnZFRlX2Z3U1lQOHJlVm5uOGlTeWpuZ1VsUg?oc=5",
+  "source": "investor.id",
+  "source_url": "https://investor.id",
+  "published_at": "2026-10-31T05:48:10.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-31T07:30:33.130Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.01",
+      "nama": "Kabupaten Cilacap",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

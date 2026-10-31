@@ -1,0 +1,21 @@
+{
+  "guid": "CBMie0FVX3lxTE1iWVFxN2FRODJ6REFoblFhNEMxX2lydDdsLUU1UXVOOVpnVGJyalJSRUxCS0hUZ3hkUnZLVzlSY0JKSjVsbXl1TkJrUGtTa05vV1B3a1prQ3oyM01iNXVRWDRLcTZQR2gzTzVNNGhScmlGM0JhMU1DRHF4RQ",
+  "title": "Hujan Deras Picu Tanah Longsor di Jembrana - Balinetizen",
+  "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1iWVFxN2FRODJ6REFoblFhNEMxX2lydDdsLUU1UXVOOVpnVGJyalJSRUxCS0hUZ3hkUnZLVzlSY0JKSjVsbXl1TkJrUGtTa05vV1B3a1prQ3oyM01iNXVRWDRLcTZQR2gzTzVNNGhScmlGM0JhMU1DRHF4RQ?oc=5",
+  "source": "Balinetizen",
+  "source_url": "https://www.balinetizen.com",
+  "published_at": "2026-10-31T06:51:40.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-31T07:30:33.130Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "51.01",
+      "nama": "Kabupaten Jembrana",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMipwFBVV95cUxQb3pZUHlkQUxUTy1YaU9XWThtTkt6cEVhQXQzSFVPTER3U0VXUUNGSFFSZFdoWXFLRDcxVUhwRVo2V2xrLWw1RGdjY05tRFpPbExWWXV0V1JpejIwWE1EdXpFWHVoZm1ZT1BqSnVmSmhSdXZOTzNfQW9zTU9MalNEUjVubWxwVW9QdEFqMmVucHdoMzJXY3Z0WEZnLXB0UU1nUHMwTmhEa9IBrAFBVV95cUxOYXFrMmVFX1pXYTd5X0NYN1lna1Qyb0ozOFF0NGhLaDhEdDRSX0xVam93Z2dDOFc0UFdiRlU4blg5VlpMVGZlNmJJaElEM2dNemlYRmYxVi01cXdTTlNGNHZxZDU4TDdRMkVoVzdwaC0yQWgzMk9HcGRSeGN4cTNLdlJuT2t0QkpRWlNZTlNlQXlFeVlQdEdtLWlLX0V0WHZucnBRUDc0LWk4RTdf",
+  "title": "Tanah Longsor di Sekeloa Bandung, Akses Jalan Warga Tertutup - detikcom",
+  "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQb3pZUHlkQUxUTy1YaU9XWThtTkt6cEVhQXQzSFVPTER3U0VXUUNGSFFSZFdoWXFLRDcxVUhwRVo2V2xrLWw1RGdjY05tRFpPbExWWXV0V1JpejIwWE1EdXpFWHVoZm1ZT1BqSnVmSmhSdXZOTzNfQW9zTU9MalNEUjVubWxwVW9QdEFqMmVucHdoMzJXY3Z0WEZnLXB0UU1nUHMwTmhEa9IBrAFBVV95cUxOYXFrMmVFX1pXYTd5X0NYN1lna1Qyb0ozOFF0NGhLaDhEdDRSX0xVam93Z2dDOFc0UFdiRlU4blg5VlpMVGZlNmJJaElEM2dNemlYRmYxVi01cXdTTlNGNHZxZDU4TDdRMkVoVzdwaC0yQWgzMk9HcGRSeGN4cTNLdlJuT2t0QkpRWlNZTlNlQXlFeVlQdEdtLWlLX0V0WHZucnBRUDc0LWk4RTdf?oc=5",
+  "source": "detikcom",
+  "source_url": "https://www.detik.com",
+  "published_at": "2026-10-31T05:13:33.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-31T07:30:33.130Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

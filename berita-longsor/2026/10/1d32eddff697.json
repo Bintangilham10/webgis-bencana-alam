@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiogFBVV95cUxQU1Z0aG03cFRSWGpTanBDZGdLaGtKTXgzanNFQlJnQ25TZ0Q0d2IxQng5bVZtRVljOV8xRDlwOU9FQVY4aVBWclpTZlRWaE1OakYwTFg2UzByaXNuVUpWYlJOdFF0aUZNc21VQ3VtT3pNZVRjQlNnNXJGR2FLSE8yOUJlLUhLNWVrd1A3UlZ3RUk2SWlEeUNhYUltbWZDUjBiOWc",
+  "title": "BMKG Ungkap Penyebab Banjir dan Longsor di Cilacap-Banyumas - Harianjogja.com",
+  "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQU1Z0aG03cFRSWGpTanBDZGdLaGtKTXgzanNFQlJnQ25TZ0Q0d2IxQng5bVZtRVljOV8xRDlwOU9FQVY4aVBWclpTZlRWaE1OakYwTFg2UzByaXNuVUpWYlJOdFF0aUZNc21VQ3VtT3pNZVRjQlNnNXJGR2FLSE8yOUJlLUhLNWVrd1A3UlZ3RUk2SWlEeUNhYUltbWZDUjBiOWc?oc=5",
+  "source": "Harianjogja.com",
+  "source_url": "https://jateng.harianjogja.com",
+  "published_at": "2026-10-31T04:17:07.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-10-31T07:30:33.130Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.01",
+      "nama": "Kabupaten Cilacap",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
