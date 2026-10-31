@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi0gFBVV95cUxQd0FQaExnaUJ5RzEwTmtpUlNxc1RKVkRwMXlReDgwSy00X19tX2U0Mng1X2tzeVV2MW0ybDJZWVRJdVlMMHdxSkhzVGo4Qmc0SGlPeFl4eXlBWjJYLTdxQjloZWU0cGRqNGQ2OVBqam1hSGtVc0dYVHVkbE5idXhfa0IzN3VXUUJxYVI0OEEyY0pfTFBiZDZxZW9QczgydmROTEpac1NNek5xRzBQQkJCRkNWa09DTGpBZEUzX1dRaWJXNTFUV294RV91d2phSGtwQmc",
+  "title": "Hujan Intensitas Tinggi Picu Longsor di Punggelan Banjarnegara, Rumah Warga Rusak Tertimbun Material - Selidik Kasus",
+  "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQd0FQaExnaUJ5RzEwTmtpUlNxc1RKVkRwMXlReDgwSy00X19tX2U0Mng1X2tzeVV2MW0ybDJZWVRJdVlMMHdxSkhzVGo4Qmc0SGlPeFl4eXlBWjJYLTdxQjloZWU0cGRqNGQ2OVBqam1hSGtVc0dYVHVkbE5idXhfa0IzN3VXUUJxYVI0OEEyY0pfTFBiZDZxZW9QczgydmROTEpac1NNek5xRzBQQkJCRkNWa09DTGpBZEUzX1dRaWJXNTFUV294RV91d2phSGtwQmc?oc=5",
+  "source": "Selidik Kasus",
+  "source_url": "https://selidikkasus.com",
+  "published_at": "2026-10-30T23:55:46.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-10-31T01:30:29.920Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.04",
+      "nama": "Kabupaten Banjarnegara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
