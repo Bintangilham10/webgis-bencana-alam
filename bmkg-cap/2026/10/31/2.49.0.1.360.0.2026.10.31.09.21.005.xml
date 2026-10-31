@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.10.31.09.21.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-10-31T15:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-10-31T16:00:00+07:00</effective>
+    <expires>2026-10-31T18:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Riau</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 31 October 2026, 16:00 WIB di sebagian wilayah Kep. Riau, khususnya di BUNGURAN TIMUR, BUNGURAN TIMUR LAUT, SERI KUALA LOBAM, TELOK SEBONG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 31 October 2026, 18:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKR/2026/10/31/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Riau</areaDesc>
+      <polygon>1.187,104.577 1.131,104.528 1.102,104.507 1.112,104.502 1.111,104.490 1.105,104.482 1.108,104.472 1.077,104.420 1.089,104.404 1.066,104.393 1.058,104.394 1.049,104.376 1.036,104.370 1.045,104.349 1.049,104.346 1.064,104.348 1.068,104.325 1.064,104.296 1.101,104.287 1.108,104.275 1.124,104.267 1.138,104.306 1.136,104.324 1.141,104.332 1.158,104.324 1.166,104.324 1.175,104.315 1.182,104.313 1.179,104.330 1.188,104.344 1.178,104.365 1.179,104.375 1.187,104.385 1.187,104.379 1.194,104.375 1.203,104.396 1.202,104.407 1.185,104.448 1.184,104.462 1.178,104.465 1.175,104.472 1.171,104.502 1.179,104.533 1.197,104.541 1.200,104.550 1.217,104.545 1.226,104.555 1.230,104.569 1.228,104.581 1.222,104.586 1.204,104.585 1.200,104.580 1.187,104.577</polygon>
+      <polygon>1.036,104.370 1.020,104.360 1.020,104.346 1.025,104.339 0.991,104.332 0.991,104.320 1.001,104.304 1.000,104.263 1.021,104.226 1.046,104.233 1.057,104.259 1.057,104.292 1.044,104.293 1.041,104.301 1.053,104.305 1.064,104.296 1.068,104.325 1.064,104.348 1.049,104.346 1.045,104.349 1.036,104.370</polygon>
+      <polygon>0.997,104.246 0.988,104.260 0.981,104.263 0.974,104.258 0.975,104.242 0.979,104.242 0.978,104.249 0.982,104.236 0.979,104.232 0.994,104.237 0.997,104.246</polygon>
+      <polygon>0.981,104.228 0.981,104.225 0.985,104.229 0.981,104.228</polygon>
+      <polygon>3.998,108.349 3.989,108.369 3.965,108.403 3.957,108.402 3.932,108.382 3.927,108.383 3.917,108.394 3.896,108.390 3.902,108.367 3.894,108.357 3.874,108.353 3.875,108.361 3.883,108.363 3.887,108.359 3.893,108.362 3.893,108.367 3.880,108.377 3.868,108.382 3.855,108.377 3.845,108.359 3.834,108.351 3.828,108.339 3.830,108.321 3.822,108.313 3.804,108.304 3.801,108.297 3.841,108.273 3.859,108.299 3.869,108.302 3.865,108.316 3.870,108.323 3.917,108.324 3.939,108.308 3.957,108.309 3.974,108.322 3.977,108.333 3.997,108.325 3.993,108.345 3.998,108.349</polygon>
+      <polygon>4.013,108.418 4.007,108.420 4.003,108.416 4.013,108.418</polygon>
+      <polygon>3.895,108.376 3.890,108.373 3.894,108.372 3.895,108.376</polygon>
+      <polygon>3.886,108.383 3.879,108.379 3.886,108.378 3.886,108.383</polygon>
+      <polygon>3.998,108.349 3.993,108.345 3.997,108.325 3.977,108.333 3.974,108.322 3.980,108.294 3.973,108.274 3.962,108.269 3.961,108.265 3.981,108.245 3.992,108.215 4.007,108.202 4.006,108.190 3.997,108.186 4.003,108.169 4.005,108.177 4.011,108.175 4.023,108.182 4.112,108.183 4.133,108.194 4.142,108.202 4.161,108.204 4.213,108.225 4.218,108.229 4.218,108.242 4.212,108.242 4.200,108.229 4.185,108.224 4.171,108.230 4.147,108.229 4.130,108.233 4.091,108.266 4.083,108.285 4.086,108.299 4.062,108.293 4.052,108.299 4.016,108.346 4.004,108.345 3.998,108.349</polygon>
+    </area>
+  </info>
+</alert>
