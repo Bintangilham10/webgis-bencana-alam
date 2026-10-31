@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-10-31T08:00:36.496Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        117.8677619257,
+        1.8111431357
+      ]
+    },
+    "properties": {
+      "pkey": "399968",
+      "created_at": "2026-10-31T07:55:10.307Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "19cb65d2-2044-4d97-88cf-971b2029a477",
+      "image_url": "https://images.petabencana.id/19cb65d2-2044-4d97-88cf-971b2029a477.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 144.87020761655867,
+        "fireLocation": {
+          "lng": 117.86776192565532,
+          "lat": 1.8111431356665122
+        },
+        "personLocation": {
+          "lat": "1.8112182",
+          "lng": "117.8684593"
+        },
+        "fireRadius": {
+          "lng": 117.86647446532902,
+          "lat": 1.810939389602936
+        }
+      },
+      "tags": {
+        "city": "BERAU",
+        "district_id": null,
+        "region_code": "6403",
+        "local_area_id": null,
+        "instance_region_code": "ID-KI"
+      },
+      "title": null,
+      "text": "Kebakaran terjadi di wilayah Tubaan, Kecamatan Tabalar, Kabupaten Berau, Kalimantan Timur, tepatnya di jalur lintasan menuju Berantai",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
