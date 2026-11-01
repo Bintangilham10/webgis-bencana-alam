@@ -1,0 +1,31 @@
+{
+  "guid": "CBMi4AFBVV95cUxOczh4R1Fxb2pLYzJKNXh6LVl6OVlSZ09QdThKQWpYTjZjTzBkc3M0SXBNcWpZSzA5eE1jeExOTEhNNHBobDNQeVhlRmMzak80d2Fpb2l4bnlMSkZEcmRNdTNCQ3pQaVNyeXloZFlxZGVnUnhqbkpNdnh2VFNHdWpIbWtnbmdKMlNrSEl1akhjVjNwdGtad1FPd0p5eGdhWFJfQl9pS01lRmdidFJXUUR3UU9xVWJIci1lbHlHZjZjSE5fc0FSZU14Uk90cVo4WWxqdVNMUG84UmhjdXlBMUpLdtIB4AFBVV95cUxOczh4R1Fxb2pLYzJKNXh6LVl6OVlSZ09QdThKQWpYTjZjTzBkc3M0SXBNcWpZSzA5eE1jeExOTEhNNHBobDNQeVhlRmMzak80d2Fpb2l4bnlMSkZEcmRNdTNCQ3pQaVNyeXloZFlxZGVnUnhqbkpNdnh2VFNHdWpIbWtnbmdKMlNrSEl1akhjVjNwdGtad1FPd0p5eGdhWFJfQl9pS01lRmdidFJXUUR3UU9xVWJIci1lbHlHZjZjSE5fc0FSZU14Uk90cVo4WWxqdVNMUG84UmhjdXlBMUpLdg",
+  "title": "Trenggalek Diterjang Longsor, Belasan Titik Tersebar di 5 Desa dan 103 Warga Terdampak - Suara Merdeka Pekalongan - Suara Merdeka Pekalongan",
+  "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOczh4R1Fxb2pLYzJKNXh6LVl6OVlSZ09QdThKQWpYTjZjTzBkc3M0SXBNcWpZSzA5eE1jeExOTEhNNHBobDNQeVhlRmMzak80d2Fpb2l4bnlMSkZEcmRNdTNCQ3pQaVNyeXloZFlxZGVnUnhqbkpNdnh2VFNHdWpIbWtnbmdKMlNrSEl1akhjVjNwdGtad1FPd0p5eGdhWFJfQl9pS01lRmdidFJXUUR3UU9xVWJIci1lbHlHZjZjSE5fc0FSZU14Uk90cVo4WWxqdVNMUG84UmhjdXlBMUpLdtIB4AFBVV95cUxOczh4R1Fxb2pLYzJKNXh6LVl6OVlSZ09QdThKQWpYTjZjTzBkc3M0SXBNcWpZSzA5eE1jeExOTEhNNHBobDNQeVhlRmMzak80d2Fpb2l4bnlMSkZEcmRNdTNCQ3pQaVNyeXloZFlxZGVnUnhqbkpNdnh2VFNHdWpIbWtnbmdKMlNrSEl1akhjVjNwdGtad1FPd0p5eGdhWFJfQl9pS01lRmdidFJXUUR3UU9xVWJIci1lbHlHZjZjSE5fc0FSZU14Uk90cVo4WWxqdVNMUG84UmhjdXlBMUpLdg?oc=5",
+  "source": "Suara Merdeka Pekalongan",
+  "source_url": "https://pekalongan.suaramerdeka.com",
+  "published_at": "2026-11-01T04:37:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-01T08:15:26.938Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.26",
+      "nama": "Kabupaten Pekalongan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.75",
+      "nama": "Kota Pekalongan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

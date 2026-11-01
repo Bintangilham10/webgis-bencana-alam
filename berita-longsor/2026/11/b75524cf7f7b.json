@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiU0FVX3lxTE0zRU9MbzJ2WVAySVpySkRhbzV1cmlDSUY3Tlh5QkFlYmZnZzVRNm1TYWItcHFQMlhHcmtxMUlvTnBBU0hzUGV3NWZIMmQwZmJhRy04",
+  "title": "Kemensos Salurkan Bantuan untuk Korban Banjir dan Longsor Trenggalek - شبكة تواصل الإخبارية",
+  "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0zRU9MbzJ2WVAySVpySkRhbzV1cmlDSUY3Tlh5QkFlYmZnZzVRNm1TYWItcHFQMlhHcmtxMUlvTnBBU0hzUGV3NWZIMmQwZmJhRy04?oc=5",
+  "source": "شبكة تواصل الإخبارية",
+  "source_url": "https://twaslnews1.twaslnews.com",
+  "published_at": "2026-11-01T05:27:55.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-01T08:15:26.938Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

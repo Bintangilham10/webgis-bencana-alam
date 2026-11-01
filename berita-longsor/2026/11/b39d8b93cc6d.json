@@ -1,0 +1,26 @@
+{
+  "guid": "CBMimgFBVV95cUxPaWJMMVFrMzFXd3ZtREdOdVJVTGNsWmYweF9xTFNqckc3MWdPY1lQX3BFVU1nN182TU9kT2poVlMyMEFHSTVkREtDekdGUk5NM1Znd2RWODlhYi01aC1FT0toZU1sT3VNc0pyakZXbF91elYzVXNQQ1dvejY3R253WDR2a19uU3ZJNk5ER3kzWnRRcms3aURyQ1pB",
+  "title": "Longsor Tirtoyudo Malang, 30 Rumah Terdampak dan Sejumlah Jalan Terputus - Tugu Malang ID",
+  "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaWJMMVFrMzFXd3ZtREdOdVJVTGNsWmYweF9xTFNqckc3MWdPY1lQX3BFVU1nN182TU9kT2poVlMyMEFHSTVkREtDekdGUk5NM1Znd2RWODlhYi01aC1FT0toZU1sT3VNc0pyakZXbF91elYzVXNQQ1dvejY3R253WDR2a19uU3ZJNk5ER3kzWnRRcms3aURyQ1pB?oc=5",
+  "source": "Tugu Malang ID",
+  "source_url": "https://tugumalang.id",
+  "published_at": "2026-11-01T05:40:59.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-01T08:15:26.938Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
