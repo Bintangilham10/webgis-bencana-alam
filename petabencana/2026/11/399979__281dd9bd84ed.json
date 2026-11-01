@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-01T22:45:27.557Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.7205519417,
+        -6.2628106934
+      ]
+    },
+    "properties": {
+      "pkey": "399979",
+      "created_at": "2026-11-01T22:38:12.407Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "dd2f53bd-9f9d-4780-9bfe-3f903191864b",
+      "image_url": "https://images.petabencana.id/dd2f53bd-9f9d-4780-9bfe-3f903191864b.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 83.03234410355944,
+        "fireLocation": {
+          "lng": 106.72055194166256,
+          "lat": -6.262810693382022
+        },
+        "personLocation": {
+          "lng": 106.72069141653208,
+          "lat": -6.262602729622046
+        },
+        "fireRadius": {
+          "lng": 106.71980628755597,
+          "lat": -6.262901344226847
+        }
+      },
+      "tags": {
+        "city": "KOTA TANGERANG SELATAN",
+        "district_id": null,
+        "region_code": "3674",
+        "local_area_id": null,
+        "instance_region_code": "ID-BT"
+      },
+      "title": null,
+      "text": "Sebuah tiang listrik tiba-tiba roboh dan menimpa rumah warga yang berada di kawasan depan Pasar Ceger, Kecamatan Pondok Aren, Kota Tangerang",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
