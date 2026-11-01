@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.01.00.18.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-01T05:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-01T05:30:00+07:00</effective>
+    <expires>2026-11-01T08:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Lampung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 01 November 2026, 05:30 WIB di sebagian wilayah Lampung, khususnya di BAKAUHENI, LABUHAN MARINGGAI, RAJA BASA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 01 November 2026, 08:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CLG/2026/11/01/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Lampung</areaDesc>
+      <polygon>-5.776,105.625 -5.804,105.665 -5.805,105.666 -5.817,105.680 -5.825,105.683 -5.840,105.677 -5.838,105.629 -5.831,105.604 -5.801,105.584 -5.770,105.580 -5.777,105.605 -5.776,105.625</polygon>
+      <polygon>-6.137,105.449 -6.136,105.456 -6.149,105.465 -6.166,105.453 -6.166,105.433 -6.157,105.421 -6.145,105.421 -6.144,105.435 -6.133,105.445 -6.137,105.449</polygon>
+      <polygon>-6.111,105.425 -6.101,105.416 -6.093,105.418 -6.090,105.422 -6.102,105.433 -6.111,105.425</polygon>
+      <polygon>-6.080,105.451 -6.088,105.465 -6.109,105.455 -6.107,105.451 -6.080,105.451</polygon>
+      <polygon>-6.113,105.363 -6.107,105.358 -6.085,105.377 -6.078,105.385 -6.073,105.404 -6.091,105.397 -6.113,105.363</polygon>
+      <polygon>-5.923,105.502 -5.927,105.510 -5.941,105.516 -5.948,105.516 -5.961,105.508 -5.969,105.501 -5.972,105.489 -5.972,105.481 -5.964,105.468 -5.952,105.464 -5.935,105.469 -5.926,105.479 -5.921,105.495 -5.923,105.502</polygon>
+      <polygon>-5.889,105.454 -5.880,105.452 -5.885,105.457 -5.889,105.454</polygon>
+      <polygon>-5.849,105.531 -5.861,105.529 -5.863,105.540 -5.869,105.540 -5.875,105.533 -5.895,105.526 -5.903,105.506 -5.886,105.498 -5.884,105.493 -5.877,105.492 -5.875,105.504 -5.862,105.502 -5.858,105.505 -5.856,105.511 -5.862,105.519 -5.848,105.527 -5.849,105.531</polygon>
+      <polygon>-5.852,105.765 -5.870,105.756 -5.881,105.737 -5.900,105.730 -5.908,105.719 -5.905,105.715 -5.883,105.718 -5.867,105.713 -5.858,105.714 -5.850,105.705 -5.850,105.687 -5.840,105.677 -5.825,105.683 -5.817,105.680 -5.805,105.666 -5.804,105.665 -5.796,105.674 -5.802,105.702 -5.791,105.758 -5.820,105.751 -5.830,105.733 -5.836,105.732 -5.846,105.744 -5.852,105.765</polygon>
+      <polygon>-5.884,105.788 -5.891,105.788 -5.885,105.775 -5.884,105.788</polygon>
+      <polygon>-5.884,105.768 -5.900,105.757 -5.902,105.749 -5.898,105.748 -5.884,105.759 -5.880,105.765 -5.884,105.768</polygon>
+      <polygon>-5.884,105.771 -5.878,105.769 -5.879,105.773 -5.884,105.771</polygon>
+      <polygon>-5.255,105.852 -5.256,105.854 -5.255,105.857 -5.255,105.859 -5.256,105.860 -5.255,105.861 -5.255,105.863 -5.271,105.855 -5.285,105.838 -5.301,105.827 -5.322,105.821 -5.370,105.819 -5.483,105.825 -5.472,105.783 -5.471,105.764 -5.431,105.773 -5.410,105.766 -5.403,105.777 -5.417,105.781 -5.414,105.802 -5.379,105.804 -5.361,105.791 -5.358,105.777 -5.344,105.778 -5.341,105.762 -5.323,105.758 -5.314,105.761 -5.317,105.767 -5.301,105.802 -5.282,105.809 -5.272,105.799 -5.251,105.796 -5.244,105.805 -5.232,105.813 -5.217,105.813 -5.207,105.828 -5.209,105.833 -5.220,105.837 -5.222,105.853 -5.255,105.852</polygon>
+    </area>
+  </info>
+</alert>
