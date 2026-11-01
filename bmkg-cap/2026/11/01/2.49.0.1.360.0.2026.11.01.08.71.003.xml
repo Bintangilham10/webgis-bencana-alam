@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.01.08.71.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-01T14:50:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-01T15:00:00+08:00</effective>
+    <expires>2026-11-01T18:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 01 November 2026, 15:00 WITA di sebagian wilayah Sulawesi Utara, khususnya di AERTEMBAGA, SILIAN RAYA, TONDANO SELATAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 01 November 2026, 18:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/01/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>1.263,124.901 1.246,124.897 1.237,124.881 1.251,124.872 1.263,124.853 1.285,124.858 1.296,124.858 1.298,124.863 1.286,124.867 1.284,124.890 1.264,124.893 1.263,124.901</polygon>
+      <polygon>1.051,124.673 1.050,124.665 1.065,124.652 1.086,124.642 1.098,124.629 1.102,124.665 1.080,124.677 1.060,124.677 1.051,124.673</polygon>
+      <polygon>1.440,125.193 1.478,125.194 1.486,125.176 1.486,125.166 1.487,125.158 1.504,125.171 1.537,125.168 1.557,125.172 1.542,125.207 1.522,125.232 1.506,125.243 1.494,125.235 1.466,125.230 1.456,125.210 1.447,125.206 1.440,125.193</polygon>
+    </area>
+  </info>
+</alert>
