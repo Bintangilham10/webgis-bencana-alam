@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivAFBVV95cUxQQmo0d2J0QkMwTFpPazlOb3U4eEJDQjFCd2NNdXR3ckZNWFIwbnVNTEN4cDQ4NGpDS2RhNUlJSWhybWpCSnNOZEZqakZJb2VScUVQTkNTYl85cE1pLUhPbkI5TWdEYmcyN290V0pfYlJWNWpQRjBzQlJYeGRvTFM3dERDQV9IMmFhQkRUUTdQY1NFTjFHZHJoQi1UUW4zZktlNm15T0dsYmNXakpMMFVONGhwRHp4TnBUWWJ4dQ",
+  "title": "Antisipasi Longsor di Jalur Trenggalek-Ponorogo, Polres Trenggalek Siapkan Rekayasa Lalu Lintas - Lingkar Wilis",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQmo0d2J0QkMwTFpPazlOb3U4eEJDQjFCd2NNdXR3ckZNWFIwbnVNTEN4cDQ4NGpDS2RhNUlJSWhybWpCSnNOZEZqakZJb2VScUVQTkNTYl85cE1pLUhPbkI5TWdEYmcyN290V0pfYlJWNWpQRjBzQlJYeGRvTFM3dERDQV9IMmFhQkRUUTdQY1NFTjFHZHJoQi1UUW4zZktlNm15T0dsYmNXakpMMFVONGhwRHp4TnBUWWJ4dQ?oc=5",
+  "source": "Lingkar Wilis",
+  "source_url": "https://lingkarwilis.com",
+  "published_at": "2026-11-01T12:44:25.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-01T14:45:25.174Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.02",
+      "nama": "Kabupaten Ponorogo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

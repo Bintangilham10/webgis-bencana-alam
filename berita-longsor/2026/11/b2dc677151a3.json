@@ -1,0 +1,31 @@
+{
+  "guid": "CBMi2gFBVV95cUxNcmt4Sk4yX0VEWDB5eDA2eXZrRXE4MG41X0lWVXBENzlwYlNSbWFyaTRjeS1ic2tCeExhbHp0ZVN6cTlxTjlkN25UZ3BCWUo3U3pRYy1naXNlZkcyblFvRkRSQy1lZUdtMnhUM1ZVeHlXTlJxMVFhVHlFc0x5aDlSOTgzcy1KRk1wRXl0QmZ5bHgxYTBHbU1WRF9iSk1JOVpFOHRxdUNhQ3BaNkxoYmN5dXdISE0tc1Q0QVIzbTdrYjZPRk5sZWlpRXNmdHJOcXFJSXVEUWR2UUlsZ9IB3wFBVV95cUxPcy1pQW5yb0dCOThaekF5NWdJMVZVdm1pRW9Jd1dOaFRaeGhjZHZaMmptVkFKbWJWU3lJcXYyLUZIV3lkRFJ1ZlVrNEJtRDVwdnpwQWRSZ0VaRjhXa0NvOUl5ZXhXLW45SDgwck1hYWNJQV81VllkNExqVHZfMk0zbUc2dnVKNFFKbk01d0c2cHhJTExRSGtFYnBaWG1CaUJaMWF3Z3B2aU5NN293Q2lzWVU3YlhZdWgxdTA1bjJpR0pXSnFXNkFXOWEteExydHZycXRqWXhtbjR5aVBXcF9r",
+  "title": "Akibat Hujan Ekstrim, Tanah Longsor Terjang Kabupaten Banjarnegara, Cilacap dan Banyumas - Suara Merdeka Wawasan - Suara Merdeka",
+  "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNcmt4Sk4yX0VEWDB5eDA2eXZrRXE4MG41X0lWVXBENzlwYlNSbWFyaTRjeS1ic2tCeExhbHp0ZVN6cTlxTjlkN25UZ3BCWUo3U3pRYy1naXNlZkcyblFvRkRSQy1lZUdtMnhUM1ZVeHlXTlJxMVFhVHlFc0x5aDlSOTgzcy1KRk1wRXl0QmZ5bHgxYTBHbU1WRF9iSk1JOVpFOHRxdUNhQ3BaNkxoYmN5dXdISE0tc1Q0QVIzbTdrYjZPRk5sZWlpRXNmdHJOcXFJSXVEUWR2UUlsZ9IB3wFBVV95cUxPcy1pQW5yb0dCOThaekF5NWdJMVZVdm1pRW9Jd1dOaFRaeGhjZHZaMmptVkFKbWJWU3lJcXYyLUZIV3lkRFJ1ZlVrNEJtRDVwdnpwQWRSZ0VaRjhXa0NvOUl5ZXhXLW45SDgwck1hYWNJQV81VllkNExqVHZfMk0zbUc2dnVKNFFKbk01d0c2cHhJTExRSGtFYnBaWG1CaUJaMWF3Z3B2aU5NN293Q2lzWVU3YlhZdWgxdTA1bjJpR0pXSnFXNkFXOWEteExydHZycXRqWXhtbjR5aVBXcF9r?oc=5",
+  "source": "Suara Merdeka",
+  "source_url": "https://wawasan.suaramerdeka.com",
+  "published_at": "2026-11-01T13:47:12.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-01T14:45:25.174Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.04",
+      "nama": "Kabupaten Banjarnegara",
+      "keyakinan": "tinggi"
+    },
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.01",
+      "nama": "Kabupaten Cilacap",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

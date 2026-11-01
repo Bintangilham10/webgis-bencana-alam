@@ -1,0 +1,26 @@
+{
+  "guid": "CBMilwFBVV95cUxOLTlZbHJCMkZGdEVydGM4MnpXc0hZbW1PRkcwSnRKWU1BVEk1c3B5T1hTS1RJVmtEY2IzcFg4a1R4X3hqTUp0N29JS2dZVFUyWWxtdU1BSTFHTEJjUlVIUE9fbzdQZE8xVV83V200WDNVejhaS3BzdlRBX0ExUnpraEV5TmV3bnVsVHBqN3lXVVh3VGJVWGtB",
+  "title": "Polres Trenggalek Tinjau Titik Rawan Longsor di Jalur Trenggalek–Ponorogo - ajttv.com",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOLTlZbHJCMkZGdEVydGM4MnpXc0hZbW1PRkcwSnRKWU1BVEk1c3B5T1hTS1RJVmtEY2IzcFg4a1R4X3hqTUp0N29JS2dZVFUyWWxtdU1BSTFHTEJjUlVIUE9fbzdQZE8xVV83V200WDNVejhaS3BzdlRBX0ExUnpraEV5TmV3bnVsVHBqN3lXVVh3VGJVWGtB?oc=5",
+  "source": "ajttv.com",
+  "source_url": "https://ajttv.com",
+  "published_at": "2026-11-01T13:28:09.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-01T14:45:25.174Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.02",
+      "nama": "Kabupaten Ponorogo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

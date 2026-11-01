@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiwgFBVV95cUxQTWR4eEd5UkJkMUR2cFhzUVNUZE9jMjg2Z0VlNFBYUGI4cm9NSkNqV3ZfdzZHYllnMDRDVW40NGY5T2xzWUJaT0UwVEIzdEhROTJFUEFnaEhzSFhybVFNNFZKRWVDWXZOdFJHWU5Eb1JYZjlDellYMGE3dUc0OGU5cVRseWFYN0RXdEg2VmZQZ25rSlJvQ3VmdG0ycnlLb0hGRXdnXzBfUGdzdzRGNm5FTzRCQlFxZWhJUEdyVnV0QXRlUQ",
+  "title": "Banjir dan Longsor Terjang Pandai Sikek Tanah Datar, Lima Rumah Warga Terdampak - TIMES Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTWR4eEd5UkJkMUR2cFhzUVNUZE9jMjg2Z0VlNFBYUGI4cm9NSkNqV3ZfdzZHYllnMDRDVW40NGY5T2xzWUJaT0UwVEIzdEhROTJFUEFnaEhzSFhybVFNNFZKRWVDWXZOdFJHWU5Eb1JYZjlDellYMGE3dUc0OGU5cVRseWFYN0RXdEg2VmZQZ25rSlJvQ3VmdG0ycnlLb0hGRXdnXzBfUGdzdzRGNm5FTzRCQlFxZWhJUEdyVnV0QXRlUQ?oc=5",
+  "source": "TIMES Indonesia",
+  "source_url": "https://timesindonesia.co.id",
+  "published_at": "2026-11-01T12:30:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-01T14:45:25.174Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.04",
+      "nama": "Kabupaten Tanah Datar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
