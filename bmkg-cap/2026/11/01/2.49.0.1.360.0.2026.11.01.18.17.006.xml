@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.01.18.17.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-02T00:55:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-02T01:00:00+07:00</effective>
+    <expires>2026-11-02T04:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bengkulu</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 02 November 2026, 01:00 WIB di sebagian wilayah Bengkulu, khususnya di PINO RAYA, PULAU ENGGANO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 02 November 2026, 04:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBK/2026/11/02/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bengkulu</areaDesc>
+      <polygon>-4.167,103.021 -4.176,103.036 -4.203,102.991 -4.221,102.982 -4.226,102.987 -4.229,102.986 -4.223,102.974 -4.222,102.967 -4.236,102.951 -4.262,102.948 -4.285,102.940 -4.314,102.944 -4.333,102.928 -4.359,102.929 -4.375,102.923 -4.392,102.930 -4.405,102.917 -4.415,102.917 -4.416,102.883 -4.424,102.876 -4.431,102.877 -4.382,102.815 -4.360,102.800 -4.344,102.844 -4.301,102.859 -4.282,102.862 -4.263,102.885 -4.237,102.881 -4.210,102.889 -4.194,102.900 -4.179,102.901 -4.175,102.909 -4.182,102.919 -4.185,102.935 -4.180,102.947 -4.168,102.957 -4.170,102.988 -4.158,103.000 -4.167,103.013 -4.167,103.021</polygon>
+      <polygon>-5.276,102.162 -5.304,102.209 -5.316,102.255 -5.345,102.305 -5.357,102.354 -5.370,102.376 -5.388,102.381 -5.408,102.376 -5.410,102.368 -5.417,102.367 -5.426,102.381 -5.440,102.379 -5.442,102.353 -5.411,102.318 -5.336,102.148 -5.315,102.126 -5.293,102.126 -5.283,102.145 -5.285,102.155 -5.276,102.162</polygon>
+    </area>
+  </info>
+</alert>

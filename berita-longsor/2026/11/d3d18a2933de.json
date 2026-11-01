@@ -1,0 +1,21 @@
+{
+  "guid": "CBMizgFBVV95cUxNOVppbmNReFZVV0tPenVIeHIwc1VWcGJKUkwyWVJRTXdtMWk3UzlBdkhlY1hRVnBYUUUwQ2xyLXpUYmpwMHJmN0o4YUxHdjJ2dUE1eUpiZGdGT2RaU3luOW52eWRoOHl4ekIyeUJBRU10WW56X281N1Ftd2RTdkdCRnZ6bXJHMU9IaGp1Z2V0bG1ZVVIzNnBKQ1hEZk85UlE1Q2hibEtlQm9LZVlpRFJqRVhXWGFnbDNmeWJzczRQODhMYzFJaGlUVDZqUk54d9IBzgFBVV95cUxNOVppbmNReFZVV0tPenVIeHIwc1VWcGJKUkwyWVJRTXdtMWk3UzlBdkhlY1hRVnBYUUUwQ2xyLXpUYmpwMHJmN0o4YUxHdjJ2dUE1eUpiZGdGT2RaU3luOW52eWRoOHl4ekIyeUJBRU10WW56X281N1Ftd2RTdkdCRnZ6bXJHMU9IaGp1Z2V0bG1ZVVIzNnBKQ1hEZk85UlE1Q2hibEtlQm9LZVlpRFJqRVhXWGFnbDNmeWJzczRQODhMYzFJaGlUVDZqUk54dw",
+  "title": "Awal Musim Hujan, Sudah Ada Sembilan Titik Longsor Terjang Kabupaten Kebumen - Radar Jogja",
+  "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOVppbmNReFZVV0tPenVIeHIwc1VWcGJKUkwyWVJRTXdtMWk3UzlBdkhlY1hRVnBYUUUwQ2xyLXpUYmpwMHJmN0o4YUxHdjJ2dUE1eUpiZGdGT2RaU3luOW52eWRoOHl4ekIyeUJBRU10WW56X281N1Ftd2RTdkdCRnZ6bXJHMU9IaGp1Z2V0bG1ZVVIzNnBKQ1hEZk85UlE1Q2hibEtlQm9LZVlpRFJqRVhXWGFnbDNmeWJzczRQODhMYzFJaGlUVDZqUk54d9IBzgFBVV95cUxNOVppbmNReFZVV0tPenVIeHIwc1VWcGJKUkwyWVJRTXdtMWk3UzlBdkhlY1hRVnBYUUUwQ2xyLXpUYmpwMHJmN0o4YUxHdjJ2dUE1eUpiZGdGT2RaU3luOW52eWRoOHl4ekIyeUJBRU10WW56X281N1Ftd2RTdkdCRnZ6bXJHMU9IaGp1Z2V0bG1ZVVIzNnBKQ1hEZk85UlE1Q2hibEtlQm9LZVlpRFJqRVhXWGFnbDNmeWJzczRQODhMYzFJaGlUVDZqUk54dw?oc=5",
+  "source": "Radar Jogja",
+  "source_url": "https://radarjogja.jawapos.com",
+  "published_at": "2026-11-01T14:15:14.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-01T18:00:42.039Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.05",
+      "nama": "Kabupaten Kebumen",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}
