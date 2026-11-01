@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-01T22:30:33.709Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        97.1165658467,
+        4.3571608022
+      ]
+    },
+    "properties": {
+      "pkey": "399978",
+      "created_at": "2026-11-01T22:20:07.126Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "cd428579-4282-4b6f-8c33-5a60988ed250",
+      "image_url": "https://images.petabencana.id/cd428579-4282-4b6f-8c33-5a60988ed250.jpg",
+      "disaster_type": "earthquake",
+      "is_training": false,
+      "report_data": {
+        "report_type": "road",
+        "accessabilityFailure": 0,
+        "condition": 2
+      },
+      "tags": {
+        "city": "ACEH TENGAH",
+        "district_id": null,
+        "region_code": "1104",
+        "local_area_id": null,
+        "instance_region_code": "ID-AC"
+      },
+      "title": null,
+      "text": "Kondisi terkini jalur lintas Blangkejeren – Takengon, tepatnya di kawasan wilayah Isaq, Kecamatan Linge, Kabupaten Aceh Tengah, Aceh, ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
