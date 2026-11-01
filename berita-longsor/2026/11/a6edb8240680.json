@@ -1,0 +1,26 @@
+{
+  "guid": "CBMic0FVX3lxTE5OQTVTWGtSNEI5UXl2UV9hbmxCVWNRdmRUMkRHbFBCSFczU2t1OFpRT2dIWUhNeHFnZ0pHLUc5UlVPMWwzdDlaczBneEZOMFdYQldEOURwZmFySkZrMkp0ZnlfQjdYbE56UTZINEZ4aXRCMjQ",
+  "title": "30 Rumah Rusak Terdampak Longsor di Tirtoyudo Malang, Sejumlah Jalan Terputus! - Tugu Jatim ID",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5OQTVTWGtSNEI5UXl2UV9hbmxCVWNRdmRUMkRHbFBCSFczU2t1OFpRT2dIWUhNeHFnZ0pHLUc5UlVPMWwzdDlaczBneEZOMFdYQldEOURwZmFySkZrMkp0ZnlfQjdYbE56UTZINEZ4aXRCMjQ?oc=5",
+  "source": "Tugu Jatim ID",
+  "source_url": "https://tugujatim.id",
+  "published_at": "2026-11-01T02:06:27.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-01T05:15:25.543Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

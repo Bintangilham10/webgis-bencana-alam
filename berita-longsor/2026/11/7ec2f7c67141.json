@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwAFBVV95cUxQTGlmamtuajJPc19rN2duRE1VWDdtUlNGVWxYcktsUWRGbnZXR1R3QjR5MmVWZTVlRUktcVRrTWdqajBrVDdmVmZscDFTekRSdnB2M3NvV0pFUWlSa1NnQmFscHFQWlh4RzZ6bE1veTZkcUdSWE52ODNJQ3pYQWJLeTN2WFFLVERYZzRKOU8tT0JWcVlvSEE2TkJrbWNzN1VKaC1nbEtlcVBDUlJSVGQwaGVDb1p0MjdfRHRQNUZHdzU",
+  "title": "Musim Hujan Datang, Banyumas dan Cilacap Dilanda Banjir Hingga Longsor - Tribunbanyumas.com",
+  "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTGlmamtuajJPc19rN2duRE1VWDdtUlNGVWxYcktsUWRGbnZXR1R3QjR5MmVWZTVlRUktcVRrTWdqajBrVDdmVmZscDFTekRSdnB2M3NvV0pFUWlSa1NnQmFscHFQWlh4RzZ6bE1veTZkcUdSWE52ODNJQ3pYQWJLeTN2WFFLVERYZzRKOU8tT0JWcVlvSEE2TkJrbWNzN1VKaC1nbEtlcVBDUlJSVGQwaGVDb1p0MjdfRHRQNUZHdzU?oc=5",
+  "source": "Tribunbanyumas.com",
+  "source_url": "https://banyumas.tribunnews.com",
+  "published_at": "2026-11-01T04:55:39.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-01T05:15:25.543Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.01",
+      "nama": "Kabupaten Cilacap",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,31 @@
+{
+  "guid": "CBMi2wFBVV95cUxPUEJSYTlWc05kSHEweUlRRVNETV91Yy1vRm9lWGh3MXYxZEdHVFRzQ01LVFpINi1fa1VmeGdHWExXMUtlODl6NGtwUjlva0UtdTVZek16NWpZcnlfdk9kWnU2MEt3UDVadWk3YjNrSEp6bWY1NGhyYVIyMFlDUDRuMFYyakZrWnE5RnlqOXFXb2cyOXByOExQUFNac25qa2JrNWhfNFhwVjB4T2ZuVVhfMEEyX2ItUGxOWVlwdlN1STFTUHNiZldtY1ZtUGxyaFlha1Q4Vl83cjc0R2fSAeABQVVfeXFMTnM4eEdRcW9qS2MySjV4ei1ZejlZUmdPUHU4SkFqWE42Y08wZHNzNElwTXFqWUswOXhNY3hMTkxITTRwaGwzUHlYZUZjM2pPNHdhaW9peG55TEpGRHJkTXUzQkN6UGlTcnl5aGRZcWRlZ1J4am5KTXZ4dlRTR3VqSG1rZ25nSjJTa0hJdWpIY1YzcHRrWndRT3dKeXhnYVhSX0JfaUtNZUZnYnRSV1FEd1FPcVViSHItZWx5R2Y2Y0hOX3NBUmVNeFJPdHFaOFlsanVTTFBvOFJoY3V5QTFKS3Y",
+  "title": "Trenggalek Diterjang Longsor, Belasan Titik Tersebar di 5 Desa dan 103 Warga Terdampak - Suara Merdeka Pekalongan - Suara Merdeka Pekalongan",
+  "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPUEJSYTlWc05kSHEweUlRRVNETV91Yy1vRm9lWGh3MXYxZEdHVFRzQ01LVFpINi1fa1VmeGdHWExXMUtlODl6NGtwUjlva0UtdTVZek16NWpZcnlfdk9kWnU2MEt3UDVadWk3YjNrSEp6bWY1NGhyYVIyMFlDUDRuMFYyakZrWnE5RnlqOXFXb2cyOXByOExQUFNac25qa2JrNWhfNFhwVjB4T2ZuVVhfMEEyX2ItUGxOWVlwdlN1STFTUHNiZldtY1ZtUGxyaFlha1Q4Vl83cjc0R2fSAeABQVVfeXFMTnM4eEdRcW9qS2MySjV4ei1ZejlZUmdPUHU4SkFqWE42Y08wZHNzNElwTXFqWUswOXhNY3hMTkxITTRwaGwzUHlYZUZjM2pPNHdhaW9peG55TEpGRHJkTXUzQkN6UGlTcnl5aGRZcWRlZ1J4am5KTXZ4dlRTR3VqSG1rZ25nSjJTa0hJdWpIY1YzcHRrWndRT3dKeXhnYVhSX0JfaUtNZUZnYnRSV1FEd1FPcVViSHItZWx5R2Y2Y0hOX3NBUmVNeFJPdHFaOFlsanVTTFBvOFJoY3V5QTFKS3Y?oc=5",
+  "source": "Suara Merdeka Pekalongan",
+  "source_url": "https://pekalongan.suaramerdeka.com",
+  "published_at": "2026-11-01T04:37:18.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-01T05:15:25.543Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.26",
+      "nama": "Kabupaten Pekalongan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.75",
+      "nama": "Kota Pekalongan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

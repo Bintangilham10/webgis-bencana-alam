@@ -1,0 +1,31 @@
+{
+  "guid": "CBMi0AFBVV95cUxQWDhrZzBOTTRJMzNWc3RuTm01M0g1VlJZYlJWejZOWFRJeUg4ZWh1dGdPUENpZXk4MUpzNnBTcEVUeGczZUlIVFc1RG1GZC05Y3E0aEdYUmFzN0lqSTVtX1BlbDlRcTlNOUNTcGZfMUxGWkFsNEJmZWs5NjFscVZBNk9fT0xtRGpWOXFZaTBIaEZrSmM5Y2d6ZXYzcW1Bd0pQQUwtRFlsV2tfR3J4ei12a3BNLUF0RW5ZSzJpNmZ1UkhWZWFMWktwNnZyb2NZQlpw0gHWAUFVX3lxTE5VcV92QTZ0bUN0SWwzMk1VcGtmVE9HTWtwcFVTdDNiTzRkUmxMbVdKZkNjazlQTnR0WTBaYmdWRFpXWnRYUGZjckxKTlpsR1JJaTlONGpMU3pXYTBQdE1jaGhpVVRmeWw5VHg5LV9qNk5JcUFsQ3RWTTdlQ3h0ODRKWXhubzhOb2h4UzJXRFZQVFk2QWh3Y3paWnVkXzBMVjYyY2xTM2QwMk9KV0pwUks1Vy0wRVo5cU5IOW1wRnBsVmpBaC1aNlJCM2pkX0hLc2Z3R3VEdVE",
+  "title": "Longsor Terjang Permukiman Desa Mlaya Banjarnegara, Rumah Rusak dan Motor Warga Terperosok - Hallo Sukabumi - Hallo Sukabumi",
+  "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWDhrZzBOTTRJMzNWc3RuTm01M0g1VlJZYlJWejZOWFRJeUg4ZWh1dGdPUENpZXk4MUpzNnBTcEVUeGczZUlIVFc1RG1GZC05Y3E0aEdYUmFzN0lqSTVtX1BlbDlRcTlNOUNTcGZfMUxGWkFsNEJmZWs5NjFscVZBNk9fT0xtRGpWOXFZaTBIaEZrSmM5Y2d6ZXYzcW1Bd0pQQUwtRFlsV2tfR3J4ei12a3BNLUF0RW5ZSzJpNmZ1UkhWZWFMWktwNnZyb2NZQlpw0gHWAUFVX3lxTE5VcV92QTZ0bUN0SWwzMk1VcGtmVE9HTWtwcFVTdDNiTzRkUmxMbVdKZkNjazlQTnR0WTBaYmdWRFpXWnRYUGZjckxKTlpsR1JJaTlONGpMU3pXYTBQdE1jaGhpVVRmeWw5VHg5LV9qNk5JcUFsQ3RWTTdlQ3h0ODRKWXhubzhOb2h4UzJXRFZQVFk2QWh3Y3paWnVkXzBMVjYyY2xTM2QwMk9KV0pwUks1Vy0wRVo5cU5IOW1wRnBsVmpBaC1aNlJCM2pkX0hLc2Z3R3VEdVE?oc=5",
+  "source": "Hallo Sukabumi",
+  "source_url": "https://sukabumi.hallo.id",
+  "published_at": "2026-10-31T07:19:46.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-01T05:15:25.543Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.04",
+      "nama": "Kabupaten Banjarnegara",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

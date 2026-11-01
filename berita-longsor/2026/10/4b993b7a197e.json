@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiuAFBVV95cUxQamIwT2RJMHdUY2kxZGIyY0xBUEtZTVVlVEJ1VmhTdC1ibXBVdWJqOUFCWlpkb3FzVHJGdWc3QkwtS0ZEd0VTZ2VDamg4U241RU5rZ3pfdjYtZDdVekZZTWJfcWM0YldfQXF2TUd4M0ZYS3NPYjBPMnc1MzRCZnRLZFVhQUlCd1N6bktxU1NfcmVTUno4QjZaUmZUVjlrai1jSDFVeFMyRW8tbTRBU2JxTGNSNmh5SXBF",
+  "title": "BPBD: Hujan memicu banjir dan tanah longsor di sejumlah wilayah di Cilacap - ANTARA News Jateng",
+  "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQamIwT2RJMHdUY2kxZGIyY0xBUEtZTVVlVEJ1VmhTdC1ibXBVdWJqOUFCWlpkb3FzVHJGdWc3QkwtS0ZEd0VTZ2VDamg4U241RU5rZ3pfdjYtZDdVekZZTWJfcWM0YldfQXF2TUd4M0ZYS3NPYjBPMnc1MzRCZnRLZFVhQUlCd1N6bktxU1NfcmVTUno4QjZaUmZUVjlrai1jSDFVeFMyRW8tbTRBU2JxTGNSNmh5SXBF?oc=5",
+  "source": "ANTARA News Jateng",
+  "source_url": "https://jateng.antaranews.com",
+  "published_at": "2026-10-31T05:39:20.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-01T05:15:25.543Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.01",
+      "nama": "Kabupaten Cilacap",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
