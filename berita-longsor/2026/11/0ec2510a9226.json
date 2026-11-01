@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiuAFBVV95cUxNTUpiOU12TE9TWWVzQTNHV1M3MnNGQ0ZSVThnUUthNS1DQjZBOXJGdVBURmZVeF9GNmVJX1FQX0JySGZzejZSRHVqazVXcGd3ZTNFQ1RtN2JSZGt3cHNGaUZ6dkx0NlFrYXpjQWd2ejZSOWpjTVlJOFJpOEhPNnRCZ2ZXSEg0OEIxYVlNeENfQUR2U0s3VFV6TXktZG5BaUZLdXdOT3ZRWlJZRi1WYURjN2IteDJKWDVB",
+  "title": "Kondisi Jalan Provinsi Kembayan-Balai Sebut Longsor dan Ancam Keselamatan Warga Sanggau - faktakalbar",
+  "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTUpiOU12TE9TWWVzQTNHV1M3MnNGQ0ZSVThnUUthNS1DQjZBOXJGdVBURmZVeF9GNmVJX1FQX0JySGZzejZSRHVqazVXcGd3ZTNFQ1RtN2JSZGt3cHNGaUZ6dkx0NlFrYXpjQWd2ejZSOWpjTVlJOFJpOEhPNnRCZ2ZXSEg0OEIxYVlNeENfQUR2U0s3VFV6TXktZG5BaUZLdXdOT3ZRWlJZRi1WYURjN2IteDJKWDVB?oc=5",
+  "source": "faktakalbar",
+  "source_url": "https://faktakalbar.id",
+  "published_at": "2026-11-01T09:42:59.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-01T11:30:32.677Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "61.03",
+      "nama": "Kabupaten Sanggau",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

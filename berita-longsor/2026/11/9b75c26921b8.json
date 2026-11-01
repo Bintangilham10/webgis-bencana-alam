@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwgFBVV95cUxOUmtkcTNrdmEzUE8xcC1SRkgwdTBTZXpCRGJkR0VGYjZaOGx6UU9WWHN6NkxRVnoyWnlOOC1KZUd4cVFIU0VDb0xaYVd4QzlEWnhyN0xfeElkZmdVRFQ1ZnpkX0ZzNkFlbjZ5cGZFTTZIZVJZRHpZc1Y1WnVVVF9jQkZCei1lNmgzMnJBbTI1YVFrZUU4MUZ5VnVMNW5rR1R5RVpQZDVTRHg3YmlreEpZY1o3em1LbUNpTDJOVUwyQjU0dw",
+  "title": "Antisipasi Musim Hujan, Kapolres Trenggalek Tinjau Titik Rawan Longsor Jalan Trenggalek–Ponorogo - Serayu Nusantara",
+  "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUmtkcTNrdmEzUE8xcC1SRkgwdTBTZXpCRGJkR0VGYjZaOGx6UU9WWHN6NkxRVnoyWnlOOC1KZUd4cVFIU0VDb0xaYVd4QzlEWnhyN0xfeElkZmdVRFQ1ZnpkX0ZzNkFlbjZ5cGZFTTZIZVJZRHpZc1Y1WnVVVF9jQkZCei1lNmgzMnJBbTI1YVFrZUU4MUZ5VnVMNW5rR1R5RVpQZDVTRHg3YmlreEpZY1o3em1LbUNpTDJOVUwyQjU0dw?oc=5",
+  "source": "Serayu Nusantara",
+  "source_url": "https://serayunusantara.com",
+  "published_at": "2026-11-01T09:56:36.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-01T11:30:32.677Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.02",
+      "nama": "Kabupaten Ponorogo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
