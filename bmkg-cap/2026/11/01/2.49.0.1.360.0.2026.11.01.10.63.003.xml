@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.01.10.63.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-01T18:20:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-01T18:30:00+08:00</effective>
+    <expires>2026-11-01T20:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 01 November 2026, 18:30 WITA di sebagian wilayah Kalimantan Selatan, khususnya di BATI BATI, CEMPAKA, LANDASAN ULIN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 01 November 2026, 20:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKS/2026/11/01/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Selatan</areaDesc>
+      <polygon>-3.525,114.785 -3.526,114.810 -3.539,114.812 -3.550,114.828 -3.551,114.844 -3.569,114.859 -3.555,114.869 -3.546,114.888 -3.543,114.909 -3.568,114.911 -3.574,114.915 -3.585,114.920 -3.593,114.903 -3.625,114.881 -3.610,114.863 -3.615,114.828 -3.608,114.793 -3.598,114.776 -3.632,114.752 -3.618,114.737 -3.615,114.711 -3.619,114.691 -3.577,114.709 -3.561,114.708 -3.544,114.706 -3.512,114.712 -3.510,114.749 -3.509,114.757 -3.522,114.768 -3.525,114.785</polygon>
+      <polygon>-3.414,114.801 -3.425,114.803 -3.446,114.828 -3.454,114.836 -3.474,114.833 -3.495,114.795 -3.515,114.785 -3.525,114.785 -3.522,114.768 -3.509,114.757 -3.510,114.749 -3.461,114.761 -3.452,114.758 -3.431,114.765 -3.390,114.771 -3.408,114.797 -3.414,114.801</polygon>
+      <polygon>-3.464,114.883 -3.471,114.927 -3.464,114.927 -3.482,114.938 -3.514,114.945 -3.541,114.932 -3.558,114.929 -3.574,114.915 -3.568,114.911 -3.543,114.909 -3.546,114.888 -3.555,114.869 -3.569,114.859 -3.551,114.844 -3.550,114.828 -3.539,114.812 -3.526,114.810 -3.525,114.785 -3.515,114.785 -3.495,114.795 -3.474,114.833 -3.476,114.839 -3.466,114.860 -3.464,114.883</polygon>
+    </area>
+  </info>
+</alert>
