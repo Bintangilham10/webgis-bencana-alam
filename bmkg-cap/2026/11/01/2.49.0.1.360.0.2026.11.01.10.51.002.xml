@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.01.10.51.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-01T16:50:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-01T17:00:00+08:00</effective>
+    <expires>2026-11-01T19:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bali</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 01 November 2026, 17:00 WITA di sebagian wilayah Bali, khususnya di SIDEMEN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 01 November 2026, 19:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBL/2026/11/01/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bali</areaDesc>
+      <polygon>-8.463,115.472 -8.499,115.467 -8.504,115.463 -8.524,115.415 -8.530,115.410 -8.517,115.407 -8.508,115.415 -8.486,115.410 -8.474,115.414 -8.445,115.437 -8.448,115.465 -8.456,115.472 -8.463,115.472</polygon>
+    </area>
+  </info>
+</alert>
