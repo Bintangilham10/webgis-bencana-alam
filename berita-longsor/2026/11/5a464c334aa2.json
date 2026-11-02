@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi0gFBVV95cUxOLVVQZ283MVczbHdPU2N4SDdveEJMRTljRGNzOGJCQW9CYmo3THcwaWhpQ0FpVGJkSmV3cHJFLVJZLTFSNVpMblJPN3NZcDI2WkNCZjIyb0FSVDROd1lianF6cXRzT0RadEpYRGJZdmZ2QjdZVE9GZEV0NXBDMFhCNjB5ZDNpdE1saW1aX2puaG5jSE5FMk1GZjBHTVg0UENuWW9HR3dQRzJaV1BKUnU3d205MVhqbGJvdHljN2stQm5LaEs2NmN2MHlzdi1UMlRrZ1HSAdcBQVVfeXFMUHo2eUlFZ1BLWWRNVHJHT3N6ZzUyLXBUVjM5UlJ0TkNjS0VIRUFtT0hwck1kc3RpblpIMXl1cFIzQlVzcVM4S1Y4M1FGWjZCZXVRTWZCMXdjdG94ck5GNWY2eHZNQmd2SElNSkxoYV85bW0yOEluX2VKcGhPZ2ZaUkV2MkpMOUZGQWJCMEV3VnVXcTBFQlBISDQ2QzVyeVRKOFk2YWNveFlVdHJkMEFpVlJ5RHBBcVhuU0pTR0RBcVd6OFpBMFg5bDZYMkhjRDJGY1VnS3ZlS2c",
+  "title": "Longsor Kabupaten Malang Capai 75 Kejadian dalam 10 Bulan, Pujon Paling Rawan - Radar Malang",
+  "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOLVVQZ283MVczbHdPU2N4SDdveEJMRTljRGNzOGJCQW9CYmo3THcwaWhpQ0FpVGJkSmV3cHJFLVJZLTFSNVpMblJPN3NZcDI2WkNCZjIyb0FSVDROd1lianF6cXRzT0RadEpYRGJZdmZ2QjdZVE9GZEV0NXBDMFhCNjB5ZDNpdE1saW1aX2puaG5jSE5FMk1GZjBHTVg0UENuWW9HR3dQRzJaV1BKUnU3d205MVhqbGJvdHljN2stQm5LaEs2NmN2MHlzdi1UMlRrZ1HSAdcBQVVfeXFMUHo2eUlFZ1BLWWRNVHJHT3N6ZzUyLXBUVjM5UlJ0TkNjS0VIRUFtT0hwck1kc3RpblpIMXl1cFIzQlVzcVM4S1Y4M1FGWjZCZXVRTWZCMXdjdG94ck5GNWY2eHZNQmd2SElNSkxoYV85bW0yOEluX2VKcGhPZ2ZaUkV2MkpMOUZGQWJCMEV3VnVXcTBFQlBISDQ2QzVyeVRKOFk2YWNveFlVdHJkMEFpVlJ5RHBBcVhuU0pTR0RBcVd6OFpBMFg5bDZYMkhjRDJGY1VnS3ZlS2c?oc=5",
+  "source": "Radar Malang",
+  "source_url": "https://radarmalang.jawapos.com",
+  "published_at": "2026-11-02T07:31:57.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T10:00:41.570Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

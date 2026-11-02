@@ -1,0 +1,21 @@
+{
+  "guid": "CBMikgFBVV95cUxNZjFOU3dLZ3hFSThwV0hwQlM0YV8yNl9TNnZPLXdLU3BDZ2xkMU9mWEJWcXNycjNBX0dFNUZtdEdMQ0hLTW9CSGRSQzZfSUFtR2tKUjlBUklwWXlILWt2NnhQRHRzSGRuSXBGcW9hdFNPVkFma2NlRlFxYS0yUmdBeEl4RlN1aldseEVRSGxINmlqdw",
+  "title": "Hujan Lebat Picu Longsor di Lumajang, Dua Warga Meninggal Dunia - Badan Nasional Penanggulangan Bencana",
+  "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZjFOU3dLZ3hFSThwV0hwQlM0YV8yNl9TNnZPLXdLU3BDZ2xkMU9mWEJWcXNycjNBX0dFNUZtdEdMQ0hLTW9CSGRSQzZfSUFtR2tKUjlBUklwWXlILWt2NnhQRHRzSGRuSXBGcW9hdFNPVkFma2NlRlFxYS0yUmdBeEl4RlN1aldseEVRSGxINmlqdw?oc=5",
+  "source": "Badan Nasional Penanggulangan Bencana",
+  "source_url": "https://bnpb.go.id",
+  "published_at": "2026-11-02T08:35:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T10:00:41.570Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

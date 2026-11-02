@@ -1,0 +1,31 @@
+{
+  "guid": "CBMilwFBVV95cUxNTWVGMy1tSE9mblBuaDVQNkdrQ09FaXk2X3NyUXYzQXZXQlhMSlhHWlF1RHBlRWxjYlhpcjc5Vm05SzBsMVlmNFlGWXk4dVVTRHJPYnZQbUo2SFVsWDNsTjMwQ1RDSEhqR0hWaFh5OTYyRFo4MVVvTkZCUWV6eGhFUXhQUkhjWGQ2WU1oUEFsc3FVcHdHSW0w",
+  "title": "Jalur Perbatasan Malang–Lumajang Sempat Lumpuh Tertutup Longsor, Kini Sudah Bisa Dilalui - malang-post.com",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTWVGMy1tSE9mblBuaDVQNkdrQ09FaXk2X3NyUXYzQXZXQlhMSlhHWlF1RHBlRWxjYlhpcjc5Vm05SzBsMVlmNFlGWXk4dVVTRHJPYnZQbUo2SFVsWDNsTjMwQ1RDSEhqR0hWaFh5OTYyRFo4MVVvTkZCUWV6eGhFUXhQUkhjWGQ2WU1oUEFsc3FVcHdHSW0w?oc=5",
+  "source": "malang-post.com",
+  "source_url": "https://malang-post.com",
+  "published_at": "2026-11-02T09:11:21.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T10:00:41.570Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

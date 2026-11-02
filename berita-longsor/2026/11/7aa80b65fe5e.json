@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqwFBVV95cUxQSkpNTFdzMzRVMDRkcXZuNVd0d2tQYkliYUNPMnR6MGVWSExuMlYwTlVrcTVoVVplbzlBMDNaYmYzSVdDS1J5NHNEUkhhcFVYV2RkRFlLLW1pQnJTSjdCZFR6cllXZXBETmpsWlVWaXRhTXVKNWJ1UWVwdE9oMkpiSllvQV9YcE95QUJxN2FuTFNkNmJwZjFiR3BmX3pwMWJmMi00RHBnN3VrTXc",
+  "title": "Longsor Terjang Dua Kecamatan di Blitar, Satu Rumah Rusak dan Bangunan Lain Terancam - beritajatim.com",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSkpNTFdzMzRVMDRkcXZuNVd0d2tQYkliYUNPMnR6MGVWSExuMlYwTlVrcTVoVVplbzlBMDNaYmYzSVdDS1J5NHNEUkhhcFVYV2RkRFlLLW1pQnJTSjdCZFR6cllXZXBETmpsWlVWaXRhTXVKNWJ1UWVwdE9oMkpiSllvQV9YcE95QUJxN2FuTFNkNmJwZjFiR3BmX3pwMWJmMi00RHBnN3VrTXc?oc=5",
+  "source": "beritajatim.com",
+  "source_url": "https://beritajatim.com",
+  "published_at": "2026-11-02T07:17:31.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T10:00:41.570Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.05",
+      "nama": "Kabupaten Blitar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.72",
+      "nama": "Kota Blitar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

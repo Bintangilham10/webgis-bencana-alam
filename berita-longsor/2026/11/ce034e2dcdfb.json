@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivgFBVV95cUxPaE82Z0ZuV1NnYUNlbU1aWG5XQlVxR1hjY05NSzlNYXJQSXZsbGRqY3FzcWhCcUZGM1JxOHJCSWYwSzR3dkowV3ZXV21USVVlTklxdFU1Q0JRaVJ2b0tmQTk5NERCeXd1MnRySGhSQmxDZEN6T2VZUkNRaEdwTzBreWRRYVdjMUtheF9SOVUySEVVdzJUVFpMUUVmVDkyRjJjRjRMb1h2ano5NC1fLWttbzh6UE1oWGZKLVVWNzV3",
+  "title": "BPBD Petakan Wilayah Rawan Banjir dan Longsor di Bandung, Kopo hingga Gedebage Jadi Perhatian - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPaE82Z0ZuV1NnYUNlbU1aWG5XQlVxR1hjY05NSzlNYXJQSXZsbGRqY3FzcWhCcUZGM1JxOHJCSWYwSzR3dkowV3ZXV21USVVlTklxdFU1Q0JRaVJ2b0tmQTk5NERCeXd1MnRySGhSQmxDZEN6T2VZUkNRaEdwTzBreWRRYVdjMUtheF9SOVUySEVVdzJUVFpMUUVmVDkyRjJjRjRMb1h2ano5NC1fLWttbzh6UE1oWGZKLVVWNzV3?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://bandung.kompas.com",
+  "published_at": "2026-11-02T09:43:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T10:00:41.570Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

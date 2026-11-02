@@ -1,0 +1,21 @@
+{
+  "guid": "CBMizgFBVV95cUxPMTNDSU9WMTZWN01oZ1lJQ0NFQ1FNU1FHSzd5M3FJRUhtOW5HRDhLOFdjS01YMURVZ2c0Zy0zUG5jNjBiV3Z3LXFzazVrSi05SEFOVUxOLWltNEQtQURaZlFTYVFxZHoyd1Jac3dCaGNGREV2SEx4bGl3azBES0NHZFRoeTlvRkx4a25KVTFIdVhlT2w3MTBGNjZpSzhVUTZFNTAyOG8tajljYXQ2cnRlNVFhbUh5ZTA4T3hJUzZ5bG5oRnNlT2hnLXdEby1PUQ",
+  "title": "Tanah Longsor Terjang Empat Kecamatan di Kabupaten Malang sejak Senin Pagi - Radar Malang",
+  "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPMTNDSU9WMTZWN01oZ1lJQ0NFQ1FNU1FHSzd5M3FJRUhtOW5HRDhLOFdjS01YMURVZ2c0Zy0zUG5jNjBiV3Z3LXFzazVrSi05SEFOVUxOLWltNEQtQURaZlFTYVFxZHoyd1Jac3dCaGNGREV2SEx4bGl3azBES0NHZFRoeTlvRkx4a25KVTFIdVhlT2w3MTBGNjZpSzhVUTZFNTAyOG8tajljYXQ2cnRlNVFhbUh5ZTA4T3hJUzZ5bG5oRnNlT2hnLXdEby1PUQ?oc=5",
+  "source": "Radar Malang",
+  "source_url": "https://radarmalang.jawapos.com",
+  "published_at": "2026-11-02T08:44:11.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T10:00:41.570Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

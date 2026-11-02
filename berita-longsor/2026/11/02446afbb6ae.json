@@ -1,0 +1,41 @@
+{
+  "guid": "CBMi0wFBVV95cUxOLTBJVTVKTEtkcUM3dl9HLXFERmJhS1BIendpdlROWXZHT2EwSF8yd0NaSzNRenY5UlZ1NW5qNF93UmdETm1FQjhIakM4OXZCY3h5WFFHRHBrRjN4X1poaUNYaWM1VUgwLUU4ai1WdWQ1a0FLbktjVHNLbTBxazlSQzNCaURHX0QwYjczSjFnZjBpbm9OMk9ZRFZpa1JJbE1SVjdaWno1WDlqdzUzUF9GX1NINk5kTlpwcldDZFhCTlJ4SU4yejZWeEhmUUlyV0t3VkRR0gHYAUFVX3lxTE1QOXNlUDhyQlpGTU13enJ3WDJtQUQ4U1pRWGpYWkFUVWd5ZkpRc0NFNUVFWUEwQzRMN3BydXlTY0JMSmFvZC1XMEl4UFYzZmJ0R0I0T2xYdTMxeEZmWFVDSmJpeVl1bmhKRW9VbWgxLU1OTWQ3OU1XNkszMFBlU05ITmhXaEhhbi1oVEF3b0lpQ1NTdHYwU09xSGNGblBRZDk2YTNpWkR0Wnhzd0pmSlF0XzRtbEtXQmVRTllDVE5GNGY4V0VtOEt0VFFUd0dCU2tMYThHS2kycg",
+  "title": "Jalur Kereta di Jember Tertimbun Longsor, Kereta dari Banyuwangi Tujuan Malang dan Surabaya Terhambat - Koran Jakarta ®",
+  "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOLTBJVTVKTEtkcUM3dl9HLXFERmJhS1BIendpdlROWXZHT2EwSF8yd0NaSzNRenY5UlZ1NW5qNF93UmdETm1FQjhIakM4OXZCY3h5WFFHRHBrRjN4X1poaUNYaWM1VUgwLUU4ai1WdWQ1a0FLbktjVHNLbTBxazlSQzNCaURHX0QwYjczSjFnZjBpbm9OMk9ZRFZpa1JJbE1SVjdaWno1WDlqdzUzUF9GX1NINk5kTlpwcldDZFhCTlJ4SU4yejZWeEhmUUlyV0t3VkRR0gHYAUFVX3lxTE1QOXNlUDhyQlpGTU13enJ3WDJtQUQ4U1pRWGpYWkFUVWd5ZkpRc0NFNUVFWUEwQzRMN3BydXlTY0JMSmFvZC1XMEl4UFYzZmJ0R0I0T2xYdTMxeEZmWFVDSmJpeVl1bmhKRW9VbWgxLU1OTWQ3OU1XNkszMFBlU05ITmhXaEhhbi1oVEF3b0lpQ1NTdHYwU09xSGNGblBRZDk2YTNpWkR0Wnhzd0pmSlF0XzRtbEtXQmVRTllDVE5GNGY4V0VtOEt0VFFUd0dCU2tMYThHS2kycg?oc=5",
+  "source": "Koran Jakarta ®",
+  "source_url": "https://koran-jakarta.com",
+  "published_at": "2026-11-02T07:55:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T10:00:41.570Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.10",
+      "nama": "Kabupaten Banyuwangi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.78",
+      "nama": "Kota Surabaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.09",
+      "nama": "Kabupaten Jember",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

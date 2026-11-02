@@ -1,0 +1,21 @@
+{
+  "guid": "CBMijwFBVV95cUxOWlFrb2xPMnoyOWFkU1lPRWdJVVNKQ0JpSzM5YndWamtmU0VJUF9VeTZnMC1LMGQwYXp5OVNiWlRYYkxrR1JfcTNDRzZxZldNVWg3SDlYVU9saXdpc0lZbzVZdHpUSjFLUEhqVTRPYnMtUnFrbGtweUhJcS1yRnBIWE03c29DZVlwWG12MFdHVdIBlAFBVV95cUxOeFVpSjJEVGNDUzg1amVZcjFmS0htRFQwRUR4ZGlNZVZvVmQwamVsSGRUX3hMMnVlejk1T3p5Q1JUd2tqZHpXUzBhUWp2Smp5MFAtVzgzU1dsVzBwM29ZZ2hIeVQ4eHI1SmxmeldIVUVqV09sQmplUTNOV2dMSDRENmJBNmctb3pQZExsR1I4bkRlUGxT",
+  "title": "Hujan Lebat, Lumajang Diterjang Banjir dan Longsor - VIVA Jatim",
+  "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOWlFrb2xPMnoyOWFkU1lPRWdJVVNKQ0JpSzM5YndWamtmU0VJUF9VeTZnMC1LMGQwYXp5OVNiWlRYYkxrR1JfcTNDRzZxZldNVWg3SDlYVU9saXdpc0lZbzVZdHpUSjFLUEhqVTRPYnMtUnFrbGtweUhJcS1yRnBIWE03c29DZVlwWG12MFdHVdIBlAFBVV95cUxOeFVpSjJEVGNDUzg1amVZcjFmS0htRFQwRUR4ZGlNZVZvVmQwamVsSGRUX3hMMnVlejk1T3p5Q1JUd2tqZHpXUzBhUWp2Smp5MFAtVzgzU1dsVzBwM29ZZ2hIeVQ4eHI1SmxmeldIVUVqV09sQmplUTNOV2dMSDRENmJBNmctb3pQZExsR1I4bkRlUGxT?oc=5",
+  "source": "VIVA Jatim",
+  "source_url": "https://jatim.viva.co.id",
+  "published_at": "2026-11-02T08:49:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T10:00:41.570Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

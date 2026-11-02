@@ -1,0 +1,26 @@
+{
+  "guid": "CBMie0FVX3lxTFBuWVlRWDVUcDdaRmIweHVKUVFJQWlaYUxVa0R1eUdZLUUwRHY2QkN3Zkc1eUNjZ1VjdWh4TUFubnpNM1JnWXp6Ym9zSnBaQU1oYV8wMFFtV254Q1ZScEZScllBd1dmWFJlNjhwTlh5ZjZranJ1U3BZcFFFaw",
+  "title": "Banjir dan Tanah Longsor Terjang Malang Selatan - beritajatim.com",
+  "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBuWVlRWDVUcDdaRmIweHVKUVFJQWlaYUxVa0R1eUdZLUUwRHY2QkN3Zkc1eUNjZ1VjdWh4TUFubnpNM1JnWXp6Ym9zSnBaQU1oYV8wMFFtV254Q1ZScEZScllBd1dmWFJlNjhwTlh5ZjZranJ1U3BZcFFFaw?oc=5",
+  "source": "beritajatim.com",
+  "source_url": "https://beritajatim.com",
+  "published_at": "2026-11-02T08:53:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T10:00:41.570Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

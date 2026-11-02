@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiXEFVX3lxTE95Rk56Q0puMXVnODNucHhkQk15S0xmNGI3VUl6aFE0R1E1YWRHbE82M0VyQ20zdTRhdlNDMzFOeGxZNHRndEJOY0s3Yk90T2JTdFZBT0Q1SnRjaXda",
+  "title": "Petugas Bersihkan Longsor di Jalur Malang Lumajang - bsinews.id",
+  "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE95Rk56Q0puMXVnODNucHhkQk15S0xmNGI3VUl6aFE0R1E1YWRHbE82M0VyQ20zdTRhdlNDMzFOeGxZNHRndEJOY0s3Yk90T2JTdFZBT0Q1SnRjaXda?oc=5",
+  "source": "bsinews.id",
+  "source_url": "https://bsinews.id",
+  "published_at": "2026-11-02T07:53:30.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T10:00:41.570Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiogFBVV95cUxPaE1vMmt3NVZQY2JUMUVNSjJXVFduQzYxN09aSXRaSGtEUzJ2UnNkem1EdXlVVV84U0Rscl9EUmRiZHVpMEVzLVBPVkdGRlR1MHVETkN3ZVRETG1fNlFhWExqLXA5RVBSb1hxRGRsVW1XSTduMU1xRXROOVhGNUdjTE9WLXVSRHFyMWhiSzNza3BuZFNuYktHQWhhR0VPN1pzYnfSAaIBQVVfeXFMT2hNbzJrdzVWUGNiVDFFTUoyV1RXbkM2MTdPWkl0WkhrRFMydlJzZHptRHV5VVVfOFNEbHJfRFJkYmR1aTBFcy1QT1ZHRkZUdTB1RE5Dd2VURExtXzZRYVhMai1wOUVQUm9YcURkbFVtV0k3bjFNcUV0TjlYRjVHY0xPVi11UkRxcjFoYkszc2twbmRTbmJLR0FoYUdFTzdac2J3",
+  "title": "Kondisi Terkini Longsor Tutup Jalan Malang-Lumajang - detikcom",
+  "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaE1vMmt3NVZQY2JUMUVNSjJXVFduQzYxN09aSXRaSGtEUzJ2UnNkem1EdXlVVV84U0Rscl9EUmRiZHVpMEVzLVBPVkdGRlR1MHVETkN3ZVRETG1fNlFhWExqLXA5RVBSb1hxRGRsVW1XSTduMU1xRXROOVhGNUdjTE9WLXVSRHFyMWhiSzNza3BuZFNuYktHQWhhR0VPN1pzYnfSAaIBQVVfeXFMT2hNbzJrdzVWUGNiVDFFTUoyV1RXbkM2MTdPWkl0WkhrRFMydlJzZHptRHV5VVVfOFNEbHJfRFJkYmR1aTBFcy1QT1ZHRkZUdTB1RE5Dd2VURExtXzZRYVhMai1wOUVQUm9YcURkbFVtV0k3bjFNcUV0TjlYRjVHY0xPVi11UkRxcjFoYkszc2twbmRTbmJLR0FoYUdFTzdac2J3?oc=5",
+  "source": "detikcom",
+  "source_url": "https://www.detik.com",
+  "published_at": "2026-11-02T07:50:37.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T10:00:41.570Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

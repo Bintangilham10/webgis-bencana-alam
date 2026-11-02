@@ -1,0 +1,31 @@
+{
+  "guid": "CBMirgFBVV95cUxPX092T1hFcG9ET21fYnNKcFgtTThiOHFQTWRtZmUyRW1GbTdmT0publpZTTBwR3hObVozbnlrNlJ4N0lUUy05blJTdlg3WFhlYmFHSDZILVZrWnhPd3JQY0VZek54blR6YmM0VWhnUUJoSXdRQmFtdk1FT284bDRWS1pGUkQxTUpMaEtLQ3lPeDc3ZlZhXzZLX1UwdVJjRVJqcUtwMEdPTlpTUno0bkE",
+  "title": "Hujan Deras Sebabkan Tanah Longsor di Malang, Jalur Malang-Lumajang Terputus - Mitrapost",
+  "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX092T1hFcG9ET21fYnNKcFgtTThiOHFQTWRtZmUyRW1GbTdmT0publpZTTBwR3hObVozbnlrNlJ4N0lUUy05blJTdlg3WFhlYmFHSDZILVZrWnhPd3JQY0VZek54blR6YmM0VWhnUUJoSXdRQmFtdk1FT284bDRWS1pGUkQxTUpMaEtLQ3lPeDc3ZlZhXzZLX1UwdVJjRVJqcUtwMEdPTlpTUno0bkE?oc=5",
+  "source": "Mitrapost",
+  "source_url": "https://mitrapost.com",
+  "published_at": "2026-11-02T09:03:57.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T10:00:41.570Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
