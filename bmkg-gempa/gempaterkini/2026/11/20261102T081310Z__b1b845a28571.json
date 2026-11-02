@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-11-02T08:30:34.171Z",
+  "data": {
+    "Tanggal": "02 Nov 2026",
+    "Jam": "15:13:10 WIB",
+    "DateTime": "2026-11-02T08:13:10+00:00",
+    "Coordinates": "1.31,124.83",
+    "Lintang": "1.31 LU",
+    "Bujur": "124.83 BT",
+    "Magnitude": "5.3",
+    "Kedalaman": "148 km",
+    "Wilayah": "1 km BaratDaya TOMOHON-SULUT",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}
