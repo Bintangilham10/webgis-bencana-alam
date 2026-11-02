@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwAFBVV95cUxPV3pKaGFtaXQyM2QyQk1zNjlZMllrNG5Ockk1VEJCLUMwUmFWMjdBZVVBNkN3X1VHWHVGdFJMTHlmNmE4MDdGcGFFLWdLTmx4dnV0eE81THcyYVhMTHlialF4WTdPNDNqcHRHVjlRSWp5enZyQzJybFJ4eldMOWdfSVJCVDRHUF9xVmZEMmN2eDI1M0szTW1vNzB5U1ctSEEzRFA1QUZHWml6N3lUSzdFaE1WaWs4aUNJYUxOVndyOEE",
+  "title": "Daop 7 Madiun Minta Maaf atas Keterlambatan Beberapa KA yang Terdampak Longsor - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPV3pKaGFtaXQyM2QyQk1zNjlZMllrNG5Ockk1VEJCLUMwUmFWMjdBZVVBNkN3X1VHWHVGdFJMTHlmNmE4MDdGcGFFLWdLTmx4dnV0eE81THcyYVhMTHlialF4WTdPNDNqcHRHVjlRSWp5enZyQzJybFJ4eldMOWdfSVJCVDRHUF9xVmZEMmN2eDI1M0szTW1vNzB5U1ctSEEzRFA1QUZHWml6N3lUSzdFaE1WaWs4aUNJYUxOVndyOEE?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-02T10:58:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T13:00:44.541Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.19",
+      "nama": "Kabupaten Madiun",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.77",
+      "nama": "Kota Madiun",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

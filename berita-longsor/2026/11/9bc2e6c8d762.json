@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwAFBVV95cUxQS0wzVS1xWTRvaEVGTXhMTU5QcDA0Ulp3X2ktdVgzc0kzaVZSenQ3TWQzRDhiazB3Si1vTUJPaUMwSWRCdk9QWG8zem9GYld0cmxEMUVBRXp0VXFxMWJOZUZpZkFvSkN1LUZSMjkxMFplUFd0cGtrT2hpZ29sUnA4N1VOYjMyd0FaZnlVMTVqMWR6WWZRdGY2UVYxaWlqVXc3NTR3NVlQLUk0TjhGRmdKd01HWW5jdnZXUldfV1NrcEY",
+  "title": "Satu Perjalanan KA Tujuan Malang Terdampak Longsor Ledokombo-Sempolan - Bisnis.com - Surabaya",
+  "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQS0wzVS1xWTRvaEVGTXhMTU5QcDA0Ulp3X2ktdVgzc0kzaVZSenQ3TWQzRDhiazB3Si1vTUJPaUMwSWRCdk9QWG8zem9GYld0cmxEMUVBRXp0VXFxMWJOZUZpZkFvSkN1LUZSMjkxMFplUFd0cGtrT2hpZ29sUnA4N1VOYjMyd0FaZnlVMTVqMWR6WWZRdGY2UVYxaWlqVXc3NTR3NVlQLUk0TjhGRmdKd01HWW5jdnZXUldfV1NrcEY?oc=5",
+  "source": "Bisnis.com - Surabaya",
+  "source_url": "https://surabaya.bisnis.com",
+  "published_at": "2026-11-02T10:05:32.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T13:00:44.541Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

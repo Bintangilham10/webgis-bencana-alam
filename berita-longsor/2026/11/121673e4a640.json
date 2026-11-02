@@ -1,0 +1,21 @@
+{
+  "guid": "CBMirgFBVV95cUxOdEVMUzhwX3IwREZFVzBhNS1yc2xYZVl6OUVVUkNtTXlYSGhleDk1XzdCU0c4amxpSVUyWWg3dnFheWhjdkh1T2hGNlA5WFBVZDZ5Rmcxd0Z0T25PU3RNeTdEbmlrR0tTOHEwSG01X25sdlJmNlk0bllkbU1taXU2MXlINkU5YXBvQ3dheVAyQ3RGX3Jzb3BXbWdUU0Rncjhpa0NJZVZtMmhBSFlvRmc",
+  "title": "BPBD Lombok Utara Imbau Pengguna Jalan Pusuk Waspada Risiko Tanah Longsor - Grafika News",
+  "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdEVMUzhwX3IwREZFVzBhNS1yc2xYZVl6OUVVUkNtTXlYSGhleDk1XzdCU0c4amxpSVUyWWg3dnFheWhjdkh1T2hGNlA5WFBVZDZ5Rmcxd0Z0T25PU3RNeTdEbmlrR0tTOHEwSG01X25sdlJmNlk0bllkbU1taXU2MXlINkU5YXBvQ3dheVAyQ3RGX3Jzb3BXbWdUU0Rncjhpa0NJZVZtMmhBSFlvRmc?oc=5",
+  "source": "Grafika News",
+  "source_url": "https://grafikanews.com",
+  "published_at": "2026-11-02T10:27:42.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T13:00:44.541Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "52.08",
+      "nama": "Kabupaten Lombok Utara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

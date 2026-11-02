@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiswFBVV95cUxQQzVaYmZkRy1WOFdubm9BenJOWnVkWDBRTWcyNkNmSHhHWkdWaTJJWTFWX0ctbjFpYlcxYUloVm1jNE9McGQ1STlvNkNKWFFLZXdzREJiamd6OTdYUzU5MDRRdXlEbDNOMHk1VUhSXzFrQ2VVMUltYXBwVzVWME5zSWczcDhpMmR2VE5MajhjMzlHdXRXbVdPTFBOd0llbWRyb3psWmljVEhmQ3pTaUNmQ0V0SQ",
+  "title": "Foto : Tanah Longsor Sebabkan Jalur Lumajang - Malang Lumpuh Halaman 1 - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQzVaYmZkRy1WOFdubm9BenJOWnVkWDBRTWcyNkNmSHhHWkdWaTJJWTFWX0ctbjFpYlcxYUloVm1jNE9McGQ1STlvNkNKWFFLZXdzREJiamd6OTdYUzU5MDRRdXlEbDNOMHk1VUhSXzFrQ2VVMUltYXBwVzVWME5zSWczcDhpMmR2VE5MajhjMzlHdXRXbVdPTFBOd0llbWRyb3psWmljVEhmQ3pTaUNmQ0V0SQ?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://surabaya.kompas.com",
+  "published_at": "2026-11-02T10:45:53.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T13:00:44.541Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

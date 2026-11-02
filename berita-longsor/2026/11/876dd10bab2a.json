@@ -1,0 +1,36 @@
+{
+  "guid": "CBMitAFBVV95cUxPdWZPb2tTSDRFNVZLZDJlNHMwRjJNUXJkZ3VDNnNuZDNtTlpickJBT29hQ3Z4VUtrMlZaMUgzSE9LRUljNVR2QjVyUEFYR2FpNm1sVTVVT3dCdnlMazg1YWdqekFwNnFpSzVYMU95STM5S3dhVU96bzIxOVpGYXlIVjI1NV9CMENjZWl4NU9wZ1M1RzNlZUpKRkMyNS10WTRleG9WY1FUYmpHZlhpTHpubFg4OGI",
+  "title": "Longsor di Jember Ganggu Tiga Perjalanan KA Tujuan Surabaya dan Malang - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdWZPb2tTSDRFNVZLZDJlNHMwRjJNUXJkZ3VDNnNuZDNtTlpickJBT29hQ3Z4VUtrMlZaMUgzSE9LRUljNVR2QjVyUEFYR2FpNm1sVTVVT3dCdnlMazg1YWdqekFwNnFpSzVYMU95STM5S3dhVU96bzIxOVpGYXlIVjI1NV9CMENjZWl4NU9wZ1M1RzNlZUpKRkMyNS10WTRleG9WY1FUYmpHZlhpTHpubFg4OGI?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-02T12:35:07.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T13:00:44.541Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.78",
+      "nama": "Kota Surabaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.09",
+      "nama": "Kabupaten Jember",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,36 @@
+{
+  "guid": "CBMiiAFBVV95cUxPMWM2cnRJekdfYkpZcDNsY0txU3Q4SHh0ck9kNllUckhzYlA1U3VlVU1TUTRHd2Y5MHg3VU9DQURCdzF6d2N6ZzA1Zy1BNVFIWjV1MjJmanE1REJ3dXdFMGQ0UUtQQjdSOWdtdkhHUnI4TFdPUEkyTDlpeWpZdFBhNHdyZTBwcl8w",
+  "title": "Kena Longsor di Jember, KA Tawangalun Ketapang–Malang Terlambat Hingga 258 Menit - malang-post.com",
+  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMWM2cnRJekdfYkpZcDNsY0txU3Q4SHh0ck9kNllUckhzYlA1U3VlVU1TUTRHd2Y5MHg3VU9DQURCdzF6d2N6ZzA1Zy1BNVFIWjV1MjJmanE1REJ3dXdFMGQ0UUtQQjdSOWdtdkhHUnI4TFdPUEkyTDlpeWpZdFBhNHdyZTBwcl8w?oc=5",
+  "source": "malang-post.com",
+  "source_url": "https://malang-post.com",
+  "published_at": "2026-11-02T10:24:16.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T13:00:44.541Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "61.04",
+      "nama": "Kabupaten Ketapang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.09",
+      "nama": "Kabupaten Jember",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

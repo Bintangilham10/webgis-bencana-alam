@@ -1,0 +1,21 @@
+{
+  "guid": "CBMixAFBVV95cUxPWWFuampmci05TDVSYmpJRXBMaWF6dllPQ2x5TVp4QVJmNnNpdjN3YmZFZ0FrOTktMGFXcDBzNGVRWl9kZmJsaU9lMDRMdS1uVXAyblVIeG9TaWNYdlhscVNQdy1ZQXJDUkd6SkFscVZWMnI4anhfY1lzcHUzU3Uya1hoa1ZuZi1OUmdkR2g2OU1xZ1lYNnFIcURjM2JsMm5pYlZaaERqa2lBeGhTbHk5N2JyRTV4TFcwZUYwQ2NFdmhvRHVz",
+  "title": "5 Kecamatan di Kabupaten Malang Terdampak Banjir dan Longsor Akibat Hujan Deras - Suara Surabaya",
+  "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWWFuampmci05TDVSYmpJRXBMaWF6dllPQ2x5TVp4QVJmNnNpdjN3YmZFZ0FrOTktMGFXcDBzNGVRWl9kZmJsaU9lMDRMdS1uVXAyblVIeG9TaWNYdlhscVNQdy1ZQXJDUkd6SkFscVZWMnI4anhfY1lzcHUzU3Uya1hoa1ZuZi1OUmdkR2g2OU1xZ1lYNnFIcURjM2JsMm5pYlZaaERqa2lBeGhTbHk5N2JyRTV4TFcwZUYwQ2NFdmhvRHVz?oc=5",
+  "source": "Suara Surabaya",
+  "source_url": "https://www.suarasurabaya.net",
+  "published_at": "2026-11-02T11:20:02.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T13:00:44.541Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

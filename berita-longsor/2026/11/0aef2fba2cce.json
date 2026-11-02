@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiywFBVV95cUxQaGlETXRwWXJXMTlWM2pscm5zaXQwYkVLWXE0SEdxbjM2cDhuc3RIUXZVVEVhUDcxME1LcEIwbTlNaUJfSFczSldhT25JQWU2eC0wMHNoek1fZnpobEc4UXRPRnhraGRmeTVsU2dKQVoxbUo0XzJWSVIyRjBqMmVYczRCREJkQkt0SWpYZ3FUM1hxYnlURTZIb3dSa2JFb0Y3Ul84LXViZTF2TTVQRlpvQkVmeE1VWnZhOTlYeDB1WnIyUU1kbGR6Zmdtbw",
+  "title": "Malang Selatan Dikepung Banjir dan Longsor: Jalur Utama Malang-Lumajang Lumpuh Total - Suara.com",
+  "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQaGlETXRwWXJXMTlWM2pscm5zaXQwYkVLWXE0SEdxbjM2cDhuc3RIUXZVVEVhUDcxME1LcEIwbTlNaUJfSFczSldhT25JQWU2eC0wMHNoek1fZnpobEc4UXRPRnhraGRmeTVsU2dKQVoxbUo0XzJWSVIyRjBqMmVYczRCREJkQkt0SWpYZ3FUM1hxYnlURTZIb3dSa2JFb0Y3Ul84LXViZTF2TTVQRlpvQkVmeE1VWnZhOTlYeDB1WnIyUU1kbGR6Zmdtbw?oc=5",
+  "source": "Suara.com",
+  "source_url": "https://malang.suara.com",
+  "published_at": "2026-11-02T09:50:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T13:00:44.541Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

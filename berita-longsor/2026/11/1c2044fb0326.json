@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirwFBVV95cUxOeGZCenlIa1EteTBESjlSVFZxNXBaalUzLW1xcFpFVFBnVUYzclpiNmw2U29GUVIxZXpoWTF2c3RJeHRoVzBINmdyOUhTR3RKa0xKeGxxT2VzTktaWUdKRklxLWRuNzdhNFhLZ0taX0tjN2hMcFdZWTRyQmV5WlIyWl96TWs0SmN0Yi1qcTRLUkotdFJXUm9IN0NaM1BsOXUyM2F2YVZhQmNNY2trVnRZ0gG0AUFVX3lxTE1Zcnl5eEhOUXJZbW5BRTVyLXhoRDhsSnNPOGJxd3dVS25lWi1Xd2FtWUREU0xDUl9UUGs3bHphelpHWEZHelVDazduc0ZuYV81ZVV2UTBUWnFtc0s5dlFTTnB3ZlVfUFNQM3V5blhNajR0RFlDSS0zSFIwczdMRk5lREQwbUhYaWJjR1Z0bTRlbWxDNUtKcXVTWFk5clBsOWxpR0ozNU9BcTI1Y084dGxOeE5mbA",
+  "title": "BPBD Malang tangani banjir dan tanah longsor di sejumlah kecamatan - Antara News jatim",
+  "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOeGZCenlIa1EteTBESjlSVFZxNXBaalUzLW1xcFpFVFBnVUYzclpiNmw2U29GUVIxZXpoWTF2c3RJeHRoVzBINmdyOUhTR3RKa0xKeGxxT2VzTktaWUdKRklxLWRuNzdhNFhLZ0taX0tjN2hMcFdZWTRyQmV5WlIyWl96TWs0SmN0Yi1qcTRLUkotdFJXUm9IN0NaM1BsOXUyM2F2YVZhQmNNY2trVnRZ0gG0AUFVX3lxTE1Zcnl5eEhOUXJZbW5BRTVyLXhoRDhsSnNPOGJxd3dVS25lWi1Xd2FtWUREU0xDUl9UUGs3bHphelpHWEZHelVDazduc0ZuYV81ZVV2UTBUWnFtc0s5dlFTTnB3ZlVfUFNQM3V5blhNajR0RFlDSS0zSFIwczdMRk5lREQwbUhYaWJjR1Z0bTRlbWxDNUtKcXVTWFk5clBsOWxpR0ozNU9BcTI1Y084dGxOeE5mbA?oc=5",
+  "source": "Antara News jatim",
+  "source_url": "https://jatim.antaranews.com",
+  "published_at": "2026-11-02T10:16:35.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T13:00:44.541Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

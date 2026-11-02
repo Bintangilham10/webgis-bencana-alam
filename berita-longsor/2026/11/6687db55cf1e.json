@@ -1,0 +1,26 @@
+{
+  "guid": "CBMitgFBVV95cUxQVEtKU0ZvU0FSYm9tQXVRV0p4QndiZFNUUVpzUDJIeDBYSldtWnIySUw1cnlzUkdHQzJnMFJKZXkzTWVYeFMxT0htSTQ0U2pCdlllUzR1bmU3TVdoY001M1FvdmNNcUFfdDNybktTU29pOWZhMWE3RkFCOUJETEFMTGFxWGFZWFJ1OUJIR3lLeDEtZE90X0Z5VlBCOW9kRkxBcDhIcHYxaEJCWHJTUHlxSDNaUlFwZw",
+  "title": "Diterjang hujan deras, banjir dan longsor terjang Malang Selatan - Elshinta",
+  "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVEtKU0ZvU0FSYm9tQXVRV0p4QndiZFNUUVpzUDJIeDBYSldtWnIySUw1cnlzUkdHQzJnMFJKZXkzTWVYeFMxT0htSTQ0U2pCdlllUzR1bmU3TVdoY001M1FvdmNNcUFfdDNybktTU29pOWZhMWE3RkFCOUJETEFMTGFxWGFZWFJ1OUJIR3lLeDEtZE90X0Z5VlBCOW9kRkxBcDhIcHYxaEJCWHJTUHlxSDNaUlFwZw?oc=5",
+  "source": "Elshinta",
+  "source_url": "https://elshinta.com",
+  "published_at": "2026-11-02T10:50:09.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T13:00:44.541Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMisgFBVV95cUxQc2F0eUQ1dU5TLVdRZzFwRG5uSWpBYXhxSGQwbk5fbmpiMDVXaEtQRHF4eHloVDZOZWF1Zk9aTUEzS2ZDVHdEbi1OS2NiWlFhWmE5TEJGZ3hzN0FydHAyb0VNeFdvSGppdTNMSDVtSS11Z3QtaElISVE2dWthc2hzM1RKTnpsLU1HaTFOUGE3QnprUVcxeDhqcDlUalh4Ymwtb3VYb0IxbFA1ZTEyY2YyRWpn0gG3AUFVX3lxTFBfQ1ZQTTRJNzB3Z1NiVURUa2RQVjFHNVFPZHg0U2hZM3JUMS1kT09NbXB3QjRZOGc1emVtSFZ2SWNidUhmOWRoMHR0cmdsdjhDVVhIRUpETUh2MEQ5eGszMXR3S2hkeEhubEhuUTRacmFfNHNWUWt4QkpKTW9ldVB6NTczdFREZHhXWWNNbTVKakh4SWpOdDM1Tm9RaUtFS2x6WjNaQ3ZCQ21qa0RpV0psWTl1a01jZw",
+  "title": "Musim Hujan Tiba, Pemkab Bandung Tebar Peringatan Darurat Banjir dan Longsor - Koran Jakarta ®",
+  "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQc2F0eUQ1dU5TLVdRZzFwRG5uSWpBYXhxSGQwbk5fbmpiMDVXaEtQRHF4eHloVDZOZWF1Zk9aTUEzS2ZDVHdEbi1OS2NiWlFhWmE5TEJGZ3hzN0FydHAyb0VNeFdvSGppdTNMSDVtSS11Z3QtaElISVE2dWthc2hzM1RKTnpsLU1HaTFOUGE3QnprUVcxeDhqcDlUalh4Ymwtb3VYb0IxbFA1ZTEyY2YyRWpn0gG3AUFVX3lxTFBfQ1ZQTTRJNzB3Z1NiVURUa2RQVjFHNVFPZHg0U2hZM3JUMS1kT09NbXB3QjRZOGc1emVtSFZ2SWNidUhmOWRoMHR0cmdsdjhDVVhIRUpETUh2MEQ5eGszMXR3S2hkeEhubEhuUTRacmFfNHNWUWt4QkpKTW9ldVB6NTczdFREZHhXWWNNbTVKakh4SWpOdDM1Tm9RaUtFS2x6WjNaQ3ZCQ21qa0RpV0psWTl1a01jZw?oc=5",
+  "source": "Koran Jakarta ®",
+  "source_url": "https://koran-jakarta.com",
+  "published_at": "2026-11-02T11:20:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T13:00:44.541Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

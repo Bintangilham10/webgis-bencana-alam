@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirAFBVV95cUxPc2tpNkRoa0JFSGF6dVFDZlhTdGVqY1Rvd1NfNUZadnduaS03akhDZWwtbkhHUUJhZk1TNzQ1dzF1dVhOUjFIcmstYjVjWjViSUtCYjk4M0ZacTZkVXk3cUJxa29RcWh2aVZsMlJDYWI2dTZwRW5DT0t3dnR2dm9kVkx1V215RVZaVnpKd0ZVUVhEaEFrX2xqREx3YkVzTnU1MnA3UUhHUUNhUFFl",
+  "title": "Kirmir Cikalintu Jebol dan Tebing Sekeloa Longsor, Pemkot Bandung Evaluasi Penanganan - tugubandung.id",
+  "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPc2tpNkRoa0JFSGF6dVFDZlhTdGVqY1Rvd1NfNUZadnduaS03akhDZWwtbkhHUUJhZk1TNzQ1dzF1dVhOUjFIcmstYjVjWjViSUtCYjk4M0ZacTZkVXk3cUJxa29RcWh2aVZsMlJDYWI2dTZwRW5DT0t3dnR2dm9kVkx1V215RVZaVnpKd0ZVUVhEaEFrX2xqREx3YkVzTnU1MnA3UUhHUUNhUFFl?oc=5",
+  "source": "tugubandung.id",
+  "source_url": "https://tugubandung.id",
+  "published_at": "2026-11-02T10:17:59.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T13:00:44.541Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

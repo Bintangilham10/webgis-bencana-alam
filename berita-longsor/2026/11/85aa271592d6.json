@@ -1,0 +1,31 @@
+{
+  "guid": "CBMimgFBVV95cUxOd2NFMlc5VDV6VUs1U2hjX2Q0VVF1aXNlVDFNU09yc0hhSXBNY1ZzMl9kaGhEakJNV3pGUi1lS3czSHItNVNyX2hYbDBBR2FRaW9DVUM3cWY0OTg2QkpENDA0QVE1cEwwWEdxeV96NlpJRFhpdFJsX0VfSF83OVNOUl9RZm1CNG02eXVXS1ViOVBWMV9lYnJGUXZB",
+  "title": "Sembilan Titik Longsor Terjang Sulangai Badung, Banjar Abing Sempat Terisolir - BALIPOST.com",
+  "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOd2NFMlc5VDV6VUs1U2hjX2Q0VVF1aXNlVDFNU09yc0hhSXBNY1ZzMl9kaGhEakJNV3pGUi1lS3czSHItNVNyX2hYbDBBR2FRaW9DVUM3cWY0OTg2QkpENDA0QVE1cEwwWEdxeV96NlpJRFhpdFJsX0VfSF83OVNOUl9RZm1CNG02eXVXS1ViOVBWMV9lYnJGUXZB?oc=5",
+  "source": "BALIPOST.com",
+  "source_url": "https://www.balipost.com",
+  "published_at": "2026-11-02T12:26:26.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T13:00:44.541Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.79",
+      "nama": "Kota Banjar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "51.03",
+      "nama": "Kabupaten Badung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "63.03",
+      "nama": "Kabupaten Banjar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

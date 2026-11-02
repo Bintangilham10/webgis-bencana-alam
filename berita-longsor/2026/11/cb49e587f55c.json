@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiqwFBVV95cUxPZDVGQWJJaV9JaXNueFJRTHdDeDdoZk1BVzBsb2Y2UGRkVzhrdmoySkdlWVlvRjdLdjR2QkJsTDdpUTVlclc1eTR6Vm5ITklpZ21QZUdFR0FjVXc2VlEydGRoNVNjNWxtc3V1WFZQRDlnazFiVlhjdlFsWVV0bThPRWZpdkxCTXVQTkJvMWNwTS00WTlSanNfLXNZYkNvdHZMRm02YWlQeHlKVG8",
+  "title": "Sempat Lumpuh Akibat Longsor, Jalur Malang – Lumajang Kini Kembali Normal - PANTURA7.com",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZDVGQWJJaV9JaXNueFJRTHdDeDdoZk1BVzBsb2Y2UGRkVzhrdmoySkdlWVlvRjdLdjR2QkJsTDdpUTVlclc1eTR6Vm5ITklpZ21QZUdFR0FjVXc2VlEydGRoNVNjNWxtc3V1WFZQRDlnazFiVlhjdlFsWVV0bThPRWZpdkxCTXVQTkJvMWNwTS00WTlSanNfLXNZYkNvdHZMRm02YWlQeHlKVG8?oc=5",
+  "source": "PANTURA7.com",
+  "source_url": "https://www.pantura7.com",
+  "published_at": "2026-11-02T11:32:59.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T13:00:44.541Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
