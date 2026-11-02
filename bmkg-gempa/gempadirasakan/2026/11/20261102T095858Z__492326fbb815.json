@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-02T10:30:40.864Z",
+  "data": {
+    "Tanggal": "02 Nov 2026",
+    "Jam": "16:58:58 WIB",
+    "DateTime": "2026-11-02T09:58:58+00:00",
+    "Coordinates": "-2.49,140.66",
+    "Lintang": "2.49 LS",
+    "Bujur": "140.66 BT",
+    "Magnitude": "2.6",
+    "Kedalaman": "8 km",
+    "Wilayah": "Pusat gempa berada di darat 9 km Utara Kota Jayapura",
+    "Dirasakan": "III Jayapura"
+  }
+}
