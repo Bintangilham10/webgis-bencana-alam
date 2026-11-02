@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.02.23.19.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-03T06:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-03T06:40:00+07:00</effective>
+    <expires>2026-11-03T08:40:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 03 November 2026, 06:40 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di SIMPANG RENGGIANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 November 2026, 08:40 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/11/03/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-2.792,108.105 -2.811,108.117 -2.831,108.119 -2.837,108.096 -2.855,108.090 -2.867,108.095 -2.892,108.123 -2.918,108.122 -2.920,108.130 -2.924,108.127 -2.920,108.113 -2.944,108.104 -2.978,108.064 -2.963,108.050 -2.963,108.033 -2.985,107.984 -2.986,107.978 -2.983,107.970 -2.992,107.947 -2.998,107.939 -3.005,107.936 -2.995,107.931 -2.961,107.940 -2.952,107.931 -2.929,107.929 -2.917,107.949 -2.903,107.933 -2.897,107.908 -2.883,107.879 -2.877,107.838 -2.867,107.855 -2.856,107.855 -2.848,107.847 -2.841,107.848 -2.816,107.855 -2.801,107.867 -2.797,107.890 -2.799,107.937 -2.777,107.994 -2.786,108.001 -2.800,107.997 -2.807,108.002 -2.827,107.995 -2.828,108.007 -2.823,108.081 -2.811,108.094 -2.803,108.093 -2.791,108.101 -2.792,108.105</polygon>
+    </area>
+  </info>
+</alert>
