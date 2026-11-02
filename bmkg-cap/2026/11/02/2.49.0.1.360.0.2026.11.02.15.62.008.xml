@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.02.15.62.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-02T21:25:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-02T21:30:00+07:00</effective>
+    <expires>2026-11-03T00:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 02 November 2026, 21:30 WIB di sebagian wilayah Kalimantan Tengah, khususnya di BUKIT BATU, TIMPAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 November 2026, 00:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/11/02/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-1.156,114.700 -1.165,114.711 -1.181,114.712 -1.210,114.701 -1.252,114.701 -1.276,114.684 -1.297,114.685 -1.317,114.668 -1.392,114.670 -1.426,114.662 -1.522,114.674 -1.619,114.634 -1.644,114.615 -1.678,114.599 -1.706,114.601 -1.744,114.622 -1.784,114.636 -1.813,114.636 -1.892,114.618 -1.915,114.616 -1.950,114.621 -1.975,114.640 -1.987,114.656 -2.004,114.679 -2.042,114.706 -2.042,114.604 -2.049,114.537 -2.042,114.527 -1.962,114.495 -1.871,114.431 -1.822,114.407 -1.689,114.397 -1.566,114.379 -1.538,114.348 -1.505,114.482 -1.484,114.478 -1.456,114.487 -1.415,114.494 -1.395,114.489 -1.352,114.495 -1.330,114.481 -1.311,114.483 -1.275,114.463 -1.259,114.464 -1.250,114.465 -1.221,114.481 -1.121,114.514 -1.138,114.541 -1.143,114.573 -1.136,114.627 -1.139,114.679 -1.148,114.694 -1.156,114.700</polygon>
+      <polygon>-1.869,113.824 -1.955,113.815 -1.979,113.819 -2.016,113.838 -2.081,113.883 -2.131,113.817 -2.159,113.700 -2.087,113.695 -2.067,113.683 -2.037,113.656 -1.997,113.627 -1.980,113.618 -1.950,113.614 -1.925,113.598 -1.912,113.585 -1.915,113.715 -1.852,113.764 -1.852,113.823 -1.869,113.824</polygon>
+    </area>
+  </info>
+</alert>

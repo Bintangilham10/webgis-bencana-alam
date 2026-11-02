@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.02.15.13.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-02T20:45:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-02T21:00:00+07:00</effective>
+    <expires>2026-11-02T23:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 02 November 2026, 21:00 WIB di sebagian wilayah Sumatera Barat, khususnya di KINALI, PALUPUH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 02 November 2026, 23:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSB/2026/11/02/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Barat</areaDesc>
+      <polygon>-0.115,100.372 -0.132,100.374 -0.144,100.362 -0.164,100.368 -0.177,100.363 -0.187,100.367 -0.201,100.366 -0.216,100.365 -0.239,100.345 -0.249,100.330 -0.238,100.333 -0.225,100.324 -0.219,100.325 -0.211,100.325 -0.191,100.312 -0.180,100.311 -0.176,100.300 -0.166,100.298 -0.157,100.286 -0.156,100.269 -0.143,100.236 -0.127,100.219 -0.086,100.197 -0.062,100.237 -0.066,100.249 -0.060,100.258 -0.035,100.264 -0.056,100.302 -0.046,100.317 -0.074,100.330 -0.086,100.355 -0.096,100.358 -0.115,100.372</polygon>
+      <polygon>-0.081,100.037 -0.092,100.032 -0.097,100.016 -0.136,100.004 -0.142,99.995 -0.139,99.967 -0.149,99.951 -0.149,99.933 -0.161,99.910 -0.158,99.906 -0.163,99.848 -0.168,99.846 -0.166,99.833 -0.175,99.807 -0.171,99.768 -0.144,99.746 -0.116,99.759 -0.083,99.757 -0.070,99.764 -0.037,99.747 -0.026,99.762 -0.008,99.785 0.031,99.865 0.021,99.881 0.019,99.898 0.036,99.900 0.042,99.904 0.058,99.956 0.059,99.959 0.036,99.973 0.013,99.995 0.007,100.011 -0.015,100.020 -0.033,100.048 -0.043,100.047 -0.046,100.037 -0.057,100.032 -0.081,100.037</polygon>
+    </area>
+  </info>
+</alert>
