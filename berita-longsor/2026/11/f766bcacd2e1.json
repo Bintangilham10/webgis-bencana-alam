@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixAFBVV95cUxQMm9sN3EwT1JIZW5ITURjT0pQSjl3eGtac21vYWNfZXN6YlJCa2c2X2tvbDdGQl9HOHU3ZHhxRXk5Wmd6TGtZMlhWR3ZUclpUTHhOX3J2aEN5T01aWXU0dGd0cjJwR0hyYjhUeWNRTzFqWE9hbUJqdDlsUGVyTXNHQkhBbkxxRXJQNVZ2Mm5mUFhCMlNjd0c1UXM5aHFiQzBVV0lvQ0lwQXpUcTdKdFZBaEZqTTNRYXRyeDZ4UTl1blZBNldt",
+  "title": "Bencana Tasikmalaya Meluas, Longsor dan Dua Rumah Roboh akibat Hujan Deras - Pikiran Rakyat Koran",
+  "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMm9sN3EwT1JIZW5ITURjT0pQSjl3eGtac21vYWNfZXN6YlJCa2c2X2tvbDdGQl9HOHU3ZHhxRXk5Wmd6TGtZMlhWR3ZUclpUTHhOX3J2aEN5T01aWXU0dGd0cjJwR0hyYjhUeWNRTzFqWE9hbUJqdDlsUGVyTXNHQkhBbkxxRXJQNVZ2Mm5mUFhCMlNjd0c1UXM5aHFiQzBVV0lvQ0lwQXpUcTdKdFZBaEZqTTNRYXRyeDZ4UTl1blZBNldt?oc=5",
+  "source": "Pikiran Rakyat Koran",
+  "source_url": "https://koran.pikiran-rakyat.com",
+  "published_at": "2026-11-01T22:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T00:30:32.527Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

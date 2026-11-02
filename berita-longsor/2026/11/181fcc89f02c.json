@@ -1,0 +1,31 @@
+{
+  "guid": "CBMizgFBVV95cUxNdmh5NW0ydTRTazdZQ2VFMUJzaXdFSy1DaFNlWXFnN3pmSC1LYzlJc0JvRi1mWC0tcUVaS1hnMk81R25yZzFPSUxhV2JmaFJWUlo3aXpuYkt2a01IMGMxMU5vZ1hLYUMxdk03cUw3ZUVQYlkxZ2M3YWFFSF9aMjN3UGlXVms1R0tBTm5pamRoQ2RJR0NRdXA1LUZwMkVlWUF4VHFkZERKanRheXNsSG9ELTRrNEJQS00zRlRzRDkwaXhnRkZpd0laTzRwR2tHQQ",
+  "title": "Hujan Deras, Longsor Melanda Jembrana, Puting Beliung Terjang Buleleng, Angin Kencang di Gianyar - Tribun-bali.com",
+  "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNdmh5NW0ydTRTazdZQ2VFMUJzaXdFSy1DaFNlWXFnN3pmSC1LYzlJc0JvRi1mWC0tcUVaS1hnMk81R25yZzFPSUxhV2JmaFJWUlo3aXpuYkt2a01IMGMxMU5vZ1hLYUMxdk03cUw3ZUVQYlkxZ2M3YWFFSF9aMjN3UGlXVms1R0tBTm5pamRoQ2RJR0NRdXA1LUZwMkVlWUF4VHFkZERKanRheXNsSG9ELTRrNEJQS00zRlRzRDkwaXhnRkZpd0laTzRwR2tHQQ?oc=5",
+  "source": "Tribun-bali.com",
+  "source_url": "https://bali.tribunnews.com",
+  "published_at": "2026-11-02T00:23:04.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T00:30:32.527Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "51.01",
+      "nama": "Kabupaten Jembrana",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "51.08",
+      "nama": "Kabupaten Buleleng",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "51.04",
+      "nama": "Kabupaten Gianyar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

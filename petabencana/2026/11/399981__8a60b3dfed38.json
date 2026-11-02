@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-02T00:30:32.527Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        115.2729890356,
+        -8.6475370283
+      ]
+    },
+    "properties": {
+      "pkey": "399981",
+      "created_at": "2026-11-02T00:18:30.685Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "2edfbe26-2207-4605-b654-51206b382e6a",
+      "image_url": "https://images.petabencana.id/2edfbe26-2207-4605-b654-51206b382e6a.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 61
+      },
+      "tags": {
+        "city": "KOTA DENPASAR",
+        "district_id": null,
+        "region_code": "5171",
+        "local_area_id": null,
+        "instance_region_code": "ID-BA"
+      },
+      "title": null,
+      "text": "banjir di ruas Jalan Bypass Prof. Dr. Ida Bagus Mantra, tepatnya di kawasan Keramas, Kabupaten Gianyar, Bali, Senin (02/11/2026)",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

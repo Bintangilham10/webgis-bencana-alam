@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirAFBVV95cUxNQVpCcS1WUVNMem1jWWJOdUFpdll0Snc4eGx6MXpRSjFnNnJ6amlwOVZkamRXNVZZZDdySkpwZW9wYXpmVzlickFVUkdiY1RrX1BYVGI2U3o2N01GRGJNWXpDM3hxSzg5UzJKc0ZWSGpKZF9qUWFFV09qTlJzM2xZVk5sSkF0bDF5RVZqWWlVb2dhMXhOS245NF9hQS1UaGpKaFcwVjdjeUFBdGZE",
+  "title": "Banjir dan Longsor Bandung Raya, Puluhan Rumah Terdampak - Pikiran Rakyat Koran",
+  "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQVpCcS1WUVNMem1jWWJOdUFpdll0Snc4eGx6MXpRSjFnNnJ6amlwOVZkamRXNVZZZDdySkpwZW9wYXpmVzlickFVUkdiY1RrX1BYVGI2U3o2N01GRGJNWXpDM3hxSzg5UzJKc0ZWSGpKZF9qUWFFV09qTlJzM2xZVk5sSkF0bDF5RVZqWWlVb2dhMXhOS245NF9hQS1UaGpKaFcwVjdjeUFBdGZE?oc=5",
+  "source": "Pikiran Rakyat Koran",
+  "source_url": "https://koran.pikiran-rakyat.com",
+  "published_at": "2026-11-01T22:00:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T00:30:32.527Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
