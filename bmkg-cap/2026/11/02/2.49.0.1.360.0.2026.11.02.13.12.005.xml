@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.02.13.12.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-02T19:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-02T20:00:00+07:00</effective>
+    <expires>2026-11-02T23:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 02 November 2026, 20:00 WIB di sebagian wilayah Sumatera Utara, khususnya di BADIRI, BAWOLATO, IDANOGAWO, MANDUAMAS, PINANGSORI, ULUGAWO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 02 November 2026, 23:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSU/2026/11/02/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Utara</areaDesc>
+      <polygon>1.615,98.950 1.591,98.940 1.556,98.937 1.553,98.935 1.557,98.918 1.551,98.911 1.515,98.892 1.499,98.880 1.446,98.776 1.474,98.773 1.489,98.794 1.511,98.809 1.525,98.826 1.555,98.870 1.566,98.879 1.599,98.882 1.610,98.893 1.625,98.929 1.615,98.950</polygon>
+      <polygon>2.314,98.196 2.264,98.266 2.266,98.265 2.242,98.269 2.237,98.265 2.221,98.266 2.223,98.280 2.200,98.284 2.188,98.275 2.178,98.292 2.161,98.304 2.159,98.312 2.137,98.276 2.130,98.259 2.116,98.253 2.110,98.254 2.092,98.270 2.049,98.293 2.049,98.302 2.033,98.310 2.043,98.287 2.039,98.278 2.029,98.280 2.027,98.266 2.039,98.272 2.046,98.272 2.064,98.261 2.097,98.224 2.115,98.187 2.137,98.167 2.165,98.132 2.171,98.125 2.208,98.147 2.254,98.176 2.261,98.184 2.271,98.179 2.308,98.186 2.315,98.191 2.314,98.196</polygon>
+      <polygon>2.092,98.180 2.092,98.175 2.098,98.179 2.095,98.183 2.092,98.180</polygon>
+      <polygon>1.672,98.967 1.647,98.948 1.615,98.950 1.625,98.929 1.610,98.893 1.599,98.882 1.566,98.879 1.555,98.870 1.525,98.826 1.511,98.809 1.489,98.794 1.474,98.773 1.500,98.762 1.524,98.733 1.564,98.712 1.570,98.717 1.568,98.731 1.559,98.740 1.541,98.748 1.530,98.759 1.528,98.766 1.570,98.775 1.581,98.783 1.580,98.789 1.572,98.792 1.568,98.807 1.578,98.807 1.578,98.799 1.583,98.796 1.598,98.801 1.603,98.807 1.601,98.821 1.623,98.832 1.629,98.840 1.637,98.840 1.634,98.856 1.639,98.869 1.636,98.883 1.639,98.893 1.676,98.966 1.672,98.967</polygon>
+      <polygon>1.070,97.852 1.045,97.833 1.037,97.837 1.040,97.844 1.036,97.845 1.022,97.843 1.006,97.833 1.009,97.826 0.985,97.812 0.989,97.793 0.985,97.792 0.979,97.776 0.988,97.767 0.996,97.770 0.997,97.767 0.992,97.734 1.000,97.732 1.020,97.711 1.026,97.709 1.035,97.717 1.073,97.765 1.102,97.787 1.126,97.820 1.094,97.833 1.092,97.844 1.079,97.844 1.070,97.852</polygon>
+      <polygon>0.926,97.923 0.926,97.911 0.912,97.886 0.911,97.878 0.917,97.867 0.935,97.850 0.938,97.832 0.935,97.799 0.938,97.786 0.936,97.765 0.961,97.768 0.968,97.766 0.971,97.761 0.979,97.776 0.985,97.792 0.989,97.793 0.985,97.812 1.009,97.826 1.006,97.833 1.022,97.843 1.036,97.845 1.040,97.844 1.037,97.837 1.045,97.833 1.070,97.852 1.052,97.873 1.054,97.897 1.024,97.920 0.996,97.928 0.976,97.942 0.958,97.947 0.926,97.923</polygon>
+      <polygon>1.073,97.904 1.077,97.901 1.079,97.904 1.073,97.904</polygon>
+      <polygon>1.023,97.956 1.025,97.952 1.026,97.956 1.023,97.956</polygon>
+      <polygon>1.035,97.717 1.026,97.709 1.020,97.711 1.000,97.732 0.992,97.734 0.997,97.767 0.996,97.770 0.988,97.767 0.979,97.776 0.971,97.761 0.968,97.766 0.961,97.768 0.936,97.765 0.950,97.751 0.948,97.732 0.933,97.694 0.941,97.693 0.994,97.690 1.007,97.683 1.019,97.682 1.046,97.698 1.045,97.710 1.041,97.716 1.035,97.717</polygon>
+    </area>
+  </info>
+</alert>
