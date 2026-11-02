@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.02.17.13.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-02T22:44:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-02T23:00:00+07:00</effective>
+    <expires>2026-11-03T01:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 02 November 2026, 23:00 WIB di sebagian wilayah Sumatera Barat, khususnya di MAPAT TUNGGUL, RAO, RAO SELATAN, RAO UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 November 2026, 01:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSB/2026/11/02/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Barat</areaDesc>
+      <polygon>0.764,100.179 0.756,100.198 0.740,100.214 0.743,100.222 0.738,100.243 0.680,100.246 0.663,100.216 0.592,100.168 0.561,100.184 0.555,100.223 0.543,100.233 0.547,100.206 0.543,100.199 0.536,100.196 0.528,100.173 0.529,100.169 0.532,100.172 0.536,100.169 0.530,100.160 0.530,100.154 0.553,100.123 0.558,100.121 0.573,100.126 0.596,100.125 0.604,100.122 0.627,100.123 0.634,100.118 0.646,100.119 0.669,100.097 0.728,100.077 0.738,100.077 0.744,100.071 0.749,100.053 0.763,100.054 0.776,100.063 0.790,100.060 0.806,100.067 0.786,100.120 0.776,100.136 0.764,100.179</polygon>
+      <polygon>0.574,100.037 0.563,100.030 0.543,100.056 0.533,100.044 0.516,100.040 0.504,100.015 0.498,99.981 0.476,99.963 0.474,99.950 0.486,99.918 0.510,99.944 0.514,99.961 0.526,99.952 0.544,99.964 0.554,99.965 0.571,99.958 0.580,99.950 0.593,99.941 0.604,99.924 0.609,99.921 0.615,99.923 0.626,99.909 0.629,99.910 0.631,99.925 0.657,99.916 0.642,99.944 0.639,99.961 0.628,99.969 0.615,99.972 0.606,99.990 0.591,99.999 0.584,100.023 0.574,100.037</polygon>
+      <polygon>0.890,99.902 0.879,99.952 0.851,99.968 0.842,100.006 0.806,100.067 0.790,100.060 0.776,100.063 0.763,100.054 0.749,100.053 0.744,100.071 0.738,100.077 0.728,100.077 0.669,100.097 0.646,100.119 0.634,100.118 0.627,100.123 0.604,100.122 0.596,100.125 0.604,100.103 0.603,100.097 0.595,100.077 0.573,100.055 0.574,100.037 0.584,100.023 0.591,99.999 0.606,99.990 0.615,99.972 0.628,99.969 0.639,99.961 0.642,99.944 0.657,99.916 0.680,99.911 0.677,99.896 0.689,99.885 0.683,99.851 0.697,99.831 0.709,99.835 0.716,99.830 0.740,99.826 0.753,99.833 0.760,99.845 0.766,99.846 0.807,99.846 0.822,99.838 0.849,99.842 0.879,99.831 0.889,99.836 0.897,99.857 0.906,99.865 0.907,99.872 0.896,99.898 0.890,99.902</polygon>
+      <polygon>0.596,100.125 0.573,100.126 0.558,100.121 0.553,100.123 0.551,100.110 0.545,100.101 0.527,100.116 0.516,100.096 0.509,100.096 0.506,100.103 0.483,100.116 0.477,100.102 0.473,100.079 0.471,100.055 0.461,100.016 0.457,100.010 0.469,99.996 0.467,99.987 0.465,99.977 0.476,99.963 0.498,99.981 0.504,100.015 0.516,100.040 0.533,100.044 0.543,100.056 0.563,100.030 0.574,100.037 0.573,100.055 0.595,100.077 0.603,100.097 0.604,100.103 0.596,100.125</polygon>
+    </area>
+  </info>
+</alert>
