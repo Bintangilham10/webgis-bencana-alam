@@ -1,0 +1,23 @@
+{
+  "guid": "CBMizwFBVV95cUxOQXMzc2FJTERtSVJzSS1xcWZMVDZHNFJJRHJIcjBTM21lOFlaSGdPU3VEbnFZUUw3RUxZc0w4MkxLTkNQR2w4SkJJR0dPYVB0YXhMQnVZT1RlZ3ZuaDVMN3o1SFU4bUdrRGl5Sl81WWpyX1VDOF9OWmN5bUpMM1kzcEw5QWVuLWlqWm5NX2x3ZDFZWmF6ZWdWbXZPdUFHbm9TTkI3Vnk0dDhkSE5KX1h0VDFfMUNKMmhscFA2enl1eXg5Q3RlQVFlRWhQdjNHUjg",
+  "title": "Gubernur Sumbar Tinjau Banjir dan Longsor di Tanah Datar, Minta Penanganan Jangka Panjang - InfoPublik",
+  "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQXMzc2FJTERtSVJzSS1xcWZMVDZHNFJJRHJIcjBTM21lOFlaSGdPU3VEbnFZUUw3RUxZc0w4MkxLTkNQR2w4SkJJR0dPYVB0YXhMQnVZT1RlZ3ZuaDVMN3o1SFU4bUdrRGl5Sl81WWpyX1VDOF9OWmN5bUpMM1kzcEw5QWVuLWlqWm5NX2x3ZDFZWmF6ZWdWbXZPdUFHbm9TTkI3Vnk0dDhkSE5KX1h0VDFfMUNKMmhscFA2enl1eXg5Q3RlQVFlRWhQdjNHUjg?oc=5",
+  "source": "InfoPublik",
+  "source_url": "https://infopublik.id",
+  "published_at": "2026-11-02T15:37:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T16:15:27.607Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.04",
+      "nama": "Kabupaten Tanah Datar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Sumatera Barat"
+  ]
+}

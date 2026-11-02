@@ -1,0 +1,26 @@
+{
+  "guid": "CBMikwFBVV95cUxPdGZ3bjducFUxYnFJQUxjbWZDSzBPcnBsYzdQazVra0stRGtyejdBQlEtcW5sTmc0SVhBTGtLWE4zZWd0akh1M2VyUzVtYTJqX0xDOEQ5WUtJOUlvdVZERlNGemN0TkRvMUhOdDJsRjlzbzFSNGtiS1laZ0doMFdJMHBaTVlUUFJLYlJWOWptcHVEZFk",
+  "title": "Hujan Berkepanjangan, Malang Selatan Tergerus Banjir dan Tanah Longsor - TIMES Network AI",
+  "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdGZ3bjducFUxYnFJQUxjbWZDSzBPcnBsYzdQazVra0stRGtyejdBQlEtcW5sTmc0SVhBTGtLWE4zZWd0akh1M2VyUzVtYTJqX0xDOEQ5WUtJOUlvdVZERlNGemN0TkRvMUhOdDJsRjlzbzFSNGtiS1laZ0doMFdJMHBaTVlUUFJLYlJWOWptcHVEZFk?oc=5",
+  "source": "TIMES Network AI",
+  "source_url": "https://times.co.id",
+  "published_at": "2026-11-02T14:30:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T16:15:27.607Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqwFBVV95cUxNMExwVFhnZVNZc290eW5CUzd2bk0tQWhiY3RIT1NnUTdWRnFFZVRCSGlLSGlFemF4S0RyMjktMENtZUc4ZzA0a0ZwVXNGX3JjZzNtSFFNcWFvLVdtcWhrV09qd1BubmFHd3dqTGJQOExNcE44MVlwdG1Hb3ozV2hZU3lIRUNNQW5GckVNUlRkazFoQXNuaF9uOWhxeW5CNTJJbnZQMDVtUlBOc3c",
+  "title": "Farhan Minta Camat dan Lurah Siaga Hadapi Ancaman Banjir dan Longsor di Bandung - infobdg.com",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMExwVFhnZVNZc290eW5CUzd2bk0tQWhiY3RIT1NnUTdWRnFFZVRCSGlLSGlFemF4S0RyMjktMENtZUc4ZzA0a0ZwVXNGX3JjZzNtSFFNcWFvLVdtcWhrV09qd1BubmFHd3dqTGJQOExNcE44MVlwdG1Hb3ozV2hZU3lIRUNNQW5GckVNUlRkazFoQXNuaF9uOWhxeW5CNTJJbnZQMDVtUlBOc3c?oc=5",
+  "source": "infobdg.com",
+  "source_url": "https://www.infobdg.com",
+  "published_at": "2026-11-02T13:03:07.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T16:15:27.607Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

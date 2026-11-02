@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiswFBVV95cUxPSF9WajV0MjNtX2NqbHhnRHJjT2VrUGZac29fXzVmQlZINWY3OHVudnFJQm5nZ0M4ckFtaXE4RFlFQzExQ2FGYUstQ3ZpbFpZNDh4STFWcW52bi1WM2NwX1U5a0wwcVhBYWNjb205UE1vaEgwd3hwUmhaS2prSWE4MmhuRmRBWlNFOUktR1hZT3R3YkJIUnRBU1hWeUdmTGQ2NUMzOWVnV3RXbUtoTkE5VjRsWdIBuAFBVV95cUxQTzY0ZDV4UHBaQjhSV1RYcmhGYkd5WGtISUZsS25iekp0dDU3VkdzbFFELXBkQ0lmNWNQSzVQRE4xVDZFVUo4YnpjblNGVUxuZHdUSFBMLVdYbWJsV3laQnhXVHh2N3o2UVB4Y1lGUXdQUWhoNldNaVgxNWNvZW5kdldydTFQSFZBSl9KMk5DeDNUX3c4YVpqelA2bHlFWjBFYWk4WE1EaEZjUkNzUXVVVWlGQ3E2MWxu",
+  "title": "Pemkab Badung dan Pemprov Bali Pacu Pencarian 2 Korban Longsor Pelaga - detikcom",
+  "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSF9WajV0MjNtX2NqbHhnRHJjT2VrUGZac29fXzVmQlZINWY3OHVudnFJQm5nZ0M4ckFtaXE4RFlFQzExQ2FGYUstQ3ZpbFpZNDh4STFWcW52bi1WM2NwX1U5a0wwcVhBYWNjb205UE1vaEgwd3hwUmhaS2prSWE4MmhuRmRBWlNFOUktR1hZT3R3YkJIUnRBU1hWeUdmTGQ2NUMzOWVnV3RXbUtoTkE5VjRsWdIBuAFBVV95cUxQTzY0ZDV4UHBaQjhSV1RYcmhGYkd5WGtISUZsS25iekp0dDU3VkdzbFFELXBkQ0lmNWNQSzVQRE4xVDZFVUo4YnpjblNGVUxuZHdUSFBMLVdYbWJsV3laQnhXVHh2N3o2UVB4Y1lGUXdQUWhoNldNaVgxNWNvZW5kdldydTFQSFZBSl9KMk5DeDNUX3c4YVpqelA2bHlFWjBFYWk4WE1EaEZjUkNzUXVVVWlGQ3E2MWxu?oc=5",
+  "source": "detikcom",
+  "source_url": "https://www.detik.com",
+  "published_at": "2026-11-02T15:05:57.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T16:15:27.607Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "51.03",
+      "nama": "Kabupaten Badung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bali"
+  ]
+}
