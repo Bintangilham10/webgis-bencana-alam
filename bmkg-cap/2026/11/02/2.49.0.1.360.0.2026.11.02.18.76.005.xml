@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.02.18.76.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-03T01:46:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-03T01:58:00+08:00</effective>
+    <expires>2026-11-03T03:22:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 03 November 2026, 01:58 WITA di sebagian wilayah Sulawesi Barat, khususnya di BANGGAE, BANGGAE TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 November 2026, 03:22 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSK/2026/11/03/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Barat</areaDesc>
+      <polygon>-3.506,118.935 -3.519,118.938 -3.521,118.943 -3.525,118.954 -3.515,118.965 -3.521,118.970 -3.537,118.972 -3.545,118.968 -3.550,118.949 -3.557,118.945 -3.566,118.945 -3.570,118.938 -3.539,118.920 -3.529,118.926 -3.506,118.928 -3.506,118.935</polygon>
+      <polygon>-3.456,118.951 -3.494,118.966 -3.498,118.977 -3.497,118.985 -3.511,118.994 -3.521,118.995 -3.533,119.006 -3.553,118.995 -3.563,119.001 -3.563,118.991 -3.558,118.983 -3.550,118.978 -3.545,118.968 -3.537,118.972 -3.521,118.970 -3.515,118.965 -3.525,118.954 -3.521,118.943 -3.519,118.938 -3.506,118.935 -3.497,118.940 -3.483,118.935 -3.470,118.937 -3.456,118.951 -3.456,118.951</polygon>
+    </area>
+  </info>
+</alert>
