@@ -1,0 +1,23 @@
+{
+  "guid": "CBMivAFBVV95cUxPY2hRV1N5bzJ0X1dncGxSSlkzbG9Ibk12QWMybnpadVh4UjBuU0x5bC1NZnBSZmFFSlZrTi02ODM1RUloMUUtTEMyNEhsZVc2d1Q2M2hFMWQxTjBIN1ZOOHJzam1hUUpuNFdzSmF0SUI2UlpjQzE3b3F2VVpPTGVpMDg2UDdaelU0ZElnYjMtLWNITG1XU2Zad2pidFNNQWRxZkpEekhuU08tOExzN3ZSeGcyQjJSMjI0ZkxnNQ",
+  "title": "Tinjau Longsor Pelaga Eco Park, Pemkab Badung dan Pemprov Bali Pacu Evakuasi Dua Korban Hilang - Barometer Bali",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPY2hRV1N5bzJ0X1dncGxSSlkzbG9Ibk12QWMybnpadVh4UjBuU0x5bC1NZnBSZmFFSlZrTi02ODM1RUloMUUtTEMyNEhsZVc2d1Q2M2hFMWQxTjBIN1ZOOHJzam1hUUpuNFdzSmF0SUI2UlpjQzE3b3F2VVpPTGVpMDg2UDdaelU0ZElnYjMtLWNITG1XU2Zad2pidFNNQWRxZkpEekhuU08tOExzN3ZSeGcyQjJSMjI0ZkxnNQ?oc=5",
+  "source": "Barometer Bali",
+  "source_url": "https://barometerbali.com",
+  "published_at": "2026-11-02T13:57:19.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T22:15:37.516Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "51.03",
+      "nama": "Kabupaten Badung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bali"
+  ]
+}
