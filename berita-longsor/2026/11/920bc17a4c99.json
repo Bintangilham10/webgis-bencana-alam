@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiowFBVV95cUxNcERPNjJBRXk4RFVrVzNhdlYtVjFTVmZXWTB4NktPQWhFWjIwTlB4aTRqQmZLeHZYNDZjX1FIUk1qSm91QU9ocUc4OWdkdmFWemtJT3hKZ0lTX1JCejZvcDRwVDFCT0o4LUJIRFhpYWxNME1qTTBaVmtHMEVyaWk5ZHFySXNUY29CWWliU1o5dElTLW92SnlVMEpTbUg2VGFiX29n0gGoAUFVX3lxTE9ScjFQMlljZ0tkbVlmREUtWlB5MFJMRm8xaFRMMko0dlhGUXJVbURDTU5wN3hrckRta1JuaEdKdG15andSQzVSRVFJTzJPRjlZSjZyVFhqM21rN2VEQk11NXpuS3Fscy1oYndSdkh0MEhmc3hvVFNXNVFOS25ydnJtQlJQdEpkR0pSNVNPa2tEd2EwWlJBZlNHUEhldk05T0pVRFd4VEtBSQ",
+  "title": "Longsor di Ampelgading Tutup Akses Jalan Malang-Lumajang - detikcom",
+  "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcERPNjJBRXk4RFVrVzNhdlYtVjFTVmZXWTB4NktPQWhFWjIwTlB4aTRqQmZLeHZYNDZjX1FIUk1qSm91QU9ocUc4OWdkdmFWemtJT3hKZ0lTX1JCejZvcDRwVDFCT0o4LUJIRFhpYWxNME1qTTBaVmtHMEVyaWk5ZHFySXNUY29CWWliU1o5dElTLW92SnlVMEpTbUg2VGFiX29n0gGoAUFVX3lxTE9ScjFQMlljZ0tkbVlmREUtWlB5MFJMRm8xaFRMMko0dlhGUXJVbURDTU5wN3hrckRta1JuaEdKdG15andSQzVSRVFJTzJPRjlZSjZyVFhqM21rN2VEQk11NXpuS3Fscy1oYndSdkh0MEhmc3hvVFNXNVFOS25ydnJtQlJQdEpkR0pSNVNPa2tEd2EwWlJBZlNHUEhldk05T0pVRFd4VEtBSQ?oc=5",
+  "source": "detikcom",
+  "source_url": "https://www.detik.com",
+  "published_at": "2026-11-02T01:40:02.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T03:45:33.052Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

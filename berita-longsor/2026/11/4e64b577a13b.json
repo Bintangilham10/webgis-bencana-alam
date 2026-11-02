@@ -1,0 +1,31 @@
+{
+  "guid": "CBMingFBVV95cUxQRm5VS0tob0NJMnkxREdjd01iMURzb0VqUVFMa0sxM1VMeWtwV3lMcWdmT3I2OG4wbEtEUWxPeVVxY0RwQXB5T0VHN2YtdUFEZnhack14Qmo2TzYxT0x2cXBGZVRzUUh2NzU0emFOVThUS2tpWldVWXN1dkNqNkJkYzFMeVVYS3Roa0hlNVhSWFdzVXpXcDJ3WTZadUEyQQ",
+  "title": "Waspada, Jalur Lumajang-Malang di Ampelgading Tertutup Longsor - Akurat Jatim",
+  "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRm5VS0tob0NJMnkxREdjd01iMURzb0VqUVFMa0sxM1VMeWtwV3lMcWdmT3I2OG4wbEtEUWxPeVVxY0RwQXB5T0VHN2YtdUFEZnhack14Qmo2TzYxT0x2cXBGZVRzUUh2NzU0emFOVThUS2tpWldVWXN1dkNqNkJkYzFMeVVYS3Roa0hlNVhSWFdzVXpXcDJ3WTZadUEyQQ?oc=5",
+  "source": "Akurat Jatim",
+  "source_url": "https://jatim.akurat.co",
+  "published_at": "2026-11-02T03:01:30.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T03:45:33.052Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi3wFBVV95cUxQOXpseVphWXpBVzloWEdBOUd2SlhjVmhLVzVwZEowVncyajNVT2dtWHN1dGZTc1UtOGdxamdBN0g1dmo5cXREdWZmUTZIR0huN3UtZVFmaFZiRUd0MTI3MWJSdm54UnYxVFpVMHNHRTV1aV93bXRZbXA0LU1GeWJFT1E4ck1DRTFCUmpNVTFXYjJpM2JGbjlvWmV2bkdlRmIyckdLSmVIT25EZGNkSFN1dTNCbThWV1pGSVFvV1JRTEpQUHZPZWpGZHFQWDlieHRDQXFEbTJ2dGlKY25BV3Fv",
+  "title": "Satu Rumah di Tulakan Rusak Tertimpa Longsor, Bencana Hidrometeorologi Mulai Mengancam Pacitan - TIMES Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQOXpseVphWXpBVzloWEdBOUd2SlhjVmhLVzVwZEowVncyajNVT2dtWHN1dGZTc1UtOGdxamdBN0g1dmo5cXREdWZmUTZIR0huN3UtZVFmaFZiRUd0MTI3MWJSdm54UnYxVFpVMHNHRTV1aV93bXRZbXA0LU1GeWJFT1E4ck1DRTFCUmpNVTFXYjJpM2JGbjlvWmV2bkdlRmIyckdLSmVIT25EZGNkSFN1dTNCbThWV1pGSVFvV1JRTEpQUHZPZWpGZHFQWDlieHRDQXFEbTJ2dGlKY25BV3Fv?oc=5",
+  "source": "TIMES Indonesia",
+  "source_url": "https://timesindonesia.co.id",
+  "published_at": "2026-11-02T03:02:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T03:45:33.052Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.01",
+      "nama": "Kabupaten Pacitan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

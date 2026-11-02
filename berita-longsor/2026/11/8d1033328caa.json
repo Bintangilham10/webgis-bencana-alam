@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiUkFVX3lxTE41LUwxckpfMm1aOXBaVkdOYk9CU21DbHcxeE1NaEctdkRNTm44T3BBLXAtOGNsRnIzV3FNSkhaMnZTcklWREtBbVZQc0VyS2NtbUE",
+  "title": "BREAKING NEWS: Jalur Kereta Api Ledokombo Tertutup Longsor, Perjalanan KA Jember - Banyuwangi Terganggu - Suara Jatim Post",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE41LUwxckpfMm1aOXBaVkdOYk9CU21DbHcxeE1NaEctdkRNTm44T3BBLXAtOGNsRnIzV3FNSkhaMnZTcklWREtBbVZQc0VyS2NtbUE?oc=5",
+  "source": "Suara Jatim Post",
+  "source_url": "https://suarajatimpost.com",
+  "published_at": "2026-11-02T01:03:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T03:45:33.052Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.10",
+      "nama": "Kabupaten Banyuwangi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.09",
+      "nama": "Kabupaten Jember",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

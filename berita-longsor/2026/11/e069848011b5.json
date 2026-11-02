@@ -1,0 +1,21 @@
+{
+  "guid": "CBMinwFBVV95cUxOakpWb0ZwemlmSFZZcnJ4SUR1cEQxb0RObUpNYVl2ZnBJMWdTXzktaU1XMzQxNW8zZjhRejdoTk1rMDl6SDBreUJ1MDc0LUx0Q3AxZ001MnVMZF9xZzJDbDBQWnBTcVdUb0FVZVJHOU1SRnZQTHZtOUlJVWFGYlRTMUJuVjlWQ2tmcWpHRmVnT3duZFpjX3pNU1Q0T09YaU0",
+  "title": "BPBD Kabupaten Malang Laporkan Dua Bencana, Longsor di Tirtoyudo Rusak 21 Rumah - TIMES Network AI",
+  "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOakpWb0ZwemlmSFZZcnJ4SUR1cEQxb0RObUpNYVl2ZnBJMWdTXzktaU1XMzQxNW8zZjhRejdoTk1rMDl6SDBreUJ1MDc0LUx0Q3AxZ001MnVMZF9xZzJDbDBQWnBTcVdUb0FVZVJHOU1SRnZQTHZtOUlJVWFGYlRTMUJuVjlWQ2tmcWpHRmVnT3duZFpjX3pNU1Q0T09YaU0?oc=5",
+  "source": "TIMES Network AI",
+  "source_url": "https://times.co.id",
+  "published_at": "2026-11-01T03:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T03:45:33.052Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

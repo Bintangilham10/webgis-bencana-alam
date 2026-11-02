@@ -1,0 +1,31 @@
+{
+  "guid": "CBMi0gFBVV95cUxOMDBjY2VVVXVQVmJ2cllmSGl1NXliTXc2TzM1QXkyS1pscG1iMGJ1alAySEJoa0twZWdmMVZlcGNxWnJQSmpJVEt0V3VRMG9aVTk3QVNkQ0d5OXZBcHktSERvYkdoVFk5Q1BEdDh4UUwyWGVNT1NLWEpJUkhKYmxhaW9hVDZiZlhMR0xpS3I5ekRUbVpxMmVOM01EZkptN180VTlqTmZPdnV3M1d3ZmRQQjBFeXl6TFVETS1lUVdJd1lLOVRYUnR2RkkyLTZmc29HRlE",
+  "title": "Diterjang Hujan Semalam, Tebing di Ampelgading Longsor Tutup Jalan Nasional Malang - Lumajang - TIMES Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOMDBjY2VVVXVQVmJ2cllmSGl1NXliTXc2TzM1QXkyS1pscG1iMGJ1alAySEJoa0twZWdmMVZlcGNxWnJQSmpJVEt0V3VRMG9aVTk3QVNkQ0d5OXZBcHktSERvYkdoVFk5Q1BEdDh4UUwyWGVNT1NLWEpJUkhKYmxhaW9hVDZiZlhMR0xpS3I5ekRUbVpxMmVOM01EZkptN180VTlqTmZPdnV3M1d3ZmRQQjBFeXl6TFVETS1lUVdJd1lLOVRYUnR2RkkyLTZmc29HRlE?oc=5",
+  "source": "TIMES Indonesia",
+  "source_url": "https://timesindonesia.co.id",
+  "published_at": "2026-11-02T03:09:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T03:45:33.052Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

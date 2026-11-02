@@ -1,0 +1,28 @@
+{
+  "guid": "CBMi0gFBVV95cUxOd1NQYXVPSmp4dmlwVTZYNloxOUxRYmtuRnczaktLWWsyWTdfTFd0NW5lMXBBQnMzZ3lickxtVU8ySGkyN3Jhcjd2dVNJVW56S3k1NUFwWmF4NXQ0WXUwOXJGS21TRHd2OFhxbU00TWpKY2FQOFlScmV3dDNGT3dUMC1NNmZGQkljVWpqbG8tUmtSbDNmWjlSM0NrU0lzMnpFYU02a2hJMGNmUkNDQ1JMZ1pLTEg3alpSTExZX3lFVks4dzJ1Mk1sZDdGYUhGa3pvN1E",
+  "title": "BREAKING NEWS: Hujan Deras, Gianyar dan Bangli Bali Dikepung Bencana Jalan Jebol dan Tanah Longsor - Tribun-bali.com",
+  "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOd1NQYXVPSmp4dmlwVTZYNloxOUxRYmtuRnczaktLWWsyWTdfTFd0NW5lMXBBQnMzZ3lickxtVU8ySGkyN3Jhcjd2dVNJVW56S3k1NUFwWmF4NXQ0WXUwOXJGS21TRHd2OFhxbU00TWpKY2FQOFlScmV3dDNGT3dUMC1NNmZGQkljVWpqbG8tUmtSbDNmWjlSM0NrU0lzMnpFYU02a2hJMGNmUkNDQ1JMZ1pLTEg3alpSTExZX3lFVks4dzJ1Mk1sZDdGYUhGa3pvN1E?oc=5",
+  "source": "Tribun-bali.com",
+  "source_url": "https://bali.tribunnews.com",
+  "published_at": "2026-11-02T01:30:31.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T03:45:33.052Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "51.04",
+      "nama": "Kabupaten Gianyar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "51.06",
+      "nama": "Kabupaten Bangli",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bali"
+  ]
+}
