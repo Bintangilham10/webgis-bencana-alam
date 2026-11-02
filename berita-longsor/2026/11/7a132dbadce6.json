@@ -1,0 +1,26 @@
+{
+  "guid": "CBMitgFBVV95cUxOdjhSdXlLaHZ1QTRxWjJNdDNaR21URGZfcFVCbzM2TzRjSHJOZURVd2wxa2JFUkdXME00X1k3X1puZTdQV1dUeTd0RjNfNFdIRmMyQ2UzZHVyUkw0em1ienBvZlAxZi1IdU1OY01jaXFGNmRTdzFWdFBmLWlQOGh1Rzk1a1FuZVJ1T1VkdTBlMjVYRHc5RVBtTXRlaFZIb3RMQ2J2QmNhV2NseEI5Mkd4aGdVWTFzQdIBuwFBVV95cUxPOGtmX0ZlUm5LeUhfMFIzVWdhN1ZQeFNKck1sOGpnVm4tVHh0eFREbHVSU0JJTFpmUTJzNWJNMW5yZlVwRkxIcVR6RkpMWHJnWXloalhmSHdvRUVNN0YwSTJvMFZuQXJ2MkRlRE04WUlYbVF0LWNqcnBtcEw4UmY1N3g0NDllVDVLVlByVzVaR045SW5HQTgyeDc2OGpoZ2hsWVVvODZ5TDl3UHpRYlJOT2lNUnRwNlZnRV9R",
+  "title": "Banjir dan Longsor di Trenggalek, Kemensos Salurkan Bantuan Logistik - Radar Depok - Radar Depok",
+  "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdjhSdXlLaHZ1QTRxWjJNdDNaR21URGZfcFVCbzM2TzRjSHJOZURVd2wxa2JFUkdXME00X1k3X1puZTdQV1dUeTd0RjNfNFdIRmMyQ2UzZHVyUkw0em1ienBvZlAxZi1IdU1OY01jaXFGNmRTdzFWdFBmLWlQOGh1Rzk1a1FuZVJ1T1VkdTBlMjVYRHc5RVBtTXRlaFZIb3RMQ2J2QmNhV2NseEI5Mkd4aGdVWTFzQdIBuwFBVV95cUxPOGtmX0ZlUm5LeUhfMFIzVWdhN1ZQeFNKck1sOGpnVm4tVHh0eFREbHVSU0JJTFpmUTJzNWJNMW5yZlVwRkxIcVR6RkpMWHJnWXloalhmSHdvRUVNN0YwSTJvMFZuQXJ2MkRlRE04WUlYbVF0LWNqcnBtcEw4UmY1N3g0NDllVDVLVlByVzVaR045SW5HQTgyeDc2OGpoZ2hsWVVvODZ5TDl3UHpRYlJOT2lNUnRwNlZnRV9R?oc=5",
+  "source": "Radar Depok",
+  "source_url": "https://www.radardepok.com",
+  "published_at": "2026-11-02T03:26:57.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T07:00:39.734Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.76",
+      "nama": "Kota Depok",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

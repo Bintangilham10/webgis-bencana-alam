@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiyAFBVV95cUxNc19GLS16Q3dxR3VGV2ZOdl9fQTVGellJVjlXdUJLRGtmOE9MMlgzaW0taEpSNVRjQ2dxcG1pczNuVHplZkQzTDlQZldtVldDT29DUjdOaGc4aWFmWm5XQWNSdDhzblNBVXF6Rm5CckJmU0JNclBQa1p6YVVwT1NlOXBrVk1pY2lMSTVQN0twVXQ3U2pXUElnVXBCN0ctNVQtTFZtSmEtYkd3Tk13NnBoVVhmYXBTOS1Oa0diaVQxaE5KMDNJYUp5YQ",
+  "title": "Antisipasi Banjir dan Longsor, Alarm Peringatan Dini Dipasang di Desa Serang Purbalingga - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNc19GLS16Q3dxR3VGV2ZOdl9fQTVGellJVjlXdUJLRGtmOE9MMlgzaW0taEpSNVRjQ2dxcG1pczNuVHplZkQzTDlQZldtVldDT29DUjdOaGc4aWFmWm5XQWNSdDhzblNBVXF6Rm5CckJmU0JNclBQa1p6YVVwT1NlOXBrVk1pY2lMSTVQN0twVXQ3U2pXUElnVXBCN0ctNVQtTFZtSmEtYkd3Tk13NnBoVVhmYXBTOS1Oa0diaVQxaE5KMDNJYUp5YQ?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://regional.kompas.com",
+  "published_at": "2026-11-02T05:34:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T07:00:39.734Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.03",
+      "nama": "Kabupaten Purbalingga",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "36.04",
+      "nama": "Kabupaten Serang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "36.73",
+      "nama": "Kota Serang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

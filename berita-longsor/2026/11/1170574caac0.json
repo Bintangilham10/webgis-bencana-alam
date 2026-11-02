@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi2gFBVV95cUxNekNrX1JMTjNBdVlOa24wUHhCd3RQT0ljUm55aml6bDRKc1ZrYUxrdjRXVXNoNWxrUk1PWDI0bmNiU2hvVjJobnFoeGJoUHppcDhqa0FBcm5kN3RYMi0tOWJ4UmdoRlN4Y2w0THk4d1VrU3Q4NGJDcWRvWXhVUGdyekdMSDZwWjBXSVhvNEpkV3VwekY4X3NNRWd1ZlJfSnlpTUlaOEx1T0xoRVlHRU1YNlMxMzVTSFVPR1o2ampSOWFPeVV3bnNxbW5saVpxOVpld2pVMjNLUXJZQQ",
+  "title": "Hujan Ekstrem Picu Banjir dan Longsor di Cilacap-Banyumas, Curah Hujan Tembus 349 Milimeter- Hal 2 - JPNN.com",
+  "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNekNrX1JMTjNBdVlOa24wUHhCd3RQT0ljUm55aml6bDRKc1ZrYUxrdjRXVXNoNWxrUk1PWDI0bmNiU2hvVjJobnFoeGJoUHppcDhqa0FBcm5kN3RYMi0tOWJ4UmdoRlN4Y2w0THk4d1VrU3Q4NGJDcWRvWXhVUGdyekdMSDZwWjBXSVhvNEpkV3VwekY4X3NNRWd1ZlJfSnlpTUlaOEx1T0xoRVlHRU1YNlMxMzVTSFVPR1o2ampSOWFPeVV3bnNxbW5saVpxOVpld2pVMjNLUXJZQQ?oc=5",
+  "source": "JPNN.com",
+  "source_url": "https://jateng.jpnn.com",
+  "published_at": "2026-11-02T04:05:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T07:00:39.734Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.01",
+      "nama": "Kabupaten Cilacap",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

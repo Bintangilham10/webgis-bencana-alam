@@ -1,0 +1,31 @@
+{
+  "guid": "CBMioAFBVV95cUxQYW8wcDNtbXFPMnYwNjRTY0Y1alRvbzh1VWZiY3F5alNfMElYbzI5aUs5WWlpcmNoSmJ3RVMwQTBhamwwMU9PVFFURVZMUHVHX1BmQXNPYllNYldZc1h1ejgzeU9pMlE5VWZJc3pnQTVFNUV0RVM0SGpvVmV6eHZOc0ZXYmRELXAyOFJ1WDF6WXJxQjl2dFpLRGtjeEVjeTVq",
+  "title": "Longsor di Ampelgading: Puluhan Rumah Terdampak, Jalur Malang–Lumajang Lumpuh - BACAMALANG.COM -",
+  "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQYW8wcDNtbXFPMnYwNjRTY0Y1alRvbzh1VWZiY3F5alNfMElYbzI5aUs5WWlpcmNoSmJ3RVMwQTBhamwwMU9PVFFURVZMUHVHX1BmQXNPYllNYldZc1h1ejgzeU9pMlE5VWZJc3pnQTVFNUV0RVM0SGpvVmV6eHZOc0ZXYmRELXAyOFJ1WDF6WXJxQjl2dFpLRGtjeEVjeTVq?oc=5",
+  "source": "BACAMALANG.COM -",
+  "source_url": "https://bacamalang.com",
+  "published_at": "2026-11-02T05:32:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T07:00:39.734Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

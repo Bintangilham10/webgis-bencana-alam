@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiggFBVV95cUxQWEpIdjZFNVZlSDBQeUllaU95Wnk5RWxhRFRVaV92LUxVU3J2WWRQYndSOVMxdHFGZnNYelQzMlpBSVA5ZUNSc3Y3cEYyQUI4NXhsVFJzQ0lFQkZSNFFHVHVvV0ZCNWdkcjIyUmtIZWRvM21Za1JIZWJvU19GNzRYQWRn",
+  "title": "Kapolsek Baturiti Pimpin Langsung Evakuasi Tanah Longsor yang Menutup Akses Jalan di Banjar Apit Yeh - RADAR NUSANTARA NEWS",
+  "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWEpIdjZFNVZlSDBQeUllaU95Wnk5RWxhRFRVaV92LUxVU3J2WWRQYndSOVMxdHFGZnNYelQzMlpBSVA5ZUNSc3Y3cEYyQUI4NXhsVFJzQ0lFQkZSNFFHVHVvV0ZCNWdkcjIyUmtIZWRvM21Za1JIZWJvU19GNzRYQWRn?oc=5",
+  "source": "RADAR NUSANTARA NEWS",
+  "source_url": "http://www.radarnusantara.com",
+  "published_at": "2026-11-02T06:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T07:00:39.734Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.79",
+      "nama": "Kota Banjar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "63.03",
+      "nama": "Kabupaten Banjar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

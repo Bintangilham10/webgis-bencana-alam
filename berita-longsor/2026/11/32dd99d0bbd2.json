@@ -1,0 +1,31 @@
+{
+  "guid": "CBMilAFBVV95cUxOdXhDTHgtRUJ2OTlfQWJfWWk1Wkt1azJRRkd5SHFtMGhGdG5uZjQ5Vk9lY3hxU2l2QzFCOEhHbHdDcVpjVElOX0lrbGhianN4R3RfbnJ4MllrQTNtcWN0bWR3WjhiQ1FKRDNOUHZhUUJra3g5X0pCV3ByUG4xQ2RPeGhjN252b2RldXRYbVhzVGVrUUJS",
+  "title": "Longsor Tutup Jalur Malang-Lumajang, Arus Lalin Lumpuh - PANTURA7.com",
+  "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdXhDTHgtRUJ2OTlfQWJfWWk1Wkt1azJRRkd5SHFtMGhGdG5uZjQ5Vk9lY3hxU2l2QzFCOEhHbHdDcVpjVElOX0lrbGhianN4R3RfbnJ4MllrQTNtcWN0bWR3WjhiQ1FKRDNOUHZhUUJra3g5X0pCV3ByUG4xQ2RPeGhjN252b2RldXRYbVhzVGVrUUJS?oc=5",
+  "source": "PANTURA7.com",
+  "source_url": "https://www.pantura7.com",
+  "published_at": "2026-11-02T05:25:13.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T07:00:39.734Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMikwFBVV95cUxPNFNoaDRLbGtoZjRqOTE4UEdrcUI3SHM5Mml3dmllY2ZuaEtTQ2Jzd284MTY0dkxzQ2NHR1RCa29PU3loazdpd2lSbzZkaFNXQVpocm5IQUFlYnA5NWE4UU96R1FpNmxIZkVFNjhfWjd1LVM2c0Y1U2VfOU1SbllfUF9FZk5lS0dzZVZvVjd0NlpPN1U",
+  "title": "BPBD Pangandaran Minta Warga Waspada Banjir dan Longsor - Fokus Jabar",
+  "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNFNoaDRLbGtoZjRqOTE4UEdrcUI3SHM5Mml3dmllY2ZuaEtTQ2Jzd284MTY0dkxzQ2NHR1RCa29PU3loazdpd2lSbzZkaFNXQVpocm5IQUFlYnA5NWE4UU96R1FpNmxIZkVFNjhfWjd1LVM2c0Y1U2VfOU1SbllfUF9FZk5lS0dzZVZvVjd0NlpPN1U?oc=5",
+  "source": "Fokus Jabar",
+  "source_url": "https://fokusjabar.id",
+  "published_at": "2026-11-02T06:05:48.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T07:00:39.734Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.18",
+      "nama": "Kabupaten Pangandaran",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

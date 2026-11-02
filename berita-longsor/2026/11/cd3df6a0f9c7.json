@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqwFBVV95cUxNUXBpLXd2VDFza2VyWVRtOHN6cjhwcUhsczZfMTR0Q18wNzQxUjhlZE5tNm1MejU4ZDdoOXI5dEpWUXc3dDJrNkk5cEtWMWg1dVF1ZnhkVVBCOUQ4QTlwWldwMm4wb2xiVFZwSXJ1VThYUnEwcjNjLUVhdjA5OE5zNGJDTEdlLTZlYUZMNERLd09oZEcyaWJ1ZWh1bjVMZm50NVlMSUdOYzhnWjjSAasBQVVfeXFMTVFwaS13dlQxc2tlcllUbThzenI4cHFIbHM2XzE0dENfMDc0MVI4ZWRObTZtTHo1OGQ3aDlyOXRKVlF3N3QyazZJOXBLVjFoNXVRdWZ4ZFVQQjlEOEE5cFpXcDJuMG9sYlRWcElydVU4WFJxMHIzYy1FYXYwOThOczRiQ0xHZS02ZWFGTDRES3dPaGRHMmlidWVodW41TGZudDVZTElHTmM4Z1o4",
+  "title": "Longsor, Dapur Rumah Warga Tiris-Probolinggo Jebol - Radar Bromo",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUXBpLXd2VDFza2VyWVRtOHN6cjhwcUhsczZfMTR0Q18wNzQxUjhlZE5tNm1MejU4ZDdoOXI5dEpWUXc3dDJrNkk5cEtWMWg1dVF1ZnhkVVBCOUQ4QTlwWldwMm4wb2xiVFZwSXJ1VThYUnEwcjNjLUVhdjA5OE5zNGJDTEdlLTZlYUZMNERLd09oZEcyaWJ1ZWh1bjVMZm50NVlMSUdOYzhnWjjSAasBQVVfeXFMTVFwaS13dlQxc2tlcllUbThzenI4cHFIbHM2XzE0dENfMDc0MVI4ZWRObTZtTHo1OGQ3aDlyOXRKVlF3N3QyazZJOXBLVjFoNXVRdWZ4ZFVQQjlEOEE5cFpXcDJuMG9sYlRWcElydVU4WFJxMHIzYy1FYXYwOThOczRiQ0xHZS02ZWFGTDRES3dPaGRHMmlidWVodW41TGZudDVZTElHTmM4Z1o4?oc=5",
+  "source": "Radar Bromo",
+  "source_url": "https://radarbromo.jawapos.com",
+  "published_at": "2026-11-02T00:26:23.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T07:00:39.734Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.13",
+      "nama": "Kabupaten Probolinggo",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.74",
+      "nama": "Kota Probolinggo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

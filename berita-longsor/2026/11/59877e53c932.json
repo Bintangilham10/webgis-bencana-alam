@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirwFBVV95cUxQU0NJQWtVc01NNF9taUFDMV9UOHQ1NElLMGFhaHFoWEtrQnF1T2ktWHk5QkMzQlBudXozaTdkUUJ5QlpTOFRrNTlmMktuNFMzQUNwM28tVkNOWEdiQzVfQkhzb0JlcFdNRGp1U2dRaTJ2UXNucjU3ZDVYRzRQRWZwZmN1YTNPaXpkT1lOaXc3UURPN2s4d05FVVJDRFJ6R3NjTVd3UWlGMmxqR2p0Q2hN",
+  "title": "Longsor di Ampelgading Malang, Terdampak Luapan Air Sungai Glidik - TIMES Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQU0NJQWtVc01NNF9taUFDMV9UOHQ1NElLMGFhaHFoWEtrQnF1T2ktWHk5QkMzQlBudXozaTdkUUJ5QlpTOFRrNTlmMktuNFMzQUNwM28tVkNOWEdiQzVfQkhzb0JlcFdNRGp1U2dRaTJ2UXNucjU3ZDVYRzRQRWZwZmN1YTNPaXpkT1lOaXc3UURPN2s4d05FVVJDRFJ6R3NjTVd3UWlGMmxqR2p0Q2hN?oc=5",
+  "source": "TIMES Indonesia",
+  "source_url": "https://timesindonesia.co.id",
+  "published_at": "2026-11-02T05:21:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T07:00:39.734Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiyAFBVV95cUxNMW01SHNpTlhUeGlMd0tkSHBFQ1VwWFdvLXBTVmg5bzRKOVZSaGRzcUUtLVpkM1gycXNWZ2N1bWlGX3FsVG94dk1uaC03ekEtZFBEclBNaV9rdUFMYW0ya3Q1RnczVDJCVEJOdEdBaVdvS0djWWFrNTR2UFdDeXFxUXJNQk9fTTljVGx5WU9OQmVldWxCZFNyLWtqSHNkUXp6SDFPTDBnaUU4SEpDdUpCUnMyWWgwNXJpQThFeUs5T2pkbndNazVNVQ",
+  "title": "Longsor di Ampelgading Tutup Jalur Malang-Lumajang, Ini Rute Alternatifnya - MalangTIMES",
+  "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMW01SHNpTlhUeGlMd0tkSHBFQ1VwWFdvLXBTVmg5bzRKOVZSaGRzcUUtLVpkM1gycXNWZ2N1bWlGX3FsVG94dk1uaC03ekEtZFBEclBNaV9rdUFMYW0ya3Q1RnczVDJCVEJOdEdBaVdvS0djWWFrNTR2UFdDeXFxUXJNQk9fTTljVGx5WU9OQmVldWxCZFNyLWtqSHNkUXp6SDFPTDBnaUU4SEpDdUpCUnMyWWgwNXJpQThFeUs5T2pkbndNazVNVQ?oc=5",
+  "source": "MalangTIMES",
+  "source_url": "https://malangtimes.com",
+  "published_at": "2026-11-02T04:00:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T07:00:39.734Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

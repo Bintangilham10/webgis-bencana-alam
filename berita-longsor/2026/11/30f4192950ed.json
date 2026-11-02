@@ -1,0 +1,26 @@
+{
+  "guid": "CBMimgFBVV95cUxOMGdhdk03T2gybjhxSElzM21CMHpVUzdham9RaTZWQktlUnJueV9uNTJHLWdCdGt3d0RQOG9SZDgzWVEwa2ZMdGdXemFyNmJhcUJ0dlpPTlRqTmxnYUFhZF9ZaUFMRi1XNkxZZGNrSlNXTVhfbVlMY1EtdzQ4RWFXcEpmY0FJVFpvcWtFWGVIaEQ1bWVPZ0ZKc1l3",
+  "title": "Berita Video - Longsor Tutup Jalur Nasional di Ampelgading Malang - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOMGdhdk03T2gybjhxSElzM21CMHpVUzdham9RaTZWQktlUnJueV9uNTJHLWdCdGt3d0RQOG9SZDgzWVEwa2ZMdGdXemFyNmJhcUJ0dlpPTlRqTmxnYUFhZF9ZaUFMRi1XNkxZZGNrSlNXTVhfbVlMY1EtdzQ4RWFXcEpmY0FJVFpvcWtFWGVIaEQ1bWVPZ0ZKc1l3?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-02T06:39:43.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T07:00:39.734Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

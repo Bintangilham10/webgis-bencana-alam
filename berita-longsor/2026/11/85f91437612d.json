@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiqAFBVV95cUxOX2NFSVRjSDdOM3lmOEhDR20yX09IbFVWRDYxSHBjaG1QUWxpSTdGOVBhVGQwY1RGbmU5eHBERzFyVG00SlZpNlROUVYybEFTTHZicG1aQVM5R0dVVUQtdU1xQ0hhS0lVRzhBM2FBLVBtekRMWnF0LURta3kzcFJNZmwzRXVLU2MtaTV5LW1POXRPajhyMkt1dlhCM3k5SERMLWlXVE1uMFc",
+  "title": "Tanah Longsor Sebabkan Jalur Lumajang - Malang Lumpuh - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOX2NFSVRjSDdOM3lmOEhDR20yX09IbFVWRDYxSHBjaG1QUWxpSTdGOVBhVGQwY1RGbmU5eHBERzFyVG00SlZpNlROUVYybEFTTHZicG1aQVM5R0dVVUQtdU1xQ0hhS0lVRzhBM2FBLVBtekRMWnF0LURta3kzcFJNZmwzRXVLU2MtaTV5LW1POXRPajhyMkt1dlhCM3k5SERMLWlXVE1uMFc?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://surabaya.kompas.com",
+  "published_at": "2026-11-02T05:10:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-02T07:00:39.734Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

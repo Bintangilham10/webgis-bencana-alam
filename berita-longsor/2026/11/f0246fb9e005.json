@@ -1,0 +1,21 @@
+{
+  "guid": "CBMitwFBVV95cUxPQzlFVlVVY2piNDdhcW9tYjdlSHRvWmJjQUJSQ0xucHVwbFc2c0dfOGJuOTlOWEdNSjVnN2lXWHRXOXVKUWFKcVE5aEJaMzFEa1pQSWdHYlNpR3hrZmdYQnpxdDFpNkJ5V0JJaXBwb1ZiWGxFUWRnc016akxITVltek1hNnF5X05MQlR2RjJMdnRrdVlGdjhLTmRhWThSOVNDa0d0ZHhrT2Z6bmw4LUpMSWllMXMyWjA",
+  "title": "Banjir dan Longsor Lumajang, 1.100 Warga Terdampak dan 117 KK Terisolasi - Bicara Surabaya",
+  "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQzlFVlVVY2piNDdhcW9tYjdlSHRvWmJjQUJSQ0xucHVwbFc2c0dfOGJuOTlOWEdNSjVnN2lXWHRXOXVKUWFKcVE5aEJaMzFEa1pQSWdHYlNpR3hrZmdYQnpxdDFpNkJ5V0JJaXBwb1ZiWGxFUWRnc016akxITVltek1hNnF5X05MQlR2RjJMdnRrdVlGdjhLTmRhWThSOVNDa0d0ZHhrT2Z6bmw4LUpMSWllMXMyWjA?oc=5",
+  "source": "Bicara Surabaya",
+  "source_url": "https://www.bicarasurabaya.com",
+  "published_at": "2026-11-02T06:36:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-02T07:00:39.734Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
