@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.02.14.82.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-02T21:30:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-02T22:00:00+09:00</effective>
+    <expires>2026-11-03T00:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Maluku Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 02 November 2026, 22:00 WIT di sebagian wilayah Maluku Utara, khususnya di KAO TELUK, KOTA MABA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 November 2026, 00:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CMU/2026/11/02/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Maluku Utara</areaDesc>
+      <polygon>1.069,127.757 1.062,127.736 1.043,127.710 1.036,127.675 1.028,127.658 1.021,127.652 1.000,127.648 0.984,127.630 0.950,127.630 0.933,127.640 0.921,127.632 0.913,127.638 0.919,127.646 0.918,127.650 0.888,127.657 0.883,127.665 0.876,127.653 0.865,127.674 0.868,127.680 0.873,127.676 0.874,127.667 0.880,127.670 0.879,127.694 0.868,127.691 0.855,127.696 0.838,127.697 0.829,127.707 0.821,127.709 0.818,127.695 0.831,127.676 0.878,127.633 0.916,127.606 0.969,127.595 0.987,127.598 1.028,127.618 1.035,127.610 1.063,127.602 1.071,127.602 1.081,127.615 1.108,127.604 1.116,127.625 1.133,127.623 1.111,127.693 1.088,127.737 1.069,127.757</polygon>
+      <polygon>0.638,128.385 0.635,128.390 0.613,128.378 0.578,128.333 0.547,128.318 0.548,128.318 0.551,128.317 0.551,128.317 0.553,128.317 0.555,128.316 0.555,128.315 0.555,128.312 0.555,128.312 0.555,128.309 0.555,128.308 0.555,128.308 0.554,128.306 0.554,128.306 0.554,128.305 0.554,128.304 0.554,128.303 0.554,128.301 0.554,128.301 0.554,128.300 0.554,128.300 0.554,128.299 0.554,128.298 0.554,128.295 0.554,128.295 0.554,128.295 0.554,128.294 0.554,128.294 0.554,128.290 0.554,128.286 0.554,128.285 0.554,128.285 0.551,128.284 0.551,128.283 0.550,128.283 0.550,128.282 0.549,128.280 0.549,128.280 0.548,128.279 0.548,128.276 0.548,128.275 0.548,128.274 0.549,128.273 0.549,128.272 0.550,128.272 0.550,128.271 0.550,128.271 0.551,128.271 0.570,128.264 0.571,128.251 0.586,128.237 0.598,128.216 0.601,128.205 0.589,128.167 0.593,128.155 0.593,128.118 0.615,128.084 0.616,128.068 0.640,128.063 0.643,128.057 0.639,128.044 0.645,128.038 0.644,128.024 0.655,128.005 0.655,127.995 0.677,127.974 0.686,127.979 0.884,128.133 0.841,128.249 0.828,128.247 0.818,128.242 0.808,128.208 0.790,128.199 0.778,128.210 0.756,128.218 0.730,128.247 0.741,128.254 0.736,128.262 0.701,128.293 0.662,128.312 0.656,128.319 0.652,128.324 0.658,128.339 0.655,128.356 0.652,128.361 0.648,128.350 0.644,128.349 0.640,128.365 0.644,128.367 0.643,128.371 0.636,128.379 0.636,128.384 0.638,128.382 0.638,128.385</polygon>
+      <polygon>0.637,128.380 0.642,128.380 0.640,128.382 0.637,128.380</polygon>
+      <polygon>0.709,128.303 0.705,128.305 0.703,128.299 0.709,128.303</polygon>
+      <polygon>0.789,128.211 0.794,128.207 0.793,128.211 0.789,128.211</polygon>
+      <polygon>0.814,128.245 0.808,128.253 0.799,128.255 0.792,128.266 0.790,128.266 0.791,128.257 0.798,128.248 0.814,128.241 0.814,128.245</polygon>
+    </area>
+  </info>
+</alert>
