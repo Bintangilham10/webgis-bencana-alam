@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.02.05.91.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-02T13:10:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-02T13:30:00+09:00</effective>
+    <expires>2026-11-02T15:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 02 November 2026, 13:30 WIT di sebagian wilayah Papua, khususnya di YAPEN UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 02 November 2026, 15:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPU/2026/11/02/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua</areaDesc>
+      <polygon>-1.726,136.590 -1.750,136.601 -1.757,136.593 -1.781,136.598 -1.798,136.597 -1.794,136.444 -1.788,136.324 -1.788,136.323 -1.787,136.303 -1.787,136.300 -1.786,136.273 -1.780,136.258 -1.765,136.217 -1.762,136.208 -1.758,136.201 -1.729,136.211 -1.715,136.208 -1.702,136.198 -1.693,136.200 -1.689,136.206 -1.651,136.208 -1.669,136.230 -1.678,136.279 -1.685,136.286 -1.687,136.304 -1.703,136.323 -1.706,136.348 -1.717,136.369 -1.719,136.413 -1.713,136.435 -1.706,136.446 -1.701,136.447 -1.702,136.456 -1.707,136.500 -1.721,136.543 -1.729,136.584 -1.726,136.590</polygon>
+    </area>
+  </info>
+</alert>
