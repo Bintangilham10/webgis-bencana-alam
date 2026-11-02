@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.02.04.74.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-02T10:30:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-02T11:00:00+08:00</effective>
+    <expires>2026-11-02T13:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tenggara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 02 November 2026, 11:00 WITA di sebagian wilayah Sulawesi Tenggara, khususnya di WAWONII SELATAN, WAWONII TENGAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 02 November 2026, 13:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CST/2026/11/02/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tenggara</areaDesc>
+      <polygon>-4.116,123.098 -4.143,123.110 -4.248,123.070 -4.221,123.025 -4.204,123.010 -4.201,122.990 -4.168,122.981 -4.166,122.975 -4.155,122.971 -4.149,122.964 -4.141,122.972 -4.144,122.980 -4.127,123.017 -4.106,123.079 -4.116,123.098</polygon>
+      <polygon>-4.055,122.967 -4.086,122.991 -4.099,123.065 -4.106,123.079 -4.127,123.017 -4.144,122.980 -4.141,122.972 -4.149,122.964 -4.140,122.955 -4.094,122.936 -4.087,122.945 -4.082,122.945 -4.079,122.939 -4.066,122.935 -4.063,122.944 -4.059,122.946 -4.051,122.942 -4.055,122.967</polygon>
+    </area>
+  </info>
+</alert>
