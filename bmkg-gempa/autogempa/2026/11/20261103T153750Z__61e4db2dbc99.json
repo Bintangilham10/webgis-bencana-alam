@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-11-03T16:30:55.452Z",
+  "data": {
+    "Tanggal": "03 Nov 2026",
+    "Jam": "22:37:50 WIB",
+    "DateTime": "2026-11-03T15:37:50+00:00",
+    "Coordinates": "-0.20,123.32",
+    "Lintang": "0.20 LS",
+    "Bujur": "123.32 BT",
+    "Magnitude": "4.8",
+    "Kedalaman": "87 km",
+    "Wilayah": "Pusat gempa berada di laut 86 km Selatan Kota Gorontalo",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Kab. Gorontalo, II - III Kab. Bone Bolango, II - III Kab. Gorontalo Utara, II - III Kota Gorontalo, II - III Kab. Banggai, II - III Kab. Banggai Kepulauan",
+    "Shakemap": "20261103223750.mmi.jpg"
+  }
+}
