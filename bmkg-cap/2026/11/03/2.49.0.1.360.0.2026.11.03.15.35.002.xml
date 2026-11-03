@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.03.15.35.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-03T21:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-03T21:50:00+07:00</effective>
+    <expires>2026-11-03T23:50:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 03 November 2026, 21:50 WIB di sebagian wilayah Jawa Timur, khususnya di GUCIALIT, JRENGIK, PANGARENGAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 November 2026, 23:50 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/03/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.973,113.164 -7.977,113.170 -7.983,113.170 -8.008,113.188 -8.040,113.185 -8.046,113.187 -8.048,113.193 -8.054,113.198 -8.057,113.188 -8.067,113.169 -8.068,113.153 -8.074,113.146 -8.078,113.149 -8.083,113.145 -8.089,113.126 -8.037,113.114 -8.008,113.083 -7.982,113.071 -7.981,113.102 -7.992,113.116 -7.977,113.136 -7.980,113.150 -7.970,113.158 -7.973,113.164</polygon>
+      <polygon>-7.095,113.175 -7.098,113.181 -7.123,113.191 -7.143,113.195 -7.150,113.182 -7.150,113.171 -7.162,113.159 -7.157,113.152 -7.156,113.138 -7.169,113.133 -7.177,113.127 -7.162,113.120 -7.155,113.102 -7.157,113.097 -7.133,113.093 -7.128,113.096 -7.126,113.104 -7.113,113.106 -7.110,113.111 -7.114,113.115 -7.089,113.111 -7.086,113.122 -7.091,113.130 -7.092,113.147 -7.100,113.166 -7.100,113.173 -7.095,113.175</polygon>
+      <polygon>-7.162,113.159 -7.166,113.163 -7.167,113.178 -7.179,113.188 -7.174,113.200 -7.197,113.212 -7.210,113.210 -7.222,113.203 -7.227,113.170 -7.207,113.159 -7.207,113.152 -7.214,113.145 -7.211,113.138 -7.188,113.143 -7.169,113.133 -7.156,113.138 -7.157,113.152 -7.162,113.159</polygon>
+    </area>
+  </info>
+</alert>
