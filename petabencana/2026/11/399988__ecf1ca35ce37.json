@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-03T06:30:34.333Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        112.9484768535,
+        -8.3037426197
+      ]
+    },
+    "properties": {
+      "pkey": "399988",
+      "created_at": "2026-11-03T06:24:18.610Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "59766051-5c23-48cb-a24b-f42a227d3467",
+      "image_url": "https://images.petabencana.id/59766051-5c23-48cb-a24b-f42a227d3467.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 70
+      },
+      "tags": {
+        "city": "LUMAJANG",
+        "district_id": null,
+        "region_code": "3508",
+        "local_area_id": null,
+        "instance_region_code": "ID-JI"
+      },
+      "title": null,
+      "text": "Banjir lahar dingin Gunung Semeru menerjang daerah aliran Sungai Glidik hingga menjebol tanggul di Desa Purorejo, Kecamatan Tempursar",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
