@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiygFBVV95cUxNUE50U2tiSWpJXy03eC0xTHZzbXR1MzJ6TkRGMm41c2hTcEFSTlZrSWhEbENQU3NJdk9YUFNONmZXSE9tXzhTZ3NPRkIyX2t2U21PeW9aZnVoYXNlZWNRY3cxQkotSjhqaTlOWUlGQmxKTTBzSko3RDJydHNLQ3RYcTJfRGQ2Y0cxV2NoakFVZ2VER1pzVHM3MFRrbmlWOHBvSmZOZUdNa0l0TEtqVF9ESlljcUxNSmxGclJsaDZJTGlRWDNaMjBHSU53",
+  "title": "Tanah Masih Labil, Pencarian 2 Korban Longsor di Pelaga Ecopark Bali Terkendala Medan - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUE50U2tiSWpJXy03eC0xTHZzbXR1MzJ6TkRGMm41c2hTcEFSTlZrSWhEbENQU3NJdk9YUFNONmZXSE9tXzhTZ3NPRkIyX2t2U21PeW9aZnVoYXNlZWNRY3cxQkotSjhqaTlOWUlGQmxKTTBzSko3RDJydHNLQ3RYcTJfRGQ2Y0cxV2NoakFVZ2VER1pzVHM3MFRrbmlWOHBvSmZOZUdNa0l0TEtqVF9ESlljcUxNSmxGclJsaDZJTGlRWDNaMjBHSU53?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://denpasar.kompas.com",
+  "published_at": "2026-11-03T11:35:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-03T13:45:31.873Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "12.71",
+      "nama": "Kota Medan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bali"
+  ]
+}

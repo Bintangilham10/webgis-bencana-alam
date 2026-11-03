@@ -1,0 +1,21 @@
+{
+  "guid": "CBMizgFBVV95cUxQNjdpWk43MXl2VXlzUDZHZ0FmeHRSa0l5a1BpYl9sc3BWdTNCYWNzN0dlLVJ0d1RpNWNxNW9WQXc3UVk1T0ZyTUIwT2dMQy05QWhELW15c2sxM2FKWkZDYlQtMVNXWjNhNDhJSk9IUDJHNHBuQmxEMVlGbDQ2X3VGT3lSVUhHbm12dTlYZjNfQldYUTNwaXJDeThuVUtHd1dWaDNCb0xRZXhaRDZoTHFfTlh1VEpydng2M2NmRDJKM044c1VmTXBvZndDTUJjQdIBzgFBVV95cUxQNjdpWk43MXl2VXlzUDZHZ0FmeHRSa0l5a1BpYl9sc3BWdTNCYWNzN0dlLVJ0d1RpNWNxNW9WQXc3UVk1T0ZyTUIwT2dMQy05QWhELW15c2sxM2FKWkZDYlQtMVNXWjNhNDhJSk9IUDJHNHBuQmxEMVlGbDQ2X3VGT3lSVUhHbm12dTlYZjNfQldYUTNwaXJDeThuVUtHd1dWaDNCb0xRZXhaRDZoTHFfTlh1VEpydng2M2NmRDJKM044c1VmTXBvZndDTUJjQQ",
+  "title": "Rawan Banjir dan Longsor, Titiknya Mulai Dipetakan BPBD Tanah Laut - Radar Banjarmasin",
+  "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQNjdpWk43MXl2VXlzUDZHZ0FmeHRSa0l5a1BpYl9sc3BWdTNCYWNzN0dlLVJ0d1RpNWNxNW9WQXc3UVk1T0ZyTUIwT2dMQy05QWhELW15c2sxM2FKWkZDYlQtMVNXWjNhNDhJSk9IUDJHNHBuQmxEMVlGbDQ2X3VGT3lSVUhHbm12dTlYZjNfQldYUTNwaXJDeThuVUtHd1dWaDNCb0xRZXhaRDZoTHFfTlh1VEpydng2M2NmRDJKM044c1VmTXBvZndDTUJjQdIBzgFBVV95cUxQNjdpWk43MXl2VXlzUDZHZ0FmeHRSa0l5a1BpYl9sc3BWdTNCYWNzN0dlLVJ0d1RpNWNxNW9WQXc3UVk1T0ZyTUIwT2dMQy05QWhELW15c2sxM2FKWkZDYlQtMVNXWjNhNDhJSk9IUDJHNHBuQmxEMVlGbDQ2X3VGT3lSVUhHbm12dTlYZjNfQldYUTNwaXJDeThuVUtHd1dWaDNCb0xRZXhaRDZoTHFfTlh1VEpydng2M2NmRDJKM044c1VmTXBvZndDTUJjQQ?oc=5",
+  "source": "Radar Banjarmasin",
+  "source_url": "https://radarbanjarmasin.jawapos.com",
+  "published_at": "2026-11-03T07:20:19.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-03T13:45:31.873Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "63.01",
+      "nama": "Kabupaten Tanah Laut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
