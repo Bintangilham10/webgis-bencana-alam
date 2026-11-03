@@ -1,0 +1,23 @@
+{
+  "guid": "CBMitAFBVV95cUxNbHJ3aTdhRVhTeWFCOXdzWENPT3BFSmhrY1dvUS16ZUhMQXFhWmwtMGFURUk3blRxQmNDTXk4ZExtS3NZOHN6WUpjQXNEdVlBZjNyOTM3dklocnBsYlEzdkdoR296Y3FJbEU4U1dCS1FLWTBtMTlFUEtNQllmbkJ5T3dfMjlWYnFNajlvRi1YV2FCZ19Od3QxZWw5UDFCUjI5VHhYQTAzTE1RdjFOQzlqdHNNMk4",
+  "title": "BPJN Wilayah I Mulai Rampungkan Penanganan Longsor Ruas Sebelat–Lais di Bengkulu Utara - Target Berita",
+  "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbHJ3aTdhRVhTeWFCOXdzWENPT3BFSmhrY1dvUS16ZUhMQXFhWmwtMGFURUk3blRxQmNDTXk4ZExtS3NZOHN6WUpjQXNEdVlBZjNyOTM3dklocnBsYlEzdkdoR296Y3FJbEU4U1dCS1FLWTBtMTlFUEtNQllmbkJ5T3dfMjlWYnFNajlvRi1YV2FCZ19Od3QxZWw5UDFCUjI5VHhYQTAzTE1RdjFOQzlqdHNNMk4?oc=5",
+  "source": "Target Berita",
+  "source_url": "https://targetberita.co.id",
+  "published_at": "2026-11-03T06:58:38.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-03T07:30:37.382Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "17.03",
+      "nama": "Kabupaten Bengkulu Utara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bengkulu"
+  ]
+}

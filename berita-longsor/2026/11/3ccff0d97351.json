@@ -1,0 +1,21 @@
+{
+  "guid": "CBMioAFBVV95cUxPNGU3d0xGRDA3S283d05TNXlyT1BDSnF1dkVvY0JzX056LV9LWVMxTUNtcXI2N0xQbzBJcks0TUpRUmxEUThEb0FpNVpSeFJ2VGxJLXJlX2hEcWx4M28zb01Hc0lqMTc3RXdlQ2YyZzRhMUVFdDR2TERZN004bnRWRVdNUUlLbUk5WXJVTWNqUVlUNlJ2a1d6MGROTWRaeHNa",
+  "title": "Hujan Deras Picu Banjir dan Longsor di Enam Kecamatan Kabupaten Malang - Harian Bhirawa",
+  "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNGU3d0xGRDA3S283d05TNXlyT1BDSnF1dkVvY0JzX056LV9LWVMxTUNtcXI2N0xQbzBJcks0TUpRUmxEUThEb0FpNVpSeFJ2VGxJLXJlX2hEcWx4M28zb01Hc0lqMTc3RXdlQ2YyZzRhMUVFdDR2TERZN004bnRWRVdNUUlLbUk5WXJVTWNqUVlUNlJ2a1d6MGROTWRaeHNa?oc=5",
+  "source": "Harian Bhirawa",
+  "source_url": "https://harianbhirawa.co.id",
+  "published_at": "2026-11-03T06:03:02.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-03T07:30:37.382Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.03.07.19.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-03T14:05:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-03T14:15:00+07:00</effective>
+    <expires>2026-11-03T16:15:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 03 November 2026, 14:15 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di LEPAR PONGOK, SIMPANG RIMBA, SIMPANG TERITIP.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 November 2026, 16:15 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/11/03/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-2.899,106.826 -2.916,106.842 -2.930,106.877 -2.930,106.894 -2.944,106.910 -2.968,106.906 -3.008,106.880 -3.022,106.881 -3.029,106.893 -3.031,106.892 -3.032,106.869 -3.038,106.858 -3.029,106.845 -3.029,106.822 -3.019,106.794 -2.997,106.772 -2.967,106.710 -2.945,106.730 -2.925,106.732 -2.925,106.747 -2.911,106.769 -2.905,106.788 -2.895,106.793 -2.887,106.802 -2.899,106.826</polygon>
+      <polygon>-2.838,106.797 -2.840,106.803 -2.843,106.781 -2.834,106.787 -2.838,106.797</polygon>
+      <polygon>-2.844,106.844 -2.844,106.854 -2.858,106.854 -2.858,106.843 -2.851,106.829 -2.843,106.837 -2.844,106.844</polygon>
+      <polygon>-2.868,106.738 -2.878,106.748 -2.887,106.747 -2.904,106.735 -2.903,106.722 -2.890,106.719 -2.885,106.728 -2.866,106.737 -2.868,106.738</polygon>
+      <polygon>-2.883,106.769 -2.884,106.776 -2.888,106.777 -2.896,106.769 -2.897,106.763 -2.887,106.760 -2.883,106.769</polygon>
+      <polygon>-2.904,106.770 -2.901,106.766 -2.901,106.771 -2.904,106.770</polygon>
+      <polygon>-2.959,106.674 -2.963,106.679 -2.969,106.677 -2.968,106.671 -2.961,106.667 -2.959,106.674</polygon>
+      <polygon>-2.961,106.696 -2.964,106.696 -2.966,106.691 -2.960,106.692 -2.961,106.696</polygon>
+      <polygon>-2.978,106.701 -2.984,106.714 -2.995,106.703 -2.988,106.695 -2.979,106.696 -2.978,106.701</polygon>
+      <polygon>-2.496,106.087 -2.505,106.098 -2.535,106.087 -2.542,106.079 -2.555,106.074 -2.673,106.064 -2.682,106.051 -2.699,106.046 -2.709,106.051 -2.752,106.042 -2.770,106.028 -2.832,106.031 -2.815,105.977 -2.815,105.968 -2.821,105.950 -2.792,105.956 -2.783,105.953 -2.744,105.919 -2.719,105.919 -2.697,105.907 -2.667,105.903 -2.643,105.887 -2.606,105.899 -2.596,105.893 -2.589,105.895 -2.587,105.900 -2.579,105.906 -2.545,105.918 -2.528,105.936 -2.482,105.935 -2.488,105.972 -2.479,106.012 -2.483,106.020 -2.502,106.032 -2.512,106.031 -2.516,106.046 -2.513,106.054 -2.499,106.054 -2.493,106.060 -2.500,106.070 -2.496,106.087</polygon>
+      <polygon>-1.760,105.391 -1.776,105.421 -1.790,105.466 -1.801,105.481 -1.851,105.478 -1.901,105.482 -1.935,105.496 -1.957,105.530 -1.976,105.543 -2.000,105.549 -2.032,105.545 -2.052,105.528 -2.067,105.527 -2.077,105.520 -2.090,105.502 -2.092,105.485 -2.103,105.464 -2.135,105.434 -2.136,105.429 -2.120,105.408 -2.132,105.378 -2.122,105.346 -2.052,105.365 -2.050,105.303 -2.063,105.289 -2.062,105.282 -2.034,105.283 -2.021,105.277 -2.016,105.267 -1.986,105.267 -1.982,105.275 -1.966,105.266 -1.940,105.261 -1.906,105.249 -1.902,105.248 -1.895,105.268 -1.884,105.279 -1.862,105.321 -1.845,105.335 -1.840,105.349 -1.815,105.360 -1.802,105.372 -1.760,105.391</polygon>
+    </area>
+  </info>
+</alert>

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMitwFBVV95cUxOQnNnRU1BRHd0eXVGaE04REg4TTZRT3YwaTQ1U1NkMDR3WFdscVBQamVUVVRzNTNMY2VHZjRlSGNHQlRGeTViQ3lKNWJRQ1hkZXZsYm5sQnc3cG1BMEFKWmJ2YWtJNEE5aDNyVldLMWN0cnd6a1p6a0R6VVAtenRVdy1rLVBwZUJnVDRDcWhKcG1yamhJRjh4dFZzMndJTjRvRGZoRm1XbEJndGtSMmJ4VVB4elA1OUE",
+  "title": "Kapolres Buleleng Peringatkan Ancaman Banjir dan Longsor, Warga Diminta Waspada - Koran Buleleng",
+  "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQnNnRU1BRHd0eXVGaE04REg4TTZRT3YwaTQ1U1NkMDR3WFdscVBQamVUVVRzNTNMY2VHZjRlSGNHQlRGeTViQ3lKNWJRQ1hkZXZsYm5sQnc3cG1BMEFKWmJ2YWtJNEE5aDNyVldLMWN0cnd6a1p6a0R6VVAtenRVdy1rLVBwZUJnVDRDcWhKcG1yamhJRjh4dFZzMndJTjRvRGZoRm1XbEJndGtSMmJ4VVB4elA1OUE?oc=5",
+  "source": "Koran Buleleng",
+  "source_url": "https://koranbuleleng.com",
+  "published_at": "2026-11-03T05:55:15.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-03T07:30:37.382Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "51.08",
+      "nama": "Kabupaten Buleleng",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
