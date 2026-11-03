@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.03.03.11.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-03T09:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-03T09:10:00+07:00</effective>
+    <expires>2026-11-03T11:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Aceh</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 03 November 2026, 09:10 WIB di sebagian wilayah Aceh, khususnya di PEUREULAK, PEUREULAK TIMUR, RANTAU PEUREULAK, SUNGAI RAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 November 2026, 11:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CAH/2026/11/03/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Aceh</areaDesc>
+      <polygon>4.744,97.954 4.741,97.930 4.750,97.915 4.744,97.904 4.745,97.890 4.748,97.889 4.753,97.895 4.758,97.894 4.762,97.871 4.754,97.868 4.739,97.872 4.729,97.868 4.724,97.855 4.707,97.837 4.713,97.831 4.715,97.814 4.703,97.817 4.695,97.812 4.690,97.818 4.689,97.831 4.681,97.837 4.676,97.784 4.668,97.784 4.670,97.769 4.678,97.761 4.675,97.751 4.672,97.746 4.689,97.742 4.691,97.738 4.699,97.741 4.706,97.747 4.707,97.762 4.719,97.765 4.720,97.774 4.729,97.780 4.729,97.790 4.745,97.796 4.746,97.811 4.753,97.808 4.753,97.798 4.763,97.812 4.772,97.803 4.777,97.813 4.788,97.812 4.785,97.827 4.791,97.825 4.808,97.835 4.816,97.848 4.820,97.848 4.811,97.864 4.816,97.886 4.814,97.890 4.824,97.885 4.841,97.894 4.849,97.894 4.851,97.900 4.859,97.901 4.863,97.899 4.857,97.895 4.863,97.891 4.875,97.901 4.873,97.891 4.889,97.894 4.886,97.906 4.778,97.946 4.769,97.946 4.746,97.957 4.744,97.954</polygon>
+      <polygon>4.857,97.811 4.846,97.807 4.839,97.810 4.836,97.825 4.818,97.839 4.816,97.848 4.808,97.835 4.791,97.825 4.785,97.827 4.788,97.812 4.777,97.813 4.772,97.803 4.763,97.812 4.753,97.798 4.753,97.808 4.746,97.811 4.745,97.796 4.729,97.790 4.729,97.780 4.720,97.774 4.719,97.765 4.707,97.762 4.706,97.747 4.699,97.741 4.691,97.738 4.689,97.742 4.672,97.746 4.675,97.751 4.670,97.744 4.677,97.740 4.673,97.728 4.663,97.715 4.650,97.715 4.644,97.709 4.638,97.688 4.673,97.680 4.722,97.661 4.726,97.657 4.721,97.642 4.725,97.603 4.761,97.587 4.765,97.581 4.780,97.580 4.782,97.593 4.801,97.593 4.813,97.607 4.811,97.621 4.835,97.644 4.829,97.653 4.804,97.665 4.803,97.705 4.864,97.740 4.866,97.738 4.866,97.739 4.869,97.754 4.865,97.762 4.869,97.770 4.876,97.770 4.854,97.798 4.857,97.811</polygon>
+      <polygon>4.744,97.954 4.733,97.961 4.712,97.962 4.710,97.958 4.693,97.903 4.683,97.887 4.681,97.837 4.689,97.831 4.690,97.818 4.695,97.812 4.703,97.817 4.715,97.814 4.713,97.831 4.707,97.837 4.724,97.855 4.729,97.868 4.739,97.872 4.754,97.868 4.762,97.871 4.758,97.894 4.753,97.895 4.748,97.889 4.745,97.890 4.744,97.904 4.750,97.915 4.741,97.930 4.744,97.954</polygon>
+      <polygon>4.663,97.972 4.659,97.952 4.637,97.914 4.635,97.904 4.640,97.893 4.636,97.888 4.631,97.818 4.639,97.823 4.643,97.808 4.668,97.784 4.676,97.784 4.681,97.837 4.683,97.887 4.693,97.903 4.710,97.958 4.712,97.962 4.674,97.976 4.669,97.975 4.679,97.969 4.675,97.962 4.664,97.964 4.663,97.972</polygon>
+    </area>
+  </info>
+</alert>
