@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi2gFBVV95cUxQcHNQQUx0VHZ1T3ZlOWNMUUZUYWtzY3NsNENGaU9FNnBlNVZMbHM1M1Fnd2NGNnZBMTZnOHpIYWVYeDZyUUdaLTl6aUJUTEY2VnZKMXJwX0M5eG9zMGNyRWV6dXhac2FUa2hBU1VpRTlILVU4ZU11TGZvVTNpNlhLdFd1ZWQzS1ZZNTkwRjhSUURuOHMzN3poTC1KakZ0dldxNTEycjJmQjZQUjBobVBjVllMVXFrelhrbllKM2g2eF9RU0lwRTN3Z2Yxemd0RmRISjhJOTJTZjJaUQ",
+  "title": "Hujan Lebat Guyur Banyuwangi, BPBD Siaga Antisipasi Banjir dan Longsor di Sejumlah Wilayah - TIMES Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQcHNQQUx0VHZ1T3ZlOWNMUUZUYWtzY3NsNENGaU9FNnBlNVZMbHM1M1Fnd2NGNnZBMTZnOHpIYWVYeDZyUUdaLTl6aUJUTEY2VnZKMXJwX0M5eG9zMGNyRWV6dXhac2FUa2hBU1VpRTlILVU4ZU11TGZvVTNpNlhLdFd1ZWQzS1ZZNTkwRjhSUURuOHMzN3poTC1KakZ0dldxNTEycjJmQjZQUjBobVBjVllMVXFrelhrbllKM2g2eF9RU0lwRTN3Z2Yxemd0RmRISjhJOTJTZjJaUQ?oc=5",
+  "source": "TIMES Indonesia",
+  "source_url": "https://timesindonesia.co.id",
+  "published_at": "2026-11-03T03:20:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-03T04:30:33.555Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.10",
+      "nama": "Kabupaten Banyuwangi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
