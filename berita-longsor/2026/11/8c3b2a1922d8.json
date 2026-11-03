@@ -1,0 +1,21 @@
+{
+  "guid": "CBMivgFBVV95cUxPaVpkeUZkTWZGSzFncktVc1JEajVDUzdhRzQ2ZWYtektpMXFKdnhxZVdHeEt2Ri1POFJnMGNobkkycTVna3YzLXBmallYdU9ZWC1sZTZLWWtBNmxsYWpvSkJjUnhMVldaQTRHakdWVFZXb2d3WjdoLXZHdmlnVnlSazdFRXJDcUxaR2l4LXFzUnhndXRKUlAzLXR2VFZoMEhOSzZvQ0xtNnhtQlc1U0N1WFFKYkh5MlBwczhDN1RB",
+  "title": "Longsor Bandung Barat, Jalan Penghubung Dua Kecamatan Terancam Amblas - Pikiran Rakyat Koran",
+  "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPaVpkeUZkTWZGSzFncktVc1JEajVDUzdhRzQ2ZWYtektpMXFKdnhxZVdHeEt2Ri1POFJnMGNobkkycTVna3YzLXBmallYdU9ZWC1sZTZLWWtBNmxsYWpvSkJjUnhMVldaQTRHakdWVFZXb2d3WjdoLXZHdmlnVnlSazdFRXJDcUxaR2l4LXFzUnhndXRKUlAzLXR2VFZoMEhOSzZvQ0xtNnhtQlc1U0N1WFFKYkh5MlBwczhDN1RB?oc=5",
+  "source": "Pikiran Rakyat Koran",
+  "source_url": "https://koran.pikiran-rakyat.com",
+  "published_at": "2026-11-03T22:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-03T23:00:40.285Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.17",
+      "nama": "Kabupaten Bandung Barat",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

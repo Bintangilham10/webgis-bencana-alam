@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiswFBVV95cUxOVzA2ZVQxNGNOb0pGdkQtdU1PZ0tYMnJoY2xjRElOMG5MaUwwV3pvbXRFYXIwWUxLbWY4dEdvMTlBZmQxYUdIeEU0YlpITFYyWjlPTFVsWm1xNkxCWldtemZMS2c4N0J6TWw5dkx4dnJiSXR0RkdBNjdlT1M2WlJfZFcwcmF6Q0ZiNnlSWW1hWkpDSFRoTHp4M3ZPSzRuN3dybmJYR2RJdlhtRWFWb2RncW9NWQ",
+  "title": "BPBD Bandung Petakan 8 Desa Rawan Banjir Bandang dan Tanah Longsor - Media Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVzA2ZVQxNGNOb0pGdkQtdU1PZ0tYMnJoY2xjRElOMG5MaUwwV3pvbXRFYXIwWUxLbWY4dEdvMTlBZmQxYUdIeEU0YlpITFYyWjlPTFVsWm1xNkxCWldtemZMS2c4N0J6TWw5dkx4dnJiSXR0RkdBNjdlT1M2WlJfZFcwcmF6Q0ZiNnlSWW1hWkpDSFRoTHp4M3ZPSzRuN3dybmJYR2RJdlhtRWFWb2RncW9NWQ?oc=5",
+  "source": "Media Indonesia",
+  "source_url": "https://mediaindonesia.com",
+  "published_at": "2026-11-03T16:42:32.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-03T23:00:40.285Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
