@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiZkFVX3lxTFBaWG1JVXc2a29mSXpORmtyazRMWVZyM2xWRmxxZ090aXI5QzdNc2phckN1Q1FZUVZ1QWliSmRoSDdVb2ZqTU9FZlR1WWQyUlJQYUJxbnFkVlFYeEp3eFVjaWlpZlN2QQ",
+  "title": "Banjir dan Longsor Terjang Enam Kecamatan di Kabupaten Malang - bsinews.id",
+  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBaWG1JVXc2a29mSXpORmtyazRMWVZyM2xWRmxxZ090aXI5QzdNc2phckN1Q1FZUVZ1QWliSmRoSDdVb2ZqTU9FZlR1WWQyUlJQYUJxbnFkVlFYeEp3eFVjaWlpZlN2QQ?oc=5",
+  "source": "bsinews.id",
+  "source_url": "https://bsinews.id",
+  "published_at": "2026-11-03T01:09:25.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-03T01:30:31.591Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

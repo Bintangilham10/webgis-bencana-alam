@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiuAFBVV95cUxOU3Vha1JBQWtITXZQNkppaWpJTTQwM1lsYmlGa2xNRXhnWGFVWnJQVzVUUzYwaHQwaTNkcDd0cVZkM3g5R0czMVpmMnVJdHB3Q3o4V0RQVjhfaXAzWjBSaW5iTkhOMnJZOVhUU1ZPODZRSjR6YmNTWnVpVUJ0clVadFlZU1ZYWEFvMTlSY1ZFSlY0Uzhhd2Y5UUw4TmlLY1VHd0pFVFRjSEN5WHo5VExMTHBWR3llTDFM0gG-AUFVX3lxTFB2bVdZZHkwR3JrTUNJT3JUR0xaYlZDTTg2TTg3bHNTN19WdEpuRHliQ2tHV05HWjV1ZzV1bVAyLU8tbGJjR2ItaTNmcklZTEJRODVNdUtoLUZMTndXbUtHQzNabWhkSThYTUNYSE1lX2wwME9CZkFxbEYyaWZSc24zSkp3THAtb1REa2ZSYkRmMjlkUVRQM21vVGZsWmVjbTItTWgyRXRSNWlYdW1CLWgweDdQRkVWY1VCWkxRWEE",
+  "title": "BPBD Kabupaten Malang Tangani Banjir dan Longsor di Sejumlah Kecamatan - Suarajatim.id",
+  "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOU3Vha1JBQWtITXZQNkppaWpJTTQwM1lsYmlGa2xNRXhnWGFVWnJQVzVUUzYwaHQwaTNkcDd0cVZkM3g5R0czMVpmMnVJdHB3Q3o4V0RQVjhfaXAzWjBSaW5iTkhOMnJZOVhUU1ZPODZRSjR6YmNTWnVpVUJ0clVadFlZU1ZYWEFvMTlSY1ZFSlY0Uzhhd2Y5UUw4TmlLY1VHd0pFVFRjSEN5WHo5VExMTHBWR3llTDFM0gG-AUFVX3lxTFB2bVdZZHkwR3JrTUNJT3JUR0xaYlZDTTg2TTg3bHNTN19WdEpuRHliQ2tHV05HWjV1ZzV1bVAyLU8tbGJjR2ItaTNmcklZTEJRODVNdUtoLUZMTndXbUtHQzNabWhkSThYTUNYSE1lX2wwME9CZkFxbEYyaWZSc24zSkp3THAtb1REa2ZSYkRmMjlkUVRQM21vVGZsWmVjbTItTWgyRXRSNWlYdW1CLWgweDdQRkVWY1VCWkxRWEE?oc=5",
+  "source": "Suarajatim.id",
+  "source_url": "https://jatim.suara.com",
+  "published_at": "2026-11-02T12:18:26.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-03T01:30:31.591Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

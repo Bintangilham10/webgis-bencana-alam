@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiaEFVX3lxTE5CT0lqSnNlV29VN2pxZzNzcmRuaTRqQkRPSDlHNWFvNmlYWGNFQzYwQ2FLcU9oUlc2NWJ3TGM3WUJWNHNrLVdWMlozbWpzWVMzUmVSQTRnbTc3d3FxLXpuaXZEcFlHQmIy",
+  "title": "Banjir dan Longsor Lumajang Terdampak 1.417 Rumah dan Tewaskan Dua Warga - CentralBatam",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5CT0lqSnNlV29VN2pxZzNzcmRuaTRqQkRPSDlHNWFvNmlYWGNFQzYwQ2FLcU9oUlc2NWJ3TGM3WUJWNHNrLVdWMlozbWpzWVMzUmVSQTRnbTc3d3FxLXpuaXZEcFlHQmIy?oc=5",
+  "source": "CentralBatam",
+  "source_url": "https://centralbatam.co.id",
+  "published_at": "2026-11-03T01:07:21.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-03T01:30:31.591Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

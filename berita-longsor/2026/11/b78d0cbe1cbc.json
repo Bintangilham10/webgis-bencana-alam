@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivAFBVV95cUxNaTZkNWpaZmxlUzl1c0p1aURKSXZKbndsQWFWVnEzeTJqdFJ5T1J0NnFaLXhEeWZSVWlIRGRpM1NSeGZtd1pXS05SMTRmaEM2THFqOU1LMU1JOXJMRnhWTUFCLWJFZWtwMkNVUFFBVHViV1RkVGIzaHdERkV2T1I0eGRXVWlIVm94WU52SnFCbW8tMHMyeEhiQThPMzRkWEx2ekdfZ3JvTnVwR2ZYdGVhT1VjV2tENzY0MUowRA",
+  "title": "6 Kecamatan di Malang Diterjang Banjir dan Longsor, Sejumlah Jembatan Ambrol - Bicara Surabaya",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNaTZkNWpaZmxlUzl1c0p1aURKSXZKbndsQWFWVnEzeTJqdFJ5T1J0NnFaLXhEeWZSVWlIRGRpM1NSeGZtd1pXS05SMTRmaEM2THFqOU1LMU1JOXJMRnhWTUFCLWJFZWtwMkNVUFFBVHViV1RkVGIzaHdERkV2T1I0eGRXVWlIVm94WU52SnFCbW8tMHMyeEhiQThPMzRkWEx2ekdfZ3JvTnVwR2ZYdGVhT1VjV2tENzY0MUowRA?oc=5",
+  "source": "Bicara Surabaya",
+  "source_url": "https://www.bicarasurabaya.com",
+  "published_at": "2026-11-02T23:38:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-03T01:30:31.591Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
