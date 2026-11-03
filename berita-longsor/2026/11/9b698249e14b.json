@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiuwFBVV95cUxOUm5obmhOaWNCa0N1UVVkS242anlDeHR3alVyNndEdFRtWXdsSVpuYmcxNkhqbTZJbVZIcHc5T2k1aWpaQmpXNnlYa2VkLUNxRFVrTkU3c2F0YWdiaU5jQzRUdmZhcGNaUmpycVJTbGxzbmZqVGJpRWZlaG5VVnlWQTRSMUVNU3NsaUhheXRFamgwUTBvYzNsa2dXekdES2tJdURWWjduNHUyeVg2bnVTWE9zS3FWa001R1ln0gHAAUFVX3lxTE1jcjd5TklvM2NPaFBaU0ZHX2cyMEozTFRZNW8zUmJrdGhUVzNRZ3dST3Zib1pkZlZqM0VNNDhEWVhMcURuV0hTZnV4TklJME9BMzdHTHo4dkV3d25ZT3VvWGZQNVNKcGludk9EUGVpMzgzSjduclo5TDhvYXhCUmxvN0l0UzdENnFVd2ZyY0tKQjVSc2NSSkFxdjBsY2FjOGtIMFNyc0JuVlFycE9DM3VMVFZqcExDRkZLRDc0X3hYaw",
+  "title": "Longsor, Kereta Relasi Ketapang-Malang Sempat Terlambat 258 menit - Radar Malang",
+  "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUm5obmhOaWNCa0N1UVVkS242anlDeHR3alVyNndEdFRtWXdsSVpuYmcxNkhqbTZJbVZIcHc5T2k1aWpaQmpXNnlYa2VkLUNxRFVrTkU3c2F0YWdiaU5jQzRUdmZhcGNaUmpycVJTbGxzbmZqVGJpRWZlaG5VVnlWQTRSMUVNU3NsaUhheXRFamgwUTBvYzNsa2dXekdES2tJdURWWjduNHUyeVg2bnVTWE9zS3FWa001R1ln0gHAAUFVX3lxTE1jcjd5TklvM2NPaFBaU0ZHX2cyMEozTFRZNW8zUmJrdGhUVzNRZ3dST3Zib1pkZlZqM0VNNDhEWVhMcURuV0hTZnV4TklJME9BMzdHTHo4dkV3d25ZT3VvWGZQNVNKcGludk9EUGVpMzgzSjduclo5TDhvYXhCUmxvN0l0UzdENnFVd2ZyY0tKQjVSc2NSSkFxdjBsY2FjOGtIMFNyc0JuVlFycE9DM3VMVFZqcExDRkZLRDc0X3hYaw?oc=5",
+  "source": "Radar Malang",
+  "source_url": "https://radarmalang.jawapos.com",
+  "published_at": "2026-11-03T07:30:03.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-03T10:45:28.520Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "61.04",
+      "nama": "Kabupaten Ketapang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

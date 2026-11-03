@@ -1,0 +1,21 @@
+{
+  "guid": "CBMixgFBVV95cUxNb3liNFo4eFJ1cS0xU3pHempjT1IwcjlwcXF0dC02Sm00WFI3aXh4SFhMdjYyS0YxYkg0VEQ3SGdnY0ZKcEw5VEJjOHZidVAwQzY1cDlqQUFKV25lWFB0cDdzejZjYjdJanZ2YURPY1NvUV9DVXdJLUxQSENOM0lacUlxOWd3SWhiN2d1VlU3VktieVhmclpPTDhCM3BoaWhWTTQ3VDNRZTFVV08tVHNwRHh5U1BmZ1BBcjUtNi1JX29vNjZ1Snc",
+  "title": "Kabupaten Blitar Masuk Daftar Wilayah Rawan Cuaca Ekstrem, BMKG Peringatkan Potensi Banjir dan Longsor - Persada Blitar",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNb3liNFo4eFJ1cS0xU3pHempjT1IwcjlwcXF0dC02Sm00WFI3aXh4SFhMdjYyS0YxYkg0VEQ3SGdnY0ZKcEw5VEJjOHZidVAwQzY1cDlqQUFKV25lWFB0cDdzejZjYjdJanZ2YURPY1NvUV9DVXdJLUxQSENOM0lacUlxOWd3SWhiN2d1VlU3VktieVhmclpPTDhCM3BoaWhWTTQ3VDNRZTFVV08tVHNwRHh5U1BmZ1BBcjUtNi1JX29vNjZ1Snc?oc=5",
+  "source": "Persada Blitar",
+  "source_url": "https://persadablitar.id",
+  "published_at": "2026-11-03T09:15:19.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-03T10:45:28.520Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.05",
+      "nama": "Kabupaten Blitar",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

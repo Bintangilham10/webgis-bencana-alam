@@ -1,0 +1,21 @@
+{
+  "guid": "CBMimwFBVV95cUxPXzdlTC1nQ0JHOHc5cFhIZkE5UmpSMmw1bVJvV0RPRS04MkRnSDByeTE0MXhENW0taVBuX09LQk1NY3ZZNzJKSWNoNDU5ekV5LXl5VzFUT21PX19kQ05jNVpFV3V2bU85VWp2UUNCQi1IdWxlbjZ5bXF5ajV0T1lJSmk2ZXNnRFBBQ0RoU1I1VWVkOUJtdVAzd2xqVQ",
+  "title": "BPBD Sanggau Petakan Risiko Banjir dan Tanah Longsor - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPXzdlTC1nQ0JHOHc5cFhIZkE5UmpSMmw1bVJvV0RPRS04MkRnSDByeTE0MXhENW0taVBuX09LQk1NY3ZZNzJKSWNoNDU5ekV5LXl5VzFUT21PX19kQ05jNVpFV3V2bU85VWp2UUNCQi1IdWxlbjZ5bXF5ajV0T1lJSmk2ZXNnRFBBQ0RoU1I1VWVkOUJtdVAzd2xqVQ?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-03T09:57:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-03T10:45:28.520Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "61.03",
+      "nama": "Kabupaten Sanggau",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

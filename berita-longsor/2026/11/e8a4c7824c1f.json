@@ -1,0 +1,28 @@
+{
+  "guid": "CBMipAFBVV95cUxQV1lEZHBNQWJtQnRvLTdaQ0tsb1UyVEtJenV2MVhmZkZLb3U2VmloN1Z2a2tUTVd3dmdNc0ItTXBJM3dEaTk2SHk0QlgteUhaT29vOTBpbkJMNHNoNURBMmdOX2pZVWRaUHR6TDVwNFNRNlIzU0ZMUlRIMXYzcjhaYmVnQ2JRamdXZlF1ekFzZjJudk5fTHVSc1FEaVZxTFJ4OS1TLQ",
+  "title": "Puguh DPRD Jatim Desak Pemetaan Ulang Zona Rawan Longsor di Malang - JATIM POS online",
+  "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQV1lEZHBNQWJtQnRvLTdaQ0tsb1UyVEtJenV2MVhmZkZLb3U2VmloN1Z2a2tUTVd3dmdNc0ItTXBJM3dEaTk2SHk0QlgteUhaT29vOTBpbkJMNHNoNURBMmdOX2pZVWRaUHR6TDVwNFNRNlIzU0ZMUlRIMXYzcjhaYmVnQ2JRamdXZlF1ekFzZjJudk5fTHVSc1FEaVZxTFJ4OS1TLQ?oc=5",
+  "source": "JATIM POS online",
+  "source_url": "https://www.jatimpos.co",
+  "published_at": "2026-11-03T07:57:14.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-03T10:45:28.520Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jawa Timur"
+  ]
+}
