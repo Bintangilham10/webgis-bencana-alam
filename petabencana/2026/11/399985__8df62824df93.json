@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-03T05:45:27.456Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.8524952636,
+        -8.1973993
+      ]
+    },
+    "properties": {
+      "pkey": "399985",
+      "created_at": "2026-11-03T05:44:31.077Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "c62a1cff-c979-4190-abf1-fd06edec51c5",
+      "image_url": "https://images.petabencana.id/c62a1cff-c979-4190-abf1-fd06edec51c5.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 150.03654125459468,
+        "fireLocation": {
+          "lat": "-8.1973993",
+          "lng": 114.852495263562
+        },
+        "personLocation": {
+          "lng": 114.85340240118961,
+          "lat": -8.197473634510601
+        },
+        "fireRadius": {
+          "lng": 114.85113270138152,
+          "lat": -8.197441776866611
+        }
+      },
+      "tags": {
+        "city": "BULELENG",
+        "district_id": null,
+        "region_code": "5108",
+        "local_area_id": null,
+        "instance_region_code": "ID-BA"
+      },
+      "title": null,
+      "text": "Sebuah kapal tongkang pengangkut batu bara pasokan PLTU dilaporkan mengalami kebakaran di perairan Desa Celukan Bawang, Kecamatan Gerokgak",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
