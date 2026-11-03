@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.03.12.31.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-03T17:45:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-03T17:50:00+07:00</effective>
+    <expires>2026-11-03T21:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 03 November 2026, 17:50 WIB di sebagian wilayah Jakarta, khususnya di NANGGUNG, SUKAJAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 03 November 2026, 21:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJK/2026/11/03/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jakarta</areaDesc>
+      <polygon>-6.607,106.571 -6.618,106.566 -6.633,106.578 -6.657,106.588 -6.691,106.582 -6.701,106.574 -6.718,106.576 -6.750,106.549 -6.751,106.533 -6.762,106.525 -6.752,106.495 -6.751,106.467 -6.738,106.464 -6.734,106.459 -6.725,106.482 -6.698,106.507 -6.684,106.506 -6.670,106.514 -6.661,106.514 -6.643,106.501 -6.604,106.520 -6.602,106.529 -6.564,106.543 -6.557,106.550 -6.562,106.550 -6.567,106.560 -6.564,106.571 -6.589,106.574 -6.607,106.571</polygon>
+      <polygon>-6.547,106.497 -6.562,106.513 -6.604,106.520 -6.643,106.501 -6.661,106.514 -6.670,106.514 -6.684,106.506 -6.698,106.507 -6.725,106.482 -6.734,106.459 -6.728,106.451 -6.708,106.450 -6.695,106.436 -6.682,106.429 -6.589,106.430 -6.569,106.424 -6.559,106.416 -6.551,106.423 -6.548,106.420 -6.546,106.426 -6.555,106.447 -6.557,106.472 -6.545,106.486 -6.547,106.497</polygon>
+    </area>
+  </info>
+</alert>
