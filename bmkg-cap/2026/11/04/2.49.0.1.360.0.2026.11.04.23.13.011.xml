@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.04.23.13.011</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-05T04:55:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-05T05:05:00+07:00</effective>
+    <expires>2026-11-05T07:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 05 November 2026, 05:05 WIB di sebagian wilayah Sumatera Barat, khususnya di LUNANG, SILAUT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 05 November 2026, 07:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSB/2026/11/05/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Barat</areaDesc>
+      <polygon>-2.145,101.266 -2.246,101.282 -2.265,101.243 -2.289,101.216 -2.293,101.205 -2.299,101.199 -2.328,101.186 -2.333,101.180 -2.335,101.170 -2.333,101.150 -2.325,101.140 -2.331,101.118 -2.326,101.109 -2.327,101.079 -2.316,101.061 -2.308,101.037 -2.315,101.020 -2.328,101.005 -2.326,100.986 -2.299,100.987 -2.287,100.983 -2.262,100.973 -2.264,100.969 -2.261,100.966 -2.246,100.960 -2.245,100.955 -2.246,100.988 -2.232,101.024 -2.213,101.057 -2.202,101.099 -2.167,101.145 -2.157,101.166 -2.139,101.231 -2.145,101.266</polygon>
+      <polygon>-2.250,101.283 -2.262,101.281 -2.247,101.282 -2.250,101.283</polygon>
+      <polygon>-2.366,101.196 -2.366,101.201 -2.361,101.205 -2.366,101.202 -2.366,101.196</polygon>
+      <polygon>-2.246,101.282 -2.247,101.282 -2.262,101.281 -2.277,101.285 -2.283,101.284 -2.297,101.271 -2.304,101.264 -2.311,101.258 -2.313,101.255 -2.315,101.250 -2.316,101.246 -2.319,101.240 -2.324,101.236 -2.340,101.237 -2.344,101.228 -2.352,101.219 -2.352,101.219 -2.361,101.205 -2.361,101.205 -2.366,101.201 -2.366,101.196 -2.367,101.196 -2.368,101.191 -2.368,101.191 -2.379,101.173 -2.387,101.150 -2.426,101.097 -2.427,101.096 -2.444,101.071 -2.478,101.023 -2.434,100.994 -2.328,100.892 -2.271,100.879 -2.245,100.955 -2.246,100.960 -2.261,100.966 -2.264,100.969 -2.262,100.973 -2.287,100.983 -2.299,100.987 -2.326,100.986 -2.328,101.005 -2.315,101.020 -2.308,101.037 -2.316,101.061 -2.327,101.079 -2.326,101.109 -2.331,101.118 -2.325,101.140 -2.333,101.150 -2.335,101.170 -2.333,101.180 -2.328,101.186 -2.299,101.199 -2.293,101.205 -2.289,101.216 -2.265,101.243 -2.246,101.282</polygon>
+    </area>
+  </info>
+</alert>
