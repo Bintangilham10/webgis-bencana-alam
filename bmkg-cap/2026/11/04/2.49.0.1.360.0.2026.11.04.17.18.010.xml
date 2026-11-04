@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.04.17.18.010</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-05T00:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-05T00:40:00+07:00</effective>
+    <expires>2026-11-05T03:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Lampung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 05 November 2026, 00:40 WIB di sebagian wilayah Lampung, khususnya di BAKAUHENI, KETAPANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 05 November 2026, 03:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CLG/2026/11/05/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Lampung</areaDesc>
+      <polygon>-5.632,105.818 -5.679,105.810 -5.716,105.792 -5.733,105.793 -5.750,105.800 -5.778,105.794 -5.793,105.796 -5.822,105.780 -5.840,105.776 -5.852,105.765 -5.846,105.744 -5.836,105.732 -5.830,105.733 -5.820,105.751 -5.791,105.758 -5.763,105.755 -5.772,105.735 -5.755,105.730 -5.753,105.708 -5.735,105.714 -5.736,105.736 -5.733,105.739 -5.719,105.746 -5.713,105.734 -5.699,105.751 -5.697,105.747 -5.684,105.759 -5.689,105.765 -5.680,105.778 -5.667,105.772 -5.666,105.778 -5.659,105.782 -5.643,105.782 -5.640,105.768 -5.630,105.768 -5.632,105.818</polygon>
+      <polygon>-5.851,105.786 -5.848,105.789 -5.849,105.792 -5.867,105.786 -5.865,105.775 -5.857,105.775 -5.847,105.785 -5.851,105.786</polygon>
+      <polygon>-5.852,105.765 -5.870,105.756 -5.881,105.737 -5.900,105.730 -5.908,105.719 -5.905,105.715 -5.883,105.718 -5.867,105.713 -5.858,105.714 -5.850,105.705 -5.850,105.687 -5.840,105.677 -5.825,105.683 -5.817,105.680 -5.805,105.666 -5.804,105.665 -5.796,105.674 -5.802,105.702 -5.791,105.758 -5.820,105.751 -5.830,105.733 -5.836,105.732 -5.846,105.744 -5.852,105.765</polygon>
+      <polygon>-5.884,105.788 -5.891,105.788 -5.885,105.775 -5.884,105.788</polygon>
+      <polygon>-5.884,105.768 -5.900,105.757 -5.902,105.749 -5.898,105.748 -5.884,105.759 -5.880,105.765 -5.884,105.768</polygon>
+      <polygon>-5.884,105.771 -5.878,105.769 -5.879,105.773 -5.884,105.771</polygon>
+    </area>
+  </info>
+</alert>
