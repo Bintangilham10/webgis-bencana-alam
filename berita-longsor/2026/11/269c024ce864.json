@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiywFBVV95cUxQSE0wWVg5MVIzSll0YjQtYXBqeEg0TjFhM3JILVpPMUNNUklNdnpxODJ3SmxfamNxZmRtYVo2VGtubzkzQjVwMVBkMllLWVBMSUQ3aVVSWVUxcG1RS0dFY1lld0JYTU1LTjJRVmZvdHNlZW1yRmlyWmFQTVlLTG9HZzRWbDY0b05kN0FEN1JRakQ5dW8tS1NaVzJFUkhJaEJReHdQNk9nZ0JBa0haZmtlcVg4T2U3YnVWbUdNSXFsd2VzWkxOcS02VUZxRQ",
+  "title": "Polsek Pacet Polres Mojokerto bersama Stakeholder Mitigasi Bencana Longsor dan Pohon Tumbang - Website Resmi Polri",
+  "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQSE0wWVg5MVIzSll0YjQtYXBqeEg0TjFhM3JILVpPMUNNUklNdnpxODJ3SmxfamNxZmRtYVo2VGtubzkzQjVwMVBkMllLWVBMSUQ3aVVSWVUxcG1RS0dFY1lld0JYTU1LTjJRVmZvdHNlZW1yRmlyWmFQTVlLTG9HZzRWbDY0b05kN0FEN1JRakQ5dW8tS1NaVzJFUkhJaEJReHdQNk9nZ0JBa0haZmtlcVg4T2U3YnVWbUdNSXFsd2VzWkxOcS02VUZxRQ?oc=5",
+  "source": "Website Resmi Polri",
+  "source_url": "https://tribratanews.jatim.polri.go.id",
+  "published_at": "2026-11-04T09:20:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-04T11:30:37.199Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.16",
+      "nama": "Kabupaten Mojokerto",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.76",
+      "nama": "Kota Mojokerto",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

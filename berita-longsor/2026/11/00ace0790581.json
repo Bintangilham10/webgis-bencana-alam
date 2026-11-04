@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwgFBVV95cUxPWUZSdXBMSmhCMGFVbUR5TmtmZUdkSWFNY085MXBKd1A3QmxtS0hwS2Rrc3ZsR0w5Vm9fWUxxOXIwMnktbHo0M0FMOGdFazg0eFlLVVVfVndYRUtpUWlVVkJtLThaci1zMTljbU54Z1FlY1d6S19tZ3pOZ1E0dXAySGdUMHJ5Y0dNa0JFNS04OXFSWFhjMnJpTzdGQzl1Q3dFa05kb0xIeXRiaDZnb1lqOUVQVy13WlQtRnlTQlhIeDZwQdIBxwFBVV95cUxOc3RxNVAwV2ZCVlF0RFhzdXpmdkY4amdVdnEweF9OdTNwbndwUjhIUE9xaG5lbFAwWWg4bGVxX2Y5TTBmVzRkbjVsamREemR3aV9iVlZjd0U3ZXNGMVdtX3ByRXBBakctbEpkYklyYnBmXzFmS2drQjZZWXF5WXVwaDhpS3BQbDlWZzZ5bnZSbjhveVRzeHpNLXZxNzhSRVVOcURlTzlmTnoxTHRxUXBTeHNiNHBSeVRKMm1TYjcyX2d2R3JHOXdZ",
+  "title": "Bencana Malang, 58 Rumah Terendam Banjir dan Enam Diterjang Longsor - Radar Malang",
+  "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWUZSdXBMSmhCMGFVbUR5TmtmZUdkSWFNY085MXBKd1A3QmxtS0hwS2Rrc3ZsR0w5Vm9fWUxxOXIwMnktbHo0M0FMOGdFazg0eFlLVVVfVndYRUtpUWlVVkJtLThaci1zMTljbU54Z1FlY1d6S19tZ3pOZ1E0dXAySGdUMHJ5Y0dNa0JFNS04OXFSWFhjMnJpTzdGQzl1Q3dFa05kb0xIeXRiaDZnb1lqOUVQVy13WlQtRnlTQlhIeDZwQdIBxwFBVV95cUxOc3RxNVAwV2ZCVlF0RFhzdXpmdkY4amdVdnEweF9OdTNwbndwUjhIUE9xaG5lbFAwWWg4bGVxX2Y5TTBmVzRkbjVsamREemR3aV9iVlZjd0U3ZXNGMVdtX3ByRXBBakctbEpkYklyYnBmXzFmS2drQjZZWXF5WXVwaDhpS3BQbDlWZzZ5bnZSbjhveVRzeHpNLXZxNzhSRVVOcURlTzlmTnoxTHRxUXBTeHNiNHBSeVRKMm1TYjcyX2d2R3JHOXdZ?oc=5",
+  "source": "Radar Malang",
+  "source_url": "https://radarmalang.jawapos.com",
+  "published_at": "2026-11-04T11:04:13.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-04T11:30:37.199Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

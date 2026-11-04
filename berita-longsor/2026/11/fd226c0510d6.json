@@ -1,0 +1,21 @@
+{
+  "guid": "CBMizAFBVV95cUxPZnhzYzZPXzJXWTJFQkRrdXRuUXR3dDZpSTVTSEdnZkxWQWhFcG4yYk1FRy14VkVMdlZSVnNiUktDM0hKOVBqZ1hxUjlxLWZSSTBVM2puQjFYRm1FdXZXc0E3NDlmZTB6czJrZmprQ2hKdkF3alJCWjhOZEdiTC0xUnZlMk4xVzhWdkpCR3c3clo4VThzMWlPVWJPeDVCR295WHNBWUJGbnVvSUNMYzBHNzFiZTh6TlJkMXlKRzhCX3VwUGpsX3NsRF9keTHSAcMBQVVfeXFMUFBzMDNBTHVnMzlnb2lPT2VoemJrX0pXVkRwdnBIQk5nbXRYYmw0bGZkc0M0cklrS1R0QlpyNHpZZjFmaUZKZzdZQ2dVSktjOG9WbXcwdWVDTEtPLUNiWVB4TGg2Ql91SUViOW11RXBQcE85LWxhMjN6Sm1icEFnMjNadUNiNEtBcGoyZlZYdzNaUExxMk14UkhIQzNhNEhQY2RQRHNfSFNYUXphbnB4LTlfWThpcWtrS25mV19RR1E0b2pv",
+  "title": "Musim Hujan Mengintai, 7 Wilayah di Kabupaten Pekalongan Rawan Banjir dan Longsor - radarpekalongan.disway.id - Radar Pekalongan",
+  "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZnhzYzZPXzJXWTJFQkRrdXRuUXR3dDZpSTVTSEdnZkxWQWhFcG4yYk1FRy14VkVMdlZSVnNiUktDM0hKOVBqZ1hxUjlxLWZSSTBVM2puQjFYRm1FdXZXc0E3NDlmZTB6czJrZmprQ2hKdkF3alJCWjhOZEdiTC0xUnZlMk4xVzhWdkpCR3c3clo4VThzMWlPVWJPeDVCR295WHNBWUJGbnVvSUNMYzBHNzFiZTh6TlJkMXlKRzhCX3VwUGpsX3NsRF9keTHSAcMBQVVfeXFMUFBzMDNBTHVnMzlnb2lPT2VoemJrX0pXVkRwdnBIQk5nbXRYYmw0bGZkc0M0cklrS1R0QlpyNHpZZjFmaUZKZzdZQ2dVSktjOG9WbXcwdWVDTEtPLUNiWVB4TGg2Ql91SUViOW11RXBQcE85LWxhMjN6Sm1icEFnMjNadUNiNEtBcGoyZlZYdzNaUExxMk14UkhIQzNhNEhQY2RQRHNfSFNYUXphbnB4LTlfWThpcWtrS25mV19RR1E0b2pv?oc=5",
+  "source": "Radar Pekalongan",
+  "source_url": "https://radarpekalongan.disway.id",
+  "published_at": "2026-11-04T08:53:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-04T11:30:37.199Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.26",
+      "nama": "Kabupaten Pekalongan",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

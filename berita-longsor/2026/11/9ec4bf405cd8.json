@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirwFBVV95cUxNWTJOakdrMEtwbWhvQkdvUVltX0hCVzJ2MHk4M1BqZjQwUnJiekhTN2pfc2dJU1RjSVlraXNjemlkUjFGaFVWelZpSC1uUWdDTUpXSGxILUg2OXdONHI0YTF0UUdYZzNpZWtZN3BxZjRTSXc2VTJSZ040NGJqRjRiUjZ6YUtDRl95bzZCSFE5QVRIOVRJUEd0VGhMOU05R0VDWV9vek1KVFRKcXZpaVJj",
+  "title": "Waspada Masuki Penghujan, Jalur Trenggalek-Ponorogo KM 16-20 Rawan Longsor - surabayapagi.com",
+  "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWTJOakdrMEtwbWhvQkdvUVltX0hCVzJ2MHk4M1BqZjQwUnJiekhTN2pfc2dJU1RjSVlraXNjemlkUjFGaFVWelZpSC1uUWdDTUpXSGxILUg2OXdONHI0YTF0UUdYZzNpZWtZN3BxZjRTSXc2VTJSZ040NGJqRjRiUjZ6YUtDRl95bzZCSFE5QVRIOVRJUEd0VGhMOU05R0VDWV9vek1KVFRKcXZpaVJj?oc=5",
+  "source": "surabayapagi.com",
+  "source_url": "https://surabayapagi.com",
+  "published_at": "2026-11-04T04:19:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-04T11:30:37.199Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.02",
+      "nama": "Kabupaten Ponorogo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

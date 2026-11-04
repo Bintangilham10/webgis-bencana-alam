@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiqwFBVV95cUxQYU5qNzNVM053RmpLQmpnQ3BZV21vTkh3VHJYM0dXNmowYlpxNlF3bmFCMHZjSTN6ZHZHRXZEdEZlX2FjQU5KM3hmdmlrYkhsMl9WSHJ6d0t0MlR0dExxb3A0YWRVV21tQW5QbVBsNG5oX0c0WGtjelJhUmNHQXpKTVB2NEtVNUNKeTl6aDZVM0hWTHlnOEYtZFRwM0QtdHU2Zkp2MkVlZl9nSXM",
+  "title": "Kementerian PU Tangani Longsor di Sejumlah Titik Jalan Nasional Lumajang - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYU5qNzNVM053RmpLQmpnQ3BZV21vTkh3VHJYM0dXNmowYlpxNlF3bmFCMHZjSTN6ZHZHRXZEdEZlX2FjQU5KM3hmdmlrYkhsMl9WSHJ6d0t0MlR0dExxb3A0YWRVV21tQW5QbVBsNG5oX0c0WGtjelJhUmNHQXpKTVB2NEtVNUNKeTl6aDZVM0hWTHlnOEYtZFRwM0QtdHU2Zkp2MkVlZl9nSXM?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-04T09:05:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-04T11:30:37.199Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

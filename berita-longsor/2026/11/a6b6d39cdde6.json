@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivwFBVV95cUxNWEtkYkVxV3ZrMjBUbU9za2cwQ1ZjcUhUcVdfcHFEN0pIT3RKVXU3bEt2c19MaVNxOERJZl92eGE0NVQ0cl9TcVAzV3lqNHFDdVJqY20yU1BScnF2d181el8wdE1RS0h3Y2J3Y3hKNERqcnJxY2l5RVBWWFpRM0JMbTZlN0cxQnZjQnBicy1jRVJ1VENlWUF3SmhnazZVRDMwSXlwVGRjZ3EydjQ1aS10LVhQcmlHWGlRb0gxaXZ3MA",
+  "title": "Warga Terdampak Banjir-Longsor di Malang Selatan Menunggu Kondisi Aman - TIMES Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWEtkYkVxV3ZrMjBUbU9za2cwQ1ZjcUhUcVdfcHFEN0pIT3RKVXU3bEt2c19MaVNxOERJZl92eGE0NVQ0cl9TcVAzV3lqNHFDdVJqY20yU1BScnF2d181el8wdE1RS0h3Y2J3Y3hKNERqcnJxY2l5RVBWWFpRM0JMbTZlN0cxQnZjQnBicy1jRVJ1VENlWUF3SmhnazZVRDMwSXlwVGRjZ3EydjQ1aS10LVhQcmlHWGlRb0gxaXZ3MA?oc=5",
+  "source": "TIMES Indonesia",
+  "source_url": "https://timesindonesia.co.id",
+  "published_at": "2026-11-04T08:13:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-04T11:30:37.199Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

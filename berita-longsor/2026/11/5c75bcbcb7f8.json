@@ -1,0 +1,26 @@
+{
+  "guid": "CBMisgFBVV95cUxPcEoxcldpNVNkY2RIWkprM2tzRXc0THRJX0F2UzRHd1hJQ0t5MTN2VThrM3RuUmswZ0doemtoQVgwNnpWa0ZMN3F1alNVYW1XY1I5UURPTWVQQll6RVEwLUc5b05sUm1jUDFVbVVicXBiOUxOclpaN2gtOHVtbzZ3SUppNk5iVWNTNE1vZjc5N2pKektUa2pOM3Baam5YMkMxZ0t2NmV2NnVrdkVISVp1MS1B0gGyAUFVX3lxTE9wSjFyV2k1U2RjZEhaSmsza3NFdzRMdElfQXZTNEd3WElDS3kxM3ZVOGszdG5SazBnR2h6a2hBWDA2elZrRkw3cXVqU1VhbVdjUjlRRE9NZVBCWXpFUTAtRzlvTmxSbWNQMVVtVWJxcGI5TE5yWlo3aC04dW1vNndJSmk2TmJVY1M0TW9mNzk3akp6S1Rrak4zcFpqblgyQzFnS3Y2ZXY2dWt2RUhJWnUxLUE",
+  "title": "Banjir dan Longsor Terjang 8 Kecamatan di Malang, 58 Rumah Rusak - detikcom",
+  "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcEoxcldpNVNkY2RIWkprM2tzRXc0THRJX0F2UzRHd1hJQ0t5MTN2VThrM3RuUmswZ0doemtoQVgwNnpWa0ZMN3F1alNVYW1XY1I5UURPTWVQQll6RVEwLUc5b05sUm1jUDFVbVVicXBiOUxOclpaN2gtOHVtbzZ3SUppNk5iVWNTNE1vZjc5N2pKektUa2pOM3Baam5YMkMxZ0t2NmV2NnVrdkVISVp1MS1B0gGyAUFVX3lxTE9wSjFyV2k1U2RjZEhaSmsza3NFdzRMdElfQXZTNEd3WElDS3kxM3ZVOGszdG5SazBnR2h6a2hBWDA2elZrRkw3cXVqU1VhbVdjUjlRRE9NZVBCWXpFUTAtRzlvTmxSbWNQMVVtVWJxcGI5TE5yWlo3aC04dW1vNndJSmk2TmJVY1M0TW9mNzk3akp6S1Rrak4zcFpqblgyQzFnS3Y2ZXY2dWt2RUhJWnUxLUE?oc=5",
+  "source": "detikcom",
+  "source_url": "https://www.detik.com",
+  "published_at": "2026-11-04T10:00:06.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-04T11:30:37.199Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMipwFBVV95cUxQSlhKWGVJUzNTZ1ZJNVNyREdqRERfSnZJcmlsQXMwSV9CamZDdl9uZE15THVWTEFfZ2dwVnk5cXVaRTRMMFhKc3BHTUxUX3d6UWZHTG5OU294bVBOcXQ5eFRCc3hHQm1wbEtVMV9WUnM3cjBnbEEwZGo2VHBROTZYeHlBeENFM2NOQ0Qta3czaFgxRWtqQTJwbWdSWmRJcC02eFN0WFl1dw",
+  "title": "Antisipasi Banjir dan Longsor, Polres Blitar Kota Gelar Apel Siaga - FigurNews.com",
+  "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSlhKWGVJUzNTZ1ZJNVNyREdqRERfSnZJcmlsQXMwSV9CamZDdl9uZE15THVWTEFfZ2dwVnk5cXVaRTRMMFhKc3BHTUxUX3d6UWZHTG5OU294bVBOcXQ5eFRCc3hHQm1wbEtVMV9WUnM3cjBnbEEwZGo2VHBROTZYeHlBeENFM2NOQ0Qta3czaFgxRWtqQTJwbWdSWmRJcC02eFN0WFl1dw?oc=5",
+  "source": "FigurNews.com",
+  "source_url": "https://www.figurnews.com",
+  "published_at": "2026-11-04T05:17:29.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-04T11:30:37.199Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.05",
+      "nama": "Kabupaten Blitar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.72",
+      "nama": "Kota Blitar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

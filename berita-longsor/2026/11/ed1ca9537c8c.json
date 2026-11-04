@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiU0FVX3lxTFBXSjl3MDl3QVEyeU1aSEZvM19uRTdwdG1kWS1oVjNEMjZ4cWphUmtsMHVJY0wwVHNoWEFuR21YaVZsN2ZmN2phNkwxR01DNFFUQzgw",
+  "title": "Banjir dan Longsor di Sejumlah Daerah, Lumajang Terparah - شبكة تواصل الإخبارية",
+  "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBXSjl3MDl3QVEyeU1aSEZvM19uRTdwdG1kWS1oVjNEMjZ4cWphUmtsMHVJY0wwVHNoWEFuR21YaVZsN2ZmN2phNkwxR01DNFFUQzgw?oc=5",
+  "source": "شبكة تواصل الإخبارية",
+  "source_url": "https://twaslnews1.twaslnews.com",
+  "published_at": "2026-11-04T00:39:53.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-04T11:30:37.199Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
