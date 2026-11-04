@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.04.16.62.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-04T22:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-04T23:00:00+07:00</effective>
+    <expires>2026-11-05T02:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 04 November 2026, 23:00 WIB di sebagian wilayah Kalimantan Tengah, khususnya di MAHUNING RAYA, SANAMAN MANTIKEI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 05 November 2026, 02:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/11/04/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-1.006,113.165 -1.057,113.216 -1.072,113.229 -1.087,113.233 -1.129,113.233 -1.154,113.221 -1.184,113.198 -1.214,113.187 -1.252,113.186 -1.284,113.199 -1.341,113.239 -1.373,113.201 -1.388,113.162 -1.403,113.118 -1.401,113.101 -1.396,113.088 -1.375,113.053 -1.273,112.951 -1.251,112.934 -1.245,112.918 -1.170,112.880 -1.109,113.043 -1.075,113.043 -1.040,113.060 -0.999,113.093 -0.981,113.134 -1.006,113.165</polygon>
+      <polygon>-0.976,113.386 -0.981,113.368 -0.993,113.359 -1.009,113.355 -1.042,113.357 -1.045,113.357 -1.092,113.359 -1.093,113.359 -1.094,113.359 -1.099,113.359 -1.107,113.360 -1.108,113.360 -1.112,113.361 -1.112,113.361 -1.120,113.362 -1.120,113.362 -1.125,113.363 -1.130,113.364 -1.144,113.366 -1.185,113.375 -1.215,113.382 -1.230,113.385 -1.242,113.388 -1.242,113.388 -1.253,113.349 -1.278,113.357 -1.329,113.381 -1.343,113.277 -1.344,113.241 -1.341,113.239 -1.284,113.199 -1.252,113.186 -1.214,113.187 -1.184,113.198 -1.154,113.221 -1.129,113.233 -1.087,113.233 -1.072,113.229 -1.057,113.216 -1.006,113.165 -1.010,113.209 -1.006,113.245 -0.993,113.279 -0.979,113.332 -0.976,113.386</polygon>
+    </area>
+  </info>
+</alert>

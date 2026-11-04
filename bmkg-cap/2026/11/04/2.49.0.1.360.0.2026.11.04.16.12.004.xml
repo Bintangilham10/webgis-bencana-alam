@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.04.16.12.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-04T22:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-04T22:30:00+07:00</effective>
+    <expires>2026-11-05T01:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 04 November 2026, 22:30 WIB di sebagian wilayah Sumatera Utara, khususnya di BAHOROK, TAPIAN NAULI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 05 November 2026, 01:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSU/2026/11/04/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Utara</areaDesc>
+      <polygon>1.756,98.792 1.756,98.769 1.761,98.768 1.764,98.753 1.782,98.742 1.784,98.737 1.778,98.739 1.775,98.730 1.786,98.707 1.773,98.692 1.773,98.671 1.770,98.669 1.767,98.673 1.769,98.702 1.754,98.718 1.767,98.732 1.753,98.733 1.737,98.727 1.729,98.731 1.732,98.739 1.720,98.736 1.716,98.723 1.739,98.679 1.772,98.658 1.785,98.679 1.795,98.713 1.807,98.731 1.842,98.763 1.850,98.775 1.848,98.773 1.840,98.794 1.826,98.803 1.821,98.800 1.799,98.802 1.795,98.795 1.756,98.792</polygon>
+      <polygon>1.688,98.490 1.682,98.490 1.684,98.499 1.681,98.505 1.665,98.493 1.656,98.492 1.653,98.497 1.656,98.504 1.649,98.505 1.648,98.511 1.649,98.526 1.641,98.534 1.652,98.543 1.655,98.539 1.665,98.547 1.680,98.550 1.671,98.572 1.650,98.566 1.648,98.571 1.650,98.580 1.661,98.581 1.666,98.587 1.663,98.590 1.657,98.586 1.646,98.586 1.638,98.601 1.613,98.611 1.611,98.605 1.621,98.598 1.625,98.585 1.615,98.564 1.620,98.551 1.631,98.548 1.633,98.538 1.624,98.516 1.624,98.500 1.640,98.474 1.637,98.460 1.651,98.444 1.670,98.442 1.702,98.456 1.703,98.482 1.696,98.493 1.688,98.490</polygon>
+      <polygon>3.614,98.235 3.614,98.235 3.557,98.235 3.556,98.260 3.550,98.270 3.553,98.283 3.546,98.276 3.519,98.261 3.484,98.256 3.468,98.246 3.444,98.241 3.446,98.195 3.432,98.193 3.414,98.197 3.403,98.196 3.401,98.202 3.360,98.213 3.275,98.248 3.254,98.253 3.271,98.223 3.284,98.218 3.280,98.204 3.280,98.168 3.277,98.160 3.266,98.141 3.266,98.121 3.291,98.108 3.300,98.108 3.314,98.099 3.320,98.079 3.316,98.056 3.331,98.029 3.368,98.004 3.373,97.996 3.372,97.977 3.393,97.948 3.410,97.952 3.436,97.935 3.444,97.934 3.482,97.959 3.499,97.921 3.513,97.924 3.534,97.913 3.544,97.912 3.557,97.904 3.561,97.885 3.569,97.871 3.592,97.864 3.586,97.884 3.587,97.922 3.607,97.983 3.612,98.009 3.609,98.032 3.591,98.074 3.595,98.087 3.611,98.093 3.615,98.100 3.614,98.235</polygon>
+    </area>
+  </info>
+</alert>
