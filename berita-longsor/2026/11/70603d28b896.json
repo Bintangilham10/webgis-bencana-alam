@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiywFBVV95cUxOS1VRUGVUMXFjc19GZ09uTGtHZ3BkbjVoV1QwSkZKcEd1VktwV2RuVTYxcGktWWNLVmxBZVBCTDBJM3NCWkdTWHVzbkxvUkdhbm1hMWZkUW9ER25fRXJWM3ByQ1VtQ3o5RXpUTHBwR2FaY1Q5Zm40N2FmSm9KQVRlQUJZX1dOaW9lVVFYOFFVdU5wNDgxWHZ5dDdMRjJTQWxOX3pPWU8xYS1nQkxxaVJpNVVyMXRraGd2LTV3TlVKRm9IYlBBSGlrcTA3QdIBtAFBVV95cUxQSWdya3FoVGxLT0VDLUhoaWN6cGtqVEpsS05BcmF6bExNX2xTQzk5aDBYaEQ1Y2cyU0RFRGZDRzRGbnJSOG1TU1VEZjQtNGxMY0otSFhhbWwxaW0wY2NHbEk3TEFoVmpReV9EYzFUckdhalJnRi04LVE1Tk1oRFBYV09CeGdwQm9aWGRZUFlYUEhsLXRqak9MUlg2TWJTSnR6STVvbS1lOXhqSGwxVjRsVnBlUUY",
+  "title": "Hujan Baru Beberapa Jam, Semarang Sudah Banjir dan Longsor, DPRD Desak OPD Siaga - jateng.disway.id - Disway",
+  "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOS1VRUGVUMXFjc19GZ09uTGtHZ3BkbjVoV1QwSkZKcEd1VktwV2RuVTYxcGktWWNLVmxBZVBCTDBJM3NCWkdTWHVzbkxvUkdhbm1hMWZkUW9ER25fRXJWM3ByQ1VtQ3o5RXpUTHBwR2FaY1Q5Zm40N2FmSm9KQVRlQUJZX1dOaW9lVVFYOFFVdU5wNDgxWHZ5dDdMRjJTQWxOX3pPWU8xYS1nQkxxaVJpNVVyMXRraGd2LTV3TlVKRm9IYlBBSGlrcTA3QdIBtAFBVV95cUxQSWdya3FoVGxLT0VDLUhoaWN6cGtqVEpsS05BcmF6bExNX2xTQzk5aDBYaEQ1Y2cyU0RFRGZDRzRGbnJSOG1TU1VEZjQtNGxMY0otSFhhbWwxaW0wY2NHbEk3TEFoVmpReV9EYzFUckdhalJnRi04LVE1Tk1oRFBYV09CeGdwQm9aWGRZUFlYUEhsLXRqak9MUlg2TWJTSnR6STVvbS1lOXhqSGwxVjRsVnBlUUY?oc=5",
+  "source": "Disway",
+  "source_url": "https://jateng.disway.id",
+  "published_at": "2026-11-04T09:27:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-04T17:45:25.716Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.22",
+      "nama": "Kabupaten Semarang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.74",
+      "nama": "Kota Semarang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

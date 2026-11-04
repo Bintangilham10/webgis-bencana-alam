@@ -1,0 +1,21 @@
+{
+  "guid": "CBMivwFBVV95cUxORzIySHZGWEt3V2RkN0JTR2VJMXJmYk9uYzd1ZnlGVm1BVzNNS3ZOWklMTU15OWYwcjNEeDhSQ1ZBbmJuMGlyVXhva3pzZEJZR09WMU1nQzhqR3FJbzdXa01GY01ObEltdlBaWXVtWDAteEFrNDVHVkJqcW15TFJVUnFoTGM4MTZUWFMydTR6aFlOVjVEamdvaUNOT1JMbE9XOEFYZDI1QWpmdHdNb2lDbjFPTTB0dzBua1RpUU80MNIBxAFBVV95cUxQcF8yX244eFdzQXpFRDJYZEltSVVCY0ZteFY1eU5LN3hScTlLajNYQkVocWViNGY1bVYtYmRkZnBfXzhSUTJrVF9XQzFJUjhUVkN4aGRBY2h0Ylg5SjZtNVJfSnlCR2hhSy02OGU4UDhSbXgwb3JTMjRHaERSU2UxLV8wWkMta0tEeEdKUjkwWXROS3p2OVYyYV9taW5CZUhSZ3BKWkdOQmtDZ0s3emJzaF9OalFUckc5SlhKbWt5R05sYnpK",
+  "title": "Ponorogo Siaga Banjir dan Longsor, Kawasan Ngebel Jadi Perhatian Polisi - Radar Madiun",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxORzIySHZGWEt3V2RkN0JTR2VJMXJmYk9uYzd1ZnlGVm1BVzNNS3ZOWklMTU15OWYwcjNEeDhSQ1ZBbmJuMGlyVXhva3pzZEJZR09WMU1nQzhqR3FJbzdXa01GY01ObEltdlBaWXVtWDAteEFrNDVHVkJqcW15TFJVUnFoTGM4MTZUWFMydTR6aFlOVjVEamdvaUNOT1JMbE9XOEFYZDI1QWpmdHdNb2lDbjFPTTB0dzBua1RpUU80MNIBxAFBVV95cUxQcF8yX244eFdzQXpFRDJYZEltSVVCY0ZteFY1eU5LN3hScTlLajNYQkVocWViNGY1bVYtYmRkZnBfXzhSUTJrVF9XQzFJUjhUVkN4aGRBY2h0Ylg5SjZtNVJfSnlCR2hhSy02OGU4UDhSbXgwb3JTMjRHaERSU2UxLV8wWkMta0tEeEdKUjkwWXROS3p2OVYyYV9taW5CZUhSZ3BKWkdOQmtDZ0s3emJzaF9OalFUckc5SlhKbWt5R05sYnpK?oc=5",
+  "source": "Radar Madiun",
+  "source_url": "https://radarmadiun.jawapos.com",
+  "published_at": "2026-11-04T12:30:15.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-04T17:45:25.716Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.02",
+      "nama": "Kabupaten Ponorogo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

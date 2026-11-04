@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiuAFBVV95cUxQTEZVeTZicVIxcGRZcEVHOUh3SEFOaDJMa3VGNG9wdHRMbmRabTJNYmVEcGU2YzlwNGlDRGxrTjhHaUJUcDNrNWozYkFrSXN2bHh3SEgwcnFCci10SmpjY2RRcEhobUludjdRdEpVNk1QSUV4SEQ1WGNFUGlhQk5Sc1o2eVBiZHhTb0w2WkpnNWV0cDduWW5xeVBFUmowTE1Qb1ZZcm1laXBvUVBKdG1wekE3aXVwVlc4",
+  "title": "Banjir dan Longsor di Malang Selatan Rusak Pipa Distribusi Air, Petugas Langsung Perbaiki - Harian Bhirawa",
+  "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTEZVeTZicVIxcGRZcEVHOUh3SEFOaDJMa3VGNG9wdHRMbmRabTJNYmVEcGU2YzlwNGlDRGxrTjhHaUJUcDNrNWozYkFrSXN2bHh3SEgwcnFCci10SmpjY2RRcEhobUludjdRdEpVNk1QSUV4SEQ1WGNFUGlhQk5Sc1o2eVBiZHhTb0w2WkpnNWV0cDduWW5xeVBFUmowTE1Qb1ZZcm1laXBvUVBKdG1wekE3aXVwVlc4?oc=5",
+  "source": "Harian Bhirawa",
+  "source_url": "https://harianbhirawa.co.id",
+  "published_at": "2026-11-04T10:42:01.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-04T17:45:25.716Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
