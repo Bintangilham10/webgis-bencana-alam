@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.04.08.34.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-04T15:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-04T15:10:00+07:00</effective>
+    <expires>2026-11-04T17:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di DI Yogyakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 04 November 2026, 15:10 WIB di sebagian wilayah DI Yogyakarta, khususnya di NGAWEN, SEMIN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 04 November 2026, 17:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CYG/2026/11/04/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>DI Yogyakarta</areaDesc>
+      <polygon>-7.817,110.786 -7.845,110.783 -7.851,110.787 -7.880,110.777 -7.895,110.776 -7.896,110.774 -7.896,110.774 -7.909,110.770 -7.903,110.710 -7.893,110.704 -7.889,110.698 -7.892,110.693 -7.887,110.691 -7.824,110.713 -7.824,110.730 -7.831,110.731 -7.832,110.735 -7.818,110.738 -7.811,110.743 -7.828,110.758 -7.824,110.763 -7.810,110.764 -7.808,110.772 -7.817,110.786</polygon>
+      <polygon>-7.807,110.694 -7.806,110.710 -7.793,110.713 -7.794,110.724 -7.807,110.742 -7.811,110.743 -7.818,110.738 -7.832,110.735 -7.831,110.731 -7.824,110.730 -7.824,110.713 -7.887,110.691 -7.883,110.681 -7.872,110.669 -7.825,110.663 -7.820,110.655 -7.816,110.659 -7.799,110.661 -7.787,110.668 -7.786,110.672 -7.792,110.677 -7.796,110.672 -7.800,110.673 -7.806,110.683 -7.807,110.694</polygon>
+    </area>
+  </info>
+</alert>
