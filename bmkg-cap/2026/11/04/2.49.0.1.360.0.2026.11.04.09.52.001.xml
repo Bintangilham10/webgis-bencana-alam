@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.04.09.52.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-04T16:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-04T16:10:00+08:00</effective>
+    <expires>2026-11-04T18:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 04 November 2026, 16:10 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di TANJUNG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 04 November 2026, 18:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/11/04/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.342,116.176 -8.351,116.174 -8.370,116.178 -8.393,116.190 -8.400,116.185 -8.404,116.187 -8.404,116.217 -8.433,116.242 -8.440,116.278 -8.443,116.278 -8.451,116.265 -8.456,116.223 -8.480,116.214 -8.479,116.200 -8.463,116.184 -8.463,116.163 -8.454,116.142 -8.462,116.134 -8.443,116.124 -8.437,116.106 -8.428,116.114 -8.425,116.124 -8.395,116.116 -8.388,116.112 -8.386,116.106 -8.361,116.101 -8.362,116.108 -8.366,116.113 -8.365,116.131 -8.343,116.153 -8.342,116.176</polygon>
+    </area>
+  </info>
+</alert>
