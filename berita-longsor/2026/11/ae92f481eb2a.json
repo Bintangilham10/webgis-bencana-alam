@@ -1,0 +1,21 @@
+{
+  "guid": "CBMitgFBVV95cUxOa2JwanowRlNXb09SVmZ5czZlQnpTMkhoOGV4QnZuNW5mN2twTVlNdzR5cGF3eVI2R2M4TkIxMmxCcUZNTkhWTktSSWVFTWZBMjk2bjhpM0lXd3d3THJRQnNmUXdmclhxTXNFUTBqbmZiMzBWRjNYQnNZdWFUQU5uYko5Zmk2cVR1NXlzNm1JYk9HYktZNEMwbGh5ZzlnSjRHdzZiX0lPV3llQUt0c2xmYXpoXzQ5UQ",
+  "title": "BPBD Purwakarta Siaga Bencana Banjir, Angin Kencang dan Tanah Longsor - Media Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOa2JwanowRlNXb09SVmZ5czZlQnpTMkhoOGV4QnZuNW5mN2twTVlNdzR5cGF3eVI2R2M4TkIxMmxCcUZNTkhWTktSSWVFTWZBMjk2bjhpM0lXd3d3THJRQnNmUXdmclhxTXNFUTBqbmZiMzBWRjNYQnNZdWFUQU5uYko5Zmk2cVR1NXlzNm1JYk9HYktZNEMwbGh5ZzlnSjRHdzZiX0lPV3llQUt0c2xmYXpoXzQ5UQ?oc=5",
+  "source": "Media Indonesia",
+  "source_url": "https://mediaindonesia.com",
+  "published_at": "2026-11-04T13:01:35.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-04T14:30:38.358Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.14",
+      "nama": "Kabupaten Purwakarta",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
