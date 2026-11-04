@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-04T06:15:27.583Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        113.9163674626,
+        -2.2071739704
+      ]
+    },
+    "properties": {
+      "pkey": "399993",
+      "created_at": "2026-11-04T06:03:05.624Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "4bfa2c20-3b59-4a33-b97f-46ebd52025fc",
+      "image_url": "https://images.petabencana.id/4bfa2c20-3b59-4a33-b97f-46ebd52025fc.jpg",
+      "disaster_type": "haze",
+      "is_training": false,
+      "report_data": {
+        "report_type": "haze",
+        "visibility": 2,
+        "airQuality": 4
+      },
+      "tags": {
+        "city": "KOTA PALANGKARAYA",
+        "district_id": null,
+        "region_code": "6271",
+        "local_area_id": null,
+        "instance_region_code": "ID-KT"
+      },
+      "title": null,
+      "text": "Kualitas udara di wilayah Kota Palangka Raya, Kalimantan Tengah, khususnya di sekitar Jl. Rajawali Km 1, tingkat BERBAHAYA ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
