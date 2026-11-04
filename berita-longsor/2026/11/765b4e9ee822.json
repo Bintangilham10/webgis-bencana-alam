@@ -1,0 +1,21 @@
+{
+  "guid": "CBMirgFBVV95cUxObGtLOHZ6U1ZmQ1hvVGdVUWJlRTRlczdNUGd4TlZlcDBtY0xCLWNsLXYyUWVfZENxUVZtcE9NZkZIMEtqVGhrd3NEX0lGQ3ppR2puOXcyOEtvbFlBMFRQb2xrSjhmcGhaRFFJZi1HRk1OQmU4TWZDdGtqVUplVVBFUnNCZFc3RlFIbWRNRTJHVzFyQm51TWZrTTNJTERLbTg4Zi1xZDZDaEIwSVlkY2c",
+  "title": "Tim SAR Cari Empat Warga yang Tertimbun Longsor di Kabupaten Padang Lawas - Basarnas",
+  "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObGtLOHZ6U1ZmQ1hvVGdVUWJlRTRlczdNUGd4TlZlcDBtY0xCLWNsLXYyUWVfZENxUVZtcE9NZkZIMEtqVGhrd3NEX0lGQ3ppR2puOXcyOEtvbFlBMFRQb2xrSjhmcGhaRFFJZi1HRk1OQmU4TWZDdGtqVUplVVBFUnNCZFc3RlFIbWRNRTJHVzFyQm51TWZrTTNJTERLbTg4Zi1xZDZDaEIwSVlkY2c?oc=5",
+  "source": "Basarnas",
+  "source_url": "https://basarnas.go.id",
+  "published_at": "2026-11-04T04:30:16.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-04T05:30:32.392Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "12.21",
+      "nama": "Kabupaten Padang Lawas",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

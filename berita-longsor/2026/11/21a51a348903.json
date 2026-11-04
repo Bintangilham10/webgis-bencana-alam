@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqwFBVV95cUxNZVZvSkZpTUZPNkMtR3lUeldFSzkzQUZseUR2Y2JGLWdRS2VpaWNEdVFfNU1ZWFZZeWV1V3owSHFndzJFazRCT0JqS1NpT1RpNVdTN0QxZ3dKLVJvN3RONVVDa2lFT3BYRXgzYm9ELWQ1ZFA1UjNrY3BsUEd1UnRXSVVTQ1lIb2JzVlA4RE84WUh2UGlVWkFlMkFxamFuNzhoS2REd3JjUWxqUms",
+  "title": "Hadapi Potensi Banjir dan Longsor, Polres Kediri Kota Gelar Apel Kesiapsiagaan - MIN.CO.ID",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZVZvSkZpTUZPNkMtR3lUeldFSzkzQUZseUR2Y2JGLWdRS2VpaWNEdVFfNU1ZWFZZeWV1V3owSHFndzJFazRCT0JqS1NpT1RpNVdTN0QxZ3dKLVJvN3RONVVDa2lFT3BYRXgzYm9ELWQ1ZFA1UjNrY3BsUEd1UnRXSVVTQ1lIb2JzVlA4RE84WUh2UGlVWkFlMkFxamFuNzhoS2REd3JjUWxqUms?oc=5",
+  "source": "MIN.CO.ID",
+  "source_url": "https://min.co.id",
+  "published_at": "2026-11-04T05:23:43.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-04T05:30:32.392Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.06",
+      "nama": "Kabupaten Kediri",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.71",
+      "nama": "Kota Kediri",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
