@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-04T08:15:28.206Z",
+  "data": {
+    "Tanggal": "04 Nov 2026",
+    "Jam": "14:56:34 WIB",
+    "DateTime": "2026-11-04T07:56:34+00:00",
+    "Coordinates": "-1.14,120.15",
+    "Lintang": "1.14 LS",
+    "Bujur": "120.15 BT",
+    "Magnitude": "3.4",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di darat 40 km timur laut Sigi",
+    "Dirasakan": "III Sigi, II Palu"
+  }
+}
