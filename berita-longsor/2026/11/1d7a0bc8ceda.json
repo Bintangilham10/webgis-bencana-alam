@@ -1,0 +1,21 @@
+{
+  "guid": "CBMid0FVX3lxTE5mNDFvaHNGV3R0U2RHcW4tTkQ4QWlqXzNUUDJucUs2TklVWUFJbzBBckJKZGF1UWtTSHZBQllpa1VBQTI4anJWaTZUVmVZd1hUeUJYVDJaN2NHekhwa3JwNGNBbnk4bFM1b1BtRWd2dUFYTTFacFFv",
+  "title": "Bencana Cimahi, Cipageran dan Citeureup Rawan Longsor - pasjabar",
+  "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5mNDFvaHNGV3R0U2RHcW4tTkQ4QWlqXzNUUDJucUs2TklVWUFJbzBBckJKZGF1UWtTSHZBQllpa1VBQTI4anJWaTZUVmVZd1hUeUJYVDJaN2NHekhwa3JwNGNBbnk4bFM1b1BtRWd2dUFYTTFacFFv?oc=5",
+  "source": "pasjabar",
+  "source_url": "https://pasjabar.com",
+  "published_at": "2026-11-04T07:40:16.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-04T08:30:36.657Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.77",
+      "nama": "Kota Cimahi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

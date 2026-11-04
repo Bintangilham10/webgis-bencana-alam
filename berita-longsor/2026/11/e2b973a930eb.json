@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiuAFBVV95cUxNTlpRM0l4LWNlZElfT0JOTHViODRTVjV4R3p4bmc0eTZ1aDNHVnVtM05wWGdtd01VLVhpRzM2WGY1WWRSUXZ0Vm01Nk1YVHhyTlZwNFBpUDJmT3E5dVNVN3F2VGc0a0FtdlgzcUhmT3FJVkJIZ3pBeDdVclZtQmQxcFpEeFhTejhYX2Rtb2JyMlowamFjVFp3MTNhZDF4bjdndWdLZzZpZkpwS1hqdkJfRnI4eVZ2WFFQ",
+  "title": "Evakuasi Bencana Longsor di Gorontalo | Aksi Cepat Basarnas Evakuasi Korban Bencana - Basarnas",
+  "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTlpRM0l4LWNlZElfT0JOTHViODRTVjV4R3p4bmc0eTZ1aDNHVnVtM05wWGdtd01VLVhpRzM2WGY1WWRSUXZ0Vm01Nk1YVHhyTlZwNFBpUDJmT3E5dVNVN3F2VGc0a0FtdlgzcUhmT3FJVkJIZ3pBeDdVclZtQmQxcFpEeFhTejhYX2Rtb2JyMlowamFjVFp3MTNhZDF4bjdndWdLZzZpZkpwS1hqdkJfRnI4eVZ2WFFQ?oc=5",
+  "source": "Basarnas",
+  "source_url": "https://basarnas.go.id",
+  "published_at": "2026-11-04T05:44:18.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-04T08:30:36.657Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "75.01",
+      "nama": "Kabupaten Gorontalo",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "75.71",
+      "nama": "Kota Gorontalo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Gorontalo"
+  ]
+}
