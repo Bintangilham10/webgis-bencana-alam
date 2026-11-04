@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirAFBVV95cUxPUDN1RG5tMXEzOGUzWnZxWDNGOVVJeXRCRlV2YlprZnVLZFliY1Exdld0U1NRaXRrSHN1TlJ6Z1pzVU45dXdsUk94ZFFUSUF0ZHp2NHpSTC1ZMnpUQm9uSlp1aGZBWjBqdG5iTzd4NlVTUlNmMGdCVXFDQWZuWjZ0RllpRFZZNFRzdlhLY0p6aFpHbnBNU2psYjZDN2FuQVdXd1M2bm1sMHYxUHM0",
+  "title": "Hadapi Ancaman Banjir hingga Longsor, Polres Kediri Siagakan 500 Personel - metrotv9news",
+  "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPUDN1RG5tMXEzOGUzWnZxWDNGOVVJeXRCRlV2YlprZnVLZFliY1Exdld0U1NRaXRrSHN1TlJ6Z1pzVU45dXdsUk94ZFFUSUF0ZHp2NHpSTC1ZMnpUQm9uSlp1aGZBWjBqdG5iTzd4NlVTUlNmMGdCVXFDQWZuWjZ0RllpRFZZNFRzdlhLY0p6aFpHbnBNU2psYjZDN2FuQVdXd1M2bm1sMHYxUHM0?oc=5",
+  "source": "metrotv9news",
+  "source_url": "https://metrotv9news.com",
+  "published_at": "2026-11-04T11:57:04.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-04T20:45:28.645Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.06",
+      "nama": "Kabupaten Kediri",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.71",
+      "nama": "Kota Kediri",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
