@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-11-04T01:00:39.605Z",
+  "data": {
+    "Tanggal": "04 Nov 2026",
+    "Jam": "07:46:08 WIB",
+    "DateTime": "2026-11-04T00:46:08+00:00",
+    "Coordinates": "-3.22,135.53",
+    "Lintang": "3.22 LS",
+    "Bujur": "135.53 BT",
+    "Magnitude": "4.6",
+    "Kedalaman": "23 km",
+    "Wilayah": "Pusat gempa berada di laut 16 km utara Nabire",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "II - III Nabire",
+    "Shakemap": "20261104074608.mmi.jpg"
+  }
+}
