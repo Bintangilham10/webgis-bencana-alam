@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.05.14.62.009</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-05T20:38:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-05T20:45:00+07:00</effective>
+    <expires>2026-11-05T22:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 05 November 2026, 20:45 WIB di sebagian wilayah Kalimantan Tengah, khususnya di PANDIH BATU, SEBANGAU KUALA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 05 November 2026, 22:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/11/05/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-3.118,114.255 -3.194,114.227 -3.188,114.204 -3.159,114.127 -3.111,114.019 -3.078,113.965 -3.077,113.963 -3.053,113.975 -2.964,114.038 -2.992,114.135 -3.007,114.158 -3.016,114.152 -3.118,114.255</polygon>
+      <polygon>-2.662,114.108 -2.834,114.060 -2.904,114.045 -2.964,114.038 -3.053,113.975 -3.077,113.963 -3.078,113.965 -3.112,113.954 -3.135,113.937 -3.173,113.897 -3.228,113.864 -3.309,113.837 -3.321,113.816 -3.343,113.748 -3.370,113.716 -3.423,113.705 -3.468,113.709 -3.465,113.630 -3.444,113.582 -3.393,113.611 -3.352,113.627 -3.323,113.632 -3.252,113.628 -3.166,113.601 -3.166,113.594 -3.135,113.613 -3.139,113.621 -3.137,113.627 -3.132,113.629 -3.103,113.631 -3.092,113.638 -3.050,113.639 -3.002,113.647 -2.964,113.645 -2.929,113.639 -2.887,113.618 -2.828,113.581 -2.800,113.576 -2.741,113.583 -2.399,113.763 -2.398,113.941 -2.391,113.975 -2.397,114.027 -2.334,114.028 -2.412,114.117 -2.490,114.146 -2.520,114.143 -2.662,114.108</polygon>
+    </area>
+  </info>
+</alert>
