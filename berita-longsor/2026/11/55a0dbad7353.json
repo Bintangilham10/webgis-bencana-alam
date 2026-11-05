@@ -1,0 +1,23 @@
+{
+  "guid": "CBMirgFBVV95cUxPOFRsN3J0enRabWtUOGd6WkQ5YU5zWk5qRFpCUXRoTVBBaUQyeEdjR0E5YjZtdUpPQkpHWG1RaGN0M240N3pMX0c1UVpyeTJSWDhod29zTFp4WEl4MWxuQXE4R2k1dTc5QlBRZXpyU0pad01EOGhUZDY3NGJKTmJLSDR3SGVqSW1WS3hKT29OR3NOcGhBaHN3MDdhYmlSaVRJNnBmUmVkbkpmdEFMbkE",
+  "title": "Hujan Mulai Meluas di Kaltim, Balikpapan Waspada Banjir dan Longsor - EKSPOSKALTIM",
+  "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPOFRsN3J0enRabWtUOGd6WkQ5YU5zWk5qRFpCUXRoTVBBaUQyeEdjR0E5YjZtdUpPQkpHWG1RaGN0M240N3pMX0c1UVpyeTJSWDhod29zTFp4WEl4MWxuQXE4R2k1dTc5QlBRZXpyU0pad01EOGhUZDY3NGJKTmJLSDR3SGVqSW1WS3hKT29OR3NOcGhBaHN3MDdhYmlSaVRJNnBmUmVkbkpmdEFMbkE?oc=5",
+  "source": "EKSPOSKALTIM",
+  "source_url": "https://eksposkaltim.com",
+  "published_at": "2026-11-05T12:50:17.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-05T15:45:26.692Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "64.71",
+      "nama": "Kota Balikpapan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Kalimantan Timur"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMixgFBVV95cUxOeVhKazg0SmE3Q1V6Tm0xRFg3UWVXdWFYUDdNcDBXd05MRlU2REN3VEE2VUs3VlNROXFpZnZuZm54bHdLZDJ3eEtSTmQ3bE14OFQyeDJJcTV6azRtSGlzWEZ5eVRleUF5T09DRXVMOTYzWGxGQ2lKNXRVV09NTGVPRVFTUEc2eF9paXN1NXlDOFN6SlltbHFGZFNQS0pmNGVPOHlUQzJDQkZrMk9sdnBRQVdKbkQ2QjhzUTFnRHJLeWYzYVR4RUE",
+  "title": "Kementerian PU Bersihkan Material Longsor di Ruas Brumbun–Pantai Sine Tulungagung - InfoPublik",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOeVhKazg0SmE3Q1V6Tm0xRFg3UWVXdWFYUDdNcDBXd05MRlU2REN3VEE2VUs3VlNROXFpZnZuZm54bHdLZDJ3eEtSTmQ3bE14OFQyeDJJcTV6azRtSGlzWEZ5eVRleUF5T09DRXVMOTYzWGxGQ2lKNXRVV09NTGVPRVFTUEc2eF9paXN1NXlDOFN6SlltbHFGZFNQS0pmNGVPOHlUQzJDQkZrMk9sdnBRQVdKbkQ2QjhzUTFnRHJLeWYzYVR4RUE?oc=5",
+  "source": "InfoPublik",
+  "source_url": "https://infopublik.id",
+  "published_at": "2026-11-05T13:54:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-05T15:45:26.692Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.04",
+      "nama": "Kabupaten Tulungagung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
