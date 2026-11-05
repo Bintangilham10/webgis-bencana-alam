@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.05.22.95.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-06T06:05:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-06T06:15:00+09:00</effective>
+    <expires>2026-11-06T09:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua Pegunungan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 06 November 2026, 06:15 WIT di sebagian wilayah Papua Pegunungan, khususnya di AWINBON, DEKAI, SEREDELA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 06 November 2026, 09:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPP/2026/11/06/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua Pegunungan</areaDesc>
+      <polygon>-4.780,139.509 -4.796,139.572 -4.798,139.600 -4.785,139.719 -4.824,139.718 -4.836,139.713 -4.869,139.718 -4.890,139.713 -4.904,139.691 -4.934,139.674 -4.946,139.654 -4.994,139.608 -5.027,139.590 -5.006,139.511 -4.955,139.354 -4.890,139.361 -4.872,139.372 -4.830,139.422 -4.799,139.426 -4.785,139.434 -4.772,139.445 -4.756,139.466 -4.780,139.509</polygon>
+      <polygon>-4.942,140.504 -4.988,140.453 -4.991,140.448 -4.991,140.424 -5.010,140.403 -5.019,140.402 -5.055,140.417 -5.083,140.440 -5.102,140.437 -5.123,140.424 -5.127,140.418 -5.123,140.405 -5.139,140.398 -5.138,140.386 -5.148,140.376 -5.168,140.381 -5.178,140.392 -5.186,140.382 -5.191,140.384 -5.194,140.393 -5.206,140.391 -5.194,140.307 -5.169,140.147 -5.106,140.154 -5.066,140.153 -5.052,140.132 -5.055,140.112 -5.061,140.108 -5.059,140.086 -5.055,140.075 -5.042,140.086 -5.036,140.101 -5.024,140.116 -4.999,140.136 -4.979,140.166 -4.971,140.211 -4.952,140.251 -4.937,140.281 -4.935,140.305 -4.912,140.379 -4.909,140.414 -4.924,140.473 -4.942,140.504</polygon>
+      <polygon>-4.859,140.005 -4.879,140.062 -4.902,140.072 -4.902,140.120 -4.914,140.130 -4.974,140.130 -4.999,140.136 -5.024,140.116 -5.036,140.101 -5.042,140.086 -5.055,140.075 -5.059,140.086 -5.061,140.108 -5.055,140.112 -5.052,140.132 -5.066,140.153 -5.106,140.154 -5.169,140.147 -5.167,140.136 -5.160,140.098 -5.110,139.906 -5.080,139.793 -5.050,139.820 -5.008,139.845 -4.964,139.850 -4.936,139.864 -4.872,139.880 -4.825,139.919 -4.810,139.934 -4.859,140.005</polygon>
+    </area>
+  </info>
+</alert>

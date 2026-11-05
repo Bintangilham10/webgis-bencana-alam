@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.05.22.63.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-06T05:20:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-06T05:32:00+08:00</effective>
+    <expires>2026-11-06T08:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 06 November 2026, 05:32 WITA di sebagian wilayah Kalimantan Selatan, khususnya di JORONG, PANYIPATAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 06 November 2026, 08:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKS/2026/11/06/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Selatan</areaDesc>
+      <polygon>-3.948,115.167 -3.967,115.127 -4.006,115.024 -4.061,114.924 -4.109,114.826 -4.098,114.811 -4.043,114.758 -4.009,114.740 -3.993,114.740 -3.964,114.757 -3.955,114.741 -3.953,114.742 -3.943,114.763 -3.950,114.776 -3.950,114.793 -3.941,114.806 -3.947,114.817 -3.947,114.839 -3.955,114.857 -3.958,114.887 -3.937,114.906 -3.918,114.914 -3.899,114.941 -3.888,114.947 -3.883,114.975 -3.876,114.989 -3.864,115.036 -3.836,115.040 -3.779,115.039 -3.698,115.031 -3.694,115.025 -3.702,115.001 -3.693,115.012 -3.666,115.087 -3.682,115.078 -3.731,115.081 -3.765,115.094 -3.789,115.108 -3.854,115.158 -3.870,115.162 -3.948,115.167</polygon>
+      <polygon>-3.922,114.785 -3.943,114.763 -3.953,114.742 -3.955,114.741 -3.964,114.757 -3.993,114.740 -4.009,114.740 -4.043,114.758 -4.098,114.811 -4.109,114.826 -4.172,114.708 -4.180,114.668 -4.173,114.632 -4.162,114.619 -4.153,114.629 -4.069,114.626 -4.063,114.636 -4.051,114.639 -3.991,114.632 -3.995,114.678 -3.974,114.681 -3.917,114.676 -3.895,114.681 -3.888,114.687 -3.887,114.702 -3.900,114.752 -3.922,114.785</polygon>
+    </area>
+  </info>
+</alert>
