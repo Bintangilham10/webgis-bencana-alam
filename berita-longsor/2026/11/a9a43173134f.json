@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiwgFBVV95cUxPNXZKa083b2I0aDRCRDUwck1GYW5HNGJmVko4YVhmNnAtbWpWVlRzbjdJVzQ1TTRDV0h6alVIeE9JM1ZVVVVqRXRYWUg4S1JIVU9WRTRlMWYzT19fbl9nRVoxWmhBTFRPMEIxT2MwZUpVcWk4Rm5hZXV1NmhkN05kbU1LM0tCdEVyUTlQRm5mV0Q0Tkctbm9ET0Q5eGd4dE5TT2hXZjducVFIaW1LSDhUbWVnVEdoN0lxQXFwVW01R0l5Zw",
+  "title": "Tanah Retak Akibat Kemarau Panjang, Pemkab Garut Siaga Hadapi Ancaman Longsor Dimusim Hujan - Radar Garut",
+  "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNXZKa083b2I0aDRCRDUwck1GYW5HNGJmVko4YVhmNnAtbWpWVlRzbjdJVzQ1TTRDV0h6alVIeE9JM1ZVVVVqRXRYWUg4S1JIVU9WRTRlMWYzT19fbl9nRVoxWmhBTFRPMEIxT2MwZUpVcWk4Rm5hZXV1NmhkN05kbU1LM0tCdEVyUTlQRm5mV0Q0Tkctbm9ET0Q5eGd4dE5TT2hXZjducVFIaW1LSDhUbWVnVEdoN0lxQXFwVW01R0l5Zw?oc=5",
+  "source": "Radar Garut",
+  "source_url": "https://radargarut.id",
+  "published_at": "2026-11-05T00:46:30.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-05T03:00:41.740Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

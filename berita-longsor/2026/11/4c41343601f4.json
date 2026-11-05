@@ -1,0 +1,26 @@
+{
+  "guid": "CBMizwFBVV95cUxPRkJ2RWhGcU11RHU1b3BPdXN2MGNMOXhfaHQ4elJuaThIdl9YUG1ndldDSWVwRXVuMmZXQms2TFpUVVNnVV9WRVdTNUREZlZodEw1VDhpVFpGR0ZWcExNM3lrSGl1eEJmbzJEMEE0aDFFclg2QlVjZlNYR01WUnlrYkh1T1N1dFRxOEZ5Mko1UG9PT0Y3TkdGSzEzQzVLdDRuRXJnQUlnR3B3UEVLN3RIMUxiYzM3dGFlZHJpOEtKUFJRUF8xeGNha09nYkRLR00",
+  "title": "Banjir dan Tanah Longsor Melanda Delapan Kecamatan di Malang, Puluhan Rumah Mengalami Kerusakan - news.schoolmedia.id",
+  "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPRkJ2RWhGcU11RHU1b3BPdXN2MGNMOXhfaHQ4elJuaThIdl9YUG1ndldDSWVwRXVuMmZXQms2TFpUVVNnVV9WRVdTNUREZlZodEw1VDhpVFpGR0ZWcExNM3lrSGl1eEJmbzJEMEE0aDFFclg2QlVjZlNYR01WUnlrYkh1T1N1dFRxOEZ5Mko1UG9PT0Y3TkdGSzEzQzVLdDRuRXJnQUlnR3B3UEVLN3RIMUxiYzM3dGFlZHJpOEtKUFJRUF8xeGNha09nYkRLR00?oc=5",
+  "source": "news.schoolmedia.id",
+  "source_url": "https://news.schoolmedia.id",
+  "published_at": "2026-11-05T01:14:56.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-05T03:00:41.740Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

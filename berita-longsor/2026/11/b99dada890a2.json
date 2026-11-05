@@ -1,0 +1,21 @@
+{
+  "guid": "CBMikwFBVV95cUxNNXozMUZKV1p5LVl2LU1SbzU0MV9KSDkyMzF2RDI1Qjg5aGxNSjVHanNZa3R1aE9jRHFPMlprY3NXTUJNUTNfRXY0Y3JScGlZdm9nVG9veTJKQk52Y0dweDV4cm1aeWJXbUJRZ05KdmoyT1VpZlg5Q1hIVGhLZVprOUJPcVJVVmZ6d2FIWVZQY01zUWM",
+  "title": "17 Kecamatan Purwakarta Rawan Longsor, Waspada Banjir! - Radar Karawang",
+  "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNXozMUZKV1p5LVl2LU1SbzU0MV9KSDkyMzF2RDI1Qjg5aGxNSjVHanNZa3R1aE9jRHFPMlprY3NXTUJNUTNfRXY0Y3JScGlZdm9nVG9veTJKQk52Y0dweDV4cm1aeWJXbUJRZ05KdmoyT1VpZlg5Q1hIVGhLZVprOUJPcVJVVmZ6d2FIWVZQY01zUWM?oc=5",
+  "source": "Radar Karawang",
+  "source_url": "https://radarkarawang.id",
+  "published_at": "2026-11-05T02:15:07.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-05T03:00:41.740Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.14",
+      "nama": "Kabupaten Purwakarta",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
