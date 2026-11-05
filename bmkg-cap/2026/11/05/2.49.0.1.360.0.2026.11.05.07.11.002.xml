@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.05.07.11.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-05T11:21:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-05T11:31:00+07:00</effective>
+    <expires>2026-11-05T14:52:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Aceh</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 05 November 2026, 11:31 WIB di sebagian wilayah Aceh, khususnya di GAJAH PUTIH, KETOL, MONTASIK, PINTU RIME GAYO, TIMANG GAJAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 05 November 2026, 14:52 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CAH/2026/11/05/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Aceh</areaDesc>
+      <polygon>4.955,96.657 4.951,96.675 4.939,96.673 4.901,96.690 4.899,96.691 4.865,96.687 4.843,96.692 4.833,96.693 4.825,96.706 4.819,96.708 4.803,96.701 4.780,96.702 4.772,96.694 4.769,96.687 4.756,96.684 4.745,96.701 4.753,96.711 4.744,96.716 4.718,96.741 4.709,96.734 4.695,96.732 4.693,96.733 4.697,96.741 4.696,96.749 4.682,96.769 4.664,96.767 4.669,96.757 4.666,96.717 4.663,96.706 4.659,96.699 4.650,96.697 4.650,96.692 4.669,96.663 4.705,96.623 4.726,96.606 4.738,96.579 4.790,96.544 4.810,96.519 4.824,96.491 4.885,96.425 4.925,96.450 4.925,96.450 4.914,96.462 4.895,96.467 4.892,96.489 4.890,96.497 4.895,96.506 4.935,96.536 4.952,96.591 4.954,96.609 4.955,96.657</polygon>
+      <polygon>5.550,95.496 5.540,95.501 5.534,95.527 5.527,95.516 5.514,95.512 5.492,95.492 5.479,95.486 5.464,95.461 5.450,95.451 5.443,95.450 5.443,95.431 5.453,95.428 5.454,95.408 5.458,95.404 5.463,95.412 5.469,95.412 5.461,95.400 5.460,95.396 5.467,95.392 5.483,95.395 5.493,95.406 5.494,95.410 5.486,95.419 5.485,95.432 5.493,95.454 5.550,95.496</polygon>
+      <polygon>4.969,96.731 4.953,96.770 4.942,96.786 4.937,96.797 4.922,96.809 4.910,96.826 4.895,96.839 4.883,96.849 4.875,96.872 4.870,96.866 4.854,96.860 4.851,96.796 4.845,96.766 4.822,96.760 4.825,96.754 4.823,96.720 4.833,96.700 4.843,96.692 4.865,96.687 4.899,96.691 4.901,96.690 4.939,96.673 4.951,96.675 4.955,96.657 4.974,96.663 4.969,96.731</polygon>
+      <polygon>4.854,96.860 4.824,96.857 4.805,96.850 4.783,96.831 4.770,96.820 4.750,96.811 4.738,96.796 4.734,96.775 4.737,96.764 4.735,96.744 4.744,96.731 4.744,96.716 4.753,96.711 4.745,96.701 4.756,96.684 4.769,96.687 4.772,96.694 4.776,96.705 4.796,96.717 4.798,96.754 4.789,96.759 4.787,96.753 4.779,96.754 4.789,96.796 4.799,96.796 4.798,96.788 4.804,96.782 4.816,96.782 4.817,96.788 4.824,96.788 4.822,96.760 4.845,96.766 4.851,96.796 4.854,96.860</polygon>
+      <polygon>4.822,96.760 4.824,96.788 4.817,96.788 4.816,96.782 4.804,96.782 4.798,96.788 4.799,96.796 4.789,96.796 4.779,96.754 4.787,96.753 4.789,96.759 4.798,96.754 4.796,96.717 4.776,96.705 4.772,96.694 4.780,96.702 4.803,96.701 4.819,96.708 4.825,96.706 4.833,96.693 4.843,96.692 4.833,96.700 4.823,96.720 4.825,96.754 4.822,96.760</polygon>
+    </area>
+  </info>
+</alert>
