@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwgFBVV95cUxPeFpVZEw1clJHNktDZ0prbDhrY3BwaExzWkNaZ1F3U21FY0thcGpGZXdJckM4U0JsMnF6bkNFM1VVODZFQW1QYzlxdFlNSzhFN09MbHlKdGhXYm1zd1ctdUZUUjJtRlFvbzdkdjBJeFZfVFJsWDVHNGxTLW44WURwMXpDVFdkWTVuMi1Zc1VHNHE2SUJSVWNET2c4T19aUjhQLVo5XzB4T1JTQ1VmekNld2ktMXBGVHdYa0s2VmFGVVgzdw",
+  "title": "Hadapi Ancaman Banjir hingga Longsor, Polres Kediri Siagakan 500 Personel - Media Hub | POLRI",
+  "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPeFpVZEw1clJHNktDZ0prbDhrY3BwaExzWkNaZ1F3U21FY0thcGpGZXdJckM4U0JsMnF6bkNFM1VVODZFQW1QYzlxdFlNSzhFN09MbHlKdGhXYm1zd1ctdUZUUjJtRlFvbzdkdjBJeFZfVFJsWDVHNGxTLW44WURwMXpDVFdkWTVuMi1Zc1VHNHE2SUJSVWNET2c4T19aUjhQLVo5XzB4T1JTQ1VmekNld2ktMXBGVHdYa0s2VmFGVVgzdw?oc=5",
+  "source": "Media Hub | POLRI",
+  "source_url": "https://mediahub.polri.go.id",
+  "published_at": "2026-11-04T14:36:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-05T06:00:43.720Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.06",
+      "nama": "Kabupaten Kediri",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.71",
+      "nama": "Kota Kediri",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

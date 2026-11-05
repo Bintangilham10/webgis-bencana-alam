@@ -1,0 +1,23 @@
+{
+  "guid": "CBMi1gFBVV95cUxOVjBacmFPQXBKS0llMTBVRFlMbWZHTnhRazIzdEhyeU90OTlRd1hPZzA1dWxMYVB5d3gyLS1yZXBMWnJ4a0JpVDQxWE1VcE5IWE1hcXk3a0xHTVRxRG53eERpRjdCZ1FqeWlZMTZTTnJGWEFneXRXZmp6aEdzZXl2OWJSQWxRc1A2MUdBdUVodFZMeS1ZNGJ4UFJIRkxHU05aTklHM0pSdEc5cnlpbnMyYXFfcEYwUEhNWndldXY2d2Q5d3hYVGlOenNjUHdyNTNiRFJuZFhR",
+  "title": "Kementerian PU Jaga Jalan Tetap Fungsional Walau Longsor Kembali Terjang Ruas Tapan–Batas Jambi - Sahabat PU",
+  "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOVjBacmFPQXBKS0llMTBVRFlMbWZHTnhRazIzdEhyeU90OTlRd1hPZzA1dWxMYVB5d3gyLS1yZXBMWnJ4a0JpVDQxWE1VcE5IWE1hcXk3a0xHTVRxRG53eERpRjdCZ1FqeWlZMTZTTnJGWEFneXRXZmp6aEdzZXl2OWJSQWxRc1A2MUdBdUVodFZMeS1ZNGJ4UFJIRkxHU05aTklHM0pSdEc5cnlpbnMyYXFfcEYwUEhNWndldXY2d2Q5d3hYVGlOenNjUHdyNTNiRFJuZFhR?oc=5",
+  "source": "Sahabat PU",
+  "source_url": "https://sahabat.pu.go.id",
+  "published_at": "2026-11-05T03:34:32.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-05T06:00:43.720Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}
