@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.05.17.62.010</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-05T22:35:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-05T22:40:00+07:00</effective>
+    <expires>2026-11-06T01:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 05 November 2026, 22:40 WIB di sebagian wilayah Kalimantan Tengah, khususnya di KATINGAN KUALA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 06 November 2026, 01:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/11/05/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-3.166,113.594 -3.161,113.564 -3.162,113.539 -3.175,113.485 -3.185,113.459 -3.202,113.441 -3.224,113.436 -3.234,113.430 -3.248,113.391 -3.271,113.365 -3.267,113.350 -3.249,113.332 -3.242,113.329 -3.231,113.335 -3.213,113.327 -3.213,113.320 -3.232,113.318 -3.278,113.346 -3.280,113.343 -3.210,113.290 -3.118,113.198 -3.108,113.191 -3.103,113.194 -3.086,113.187 -3.069,113.166 -3.072,113.256 -3.057,113.331 -3.037,113.362 -2.950,113.446 -2.920,113.496 -2.897,113.525 -2.849,113.559 -2.831,113.573 -2.828,113.581 -2.887,113.618 -2.929,113.639 -2.964,113.645 -3.002,113.647 -3.050,113.639 -3.092,113.638 -3.103,113.631 -3.132,113.629 -3.137,113.627 -3.139,113.621 -3.135,113.613 -3.166,113.594</polygon>
+      <polygon>-3.226,113.330 -3.231,113.334 -3.239,113.328 -3.232,113.323 -3.222,113.325 -3.226,113.330</polygon>
+      <polygon>-3.266,113.405 -3.269,113.407 -3.295,113.384 -3.301,113.375 -3.302,113.366 -3.276,113.365 -3.266,113.372 -3.250,113.396 -3.266,113.405</polygon>
+    </area>
+  </info>
+</alert>
