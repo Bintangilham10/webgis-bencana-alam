@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiogFBVV95cUxPeFIyR0dkR1hOWkNuZ3RVV1REMFpfdFBnVkJlSGRVbUVjekRlZTcyd1UzMnZselJiLWRZTTlrdW9SNXU4YWdINnBYYXNnMXphU3FxMnZkVWo3dlBMZzFtaUpHWFFNa2wtUHk5YUNvbU1jTm5saUNXLWZEcEZfNXhfNWZQTzZJbjJiM3dIcTcyVWdSTnZNUURUR1dPYmp2bWdwLUE",
+  "title": "27 Kecamatan di Tasikmalaya Masuk Zona Merah Rawan Longsor - MetroTVNews.com",
+  "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeFIyR0dkR1hOWkNuZ3RVV1REMFpfdFBnVkJlSGRVbUVjekRlZTcyd1UzMnZselJiLWRZTTlrdW9SNXU4YWdINnBYYXNnMXphU3FxMnZkVWo3dlBMZzFtaUpHWFFNa2wtUHk5YUNvbU1jTm5saUNXLWZEcEZfNXhfNWZQTzZJbjJiM3dIcTcyVWdSTnZNUURUR1dPYmp2bWdwLUE?oc=5",
+  "source": "MetroTVNews.com",
+  "source_url": "https://www.metrotvnews.com",
+  "published_at": "2026-11-05T11:05:32.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-05T12:30:38.779Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

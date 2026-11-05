@@ -1,0 +1,26 @@
+{
+  "guid": "CBMikwFBVV95cUxNbjVDbmZXSkRGV1lIeGpjVWJ0Y2h2N1dIdXlUQlRJc1lLVTlEVWM3d2JhSFNUWFJvUHZ4NUNBQTVENXJ1eU5qWDVacnEzVGpQSy1VSG1CYzZXcEJjaUZfN0lKeTBzQ0trTVlqdS1kM0gtemZDOUxLbVFFWUtsVU0ta3IxZHFTblZTY3pBbXB4VXZJUGs",
+  "title": "Imron: Cirebon Waspadai Banjir, Longsor, dan Angin Kencang! - Jabar News",
+  "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbjVDbmZXSkRGV1lIeGpjVWJ0Y2h2N1dIdXlUQlRJc1lLVTlEVWM3d2JhSFNUWFJvUHZ4NUNBQTVENXJ1eU5qWDVacnEzVGpQSy1VSG1CYzZXcEJjaUZfN0lKeTBzQ0trTVlqdS1kM0gtemZDOUxLbVFFWUtsVU0ta3IxZHFTblZTY3pBbXB4VXZJUGs?oc=5",
+  "source": "Jabar News",
+  "source_url": "https://www.jabarnews.com",
+  "published_at": "2026-11-05T10:32:25.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-05T12:30:38.779Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.09",
+      "nama": "Kabupaten Cirebon",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.74",
+      "nama": "Kota Cirebon",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,23 @@
+{
+  "guid": "CBMilwFBVV95cUxOVkpLRHFjN3E0UzZyZ3cxblF6ZGctcFlGSkw3Vm9MWVVqZ2d3Nm1tRkpsdUc0OEtweHBLSDVKa2pWOGJhVXU5TjJKTWJYS1V6RGhpb3JEd0JtT2VXZVdRdll3ZlU0QkdFdW1jVkFkWVNhOWRsXzc4NWtjZlFCeXRqVExKMmpfcnUtaE10dTdhTzJHS01VTllv0gGcAUFVX3lxTE00czRaOFpqMkxRdkJFX2pPSlRUUkV4d0k4Q0hXem5rTGJUemFLdXdqZWZ2M244ZUJPelZULTJNejQ3R0lOWmR5UUl2aHJ2a1pYRDBFRlNRYUtWbEJybXZzZXlrME5iY0FhbXUya0VxQ1lIWnRVVUI1eGdLSzcxM1dCaURESG9qMVhBdDFxUk5iTDRtb3plMlhiWWM1Uw",
+  "title": "1 Orang Tewas Akibat Tanah Longsor di Gayo Lues Aceh - detikNews",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVkpLRHFjN3E0UzZyZ3cxblF6ZGctcFlGSkw3Vm9MWVVqZ2d3Nm1tRkpsdUc0OEtweHBLSDVKa2pWOGJhVXU5TjJKTWJYS1V6RGhpb3JEd0JtT2VXZVdRdll3ZlU0QkdFdW1jVkFkWVNhOWRsXzc4NWtjZlFCeXRqVExKMmpfcnUtaE10dTdhTzJHS01VTllv0gGcAUFVX3lxTE00czRaOFpqMkxRdkJFX2pPSlRUUkV4d0k4Q0hXem5rTGJUemFLdXdqZWZ2M244ZUJPelZULTJNejQ3R0lOWmR5UUl2aHJ2a1pYRDBFRlNRYUtWbEJybXZzZXlrME5iY0FhbXUya0VxQ1lIWnRVVUI1eGdLSzcxM1dCaURESG9qMVhBdDFxUk5iTDRtb3plMlhiWWM1Uw?oc=5",
+  "source": "detikNews",
+  "source_url": "https://news.detik.com",
+  "published_at": "2026-11-05T10:37:32.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-05T12:30:38.779Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.13",
+      "nama": "Kabupaten Gayo Lues",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
