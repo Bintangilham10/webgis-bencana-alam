@@ -1,0 +1,21 @@
+{
+  "guid": "CBMivwFBVV95cUxPVVRoazdOOU1UU2lRcWVYd3EtV0w1b3ljQlVwQ2RQTnZJWXR1eXFKQ1BXOGFlV0YwRlNsbUJnNG1aMTFNTTY3T1puWVVoZ3B4SUV1blFIN0FEZDVCbjlobjRURldad0F4TlBaYkkyaUhlUHc0ZGlTMVlwYUpMOVUxbkZCYW9MdWttOUllZDFRYldOdEgtQVVFUW0tNGY2ems2b29tU0p4RW9RT0RDbjRsZFlaTEJ4SG5UdThNaENoZw",
+  "title": "Kesiapsiagaan Bencana Cimahi Diperkuat, Wilayah Rawan Longsor Dipantau - Pikiran Rakyat Koran",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVVRoazdOOU1UU2lRcWVYd3EtV0w1b3ljQlVwQ2RQTnZJWXR1eXFKQ1BXOGFlV0YwRlNsbUJnNG1aMTFNTTY3T1puWVVoZ3B4SUV1blFIN0FEZDVCbjlobjRURldad0F4TlBaYkkyaUhlUHc0ZGlTMVlwYUpMOVUxbkZCYW9MdWttOUllZDFRYldOdEgtQVVFUW0tNGY2ems2b29tU0p4RW9RT0RDbjRsZFlaTEJ4SG5UdThNaENoZw?oc=5",
+  "source": "Pikiran Rakyat Koran",
+  "source_url": "https://koran.pikiran-rakyat.com",
+  "published_at": "2026-11-04T22:00:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-05T00:00:38.794Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.77",
+      "nama": "Kota Cimahi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
