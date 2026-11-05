@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.05.22.31.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-06T04:53:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-06T05:03:00+07:00</effective>
+    <expires>2026-11-06T07:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 06 November 2026, 05:03 WIB di sebagian wilayah Jakarta, khususnya di CABANGBUNGIN, KEPULAUAN SERIBU SELATAN., KEPULAUAN SERIBU UTARA, MUARAGEMBONG, TELUKNAGA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 06 November 2026, 07:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJK/2026/11/06/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jakarta</areaDesc>
+      <polygon>-5.499,106.549 -5.502,106.553 -5.505,106.543 -5.499,106.549</polygon>
+      <polygon>-5.422,106.492 -5.418,106.491 -5.418,106.495 -5.422,106.492</polygon>
+      <polygon>-5.460,106.557 -5.464,106.553 -5.461,106.554 -5.460,106.557</polygon>
+      <polygon>-5.570,106.528 -5.567,106.525 -5.568,106.529 -5.570,106.528</polygon>
+      <polygon>-5.583,106.549 -5.580,106.547 -5.577,106.551 -5.583,106.549</polygon>
+      <polygon>-5.587,106.590 -5.586,106.588 -5.584,106.592 -5.587,106.590</polygon>
+      <polygon>-5.614,106.575 -5.611,106.573 -5.610,106.583 -5.614,106.575</polygon>
+      <polygon>-5.620,106.550 -5.614,106.555 -5.617,106.556 -5.620,106.550</polygon>
+      <polygon>-5.621,106.584 -5.620,106.582 -5.619,106.585 -5.621,106.584</polygon>
+      <polygon>-5.652,106.578 -5.653,106.581 -5.653,106.576 -5.652,106.578</polygon>
+      <polygon>-5.669,106.583 -5.669,106.585 -5.671,106.579 -5.669,106.583</polygon>
+      <polygon>-5.699,106.541 -5.700,106.544 -5.700,106.534 -5.699,106.541</polygon>
+      <polygon>-5.736,106.601 -5.735,106.599 -5.734,106.603 -5.736,106.601</polygon>
+      <polygon>-5.742,106.604 -5.738,106.598 -5.737,106.602 -5.742,106.604</polygon>
+      <polygon>-5.854,106.630 -5.864,106.610 -5.856,106.618 -5.854,106.630</polygon>
+      <polygon>-5.796,106.494 -5.801,106.508 -5.796,106.487 -5.796,106.494</polygon>
+      <polygon>-5.802,106.523 -5.804,106.531 -5.802,106.516 -5.802,106.523</polygon>
+      <polygon>-5.820,106.553 -5.822,106.558 -5.820,106.548 -5.820,106.553</polygon>
+      <polygon>-5.926,106.585 -5.932,106.589 -5.927,106.581 -5.926,106.585</polygon>
+      <polygon>-5.935,106.593 -5.938,106.597 -5.939,106.593 -5.935,106.593</polygon>
+      <polygon>-5.946,106.633 -5.943,106.628 -5.942,106.633 -5.946,106.633</polygon>
+      <polygon>-5.959,106.522 -5.960,106.519 -5.953,106.521 -5.959,106.522</polygon>
+      <polygon>-5.955,106.844 -5.961,106.846 -5.957,106.841 -5.955,106.844</polygon>
+      <polygon>-5.971,106.694 -5.978,106.695 -5.972,106.689 -5.971,106.694</polygon>
+      <polygon>-5.975,106.709 -5.980,106.708 -5.976,106.702 -5.975,106.709</polygon>
+      <polygon>-6.071,107.143 -6.073,107.152 -6.068,107.160 -6.083,107.188 -6.088,107.188 -6.092,107.197 -6.113,107.188 -6.116,107.173 -6.106,107.164 -6.099,107.143 -6.089,107.107 -6.097,107.105 -6.094,107.092 -6.067,107.089 -6.066,107.107 -6.048,107.086 -6.042,107.088 -6.038,107.113 -6.053,107.132 -6.071,107.143</polygon>
+      <polygon>-5.936,107.100 -5.991,107.086 -6.019,107.099 -6.028,107.096 -6.029,107.109 -6.038,107.113 -6.042,107.088 -6.048,107.086 -6.066,107.107 -6.067,107.089 -6.074,107.076 -6.074,107.062 -6.049,107.059 -6.049,107.055 -6.061,107.047 -6.063,107.040 -6.058,107.009 -6.050,107.006 -6.038,107.006 -6.035,107.015 -6.030,107.015 -6.024,107.010 -6.023,106.994 -6.014,106.992 -6.009,106.986 -6.004,106.989 -6.003,107.001 -5.998,107.008 -5.972,107.017 -5.958,107.016 -5.942,107.008 -5.938,106.992 -5.918,107.016 -5.914,107.031 -5.933,107.070 -5.936,107.100</polygon>
+      <polygon>-6.045,106.714 -6.042,106.697 -6.064,106.665 -6.078,106.657 -6.083,106.666 -6.098,106.669 -6.102,106.656 -6.110,106.657 -6.106,106.638 -6.106,106.636 -6.099,106.634 -6.076,106.636 -6.037,106.630 -6.025,106.636 -6.017,106.632 -6.011,106.636 -6.007,106.650 -6.022,106.657 -6.023,106.662 -6.013,106.680 -6.034,106.709 -6.045,106.717 -6.045,106.714</polygon>
+    </area>
+  </info>
+</alert>
