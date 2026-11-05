@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.05.09.11.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-05T14:55:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-05T15:05:00+07:00</effective>
+    <expires>2026-11-05T17:24:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Aceh</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 05 November 2026, 15:05 WIB di sebagian wilayah Aceh, khususnya di DANAU PARIS, SIMPANG KANAN, SURO MAKMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 05 November 2026, 17:24 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CAH/2026/11/05/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Aceh</areaDesc>
+      <polygon>2.485,98.095 2.431,98.137 2.422,98.148 2.414,98.113 2.404,98.114 2.393,98.108 2.383,98.091 2.396,98.069 2.403,98.045 2.413,98.044 2.414,97.985 2.427,97.963 2.432,97.961 2.440,97.967 2.445,97.962 2.449,97.934 2.452,97.934 2.451,97.927 2.457,97.929 2.466,97.930 2.468,97.942 2.488,97.960 2.487,97.967 2.475,97.973 2.473,97.987 2.466,97.997 2.465,98.014 2.471,98.022 2.465,98.029 2.451,98.034 2.461,98.048 2.465,98.050 2.476,98.045 2.478,98.048 2.485,98.065 2.485,98.095</polygon>
+      <polygon>2.345,98.019 2.327,97.986 2.334,97.958 2.335,97.939 2.356,97.951 2.367,97.968 2.352,97.968 2.355,98.004 2.345,98.019</polygon>
+      <polygon>2.357,98.063 2.363,98.068 2.353,98.063 2.357,98.063</polygon>
+      <polygon>2.314,98.196 2.315,98.191 2.308,98.186 2.271,98.179 2.261,98.184 2.254,98.176 2.208,98.147 2.217,98.141 2.216,98.129 2.220,98.122 2.232,98.121 2.248,98.083 2.256,98.081 2.248,98.070 2.250,98.066 2.286,98.047 2.311,98.046 2.324,98.036 2.345,98.028 2.356,98.046 2.357,98.063 2.353,98.063 2.363,98.068 2.379,98.071 2.389,98.042 2.394,98.038 2.403,98.045 2.396,98.069 2.383,98.091 2.393,98.108 2.404,98.114 2.414,98.113 2.422,98.148 2.329,98.185 2.314,98.196</polygon>
+      <polygon>2.583,98.079 2.572,98.077 2.557,98.083 2.549,98.082 2.514,98.082 2.485,98.095 2.485,98.065 2.478,98.048 2.476,98.045 2.465,98.050 2.461,98.048 2.451,98.034 2.465,98.029 2.471,98.022 2.465,98.014 2.466,97.997 2.473,97.987 2.475,97.973 2.487,97.967 2.488,97.960 2.493,97.964 2.533,97.994 2.558,97.971 2.566,97.956 2.577,97.954 2.580,97.957 2.572,97.962 2.538,98.006 2.545,98.008 2.558,98.005 2.560,97.995 2.590,97.966 2.610,97.988 2.599,98.004 2.587,98.036 2.583,98.079</polygon>
+    </area>
+  </info>
+</alert>

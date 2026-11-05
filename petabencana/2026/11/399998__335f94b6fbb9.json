@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-05T09:15:43.356Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        98.5871543728,
+        3.5998779075
+      ]
+    },
+    "properties": {
+      "pkey": "399998",
+      "created_at": "2026-11-05T09:03:44.870Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "d1d128e7-91c9-4a54-9a75-6e2d71a18099",
+      "image_url": "https://images.petabencana.id/d1d128e7-91c9-4a54-9a75-6e2d71a18099.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 22
+      },
+      "tags": {
+        "city": "DELI SERDANG",
+        "district_id": null,
+        "region_code": "1207",
+        "local_area_id": null,
+        "instance_region_code": "ID-SU"
+      },
+      "title": null,
+      "text": "Banjir di jalan lintas medan binjai dengan ketinggian air 25-40 cm",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

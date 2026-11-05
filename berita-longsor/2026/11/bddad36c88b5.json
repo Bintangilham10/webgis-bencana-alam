@@ -1,0 +1,21 @@
+{
+  "guid": "CBMixAFBVV95cUxOVU40M1MtTnhfTm1wcjRIUjBsNFFpSm5ncnFZZXRlbXRXQThoNnNLdWw0YkFsVTFlYTEyaDREcmJ4LWh6TFRvWVRpZmQxQzRjQm9BNGRhblVOcmNuQzJqVzVMd3JBTE1HNFdicDRxM09oNFptQkM4YW1JcE5hTHBJMy1pNnR2YlpUWGtaSkZiTDRMdmJvUnFtckpUZnVXV0lmemNMVEdWeXZSMGZJXzRKWExfWTZnMjdJYlNDTktNVzlQLTBL",
+  "title": "31 Desa di Kabupaten Malang Terdampak Banjir dan Longsor, Satu Jalan Putus - TIMES Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVU40M1MtTnhfTm1wcjRIUjBsNFFpSm5ncnFZZXRlbXRXQThoNnNLdWw0YkFsVTFlYTEyaDREcmJ4LWh6TFRvWVRpZmQxQzRjQm9BNGRhblVOcmNuQzJqVzVMd3JBTE1HNFdicDRxM09oNFptQkM4YW1JcE5hTHBJMy1pNnR2YlpUWGtaSkZiTDRMdmJvUnFtckpUZnVXV0lmemNMVEdWeXZSMGZJXzRKWExfWTZnMjdJYlNDTktNVzlQLTBL?oc=5",
+  "source": "TIMES Indonesia",
+  "source_url": "https://timesindonesia.co.id",
+  "published_at": "2026-11-05T07:08:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-05T09:15:43.356Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

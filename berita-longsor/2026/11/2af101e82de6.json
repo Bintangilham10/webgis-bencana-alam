@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi2wFBVV95cUxOSEFLZ0pzTDFISWdqM2dpZEpNc29LVmhxN2h1dGZXR0RNZDVzUnprZ190RWg4MzZJZ3FKTEdqUjVkTnJZMUktQjFqSy1sSEU3NzU4d2x4TWNxcG9XVGNuUkdsMUJNay12VGFBM3Zfd2RObkMtSTd6eExFX0Mwc3NHRGh5dGVTOVhJdng3ZkZUSUxNYkh6V2pTS1I0X29yOFJxcVdhZC1hR21XaHJVeWtrOFU3NVRVQVVjNjVfeHIwU3docTVsWHluNFN6Nm1JaEI5bG5ZbEZZNjZ6b2M",
+  "title": "Antisipasi Bencana Ekstrem, Petugas Gabungan Sisir Jalur Rawan Longsor Pacet-Cangar Mojokerto - Surya.co.id",
+  "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOSEFLZ0pzTDFISWdqM2dpZEpNc29LVmhxN2h1dGZXR0RNZDVzUnprZ190RWg4MzZJZ3FKTEdqUjVkTnJZMUktQjFqSy1sSEU3NzU4d2x4TWNxcG9XVGNuUkdsMUJNay12VGFBM3Zfd2RObkMtSTd6eExFX0Mwc3NHRGh5dGVTOVhJdng3ZkZUSUxNYkh6V2pTS1I0X29yOFJxcVdhZC1hR21XaHJVeWtrOFU3NVRVQVVjNjVfeHIwU3docTVsWHluNFN6Nm1JaEI5bG5ZbEZZNjZ6b2M?oc=5",
+  "source": "Surya.co.id",
+  "source_url": "https://surabaya.tribunnews.com",
+  "published_at": "2026-11-04T13:53:51.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-05T09:15:43.356Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.16",
+      "nama": "Kabupaten Mojokerto",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.76",
+      "nama": "Kota Mojokerto",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
