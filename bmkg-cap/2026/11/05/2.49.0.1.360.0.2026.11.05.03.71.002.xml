@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.05.03.71.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-05T11:40:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-05T11:45:00+08:00</effective>
+    <expires>2026-11-05T15:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 05 November 2026, 11:45 WITA di sebagian wilayah Sulawesi Utara, khususnya di KALAWAT, KAWANGKOAN, KAWANGKOAN BARAT, KAWANGKOAN UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 05 November 2026, 15:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/05/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>1.209,124.832 1.204,124.825 1.199,124.803 1.198,124.799 1.197,124.796 1.193,124.791 1.193,124.790 1.192,124.790 1.186,124.787 1.185,124.787 1.185,124.787 1.190,124.777 1.202,124.777 1.208,124.791 1.237,124.817 1.229,124.831 1.209,124.832</polygon>
+      <polygon>1.173,124.735 1.188,124.725 1.188,124.726 1.173,124.735</polygon>
+      <polygon>1.252,124.759 1.252,124.759 1.250,124.762 1.250,124.762 1.248,124.763 1.247,124.764 1.246,124.765 1.246,124.765 1.246,124.765 1.245,124.767 1.244,124.767 1.244,124.768 1.244,124.770 1.243,124.771 1.244,124.773 1.244,124.774 1.242,124.776 1.242,124.776 1.239,124.779 1.239,124.780 1.237,124.782 1.237,124.782 1.230,124.788 1.230,124.789 1.230,124.790 1.230,124.790 1.230,124.791 1.230,124.791 1.230,124.793 1.230,124.793 1.230,124.794 1.230,124.794 1.232,124.798 1.233,124.800 1.234,124.803 1.235,124.805 1.237,124.817 1.237,124.817 1.208,124.791 1.202,124.777 1.213,124.777 1.236,124.755 1.238,124.755 1.238,124.755 1.241,124.755 1.243,124.755 1.245,124.755 1.252,124.759</polygon>
+      <polygon>1.202,124.777 1.190,124.777 1.185,124.787 1.185,124.787 1.153,124.774 1.152,124.766 1.153,124.765 1.152,124.754 1.143,124.744 1.143,124.744 1.143,124.744 1.143,124.744 1.149,124.740 1.151,124.740 1.160,124.737 1.161,124.737 1.166,124.735 1.173,124.735 1.188,124.726 1.190,124.735 1.190,124.736 1.191,124.736 1.191,124.737 1.191,124.737 1.192,124.738 1.193,124.739 1.193,124.739 1.193,124.739 1.195,124.740 1.195,124.740 1.209,124.742 1.211,124.741 1.212,124.741 1.212,124.741 1.228,124.746 1.236,124.755 1.213,124.777 1.202,124.777</polygon>
+      <polygon>1.480,124.935 1.464,124.959 1.443,124.951 1.406,124.951 1.416,124.917 1.448,124.913 1.457,124.907 1.483,124.894 1.493,124.904 1.480,124.935</polygon>
+    </area>
+  </info>
+</alert>
