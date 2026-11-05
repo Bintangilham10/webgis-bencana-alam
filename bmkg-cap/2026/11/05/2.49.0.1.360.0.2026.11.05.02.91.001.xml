@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.05.02.91.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-05T10:50:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-05T11:15:00+09:00</effective>
+    <expires>2026-11-05T13:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 05 November 2026, 11:15 WIT di sebagian wilayah Papua, khususnya di BIAK BARAT, SWANDIWE.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 05 November 2026, 13:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPU/2026/11/05/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua</areaDesc>
+      <polygon>-1.006,135.906 -1.027,135.905 -1.064,135.934 -1.166,135.857 -1.132,135.823 -1.119,135.819 -1.098,135.802 -1.093,135.804 -1.089,135.818 -1.085,135.820 -1.031,135.825 -1.011,135.815 -0.998,135.801 -0.982,135.794 -0.965,135.833 -0.962,135.863 -0.967,135.872 -1.006,135.906</polygon>
+      <polygon>-0.782,135.825 -0.788,135.838 -0.795,135.840 -0.814,135.838 -0.846,135.856 -0.856,135.858 -0.871,135.857 -0.893,135.880 -0.911,135.873 -0.919,135.877 -0.931,135.876 -0.962,135.863 -0.965,135.833 -0.982,135.794 -0.966,135.789 -0.941,135.788 -0.934,135.782 -0.890,135.767 -0.874,135.770 -0.812,135.742 -0.804,135.731 -0.802,135.724 -0.806,135.714 -0.803,135.709 -0.794,135.739 -0.757,135.784 -0.782,135.825</polygon>
+    </area>
+  </info>
+</alert>
