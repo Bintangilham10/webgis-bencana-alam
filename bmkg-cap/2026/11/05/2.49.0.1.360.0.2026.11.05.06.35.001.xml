@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.05.06.35.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-05T12:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-05T12:50:00+07:00</effective>
+    <expires>2026-11-05T14:50:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 05 November 2026, 12:50 WIB di sebagian wilayah Jawa Timur, khususnya di JUNREJO, KARANG PLOSO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 05 November 2026, 14:50 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/05/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.911,112.630 -7.923,112.611 -7.923,112.600 -7.918,112.591 -7.910,112.585 -7.907,112.593 -7.901,112.593 -7.894,112.586 -7.883,112.565 -7.815,112.563 -7.794,112.576 -7.785,112.586 -7.792,112.595 -7.801,112.593 -7.843,112.612 -7.868,112.616 -7.907,112.633 -7.911,112.630</polygon>
+      <polygon>-7.883,112.565 -7.894,112.586 -7.901,112.593 -7.907,112.593 -7.910,112.585 -7.914,112.580 -7.914,112.564 -7.924,112.538 -7.927,112.524 -7.923,112.512 -7.932,112.489 -7.919,112.491 -7.911,112.506 -7.914,112.530 -7.901,112.534 -7.887,112.551 -7.874,112.550 -7.884,112.562 -7.883,112.565</polygon>
+    </area>
+  </info>
+</alert>
