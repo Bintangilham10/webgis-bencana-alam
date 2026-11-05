@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.05.21.18.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-06T04:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-06T05:00:00+07:00</effective>
+    <expires>2026-11-06T08:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Lampung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 06 November 2026, 05:00 WIB di sebagian wilayah Lampung, khususnya di LIMAU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 06 November 2026, 08:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CLG/2026/11/06/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Lampung</areaDesc>
+      <polygon>-5.504,104.852 -5.533,104.866 -5.543,104.894 -5.550,104.895 -5.564,104.916 -5.577,104.906 -5.573,104.882 -5.577,104.876 -5.619,104.851 -5.632,104.838 -5.620,104.824 -5.605,104.777 -5.569,104.751 -5.560,104.734 -5.547,104.728 -5.524,104.751 -5.500,104.753 -5.501,104.760 -5.494,104.767 -5.497,104.782 -5.494,104.804 -5.504,104.852</polygon>
+    </area>
+  </info>
+</alert>
