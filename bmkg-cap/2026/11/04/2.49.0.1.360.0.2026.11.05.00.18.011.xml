@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.05.00.18.011</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-05T05:55:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-05T06:05:00+07:00</effective>
+    <expires>2026-11-05T07:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Lampung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 05 November 2026, 06:05 WIB di sebagian wilayah Lampung, khususnya di BENGKUNAT BELIMBING, DENTE TELADAS.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 05 November 2026, 07:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CLG/2026/11/05/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Lampung</areaDesc>
+      <polygon>-4.407,105.853 -4.411,105.865 -4.440,105.892 -4.434,105.901 -4.437,105.913 -4.466,105.903 -4.489,105.899 -4.513,105.899 -4.548,105.905 -4.565,105.892 -4.590,105.884 -4.619,105.891 -4.638,105.913 -4.647,105.917 -4.685,105.898 -4.681,105.881 -4.683,105.876 -4.683,105.870 -4.682,105.868 -4.680,105.860 -4.678,105.855 -4.676,105.853 -4.674,105.852 -4.656,105.858 -4.632,105.857 -4.631,105.856 -4.631,105.852 -4.626,105.842 -4.622,105.841 -4.621,105.839 -4.620,105.836 -4.621,105.833 -4.625,105.831 -4.632,105.831 -4.646,105.821 -4.650,105.817 -4.654,105.804 -4.636,105.791 -4.634,105.782 -4.605,105.779 -4.589,105.793 -4.591,105.801 -4.586,105.805 -4.580,105.803 -4.579,105.794 -4.573,105.794 -4.570,105.800 -4.558,105.799 -4.550,105.790 -4.556,105.782 -4.553,105.772 -4.543,105.768 -4.537,105.774 -4.532,105.774 -4.528,105.769 -4.532,105.759 -4.521,105.752 -4.522,105.746 -4.530,105.745 -4.537,105.731 -4.528,105.708 -4.518,105.707 -4.515,105.698 -4.494,105.696 -4.485,105.677 -4.471,105.687 -4.459,105.677 -4.450,105.702 -4.441,105.709 -4.441,105.730 -4.432,105.732 -4.403,105.754 -4.371,105.752 -4.331,105.765 -4.312,105.773 -4.309,105.779 -4.354,105.800 -4.371,105.818 -4.403,105.825 -4.407,105.853</polygon>
+      <polygon>-5.547,104.488 -5.558,104.486 -5.602,104.540 -5.612,104.530 -5.620,104.533 -5.623,104.540 -5.616,104.548 -5.628,104.572 -5.656,104.589 -5.664,104.603 -5.694,104.628 -5.699,104.628 -5.707,104.616 -5.717,104.612 -5.749,104.613 -5.753,104.601 -5.750,104.590 -5.755,104.587 -5.799,104.615 -5.803,104.620 -5.804,104.633 -5.819,104.653 -5.828,104.639 -5.838,104.635 -5.879,104.643 -5.902,104.656 -5.937,104.659 -5.937,104.594 -5.943,104.584 -5.926,104.555 -5.909,104.554 -5.908,104.559 -5.915,104.561 -5.914,104.567 -5.909,104.573 -5.898,104.576 -5.869,104.567 -5.839,104.539 -5.803,104.492 -5.765,104.455 -5.745,104.444 -5.725,104.422 -5.717,104.423 -5.708,104.417 -5.679,104.378 -5.641,104.301 -5.628,104.300 -5.633,104.303 -5.634,104.308 -5.624,104.319 -5.615,104.321 -5.602,104.318 -5.576,104.298 -5.554,104.275 -5.541,104.254 -5.525,104.254 -5.514,104.264 -5.509,104.284 -5.495,104.306 -5.490,104.303 -5.468,104.331 -5.442,104.378 -5.429,104.388 -5.456,104.411 -5.482,104.414 -5.503,104.431 -5.511,104.431 -5.522,104.440 -5.521,104.447 -5.529,104.455 -5.534,104.470 -5.547,104.488</polygon>
+    </area>
+  </info>
+</alert>
