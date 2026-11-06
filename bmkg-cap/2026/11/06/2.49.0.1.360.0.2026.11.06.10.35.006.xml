@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.06.10.35.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-06T15:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-06T15:30:00+07:00</effective>
+    <expires>2026-11-06T18:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 06 November 2026, 15:30 WIB di sebagian wilayah Jawa Timur, khususnya di NGANCAR, NGLEGOK, REJOSO, TEMAYANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 06 November 2026, 18:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/06/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-8.070,112.197 -8.065,112.196 -8.058,112.182 -8.058,112.173 -8.055,112.169 -8.032,112.167 -8.023,112.176 -8.005,112.173 -7.998,112.183 -7.975,112.170 -7.937,112.299 -7.946,112.301 -7.955,112.297 -7.977,112.262 -7.997,112.252 -8.037,112.221 -8.052,112.219 -8.070,112.197</polygon>
+      <polygon>-7.924,112.281 -7.933,112.303 -7.937,112.299 -7.975,112.170 -7.977,112.115 -7.970,112.112 -7.961,112.108 -7.943,112.112 -7.940,112.114 -7.945,112.127 -7.926,112.127 -7.925,112.138 -7.911,112.145 -7.911,112.154 -7.895,112.157 -7.905,112.202 -7.915,112.216 -7.933,112.270 -7.931,112.277 -7.924,112.281</polygon>
+      <polygon>-7.434,111.910 -7.447,111.910 -7.461,111.917 -7.471,111.946 -7.485,111.953 -7.525,111.944 -7.542,111.949 -7.564,111.949 -7.560,111.942 -7.559,111.921 -7.572,111.895 -7.574,111.888 -7.573,111.883 -7.570,111.885 -7.566,111.882 -7.566,111.868 -7.538,111.865 -7.524,111.856 -7.513,111.844 -7.508,111.847 -7.499,111.844 -7.494,111.823 -7.473,111.818 -7.461,111.800 -7.440,111.821 -7.438,111.865 -7.441,111.878 -7.434,111.910</polygon>
+      <polygon>-7.283,111.925 -7.291,111.925 -7.288,111.918 -7.299,111.915 -7.315,111.934 -7.326,111.939 -7.332,111.939 -7.334,111.933 -7.347,111.933 -7.362,111.957 -7.380,111.965 -7.407,111.984 -7.405,111.971 -7.413,111.958 -7.406,111.943 -7.411,111.942 -7.418,111.958 -7.428,111.959 -7.440,111.934 -7.435,111.917 -7.410,111.918 -7.409,111.875 -7.400,111.871 -7.392,111.875 -7.373,111.874 -7.367,111.876 -7.362,111.871 -7.355,111.863 -7.347,111.862 -7.333,111.867 -7.322,111.879 -7.313,111.881 -7.303,111.875 -7.274,111.893 -7.283,111.925</polygon>
+    </area>
+  </info>
+</alert>
