@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.06.06.31.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-06T13:35:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-06T13:45:00+07:00</effective>
+    <expires>2026-11-06T15:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 06 November 2026, 13:45 WIB di sebagian wilayah Jakarta, khususnya di SUKAMAKMUR, TENJO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 06 November 2026, 15:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJK/2026/11/06/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jakarta</areaDesc>
+      <polygon>-6.530,107.096 -6.535,107.086 -6.539,107.087 -6.566,107.079 -6.597,107.061 -6.613,107.077 -6.630,107.070 -6.646,107.088 -6.664,107.077 -6.662,107.064 -6.657,107.045 -6.667,107.014 -6.668,106.991 -6.650,106.983 -6.642,106.976 -6.617,106.976 -6.610,106.965 -6.590,106.954 -6.581,106.940 -6.561,106.941 -6.559,106.938 -6.541,106.932 -6.532,106.935 -6.534,106.973 -6.525,106.978 -6.522,106.995 -6.534,106.992 -6.537,106.987 -6.549,106.986 -6.560,107.006 -6.581,107.021 -6.583,107.031 -6.583,107.038 -6.570,107.043 -6.561,107.027 -6.557,107.026 -6.525,107.041 -6.519,107.055 -6.507,107.064 -6.508,107.070 -6.519,107.069 -6.522,107.076 -6.519,107.088 -6.530,107.096</polygon>
+      <polygon>-6.355,106.519 -6.359,106.522 -6.379,106.511 -6.390,106.516 -6.398,106.512 -6.418,106.548 -6.442,106.509 -6.424,106.515 -6.418,106.500 -6.424,106.493 -6.408,106.475 -6.382,106.471 -6.378,106.458 -6.383,106.452 -6.396,106.444 -6.404,106.452 -6.407,106.451 -6.411,106.447 -6.405,106.441 -6.390,106.435 -6.387,106.437 -6.375,106.428 -6.360,106.431 -6.348,106.427 -6.348,106.431 -6.325,106.443 -6.304,106.469 -6.322,106.482 -6.339,106.484 -6.344,106.476 -6.351,106.476 -6.356,106.497 -6.351,106.507 -6.355,106.519</polygon>
+    </area>
+  </info>
+</alert>
