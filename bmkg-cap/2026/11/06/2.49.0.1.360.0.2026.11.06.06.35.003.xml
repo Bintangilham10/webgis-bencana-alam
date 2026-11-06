@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.06.06.35.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-06T13:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-06T13:30:00+07:00</effective>
+    <expires>2026-11-06T16:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 06 November 2026, 13:30 WIB di sebagian wilayah Jawa Timur, khususnya di BANYUATES, BLIMBING, KOKOP, PLOSOKLATEN, TAMBELANGAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 06 November 2026, 16:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/06/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.826,112.151 -7.824,112.179 -7.834,112.188 -7.828,112.196 -7.831,112.210 -7.853,112.216 -7.863,112.213 -7.875,112.228 -7.890,112.237 -7.924,112.281 -7.931,112.277 -7.933,112.270 -7.915,112.216 -7.905,112.202 -7.895,112.157 -7.885,112.141 -7.883,112.129 -7.890,112.119 -7.877,112.109 -7.864,112.117 -7.838,112.115 -7.813,112.121 -7.826,112.133 -7.830,112.142 -7.831,112.152 -7.825,112.147 -7.823,112.148 -7.826,112.151</polygon>
+      <polygon>-6.946,113.095 -6.956,113.107 -6.965,113.103 -6.975,113.109 -6.987,113.106 -6.989,113.113 -6.976,113.135 -6.985,113.147 -6.990,113.145 -6.997,113.146 -7.005,113.139 -7.010,113.141 -7.034,113.134 -7.036,113.127 -7.032,113.115 -7.023,113.089 -7.010,113.079 -7.010,113.043 -7.017,113.020 -7.010,113.009 -7.011,112.995 -6.995,112.999 -6.977,112.994 -6.967,113.000 -6.955,112.999 -6.940,113.004 -6.926,113.015 -6.935,113.040 -6.934,113.052 -6.926,113.052 -6.926,113.060 -6.929,113.066 -6.937,113.062 -6.941,113.065 -6.945,113.077 -6.946,113.095</polygon>
+      <polygon>-7.014,113.198 -7.016,113.193 -7.048,113.193 -7.088,113.175 -7.095,113.175 -7.100,113.173 -7.100,113.166 -7.092,113.147 -7.091,113.130 -7.086,113.122 -7.089,113.111 -7.082,113.108 -7.077,113.109 -7.082,113.117 -7.079,113.120 -7.067,113.120 -7.049,113.111 -7.045,113.116 -7.032,113.115 -7.036,113.127 -7.034,113.134 -7.010,113.141 -7.005,113.139 -6.997,113.146 -6.990,113.145 -6.988,113.187 -6.991,113.192 -7.002,113.190 -7.010,113.198 -7.014,113.198</polygon>
+      <polygon>-6.894,113.222 -6.909,113.220 -6.931,113.233 -6.958,113.234 -6.963,113.240 -6.963,113.256 -6.977,113.252 -6.983,113.241 -6.991,113.235 -7.000,113.225 -7.013,113.226 -7.017,113.219 -7.014,113.198 -7.010,113.198 -7.002,113.190 -6.991,113.192 -6.988,113.187 -6.990,113.145 -6.985,113.147 -6.976,113.135 -6.989,113.113 -6.987,113.106 -6.975,113.109 -6.965,113.103 -6.956,113.107 -6.946,113.095 -6.934,113.100 -6.937,113.115 -6.906,113.119 -6.905,113.128 -6.894,113.125 -6.892,113.142 -6.895,113.160 -6.893,113.166 -6.898,113.200 -6.894,113.222</polygon>
+      <polygon>-7.930,112.662 -7.944,112.667 -7.959,112.663 -7.965,112.657 -7.993,112.646 -7.987,112.635 -7.963,112.639 -7.961,112.637 -7.935,112.642 -7.926,112.637 -7.921,112.640 -7.917,112.648 -7.930,112.662</polygon>
+    </area>
+  </info>
+</alert>
