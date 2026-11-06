@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.06.13.82.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-06T21:00:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-06T21:15:00+09:00</effective>
+    <expires>2026-11-06T22:15:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Maluku Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 06 November 2026, 21:15 WIT di sebagian wilayah Maluku Utara, khususnya di KAYOA, TOBELO UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 06 November 2026, 22:15 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CMU/2026/11/06/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Maluku Utara</areaDesc>
+      <polygon>1.760,127.993 1.694,127.897 1.682,127.883 1.670,127.875 1.661,127.865 1.666,127.857 1.669,127.840 1.667,127.818 1.679,127.807 1.676,127.780 1.681,127.765 1.682,127.714 1.683,127.714 1.691,127.709 1.693,127.707 1.693,127.707 1.696,127.707 1.699,127.705 1.701,127.704 1.705,127.704 1.707,127.704 1.710,127.705 1.711,127.705 1.718,127.731 1.697,127.759 1.697,127.769 1.715,127.783 1.736,127.791 1.736,127.795 1.720,127.797 1.746,127.843 1.767,127.880 1.783,127.899 1.804,127.912 1.810,127.928 1.805,127.938 1.795,127.944 1.792,127.954 1.768,127.960 1.770,127.971 1.760,127.993</polygon>
+      <polygon>1.787,128.009 1.772,128.019 1.768,128.018 1.769,128.011 1.776,128.005 1.803,127.993 1.787,128.009</polygon>
+      <polygon>1.775,127.975 1.773,127.972 1.775,127.971 1.775,127.975</polygon>
+      <polygon>1.775,127.982 1.773,127.985 1.771,127.980 1.775,127.982</polygon>
+      <polygon>0.031,127.468 0.022,127.460 0.017,127.451 0.006,127.445 -0.007,127.447 -0.011,127.453 -0.021,127.445 -0.007,127.434 0.005,127.441 0.022,127.431 0.023,127.423 0.011,127.414 0.011,127.405 0.078,127.413 0.084,127.430 0.042,127.445 0.033,127.451 0.031,127.468</polygon>
+      <polygon>0.162,127.155 0.157,127.158 0.151,127.147 0.159,127.147 0.162,127.155</polygon>
+      <polygon>0.142,127.128 0.137,127.135 0.128,127.135 0.131,127.115 0.144,127.112 0.148,127.118 0.142,127.128</polygon>
+      <polygon>0.141,127.221 0.133,127.220 0.139,127.208 0.143,127.212 0.141,127.221</polygon>
+      <polygon>0.036,127.226 0.026,127.230 0.021,127.227 0.030,127.217 0.036,127.226</polygon>
+      <polygon>0.009,127.428 0.005,127.431 0.005,127.425 -0.004,127.427 -0.012,127.422 -0.001,127.418 0.011,127.424 0.009,127.428</polygon>
+      <polygon>-0.019,127.430 -0.019,127.426 -0.013,127.423 -0.012,127.427 -0.019,127.430</polygon>
+      <polygon>-0.012,127.175 -0.014,127.191 -0.025,127.203 -0.017,127.184 -0.019,127.174 -0.022,127.174 -0.016,127.164 -0.012,127.175</polygon>
+      <polygon>-0.025,127.252 -0.033,127.249 -0.032,127.243 -0.028,127.242 -0.025,127.252</polygon>
+      <polygon>-0.031,127.198 -0.039,127.201 -0.029,127.191 -0.027,127.195 -0.031,127.198</polygon>
+      <polygon>-0.036,127.222 -0.034,127.219 -0.032,127.222 -0.036,127.222</polygon>
+      <polygon>-0.037,127.173 -0.046,127.192 -0.041,127.174 -0.037,127.173</polygon>
+      <polygon>-0.072,127.270 -0.088,127.272 -0.126,127.261 -0.127,127.247 -0.138,127.235 -0.138,127.225 -0.137,127.219 -0.122,127.201 -0.115,127.203 -0.115,127.212 -0.103,127.225 -0.110,127.227 -0.110,127.230 -0.102,127.232 -0.098,127.229 -0.078,127.240 -0.082,127.245 -0.072,127.270</polygon>
+    </area>
+  </info>
+</alert>
