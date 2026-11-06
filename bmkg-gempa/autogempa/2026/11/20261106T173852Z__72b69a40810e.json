@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-11-06T18:00:39.614Z",
+  "data": {
+    "Tanggal": "07 Nov 2026",
+    "Jam": "00:38:52 WIB",
+    "DateTime": "2026-11-06T17:38:52+00:00",
+    "Coordinates": "-2.96,122.31",
+    "Lintang": "2.96 LS",
+    "Bujur": "122.31 BT",
+    "Magnitude": "3.3",
+    "Kedalaman": "5 km",
+    "Wilayah": "Pusat gempa berada di laut 54 km Tenggara Morowali",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "II - III Bungku Morowali",
+    "Shakemap": "20261107003852.mmi.jpg"
+  }
+}
