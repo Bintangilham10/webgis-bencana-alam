@@ -1,0 +1,23 @@
+{
+  "guid": "CBMitAFBVV95cUxOenp5S3N4NDQyRGJGLWhYUmNhN01yWVdYSWdSc05QdE1WLURQcnBGMDFCa016c044djZCY3Q3SVY4bnlidFplUXpEd0RKQXdGUVdLckptV0N3SThMQkNHUzVVbVFITDE2OWRnVzFURUFxYWVhTkRQTEstSzFlR3FWVTlUQlR4OEZsWllPOHk3YzFDeEFreXJ3VVRlWlpZc3E0c0dnb3BTNmRaSUplempCd2kxdlHSAboBQVVfeXFMTzRWSzhSSWRTcFBJckFYS24xb0pjd2tTWE51b2laVkNCT21fVmRkVGRJYkNVcHpvUHduTExNWVQ2RnpkTGpqS0t6bjJxSlRFNG9OcFdfZG1ySEotdUxHWXdZTGFoMHh6SGpkUWxjWE5NTHJ3RnlYb0ZUcFJNS2xpLXVtVXFLQWItQS1QN2FHQkdGdnFFUVpLZjVid3pVdWJJR1QtV3A4b1ZvVWo1RlhGNnBJSlIwSGJIdW93",
+  "title": "Bencana Banjir dan Longsor Landa Aceh dan Lumajang, Lebih dari 1.600 KK Terdampak - NU Online",
+  "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOenp5S3N4NDQyRGJGLWhYUmNhN01yWVdYSWdSc05QdE1WLURQcnBGMDFCa016c044djZCY3Q3SVY4bnlidFplUXpEd0RKQXdGUVdLckptV0N3SThMQkNHUzVVbVFITDE2OWRnVzFURUFxYWVhTkRQTEstSzFlR3FWVTlUQlR4OEZsWllPOHk3YzFDeEFreXJ3VVRlWlpZc3E0c0dnb3BTNmRaSUplempCd2kxdlHSAboBQVVfeXFMTzRWSzhSSWRTcFBJckFYS24xb0pjd2tTWE51b2laVkNCT21fVmRkVGRJYkNVcHpvUHduTExNWVQ2RnpkTGpqS0t6bjJxSlRFNG9OcFdfZG1ySEotdUxHWXdZTGFoMHh6SGpkUWxjWE5NTHJ3RnlYb0ZUcFJNS2xpLXVtVXFLQWItQS1QN2FHQkdGdnFFUVpLZjVid3pVdWJJR1QtV3A4b1ZvVWo1RlhGNnBJSlIwSGJIdW93?oc=5",
+  "source": "NU Online",
+  "source_url": "https://www.nu.or.id",
+  "published_at": "2026-11-06T04:00:45.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-06T14:15:28.413Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.08",
+      "nama": "Kabupaten Lumajang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

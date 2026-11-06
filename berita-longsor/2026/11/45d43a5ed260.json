@@ -1,0 +1,26 @@
+{
+  "guid": "CBMizwFBVV95cUxQUDlUSG0xSW9xN0EwejczbksyMmZrdElhTXlxdnFZYkh3cEhKYmpIdW43b19BdEU2SV9aQm5uRU5Rb3FtMHNuZDdYMGREMDFiZE8xZEU2ZGNnR0JRX3pjYXgteF9mSGdSRHRobk9HbUZRbGV0ZkNtdDhoOFI0S2xkenJWNU11Wmw2SFJjaG1vTGltVVJQM2dWb19oY29iRE9oZjFCaGNNRmllbVhmZFFjV2M2Vl8wM2VhUjJvMnNIeXQ4LXRHeTkwdHhISFZwOEE",
+  "title": "Antisipasi Banjir dan Longsor, Kapolresta Malang Kota Perkuat Pemetaan Wilayah Rawan Bencana - Website Resmi Polri",
+  "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQUDlUSG0xSW9xN0EwejczbksyMmZrdElhTXlxdnFZYkh3cEhKYmpIdW43b19BdEU2SV9aQm5uRU5Rb3FtMHNuZDdYMGREMDFiZE8xZEU2ZGNnR0JRX3pjYXgteF9mSGdSRHRobk9HbUZRbGV0ZkNtdDhoOFI0S2xkenJWNU11Wmw2SFJjaG1vTGltVVJQM2dWb19oY29iRE9oZjFCaGNNRmllbVhmZFFjV2M2Vl8wM2VhUjJvMnNIeXQ4LXRHeTkwdHhISFZwOEE?oc=5",
+  "source": "Website Resmi Polri",
+  "source_url": "https://restamalangkota.jatim.polri.go.id",
+  "published_at": "2026-11-06T11:46:33.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-06T14:15:28.413Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

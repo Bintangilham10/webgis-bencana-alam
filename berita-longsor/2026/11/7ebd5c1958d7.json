@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiygFBVV95cUxONXdqN2RObXNFVUVIQjdHcVZTdU1hLUt5XzJuaHVVU0Z6RkhNQUloYkRqT0xmdEhySWlSbF9QQlMyYk1QVnZOWDA3TGYwQVNUb2pGSGFOQmxOUEpZUExGMUxFZmJzQUlvMW4yRnNwV3Y4ZUtLOVZna0EzVE1LeVhwWjhidG96Vml4RF9XN3podUo3cHhaOGRRZ1FaSWZNYk56MXVxdS1OVFBGS09nZEM2cl91d3gxN2JINWFGWHlVMGVZTmlpU0RXejBR",
+  "title": "Banjir hingga Longsor Mengintai Kota Bogor, 27 Kelurahan Tangguh Bencana Disiapkan - Radar Sukabumi",
+  "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxONXdqN2RObXNFVUVIQjdHcVZTdU1hLUt5XzJuaHVVU0Z6RkhNQUloYkRqT0xmdEhySWlSbF9QQlMyYk1QVnZOWDA3TGYwQVNUb2pGSGFOQmxOUEpZUExGMUxFZmJzQUlvMW4yRnNwV3Y4ZUtLOVZna0EzVE1LeVhwWjhidG96Vml4RF9XN3podUo3cHhaOGRRZ1FaSWZNYk56MXVxdS1OVFBGS09nZEM2cl91d3gxN2JINWFGWHlVMGVZTmlpU0RXejBR?oc=5",
+  "source": "Radar Sukabumi",
+  "source_url": "https://radarsukabumi.com",
+  "published_at": "2026-11-06T11:58:16.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-06T14:15:28.413Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}
