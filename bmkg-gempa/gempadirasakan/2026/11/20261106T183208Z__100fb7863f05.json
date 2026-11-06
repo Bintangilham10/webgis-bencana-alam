@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-06T19:00:39.273Z",
+  "data": {
+    "Tanggal": "07 Nov 2026",
+    "Jam": "01:32:08 WIB",
+    "DateTime": "2026-11-06T18:32:08+00:00",
+    "Coordinates": "-8.48,115.87",
+    "Lintang": "8.48 LS",
+    "Bujur": "115.87 BT",
+    "Magnitude": "3.5",
+    "Kedalaman": "18 km",
+    "Wilayah": "Pusat gempa berada di laut 34 km barat daya Lombok Utara",
+    "Dirasakan": "II Mataram, II Lombok Barat, II Lombok Tengah"
+  }
+}
