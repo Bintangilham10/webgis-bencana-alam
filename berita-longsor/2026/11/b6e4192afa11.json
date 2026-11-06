@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi1AFBVV95cUxPYkJTOXNVbTlWa09seHQ5bnpfQ012SmVaMklIM3Z4M1JLYTRUQi1Pd3I1N0FGSkMwY3BBQTQxeEFLUmNwb1BSRjlJaXprVER5TXdqUG1QOUZWNHVxQ2tyV1BmbWhuVnJJWDc1LWFpOWstSGdYUTQxSHJ6QWxYNWlxb2ZrM2p3LUQzUVF3WUM4NEtzbVgyLXFNWHVVeHMtcFdxay1rUG5EdWxrZEFDT3B1WExwNHhxSlZYak5rNjk4ZHVncjNzSEZVa1pUZjY5Z0V5dW9RTNIB2gFBVV95cUxOREdUdFVFd0tUd01ycFZ4OEZ3dVFDUThER2hvVlM2dWRPUVh1Wm00dFlXMmRZUFVGbGRidEhoNm5FRThCLU9vRzdKZ3JrVXB1bU40MXk0VmN0dEFjR3R5dTJoaUZBTjRYWDhOVnlLczdXQktVaTZDWXlkaWF1TDhNbTRiUHdxMHFDR0ZJdThvSEVfTHRPelhxOXF0eFk1U0tRVVZOenFTbjF6QlZaU0JKYzBZYjlFUm5lWHZiSi1uV2VSd0M2dE5HVTRaZFdGbWNHZ0F4QXhRQ1ZOUQ",
+  "title": "Titik Rawan Longsor dan Banjir Terpetakan, Pemkot Bogor Perkuat Mitigasi Bencana Hidrometeorologi - VIVA Bogor",
+  "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPYkJTOXNVbTlWa09seHQ5bnpfQ012SmVaMklIM3Z4M1JLYTRUQi1Pd3I1N0FGSkMwY3BBQTQxeEFLUmNwb1BSRjlJaXprVER5TXdqUG1QOUZWNHVxQ2tyV1BmbWhuVnJJWDc1LWFpOWstSGdYUTQxSHJ6QWxYNWlxb2ZrM2p3LUQzUVF3WUM4NEtzbVgyLXFNWHVVeHMtcFdxay1rUG5EdWxrZEFDT3B1WExwNHhxSlZYak5rNjk4ZHVncjNzSEZVa1pUZjY5Z0V5dW9RTNIB2gFBVV95cUxOREdUdFVFd0tUd01ycFZ4OEZ3dVFDUThER2hvVlM2dWRPUVh1Wm00dFlXMmRZUFVGbGRidEhoNm5FRThCLU9vRzdKZ3JrVXB1bU40MXk0VmN0dEFjR3R5dTJoaUZBTjRYWDhOVnlLczdXQktVaTZDWXlkaWF1TDhNbTRiUHdxMHFDR0ZJdThvSEVfTHRPelhxOXF0eFk1U0tRVVZOenFTbjF6QlZaU0JKYzBZYjlFUm5lWHZiSi1uV2VSd0M2dE5HVTRaZFdGbWNHZ0F4QXhRQ1ZOUQ?oc=5",
+  "source": "VIVA Bogor",
+  "source_url": "https://bogor.viva.co.id",
+  "published_at": "2026-11-06T04:04:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-06T04:30:36.354Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
