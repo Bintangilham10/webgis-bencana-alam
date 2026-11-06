@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.06.15.76.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-06T23:35:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-06T23:50:00+08:00</effective>
+    <expires>2026-11-07T01:50:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 06 November 2026, 23:50 WITA di sebagian wilayah Sulawesi Barat, khususnya di TAMMERODO SENDANA, TUBO SENDANA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 November 2026, 01:50 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSK/2026/11/06/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Barat</areaDesc>
+      <polygon>-3.246,118.909 -3.247,118.910 -3.257,118.893 -3.276,118.844 -3.232,118.829 -3.214,118.840 -3.186,118.832 -3.185,118.852 -3.177,118.885 -3.189,118.885 -3.212,118.894 -3.236,118.895 -3.239,118.909 -3.246,118.909</polygon>
+      <polygon>-3.088,118.830 -3.112,118.839 -3.155,118.843 -3.159,118.873 -3.170,118.884 -3.177,118.885 -3.185,118.852 -3.186,118.832 -3.173,118.830 -3.163,118.823 -3.141,118.794 -3.127,118.783 -3.103,118.776 -3.084,118.778 -3.079,118.782 -3.084,118.792 -3.074,118.802 -3.083,118.808 -3.088,118.830</polygon>
+    </area>
+  </info>
+</alert>
