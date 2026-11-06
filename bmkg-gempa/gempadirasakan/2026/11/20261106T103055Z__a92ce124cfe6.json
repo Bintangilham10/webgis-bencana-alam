@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-06T11:15:26.487Z",
+  "data": {
+    "Tanggal": "06 Nov 2026",
+    "Jam": "17:30:55 WIB",
+    "DateTime": "2026-11-06T10:30:55+00:00",
+    "Coordinates": "-1.19,98.73",
+    "Lintang": "1.19 LS",
+    "Bujur": "98.73 BT",
+    "Magnitude": "4.3",
+    "Kedalaman": "17 km",
+    "Wilayah": "Pusat gempa berada di darat 130 km barat laut Kep. Mentawai",
+    "Dirasakan": "II Pulau Siberut, I Tua Pejat, I Sungai Beremas"
+  }
+}

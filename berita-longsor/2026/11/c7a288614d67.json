@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwAFBVV95cUxQb2dLckh4OUVfenQ0Y05rQk0wbUR0UXNhY2ZPNk1PM3ZRR1N1TTlzUWlCN3p0a0NZVFNRSVNvMGN5ME1MZVh6VlBRU3FPUmlCRE1abUw3NERuVmtwNnZLZExjSXR2cjFNNWZmVWN5QnAtSnA5Rjg4VXd4WG9YWXVxdGx0QzZTWTBTT245V0hEMmhFLWVKbV9VcEE5dXlnV2JEMXctbzdkRTR4OWhtci01bktURFdiY19QYkhFeUJTS1E",
+  "title": "Hadapi Ancaman Bencana Hidrometeorologi, Polresta Malang Kota Petakan Wilayah Rawan Banjir dan Longsor - sudut kota",
+  "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQb2dLckh4OUVfenQ0Y05rQk0wbUR0UXNhY2ZPNk1PM3ZRR1N1TTlzUWlCN3p0a0NZVFNRSVNvMGN5ME1MZVh6VlBRU3FPUmlCRE1abUw3NERuVmtwNnZLZExjSXR2cjFNNWZmVWN5QnAtSnA5Rjg4VXd4WG9YWXVxdGx0QzZTWTBTT245V0hEMmhFLWVKbV9VcEE5dXlnV2JEMXctbzdkRTR4OWhtci01bktURFdiY19QYkhFeUJTS1E?oc=5",
+  "source": "sudut kota",
+  "source_url": "https://sudutkota.id",
+  "published_at": "2026-11-06T07:19:07.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-06T11:15:26.487Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

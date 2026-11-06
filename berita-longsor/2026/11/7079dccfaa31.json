@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivwFBVV95cUxQcE1oS0FYRnRIaWJvZzNWbU1Yek1CWlBBRjNMODktTkVtSWxXWDFHSm5zODBRdGpmdHQxWGhNeEZkTTdnZGZjZGZKWkdZemlJNkJwUUFWYTJVenozQTBYSTMwTUtzYzNxdDZ2Qjc0emNUUzQzYU51ZFVGUkhsZkduZXFiM1VuZmpEVUE0dWZwT1lTQ2ZUN1NHa1JTaVdha1FJd1hDdzFtWGlXd29NeXE3YXlaMXJnNWpsUm5Rb1NXYw",
+  "title": "Antisipasi Banjir dan Longsor, Kapolresta Malang Kota Perkuat Pemetaan Wilayah Rawan - BANGSAONLINE.com",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQcE1oS0FYRnRIaWJvZzNWbU1Yek1CWlBBRjNMODktTkVtSWxXWDFHSm5zODBRdGpmdHQxWGhNeEZkTTdnZGZjZGZKWkdZemlJNkJwUUFWYTJVenozQTBYSTMwTUtzYzNxdDZ2Qjc0emNUUzQzYU51ZFVGUkhsZkduZXFiM1VuZmpEVUE0dWZwT1lTQ2ZUN1NHa1JTaVdha1FJd1hDdzFtWGlXd29NeXE3YXlaMXJnNWpsUm5Rb1NXYw?oc=5",
+  "source": "BANGSAONLINE.com",
+  "source_url": "https://bangsaonline.com",
+  "published_at": "2026-11-06T09:00:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-06T11:15:26.487Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

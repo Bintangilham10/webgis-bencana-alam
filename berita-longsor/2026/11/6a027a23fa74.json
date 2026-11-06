@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqAFBVV95cUxQT1pOVGcxR0ExRk1mTGVVUS1HMEVxZWpDR0pGZVBOMl9sRTd5S2FMVU5ZcEhSVVJRNzJBVmI5WEo5aHpFTEFoaGkybWlXbjNvSGgzUEtOVGJJZU1xcHpzSzR5UjNsYVVuVjdROTVxS2ZLNVlZMWVsRGFTUGY2MXdLdk1FMEh3UVV3NjJLMTNId1ZPRlZSY3Mwck93R0tQLWw1b0dOemRvekLSAZYBQVVfeXFMTm0xemhGTTh0eUNBbnk0eUZiejZScDdfb194d3k3Qm03enBWbmpMMk1YTDdpX0ZaaTFQTHZEMmdmOGlQWl9MSVljYnRUbTcycU4yM2Ixa0ZjV0N0Y2tyek1JdC0wc2xWRlg3SWk0RVJ2d2lYcGZoTGNDZmRZLXFCX1lNUU1qeXVZemVBTVdweXU4QnZ1R0JR",
+  "title": "Polresta Malang Petakan Wilayah Rawan Banjir dan Longsor - malang.disway.id - Disway Malang",
+  "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQT1pOVGcxR0ExRk1mTGVVUS1HMEVxZWpDR0pGZVBOMl9sRTd5S2FMVU5ZcEhSVVJRNzJBVmI5WEo5aHpFTEFoaGkybWlXbjNvSGgzUEtOVGJJZU1xcHpzSzR5UjNsYVVuVjdROTVxS2ZLNVlZMWVsRGFTUGY2MXdLdk1FMEh3UVV3NjJLMTNId1ZPRlZSY3Mwck93R0tQLWw1b0dOemRvekLSAZYBQVVfeXFMTm0xemhGTTh0eUNBbnk0eUZiejZScDdfb194d3k3Qm03enBWbmpMMk1YTDdpX0ZaaTFQTHZEMmdmOGlQWl9MSVljYnRUbTcycU4yM2Ixa0ZjV0N0Y2tyek1JdC0wc2xWRlg3SWk0RVJ2d2lYcGZoTGNDZmRZLXFCX1lNUU1qeXVZemVBTVdweXU4QnZ1R0JR?oc=5",
+  "source": "Disway Malang",
+  "source_url": "https://malang.disway.id",
+  "published_at": "2026-11-06T09:11:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-06T11:15:26.487Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
