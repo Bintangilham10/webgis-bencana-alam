@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.06.14.61.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-06T21:03:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-06T21:15:00+07:00</effective>
+    <expires>2026-11-07T00:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 06 November 2026, 21:15 WIB di sebagian wilayah Kalimantan Barat, khususnya di BIKA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 November 2026, 00:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/11/06/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>0.859,112.879 0.850,112.874 0.835,112.889 0.815,112.890 0.792,112.896 0.760,112.921 0.751,112.915 0.672,112.872 0.659,112.842 0.660,112.823 0.653,112.806 0.629,112.782 0.633,112.766 0.680,112.754 0.694,112.755 0.713,112.732 0.728,112.723 0.793,112.730 0.823,112.722 0.831,112.742 0.842,112.756 0.872,112.781 0.938,112.808 0.942,112.871 0.936,112.883 0.915,112.892 0.912,112.888 0.877,112.877 0.866,112.875 0.859,112.879</polygon>
+    </area>
+  </info>
+</alert>
