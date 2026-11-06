@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-06T04:00:41.797Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        100.591413489,
+        0.0249489178
+      ]
+    },
+    "properties": {
+      "pkey": "400000",
+      "created_at": "2026-11-06T03:52:36.555Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "374e0c98-e4bb-4d82-be3e-265f7c16c5ff",
+      "image_url": "https://images.petabencana.id/374e0c98-e4bb-4d82-be3e-265f7c16c5ff.jpg",
+      "disaster_type": "earthquake",
+      "is_training": false,
+      "report_data": {
+        "report_type": "road",
+        "accessabilityFailure": 0,
+        "condition": 1
+      },
+      "tags": {
+        "city": "LIMA PULUH KOTA",
+        "district_id": null,
+        "region_code": "1307",
+        "local_area_id": null,
+        "instance_region_code": "ID-SB"
+      },
+      "title": null,
+      "text": "tanah longsor melanda jalur utama Padang - Pekanbaru (lintas Sumbar - Riau) tepatnya di Km 17 Koto Alam, Kecamatan Pangkalan Koto Baru",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
