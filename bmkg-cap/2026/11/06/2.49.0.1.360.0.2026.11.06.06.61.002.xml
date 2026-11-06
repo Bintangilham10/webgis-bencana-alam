@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.06.06.61.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-06T11:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-06T11:40:00+07:00</effective>
+    <expires>2026-11-06T13:40:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 06 November 2026, 11:40 WIB di sebagian wilayah Kalimantan Barat, khususnya di SINGKAWANG BARAT, SINGKAWANG TENGAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 06 November 2026, 13:40 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/11/06/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>0.929,109.024 0.904,109.027 0.888,109.019 0.885,109.004 0.892,108.998 0.916,108.991 0.920,108.967 0.924,108.962 0.932,108.967 0.931,108.992 0.940,109.003 0.934,109.020 0.929,109.024</polygon>
+      <polygon>0.892,108.998 0.890,108.990 0.883,108.976 0.904,108.953 0.924,108.962 0.920,108.967 0.916,108.991 0.892,108.998</polygon>
+    </area>
+  </info>
+</alert>
