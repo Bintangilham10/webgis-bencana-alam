@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi5wFBVV95cUxQaVBlWC1rYmstZHk3WEhrckNqUnEzSGxnWWJGZ0VxdHhuMnNDQmljTFF1d2ZIbmRvLThQdEl2YUpRYWM2c0NDY2pTRVBRdG1CM3JGSy1VSExoNTREWGVxdEZsek01bXN3UHlNQjNnVnVOZ0puYVlFSGEtb2xFWFVlYVI2YXdDc2RMVnVsVW14cUVJSzhobi04S2gyOUFnaUdxbFoyVDdsVkxOblFCMWk2QzdOcHBKT1ZqWDNEc2dwSU9sMkhrcUxYb1p4c2FMUWJmaXJQT1JvZmM0RFg3T3A0dXRCX2p5Y3PSAewBQVVfeXFMUGhnT29raGl6RllmcFZ6SVJ2N256OUpSYTU4aHpVdFg0aVh2bzQ5MmVHa2lCMkFuNlVORWFvaUg4dEtWVm1ybDAwUTY2dlZyWkRVa1ptTDBVczhiQXJRb2hsdmN2WERlZXRORkJ0Szl6WklxTUVEdlJSb0F3V3NycnlWbzlIeFJ5WHpEdmU1ai1meEhYNDl2b0diZm9JZ05TekxnV3NPUTBLdE44MTFURHRKNGxES2xLZi00WTdFVEItUmdhbXpvVm9fTXB6MUwtbm4xcVJ6NVNYZm15cE1sWVpYbjExS0pUTFpGVTk",
+  "title": "Gali Tanah untuk Perbaikan Jalan, 2 Warga Gununggeni Banyuanyar Probolinggo Tewas Tertimbun Longsor - Radar Bromo",
+  "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQaVBlWC1rYmstZHk3WEhrckNqUnEzSGxnWWJGZ0VxdHhuMnNDQmljTFF1d2ZIbmRvLThQdEl2YUpRYWM2c0NDY2pTRVBRdG1CM3JGSy1VSExoNTREWGVxdEZsek01bXN3UHlNQjNnVnVOZ0puYVlFSGEtb2xFWFVlYVI2YXdDc2RMVnVsVW14cUVJSzhobi04S2gyOUFnaUdxbFoyVDdsVkxOblFCMWk2QzdOcHBKT1ZqWDNEc2dwSU9sMkhrcUxYb1p4c2FMUWJmaXJQT1JvZmM0RFg3T3A0dXRCX2p5Y3PSAewBQVVfeXFMUGhnT29raGl6RllmcFZ6SVJ2N256OUpSYTU4aHpVdFg0aVh2bzQ5MmVHa2lCMkFuNlVORWFvaUg4dEtWVm1ybDAwUTY2dlZyWkRVa1ptTDBVczhiQXJRb2hsdmN2WERlZXRORkJ0Szl6WklxTUVEdlJSb0F3V3NycnlWbzlIeFJ5WHpEdmU1ai1meEhYNDl2b0diZm9JZ05TekxnV3NPUTBLdE44MTFURHRKNGxES2xLZi00WTdFVEItUmdhbXpvVm9fTXB6MUwtbm4xcVJ6NVNYZm15cE1sWVpYbjExS0pUTFpGVTk?oc=5",
+  "source": "Radar Bromo",
+  "source_url": "https://radarbromo.jawapos.com",
+  "published_at": "2026-11-06T10:04:58.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-06T17:30:33.782Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.13",
+      "nama": "Kabupaten Probolinggo",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.74",
+      "nama": "Kota Probolinggo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

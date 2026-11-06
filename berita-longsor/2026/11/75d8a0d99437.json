@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiigFBVV95cUxPai1zdVpCR2VoUUc1eXY5cGJPcDhtdUREbm90Nzg4NHcwNjhWZ05rTm9HVkc2LUtRaExjdl9iNGI4SkkxSjYxMUlBN2p1b25xN1ZhU2lhdWZ5enRBc0ZWYWkxTDJsby1SUjIyQnVQUkJkSnROa0QwY3Y3ZEMzc29felJXWlFYYkFtVEE",
+  "title": "Longsor Terjang Perumahan Bumi Ungu Tasikmalaya, Akses Jalan Warga Tertutup - Nusantara Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPai1zdVpCR2VoUUc1eXY5cGJPcDhtdUREbm90Nzg4NHcwNjhWZ05rTm9HVkc2LUtRaExjdl9iNGI4SkkxSjYxMUlBN2p1b25xN1ZhU2lhdWZ5enRBc0ZWYWkxTDJsby1SUjIyQnVQUkJkSnROa0QwY3Y3ZEMzc29felJXWlFYYkFtVEE?oc=5",
+  "source": "Nusantara Indonesia",
+  "source_url": "https://www.nusantaraindonesia.id",
+  "published_at": "2026-11-06T16:25:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-06T17:30:33.782Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
