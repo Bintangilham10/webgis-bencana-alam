@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiuwFBVV95cUxOSWNWam01T0VQZG1nTTM2TlgydTBWWmg1eHdIM1RFczQwZG5OQjhkQ0hOM3lmVEh1LW9TSm1ZYl93TkRkWWFkdGo1THVSa2lnY2RKWkVZV2hVSVFjZDlIZERxTEY2SFZhSEhiNVBsUWgyQkpidG9TOHg1MW0yc041MnZvRThvSUpLVDI1Z0hBWnhrbnF2RUdlU1hZRkVOV1JKdWI2U3hhbVNhNUhSLVU0MnVBNzFSeEtlcTJB",
+  "title": "Kota Bogor Siaga Darurat Bencana, Waspadai Banjir hingga Longsor - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSWNWam01T0VQZG1nTTM2TlgydTBWWmg1eHdIM1RFczQwZG5OQjhkQ0hOM3lmVEh1LW9TSm1ZYl93TkRkWWFkdGo1THVSa2lnY2RKWkVZV2hVSVFjZDlIZERxTEY2SFZhSEhiNVBsUWgyQkpidG9TOHg1MW0yc041MnZvRThvSUpLVDI1Z0hBWnhrbnF2RUdlU1hZRkVOV1JKdWI2U3hhbVNhNUhSLVU0MnVBNzFSeEtlcTJB?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://megapolitan.kompas.com",
+  "published_at": "2026-11-06T05:43:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-06T07:45:27.756Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

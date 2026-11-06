@@ -1,0 +1,23 @@
+{
+  "guid": "CBMirwFBVV95cUxQVGd3dkRtSk1uZ2ZFRXJwYTFsbC1sSUJMaGY3RnR5V3hOcDNHRzFDVk42TnN1SkZPRlEtZkg3eVNkMEM1d3FYbXpUZTFZbFRRZTNYbS1nWDEtTm94dlQ0ZER3Q3NSVTFVVDA2V0NMakRLaEYyQXZ6dTNpN2JGQkg5djh2MUJ3STFoVVd6bFptWnhKdlVVdUJOWFRfM3dObDZPU19vQlVSUDdhdFQ3bE53",
+  "title": "Dampak Longsor di Gayo Lues Aceh: Jembatan Ambruk dan Satu Tewas - Merdeka",
+  "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVGd3dkRtSk1uZ2ZFRXJwYTFsbC1sSUJMaGY3RnR5V3hOcDNHRzFDVk42TnN1SkZPRlEtZkg3eVNkMEM1d3FYbXpUZTFZbFRRZTNYbS1nWDEtTm94dlQ0ZER3Q3NSVTFVVDA2V0NMakRLaEYyQXZ6dTNpN2JGQkg5djh2MUJ3STFoVVd6bFptWnhKdlVVdUJOWFRfM3dObDZPU19vQlVSUDdhdFQ3bE53?oc=5",
+  "source": "Merdeka",
+  "source_url": "https://www.merdeka.com",
+  "published_at": "2026-11-06T05:48:17.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-06T07:45:27.756Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.13",
+      "nama": "Kabupaten Gayo Lues",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
