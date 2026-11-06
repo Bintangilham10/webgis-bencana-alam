@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.06.07.76.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-06T14:08:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-06T14:38:00+08:00</effective>
+    <expires>2026-11-06T15:38:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 06 November 2026, 14:38 WITA di sebagian wilayah Sulawesi Barat, khususnya di BALLA, BULO, TUTAR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 06 November 2026, 15:38 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSK/2026/11/06/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Barat</areaDesc>
+      <polygon>-2.985,119.336 -2.992,119.346 -3.008,119.354 -3.030,119.359 -3.036,119.374 -3.052,119.379 -3.051,119.367 -3.042,119.346 -3.011,119.312 -3.001,119.297 -3.001,119.290 -2.979,119.265 -2.979,119.266 -2.973,119.270 -2.970,119.265 -2.967,119.266 -2.941,119.289 -2.941,119.295 -2.935,119.301 -2.941,119.310 -2.985,119.336</polygon>
+      <polygon>-3.109,119.071 -3.109,119.072 -3.139,119.078 -3.148,119.071 -3.174,119.075 -3.178,119.065 -3.185,119.070 -3.192,119.068 -3.201,119.077 -3.212,119.077 -3.221,119.074 -3.230,119.064 -3.241,119.065 -3.241,119.072 -3.234,119.079 -3.251,119.083 -3.258,119.092 -3.274,119.085 -3.285,119.098 -3.293,119.095 -3.292,119.090 -3.316,119.075 -3.316,119.065 -3.328,119.074 -3.341,119.075 -3.347,119.062 -3.383,119.042 -3.383,119.042 -3.382,119.011 -3.347,119.007 -3.335,118.991 -3.282,118.991 -3.272,118.995 -3.272,118.980 -3.278,118.966 -3.287,118.955 -3.293,118.925 -3.256,118.917 -3.249,118.910 -3.247,118.910 -3.246,118.909 -3.227,118.916 -3.201,118.901 -3.187,118.901 -3.171,118.909 -3.155,118.954 -3.126,118.953 -3.106,118.946 -3.088,118.956 -3.087,118.962 -3.096,118.976 -3.088,119.005 -3.091,119.026 -3.086,119.043 -3.109,119.071</polygon>
+      <polygon>-3.114,119.159 -3.133,119.162 -3.138,119.167 -3.166,119.167 -3.180,119.177 -3.191,119.178 -3.218,119.197 -3.234,119.197 -3.237,119.193 -3.255,119.190 -3.259,119.179 -3.278,119.167 -3.327,119.172 -3.333,119.165 -3.327,119.155 -3.311,119.152 -3.295,119.140 -3.295,119.117 -3.281,119.106 -3.281,119.097 -3.285,119.098 -3.274,119.085 -3.258,119.092 -3.251,119.083 -3.234,119.079 -3.241,119.072 -3.241,119.065 -3.230,119.064 -3.221,119.074 -3.212,119.077 -3.201,119.077 -3.192,119.068 -3.185,119.070 -3.178,119.065 -3.174,119.075 -3.148,119.071 -3.139,119.078 -3.109,119.072 -3.113,119.081 -3.104,119.089 -3.105,119.098 -3.093,119.112 -3.098,119.132 -3.106,119.134 -3.117,119.148 -3.114,119.159</polygon>
+    </area>
+  </info>
+</alert>
