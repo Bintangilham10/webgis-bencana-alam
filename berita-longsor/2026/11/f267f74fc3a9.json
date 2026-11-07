@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivAFBVV95cUxNV1dDekxuWEdKY25rTUthOUtLLUdjRW9HbEZJZnNhbXVDZGE0Qm1TZzVVZjE0YmdzRkJNdXBVX09IZk5NYTlxTzI1ZC1OeHhuN0NXUDN1Qi0yRks0YjE3OTRFcDdRekp5Y3M3N1QtTTVGRGJ0WEstZ0hXRmhpZEx1NXlMeTBIdHFtVUZGaGFfUWZKZ3RSaTBHODBxYXJ1WmEyX1BINWZZd1RzeWxFMXJ6MGZaZTRpZm9ueExSbQ",
+  "title": "Siaga Darurat Bencana Bogor, Tiga Kecamatan Masuk Zona Rawan Longsor - Pikiran Rakyat Koran",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNV1dDekxuWEdKY25rTUthOUtLLUdjRW9HbEZJZnNhbXVDZGE0Qm1TZzVVZjE0YmdzRkJNdXBVX09IZk5NYTlxTzI1ZC1OeHhuN0NXUDN1Qi0yRks0YjE3OTRFcDdRekp5Y3M3N1QtTTVGRGJ0WEstZ0hXRmhpZEx1NXlMeTBIdHFtVUZGaGFfUWZKZ3RSaTBHODBxYXJ1WmEyX1BINWZZd1RzeWxFMXJ6MGZaZTRpZm9ueExSbQ?oc=5",
+  "source": "Pikiran Rakyat Koran",
+  "source_url": "https://koran.pikiran-rakyat.com",
+  "published_at": "2026-11-06T22:00:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-07T00:00:39.602Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
