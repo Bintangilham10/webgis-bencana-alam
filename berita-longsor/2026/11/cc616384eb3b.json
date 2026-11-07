@@ -1,0 +1,31 @@
+{
+  "guid": "CBMilgFBVV95cUxOSzVYeUVucVA2Q2hDNFVLalJZb1pGN3ZHY3YydnRSZEcxRkhpbjF4cjZFZ2tDSVRXdFpZbXpiLTF5TWxCekdJSWw5ZW9abGxDUzBCS3FReVBCQmJ6UnNFM3ZIN3NDcDljYkdTWHA4RGI2Q3FFT3M3M2t1dHljMDdHTHA0dEJ5bklkbzF4VGZBd3Y4X3U5S3c",
+  "title": "Wisatawan Asal Tegal Tewas Tertimbun Longsor di Curug Lawe Kendal - Inilahjateng",
+  "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSzVYeUVucVA2Q2hDNFVLalJZb1pGN3ZHY3YydnRSZEcxRkhpbjF4cjZFZ2tDSVRXdFpZbXpiLTF5TWxCekdJSWw5ZW9abGxDUzBCS3FReVBCQmJ6UnNFM3ZIN3NDcDljYkdTWHA4RGI2Q3FFT3M3M2t1dHljMDdHTHA0dEJ5bklkbzF4VGZBd3Y4X3U5S3c?oc=5",
+  "source": "Inilahjateng",
+  "source_url": "https://inilahjateng.com",
+  "published_at": "2026-11-07T13:45:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-07T15:45:26.715Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.24",
+      "nama": "Kabupaten Kendal",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.28",
+      "nama": "Kabupaten Tegal",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.76",
+      "nama": "Kota Tegal",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
