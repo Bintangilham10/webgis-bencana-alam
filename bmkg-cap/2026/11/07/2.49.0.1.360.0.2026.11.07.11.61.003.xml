@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.07.11.61.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-07T16:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-07T17:00:00+07:00</effective>
+    <expires>2026-11-07T19:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 07 November 2026, 17:00 WIB di sebagian wilayah Kalimantan Barat, khususnya di MARAU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 November 2026, 19:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/11/07/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>-1.985,110.648 -2.000,110.654 -2.026,110.654 -2.048,110.671 -2.038,110.698 -2.055,110.724 -2.059,110.738 -2.054,110.753 -2.036,110.765 -2.026,110.779 -2.044,110.806 -2.045,110.826 -2.095,110.834 -2.125,110.862 -2.142,110.866 -2.146,110.865 -2.150,110.840 -2.154,110.839 -2.168,110.869 -2.190,110.887 -2.193,110.897 -2.255,110.895 -2.255,110.881 -2.241,110.869 -2.248,110.856 -2.245,110.819 -2.248,110.813 -2.241,110.763 -2.263,110.726 -2.263,110.701 -2.283,110.689 -2.284,110.668 -2.294,110.650 -2.286,110.640 -2.266,110.631 -2.206,110.619 -2.198,110.599 -2.206,110.593 -2.208,110.581 -2.182,110.561 -2.182,110.522 -2.186,110.514 -2.175,110.500 -2.163,110.493 -2.154,110.480 -2.165,110.459 -2.119,110.431 -2.089,110.429 -2.075,110.438 -2.067,110.448 -2.043,110.472 -2.031,110.478 -2.000,110.488 -1.972,110.487 -1.968,110.495 -1.960,110.513 -1.958,110.544 -1.981,110.612 -1.985,110.648</polygon>
+    </area>
+  </info>
+</alert>
