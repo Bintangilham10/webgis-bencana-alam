@@ -1,0 +1,31 @@
+{
+  "guid": "CBMimwFBVV95cUxNcGt0N0hIZDM2ZndnQVN3Yml1VjAxYW80V1NUcXo2X1J5b2VMVXExdjlfaHQ0NXJRd1NvRzV5WkpiaEZpV19rRWxVbFFIdU9fNXkzWDdiTmZMa2MyclJwRlRNT01vemZaQ1ZKV0VuX3FjX3NJZk5TZ0tnYmZtRUNHSjRBakdYM1BPN2Z5azlpbzZWNjJQdzlmdE01aw",
+  "title": "Longsor Tutup Sementara Jalan Solok-Solok Selatan di Aia Dingin - infoSumbar",
+  "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNcGt0N0hIZDM2ZndnQVN3Yml1VjAxYW80V1NUcXo2X1J5b2VMVXExdjlfaHQ0NXJRd1NvRzV5WkpiaEZpV19rRWxVbFFIdU9fNXkzWDdiTmZMa2MyclJwRlRNT01vemZaQ1ZKV0VuX3FjX3NJZk5TZ0tnYmZtRUNHSjRBakdYM1BPN2Z5azlpbzZWNjJQdzlmdE01aw?oc=5",
+  "source": "infoSumbar",
+  "source_url": "https://infosumbar.net",
+  "published_at": "2026-11-06T15:44:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-07T06:15:27.238Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "13.11",
+      "nama": "Kabupaten Solok Selatan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.02",
+      "nama": "Kabupaten Solok",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.72",
+      "nama": "Kota Solok",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

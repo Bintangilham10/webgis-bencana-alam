@@ -1,0 +1,21 @@
+{
+  "guid": "CBMicEFVX3lxTFBOWmFsMWNkanQ2cmx6ZFc1ZjdUWmNHQkM0eEdJQ0RGR2FsYmtXYWprUlpVZlZLSmVfZU85ZEZ5QUxwUzdjaWZiYm1jSGlwVURhNll1X2FrWFVNSzJkX0txVWxfTS1ieU15MC1IRGU1cXE",
+  "title": "Berita Terkini Harian Potensi Banjir Dan Longsor Bangkalan Terbaru Hari Ini - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBOWmFsMWNkanQ2cmx6ZFc1ZjdUWmNHQkM0eEdJQ0RGR2FsYmtXYWprUlpVZlZLSmVfZU85ZEZ5QUxwUzdjaWZiYm1jSGlwVURhNll1X2FrWFVNSzJkX0txVWxfTS1ieU15MC1IRGU1cXE?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://www.kompas.com",
+  "published_at": "2026-11-06T12:30:58.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-07T06:15:27.238Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.26",
+      "nama": "Kabupaten Bangkalan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

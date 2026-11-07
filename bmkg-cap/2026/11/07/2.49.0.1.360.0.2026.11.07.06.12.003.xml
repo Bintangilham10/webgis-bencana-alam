@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.07.06.12.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-07T11:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-07T12:00:00+07:00</effective>
+    <expires>2026-11-07T15:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 07 November 2026, 12:00 WIB di sebagian wilayah Sumatera Utara, khususnya di ALASA, AMANDRAYA, HILIMEGAI, MANIAMOLO, ULUSUSUA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 November 2026, 15:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSU/2026/11/07/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Utara</areaDesc>
+      <polygon>0.786,97.651 0.763,97.663 0.769,97.677 0.783,97.693 0.781,97.699 0.786,97.708 0.773,97.721 0.760,97.720 0.733,97.704 0.722,97.702 0.708,97.678 0.701,97.677 0.705,97.703 0.700,97.716 0.685,97.734 0.673,97.714 0.660,97.712 0.661,97.701 0.646,97.693 0.642,97.696 0.635,97.686 0.639,97.683 0.649,97.690 0.649,97.676 0.677,97.661 0.687,97.668 0.693,97.668 0.707,97.662 0.714,97.655 0.748,97.652 0.759,97.646 0.759,97.637 0.768,97.641 0.784,97.635 0.786,97.651</polygon>
+      <polygon>0.677,97.779 0.650,97.783 0.662,97.762 0.629,97.768 0.624,97.750 0.608,97.749 0.608,97.696 0.623,97.694 0.635,97.686 0.642,97.696 0.646,97.693 0.661,97.701 0.660,97.712 0.673,97.714 0.685,97.734 0.700,97.716 0.704,97.717 0.704,97.727 0.693,97.742 0.686,97.741 0.683,97.751 0.674,97.760 0.677,97.779</polygon>
+      <polygon>0.639,97.683 0.649,97.676 0.649,97.690 0.639,97.683</polygon>
+      <polygon>0.908,97.630 0.908,97.634 0.905,97.636 0.890,97.633 0.869,97.643 0.858,97.629 0.850,97.642 0.851,97.664 0.841,97.669 0.831,97.669 0.800,97.651 0.800,97.641 0.816,97.649 0.825,97.651 0.831,97.649 0.836,97.634 0.849,97.628 0.853,97.617 0.866,97.609 0.870,97.597 0.884,97.603 0.894,97.601 0.908,97.607 0.908,97.630</polygon>
+      <polygon>0.823,97.726 0.805,97.719 0.795,97.723 0.786,97.708 0.781,97.699 0.783,97.693 0.769,97.677 0.763,97.663 0.786,97.651 0.784,97.656 0.803,97.681 0.823,97.678 0.840,97.681 0.852,97.688 0.855,97.695 0.856,97.708 0.844,97.712 0.836,97.725 0.823,97.726</polygon>
+      <polygon>1.276,97.400 1.255,97.401 1.246,97.414 1.244,97.426 1.224,97.441 1.213,97.435 1.197,97.418 1.188,97.421 1.188,97.447 1.209,97.443 1.215,97.444 1.218,97.449 1.225,97.482 1.219,97.488 1.214,97.484 1.202,97.489 1.187,97.489 1.179,97.487 1.180,97.470 1.169,97.456 1.146,97.439 1.146,97.421 1.137,97.423 1.141,97.411 1.132,97.407 1.127,97.394 1.132,97.391 1.133,97.382 1.141,97.379 1.140,97.374 1.125,97.367 1.119,97.344 1.156,97.322 1.208,97.345 1.247,97.329 1.266,97.328 1.271,97.342 1.279,97.371 1.291,97.372 1.295,97.380 1.278,97.391 1.276,97.400</polygon>
+    </area>
+  </info>
+</alert>

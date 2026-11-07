@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.07.06.61.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-07T12:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-07T12:50:00+07:00</effective>
+    <expires>2026-11-07T14:50:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 07 November 2026, 12:50 WIB di sebagian wilayah Kalimantan Barat, khususnya di PONTIANAK KOTA, PONTIANAK SELATAN, SINGKAWANG SELATAN, TUJUH BELAS.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 November 2026, 14:50 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/11/07/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>1.060,109.828 1.038,109.912 1.029,109.912 1.016,109.927 1.008,109.930 0.994,109.919 0.962,109.926 0.934,109.907 0.947,109.876 0.958,109.816 0.985,109.813 0.997,109.778 1.035,109.729 1.040,109.715 1.026,109.705 1.004,109.698 1.025,109.646 1.061,109.622 1.070,109.652 1.081,109.665 1.099,109.697 1.100,109.710 1.112,109.732 1.108,109.746 1.119,109.774 1.089,109.791 1.074,109.806 1.060,109.828</polygon>
+      <polygon>-0.042,109.354 -0.081,109.324 -0.075,109.317 -0.082,109.314 -0.077,109.307 -0.068,109.310 -0.063,109.304 -0.026,109.345 -0.042,109.354</polygon>
+      <polygon>-0.026,109.345 -0.063,109.304 -0.041,109.285 -0.027,109.301 -0.016,109.334 -0.026,109.345</polygon>
+      <polygon>0.890,108.990 0.856,108.993 0.855,109.035 0.861,109.052 0.853,109.067 0.848,109.054 0.832,109.041 0.779,109.036 0.767,109.024 0.764,109.004 0.777,108.971 0.808,108.961 0.813,108.942 0.808,108.935 0.818,108.915 0.835,108.907 0.834,108.897 0.841,108.874 0.858,108.891 0.870,108.893 0.864,108.913 0.881,108.934 0.904,108.953 0.883,108.976 0.890,108.990</polygon>
+    </area>
+  </info>
+</alert>

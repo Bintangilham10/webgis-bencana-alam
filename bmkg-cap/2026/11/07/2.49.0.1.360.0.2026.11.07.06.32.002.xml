@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.07.05.32.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-07T12:39:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-07T12:49:00+07:00</effective>
+    <expires>2026-11-07T14:39:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 07 November 2026, 12:49 WIB di sebagian wilayah Jawa Barat, khususnya di CICANTAYAN, CISAAT, GUNUNG GURUH, GUNUNG PUYUH, KABANDUNGAN, WARUDOYONG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 November 2026, 14:39 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/11/07/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.743,106.588 -6.749,106.598 -6.753,106.636 -6.748,106.656 -6.732,106.660 -6.734,106.671 -6.746,106.683 -6.756,106.682 -6.762,106.665 -6.772,106.660 -6.777,106.647 -6.791,106.642 -6.812,106.644 -6.830,106.633 -6.842,106.632 -6.852,106.592 -6.827,106.555 -6.818,106.547 -6.768,106.526 -6.762,106.525 -6.751,106.533 -6.750,106.549 -6.718,106.576 -6.722,106.583 -6.743,106.588</polygon>
+      <polygon>-6.933,106.901 -6.951,106.911 -6.957,106.901 -6.956,106.887 -6.963,106.876 -6.975,106.873 -6.980,106.868 -6.982,106.857 -6.988,106.855 -6.980,106.852 -6.960,106.849 -6.946,106.855 -6.941,106.854 -6.927,106.861 -6.926,106.873 -6.916,106.876 -6.915,106.883 -6.929,106.887 -6.933,106.901</polygon>
+      <polygon>-6.898,106.869 -6.902,106.867 -6.906,106.874 -6.912,106.874 -6.916,106.860 -6.922,106.857 -6.927,106.861 -6.941,106.854 -6.946,106.855 -6.946,106.843 -6.940,106.828 -6.944,106.822 -6.941,106.800 -6.929,106.782 -6.925,106.781 -6.908,106.807 -6.912,106.834 -6.906,106.836 -6.896,106.826 -6.889,106.828 -6.887,106.835 -6.893,106.834 -6.899,106.842 -6.898,106.869</polygon>
+      <polygon>-6.893,106.914 -6.894,106.910 -6.915,106.906 -6.912,106.901 -6.933,106.901 -6.929,106.887 -6.915,106.883 -6.916,106.876 -6.926,106.873 -6.927,106.861 -6.922,106.857 -6.916,106.860 -6.912,106.874 -6.906,106.874 -6.902,106.867 -6.898,106.869 -6.876,106.882 -6.881,106.888 -6.872,106.904 -6.879,106.917 -6.893,106.914</polygon>
+      <polygon>-6.895,106.916 -6.902,106.918 -6.900,106.925 -6.904,106.929 -6.912,106.929 -6.921,106.922 -6.915,106.906 -6.894,106.910 -6.893,106.914 -6.895,106.916</polygon>
+      <polygon>-6.915,106.906 -6.921,106.922 -6.925,106.927 -6.941,106.923 -6.945,106.919 -6.951,106.911 -6.933,106.901 -6.912,106.901 -6.915,106.906</polygon>
+    </area>
+  </info>
+</alert>
