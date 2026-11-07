@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.07.13.32.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-07T18:47:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-07T18:57:00+07:00</effective>
+    <expires>2026-11-07T20:47:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 07 November 2026, 18:57 WIB di sebagian wilayah Jawa Barat, khususnya di BANJARAN, CIMAUNG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 November 2026, 20:47 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/11/07/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-7.033,107.592 -7.045,107.592 -7.060,107.605 -7.082,107.613 -7.103,107.632 -7.119,107.633 -7.126,107.632 -7.128,107.634 -7.125,107.617 -7.119,107.606 -7.105,107.598 -7.095,107.583 -7.083,107.574 -7.072,107.575 -7.068,107.558 -7.044,107.561 -7.044,107.568 -7.039,107.577 -7.034,107.579 -7.030,107.586 -7.033,107.592</polygon>
+      <polygon>-7.128,107.634 -7.135,107.640 -7.147,107.633 -7.145,107.578 -7.122,107.552 -7.109,107.555 -7.103,107.551 -7.113,107.542 -7.121,107.526 -7.132,107.527 -7.141,107.523 -7.134,107.518 -7.119,107.516 -7.094,107.523 -7.082,107.535 -7.068,107.558 -7.072,107.575 -7.083,107.574 -7.095,107.583 -7.105,107.598 -7.119,107.606 -7.125,107.617 -7.128,107.634</polygon>
+    </area>
+  </info>
+</alert>
