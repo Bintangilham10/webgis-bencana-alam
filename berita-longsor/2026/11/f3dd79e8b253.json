@@ -1,0 +1,21 @@
+{
+  "guid": "CBMivwFBVV95cUxOYkItNTJTdktNNGNHbDdhdnpxX0lKV0h0Z3Q5S3RnY3hFVDhNSGtwZkFnSFhsd25PUDQ1YmVUWGx3ZGQxTHhOb2twSGxLd3dmUXpySERrc2xtdE9kcm92QlNyYlFtc0tLSEJ6MklfRmZrcjV6QXA4bEpDcEFDc2xvZVlTMnBERW8xR24tdHZ5Vl9HdUxqbDFfSmR1TjMxV2RRNVd2aWpXekJ1dG1jTlI3S3VnbDBwR2V3Y1NNWmk5VQ",
+  "title": "Tanah Longsor, Retakan Tanah Terus Meluas, Rumah Warga di Kabupaten Semarang Terancam Roboh - HARIAN 7",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYkItNTJTdktNNGNHbDdhdnpxX0lKV0h0Z3Q5S3RnY3hFVDhNSGtwZkFnSFhsd25PUDQ1YmVUWGx3ZGQxTHhOb2twSGxLd3dmUXpySERrc2xtdE9kcm92QlNyYlFtc0tLSEJ6MklfRmZrcjV6QXA4bEpDcEFDc2xvZVlTMnBERW8xR24tdHZ5Vl9HdUxqbDFfSmR1TjMxV2RRNVd2aWpXekJ1dG1jTlI3S3VnbDBwR2V3Y1NNWmk5VQ?oc=5",
+  "source": "HARIAN 7",
+  "source_url": "https://harian7.com",
+  "published_at": "2026-11-07T16:15:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-07T18:45:27.591Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.22",
+      "nama": "Kabupaten Semarang",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}
