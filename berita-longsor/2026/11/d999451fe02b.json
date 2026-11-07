@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixgFBVV95cUxQenVwTWxhQ0t6YjZsUkE5SmFnQkdkdnY4MzdPRzNTT3NTTWN3S2ZlVVFueVhGdndhcGpBRzBqQy0zUmhGQzdNU0p4b2lXSnRFZDdFY0tVVHM0bmJXeUNfLW4zNDRsM3JsNVJUSjUtNWY4Rjl2cTNjY3UyTnVHX3FnRGY0Q0VGdm4wNFhYYVBCUUJOSWJjNWVhOEtJbEVZamhPR2JwNm02WEZKZTU1M3c4dHFIOG5LUkh4OThmUUJYUlJxQV9uMkE",
+  "title": "Antisipasi Banjir dan Longsor, Kapolresta Malang Kota Perkuat Pemetaan Wilayah Rawan Bencana - Klikwarta.com",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQenVwTWxhQ0t6YjZsUkE5SmFnQkdkdnY4MzdPRzNTT3NTTWN3S2ZlVVFueVhGdndhcGpBRzBqQy0zUmhGQzdNU0p4b2lXSnRFZDdFY0tVVHM0bmJXeUNfLW4zNDRsM3JsNVJUSjUtNWY4Rjl2cTNjY3UyTnVHX3FnRGY0Q0VGdm4wNFhYYVBCUUJOSWJjNWVhOEtJbEVZamhPR2JwNm02WEZKZTU1M3c4dHFIOG5LUkh4OThmUUJYUlJxQV9uMkE?oc=5",
+  "source": "Klikwarta.com",
+  "source_url": "https://www.klikwarta.com",
+  "published_at": "2026-11-06T21:33:27.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-07T12:30:39.714Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
