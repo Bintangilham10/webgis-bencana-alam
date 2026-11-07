@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.07.07.94.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-07T14:45:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-07T15:00:00+09:00</effective>
+    <expires>2026-11-07T17:30:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 07 November 2026, 15:00 WIT di sebagian wilayah Papua Tengah, khususnya di MENOU, UWAPA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 November 2026, 17:30 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPT/2026/11/07/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua Tengah</areaDesc>
+      <polygon>-3.372,135.819 -3.376,135.818 -3.374,135.801 -3.377,135.784 -3.396,135.735 -3.411,135.713 -3.425,135.710 -3.440,135.714 -3.460,135.736 -3.474,135.745 -3.489,135.714 -3.501,135.665 -3.565,135.620 -3.550,135.596 -3.555,135.577 -3.554,135.564 -3.580,135.532 -3.583,135.523 -3.576,135.510 -3.560,135.494 -3.543,135.495 -3.535,135.482 -3.528,135.486 -3.520,135.478 -3.499,135.479 -3.469,135.448 -3.465,135.450 -3.463,135.463 -3.438,135.525 -3.434,135.548 -3.428,135.557 -3.377,135.610 -3.324,135.655 -3.274,135.703 -3.293,135.766 -3.296,135.812 -3.306,135.835 -3.333,135.835 -3.353,135.825 -3.372,135.819</polygon>
+      <polygon>-3.376,135.818 -3.417,135.821 -3.439,135.829 -3.460,135.845 -3.507,135.858 -3.545,135.862 -3.566,135.855 -3.595,135.805 -3.622,135.780 -3.632,135.761 -3.634,135.717 -3.641,135.694 -3.644,135.657 -3.644,135.621 -3.694,135.617 -3.704,135.608 -3.695,135.602 -3.692,135.588 -3.684,135.583 -3.677,135.555 -3.621,135.557 -3.620,135.510 -3.637,135.510 -3.637,135.411 -3.642,135.401 -3.628,135.388 -3.602,135.401 -3.594,135.401 -3.564,135.388 -3.554,135.377 -3.545,135.381 -3.522,135.378 -3.478,135.358 -3.473,135.388 -3.475,135.398 -3.468,135.420 -3.471,135.438 -3.469,135.448 -3.499,135.479 -3.520,135.478 -3.528,135.486 -3.535,135.482 -3.543,135.495 -3.560,135.494 -3.576,135.510 -3.583,135.523 -3.580,135.532 -3.554,135.564 -3.555,135.577 -3.550,135.596 -3.565,135.620 -3.501,135.665 -3.489,135.714 -3.474,135.745 -3.460,135.736 -3.440,135.714 -3.425,135.710 -3.411,135.713 -3.396,135.735 -3.377,135.784 -3.374,135.801 -3.376,135.818</polygon>
+    </area>
+  </info>
+</alert>

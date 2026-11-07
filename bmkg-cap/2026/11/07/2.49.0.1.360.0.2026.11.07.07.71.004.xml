@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.07.07.71.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-07T14:42:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-07T14:50:00+08:00</effective>
+    <expires>2026-11-07T17:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 07 November 2026, 14:50 WITA di sebagian wilayah Sulawesi Utara, khususnya di SINONSAYANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 November 2026, 17:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/07/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>1.071,124.434 1.069,124.431 1.061,124.420 1.060,124.408 1.079,124.382 1.074,124.375 1.053,124.371 1.031,124.344 1.003,124.344 0.994,124.347 0.990,124.344 0.989,124.334 1.007,124.315 1.005,124.307 1.001,124.304 1.001,124.299 1.007,124.298 1.023,124.307 1.030,124.306 1.043,124.313 1.079,124.323 1.082,124.329 1.099,124.340 1.119,124.340 1.134,124.357 1.154,124.342 1.164,124.352 1.152,124.360 1.150,124.367 1.134,124.389 1.108,124.390 1.098,124.411 1.085,124.428 1.071,124.434</polygon>
+    </area>
+  </info>
+</alert>
