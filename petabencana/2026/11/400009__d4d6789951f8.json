@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-07T11:00:39.875Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        120.1908659793,
+        -2.9996306
+      ]
+    },
+    "properties": {
+      "pkey": "400009",
+      "created_at": "2026-11-07T10:59:24.705Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "986f9058-6c0a-4288-bd9f-28042ce4b2ed",
+      "image_url": "https://images.petabencana.id/986f9058-6c0a-4288-bd9f-28042ce4b2ed.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 122.71147739660367,
+        "fireLocation": {
+          "lat": "-2.9996306",
+          "lng": 120.190865979321
+        },
+        "personLocation": {
+          "lng": 120.18819235257007,
+          "lat": -3.002475443190633
+        },
+        "fireRadius": {
+          "lng": 120.18978246414599,
+          "lat": -2.9998475681516084
+        }
+      },
+      "tags": {
+        "city": "KOTA PALOPO",
+        "district_id": null,
+        "region_code": "7373",
+        "local_area_id": null,
+        "instance_region_code": "ID-SN"
+      },
+      "title": null,
+      "text": "Kebakaran lahan melanda wilayah Kecamatan Telluwanua, Kota Palopo, Sulawesi Selatan, Sabtu (07/11/2026).",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
