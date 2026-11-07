@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.07.09.32.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-07T14:15:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-07T14:25:00+07:00</effective>
+    <expires>2026-11-07T16:15:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 07 November 2026, 14:25 WIB di sebagian wilayah Jawa Barat, khususnya di ANDIR, BANDUNG KULON, CICENDO, CIMAHI SELATAN, CIMAHI TENGAH, MARGAASIH, NYALINDUNG, PURABAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 November 2026, 16:15 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/11/07/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-7.078,106.945 -7.085,106.948 -7.108,106.938 -7.122,106.937 -7.133,106.946 -7.133,106.953 -7.140,106.959 -7.157,106.940 -7.157,106.932 -7.150,106.925 -7.149,106.887 -7.131,106.882 -7.129,106.871 -7.139,106.863 -7.142,106.852 -7.151,106.854 -7.174,106.835 -7.166,106.833 -7.159,106.821 -7.143,106.820 -7.138,106.827 -7.134,106.831 -7.124,106.830 -7.086,106.840 -7.076,106.839 -7.076,106.849 -7.057,106.837 -7.053,106.851 -7.045,106.864 -7.026,106.872 -7.023,106.903 -7.028,106.909 -7.044,106.913 -7.056,106.900 -7.060,106.901 -7.077,106.919 -7.085,106.943 -7.078,106.945</polygon>
+      <polygon>-6.969,106.946 -6.968,106.953 -6.975,106.972 -6.980,106.976 -7.014,106.976 -7.034,106.959 -7.068,106.954 -7.072,106.946 -7.078,106.945 -7.085,106.943 -7.077,106.919 -7.060,106.901 -7.056,106.900 -7.044,106.913 -7.028,106.909 -7.023,106.903 -7.026,106.872 -7.025,106.864 -6.995,106.872 -6.994,106.856 -6.988,106.855 -6.982,106.857 -6.980,106.868 -6.975,106.873 -6.970,106.890 -6.977,106.899 -6.978,106.911 -6.970,106.923 -6.965,106.932 -6.969,106.946</polygon>
+      <polygon>-6.927,107.547 -6.948,107.560 -6.954,107.567 -6.982,107.557 -6.978,107.551 -6.965,107.532 -6.943,107.536 -6.939,107.535 -6.940,107.532 -6.940,107.532 -6.936,107.523 -6.921,107.525 -6.917,107.531 -6.919,107.544 -6.927,107.547</polygon>
+      <polygon>-6.915,107.605 -6.921,107.604 -6.919,107.593 -6.919,107.587 -6.918,107.581 -6.917,107.574 -6.910,107.569 -6.897,107.561 -6.895,107.560 -6.913,107.587 -6.915,107.605</polygon>
+      <polygon>-6.891,107.576 -6.900,107.602 -6.907,107.605 -6.915,107.605 -6.913,107.587 -6.895,107.560 -6.890,107.556 -6.891,107.576</polygon>
+      <polygon>-6.918,107.581 -6.943,107.567 -6.954,107.567 -6.948,107.560 -6.927,107.547 -6.933,107.564 -6.913,107.565 -6.910,107.569 -6.917,107.574 -6.918,107.581</polygon>
+      <polygon>-6.897,107.561 -6.910,107.569 -6.913,107.565 -6.933,107.564 -6.927,107.547 -6.919,107.544 -6.917,107.531 -6.921,107.525 -6.901,107.511 -6.895,107.513 -6.881,107.520 -6.888,107.529 -6.891,107.525 -6.897,107.531 -6.904,107.551 -6.897,107.561</polygon>
+      <polygon>-6.890,107.556 -6.895,107.560 -6.897,107.561 -6.904,107.551 -6.897,107.531 -6.891,107.525 -6.888,107.529 -6.881,107.520 -6.875,107.519 -6.868,107.527 -6.869,107.544 -6.873,107.551 -6.877,107.548 -6.890,107.556</polygon>
+    </area>
+  </info>
+</alert>

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivAFBVV95cUxPQnFlamN3ZG54M19FODBSbkI3Y1V3MXdtM2duZzR4bk9VMEVxV1kzdnZkV3B2SW1SZVNZNmg4OWJMSDdZeERKQkstZjZScWpBbzE2NjR2ZVg0VVpYVDVETEJ2ZXhZTnotdlY5ZXVoRG5aWjUwSVNzeEZ2M0VkSTR0aE5oelZ4clJ5d1l0X1V1SkdWX3VUUWxYZE9FZGc0dDUtemNvd2NZcXJ5Y1g2cU9rVm9ZTTVIQ2RlZW5IdQ",
+  "title": "BPBD Bogor Waspadai Longsor dan Angin Kencang Menjelang Musim Hujan - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQnFlamN3ZG54M19FODBSbkI3Y1V3MXdtM2duZzR4bk9VMEVxV1kzdnZkV3B2SW1SZVNZNmg4OWJMSDdZeERKQkstZjZScWpBbzE2NjR2ZVg0VVpYVDVETEJ2ZXhZTnotdlY5ZXVoRG5aWjUwSVNzeEZ2M0VkSTR0aE5oelZ4clJ5d1l0X1V1SkdWX3VUUWxYZE9FZGc0dDUtemNvd2NZcXJ5Y1g2cU9rVm9ZTTVIQ2RlZW5IdQ?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://bandung.kompas.com",
+  "published_at": "2026-11-07T06:53:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-07T09:15:29.168Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

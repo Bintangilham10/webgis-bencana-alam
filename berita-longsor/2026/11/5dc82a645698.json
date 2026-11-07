@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiZkFVX3lxTE4tTUhUWE9lUDJGY3NManhPXzZlNkdvbGszcmlKWlphWWFWRG9EdXlWVVhoUTZLMUIyanRXNFhqOTJ2T2Exd3c2Um14bHZWeHdKRUU5d094b0xzeU1xdVVYRWg2bnVoUQ",
+  "title": "BPBD Ponorogo Petakan Ancaman Longsor dan Banjir - bsinews.id",
+  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4tTUhUWE9lUDJGY3NManhPXzZlNkdvbGszcmlKWlphWWFWRG9EdXlWVVhoUTZLMUIyanRXNFhqOTJ2T2Exd3c2Um14bHZWeHdKRUU5d094b0xzeU1xdVVYRWg2bnVoUQ?oc=5",
+  "source": "bsinews.id",
+  "source_url": "https://bsinews.id",
+  "published_at": "2026-11-07T09:08:28.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-07T09:15:29.168Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.02",
+      "nama": "Kabupaten Ponorogo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

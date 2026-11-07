@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi1gFBVV95cUxPbF9raWZ1SFhlcDZGR3FEYzJXYmpHM1J0b1Z6eFhuOHB3amJsc3d2Q09kLWdQWG9Dd0pqUTFGOXBYd0NrNERPMldDNlp5QS14XzJqVHBmWVItQ0o2U1l2dkZ1V3M1d1VjbEFsLWxEM0tHZmxkcWdhRTlDY2poclpnRTNxNmFYSTB2OWNobmRDWF8zVm1vNEVFNWhfTl9jLXVJVjZ4MU9YQWd3ZDB6b3pfelUxQWRId1BkSVBScElhRW96czBFTmdHTjBHOGhWeVYzRDNoNWNn",
+  "title": "Petakan Titik Rawan Banjir dan Longsor, Pemkot Bogor Bersiap Hadapi Bencana Hidrometeorologi - Tribunnewsbogor.com",
+  "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPbF9raWZ1SFhlcDZGR3FEYzJXYmpHM1J0b1Z6eFhuOHB3amJsc3d2Q09kLWdQWG9Dd0pqUTFGOXBYd0NrNERPMldDNlp5QS14XzJqVHBmWVItQ0o2U1l2dkZ1V3M1d1VjbEFsLWxEM0tHZmxkcWdhRTlDY2poclpnRTNxNmFYSTB2OWNobmRDWF8zVm1vNEVFNWhfTl9jLXVJVjZ4MU9YQWd3ZDB6b3pfelUxQWRId1BkSVBScElhRW96czBFTmdHTjBHOGhWeVYzRDNoNWNn?oc=5",
+  "source": "Tribunnewsbogor.com",
+  "source_url": "https://bogor.tribunnews.com",
+  "published_at": "2026-11-06T09:44:30.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-07T09:15:29.168Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
