@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiogFBVV95cUxPa1dwRFhia1g4YWY3Y2l1SzZQQ1haNWR1dWJhbndiQkthaGRmcHFyNFpfNnpYQ0tHT2pRRnl6aVJicUViYUFUNWRMSHliRmdsM2xZNDFKVEJyVGNyOWw3WTlpazNIc0tnUlluS196bWo1SzdpbzFSX2N1YzF3Q2xWR1V5SEQ3MmJwUjJZR213RXV4VzhQdUw2Q28zMUZCeGxWcFE",
+  "title": "Jalan Solok-Solok Selatan Tertimbun Longsor, Kini Dibuka Tutup untuk Kendaraan - Sumbarkita.id",
+  "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPa1dwRFhia1g4YWY3Y2l1SzZQQ1haNWR1dWJhbndiQkthaGRmcHFyNFpfNnpYQ0tHT2pRRnl6aVJicUViYUFUNWRMSHliRmdsM2xZNDFKVEJyVGNyOWw3WTlpazNIc0tnUlluS196bWo1SzdpbzFSX2N1YzF3Q2xWR1V5SEQ3MmJwUjJZR213RXV4VzhQdUw2Q28zMUZCeGxWcFE?oc=5",
+  "source": "Sumbarkita.id",
+  "source_url": "https://sumbarkita.id",
+  "published_at": "2026-11-07T01:09:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-07T03:00:41.378Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.11",
+      "nama": "Kabupaten Solok Selatan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.02",
+      "nama": "Kabupaten Solok",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.72",
+      "nama": "Kota Solok",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
