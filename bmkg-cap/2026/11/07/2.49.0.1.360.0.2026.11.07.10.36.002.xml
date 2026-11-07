@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.07.10.36.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-07T16:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-07T16:10:00+07:00</effective>
+    <expires>2026-11-07T18:10:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Banten</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 07 November 2026, 16:10 WIB di sebagian wilayah Banten, khususnya di CIMARGA, KALANGANYAR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 November 2026, 18:10 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBT/2026/11/07/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Banten</areaDesc>
+      <polygon>-6.377,106.199 -6.419,106.243 -6.418,106.268 -6.423,106.278 -6.413,106.300 -6.410,106.301 -6.421,106.310 -6.421,106.320 -6.443,106.313 -6.448,106.306 -6.468,106.311 -6.498,106.308 -6.501,106.312 -6.498,106.320 -6.503,106.325 -6.516,106.310 -6.516,106.305 -6.489,106.285 -6.485,106.275 -6.489,106.254 -6.494,106.248 -6.504,106.249 -6.503,106.242 -6.512,106.238 -6.515,106.232 -6.512,106.222 -6.503,106.218 -6.478,106.179 -6.478,106.173 -6.493,106.160 -6.487,106.153 -6.491,106.147 -6.472,106.122 -6.471,106.104 -6.465,106.104 -6.449,106.122 -6.443,106.124 -6.445,106.127 -6.440,106.136 -6.418,106.162 -6.412,106.164 -6.413,106.171 -6.399,106.190 -6.384,106.191 -6.377,106.199</polygon>
+      <polygon>-6.348,106.242 -6.357,106.242 -6.388,106.256 -6.399,106.254 -6.410,106.257 -6.418,106.268 -6.419,106.243 -6.377,106.199 -6.373,106.198 -6.373,106.205 -6.361,106.208 -6.358,106.212 -6.361,106.223 -6.348,106.242</polygon>
+    </area>
+  </info>
+</alert>
