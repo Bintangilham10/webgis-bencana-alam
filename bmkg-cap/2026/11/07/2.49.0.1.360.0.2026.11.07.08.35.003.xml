@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.07.08.35.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-07T15:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-07T15:30:00+07:00</effective>
+    <expires>2026-11-07T17:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 07 November 2026, 15:30 WIB di sebagian wilayah Jawa Timur, khususnya di JAMBESARI DARUS SHOLAH, TUMPANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 November 2026, 17:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/07/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.986,112.845 -8.000,112.839 -8.010,112.840 -8.023,112.829 -8.029,112.780 -8.021,112.757 -8.031,112.749 -8.029,112.739 -8.021,112.730 -8.029,112.721 -8.033,112.708 -8.040,112.704 -8.029,112.686 -8.028,112.675 -8.025,112.672 -8.013,112.673 -8.005,112.684 -8.007,112.695 -8.004,112.721 -7.991,112.727 -7.986,112.759 -8.000,112.808 -7.986,112.845</polygon>
+      <polygon>-7.959,113.858 -7.986,113.868 -7.993,113.865 -8.015,113.889 -8.030,113.878 -8.035,113.869 -8.034,113.865 -8.030,113.861 -8.017,113.865 -8.012,113.861 -7.999,113.844 -7.993,113.822 -7.986,113.822 -7.977,113.829 -7.947,113.824 -7.951,113.834 -7.964,113.842 -7.962,113.847 -7.952,113.847 -7.959,113.858</polygon>
+    </area>
+  </info>
+</alert>
