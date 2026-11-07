@@ -1,0 +1,43 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-07T04:15:29.796Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        112.9229042984,
+        -8.1075214069
+      ]
+    },
+    "properties": {
+      "pkey": "400005",
+      "created_at": "2026-11-07T04:06:45.558Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "9e9e0c68-76b4-4e85-a84b-597286b18e5a",
+      "image_url": "https://images.petabencana.id/9e9e0c68-76b4-4e85-a84b-597286b18e5a.jpg",
+      "disaster_type": "volcano",
+      "is_training": false,
+      "report_data": {
+        "report_type": "volcano",
+        "volcanicSigns": [
+          0
+        ],
+        "evacuationNumber": 1,
+        "evacuationArea": true
+      },
+      "tags": {
+        "city": "MALANG",
+        "district_id": null,
+        "region_code": "3507",
+        "local_area_id": null,
+        "instance_region_code": "ID-JI"
+      },
+      "title": null,
+      "text": "Gunung Semeru kembali mengalami erupsi pada Sabtu, 7/11, disertai guguran awan panas",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
