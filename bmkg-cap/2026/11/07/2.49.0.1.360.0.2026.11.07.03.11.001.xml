@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.07.03.11.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-07T09:42:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-07T09:52:00+07:00</effective>
+    <expires>2026-11-07T13:13:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Aceh</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 07 November 2026, 09:52 WIB di sebagian wilayah Aceh, khususnya di DARUL FALAH, JULOK, NURUSSALAM.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 07 November 2026, 13:13 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CAH/2026/11/07/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Aceh</areaDesc>
+      <polygon>5.068,97.657 5.058,97.653 5.035,97.631 5.033,97.633 5.014,97.627 4.998,97.632 4.986,97.633 4.986,97.630 4.979,97.629 4.979,97.635 4.979,97.632 4.967,97.632 4.962,97.635 4.966,97.628 4.963,97.621 4.973,97.617 4.978,97.606 4.980,97.585 4.998,97.566 5.003,97.544 5.067,97.546 5.062,97.570 5.074,97.573 5.075,97.590 5.078,97.598 5.091,97.604 5.087,97.615 5.091,97.624 5.086,97.633 5.104,97.629 5.114,97.651 5.115,97.653 5.081,97.657 5.085,97.648 5.092,97.645 5.085,97.644 5.077,97.646 5.068,97.657</polygon>
+      <polygon>5.028,97.701 5.008,97.699 5.003,97.683 4.951,97.667 4.905,97.676 4.887,97.670 4.872,97.654 4.879,97.643 4.900,97.634 4.919,97.632 4.923,97.643 4.933,97.644 4.936,97.640 4.949,97.641 4.962,97.635 4.967,97.632 4.979,97.632 4.979,97.629 4.986,97.630 4.986,97.633 4.998,97.632 4.993,97.639 4.996,97.652 5.015,97.661 5.020,97.647 5.033,97.639 5.033,97.633 5.035,97.631 5.058,97.653 5.068,97.657 5.028,97.701</polygon>
+      <polygon>4.998,97.632 5.014,97.627 5.033,97.633 5.033,97.639 5.020,97.647 5.015,97.661 4.996,97.652 4.993,97.639 4.998,97.632</polygon>
+    </area>
+  </info>
+</alert>
