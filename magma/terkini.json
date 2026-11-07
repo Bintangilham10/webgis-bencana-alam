@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-02T02:00:36.777Z",
-  "hash": "80f76272b847",
+  "updated_at": "2026-11-07T15:15:28.703Z",
+  "hash": "6d0ef66062f7",
   "volcanoes": [
     {
       "name": "Anak Krakatau",
@@ -49,6 +49,11 @@
     },
     {
       "name": "Gamalama",
+      "region": "Maluku Utara",
+      "level": 2
+    },
+    {
+      "name": "Gamkonora",
       "region": "Maluku Utara",
       "level": 2
     },
@@ -190,11 +195,6 @@
     {
       "name": "Galunggung",
       "region": "Jawa Barat",
-      "level": 1
-    },
-    {
-      "name": "Gamkonora",
-      "region": "Maluku Utara",
       "level": 1
     },
     {
