@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-11-07T10:45:32.930Z",
+  "data": {
+    "Tanggal": "07 Nov 2026",
+    "Jam": "17:05:52 WIB",
+    "DateTime": "2026-11-07T10:05:52+00:00",
+    "Coordinates": "-8.37,116.54",
+    "Lintang": "8.37 LS",
+    "Bujur": "116.54 BT",
+    "Magnitude": "3.0",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di darat 31 km utara Lombok Timur",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "II Lombok Timur",
+    "Shakemap": "20261107170552.mmi.jpg"
+  }
+}
