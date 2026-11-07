@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-07T11:30:44.664Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        119.8705965067,
+        -5.2393011182
+      ]
+    },
+    "properties": {
+      "pkey": "400010",
+      "created_at": "2026-11-07T11:23:18.164Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "dcaff5c5-beda-4811-b785-d474d8d8d6d5",
+      "image_url": "https://images.petabencana.id/dcaff5c5-beda-4811-b785-d474d8d8d6d5.jpg",
+      "disaster_type": "wind",
+      "is_training": false,
+      "report_data": {
+        "report_type": "wind",
+        "impact": 1
+      },
+      "tags": {
+        "city": "GOWA",
+        "district_id": null,
+        "region_code": "7306",
+        "local_area_id": null,
+        "instance_region_code": "ID-SN"
+      },
+      "title": null,
+      "text": "Sebuah pohon tumbang di dekat Kota Malino, Kecamatan Tinggimoncong, Kabupaten Gowa, Sulawesi Selatan, Sabtu sore (07/11/2026) ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
