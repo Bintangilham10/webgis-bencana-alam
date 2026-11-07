@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-07T10:00:39.356Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        114.5914368742,
+        -3.3187496
+      ]
+    },
+    "properties": {
+      "pkey": "400007",
+      "created_at": "2026-11-07T09:53:08.675Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "79ac0706-37ef-487b-a0ef-5a9919dd7929",
+      "image_url": "https://images.petabencana.id/79ac0706-37ef-487b-a0ef-5a9919dd7929.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 138.6177185743493,
+        "fireLocation": {
+          "lat": "-3.3187496",
+          "lng": 114.591436874172
+        },
+        "personLocation": {
+          "lng": 114.5906214989144,
+          "lat": -3.3199488338502334
+        },
+        "fireRadius": {
+          "lng": 114.59019232918985,
+          "lat": -3.318851353003609
+        }
+      },
+      "tags": {
+        "city": "KOTA BANJARMASIN",
+        "district_id": null,
+        "region_code": "6371",
+        "local_area_id": null,
+        "instance_region_code": "ID-KS"
+      },
+      "title": null,
+      "text": "Kebakaran melanda kawasan Wisma Antasari di Jl. Lambung Mangkurat, Kota Banjarmasin, Kalimantan Selatan, Sabtu (07/11/2026). ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
