@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-08T11:30:38.416Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        116.0834206324,
+        -8.6439274628
+      ]
+    },
+    "properties": {
+      "pkey": "400015",
+      "created_at": "2026-11-08T11:24:53.522Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "d17079c1-31c4-4709-a2b4-ee263b4f313a",
+      "image_url": "https://images.petabencana.id/d17079c1-31c4-4709-a2b4-ee263b4f313a.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 89.40651501888935,
+        "fireLocation": {
+          "lng": 116.08342063240218,
+          "lat": -8.643927462758967
+        },
+        "personLocation": {
+          "lat": "-8.6438320",
+          "lng": "116.0841341"
+        },
+        "fireRadius": {
+          "lng": 116.08262133411631,
+          "lat": -8.644075960337517
+        }
+      },
+      "tags": {
+        "city": "LOMBOK BARAT",
+        "district_id": null,
+        "region_code": "5201",
+        "local_area_id": null,
+        "instance_region_code": "ID-NB"
+      },
+      "title": null,
+      "text": "Kebakaran lahan melanda wilayah Desa Kuranji, Kecamatan Labuapi, Kabupaten Lombok Barat, Nusa Tenggara Barat, Minggu (08/11/2026) ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
