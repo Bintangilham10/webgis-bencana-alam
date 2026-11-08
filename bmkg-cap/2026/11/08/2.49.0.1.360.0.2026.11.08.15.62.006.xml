@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.08.15.62.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-08T21:25:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-08T21:30:00+07:00</effective>
+    <expires>2026-11-09T00:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 08 November 2026, 21:30 WIB di sebagian wilayah Kalimantan Tengah, khususnya di DUSUN TIMUR, JABIREN, KATINGAN HILIR, PAJU EPAT, PULAU MALAN, TASIK PAYAWAN, TEWANG SANGALANG GARING.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 09 November 2026, 00:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/11/08/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-1.912,113.585 -1.925,113.598 -1.915,113.568 -1.894,113.534 -1.956,113.455 -1.982,113.409 -2.003,113.339 -2.006,113.316 -2.018,113.283 -1.999,113.284 -1.967,113.280 -1.952,113.272 -1.940,113.253 -1.937,113.224 -1.926,113.196 -1.916,113.191 -1.902,113.192 -1.888,113.200 -1.874,113.213 -1.819,113.376 -1.770,113.449 -1.732,113.499 -1.746,113.497 -1.762,113.489 -1.786,113.489 -1.823,113.506 -1.849,113.534 -1.900,113.572 -1.912,113.585</polygon>
+      <polygon>-1.658,113.492 -1.670,113.484 -1.685,113.482 -1.719,113.498 -1.732,113.499 -1.770,113.449 -1.819,113.376 -1.874,113.213 -1.888,113.200 -1.863,113.201 -1.856,113.196 -1.838,113.159 -1.815,113.127 -1.782,113.164 -1.760,113.197 -1.758,113.206 -1.691,113.324 -1.616,113.419 -1.589,113.459 -1.603,113.483 -1.658,113.492</polygon>
+      <polygon>-1.589,113.459 -1.616,113.419 -1.691,113.324 -1.758,113.206 -1.760,113.197 -1.782,113.164 -1.815,113.127 -1.795,113.097 -1.768,113.027 -1.718,112.990 -1.689,113.014 -1.603,113.068 -1.563,113.100 -1.542,113.124 -1.516,113.154 -1.440,113.309 -1.485,113.339 -1.526,113.361 -1.561,113.430 -1.578,113.435 -1.589,113.459</polygon>
+      <polygon>-1.925,113.598 -1.950,113.614 -1.980,113.618 -1.997,113.627 -2.026,113.617 -2.079,113.582 -2.115,113.566 -2.151,113.564 -2.145,113.447 -2.147,113.387 -2.165,113.291 -2.164,113.245 -2.145,113.235 -2.123,113.230 -2.103,113.231 -2.085,113.244 -2.072,113.262 -2.046,113.282 -2.018,113.283 -2.006,113.316 -2.003,113.339 -1.982,113.409 -1.956,113.455 -1.894,113.534 -1.915,113.568 -1.925,113.598</polygon>
+      <polygon>-2.218,114.134 -2.248,114.161 -2.268,114.216 -2.294,114.252 -2.332,114.276 -2.524,114.318 -2.648,114.332 -2.649,114.253 -2.657,114.208 -2.662,114.108 -2.520,114.143 -2.490,114.146 -2.412,114.117 -2.334,114.028 -2.292,114.030 -2.251,114.085 -2.212,114.101 -2.218,114.134</polygon>
+      <polygon>-2.035,115.282 -2.056,115.273 -2.102,115.271 -2.112,115.275 -2.143,115.243 -2.177,115.229 -2.182,115.208 -2.198,115.191 -2.202,115.170 -2.202,115.121 -2.220,115.072 -2.221,115.040 -2.200,115.058 -2.098,115.104 -2.071,115.121 -2.023,115.129 -2.019,115.129 -2.013,115.143 -1.991,115.159 -1.973,115.165 -1.982,115.186 -2.001,115.194 -2.027,115.231 -2.029,115.267 -2.035,115.282</polygon>
+      <polygon>-2.023,115.129 -2.071,115.121 -2.098,115.104 -2.200,115.058 -2.221,115.040 -2.254,115.010 -2.273,114.944 -2.231,114.925 -2.223,114.918 -2.178,114.934 -2.126,114.934 -2.107,114.931 -2.048,114.943 -2.026,114.996 -1.974,115.017 -1.998,115.038 -2.013,115.059 -2.023,115.129</polygon>
+    </area>
+  </info>
+</alert>
