@@ -30,54 +30,68 @@ test.describe('P1 lapisan dan peta dasar', () => {
     await openMap(page);
     await openTab(page, 'Lapisan');
     const results = [];
+    // Lapisan dikelompokkan per fitur: tiap tombol fitur dibuka bergantian.
+    // Lapisan yang muncul di beberapa fitur (GDACS) cukup diukur sekali.
+    const measured = new Set();
+    const featureTabs = page.locator('#panel-lapisan .feature-tab');
+    expect(await featureTabs.count()).toBeGreaterThan(1);
 
-    // Sakelar biasa: lapisan mati dinyalakan lalu dimatikan lagi; lapisan bawaan
-    // dimatikan dulu supaya penyalaannya terukur.
-    const rows = page.locator('#panel-lapisan .switch-row');
-    for (let i = 0; i < (await rows.count()); i++) {
-      const row = rows.nth(i);
-      const label = (await row.locator('.switch-label').innerText()).trim();
-      const input = row.locator('input.switch');
-      const wasOn = await input.isChecked();
-      if (wasOn) {
-        await row.click();
-        await expect(input).not.toBeChecked();
-      }
-      const before = await legendTitles(page);
-      const timing = await timeUntilLoaded(page, () => row.click());
-      await expect(input).toBeChecked();
-      const added = (await legendTitles(page)).filter((t) => !before.includes(t));
-      if (!wasOn) {
-        await row.click();
-        await expect.poll(() => legendTitles(page)).toEqual(before);
-      }
-      results.push({ lapisan: label, bawaan: wasOn, ...timing, legenda: added });
-      expect.soft(added, `legenda untuk ${label}`).toHaveLength(1);
-      expect.soft(timing.ms, `waktu tampil ${label}`).toBeLessThanOrEqual(LIMIT_MS);
-    }
+    for (let f = 0; f < (await featureTabs.count()); f++) {
+      const featureTab = featureTabs.nth(f);
+      await featureTab.click();
+      const panel = page.locator(`#${await featureTab.getAttribute('aria-controls')}`);
+      await expect(panel).toBeVisible();
 
-    // Grup pilihan tunggal (indikasi SIGAP, peta rawan): tiap pilihan menggantikan
-    // legenda pilihan sebelumnya.
-    const groups = page.locator('#panel-lapisan .choice-chips');
-    for (let g = 0; g < (await groups.count()); g++) {
-      const group = groups.nth(g);
-      const groupName = await group.getAttribute('aria-label');
-      const choices = group.locator('.choice');
-      const initial = await group.locator('input:checked').getAttribute('value');
-      // Mulai dari "Tidak ada" supaya pilihan bawaan juga terukur saat dipilih.
-      await choices.nth(0).click();
-      for (let c = 1; c < (await choices.count()); c++) {
-        const choice = choices.nth(c);
-        const label = (await choice.innerText()).trim();
+      // Sakelar biasa: lapisan mati dinyalakan lalu dimatikan lagi; lapisan bawaan
+      // dimatikan dulu supaya penyalaannya terukur.
+      const rows = panel.locator('.switch-row');
+      for (let i = 0; i < (await rows.count()); i++) {
+        const row = rows.nth(i);
+        const label = (await row.locator('.switch-label').innerText()).trim();
+        if (measured.has(label)) continue;
+        measured.add(label);
+        const input = row.locator('input.switch');
+        const wasOn = await input.isChecked();
+        if (wasOn) {
+          await row.click();
+          await expect(input).not.toBeChecked();
+        }
         const before = await legendTitles(page);
-        const timing = await timeUntilLoaded(page, () => choice.click());
-        const after = await legendTitles(page);
-        const added = after.filter((t) => !before.includes(t));
-        results.push({ lapisan: `${groupName}: ${label}`, ...timing, legenda: added });
-        expect.soft(added, `legenda untuk ${groupName}: ${label}`).toHaveLength(1);
-        expect.soft(timing.ms, `waktu tampil ${groupName}: ${label}`).toBeLessThanOrEqual(LIMIT_MS);
+        const timing = await timeUntilLoaded(page, () => row.click());
+        await expect(input).toBeChecked();
+        const added = (await legendTitles(page)).filter((t) => !before.includes(t));
+        if (!wasOn) {
+          await row.click();
+          await expect.poll(() => legendTitles(page)).toEqual(before);
+        }
+        results.push({ lapisan: label, bawaan: wasOn, ...timing, legenda: added });
+        expect.soft(added, `legenda untuk ${label}`).toHaveLength(1);
+        expect.soft(timing.ms, `waktu tampil ${label}`).toBeLessThanOrEqual(LIMIT_MS);
       }
-      await choices.nth(Number(initial)).click();
+
+      // Grup pilihan tunggal (indikasi SIGAP): tiap pilihan menggantikan legenda
+      // pilihan sebelumnya.
+      const groups = panel.locator('.choice-chips');
+      for (let g = 0; g < (await groups.count()); g++) {
+        const group = groups.nth(g);
+        const groupName = await group.getAttribute('aria-label');
+        const choices = group.locator('.choice');
+        const initial = await group.locator('input:checked').getAttribute('value');
+        // Mulai dari "Tidak ada" supaya pilihan bawaan juga terukur saat dipilih.
+        await choices.nth(0).click();
+        for (let c = 1; c < (await choices.count()); c++) {
+          const choice = choices.nth(c);
+          const label = (await choice.innerText()).trim();
+          const before = await legendTitles(page);
+          const timing = await timeUntilLoaded(page, () => choice.click());
+          const after = await legendTitles(page);
+          const added = after.filter((t) => !before.includes(t));
+          results.push({ lapisan: `${groupName}: ${label}`, ...timing, legenda: added });
+          expect.soft(added, `legenda untuk ${groupName}: ${label}`).toHaveLength(1);
+          expect.soft(timing.ms, `waktu tampil ${groupName}: ${label}`).toBeLessThanOrEqual(LIMIT_MS);
+        }
+        await choices.nth(Number(initial)).click();
+      }
     }
 
     saveResult('p1-lapisan', { batas_ms: LIMIT_MS, hasil: results, galat: errors });

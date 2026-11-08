@@ -74,6 +74,7 @@ import {
   CEWS_LEVELS,
   CLOUD_RAMP,
   DEPTH_CLASSES,
+  HAZARD_CLASSES,
   IMERG_RAMP,
 } from "./lib/symbology.js";
 import { cssVar, currentTheme, onThemeChange, setTheme } from "./lib/theme.js";
@@ -491,188 +492,295 @@ const symbol = {
   imerg: `<span class="sym ramp-swatch">${[0, 3, 5].map((i) => `<span style="background:${IMERG_RAMP[i].color}"></span>`).join("")}</span>`,
   clouds: `<span class="sym ramp-swatch">${[1, 2, 4, 6].map((i) => `<span style="background:${CLOUD_RAMP[i].color}"></span>`).join("")}</span>`,
   landslide: landslideSymbol(),
+  rawan: `<span class="sym ramp-swatch">${HAZARD_CLASSES.map((c) => `<span style="background:${c.color}"></span>`).join("")}</span>`,
+};
+
+// Peta rawan InaRISK dibagikan ke fitur masing-masing, tetapi tetap hanya satu
+// yang tampil sekaligus (`rawan: true`) supaya warnanya tidak saling menutupi.
+const rawan = (id, name) => {
+  const hazard = HAZARDS.find((h) => h.id === id);
+  return {
+    label: `Zona rawan ${name}`,
+    description: "InaRISK BNPB · satu peta rawan tampil sekaligus",
+    legendTitle: `Indeks bahaya ${hazard.label.toLowerCase()}`,
+    symbol: symbol.rawan,
+    layer: createHazardLayer(hazard, HAZARD_OPACITY),
+    legend: hazardLegend,
+    rawan: true,
+  };
+};
+
+// GDACS mencakup beberapa jenis bencana, jadi muncul di fitur gunung api dan banjir.
+const gdacsItem = {
+  label: "Peringatan GDACS (Uni Eropa–PBB)",
+  description: "Banjir, gempa, gunung api, siklon, kebakaran hutan · Oranye/Merah 12 bulan, Hijau 7 hari",
+  legendTitle: "Peringatan GDACS",
+  symbol: symbol.gdacs,
+  layer: gdacsAlerts.layer,
+  legend: gdacsLegend,
 };
 
 createLayerPanel({
   map,
   container: $("#layer-controls"),
   legend,
-  groups: [
+  rawanOpacity: HAZARD_OPACITY,
+  // Dikelompokkan per fitur SIGAP. "Utama" = lembaga Indonesia,
+  // "Pembanding" = data luar negeri.
+  features: [
     {
-      id: "indikasi",
-      title: "Indikasi SIGAP · 3 hari",
-      note: "Per kab/kota",
-      description:
-        "Prakiraan hujan × zona bahaya InaRISK, dihitung ulang tiap 12 jam. Indikasi sistem, bukan peringatan resmi.",
-      exclusive: true,
-      items: OUTLOOK_VIEWS.map((view) => ({
-        label: view.label,
-        legendTitle: `Indikasi SIGAP 3 hari · ${view.label.toLowerCase()}`,
-        layer: outlook.views[view.id],
-        legend: outlookLegend(view.id),
-        on: view.id === "tertinggi",
-      })),
+      id: "gempa",
+      title: "Gempa",
+      heading: "Gempa bumi",
+      icon: icons.quake,
+      sections: [
+        {
+          title: "Utama",
+          note: "BMKG · InaRISK",
+          items: [
+            {
+              label: "Gempa BMKG",
+              description: "M ≥ 5 dan gempa dirasakan · 7 hari · tiap menit",
+              legendTitle: "Gempa BMKG (7 hari)",
+              symbol: symbol.quake,
+              layer: earthquakes.layer,
+              legend: earthquakeLegend,
+              on: true,
+            },
+            rawan("gempa", "gempa bumi"),
+          ],
+        },
+        {
+          title: "Pembanding",
+          note: "Amerika · Eropa",
+          items: [
+            {
+              label: "Gempa USGS",
+              description: "Amerika Serikat · mulai ±M4 · 7 hari · tiap menit · dampak PAGER dan longsor akibat gempa",
+              legendTitle: "Gempa USGS (7 hari)",
+              symbol: symbol.usgs,
+              layer: usgsQuakes.layer,
+              legend: usgsLegend,
+            },
+            {
+              label: "Gempa EMSC (katalog lengkap)",
+              description: "Eropa · sebagian besar katalog BMKG · mulai ±M1 · 7 hari · tiap 2 menit",
+              legendTitle: "Gempa EMSC (7 hari)",
+              symbol: symbol.emsc,
+              layer: emscQuakes.layer,
+              legend: emscLegend,
+            },
+          ],
+        },
+      ],
     },
     {
-      id: "kejadian",
-      title: "Kejadian & status",
-      items: [
+      id: "gunungapi",
+      title: "Gunung api",
+      icon: icons.mountain,
+      sections: [
         {
-          label: "Gempa BMKG",
-          description: "M ≥ 5 dan gempa dirasakan · 7 hari · tiap menit",
-          legendTitle: "Gempa BMKG (7 hari)",
-          symbol: symbol.quake,
-          layer: earthquakes.layer,
-          legend: earthquakeLegend,
-          on: true,
+          title: "Utama",
+          note: "PVMBG · InaRISK",
+          items: [
+            {
+              label: "Status gunung api",
+              description: "PVMBG — MAGMA · 69 gunung api · tiap 30 menit",
+              legendTitle: "Status gunung api (PVMBG)",
+              symbol: symbol.volcano,
+              layer: volcanoes.layer,
+              legend: volcanoLegend,
+              on: true,
+            },
+            rawan("gunungapi", "gunung api"),
+          ],
         },
-        {
-          label: "Gempa USGS (pembanding)",
-          description: "Amerika Serikat · mulai ±M4 · 7 hari · tiap menit · dampak dan longsor akibat gempa",
-          legendTitle: "Gempa USGS (7 hari)",
-          symbol: symbol.usgs,
-          layer: usgsQuakes.layer,
-          legend: usgsLegend,
-        },
-        {
-          label: "Gempa EMSC (katalog lengkap)",
-          description: "Eropa · sebagian besar katalog BMKG · mulai ±M1 · 7 hari · tiap 2 menit",
-          legendTitle: "Gempa EMSC (7 hari)",
-          symbol: symbol.emsc,
-          layer: emscQuakes.layer,
-          legend: emscLegend,
-        },
-        {
-          label: "Peringatan GDACS (Uni Eropa–PBB)",
-          description: "Banjir, gempa, gunung api, siklon, kebakaran hutan · Oranye/Merah 12 bulan, Hijau 7 hari",
-          legendTitle: "Peringatan GDACS",
-          symbol: symbol.gdacs,
-          layer: gdacsAlerts.layer,
-          legend: gdacsLegend,
-        },
-        {
-          label: "Status gunung api",
-          description: "PVMBG — MAGMA · diperbarui tiap 30 menit",
-          legendTitle: "Status gunung api (PVMBG)",
-          symbol: symbol.volcano,
-          layer: volcanoes.layer,
-          legend: volcanoLegend,
-          on: true,
-        },
+        { title: "Pembanding", note: "Eropa–PBB", items: [gdacsItem] },
       ],
     },
     {
       id: "hujan",
-      title: "Hujan dan longsor",
-      note: "BMKG · NASA · JMA · PVMBG",
-      items: [
+      title: "Hujan & cuaca",
+      heading: "Hujan dan cuaca",
+      icon: icons.rain,
+      sections: [
         {
-          label: "Peringatan dini cuaca BMKG",
-          description: "Kecamatan yang diperingatkan · berlaku ±2 jam · tiap 5 menit",
-          legendTitle: "Peringatan dini cuaca (BMKG)",
-          symbol: symbol.cap,
-          layer: cap.layer,
-          legend: capLegend,
-          on: true,
+          title: "Utama",
+          note: "BMKG · InaRISK",
+          items: [
+            {
+              label: "Peringatan dini cuaca BMKG",
+              description: "Kecamatan yang diperingatkan · berlaku ±2 jam · tiap 5 menit",
+              legendTitle: "Peringatan dini cuaca (BMKG)",
+              symbol: symbol.cap,
+              layer: cap.layer,
+              legend: capLegend,
+              on: true,
+            },
+            {
+              label: "Peringatan hujan tinggi BMKG",
+              description: "Per dasarian · kab/kota Waspada ke atas",
+              legendTitle: "Peringatan hujan tinggi (BMKG)",
+              symbol: symbol.rain,
+              layer: rainWarnings,
+              legend: rainWarningLegend,
+            },
+            rawan("cuaca", "cuaca ekstrem"),
+          ],
         },
         {
-          label: "Peringatan hujan tinggi BMKG",
-          description: "Per dasarian · kab/kota Waspada ke atas",
-          legendTitle: "Peringatan hujan tinggi (BMKG)",
-          symbol: symbol.rain,
-          layer: rainWarnings,
-          legend: rainWarningLegend,
-        },
-        {
-          label: "Hujan terkini dari satelit",
-          description: "NASA IMERG · rata-rata 30 menit, terlambat ±4–6 jam",
-          legendTitle: "Hujan satelit (NASA IMERG)",
-          symbol: symbol.imerg,
-          layer: rainNow,
-          legend: imergLegend,
-        },
-        {
-          label: "Citra awan Himawari-9",
-          description: "JMA Jepang · inframerah tiap 10 menit, terlambat ±1 jam",
-          legendTitle: "Awan dari satelit (Himawari-9, JMA)",
-          symbol: symbol.clouds,
-          layer: clouds,
-          legend: cloudLegend,
-        },
-        {
-          label: "Riwayat longsor",
-          description: "PVMBG dan MAGMA · kejadian sejak 2008",
-          legendTitle: "Riwayat longsor (PVMBG)",
-          symbol: symbol.landslide,
-          layer: landslideHistory,
-          legend: landslideLegend,
+          title: "Pembanding",
+          note: "NASA · JMA",
+          items: [
+            {
+              label: "Hujan terkini dari satelit",
+              description: "NASA IMERG · rata-rata 30 menit, terlambat ±4–6 jam",
+              legendTitle: "Hujan satelit (NASA IMERG)",
+              symbol: symbol.imerg,
+              layer: rainNow,
+              legend: imergLegend,
+            },
+            {
+              label: "Citra awan Himawari-9",
+              description: "JMA Jepang · inframerah tiap 10 menit, terlambat ±1 jam",
+              legendTitle: "Awan dari satelit (Himawari-9, JMA)",
+              symbol: symbol.clouds,
+              layer: clouds,
+              legend: cloudLegend,
+            },
+          ],
         },
       ],
     },
     {
-      id: "bahaya",
-      title: "Peta rawan bencana",
-      note: "InaRISK BNPB · PVMBG",
+      id: "indikasi",
+      title: "Indikasi 3 hari",
+      heading: "Indikasi SIGAP · 3 hari",
+      icon: icons.alert,
+      note: "Per kab/kota",
       description:
-        "Satu peta rawan ditampilkan sekaligus supaya warnanya tidak saling menutupi.",
-      exclusive: true,
-      opacity: HAZARD_OPACITY,
-      items: [
-        ...HAZARDS.map((hazard) => ({
-          label: hazard.label.replace(/\s*\(.*\)$/, ""),
-          legendTitle: `Indeks bahaya ${hazard.label.toLowerCase()}`,
-          layer: createHazardLayer(hazard, HAZARD_OPACITY),
-          legend: hazardLegend,
-        })),
+        "Olahan SIGAP: prakiraan hujan ECMWF (Open-Meteo) × zona bahaya InaRISK, dihitung ulang tiap 12 jam. Indikasi sistem, bukan peringatan resmi; popupnya membandingkan dengan peringatan CEWS BMKG.",
+      sections: [
         {
-          label: "Kerentanan gerakan tanah",
-          legendTitle: "Zona kerentanan gerakan tanah (PVMBG)",
-          layer: createZkgtLayer(HAZARD_OPACITY),
-          legend: zkgtLegend,
+          id: "indikasi",
+          label: "Indikasi SIGAP 3 hari",
+          exclusive: true,
+          items: OUTLOOK_VIEWS.map((view) => ({
+            label: view.label,
+            legendTitle: `Indikasi SIGAP 3 hari · ${view.label.toLowerCase()}`,
+            layer: outlook.views[view.id],
+            legend: outlookLegend(view.id),
+            on: view.id === "tertinggi",
+          })),
+        },
+      ],
+    },
+    {
+      id: "banjir",
+      title: "Banjir",
+      icon: icons.flood,
+      sections: [
+        { title: "Utama", note: "InaRISK BNPB", items: [rawan("banjir", "banjir")] },
+        {
+          title: "Pembanding",
+          note: "Eropa–PBB",
+          items: [gdacsItem],
+          description: "Prakiraan debit sungai 7 hari GloFAS (Copernicus) tampil di hasil cek risiko lokasi.",
+        },
+      ],
+    },
+    {
+      id: "longsor",
+      title: "Longsor",
+      heading: "Tanah longsor",
+      icon: icons.landslide,
+      sections: [
+        {
+          title: "Utama",
+          note: "PVMBG · InaRISK",
+          items: [
+            {
+              label: "Riwayat longsor",
+              description: "PVMBG dan MAGMA · kejadian sejak 2008",
+              legendTitle: "Riwayat longsor (PVMBG)",
+              symbol: symbol.landslide,
+              layer: landslideHistory,
+              legend: landslideLegend,
+            },
+            {
+              label: "Kerentanan gerakan tanah",
+              description: "PVMBG (ZKGT) · satu peta rawan tampil sekaligus",
+              legendTitle: "Zona kerentanan gerakan tanah (PVMBG)",
+              symbol: symbol.rawan,
+              layer: createZkgtLayer(HAZARD_OPACITY),
+              legend: zkgtLegend,
+              rawan: true,
+            },
+            rawan("longsor", "tanah longsor"),
+          ],
+        },
+        {
+          title: "Pembanding",
+          note: "Amerika",
+          items: [],
+          description:
+            "Perkiraan longsor dan likuefaksi akibat gempa (USGS Ground Failure) tampil di popup gempa USGS. Nyalakan Gempa USGS di fitur Gempa.",
         },
       ],
     },
     {
       id: "evakuasi",
       title: "Evakuasi",
+      icon: icons.shelter,
       note: "OpenStreetMap",
-      items: [
+      sections: [
         {
-          label: "Titik evakuasi",
-          description: "Tempat evakuasi dan titik kumpul yang terpetakan · ±1.600 titik",
-          legendTitle: "Titik evakuasi (OpenStreetMap)",
-          symbol: symbol.evacuation,
-          layer: evacuationSites,
-          legend: evacuationSitesLegend,
+          items: [
+            {
+              label: "Titik evakuasi",
+              description: "Tempat evakuasi dan titik kumpul yang terpetakan · ±1.600 titik",
+              legendTitle: "Titik evakuasi (OpenStreetMap)",
+              symbol: symbol.evacuation,
+              layer: evacuationSites,
+              legend: evacuationSitesLegend,
+            },
+          ],
+          description: "Rute aman ke titik evakuasi terdekat dibuat dari hasil cek risiko lokasi.",
         },
       ],
     },
     {
-      id: "geologi",
-      title: "Geologi & wilayah",
-      items: [
+      id: "referensi",
+      title: "Referensi",
+      heading: "Geologi & wilayah",
+      icon: icons.map,
+      sections: [
         {
-          label: "Sesar aktif",
-          description: "PuSGeN 2024 · 401 segmen",
-          symbol: symbol.fault,
-          layer: createFaultLayer(reportLoadError("Sesar")),
-          legend: faultLegend,
-          on: true,
-        },
-        {
-          label: "Batas lempeng tektonik",
-          description: "Bird (2003)",
-          symbol: symbol.plate,
-          layer: createPlateLayer(reportLoadError("Lempeng")),
-          legend: plateLegend,
-          on: true,
-        },
-        {
-          label: "Batas kabupaten/kota",
-          description: "Kepmendagri 2025 · 514 wilayah",
-          symbol: symbol.boundary,
-          layer: createBoundaryLayer(reportLoadError("Batas wilayah")),
-          legend: boundaryLegend,
+          items: [
+            {
+              label: "Sesar aktif",
+              description: "PuSGeN 2024 · 401 segmen",
+              symbol: symbol.fault,
+              layer: createFaultLayer(reportLoadError("Sesar")),
+              legend: faultLegend,
+              on: true,
+            },
+            {
+              label: "Batas lempeng tektonik",
+              description: "Bird (2003)",
+              symbol: symbol.plate,
+              layer: createPlateLayer(reportLoadError("Lempeng")),
+              legend: plateLegend,
+              on: true,
+            },
+            {
+              label: "Batas kabupaten/kota",
+              description: "Kepmendagri 2025 · 514 wilayah",
+              symbol: symbol.boundary,
+              layer: createBoundaryLayer(reportLoadError("Batas wilayah")),
+              legend: boundaryLegend,
+            },
+          ],
         },
       ],
     },

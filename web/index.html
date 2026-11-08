@@ -324,28 +324,63 @@
           <header class="lp-sources__head" data-reveal>
             <p class="lp-eyebrow">Sumber data</p>
             <h2 id="lp-data-title" class="lp-h2">Dibangun di atas data terbuka</h2>
-            <p class="lp-sources__intro">SIGAP tidak membuat data bencana sendiri. Semua angka berasal dari lembaga resmi dan proyek terbuka berikut, dan sumbernya dicantumkan di peta.</p>
+            <p class="lp-sources__intro">SIGAP tidak membuat data bencana sendiri. Semua angka berasal dari lembaga resmi dan proyek terbuka berikut, dikelompokkan per fitur. Data lembaga Indonesia menjadi acuan utama; data luar negeri bertanda <span class="lp-src__tag">Pembanding</span>. Cek risiko lokasi menggabungkan semuanya untuk satu titik.</p>
           </header>
           <div class="lp-sources__groups">
-            <section class="lp-srcgroup" data-reveal aria-labelledby="lp-src-live">
-              <h3 id="lp-src-live" class="lp-srcgroup__title">Diperbarui otomatis</h3>
+            <section class="lp-srcgroup" data-reveal aria-labelledby="lp-src-gempa">
+              <h3 id="lp-src-gempa" class="lp-srcgroup__title">Gempa bumi</h3>
               <ul class="lp-srclist">
-                <li class="lp-src"><a class="lp-src__name" href="https://www.bmkg.go.id/" target="_blank" rel="noopener">BMKG<span data-icon="external"></span></a><span class="lp-src__data">Gempa bumi: magnitudo, kedalaman, potensi tsunami, ShakeMap</span><span class="lp-src__when lp-src__when--live"><b>tiap 1 menit</b><small data-sync="quakes">memuat…</small></span></li>
-                <li class="lp-src"><a class="lp-src__name" href="https://magma.esdm.go.id/" target="_blank" rel="noopener">PVMBG · MAGMA<span data-icon="external"></span></a><span class="lp-src__data">Tingkat aktivitas 69 gunung api, erupsi, VONA</span><span class="lp-src__when lp-src__when--live"><b>tiap 30 menit</b><small data-sync="volcanoes">memuat…</small></span></li>
-                <li class="lp-src"><a class="lp-src__name" href="https://cews.bmkg.go.id/" target="_blank" rel="noopener">BMKG CEWS<span data-icon="external"></span></a><span class="lp-src__data">Peringatan dini curah hujan tinggi per kab/kota</span><span class="lp-src__when lp-src__when--live"><b>per dasarian</b><small data-sync="rain">memuat…</small></span></li>
-                <li class="lp-src"><a class="lp-src__name" href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo · ECMWF<span data-icon="external"></span></a><span class="lp-src__data">Prakiraan hujan 3 hari di <span data-lp="locations">3.221</span> titik pantau</span><span class="lp-src__when lp-src__when--live"><b>tiap 12 jam</b><small data-sync="outlook">memuat…</small></span></li>
-                <li class="lp-src"><span class="lp-src__name">NASA GPM IMERG</span><span class="lp-src__data">Hujan satelit 30 menit, tampil sebagai lapisan peta</span><span class="lp-src__when"><b>±4–6 jam di belakang</b></span></li>
-                <li class="lp-src"><span class="lp-src__name">Pembanding internasional</span><span class="lp-src__data">Gempa USGS dan EMSC, peringatan GDACS, dan citra awan Himawari-9 (JMA) sebagai lapisan yang bisa dinyalakan; debit sungai GloFAS di cek risiko</span><span class="lp-src__when"><b>1 menit – harian</b></span></li>
+                <li class="lp-src"><a class="lp-src__name" href="https://www.bmkg.go.id/" target="_blank" rel="noopener">BMKG<span data-icon="external"></span></a><span class="lp-src__data">Gempa M ≥ 5 dan gempa dirasakan: magnitudo, kedalaman, potensi tsunami, ShakeMap</span><span class="lp-src__when lp-src__when--live"><b>tiap 1 menit</b><small data-sync="quakes">memuat…</small></span></li>
+                <li class="lp-src"><span class="lp-src__name">USGS · EMSC <span class="lp-src__tag">Pembanding</span></span><span class="lp-src__data">Katalog gempa Amerika (mulai ±M4, dampak PAGER) dan Eropa (katalog lengkap BMKG, mulai ±M1)</span><span class="lp-src__when"><b>tiap 1–2 menit</b></span></li>
               </ul>
             </section>
-            <section class="lp-srcgroup" data-reveal style="--d: 1" aria-labelledby="lp-src-ref">
-              <h3 id="lp-src-ref" class="lp-srcgroup__title">Data rujukan</h3>
+            <section class="lp-srcgroup" data-reveal aria-labelledby="lp-src-gunungapi">
+              <h3 id="lp-src-gunungapi" class="lp-srcgroup__title">Gunung api</h3>
               <ul class="lp-srclist">
-                <li class="lp-src"><a class="lp-src__name" href="https://inarisk.bnpb.go.id/" target="_blank" rel="noopener">BNPB · InaRISK<span data-icon="external"></span></a><span class="lp-src__data">Indeks bahaya lima jenis bencana</span><span class="lp-src__when"><b>layanan peta</b></span></li>
-                <li class="lp-src"><span class="lp-src__name">PuSGeN 2024</span><span class="lp-src__data">401 segmen sesar aktif</span><span class="lp-src__when"><b>tetap</b></span></li>
-                <li class="lp-src"><span class="lp-src__name">PVMBG</span><span class="lp-src__data">1.884 riwayat kejadian longsor</span><span class="lp-src__when"><b>tetap</b></span></li>
-                <li class="lp-src"><span class="lp-src__name">Kepmendagri 2025</span><span class="lp-src__data">Batas 514 kabupaten/kota</span><span class="lp-src__when"><b>tetap</b></span></li>
-                <li class="lp-src"><a class="lp-src__name" href="https://www.openstreetmap.org/" target="_blank" rel="noopener">OpenStreetMap<span data-icon="external"></span></a><span class="lp-src__data">Pencarian tempat dan desa (Nominatim)</span><span class="lp-src__when"><b>saat dicari</b></span></li>
+                <li class="lp-src"><a class="lp-src__name" href="https://magma.esdm.go.id/" target="_blank" rel="noopener">PVMBG · MAGMA<span data-icon="external"></span></a><span class="lp-src__data">Tingkat aktivitas 69 gunung api, erupsi, VONA</span><span class="lp-src__when lp-src__when--live"><b>tiap 30 menit</b><small data-sync="volcanoes">memuat…</small></span></li>
+                <li class="lp-src"><span class="lp-src__name">GDACS <span class="lp-src__tag">Pembanding</span></span><span class="lp-src__data">Peringatan erupsi dari Uni Eropa–PBB</span><span class="lp-src__when"><b>tiap 15 menit</b></span></li>
+              </ul>
+            </section>
+            <section class="lp-srcgroup" data-reveal aria-labelledby="lp-src-hujan">
+              <h3 id="lp-src-hujan" class="lp-srcgroup__title">Hujan dan cuaca</h3>
+              <ul class="lp-srclist">
+                <li class="lp-src"><a class="lp-src__name" href="https://cews.bmkg.go.id/" target="_blank" rel="noopener">BMKG CEWS<span data-icon="external"></span></a><span class="lp-src__data">Peringatan dini curah hujan tinggi per kab/kota</span><span class="lp-src__when lp-src__when--live"><b>per dasarian</b><small data-sync="rain">memuat…</small></span></li>
+                <li class="lp-src"><span class="lp-src__name">BMKG peringatan dini cuaca</span><span class="lp-src__data">Peringatan cuaca beberapa jam ke depan per kecamatan</span><span class="lp-src__when"><b>tiap 5 menit</b></span></li>
+                <li class="lp-src"><span class="lp-src__name">NASA IMERG · JMA Himawari-9 <span class="lp-src__tag">Pembanding</span></span><span class="lp-src__data">Hujan dari satelit (rata-rata 30 menit) dan citra awan tiap 10 menit</span><span class="lp-src__when"><b>±1–6 jam di belakang</b></span></li>
+              </ul>
+            </section>
+            <section class="lp-srcgroup" data-reveal aria-labelledby="lp-src-indikasi">
+              <h3 id="lp-src-indikasi" class="lp-srcgroup__title">Indikasi SIGAP 3 hari</h3>
+              <ul class="lp-srclist">
+                <li class="lp-src"><a class="lp-src__name" href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo · ECMWF<span data-icon="external"></span></a><span class="lp-src__data">Prakiraan hujan 3 hari di <span data-lp="locations">3.221</span> titik pantau × zona bahaya InaRISK, dibandingkan dengan peringatan BMKG CEWS</span><span class="lp-src__when lp-src__when--live"><b>tiap 12 jam</b><small data-sync="outlook">memuat…</small></span></li>
+              </ul>
+            </section>
+            <section class="lp-srcgroup" data-reveal aria-labelledby="lp-src-banjir">
+              <h3 id="lp-src-banjir" class="lp-srcgroup__title">Banjir</h3>
+              <ul class="lp-srclist">
+                <li class="lp-src"><a class="lp-src__name" href="https://inarisk.bnpb.go.id/" target="_blank" rel="noopener">BNPB · InaRISK<span data-icon="external"></span></a><span class="lp-src__data">Zona rawan banjir</span><span class="lp-src__when"><b>layanan peta</b></span></li>
+                <li class="lp-src"><span class="lp-src__name">GloFAS · GDACS <span class="lp-src__tag">Pembanding</span></span><span class="lp-src__data">Prakiraan debit sungai 7 hari (Copernicus) di cek risiko dan peringatan banjir</span><span class="lp-src__when"><b>harian · 15 menit</b></span></li>
+              </ul>
+            </section>
+            <section class="lp-srcgroup" data-reveal aria-labelledby="lp-src-longsor">
+              <h3 id="lp-src-longsor" class="lp-srcgroup__title">Tanah longsor</h3>
+              <ul class="lp-srclist">
+                <li class="lp-src"><a class="lp-src__name" href="https://vsi.esdm.go.id/portalmbg/" target="_blank" rel="noopener">PVMBG<span data-icon="external"></span></a><span class="lp-src__data">Prakiraan gerakan tanah bulanan, zona kerentanan, 1.884 riwayat longsor</span><span class="lp-src__when"><b>bulanan</b></span></li>
+                <li class="lp-src"><a class="lp-src__name" href="https://inarisk.bnpb.go.id/" target="_blank" rel="noopener">BNPB · InaRISK<span data-icon="external"></span></a><span class="lp-src__data">Zona rawan tanah longsor</span><span class="lp-src__when"><b>layanan peta</b></span></li>
+                <li class="lp-src"><span class="lp-src__name">USGS Ground Failure <span class="lp-src__tag">Pembanding</span></span><span class="lp-src__data">Perkiraan longsor dan likuefaksi akibat gempa</span><span class="lp-src__when"><b>per gempa</b></span></li>
+              </ul>
+            </section>
+            <section class="lp-srcgroup" data-reveal aria-labelledby="lp-src-evakuasi">
+              <h3 id="lp-src-evakuasi" class="lp-srcgroup__title">Evakuasi dan rute</h3>
+              <ul class="lp-srclist">
+                <li class="lp-src"><a class="lp-src__name" href="https://www.openstreetmap.org/" target="_blank" rel="noopener">OpenStreetMap<span data-icon="external"></span></a><span class="lp-src__data">Tempat evakuasi dan fasilitas penting (Overpass), rute aman (Valhalla/OSRM)</span><span class="lp-src__when"><b>tiap minggu</b></span></li>
+              </ul>
+            </section>
+            <section class="lp-srcgroup" data-reveal aria-labelledby="lp-src-ref">
+              <h3 id="lp-src-ref" class="lp-srcgroup__title">Peta dasar dan referensi</h3>
+              <ul class="lp-srclist">
+                <li class="lp-src"><span class="lp-src__name">Kepmendagri 2025 · PuSGeN 2024 · Bird 2003</span><span class="lp-src__data">Batas 514 kabupaten/kota, 401 segmen sesar aktif, batas lempeng tektonik</span><span class="lp-src__when"><b>tetap</b></span></li>
+                <li class="lp-src"><span class="lp-src__name">Nominatim · Esri · OpenTopoMap</span><span class="lp-src__data">Pencarian tempat dan desa, peta dasar</span><span class="lp-src__when"><b>saat dibuka</b></span></li>
               </ul>
             </section>
           </div>
@@ -831,164 +866,209 @@
 
             <div class="section">
               <h2 class="section-title">Sumber data</h2>
-              <ul class="source-list">
-                <li>
-                  <a
-                    href="https://data.bmkg.go.id/"
-                    target="_blank"
-                    rel="noopener"
-                    >BMKG</a
-                  ><span>Gempa M ≥ 5 dan gempa dirasakan (feed publik BMKG), diperbarui tiap menit</span>
-                </li>
-                <li>
-                  <a
-                    href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
-                    target="_blank"
-                    rel="noopener"
-                    >USGS (Amerika Serikat)</a
-                  ><span
-                    >Katalog gempa pembanding mulai ±M4, diperbarui tiap menit;
-                    perkiraan dampak (PAGER) dan longsor/likuefaksi akibat gempa
-                    (Ground Failure) · public domain</span
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://inarisk.bnpb.go.id/"
-                    target="_blank"
-                    rel="noopener"
-                    >InaRISK BNPB</a
-                  ><span
-                    >Indeks bahaya lima jenis bencana (100 m) dan zona bahaya
-                    banjir/longsor untuk indikasi 3 hari</span
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://magma.esdm.go.id/"
-                    target="_blank"
-                    rel="noopener"
-                    >PVMBG — MAGMA Indonesia</a
-                  ><span>Tingkat aktivitas 69 gunung api</span>
-                </li>
-                <li>
-                  <a
-                    href="https://vsi.esdm.go.id/portalmbg/"
-                    target="_blank"
-                    rel="noopener"
-                    >PVMBG — Portal MBG</a
-                  ><span
-                    >Prakiraan potensi gerakan tanah bulanan, ZKGT, dan riwayat
-                    kejadian</span
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://cews.bmkg.go.id/"
-                    target="_blank"
-                    rel="noopener"
-                    >BMKG — CEWS</a
-                  ><span>Peringatan dini curah hujan tinggi per dasarian</span>
-                </li>
-                <li>
-                  <a
-                    href="https://gpm.nasa.gov/data/imerg"
-                    target="_blank"
-                    rel="noopener"
-                    >NASA GPM IMERG</a
-                  ><span
-                    >Hujan dari satelit, rata-rata 30 menit (via NASA
-                    GIBS)</span
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.jma.go.jp/"
-                    target="_blank"
-                    rel="noopener"
-                    >JMA — Himawari-9</a
-                  ><span
-                    >Citra awan inframerah satelit Jepang, tiap 10 menit (via
-                    NASA GIBS)</span
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.emsc-csem.org/"
-                    target="_blank"
-                    rel="noopener"
-                    >EMSC (Eropa)</a
-                  ><span
-                    >Katalog gempa pembanding, sebagian besar dari katalog
-                    lengkap BMKG termasuk gempa kecil mulai ±M1, tiap 2 menit</span
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.gdacs.org/"
-                    target="_blank"
-                    rel="noopener"
-                    >GDACS (Uni Eropa–PBB)</a
-                  ><span
-                    >Peringatan bencana internasional untuk Indonesia (banjir,
-                    gempa, gunung api, siklon, kebakaran hutan), tiap 15 menit</span
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://global-flood.emergency.copernicus.eu/"
-                    target="_blank"
-                    rel="noopener"
-                    >GloFAS — Copernicus</a
-                  ><span
-                    >Prakiraan debit sungai 7 hari di cek risiko (via
-                    Open-Meteo) · CC BY 4.0</span
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://inarisk.bnpb.go.id/"
-                    target="_blank"
-                    rel="noopener"
-                    >PuSGeN 2024</a
-                  ><span>Segmen sesar aktif (via InaRISK)</span>
-                </li>
-                <li>
-                  <a
-                    href="https://open-meteo.com/"
-                    target="_blank"
-                    rel="noopener"
-                    >Open-Meteo</a
-                  ><span
-                    >Prakiraan hujan (juga untuk indikasi 3 hari per kab/kota),
-                    ensemble ECMWF, dan elevasi · CC BY 4.0</span
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.openstreetmap.org/copyright"
-                    target="_blank"
-                    rel="noopener"
-                    >OpenStreetMap / Nominatim</a
-                  ><span>Pencarian tempat · ODbL</span>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/fraxen/tectonicplates"
-                    target="_blank"
-                    rel="noopener"
-                    >Bird (2003) PB2002</a
-                  ><span>Batas lempeng tektonik · ODC-By</span>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/cahyadsn/wilayah_boundaries"
-                    target="_blank"
-                    rel="noopener"
-                    >Kepmendagri 2025</a
-                  ><span>Batas provinsi dan kabupaten/kota · MIT</span>
-                </li>
-              </ul>
+              <p class="section-note source-intro">
+                Dikelompokkan per fitur. Utama: lembaga Indonesia. Pembanding:
+                data luar negeri.
+              </p>
+              <!-- Satu lipatan per fitur SIGAP, urutannya sama dengan tab Lapisan. -->
+              <div class="source-groups">
+                <details class="source-group">
+                  <summary>
+                    <span class="source-group__title">Gempa bumi</span>
+                    <span class="source-group__meta">BMKG · USGS · EMSC</span>
+                  </summary>
+                  <p class="source-role">Utama</p>
+                  <ul class="source-list">
+                    <li>
+                      <a href="https://data.bmkg.go.id/" target="_blank" rel="noopener">BMKG</a>
+                      <span>Gempa M ≥ 5 dan gempa dirasakan (feed publik BMKG), potensi tsunami, ShakeMap · tiap menit</span>
+                    </li>
+                  </ul>
+                  <p class="source-role">Pembanding</p>
+                  <ul class="source-list">
+                    <li>
+                      <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php" target="_blank" rel="noopener">USGS (Amerika Serikat)</a>
+                      <span>Katalog gempa mulai ±M4 dan perkiraan dampak (PAGER) · tiap menit · public domain</span>
+                    </li>
+                    <li>
+                      <a href="https://www.emsc-csem.org/" target="_blank" rel="noopener">EMSC (Eropa)</a>
+                      <span>Sebagian besar dari katalog lengkap BMKG, termasuk gempa kecil mulai ±M1 · tiap 2 menit</span>
+                    </li>
+                  </ul>
+                </details>
+
+                <details class="source-group">
+                  <summary>
+                    <span class="source-group__title">Gunung api</span>
+                    <span class="source-group__meta">PVMBG · GDACS</span>
+                  </summary>
+                  <p class="source-role">Utama</p>
+                  <ul class="source-list">
+                    <li>
+                      <a href="https://magma.esdm.go.id/" target="_blank" rel="noopener">PVMBG — MAGMA Indonesia</a>
+                      <span>Tingkat aktivitas 69 gunung api, erupsi, VONA · tiap 30 menit</span>
+                    </li>
+                  </ul>
+                  <p class="source-role">Pembanding</p>
+                  <ul class="source-list">
+                    <li>
+                      <a href="https://www.gdacs.org/" target="_blank" rel="noopener">GDACS (Uni Eropa–PBB)</a>
+                      <span>Peringatan erupsi untuk Indonesia · tiap 15 menit</span>
+                    </li>
+                  </ul>
+                </details>
+
+                <details class="source-group">
+                  <summary>
+                    <span class="source-group__title">Hujan dan cuaca</span>
+                    <span class="source-group__meta">BMKG · NASA · JMA</span>
+                  </summary>
+                  <p class="source-role">Utama</p>
+                  <ul class="source-list">
+                    <li>
+                      <a href="https://cews.bmkg.go.id/" target="_blank" rel="noopener">BMKG — CEWS</a>
+                      <span>Peringatan dini curah hujan tinggi per kab/kota · per dasarian (10 hari)</span>
+                    </li>
+                    <li>
+                      <a href="https://www.bmkg.go.id/" target="_blank" rel="noopener">BMKG — Peringatan dini cuaca</a>
+                      <span>Peringatan cuaca beberapa jam ke depan per kecamatan (format CAP) · tiap 5 menit</span>
+                    </li>
+                  </ul>
+                  <p class="source-role">Pembanding</p>
+                  <ul class="source-list">
+                    <li>
+                      <a href="https://gpm.nasa.gov/data/imerg" target="_blank" rel="noopener">NASA GPM IMERG</a>
+                      <span>Hujan dari satelit, rata-rata 30 menit (via NASA GIBS)</span>
+                    </li>
+                    <li>
+                      <a href="https://www.jma.go.jp/" target="_blank" rel="noopener">JMA — Himawari-9 (Jepang)</a>
+                      <span>Citra awan inframerah, tiap 10 menit (via NASA GIBS)</span>
+                    </li>
+                  </ul>
+                </details>
+
+                <details class="source-group">
+                  <summary>
+                    <span class="source-group__title">Indikasi SIGAP 3 hari</span>
+                    <span class="source-group__meta">Olahan sendiri</span>
+                  </summary>
+                  <p class="source-role">Olahan sendiri</p>
+                  <ul class="source-list">
+                    <li>
+                      <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo (ECMWF) × InaRISK</a>
+                      <span>Prakiraan hujan 3 hari dikalikan zona bahaya InaRISK untuk hujan lebat, banjir, dan longsor, lalu dibandingkan dengan peringatan BMKG CEWS · tiap 12 jam · CC BY 4.0</span>
+                    </li>
+                  </ul>
+                </details>
+
+                <details class="source-group">
+                  <summary>
+                    <span class="source-group__title">Banjir</span>
+                    <span class="source-group__meta">InaRISK · GloFAS · GDACS</span>
+                  </summary>
+                  <p class="source-role">Utama</p>
+                  <ul class="source-list">
+                    <li>
+                      <a href="https://inarisk.bnpb.go.id/" target="_blank" rel="noopener">InaRISK BNPB</a>
+                      <span>Zona rawan banjir (indeks bahaya, resolusi 100 m)</span>
+                    </li>
+                  </ul>
+                  <p class="source-role">Pembanding</p>
+                  <ul class="source-list">
+                    <li>
+                      <a href="https://global-flood.emergency.copernicus.eu/" target="_blank" rel="noopener">GloFAS — Copernicus (Eropa)</a>
+                      <span>Prakiraan debit sungai 7 hari di cek risiko (via Open-Meteo) · CC BY 4.0</span>
+                    </li>
+                    <li>
+                      <a href="https://www.gdacs.org/" target="_blank" rel="noopener">GDACS (Uni Eropa–PBB)</a>
+                      <span>Peringatan banjir untuk Indonesia · tiap 15 menit</span>
+                    </li>
+                  </ul>
+                </details>
+
+                <details class="source-group">
+                  <summary>
+                    <span class="source-group__title">Tanah longsor</span>
+                    <span class="source-group__meta">PVMBG · InaRISK · USGS</span>
+                  </summary>
+                  <p class="source-role">Utama</p>
+                  <ul class="source-list">
+                    <li>
+                      <a href="https://vsi.esdm.go.id/portalmbg/" target="_blank" rel="noopener">PVMBG — Portal MBG</a>
+                      <span>Prakiraan gerakan tanah bulanan, zona kerentanan (ZKGT), riwayat 1.884 longsor</span>
+                    </li>
+                    <li>
+                      <a href="https://inarisk.bnpb.go.id/" target="_blank" rel="noopener">InaRISK BNPB</a>
+                      <span>Zona rawan tanah longsor (indeks bahaya, resolusi 100 m)</span>
+                    </li>
+                  </ul>
+                  <p class="source-role">Pembanding</p>
+                  <ul class="source-list">
+                    <li>
+                      <a href="https://earthquake.usgs.gov/data/ground-failure/" target="_blank" rel="noopener">USGS Ground Failure (Amerika Serikat)</a>
+                      <span>Perkiraan longsor dan likuefaksi akibat gempa, di popup gempa USGS · public domain</span>
+                    </li>
+                  </ul>
+                </details>
+
+                <details class="source-group">
+                  <summary>
+                    <span class="source-group__title">Cek risiko lokasi</span>
+                    <span class="source-group__meta">Gabungan</span>
+                  </summary>
+                  <p class="source-group__note">
+                    Menggabungkan data fitur di atas untuk satu titik: InaRISK,
+                    prakiraan hujan ECMWF, PVMBG, BMKG CEWS, GloFAS, plus jarak ke
+                    sesar, gunung api, dan gempa terdekat. Elevasi dari Open-Meteo.
+                  </p>
+                </details>
+
+                <details class="source-group">
+                  <summary>
+                    <span class="source-group__title">Evakuasi dan rute</span>
+                    <span class="source-group__meta">OpenStreetMap</span>
+                  </summary>
+                  <ul class="source-list">
+                    <li>
+                      <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap — Overpass</a>
+                      <span>Tempat evakuasi dan fasilitas penting · tiap minggu · ODbL</span>
+                    </li>
+                    <li>
+                      <a href="https://routing.openstreetmap.de/" target="_blank" rel="noopener">Valhalla / OSRM (FOSSGIS)</a>
+                      <span>Rute aman ke tempat evakuasi, menghindari zona bahaya</span>
+                    </li>
+                  </ul>
+                </details>
+
+                <details class="source-group">
+                  <summary>
+                    <span class="source-group__title">Peta dasar dan referensi</span>
+                    <span class="source-group__meta">Kemendagri · PuSGeN · OSM</span>
+                  </summary>
+                  <ul class="source-list">
+                    <li>
+                      <a href="https://github.com/cahyadsn/wilayah_boundaries" target="_blank" rel="noopener">Kepmendagri 2025</a>
+                      <span>Batas provinsi dan kabupaten/kota · MIT</span>
+                    </li>
+                    <li>
+                      <a href="https://inarisk.bnpb.go.id/" target="_blank" rel="noopener">PuSGeN 2024</a>
+                      <span>Segmen sesar aktif (via InaRISK)</span>
+                    </li>
+                    <li>
+                      <a href="https://github.com/fraxen/tectonicplates" target="_blank" rel="noopener">Bird (2003) PB2002</a>
+                      <span>Batas lempeng tektonik · ODC-By</span>
+                    </li>
+                    <li>
+                      <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap / Nominatim</a>
+                      <span>Pencarian tempat · ODbL</span>
+                    </li>
+                    <li>
+                      <a href="https://www.esri.com/" target="_blank" rel="noopener">Esri, OpenStreetMap, OpenTopoMap</a>
+                      <span>Peta dasar: kanvas, jalan, relief, citra satelit</span>
+                    </li>
+                  </ul>
+                </details>
+              </div>
             </div>
           </section>
         </div>

@@ -567,6 +567,110 @@
   border-top-width: 1px;
 }
 
+/* ---------- Tombol fitur di tab Lapisan ---------- */
+.feature-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+  padding-top: 4px;
+}
+
+.feature-tab {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-height: 62px;
+  padding: 8px 4px 6px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  color: var(--ink-2);
+  font: inherit;
+  font-size: 11.5px;
+  font-weight: 650;
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.feature-tab .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.feature-tab:hover {
+  border-color: var(--line-strong);
+  color: var(--ink);
+}
+
+.feature-tab[aria-selected="true"] {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+.feature-tab:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Jumlah lapisan yang sedang menyala di fitur itu. */
+.feature-count {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: var(--primary-fill);
+  color: var(--primary-ink);
+  font-size: 10.5px;
+  font-weight: 750;
+  line-height: 17px;
+  font-variant-numeric: tabular-nums;
+}
+
+.feature-count[hidden] {
+  display: none;
+}
+
+.feature-panel {
+  padding: 16px 0;
+  animation: rise-in 0.3s var(--ease-out) both;
+}
+
+.feature-panel[hidden] {
+  display: none;
+}
+
+.feature-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.feature-title {
+  font-size: 15px;
+  font-weight: 750;
+}
+
+.feature-desc {
+  margin-top: 6px;
+}
+
+.feature-panel > .section:first-of-type {
+  padding-top: 12px;
+}
+
+.feature-panel > .section + .range-row {
+  margin-top: 0;
+}
+
 /* ---------- Pilihan tunggal berbentuk chip ---------- */
 .choice-chips {
   display: flex;
@@ -923,6 +1027,94 @@
 }
 
 .source-list span {
+  font-size: 12px;
+  color: var(--ink-3);
+}
+
+/* Sumber data dikelompokkan per fitur, satu lipatan per fitur. */
+.source-intro {
+  margin: -4px 0 8px;
+}
+
+.source-group {
+  border-bottom: 1px solid var(--line);
+}
+
+.source-group:last-child {
+  border-bottom: 0;
+}
+
+.source-group summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto 14px;
+  align-items: center;
+  gap: 10px;
+  margin: 0 -8px;
+  padding: 10px 8px;
+  border-radius: var(--radius-sm);
+  list-style: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.source-group summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Panah lipatan: menunjuk ke kanan saat tertutup, ke bawah saat terbuka. */
+.source-group summary::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid var(--ink-3);
+  border-bottom: 2px solid var(--ink-3);
+  rotate: -45deg;
+  transition: rotate 0.2s ease;
+}
+
+.source-group[open] summary::after {
+  rotate: 45deg;
+}
+
+.source-group summary:hover {
+  background: var(--surface-2);
+}
+
+.source-group summary:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 0;
+}
+
+.source-group__title {
+  font-size: 13.5px;
+  font-weight: 650;
+}
+
+.source-group__meta {
+  font-size: 11.5px;
+  color: var(--ink-3);
+  text-align: right;
+}
+
+.source-group[open] {
+  padding-bottom: 8px;
+}
+
+.source-role {
+  margin-top: 4px;
+  font-size: 10.5px;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.source-group .source-list {
+  margin-bottom: 4px;
+}
+
+.source-group__note {
+  padding-bottom: 4px;
   font-size: 12px;
   color: var(--ink-3);
 }

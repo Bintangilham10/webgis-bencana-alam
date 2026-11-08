@@ -47,12 +47,16 @@ test.describe('P8 ketahanan sumber (browser)', () => {
     });
     await openMap(page);
     await openTab(page, 'Lapisan');
-    const hazards = page.locator('#panel-lapisan .choice-chips[aria-label="Peta rawan bencana"] .choice');
-    await hazards.filter({ hasText: 'Banjir' }).click();
+    // Peta rawan ada di fitur masing-masing; menyalakan satu memadamkan yang lain.
+    const feature = (name) => page.locator('#panel-lapisan .feature-tab', { hasText: name }).click();
+    const hazard = (name) => page.locator('#panel-lapisan .feature-panel:visible .switch-row', { hasText: name });
+    await feature('Banjir');
+    await hazard('Zona rawan banjir').click();
     await page.waitForTimeout(400);
-    await hazards.filter({ hasText: 'Tanah longsor' }).click();
+    await feature('Longsor');
+    await hazard('Zona rawan tanah longsor').click();
     await page.waitForTimeout(400);
-    await hazards.filter({ hasText: 'Tidak ada' }).click();
+    await hazard('Zona rawan tanah longsor').click();
     await page.waitForTimeout(3_500);
     const leftovers = await page.locator('.leaflet-hazard-pane img').count();
     saveResult('p8-browser-peta-rawan', { gambar_tersisa: leftovers, galat_halaman: pageErrors });

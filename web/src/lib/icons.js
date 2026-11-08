@@ -40,6 +40,10 @@ export const icons = {
   phone: icon('<path d="M5 3.5h3.5l2 5-2.5 1.6a11 11 0 0 0 5.9 5.9l1.6-2.5 5 2V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5.5a2 2 0 0 1 2-2z"/>'),
   pin: icon('<path d="M12 21.5s-7-6.3-7-12a7 7 0 0 1 14 0c0 5.7-7 12-7 12z"/><circle cx="12" cy="9.5" r="2.5"/>'),
   plus: icon('<path d="M12 5v14M5 12h14"/>'),
+  // Awan dengan tetes hujan.
+  rain: icon('<path d="M7 15.5a4.5 4.5 0 1 1 1.2-8.8A5.5 5.5 0 0 1 18.5 9a3.3 3.3 0 0 1-.5 6.5z"/><path d="M8 19l-1 2M12 19l-1 2M16 19l-1 2"/>'),
+  // Gelombang air bertumpuk (banjir).
+  flood: icon('<path d="M3 9c1.5 0 1.5-1 3-1s1.5 1 3 1 1.5-1 3-1 1.5 1 3 1 1.5-1 3-1 1.5 1 3 1"/><path d="M3 14c1.5 0 1.5-1 3-1s1.5 1 3 1 1.5-1 3-1 1.5 1 3 1 1.5-1 3-1 1.5 1 3 1"/><path d="M3 19c1.5 0 1.5-1 3-1s1.5 1 3 1 1.5-1 3-1 1.5 1 3 1 1.5-1 3-1 1.5 1 3 1"/>'),
   quake: icon('<path d="M2 12h3.5l2-4.5 3 10 3-13 3 12 2-4.5H22"/>'),
   refresh: icon('<path d="M20 12a8 8 0 1 1-2.4-5.7"/><path d="M20 4v5h-5"/>'),
   search: icon('<circle cx="11" cy="11" r="7"/><path d="m20.5 20.5-4.3-4.3"/>'),
