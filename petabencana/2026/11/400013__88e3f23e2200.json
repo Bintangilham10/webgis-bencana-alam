@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-08T11:00:42.994Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        107.6014568747,
+        -6.9077343
+      ]
+    },
+    "properties": {
+      "pkey": "400013",
+      "created_at": "2026-11-08T10:54:01.403Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "76264ef0-0e42-4195-a2c1-1e60745b5c83",
+      "image_url": "https://images.petabencana.id/76264ef0-0e42-4195-a2c1-1e60745b5c83.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 96.58858740743818,
+        "fireLocation": {
+          "lat": "-6.9077343",
+          "lng": 107.601456874671
+        },
+        "personLocation": {
+          "lng": 107.6023907825604,
+          "lat": -6.907888182653508
+        },
+        "fireRadius": {
+          "lng": 107.60058247452719,
+          "lat": -6.90776625286928
+        }
+      },
+      "tags": {
+        "city": "KOTA BANDUNG",
+        "district_id": null,
+        "region_code": "3273",
+        "local_area_id": null,
+        "instance_region_code": "ID-JB"
+      },
+      "title": null,
+      "text": "Kebakaran melanda kawasan Pool Damri di Jalan Kebon Kawung, Kelurahan Pasir Kaliki, Kecamatan Cicendo, Kota Bandung, Jawa Barat",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
