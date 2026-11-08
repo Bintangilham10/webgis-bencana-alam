@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.08.08.51.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-08T14:47:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-08T14:59:00+08:00</effective>
+    <expires>2026-11-08T17:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bali</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 08 November 2026, 14:59 WITA di sebagian wilayah Bali, khususnya di BANJAR, RENDANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 08 November 2026, 17:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBL/2026/11/08/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bali</areaDesc>
+      <polygon>-8.342,115.494 -8.389,115.467 -8.418,115.440 -8.430,115.442 -8.445,115.437 -8.474,115.414 -8.483,115.391 -8.465,115.401 -8.456,115.402 -8.439,115.412 -8.408,115.416 -8.357,115.396 -8.344,115.400 -8.336,115.410 -8.323,115.410 -8.319,115.418 -8.280,115.430 -8.289,115.440 -8.302,115.446 -8.312,115.462 -8.311,115.466 -8.332,115.480 -8.342,115.494</polygon>
+      <polygon>-8.170,115.029 -8.200,115.039 -8.215,115.060 -8.230,115.069 -8.232,115.074 -8.221,115.085 -8.225,115.098 -8.284,115.111 -8.299,115.109 -8.298,115.103 -8.308,115.101 -8.312,115.073 -8.305,115.073 -8.294,115.063 -8.275,115.041 -8.265,115.005 -8.261,115.012 -8.256,115.011 -8.236,114.982 -8.240,114.977 -8.239,114.972 -8.220,114.955 -8.195,114.965 -8.183,114.961 -8.176,115.001 -8.162,115.024 -8.170,115.029</polygon>
+    </area>
+  </info>
+</alert>
