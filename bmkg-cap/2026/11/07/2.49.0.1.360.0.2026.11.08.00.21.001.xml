@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.08.00.21.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-08T06:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-08T07:00:00+07:00</effective>
+    <expires>2026-11-08T08:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Riau</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 08 November 2026, 07:00 WIB di sebagian wilayah Kep. Riau, khususnya di BATAM KOTA, BENGKONG, SEI BEDUK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 08 November 2026, 08:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKR/2026/11/08/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Riau</areaDesc>
+      <polygon>1.101,104.095 1.095,104.100 1.059,104.105 1.054,104.108 1.041,104.100 1.030,104.101 1.028,104.084 1.022,104.080 1.007,104.084 0.982,104.101 0.985,104.086 0.999,104.072 0.992,104.072 0.983,104.067 0.998,104.047 1.006,104.031 1.027,104.024 1.034,104.028 1.047,104.027 1.051,104.014 1.055,104.010 1.071,103.999 1.103,104.021 1.093,104.026 1.088,104.034 1.097,104.037 1.100,104.044 1.101,104.095</polygon>
+      <polygon>0.998,104.075 0.995,104.074 0.998,104.071 0.998,104.075</polygon>
+      <polygon>1.017,104.115 1.004,104.107 1.005,104.100 1.016,104.103 1.019,104.110 1.017,104.115</polygon>
+      <polygon>1.024,104.102 1.022,104.105 1.006,104.096 1.017,104.093 1.024,104.102</polygon>
+      <polygon>1.026,104.085 1.019,104.089 1.021,104.081 1.026,104.085</polygon>
+      <polygon>1.140,104.050 1.135,104.044 1.138,104.032 1.145,104.030 1.143,104.023 1.153,104.020 1.162,104.016 1.176,104.025 1.178,104.032 1.174,104.045 1.160,104.051 1.159,104.057 1.152,104.057 1.140,104.050</polygon>
+      <polygon>1.142,104.089 1.139,104.099 1.128,104.107 1.121,104.101 1.101,104.095 1.100,104.044 1.097,104.037 1.088,104.034 1.093,104.026 1.103,104.021 1.115,104.016 1.121,104.015 1.134,104.023 1.143,104.023 1.145,104.030 1.138,104.032 1.135,104.044 1.140,104.050 1.133,104.054 1.137,104.061 1.131,104.072 1.120,104.073 1.130,104.082 1.137,104.078 1.145,104.080 1.147,104.084 1.142,104.089</polygon>
+      <polygon>1.138,104.074 1.133,104.073 1.135,104.068 1.138,104.074</polygon>
+    </area>
+  </info>
+</alert>
