@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-08T09:30:32.467Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        97.5887587213,
+        4.1057184409
+      ]
+    },
+    "properties": {
+      "pkey": "400011",
+      "created_at": "2026-11-08T09:17:57.060Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "1f3a704a-4a35-44ad-af83-cd34cb4932d0",
+      "image_url": "https://images.petabencana.id/1f3a704a-4a35-44ad-af83-cd34cb4932d0.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 59
+      },
+      "tags": {
+        "city": "GAYO LUES",
+        "district_id": null,
+        "region_code": "1113",
+        "local_area_id": null,
+        "instance_region_code": "ID-AC"
+      },
+      "title": null,
+      "text": "Banjir bandang melanda wilayah Kecamatan Pining, Kabupaten Gayo Lues, Aceh, Sabtu malam (07/11/2026). Luapan air bah menerjang kawasan",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
