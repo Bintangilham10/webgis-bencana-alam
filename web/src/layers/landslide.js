@@ -1,9 +1,10 @@
 import L from 'leaflet';
 import { getJson } from '../lib/api.js';
-import { cloudsOnly } from '../lib/clouds.js';
+import { cloudCss, cloudsOnly } from '../lib/clouds.js';
 import { escapeHtml, formatDasarian, formatNumber } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
-import { CEWS_LEVELS, CLOUD_RAMP, IMERG_RAMP, LANDSLIDE_AGES, landslideAgeColor, pillStyle } from '../lib/symbology.js';
+import { decodeRain, paintRain, RAIN_CLASSES, rainCss } from '../lib/rain.js';
+import { CEWS_LEVELS, LANDSLIDE_AGES, landslideAgeColor, pillStyle } from '../lib/symbology.js';
 import { cssVar } from '../lib/theme.js';
 
 // Lapisan grup "Hujan dan longsor": peringatan dini curah hujan tinggi BMKG
@@ -88,9 +89,157 @@ export const rainWarningLegend = () => `
 
 // ---------- Hujan satelit NASA IMERG ----------
 
-export function createImergLayer({ onError } = {}) {
+const TILE = 256;
+// Petak IMERG di GIBS paling detail di zoom 6; sel datanya 0,1° (±11 km).
+const SOURCE_Z = 6;
+const CELL_DEG = 0.1;
+const MAX_SOURCES = 200;
+
+// Kanvas bantu untuk membaca piksel petak GIBS (GIBS mengizinkan CORS).
+let scratch = null;
+function readRain(image) {
+  scratch ??= Object.assign(document.createElement('canvas'), { width: TILE, height: TILE });
+  const context = scratch.getContext('2d', { willReadFrequently: true });
+  context.imageSmoothingEnabled = false;
+  context.clearRect(0, 0, TILE, TILE);
+  context.drawImage(image, 0, 0, TILE, TILE);
+  return decodeRain(context.getImageData(0, 0, TILE, TILE).data);
+}
+
+function loadImage(url) {
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+    image.crossOrigin = 'anonymous';
+    image.onload = () => resolve(image);
+    image.onerror = () => reject(new Error('Petak IMERG gagal dimuat'));
+    image.src = url;
+  });
+}
+
+// Warna NASA dibaca balik menjadi mm/jam (lib/rain.js) lalu digambar ulang
+// dengan skala BMKG. Sampai zoom 4 satu sel data ±1 piksel, jadi petak GIBS
+// di zoom itu langsung dipakai. Mulai zoom 5 nilai tiap sel diambil dari petak
+// zoom 6 dan, bila `smooth`, diinterpolasi bilinear antar-titik tengah sel
+// supaya tidak tampak kotak-kotak 11 km.
+const RainTiles = L.GridLayer.extend({
+  options: { smooth: true },
+
+  initialize(options) {
+    L.GridLayer.prototype.initialize.call(this, options);
+    this._sources = new Map();
+  },
+
+  setUrl(url) {
+    this.options.url = url;
+    this._sources.clear();
+    return this.redraw();
+  },
+
+  createTile(coords, done) {
+    const tile = L.DomUtil.create('canvas', 'leaflet-tile');
+    tile.width = TILE;
+    tile.height = TILE;
+    const values = coords.z < SOURCE_Z - 1 ? this._native(coords) : this._resample(coords);
+    values
+      .then((mm) => {
+        const context = tile.getContext('2d');
+        const image = context.createImageData(TILE, TILE);
+        paintRain(mm, image.data);
+        context.putImageData(image, 0, 0);
+        done(null, tile);
+      })
+      .catch((err) => done(err, tile));
+    return tile;
+  },
+
+  _native(coords) {
+    return loadImage(L.Util.template(this.options.url, coords)).then(readRain);
+  },
+
+  // Petak sumber zoom 6 sebagai mm/jam per piksel, disimpan supaya petak
+  // tetangga dan zoom berikutnya tidak memuat ulang.
+  _source(x, y) {
+    const n = 2 ** SOURCE_Z;
+    if (y < 0 || y >= n) return Promise.resolve(null);
+    const wrapped = ((x % n) + n) % n;
+    const key = `${wrapped}/${y}`;
+    let source = this._sources.get(key);
+    if (!source) {
+      source = loadImage(L.Util.template(this.options.url, { x: wrapped, y, z: SOURCE_Z }))
+        .then(readRain)
+        .catch(() => null);
+      this._sources.set(key, source);
+      if (this._sources.size > MAX_SOURCES) this._sources.delete(this._sources.keys().next().value);
+    }
+    return source;
+  },
+
+  async _resample({ x, y, z }) {
+    const worldZ = TILE * 2 ** z;
+    const world6 = TILE * 2 ** SOURCE_Z;
+    const lonOf = (px) => ((x * TILE + px + 0.5) / worldZ) * 360 - 180;
+    const latOf = (py) => (Math.atan(Math.sinh(Math.PI * (1 - (2 * (y * TILE + py + 0.5)) / worldZ))) * 180) / Math.PI;
+    // Indeks sel: kolom dari 180° B, baris dari 90° U; titik tengah sel di +0,5.
+    const colOf = (lon) => (lon + 180) / CELL_DEG - 0.5;
+    const rowOf = (lat) => (90 - lat) / CELL_DEG - 0.5;
+    const i0 = Math.floor(colOf(lonOf(0)));
+    const i1 = Math.floor(colOf(lonOf(TILE - 1))) + 1;
+    const j0 = Math.floor(rowOf(latOf(0)));
+    const j1 = Math.floor(rowOf(latOf(TILE - 1))) + 1;
+    const width = i1 - i0 + 1;
+    const height = j1 - j0 + 1;
+
+    // Posisi titik tengah tiap sel di petak zoom 6.
+    const gx = Array.from({ length: width }, (_, k) => ((CELL_DEG * (i0 + k + 0.5)) / 360) * world6);
+    const gy = Array.from({ length: height }, (_, k) => {
+      const sin = Math.sin(((90 - CELL_DEG * (j0 + k + 0.5)) * Math.PI) / 180);
+      return (0.5 - Math.log((1 + sin) / (1 - sin)) / (4 * Math.PI)) * world6;
+    });
+    const tileX = [...new Set(gx.map((v) => Math.floor(v / TILE)))];
+    const tileY = [...new Set(gy.map((v) => Math.floor(v / TILE)))];
+    const sources = new Map();
+    await Promise.all(
+      tileX.flatMap((tx) => tileY.map(async (ty) => sources.set(`${tx}/${ty}`, await this._source(tx, ty)))),
+    );
+    const cells = new Float32Array(width * height);
+    for (let j = 0; j < height; j++) {
+      const ty = Math.floor(gy[j] / TILE);
+      const py = Math.min(TILE - 1, Math.floor(gy[j] - ty * TILE));
+      for (let i = 0; i < width; i++) {
+        const tx = Math.floor(gx[i] / TILE);
+        const source = sources.get(`${tx}/${ty}`);
+        if (source) cells[j * width + i] = source[py * TILE + Math.min(TILE - 1, Math.floor(gx[i] - tx * TILE))];
+      }
+    }
+
+    const out = new Float32Array(TILE * TILE);
+    const cols = Array.from({ length: TILE }, (_, px) => colOf(lonOf(px)) - i0);
+    for (let py = 0; py < TILE; py++) {
+      const fy = rowOf(latOf(py)) - j0;
+      for (let px = 0; px < TILE; px++) {
+        const fx = cols[px];
+        if (!this.options.smooth) {
+          out[py * TILE + px] = cells[Math.round(fy) * width + Math.round(fx)];
+          continue;
+        }
+        const ix = Math.floor(fx);
+        const iy = Math.floor(fy);
+        const tx = fx - ix;
+        const ty = fy - iy;
+        const at = (i, j) => cells[Math.min(height - 1, Math.max(0, j)) * width + Math.min(width - 1, Math.max(0, i))];
+        const top = at(ix, iy) * (1 - tx) + at(ix + 1, iy) * tx;
+        const bottom = at(ix, iy + 1) * (1 - tx) + at(ix + 1, iy + 1) * tx;
+        out[py * TILE + px] = top * (1 - ty) + bottom * ty;
+      }
+    }
+    return out;
+  },
+});
+
+export function createImergLayer({ onError, smooth = true } = {}) {
   const group = L.layerGroup();
-  const options = { pane: 'warnings', opacity: 0.75, maxNativeZoom: 6, maxZoom: 19, attribution: 'Hujan satelit: NASA GPM IMERG via GIBS' };
+  // Batas atas detail yang digambar sendiri; lebih dekat dari ini diperbesar Leaflet.
+  const options = { pane: 'warnings', maxNativeZoom: 12, maxZoom: 19, smooth, attribution: 'Hujan satelit: NASA GPM IMERG via GIBS' };
   let tiles = null;
   let loadedAt = 0;
   group.on('add', async () => {
@@ -111,16 +260,17 @@ export function createImergLayer({ onError } = {}) {
     }
     fillLegend('imerg', legendText.imerg);
     if (tiles) tiles.setUrl(url);
-    else group.addLayer((tiles = L.tileLayer(url, options)));
+    else group.addLayer((tiles = new RainTiles({ ...options, url })));
   });
   return group;
 }
 
 export const imergLegend = () => `
   <p class="legend-note" data-legend-live="imerg">${escapeHtml(legendText.imerg)}</p>
-  <div class="legend-ramp" aria-hidden="true">${IMERG_RAMP.map((c) => `<span style="background:${c.color}"></span>`).join('')}</div>
-  <div class="legend-ramp-labels"><span>${IMERG_RAMP[0].mm}</span><span>${IMERG_RAMP[3].mm}</span><span>${IMERG_RAMP.at(-1).mm}+ mm/jam</span></div>
-  <p class="legend-note">Rata-rata 30 menit dari satelit, terlambat ±4–6 jam (waktu data tertulis di atas). Hujan lokal yang singkat bisa terlewat.</p>`;
+  ${RAIN_CLASSES.map(
+    (c) => `<div class="legend-row"><span class="swatch" style="background:${rainCss(c.mm)}"></span>${c.label} <span class="legend-dim">${c.range} mm/jam</span></div>`,
+  ).join('')}
+  <p class="legend-note">Rata-rata 30 menit dari satelit, terlambat ±4–6 jam (waktu data tertulis di atas). Kategori intensitas per jam mengikuti BMKG. Di zoom dekat warnanya dihaluskan antar-sel; resolusi asli data ±11 km. Hujan lokal yang singkat bisa terlewat.</p>`;
 
 // ---------- Citra awan Himawari-9 (JMA) ----------
 
@@ -133,7 +283,31 @@ const CLOUDS_FALLBACK_URL =
 // mengizinkan CORS, jadi piksel petak boleh dibaca kanvas. Petak yang belum
 // terbit (404) diambil dari waktu sebelumnya (fallbackUrls dari server), supaya
 // tidak bolong dan tampak seperti langit cerah.
+// Awan digambar abu-abu kebiruan di peta dasar terang dan putih di peta dasar
+// gelap, jadi petak digambar ulang saat nada peta dasar berganti.
 const CloudTiles = L.GridLayer.extend({
+  onAdd(map) {
+    L.GridLayer.prototype.onAdd.call(this, map);
+    this._light = this._isLight();
+    map.on('basemapchange', this._onBasemap, this);
+  },
+
+  onRemove(map) {
+    map.off('basemapchange', this._onBasemap, this);
+    L.GridLayer.prototype.onRemove.call(this, map);
+  },
+
+  _isLight() {
+    return this._map?.getContainer().dataset.tone === 'light';
+  },
+
+  _onBasemap() {
+    const light = this._isLight();
+    if (light === this._light) return;
+    this._light = light;
+    this.redraw();
+  },
+
   createTile(coords, done) {
     const tile = L.DomUtil.create('canvas', 'leaflet-tile');
     const size = this.getTileSize();
@@ -148,7 +322,7 @@ const CloudTiles = L.GridLayer.extend({
           const context = tile.getContext('2d', { willReadFrequently: true });
           context.drawImage(image, 0, 0, size.x, size.y);
           const pixels = context.getImageData(0, 0, size.x, size.y);
-          cloudsOnly(pixels.data, size.x);
+          cloudsOnly(pixels.data, size.x, { light: this._isLight() });
           context.putImageData(pixels, 0, 0);
           done(null, tile);
         } catch (err) {
@@ -216,13 +390,20 @@ export function createCloudLayer({ onError } = {}) {
   return group;
 }
 
-const celsius = (value) => String(value).replace('-', '−');
+// Kelas legenda: suhu wakil (°C) untuk contoh warna dan rentangnya.
+const CLOUD_CLASSES = [
+  { c: -20, label: 'Awan rendah–menengah', range: '0 s.d. −40 °C' },
+  { c: -50, label: 'Awan hujan', range: '−40 s.d. −60 °C' },
+  { c: -65, label: 'Awan hujan lebat', range: '−60 s.d. −70 °C' },
+  { c: -80, label: 'Inti badai', range: '< −70 °C' },
+];
 
 export const cloudLegend = () => `
   <p class="legend-note" data-legend-live="clouds">${escapeHtml(legendText.clouds)}</p>
-  <div class="legend-ramp" aria-hidden="true">${CLOUD_RAMP.map((c) => `<span style="background:${c.color}"></span>`).join('')}</div>
-  <div class="legend-ramp-labels"><span>${celsius(CLOUD_RAMP[0].c)}</span><span>${celsius(CLOUD_RAMP[4].c)}</span><span>${celsius(CLOUD_RAMP.at(-1).c)} °C</span></div>
-  <p class="legend-note">Suhu puncak awan dari kanal inframerah, tiap 10 menit, terlambat ±1 jam. Makin dingin makin tinggi awannya; puncak di bawah ±−40 °C (hijau sampai merah) umumnya awan hujan konvektif. Abu-abu di tengah merah: inti badai di bawah −70 °C. Permukaan tanpa awan transparan. Petak yang belum terbit memakai citra 10–30 menit sebelumnya.</p>`;
+  ${CLOUD_CLASSES.map(
+    (c) => `<div class="legend-row"><span class="swatch" style="background:${cloudCss(c.c, { light: true })}"></span>${c.label} <span class="legend-dim">${c.range}</span></div>`,
+  ).join('')}
+  <p class="legend-note">Suhu puncak awan dari kanal inframerah, tiap 10 menit, terlambat ±1 jam. Makin dingin makin tinggi awannya: awan tampil putih yang makin pekat, dan hanya puncak di bawah ±−40 °C (umumnya awan hujan konvektif) yang berwarna. Permukaan tanpa awan transparan. Petak yang belum terbit memakai citra 10–30 menit sebelumnya.</p>`;
 
 // ---------- Riwayat longsor ----------
 

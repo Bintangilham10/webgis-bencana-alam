@@ -72,11 +72,11 @@ import { icons } from "./lib/icons.js";
 import { flyToBounds } from "./lib/motion.js";
 import {
   CEWS_LEVELS,
-  CLOUD_RAMP,
   DEPTH_CLASSES,
   HAZARD_CLASSES,
-  IMERG_RAMP,
 } from "./lib/symbology.js";
+import { RAIN_CLASSES, rainCss } from "./lib/rain.js";
+import { cloudCss } from "./lib/clouds.js";
 import { cssVar, currentTheme, onThemeChange, setTheme } from "./lib/theme.js";
 import { createMap, INDONESIA_BOUNDS } from "./map/create-map.js";
 import { LegendControl } from "./map/legend-control.js";
@@ -489,8 +489,8 @@ const symbol = {
   boundary:
     '<span class="sym sym-line sym-line--thin" style="--sym:var(--boundary-color)"></span>',
   rain: `<span class="sym rain-swatch" style="--c:${CEWS_LEVELS[1].color}"></span>`,
-  imerg: `<span class="sym ramp-swatch">${[0, 3, 5].map((i) => `<span style="background:${IMERG_RAMP[i].color}"></span>`).join("")}</span>`,
-  clouds: `<span class="sym ramp-swatch">${[1, 2, 4, 6].map((i) => `<span style="background:${CLOUD_RAMP[i].color}"></span>`).join("")}</span>`,
+  imerg: `<span class="sym ramp-swatch">${[1, 2, 4].map((i) => `<span style="background:${rainCss(RAIN_CLASSES[i].mm)}"></span>`).join("")}</span>`,
+  clouds: `<span class="sym ramp-swatch">${[-30, -50, -65, -85].map((c) => `<span style="background:${cloudCss(c, { light: true })}"></span>`).join("")}</span>`,
   landslide: landslideSymbol(),
   rawan: `<span class="sym ramp-swatch">${HAZARD_CLASSES.map((c) => `<span style="background:${c.color}"></span>`).join("")}</span>`,
 };

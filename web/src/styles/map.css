@@ -1241,6 +1241,12 @@
   flex: 1;
 }
 
+.legend-dim {
+  margin-left: 4px;
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+
 .legend-ramp-labels {
   display: flex;
   justify-content: space-between;
