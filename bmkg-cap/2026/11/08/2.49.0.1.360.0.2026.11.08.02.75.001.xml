@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.08.02.75.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-08T09:35:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-08T10:00:00+08:00</effective>
+    <expires>2026-11-08T11:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 08 November 2026, 10:00 WITA di sebagian wilayah Gorontalo, khususnya di PAGUYAMAN PANTAI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 08 November 2026, 11:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/11/08/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.476,122.644 0.486,122.634 0.495,122.592 0.506,122.605 0.511,122.585 0.503,122.594 0.497,122.588 0.493,122.573 0.499,122.560 0.508,122.565 0.513,122.564 0.514,122.553 0.508,122.550 0.504,122.557 0.496,122.557 0.491,122.552 0.490,122.546 0.494,122.540 0.506,122.546 0.501,122.533 0.506,122.527 0.506,122.517 0.497,122.516 0.507,122.506 0.513,122.509 0.523,122.512 0.536,122.510 0.558,122.502 0.575,122.506 0.582,122.514 0.578,122.528 0.585,122.542 0.582,122.558 0.594,122.571 0.596,122.607 0.565,122.623 0.526,122.617 0.522,122.619 0.513,122.639 0.476,122.644</polygon>
+      <polygon>0.501,122.529 0.497,122.536 0.489,122.531 0.495,122.522 0.501,122.529</polygon>
+    </area>
+  </info>
+</alert>
