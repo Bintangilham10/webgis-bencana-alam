@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-08T09:45:29.293Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        116.8570859973,
+        -1.2611455761
+      ]
+    },
+    "properties": {
+      "pkey": "400012",
+      "created_at": "2026-11-08T09:34:48.220Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "16854852-4cfa-45e3-9f5f-665aa7787fc4",
+      "image_url": "https://images.petabencana.id/16854852-4cfa-45e3-9f5f-665aa7787fc4.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 80.00906854392242,
+        "fireLocation": {
+          "lng": 116.85708599729173,
+          "lat": -1.2611455761497012
+        },
+        "personLocation": {
+          "lat": "-1.2610084",
+          "lng": "116.8577098"
+        },
+        "fireRadius": {
+          "lng": 116.85637789411078,
+          "lat": -1.261274290994379
+        }
+      },
+      "tags": {
+        "city": null,
+        "district_id": null,
+        "region_code": null,
+        "local_area_id": null,
+        "instance_region_code": "ID-KI"
+      },
+      "title": null,
+      "text": "Kebakaran hutan dan lahan (karhutla) melanda kawasan dekat rumah warga di Kampung Nilik, Kecamatan Damai, Kabupaten Kutai Barat",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
