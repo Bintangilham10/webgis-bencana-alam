@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.08.13.71.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-08T21:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-08T21:05:00+08:00</effective>
+    <expires>2026-11-08T22:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 08 November 2026, 21:05 WITA di sebagian wilayah Sulawesi Utara, khususnya di NUSA TABUKAN, SINONSAYANG, TABUKAN UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 08 November 2026, 22:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/08/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>3.635,125.573 3.633,125.557 3.628,125.545 3.610,125.527 3.617,125.509 3.624,125.509 3.635,125.486 3.651,125.485 3.657,125.479 3.674,125.467 3.680,125.458 3.710,125.454 3.735,125.459 3.728,125.493 3.720,125.510 3.666,125.556 3.653,125.561 3.645,125.573 3.637,125.576 3.635,125.573</polygon>
+      <polygon>4.437,125.694 4.432,125.696 4.432,125.689 4.437,125.688 4.437,125.694</polygon>
+      <polygon>3.870,125.724 3.867,125.722 3.873,125.721 3.870,125.724</polygon>
+      <polygon>3.793,125.605 3.792,125.625 3.790,125.632 3.785,125.634 3.783,125.621 3.790,125.612 3.786,125.605 3.769,125.595 3.770,125.589 3.787,125.588 3.791,125.592 3.793,125.605</polygon>
+      <polygon>3.807,125.576 3.805,125.574 3.808,125.573 3.807,125.576</polygon>
+      <polygon>3.770,125.573 3.767,125.579 3.751,125.586 3.754,125.571 3.745,125.558 3.753,125.555 3.769,125.567 3.770,125.573</polygon>
+      <polygon>1.071,124.434 1.069,124.431 1.061,124.420 1.060,124.408 1.079,124.382 1.074,124.375 1.053,124.371 1.031,124.344 1.003,124.344 0.994,124.347 0.990,124.344 0.989,124.334 1.007,124.315 1.005,124.307 1.001,124.304 1.001,124.299 1.007,124.298 1.023,124.307 1.030,124.306 1.043,124.313 1.079,124.323 1.082,124.329 1.099,124.340 1.119,124.340 1.134,124.357 1.154,124.342 1.164,124.352 1.152,124.360 1.150,124.367 1.134,124.389 1.108,124.390 1.098,124.411 1.085,124.428 1.071,124.434</polygon>
+    </area>
+  </info>
+</alert>
