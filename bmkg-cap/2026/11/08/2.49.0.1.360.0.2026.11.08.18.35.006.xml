@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.08.18.35.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-09T01:05:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-09T01:15:00+07:00</effective>
+    <expires>2026-11-09T03:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 09 November 2026, 01:15 WIB di sebagian wilayah Jawa Timur, khususnya di KEBOMAS, MANYAR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 09 November 2026, 03:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/09/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.064,112.640 -7.077,112.632 -7.102,112.633 -7.101,112.615 -7.093,112.617 -7.100,112.612 -7.106,112.628 -7.123,112.624 -7.135,112.628 -7.139,112.637 -7.145,112.640 -7.150,112.628 -7.148,112.622 -7.156,112.605 -7.152,112.592 -7.157,112.585 -7.157,112.576 -7.145,112.573 -7.133,112.565 -7.107,112.558 -7.098,112.534 -7.082,112.535 -7.066,112.548 -7.051,112.552 -7.057,112.581 -7.067,112.590 -7.070,112.598 -7.032,112.612 -7.031,112.615 -7.064,112.640</polygon>
+      <polygon>-7.150,112.628 -7.174,112.634 -7.177,112.645 -7.192,112.663 -7.193,112.661 -7.203,112.626 -7.209,112.613 -7.172,112.594 -7.164,112.577 -7.157,112.576 -7.157,112.585 -7.152,112.592 -7.156,112.605 -7.148,112.622 -7.150,112.628</polygon>
+    </area>
+  </info>
+</alert>
