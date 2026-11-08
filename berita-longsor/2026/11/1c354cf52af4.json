@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiuwFBVV95cUxPanNBVW5mTkJIcmZiODFFdWEtWUY2U1g2bUNXbUplZFlwa0QwTDlJem5tRTFURGt4OGNaNTZMUjg2dU5EWkNZRC02cHVHWEtoZU9tdldvQ01LamFXb0pTLTNVcllFVnZaY1JZMTFab2Q2YXlLc1NBbm05cUw4OW1HaHpudXA0M3pNQlp4bVc0WHAzM1d3dlF0RmctSGQ4a2RlZWQ2a3FvUEdTQWVBdkdzeUFGbWVRWHVJMEdv0gHAAUFVX3lxTE9raVlBZmVscHctNGRMaU5NdWVGUlNOR3BLOHUzbElUR2ZHS2lLYXN4MFNROGpNY25uOUNzMk5IR3RVOFhObHNsUzZCTVV4RjhPR1pXbjRfRHdSZEVrWXdLRXNRNXdhZ1I0XzNHN2hRRG1Cb21va1pFVERnektJMzZfWk5Vb0tRV3pDZXlLQ002b3Z0bFVjY2J1anUxR2ZFN3lCcmtBVVNkQ00wdmhzR2FiRkMtdFA1aG4xaXFTZm0wVA",
+  "title": "Waspadai Potensi Longsor di Tiga Kawasan di Kabupaten Mojokerto - Radar Mojokerto",
+  "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPanNBVW5mTkJIcmZiODFFdWEtWUY2U1g2bUNXbUplZFlwa0QwTDlJem5tRTFURGt4OGNaNTZMUjg2dU5EWkNZRC02cHVHWEtoZU9tdldvQ01LamFXb0pTLTNVcllFVnZaY1JZMTFab2Q2YXlLc1NBbm05cUw4OW1HaHpudXA0M3pNQlp4bVc0WHAzM1d3dlF0RmctSGQ4a2RlZWQ2a3FvUEdTQWVBdkdzeUFGbWVRWHVJMEdv0gHAAUFVX3lxTE9raVlBZmVscHctNGRMaU5NdWVGUlNOR3BLOHUzbElUR2ZHS2lLYXN4MFNROGpNY25uOUNzMk5IR3RVOFhObHNsUzZCTVV4RjhPR1pXbjRfRHdSZEVrWXdLRXNRNXdhZ1I0XzNHN2hRRG1Cb21va1pFVERnektJMzZfWk5Vb0tRV3pDZXlLQ002b3Z0bFVjY2J1anUxR2ZFN3lCcmtBVVNkQ00wdmhzR2FiRkMtdFA1aG4xaXFTZm0wVA?oc=5",
+  "source": "Radar Mojokerto",
+  "source_url": "https://radarmojokerto.jawapos.com",
+  "published_at": "2026-11-07T22:55:35.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-08T04:00:41.244Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.16",
+      "nama": "Kabupaten Mojokerto",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

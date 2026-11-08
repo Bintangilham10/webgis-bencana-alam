@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiywFBVV95cUxQR0dBNHh5MVhhOWlRbFM5MmxmY21uT09Qbl9LZlZabjdEOE0xSkEteDJvOXRuY3Q2aXNxSG1OTkI3VU53S3dlVnhGbVFtVy11V1VjaGhCQXliVmlQVFJhSWlsZUtxVDNXc2tPdTNIRVJnZUpNcDV1TUcwTlhydDNOZVZhdjhwOGFCX3VVM3ZnSE1TQTVjbU9qX0pDOWVCeEM5ZlRmWGpQX0kwNVBGZlgyYlhtNGZjV3BqOXBKWXdGNjZzRzAwVF9sMjJhZw",
+  "title": "Mahasiswa Unnes Semarang Tewas Tertimpa Longsor dan Pohon Tumbang di Curug Lawe Kendal - Tribunbanyumas.com",
+  "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQR0dBNHh5MVhhOWlRbFM5MmxmY21uT09Qbl9LZlZabjdEOE0xSkEteDJvOXRuY3Q2aXNxSG1OTkI3VU53S3dlVnhGbVFtVy11V1VjaGhCQXliVmlQVFJhSWlsZUtxVDNXc2tPdTNIRVJnZUpNcDV1TUcwTlhydDNOZVZhdjhwOGFCX3VVM3ZnSE1TQTVjbU9qX0pDOWVCeEM5ZlRmWGpQX0kwNVBGZlgyYlhtNGZjV3BqOXBKWXdGNjZzRzAwVF9sMjJhZw?oc=5",
+  "source": "Tribunbanyumas.com",
+  "source_url": "https://banyumas.tribunnews.com",
+  "published_at": "2026-11-08T00:57:38.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-08T04:00:41.244Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.22",
+      "nama": "Kabupaten Semarang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.74",
+      "nama": "Kota Semarang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.24",
+      "nama": "Kabupaten Kendal",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
