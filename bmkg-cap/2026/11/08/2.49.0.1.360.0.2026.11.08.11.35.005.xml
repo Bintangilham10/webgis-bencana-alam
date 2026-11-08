@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.08.11.35.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-08T17:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-08T17:50:00+07:00</effective>
+    <expires>2026-11-08T19:50:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 08 November 2026, 17:50 WIB di sebagian wilayah Jawa Timur, khususnya di JOGOROGO, KAMAL.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 08 November 2026, 19:50 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/08/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.494,111.295 -7.507,111.315 -7.507,111.329 -7.542,111.269 -7.555,111.260 -7.562,111.260 -7.563,111.263 -7.571,111.260 -7.585,111.243 -7.607,111.206 -7.618,111.196 -7.620,111.194 -7.584,111.197 -7.582,111.203 -7.535,111.226 -7.521,111.243 -7.476,111.267 -7.470,111.275 -7.467,111.286 -7.492,111.270 -7.500,111.268 -7.505,111.272 -7.494,111.295</polygon>
+      <polygon>-7.109,112.763 -7.127,112.768 -7.127,112.759 -7.133,112.752 -7.145,112.747 -7.151,112.750 -7.154,112.752 -7.165,112.740 -7.168,112.745 -7.173,112.721 -7.156,112.692 -7.146,112.692 -7.109,112.705 -7.111,112.730 -7.097,112.737 -7.109,112.763</polygon>
+    </area>
+  </info>
+</alert>

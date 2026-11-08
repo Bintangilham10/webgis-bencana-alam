@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-08T11:15:28.621Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.6034613543,
+        -6.9142354
+      ]
+    },
+    "properties": {
+      "pkey": "400014",
+      "created_at": "2026-11-08T11:00:56.295Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "04e86c01-a4da-47de-9894-63a56c7db0da",
+      "image_url": "https://images.petabencana.id/04e86c01-a4da-47de-9894-63a56c7db0da.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 146.54583331254267,
+        "fireLocation": {
+          "lat": "-6.9142354",
+          "lng": 110.60346135432599
+        },
+        "personLocation": {
+          "lng": 110.60429308100663,
+          "lat": -6.914238441969815
+        },
+        "fireRadius": {
+          "lng": 110.60214170749367,
+          "lat": -6.9143791859155925
+        }
+      },
+      "tags": {
+        "city": "DEMAK",
+        "district_id": null,
+        "region_code": "3321",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Kebakaran melanda lahan eks Tempat Pembuangan Akhir (TPA) Kalikondang seluas ±2,5 hektare di Kabupaten Demak, Jawa Tengah, Minggu sore ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

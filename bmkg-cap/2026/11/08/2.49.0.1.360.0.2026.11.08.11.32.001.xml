@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.08.11.32.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-08T17:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-08T17:30:00+07:00</effective>
+    <expires>2026-11-08T19:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 08 November 2026, 17:30 WIB di sebagian wilayah Jawa Barat, khususnya di KABANDUNGAN, RANCAH, SUBANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 08 November 2026, 19:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/11/08/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.743,106.588 -6.749,106.598 -6.753,106.636 -6.748,106.656 -6.732,106.660 -6.734,106.671 -6.746,106.683 -6.756,106.682 -6.762,106.665 -6.772,106.660 -6.777,106.647 -6.791,106.642 -6.812,106.644 -6.830,106.633 -6.842,106.632 -6.852,106.592 -6.827,106.555 -6.818,106.547 -6.768,106.526 -6.762,106.525 -6.751,106.533 -6.750,106.549 -6.718,106.576 -6.722,106.583 -6.743,106.588</polygon>
+      <polygon>-7.136,108.511 -7.144,108.514 -7.160,108.509 -7.162,108.519 -7.174,108.526 -7.174,108.520 -7.182,108.528 -7.186,108.542 -7.190,108.541 -7.206,108.526 -7.225,108.528 -7.238,108.512 -7.254,108.511 -7.267,108.521 -7.278,108.523 -7.275,108.508 -7.259,108.485 -7.258,108.465 -7.252,108.463 -7.235,108.467 -7.231,108.458 -7.202,108.456 -7.197,108.470 -7.191,108.471 -7.171,108.465 -7.166,108.460 -7.153,108.486 -7.130,108.494 -7.132,108.509 -7.136,108.511</polygon>
+      <polygon>-7.107,108.572 -7.122,108.571 -7.118,108.557 -7.125,108.552 -7.139,108.555 -7.142,108.563 -7.164,108.571 -7.171,108.563 -7.164,108.545 -7.166,108.534 -7.174,108.526 -7.162,108.519 -7.160,108.509 -7.144,108.514 -7.136,108.511 -7.098,108.514 -7.082,108.537 -7.107,108.572</polygon>
+    </area>
+  </info>
+</alert>

@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.08.11.62.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-08T17:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-08T17:20:00+07:00</effective>
+    <expires>2026-11-08T19:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 08 November 2026, 17:20 WIB di sebagian wilayah Kalimantan Tengah, khususnya di BANUA LIMA, DUSUN TENGAH, DUSUN TIMUR, PAKU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 08 November 2026, 19:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/11/08/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-2.035,115.282 -2.056,115.273 -2.102,115.271 -2.112,115.275 -2.143,115.243 -2.177,115.229 -2.182,115.208 -2.198,115.191 -2.202,115.170 -2.202,115.121 -2.220,115.072 -2.221,115.040 -2.200,115.058 -2.098,115.104 -2.071,115.121 -2.023,115.129 -2.019,115.129 -2.013,115.143 -1.991,115.159 -1.973,115.165 -1.982,115.186 -2.001,115.194 -2.027,115.231 -2.029,115.267 -2.035,115.282</polygon>
+      <polygon>-2.116,115.318 -2.124,115.318 -2.144,115.297 -2.159,115.303 -2.178,115.295 -2.224,115.291 -2.222,115.264 -2.205,115.252 -2.196,115.241 -2.200,115.239 -2.209,115.249 -2.215,115.243 -2.292,115.132 -2.338,115.063 -2.359,115.033 -2.400,115.003 -2.283,114.949 -2.273,114.944 -2.254,115.010 -2.221,115.040 -2.220,115.072 -2.202,115.121 -2.202,115.170 -2.198,115.191 -2.182,115.208 -2.177,115.229 -2.143,115.243 -2.112,115.275 -2.109,115.278 -2.109,115.305 -2.116,115.318</polygon>
+      <polygon>-1.727,115.336 -1.748,115.334 -1.766,115.322 -1.801,115.310 -1.825,115.313 -1.825,115.302 -1.846,115.308 -1.843,115.262 -1.837,115.243 -1.844,115.222 -1.860,115.198 -1.851,115.167 -1.874,115.124 -1.892,115.102 -1.866,115.079 -1.864,115.084 -1.833,115.103 -1.775,115.118 -1.766,115.118 -1.766,115.135 -1.753,115.188 -1.742,115.219 -1.719,115.242 -1.697,115.247 -1.702,115.257 -1.720,115.252 -1.724,115.261 -1.719,115.273 -1.729,115.280 -1.727,115.336</polygon>
+      <polygon>-1.846,115.308 -1.852,115.316 -1.857,115.302 -1.913,115.263 -1.920,115.255 -1.920,115.236 -1.950,115.239 -1.956,115.229 -1.954,115.214 -1.942,115.201 -1.961,115.169 -1.973,115.165 -1.970,115.157 -1.953,115.148 -1.950,115.110 -1.940,115.098 -1.928,115.101 -1.913,115.094 -1.892,115.102 -1.874,115.124 -1.851,115.167 -1.860,115.198 -1.844,115.222 -1.837,115.243 -1.843,115.262 -1.846,115.308</polygon>
+    </area>
+  </info>
+</alert>
