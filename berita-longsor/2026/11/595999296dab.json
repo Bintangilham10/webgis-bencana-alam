@@ -1,0 +1,36 @@
+{
+  "guid": "CBMisAFBVV95cUxPR3hzUFdXdkwyZVFDcmtlbEFXVlpfU0RzVFdSZXJWRUc5eVZoZS1yZElFTnBnM1VHbXRxd0h0R1hDODVRakJxMERpWllQQjh2V0s0enVfOWN2NWJ3TzBleWdEaVhXam14Ymo3X2w0ZmVrcXg4LW1OQUVvUDFLR25LSU00dlFyOU1XYjBZYW12NG9ITHRHaG1fb2RoVnpYbC1MTnRtd0xhME8wVFZMekhINQ",
+  "title": "Enam Desa di Blitar Dilanda Longsor, Jalur Arah Malang Lumpuh 1,5 Jam - FaktualNews.co",
+  "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPR3hzUFdXdkwyZVFDcmtlbEFXVlpfU0RzVFdSZXJWRUc5eVZoZS1yZElFTnBnM1VHbXRxd0h0R1hDODVRakJxMERpWllQQjh2V0s0enVfOWN2NWJ3TzBleWdEaVhXam14Ymo3X2w0ZmVrcXg4LW1OQUVvUDFLR25LSU00dlFyOU1XYjBZYW12NG9ITHRHaG1fb2RoVnpYbC1MTnRtd0xhME8wVFZMekhINQ?oc=5",
+  "source": "FaktualNews.co",
+  "source_url": "https://faktualnews.co",
+  "published_at": "2026-11-09T15:40:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-09T17:30:42.238Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.05",
+      "nama": "Kabupaten Blitar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.72",
+      "nama": "Kota Blitar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

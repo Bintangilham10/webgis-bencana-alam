@@ -1,0 +1,26 @@
+{
+  "guid": "CBMihwFBVV95cUxNcE1XR3ZpRU5ONFBFaEhsQU9WYnhYQVZ3M0tyOGdnMVduOEtfVkNtQ01seDZKNGgzZU5wMVNoS0dFVWluZGJJYVdSV2ZtdDNiNlRwOGt3SFNfVnRDOU05Zk45QXZNNHRMRW5CSlNXRmgzc0l5SFlxZDJTdEMyN2JaQkdIQ3RvRE3SAYwBQVVfeXFMUDBQQnFQNkoyLTh0MjA1OV90X01NZmxhQjI1enI1Q1VDeGtaVnQtaVhoTnYtY29jdXRBSkV6ZzZPZmNDcUFRRFlUZGQ1bjdJdHB5VFcwNzNnNldST3l0RjUwaXFXM0FJekg3MW5TdEVKZFFyWnQxZUkxMDZOdTBteVZaekhJYy1TSUxQSUk",
+  "title": "Longsor di Pasuruan, Tembok Rumah Warga Roboh - iNews.ID",
+  "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNcE1XR3ZpRU5ONFBFaEhsQU9WYnhYQVZ3M0tyOGdnMVduOEtfVkNtQ01seDZKNGgzZU5wMVNoS0dFVWluZGJJYVdSV2ZtdDNiNlRwOGt3SFNfVnRDOU05Zk45QXZNNHRMRW5CSlNXRmgzc0l5SFlxZDJTdEMyN2JaQkdIQ3RvRE3SAYwBQVVfeXFMUDBQQnFQNkoyLTh0MjA1OV90X01NZmxhQjI1enI1Q1VDeGtaVnQtaVhoTnYtY29jdXRBSkV6ZzZPZmNDcUFRRFlUZGQ1bjdJdHB5VFcwNzNnNldST3l0RjUwaXFXM0FJekg3MW5TdEVKZFFyWnQxZUkxMDZOdTBteVZaekhJYy1TSUxQSUk?oc=5",
+  "source": "iNews.ID",
+  "source_url": "https://www.inews.id",
+  "published_at": "2026-11-09T16:22:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-09T17:30:42.238Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.14",
+      "nama": "Kabupaten Pasuruan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.75",
+      "nama": "Kota Pasuruan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
