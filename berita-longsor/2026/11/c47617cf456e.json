@@ -1,0 +1,21 @@
+{
+  "guid": "CBMirgFBVV95cUxNU2lqRldwUk5XVHNlVVM1a1lGNHNuNlM2eGs3d3VuR1BwRGRTVTMxcTBjLUdnTG03cElXNGVCQ096Ul96UnZrd0ROTlAySm1sbFVCWlBQekhIbl9PQjBOT2pSWTdYUWR0cGU4Q0RpTGcybXpLQUVEWVdRVFZxVUtTZ2NPRUdxVzB5bXNvSlFZMmpvbGZPT21GdEE2RFowUE4wLVF5OEFOMG5WZm5RclE",
+  "title": "Jepara Siaga Bencana Hidrometeorologi, Antisipasi Banjir dan Longsor - BeritaSatu.com",
+  "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNU2lqRldwUk5XVHNlVVM1a1lGNHNuNlM2eGs3d3VuR1BwRGRTVTMxcTBjLUdnTG03cElXNGVCQ096Ul96UnZrd0ROTlAySm1sbFVCWlBQekhIbl9PQjBOT2pSWTdYUWR0cGU4Q0RpTGcybXpLQUVEWVdRVFZxVUtTZ2NPRUdxVzB5bXNvSlFZMmpvbGZPT21GdEE2RFowUE4wLVF5OEFOMG5WZm5RclE?oc=5",
+  "source": "BeritaSatu.com",
+  "source_url": "https://www.beritasatu.com",
+  "published_at": "2026-11-09T11:54:36.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-09T14:30:36.224Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.20",
+      "nama": "Kabupaten Jepara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
