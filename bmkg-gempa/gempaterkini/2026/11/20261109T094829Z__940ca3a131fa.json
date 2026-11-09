@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-11-09T10:00:43.542Z",
+  "data": {
+    "Tanggal": "09 Nov 2026",
+    "Jam": "16:48:29 WIB",
+    "DateTime": "2026-11-09T09:48:29+00:00",
+    "Coordinates": "-2.93,130.44",
+    "Lintang": "2.93 LS",
+    "Bujur": "130.44 BT",
+    "Magnitude": "5.5",
+    "Kedalaman": "10 km",
+    "Wilayah": "20 km BaratLaut SERAMBAGIANTIMUR-MALUKU",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}
