@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.09.07.36.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-09T13:45:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-09T13:55:00+07:00</effective>
+    <expires>2026-11-09T15:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Banten</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 09 November 2026, 13:55 WIB di sebagian wilayah Banten, khususnya di BANDUNG, KIBIN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 09 November 2026, 15:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBT/2026/11/09/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Banten</areaDesc>
+      <polygon>-6.119,106.316 -6.132,106.317 -6.133,106.329 -6.160,106.333 -6.160,106.343 -6.173,106.336 -6.192,106.342 -6.197,106.332 -6.192,106.322 -6.195,106.313 -6.191,106.308 -6.183,106.309 -6.179,106.302 -6.191,106.293 -6.196,106.284 -6.176,106.285 -6.172,106.298 -6.162,106.306 -6.157,106.304 -6.149,106.308 -6.141,106.301 -6.128,106.298 -6.116,106.301 -6.114,106.301 -6.119,106.316</polygon>
+      <polygon>-6.195,106.313 -6.214,106.311 -6.222,106.315 -6.219,106.332 -6.227,106.343 -6.234,106.341 -6.241,106.337 -6.243,106.331 -6.251,106.330 -6.249,106.317 -6.256,106.308 -6.237,106.297 -6.234,106.290 -6.230,106.291 -6.217,106.285 -6.211,106.287 -6.201,106.282 -6.196,106.284 -6.191,106.293 -6.179,106.302 -6.183,106.309 -6.191,106.308 -6.195,106.313</polygon>
+    </area>
+  </info>
+</alert>
