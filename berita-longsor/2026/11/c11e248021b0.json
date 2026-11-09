@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi6gFBVV95cUxPVnNQT1E0bnhuM0h1dUFWWjZkUEpLbXhKdU1FNkx2cDF1eldOcm00UkFmUEI1a3JGVVhjQkVpQVhmQi1mbzFnVkg1VlMxUW5zNDJsSUFqdDMyLXNiMzZVRlNhaEFmSWx1ckw1ZE5jRlNkcDVEUFo1TVlEaElMRUs3TkdqVUVtT1dHb1AtU1ZHcnJOcDk0LVRuNmVNbkFSX1dCQ2M2Q3YxNjlZdFdSR3EwQWx3cUhhZDNveUlpQndYVUJtMVVTam0tUmRyR2FGSXlycmpOSlZHRGlqbHp1V0ZWNWFxemNWRDZBR0HSAeoBQVVfeXFMT1ZzUE9RNG54bjNIdXVBVlo2ZFBKS214SnVNRTZMdnAxdXpXTnJtNFJBZlBCNWtyRlVYY0JFaUFYZkItZm8xZ1ZINVZTMVFuczQybElBanQzMi1zYjM2VUZTYWhBZklsdXJMNWROY0ZTZHA1RFBaNU1ZRGhJTEVLN05HalVFbU9XR29QLVNWR3JyTnA5NC1UbjZlTW5BUl9XQkNjNkN2MTY5WXRXUkdxMEFsd3FIYWQzb3lJaUJ3WFVCbTFVU2ptLVJkckdhRkl5cnJqTkpWR0Rpamx6dVdGVjVhcXpjVkQ2QUdB",
+  "title": "Retakan Tanah Muncul di Bareng Jombang, BPBD Waspadai Ancaman Longsor saat Musim Hujan - Radar Jombang",
+  "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPVnNQT1E0bnhuM0h1dUFWWjZkUEpLbXhKdU1FNkx2cDF1eldOcm00UkFmUEI1a3JGVVhjQkVpQVhmQi1mbzFnVkg1VlMxUW5zNDJsSUFqdDMyLXNiMzZVRlNhaEFmSWx1ckw1ZE5jRlNkcDVEUFo1TVlEaElMRUs3TkdqVUVtT1dHb1AtU1ZHcnJOcDk0LVRuNmVNbkFSX1dCQ2M2Q3YxNjlZdFdSR3EwQWx3cUhhZDNveUlpQndYVUJtMVVTam0tUmRyR2FGSXlycmpOSlZHRGlqbHp1V0ZWNWFxemNWRDZBR0HSAeoBQVVfeXFMT1ZzUE9RNG54bjNIdXVBVlo2ZFBKS214SnVNRTZMdnAxdXpXTnJtNFJBZlBCNWtyRlVYY0JFaUFYZkItZm8xZ1ZINVZTMVFuczQybElBanQzMi1zYjM2VUZTYWhBZklsdXJMNWROY0ZTZHA1RFBaNU1ZRGhJTEVLN05HalVFbU9XR29QLVNWR3JyTnA5NC1UbjZlTW5BUl9XQkNjNkN2MTY5WXRXUkdxMEFsd3FIYWQzb3lJaUJ3WFVCbTFVU2ptLVJkckdhRkl5cnJqTkpWR0Rpamx6dVdGVjVhcXpjVkQ2QUdB?oc=5",
+  "source": "Radar Jombang",
+  "source_url": "https://radarjombang.jawapos.com",
+  "published_at": "2026-11-09T01:25:15.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-09T05:15:29.522Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.17",
+      "nama": "Kabupaten Jombang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
