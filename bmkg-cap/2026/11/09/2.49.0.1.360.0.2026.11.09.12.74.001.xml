@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.09.12.74.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-09T19:40:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-09T20:10:00+08:00</effective>
+    <expires>2026-11-09T22:10:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tenggara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 09 November 2026, 20:10 WITA di sebagian wilayah Sulawesi Tenggara, khususnya di UEESI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 09 November 2026, 22:10 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CST/2026/11/09/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tenggara</areaDesc>
+      <polygon>-3.386,121.462 -3.450,121.503 -3.477,121.524 -3.499,121.527 -3.512,121.534 -3.534,121.531 -3.542,121.533 -3.587,121.560 -3.645,121.580 -3.681,121.612 -3.704,121.609 -3.736,121.619 -3.737,121.623 -3.747,121.618 -3.762,121.601 -3.777,121.566 -3.779,121.548 -3.765,121.540 -3.747,121.522 -3.735,121.504 -3.724,121.480 -3.720,121.460 -3.702,121.431 -3.693,121.428 -3.633,121.433 -3.619,121.428 -3.612,121.417 -3.611,121.408 -3.616,121.391 -3.648,121.350 -3.667,121.335 -3.678,121.344 -3.687,121.343 -3.692,121.336 -3.694,121.315 -3.689,121.289 -3.659,121.251 -3.618,121.244 -3.604,121.237 -3.594,121.220 -3.579,121.212 -3.570,121.202 -3.563,121.186 -3.555,121.181 -3.544,121.174 -3.537,121.158 -3.509,121.150 -3.505,121.151 -3.502,121.137 -3.491,121.124 -3.490,121.120 -3.484,121.121 -3.481,121.127 -3.470,121.123 -3.469,121.132 -3.460,121.137 -3.460,121.145 -3.453,121.148 -3.436,121.155 -3.426,121.141 -3.427,121.137 -3.416,121.133 -3.411,121.123 -3.399,121.133 -3.389,121.136 -3.376,121.131 -3.366,121.134 -3.365,121.142 -3.344,121.151 -3.340,121.158 -3.331,121.157 -3.328,121.152 -3.325,121.158 -3.300,121.157 -3.293,121.161 -3.297,121.170 -3.295,121.173 -3.275,121.186 -3.271,121.192 -3.255,121.221 -3.246,121.220 -3.228,121.228 -3.226,121.275 -3.262,121.285 -3.300,121.302 -3.351,121.337 -3.377,121.361 -3.389,121.388 -3.386,121.462</polygon>
+    </area>
+  </info>
+</alert>
