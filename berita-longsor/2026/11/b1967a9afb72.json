@@ -1,0 +1,21 @@
+{
+  "guid": "CBMisAFBVV95cUxNbzNQUEotZU5yWV82eFV1SGNsTEFRYV9NUUxCZVVNY3o3Uk1iMW94WWxuNVVVNGxZMEZHM0paaWNVekdDcXE1WERFeTNVUzM3LXlLNzVHdzlCTHEwdndDLTFndFhvdzlLYnd0MS01MWdSa0tWZmo0NTU0ZldleHdUaERuYXF3MDZSYjRWeUJ1Wm95RnNsc0xiZ0MwckFFVjR3QnF3OUZENnJJQVFkMW9CZQ",
+  "title": "BPBD Garut Petakan 9 Kecamatan Rawan Banjir dan Longsor, Warga Diminta Waspada - Radar Garut",
+  "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbzNQUEotZU5yWV82eFV1SGNsTEFRYV9NUUxCZVVNY3o3Uk1iMW94WWxuNVVVNGxZMEZHM0paaWNVekdDcXE1WERFeTNVUzM3LXlLNzVHdzlCTHEwdndDLTFndFhvdzlLYnd0MS01MWdSa0tWZmo0NTU0ZldleHdUaERuYXF3MDZSYjRWeUJ1Wm95RnNsc0xiZ0MwckFFVjR3QnF3OUZENnJJQVFkMW9CZQ?oc=5",
+  "source": "Radar Garut",
+  "source_url": "https://radargarut.id",
+  "published_at": "2026-11-09T00:55:21.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-09T02:15:25.623Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

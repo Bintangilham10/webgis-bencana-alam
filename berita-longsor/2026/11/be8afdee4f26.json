@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiwAFBVV95cUxOam1GSTNNNEFIM0FNUWpnXzJUV3JtcHk5WmVGemFia1BLNjIxQWY5NnhPQ1hhOUFyRDh3Q1lNU1RPNjNKTWxKclVEcUkxRk1sSDlncWpDQlBLTFpMeER5Snl1a1REdmJVRlFZLXdicnYzTVBIbk4yM2YwNGRCTk1pcXZhc1l3SHFZWDFTNjZ6eWN2Tk9LbFdkSGtlYnpQOE0za0dLVVRJaWhFWWQwalZ1MFJiLVVNbmxCcEVpaWl3Q0nSAcYBQVVfeXFMT1drcVBiSlk5QzlEMlZGekgwWHJwbnU2SjhvNDRDQ2JCWlpnbHVzN3RXNUdPbFY5QU9RRTRaSDFlS0FoUjM5Y0dmVGtXcm9xM29mVjAyR1ZJUzhhdjlQMjdaUk45MzBDV3FVaVRwQ1pqbThBWFZvUjQ0b0pTSUhyYzlrRmN2WVlxNHZzYTZpOXk5bHFEdnc2ZEZwX1dhcFI4UEI4Xzk0UU1sby11M0RsMjc1VDFNMTRDdWJSbmJOaGFFUjctTEpB",
+  "title": "BPBD Ponorogo Petakan Wilayah Rawan Longsor dan Banjir saat Musim Hujan - Radar Madiun",
+  "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOam1GSTNNNEFIM0FNUWpnXzJUV3JtcHk5WmVGemFia1BLNjIxQWY5NnhPQ1hhOUFyRDh3Q1lNU1RPNjNKTWxKclVEcUkxRk1sSDlncWpDQlBLTFpMeER5Snl1a1REdmJVRlFZLXdicnYzTVBIbk4yM2YwNGRCTk1pcXZhc1l3SHFZWDFTNjZ6eWN2Tk9LbFdkSGtlYnpQOE0za0dLVVRJaWhFWWQwalZ1MFJiLVVNbmxCcEVpaWl3Q0nSAcYBQVVfeXFMT1drcVBiSlk5QzlEMlZGekgwWHJwbnU2SjhvNDRDQ2JCWlpnbHVzN3RXNUdPbFY5QU9RRTRaSDFlS0FoUjM5Y0dmVGtXcm9xM29mVjAyR1ZJUzhhdjlQMjdaUk45MzBDV3FVaVRwQ1pqbThBWFZvUjQ0b0pTSUhyYzlrRmN2WVlxNHZzYTZpOXk5bHFEdnc2ZEZwX1dhcFI4UEI4Xzk0UU1sby11M0RsMjc1VDFNMTRDdWJSbmJOaGFFUjctTEpB?oc=5",
+  "source": "Radar Madiun",
+  "source_url": "https://radarmadiun.jawapos.com",
+  "published_at": "2026-11-08T11:00:31.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-09T02:15:25.623Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.02",
+      "nama": "Kabupaten Ponorogo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
