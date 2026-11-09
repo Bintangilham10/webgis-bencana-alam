@@ -1,0 +1,43 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-09T22:30:35.549Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        125.4107812454,
+        2.7827964455
+      ]
+    },
+    "properties": {
+      "pkey": "400017",
+      "created_at": "2026-11-09T22:21:11.362Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "e40e9846-65d2-43a9-b932-f1bed7107231",
+      "image_url": "https://images.petabencana.id/e40e9846-65d2-43a9-b932-f1bed7107231.jpg",
+      "disaster_type": "volcano",
+      "is_training": false,
+      "report_data": {
+        "report_type": "volcano",
+        "volcanicSigns": [
+          0
+        ],
+        "evacuationNumber": 1,
+        "evacuationArea": true
+      },
+      "tags": {
+        "city": null,
+        "district_id": null,
+        "region_code": null,
+        "local_area_id": null,
+        "instance_region_code": "ID-SA"
+      },
+      "title": null,
+      "text": "Gunung Karangetang di Kabupaten Kepulauan Siau Tagulandang Biaro (Sitaro), Sulawesi Utara, mengalami erupsi pada Senin (09/11/2026) ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
