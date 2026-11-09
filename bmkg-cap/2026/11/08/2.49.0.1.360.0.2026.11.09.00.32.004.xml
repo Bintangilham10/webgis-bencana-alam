@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.09.00.32.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-09T06:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-09T06:40:00+07:00</effective>
+    <expires>2026-11-09T08:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 09 November 2026, 06:40 WIB di sebagian wilayah Jawa Barat, khususnya di CILEBAR, KUTAWALUYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 09 November 2026, 08:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/11/09/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-6.142,107.360 -6.151,107.366 -6.156,107.382 -6.188,107.381 -6.204,107.371 -6.212,107.371 -6.214,107.347 -6.208,107.332 -6.204,107.325 -6.190,107.327 -6.180,107.322 -6.177,107.302 -6.159,107.305 -6.153,107.317 -6.140,107.320 -6.140,107.332 -6.133,107.338 -6.140,107.348 -6.142,107.360</polygon>
+      <polygon>-6.131,107.458 -6.143,107.442 -6.164,107.439 -6.189,107.422 -6.172,107.413 -6.173,107.403 -6.179,107.394 -6.188,107.392 -6.188,107.381 -6.156,107.382 -6.151,107.366 -6.142,107.360 -6.138,107.368 -6.131,107.370 -6.132,107.386 -6.116,107.394 -6.109,107.405 -6.098,107.409 -6.092,107.404 -6.076,107.404 -6.064,107.417 -6.104,107.445 -6.131,107.458</polygon>
+    </area>
+  </info>
+</alert>
