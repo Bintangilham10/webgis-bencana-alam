@@ -1,0 +1,26 @@
+{
+  "guid": "CBMihgFBVV95cUxNVVlEU1lBOGZFZ2R2MXZjRHgyM2pfT0lFSnFGb0w2Z09XZDdyR3lPM2VXQWdyMk9zQm9DMGIzY2hqRWhzdlB0di1pMkY1eEVaSDFxblFpR0Q4YXRGNExJWDAzZ3d4QWp6VDQyRWYzSWRUQ0pBQ24xVXpyWUFJUTR3V0ZPYnVqZw",
+  "title": "Antisipasi Banjir dan Longsor, Dandim Pasuruan Cek Pasukan - kabarbaik.co",
+  "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNVVlEU1lBOGZFZ2R2MXZjRHgyM2pfT0lFSnFGb0w2Z09XZDdyR3lPM2VXQWdyMk9zQm9DMGIzY2hqRWhzdlB0di1pMkY1eEVaSDFxblFpR0Q4YXRGNExJWDAzZ3d4QWp6VDQyRWYzSWRUQ0pBQ24xVXpyWUFJUTR3V0ZPYnVqZw?oc=5",
+  "source": "kabarbaik.co",
+  "source_url": "https://kabarbaik.co",
+  "published_at": "2026-11-09T11:13:49.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-09T11:15:31.875Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.14",
+      "nama": "Kabupaten Pasuruan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.75",
+      "nama": "Kota Pasuruan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
