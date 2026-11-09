@@ -1,0 +1,21 @@
+{
+  "guid": "CBMitAFBVV95cUxNcF8tSFlvT2xqRVc5N0pxckdxbFZOTHhWWGxWQUpRTGpDZ0Fub2VTS2RZNW1zZENfR2QtbXdCOS1CM1JPZmZVRjlSeXhrUjVGaWxELTE4NWlUU09iY0dSc0s5VkptR0NFYnBhdjhLNnh6VVVtR0ZPcjJBcllzQXVDcWp0cHgxcTF2c2gxcElwcm01akJ3dGtva0Z6bWtCYnhsTk5fcVhLenV2S2h6dFg0ZGN6bUE",
+  "title": "Hadapi Ancaman Banjir dan Longsor, Pemkab Jepara Kerahkan 302 Personel Siaga Bencana - Klikfakta",
+  "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcF8tSFlvT2xqRVc5N0pxckdxbFZOTHhWWGxWQUpRTGpDZ0Fub2VTS2RZNW1zZENfR2QtbXdCOS1CM1JPZmZVRjlSeXhrUjVGaWxELTE4NWlUU09iY0dSc0s5VkptR0NFYnBhdjhLNnh6VVVtR0ZPcjJBcllzQXVDcWp0cHgxcTF2c2gxcElwcm01akJ3dGtva0Z6bWtCYnhsTk5fcVhLenV2S2h6dFg0ZGN6bUE?oc=5",
+  "source": "Klikfakta",
+  "source_url": "https://klikfakta.com",
+  "published_at": "2026-11-09T05:35:18.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-09T08:15:30.493Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.20",
+      "nama": "Kabupaten Jepara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

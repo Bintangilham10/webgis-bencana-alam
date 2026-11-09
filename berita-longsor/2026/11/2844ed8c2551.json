@@ -1,0 +1,26 @@
+{
+  "guid": "CBMimgFBVV95cUxOS0dvektkc2c3Rkh0a0NpMUZPQWhoR3ZkZDZSUGxUMGRQelNoS2w4eTBLVGRaMWVjaWFmV1B5V05qbTFlcmNUZlV1VlA2TWhvWWxSR2poQXd1SU85UUUzNzlCSmVVU0VSVTZkX21NQ1pzZGlwOG1ENklNaklLSkZHaGtsQzZIdHVLMl9KdlJQTnFOU3puSmxTRklB",
+  "title": "Longsor Terjang Rumah Warga di Tosari Pasuruan, Rusak Parah - Akurat Jatim",
+  "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOS0dvektkc2c3Rkh0a0NpMUZPQWhoR3ZkZDZSUGxUMGRQelNoS2w4eTBLVGRaMWVjaWFmV1B5V05qbTFlcmNUZlV1VlA2TWhvWWxSR2poQXd1SU85UUUzNzlCSmVVU0VSVTZkX21NQ1pzZGlwOG1ENklNaklLSkZHaGtsQzZIdHVLMl9KdlJQTnFOU3puSmxTRklB?oc=5",
+  "source": "Akurat Jatim",
+  "source_url": "https://jatim.akurat.co",
+  "published_at": "2026-11-09T06:54:40.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-09T08:15:30.493Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.14",
+      "nama": "Kabupaten Pasuruan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.75",
+      "nama": "Kota Pasuruan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,23 @@
+{
+  "guid": "CBMisgFBVV95cUxPeW43Z25iLTFldHYxeG1PUk5uYWNGcDlYcWdldnN2YnI0b3dkT3d4YkJPa1lfcGdfTGdUaWowUGUzU1NHSDRNMThiNE8zTE5GTzNsSE9TaGlpQV9MR1k2SWh1Q050ZENaTVhmNENteV9tTHF0cHpweEk0YVJmMU1BVW51X1lob1o4YlgyaDE1S3NrVjJLZUh5MWtsOTd3OWItVlJwZldwaWNCRm80bVU2U1ln",
+  "title": "BMKG Peringatkan Potensi Banjir dan Longsor di Sejumlah Wilayah Jambi - Tribunjambi.com",
+  "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPeW43Z25iLTFldHYxeG1PUk5uYWNGcDlYcWdldnN2YnI0b3dkT3d4YkJPa1lfcGdfTGdUaWowUGUzU1NHSDRNMThiNE8zTE5GTzNsSE9TaGlpQV9MR1k2SWh1Q050ZENaTVhmNENteV9tTHF0cHpweEk0YVJmMU1BVW51X1lob1o4YlgyaDE1S3NrVjJLZUh5MWtsOTd3OWItVlJwZldwaWNCRm80bVU2U1ln?oc=5",
+  "source": "Tribunjambi.com",
+  "source_url": "https://jambi.tribunnews.com",
+  "published_at": "2026-11-09T06:48:52.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-09T08:15:30.493Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}

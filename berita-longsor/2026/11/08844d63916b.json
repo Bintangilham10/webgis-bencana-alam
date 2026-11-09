@@ -1,0 +1,21 @@
+{
+  "guid": "CBMizgFBVV95cUxPQjBSUGdoa2V3Z0R2T2o5amVONk9DU0NmZ3Q3dWdUT1VlcWloV0NEdWVpUEgwYVR2RGxCUDFsRkJVZThJV2JKcy16X21BcF9KMzN2Wi1SLXNSb2JNdjA3MEJXSXEyY3IwclpOVW5JVWNHdDFQWlhmUk1IcDNBRURrZFV2RmdaMF9lV0I2aS1qcDJTZWxKdEE1TzdJQjZQNkJLU3lhRU1sdEI4cFMxRjBLdGNHQWdPTXZaQnAyb2VqYTRWMDJibG1jMXNJY0Rxdw",
+  "title": "Kodim 1623/Karangasem Bersama Instansi Terkait Bersihkan Material Longsor di Pura Segara Desa Bugbug - PPID TNI AD",
+  "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQjBSUGdoa2V3Z0R2T2o5amVONk9DU0NmZ3Q3dWdUT1VlcWloV0NEdWVpUEgwYVR2RGxCUDFsRkJVZThJV2JKcy16X21BcF9KMzN2Wi1SLXNSb2JNdjA3MEJXSXEyY3IwclpOVW5JVWNHdDFQWlhmUk1IcDNBRURrZFV2RmdaMF9lV0I2aS1qcDJTZWxKdEE1TzdJQjZQNkJLU3lhRU1sdEI4cFMxRjBLdGNHQWdPTXZaQnAyb2VqYTRWMDJibG1jMXNJY0Rxdw?oc=5",
+  "source": "PPID TNI AD",
+  "source_url": "https://ppid.tniad.mil.id",
+  "published_at": "2026-11-09T02:31:17.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-09T08:15:30.493Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "51.07",
+      "nama": "Kabupaten Karangasem",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqwFBVV95cUxNaE1TZk5CcXNrRUlVaVZyTnpmNmN5RjJ6cWVuR1Bla0xXWnhZRzJFZV90Y1d0cV93R0toNzZDeUJFNHpaNndZdUE3eVZqRHdqa21HR0lpMk1PaUhyNm5PeGtQcllWcmNDUVFCSVlwYWZVMWhqZzdTWTZrWlB4cVhZRmk0M3lya0pEQkd2VHZzYm5GUDVXa2tHalRIR2M0R1BzREh5QmItU015N2M",
+  "title": "Antisipasi Bencana Musim Hujan, Polres Mojokerto Petakan Wilayah Rawan Longsor - Lentera Inspiratif",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaE1TZk5CcXNrRUlVaVZyTnpmNmN5RjJ6cWVuR1Bla0xXWnhZRzJFZV90Y1d0cV93R0toNzZDeUJFNHpaNndZdUE3eVZqRHdqa21HR0lpMk1PaUhyNm5PeGtQcllWcmNDUVFCSVlwYWZVMWhqZzdTWTZrWlB4cVhZRmk0M3lya0pEQkd2VHZzYm5GUDVXa2tHalRIR2M0R1BzREh5QmItU015N2M?oc=5",
+  "source": "Lentera Inspiratif",
+  "source_url": "https://lenterainspiratif.id",
+  "published_at": "2026-11-09T06:31:36.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-09T08:15:30.493Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.16",
+      "nama": "Kabupaten Mojokerto",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.76",
+      "nama": "Kota Mojokerto",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
