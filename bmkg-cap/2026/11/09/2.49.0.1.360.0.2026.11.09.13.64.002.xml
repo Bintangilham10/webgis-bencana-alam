@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.09.13.64.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-09T19:05:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-09T19:15:00+08:00</effective>
+    <expires>2026-11-09T21:15:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 09 November 2026, 19:15 WITA di sebagian wilayah Kalimantan Timur, khususnya di BATU ENGAU, MUARA SAMU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 09 November 2026, 21:15 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKT/2026/11/09/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Timur</areaDesc>
+      <polygon>-2.057,116.337 -2.073,116.344 -2.089,116.342 -2.118,116.355 -2.113,116.370 -2.113,116.389 -2.125,116.391 -2.156,116.392 -2.172,116.385 -2.188,116.385 -2.215,116.406 -2.234,116.434 -2.260,116.416 -2.296,116.411 -2.344,116.414 -2.362,116.408 -2.341,116.320 -2.317,116.251 -2.320,116.148 -2.313,116.008 -2.317,115.993 -2.312,115.984 -2.329,115.942 -2.336,115.911 -2.333,115.898 -2.313,115.898 -2.311,115.913 -2.301,115.915 -2.297,115.912 -2.284,115.921 -2.271,115.924 -2.265,115.938 -2.259,115.938 -2.252,115.932 -2.238,115.936 -2.230,115.930 -2.213,115.951 -2.165,115.951 -2.158,115.955 -2.147,115.984 -2.087,116.005 -2.044,116.007 -2.023,116.018 -2.011,116.057 -2.010,116.078 -2.016,116.104 -2.036,116.155 -2.065,116.260 -2.046,116.282 -2.047,116.324 -2.057,116.337</polygon>
+      <polygon>-1.912,116.005 -1.924,116.007 -1.936,116.000 -1.939,116.006 -1.945,116.008 -1.956,116.006 -1.975,116.013 -1.992,116.015 -2.007,116.012 -2.004,116.014 -2.013,116.018 -2.023,116.018 -2.044,116.007 -2.087,116.005 -2.147,115.984 -2.158,115.955 -2.165,115.951 -2.213,115.951 -2.230,115.930 -2.238,115.936 -2.252,115.932 -2.259,115.938 -2.265,115.938 -2.271,115.924 -2.284,115.921 -2.297,115.912 -2.301,115.915 -2.311,115.913 -2.313,115.898 -2.333,115.898 -2.370,115.887 -2.372,115.870 -2.388,115.850 -2.380,115.854 -2.346,115.844 -2.335,115.847 -2.317,115.834 -2.307,115.839 -2.301,115.851 -2.294,115.855 -2.292,115.842 -2.287,115.836 -2.258,115.822 -2.246,115.828 -2.237,115.827 -2.211,115.805 -2.188,115.799 -2.169,115.809 -2.097,115.810 -2.085,115.830 -2.059,115.837 -2.055,115.832 -2.055,115.822 -2.044,115.807 -2.043,115.792 -2.051,115.770 -2.050,115.754 -2.037,115.743 -2.034,115.728 -2.029,115.725 -2.021,115.728 -2.006,115.746 -1.995,115.748 -1.982,115.730 -1.981,115.719 -1.996,115.718 -1.992,115.713 -1.980,115.711 -1.977,115.701 -1.972,115.698 -1.961,115.706 -1.955,115.707 -1.946,115.711 -1.924,115.780 -1.928,115.815 -1.927,115.863 -1.940,115.892 -1.938,115.932 -1.931,115.947 -1.913,115.963 -1.920,115.971 -1.912,115.977 -1.917,115.988 -1.909,115.992 -1.912,116.005</polygon>
+    </area>
+  </info>
+</alert>
