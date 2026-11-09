@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.09.09.71.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-09T15:38:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-09T15:50:00+08:00</effective>
+    <expires>2026-11-09T17:50:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 09 November 2026, 15:50 WITA di sebagian wilayah Sulawesi Utara, khususnya di TATAPAAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 09 November 2026, 17:50 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/09/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>1.378,124.564 1.358,124.582 1.352,124.600 1.336,124.625 1.279,124.630 1.278,124.609 1.264,124.599 1.265,124.595 1.270,124.577 1.279,124.570 1.273,124.564 1.271,124.552 1.301,124.515 1.318,124.515 1.328,124.518 1.335,124.529 1.352,124.532 1.374,124.550 1.378,124.564</polygon>
+      <polygon>1.296,124.508 1.301,124.503 1.305,124.510 1.298,124.511 1.296,124.508</polygon>
+    </area>
+  </info>
+</alert>
