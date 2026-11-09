@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-09T01:00:41.412Z",
+  "data": {
+    "Tanggal": "09 Nov 2026",
+    "Jam": "07:44:58 WIB",
+    "DateTime": "2026-11-09T00:44:58+00:00",
+    "Coordinates": "1.06,127.47",
+    "Lintang": "1.06 LU",
+    "Bujur": "127.47 BT",
+    "Magnitude": "2.5",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di laut 1 km timur Jailolo",
+    "Dirasakan": "II Kab. Halmahera Barat"
+  }
+}
