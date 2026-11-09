@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-09T23:00:44.693Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        122.7023707552,
+        -5.6281663854
+      ]
+    },
+    "properties": {
+      "pkey": "400020",
+      "created_at": "2026-11-09T22:57:15.879Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "98464032-eb3b-4d51-9dbe-9299eaa5c923",
+      "image_url": "https://images.petabencana.id/98464032-eb3b-4d51-9dbe-9299eaa5c923.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 99.24844715197118,
+        "fireLocation": {
+          "lng": 122.70237075518162,
+          "lat": -5.628166385392035
+        },
+        "personLocation": {
+          "lat": "-5.6278040",
+          "lng": "122.7045198"
+        },
+        "fireRadius": {
+          "lng": 122.70147489736968,
+          "lat": -5.62820909385411
+        }
+      },
+      "tags": {
+        "city": "BUTON SELATAN",
+        "district_id": null,
+        "region_code": "7415",
+        "local_area_id": null,
+        "instance_region_code": "ID-SG"
+      },
+      "title": null,
+      "text": "Kebakaran lahan melanda kawasan Bukit Lamando, Desa Rongi, Kecamatan Sampolawa, Kabupaten Buton Selatan, Sulawesi Tenggara, Selasa ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
