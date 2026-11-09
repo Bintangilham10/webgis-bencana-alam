@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.09.15.53.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-09T22:50:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-09T23:00:00+08:00</effective>
+    <expires>2026-11-10T02:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 09 November 2026, 23:00 WITA di sebagian wilayah Nusa Tenggara Timur, khususnya di SOLOR BARAT, WAIBLAMA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 November 2026, 02:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNT/2026/11/09/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Timur</areaDesc>
+      <polygon>-8.446,123.025 -8.466,123.026 -8.471,122.982 -8.509,122.948 -8.532,122.971 -8.553,122.953 -8.573,122.949 -8.596,122.935 -8.610,122.912 -8.609,122.886 -8.596,122.882 -8.584,122.870 -8.524,122.885 -8.503,122.918 -8.493,122.945 -8.459,122.954 -8.436,122.977 -8.436,122.998 -8.448,123.015 -8.446,123.025</polygon>
+      <polygon>-8.571,122.655 -8.628,122.648 -8.637,122.654 -8.640,122.630 -8.654,122.620 -8.649,122.605 -8.657,122.593 -8.625,122.568 -8.603,122.544 -8.575,122.522 -8.551,122.534 -8.542,122.587 -8.515,122.593 -8.520,122.601 -8.536,122.610 -8.560,122.634 -8.571,122.655</polygon>
+    </area>
+  </info>
+</alert>
