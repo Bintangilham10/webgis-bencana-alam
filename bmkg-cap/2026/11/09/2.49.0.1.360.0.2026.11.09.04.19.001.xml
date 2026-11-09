@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.09.04.19.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-09T10:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-09T10:50:00+07:00</effective>
+    <expires>2026-11-09T12:50:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 09 November 2026, 10:50 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di GERUNGGANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 09 November 2026, 12:50 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/11/09/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-2.076,106.084 -2.087,106.093 -2.089,106.079 -2.100,106.082 -2.104,106.095 -2.108,106.096 -2.112,106.106 -2.111,106.113 -2.112,106.113 -2.119,106.108 -2.130,106.107 -2.132,106.088 -2.124,106.059 -2.112,106.040 -2.108,106.039 -2.107,106.044 -2.099,106.046 -2.083,106.040 -2.080,106.043 -2.071,106.059 -2.076,106.084</polygon>
+    </area>
+  </info>
+</alert>
