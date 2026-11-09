@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.09.23.63.009</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-10T06:50:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-10T07:00:00+08:00</effective>
+    <expires>2026-11-10T08:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 November 2026, 07:00 WITA di sebagian wilayah Kalimantan Selatan, khususnya di HARUAI, UPAU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 November 2026, 08:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKS/2026/11/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Selatan</areaDesc>
+      <polygon>-1.996,115.666 -2.003,115.667 -2.007,115.662 -2.016,115.630 -2.036,115.598 -2.045,115.589 -2.061,115.583 -2.067,115.560 -2.082,115.560 -2.089,115.554 -2.099,115.537 -2.095,115.524 -2.111,115.525 -2.116,115.538 -2.124,115.545 -2.146,115.541 -2.166,115.557 -2.190,115.556 -2.190,115.555 -2.200,115.534 -2.147,115.527 -2.138,115.516 -2.098,115.511 -2.088,115.504 -2.064,115.460 -2.056,115.461 -2.040,115.450 -2.034,115.450 -2.008,115.453 -2.007,115.466 -1.963,115.464 -1.959,115.481 -1.871,115.483 -1.870,115.492 -1.879,115.512 -1.886,115.516 -1.899,115.516 -1.906,115.508 -1.920,115.506 -1.932,115.510 -1.941,115.524 -1.986,115.528 -1.994,115.539 -1.991,115.571 -1.993,115.584 -1.988,115.587 -1.987,115.596 -1.991,115.603 -1.989,115.620 -1.998,115.637 -1.990,115.642 -1.986,115.653 -1.996,115.666</polygon>
+      <polygon>-1.955,115.707 -1.961,115.706 -1.972,115.698 -1.977,115.701 -1.980,115.711 -1.992,115.713 -1.996,115.718 -2.022,115.714 -2.046,115.688 -2.077,115.684 -2.099,115.662 -2.126,115.646 -2.130,115.640 -2.126,115.633 -2.151,115.638 -2.155,115.627 -2.151,115.617 -2.145,115.604 -2.148,115.595 -2.178,115.584 -2.190,115.556 -2.166,115.557 -2.146,115.541 -2.124,115.545 -2.116,115.538 -2.111,115.525 -2.095,115.524 -2.099,115.537 -2.089,115.554 -2.082,115.560 -2.067,115.560 -2.061,115.583 -2.045,115.589 -2.036,115.598 -2.016,115.630 -2.007,115.662 -2.003,115.667 -1.996,115.666 -1.978,115.682 -1.956,115.689 -1.955,115.707</polygon>
+    </area>
+  </info>
+</alert>
