@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-10T03:00:39.583Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        100.591378453,
+        0.0270281112
+      ]
+    },
+    "properties": {
+      "pkey": "400021",
+      "created_at": "2026-11-10T02:45:33.817Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "393dba81-9722-4ae9-9753-2a4058224ef1",
+      "image_url": "https://images.petabencana.id/393dba81-9722-4ae9-9753-2a4058224ef1.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 76
+      },
+      "tags": {
+        "city": "LIMA PULUH KOTA",
+        "district_id": null,
+        "region_code": "1307",
+        "local_area_id": null,
+        "instance_region_code": "ID-SB"
+      },
+      "title": null,
+      "text": "Permukiman warga di Nagari Galugua, Kecamatan Kapur IX, Kabupaten Lima Puluh Kota, Sumatera Barat, terendam banjir akibat luapan Sungai ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
