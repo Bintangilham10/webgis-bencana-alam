@@ -1,0 +1,21 @@
+{
+  "guid": "CBMihAFBVV95cUxPRWNqYWFlV1laS01LcTFDemtOZUhHaHFiUnhGTEgtUXN5QTZ3Z0RyYXpETjdsR2ZmRkx1T1dUMjJXMTctdGpFSTJtSnN3LVVzRnIwQmpGSEQ1U1htZGx3WVM0VVJocFdoWTdoUWp4a3pCWGVtNjh5clpLZHUxRXZrMWE5VmY",
+  "title": "TANAH LONGSOR TERJADI DI PEJATEN TIMUR, JAKARTA SELATAN, AKSES GANG LANGGAR DUA TERPUTUS TOTAL - Monitor Pos",
+  "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRWNqYWFlV1laS01LcTFDemtOZUhHaHFiUnhGTEgtUXN5QTZ3Z0RyYXpETjdsR2ZmRkx1T1dUMjJXMTctdGpFSTJtSnN3LVVzRnIwQmpGSEQ1U1htZGx3WVM0VVJocFdoWTdoUWp4a3pCWGVtNjh5clpLZHUxRXZrMWE5VmY?oc=5",
+  "source": "Monitor Pos",
+  "source_url": "https://www.monitorpos.net",
+  "published_at": "2026-11-10T10:47:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-10T12:45:29.674Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "31.74",
+      "nama": "Kota Administrasi Jakarta Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

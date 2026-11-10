@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.10.12.82.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-10T20:50:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-10T21:20:00+09:00</effective>
+    <expires>2026-11-10T22:20:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Maluku Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 November 2026, 21:20 WIT di sebagian wilayah Maluku Utara, khususnya di TOBELO BARAT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 November 2026, 22:20 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CMU/2026/11/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Maluku Utara</areaDesc>
+      <polygon>1.617,127.852 1.613,127.855 1.589,127.848 1.579,127.916 1.570,127.927 1.557,127.955 1.555,127.968 1.559,127.984 1.557,127.999 1.486,127.993 1.484,127.956 1.445,127.954 1.478,127.792 1.472,127.785 1.471,127.774 1.476,127.769 1.474,127.764 1.476,127.756 1.484,127.747 1.493,127.743 1.499,127.714 1.500,127.713 1.507,127.713 1.510,127.712 1.511,127.715 1.512,127.716 1.513,127.719 1.516,127.720 1.518,127.719 1.527,127.725 1.528,127.725 1.532,127.725 1.534,127.727 1.546,127.728 1.552,127.726 1.559,127.726 1.566,127.727 1.575,127.728 1.581,127.727 1.593,127.727 1.596,127.729 1.595,127.731 1.599,127.732 1.601,127.734 1.602,127.735 1.604,127.735 1.606,127.735 1.598,127.747 1.622,127.780 1.621,127.800 1.616,127.815 1.621,127.827 1.617,127.852</polygon>
+    </area>
+  </info>
+</alert>

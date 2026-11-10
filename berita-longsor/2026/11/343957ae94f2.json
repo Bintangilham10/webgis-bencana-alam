@@ -1,0 +1,26 @@
+{
+  "guid": "CBMitgFBVV95cUxPNktLT0tNdEJEMkZQTWpFMjBrdUhkXzZWT3VCWmx2d0FRX2hxcWFkNHNjR1BSOFdjVG9DeXdWMmpaNUdFMzJ2bVY1S0tDeUlCblBRNWJKSFNhT0F0RnNJcVdWTmMwYWpPcklkX2dQYktib2thcmJYOVpTbkhjMDlYOHF2WDJOMlFJanM0MS1tN21ZWU96bE9qSmdyTkZvbnhXT3U4aDFydjZOLUxLTkNKS1FXTXpNQQ",
+  "title": "Hadapi Ancaman Banjir dan Longsor, Mas Dhito Petakan Daerah Rawan Bencana di Kediri - DPD PDI Perjuangan Jawa Timur",
+  "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNktLT0tNdEJEMkZQTWpFMjBrdUhkXzZWT3VCWmx2d0FRX2hxcWFkNHNjR1BSOFdjVG9DeXdWMmpaNUdFMzJ2bVY1S0tDeUlCblBRNWJKSFNhT0F0RnNJcVdWTmMwYWpPcklkX2dQYktib2thcmJYOVpTbkhjMDlYOHF2WDJOMlFJanM0MS1tN21ZWU96bE9qSmdyTkZvbnhXT3U4aDFydjZOLUxLTkNKS1FXTXpNQQ?oc=5",
+  "source": "DPD PDI Perjuangan Jawa Timur",
+  "source_url": "https://pdiperjuangan-jatim.com",
+  "published_at": "2026-11-10T10:26:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-10T12:45:29.674Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.06",
+      "nama": "Kabupaten Kediri",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.71",
+      "nama": "Kota Kediri",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
