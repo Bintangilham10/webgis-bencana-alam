@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-11-10T02:00:42.077Z",
+  "data": {
+    "Tanggal": "10 Nov 2026",
+    "Jam": "08:53:28 WIB",
+    "DateTime": "2026-11-10T01:53:28+00:00",
+    "Coordinates": "-8.02,130.49",
+    "Lintang": "8.02 LS",
+    "Bujur": "130.49 BT",
+    "Magnitude": "5.4",
+    "Kedalaman": "84 km",
+    "Wilayah": "90 km BaratDaya TANIMBAR",
+    "Potensi": "Tidak berpotensi tsunami",
+    "Dirasakan": "-",
+    "Shakemap": "20261110085612.mmi.jpg"
+  }
+}
