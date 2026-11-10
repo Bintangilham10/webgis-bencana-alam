@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-10T22:00:41.012Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        96.9616748739,
+        4.5639732544
+      ]
+    },
+    "properties": {
+      "pkey": "400023",
+      "created_at": "2026-11-10T21:57:11.187Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "96770f00-060d-4c97-bb20-fc8736e7ee17",
+      "image_url": "https://images.petabencana.id/96770f00-060d-4c97-bb20-fc8736e7ee17.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 65
+      },
+      "tags": {
+        "city": "ACEH TENGAH",
+        "district_id": null,
+        "region_code": "1104",
+        "local_area_id": null,
+        "instance_region_code": "ID-AC"
+      },
+      "title": null,
+      "text": "Banjir dan tanah longsor menerjang sejumlah kecamatan di Kabupaten Aceh Tengah, Aceh, akibat hujan deras sejak Selasa (10/11/2026)",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
