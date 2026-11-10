@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.10.13.93.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-10T20:20:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-10T20:33:00+09:00</effective>
+    <expires>2026-11-11T00:51:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 November 2026, 20:33 WIT di sebagian wilayah Papua Selatan, khususnya di ELIKOBAL, MUTING, SOTA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 11 November 2026, 00:51 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPS/2026/11/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua Selatan</areaDesc>
+      <polygon>-7.328,140.684 -7.373,140.653 -7.355,140.632 -7.367,140.622 -7.375,140.631 -7.389,140.620 -7.422,140.618 -7.432,140.586 -7.446,140.562 -7.458,140.557 -7.459,140.557 -7.483,140.563 -7.496,140.568 -7.500,140.575 -7.513,140.578 -7.526,140.554 -7.537,140.550 -7.546,140.554 -7.562,140.550 -7.571,140.539 -7.573,140.523 -7.594,140.517 -7.617,140.499 -7.631,140.496 -7.649,140.517 -7.671,140.516 -7.684,140.528 -7.706,140.527 -7.716,140.532 -7.726,140.546 -7.747,140.543 -7.746,140.526 -7.740,140.450 -7.744,140.222 -7.738,140.218 -7.748,140.213 -7.741,140.201 -7.755,140.195 -7.753,140.189 -7.746,140.189 -7.739,140.198 -7.729,140.200 -7.712,140.191 -7.698,140.194 -7.710,140.217 -7.699,140.218 -7.695,140.223 -7.699,140.230 -7.705,140.233 -7.701,140.254 -7.716,140.270 -7.716,140.273 -7.700,140.266 -7.684,140.271 -7.683,140.276 -7.698,140.277 -7.680,140.298 -7.666,140.289 -7.647,140.270 -7.240,140.090 -6.849,140.566 -6.882,140.593 -6.978,140.644 -7.032,140.650 -7.064,140.663 -7.196,140.665 -7.237,140.659 -7.254,140.644 -7.277,140.641 -7.311,140.651 -7.309,140.656 -7.328,140.684</polygon>
+      <polygon>-7.765,141.019 -8.787,141.019 -8.769,140.949 -8.752,140.922 -8.726,140.863 -8.710,140.838 -8.646,140.784 -8.608,140.766 -8.592,140.750 -8.576,140.741 -8.552,140.717 -8.544,140.704 -8.447,140.729 -8.432,140.735 -8.381,140.742 -8.281,140.774 -8.279,140.788 -8.269,140.800 -8.248,140.808 -8.240,140.817 -8.222,140.814 -8.203,140.817 -8.168,140.812 -8.140,140.816 -8.115,140.812 -8.085,140.831 -8.066,140.853 -8.033,140.862 -7.754,140.862 -7.764,140.902 -7.774,140.918 -7.778,140.945 -7.765,141.019</polygon>
+      <polygon>-7.369,141.019 -7.765,141.019 -7.778,140.945 -7.774,140.918 -7.764,140.902 -7.754,140.862 -7.750,140.832 -7.755,140.732 -7.747,140.543 -7.726,140.546 -7.716,140.532 -7.706,140.527 -7.684,140.528 -7.671,140.516 -7.649,140.517 -7.631,140.496 -7.617,140.499 -7.594,140.517 -7.573,140.523 -7.571,140.539 -7.562,140.550 -7.546,140.554 -7.537,140.550 -7.526,140.554 -7.513,140.578 -7.500,140.575 -7.496,140.568 -7.483,140.563 -7.459,140.557 -7.458,140.557 -7.446,140.562 -7.432,140.586 -7.422,140.618 -7.389,140.620 -7.375,140.631 -7.367,140.622 -7.355,140.632 -7.373,140.653 -7.328,140.684 -7.326,140.703 -7.331,140.752 -7.328,140.780 -7.349,140.782 -7.355,140.795 -7.368,140.877 -7.369,141.019</polygon>
+    </area>
+  </info>
+</alert>
