@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-10T16:45:35.682Z",
+  "data": {
+    "Tanggal": "10 Nov 2026",
+    "Jam": "23:04:15 WIB",
+    "DateTime": "2026-11-10T16:04:15+00:00",
+    "Coordinates": "-4.29,122.38",
+    "Lintang": "4.29 LS",
+    "Bujur": "122.38 BT",
+    "Magnitude": "4.0",
+    "Kedalaman": "5 km",
+    "Wilayah": "Pusat gempa berada di darat 12 km timur Konawe Selatan",
+    "Dirasakan": "IV Konawe Selatan, III Kendari"
+  }
+}
