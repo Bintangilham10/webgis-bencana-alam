@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.10.10.61.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-10T15:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-10T15:50:00+07:00</effective>
+    <expires>2026-11-10T17:50:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 November 2026, 15:50 WIB di sebagian wilayah Kalimantan Barat, khususnya di JAGOI BABANG, MERANTI, TANAH PINOH BARAT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 November 2026, 17:50 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/11/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>1.343,109.965 1.334,109.947 1.304,109.908 1.266,109.875 1.257,109.871 1.264,109.847 1.292,109.833 1.312,109.793 1.312,109.788 1.286,109.773 1.286,109.765 1.293,109.756 1.312,109.743 1.316,109.735 1.352,109.707 1.353,109.697 1.306,109.656 1.326,109.626 1.355,109.619 1.368,109.611 1.373,109.601 1.370,109.592 1.377,109.575 1.384,109.580 1.389,109.607 1.405,109.601 1.431,109.609 1.444,109.639 1.436,109.654 1.448,109.676 1.462,109.685 1.475,109.709 1.475,109.718 1.506,109.744 1.520,109.750 1.534,109.749 1.521,109.769 1.503,109.781 1.499,109.795 1.490,109.799 1.478,109.795 1.466,109.805 1.468,109.815 1.484,109.831 1.482,109.836 1.454,109.827 1.438,109.832 1.424,109.830 1.422,109.834 1.424,109.846 1.418,109.860 1.417,109.888 1.423,109.920 1.416,109.938 1.386,109.964 1.365,109.959 1.343,109.965</polygon>
+      <polygon>0.841,109.780 0.799,109.798 0.782,109.813 0.759,109.805 0.752,109.807 0.743,109.829 0.741,109.825 0.729,109.828 0.717,109.826 0.705,109.818 0.693,109.817 0.682,109.811 0.672,109.818 0.656,109.813 0.644,109.815 0.640,109.810 0.638,109.788 0.630,109.777 0.650,109.745 0.654,109.731 0.649,109.711 0.650,109.687 0.658,109.675 0.747,109.653 0.752,109.668 0.761,109.676 0.803,109.676 0.841,109.687 0.850,109.701 0.842,109.732 0.844,109.752 0.841,109.780</polygon>
+      <polygon>-0.587,111.574 -0.599,111.562 -0.618,111.555 -0.632,111.555 -0.667,111.561 -0.684,111.568 -0.709,111.568 -0.734,111.577 -0.748,111.575 -0.754,111.559 -0.780,111.522 -0.822,111.496 -0.834,111.476 -0.848,111.465 -0.852,111.465 -0.874,111.442 -0.885,111.423 -0.902,111.420 -0.903,111.414 -0.928,111.415 -0.919,111.408 -0.919,111.402 -0.938,111.396 -0.946,111.383 -0.937,111.376 -0.942,111.358 -0.937,111.354 -0.936,111.345 -0.941,111.339 -0.958,111.336 -0.958,111.328 -0.950,111.315 -0.950,111.290 -0.963,111.274 -0.966,111.254 -0.940,111.236 -0.905,111.229 -0.886,111.211 -0.875,111.208 -0.864,111.218 -0.842,111.217 -0.832,111.212 -0.784,111.234 -0.741,111.229 -0.734,111.237 -0.719,111.241 -0.691,111.241 -0.664,111.222 -0.659,111.222 -0.619,111.251 -0.615,111.258 -0.628,111.273 -0.631,111.285 -0.615,111.327 -0.611,111.347 -0.614,111.363 -0.627,111.393 -0.629,111.410 -0.637,111.423 -0.637,111.439 -0.634,111.447 -0.607,111.477 -0.592,111.511 -0.589,111.544 -0.579,111.563 -0.581,111.571 -0.587,111.574</polygon>
+    </area>
+  </info>
+</alert>
