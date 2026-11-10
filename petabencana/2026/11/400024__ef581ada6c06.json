@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-10T22:15:31.955Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.3701346577,
+        -6.9882237616
+      ]
+    },
+    "properties": {
+      "pkey": "400024",
+      "created_at": "2026-11-10T22:04:45.913Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "f3a2aea7-0d5f-4612-83f3-214abc4b0843",
+      "image_url": "https://images.petabencana.id/f3a2aea7-0d5f-4612-83f3-214abc4b0843.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 55
+      },
+      "tags": {
+        "city": "KOTA SEMARANG",
+        "district_id": null,
+        "region_code": "3374",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Genangan air akibat hujan deras melanda kawasan sekitar Pengadilan Negeri Semarang, Jawa Tengah, pada Selasa malam (10/11/2026) pukul 23.30 ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
