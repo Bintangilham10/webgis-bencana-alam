@@ -1,0 +1,17 @@
+{
+  "feed": "gempaterkini",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json",
+  "first_seen_at": "2026-11-10T08:45:30.892Z",
+  "data": {
+    "Tanggal": "10 Nov 2026",
+    "Jam": "15:34:04 WIB",
+    "DateTime": "2026-11-10T08:34:04+00:00",
+    "Coordinates": "-0.19,132.98",
+    "Lintang": "0.19 LS",
+    "Bujur": "132.98 BT",
+    "Magnitude": "5.3",
+    "Kedalaman": "10 km",
+    "Wilayah": "69 km BaratLaut KEBARMANOKWARI-PAPUABRT",
+    "Potensi": "Tidak berpotensi tsunami"
+  }
+}
