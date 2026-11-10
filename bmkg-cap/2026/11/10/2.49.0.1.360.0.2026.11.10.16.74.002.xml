@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.10.16.74.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-10T23:10:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-10T23:40:00+08:00</effective>
+    <expires>2026-11-11T01:40:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tenggara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 November 2026, 23:40 WITA di sebagian wilayah Sulawesi Tenggara, khususnya di LALONGGASUMEETO, MANDONGA, PUUWATU, SAMPARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 11 November 2026, 01:40 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CST/2026/11/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tenggara</areaDesc>
+      <polygon>-3.941,122.452 -3.966,122.452 -4.008,122.440 -4.010,122.421 -4.002,122.372 -3.997,122.362 -3.937,122.373 -3.947,122.383 -3.963,122.419 -3.952,122.429 -3.940,122.431 -3.929,122.437 -3.941,122.452</polygon>
+      <polygon>-3.899,122.567 -3.940,122.566 -3.941,122.539 -3.935,122.522 -3.909,122.507 -3.911,122.479 -3.898,122.479 -3.881,122.496 -3.879,122.506 -3.900,122.533 -3.899,122.537 -3.893,122.535 -3.903,122.556 -3.899,122.567</polygon>
+      <polygon>-3.935,122.522 -3.949,122.520 -3.953,122.524 -3.966,122.522 -3.973,122.531 -3.978,122.533 -3.980,122.526 -3.972,122.506 -3.957,122.511 -3.916,122.472 -3.911,122.479 -3.911,122.479 -3.909,122.507 -3.935,122.522</polygon>
+      <polygon>-3.972,122.506 -3.975,122.503 -3.971,122.496 -3.976,122.491 -3.992,122.480 -3.999,122.468 -4.003,122.459 -4.017,122.455 -4.020,122.448 -4.016,122.440 -4.008,122.440 -3.966,122.452 -3.941,122.452 -3.916,122.472 -3.957,122.511 -3.972,122.506</polygon>
+    </area>
+  </info>
+</alert>
