@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.10.23.32.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-11T04:08:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-11T04:18:00+07:00</effective>
+    <expires>2026-11-11T07:08:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 11 November 2026, 04:18 WIB di sebagian wilayah Jawa Barat, khususnya di CIJULANG, KALIPUCANG, PANGANDARAN, PARIGI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 11 November 2026, 07:08 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/11/11/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-7.566,108.571 -7.575,108.547 -7.599,108.554 -7.606,108.550 -7.613,108.553 -7.617,108.564 -7.627,108.566 -7.664,108.558 -7.669,108.570 -7.686,108.572 -7.700,108.515 -7.720,108.500 -7.705,108.493 -7.694,108.479 -7.682,108.472 -7.675,108.447 -7.665,108.453 -7.643,108.447 -7.641,108.461 -7.637,108.462 -7.639,108.477 -7.632,108.498 -7.628,108.498 -7.608,108.517 -7.592,108.514 -7.582,108.525 -7.568,108.527 -7.570,108.545 -7.558,108.550 -7.566,108.571</polygon>
+      <polygon>-7.675,108.447 -7.682,108.472 -7.694,108.479 -7.705,108.493 -7.720,108.500 -7.747,108.498 -7.749,108.503 -7.760,108.507 -7.776,108.503 -7.751,108.447 -7.746,108.444 -7.737,108.446 -7.729,108.434 -7.729,108.421 -7.724,108.399 -7.725,108.391 -7.731,108.385 -7.676,108.368 -7.667,108.379 -7.682,108.395 -7.681,108.413 -7.689,108.434 -7.675,108.447</polygon>
+      <polygon>-7.603,108.738 -7.612,108.734 -7.623,108.747 -7.634,108.750 -7.653,108.768 -7.659,108.784 -7.669,108.787 -7.667,108.799 -7.676,108.801 -7.676,108.800 -7.679,108.794 -7.693,108.792 -7.696,108.785 -7.693,108.779 -7.685,108.781 -7.685,108.774 -7.695,108.773 -7.693,108.768 -7.696,108.759 -7.683,108.737 -7.677,108.694 -7.675,108.699 -7.671,108.699 -7.662,108.686 -7.645,108.681 -7.642,108.676 -7.619,108.691 -7.606,108.683 -7.603,108.652 -7.599,108.640 -7.591,108.624 -7.579,108.618 -7.575,108.616 -7.562,108.623 -7.589,108.653 -7.585,108.661 -7.585,108.670 -7.591,108.702 -7.597,108.706 -7.601,108.717 -7.603,108.738</polygon>
+      <polygon>-7.677,108.694 -7.685,108.672 -7.699,108.660 -7.706,108.660 -7.716,108.676 -7.721,108.678 -7.730,108.671 -7.716,108.649 -7.711,108.649 -7.706,108.657 -7.694,108.652 -7.688,108.641 -7.685,108.621 -7.648,108.615 -7.640,108.617 -7.630,108.628 -7.613,108.612 -7.579,108.618 -7.591,108.624 -7.599,108.640 -7.603,108.652 -7.606,108.683 -7.619,108.691 -7.642,108.676 -7.645,108.681 -7.662,108.686 -7.671,108.699 -7.675,108.699 -7.677,108.694</polygon>
+    </area>
+  </info>
+</alert>
