@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.10.15.35.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-10T19:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-10T19:30:00+07:00</effective>
+    <expires>2026-11-10T22:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 November 2026, 19:30 WIB di sebagian wilayah Jawa Timur, khususnya di SAWOO, SEDATI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 November 2026, 22:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.919,111.572 -7.937,111.588 -7.933,111.600 -7.941,111.625 -7.957,111.627 -7.955,111.642 -7.965,111.637 -7.969,111.660 -7.975,111.661 -7.976,111.656 -7.983,111.653 -8.002,111.657 -8.021,111.653 -8.022,111.648 -8.014,111.645 -8.005,111.634 -8.009,111.612 -8.018,111.600 -8.026,111.582 -8.040,111.575 -8.048,111.567 -8.050,111.557 -8.035,111.539 -8.006,111.539 -7.964,111.526 -7.970,111.538 -7.960,111.545 -7.957,111.533 -7.947,111.530 -7.939,111.533 -7.919,111.572</polygon>
+      <polygon>-7.473,112.819 -7.455,112.816 -7.438,112.804 -7.439,112.790 -7.421,112.787 -7.420,112.777 -7.406,112.754 -7.393,112.758 -7.372,112.745 -7.365,112.746 -7.367,112.795 -7.361,112.823 -7.343,112.828 -7.332,112.836 -7.332,112.842 -7.418,112.833 -7.471,112.838 -7.477,112.834 -7.473,112.819</polygon>
+    </area>
+  </info>
+</alert>
