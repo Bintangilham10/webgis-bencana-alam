@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-10T22:45:28.827Z",
+  "data": {
+    "Tanggal": "11 Nov 2026",
+    "Jam": "05:09:09 WIB",
+    "DateTime": "2026-11-10T22:09:09+00:00",
+    "Coordinates": "4.05,97.34",
+    "Lintang": "4.05 LU",
+    "Bujur": "97.34 BT",
+    "Magnitude": "4.9",
+    "Kedalaman": "4 km",
+    "Wilayah": "Pusat gempa berada di darat 6 km utara Kab. Gayo Lues",
+    "Dirasakan": "III-IV Gayo Lues, III-IV Aceh Timur, III Aceh Tengah, III Bener Meriah, III Lhokseumawe"
+  }
+}
