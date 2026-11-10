@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.10.18.35.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-10T23:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-11T00:00:00+07:00</effective>
+    <expires>2026-11-11T03:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 11 November 2026, 00:00 WIB di sebagian wilayah Jawa Timur, khususnya di ARJOSARI, KRIAN, PRAMBON.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 11 November 2026, 03:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-8.059,111.184 -8.069,111.190 -8.076,111.213 -8.108,111.223 -8.116,111.219 -8.122,111.199 -8.127,111.197 -8.138,111.200 -8.150,111.195 -8.157,111.188 -8.160,111.160 -8.146,111.154 -8.148,111.148 -8.135,111.126 -8.136,111.114 -8.132,111.107 -8.128,111.113 -8.122,111.111 -8.119,111.102 -8.110,111.096 -8.104,111.103 -8.094,111.104 -8.081,111.119 -8.065,111.125 -8.063,111.131 -8.057,111.124 -8.044,111.122 -8.024,111.136 -8.041,111.155 -8.041,111.160 -8.033,111.160 -8.033,111.170 -8.038,111.173 -8.050,111.169 -8.051,111.181 -8.059,111.184</polygon>
+      <polygon>-7.431,112.570 -7.437,112.576 -7.438,112.588 -7.449,112.594 -7.449,112.612 -7.462,112.620 -7.478,112.613 -7.479,112.605 -7.501,112.603 -7.500,112.600 -7.478,112.570 -7.476,112.560 -7.470,112.538 -7.466,112.539 -7.469,112.549 -7.462,112.560 -7.452,112.564 -7.452,112.560 -7.445,112.555 -7.438,112.558 -7.431,112.570</polygon>
+      <polygon>-7.390,112.632 -7.402,112.625 -7.403,112.617 -7.416,112.613 -7.426,112.592 -7.438,112.588 -7.437,112.576 -7.431,112.570 -7.418,112.576 -7.409,112.574 -7.410,112.564 -7.405,112.562 -7.403,112.566 -7.398,112.566 -7.388,112.568 -7.392,112.571 -7.377,112.588 -7.368,112.615 -7.390,112.632</polygon>
+    </area>
+  </info>
+</alert>
