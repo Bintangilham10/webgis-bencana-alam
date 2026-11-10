@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiywFBVV95cUxQWENWMEpLU2ZCZldLUkxGa2Q5NTB6ckRKVnZPNFd4UnF6U09qaVdzT2llanpBbkUzVUpTTllkam9rMnZmc19sb0lRSTJoUkZSbjRWcjZkNnNqN09wREM5Zlc2R1hhdkpqVlB2UjN0TW1lVFI4Zm9yOGlfUlZqbm4zcnc0Z01DbXB5U3dKcDlTcFk3QWVMUlYwbE5XMGN4SDlkWDk3WGdDUFZCRVlNckJUeVNpTlNTV3RxaG5TbTBJdXZuMTVjczBIOGdQQQ",
+  "title": "Tujuh Kecamatan di Pekalongan Masuk Peta Rawan Banjir-Longsor, 400 Personel Disiagakan - Suara Pantura",
+  "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWENWMEpLU2ZCZldLUkxGa2Q5NTB6ckRKVnZPNFd4UnF6U09qaVdzT2llanpBbkUzVUpTTllkam9rMnZmc19sb0lRSTJoUkZSbjRWcjZkNnNqN09wREM5Zlc2R1hhdkpqVlB2UjN0TW1lVFI4Zm9yOGlfUlZqbm4zcnc0Z01DbXB5U3dKcDlTcFk3QWVMUlYwbE5XMGN4SDlkWDk3WGdDUFZCRVlNckJUeVNpTlNTV3RxaG5TbTBJdXZuMTVjczBIOGdQQQ?oc=5",
+  "source": "Suara Pantura",
+  "source_url": "https://suarapantura.com",
+  "published_at": "2026-11-10T00:36:11.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-10T03:15:28.553Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.26",
+      "nama": "Kabupaten Pekalongan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.75",
+      "nama": "Kota Pekalongan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
