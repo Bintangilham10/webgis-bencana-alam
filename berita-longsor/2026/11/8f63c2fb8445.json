@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiswFBVV95cUxOMmJKUGVXMnJ6V3FvMFZWRXBzbnlrUkJQTmU2ZzZ4OTh3ZUtmMTFKRFprN3M2bnY4QktfcDVIRldlS3F3Q1FmVGZPeVAxelZCTkRmTjA1dWpudkpXOHhFREwzRUFURGtfTVJmOGdRLV9nSjdOSVRUNi1EWUdYWFFMMTRiZ0ZONXNFbUFsTHFPS1VnMWEydFE3NmM1QU11LWJrZ0NQZnFOSm1tcTlrYW9Ra1Y4RQ",
+  "title": "Cuaca Tak Menentu di Puncak Bogor, BMKG Ingatkan Potensi Cuaca Ekstrem dan Ancaman Longsor - Pakuan Raya",
+  "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMmJKUGVXMnJ6V3FvMFZWRXBzbnlrUkJQTmU2ZzZ4OTh3ZUtmMTFKRFprN3M2bnY4QktfcDVIRldlS3F3Q1FmVGZPeVAxelZCTkRmTjA1dWpudkpXOHhFREwzRUFURGtfTVJmOGdRLV9nSjdOSVRUNi1EWUdYWFFMMTRiZ0ZONXNFbUFsTHFPS1VnMWEydFE3NmM1QU11LWJrZ0NQZnFOSm1tcTlrYW9Ra1Y4RQ?oc=5",
+  "source": "Pakuan Raya",
+  "source_url": "https://pakuanraya.com",
+  "published_at": "2026-11-10T05:55:23.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-10T06:15:30.807Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

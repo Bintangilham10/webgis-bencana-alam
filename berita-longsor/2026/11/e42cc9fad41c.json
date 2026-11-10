@@ -1,0 +1,26 @@
+{
+  "guid": "CBMipAFBVV95cUxPVEtoTmhBSkxFR1JRekI5M2NoNGFLN3dCb1M0cXhfV0pwUEd1YzJSaTEyRkRHTUtzX3YzRlFQdzU3SWN3Sm9YNVN0c3ppUm5lYnd5RW9ybTJkVERjVkVYYlFscEpMc25sMzFNWWs2ZDNHakZMOTRuRHNuVGxnV3RhX2FNQkVrU0FYUHIxWUNFWUFFNjBpUW9jYW5jc2lHU1BweVA3Yw",
+  "title": "Empat Kejadian Bencana di Bogor, Rumah Warga Terdampak Longsor - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVEtoTmhBSkxFR1JRekI5M2NoNGFLN3dCb1M0cXhfV0pwUEd1YzJSaTEyRkRHTUtzX3YzRlFQdzU3SWN3Sm9YNVN0c3ppUm5lYnd5RW9ybTJkVERjVkVYYlFscEpMc25sMzFNWWs2ZDNHakZMOTRuRHNuVGxnV3RhX2FNQkVrU0FYUHIxWUNFWUFFNjBpUW9jYW5jc2lHU1BweVA3Yw?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-10T05:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-10T06:15:30.807Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
