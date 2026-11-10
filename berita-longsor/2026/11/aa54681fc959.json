@@ -1,0 +1,23 @@
+{
+  "guid": "CBMi2wFBVV95cUxNZmVtTFd5cDluRlNnNDF0OVRqYUpsUU9NX0ZFaVhQRmNCb0RiR0hSRnktQWs1R1had2FjWWN4dlkyby01bGppaXc4R0JIMmQtVjRPbHVBdGJKVWdvcHRpbDlUZ3ZTVkZEX2Z5V1V4d1QyaVlmbVBHd1ZvTWg5QW8yYnJaUVc2OGN6bG9qRVBEdzhoLXhSTWVZdDNUQml0ZVlTdHlXTC1lUlo4T2RhbzVtZFNVZlp3Qi1ma0s1a3FoZ2ctRW9xdjBqY3ZlV0dSVmZhYnk0OHp1aFpwUE0",
+  "title": "Jembrana Masuk Wilayah Potensi Ancaman Bencana Tertinggi di Bali, Tertinggi Banjir dan Tanah Longsor - Tribun-bali.com",
+  "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZmVtTFd5cDluRlNnNDF0OVRqYUpsUU9NX0ZFaVhQRmNCb0RiR0hSRnktQWs1R1had2FjWWN4dlkyby01bGppaXc4R0JIMmQtVjRPbHVBdGJKVWdvcHRpbDlUZ3ZTVkZEX2Z5V1V4d1QyaVlmbVBHd1ZvTWg5QW8yYnJaUVc2OGN6bG9qRVBEdzhoLXhSTWVZdDNUQml0ZVlTdHlXTC1lUlo4T2RhbzVtZFNVZlp3Qi1ma0s1a3FoZ2ctRW9xdjBqY3ZlV0dSVmZhYnk0OHp1aFpwUE0?oc=5",
+  "source": "Tribun-bali.com",
+  "source_url": "https://bali.tribunnews.com",
+  "published_at": "2026-11-10T06:13:16.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-10T09:30:38.844Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "51.01",
+      "nama": "Kabupaten Jembrana",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bali"
+  ]
+}

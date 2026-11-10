@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi2AFBVV95cUxQaVBsNnlUSHpURzJ3T3dteGRWWndobUREMVRMNlVKSHZzTEg2UzZ5cm5Kd05BMGd3TFcxNEFTNk9scVd5MUM4VDJRZ1l6RFowcDc2V0p5UExZNGFvdlhqN3N3ZHFfbXVwaUEtZWlBSFNwY0hic3FZOFlqbkJMTmpyMl9uekF5aXBSejJ0aGVGaEhtM1dVbDN4NGRSRVJRUFQzOFZENFp2bDNuc3MxbjJFWG1rMVBTTXlkSnBDVnBERk9EUnRjNHpiZTFVU1BVLURtaUpTQm9FQnjSAdgBQVVfeXFMUGlQbDZ5VEh6VEcyd093bXhkVlp3aG1ERDFUTDZVSkh2c0xINlM2eXJuSndOQTBnd0xXMTRBUzZPbHFXeTFDOFQyUWdZekRaMHA3NldKeVBMWTRhb3ZYajdzd2RxX211cGlBLWVpQUhTcGNIYnNxWThZam5CTE5qcjJfbnpBeWlwUnoydGhlRmhIbTNXVWwzeDRkUkVSUVBUMzhWRDRadmwzbnNzMW4yRVhtazFQU015ZEpwQ1ZwREZPRFJ0YzR6YmUxVVNQVS1EbWlKU0JvRUJ4",
+  "title": "Hampir Seluruh Wilayah Salatiga Rawan Bencana, Waspadai Longsor dan Sesar Rawapening - Radar Semarang",
+  "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQaVBsNnlUSHpURzJ3T3dteGRWWndobUREMVRMNlVKSHZzTEg2UzZ5cm5Kd05BMGd3TFcxNEFTNk9scVd5MUM4VDJRZ1l6RFowcDc2V0p5UExZNGFvdlhqN3N3ZHFfbXVwaUEtZWlBSFNwY0hic3FZOFlqbkJMTmpyMl9uekF5aXBSejJ0aGVGaEhtM1dVbDN4NGRSRVJRUFQzOFZENFp2bDNuc3MxbjJFWG1rMVBTTXlkSnBDVnBERk9EUnRjNHpiZTFVU1BVLURtaUpTQm9FQnjSAdgBQVVfeXFMUGlQbDZ5VEh6VEcyd093bXhkVlp3aG1ERDFUTDZVSkh2c0xINlM2eXJuSndOQTBnd0xXMTRBUzZPbHFXeTFDOFQyUWdZekRaMHA3NldKeVBMWTRhb3ZYajdzd2RxX211cGlBLWVpQUhTcGNIYnNxWThZam5CTE5qcjJfbnpBeWlwUnoydGhlRmhIbTNXVWwzeDRkUkVSUVBUMzhWRDRadmwzbnNzMW4yRVhtazFQU015ZEpwQ1ZwREZPRFJ0YzR6YmUxVVNQVS1EbWlKU0JvRUJ4?oc=5",
+  "source": "Radar Semarang",
+  "source_url": "https://radarsemarang.jawapos.com",
+  "published_at": "2026-11-10T02:39:35.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-10T09:30:38.844Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.73",
+      "nama": "Kota Salatiga",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
