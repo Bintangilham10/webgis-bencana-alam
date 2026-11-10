@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.10.19.35.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-11T01:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-11T01:20:00+07:00</effective>
+    <expires>2026-11-11T04:20:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 11 November 2026, 01:20 WIB di sebagian wilayah Jawa Timur, khususnya di ARJOSARI, GEGER, PACET, PACIRAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 11 November 2026, 04:20 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/11/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-8.059,111.184 -8.069,111.190 -8.076,111.213 -8.108,111.223 -8.116,111.219 -8.122,111.199 -8.127,111.197 -8.138,111.200 -8.150,111.195 -8.157,111.188 -8.160,111.160 -8.146,111.154 -8.148,111.148 -8.135,111.126 -8.136,111.114 -8.132,111.107 -8.128,111.113 -8.122,111.111 -8.119,111.102 -8.110,111.096 -8.104,111.103 -8.094,111.104 -8.081,111.119 -8.065,111.125 -8.063,111.131 -8.057,111.124 -8.044,111.122 -8.024,111.136 -8.041,111.155 -8.041,111.160 -8.033,111.160 -8.033,111.170 -8.038,111.173 -8.050,111.169 -8.051,111.181 -8.059,111.184</polygon>
+      <polygon>-7.597,112.558 -7.614,112.560 -7.630,112.573 -7.651,112.570 -7.654,112.578 -7.665,112.583 -7.700,112.574 -7.719,112.579 -7.733,112.575 -7.734,112.575 -7.725,112.534 -7.737,112.525 -7.742,112.515 -7.711,112.509 -7.669,112.512 -7.635,112.503 -7.630,112.506 -7.632,112.510 -7.623,112.524 -7.612,112.528 -7.605,112.525 -7.600,112.536 -7.596,112.536 -7.594,112.557 -7.597,112.558</polygon>
+      <polygon>-6.875,112.441 -6.884,112.446 -6.893,112.443 -6.901,112.439 -6.904,112.428 -6.897,112.427 -6.896,112.403 -6.905,112.380 -6.904,112.358 -6.918,112.349 -6.915,112.341 -6.904,112.337 -6.899,112.301 -6.893,112.301 -6.887,112.295 -6.873,112.296 -6.871,112.314 -6.863,112.328 -6.870,112.343 -6.869,112.353 -6.864,112.358 -6.874,112.373 -6.876,112.388 -6.872,112.404 -6.864,112.414 -6.869,112.436 -6.875,112.441</polygon>
+      <polygon>-6.883,112.454 -6.879,112.449 -6.874,112.446 -6.879,112.454 -6.883,112.454</polygon>
+      <polygon>-6.979,112.931 -6.976,112.940 -6.954,112.956 -6.955,112.966 -6.962,112.978 -6.961,112.987 -6.976,112.986 -6.977,112.994 -6.995,112.999 -7.011,112.995 -7.006,112.992 -7.010,112.990 -7.021,112.995 -7.041,112.983 -7.051,112.967 -7.046,112.952 -7.052,112.948 -7.045,112.934 -7.039,112.905 -7.032,112.893 -7.034,112.882 -7.024,112.867 -7.010,112.870 -7.008,112.868 -6.989,112.865 -6.968,112.873 -6.961,112.867 -6.950,112.867 -6.963,112.903 -6.986,112.928 -6.979,112.931</polygon>
+    </area>
+  </info>
+</alert>
