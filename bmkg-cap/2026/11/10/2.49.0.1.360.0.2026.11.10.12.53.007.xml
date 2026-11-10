@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.10.12.53.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-10T18:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-10T18:15:00+08:00</effective>
+    <expires>2026-11-10T20:15:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 November 2026, 18:15 WITA di sebagian wilayah Nusa Tenggara Timur, khususnya di LOBALAIN, ROTE  SELATAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 November 2026, 20:15 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNT/2026/11/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Timur</areaDesc>
+      <polygon>-10.767,123.145 -10.816,123.158 -10.814,123.144 -10.818,123.126 -10.833,123.101 -10.857,123.089 -10.856,123.077 -10.851,123.070 -10.857,123.067 -10.860,123.061 -10.856,123.052 -10.844,123.038 -10.815,123.047 -10.802,123.045 -10.799,123.042 -10.804,123.020 -10.796,123.021 -10.788,123.017 -10.775,123.024 -10.763,123.013 -10.741,123.022 -10.735,123.021 -10.725,123.029 -10.731,123.037 -10.728,123.044 -10.708,123.062 -10.709,123.068 -10.757,123.098 -10.761,123.106 -10.758,123.129 -10.767,123.145</polygon>
+      <polygon>-10.871,123.064 -10.877,123.064 -10.869,123.058 -10.871,123.064</polygon>
+      <polygon>-10.744,123.204 -10.756,123.215 -10.766,123.243 -10.778,123.245 -10.801,123.229 -10.828,123.224 -10.822,123.214 -10.825,123.199 -10.833,123.196 -10.837,123.189 -10.816,123.158 -10.767,123.145 -10.758,123.170 -10.743,123.193 -10.744,123.204</polygon>
+    </area>
+  </info>
+</alert>
