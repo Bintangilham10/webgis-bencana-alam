@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-11-10T16:00:47.029Z",
+  "data": {
+    "Tanggal": "10 Nov 2026",
+    "Jam": "22:51:37 WIB",
+    "DateTime": "2026-11-10T15:51:37+00:00",
+    "Coordinates": "-0.93,128.60",
+    "Lintang": "0.93 LS",
+    "Bujur": "128.60 BT",
+    "Magnitude": "5.1",
+    "Kedalaman": "10 km",
+    "Wilayah": "116 km TimurLaut HALMAHERASELATAN-MALUT",
+    "Potensi": "Tidak berpotensi tsunami",
+    "Dirasakan": "-",
+    "Shakemap": "20261110225435.mmi.jpg"
+  }
+}
