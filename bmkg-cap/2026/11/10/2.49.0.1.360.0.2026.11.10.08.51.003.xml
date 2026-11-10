@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.10.08.51.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-10T15:18:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-10T15:30:00+08:00</effective>
+    <expires>2026-11-10T18:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bali</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 10 November 2026, 15:30 WITA di sebagian wilayah Bali, khususnya di MELAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 10 November 2026, 18:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBL/2026/11/10/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bali</areaDesc>
+      <polygon>-8.172,114.459 -8.187,114.456 -8.194,114.459 -8.196,114.483 -8.194,114.494 -8.206,114.514 -8.205,114.519 -8.191,114.532 -8.196,114.557 -8.190,114.573 -8.176,114.589 -8.177,114.599 -8.186,114.619 -8.212,114.632 -8.226,114.652 -8.252,114.619 -8.288,114.602 -8.296,114.590 -8.308,114.593 -8.320,114.587 -8.325,114.566 -8.322,114.558 -8.329,114.554 -8.334,114.524 -8.330,114.520 -8.314,114.521 -8.306,114.518 -8.277,114.486 -8.248,114.470 -8.217,114.448 -8.171,114.432 -8.160,114.439 -8.164,114.445 -8.176,114.445 -8.175,114.453 -8.166,114.460 -8.172,114.459</polygon>
+    </area>
+  </info>
+</alert>
