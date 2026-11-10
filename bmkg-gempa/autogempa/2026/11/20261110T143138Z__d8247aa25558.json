@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-11-10T15:00:47.016Z",
+  "data": {
+    "Tanggal": "10 Nov 2026",
+    "Jam": "21:31:38 WIB",
+    "DateTime": "2026-11-10T14:31:38+00:00",
+    "Coordinates": "-7.04,106.98",
+    "Lintang": "7.04 LS",
+    "Bujur": "106.98 BT",
+    "Magnitude": "4.0",
+    "Kedalaman": "102 km",
+    "Wilayah": "Pusat gempa berada di darat 15 km selatan Kota Sukabumi",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Cianjur, II Sukabumi",
+    "Shakemap": "20261110213138.mmi.jpg"
+  }
+}
