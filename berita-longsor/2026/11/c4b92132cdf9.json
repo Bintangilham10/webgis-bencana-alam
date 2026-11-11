@@ -1,0 +1,21 @@
+{
+  "guid": "CBMibEFVX3lxTFBlckVjTHlTYUlRbWRmMWE5eTBKc2NPeV85YnJkcDZGalZhX2NlamZJRTI3SXEtdXE1U3A4by1sbjRrODZSeXpLZnlUWTdCVFBPOWZ2NWx6ekVKMkVsZEd2OU5tdEVhSWhzczI0bw",
+  "title": "Waspada Longsor Jakarta Selatan - malutpost.id",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBlckVjTHlTYUlRbWRmMWE5eTBKc2NPeV85YnJkcDZGalZhX2NlamZJRTI3SXEtdXE1U3A4by1sbjRrODZSeXpLZnlUWTdCVFBPOWZ2NWx6ekVKMkVsZEd2OU5tdEVhSWhzczI0bw?oc=5",
+  "source": "malutpost.id",
+  "source_url": "https://malutpost.id",
+  "published_at": "2026-11-11T06:25:22.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-11T07:30:38.984Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "31.74",
+      "nama": "Kota Administrasi Jakarta Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiqwFBVV95cUxNb3BZd2wtaWc5blBiLTVLZExqTHhxMTU0Si1fNFpQc1BIcUNKSDFwYXd2YXhzZ3NLYV9Wb0g3WUt1d1ZGTmdhV3VyZ3VmRDU3ZTNWZHRMU1dhS2FMRDloLWFRdEJNTkhUaG9XOF95bUxIT3ZvazE0aTZtQ0VfMEJ3SVg2ZEFZWVd4LVNFLTZsbm56STN0ckdqMXRnRlRTM1JwU2ZMRmRNQTJLRVU",
+  "title": "Lima Rumah Terdampak Longsor di Jakarta Selatan - Media Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNb3BZd2wtaWc5blBiLTVLZExqTHhxMTU0Si1fNFpQc1BIcUNKSDFwYXd2YXhzZ3NLYV9Wb0g3WUt1d1ZGTmdhV3VyZ3VmRDU3ZTNWZHRMU1dhS2FMRDloLWFRdEJNTkhUaG9XOF95bUxIT3ZvazE0aTZtQ0VfMEJ3SVg2ZEFZWVd4LVNFLTZsbm56STN0ckdqMXRnRlRTM1JwU2ZMRmRNQTJLRVU?oc=5",
+  "source": "Media Indonesia",
+  "source_url": "https://mediaindonesia.com",
+  "published_at": "2026-11-11T07:13:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-11T07:30:38.984Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "31.74",
+      "nama": "Kota Administrasi Jakarta Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
