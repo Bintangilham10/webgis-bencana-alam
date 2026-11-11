@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.11.04.52.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-11T12:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-11T12:10:00+08:00</effective>
+    <expires>2026-11-11T14:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 11 November 2026, 12:10 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di JANAPRIA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 11 November 2026, 14:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/11/11/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.662,116.381 -8.674,116.385 -8.684,116.395 -8.680,116.402 -8.682,116.416 -8.695,116.430 -8.711,116.434 -8.722,116.443 -8.729,116.444 -8.745,116.446 -8.756,116.435 -8.756,116.429 -8.732,116.400 -8.737,116.392 -8.753,116.390 -8.754,116.379 -8.745,116.362 -8.735,116.374 -8.725,116.373 -8.721,116.370 -8.717,116.356 -8.698,116.346 -8.693,116.339 -8.679,116.339 -8.675,116.340 -8.674,116.354 -8.662,116.360 -8.665,116.369 -8.662,116.381</polygon>
+    </area>
+  </info>
+</alert>
