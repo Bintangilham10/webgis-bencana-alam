@@ -93,9 +93,10 @@ Sinkronisasi dan jeda diukur dari server produksi Azure yang menyala terus 13–
 
 ## Uji manual yang tersisa
 
-- **L1** akurasi: di 5 titik acuan luar ruang yang koordinatnya diketahui (mis. tugu atau patok), tekan "Lokasi saya" di HP dan catat koordinat yang tampil di kartu cek risiko; galat = jarak ke titik acuan, target ≤ 50 m.
-- **L5** perangkat: ulangi alur peta, popup, cek risiko, rute aman, dan pantau posisi di HP Android (Chrome), iPhone (Safari), dan laptop; catat cacat dan selisih akurasi.
-- **Lapis 5** pengguna: ≥ 15 mahasiswa dan warga mengerjakan 5 tugas (cari kab/kota, cek risiko, baca level, ganti lapisan, cari nomor darurat), lalu mengisi kuesioner SUS; target SUS ≥ 68 dan tugas selesai ≥ 90%.
+L1, L5, dan sesi uji pengguna di HP responden butuh SIGAP yang online lewat HTTPS.
+
+- **L1** akurasi dan **L5** perangkat: langkahnya di [`uji-lokasi-dan-perangkat.md`](uji-lokasi-dan-perangkat.md). Koordinat "Lokasi saya" di 5 titik acuan luar ruang dicatat di [`templat-galat-gps.csv`](templat-galat-gps.csv), lalu galatnya dihitung dengan `npm run gps` di `e2e/`; target ≤ 50 m. L5 mengulang alur peta, popup, cek risiko, rute aman, pantau posisi, dan notifikasi di HP Android (Chrome), iPhone (Safari), dan laptop.
+- **Lapis 5** pengguna: ≥ 15 mahasiswa dan warga mengerjakan 5 tugas (cari kab/kota, cek risiko, baca level, ganti lapisan, cari nomor darurat), lalu mengisi kuesioner SUS; target SUS ≥ 68 dan tugas selesai ≥ 90%. Teks Google Form di [`formulir-uji-pengguna.md`](formulir-uji-pengguna.md); jalannya sesi, kunci jawaban, dan lembar pengamatan di [`panduan-uji-pengguna.md`](panduan-uji-pengguna.md). Skor dihitung dengan `npm run sus` dari CSV jawaban formulir.
 - **P3** banjir dan tanah longsor: jalankan ulang `npm run akurasi` di `e2e/` setelah layanan InaRISK pulih.
 
 ## Menjalankan ulang
@@ -112,6 +113,8 @@ npx playwright install firefox webkit
 npm test            # P1, P2, P4, P5, P7, P8, L2–L4, L6, fitur baru di 6 profil browser
 npm run akurasi     # P3
 npm run kinerja     # P6
+npm run gps -- pengukuran.csv   # L1, dari templat-galat-gps.csv yang sudah diisi
+npm run sus -- jawaban.csv      # lapis 5, dari CSV jawaban Google Form
 cd ../server && TEST_DATABASE_URL=postgres://sigap:sigap@localhost:5433/sigap_test npm test   # lapis 1–2 dan P8 sisi server
 ```
 
