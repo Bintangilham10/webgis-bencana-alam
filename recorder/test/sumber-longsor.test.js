@@ -16,6 +16,7 @@ import { recordOpenMeteoEns, summarizeLocation } from '../src/sources/open-meteo
 import { REPORTS_URL, diffReports, flattenReports, recordPvmbgLaporan } from '../src/sources/pvmbg-laporan.js';
 import { containsPoint } from '../src/lib/geo.js';
 import { PARSER_VERSION, WMS_URL, featureInfoUrl, parseFeatureInfo, recordPvmbgPrakiraan } from '../src/sources/pvmbg-prakiraan.js';
+import { DIR_URL as SYNOP_DIR } from '../src/sources/synop.js';
 
 // Fixture = respons asli sumber (diambil 27 Sep 2026; geometri PVMBG dan jumlah
 // berita dipangkas supaya kecil).
@@ -431,7 +432,7 @@ describe('berita longsor', () => {
 });
 
 describe('runOnce dengan semua sumber', () => {
-  test('sepuluh sumber berjalan dan tercatat di log run', async () => {
+  test('semua sumber berjalan dan tercatat di log run', async () => {
     const CORE_ROUTES = {
       'https://www.bmkg.go.id/alerts/nowcast/id': '<rss><channel></channel></rss>',
       'https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json': fixture('autogempa.json'),
@@ -450,6 +451,8 @@ describe('runOnce dengan semua sumber', () => {
         [(u) => u.startsWith('https://ensemble-api.open-meteo.com/'), ensembleFor],
         [QUERY_URL, fixture('bnpb-mingguan.json')],
         [(u) => u.startsWith('https://news.google.com/rss/search'), fixture('berita-longsor.xml')],
+        [SYNOP_DIR, fixture('synop-daftar.html')],
+        [(u) => u.startsWith(`${SYNOP_DIR}sn.`), (u) => fixture(`synop-${u.slice(SYNOP_DIR.length)}`)],
       ],
     });
     const results = await runOnce({ archive, http, now: '2026-09-27T09:00:00.000Z', data: DATA, pause: noPause });
@@ -460,5 +463,6 @@ describe('runOnce dengan semua sumber', () => {
     assert.equal(results['pvmbg-prakiraan'].new, 2);
     assert.equal(results['open-meteo-ens'].new, 2);
     assert.equal(results['berita-longsor'].new, 8);
+    assert.equal(results.synop.new, 11);
   });
 });

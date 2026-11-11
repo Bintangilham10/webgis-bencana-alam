@@ -17,6 +17,7 @@ import { recordPetaBencana } from './sources/petabencana.js';
 import { recordPvmbgLaporan } from './sources/pvmbg-laporan.js';
 import { recordPvmbgPrakiraan } from './sources/pvmbg-prakiraan.js';
 import { recordSigapIndikasi } from './sources/sigap-indikasi.js';
+import { recordSynop } from './sources/synop.js';
 
 export const SOURCES = {
   'bmkg-cap': recordBmkgCap,
@@ -29,6 +30,8 @@ export const SOURCES = {
   'open-meteo-ens': recordOpenMeteoEns,
   'bnpb-mingguan': recordBnpbMingguan,
   'berita-longsor': recordBeritaLongsor,
+  // Laporan stasiun cuaca BMKG lewat gerbang NOAA: berkasnya hanya bertahan ±25 jam.
+  synop: recordSynop,
   // Paling akhir: saat ada siklus model baru, run ini butuh ±8 menit (±3.200 titik hujan).
   'sigap-indikasi': recordSigapIndikasi,
 };
