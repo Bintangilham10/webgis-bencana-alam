@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.11.05.64.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-11T11:30:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-11T12:00:00+08:00</effective>
+    <expires>2026-11-11T14:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 11 November 2026, 12:00 WITA di sebagian wilayah Kalimantan Timur, khususnya di LOA KULU, MARATUA, TENGGARONG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 11 November 2026, 14:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKT/2026/11/11/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Timur</areaDesc>
+      <polygon>-0.464,116.855 -0.482,116.870 -0.491,116.866 -0.505,116.875 -0.521,116.904 -0.519,116.935 -0.500,116.966 -0.461,117.001 -0.460,117.011 -0.434,117.069 -0.466,117.054 -0.494,117.048 -0.516,117.047 -0.529,117.055 -0.550,117.059 -0.566,117.033 -0.586,117.032 -0.605,117.018 -0.603,117.003 -0.609,116.995 -0.646,116.983 -0.669,116.966 -0.668,116.952 -0.673,116.949 -0.742,116.932 -0.769,116.918 -0.784,116.915 -0.798,116.907 -0.826,116.880 -0.818,116.860 -0.812,116.809 -0.808,116.742 -0.798,116.714 -0.801,116.684 -0.812,116.667 -0.842,116.647 -0.882,116.630 -0.879,116.603 -0.850,116.565 -0.839,116.543 -0.838,116.531 -0.748,116.532 -0.732,116.547 -0.695,116.562 -0.673,116.591 -0.662,116.586 -0.645,116.595 -0.635,116.593 -0.624,116.583 -0.594,116.574 -0.563,116.550 -0.561,116.580 -0.571,116.656 -0.571,116.674 -0.559,116.685 -0.529,116.699 -0.518,116.711 -0.483,116.731 -0.470,116.737 -0.447,116.735 -0.428,116.750 -0.416,116.771 -0.420,116.799 -0.440,116.839 -0.452,116.851 -0.461,116.851 -0.464,116.855</polygon>
+      <polygon>-0.460,117.011 -0.461,117.001 -0.500,116.966 -0.519,116.935 -0.521,116.904 -0.505,116.875 -0.491,116.866 -0.482,116.870 -0.464,116.855 -0.454,116.879 -0.440,116.875 -0.432,116.878 -0.416,116.894 -0.387,116.896 -0.332,116.948 -0.328,116.956 -0.321,117.000 -0.313,117.011 -0.314,117.022 -0.322,117.031 -0.321,117.036 -0.310,117.046 -0.310,117.056 -0.322,117.076 -0.331,117.080 -0.337,117.074 -0.331,117.071 -0.337,117.059 -0.366,117.059 -0.378,117.053 -0.367,117.030 -0.355,117.029 -0.350,117.022 -0.353,117.012 -0.370,116.990 -0.409,116.995 -0.428,117.003 -0.450,117.004 -0.460,117.011</polygon>
+      <polygon>2.310,118.570 2.269,118.608 2.250,118.637 2.246,118.636 2.250,118.626 2.273,118.594 2.300,118.577 2.303,118.568 2.280,118.564 2.258,118.568 2.218,118.588 2.204,118.608 2.186,118.624 2.170,118.649 2.161,118.652 2.172,118.642 2.194,118.597 2.236,118.566 2.248,118.561 2.284,118.560 2.299,118.562 2.310,118.570</polygon>
+      <polygon>2.256,118.600 2.252,118.602 2.253,118.595 2.257,118.594 2.256,118.600</polygon>
+      <polygon>2.161,118.527 2.159,118.537 2.150,118.539 2.123,118.561 2.115,118.562 2.135,118.539 2.138,118.519 2.136,118.509 2.157,118.513 2.161,118.527</polygon>
+      <polygon>1.958,118.817 1.966,118.819 1.973,118.830 1.961,118.825 1.958,118.817</polygon>
+      <polygon>1.955,118.805 1.957,118.802 1.962,118.804 1.955,118.805</polygon>
+    </area>
+  </info>
+</alert>
