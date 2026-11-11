@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-11T12:00:43.460Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        99.9784849712,
+        0.2270440025
+      ]
+    },
+    "properties": {
+      "pkey": "400028",
+      "created_at": "2026-11-11T11:50:26.214Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "6b5d8d1d-b359-4d1f-8ea1-79ebcfc2a9b2",
+      "image_url": "https://images.petabencana.id/6b5d8d1d-b359-4d1f-8ea1-79ebcfc2a9b2.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 57
+      },
+      "tags": {
+        "city": "PASAMAN BARAT",
+        "district_id": null,
+        "region_code": "1312",
+        "local_area_id": null,
+        "instance_region_code": "ID-SB"
+      },
+      "title": null,
+      "text": "Banjir menerjang kawasan Sinuruik, Kecamatan Talamau, Kabupaten Pasaman Barat, Sumatera Barat, pada Rabu sore (11/11/2026). ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
