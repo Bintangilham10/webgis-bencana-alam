@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.11.10.34.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-11T17:11:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-11T17:20:00+07:00</effective>
+    <expires>2026-11-11T19:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di DI Yogyakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 11 November 2026, 17:20 WIB di sebagian wilayah DI Yogyakarta, khususnya di DEPOK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 11 November 2026, 19:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CYG/2026/11/11/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>DI Yogyakarta</areaDesc>
+      <polygon>-7.747,110.409 -7.751,110.412 -7.753,110.428 -7.745,110.440 -7.747,110.447 -7.758,110.442 -7.785,110.439 -7.791,110.441 -7.791,110.422 -7.784,110.416 -7.788,110.397 -7.780,110.386 -7.775,110.370 -7.774,110.369 -7.774,110.375 -7.754,110.382 -7.753,110.386 -7.744,110.381 -7.735,110.385 -7.749,110.394 -7.732,110.401 -7.749,110.403 -7.747,110.409</polygon>
+    </area>
+  </info>
+</alert>
