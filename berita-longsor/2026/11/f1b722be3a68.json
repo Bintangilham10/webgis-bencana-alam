@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivAFBVV95cUxQM25OWVFseTlPLVhSMDlhTjJlTEJ1YjNacU1zNGJGT3hlQjU2aDFtX3E0TU93eUhSeHhlOHYtSzkxNmpldzJIaFZxVTROdWtwN1E2YlhpNllVQXU3dU5valBtNV9ra1c0QXZkSEh4LTVjVDhfcDNJNkhrYzhtT1EyV1VvVmxTdWJldV82bVdLdG9DemFIWXJyTlo0TzZDX0h3eHJHMnVhNUVYcmhXSnZxSVZ4cktQX1diWi1Fbw",
+  "title": "Prakiraan Cuaca Sukabumi 11 November 2026: Pagi Hujan Ringan, Sore Waspada Longsor - Radar Sukabumi",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQM25OWVFseTlPLVhSMDlhTjJlTEJ1YjNacU1zNGJGT3hlQjU2aDFtX3E0TU93eUhSeHhlOHYtSzkxNmpldzJIaFZxVTROdWtwN1E2YlhpNllVQXU3dU5valBtNV9ra1c0QXZkSEh4LTVjVDhfcDNJNkhrYzhtT1EyV1VvVmxTdWJldV82bVdLdG9DemFIWXJyTlo0TzZDX0h3eHJHMnVhNUVYcmhXSnZxSVZ4cktQX1diWi1Fbw?oc=5",
+  "source": "Radar Sukabumi",
+  "source_url": "https://radarsukabumi.com",
+  "published_at": "2026-11-10T23:41:48.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-11T01:15:32.522Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
