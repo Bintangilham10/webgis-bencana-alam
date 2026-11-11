@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.11.12.75.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-11T18:03:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-11T18:15:00+08:00</effective>
+    <expires>2026-11-11T20:15:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 11 November 2026, 18:15 WITA di sebagian wilayah Gorontalo, khususnya di BATUDAA PANTAI, DUMBO RAYA, HULONTHALANGI, KOTA UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 11 November 2026, 20:15 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/11/11/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.518,123.033 0.517,123.035 0.514,123.038 0.514,123.038 0.514,123.038 0.513,123.039 0.512,123.040 0.510,123.040 0.505,123.041 0.502,123.043 0.502,123.043 0.502,123.043 0.500,123.044 0.497,123.043 0.496,123.021 0.489,123.010 0.493,123.003 0.485,122.989 0.493,122.962 0.486,122.930 0.493,122.905 0.487,122.886 0.491,122.869 0.514,122.875 0.524,122.895 0.529,122.907 0.524,122.927 0.520,122.937 0.518,122.985 0.524,122.995 0.528,123.015 0.530,123.018 0.518,123.033</polygon>
+      <polygon>0.580,123.091 0.566,123.090 0.542,123.084 0.544,123.078 0.548,123.081 0.551,123.078 0.556,123.065 0.567,123.069 0.585,123.073 0.580,123.091</polygon>
+      <polygon>0.535,123.081 0.535,123.081 0.535,123.081 0.532,123.080 0.532,123.080 0.530,123.080 0.530,123.080 0.529,123.079 0.529,123.080 0.528,123.080 0.526,123.080 0.524,123.079 0.523,123.079 0.515,123.083 0.509,123.087 0.509,123.087 0.509,123.088 0.509,123.089 0.508,123.090 0.508,123.093 0.506,123.097 0.505,123.098 0.504,123.099 0.503,123.099 0.491,123.096 0.485,123.094 0.483,123.092 0.483,123.092 0.480,123.087 0.487,123.085 0.505,123.063 0.523,123.062 0.530,123.061 0.535,123.081</polygon>
+      <polygon>0.531,123.060 0.531,123.060 0.530,123.061 0.530,123.061 0.523,123.062 0.508,123.059 0.502,123.049 0.502,123.043 0.502,123.049 0.491,123.047 0.497,123.043 0.500,123.044 0.502,123.043 0.502,123.043 0.502,123.043 0.505,123.041 0.510,123.040 0.512,123.040 0.513,123.039 0.514,123.038 0.514,123.038 0.514,123.038 0.517,123.035 0.518,123.033 0.534,123.044 0.535,123.044 0.535,123.044 0.535,123.044 0.535,123.044 0.535,123.044 0.535,123.044 0.535,123.044 0.535,123.044 0.535,123.044 0.536,123.044 0.536,123.044 0.536,123.045 0.536,123.045 0.536,123.045 0.536,123.045 0.536,123.046 0.536,123.046 0.536,123.046 0.536,123.046 0.536,123.046 0.536,123.046 0.536,123.047 0.536,123.047 0.536,123.047 0.536,123.047 0.536,123.047 0.537,123.047 0.537,123.047 0.537,123.047 0.537,123.048 0.537,123.048 0.537,123.049 0.537,123.049 0.537,123.049 0.537,123.049 0.537,123.049 0.538,123.049 0.538,123.049 0.538,123.049 0.538,123.049 0.538,123.049 0.538,123.049 0.538,123.049 0.538,123.049 0.538,123.049 0.538,123.049 0.538,123.049 0.538,123.049 0.538,123.049 0.538,123.050 0.538,123.050 0.538,123.050 0.538,123.050 0.538,123.050 0.538,123.050 0.538,123.050 0.538,123.050 0.538,123.050 0.538,123.050 0.538,123.050 0.538,123.050 0.538,123.050 0.531,123.060</polygon>
+    </area>
+  </info>
+</alert>

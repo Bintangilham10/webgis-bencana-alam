@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.11.12.52.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-11T19:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-11T19:10:00+08:00</effective>
+    <expires>2026-11-11T21:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 11 November 2026, 19:10 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di MOYO UTARA, PALIBELO, SUMBAWA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 11 November 2026, 21:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/11/11/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.495,117.457 -8.515,117.449 -8.532,117.448 -8.530,117.433 -8.522,117.431 -8.517,117.420 -8.495,117.415 -8.492,117.404 -8.483,117.394 -8.472,117.413 -8.468,117.408 -8.465,117.404 -8.452,117.407 -8.411,117.436 -8.405,117.436 -8.396,117.427 -8.408,117.443 -8.464,117.441 -8.486,117.457 -8.495,117.457</polygon>
+      <polygon>-8.408,117.567 -8.447,117.537 -8.462,117.513 -8.474,117.502 -8.491,117.507 -8.496,117.502 -8.490,117.487 -8.495,117.457 -8.486,117.457 -8.464,117.441 -8.408,117.443 -8.396,117.427 -8.398,117.440 -8.412,117.455 -8.414,117.503 -8.410,117.532 -8.404,117.551 -8.408,117.567</polygon>
+      <polygon>-8.499,118.722 -8.505,118.726 -8.516,118.735 -8.520,118.753 -8.517,118.758 -8.519,118.768 -8.507,118.782 -8.518,118.795 -8.533,118.801 -8.547,118.790 -8.548,118.764 -8.558,118.741 -8.572,118.749 -8.577,118.757 -8.571,118.711 -8.573,118.701 -8.553,118.696 -8.546,118.680 -8.536,118.675 -8.517,118.680 -8.517,118.694 -8.507,118.707 -8.497,118.714 -8.499,118.722</polygon>
+    </area>
+  </info>
+</alert>

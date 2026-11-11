@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.11.12.17.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-11T17:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-11T17:40:00+07:00</effective>
+    <expires>2026-11-11T20:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bengkulu</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 11 November 2026, 17:40 WIB di sebagian wilayah Bengkulu, khususnya di AIR PERIUKAN, KAMPUNG MELAYU, LUBUK SANDI, SELEBAR, SELUMA BARAT, SELUMA SELATAN, SUKARAJA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 11 November 2026, 20:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBK/2026/11/11/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bengkulu</areaDesc>
+      <polygon>-3.838,102.512 -3.879,102.516 -3.907,102.507 -3.920,102.473 -3.952,102.451 -3.975,102.422 -3.963,102.414 -3.960,102.405 -3.968,102.399 -3.984,102.360 -3.982,102.326 -3.989,102.322 -3.994,102.313 -3.965,102.283 -3.952,102.277 -3.940,102.279 -3.924,102.269 -3.940,102.288 -3.942,102.304 -3.929,102.315 -3.912,102.316 -3.910,102.333 -3.901,102.348 -3.891,102.344 -3.887,102.347 -3.883,102.378 -3.865,102.396 -3.861,102.406 -3.852,102.430 -3.847,102.438 -3.846,102.473 -3.837,102.492 -3.838,102.512</polygon>
+      <polygon>-3.907,102.507 -3.951,102.494 -3.955,102.491 -3.959,102.480 -3.986,102.475 -4.003,102.464 -4.015,102.477 -4.025,102.478 -4.031,102.469 -4.023,102.459 -4.024,102.452 -4.037,102.446 -4.060,102.455 -4.072,102.447 -4.075,102.438 -4.085,102.435 -3.994,102.313 -3.989,102.322 -3.982,102.326 -3.984,102.360 -3.968,102.399 -3.960,102.405 -3.963,102.414 -3.975,102.422 -3.952,102.451 -3.920,102.473 -3.907,102.507</polygon>
+      <polygon>-3.809,102.601 -3.817,102.600 -3.830,102.607 -3.853,102.602 -3.883,102.603 -3.913,102.572 -3.940,102.568 -3.964,102.571 -3.990,102.551 -3.996,102.544 -3.994,102.523 -3.997,102.515 -4.011,102.504 -4.025,102.478 -4.015,102.477 -4.003,102.464 -3.986,102.475 -3.959,102.480 -3.955,102.491 -3.951,102.494 -3.907,102.507 -3.879,102.516 -3.838,102.512 -3.830,102.533 -3.835,102.552 -3.821,102.556 -3.807,102.563 -3.803,102.574 -3.809,102.601</polygon>
+      <polygon>-4.045,102.552 -4.051,102.553 -4.072,102.531 -4.071,102.527 -4.093,102.497 -4.105,102.488 -4.119,102.484 -4.085,102.435 -4.075,102.438 -4.072,102.447 -4.060,102.455 -4.037,102.446 -4.024,102.452 -4.023,102.459 -4.031,102.469 -4.025,102.478 -4.011,102.504 -3.997,102.515 -3.994,102.523 -3.996,102.544 -3.990,102.551 -4.005,102.556 -4.025,102.556 -4.045,102.552</polygon>
+      <polygon>-4.072,102.531 -4.085,102.553 -4.090,102.556 -4.090,102.574 -4.099,102.571 -4.113,102.580 -4.127,102.584 -4.129,102.567 -4.142,102.560 -4.150,102.565 -4.152,102.531 -4.119,102.484 -4.105,102.488 -4.093,102.497 -4.071,102.527 -4.072,102.531</polygon>
+      <polygon>-3.861,102.406 -3.865,102.396 -3.883,102.378 -3.887,102.347 -3.891,102.339 -3.882,102.336 -3.850,102.308 -3.846,102.306 -3.832,102.318 -3.821,102.319 -3.810,102.331 -3.797,102.350 -3.822,102.359 -3.842,102.359 -3.857,102.384 -3.861,102.406</polygon>
+      <polygon>-3.850,102.308 -3.882,102.336 -3.891,102.339 -3.887,102.347 -3.891,102.344 -3.901,102.348 -3.910,102.333 -3.912,102.316 -3.929,102.315 -3.942,102.304 -3.940,102.288 -3.924,102.269 -3.912,102.266 -3.900,102.274 -3.902,102.288 -3.893,102.299 -3.883,102.303 -3.861,102.300 -3.837,102.284 -3.832,102.290 -3.839,102.292 -3.850,102.308</polygon>
+    </area>
+  </info>
+</alert>
