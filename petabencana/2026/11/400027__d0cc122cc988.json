@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-11T11:45:30.093Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.8221512693,
+        -6.3300797732
+      ]
+    },
+    "properties": {
+      "pkey": "400027",
+      "created_at": "2026-11-11T11:43:06.278Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "995c80e4-1ef0-49e5-a156-060bdf2fb70e",
+      "image_url": "https://images.petabencana.id/995c80e4-1ef0-49e5-a156-060bdf2fb70e.jpg",
+      "disaster_type": "wind",
+      "is_training": false,
+      "report_data": {
+        "report_type": "wind",
+        "impact": 1
+      },
+      "tags": {
+        "city": "JAKARTA SELATAN",
+        "district_id": null,
+        "region_code": "3174",
+        "local_area_id": "9515",
+        "instance_region_code": "ID-JK"
+      },
+      "title": null,
+      "text": "Hujan deras disertai angin kencang yang melanda kawasan Kecamatan Jagakarsa, Jakarta Selatan, memicu sejumlah pohon tumbang",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
