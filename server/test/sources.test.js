@@ -9,6 +9,21 @@ import { extractEvents as extractUsgsEvents, fetchUsgsDetail, normalizeEvent as 
 import { fetchEmscEarthquakes, queryUrl as emscQueryUrl } from '../src/sources/emsc-gempa.js';
 import { fetchGdacsEvents } from '../src/sources/gdacs.js';
 import { buildRiverForecast, returnPeriodLevel, returnPeriodThresholds } from '../src/sources/glofas.js';
+import { extractEvents as extractGfzEvents, fetchGfzEarthquakes, mechanismType, queryUrl as gfzQueryUrl } from '../src/sources/gfz-gempa.js';
+import {
+  buildSeries,
+  chooseSensor,
+  despike,
+  detide,
+  fetchStations as fetchSeaStations,
+  indonesianStations,
+  latestSampleMs,
+  levelSensors,
+  seriesUrl,
+  STATIONS as SEA_STATIONS,
+} from '../src/sources/ioc-sealevel.js';
+import { fetchMetar, metarUrl, wxLabel } from '../src/sources/metar.js';
+import { accumulatedRain, dailyTotals, latestMainHour, sixHourAmounts, STATIONS, toRow } from '../src/sources/synop.js';
 import { parseBoundarySql, toRings } from '../scripts/seed-wilayah.js';
 
 // Fixture = respons asli sumber (diambil 26 Sep 2026).
@@ -381,5 +396,358 @@ describe('InaRISK identify', () => {
     const third = await identify(-6.9, 107.6);
     assert.equal(requested.length, 16);
     assert.equal(third.cuaca.index, 0.666667);
+  });
+});
+
+// Hujan terukur stasiun cuaca BMKG dari laporan SYNOP (pembaca sandinya diuji di
+// recorder/test/synop.test.js).
+describe('Hujan terukur stasiun (SYNOP)', () => {
+  const row = (iso, mm, hours, trace = false) => ({ observed_at: new Date(iso), rain_mm: mm, rain_hours: hours, rain_trace: trace });
+  // Laporan jam utama satu stasiun selama dua hari: 6 jam pada 06/12/18 UTC, 24 jam pada 00 UTC.
+  const rows = [
+    row('2026-11-10T06:00:00Z', 5, 6),
+    row('2026-11-10T12:00:00Z', 0, 6),
+    row('2026-11-10T18:00:00Z', 10, 6),
+    row('2026-11-11T00:00:00Z', 30, 24),
+    row('2026-11-11T06:00:00Z', 2, 6),
+    row('2026-11-11T12:00:00Z', 72, 6),
+  ];
+  const without = (iso) => rows.filter((r) => r.observed_at.toISOString() !== new Date(iso).toISOString());
+
+  test('laporan mentah menjadi kolom tabel; laporan rusak dilewati', () => {
+    const report = {
+      wmo: '96253',
+      observed_at: '2026-11-11T12:00:00.000Z',
+      bulletin: 'SMID01 WIIX 111200',
+      raw: '96253 01444 80403 10231 20221 30082 40101 51022 60721 79196 82972 333 10328 56000 57900 57800 58004 60727 81915 81820 83460',
+      file_modified_at: '2026-11-11T12:20:00.000Z',
+    };
+    assert.deepEqual(toRow(report), {
+      wmo: '96253',
+      observedAt: '2026-11-11T12:00:00.000Z',
+      rainMm: 72,
+      rainHours: 6,
+      rainTrace: false,
+      weather: 91,
+      tempC: 23.1,
+      tempMaxC: 32.8,
+      tempMinC: null,
+      bulletin: 'SMID01 WIIX 111200',
+      raw: report.raw,
+      sourceFileAt: '2026-11-11T12:20:00.000Z',
+    });
+    assert.equal(toRow({ ...report, raw: '96253 rusak' }), null);
+  });
+
+  test('jendela 18–00 UTC = total 24 jam dikurangi tiga jendela sebelumnya', () => {
+    const amounts = sixHourAmounts(rows);
+    assert.deepEqual(amounts.get(Date.parse('2026-11-11T00:00:00Z')), { mm: 15, trace: false });
+    assert.deepEqual(amounts.get(Date.parse('2026-11-11T12:00:00Z')), { mm: 72, trace: false });
+    // Tanpa laporan 12 UTC kemarin, jendela itu tidak bisa dihitung.
+    assert.equal(sixHourAmounts(without('2026-11-10T12:00:00Z')).has(Date.parse('2026-11-11T00:00:00Z')), false);
+  });
+
+  test('akumulasi 24 jam sampai jam utama terakhir', () => {
+    assert.deepEqual(accumulatedRain(rows, new Date('2026-11-11T12:00:00Z')), { mm: 99, hours: 24, trace: false });
+    // Pada 00 UTC total 24 jam dipakai langsung, walau laporan kemarin tidak lengkap.
+    assert.deepEqual(accumulatedRain(without('2026-11-10T12:00:00Z'), new Date('2026-11-11T00:00:00Z')), { mm: 30, hours: 24, trace: false });
+  });
+
+  test('laporan sebelumnya hilang: akumulasi hanya selama datanya bersambung', () => {
+    assert.deepEqual(accumulatedRain(without('2026-11-10T12:00:00Z'), new Date('2026-11-11T12:00:00Z')), { mm: 74, hours: 12, trace: false });
+    assert.equal(accumulatedRain(rows, new Date('2026-11-11T18:00:00Z')), null);
+  });
+
+  test('hujan tak terukur tetap ditandai selama jumlahnya 0 mm', () => {
+    const dry = [row('2026-11-11T06:00:00Z', 0, 6, true), row('2026-11-11T12:00:00Z', 0, 6)];
+    assert.deepEqual(accumulatedRain(dry, new Date('2026-11-11T12:00:00Z')), { mm: 0, hours: 12, trace: true });
+  });
+
+  test('total harian hanya dari laporan 00 UTC', () => {
+    assert.deepEqual(dailyTotals(rows), [{ until: '2026-11-11T00:00:00.000Z', mm: 30, trace: false }]);
+  });
+
+  test('jam utama terakhir menunggu laporan dari cukup banyak stasiun', () => {
+    const counts = [
+      { observed_at: new Date('2026-11-11T06:00:00Z'), stations: 56 },
+      { observed_at: new Date('2026-11-11T12:00:00Z'), stations: 3 },
+      { observed_at: new Date('2026-11-11T13:00:00Z'), stations: 55 },
+    ];
+    assert.equal(latestMainHour(counts).toISOString(), '2026-11-11T06:00:00.000Z');
+    assert.equal(latestMainHour([counts[1]]).toISOString(), '2026-11-11T12:00:00.000Z');
+    assert.equal(latestMainHour([]), null);
+  });
+
+  test('daftar stasiun WMO memuat nama, koordinat, dan kab/kota', () => {
+    assert.ok(STATIONS.size >= 100);
+    const jakarta = STATIONS.get('96749');
+    assert.equal(jakarta.nama, 'Soekarno-Hatta');
+    assert.equal(jakarta.wilayah, 'Kota Tangerang');
+    assert.equal(jakarta.icao, 'WIII');
+    assert.ok(Math.abs(jakarta.lat + 6.12) < 0.05 && Math.abs(jakarta.lon - 106.65) < 0.05);
+  });
+});
+
+// Fixture = jawaban asli NOAA Aviation Weather Center (11 Nov 2026), tiga bandara.
+describe('Cuaca bandara (METAR)', () => {
+  test('sandi cuaca diterjemahkan, fenomena terpenting didahulukan', () => {
+    assert.equal(wxLabel('-TSRA BR'), 'Hujan petir ringan');
+    assert.equal(wxLabel('+RA'), 'Hujan lebat');
+    assert.equal(wxLabel('RA'), 'Hujan');
+    assert.equal(wxLabel('-SHRA'), 'Hujan lokal ringan');
+    assert.equal(wxLabel('VCTS'), 'Badai petir di sekitar bandara');
+    assert.equal(wxLabel('BR'), 'Kabut tipis');
+    assert.equal(wxLabel(null), null);
+  });
+
+  test('laporan terbaru per bandara, dengan jam pengamatan UTC', async () => {
+    const urls = [];
+    const byIcao = await fetchMetar({
+      getText: async (url) => {
+        urls.push(url);
+        return fixture('metar-indonesia.json');
+      },
+    });
+    assert.deepEqual(urls, [metarUrl()]);
+    assert.match(urls[0], /bbox=-12%2C94%2C7%2C142&format=json$/);
+    assert.deepEqual([...byIcao.keys()], ['WAHS', 'WIII', 'YPXM']);
+    const semarang = byIcao.get('WAHS');
+    assert.equal(semarang.observed_at, '2026-11-11T14:00:00.000Z');
+    assert.equal(semarang.weather, 'Hujan petir ringan');
+    assert.equal(semarang.temp_c, 28);
+    assert.match(semarang.raw, /^METAR WAHS 111400Z/);
+    assert.equal(byIcao.get('WIII').weather, null);
+  });
+
+  test('jawaban kosong (HTTP 204) = tidak ada laporan', async () => {
+    assert.equal((await fetchMetar({ getText: async () => '' })).size, 0);
+  });
+});
+
+// Fixture = QuakeML asli GFZ (11 Nov 2026), dipangkas menjadi dua gempa: satu
+// baru berlokasi otomatis, satu sudah bermekanisme sumber.
+describe('GFZ gempa (QuakeML)', () => {
+  const events = () => extractGfzEvents(fixture('gfz-quakeml.xml'));
+
+  test('lokasi dan magnitudo pilihan; kedalaman meter menjadi km', () => {
+    const [seram, halmahera] = events();
+    assert.deepEqual(seram, {
+      id: 'gfz:gfz2026wcqh',
+      source: 'gfz',
+      hazard: 'gempa',
+      magnitude: 4.7,
+      depthKm: 39.1,
+      occurredAt: '2026-11-11T12:17:29.980Z',
+      lat: -3.077,
+      lon: 130.474,
+      props: {
+        wilayah: 'Seram, Indonesia',
+        mag_type: 'mb',
+        url: 'https://geofon.gfz.de/eqinfo/event.php?id=gfz2026wcqh',
+        status: 'automatic',
+        // Waktu GFZ pertama menerbitkan gempa: ±5 menit setelah kejadian.
+        published_at: '2026-11-11T12:22:52.345Z',
+      },
+    });
+    // Gempa bermekanisme punya dua lokasi; yang dipakai lokasi pilihan (10 km),
+    // bukan lokasi hasil tensor momen (23 km).
+    assert.deepEqual([halmahera.magnitude, halmahera.props.mag_type, halmahera.depthKm, halmahera.props.status], [5.2, 'Mw', 10, 'manual']);
+    assert.equal(halmahera.props.published_at, '2026-11-10T15:55:10.046Z');
+  });
+
+  test('mekanisme sumber: bidang nodal, sumbu utama, dan jenis sesar', () => {
+    const [seram, halmahera] = events();
+    assert.ok(!('mechanism' in seram.props));
+    assert.deepEqual(halmahera.props.mechanism, {
+      type: 'geser',
+      label: 'Sesar geser',
+      planes: [{ strike: 305, dip: 77, rake: 5 }, { strike: 214, dip: 85, rake: 167 }],
+      plunges: { t: 12, p: 6, n: 76 },
+      double_couple: 0.49,
+      reviewed: true,
+      updated_at: '2026-11-11T08:22:17.532Z',
+    });
+  });
+
+  test('jenis sesar menurut kemiringan sumbu T, P, dan N (Frohlich 1992)', () => {
+    assert.equal(mechanismType({ t: 78, p: 11, n: 5 }), 'naik');
+    assert.equal(mechanismType({ t: 8, p: 70, n: 18 }), 'turun');
+    assert.equal(mechanismType({ t: 12, p: 6, n: 76 }), 'geser');
+    assert.equal(mechanismType({ t: 40, p: 35, n: 30 }), 'oblik');
+  });
+
+  test('rentang 3 hari untuk sinkronisasi rutin, dengan mekanisme sumber', async () => {
+    const now = Date.parse('2026-11-11T15:00:00Z');
+    assert.equal(
+      gfzQueryUrl({ now }),
+      'https://geofon.gfz.de/fdsnws/event/1/query?minlatitude=-12&maxlatitude=7&minlongitude=94&maxlongitude=142&starttime=2026-11-08T15%3A00%3A00&includefocalmechanism=true',
+    );
+    const urls = [];
+    const { events: fetched } = await fetchGfzEarthquakes({
+      feed: 'week',
+      now,
+      getText: async (url) => {
+        urls.push(url);
+        return fixture('gfz-quakeml.xml');
+      },
+    });
+    assert.match(urls[0], /starttime=2026-11-03T15%3A00%3A00/);
+    assert.equal(fetched.length, 2);
+  });
+
+  test('jawaban kosong (HTTP 204) = tidak ada gempa; format lain ditolak', () => {
+    assert.deepEqual(extractGfzEvents(''), []);
+    assert.throws(() => extractGfzEvents('<html>Service Unavailable</html>'), /format QuakeML GFZ tidak dikenal/);
+  });
+});
+
+// Fixture daftar stasiun = baris asli IOC (11 Nov 2026) untuk lima stasiun; data
+// Benoa = 12 menit pertama jawaban asli. Deret panjang dibuat sintetis supaya
+// hasil pemisahan pasang surut bisa dibandingkan dengan nilai yang diketahui.
+describe('Muka laut (IOC Sea Level Station Monitoring Facility)', () => {
+  const NOW = Date.parse('2026-11-11T15:35:00Z');
+  const MINUTE = 60_000;
+  const HOUR = 60 * MINUTE;
+  const stamp = (ms) => new Date(ms).toISOString().slice(0, 19).replace('T', ' ');
+
+  // Pasang surut tiruan (m): M2 80 cm, K1 30 cm, M4 5 cm, muka laut rata-rata 4 m naik 1 cm/jam.
+  const tide = (ms) => {
+    const hours = (ms - NOW) / HOUR;
+    return 4 + 0.01 * hours + 0.8 * Math.cos((2 * Math.PI * hours) / 12.4206012) + 0.3 * Math.sin((2 * Math.PI * hours) / 23.9344696) + 0.05 * Math.cos((2 * Math.PI * hours) / 6.2103006);
+  };
+  // Gelombang tiruan 30 cm berperiode 20 menit pada satu jam terakhir (seperti tsunami kecil).
+  const wave = (ms) => (ms > NOW - HOUR ? 0.3 * Math.sin((2 * Math.PI * (ms - NOW)) / (20 * MINUTE)) : 0);
+  // Deret per menit selama 15 jam untuk beberapa sensor: { sensor: (ms, indeks) => meter }.
+  const rows = (sensors) => {
+    const out = [];
+    for (let i = 0; i < 15 * 60; i++) {
+      const ms = NOW - (15 * 60 - 1 - i) * MINUTE;
+      for (const [sensor, level] of Object.entries(sensors)) out.push({ slevel: level(ms, i), stime: stamp(ms), sensor });
+    }
+    return out;
+  };
+
+  test('daftar statis dibuat dari alat Indonesia yang pengukur muka lautnya masih mengirim data', () => {
+    const list = JSON.parse(fixture('ioc-stationlist.json'));
+    // Aarhus (Denmark) dan stasiun yang hanya mengirim tegangan baterai (TLBJI) tidak ikut.
+    assert.deepEqual(indonesianStations(list, NOW), [
+      { code: 'cili', nama: 'Cilacap', lat: -7.75, lon: 109, last_at: '2026-11-11T15:14:00.000Z' },
+      { code: 'koli', nama: 'Kolinamil, Jakarta Port', lat: -6.10667, lon: 106.89083, last_at: '2026-11-11T07:32:00.000Z' },
+      { code: 'sema', nama: 'Semarang', lat: -6.9479, lon: 110.42012, last_at: '2026-11-11T15:17:00.000Z' },
+    ]);
+    // Batas umur data: bawaan sepekan, bisa diperpanjang untuk daftar statis.
+    assert.deepEqual(indonesianStations(list, NOW + 8 * 24 * HOUR), []);
+    assert.equal(indonesianStations(list, NOW + 8 * 24 * HOUR, { withinMs: 30 * 24 * HOUR }).length, 3);
+    assert.throws(() => indonesianStations({ error: 'x' }), /format daftar stasiun IOC tidak dikenal/);
+    // Daftar statis yang dipakai aplikasi (npm run build:pasut).
+    assert.ok(SEA_STATIONS.length >= 10);
+    assert.ok(SEA_STATIONS.every((s) => s.code && s.nama && Number.isFinite(s.lat) && Number.isFinite(s.lon)));
+  });
+
+  test('status tiap alat dari sampel muka laut terakhirnya; alat yang gagal diperiksa berstatus tertunda', async () => {
+    const stations = [
+      { code: 'cili', nama: 'Cilacap', lat: -7.75, lon: 109 },
+      { code: 'koli', nama: 'Kolinamil, Jakarta Port', lat: -6.10667, lon: 106.89083 },
+      { code: 'sura', nama: 'Surabaya', lat: -7.2, lon: 112.74 },
+    ];
+    const urls = [];
+    const answers = {
+      // Sampel muka laut terakhir 8 menit lalu; baterai yang lebih baru tidak dihitung.
+      cili: [
+        { slevel: 3.9, stime: stamp(NOW - 9 * MINUTE), sensor: 'rad' },
+        { slevel: 3.91, stime: stamp(NOW - 8 * MINUTE), sensor: 'rad' },
+        { slevel: 0.13, stime: stamp(NOW - 2 * MINUTE), sensor: 'bat' },
+      ],
+      // Tidak ada sampel dalam 90 menit terakhir.
+      koli: [],
+    };
+    const getJson = async (url) => {
+      urls.push(url);
+      const code = new URL(url).searchParams.get('code');
+      if (!(code in answers)) throw new Error('HTTP 503');
+      return answers[code];
+    };
+    const result = await fetchSeaStations({ now: NOW, getJson, stations });
+    assert.deepEqual(result.map((s) => [s.code, s.last_at, s.active]), [
+      ['cili', new Date(NOW - 8 * MINUTE).toISOString(), true],
+      ['koli', null, false],
+      ['sura', null, false],
+    ]);
+    assert.equal(result[0].url, 'https://www.ioc-sealevelmonitoring.org/station.php?code=cili');
+    // Yang diminta hanya data 90 menit terakhir tiap alat, bukan daftar stasiun dunia.
+    assert.equal(urls.length, 3);
+    assert.match(urls[0], /query=data&code=cili&timestart=2026-11-11T14%3A05&timestop=2026-11-11T15%3A35/);
+    assert.equal(latestSampleMs(answers.cili), NOW - 8 * MINUTE);
+    // Semua alat gagal diperiksa = layanan IOC tidak terjangkau.
+    await assert.rejects(
+      fetchSeaStations({
+        now: NOW,
+        stations,
+        getJson: async () => {
+          throw new Error('HTTP 503');
+        },
+      }),
+      /semua alat gagal diperiksa/,
+    );
+  });
+
+  test('hanya sensor muka laut yang dibaca; baterai dan sakelar dilewati', () => {
+    const sensors = levelSensors(JSON.parse(fixture('ioc-data-beno.json')));
+    assert.deepEqual([...sensors.keys()].sort(), ['rad', 'ras']);
+    assert.equal(sensors.get('ras').length, 13);
+    assert.deepEqual(sensors.get('ras')[1], [Date.parse('2026-11-11T12:01:00Z'), 6.943]);
+    assert.match(seriesUrl('beno', { now: NOW }), /query=data&code=beno&timestart=2026-11-11T00%3A35&timestop=2026-11-11T15%3A35&format=json$/);
+  });
+
+  test('lonjakan sesaat dibuang, perubahan bertahap tidak', () => {
+    const points = Array.from({ length: 30 }, (_, i) => [i * MINUTE, 4 + 0.01 * i]);
+    points[10][1] = 9.99;
+    points[20][1] = 0;
+    const clean = despike(points);
+    assert.equal(clean.length, 28);
+    assert.ok(clean.every(([, level]) => level > 3.9 && level < 4.4));
+  });
+
+  test('pasang surut dipisahkan: yang tersisa hanya gelombang di luar pasang surut', () => {
+    const calm = buildSeries(rows({ rad: tide }), { now: NOW });
+    assert.equal(calm.points, 12 * 60);
+    assert.equal(calm.minutes.at(-1), 12 * 60 - 1);
+    assert.equal(calm.until, '2026-11-11T15:35:00.000Z');
+    // Laut tenang: residu di bawah 1 cm sepanjang 12 jam.
+    assert.ok(Math.max(...calm.residual_cm.map(Math.abs)) < 1, `residu ${Math.max(...calm.residual_cm.map(Math.abs))}`);
+    assert.ok(Math.max(...calm.level_cm) - Math.min(...calm.level_cm) > 120);
+
+    const disturbed = buildSeries(rows({ rad: (ms) => tide(ms) + wave(ms) }), { now: NOW });
+    // Gelombang 30 cm terbaca 25–35 cm, dan hanya pada jam terakhir.
+    assert.ok(disturbed.latest.residual_peak_cm > 25 && disturbed.latest.residual_peak_cm < 35, `puncak ${disturbed.latest.residual_peak_cm}`);
+    const before = disturbed.residual_cm.slice(0, 10 * 60);
+    assert.ok(Math.max(...before.map(Math.abs)) < 6, `sebelum gelombang ${Math.max(...before.map(Math.abs))}`);
+    assert.equal(disturbed.latest.age_min, 0);
+  });
+
+  test('sensor yang paling jelas mengikuti pasang surut yang dipakai', () => {
+    const json = rows({
+      // Radar dengan lonjakan dan derau besar.
+      rad: (ms, i) => tide(ms) + (i % 97 === 0 ? 3 : 0) + 0.12 * Math.sin(i * 1.7),
+      // Sensor yang hampir tidak bergerak.
+      pr2: (ms, i) => 1 + 0.02 * Math.sin(i / 40),
+      prs: tide,
+      bat: () => 0.13,
+    });
+    const chosen = chooseSensor(json);
+    assert.equal(chosen.sensor, 'prs');
+    const series = buildSeries(json, { now: NOW + 7 * MINUTE });
+    assert.deepEqual([series.sensor, series.sensor_kind, series.spikes_removed, series.latest.age_min], ['prs', 'tekanan air', 0, 7]);
+  });
+
+  test('data kurang dari 70%: deret tetap ada, tanpa pemisahan pasang surut', () => {
+    const sparse = rows({ rad: tide }).filter((_, i) => i % 2 === 0);
+    assert.equal(detide(levelSensors(sparse).get('rad')), null);
+    const series = buildSeries(sparse, { now: NOW });
+    assert.equal(series.residual_cm, null);
+    assert.equal(series.latest.residual_peak_cm, null);
+    assert.ok(series.level_cm.length > 300);
+    // Tanpa data sama sekali.
+    assert.deepEqual(buildSeries([], { now: NOW }).latest, null);
   });
 });

@@ -15,7 +15,7 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
   let syncVolcanoes;
 
   // Layanan luar diganti versi palsu; jumlah panggilan dicatat untuk menguji cache.
-  const calls = { identify: 0, places: 0, river: 0 };
+  const calls = { identify: 0, places: 0, river: 0, seaStations: 0, seaSeries: 0 };
   // Debit historis sintetis untuk ambang GloFAS: tahun ke-i berpuncak 2i m³/s
   // (ambang 2 tahunan 21, 5 tahunan ±32, 20 tahunan ±38).
   const riverHistory = { time: [], river_discharge: [] };
@@ -101,6 +101,36 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       history: async () => ({ daily: riverHistory }),
     },
     cloudsNow: async () => ({ layer: 'Himawari_AHI_Band13_Clean_Infrared', time: '2026-10-18T16:30:00Z', tile_url: 'https://contoh/awan/{z}/{y}/{x}.png' }),
+    // Layanan muka laut IOC palsu: dua stasiun; deret Cilacap dihitung panggilannya.
+    seaLevel: {
+      stations: async () => {
+        calls.seaStations++;
+        return [
+          { code: 'cili', nama: 'Cilacap', lat: -7.75, lon: 109, last_at: '2026-11-11T15:14:00.000Z', active: true, url: 'https://contoh/cili' },
+          { code: 'koli', nama: 'Kolinamil, Jakarta Port', lat: -6.1067, lon: 106.8908, last_at: '2026-11-11T07:32:00.000Z', active: false, url: 'https://contoh/koli' },
+        ];
+      },
+      series: async (station) => {
+        calls.seaSeries++;
+        if (station.code === 'koli') throw new Error('HTTP 503');
+        return {
+          sensor: 'rad', sensor_kind: 'radar', points: 3, spikes_removed: 0,
+          from: '2026-11-11T15:12:00.000Z', until: '2026-11-11T15:14:00.000Z',
+          minutes: [0, 1, 2], level_cm: [-1, 0, 1], residual_cm: [0.2, -0.1, 0.4],
+          latest: { at: '2026-11-11T15:14:00.000Z', age_min: 6, level_cm: 1, residual_cm: 0.4, residual_peak_cm: 0.4 },
+        };
+      },
+      now: () => Date.parse('2026-11-11T15:20:00Z'),
+    },
+    // Cuaca bandara palsu: hanya Bengkulu (WIPL) yang melapor; waktu "sekarang" tetap.
+    weather: {
+      metar: async () =>
+        new Map([
+          ['WIPL', { icao: 'WIPL', observed_at: '2026-11-11T12:30:00.000Z', weather: 'Hujan petir ringan', wx: '-TSRA', temp_c: 24, wind_kt: 5, gust_kt: null, raw: 'METAR WIPL 111230Z 30005KT 4000 -TSRA 24/23 Q1010' }],
+        ]),
+      now: () => new Date('2026-11-11T13:10:00Z'),
+      cacheMs: 0,
+    },
     // CEWS palsu: Kabupaten Uji berstatus Siaga pada dasarian III September 2026.
     rainWarnings: async () => ({
       dasarian: { year: 2026, month: 9, num: 3, start: '2026-09-21', end: '2026-09-30' },
@@ -127,7 +157,7 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
     const { migrate } = await import('../db/migrate.js');
     await migrate();
     await pool.query(
-      'TRUNCATE events, volcanoes, sync_logs, faults, wilayah, wilayah_bahaya, titik_pantau, bahaya_raster, indikasi_run, indikasi_wilayah, indikasi_hari, glofas_thresholds, cap_alerts, cap_alert_wilayah, notifications, facilities',
+      'TRUNCATE events, volcanoes, sync_logs, faults, wilayah, wilayah_bahaya, titik_pantau, bahaya_raster, indikasi_run, indikasi_wilayah, indikasi_hari, glofas_thresholds, cap_alerts, cap_alert_wilayah, notifications, facilities, synop_reports',
     );
     ({ syncEarthquakes } = await import('../src/jobs/sync-earthquakes.js'));
     ({ syncVolcanoes } = await import('../src/jobs/sync-volcanoes.js'));
@@ -340,6 +370,75 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
     const { body: bmkg } = await getJson('/earthquakes');
     assert.ok(bmkg.features.every((f) => f.properties.source === 'BMKG'));
     assert.equal((await getJson('/earthquakes?source=jma')).status, 400);
+  });
+
+  test('gempa GFZ tampil dengan mekanisme sumber; gempa BMKG pasangannya ikut menampilkannya', async () => {
+    const { syncGfzEarthquakes } = await import('../src/jobs/sync-earthquakes.js');
+    const at = Date.now() - 20 * 60_000;
+    const iso = (ms) => new Date(ms).toISOString();
+    await syncEarthquakes({
+      fetchEvents: async () => ({
+        events: [quake({ id: 'bmkg:uji-halmahera', magnitude: 5.4, occurredAt: iso(at), lat: -0.95, lon: 128.6, props: { wilayah: 'Halmahera' } })],
+        errors: [],
+      }),
+    });
+    const mechanism = {
+      type: 'geser',
+      label: 'Sesar geser',
+      planes: [{ strike: 305, dip: 77, rake: 5 }, { strike: 214, dip: 85, rake: 167 }],
+      plunges: { t: 12, p: 6, n: 76 },
+      double_couple: 0.49,
+      reviewed: true,
+      updated_at: iso(at + 3_600_000),
+    };
+    const gfz = (id, overrides, props) => ({
+      id, source: 'gfz', hazard: 'gempa', magnitude: 5.2, depthKm: 10, occurredAt: iso(at + 3_000), lat: -0.943, lon: 128.606,
+      props: { wilayah: 'Halmahera, Indonesia', mag_type: 'Mw', status: 'automatic', published_at: iso(at + 240_000), ...props },
+      ...overrides,
+    });
+    const feeds = [];
+    const sync = (events) =>
+      syncGfzEarthquakes({
+        fetchEvents: async ({ feed }) => {
+          feeds.push(feed);
+          return { events, errors: [] };
+        },
+      });
+    // Sinkronisasi pertama: lokasi otomatis, mekanisme belum ada.
+    await sync([gfz('gfz:uji-halmahera'), gfz('gfz:uji-banda', { magnitude: 4.6, occurredAt: iso(at - 7_200_000), lat: -6.5, lon: 130.2 })]);
+    assert.deepEqual(feeds, ['week']);
+    let { body } = await getJson('/earthquakes?source=gfz');
+    assert.equal(body.meta.source, 'gfz');
+    assert.match(body.attribution, /GFZ.*CC BY 4\.0/);
+    let byId = Object.fromEntries(body.features.map((f) => [f.properties.id, f.properties]));
+    assert.deepEqual(Object.keys(byId).sort(), ['gfz:uji-banda', 'gfz:uji-halmahera']);
+    assert.equal(byId['gfz:uji-halmahera'].mechanism, null);
+    assert.equal(byId['gfz:uji-halmahera'].bmkg.id, 'bmkg:uji-halmahera');
+    assert.equal(byId['gfz:uji-banda'].bmkg, null);
+
+    // Mekanisme dan tinjauan seismolog menyusul: digabung ke baris yang sama.
+    await sync([gfz('gfz:uji-halmahera', {}, { status: 'manual', mechanism })]);
+    ({ body } = await getJson('/earthquakes?source=gfz'));
+    byId = Object.fromEntries(body.features.map((f) => [f.properties.id, f.properties]));
+    assert.equal(byId['gfz:uji-halmahera'].status, 'manual');
+    assert.equal(byId['gfz:uji-halmahera'].mag_type, 'Mw');
+    assert.equal(byId['gfz:uji-halmahera'].published_at, iso(at + 240_000));
+    assert.deepEqual(byId['gfz:uji-halmahera'].mechanism, mechanism);
+
+    // Gempa BMKG yang sama memuat Mw dan mekanisme GFZ; pasangan USGS-nya tidak terpengaruh.
+    const { body: bmkg } = await getJson('/earthquakes');
+    assert.ok(bmkg.features.every((f) => f.properties.source === 'BMKG'));
+    const halmahera = bmkg.features.find((f) => f.properties.id === 'bmkg:uji-halmahera').properties;
+    assert.equal(halmahera.usgs, null);
+    assert.equal(halmahera.gfz.id, 'gfz:uji-halmahera');
+    assert.equal(halmahera.gfz.magnitude, 5.2);
+    assert.equal(halmahera.gfz.mag_type, 'Mw');
+    assert.equal(halmahera.gfz.time_diff_s, 3);
+    assert.equal(halmahera.gfz.mechanism.label, 'Sesar geser');
+    assert.equal(bmkg.features.find((f) => f.properties.id === 'bmkg:uji-flores').properties.gfz, null);
+    // Katalog lain tidak dipasangkan dengan GFZ.
+    const { body: usgs } = await getJson('/earthquakes?source=usgs');
+    assert.ok(usgs.features.every((f) => !('gfz' in f.properties)));
   });
 
   test('peringatan GDACS dikirim sebagai GeoJSON [lon, lat]', async () => {
@@ -1181,6 +1280,186 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
         await highZonesAt([{ lat: -7.0225, lon: 110.0225 }, { lat: -7.0225, lon: 110.2 }, { lat: -5.7, lon: 120.3 }]),
         [['longsor'], [], []],
       );
+    });
+  });
+
+  describe('hujan terukur stasiun cuaca (SYNOP lewat gerbang NOAA)', () => {
+    let runJob;
+    let createSynopSync;
+    before(async () => {
+      ({ runJob } = await import('../src/jobs/scheduler.js'));
+      ({ createSynopSync } = await import('../src/jobs/sync-synop.js'));
+    });
+
+    const report = (wmo, observedAt, raw, fileAt) => ({
+      wmo,
+      observed_at: observedAt,
+      bulletin: 'SMID01 WIIX',
+      raw: `${wmo} ${raw}`,
+      file: 'sn.0001.txt',
+      file_modified_at: fileAt,
+    });
+    // Bengkulu (96253): dua hari laporan jam utama. Kualanamu (96035): hanya
+    // laporan 12 UTC tanpa hujan dan laporan jam 13 UTC tanpa pengukuran hujan.
+    const BENGKULU_12Z = '01444 80403 10231 20221 30082 40101 51022 60721 79196 82972 333 10328 60727';
+    const reports = [
+      report('96253', '2026-11-10T06:00:00.000Z', '11456 70000 10300 60051', '2026-11-10T06:20:00.000Z'),
+      report('96253', '2026-11-10T12:00:00.000Z', '31456 70000 10290', '2026-11-10T12:20:00.000Z'),
+      report('96253', '2026-11-10T18:00:00.000Z', '11456 70000 10250 60101', '2026-11-10T18:20:00.000Z'),
+      report('96253', '2026-11-11T00:00:00.000Z', '11456 70000 10240 60304 333 20231', '2026-11-11T00:20:00.000Z'),
+      report('96253', '2026-11-11T06:00:00.000Z', '11456 70000 10300 60021', '2026-11-11T06:20:00.000Z'),
+      report('96253', '2026-11-11T12:00:00.000Z', BENGKULU_12Z, '2026-11-11T12:20:00.000Z'),
+      report('96035', '2026-11-11T12:00:00.000Z', '32460 60304 10280', '2026-11-11T12:20:00.000Z'),
+      report('96035', '2026-11-11T13:00:00.000Z', '42459 62002 10256', '2026-11-11T13:20:00.000Z'),
+      // Stasiun yang tidak ada di daftar WMO tetap disimpan, tetapi tidak tampil di peta.
+      report('96999', '2026-11-11T12:00:00.000Z', '11456 70000 10300 60051', '2026-11-11T12:20:00.000Z'),
+      // Laporan rusak dilewati.
+      report('96035', '2026-11-11T12:00:00.000Z', 'rusak', '2026-11-11T12:20:00.000Z'),
+    ];
+    const stored = async (wmo, observedAt) =>
+      (await pool.query('SELECT rain_mm, rain_hours, weather, temp_c, first_seen_at, updated_at FROM synop_reports WHERE wmo = $1 AND observed_at = $2', [wmo, observedAt])).rows[0];
+
+    test('laporan tersimpan; sinkronisasi berikutnya hanya meminta berkas sejak yang terakhir dibaca', async () => {
+      const since = [];
+      const sync = createSynopSync({
+        fetchReports: async (options) => {
+          since.push(options.since);
+          return { reports, latest: '2026-11-11T13:20:00.000Z', errors: [] };
+        },
+      });
+      const first = await runJob({ source: 'synop', run: sync });
+      assert.deepEqual({ ok: first.ok, items: first.items, message: first.message }, { ok: true, items: 10, message: null });
+      assert.equal((await pool.query('SELECT count(*)::int AS n FROM synop_reports')).rows[0].n, 9);
+      const bengkulu = await stored('96253', '2026-11-11T12:00:00Z');
+      assert.deepEqual([bengkulu.rain_mm, bengkulu.rain_hours, bengkulu.weather, bengkulu.temp_c], [72, 6, 91, 23.1]);
+      // Stasiun yang menyatakan tidak ada hujan = 0 mm; yang tidak mengukur = NULL.
+      assert.deepEqual([(await stored('96035', '2026-11-11T12:00:00Z')).rain_mm, (await stored('96035', '2026-11-11T13:00:00Z')).rain_mm], [0, null]);
+
+      await sync();
+      assert.deepEqual(since, [null, '2026-11-11T13:20:00.000Z']);
+      // Laporan yang sama dibaca ulang tanpa mengubah barisnya.
+      assert.deepEqual(await stored('96253', '2026-11-11T12:00:00Z'), bengkulu);
+    });
+
+    test('server yang dimulai ulang melanjutkan dari berkas terakhir yang tersimpan', async () => {
+      const since = [];
+      const sync = createSynopSync({
+        fetchReports: async (options) => {
+          since.push(options.since);
+          return { reports: [], latest: options.since, errors: ['sn.0002.txt: HTTP 503'] };
+        },
+      });
+      const result = await sync();
+      assert.deepEqual(since, ['2026-11-11T13:20:00.000Z']);
+      assert.equal(result.message, 'sn.0002.txt: HTTP 503');
+    });
+
+    test('stasiun tampil dengan akumulasi 24 jam, total harian, cuaca, dan laporan bandara', async () => {
+      const { status, body } = await getJson('/weather-stations');
+      assert.equal(status, 200);
+      assert.match(body.attribution, /BMKG.*WMO.*NOAA/);
+      assert.equal(body.meta.until, '2026-11-11T12:00:00.000Z');
+      assert.equal(body.meta.reporting, 2);
+      assert.ok(body.meta.registered >= 100);
+      assert.ok(body.meta.synced_at);
+
+      const byWmo = Object.fromEntries(body.features.map((f) => [f.properties.wmo, f]));
+      assert.deepEqual(Object.keys(byWmo).sort(), ['96035', '96253']);
+      const bengkulu = byWmo['96253'];
+      assert.deepEqual(bengkulu.geometry, { type: 'Point', coordinates: [102.3333, -3.8833] });
+      assert.equal(bengkulu.properties.nama, 'Fatmawati Soekarno');
+      assert.equal(bengkulu.properties.wilayah, 'Kota Bengkulu');
+      // 10 (18 UTC kemarin) + 15 (jendela 18–00 UTC: 30 − 5 − 0 − 10) + 2 + 72.
+      assert.deepEqual(bengkulu.properties.rain, { mm: 99, hours: 24, trace: false, category: 'lebat', category_label: 'Hujan lebat' });
+      assert.deepEqual(bengkulu.properties.days, [{ until: '2026-11-11T00:00:00.000Z', mm: 30, trace: false }]);
+      assert.deepEqual(bengkulu.properties.weather, { code: 91, label: 'Hujan setelah badai petir' });
+      assert.equal(bengkulu.properties.observed_at, '2026-11-11T12:00:00.000Z');
+      assert.equal(bengkulu.properties.metar.weather, 'Hujan petir ringan');
+
+      // Kualanamu: hanya 6 jam terakhir yang diketahui, tanpa hujan; laporan terakhirnya jam 13 UTC.
+      const medan = byWmo['96035'].properties;
+      assert.deepEqual(medan.rain, { mm: 0, hours: 6, trace: false, category: null, category_label: null });
+      assert.equal(medan.observed_at, '2026-11-11T13:00:00.000Z');
+      assert.equal(medan.temp_c, 25.6);
+      assert.equal(medan.weather, null);
+      assert.equal(medan.metar, null);
+    });
+
+    test('laporan koreksi menimpa laporan lama; koreksi dari berkas yang lebih lama diabaikan', async () => {
+      const before = await stored('96253', '2026-11-11T12:00:00Z');
+      const corrected = report('96253', '2026-11-11T12:00:00.000Z', BENGKULU_12Z.replace('60721', '60751'), '2026-11-11T12:40:00.000Z');
+      const stale = report('96253', '2026-11-11T12:00:00.000Z', BENGKULU_12Z.replace('60721', '60011'), '2026-11-11T12:25:00.000Z');
+      const sync = createSynopSync({ fetchReports: async () => ({ reports: [corrected, stale], latest: '2026-11-11T13:25:00.000Z', errors: [] }) });
+      await sync();
+      const after = await stored('96253', '2026-11-11T12:00:00Z');
+      assert.equal(after.rain_mm, 75);
+      assert.deepEqual(after.first_seen_at, before.first_seen_at);
+      assert.ok(after.updated_at > before.updated_at);
+      const { body } = await getJson('/weather-stations');
+      assert.equal(body.features.find((f) => f.properties.wmo === '96253').properties.rain.mm, 102);
+    });
+
+    test('cuaca bandara yang tidak terjangkau tidak menggagalkan hujan terukur', async () => {
+      const { createApp } = await import('../src/app.js');
+      const app = createApp({
+        services: {
+          ...services,
+          weather: {
+            ...services.weather,
+            metar: async () => {
+              throw new Error('HTTP 503');
+            },
+          },
+        },
+      }).listen(0);
+      try {
+        const res = await fetch(`http://localhost:${app.address().port}/api/weather-stations`);
+        const body = await res.json();
+        assert.equal(res.status, 200);
+        assert.equal(body.features.length, 2);
+        assert.ok(body.features.every((f) => f.properties.metar === null));
+      } finally {
+        app.close();
+      }
+    });
+  });
+
+  describe('muka laut dari alat pasang surut (IOC)', () => {
+    test('daftar stasiun tampil sebagai GeoJSON [lon, lat] dengan status aktifnya', async () => {
+      const { status, body } = await getJson('/sea-level');
+      assert.equal(status, 200);
+      assert.match(body.attribution, /IOC–UNESCO/);
+      assert.deepEqual(body.meta, { fetched_at: '2026-11-11T15:20:00.000Z', stations: 2, active: 1 });
+      assert.deepEqual(body.features[0], {
+        type: 'Feature',
+        geometry: { type: 'Point', coordinates: [109, -7.75] },
+        properties: { code: 'cili', nama: 'Cilacap', last_at: '2026-11-11T15:14:00.000Z', active: true, url: 'https://contoh/cili' },
+      });
+    });
+
+    test('deret satu stasiun dimuat saat diminta dan dilayani dari cache', async () => {
+      const before = { ...calls };
+      const { status, body } = await getJson('/sea-level/cili');
+      assert.equal(status, 200);
+      assert.deepEqual([body.code, body.nama, body.sensor, body.fit_hours, body.show_hours], ['cili', 'Cilacap', 'rad', 15, 12]);
+      assert.deepEqual(body.level_cm, [-1, 0, 1]);
+      assert.deepEqual(body.latest, { at: '2026-11-11T15:14:00.000Z', age_min: 6, level_cm: 1, residual_cm: 0.4, residual_peak_cm: 0.4 });
+      await getJson('/sea-level/cili');
+      // Daftar stasiun sudah di-cache oleh test sebelumnya; deretnya diambil sekali.
+      assert.deepEqual([calls.seaStations - before.seaStations, calls.seaSeries - before.seaSeries], [0, 1]);
+    });
+
+    test('kode di luar daftar stasiun Indonesia ditolak tanpa memanggil IOC; IOC gagal → 502', async () => {
+      const before = calls.seaSeries;
+      const unknown = await getJson('/sea-level/aarh');
+      assert.equal(unknown.status, 404);
+      assert.equal(calls.seaSeries, before);
+      const failed = await getJson('/sea-level/koli');
+      assert.equal(failed.status, 502);
+      assert.match(failed.body.error, /IOC tidak dapat dihubungi: HTTP 503/);
+      // Kegagalan tidak di-cache: permintaan berikutnya mencoba lagi.
+      await getJson('/sea-level/koli');
+      assert.equal(calls.seaSeries, before + 2);
     });
   });
 

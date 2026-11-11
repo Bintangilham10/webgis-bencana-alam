@@ -1,0 +1,92 @@
+[
+ {
+  "icaoId": "WAHS",
+  "receiptTime": "2026-11-11T14:05:25.747Z",
+  "obsTime": 1794405600,
+  "reportTime": "2026-11-11T14:00:00.000Z",
+  "temp": 28,
+  "dewp": 26,
+  "wdir": 80,
+  "wspd": 6,
+  "visib": 3.11,
+  "altim": 1011,
+  "qcField": 16,
+  "wxString": "-TSRA",
+  "metarType": "METAR",
+  "rawOb": "METAR WAHS 111400Z 08006KT 5000 -TSRA FEW017CB SCT018 28/26 Q1011 NOSIG RMK CB OVER THE FIELD",
+  "lat": -6.973,
+  "lon": 110.375,
+  "elev": 3,
+  "name": "Semarang/Uani Arpt, JT, ID",
+  "cover": "SCT",
+  "clouds": [
+   {
+    "cover": "FEW",
+    "base": 1700
+   },
+   {
+    "cover": "SCT",
+    "base": 1800
+   }
+  ],
+  "fltCat": "MVFR"
+ },
+ {
+  "icaoId": "WIII",
+  "receiptTime": "2026-11-11T14:05:12.905Z",
+  "obsTime": 1794405600,
+  "reportTime": "2026-11-11T14:00:00.000Z",
+  "temp": 28,
+  "dewp": 25,
+  "wdir": 230,
+  "wspd": 6,
+  "visib": 4.35,
+  "altim": 1011,
+  "qcField": 16,
+  "metarType": "METAR",
+  "rawOb": "METAR WIII 111400Z 23006KT 7000 FEW020 28/25 Q1011 NOSIG",
+  "lat": -6.125,
+  "lon": 106.659,
+  "elev": 9,
+  "name": "Jakarta/Hatta Intl, JB, ID",
+  "cover": "FEW",
+  "clouds": [
+   {
+    "cover": "FEW",
+    "base": 2000
+   }
+  ],
+  "fltCat": "MVFR"
+ },
+ {
+  "icaoId": "YPXM",
+  "receiptTime": "2026-11-11T14:17:16.497Z",
+  "obsTime": 1794406560,
+  "reportTime": "2026-11-11T14:16:00.000Z",
+  "temp": 25,
+  "dewp": 23,
+  "wdir": 140,
+  "wspd": 10,
+  "visib": "6+",
+  "altim": 1015,
+  "qcField": 2,
+  "metarType": "SPECI",
+  "rawOb": "SPECI YPXM 111416Z AUTO 14010KT 9999 // BKN010 OVC018 25/23 Q1015",
+  "lat": -10.453,
+  "lon": 105.688,
+  "elev": 262,
+  "name": "Christmas Isl Arpt, CX, CX",
+  "cover": "OVC",
+  "clouds": [
+   {
+    "cover": "BKN",
+    "base": 1000
+   },
+   {
+    "cover": "OVC",
+    "base": 1800
+   }
+  ],
+  "fltCat": "MVFR"
+ }
+]
