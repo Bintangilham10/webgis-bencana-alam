@@ -763,6 +763,9 @@
    warna pilihan di antarmuka, memancar dua kali setelah peta berhenti. */
 .quake-symbol.is-focused::after,
 .usgs-symbol.is-focused::after,
+.gfz-symbol.is-focused::after,
+.tide-pin.is-focused::after,
+.rain-station.is-focused::after,
 .volcano-marker.is-focused::after {
   content: '';
   position: absolute;
@@ -1472,4 +1475,415 @@
     border-radius: var(--radius);
     translate: none;
   }
+}
+
+/* ---------- Hujan terukur di stasiun cuaca ---------- */
+/* Penanda: angka mm hujan 24 jam di kotak berwarna kategori hujan harian
+   (variabel --rain-* di base.css mengikuti nada peta dasar). */
+.rain-station {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  font-size: 10.5px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  color: var(--pill-fg);
+  background: var(--pill-bg);
+  box-shadow:
+    0 0 0 1px var(--glyph-outline),
+    0 1px 3px var(--marker-shadow);
+  animation: pop-in 0.45s var(--ease-spring) backwards;
+  animation-delay: calc(var(--i, 0) * 12ms);
+  transition: transform 0.2s var(--ease-spring);
+}
+
+.rain-station-icon:hover .rain-station,
+.rain-station-icon:focus-visible .rain-station {
+  transform: scale(1.15);
+}
+
+/* Akumulasi kurang dari 24 jam (laporan sebelumnya belum lengkap): garis
+   putus-putus di dalam kotak, berwarna angkanya supaya terlihat di semua kelas. */
+.rain-station.is-partial {
+  border: 1px dashed color-mix(in srgb, var(--pill-fg) 60%, transparent);
+}
+
+/* Stasiun kering atau tanpa laporan: garis tepi tipis supaya tidak menonjol. */
+.rain-station.is-dry {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--glyph-outline) 35%, transparent);
+}
+
+/* Contoh kotak kategori di legenda dan daftar lapisan. */
+.rain-pill {
+  display: block;
+  flex: none;
+  width: 20px;
+  height: 12px;
+  border-radius: 4px;
+  background: var(--pill-bg, var(--rain-sedang));
+  box-shadow: 0 0 0 1px var(--line-strong);
+}
+
+.rain-pill--partial {
+  border: 1px dashed var(--ink-2);
+  background: none;
+  box-shadow: none;
+}
+
+/* Lencana jumlah hujan di kepala popup, sebentuk dengan penandanya. */
+.rain-badge {
+  display: grid;
+  flex: none;
+  place-content: center;
+  justify-items: center;
+  min-width: 46px;
+  height: 46px;
+  padding: 0 6px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.05;
+  color: var(--pill-fg);
+  background: var(--pill-bg);
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.08);
+}
+
+.rain-badge small {
+  font-size: 9.5px;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+/* Grafik hujan harian di popup stasiun: kolom tipis satu warna di atas garis
+   dasar, angka hanya di kolom tertinggi dan terakhir, tanggal di bawah garis. */
+.station-days {
+  margin: 12px 0 0;
+}
+
+.station-days figcaption {
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.station-days figcaption .muted {
+  font-weight: 500;
+}
+
+.station-days__plot {
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+  height: 72px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.station-days__col {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 4px 4px 0 0;
+  font: inherit;
+  color: inherit;
+  background: none;
+  cursor: default;
+}
+
+.station-days__col:hover,
+.station-days__col:focus-visible {
+  background: var(--surface-2);
+}
+
+/* Tinggi kolom paling tinggi 80% bidang, menyisakan ruang untuk angkanya. */
+.station-days__bar {
+  width: 100%;
+  max-width: 20px;
+  height: calc(var(--h) * 0.8%);
+  border-radius: 4px 4px 0 0;
+  background: var(--primary);
+}
+
+.station-days__col:hover .station-days__bar,
+.station-days__col:focus-visible .station-days__bar {
+  filter: brightness(1.18);
+}
+
+.station-days__value {
+  margin-bottom: 2px;
+  font-size: 10.5px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-2);
+}
+
+.station-days__tick {
+  position: absolute;
+  bottom: -17px;
+  font-size: 10.5px;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-3);
+}
+
+.popup .station-days__readout {
+  font-size: 12px;
+  color: var(--ink-2);
+}
+
+.popup .station-days__single {
+  margin-top: 8px;
+  font-size: 12.5px;
+}
+
+/* ---------- Gempa GFZ: bola fokus dan belah ketupat ---------- */
+/* Gempa bermekanisme sumber digambar sebagai bola fokus (gambar dari
+   lib/beachball.js); gempa lain sebagai belah ketupat berwarna kelas kedalaman. */
+.gfz-symbol {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  animation: pop-in 0.5s var(--ease-spring) backwards;
+  animation-delay: calc(var(--i, 0) * 30ms);
+  transition: transform 0.2s var(--ease-spring);
+}
+
+.gfz-icon:hover .gfz-symbol,
+.gfz-icon:focus-visible .gfz-symbol {
+  transform: scale(1.15);
+}
+
+.gfz-ball {
+  display: block;
+  flex: none;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px var(--marker-shadow);
+}
+
+.gfz-symbol--ball .gfz-ball {
+  width: 100%;
+  height: 100%;
+}
+
+.gfz-diamond {
+  display: block;
+  width: var(--s);
+  height: var(--s);
+  border: 2.5px solid var(--c, var(--ink-3));
+  box-shadow:
+    0 0 0 1px var(--glyph-outline),
+    inset 0 0 0 1px var(--glyph-outline);
+  transform: rotate(45deg);
+}
+
+.gfz-swatch {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+}
+
+/* Mekanisme sumber di popup gempa GFZ dan gempa BMKG pasangannya. */
+.popup-mechanism {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.popup .popup-mechanism__type {
+  font-size: 13.5px;
+  font-weight: 800;
+}
+
+.popup .popup-mechanism__note,
+.popup .popup-mechanism__planes {
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--ink-2);
+}
+
+.popup .popup-mechanism__planes {
+  font-variant-numeric: tabular-nums;
+}
+
+.popup .popup-mechanism__caption {
+  margin: 6px 0 8px;
+  font-size: 11px;
+  color: var(--ink-3);
+}
+
+/* ---------- Stasiun seismograf ---------- */
+.seismo-marker {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 1px 1.5px var(--marker-shadow));
+  transition: transform 0.2s var(--ease-spring);
+}
+
+.seismo-icon:hover .seismo-marker {
+  transform: scale(1.2);
+}
+
+.seismo-symbol {
+  display: block;
+  flex: none;
+}
+
+/* ---------- Muka laut: alat pasang surut ---------- */
+.tide-pin {
+  position: relative;
+  transition: transform 0.2s var(--ease-spring);
+}
+
+.tide-icon:hover .tide-pin,
+.tide-icon:focus-visible .tide-pin {
+  transform: scale(1.12);
+}
+
+.tide-pin--legend {
+  width: 18px;
+  height: 18px;
+  border-width: 1.5px;
+  border-radius: 6px;
+}
+
+.tide-pin--legend .icon {
+  width: 11px;
+  height: 11px;
+}
+
+/* Popup alat pasang surut cukup lebar untuk grafiknya, tetapi tidak melebihi
+   lebar popup di layar sempit (lib/marker-focus.js). */
+.sea-popup {
+  min-width: min(288px, calc(100vw - 152px));
+}
+
+.popup .sea-note {
+  margin: 6px 0;
+  font-size: 12.5px;
+  color: var(--ink-2);
+}
+
+/* Dua grafik garis bersumbu waktu sama: garis kisi tipis, garis data 2 px,
+   titik ujung bercincin warna latar, dan garis penunjuk saat disentuh. */
+.sea-chart {
+  margin: 10px 0 4px;
+}
+
+.sea-chart svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  border-radius: 6px;
+  cursor: crosshair;
+  touch-action: pan-y;
+}
+
+.sea-chart svg:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.sea-chart__grid {
+  stroke: var(--line);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.sea-chart__grid--zero {
+  stroke: var(--line-strong);
+}
+
+.sea-chart__tick {
+  font-size: 9px;
+  font-variant-numeric: tabular-nums;
+  fill: var(--ink-3);
+}
+
+.sea-chart__title {
+  font-size: 9.5px;
+  font-weight: 700;
+  fill: var(--ink-2);
+}
+
+.sea-chart__line {
+  fill: none;
+  stroke: var(--primary);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.sea-chart__end {
+  fill: var(--primary);
+  stroke: var(--surface);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.sea-chart__cursor {
+  stroke: var(--ink-3);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+.sea-chart__cursor[hidden] {
+  display: none;
+}
+
+.sea-chart__hit {
+  fill: transparent;
+}
+
+.sea-chart__readout {
+  margin-top: 4px;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-2);
+}
+
+/* Tabel per jam (padanan grafik), digulung bila panjang. */
+.popup-details:has(.sea-table) {
+  max-height: 190px;
+  overflow-y: auto;
+}
+
+.sea-table {
+  width: 100%;
+  margin-top: 6px;
+  border-collapse: collapse;
+  font-size: 11.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.sea-table th {
+  padding: 2px 8px 2px 0;
+  font-weight: 700;
+  text-align: left;
+  color: var(--ink-3);
+}
+
+.sea-table td {
+  padding: 2px 8px 2px 0;
+  border-top: 1px solid var(--line);
 }

@@ -58,15 +58,28 @@ import {
   faultLegend,
   plateLegend,
 } from "./layers/reference.js";
+import { createSeaLevelLayer, seaLevelLegend } from "./layers/sea-level.js";
 import { createUsgsLayer, usgsLegend } from "./layers/usgs.js";
+import {
+  createWeatherStationLayer,
+  weatherStationLegend,
+} from "./layers/weather-stations.js";
 import { createEmscLayer, emscLegend } from "./layers/emsc.js";
 import { createGdacsLayer, gdacsIconUrl, gdacsLegend } from "./layers/gdacs.js";
+import {
+  createGfzLayer,
+  createSeismicStationLayer,
+  gfzLegend,
+  SEISMO_SYMBOL,
+  seismicStationLegend,
+} from "./layers/gfz.js";
 import {
   createVolcanoLayer,
   volcanoLegend,
   volcanoSwatch,
 } from "./layers/volcanoes.js";
 import { getJson } from "./lib/api.js";
+import { beachballUrl } from "./lib/beachball.js";
 import { formatDasarian } from "./lib/format.js";
 import { icons } from "./lib/icons.js";
 import { flyToBounds } from "./lib/motion.js";
@@ -74,6 +87,8 @@ import {
   CEWS_LEVELS,
   DEPTH_CLASSES,
   HAZARD_CLASSES,
+  INK,
+  TIDE_GAUGE,
 } from "./lib/symbology.js";
 import { RAIN_CLASSES, rainCss } from "./lib/rain.js";
 import { cloudCss } from "./lib/clouds.js";
@@ -434,10 +449,34 @@ const emscQuakes = createEmscLayer(map, {
   onLoad: (collection) => freshness.ok("Gempa EMSC", collection.meta.synced_at),
   onError: reportLoadError("Gempa EMSC"),
 });
+// Katalog gempa GFZ (Jerman) dengan mekanisme sumber, dihitung dari jaringan
+// seismograf GEOFON yang 21 stasiunnya ada di Indonesia; juga mati bawaan.
+const gfzQuakes = createGfzLayer(map, {
+  viewPadding: markerPadding,
+  onLoad: (collection) => freshness.ok("Gempa GFZ", collection.meta.synced_at),
+  onError: reportLoadError("Gempa GFZ"),
+});
+const seismicStations = createSeismicStationLayer({
+  onError: reportLoadError("Stasiun seismograf"),
+});
+// Muka laut dari alat pasang surut di pelabuhan Indonesia (lewat IOC–UNESCO),
+// mati bawaan: pengamatan langsung pasang surut, rob, dan tsunami bila ada.
+const seaLevel = createSeaLevelLayer(map, {
+  viewPadding: markerPadding,
+  onLoad: (collection) => freshness.ok("Muka laut", collection.meta.fetched_at),
+  onError: reportLoadError("Muka laut"),
+});
 const gdacsAlerts = createGdacsLayer(map, {
   viewPadding: markerPadding,
   onLoad: (collection) => freshness.ok("Peringatan GDACS", collection.meta.fetched_at),
   onError: reportLoadError("Peringatan GDACS"),
+});
+// Hujan terukur di stasiun cuaca BMKG (laporan lewat jaringan WMO, diambil dari
+// NOAA), mati bawaan: hasil ukur alat di lapangan, bukan prakiraan atau satelit.
+const weatherStations = createWeatherStationLayer(map, {
+  viewPadding: markerPadding,
+  onLoad: (collection) => freshness.ok("Hujan terukur", collection.meta.synced_at),
+  onError: reportLoadError("Hujan terukur"),
 });
 // Peringatan dini cuaca BMKG (CAP): datanya dimuat refreshCap() untuk peta dan Ikhtisar.
 const cap = createCapLayer(map, { viewPadding: markerPadding });
@@ -481,6 +520,10 @@ const symbol = {
   quake: `<span class="sym quake-swatch" style="--c:${DEPTH_CLASSES[0].color}"></span>`,
   usgs: `<span class="sym usgs-swatch" style="--c:${DEPTH_CLASSES[0].color}"></span>`,
   emsc: `<span class="sym emsc-swatch" style="--c:${DEPTH_CLASSES[0].color}"></span>`,
+  // Bola fokus sesar naik sebagai contoh simbol gempa GFZ.
+  gfz: `<img class="sym" src="${beachballUrl({ strike: 300, dip: 30, rake: 90 }, { size: 16, fill: DEPTH_CLASSES[0].color, outline: INK })}" width="16" height="16" alt="" />`,
+  seismo: `<span class="sym">${SEISMO_SYMBOL}</span>`,
+  tide: `<span class="sym facility-pin tide-pin tide-pin--legend" style="--c:${TIDE_GAUGE.active.color}">${icons.tide}</span>`,
   gdacs: `<img class="gdacs-legend-icon" src="${gdacsIconUrl("FL", "orange")}" width="15" height="19" alt="" />`,
   volcano: volcanoSwatch(3),
   fault: '<span class="sym sym-line" style="--sym:var(--fault-color)"></span>',
@@ -489,6 +532,7 @@ const symbol = {
   boundary:
     '<span class="sym sym-line sym-line--thin" style="--sym:var(--boundary-color)"></span>',
   rain: `<span class="sym rain-swatch" style="--c:${CEWS_LEVELS[1].color}"></span>`,
+  station: '<span class="sym rain-pill"></span>',
   imerg: `<span class="sym ramp-swatch">${[1, 2, 4].map((i) => `<span style="background:${rainCss(RAIN_CLASSES[i].mm)}"></span>`).join("")}</span>`,
   clouds: `<span class="sym ramp-swatch">${[-30, -50, -65, -85].map((c) => `<span style="background:${cloudCss(c, { light: true })}"></span>`).join("")}</span>`,
   landslide: landslideSymbol(),
@@ -508,6 +552,17 @@ const rawan = (id, name) => {
     legend: hazardLegend,
     rawan: true,
   };
+};
+
+// Muka laut berguna untuk tsunami (fitur gempa) dan rob (fitur banjir), jadi
+// muncul di keduanya.
+const seaLevelItem = {
+  label: "Muka laut (alat pasang surut)",
+  description: "UNESCO/IOC · ±12 pelabuhan · data tiap menit · grafik 12 jam",
+  legendTitle: "Muka laut (alat pasang surut)",
+  symbol: symbol.tide,
+  layer: seaLevel.layer,
+  legend: seaLevelLegend,
 };
 
 // GDACS mencakup beberapa jenis bencana, jadi muncul di fitur gunung api dan banjir.
@@ -570,6 +625,29 @@ createLayerPanel({
               layer: emscQuakes.layer,
               legend: emscLegend,
             },
+            {
+              label: "Gempa GFZ (mekanisme sumber)",
+              description: "Jerman · mulai ±M4,3 · 7 hari · jenis sesar untuk ±Mw 5 ke atas",
+              legendTitle: "Gempa GFZ (7 hari)",
+              symbol: symbol.gfz,
+              layer: gfzQuakes.layer,
+              legend: gfzLegend,
+            },
+          ],
+        },
+        {
+          title: "Terukur di lapangan",
+          note: "GFZ–BMKG · UNESCO/IOC",
+          items: [
+            {
+              label: "Stasiun seismograf GEOFON",
+              description: "21 stasiun GFZ–BMKG dan 1 stasiun jaringan global AS di Indonesia",
+              legendTitle: "Stasiun seismograf internasional",
+              symbol: symbol.seismo,
+              layer: seismicStations,
+              legend: seismicStationLegend,
+            },
+            seaLevelItem,
           ],
         },
       ],
@@ -629,6 +707,20 @@ createLayerPanel({
           ],
         },
         {
+          title: "Terukur di lapangan",
+          note: "BMKG · lewat NOAA",
+          items: [
+            {
+              label: "Hujan terukur 24 jam",
+              description: "Penakar hujan ±55 stasiun cuaca BMKG · tiap 6 jam · plus cuaca bandara",
+              legendTitle: "Hujan terukur di stasiun (24 jam)",
+              symbol: symbol.station,
+              layer: weatherStations.layer,
+              legend: weatherStationLegend,
+            },
+          ],
+        },
+        {
           title: "Pembanding",
           note: "NASA · JMA",
           items: [
@@ -681,6 +773,12 @@ createLayerPanel({
       icon: icons.flood,
       sections: [
         { title: "Utama", note: "InaRISK BNPB", items: [rawan("banjir", "banjir")] },
+        {
+          title: "Terukur di lapangan",
+          note: "UNESCO/IOC",
+          items: [seaLevelItem],
+          description: "Muka laut di pelabuhan: pasang tinggi dan rob terbaca di grafiknya.",
+        },
         {
           title: "Pembanding",
           note: "Eropa–PBB",

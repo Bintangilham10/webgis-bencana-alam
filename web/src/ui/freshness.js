@@ -12,6 +12,8 @@ const STALE_AFTER_MS = {
   'Peringatan cuaca': 20 * 60_000,
   'Peringatan hujan': 6 * 60 * 60_000,
   'Indikasi SIGAP': 13 * 60 * 60_000,
+  // Laporan stasiun cuaca (SYNOP) disinkronkan tiap 10 menit.
+  'Hujan terukur': 40 * 60_000,
   // Titik evakuasi OSM diambil seminggu sekali.
   'Titik evakuasi': 8 * 24 * 60 * 60_000,
 };

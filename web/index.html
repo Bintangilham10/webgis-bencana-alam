@@ -324,7 +324,7 @@
           <header class="lp-sources__head" data-reveal>
             <p class="lp-eyebrow">Sumber data</p>
             <h2 id="lp-data-title" class="lp-h2">Dibangun di atas data terbuka</h2>
-            <p class="lp-sources__intro">SIGAP tidak membuat data bencana sendiri. Semua angka berasal dari lembaga resmi dan proyek terbuka berikut, dikelompokkan per fitur. Data lembaga Indonesia menjadi acuan utama; data luar negeri bertanda <span class="lp-src__tag">Pembanding</span>. Cek risiko lokasi menggabungkan semuanya untuk satu titik.</p>
+            <p class="lp-sources__intro">SIGAP tidak membuat data bencana sendiri. Semua angka berasal dari lembaga resmi dan proyek terbuka berikut, dikelompokkan per fitur. Data lembaga Indonesia menjadi acuan utama; data luar negeri bertanda <span class="lp-src__tag">Pembanding</span>, dan hasil ukur alat di Indonesia yang dibuka lewat jaringan internasional bertanda <span class="lp-src__tag">Terukur</span>. Cek risiko lokasi menggabungkan semuanya untuk satu titik.</p>
           </header>
           <div class="lp-sources__groups">
             <section class="lp-srcgroup" data-reveal aria-labelledby="lp-src-gempa">
@@ -332,6 +332,8 @@
               <ul class="lp-srclist">
                 <li class="lp-src"><a class="lp-src__name" href="https://www.bmkg.go.id/" target="_blank" rel="noopener">BMKG<span data-icon="external"></span></a><span class="lp-src__data">Gempa M ≥ 5 dan gempa dirasakan: magnitudo, kedalaman, potensi tsunami, ShakeMap</span><span class="lp-src__when lp-src__when--live"><b>tiap 1 menit</b><small data-sync="quakes">memuat…</small></span></li>
                 <li class="lp-src"><span class="lp-src__name">USGS · EMSC <span class="lp-src__tag">Pembanding</span></span><span class="lp-src__data">Katalog gempa Amerika (mulai ±M4, dampak PAGER) dan Eropa (katalog lengkap BMKG, mulai ±M1)</span><span class="lp-src__when"><b>tiap 1–2 menit</b></span></li>
+                <li class="lp-src"><span class="lp-src__name">GFZ GEOFON <span class="lp-src__tag">Pembanding</span></span><span class="lp-src__data">Katalog gempa Jerman dengan mekanisme sumber (jenis sesar), dari jaringan seismograf yang 21 stasiunnya ada di Indonesia</span><span class="lp-src__when"><b>tiap 3 menit</b></span></li>
+                <li class="lp-src"><span class="lp-src__name">IOC–UNESCO <span class="lp-src__tag">Terukur</span></span><span class="lp-src__data">Muka laut dari ±12 alat pasang surut di pelabuhan Indonesia, dengan simpangannya di luar pasang surut</span><span class="lp-src__when"><b>data tiap menit</b></span></li>
               </ul>
             </section>
             <section class="lp-srcgroup" data-reveal aria-labelledby="lp-src-gunungapi">
@@ -347,6 +349,7 @@
                 <li class="lp-src"><a class="lp-src__name" href="https://cews.bmkg.go.id/" target="_blank" rel="noopener">BMKG CEWS<span data-icon="external"></span></a><span class="lp-src__data">Peringatan dini curah hujan tinggi per kab/kota</span><span class="lp-src__when lp-src__when--live"><b>per dasarian</b><small data-sync="rain">memuat…</small></span></li>
                 <li class="lp-src"><span class="lp-src__name">BMKG peringatan dini cuaca</span><span class="lp-src__data">Peringatan cuaca beberapa jam ke depan per kecamatan</span><span class="lp-src__when"><b>tiap 5 menit</b></span></li>
                 <li class="lp-src"><span class="lp-src__name">NASA IMERG · JMA Himawari-9 <span class="lp-src__tag">Pembanding</span></span><span class="lp-src__data">Hujan dari satelit (rata-rata 30 menit) dan citra awan tiap 10 menit</span><span class="lp-src__when"><b>±1–6 jam di belakang</b></span></li>
+                <li class="lp-src"><span class="lp-src__name">WMO · NOAA <span class="lp-src__tag">Terukur</span></span><span class="lp-src__data">Hujan yang ditakar di ±55 stasiun cuaca BMKG (laporan SYNOP) dan cuaca saat ini di bandara (METAR)</span><span class="lp-src__when"><b>tiap 6 jam · 30 menit</b></span></li>
               </ul>
             </section>
             <section class="lp-srcgroup" data-reveal aria-labelledby="lp-src-indikasi">
@@ -360,6 +363,7 @@
               <ul class="lp-srclist">
                 <li class="lp-src"><a class="lp-src__name" href="https://inarisk.bnpb.go.id/" target="_blank" rel="noopener">BNPB · InaRISK<span data-icon="external"></span></a><span class="lp-src__data">Zona rawan banjir</span><span class="lp-src__when"><b>layanan peta</b></span></li>
                 <li class="lp-src"><span class="lp-src__name">GloFAS · GDACS <span class="lp-src__tag">Pembanding</span></span><span class="lp-src__data">Prakiraan debit sungai 7 hari (Copernicus) di cek risiko dan peringatan banjir</span><span class="lp-src__when"><b>harian · 15 menit</b></span></li>
+                <li class="lp-src"><span class="lp-src__name">IOC–UNESCO <span class="lp-src__tag">Terukur</span></span><span class="lp-src__data">Muka laut di pelabuhan untuk membaca pasang tinggi dan rob</span><span class="lp-src__when"><b>data tiap menit</b></span></li>
               </ul>
             </section>
             <section class="lp-srcgroup" data-reveal aria-labelledby="lp-src-longsor">
@@ -868,14 +872,15 @@
               <h2 class="section-title">Sumber data</h2>
               <p class="section-note source-intro">
                 Dikelompokkan per fitur. Utama: lembaga Indonesia. Pembanding:
-                data luar negeri.
+                data luar negeri. Terukur di lapangan: hasil ukur alat di
+                Indonesia yang dibuka lewat jaringan internasional.
               </p>
               <!-- Satu lipatan per fitur SIGAP, urutannya sama dengan tab Lapisan. -->
               <div class="source-groups">
                 <details class="source-group">
                   <summary>
                     <span class="source-group__title">Gempa bumi</span>
-                    <span class="source-group__meta">BMKG · USGS · EMSC</span>
+                    <span class="source-group__meta">BMKG · USGS · EMSC · GFZ · IOC</span>
                   </summary>
                   <p class="source-role">Utama</p>
                   <ul class="source-list">
@@ -893,6 +898,21 @@
                     <li>
                       <a href="https://www.emsc-csem.org/" target="_blank" rel="noopener">EMSC (Eropa)</a>
                       <span>Sebagian besar dari katalog lengkap BMKG, termasuk gempa kecil mulai ±M1 · tiap 2 menit</span>
+                    </li>
+                    <li>
+                      <a href="https://geofon.gfz.de/" target="_blank" rel="noopener">GFZ GEOFON (Jerman)</a>
+                      <span>Katalog gempa mulai ±M4,3 dengan magnitudo momen dan mekanisme sumber (jenis sesar), juga di popup gempa BMKG · tiap 3 menit · CC BY 4.0</span>
+                    </li>
+                  </ul>
+                  <p class="source-role">Terukur di lapangan</p>
+                  <ul class="source-list">
+                    <li>
+                      <a href="https://geofon.gfz.de/" target="_blank" rel="noopener">Seismograf GEOFON dan GSN</a>
+                      <span>21 stasiun GFZ–BMKG dan 1 stasiun Global Seismographic Network (Amerika Serikat) di Indonesia; daftar stasiun lewat layanan FDSN</span>
+                    </li>
+                    <li>
+                      <a href="https://www.ioc-sealevelmonitoring.org/" target="_blank" rel="noopener">IOC–UNESCO Sea Level Station Monitoring Facility</a>
+                      <span>Muka laut tiap menit dari ±12 alat pasang surut di pelabuhan Indonesia; pasang surutnya dipisahkan SIGAP · data mentah, belum dikoreksi</span>
                     </li>
                   </ul>
                 </details>
@@ -921,7 +941,7 @@
                 <details class="source-group">
                   <summary>
                     <span class="source-group__title">Hujan dan cuaca</span>
-                    <span class="source-group__meta">BMKG · NASA · JMA</span>
+                    <span class="source-group__meta">BMKG · NASA · JMA · NOAA</span>
                   </summary>
                   <p class="source-role">Utama</p>
                   <ul class="source-list">
@@ -945,6 +965,17 @@
                       <span>Citra awan inframerah, tiap 10 menit (via NASA GIBS)</span>
                     </li>
                   </ul>
+                  <p class="source-role">Terukur di lapangan</p>
+                  <ul class="source-list">
+                    <li>
+                      <a href="https://oscar.wmo.int/surface/" target="_blank" rel="noopener">Stasiun cuaca BMKG lewat WMO dan NOAA</a>
+                      <span>Hujan yang ditakar di ±55 stasiun (laporan SYNOP tiap 6 jam, diambil dari gerbang NOAA/NWS); daftar stasiun WMO OSCAR/Surface</span>
+                    </li>
+                    <li>
+                      <a href="https://aviationweather.gov/" target="_blank" rel="noopener">NOAA Aviation Weather Center</a>
+                      <span>Cuaca saat ini di bandara (METAR), tiap 30 menit · public domain</span>
+                    </li>
+                  </ul>
                 </details>
 
                 <details class="source-group">
@@ -964,7 +995,7 @@
                 <details class="source-group">
                   <summary>
                     <span class="source-group__title">Banjir</span>
-                    <span class="source-group__meta">InaRISK · GloFAS · GDACS</span>
+                    <span class="source-group__meta">InaRISK · GloFAS · GDACS · IOC</span>
                   </summary>
                   <p class="source-role">Utama</p>
                   <ul class="source-list">
@@ -982,6 +1013,13 @@
                     <li>
                       <a href="https://www.gdacs.org/" target="_blank" rel="noopener">GDACS (Uni Eropa–PBB)</a>
                       <span>Peringatan banjir untuk Indonesia · tiap 15 menit</span>
+                    </li>
+                  </ul>
+                  <p class="source-role">Terukur di lapangan</p>
+                  <ul class="source-list">
+                    <li>
+                      <a href="https://www.ioc-sealevelmonitoring.org/" target="_blank" rel="noopener">IOC–UNESCO Sea Level Station Monitoring Facility</a>
+                      <span>Muka laut tiap menit di pelabuhan, untuk membaca pasang tinggi dan rob · data mentah, belum dikoreksi</span>
                     </li>
                   </ul>
                 </details>

@@ -49,5 +49,7 @@ export const icons = {
   search: icon('<circle cx="11" cy="11" r="7"/><path d="m20.5 20.5-4.3-4.3"/>'),
   // Bidang miring dengan busur sudut kemiringan.
   slope: icon('<path d="M3 20h18"/><path d="M3 20 17 6"/><path d="M11 20a8 8 0 0 0-2.3-5.7"/>'),
+  // Papan duga di atas permukaan air (alat pasang surut).
+  tide: icon('<path d="M12 3v11.5"/><path d="M12 5.5h3.5M12 8.5h2.5M12 11.5h3.5"/><path d="M3 18.5c1.5 0 1.5-1.2 3-1.2s1.5 1.2 3 1.2 1.5-1.2 3-1.2 1.5 1.2 3 1.2 1.5-1.2 3-1.2 1.5 1.2 3 1.2"/>'),
   sun: icon('<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'),
 };

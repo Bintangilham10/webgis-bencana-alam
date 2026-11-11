@@ -113,6 +113,23 @@
   --lava: #ff8a2b;
   --glyph-outline: #0f1012;
   --point-outline: #0f1012;
+  /* Kategori hujan harian (hujan terukur di stasiun): satu rona biru, lima
+     langkah. Di latar gelap makin lebat makin terang, di latar terang makin
+     gelap, jadi hujan lebat selalu paling kontras dengan latarnya. Kedua tangga
+     lolos uji ramp ordinal (ujung terdekat latar ≥ 2:1, selisih terang antar
+     langkah ≥ 0,06); warna angka di atasnya ≥ 4,5:1. */
+  --rain-ringan: #256abf;
+  --rain-ringan-ink: #ffffff;
+  --rain-sedang: #3987e5;
+  --rain-sedang-ink: #111c2a;
+  --rain-lebat: #6da7ec;
+  --rain-lebat-ink: #111c2a;
+  --rain-sangat-lebat: #9ec5f4;
+  --rain-sangat-lebat-ink: #111c2a;
+  --rain-ekstrem: #cde2fb;
+  --rain-ekstrem-ink: #111c2a;
+  --rain-kering: #3f4247;
+  --rain-kering-ink: #c9cdd3;
 }
 
 [data-theme='light'],
@@ -126,6 +143,18 @@
   --lava: #f07418;
   --glyph-outline: #17191d;
   --point-outline: #ffffff;
+  --rain-ringan: #5598e7;
+  --rain-ringan-ink: #111c2a;
+  --rain-sedang: #256abf;
+  --rain-sedang-ink: #ffffff;
+  --rain-lebat: #184f95;
+  --rain-lebat-ink: #ffffff;
+  --rain-sangat-lebat: #0d366b;
+  --rain-sangat-lebat-ink: #ffffff;
+  --rain-ekstrem: #082548;
+  --rain-ekstrem-ink: #ffffff;
+  --rain-kering: #eceef1;
+  --rain-kering-ink: #565c66;
 }
 
 *,

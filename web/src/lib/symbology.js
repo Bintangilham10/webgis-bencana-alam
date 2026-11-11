@@ -112,6 +112,28 @@ export const DEBRIS_FLOW = { label: 'Aliran bahan rombakan', rgb: [0, 139, 179],
 // peringatan SIGAP. Level 0 (Aman) tidak diwarnai di peta.
 export const CEWS_LEVELS = WARNING_LEVEL_STYLES.map((style, level) => ({ ...style, label: ['Aman', 'Waspada', 'Siaga', 'Awas'][level] }));
 
+// Hujan terukur di stasiun: kategori hujan harian BMKG (mm per 24 jam, sama
+// dengan recorder/src/lib/rules.json). Warnanya variabel CSS (styles/base.css)
+// karena tangganya berbeda di peta dasar terang dan gelap.
+const rainStyle = (name) => ({ color: `var(--rain-${name})`, text: `var(--rain-${name}-ink)` });
+export const RAIN_DAILY_CLASSES = [
+  { id: 'ringan', label: 'Hujan ringan', range: '0,5–20', ...rainStyle('ringan') },
+  { id: 'sedang', label: 'Hujan sedang', range: '20–50', ...rainStyle('sedang') },
+  { id: 'lebat', label: 'Hujan lebat', range: '50–100', ...rainStyle('lebat') },
+  { id: 'sangat_lebat', label: 'Hujan sangat lebat', range: '100–150', ...rainStyle('sangat-lebat') },
+  { id: 'ekstrem', label: 'Hujan ekstrem', range: '≥ 150', ...rainStyle('ekstrem') },
+];
+// Di bawah 0,5 mm (tidak hujan menurut BMKG): netral, supaya tidak menonjol.
+export const RAIN_DRY = { label: 'Tidak hujan', range: '< 0,5', ...rainStyle('kering') };
+export const rainDailyClass = (id) => RAIN_DAILY_CLASSES.find((c) => c.id === id) ?? RAIN_DRY;
+
+// Alat pasang surut: biru kehijauan (bukan warna level peringatan maupun kelas
+// bahaya); alat yang datanya tertunda abu-abu. Ikon putih di atasnya ≥ 4,5:1.
+export const TIDE_GAUGE = {
+  active: { label: 'Mengirim data (30 menit terakhir)', color: '#0e7490' },
+  stale: { label: 'Data tertunda', color: '#6b7280' },
+};
+
 // Riwayat longsor: segitiga ungu, makin gelap makin baru. Ungu dipilih supaya
 // tidak tertukar dengan warna kedalaman gempa (merah–oranye) dan kelas bahaya.
 export const LANDSLIDE_AGES = [

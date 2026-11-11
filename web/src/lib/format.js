@@ -20,6 +20,12 @@ const dateTimeFormat = new Intl.DateTimeFormat('id-ID', {
 
 export const formatDateTime = (iso) => `${dateTimeFormat.format(new Date(iso))} WIB`;
 
+// Jam pengamatan "19.00 WIB" dan "11 Nov, 19.00 WIB" (tanpa detik).
+const clockFormat = new Intl.DateTimeFormat('id-ID', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Jakarta' });
+const dayMonthFormat = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'short', timeZone: 'Asia/Jakarta' });
+export const formatClock = (iso) => `${clockFormat.format(new Date(iso)).replace(':', '.')} WIB`;
+export const formatDayClock = (iso) => `${dayMonthFormat.format(new Date(iso))}, ${formatClock(iso)}`;
+
 const numberFormat = new Intl.NumberFormat('id-ID');
 export const formatNumber = (value) => numberFormat.format(value);
 

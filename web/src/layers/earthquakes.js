@@ -4,6 +4,7 @@ import { escapeHtml, formatDateTime, formatDecimal, shortQuakeRegion, timeAgo } 
 import { icons } from '../lib/icons.js';
 import { makeFocusable } from '../lib/marker-focus.js';
 import { DEPTH_CLASSES, depthClass, magnitudeRadius, pillStyle, USGS_ALERTS } from '../lib/symbology.js';
+import { mechanismSection } from './gfz.js';
 
 // Zoom tujuan saat gempa diklik: sekitar ±150 km terlihat di layar desktop.
 const FOCUS_ZOOM = 10;
@@ -42,6 +43,14 @@ function quakeIcon(p, { color, index, latest, recent, fade }) {
   });
 }
 
+// Magnitudo (dan jenis sesar, bila sudah dihitung) gempa yang sama di katalog GFZ.
+function gfzFact(gfz) {
+  if (!gfz) return '';
+  const type = gfz.mag_type ? ` <span class="muted">${escapeHtml(gfz.mag_type)}</span>` : '';
+  const mechanism = gfz.mechanism ? ` · ${escapeHtml(gfz.mechanism.label)}` : '';
+  return `<dt>GFZ</dt><dd>M ${formatDecimal(gfz.magnitude)}${type}${mechanism}</dd>`;
+}
+
 export function earthquakePopup(p) {
   const depth = depthClass(p.depth_class);
   const magnitude = formatDecimal(p.magnitude);
@@ -66,9 +75,11 @@ export function earthquakePopup(p) {
         ${!p.tsunami && p.potensi ? `<dt>Keterangan</dt><dd>${escapeHtml(p.potensi)}</dd>` : ''}
         ${p.usgs ? `<dt>USGS</dt><dd>M ${formatDecimal(p.usgs.magnitude)}${p.usgs.mag_type ? ` <span class="muted">${escapeHtml(p.usgs.mag_type)}</span>` : ''}</dd>` : ''}
         ${USGS_ALERTS[p.usgs?.pager_alert] ? `<dt>Dampak</dt><dd><span class="level-pill" style="${pillStyle(USGS_ALERTS[p.usgs.pager_alert])}">${USGS_ALERTS[p.usgs.pager_alert].label}</span> <span class="muted">perkiraan USGS PAGER</span></dd>` : ''}
+        ${gfzFact(p.gfz)}
       </dl>
+      ${mechanismSection(p.gfz?.mechanism, depth.color)}
       ${p.shakemap ? `<a class="popup-link" href="${escapeHtml(p.shakemap)}" target="_blank" rel="noopener">Peta guncangan BMKG${icons.external}</a>` : ''}
-      <p class="popup-source">Sumber: ${escapeHtml(p.source)}</p>
+      <p class="popup-source">Sumber: ${escapeHtml(p.source)}${p.gfz?.mechanism ? ' · mekanisme sumber: GFZ GEOFON (CC BY 4.0)' : ''}</p>
     </div>`;
 }
 
@@ -175,10 +186,12 @@ export function createEarthquakeLayer(map, { viewPadding } = {}) {
     async load() {
       const collection = await getJson('/api/earthquakes?days=7');
       loaded = true;
-      // Pasangan USGS biasanya baru ada ±15 menit setelah gempa BMKG terbit.
+      // Pasangan USGS biasanya baru ada ±15 menit setelah gempa BMKG terbit;
+      // mekanisme sumber dari GFZ menyusul beberapa jam kemudian.
       const next = JSON.stringify(
         collection.features.map((f) => [
           f.properties.id, f.properties.magnitude, f.properties.depth_km, f.properties.usgs?.id, f.properties.usgs?.pager_alert,
+          f.properties.gfz?.id, f.properties.gfz?.mechanism?.updated_at,
         ]),
       );
       if (next !== signature) {
