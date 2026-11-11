@@ -10,6 +10,8 @@
     "test:browser": "playwright test --grep @lintas-browser",
     "akurasi": "node scripts/akurasi.mjs",
     "kinerja": "node scripts/kinerja.mjs",
+    "sus": "node scripts/sus.mjs",
+    "gps": "node scripts/galat-gps.mjs",
     "laporan": "playwright show-report"
   },
   "devDependencies": {

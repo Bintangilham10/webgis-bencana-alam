@@ -16,6 +16,9 @@ npm run test:chrome      # hanya Chrome
 npm run akurasi          # P3: gempa vs BMKG, gunung api vs MAGMA, kelas InaRISK di 50 titik
 npm run kinerja          # P6: waktu respons API, cek risiko, rute aman, Lighthouse HP dan desktop
 npm run laporan          # laporan HTML Playwright
+
+npm run gps -- pengukuran.csv   # L1: galat "Lokasi saya" terhadap titik acuan (tanpa aplikasi berjalan)
+npm run sus -- jawaban.csv      # lapis 5: skor SUS dan keberhasilan tugas dari CSV Google Form
 ```
 
 `SIGAP_URL` (bawaan `http://localhost:4173`) dan `SIGAP_API` (bawaan `http://localhost:3000`) bisa diarahkan ke server lain. Hasil ukur tiap skenario ditulis ke `hasil/` (tidak dikomit).
@@ -34,5 +37,8 @@ npm run laporan          # laporan HTML Playwright
 | `tests/fitur-baru.spec.js` | Peringatan CAP BMKG, notifikasi SSE, evakuasi, rute aman, pantau posisi |
 | `scripts/akurasi.mjs` | P3 akurasi data |
 | `scripts/kinerja.mjs` | P6 kinerja |
+| `scripts/galat-gps.mjs` | L1 galat posisi per titik dan per perangkat, dari pengukuran di lapangan |
+| `scripts/sus.mjs` | Lapis 5 skor SUS, keberhasilan tugas, dan profil responden, dari jawaban Google Form |
+| `scripts/csv.mjs` | Pembaca CSV untuk dua skrip di atas |
 
-P8 sisi server (sync_logs, data terakhir tetap dilayani) ada di `server/test/api.test.js`. L1, L5, dan uji pengguna (SUS) butuh perangkat dan responden nyata.
+P8 sisi server (sync_logs, data terakhir tetap dilayani) ada di `server/test/api.test.js`. L1, L5, dan uji pengguna (SUS) butuh perangkat dan responden nyata; langkah dan formulirnya ada di [`docs/pengujian/`](../docs/pengujian/), dan `gps` serta `sus` menghitung hasilnya.
