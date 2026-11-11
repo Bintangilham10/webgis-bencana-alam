@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.11.03.19.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-11T09:12:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-11T09:22:00+07:00</effective>
+    <expires>2026-11-11T12:43:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 11 November 2026, 09:22 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di LUBUK BESAR, RIAU SILIP.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 11 November 2026, 12:43 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/11/11/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-1.778,106.093 -1.787,106.084 -1.785,106.067 -1.793,106.062 -1.806,106.063 -1.812,106.061 -1.816,106.053 -1.814,106.036 -1.804,106.029 -1.810,106.025 -1.815,106.004 -1.800,105.952 -1.839,105.929 -1.843,105.921 -1.840,105.913 -1.831,105.908 -1.813,105.900 -1.806,105.904 -1.805,105.889 -1.816,105.874 -1.847,105.872 -1.878,105.845 -1.885,105.843 -1.885,105.814 -1.879,105.786 -1.890,105.788 -1.892,105.783 -1.877,105.756 -1.887,105.756 -1.893,105.748 -1.896,105.734 -1.891,105.719 -1.876,105.729 -1.861,105.748 -1.839,105.755 -1.825,105.742 -1.817,105.760 -1.808,105.760 -1.808,105.755 -1.802,105.751 -1.793,105.757 -1.785,105.746 -1.778,105.746 -1.768,105.775 -1.787,105.782 -1.798,105.780 -1.806,105.785 -1.814,105.811 -1.806,105.826 -1.790,105.815 -1.786,105.804 -1.771,105.838 -1.766,105.869 -1.752,105.872 -1.746,105.870 -1.741,105.857 -1.721,105.864 -1.698,105.889 -1.685,105.912 -1.651,105.933 -1.639,105.979 -1.629,105.991 -1.623,105.992 -1.605,105.982 -1.596,105.981 -1.584,105.969 -1.577,105.972 -1.567,105.969 -1.560,105.973 -1.554,105.970 -1.549,105.971 -1.552,105.978 -1.580,106.013 -1.601,106.048 -1.619,106.054 -1.614,106.033 -1.619,106.029 -1.640,106.022 -1.663,106.023 -1.693,106.035 -1.711,106.056 -1.749,106.074 -1.762,106.091 -1.773,106.087 -1.778,106.093</polygon>
+      <polygon>-1.805,105.817 -1.805,105.806 -1.795,105.809 -1.796,105.814 -1.805,105.817</polygon>
+      <polygon>-2.716,106.662 -2.719,106.644 -2.713,106.638 -2.695,106.633 -2.685,106.585 -2.662,106.560 -2.657,106.533 -2.657,106.496 -2.634,106.501 -2.614,106.495 -2.620,106.454 -2.616,106.444 -2.596,106.443 -2.581,106.449 -2.574,106.458 -2.558,106.457 -2.569,106.438 -2.563,106.428 -2.548,106.429 -2.535,106.435 -2.533,106.446 -2.519,106.459 -2.503,106.462 -2.501,106.466 -2.486,106.466 -2.501,106.488 -2.520,106.565 -2.535,106.641 -2.542,106.698 -2.574,106.846 -2.587,106.838 -2.594,106.807 -2.588,106.824 -2.579,106.820 -2.579,106.809 -2.589,106.786 -2.606,106.774 -2.598,106.763 -2.608,106.747 -2.628,106.729 -2.643,106.708 -2.716,106.662</polygon>
+    </area>
+  </info>
+</alert>
