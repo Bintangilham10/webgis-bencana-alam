@@ -2,8 +2,9 @@ import { lastSuccessfulSync, recordSync } from '../sync-logs.js';
 import { runIndikasi } from './indikasi.js';
 import { notifyQuakes, notifyVolcanoes } from './notify.js';
 import { syncCapAlerts } from './sync-cap.js';
-import { syncEarthquakes, syncEmscEarthquakes, syncUsgsEarthquakes } from './sync-earthquakes.js';
+import { syncEarthquakes, syncEmscEarthquakes, syncGfzEarthquakes, syncUsgsEarthquakes } from './sync-earthquakes.js';
 import { syncFacilities } from './sync-facilities.js';
+import { createSynopSync } from './sync-synop.js';
 import { syncVolcanoes } from './sync-volcanoes.js';
 
 // Notifikasi (SSE) dibuat sesudah sinkronisasi. Kegagalannya hanya dicatat di
@@ -31,9 +32,14 @@ export const JOBS = [
   { source: 'usgs-gempa', intervalMs: 60_000, run: syncUsgsEarthquakes },
   // Gempa kecil katalog BMKG baru masuk EMSC ±10 menit setelah kejadian; tiap 2 menit cukup.
   { source: 'emsc-gempa', intervalMs: 2 * 60_000, run: syncEmscEarthquakes },
+  // GFZ menerbitkan lokasi otomatis ±4–6 menit setelah gempa; satu permintaan QuakeML 3 hari (±25 KB).
+  { source: 'gfz-gempa', intervalMs: 3 * 60_000, run: syncGfzEarthquakes },
   { source: 'magma', intervalMs: 30 * 60_000, run: thenNotify(syncVolcanoes, notifyVolcanoes) },
   // Peringatan dini cuaca BMKG berlaku ±2 jam dan terbit ±80 kali sehari.
   { source: 'bmkg-cap', intervalMs: 5 * 60_000, run: syncCapAlerts },
+  // Laporan stasiun cuaca BMKG (SYNOP) lewat gerbang NOAA: berkas baru tiap 5
+  // menit, laporan jam utama tiba ±15–25 menit setelah jam pengamatan.
+  { source: 'synop', intervalMs: 10 * 60_000, run: createSynopSync() },
   { source: 'indikasi-sigap', intervalMs: 12 * 60 * 60_000, checkMs: 15 * 60_000, skipIfFresh: true, run: runIndikasi },
   // Titik evakuasi dan fasilitas OSM: satu query nasional seminggu sekali; server
   // yang baru dipasang langsung mengambilnya karena belum pernah sinkron.

@@ -7,6 +7,8 @@ export { dasarianOf, pad2, wibDate } from '../../../recorder/src/lib/time.js';
 export { featureInfoUrl, layerName, parseFeatureInfo } from '../../../recorder/src/sources/pvmbg-prakiraan.js';
 export { fetchDasarian, LEVELS as CEWS_LEVELS } from '../../../recorder/src/sources/bmkg-cews.js';
 export { ENSEMBLE_URL, MODEL as ENSEMBLE_MODEL, summarizeLocation } from '../../../recorder/src/sources/open-meteo-ens.js';
+export { decodeReport as decodeSynopReport, reportedRain, weatherLabel } from '../../../recorder/src/lib/synop.js';
+export { DIR_URL as SYNOP_DIR_URL, fetchReports as fetchSynopReports } from '../../../recorder/src/sources/synop.js';
 export {
   FORECAST_URL,
   fetchRainPoints,

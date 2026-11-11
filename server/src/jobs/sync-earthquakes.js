@@ -1,6 +1,7 @@
 import { query } from '../db.js';
 import { fetchBmkgEarthquakes } from '../sources/bmkg-gempa.js';
 import { fetchEmscEarthquakes } from '../sources/emsc-gempa.js';
+import { fetchGfzEarthquakes } from '../sources/gfz-gempa.js';
 import { fetchUsgsDetail, fetchUsgsEarthquakes } from '../sources/usgs-gempa.js';
 import { lastSuccessfulSync } from '../sync-logs.js';
 
@@ -100,5 +101,14 @@ export async function syncUsgsEarthquakes({ fetchEvents = fetchUsgsEarthquakes, 
 // seperti USGS, tidak ikut dihitung di Ikhtisar maupun cek risiko.
 export async function syncEmscEarthquakes({ fetchEvents = fetchEmscEarthquakes, now = Date.now() } = {}) {
   const feed = await feedFor('emsc-gempa', now);
+  return syncEarthquakes({ fetchEvents: () => fetchEvents({ feed, now }) });
+}
+
+// Gempa GFZ (GEOFON, Jerman) disimpan dengan source 'gfz' beserta mekanisme
+// sumbernya; seperti USGS dan EMSC, tidak ikut dihitung di Ikhtisar maupun cek
+// risiko. Mekanisme dan hasil tinjauan seismolog yang menyusul digabung ke baris
+// yang sama (props), jadi gempa BMKG pasangannya ikut menampilkannya.
+export async function syncGfzEarthquakes({ fetchEvents = fetchGfzEarthquakes, now = Date.now() } = {}) {
+  const feed = await feedFor('gfz-gempa', now);
   return syncEarthquakes({ fetchEvents: () => fetchEvents({ feed, now }) });
 }

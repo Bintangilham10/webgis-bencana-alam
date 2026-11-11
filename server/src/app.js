@@ -14,7 +14,9 @@ import { referenceRouter } from './routes/reference.js';
 import { createRiskRouter } from './routes/risk.js';
 import { createRiverRouter } from './routes/river.js';
 import { createRouteRouter } from './routes/route.js';
+import { createSeaLevelRouter } from './routes/sea-level.js';
 import { volcanoesRouter } from './routes/volcanoes.js';
+import { createWeatherRouter } from './routes/weather.js';
 import { createRainWarnings } from './sources/bmkg-cews.js';
 
 // `services` memungkinkan test mengganti layanan luar (InaRISK, Open-Meteo,
@@ -60,6 +62,17 @@ export function createApp({ services = {} } = {}) {
       ...services.rateLimit,
     }),
   );
+  // Tiap deret muka laut satu stasiun adalah satu permintaan ke layanan IOC
+  // (jawaban yang sama di-cache 2 menit).
+  app.use(
+    '/api/sea-level',
+    rateLimit({
+      limit: 120,
+      windowMs: 10 * 60_000,
+      message: 'Terlalu banyak permintaan data muka laut dari jaringan ini. Coba lagi beberapa menit lagi.',
+      ...services.rateLimit,
+    }),
+  );
   // Rute dihitung layanan publik FOSSGIS; satu permintaan rute aman memanggilnya 1–2 kali.
   app.use(
     '/api/route',
@@ -83,6 +96,8 @@ export function createApp({ services = {} } = {}) {
     createGeocodeRouter(services.geocode),
     createGdacsRouter(services.gdacs),
     createRiverRouter(services.river),
+    createWeatherRouter(services.weather),
+    createSeaLevelRouter(services.seaLevel),
     capRouter,
     createNotificationsRouter(services.notifications),
     facilitiesRouter,

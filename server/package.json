@@ -14,6 +14,9 @@
     "seed": "node scripts/seed.js",
     "indikasi": "node scripts/run-indikasi.js",
     "build:plates": "node scripts/build-plates.js",
+    "build:stasiun": "node scripts/build-stasiun-cuaca.js",
+    "build:seismik": "node scripts/build-stasiun-seismik.js",
+    "build:pasut": "node scripts/build-alat-pasut.js",
     "export:recorder": "node scripts/export-recorder-wilayah.js",
     "test": "node --test \"test/*.test.js\""
   },
