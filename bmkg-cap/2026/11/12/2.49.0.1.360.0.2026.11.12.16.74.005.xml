@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.12.16.74.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-12T21:50:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-12T22:20:00+08:00</effective>
+    <expires>2026-11-13T00:20:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tenggara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 12 November 2026, 22:20 WITA di sebagian wilayah Sulawesi Tenggara, khususnya di LANGGIKIMA, LEMBO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 13 November 2026, 00:20 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CST/2026/11/12/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tenggara</areaDesc>
+      <polygon>-3.346,122.287 -3.358,122.268 -3.376,122.260 -3.322,122.176 -3.312,122.148 -3.301,122.155 -3.303,122.176 -3.287,122.177 -3.285,122.207 -3.278,122.237 -3.274,122.309 -3.293,122.299 -3.313,122.279 -3.314,122.283 -3.310,122.288 -3.313,122.293 -3.320,122.291 -3.322,122.295 -3.335,122.289 -3.340,122.295 -3.346,122.287</polygon>
+      <polygon>-3.746,122.399 -3.773,122.377 -3.797,122.366 -3.817,122.347 -3.862,122.312 -3.837,122.311 -3.833,122.308 -3.813,122.281 -3.777,122.277 -3.768,122.266 -3.729,122.325 -3.735,122.326 -3.734,122.336 -3.738,122.335 -3.745,122.341 -3.744,122.348 -3.753,122.363 -3.739,122.383 -3.732,122.387 -3.727,122.384 -3.727,122.393 -3.738,122.394 -3.746,122.399</polygon>
+    </area>
+  </info>
+</alert>
