@@ -120,11 +120,26 @@ function indicationList(indications, rulesVersion) {
 }
 
 // ---------- Profil bahaya ----------
+const listOf = (names) => (names.length > 2 ? `${names.slice(0, -1).join(', ')}, dan ${names.at(-1)}` : names.join(' dan '));
+
+// Peta bahaya yang gagal dimuat tidak boleh terbaca sebagai "tidak ada bahaya".
+// Pada 12 Nov 2026 server BNPB mati dan ringkasan ini menyebut titik di Kota
+// Bandung tanpa bahaya sedang atau tinggi, padahal kelima petanya gagal dimuat.
 function hazardSummary(hazards) {
   const notable = hazards.filter((h) => h.class && h.class.id !== 'rendah').sort((a, b) => b.index - a.index);
-  if (!notable.length) return '<p class="hazard-summary">Tidak ada bahaya berkategori sedang atau tinggi di titik ini.</p>';
+  const failed = hazards.filter((h) => h.error);
+  if (failed.length && failed.length === hazards.length) {
+    return '<p class="hazard-summary">Kelas bahaya di titik ini belum dapat dinilai karena peta InaRISK BNPB gagal dimuat. Coba lagi beberapa menit lagi.</p>';
+  }
+  const failedNote = failed.length
+    ? ` ${capitalize(listOf(failed.map((h) => escapeHtml(h.label.toLowerCase()))))} belum dapat dinilai karena petanya gagal dimuat.`
+    : '';
+  if (!notable.length) {
+    const scope = failed.length ? 'pada peta yang berhasil dimuat' : 'di titik ini';
+    return `<p class="hazard-summary">Tidak ada bahaya berkategori sedang atau tinggi ${scope}.${failedNote}</p>`;
+  }
   const list = notable.map((h) => `${escapeHtml(h.label)} (${h.class.label.toLowerCase()})`).join(', ');
-  return `<p class="hazard-summary"><strong>Perlu perhatian:</strong> ${list}</p>`;
+  return `<p class="hazard-summary"><strong>Perlu perhatian:</strong> ${list}${failedNote ? `.${failedNote}` : ''}</p>`;
 }
 
 // Batang = nilai indeks 0–1 dengan garis kelas BNPB di 1/3 dan 2/3. Angka dan
