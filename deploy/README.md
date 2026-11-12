@@ -52,7 +52,7 @@ Image dibangun ulang di VM, biasanya 1–3 menit. Data di basis data tidak berub
 az network nsg rule update -g sigap-rg --nsg-name sigap-nsg -n default-allow-ssh --source-address-prefixes <IP-baru>/32
 ```
 
-**Data riset dari server (RQ2).** `sync_logs` di server mencatat ketersediaan sumber sejak server ini berjalan (13 Okt 2026); log dari laptop sengaja tidak dibawa. Untuk menjalankan `research/09_kinerja_sistem.py` pada data server, buka tunnel SSH, lalu arahkan `DATABASE_URL` ke tunnel itu. Kata sandi ada di `/opt/sigap/deploy/.env` pada server.
+**Data riset dari server (RQ2).** `sync_logs` di server mencatat ketersediaan sumber sejak server ini berjalan (11 Nov 2026); log dari laptop sengaja tidak dibawa. Log server pertama (13–23 Okt 2026) tersimpan di cadangan `sigap-produksi-2026-10-23.dump`. Untuk menjalankan `research/09_kinerja_sistem.py` pada data server, buka tunnel SSH, lalu arahkan `DATABASE_URL` ke tunnel itu. Kata sandi ada di `/opt/sigap/deploy/.env` pada server.
 
 ```powershell
 ssh -i ~/.ssh/sigap_azure -N -L 5434:127.0.0.1:5432 azureuser@sigap-bencana.malaysiawest.cloudapp.azure.com
@@ -65,7 +65,7 @@ research/.venv/Scripts/python research/09_kinerja_sistem.py
 
 ## Membangun server dari nol
 
-Langkah ini yang dipakai pada 13 Okt 2026. Prasyarat di laptop: Azure CLI (`winget install --exact --id Microsoft.AzureCLI`), `az login`, dan kunci SSH (`ssh-keygen -t ed25519 -f ~/.ssh/sigap_azure`).
+Langkah ini dipakai pada 13 Okt 2026 dan diulang pada 11 Nov 2026. Prasyarat di laptop: Azure CLI (`winget install --exact --id Microsoft.AzureCLI`), `az login`, dan kunci SSH (`ssh-keygen -t ed25519 -f ~/.ssh/sigap_azure`).
 
 1. **Pilih region.** Azure for Students hanya mengizinkan beberapa region per akun:
 
@@ -96,6 +96,8 @@ Langkah ini yang dipakai pada 13 Okt 2026. Prasyarat di laptop: Azure CLI (`wing
    umask 077
    printf "SITE_ADDRESS=sigap-bencana.malaysiawest.cloudapp.azure.com\nPOSTGRES_PASSWORD=%s\n" "$(openssl rand -hex 24)" > deploy/.env
    ```
+
+   Kalau `cloud-init status` berakhir `error`, lihat `cloud-init status --long` dan `/var/log/cloud-init-output.log`, lalu pasang ulang paket yang gagal dengan `apt-get`.
 
 4. **Pindahkan basis data dari laptop.** Batas wilayah, sesar, riwayat longsor, raster bahaya, dan titik pantau tidak perlu di-seed ulang dari BNPB (salinan ±7 MB). Di laptop, dari root repo, dengan Docker Desktop menyala:
 
@@ -128,5 +130,6 @@ docker compose -p sigap-uji -f deploy/compose.yaml down -v
 
 ## Catatan
 
+- Pada 11 Nov 2026, DNS bawaan Azure (168.63.129.16) di Malaysia West tidak menjawab domain Canonical (`archive.ubuntu.com` dan lainnya), sehingga Docker gagal dipasang. Karena itu `cloud-init.yaml` menambahkan 1.1.1.1 dan 8.8.8.8 sebagai DNS cadangan (`/etc/systemd/resolved.conf.d/10-sigap-dns.conf`).
 - Firewall situs ESDM kadang memblokir IP tertentu. Pada 13 Okt 2026, layanan peta PVMBG menolak IP rumah pengembang (HTTP 403) tetapi menerima IP server ini.
 - `/api/risk` dibatasi 120 permintaan per 10 menit dan `/api/geocode` 60 per menit untuk tiap IP pengunjung (`server/src/lib/rate-limit.js`), supaya kuota gratis Open-Meteo dan antrean Nominatim tidak habis oleh satu pengguna.

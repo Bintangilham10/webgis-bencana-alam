@@ -2,6 +2,14 @@
 # Persiapan VM Ubuntu 24.04 untuk SIGAP Bencana (az vm create --custom-data).
 # Docker dan Compose dari repositori Ubuntu, swap 2 GB karena RAM VM hanya 1 GB, lalu
 # kode diambil dari GitHub. Basis data dan deploy/.env diisi sesudahnya (deploy/README.md).
+
+# DNS publik sebagai cadangan DNS Azure. Pada 11 Nov 2026 DNS Azure di malaysiawest tidak
+# menjawab domain Canonical, sehingga Docker gagal dipasang. bootcmd berjalan sebelum
+# pemasangan paket.
+bootcmd:
+  - mkdir -p /etc/systemd/resolved.conf.d
+  - printf '[Resolve]\nDNS=1.1.1.1 8.8.8.8\n' > /etc/systemd/resolved.conf.d/10-sigap-dns.conf
+  - systemctl restart systemd-resolved
 package_update: true
 package_upgrade: true
 packages:
