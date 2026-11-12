@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-11-12T11:30:39.262Z",
+  "data": {
+    "Tanggal": "12 Nov 2026",
+    "Jam": "18:16:30 WIB",
+    "DateTime": "2026-11-12T11:16:30+00:00",
+    "Coordinates": "-8.06,120.81",
+    "Lintang": "8.06 LS",
+    "Bujur": "120.81 BT",
+    "Magnitude": "4.8",
+    "Kedalaman": "13 km",
+    "Wilayah": "Pusat gempa berada di laut 73 km Timur Laut Ruteng, Manggarai",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "II Kab. Manggarai",
+    "Shakemap": "20261112181630.mmi.jpg"
+  }
+}

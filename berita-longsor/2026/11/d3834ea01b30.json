@@ -1,0 +1,31 @@
+{
+  "guid": "CBMigwJBVV95cUxQQ2xhWmdzN2h3V0d6Vm9wekxNU0ZtQnJHQkpHeENxWTFrRTV2aUFqRFM1bUNQb0ZmLWpSTE5iYXNuOEpKNXFIT2h6SENUeFlRdXU4X0JXRG1XYjBGUzhvSVBqT21hQnNpbHJwcmNieFp4RGJoRVRqSVhVMWZDOUR2YktiNGhCdnNNM2o3THMzRlk1Tms2VkxBSWlzWXVUNlpNVXkyUlVzNUFiVHRfQTBRQlJMQ01LTFdCYTd5c2wtM2ZKU0w4RmItcU5YRWVuQWxXdjl3RHRLYVozTl95Yi1VNE5RS05YX2pPdlo0ZmpOWWFtYnF0bDU1VG9qTGN6Y0V4UVdv",
+  "title": "3 titik longsor landa Agam, jalan Bukittinggi-Tanah Datar amblas - ANTARA News",
+  "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQQ2xhWmdzN2h3V0d6Vm9wekxNU0ZtQnJHQkpHeENxWTFrRTV2aUFqRFM1bUNQb0ZmLWpSTE5iYXNuOEpKNXFIT2h6SENUeFlRdXU4X0JXRG1XYjBGUzhvSVBqT21hQnNpbHJwcmNieFp4RGJoRVRqSVhVMWZDOUR2YktiNGhCdnNNM2o3THMzRlk1Tms2VkxBSWlzWXVUNlpNVXkyUlVzNUFiVHRfQTBRQlJMQ01LTFdCYTd5c2wtM2ZKU0w4RmItcU5YRWVuQWxXdjl3RHRLYVozTl95Yi1VNE5RS05YX2pPdlo0ZmpOWWFtYnF0bDU1VG9qTGN6Y0V4UVdv?oc=5",
+  "source": "ANTARA News",
+  "source_url": "https://www.antaranews.com",
+  "published_at": "2026-11-12T10:02:47.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-12T11:30:39.262Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.04",
+      "nama": "Kabupaten Tanah Datar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.75",
+      "nama": "Kota Bukittinggi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.06",
+      "nama": "Kabupaten Agam",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

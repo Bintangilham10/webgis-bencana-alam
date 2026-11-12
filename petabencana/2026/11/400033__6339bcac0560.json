@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-12T11:30:39.262Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        120.4634712845,
+        -8.6111863987
+      ]
+    },
+    "properties": {
+      "pkey": "400033",
+      "created_at": "2026-11-12T11:29:22.939Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "19b79a07-f841-40ad-82e3-b5fa4fb9b1ae",
+      "image_url": "https://images.petabencana.id/19b79a07-f841-40ad-82e3-b5fa4fb9b1ae.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 98.90786517330262,
+        "fireLocation": {
+          "lng": 120.46347128451566,
+          "lat": -8.611186398669162
+        },
+        "personLocation": {
+          "lat": "-8.6110538",
+          "lng": "120.4643886"
+        },
+        "fireRadius": {
+          "lng": 120.46258615553961,
+          "lat": -8.611345517011088
+        }
+      },
+      "tags": {
+        "city": "MANGGARAI",
+        "district_id": null,
+        "region_code": "5310",
+        "local_area_id": null,
+        "instance_region_code": "ID-NT"
+      },
+      "title": null,
+      "text": "Kebakaran melanda gedung Kantor Inspektorat Kabupaten Manggarai di Ruteng, Nusa Tenggara Timur, pada Kamis (12/11/2026). ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "guid": "CBMivgFBVV95cUxNS1R3ZjVLWWNDNEdBM3ZpWlYtZlVsTjA3TFNyWVc4ZGExTmxJVDVibWU3SXpweDR5Tkg5VGVvUzJTTnY3R1BHd1JNdy1xVzNHdUkwa0tEX295WXVvSW9HbGNybk4tcjZPUi1sZ24tTUNTLURKaUNrM3V5Ukl1WEpLeVJxZjhuMERrLWVTbDhIcGxqSENaa2dTRWNxUWNxRlZaYlExVEg4Q3pFUHhRWC1adm5QT1JsY0I3bzdrQkpB",
+  "title": "Longsor dan Dua Tiang Listrik Roboh di Tanggamus Lampung, Akses Tiga Kecamatan Sempat Lumpuh - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNS1R3ZjVLWWNDNEdBM3ZpWlYtZlVsTjA3TFNyWVc4ZGExTmxJVDVibWU3SXpweDR5Tkg5VGVvUzJTTnY3R1BHd1JNdy1xVzNHdUkwa0tEX295WXVvSW9HbGNybk4tcjZPUi1sZ24tTUNTLURKaUNrM3V5Ukl1WEpLeVJxZjhuMERrLWVTbDhIcGxqSENaa2dTRWNxUWNxRlZaYlExVEg4Q3pFUHhRWC1adm5QT1JsY0I3bzdrQkpB?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://regional.kompas.com",
+  "published_at": "2026-11-12T09:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-12T11:30:39.262Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "18.06",
+      "nama": "Kabupaten Tanggamus",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Lampung"
+  ]
+}
