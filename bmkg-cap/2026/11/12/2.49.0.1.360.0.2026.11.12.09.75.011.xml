@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.12.09.75.011</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-12T17:28:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-12T17:40:00+08:00</effective>
+    <expires>2026-11-12T19:40:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 12 November 2026, 17:40 WITA di sebagian wilayah Gorontalo, khususnya di BONE, WANGGARASI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 12 November 2026, 19:40 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/11/12/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.434,123.550 0.426,123.540 0.412,123.532 0.382,123.498 0.356,123.490 0.354,123.480 0.325,123.483 0.319,123.479 0.317,123.476 0.325,123.467 0.338,123.459 0.316,123.434 0.311,123.415 0.315,123.401 0.313,123.369 0.346,123.379 0.407,123.388 0.425,123.458 0.431,123.469 0.441,123.476 0.441,123.484 0.428,123.508 0.427,123.520 0.434,123.550</polygon>
+      <polygon>0.596,121.768 0.610,121.741 0.599,121.737 0.572,121.718 0.557,121.725 0.544,121.720 0.535,121.735 0.498,121.762 0.466,121.774 0.440,121.773 0.456,121.758 0.502,121.726 0.510,121.715 0.514,121.714 0.522,121.723 0.524,121.712 0.514,121.685 0.526,121.665 0.539,121.656 0.536,121.645 0.889,121.633 0.895,121.646 0.894,121.660 0.903,121.673 0.902,121.690 0.915,121.707 0.923,121.724 0.679,121.729 0.648,121.752 0.648,121.757 0.636,121.761 0.621,121.773 0.609,121.772 0.609,121.768 0.596,121.768</polygon>
+      <polygon>0.507,121.679 0.509,121.673 0.515,121.674 0.512,121.682 0.507,121.679</polygon>
+      <polygon>0.485,121.703 0.487,121.690 0.493,121.683 0.500,121.680 0.510,121.683 0.513,121.693 0.509,121.700 0.489,121.709 0.485,121.703</polygon>
+    </area>
+  </info>
+</alert>
