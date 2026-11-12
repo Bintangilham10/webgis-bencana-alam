@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-11-12T15:00:56.571Z",
+  "data": {
+    "Tanggal": "12 Nov 2026",
+    "Jam": "21:19:05 WIB",
+    "DateTime": "2026-11-12T14:19:05+00:00",
+    "Coordinates": "-3.95,121.66",
+    "Lintang": "3.95 LS",
+    "Bujur": "121.66 BT",
+    "Magnitude": "1.9",
+    "Kedalaman": "17 km",
+    "Wilayah": "Pusat gempa berada di darat 13 km utara Kolaka",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "II Kolaka",
+    "Shakemap": "20261112211905.mmi.jpg"
+  }
+}
