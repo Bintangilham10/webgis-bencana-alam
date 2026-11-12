@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiuwFBVV95cUxPOHJ2cTZWYlp4TkVZU1FSbGJKQXJiR0hNM3VENnZZMTY5UERxcF9uRkIyS1lnN1F3QjdBVXBhdnQtaUlEVjl4MEVFSW9WaWFFS2FqVXlmYUVUUGdIN0Z6SUNIeGZyOG9IeTlWemV4aUVmWURxMXNBelprM25qanNHUDUxZFVzTkR5Z3hVRTU1SUZFQ2dhcjZvRGFLcTNpRTJKTnRFTlB5Y2pzWW9oTDFzU2djVEFLYjlnV19r",
+  "title": "Akses jalan Yogyakarta - Jawa Tengah terputus akibat tanah longsor di Kulon Progo - ANTARA News",
+  "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPOHJ2cTZWYlp4TkVZU1FSbGJKQXJiR0hNM3VENnZZMTY5UERxcF9uRkIyS1lnN1F3QjdBVXBhdnQtaUlEVjl4MEVFSW9WaWFFS2FqVXlmYUVUUGdIN0Z6SUNIeGZyOG9IeTlWemV4aUVmWURxMXNBelprM25qanNHUDUxZFVzTkR5Z3hVRTU1SUZFQ2dhcjZvRGFLcTNpRTJKTnRFTlB5Y2pzWW9oTDFzU2djVEFLYjlnV19r?oc=5",
+  "source": "ANTARA News",
+  "source_url": "https://www.antaranews.com",
+  "published_at": "2026-11-12T11:35:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-12T14:45:32.567Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "34.01",
+      "nama": "Kabupaten Kulon Progo",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "34.71",
+      "nama": "Kota Yogyakarta",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jawa Tengah"
+  ]
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.12.14.52.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-12T22:20:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-12T22:30:00+08:00</effective>
+    <expires>2026-11-13T00:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 12 November 2026, 22:30 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di WERA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 13 November 2026, 00:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/11/12/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.438,119.047 -8.467,118.992 -8.472,118.964 -8.481,118.945 -8.483,118.924 -8.488,118.913 -8.490,118.896 -8.469,118.882 -8.453,118.887 -8.439,118.867 -8.425,118.865 -8.390,118.867 -8.317,118.856 -8.289,118.859 -8.284,118.890 -8.294,118.925 -8.294,118.939 -8.305,118.969 -8.304,118.986 -8.310,119.001 -8.315,119.004 -8.345,118.989 -8.354,118.993 -8.377,118.992 -8.389,118.999 -8.400,119.013 -8.442,119.031 -8.438,119.047</polygon>
+      <polygon>-8.131,119.068 -8.133,119.089 -8.156,119.112 -8.186,119.123 -8.201,119.122 -8.225,119.114 -8.231,119.103 -8.254,119.084 -8.262,119.051 -8.260,119.040 -8.245,119.010 -8.230,119.000 -8.175,119.002 -8.152,119.017 -8.137,119.036 -8.127,119.054 -8.131,119.068</polygon>
+    </area>
+  </info>
+</alert>
