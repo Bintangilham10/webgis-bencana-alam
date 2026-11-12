@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-12T11:45:28.265Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        117.1986745576,
+        -0.6239822218
+      ]
+    },
+    "properties": {
+      "pkey": "400034",
+      "created_at": "2026-11-12T11:43:02.116Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "23dbd5de-aee0-4b39-8530-f9091a8e250f",
+      "image_url": "https://images.petabencana.id/23dbd5de-aee0-4b39-8530-f9091a8e250f.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 94.25790603310348,
+        "fireLocation": {
+          "lng": 117.1986745576375,
+          "lat": -0.6239822218458642
+        },
+        "personLocation": {
+          "lng": 117.19858149918014,
+          "lat": -0.6237226447010755
+        },
+        "fireRadius": {
+          "lng": 117.19783234400279,
+          "lat": -0.6240787756413511
+        }
+      },
+      "tags": {
+        "city": "KOTA SAMARINDA",
+        "district_id": null,
+        "region_code": "6472",
+        "local_area_id": null,
+        "instance_region_code": "ID-KI"
+      },
+      "title": null,
+      "text": "Kebakaran jaringan kabel listrik/telekomunikasi yang berada di dekat kawasan pertokoan terjadi di sekitar palaran",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
