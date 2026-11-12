@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.12.13.19.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-12T18:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-12T18:50:00+07:00</effective>
+    <expires>2026-11-12T20:50:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 12 November 2026, 18:50 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di NAMANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 12 November 2026, 20:50 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/11/12/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-2.209,106.206 -2.218,106.205 -2.240,106.213 -2.257,106.226 -2.271,106.223 -2.299,106.226 -2.316,106.232 -2.326,106.218 -2.352,106.215 -2.360,106.233 -2.359,106.240 -2.366,106.244 -2.370,106.234 -2.379,106.238 -2.381,106.245 -2.376,106.244 -2.373,106.249 -2.385,106.251 -2.392,106.257 -2.394,106.271 -2.407,106.277 -2.411,106.266 -2.420,106.264 -2.424,106.266 -2.425,106.277 -2.438,106.290 -2.460,106.268 -2.445,106.261 -2.451,106.248 -2.446,106.239 -2.452,106.229 -2.404,106.192 -2.391,106.172 -2.368,106.178 -2.360,106.169 -2.345,106.168 -2.325,106.179 -2.313,106.173 -2.306,106.176 -2.293,106.152 -2.279,106.144 -2.289,106.132 -2.289,106.123 -2.274,106.127 -2.277,106.105 -2.274,106.101 -2.255,106.121 -2.230,106.148 -2.227,106.164 -2.216,106.172 -2.216,106.184 -2.209,106.206</polygon>
+    </area>
+  </info>
+</alert>
