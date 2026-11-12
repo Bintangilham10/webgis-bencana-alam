@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.12.00.71.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-12T08:15:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-12T08:27:00+08:00</effective>
+    <expires>2026-11-12T09:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 12 November 2026, 08:27 WITA di sebagian wilayah Sulawesi Utara, khususnya di LANGOWAN BARAT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 12 November 2026, 09:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/12/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>1.143,124.833 1.134,124.853 1.125,124.843 1.121,124.834 1.113,124.823 1.115,124.803 1.110,124.787 1.102,124.781 1.097,124.768 1.107,124.747 1.115,124.737 1.143,124.744 1.143,124.744 1.129,124.749 1.129,124.750 1.125,124.753 1.124,124.754 1.136,124.760 1.137,124.761 1.136,124.768 1.143,124.799 1.152,124.802 1.159,124.806 1.169,124.810 1.177,124.822 1.166,124.825 1.156,124.835 1.152,124.829 1.156,124.816 1.143,124.816 1.143,124.833</polygon>
+    </area>
+  </info>
+</alert>
