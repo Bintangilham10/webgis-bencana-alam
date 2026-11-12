@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirwFBVV95cUxQZm1EVlJ2cHE1NDdZZHhncHdnM294RFJZY1RKeWpPT2J4LTJJNHFxMlN6OEowU2FkVWx3ZHpWcEp6UkMxT09fSUpHZ0UtQl9pZTBpNWNCMXVETU1vUWhRRFh1eTJYWmVnVFhJNVRTT2tabVF4QklTa1h2OTMtbFphdUNhTjdNUlozUW5oZk0wTTBSTFRKbFFmV3dYZnhXWGtoWEpTdEdFSFZRYnI5RzIw",
+  "title": "BMKG Peringatkan Hujan Lebat di Bandung Raya, Ancaman Banjir dan Longsor Mengintai - Suara Desa",
+  "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZm1EVlJ2cHE1NDdZZHhncHdnM294RFJZY1RKeWpPT2J4LTJJNHFxMlN6OEowU2FkVWx3ZHpWcEp6UkMxT09fSUpHZ0UtQl9pZTBpNWNCMXVETU1vUWhRRFh1eTJYWmVnVFhJNVRTT2tabVF4QklTa1h2OTMtbFphdUNhTjdNUlozUW5oZk0wTTBSTFRKbFFmV3dYZnhXWGtoWEpTdEdFSFZRYnI5RzIw?oc=5",
+  "source": "Suara Desa",
+  "source_url": "https://suaradesa.co",
+  "published_at": "2026-11-12T01:32:48.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-12T02:15:33.927Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

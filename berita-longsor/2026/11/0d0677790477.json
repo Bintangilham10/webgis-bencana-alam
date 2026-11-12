@@ -1,0 +1,36 @@
+{
+  "guid": "CBMiywFBVV95cUxOMERPUDAyMGZQRE94cFJpU3ctRndZb1BVXzlDeko0NUhvdDIyRTFsay1XcjZrOGR5WV95LXB0c1lzcjhLSFlJTlRnTjJTY3R2a0hwbmROSG9sQmZMcUZxdEs4MnEyZkZaWVRFNHFoaVVVbnJwVnZsQlhNOWZqQmtKNTIzY2tOdlBjdmp0a1owM3p3VGtMMDZFVk90LW1KZ2d5ZnBid1dmRHhmV1o5c2h3d0dnb0pZRVdfLXVwMjdoRVJwaHNpYW56aERVTQ",
+  "title": "Longsor Tutup Jalur Kereta Api di Purwokerto, Dua KA Tujuan Madiun dan Blitar Terlambat hingga 74 Menit - TagarJatim.id",
+  "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMERPUDAyMGZQRE94cFJpU3ctRndZb1BVXzlDeko0NUhvdDIyRTFsay1XcjZrOGR5WV95LXB0c1lzcjhLSFlJTlRnTjJTY3R2a0hwbmROSG9sQmZMcUZxdEs4MnEyZkZaWVRFNHFoaVVVbnJwVnZsQlhNOWZqQmtKNTIzY2tOdlBjdmp0a1owM3p3VGtMMDZFVk90LW1KZ2d5ZnBid1dmRHhmV1o5c2h3d0dnb0pZRVdfLXVwMjdoRVJwaHNpYW56aERVTQ?oc=5",
+  "source": "TagarJatim.id",
+  "source_url": "https://tagarjatim.id",
+  "published_at": "2026-11-12T01:07:59.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-12T02:15:33.927Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.05",
+      "nama": "Kabupaten Blitar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.19",
+      "nama": "Kabupaten Madiun",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.72",
+      "nama": "Kota Blitar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.77",
+      "nama": "Kota Madiun",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

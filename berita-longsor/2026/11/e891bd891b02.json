@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixgFBVV95cUxPa21McWdGZWx5TUxWV3cwOUlUSk9zTWFxbjFycXJVM0xwV0pDUFNycW9CQ0ZJRDFUdnRQWjVNeVVZRHZGV2owLTZ3Ni1JMWNxcUVGdDBPWmtjRzI5WVN2czFJMTF2M1FFMnJWQUxmZFpSZTROc0FDU3A0cHA3Zm5Uengya01FTU9jaW9qb0xUdVVUUk1LcVpyamhLS2dwYkVUYmdXbWo1QlBHS3Vwdk5GSUc3clVwckZLalZ4OTFIdGxCTnhKWUE",
+  "title": "BPBD Serang Petakan Wilayah Rawan Banjir dan Longsor, 6 Kecamatan Ini Jadi Perhatian - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPa21McWdGZWx5TUxWV3cwOUlUSk9zTWFxbjFycXJVM0xwV0pDUFNycW9CQ0ZJRDFUdnRQWjVNeVVZRHZGV2owLTZ3Ni1JMWNxcUVGdDBPWmtjRzI5WVN2czFJMTF2M1FFMnJWQUxmZFpSZTROc0FDU3A0cHA3Zm5Uengya01FTU9jaW9qb0xUdVVUUk1LcVpyamhLS2dwYkVUYmdXbWo1QlBHS3Vwdk5GSUc3clVwckZLalZ4OTFIdGxCTnhKWUE?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://regional.kompas.com",
+  "published_at": "2026-11-12T01:11:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-12T02:15:33.927Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "36.04",
+      "nama": "Kabupaten Serang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "36.73",
+      "nama": "Kota Serang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

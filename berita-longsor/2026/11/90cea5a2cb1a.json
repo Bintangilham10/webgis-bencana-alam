@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiggFBVV95cUxOVnA2bm9aTEtHamhvaElPTDFrTTVGMV9GODl0NGZVWUtwUFNRY2NRdGJWMXBfbXBaOXFVNTJqdVBNeFpscENKUnoycVBJUlljTHQwdUpyZU9ueGVkQy1fQjVMOVVGWUMtcU01Y204TDgyRmNVME1VVEVfWXV0dFJHd1p3",
+  "title": "Dalam Sehari, Lima Kejadian Longsor Terjadi di Sukabumi - VISI.NEWS",
+  "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVnA2bm9aTEtHamhvaElPTDFrTTVGMV9GODl0NGZVWUtwUFNRY2NRdGJWMXBfbXBaOXFVNTJqdVBNeFpscENKUnoycVBJUlljTHQwdUpyZU9ueGVkQy1fQjVMOVVGWUMtcU01Y204TDgyRmNVME1VVEVfWXV0dFJHd1p3?oc=5",
+  "source": "VISI.NEWS",
+  "source_url": "https://www.visi.news",
+  "published_at": "2026-11-12T00:39:16.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-12T02:15:33.927Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
