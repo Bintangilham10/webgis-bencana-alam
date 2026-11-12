@@ -245,10 +245,15 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
         errors: [],
       };
     };
-    // Belum pernah sinkron: feed mingguan; setelah ada sinkronisasi sukses: feed harian.
+    // Belum pernah sinkron: feed mingguan. Sesudahnya feed harian sampai jam berganti;
+    // sinkronisasi pertama di jam berikutnya membaca feed mingguan lagi, supaya gempa
+    // yang baru terbit atau direvisi USGS lebih dari sehari kemudian ikut masuk.
     await runJob({ source: 'usgs-gempa', run: () => syncUsgsEarthquakes({ fetchEvents }) });
-    await syncUsgsEarthquakes({ fetchEvents });
-    assert.deepEqual(feeds, ['week', 'day']);
+    const { rows: [logged] } = await pool.query("SELECT max(started_at) AS at FROM sync_logs WHERE source = 'usgs-gempa' AND ok");
+    const syncedAt = logged.at.getTime();
+    await syncUsgsEarthquakes({ fetchEvents, now: syncedAt });
+    await syncUsgsEarthquakes({ fetchEvents, now: syncedAt + 3_600_000 });
+    assert.deepEqual(feeds, ['week', 'day', 'week']);
 
     const { body } = await getJson('/earthquakes?source=usgs');
     assert.equal(body.meta.source, 'usgs');
@@ -1250,6 +1255,18 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       assert.equal((await postRoute({ from: FROM, to: TO, mode: 'pesawat' })).status, 400);
       assert.match((await postRoute({ from: FROM, to: { lat: -7.5, lon: 107.5 } })).body.error, /terlalu jauh/);
       assert.equal((await postRoute({ from: { lat: 50, lon: 10 }, to: TO })).status, 400);
+
+      // Isi yang bukan JSON atau terlalu besar adalah kesalahan pengirim, bukan galat server.
+      const postRaw = async (body) => {
+        const res = await fetch(`${baseUrl}/route`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body });
+        return { status: res.status, body: await res.json() };
+      };
+      const broken = await postRaw('{rusak');
+      assert.equal(broken.status, 400);
+      assert.match(broken.body.error, /JSON yang valid/);
+      const huge = await postRaw(JSON.stringify({ from: FROM, to: TO, catatan: 'x'.repeat(3000) }));
+      assert.equal(huge.status, 413);
+      assert.match(huge.body.error, /terlalu besar/);
     });
 
     test('paparan rute dari raster kelas: panjang di zona tinggi dan blok yang bisa dihindari', async () => {

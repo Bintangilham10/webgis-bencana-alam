@@ -14,8 +14,9 @@ async function fetchFdsnJson(url, options) {
 // dari EMSC sendiri, USGS (NEIC), MetMalaysia (MMD), GFZ, dan lainnya.
 const QUERY_URL = 'https://www.seismicportal.eu/fdsnws/event/1/query';
 const DAY_MS = 24 * 60 * 60 * 1000;
-// Rentang yang diminta: 1 hari untuk sinkronisasi rutin, 8 hari untuk mengisi
-// celah saat server lama mati (dipilih di jobs/sync-earthquakes.js).
+// Rentang yang diminta: 1 hari untuk sinkronisasi rutin; 8 hari sekali tiap jam
+// untuk gempa yang baru dimuat atau direvisi lebih dari sehari kemudian dan untuk
+// mengisi celah saat server mati (dipilih di jobs/sync-earthquakes.js).
 export const FEED_DAYS = { day: 1, week: 8 };
 
 export const eventUrl = (unid) => `https://www.seismicportal.eu/eventdetails.html?unid=${encodeURIComponent(unid)}`;

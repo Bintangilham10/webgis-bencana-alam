@@ -26,12 +26,14 @@ const WILAYAH = `
   LIMIT 1`;
 
 // "MAROS/SULTAN HASANUDDIN" → "Sultan Hasanuddin"; nama tanpa "/" dipakai utuh.
-// Angka Romawi tetap huruf besar ("Sultan Syarif Kasim II").
+// Angka Romawi dan inisial di awal nama tetap huruf besar ("Sultan Syarif Kasim II",
+// "F.L. Tobing", "H.AS. Hanandjoeddin"); singkatan di tengah tidak ("Bawean Is.").
 const titleCase = (text) =>
   text
     .toLowerCase()
     .replace(/(^|[\s/(-])(\p{L})/gu, (_, sep, ch) => sep + ch.toUpperCase())
-    .replace(/\b(?:Ii|Iii|Iv|Vi|Vii|Viii|Ix)\b/g, (roman) => roman.toUpperCase());
+    .replace(/\b(?:Ii|Iii|Iv|Vi|Vii|Viii|Ix)\b/g, (roman) => roman.toUpperCase())
+    .replace(/^(?:\p{L}{1,2}\.)+/u, (initials) => initials.toUpperCase());
 const stationName = (name) => titleCase(name.includes('/') ? name.slice(name.indexOf('/') + 1) : name).trim();
 const round = (value, digits) => Number(Number(value).toFixed(digits));
 

@@ -2,8 +2,9 @@ import { fetchJson } from '../lib/http.js';
 
 // Katalog gempa USGS (Amerika Serikat) sebagai pembanding BMKG. Data USGS berstatus
 // public domain. Feed GeoJSON diperbarui tiap menit; feed harian (±20 KB) cukup
-// untuk sinkronisasi rutin, feed mingguan (±250 KB) untuk mengisi celah saat server
-// lama mati (dipilih di jobs/sync-earthquakes.js).
+// untuk sinkronisasi rutin; feed mingguan (±250 KB) dibaca sekali tiap jam untuk gempa
+// yang baru terbit atau direvisi lebih dari sehari kemudian dan untuk mengisi celah
+// saat server mati (dipilih di jobs/sync-earthquakes.js).
 const FEED_BASE = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/';
 export const FEEDS = {
   day: `${FEED_BASE}2.5_day.geojson`,

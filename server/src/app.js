@@ -107,6 +107,13 @@ export function createApp({ services = {} } = {}) {
 
   // Express 5 meneruskan error dari handler async ke sini.
   app.use((err, req, res, next) => {
+    // Isi permintaan yang rusak atau terlalu besar (ditolak express.json, yang memberi
+    // `type` dan status 4xx) adalah kesalahan pengirim: dijawab apa adanya dan tidak
+    // dicatat sebagai galat server.
+    if (err.type && err.status >= 400 && err.status < 500) {
+      const error = err.status === 413 ? 'Isi permintaan terlalu besar' : 'Isi permintaan harus berupa JSON yang valid';
+      return res.status(err.status).json({ error });
+    }
     console.error(err);
     res.status(500).json({ error: 'Terjadi kesalahan di server' });
   });

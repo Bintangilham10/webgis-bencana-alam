@@ -5,10 +5,14 @@ import { fetchGfzEarthquakes } from '../sources/gfz-gempa.js';
 import { fetchUsgsDetail, fetchUsgsEarthquakes } from '../sources/usgs-gempa.js';
 import { lastSuccessfulSync } from '../sync-logs.js';
 
-// Feed USGS harian hanya memuat 24 jam terakhir. Bila sinkronisasi USGS terakhir
-// yang berhasil lebih lama dari ini (atau belum pernah), feed mingguan diambil
-// supaya gempa saat server mati tetap terisi.
-const USGS_BACKFILL_AFTER_MS = 20 * 60 * 60_000;
+// Rentang harian hanya memuat gempa 24 jam terakhir (GFZ: 3 hari), padahal katalog
+// luar negeri sering baru memuat atau merevisi gempa kawasan ini setelah itu. Contoh
+// 12 Nov 2026: USGS menerbitkan us7000txf8 (M4,5 Aceh) 26 jam setelah kejadian dan
+// merevisi us7000txbi (M5,2 menjadi M5,1, bergeser 2 km) 25,5 jam setelah kejadian;
+// keduanya tidak pernah muncul di rentang harian. Karena itu sinkronisasi pertama
+// yang berhasil di tiap jam membaca rentang mingguan, yang juga mengisi gempa saat
+// server mati.
+const WIDE_READ_EVERY_MS = 60 * 60_000;
 
 // Baris hanya diperbarui bila ada perubahan, supaya updated_at mencerminkan
 // revisi BMKG (mis. magnitudo dikoreksi), bukan sekadar sinkronisasi ulang.
@@ -80,11 +84,14 @@ async function syncUsgsDetails(events, { fetchDetail, now }) {
 
 // Gempa USGS disimpan di tabel yang sama dengan source 'usgs'; tampilan BMKG
 // dan cek risiko hanya membaca source 'bmkg', jadi gempa yang sama tidak terhitung dua kali.
-// Rentang harian bila sinkronisasi terakhir yang berhasil masih baru; rentang
-// mingguan untuk mengisi celah setelah server lama mati (atau belum pernah sinkron).
+// Rentang harian bila jam ini sudah ada sinkronisasi yang berhasil; rentang mingguan
+// untuk sinkronisasi pertama di tiap jam (atau bila belum pernah sinkron). Penandanya
+// log sinkronisasi, jadi rentang mingguan yang gagal dicoba lagi semenit kemudian.
+const hourOf = (ms) => Math.floor(ms / WIDE_READ_EVERY_MS);
+
 async function feedFor(source, now) {
   const last = await lastSuccessfulSync(source);
-  return last && now - new Date(last).getTime() < USGS_BACKFILL_AFTER_MS ? 'day' : 'week';
+  return last && hourOf(new Date(last).getTime()) === hourOf(now) ? 'day' : 'week';
 }
 
 export async function syncUsgsEarthquakes({ fetchEvents = fetchUsgsEarthquakes, fetchDetail = fetchUsgsDetail, now = Date.now() } = {}) {

@@ -12,7 +12,8 @@ const QUERY_URL = 'https://geofon.gfz.de/fdsnws/event/1/query';
 const DAY_MS = 24 * 60 * 60 * 1000;
 // Rentang yang diminta: 3 hari untuk sinkronisasi rutin, karena mekanisme sumber
 // dan tinjauan seismolog bisa menyusul lebih dari sehari setelah gempa; 8 hari
-// untuk mengisi celah saat server lama mati (dipilih di jobs/sync-earthquakes.js).
+// sekali tiap jam untuk revisi yang lebih lambat lagi dan untuk mengisi celah saat
+// server mati (dipilih di jobs/sync-earthquakes.js).
 export const FEED_DAYS = { day: 3, week: 8 };
 
 export const eventUrl = (code) => `https://geofon.gfz.de/eqinfo/event.php?id=${encodeURIComponent(code)}`;
