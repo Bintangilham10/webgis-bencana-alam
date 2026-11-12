@@ -1,0 +1,31 @@
+{
+  "guid": "CBMixgFBVV95cUxNdlhwQWRjenFjSzd4akljQUFfa1hwX21vdm1ob213T0ROTm1LYWUyRjZRRkkxaDZXYWIwd1dHU19TckFDclJ0ZTBWdm03YUQyWmxyb3BmT0ZiMmxqNUtPMUllWHFkcUU1YklJSnNKQTk3X2xwSGVhSW9PaXJpSS1HMDJVRXFRTE5FU2dyeGFMTDNoNnkzTWo1U05wenJPQzhENjMzT2NFcDNnTkh1OVBSTkthdnAtOXVjcDJXdXUxM3hiN3VmcEE",
+  "title": "Longsor Tutup Jalur Kereta di Banyumas, Perjalanan KA Madiun Jaya dan Singasari Terlambat Hingga 74 Menit - arahJATIM.com",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdlhwQWRjenFjSzd4akljQUFfa1hwX21vdm1ob213T0ROTm1LYWUyRjZRRkkxaDZXYWIwd1dHU19TckFDclJ0ZTBWdm03YUQyWmxyb3BmT0ZiMmxqNUtPMUllWHFkcUU1YklJSnNKQTk3X2xwSGVhSW9PaXJpSS1HMDJVRXFRTE5FU2dyeGFMTDNoNnkzTWo1U05wenJPQzhENjMzT2NFcDNnTkh1OVBSTkthdnAtOXVjcDJXdXUxM3hiN3VmcEE?oc=5",
+  "source": "arahJATIM.com",
+  "source_url": "https://arahjatim.com",
+  "published_at": "2026-11-12T07:58:41.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-12T08:30:39.118Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.19",
+      "nama": "Kabupaten Madiun",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.77",
+      "nama": "Kota Madiun",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

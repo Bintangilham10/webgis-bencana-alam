@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqAFBVV95cUxQUzBTc1pVM0tIRHJqblRoWU5mMkpUajJleS1RcjhqdnMzVElEYjFGam8yYVlKd01xMG1wcldkeUJHWTVxQUxuQjJVVmhVdkR5VWQ3bzN4SEFtcHBjXzBWcG9BM3Z1S1BLTExWZUNUOVF2NVI2VFBFUlRyU2dKa0xUUmZseUVMVmVvTXg5SE5XTmpRZkprd2NCMVdLU1M5VlZZSFdUY2lMcDg",
+  "title": "BPBD Cirebon Petakan 9 Kecamatan Rawan Banjir dan 6 Wilayah Berpotensi Longsor - Inilahkoran.id",
+  "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUzBTc1pVM0tIRHJqblRoWU5mMkpUajJleS1RcjhqdnMzVElEYjFGam8yYVlKd01xMG1wcldkeUJHWTVxQUxuQjJVVmhVdkR5VWQ3bzN4SEFtcHBjXzBWcG9BM3Z1S1BLTExWZUNUOVF2NVI2VFBFUlRyU2dKa0xUUmZseUVMVmVvTXg5SE5XTmpRZkprd2NCMVdLU1M5VlZZSFdUY2lMcDg?oc=5",
+  "source": "Inilahkoran.id",
+  "source_url": "https://www.inilahkoran.id",
+  "published_at": "2026-11-12T05:08:13.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-12T08:30:39.118Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.09",
+      "nama": "Kabupaten Cirebon",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.74",
+      "nama": "Kota Cirebon",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
