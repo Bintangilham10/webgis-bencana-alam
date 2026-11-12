@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirwFBVV95cUxNZTcyNlFhajZMMERVUjZYWHB5ZEY5THdHbHZuamJzMmpIdERiLVJDVTRwaTBsdkJLTHZZWmFkX0JXdnAxVnM3aElOQnJQR0YxZXRySGV3LXp4SUx6cUVBNlMwYmVsYURFdnQ1TzFCdm9tZGk3WUd1SGczWHdkSHNmQkhveVI3MlJ6S083Q25rUW10NEdfdUdpWXNITmkyNXhZQ21LVGZxZ0R4VXFITHJZ",
+  "title": "BPBD Bandung Ingatkan Warga Waspadai Banjir dan Longsor Meski Hujan Diprediksi Ringan - rmoljabar.id",
+  "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNZTcyNlFhajZMMERVUjZYWHB5ZEY5THdHbHZuamJzMmpIdERiLVJDVTRwaTBsdkJLTHZZWmFkX0JXdnAxVnM3aElOQnJQR0YxZXRySGV3LXp4SUx6cUVBNlMwYmVsYURFdnQ1TzFCdm9tZGk3WUd1SGczWHdkSHNmQkhveVI3MlJ6S083Q25rUW10NEdfdUdpWXNITmkyNXhZQ21LVGZxZ0R4VXFITHJZ?oc=5",
+  "source": "rmoljabar.id",
+  "source_url": "https://www.rmoljabar.id",
+  "published_at": "2026-11-12T17:44:44.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-12T21:00:50.722Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

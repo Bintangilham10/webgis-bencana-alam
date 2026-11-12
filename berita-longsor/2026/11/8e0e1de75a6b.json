@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiogFBVV95cUxNUXhrTFdQekYxb2RjYkJZbmVZSVVYNlQtZjNVRmo2T0Z3LXRJVDNVdjB2T1Fqa1NTLTdfdkV4TWFzUkVrTGphZGwwNDhGamJDcEdKRjU4ZjFTWTNrSTNwRXpOOGJoMjlXQXNncl90ekxoU3FKRkFKZzFlWXZyTkpSMEdVdFRyVThIbnhDa2w5ZzE1VGkxNmZzNVJVSEg4dHdFdFE",
+  "title": "Video Banjir-Longsor Terjang 2 Desa di Gorontalo - 20detik",
+  "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUXhrTFdQekYxb2RjYkJZbmVZSVVYNlQtZjNVRmo2T0Z3LXRJVDNVdjB2T1Fqa1NTLTdfdkV4TWFzUkVrTGphZGwwNDhGamJDcEdKRjU4ZjFTWTNrSTNwRXpOOGJoMjlXQXNncl90ekxoU3FKRkFKZzFlWXZyTkpSMEdVdFRyVThIbnhDa2w5ZzE1VGkxNmZzNVJVSEg4dHdFdFE?oc=5",
+  "source": "20detik",
+  "source_url": "https://20.detik.com",
+  "published_at": "2026-11-12T18:12:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-12T21:00:50.722Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "75.01",
+      "nama": "Kabupaten Gorontalo",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "75.71",
+      "nama": "Kota Gorontalo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Gorontalo"
+  ]
+}
