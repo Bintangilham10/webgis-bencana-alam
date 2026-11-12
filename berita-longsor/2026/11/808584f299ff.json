@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiqwFBVV95cUxQdWxydXpuUHl6blJ2YV8tOVkwVG9wUkNFWmtrRHlENko5dHd5LVFKLWpfWVltM3hoRTBLVWsyNkpZX2txS3IybjV1cGhMSnF4WmoxUzhUU1lmNVZxTlNEcXJtSGVMX3RGanAtTGwwekIzbzFaeEQtUDJBcUpLaXBEWTZqQW9FTEhNQWNTMHA1UnhnQjF4dkpLOXRyYjlIOXdWUGp2NFN0MWltVWvSAbABQVVfeXFMT0dDOHVtaFo2U1BJTmhJUlNWNUNhTUs5cXZtOHI5MkRTN0pGWm4tTXhtMGVxb0pQNnhnbUl0X2RPWlhUZjh6cW8xaHBUTFNaTkEyQThZOXV0eGFlSTczY0RuM0RvV2tpWDJMYW5XQXl4NGlrMi16cmZORllHUUx0cEhCWGhrWGZJM3VWTFA3cndqQ3RqQlpMUE4zaXFYcDNVQ0NIa010VEswUGRKandsMk4",
+  "title": "Banjir-Longsor Terjang 2 Desa di Gorontalo, 19 Warga Terdampak - detikcom",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdWxydXpuUHl6blJ2YV8tOVkwVG9wUkNFWmtrRHlENko5dHd5LVFKLWpfWVltM3hoRTBLVWsyNkpZX2txS3IybjV1cGhMSnF4WmoxUzhUU1lmNVZxTlNEcXJtSGVMX3RGanAtTGwwekIzbzFaeEQtUDJBcUpLaXBEWTZqQW9FTEhNQWNTMHA1UnhnQjF4dkpLOXRyYjlIOXdWUGp2NFN0MWltVWvSAbABQVVfeXFMT0dDOHVtaFo2U1BJTmhJUlNWNUNhTUs5cXZtOHI5MkRTN0pGWm4tTXhtMGVxb0pQNnhnbUl0X2RPWlhUZjh6cW8xaHBUTFNaTkEyQThZOXV0eGFlSTczY0RuM0RvV2tpWDJMYW5XQXl4NGlrMi16cmZORllHUUx0cEhCWGhrWGZJM3VWTFA3cndqQ3RqQlpMUE4zaXFYcDNVQ0NIa010VEswUGRKandsMk4?oc=5",
+  "source": "detikcom",
+  "source_url": "https://www.detik.com",
+  "published_at": "2026-11-12T14:42:54.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-12T17:45:32.856Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "75.01",
+      "nama": "Kabupaten Gorontalo",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "75.71",
+      "nama": "Kota Gorontalo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Gorontalo"
+  ]
+}
