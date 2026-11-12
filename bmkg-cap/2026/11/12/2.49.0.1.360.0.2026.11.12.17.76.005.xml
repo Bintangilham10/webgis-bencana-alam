@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.12.17.76.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-12T23:58:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-13T00:28:00+08:00</effective>
+    <expires>2026-11-13T02:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 13 November 2026, 00:28 WITA di sebagian wilayah Sulawesi Barat, khususnya di MAMUJU, MATAKALI, POLEWALI, SIMBORO, WONOMULYO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 13 November 2026, 02:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSK/2026/11/12/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Barat</areaDesc>
+      <polygon>-2.629,118.981 -2.646,118.976 -2.659,118.987 -2.680,118.981 -2.710,118.989 -2.723,119.000 -2.735,119.021 -2.750,119.030 -2.752,119.024 -2.773,119.014 -2.797,119.021 -2.795,119.001 -2.773,118.971 -2.783,118.933 -2.799,118.913 -2.799,118.884 -2.798,118.887 -2.776,118.889 -2.751,118.885 -2.739,118.893 -2.723,118.892 -2.718,118.889 -2.717,118.881 -2.707,118.869 -2.681,118.874 -2.669,118.893 -2.667,118.911 -2.640,118.942 -2.637,118.966 -2.628,118.967 -2.629,118.981</polygon>
+      <polygon>-2.652,118.891 -2.654,118.888 -2.646,118.882 -2.631,118.878 -2.623,118.879 -2.613,118.891 -2.630,118.897 -2.652,118.891</polygon>
+      <polygon>-2.681,118.874 -2.707,118.869 -2.717,118.881 -2.718,118.889 -2.723,118.892 -2.739,118.893 -2.751,118.885 -2.776,118.889 -2.798,118.887 -2.799,118.884 -2.799,118.875 -2.788,118.862 -2.785,118.837 -2.777,118.836 -2.767,118.819 -2.760,118.821 -2.752,118.810 -2.735,118.822 -2.721,118.824 -2.701,118.817 -2.677,118.815 -2.670,118.810 -2.675,118.784 -2.642,118.811 -2.624,118.815 -2.619,118.820 -2.643,118.840 -2.656,118.845 -2.680,118.869 -2.681,118.874</polygon>
+      <polygon>-3.379,119.236 -3.394,119.250 -3.396,119.261 -3.404,119.273 -3.417,119.281 -3.424,119.282 -3.431,119.277 -3.441,119.282 -3.441,119.279 -3.451,119.280 -3.441,119.286 -3.441,119.290 -3.452,119.283 -3.457,119.264 -3.466,119.246 -3.481,119.240 -3.487,119.232 -3.478,119.229 -3.476,119.220 -3.456,119.215 -3.441,119.204 -3.439,119.194 -3.435,119.193 -3.424,119.201 -3.408,119.205 -3.387,119.199 -3.386,119.190 -3.367,119.194 -3.366,119.205 -3.376,119.218 -3.379,119.236</polygon>
+      <polygon>-3.391,119.353 -3.414,119.350 -3.442,119.356 -3.433,119.341 -3.425,119.307 -3.429,119.295 -3.404,119.294 -3.397,119.308 -3.391,119.321 -3.391,119.353</polygon>
+      <polygon>-3.291,119.357 -3.308,119.345 -3.324,119.340 -3.351,119.320 -3.369,119.319 -3.377,119.309 -3.397,119.308 -3.404,119.294 -3.429,119.295 -3.431,119.284 -3.441,119.282 -3.431,119.277 -3.424,119.282 -3.417,119.281 -3.404,119.273 -3.396,119.261 -3.394,119.250 -3.379,119.236 -3.361,119.245 -3.350,119.241 -3.340,119.248 -3.329,119.306 -3.293,119.333 -3.289,119.345 -3.291,119.357</polygon>
+    </area>
+  </info>
+</alert>
