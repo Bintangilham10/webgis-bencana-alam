@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-12T11:15:29.980Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        116.401867588,
+        -8.5812231388
+      ]
+    },
+    "properties": {
+      "pkey": "400032",
+      "created_at": "2026-11-12T11:12:25.213Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "60b0803c-2856-40d5-b597-590e5d950d1e",
+      "image_url": "https://images.petabencana.id/60b0803c-2856-40d5-b597-590e5d950d1e.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 43
+      },
+      "tags": {
+        "city": "LOMBOK TIMUR",
+        "district_id": null,
+        "region_code": "5203",
+        "local_area_id": null,
+        "instance_region_code": "ID-NB"
+      },
+      "title": null,
+      "text": "luapan air saat hujan turun di kawasan Joben, Desa Pesanggrahan, Kecamatan Montong Gading, Kabupaten Lombok Timur, Nusa Tenggara Barat ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
