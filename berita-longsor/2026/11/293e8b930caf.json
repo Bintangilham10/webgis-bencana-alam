@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiugFBVV95cUxQSUR0bFR5ckQwSi1ER0Y5S3FXaU9lM3FKVnN4bFpFcUtoeThUeHVjcS1jQWtoLThRM0JWMFppT25MUkU0anZyMHhaZEhPNS0wS2JkY1N0ZDF3MlpfZlBkZjhUOXdHRmljQjhDNFRCaWFqVDRJZU9pSlFQQjFucmJ2TnQ3cE5JTjloblFWVjJ1TkxHS2d1M3U5Vm5VVjRyaXRaT2V5cUszOER4OUpUQlJ5akFidC10QkVKaHc",
+  "title": "Musim Hujan Mengintai, Ancaman Banjir hingga Longsor Jadi Sorotan di Kediri - FaktualNews.co",
+  "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSUR0bFR5ckQwSi1ER0Y5S3FXaU9lM3FKVnN4bFpFcUtoeThUeHVjcS1jQWtoLThRM0JWMFppT25MUkU0anZyMHhaZEhPNS0wS2JkY1N0ZDF3MlpfZlBkZjhUOXdHRmljQjhDNFRCaWFqVDRJZU9pSlFQQjFucmJ2TnQ3cE5JTjloblFWVjJ1TkxHS2d1M3U5Vm5VVjRyaXRaT2V5cUszOER4OUpUQlJ5akFidC10QkVKaHc?oc=5",
+  "source": "FaktualNews.co",
+  "source_url": "https://faktualnews.co",
+  "published_at": "2026-11-12T03:28:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-12T05:30:34.265Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.06",
+      "nama": "Kabupaten Kediri",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.71",
+      "nama": "Kota Kediri",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
