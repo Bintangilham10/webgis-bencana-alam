@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.13.19.11.009</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-14T00:05:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-14T00:15:00+07:00</effective>
+    <expires>2026-11-14T03:15:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Aceh</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 November 2026, 00:15 WIB di sebagian wilayah Aceh, khususnya di SERBAJADI, SIMPANG JERNIH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 November 2026, 03:15 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CAH/2026/11/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Aceh</areaDesc>
+      <polygon>4.761,97.537 4.748,97.547 4.738,97.548 4.736,97.556 4.693,97.563 4.634,97.592 4.603,97.598 4.506,97.683 4.483,97.660 4.482,97.660 4.468,97.650 4.419,97.626 4.371,97.619 4.251,97.613 4.254,97.606 4.250,97.595 4.240,97.593 4.211,97.576 4.186,97.573 4.194,97.531 4.189,97.520 4.181,97.513 4.157,97.502 4.159,97.466 4.178,97.416 4.181,97.404 4.192,97.388 4.203,97.369 4.204,97.360 4.210,97.356 4.237,97.348 4.282,97.360 4.296,97.357 4.335,97.359 4.347,97.352 4.361,97.368 4.397,97.369 4.424,97.361 4.439,97.349 4.474,97.345 4.502,97.344 4.513,97.339 4.514,97.328 4.504,97.297 4.508,97.273 4.518,97.275 4.525,97.281 4.529,97.297 4.538,97.306 4.546,97.324 4.603,97.313 4.603,97.313 4.608,97.312 4.629,97.299 4.631,97.277 4.621,97.266 4.622,97.261 4.657,97.254 4.664,97.259 4.659,97.288 4.662,97.306 4.667,97.311 4.682,97.312 4.698,97.324 4.711,97.328 4.735,97.324 4.741,97.319 4.744,97.324 4.739,97.495 4.762,97.516 4.761,97.537</polygon>
+      <polygon>4.343,97.783 4.343,97.774 4.330,97.767 4.319,97.772 4.294,97.749 4.249,97.733 4.247,97.718 4.242,97.669 4.221,97.646 4.228,97.633 4.245,97.622 4.251,97.613 4.371,97.619 4.419,97.626 4.468,97.650 4.482,97.660 4.483,97.660 4.506,97.683 4.528,97.749 4.510,97.749 4.493,97.758 4.404,97.765 4.383,97.766 4.365,97.760 4.347,97.772 4.343,97.783</polygon>
+    </area>
+  </info>
+</alert>
