@@ -1,0 +1,28 @@
+{
+  "guid": "CBMivwFBVV95cUxQWjZQUDl1cUhYSEprcV9HTTZlMlIySjBQY3J0MkhvZGd2MGNKQ2EyMDhPcV9YcDlyRWIxV1FNRUl4SDdfWkllMTNSVkpZUGpWRExESm1LQnFQdFhJRDJFenNuUW9xQjZya2dwQWp1UGR4Nms4dF9Pb3h2SExDVzRTdDNOc09QZ0xwUUY5aFYzZzBPdEROUXRRbGlTcEc3ZW81bDVJSmE1TjZScThaMEdzS1oxLXczSWdkS3NJM29INA",
+  "title": "Banjir Bandang dan Longsor Terjang Dua Desa di Telaga Biru Gorontalo - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWjZQUDl1cUhYSEprcV9HTTZlMlIySjBQY3J0MkhvZGd2MGNKQ2EyMDhPcV9YcDlyRWIxV1FNRUl4SDdfWkllMTNSVkpZUGpWRExESm1LQnFQdFhJRDJFenNuUW9xQjZya2dwQWp1UGR4Nms4dF9Pb3h2SExDVzRTdDNOc09QZ0xwUUY5aFYzZzBPdEROUXRRbGlTcEc3ZW81bDVJSmE1TjZScThaMEdzS1oxLXczSWdkS3NJM29INA?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://makassar.kompas.com",
+  "published_at": "2026-11-13T10:11:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-13T12:41:14.309Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "75.01",
+      "nama": "Kabupaten Gorontalo",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "75.71",
+      "nama": "Kota Gorontalo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Gorontalo"
+  ]
+}

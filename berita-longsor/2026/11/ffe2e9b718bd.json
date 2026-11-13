@@ -1,0 +1,28 @@
+{
+  "guid": "CBMixgFBVV95cUxOZTNxd2FfMnAteTlpS2dBVW5fWlhVYjNhdW1tUDVZTElycldOeWw1SEx6Y1MxdmhQYnVxM0piTkxTTk9fT2pyWmpoV1Y0ZGxtX0VRRXVoX2tOZU43c3BLMWNzUU9BaUVKb3dOR0NaTVh1ejV3UG1ZV3NvQTF4c0lnOVVGQTBvSkwwY2pPMFQ2TVg2dUJUdERRWHVPRHJsM2lPOGQtWFA2bzdCMGVxXzNfS0VKa1RIcjdlZFE0VGxZUTMzUEM5cUE",
+  "title": "Longsor di Samigaluh Kulon Progo Putus Akses Jalan Provinsi Yogyakarta–Jawa Tengah - Suara Pantura",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZTNxd2FfMnAteTlpS2dBVW5fWlhVYjNhdW1tUDVZTElycldOeWw1SEx6Y1MxdmhQYnVxM0piTkxTTk9fT2pyWmpoV1Y0ZGxtX0VRRXVoX2tOZU43c3BLMWNzUU9BaUVKb3dOR0NaTVh1ejV3UG1ZV3NvQTF4c0lnOVVGQTBvSkwwY2pPMFQ2TVg2dUJUdERRWHVPRHJsM2lPOGQtWFA2bzdCMGVxXzNfS0VKa1RIcjdlZFE0VGxZUTMzUEM5cUE?oc=5",
+  "source": "Suara Pantura",
+  "source_url": "https://suarapantura.com",
+  "published_at": "2026-11-12T15:24:40.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-13T12:41:14.309Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "34.01",
+      "nama": "Kabupaten Kulon Progo",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "34.71",
+      "nama": "Kota Yogyakarta",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jawa Tengah"
+  ]
+}
