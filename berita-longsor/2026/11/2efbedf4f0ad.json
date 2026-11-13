@@ -1,0 +1,21 @@
+{
+  "guid": "CBMimAFBVV95cUxQR2t3UElIMzdhZ2QtWG85S0NGVUtDYjhaTmx3NUExRHRDRURIT1FxVDducmMyWTFJSUZCYU9qTVMyRDNxR29tT1dIbS13UFNiS280cHNlRVBuTjRlOG93aU5tMF96RW9GTVdEaHZlNHZDaHNLZFowTnFlYU5QNUM0QldhaUdkYnNOYUY5OS1YVnVBM21yS2F3VA",
+  "title": "Tanah Longsor Terjang Kawasan Bukit Piantus di Kabupaten Sambas - faktakalbar",
+  "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQR2t3UElIMzdhZ2QtWG85S0NGVUtDYjhaTmx3NUExRHRDRURIT1FxVDducmMyWTFJSUZCYU9qTVMyRDNxR29tT1dIbS13UFNiS280cHNlRVBuTjRlOG93aU5tMF96RW9GTVdEaHZlNHZDaHNLZFowTnFlYU5QNUM0QldhaUdkYnNOYUY5OS1YVnVBM21yS2F3VA?oc=5",
+  "source": "faktakalbar",
+  "source_url": "https://faktakalbar.id",
+  "published_at": "2026-11-13T08:07:58.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-13T09:30:40.766Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "61.01",
+      "nama": "Kabupaten Sambas",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}
