@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.13.20.62.009</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-14T00:15:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-14T00:25:00+07:00</effective>
+    <expires>2026-11-14T03:15:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 November 2026, 00:25 WIB di sebagian wilayah Kalimantan Tengah, khususnya di MIHING RAYA, SEPANG SIMIN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 November 2026, 03:15 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/11/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-1.542,113.969 -1.575,113.914 -1.617,113.888 -1.631,113.827 -1.630,113.799 -1.586,113.778 -1.542,113.770 -1.504,113.755 -1.465,113.750 -1.421,113.758 -1.412,113.984 -1.404,114.002 -1.475,114.008 -1.508,113.994 -1.542,113.969</polygon>
+      <polygon>-1.404,114.002 -1.412,113.984 -1.421,113.758 -1.354,113.747 -1.345,113.743 -1.307,113.745 -1.306,113.745 -1.323,113.763 -1.330,113.790 -1.332,113.818 -1.319,113.851 -1.319,113.867 -1.313,113.877 -1.311,113.894 -1.269,113.931 -1.270,113.951 -1.259,113.996 -1.362,113.997 -1.404,114.002</polygon>
+    </area>
+  </info>
+</alert>
