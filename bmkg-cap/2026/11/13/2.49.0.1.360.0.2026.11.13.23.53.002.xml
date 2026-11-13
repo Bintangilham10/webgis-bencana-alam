@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.13.23.53.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-14T05:30:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-14T05:45:00+08:00</effective>
+    <expires>2026-11-14T08:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 November 2026, 05:45 WITA di sebagian wilayah Nusa Tenggara Timur, khususnya di LEWOLEMA, TANJUNG BUNGA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 November 2026, 08:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNT/2026/11/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Timur</areaDesc>
+      <polygon>-8.196,122.957 -8.200,122.940 -8.194,122.939 -8.195,122.923 -8.180,122.903 -8.175,122.887 -8.180,122.880 -8.178,122.869 -8.187,122.856 -8.189,122.850 -8.185,122.845 -8.192,122.835 -8.198,122.809 -8.208,122.799 -8.225,122.795 -8.236,122.787 -8.228,122.768 -8.228,122.735 -8.222,122.730 -8.215,122.733 -8.194,122.759 -8.179,122.761 -8.150,122.785 -8.137,122.780 -8.108,122.783 -8.105,122.789 -8.108,122.798 -8.097,122.814 -8.095,122.831 -8.076,122.844 -8.063,122.866 -8.086,122.890 -8.109,122.936 -8.133,122.972 -8.186,122.969 -8.194,122.964 -8.196,122.957</polygon>
+      <polygon>-8.220,122.978 -8.247,122.933 -8.288,122.929 -8.314,122.916 -8.328,122.916 -8.332,122.914 -8.325,122.887 -8.337,122.860 -8.327,122.844 -8.294,122.838 -8.290,122.854 -8.294,122.872 -8.286,122.885 -8.275,122.894 -8.254,122.897 -8.218,122.912 -8.205,122.924 -8.200,122.940 -8.196,122.957 -8.197,122.962 -8.212,122.976 -8.220,122.978</polygon>
+    </area>
+  </info>
+</alert>
