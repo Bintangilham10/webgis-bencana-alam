@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-13T22:45:35.354Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.8678894423,
+        -6.7980677949
+      ]
+    },
+    "properties": {
+      "pkey": "400037",
+      "created_at": "2026-11-13T22:37:39.675Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "f8b2cc05-c572-40e7-8f61-000925a21fc3",
+      "image_url": "https://images.petabencana.id/f8b2cc05-c572-40e7-8f61-000925a21fc3.jpg",
+      "disaster_type": "wind",
+      "is_training": false,
+      "report_data": {
+        "report_type": "wind",
+        "impact": 1
+      },
+      "tags": {
+        "city": "KUDUS",
+        "district_id": null,
+        "region_code": "3319",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Hujan deras disertai angin kencang yang melanda wilayah Kabupaten Kudus, Jawa Tengah, memicu terjadinya sejumlah pohon tumbang ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
