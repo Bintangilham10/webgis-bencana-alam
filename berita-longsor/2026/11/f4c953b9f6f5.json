@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiZEFVX3lxTE11QWFsZ3lmMGN3TlJFNTVjOGpGYzg1bmZ2WmwtQ1lIZE81RUNDdVRqVE9BVzZ1dTlyUHpFdS05QVk0OU1zNEtXZExaQ1hkVUJxLUZRUno0ODV0WWxzajdDT0xKVHM",
+  "title": "BPBD Buleleng Petakan Wilayah Rawan Longsor dan Banjir - bsinews.id",
+  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE11QWFsZ3lmMGN3TlJFNTVjOGpGYzg1bmZ2WmwtQ1lIZE81RUNDdVRqVE9BVzZ1dTlyUHpFdS05QVk0OU1zNEtXZExaQ1hkVUJxLUZRUno0ODV0WWxzajdDT0xKVHM?oc=5",
+  "source": "bsinews.id",
+  "source_url": "https://bsinews.id",
+  "published_at": "2026-11-12T23:35:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-13T00:15:35.204Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "51.08",
+      "nama": "Kabupaten Buleleng",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
