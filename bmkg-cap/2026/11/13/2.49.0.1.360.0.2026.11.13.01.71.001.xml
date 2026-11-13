@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.13.01.71.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-13T08:40:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-13T08:52:00+08:00</effective>
+    <expires>2026-11-13T10:50:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 13 November 2026, 08:52 WITA di sebagian wilayah Sulawesi Utara, khususnya di TABUKAN UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 13 November 2026, 10:50 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/13/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>3.635,125.573 3.633,125.557 3.628,125.545 3.610,125.527 3.617,125.509 3.624,125.509 3.635,125.486 3.651,125.485 3.657,125.479 3.674,125.467 3.680,125.458 3.710,125.454 3.735,125.459 3.728,125.493 3.720,125.510 3.666,125.556 3.653,125.561 3.645,125.573 3.637,125.576 3.635,125.573</polygon>
+      <polygon>4.437,125.694 4.432,125.696 4.432,125.689 4.437,125.688 4.437,125.694</polygon>
+      <polygon>3.870,125.724 3.867,125.722 3.873,125.721 3.870,125.724</polygon>
+    </area>
+  </info>
+</alert>
