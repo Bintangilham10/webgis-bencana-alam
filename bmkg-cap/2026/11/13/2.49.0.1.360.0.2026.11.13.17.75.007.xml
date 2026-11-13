@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.13.17.75.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-14T01:39:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-14T01:51:00+08:00</effective>
+    <expires>2026-11-14T03:51:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 November 2026, 01:51 WITA di sebagian wilayah Gorontalo, khususnya di TILAMUTA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 November 2026, 03:51 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/11/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.700,122.251 0.691,122.259 0.676,122.284 0.669,122.300 0.661,122.342 0.637,122.343 0.583,122.368 0.556,122.387 0.521,122.390 0.513,122.387 0.517,122.379 0.503,122.366 0.510,122.354 0.503,122.348 0.493,122.352 0.497,122.344 0.494,122.339 0.497,122.336 0.504,122.338 0.509,122.332 0.496,122.328 0.501,122.317 0.495,122.318 0.496,122.314 0.526,122.308 0.542,122.296 0.554,122.278 0.700,122.251</polygon>
+      <polygon>0.467,122.350 0.464,122.350 0.464,122.347 0.467,122.350</polygon>
+      <polygon>0.460,122.333 0.454,122.331 0.460,122.328 0.463,122.331 0.460,122.333</polygon>
+    </area>
+  </info>
+</alert>
