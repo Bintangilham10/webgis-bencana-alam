@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-13T22:30:46.671Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        100.6531977954,
+        -0.7992991434
+      ]
+    },
+    "properties": {
+      "pkey": "400035",
+      "created_at": "2026-11-13T22:17:38.342Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "229fdde7-ceac-4729-a839-ad80987e9685",
+      "image_url": "https://images.petabencana.id/229fdde7-ceac-4729-a839-ad80987e9685.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 56
+      },
+      "tags": {
+        "city": "SOLOK",
+        "district_id": null,
+        "region_code": "1302",
+        "local_area_id": null,
+        "instance_region_code": "ID-SB"
+      },
+      "title": null,
+      "text": "Luapan air akibat hujan intensitas sedang memicu banjir di kawasan Simpang Tabek Dangka, Kecamatan Gunung Talang, Kabupaten Solok",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

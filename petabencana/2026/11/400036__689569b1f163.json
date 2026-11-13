@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-13T22:30:46.671Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        115.0733196793,
+        -2.6271884098
+      ]
+    },
+    "properties": {
+      "pkey": "400036",
+      "created_at": "2026-11-13T22:28:35.513Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "2ac50c57-7b73-4dd6-8101-d8e6d110981c",
+      "image_url": "https://images.petabencana.id/2ac50c57-7b73-4dd6-8101-d8e6d110981c.jpg",
+      "disaster_type": "earthquake",
+      "is_training": false,
+      "report_data": {
+        "report_type": "road",
+        "accessabilityFailure": 0,
+        "condition": 1
+      },
+      "tags": {
+        "city": "HULU SUNGAI SELATAN",
+        "district_id": null,
+        "region_code": "6306",
+        "local_area_id": null,
+        "instance_region_code": "ID-KS"
+      },
+      "title": null,
+      "text": "tanah amblas melanda kawasan Jalan KH A. Basyar, Desa Samuda, Kecamatan Daha Selatan, Kabupaten Hulu Sungai Selatan, Kalimantan Selatan",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
