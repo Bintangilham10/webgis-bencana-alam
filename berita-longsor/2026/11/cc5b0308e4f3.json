@@ -1,0 +1,26 @@
+{
+  "guid": "CBMinAFBVV95cUxQWnF2a0Noa0VsVWRoRVBMOFE0bkY0SFpkZVVPdjlfYmhVTlBOQlNmZE9vcWpxUHJxbHBTZndFZ0FfQS1oSFdnVkwyWEN2LVRyWWdxMEVkUEpkdlJBT2w1SU1EY3BWcXNabXNDZEtGUTFzZDJ0cWg0dG9HUzMwOHM4RVg2SW5Fek9NRW5VSzNhMkc2RzVzaEk0azV6U28",
+  "title": "BPBD Bandung Waspadai Banjir, Warga Daerah Rawan Longsor Diminta Siaga - Inilahkoran.id",
+  "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQWnF2a0Noa0VsVWRoRVBMOFE0bkY0SFpkZVVPdjlfYmhVTlBOQlNmZE9vcWpxUHJxbHBTZndFZ0FfQS1oSFdnVkwyWEN2LVRyWWdxMEVkUEpkdlJBT2w1SU1EY3BWcXNabXNDZEtGUTFzZDJ0cWg0dG9HUzMwOHM4RVg2SW5Fek9NRW5VSzNhMkc2RzVzaEk0azV6U28?oc=5",
+  "source": "Inilahkoran.id",
+  "source_url": "https://www.inilahkoran.id",
+  "published_at": "2026-11-13T04:15:47.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-13T06:30:39.985Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

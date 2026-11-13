@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiqAFBVV95cUxPOUd4MHg3ZFFrVURxZWlVXzQzeUpfYlBWUmQ2SUp1M1lVV3hxZV9JYXNwRmlTRGgtS1RiLU1ON3lIZkt6ZWRWZkc3YjkyX19jLWNZcC00ZWpBMmVYQ0RERm5YbjBqbVZoNGJYYXVGLUswbEF5QzRnM2VOOFF2ZVdlSnE5M0JvUlJtU1ZseENodnlIU0ZNTG1VV2pVVFdkZkhXQnBLTTFBRTnSAasBQVVfeXFMUFhldUJibmc1cEtJQ1JJZjktWm5PcGkwWHo3bUFnemY4RjZINTg2bTZJcGhMMjdvR0lXV0FaU2dNVjU2TDFMNVMyZ0hrMDZfeEI0THZzdFAyYUpIeW9tdlBwbEpoaUEweEZ4aTBpMFhZOERjLWlNWGQ3dlB0NkFqZzBJWm5HcFpraG81NXJ3WF9JZkhxcjBvQ0owbnRRUXUwaUJFX21PWXFpaHBj",
+  "title": "3 titik longsor landa Agam, jalan Bukittinggi-Tanah Datar amblas - ANTARA News",
+  "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOUd4MHg3ZFFrVURxZWlVXzQzeUpfYlBWUmQ2SUp1M1lVV3hxZV9JYXNwRmlTRGgtS1RiLU1ON3lIZkt6ZWRWZkc3YjkyX19jLWNZcC00ZWpBMmVYQ0RERm5YbjBqbVZoNGJYYXVGLUswbEF5QzRnM2VOOFF2ZVdlSnE5M0JvUlJtU1ZseENodnlIU0ZNTG1VV2pVVFdkZkhXQnBLTTFBRTnSAasBQVVfeXFMUFhldUJibmc1cEtJQ1JJZjktWm5PcGkwWHo3bUFnemY4RjZINTg2bTZJcGhMMjdvR0lXV0FaU2dNVjU2TDFMNVMyZ0hrMDZfeEI0THZzdFAyYUpIeW9tdlBwbEpoaUEweEZ4aTBpMFhZOERjLWlNWGQ3dlB0NkFqZzBJWm5HcFpraG81NXJ3WF9JZkhxcjBvQ0owbnRRUXUwaUJFX21PWXFpaHBj?oc=5",
+  "source": "ANTARA News",
+  "source_url": "https://www.antaranews.com",
+  "published_at": "2026-11-12T10:02:47.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-13T06:30:39.985Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.04",
+      "nama": "Kabupaten Tanah Datar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.75",
+      "nama": "Kota Bukittinggi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.06",
+      "nama": "Kabupaten Agam",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

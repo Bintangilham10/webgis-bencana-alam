@@ -1,0 +1,21 @@
+{
+  "guid": "CBMirgFBVV95cUxNT3RleVg0Y3JLLTlyelpxQnVXVWJCZHNKbGZJZU9OTjJxZVVDbUhxVTkxYXFSZ0V0YWg2RVpRUDBRQWN4NlRXMzgySGtnWDl2YUFUUUxKVngtd3NYS1MwWWlNTWJ3Qm9EeWZnZUlxRVBzTHpwOWF3U2t3LUo3emdLLUF1U25hcHlTbU5TVHdHTURKUDN5U0pRYkJ5S3hQeGFfbmI2dFhMdUR2VTFLaGc",
+  "title": "Kementerian PU dukung penanganan darurat longsor di Jakarta Selatan - ANTARA News",
+  "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNT3RleVg0Y3JLLTlyelpxQnVXVWJCZHNKbGZJZU9OTjJxZVVDbUhxVTkxYXFSZ0V0YWg2RVpRUDBRQWN4NlRXMzgySGtnWDl2YUFUUUxKVngtd3NYS1MwWWlNTWJ3Qm9EeWZnZUlxRVBzTHpwOWF3U2t3LUo3emdLLUF1U25hcHlTbU5TVHdHTURKUDN5U0pRYkJ5S3hQeGFfbmI2dFhMdUR2VTFLaGc?oc=5",
+  "source": "ANTARA News",
+  "source_url": "https://www.antaranews.com",
+  "published_at": "2026-11-12T21:46:01.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-13T06:30:39.985Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "31.74",
+      "nama": "Kota Administrasi Jakarta Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
