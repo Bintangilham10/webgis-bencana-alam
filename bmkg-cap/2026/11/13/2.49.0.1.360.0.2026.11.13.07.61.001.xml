@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.13.07.61.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-13T13:25:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-13T13:30:00+07:00</effective>
+    <expires>2026-11-13T15:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 13 November 2026, 13:30 WIB di sebagian wilayah Kalimantan Barat, khususnya di GALING, JAWAI SELATAN, SAJAD, SEJANGKUNG, TUJUH BELAS.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 13 November 2026, 15:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/11/13/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>1.431,109.609 1.405,109.601 1.389,109.607 1.384,109.580 1.377,109.575 1.370,109.592 1.373,109.601 1.368,109.611 1.355,109.619 1.326,109.626 1.286,109.607 1.275,109.611 1.260,109.610 1.250,109.605 1.254,109.598 1.246,109.585 1.244,109.574 1.249,109.556 1.274,109.548 1.294,109.527 1.307,109.519 1.333,109.513 1.341,109.503 1.347,109.485 1.363,109.478 1.405,109.461 1.414,109.443 1.411,109.430 1.417,109.398 1.414,109.345 1.403,109.309 1.402,109.287 1.409,109.278 1.424,109.256 1.431,109.256 1.448,109.266 1.465,109.299 1.462,109.323 1.473,109.350 1.474,109.366 1.495,109.386 1.523,109.466 1.522,109.532 1.526,109.547 1.554,109.565 1.580,109.567 1.581,109.584 1.574,109.602 1.570,109.640 1.567,109.643 1.563,109.639 1.540,109.607 1.520,109.607 1.513,109.601 1.491,109.607 1.486,109.602 1.486,109.588 1.476,109.586 1.467,109.569 1.449,109.580 1.431,109.609</polygon>
+      <polygon>1.735,109.461 1.719,109.451 1.703,109.455 1.688,109.441 1.639,109.435 1.623,109.437 1.595,109.449 1.540,109.454 1.523,109.466 1.495,109.386 1.474,109.366 1.473,109.350 1.462,109.323 1.465,109.299 1.480,109.298 1.499,109.304 1.513,109.294 1.542,109.285 1.553,109.270 1.575,109.262 1.595,109.243 1.606,109.235 1.607,109.239 1.631,109.292 1.647,109.312 1.654,109.333 1.686,109.352 1.698,109.353 1.741,109.403 1.740,109.437 1.735,109.461</polygon>
+      <polygon>1.363,109.478 1.346,109.463 1.339,109.450 1.299,109.409 1.290,109.393 1.301,109.395 1.337,109.389 1.352,109.379 1.393,109.366 1.399,109.350 1.414,109.345 1.417,109.398 1.411,109.430 1.414,109.443 1.405,109.461 1.363,109.478</polygon>
+      <polygon>1.294,109.064 1.291,109.061 1.283,109.062 1.253,109.079 1.226,109.095 1.222,109.094 1.214,109.082 1.204,109.067 1.205,109.032 1.209,109.001 1.208,108.989 1.203,108.979 1.190,108.969 1.202,108.961 1.215,108.963 1.256,108.987 1.272,108.988 1.297,109.012 1.288,109.021 1.283,109.033 1.297,109.048 1.294,109.064</polygon>
+      <polygon>1.060,109.828 1.038,109.912 1.029,109.912 1.016,109.927 1.008,109.930 0.994,109.919 0.962,109.926 0.934,109.907 0.947,109.876 0.958,109.816 0.985,109.813 0.997,109.778 1.035,109.729 1.040,109.715 1.026,109.705 1.004,109.698 1.025,109.646 1.061,109.622 1.070,109.652 1.081,109.665 1.099,109.697 1.100,109.710 1.112,109.732 1.108,109.746 1.119,109.774 1.089,109.791 1.074,109.806 1.060,109.828</polygon>
+    </area>
+  </info>
+</alert>

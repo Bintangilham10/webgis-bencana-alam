@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.13.07.19.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-13T13:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-13T14:00:00+07:00</effective>
+    <expires>2026-11-13T16:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 13 November 2026, 14:00 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di KELAPA, PAYUNG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 13 November 2026, 16:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/11/13/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-2.566,106.200 -2.574,106.209 -2.591,106.213 -2.605,106.204 -2.613,106.209 -2.624,106.207 -2.616,106.224 -2.640,106.244 -2.640,106.253 -2.647,106.260 -2.664,106.249 -2.684,106.209 -2.726,106.207 -2.733,106.178 -2.726,106.160 -2.734,106.099 -2.727,106.079 -2.716,106.068 -2.709,106.051 -2.699,106.046 -2.682,106.051 -2.673,106.064 -2.555,106.074 -2.542,106.079 -2.535,106.087 -2.505,106.098 -2.496,106.087 -2.491,106.089 -2.489,106.104 -2.493,106.114 -2.501,106.121 -2.507,106.149 -2.521,106.151 -2.527,106.163 -2.559,106.186 -2.566,106.200</polygon>
+      <polygon>-1.761,105.668 -1.769,105.684 -1.783,105.698 -1.782,105.725 -1.769,105.747 -1.778,105.746 -1.785,105.746 -1.793,105.757 -1.802,105.751 -1.808,105.755 -1.808,105.760 -1.817,105.760 -1.825,105.742 -1.839,105.755 -1.861,105.748 -1.876,105.729 -1.891,105.719 -1.895,105.714 -1.892,105.699 -1.902,105.697 -1.916,105.705 -1.924,105.702 -1.947,105.717 -1.948,105.711 -1.962,105.696 -1.962,105.682 -2.020,105.635 -1.980,105.598 -1.921,105.582 -1.976,105.543 -1.957,105.530 -1.935,105.496 -1.901,105.482 -1.851,105.478 -1.801,105.481 -1.767,105.489 -1.776,105.598 -1.769,105.627 -1.755,105.658 -1.761,105.668</polygon>
+    </area>
+  </info>
+</alert>
