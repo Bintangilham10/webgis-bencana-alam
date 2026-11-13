@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.13.12.75.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-13T17:45:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-13T18:00:00+08:00</effective>
+    <expires>2026-11-13T21:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 13 November 2026, 18:00 WITA di sebagian wilayah Gorontalo, khususnya di BULANGO ULU, POPAYATO TIMUR, TALUDITI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 13 November 2026, 21:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/11/13/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.754,123.251 0.734,123.246 0.718,123.250 0.699,123.273 0.696,123.290 0.698,123.312 0.648,123.279 0.629,123.258 0.617,123.237 0.618,123.173 0.637,123.134 0.644,123.125 0.647,123.123 0.640,123.100 0.662,123.100 0.695,123.107 0.708,123.120 0.733,123.132 0.768,123.133 0.771,123.161 0.754,123.167 0.754,123.192 0.763,123.227 0.755,123.241 0.754,123.251</polygon>
+      <polygon>0.977,121.888 0.729,121.889 0.690,121.891 0.645,121.909 0.632,121.897 0.590,121.840 0.586,121.810 0.590,121.803 0.590,121.780 0.596,121.768 0.609,121.768 0.609,121.772 0.621,121.773 0.636,121.761 0.648,121.757 0.648,121.752 0.679,121.729 0.923,121.724 0.931,121.739 0.932,121.761 0.950,121.808 0.951,121.813 0.961,121.823 0.961,121.831 0.993,121.851 0.977,121.888</polygon>
+      <polygon>0.543,121.521 0.536,121.521 0.529,121.513 0.504,121.520 0.495,121.517 0.480,121.495 0.493,121.494 0.520,121.470 0.548,121.475 0.560,121.454 0.564,121.454 0.572,121.462 0.585,121.464 0.590,121.462 0.594,121.453 0.847,121.437 0.847,121.467 0.839,121.476 0.840,121.489 0.850,121.516 0.703,121.516 0.694,121.507 0.679,121.503 0.676,121.506 0.663,121.507 0.645,121.518 0.646,121.526 0.643,121.528 0.609,121.528 0.597,121.544 0.591,121.547 0.574,121.544 0.570,121.514 0.556,121.514 0.543,121.521</polygon>
+      <polygon>0.536,121.527 0.532,121.524 0.534,121.522 0.539,121.525 0.536,121.527</polygon>
+      <polygon>0.490,121.519 0.488,121.524 0.481,121.525 0.487,121.515 0.490,121.519</polygon>
+    </area>
+  </info>
+</alert>
