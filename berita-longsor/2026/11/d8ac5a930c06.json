@@ -1,0 +1,21 @@
+{
+  "guid": "CBMivAFBVV95cUxQQS1MaEVCei1BdnNDVmtiOE9mWmp4Y2s1RVhaYThhY3RYSjJLUm4zQ05lNWJMaUFhNE1QSmU0MkN4R2ZSNmNJUUxEa2s4aGtrM3lqMmY0YWxTQ25ZWkM4SnlUR3Fzc25xUXlET3hvb2pUcHlYcjdndU5SQTN6MGk4UElvd1NwcWFiVXNGQjFvTjZYS25feHNIdm1pUFZtcWxqaklXajY2aVNtaDZYUF93TzVUVnlGbHVYMDV2Yw",
+  "title": "Longsor Terjang 3 Kecamatan di Agam, 40 Hektare Sawah Terdampak dan Jalan Provinsi Amblas - Radar Sumbar",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQS1MaEVCei1BdnNDVmtiOE9mWmp4Y2s1RVhaYThhY3RYSjJLUm4zQ05lNWJMaUFhNE1QSmU0MkN4R2ZSNmNJUUxEa2s4aGtrM3lqMmY0YWxTQ25ZWkM4SnlUR3Fzc25xUXlET3hvb2pUcHlYcjdndU5SQTN6MGk4UElvd1NwcWFiVXNGQjFvTjZYS25feHNIdm1pUFZtcWxqaklXajY2aVNtaDZYUF93TzVUVnlGbHVYMDV2Yw?oc=5",
+  "source": "Radar Sumbar",
+  "source_url": "https://radarsumbar.com",
+  "published_at": "2026-11-12T12:01:43.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-13T03:30:37.358Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.06",
+      "nama": "Kabupaten Agam",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

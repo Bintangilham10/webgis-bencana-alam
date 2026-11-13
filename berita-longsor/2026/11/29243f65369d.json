@@ -1,0 +1,21 @@
+{
+  "guid": "CBMirwFBVV95cUxPTFdjZGVSWi1SUGtNRVhQT0tLNmVELW9aSm15MFJodFBWbTR1Skh0ZmhDRkFfRjQtQUdoQ3NPSXNYa0dMdnd0UTE2SVpVaG9pdjRpN0xSWDhqb2tqUjZ4cDZlMzN2Qmg5cU5BRlRvV2xaeDYtS3ZUN2tGRGNzUHJSWl9JOFJwSXhXREtTdmJSNXBZZFdhS0o4ZjB5U0FJYXA4UloxWTdnbHVva1pyU3kw",
+  "title": "Kementerian PU Tangani Darurat Longsor di Pejaten Timur Jakarta Selatan - pantau.com",
+  "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTFdjZGVSWi1SUGtNRVhQT0tLNmVELW9aSm15MFJodFBWbTR1Skh0ZmhDRkFfRjQtQUdoQ3NPSXNYa0dMdnd0UTE2SVpVaG9pdjRpN0xSWDhqb2tqUjZ4cDZlMzN2Qmg5cU5BRlRvV2xaeDYtS3ZUN2tGRGNzUHJSWl9JOFJwSXhXREtTdmJSNXBZZFdhS0o4ZjB5U0FJYXA4UloxWTdnbHVva1pyU3kw?oc=5",
+  "source": "pantau.com",
+  "source_url": "https://www.pantau.com",
+  "published_at": "2026-11-13T02:09:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-13T03:30:37.358Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "31.74",
+      "nama": "Kota Administrasi Jakarta Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
