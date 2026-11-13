@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-13T05:30:37.675Z",
+  "data": {
+    "Tanggal": "13 Nov 2026",
+    "Jam": "11:49:34 WIB",
+    "DateTime": "2026-11-13T04:49:34+00:00",
+    "Coordinates": "-8.22,116.77",
+    "Lintang": "8.22 LS",
+    "Bujur": "116.77 BT",
+    "Magnitude": "4.9",
+    "Kedalaman": "17 km",
+    "Wilayah": "Pusat gempa berada di laut 29 km Barat Laut PULAUPANJANG",
+    "Dirasakan": "IV Kab. Lombok Timur, III Kab. Lombok Tengah, III Kab. Lombok Barat, II-III Kota Mataram, II Kab. Sumbawa"
+  }
+}
