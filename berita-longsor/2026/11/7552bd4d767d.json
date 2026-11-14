@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqgFBVV95cUxNNW5aMGUxNGpreXZ1a1V1NWx3TjBNanROSmlBU0w1ejcyTmZ6OHoxekxCbUplV3ZEb0VqbzNtTUJoc0hzeklpcjhFLVl0cE1sM3phaE9sMVRoSk84RFVWcS1PaW8tMUJFRkVXRW55N05tQVVHOXZTQTkwcVhVVld3TjJwUUI3eGI0ZmJJalZGOHd2cFlEbThLTWZRRlNpaWVjdFc4bUpWNFdzZw",
+  "title": "Lima Kecamatan di Malang Rawan Banjir, Tanah Longsor dan Puting Beliung - Lentera.co",
+  "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNW5aMGUxNGpreXZ1a1V1NWx3TjBNanROSmlBU0w1ejcyTmZ6OHoxekxCbUplV3ZEb0VqbzNtTUJoc0hzeklpcjhFLVl0cE1sM3phaE9sMVRoSk84RFVWcS1PaW8tMUJFRkVXRW55N05tQVVHOXZTQTkwcVhVVld3TjJwUUI3eGI0ZmJJalZGOHd2cFlEbThLTWZRRlNpaWVjdFc4bUpWNFdzZw?oc=5",
+  "source": "Lentera.co",
+  "source_url": "https://lentera.co",
+  "published_at": "2026-11-14T04:24:34.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-14T04:30:41.573Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
