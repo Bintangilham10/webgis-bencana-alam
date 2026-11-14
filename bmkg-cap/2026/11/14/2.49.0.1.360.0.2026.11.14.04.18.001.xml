@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.14.03.18.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-14T09:03:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-14T09:13:00+07:00</effective>
+    <expires>2026-11-14T12:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Lampung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 November 2026, 09:13 WIB di sebagian wilayah Lampung, khususnya di PANCA JAYA, TANJUNG RAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 November 2026, 12:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CLG/2026/11/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Lampung</areaDesc>
+      <polygon>-3.984,105.296 -3.985,105.275 -3.995,105.275 -3.994,105.270 -3.974,105.268 -3.974,105.251 -3.959,105.251 -3.959,105.218 -3.954,105.217 -3.966,105.211 -3.924,105.210 -3.923,105.179 -3.918,105.179 -3.918,105.170 -3.905,105.179 -3.893,105.202 -3.890,105.230 -3.904,105.237 -3.904,105.251 -3.886,105.263 -3.880,105.274 -3.872,105.279 -3.872,105.287 -3.878,105.287 -3.878,105.292 -3.872,105.301 -3.872,105.314 -3.908,105.314 -3.908,105.307 -3.926,105.307 -3.932,105.301 -3.944,105.297 -3.984,105.296</polygon>
+      <polygon>-3.795,105.369 -3.798,105.383 -3.801,105.374 -3.815,105.375 -3.837,105.386 -3.847,105.397 -3.879,105.399 -3.882,105.388 -3.894,105.392 -3.913,105.412 -3.914,105.417 -3.909,105.429 -3.919,105.436 -3.929,105.454 -3.939,105.457 -3.961,105.449 -3.980,105.408 -3.987,105.399 -3.991,105.416 -4.004,105.407 -4.031,105.408 -4.020,105.382 -4.017,105.365 -4.011,105.357 -3.991,105.347 -4.001,105.340 -4.009,105.325 -4.009,105.315 -3.997,105.312 -3.989,105.318 -3.984,105.296 -3.944,105.297 -3.932,105.301 -3.926,105.307 -3.908,105.307 -3.908,105.314 -3.872,105.314 -3.872,105.301 -3.878,105.292 -3.878,105.287 -3.872,105.287 -3.872,105.279 -3.841,105.293 -3.833,105.286 -3.821,105.282 -3.798,105.284 -3.794,105.286 -3.796,105.300 -3.792,105.305 -3.756,105.309 -3.729,105.320 -3.725,105.336 -3.751,105.350 -3.776,105.350 -3.792,105.354 -3.798,105.362 -3.795,105.369</polygon>
+    </area>
+  </info>
+</alert>
