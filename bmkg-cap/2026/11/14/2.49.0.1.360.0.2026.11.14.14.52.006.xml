@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.14.14.52.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-14T21:40:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-14T21:50:00+08:00</effective>
+    <expires>2026-11-14T23:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 November 2026, 21:50 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di LABUHAN BADAS, MOYO UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 November 2026, 23:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/11/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.144,117.560 -8.155,117.606 -8.150,117.663 -8.166,117.684 -8.181,117.690 -8.191,117.680 -8.198,117.660 -8.212,117.647 -8.225,117.625 -8.238,117.610 -8.265,117.607 -8.282,117.586 -8.309,117.579 -8.316,117.574 -8.335,117.570 -8.371,117.547 -8.379,117.535 -8.390,117.528 -8.359,117.474 -8.351,117.472 -8.338,117.476 -8.317,117.493 -8.274,117.508 -8.268,117.507 -8.261,117.496 -8.257,117.479 -8.228,117.488 -8.208,117.479 -8.192,117.480 -8.182,117.486 -8.161,117.516 -8.144,117.560</polygon>
+      <polygon>-8.129,117.407 -8.134,117.423 -8.151,117.378 -8.156,117.376 -8.156,117.382 -8.160,117.381 -8.160,117.363 -8.157,117.358 -8.155,117.360 -8.155,117.345 -8.146,117.359 -8.146,117.377 -8.135,117.381 -8.131,117.388 -8.129,117.407</polygon>
+      <polygon>-8.468,117.408 -8.472,117.413 -8.483,117.394 -8.502,117.392 -8.523,117.396 -8.528,117.393 -8.520,117.367 -8.505,117.336 -8.529,117.320 -8.534,117.309 -8.532,117.292 -8.440,117.316 -8.442,117.332 -8.454,117.351 -8.458,117.369 -8.472,117.386 -8.468,117.408</polygon>
+      <polygon>-8.408,117.567 -8.447,117.537 -8.462,117.513 -8.474,117.502 -8.491,117.507 -8.496,117.502 -8.490,117.487 -8.495,117.457 -8.486,117.457 -8.464,117.441 -8.408,117.443 -8.396,117.427 -8.398,117.440 -8.412,117.455 -8.414,117.503 -8.410,117.532 -8.404,117.551 -8.408,117.567</polygon>
+    </area>
+  </info>
+</alert>

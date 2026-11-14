@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.14.14.82.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-14T22:15:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-14T22:35:00+09:00</effective>
+    <expires>2026-11-15T00:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Maluku Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 November 2026, 22:35 WIT di sebagian wilayah Maluku Utara, khususnya di KAO TELUK, MALIFUT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 15 November 2026, 00:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CMU/2026/11/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Maluku Utara</areaDesc>
+      <polygon>1.189,127.841 1.180,127.867 1.173,127.877 1.151,127.876 1.153,127.856 1.144,127.824 1.111,127.805 1.105,127.790 1.085,127.769 1.069,127.757 1.088,127.737 1.111,127.693 1.133,127.623 1.138,127.621 1.166,127.633 1.172,127.644 1.177,127.644 1.183,127.638 1.202,127.639 1.209,127.636 1.206,127.744 1.189,127.841</polygon>
+      <polygon>1.069,127.757 1.062,127.736 1.043,127.710 1.036,127.675 1.028,127.658 1.021,127.652 1.000,127.648 0.984,127.630 0.950,127.630 0.933,127.640 0.921,127.632 0.913,127.638 0.919,127.646 0.918,127.650 0.888,127.657 0.883,127.665 0.876,127.653 0.865,127.674 0.868,127.680 0.873,127.676 0.874,127.667 0.880,127.670 0.879,127.694 0.868,127.691 0.855,127.696 0.838,127.697 0.829,127.707 0.821,127.709 0.818,127.695 0.831,127.676 0.878,127.633 0.916,127.606 0.969,127.595 0.987,127.598 1.028,127.618 1.035,127.610 1.063,127.602 1.071,127.602 1.081,127.615 1.108,127.604 1.116,127.625 1.133,127.623 1.111,127.693 1.088,127.737 1.069,127.757</polygon>
+    </area>
+  </info>
+</alert>
