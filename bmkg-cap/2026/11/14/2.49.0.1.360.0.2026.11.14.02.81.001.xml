@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.14.02.81.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-14T09:45:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-14T10:00:00+09:00</effective>
+    <expires>2026-11-14T13:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Maluku</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 November 2026, 10:00 WIT di sebagian wilayah Maluku, khususnya di BAGUALA, LEIHITU BARAT, LEITIMUR SELATAN, NUSANIWE, SIRIMAU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 November 2026, 13:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CML/2026/11/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Maluku</areaDesc>
+      <polygon>-3.667,128.039 -3.692,128.051 -3.713,128.083 -3.719,128.078 -3.724,128.061 -3.738,128.036 -3.749,128.024 -3.767,128.014 -3.774,128.006 -3.780,127.996 -3.780,127.980 -3.773,127.963 -3.772,127.957 -3.777,127.953 -3.773,127.942 -3.745,127.933 -3.731,127.921 -3.718,127.917 -3.703,127.925 -3.706,127.933 -3.699,127.970 -3.702,127.981 -3.708,127.986 -3.654,128.025 -3.667,128.039</polygon>
+      <polygon>-3.531,127.951 -3.504,127.929 -3.520,127.906 -3.493,127.897 -3.493,127.900 -3.492,127.901 -3.493,127.915 -3.493,127.918 -3.493,127.920 -3.493,127.921 -3.493,127.921 -3.478,127.925 -3.477,127.926 -3.475,127.926 -3.468,127.931 -3.461,127.937 -3.458,127.945 -3.458,127.946 -3.457,127.955 -3.469,127.946 -3.481,127.944 -3.511,127.948 -3.528,127.960 -3.531,127.951</polygon>
+      <polygon>-3.696,128.175 -3.725,128.202 -3.733,128.208 -3.747,128.207 -3.752,128.197 -3.744,128.183 -3.750,128.160 -3.752,128.156 -3.772,128.150 -3.780,128.120 -3.794,128.095 -3.793,128.090 -3.772,128.105 -3.756,128.129 -3.745,128.130 -3.708,128.154 -3.696,128.175</polygon>
+      <polygon>-3.664,128.203 -3.670,128.209 -3.671,128.228 -3.686,128.238 -3.680,128.248 -3.668,128.255 -3.686,128.253 -3.714,128.244 -3.722,128.219 -3.719,128.218 -3.717,128.207 -3.724,128.207 -3.725,128.202 -3.696,128.175 -3.664,128.200 -3.664,128.203</polygon>
+      <polygon>-3.618,128.273 -3.619,128.261 -3.629,128.257 -3.643,128.272 -3.659,128.257 -3.668,128.255 -3.680,128.248 -3.686,128.238 -3.671,128.228 -3.670,128.209 -3.664,128.203 -3.655,128.216 -3.651,128.230 -3.636,128.246 -3.630,128.231 -3.635,128.224 -3.633,128.213 -3.606,128.192 -3.568,128.251 -3.618,128.273</polygon>
+      <polygon>-3.747,128.207 -3.733,128.208 -3.725,128.202 -3.724,128.207 -3.717,128.207 -3.719,128.218 -3.722,128.219 -3.714,128.244 -3.686,128.253 -3.668,128.255 -3.659,128.257 -3.643,128.272 -3.651,128.284 -3.667,128.297 -3.682,128.301 -3.695,128.300 -3.704,128.271 -3.731,128.262 -3.748,128.228 -3.747,128.207</polygon>
+    </area>
+  </info>
+</alert>
