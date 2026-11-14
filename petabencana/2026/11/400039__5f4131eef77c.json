@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-14T01:30:35.975Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        101.4505581843,
+        0.5262455
+      ]
+    },
+    "properties": {
+      "pkey": "400039",
+      "created_at": "2026-11-14T01:24:29.881Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "84296dec-73cd-4489-a75d-0a14093e0953",
+      "image_url": "https://images.petabencana.id/84296dec-73cd-4489-a75d-0a14093e0953.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 86.52747312859954,
+        "fireLocation": {
+          "lat": "0.5262455",
+          "lng": 101.450558184273
+        },
+        "personLocation": {
+          "lng": 101.45155603537677,
+          "lat": 0.5258203707099796
+        },
+        "fireRadius": {
+          "lng": 101.44980716574929,
+          "lat": 0.5260416607078042
+        }
+      },
+      "tags": {
+        "city": "KOTA PEKANBARU",
+        "district_id": null,
+        "region_code": "1471",
+        "local_area_id": null,
+        "instance_region_code": "ID-RI"
+      },
+      "title": null,
+      "text": "Kebakaran menghanguskan sebuah rumah warga di Jalan Mangga Besar, kawasan Harapan Raya, Kota Pekanbaru, Riau, pada Sabtu (14/11/2026) pagi",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
