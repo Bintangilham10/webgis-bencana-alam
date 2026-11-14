@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.14.11.19.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-14T17:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-14T17:40:00+07:00</effective>
+    <expires>2026-11-14T19:40:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 November 2026, 17:40 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di SELAT NASIK, TANJUNG PANDAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 November 2026, 19:40 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/11/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-2.711,107.784 -2.720,107.786 -2.729,107.775 -2.743,107.771 -2.757,107.777 -2.778,107.769 -2.796,107.755 -2.806,107.756 -2.814,107.764 -2.836,107.746 -2.837,107.737 -2.824,107.731 -2.803,107.704 -2.796,107.705 -2.793,107.715 -2.786,107.716 -2.775,107.703 -2.780,107.691 -2.795,107.675 -2.789,107.663 -2.798,107.659 -2.801,107.652 -2.798,107.638 -2.752,107.643 -2.746,107.640 -2.746,107.624 -2.723,107.629 -2.715,107.628 -2.706,107.622 -2.700,107.632 -2.705,107.649 -2.693,107.665 -2.709,107.692 -2.716,107.724 -2.724,107.739 -2.711,107.784</polygon>
+      <polygon>-2.798,107.637 -2.795,107.631 -2.799,107.613 -2.790,107.600 -2.786,107.596 -2.769,107.614 -2.761,107.612 -2.748,107.636 -2.753,107.642 -2.798,107.637</polygon>
+      <polygon>-2.765,107.596 -2.769,107.604 -2.771,107.599 -2.765,107.594 -2.765,107.596</polygon>
+      <polygon>-2.779,107.537 -2.784,107.541 -2.782,107.529 -2.778,107.531 -2.779,107.537</polygon>
+      <polygon>-2.822,107.464 -2.826,107.472 -2.841,107.478 -2.854,107.452 -2.847,107.470 -2.847,107.484 -2.850,107.486 -2.863,107.477 -2.903,107.472 -2.915,107.459 -2.921,107.433 -2.929,107.427 -2.927,107.420 -2.919,107.417 -2.919,107.411 -2.928,107.412 -2.931,107.424 -2.945,107.412 -2.918,107.385 -2.906,107.364 -2.892,107.355 -2.882,107.339 -2.877,107.351 -2.885,107.371 -2.880,107.378 -2.864,107.371 -2.852,107.378 -2.849,107.388 -2.838,107.400 -2.835,107.410 -2.827,107.422 -2.828,107.446 -2.822,107.464</polygon>
+      <polygon>-2.792,107.420 -2.805,107.425 -2.806,107.431 -2.813,107.434 -2.820,107.432 -2.833,107.400 -2.823,107.371 -2.817,107.379 -2.815,107.389 -2.818,107.398 -2.813,107.402 -2.804,107.398 -2.803,107.383 -2.798,107.386 -2.797,107.408 -2.792,107.420</polygon>
+      <polygon>-2.820,107.490 -2.825,107.501 -2.828,107.493 -2.844,107.487 -2.838,107.481 -2.825,107.478 -2.820,107.490</polygon>
+      <polygon>-2.843,107.506 -2.876,107.494 -2.877,107.491 -2.861,107.486 -2.844,107.500 -2.843,107.506</polygon>
+      <polygon>-2.930,107.488 -2.945,107.482 -2.932,107.479 -2.919,107.487 -2.930,107.488</polygon>
+      <polygon>-2.925,107.469 -2.945,107.470 -2.954,107.462 -2.968,107.463 -2.982,107.453 -2.986,107.443 -2.984,107.436 -2.967,107.427 -2.953,107.437 -2.960,107.428 -2.957,107.425 -2.939,107.432 -2.933,107.439 -2.924,107.461 -2.925,107.469</polygon>
+      <polygon>-2.961,107.230 -2.964,107.235 -2.967,107.220 -2.961,107.230</polygon>
+      <polygon>-2.988,107.131 -2.982,107.130 -2.979,107.134 -2.984,107.135 -2.988,107.131</polygon>
+      <polygon>-2.989,107.241 -3.000,107.233 -3.000,107.227 -2.992,107.225 -2.989,107.241</polygon>
+      <polygon>-2.999,107.272 -3.004,107.272 -2.998,107.269 -2.999,107.272</polygon>
+      <polygon>-3.022,107.172 -3.029,107.176 -3.033,107.166 -3.027,107.165 -3.022,107.172</polygon>
+      <polygon>-3.031,107.151 -3.038,107.154 -3.041,107.147 -3.036,107.145 -3.031,107.151</polygon>
+      <polygon>-3.047,107.386 -3.057,107.386 -3.044,107.384 -3.047,107.386</polygon>
+      <polygon>-3.056,107.394 -3.049,107.392 -3.051,107.395 -3.056,107.394</polygon>
+    </area>
+  </info>
+</alert>
