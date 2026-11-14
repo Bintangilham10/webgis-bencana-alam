@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiwgFBVV95cUxNd0pQLUpOTVZwWVVqdnVRUWM1cUE3cDZRMkl1QVFYZW1xcmxEZVVrZHp3b0RWQVU4NmtMdUU3eGZQQThrWGFaX1p2aGZnYVVTcE1OS0ItMTM4RTloVm9GRWtZNUpveEk4eGNlZHdTLVN3d2ZtS0NJWEt4RE5GeFd1WTZ3MlBKWGxyaWRrcGp2cXR5T1dHWW5xNkZHVnpvOHJPY3dIWWpKdmRnaHU3M0N6LWlubm1EWmNjMnVkanJTNmJ2UQ",
+  "title": "Jalur Garut–Pameungpeuk Kembali Beroperasi, Polisi Imbau Pengendara Waspada Longsor Susulan - Radar Garut",
+  "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNd0pQLUpOTVZwWVVqdnVRUWM1cUE3cDZRMkl1QVFYZW1xcmxEZVVrZHp3b0RWQVU4NmtMdUU3eGZQQThrWGFaX1p2aGZnYVVTcE1OS0ItMTM4RTloVm9GRWtZNUpveEk4eGNlZHdTLVN3d2ZtS0NJWEt4RE5GeFd1WTZ3MlBKWGxyaWRrcGp2cXR5T1dHWW5xNkZHVnpvOHJPY3dIWWpKdmRnaHU3M0N6LWlubm1EWmNjMnVkanJTNmJ2UQ?oc=5",
+  "source": "Radar Garut",
+  "source_url": "https://radargarut.id",
+  "published_at": "2026-11-14T11:34:12.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-14T13:45:33.519Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

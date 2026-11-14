@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiswFBVV95cUxPR3l3RTZYWWdPeVpBRmxVQWJRSFJWT2UwYXFrcDBGSVpkeVZPM0FOVFpIQWlGX3J4MExaVkpiQmt0dE5paGhPRzB3MVN0d3MyNDJXekFQNG9TWFFaNklVME1NUW45cExkNzk4cEZMTVdsd0lIQWRHc3NsVG1Mbzc0eDlMMzRrX1VjRXFja29PLWhLZTFNckVHakw3MkZoM0NFd3ByUUFXWWJBYWFyMG5wcWNvdw",
+  "title": "Kementerian PU Tangani Longsor Bener Meriah, Jalur Gayo Lues-Abdya Kembali Dibuka - Mitrapol",
+  "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPR3l3RTZYWWdPeVpBRmxVQWJRSFJWT2UwYXFrcDBGSVpkeVZPM0FOVFpIQWlGX3J4MExaVkpiQmt0dE5paGhPRzB3MVN0d3MyNDJXekFQNG9TWFFaNklVME1NUW45cExkNzk4cEZMTVdsd0lIQWRHc3NsVG1Mbzc0eDlMMzRrX1VjRXFja29PLWhLZTFNckVHakw3MkZoM0NFd3ByUUFXWWJBYWFyMG5wcWNvdw?oc=5",
+  "source": "Mitrapol",
+  "source_url": "https://mitrapol.com",
+  "published_at": "2026-11-14T13:00:38.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-14T13:45:33.519Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.17",
+      "nama": "Kabupaten Bener Meriah",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "11.13",
+      "nama": "Kabupaten Gayo Lues",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiswFBVV95cUxQV202YXdqRUVGdURPZTVYUG1uaGpPcFZ2MU4zb0hPa1MtMEZOa3hBeGwwOHc3LVpoYXdCNVppaGREUGFnUTQ0R3RtRzJ5X21rSjRLcGxPRFhCZHlOYTZqXzdnME8zNE9OcUh1TnlOOElCM2RBU1doRE9RdEtRRmM5SXN2OVJjTVlBSUEyRlF6WkdsY1NyS1J5a0lueDJ2dUt6d2pzQjVJWVI5S1NNSmM0OGw1cw",
+  "title": "Jalur Garut–Pameungpeuk Lumpuh Tertimbun Longsor, Polisi Berjibaku Bersama Warga - Radar Garut",
+  "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQV202YXdqRUVGdURPZTVYUG1uaGpPcFZ2MU4zb0hPa1MtMEZOa3hBeGwwOHc3LVpoYXdCNVppaGREUGFnUTQ0R3RtRzJ5X21rSjRLcGxPRFhCZHlOYTZqXzdnME8zNE9OcUh1TnlOOElCM2RBU1doRE9RdEtRRmM5SXN2OVJjTVlBSUEyRlF6WkdsY1NyS1J5a0lueDJ2dUt6d2pzQjVJWVI5S1NNSmM0OGw1cw?oc=5",
+  "source": "Radar Garut",
+  "source_url": "https://radargarut.id",
+  "published_at": "2026-11-14T11:19:50.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-14T13:45:33.519Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

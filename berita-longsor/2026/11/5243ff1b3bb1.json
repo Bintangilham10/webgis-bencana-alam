@@ -1,0 +1,28 @@
+{
+  "guid": "CBMirgFBVV95cUxQS3ducVhCSm1fWUUxZ1lWclUzSGpFSUFBUkViTkNRamZVNjJENXQzOE5jcGQ3dDFkNjJWMk9iWVJlZDc5ZG1pbTdqSzF3MVBLS0x4Q1oyXy0tdWozSHo2cEZfZjY1b1MyZGxtdFJNZWlGQTVzNXRxOFFpRGlXTWkzT1pjRTFBd2FBbDhxNXByeTBZYTZUYk5zS0lJOXRIdWh5S0NmeWVER2pSX051YXc",
+  "title": "Polda Gorontalo Kerahkan 60 Personil Bantu Korban Banjir dan Longsor di Dulamayo Selatan - Dulohupa.id",
+  "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQS3ducVhCSm1fWUUxZ1lWclUzSGpFSUFBUkViTkNRamZVNjJENXQzOE5jcGQ3dDFkNjJWMk9iWVJlZDc5ZG1pbTdqSzF3MVBLS0x4Q1oyXy0tdWozSHo2cEZfZjY1b1MyZGxtdFJNZWlGQTVzNXRxOFFpRGlXTWkzT1pjRTFBd2FBbDhxNXByeTBZYTZUYk5zS0lJOXRIdWh5S0NmeWVER2pSX051YXc?oc=5",
+  "source": "Dulohupa.id",
+  "source_url": "https://dulohupa.id",
+  "published_at": "2026-11-14T11:25:33.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-14T13:45:33.519Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "75.01",
+      "nama": "Kabupaten Gorontalo",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "75.71",
+      "nama": "Kota Gorontalo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Gorontalo"
+  ]
+}

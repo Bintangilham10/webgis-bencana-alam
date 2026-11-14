@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirgFBVV95cUxNTmkwMDE5UWt4YXQ4VkhnRjlRQmxGaFNTekREWEtWd1h6ZjM0aG9WQ2FlVFZ5aFRnMG1yaUxpS0xaMU9xakRFUjlnRk5hUUROMzRfekhELWFRT3FDMWQ0QlZWemREMVVqLTh3VE45SWVXRFNEY2d2SG51N2xhVWhNS1RPQnNLNm5lT2xfNDlLWWZEbDFCMllFcTFqVVhJOXlRRmtENmVSNVJpSzgwOGc",
+  "title": "Ancaman Longsor Kerinci-Merangin, BPJN Kaji Melalui Teknologi LiDAR - Tribunjambi.com",
+  "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTmkwMDE5UWt4YXQ4VkhnRjlRQmxGaFNTekREWEtWd1h6ZjM0aG9WQ2FlVFZ5aFRnMG1yaUxpS0xaMU9xakRFUjlnRk5hUUROMzRfekhELWFRT3FDMWQ0QlZWemREMVVqLTh3VE45SWVXRFNEY2d2SG51N2xhVWhNS1RPQnNLNm5lT2xfNDlLWWZEbDFCMllFcTFqVVhJOXlRRmtENmVSNVJpSzgwOGc?oc=5",
+  "source": "Tribunjambi.com",
+  "source_url": "https://jambi.tribunnews.com",
+  "published_at": "2026-11-14T10:49:14.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-14T13:45:33.519Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "15.02",
+      "nama": "Kabupaten Merangin",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "15.01",
+      "nama": "Kabupaten Kerinci",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

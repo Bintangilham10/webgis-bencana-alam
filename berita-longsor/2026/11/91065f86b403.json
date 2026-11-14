@@ -1,0 +1,23 @@
+{
+  "guid": "CBMi4gFBVV95cUxNS2cyR080MEFYcUZpazVZSHBqSm5JTm1JZEpnZld6MGxJVFY3cnJ1Z0x2cHA1VEF5RXM3cHRVb2tUYzljNzJTTlF1TDNEbTR6NjRjR1I5RE9JUFkwZWJtRW5YU1R2TDRYMTQ4SlA5VVJMS3psYUpwc2tSU29HLTJ3TU0xOEFVdUVsWUp6VVdOZkd2TmtHOHgxQXI2Q2R1UmtRbnpnSV94MGZYelVLYy1rS0xkV3ZuM2R2b2lJNDFzX1dBTmxjbjBsWFNVOGo3OF9jME9wUmluQkJuSEVHTVM4Yndn",
+  "title": "Breaking News: Longsor Tutup Jalan di Desa Bandar Agung Bengkulu Selatan, Arus Kendaraan Terputus - Tribunbengkulu.com",
+  "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNS2cyR080MEFYcUZpazVZSHBqSm5JTm1JZEpnZld6MGxJVFY3cnJ1Z0x2cHA1VEF5RXM3cHRVb2tUYzljNzJTTlF1TDNEbTR6NjRjR1I5RE9JUFkwZWJtRW5YU1R2TDRYMTQ4SlA5VVJMS3psYUpwc2tSU29HLTJ3TU0xOEFVdUVsWUp6VVdOZkd2TmtHOHgxQXI2Q2R1UmtRbnpnSV94MGZYelVLYy1rS0xkV3ZuM2R2b2lJNDFzX1dBTmxjbjBsWFNVOGo3OF9jME9wUmluQkJuSEVHTVM4Yndn?oc=5",
+  "source": "Tribunbengkulu.com",
+  "source_url": "https://bengkulu.tribunnews.com",
+  "published_at": "2026-11-14T12:15:39.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-14T13:45:33.519Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "17.01",
+      "nama": "Kabupaten Bengkulu Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bengkulu"
+  ]
+}

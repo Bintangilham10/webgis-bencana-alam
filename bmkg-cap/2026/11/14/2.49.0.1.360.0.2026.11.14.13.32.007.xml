@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.14.13.32.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-14T20:28:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-14T20:38:00+07:00</effective>
+    <expires>2026-11-14T22:28:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 November 2026, 20:38 WIB di sebagian wilayah Jawa Barat, khususnya di CIBINONG, CIKELET, LELES, PAMEUNGPEUK, SINDANGBARANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 November 2026, 22:28 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/11/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-7.207,107.251 -7.207,107.307 -7.213,107.307 -7.220,107.297 -7.236,107.290 -7.252,107.251 -7.272,107.230 -7.274,107.218 -7.290,107.211 -7.293,107.201 -7.317,107.200 -7.336,107.191 -7.342,107.195 -7.369,107.198 -7.367,107.190 -7.374,107.172 -7.397,107.159 -7.399,107.143 -7.391,107.135 -7.392,107.128 -7.410,107.125 -7.413,107.112 -7.435,107.114 -7.439,107.108 -7.434,107.079 -7.426,107.076 -7.406,107.088 -7.404,107.083 -7.410,107.072 -7.391,107.048 -7.360,107.050 -7.355,107.053 -7.353,107.062 -7.338,107.070 -7.326,107.067 -7.318,107.076 -7.302,107.082 -7.283,107.077 -7.285,107.110 -7.295,107.135 -7.295,107.163 -7.291,107.169 -7.279,107.174 -7.280,107.184 -7.264,107.196 -7.247,107.216 -7.226,107.222 -7.217,107.229 -7.209,107.240 -7.207,107.251</polygon>
+      <polygon>-7.369,107.198 -7.380,107.177 -7.394,107.178 -7.394,107.191 -7.409,107.213 -7.424,107.221 -7.448,107.210 -7.464,107.213 -7.470,107.211 -7.483,107.219 -7.455,107.094 -7.445,106.989 -7.435,106.996 -7.421,106.995 -7.411,106.988 -7.397,106.985 -7.389,106.986 -7.386,106.998 -7.391,107.048 -7.410,107.072 -7.404,107.083 -7.406,107.088 -7.426,107.076 -7.434,107.079 -7.439,107.108 -7.435,107.114 -7.413,107.112 -7.410,107.125 -7.392,107.128 -7.391,107.135 -7.399,107.143 -7.397,107.159 -7.374,107.172 -7.367,107.190 -7.369,107.198</polygon>
+      <polygon>-7.391,107.048 -7.386,106.998 -7.389,106.986 -7.397,106.985 -7.396,106.961 -7.392,106.963 -7.368,106.956 -7.366,106.970 -7.358,106.972 -7.340,106.954 -7.333,106.952 -7.325,106.964 -7.321,106.987 -7.303,106.998 -7.294,107.010 -7.297,107.017 -7.284,107.053 -7.283,107.077 -7.302,107.082 -7.318,107.076 -7.326,107.067 -7.338,107.070 -7.353,107.062 -7.355,107.053 -7.360,107.050 -7.391,107.048</polygon>
+      <polygon>-7.618,107.768 -7.637,107.755 -7.664,107.750 -7.671,107.739 -7.666,107.714 -7.669,107.694 -7.664,107.689 -7.657,107.700 -7.638,107.710 -7.610,107.711 -7.583,107.732 -7.572,107.735 -7.574,107.745 -7.589,107.760 -7.595,107.759 -7.607,107.740 -7.614,107.741 -7.624,107.753 -7.617,107.763 -7.618,107.768</polygon>
+      <polygon>-7.572,107.735 -7.583,107.732 -7.610,107.711 -7.638,107.710 -7.657,107.700 -7.664,107.689 -7.649,107.687 -7.628,107.675 -7.608,107.650 -7.598,107.625 -7.584,107.618 -7.564,107.623 -7.533,107.649 -7.526,107.660 -7.507,107.664 -7.501,107.685 -7.484,107.700 -7.475,107.714 -7.476,107.737 -7.468,107.753 -7.468,107.776 -7.481,107.777 -7.514,107.758 -7.522,107.746 -7.543,107.749 -7.557,107.739 -7.572,107.735</polygon>
+    </area>
+  </info>
+</alert>
