@@ -1,0 +1,31 @@
+{
+  "guid": "CBMilwFBVV95cUxPcFoxM1o2ZmxQSXo0NmFycWFhRkxPNl9yX0J3aS1NLVNKRXdMYWxMcDhZcW1rUGIyTWNyVUpFQjRLWGZ4Z1RQSmZBNTNBdFpNQ0FGeTJSbklCcWoyakFERnVDMFMydmxOR0otbFpGZzFrVzdZcURKMGoxb3VrWDZhUDNyZHV2S1JJMF9KLUlyUkNPcDJULTY4",
+  "title": "Longsor Hambat Jalur Garut–Tasikmalaya, Lalu Lintas Kembali Normal - Infogarut",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcFoxM1o2ZmxQSXo0NmFycWFhRkxPNl9yX0J3aS1NLVNKRXdMYWxMcDhZcW1rUGIyTWNyVUpFQjRLWGZ4Z1RQSmZBNTNBdFpNQ0FGeTJSbklCcWoyakFERnVDMFMydmxOR0otbFpGZzFrVzdZcURKMGoxb3VrWDZhUDNyZHV2S1JJMF9KLUlyUkNPcDJULTY4?oc=5",
+  "source": "Infogarut",
+  "source_url": "https://infogarut.id",
+  "published_at": "2026-11-14T17:25:22.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-14T20:00:42.787Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
