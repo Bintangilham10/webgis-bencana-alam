@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.14.19.73.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-15T02:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-15T02:30:00+08:00</effective>
+    <expires>2026-11-15T04:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 15 November 2026, 02:30 WITA di sebagian wilayah Sulawesi Selatan, khususnya di LAROMPONG, LAROMPONG SELATAN, PITUMPANUA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 15 November 2026, 04:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSL/2026/11/15/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Selatan</areaDesc>
+      <polygon>-3.664,120.412 -3.679,120.418 -3.681,120.428 -3.689,120.438 -3.709,120.437 -3.739,120.441 -3.747,120.439 -3.784,120.403 -3.776,120.346 -3.762,120.322 -3.766,120.321 -3.768,120.305 -3.753,120.288 -3.726,120.276 -3.719,120.281 -3.721,120.287 -3.718,120.297 -3.709,120.306 -3.690,120.314 -3.680,120.331 -3.666,120.330 -3.652,120.324 -3.650,120.345 -3.664,120.412</polygon>
+      <polygon>-3.498,120.382 -3.500,120.379 -3.507,120.381 -3.535,120.400 -3.559,120.405 -3.565,120.389 -3.590,120.380 -3.595,120.375 -3.595,120.355 -3.578,120.314 -3.579,120.307 -3.587,120.301 -3.610,120.296 -3.612,120.293 -3.604,120.286 -3.605,120.282 -3.625,120.292 -3.628,120.279 -3.632,120.278 -3.628,120.270 -3.620,120.268 -3.592,120.231 -3.592,120.207 -3.584,120.198 -3.549,120.192 -3.533,120.182 -3.508,120.179 -3.514,120.187 -3.505,120.219 -3.509,120.270 -3.502,120.355 -3.493,120.373 -3.498,120.382</polygon>
+      <polygon>-3.664,120.412 -3.650,120.345 -3.652,120.324 -3.649,120.305 -3.632,120.278 -3.628,120.279 -3.625,120.292 -3.605,120.282 -3.604,120.286 -3.612,120.293 -3.610,120.296 -3.587,120.301 -3.579,120.307 -3.578,120.314 -3.595,120.355 -3.595,120.375 -3.590,120.380 -3.565,120.389 -3.559,120.405 -3.574,120.417 -3.595,120.419 -3.643,120.412 -3.660,120.415 -3.664,120.412</polygon>
+    </area>
+  </info>
+</alert>
