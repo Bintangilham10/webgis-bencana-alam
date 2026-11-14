@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.14.07.31.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-14T14:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-14T14:10:00+07:00</effective>
+    <expires>2026-11-14T15:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 November 2026, 14:10 WIB di sebagian wilayah Jakarta, khususnya di BOJONGMANGU, CIKARANG PUSAT, CIKARANG TIMUR, JASINGA, SUKAJAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 November 2026, 15:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJK/2026/11/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jakarta</areaDesc>
+      <polygon>-6.442,106.509 -6.450,106.481 -6.460,106.473 -6.480,106.492 -6.499,106.503 -6.511,106.501 -6.524,106.494 -6.547,106.497 -6.545,106.486 -6.557,106.472 -6.555,106.447 -6.546,106.426 -6.548,106.420 -6.520,106.405 -6.468,106.412 -6.457,106.404 -6.454,106.405 -6.450,106.433 -6.444,106.441 -6.427,106.453 -6.407,106.451 -6.404,106.452 -6.396,106.444 -6.383,106.452 -6.378,106.458 -6.382,106.471 -6.408,106.475 -6.424,106.493 -6.418,106.500 -6.424,106.515 -6.442,106.509</polygon>
+      <polygon>-6.547,106.497 -6.562,106.513 -6.604,106.520 -6.643,106.501 -6.661,106.514 -6.670,106.514 -6.684,106.506 -6.698,106.507 -6.725,106.482 -6.734,106.459 -6.728,106.451 -6.708,106.450 -6.695,106.436 -6.682,106.429 -6.589,106.430 -6.569,106.424 -6.559,106.416 -6.551,106.423 -6.548,106.420 -6.546,106.426 -6.555,106.447 -6.557,106.472 -6.545,106.486 -6.547,106.497</polygon>
+      <polygon>-6.244,107.221 -6.266,107.214 -6.267,107.246 -6.275,107.236 -6.279,107.235 -6.274,107.267 -6.276,107.266 -6.286,107.264 -6.302,107.238 -6.303,107.229 -6.321,107.222 -6.321,107.219 -6.322,107.212 -6.328,107.209 -6.328,107.196 -6.313,107.168 -6.307,107.170 -6.290,107.172 -6.287,107.179 -6.270,107.185 -6.260,107.197 -6.249,107.198 -6.232,107.202 -6.235,107.212 -6.242,107.215 -6.244,107.221</polygon>
+      <polygon>-6.307,107.170 -6.313,107.168 -6.328,107.196 -6.328,107.209 -6.322,107.212 -6.321,107.219 -6.331,107.216 -6.335,107.223 -6.349,107.227 -6.351,107.220 -6.363,107.208 -6.375,107.205 -6.379,107.209 -6.381,107.219 -6.396,107.220 -6.397,107.189 -6.393,107.182 -6.390,107.183 -6.390,107.172 -6.382,107.164 -6.378,107.131 -6.375,107.128 -6.369,107.130 -6.349,107.143 -6.355,107.150 -6.353,107.178 -6.326,107.172 -6.317,107.157 -6.309,107.165 -6.304,107.165 -6.307,107.170</polygon>
+      <polygon>-6.396,107.220 -6.402,107.222 -6.422,107.202 -6.462,107.217 -6.469,107.209 -6.461,107.197 -6.482,107.172 -6.466,107.132 -6.467,107.123 -6.459,107.126 -6.455,107.132 -6.458,107.146 -6.446,107.165 -6.442,107.165 -6.440,107.153 -6.436,107.150 -6.425,107.150 -6.393,107.182 -6.397,107.189 -6.396,107.220</polygon>
+    </area>
+  </info>
+</alert>
