@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.14.18.33.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-15T01:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-15T01:10:00+07:00</effective>
+    <expires>2026-11-15T03:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 15 November 2026, 01:10 WIB di sebagian wilayah Jawa Tengah, khususnya di CILACAP SELATAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 15 November 2026, 03:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJH/2026/11/15/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Tengah</areaDesc>
+      <polygon>-7.677,108.806 -7.683,108.808 -7.690,108.832 -7.712,108.863 -7.718,108.878 -7.725,108.882 -7.727,108.892 -7.728,108.899 -7.722,108.915 -7.711,108.923 -7.720,108.940 -7.716,108.966 -7.735,108.985 -7.728,109.006 -7.714,109.004 -7.715,109.012 -7.728,109.008 -7.728,109.015 -7.719,109.016 -7.712,109.028 -7.703,109.036 -7.691,109.059 -7.694,109.064 -7.713,109.034 -7.732,109.022 -7.754,109.017 -7.761,109.019 -7.766,109.032 -7.760,109.043 -7.774,109.050 -7.784,109.045 -7.785,109.039 -7.778,109.029 -7.775,108.996 -7.763,108.960 -7.750,108.892 -7.742,108.866 -7.735,108.814 -7.740,108.798 -7.734,108.787 -7.720,108.794 -7.717,108.800 -7.712,108.800 -7.706,108.796 -7.706,108.789 -7.701,108.785 -7.687,108.802 -7.688,108.797 -7.684,108.794 -7.676,108.800 -7.676,108.801 -7.677,108.806</polygon>
+    </area>
+  </info>
+</alert>
