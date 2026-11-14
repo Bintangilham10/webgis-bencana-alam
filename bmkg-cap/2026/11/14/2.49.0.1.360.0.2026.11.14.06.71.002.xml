@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.14.06.71.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-14T14:11:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-14T14:15:00+08:00</effective>
+    <expires>2026-11-14T16:15:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 November 2026, 14:15 WITA di sebagian wilayah Sulawesi Utara, khususnya di TATOARENG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 November 2026, 16:15 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>3.190,125.527 3.184,125.534 3.170,125.539 3.159,125.531 3.156,125.513 3.171,125.499 3.174,125.506 3.171,125.516 3.175,125.515 3.177,125.505 3.185,125.505 3.189,125.513 3.173,125.518 3.174,125.526 3.191,125.521 3.190,125.527</polygon>
+      <polygon>3.255,125.462 3.243,125.472 3.236,125.467 3.232,125.454 3.239,125.448 3.249,125.448 3.255,125.462</polygon>
+      <polygon>3.141,125.457 3.142,125.448 3.146,125.447 3.149,125.453 3.141,125.457</polygon>
+      <polygon>3.096,125.497 3.092,125.496 3.095,125.488 3.100,125.493 3.096,125.497</polygon>
+      <polygon>3.094,125.483 3.093,125.477 3.099,125.483 3.094,125.483</polygon>
+      <polygon>3.085,125.507 3.077,125.511 3.058,125.506 3.064,125.500 3.075,125.505 3.080,125.495 3.093,125.503 3.087,125.503 3.085,125.507</polygon>
+      <polygon>3.062,125.487 3.059,125.490 3.062,125.483 3.062,125.487</polygon>
+    </area>
+  </info>
+</alert>
