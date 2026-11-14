@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.14.12.16.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-14T19:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-14T19:30:00+07:00</effective>
+    <expires>2026-11-14T21:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 November 2026, 19:30 WIB di sebagian wilayah Sumatera Selatan, khususnya di BUAY MADANG, BUAY PEMUKA PELIUNG, MARTAPURA, TANJUNG LUBUK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 November 2026, 21:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSS/2026/11/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Selatan</areaDesc>
+      <polygon>-3.465,104.784 -3.482,104.756 -3.494,104.769 -3.516,104.748 -3.520,104.748 -3.531,104.765 -3.541,104.767 -3.548,104.756 -3.571,104.754 -3.576,104.786 -3.587,104.784 -3.583,104.752 -3.595,104.738 -3.626,104.746 -3.652,104.758 -3.663,104.775 -3.681,104.760 -3.674,104.738 -3.666,104.739 -3.659,104.733 -3.649,104.705 -3.652,104.681 -3.658,104.664 -3.657,104.649 -3.652,104.648 -3.655,104.643 -3.626,104.642 -3.595,104.649 -3.579,104.649 -3.569,104.651 -3.556,104.661 -3.542,104.670 -3.493,104.679 -3.488,104.691 -3.486,104.697 -3.465,104.709 -3.474,104.727 -3.487,104.739 -3.480,104.743 -3.461,104.774 -3.465,104.784</polygon>
+      <polygon>-4.201,104.301 -4.229,104.303 -4.237,104.311 -4.243,104.319 -4.244,104.337 -4.266,104.370 -4.286,104.374 -4.293,104.391 -4.293,104.406 -4.301,104.416 -4.323,104.418 -4.323,104.425 -4.326,104.421 -4.338,104.413 -4.340,104.398 -4.348,104.385 -4.373,104.379 -4.399,104.350 -4.399,104.340 -4.394,104.329 -4.383,104.323 -4.369,104.324 -4.365,104.310 -4.349,104.329 -4.345,104.328 -4.314,104.272 -4.289,104.257 -4.271,104.240 -4.246,104.241 -4.240,104.259 -4.240,104.280 -4.231,104.284 -4.213,104.286 -4.201,104.301</polygon>
+      <polygon>-4.197,104.526 -4.243,104.541 -4.252,104.557 -4.266,104.553 -4.272,104.548 -4.278,104.532 -4.275,104.525 -4.277,104.517 -4.296,104.492 -4.297,104.488 -4.291,104.484 -4.296,104.482 -4.296,104.480 -4.283,104.467 -4.249,104.463 -4.205,104.444 -4.204,104.481 -4.208,104.487 -4.208,104.514 -4.197,104.526</polygon>
+      <polygon>-4.189,104.422 -4.205,104.444 -4.249,104.463 -4.283,104.467 -4.296,104.480 -4.307,104.479 -4.314,104.466 -4.312,104.461 -4.301,104.455 -4.301,104.447 -4.307,104.436 -4.316,104.437 -4.323,104.425 -4.323,104.418 -4.301,104.416 -4.293,104.406 -4.293,104.391 -4.286,104.374 -4.266,104.370 -4.244,104.337 -4.243,104.319 -4.237,104.311 -4.229,104.303 -4.201,104.301 -4.202,104.315 -4.198,104.326 -4.179,104.334 -4.189,104.350 -4.186,104.357 -4.193,104.384 -4.190,104.396 -4.198,104.404 -4.197,104.413 -4.189,104.422</polygon>
+      <polygon>-4.246,104.241 -4.271,104.240 -4.271,104.231 -4.250,104.227 -4.236,104.225 -4.236,104.232 -4.246,104.241</polygon>
+    </area>
+  </info>
+</alert>
