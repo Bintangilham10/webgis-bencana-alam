@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-14T01:45:39.452Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.7809093802,
+        -6.1377294
+      ]
+    },
+    "properties": {
+      "pkey": "400040",
+      "created_at": "2026-11-14T01:35:32.285Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "9b0461f2-a9c4-4f6a-8f99-dbd692934de7",
+      "image_url": "https://images.petabencana.id/9b0461f2-a9c4-4f6a-8f99-dbd692934de7.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 154.93404872985687,
+        "fireLocation": {
+          "lat": "-6.1377294",
+          "lng": 106.780909380228
+        },
+        "personLocation": {
+          "lng": 106.78172507235229,
+          "lat": -6.137734733670271
+        },
+        "fireRadius": {
+          "lng": 106.77952536037793,
+          "lat": -6.1379480803399105
+        }
+      },
+      "tags": {
+        "city": "JAKARTA UTARA",
+        "district_id": null,
+        "region_code": "3172",
+        "local_area_id": "21791",
+        "instance_region_code": "ID-JK"
+      },
+      "title": null,
+      "text": "Kebakaran melanda sejumlah rumah toko (ruko) di Jalan Teluk Gong Raya, tepatnya di depan Pasar Teluk Gong, Kecamatan Penjaringan",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
