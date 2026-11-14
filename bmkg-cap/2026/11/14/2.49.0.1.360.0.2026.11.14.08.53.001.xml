@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.14.08.53.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-14T14:30:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-14T15:00:00+08:00</effective>
+    <expires>2026-11-14T17:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 14 November 2026, 15:00 WITA di sebagian wilayah Nusa Tenggara Timur, khususnya di KATIKU TANA, KOTA WAIKABUBAK, LOLI, MAMBORO, TANA RIGHU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 14 November 2026, 17:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNT/2026/11/14/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Timur</areaDesc>
+      <polygon>-9.374,119.416 -9.412,119.421 -9.419,119.428 -9.437,119.433 -9.464,119.447 -9.468,119.453 -9.479,119.453 -9.491,119.462 -9.500,119.462 -9.503,119.458 -9.528,119.476 -9.533,119.461 -9.549,119.443 -9.562,119.414 -9.553,119.410 -9.543,119.394 -9.523,119.394 -9.512,119.385 -9.505,119.387 -9.502,119.377 -9.454,119.376 -9.423,119.377 -9.395,119.394 -9.383,119.391 -9.375,119.406 -9.374,119.416</polygon>
+      <polygon>-9.536,119.519 -9.536,119.519 -9.544,119.515 -9.563,119.516 -9.578,119.506 -9.573,119.501 -9.573,119.489 -9.585,119.460 -9.587,119.439 -9.620,119.423 -9.624,119.387 -9.621,119.384 -9.624,119.376 -9.629,119.378 -9.637,119.404 -9.642,119.408 -9.635,119.415 -9.638,119.424 -9.648,119.423 -9.656,119.413 -9.662,119.411 -9.678,119.416 -9.687,119.399 -9.675,119.393 -9.655,119.373 -9.654,119.346 -9.636,119.324 -9.618,119.333 -9.624,119.341 -9.615,119.359 -9.616,119.365 -9.596,119.378 -9.562,119.414 -9.549,119.443 -9.533,119.461 -9.528,119.476 -9.527,119.493 -9.536,119.519</polygon>
+      <polygon>-9.624,119.483 -9.642,119.487 -9.651,119.485 -9.635,119.458 -9.626,119.452 -9.621,119.456 -9.624,119.475 -9.621,119.483 -9.624,119.483</polygon>
+      <polygon>-9.578,119.506 -9.606,119.481 -9.621,119.483 -9.624,119.475 -9.621,119.456 -9.626,119.452 -9.635,119.458 -9.651,119.485 -9.657,119.481 -9.671,119.428 -9.678,119.416 -9.662,119.411 -9.656,119.413 -9.648,119.423 -9.638,119.424 -9.635,119.415 -9.642,119.408 -9.637,119.404 -9.629,119.378 -9.624,119.376 -9.621,119.384 -9.624,119.387 -9.620,119.423 -9.587,119.439 -9.585,119.460 -9.573,119.489 -9.573,119.501 -9.578,119.506</polygon>
+      <polygon>-9.612,119.585 -9.611,119.542 -9.624,119.483 -9.621,119.483 -9.606,119.481 -9.578,119.506 -9.563,119.516 -9.544,119.515 -9.536,119.519 -9.548,119.540 -9.548,119.551 -9.536,119.558 -9.540,119.569 -9.612,119.585</polygon>
+      <polygon>-9.367,119.656 -9.378,119.654 -9.406,119.640 -9.424,119.645 -9.441,119.642 -9.446,119.638 -9.447,119.632 -9.448,119.601 -9.464,119.581 -9.484,119.569 -9.491,119.558 -9.487,119.538 -9.491,119.524 -9.497,119.524 -9.498,119.528 -9.536,119.519 -9.527,119.493 -9.528,119.476 -9.503,119.458 -9.500,119.462 -9.491,119.462 -9.479,119.453 -9.468,119.453 -9.464,119.447 -9.437,119.433 -9.419,119.428 -9.412,119.421 -9.374,119.416 -9.375,119.424 -9.362,119.450 -9.358,119.472 -9.376,119.515 -9.378,119.532 -9.372,119.551 -9.355,119.575 -9.345,119.616 -9.346,119.632 -9.367,119.656</polygon>
+    </area>
+  </info>
+</alert>
