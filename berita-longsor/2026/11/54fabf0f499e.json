@@ -1,0 +1,31 @@
+{
+  "guid": "CBMi0wFBVV95cUxPZVl0VDdoUEZwRU9uSlVJdWh4c2NkQzFpbjdsblY5U1Z6U3c0Snl0cEF0Q2o3a3RJUzZMNVkxSjVMU05taTNLdjM2dFBmS3BZMTFwNEkxUldiMWRIQTRlR3JtYVByaVNVdGRCSnRkWHg3amFlLTBSWU9yUE1VUmZjVnhtMUg2T1ZTTW1NVUI3bVdJTlRuWTI2VmR5T1QyaWFiLVJYVGtLRlVOcnZzZE1VYXhkb09XRkNCZ1h4R0RLQldTdTFsWU9OM1RqWnZ5UXk0RVVV",
+  "title": "Tasikmalaya pun Diterjang Longsor Menutup Jalan Raya, Jalur ke Garut Berlakukan Buka Tutup - | kejakimpolnews.com",
+  "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZVl0VDdoUEZwRU9uSlVJdWh4c2NkQzFpbjdsblY5U1Z6U3c0Snl0cEF0Q2o3a3RJUzZMNVkxSjVMU05taTNLdjM2dFBmS3BZMTFwNEkxUldiMWRIQTRlR3JtYVByaVNVdGRCSnRkWHg3amFlLTBSWU9yUE1VUmZjVnhtMUg2T1ZTTW1NVUI3bVdJTlRuWTI2VmR5T1QyaWFiLVJYVGtLRlVOcnZzZE1VYXhkb09XRkNCZ1h4R0RLQldTdTFsWU9OM1RqWnZ5UXk0RVVV?oc=5",
+  "source": "| kejakimpolnews.com",
+  "source_url": "https://kejakimpolnews.com",
+  "published_at": "2026-11-14T09:25:56.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-14T10:45:26.826Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

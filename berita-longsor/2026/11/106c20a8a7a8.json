@@ -1,0 +1,33 @@
+{
+  "guid": "CBMisgJBVV95cUxNUTJodzgwWUtuWXRvSE02UV96emduR0JfTm5kOTZaMHZpek8zeVV5dUJVcC10Sjh5YndCd0ZUdm0zeFNWRmJkWTdaeXQ3QTNIQ01VOFR1OFg4Sms3ZVVQazZ4d1FFQzE2Ui1VenYxYTFtYVRxTGJZZlJ4eUc4cW0yaHNYeGNkdHdVRnpUbFQtaGk1ckVPVjY3ZGd0RDZmZHYwaEp6V1QyaTE0VGtXN3M4b3JfMEZwT2p3LTY3LUtCVWFMY0dEQmNIN1lROE5wWjZjRkFjQVBzMC00MW4tcEVKMmpkQzY1NlVadnUxWXluelI4MDc4eUxveUxyUTZYejVwTW03VE9KR3kzMXAtXzZpTW5RcHY0U3loQ2dranpmUWZ5U0dURkpPWHkweEtkelhoUlE",
+  "title": "Kementerian PU, Dody Hanggodo, longsor Aceh, jalan rusak Aceh, Bener Meriah, Gayo Lues, Aceh Barat Daya, BPJN Aceh, infrastruktur jalan, pemulihan bencana, distribusi komoditas, konektivitas antarwilayah - rentak.id",
+  "link": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNUTJodzgwWUtuWXRvSE02UV96emduR0JfTm5kOTZaMHZpek8zeVV5dUJVcC10Sjh5YndCd0ZUdm0zeFNWRmJkWTdaeXQ3QTNIQ01VOFR1OFg4Sms3ZVVQazZ4d1FFQzE2Ui1VenYxYTFtYVRxTGJZZlJ4eUc4cW0yaHNYeGNkdHdVRnpUbFQtaGk1ckVPVjY3ZGd0RDZmZHYwaEp6V1QyaTE0VGtXN3M4b3JfMEZwT2p3LTY3LUtCVWFMY0dEQmNIN1lROE5wWjZjRkFjQVBzMC00MW4tcEVKMmpkQzY1NlVadnUxWXluelI4MDc4eUxveUxyUTZYejVwTW03VE9KR3kzMXAtXzZpTW5RcHY0U3loQ2dranpmUWZ5U0dURkpPWHkweEtkelhoUlE?oc=5",
+  "source": "rentak.id",
+  "source_url": "https://rentak.id",
+  "published_at": "2026-11-14T08:58:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-14T10:45:26.826Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.12",
+      "nama": "Kabupaten Aceh Barat Daya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "11.17",
+      "nama": "Kabupaten Bener Meriah",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "11.13",
+      "nama": "Kabupaten Gayo Lues",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

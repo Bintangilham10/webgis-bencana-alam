@@ -1,0 +1,21 @@
+{
+  "guid": "CBMizAFBVV95cUxQVTBjZGN5WW0ycFhsNWJTbjhVX1N5VEN3a3ZOMnhubVZXVHVnTHh4LWc4cFBTTjJnRHFaRVJrcHU5OS1RdlNlRENjTVhCaDBkNVZfZTZGUS0yQVBOdG9jdnZIUWJSNm50OVBlekdaeEhXNWMxdVhtV1g0LS1yT1AtMzBjZXJIOEdvZ0tUQ1YySC16cFRRYmhlLWJTN1FSQXVSbFZyNGdHSjZJdUg3R2lEZWRUOFpRTzJVOHdZY0VlT3g0NE1yWVhGOXZMRlQ",
+  "title": "Sanggau Berstatus AWAS Curah Hujan Tinggi, BPBD Ingatkan Ancaman Banjir dan Longsor - Harian Berkat",
+  "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVTBjZGN5WW0ycFhsNWJTbjhVX1N5VEN3a3ZOMnhubVZXVHVnTHh4LWc4cFBTTjJnRHFaRVJrcHU5OS1RdlNlRENjTVhCaDBkNVZfZTZGUS0yQVBOdG9jdnZIUWJSNm50OVBlekdaeEhXNWMxdVhtV1g0LS1yT1AtMzBjZXJIOEdvZ0tUQ1YySC16cFRRYmhlLWJTN1FSQXVSbFZyNGdHSjZJdUg3R2lEZWRUOFpRTzJVOHdZY0VlT3g0NE1yWVhGOXZMRlQ?oc=5",
+  "source": "Harian Berkat",
+  "source_url": "https://kabarsanggau.harianberkat.com",
+  "published_at": "2026-11-14T09:58:04.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-14T10:45:26.826Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "61.03",
+      "nama": "Kabupaten Sanggau",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

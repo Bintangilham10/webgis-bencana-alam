@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiaEFVX3lxTE5FcUJkVktEQWhjYzdMUjlDcUdQQUNzWGdBVDByWDY2QV9YYXpCMjBJQmE4Z2gwQzVGNlNxWkJ0OXFUUTFHU3Field2blNJaXFabEg5cGo5TlpDOVFwTVpfSWxQMHBTOGRm",
+  "title": "Hujan Deras Picu Banjir dan Longsor di 10 Kecamatan Tasikmalaya - bsinews.id",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5FcUJkVktEQWhjYzdMUjlDcUdQQUNzWGdBVDByWDY2QV9YYXpCMjBJQmE4Z2gwQzVGNlNxWkJ0OXFUUTFHU3Field2blNJaXFabEg5cGo5TlpDOVFwTVpfSWxQMHBTOGRm?oc=5",
+  "source": "bsinews.id",
+  "source_url": "https://bsinews.id",
+  "published_at": "2026-11-14T08:38:37.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-14T10:45:26.826Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
