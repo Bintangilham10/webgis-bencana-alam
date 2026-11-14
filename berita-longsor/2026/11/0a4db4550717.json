@@ -1,0 +1,31 @@
+{
+  "guid": "CBMirAFBVV95cUxQSi1tOThvZlNMM1JvYzRNOTNDSU1JdlFFWll1WlRwUTA4ckdqVUF2ck9qa0tqRTNpTkctTkNJSGREN3FOdUU2S0VxWDZLa3hOMWVFSm95ZHZmTGFORHYyY252dnJlSFFYVTl3RnVWall6di0wbWNiMDMzbmFUNFdKMjlFNkhMLWRvemYwQl9IV0RUR3RVX0pYWEZLbVpOcnp1Mmx0T1lPc05HWkxP",
+  "title": "Sempat Tertimbun Longsor, Jalur Perbatasan Garut–Tasikmalaya Kembali Normal - Radar Garut",
+  "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSi1tOThvZlNMM1JvYzRNOTNDSU1JdlFFWll1WlRwUTA4ckdqVUF2ck9qa0tqRTNpTkctTkNJSGREN3FOdUU2S0VxWDZLa3hOMWVFSm95ZHZmTGFORHYyY252dnJlSFFYVTl3RnVWall6di0wbWNiMDMzbmFUNFdKMjlFNkhMLWRvemYwQl9IV0RUR3RVX0pYWEZLbVpOcnp1Mmx0T1lPc05HWkxP?oc=5",
+  "source": "Radar Garut",
+  "source_url": "https://radargarut.id",
+  "published_at": "2026-11-14T15:15:42.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-14T17:00:41.331Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

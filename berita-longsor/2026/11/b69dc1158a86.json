@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi5AFBVV95cUxOaHRNSTVlRDVkQklYQUxUc2c3VzZUVEVPeU1pNndKM0lIWEdLS3BScG1hWGtJTTlBSmZydDhScjNiMnBIcGZRQ1RhLThISlk1UUFlcVIzWXFmTEZnaV9DUGRldDJpQm15Mm40TG9uUTZNNkd4aVNNVk1RblZzUlI3UmZFR2tORkdQeGdVb3VBU0xRaV9Eb2RrM3hidHBZUm5tWHJHUk9DclE5VzBxYXRpZUNsNXRRSVVuaWNNUjRRcm90V0dDWmpLTEVlbzA5MFFWTjdQbXktLU1DTXBVemxNLVRpY1g",
+  "title": "Lahan Pembuangan Lumpur Kali Rawalumbu Bekasi Longsor, Tembok Rumah Warga Rusak - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOaHRNSTVlRDVkQklYQUxUc2c3VzZUVEVPeU1pNndKM0lIWEdLS3BScG1hWGtJTTlBSmZydDhScjNiMnBIcGZRQ1RhLThISlk1UUFlcVIzWXFmTEZnaV9DUGRldDJpQm15Mm40TG9uUTZNNkd4aVNNVk1RblZzUlI3UmZFR2tORkdQeGdVb3VBU0xRaV9Eb2RrM3hidHBZUm5tWHJHUk9DclE5VzBxYXRpZUNsNXRRSVVuaWNNUjRRcm90V0dDWmpLTEVlbzA5MFFWTjdQbXktLU1DTXBVemxNLVRpY1g?oc=5",
+  "source": "Kompas.com",
+  "source_url": "http://megapolitan.kompas.com",
+  "published_at": "2026-11-14T14:53:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-14T17:00:41.331Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.16",
+      "nama": "Kabupaten Bekasi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.75",
+      "nama": "Kota Bekasi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

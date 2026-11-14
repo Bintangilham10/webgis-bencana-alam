@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivwFBVV95cUxQVm9rR1BWSmJxY1JDRDJFcXA4a0Y3X1ZfNFd2Zk1UM09wVTNDZU50elFTeFZNTzlKY3djZ0lPRkdtWTNlSk9BcEV5NHFNUGNoRHc1R250ckFqbjFSMWE1ZjZDZkZzMVBBRTUxYnlGUW1QR0ZUa1FHV25sWDgwYlk5U1VMa1p6Z0NVV3JQUTh1ZVc0RW01cGx0endoQXZBRWpjbEU0SWVxaGFJNDlOcmYtV2swN1FJblppRmY4bnJIRQ",
+  "title": "Tinjau Lokasi Bencana Longsor, Kapolres Tasikmalaya Beri Bantuan untuk Korban - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVm9rR1BWSmJxY1JDRDJFcXA4a0Y3X1ZfNFd2Zk1UM09wVTNDZU50elFTeFZNTzlKY3djZ0lPRkdtWTNlSk9BcEV5NHFNUGNoRHc1R250ckFqbjFSMWE1ZjZDZkZzMVBBRTUxYnlGUW1QR0ZUa1FHV25sWDgwYlk5U1VMa1p6Z0NVV3JQUTh1ZVc0RW01cGx0endoQXZBRWpjbEU0SWVxaGFJNDlOcmYtV2swN1FJblppRmY4bnJIRQ?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-14T14:36:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-14T17:00:41.331Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

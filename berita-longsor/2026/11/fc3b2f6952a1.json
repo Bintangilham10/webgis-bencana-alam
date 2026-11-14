@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiwgFBVV95cUxORzFmVEkxQ2dVX3dtSlNUN3VjYXVlVDUzeElOc0NoYmd6QlA2TGwwZGpyU2VHamQ4aWEySTZ2ZXJWeVQ0dS1GZmJ1TTJjN3B4ZGFOQmQwVUlDQ19MeEVwbnRDY053WEF5RWZvWkFiRnhVbkxpUUxIQWtydE1EdnVpNERjOF9sYUdlWHNTUkRsMUI1R2kwWFk4NXp3WF84TkoxUDZFQVA1anZtbC1HbjdieWhIMnVHNGtXbElEdHZrYjVzUQ",
+  "title": "Polda Gorontalo Kerahkan Personel Bantu Penanganan Banjir dan Longsor di Dulamayo Selatan - kabarpublik",
+  "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORzFmVEkxQ2dVX3dtSlNUN3VjYXVlVDUzeElOc0NoYmd6QlA2TGwwZGpyU2VHamQ4aWEySTZ2ZXJWeVQ0dS1GZmJ1TTJjN3B4ZGFOQmQwVUlDQ19MeEVwbnRDY053WEF5RWZvWkFiRnhVbkxpUUxIQWtydE1EdnVpNERjOF9sYUdlWHNTUkRsMUI1R2kwWFk4NXp3WF84TkoxUDZFQVA1anZtbC1HbjdieWhIMnVHNGtXbElEdHZrYjVzUQ?oc=5",
+  "source": "kabarpublik",
+  "source_url": "https://kabarpublik.id",
+  "published_at": "2026-11-14T15:14:32.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-14T17:00:41.331Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "75.01",
+      "nama": "Kabupaten Gorontalo",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "75.71",
+      "nama": "Kota Gorontalo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Gorontalo"
+  ]
+}

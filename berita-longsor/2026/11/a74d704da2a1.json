@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivwFBVV95cUxNQWx5Z2xIZ3RDZG8wd3BFLUd0Wk4tbzEtRnF4TF9zNWR2TGJ5dXJHRWFKWTNUcDZmRlplaEhKcjdVR1ZFWnZRZ2J3RHl0UVVQUHk4V0dMR00ycnM2THpJS2c2RURjckMyaUh2R0RtMDVXenIzWmo0LVNWZXJ6Q0pLQjRiVm1aanAycEswYTdvU1dJMFBHY25uTE1wMktoTmxiRk5jdFlKajBEeFk0YWs3ZGtKOUtOYjNYYzhFX1JEMA",
+  "title": "Banjir dan Longsor Terjang 15 Kecamatan di Tasikmalaya, Puluhan Warga Mengungsi - Media Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQWx5Z2xIZ3RDZG8wd3BFLUd0Wk4tbzEtRnF4TF9zNWR2TGJ5dXJHRWFKWTNUcDZmRlplaEhKcjdVR1ZFWnZRZ2J3RHl0UVVQUHk4V0dMR00ycnM2THpJS2c2RURjckMyaUh2R0RtMDVXenIzWmo0LVNWZXJ6Q0pLQjRiVm1aanAycEswYTdvU1dJMFBHY25uTE1wMktoTmxiRk5jdFlKajBEeFk0YWs3ZGtKOUtOYjNYYzhFX1JEMA?oc=5",
+  "source": "Media Indonesia",
+  "source_url": "https://mediaindonesia.com",
+  "published_at": "2026-11-14T13:47:52.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-14T17:00:41.331Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

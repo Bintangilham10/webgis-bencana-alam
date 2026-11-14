@@ -1,0 +1,31 @@
+{
+  "guid": "CBMixgFBVV95cUxOVldhZmR2SG9BRkR3RTViUFUzNkdJdTFrZjFPX0hxcWpycWl2TWJVVEh1QllRdms2aV9Qd243NmJwVFo0UTFtYm1aeEtIcFZJMFl0b3R6N0ZhRXJzeVpZdGgxcG1FaEx2WnpydXU3aTdVdG5BbHpITkZSMkZfNTh4cE5XSGpVZG1HX2lldUFzLS1HQ1h5LW9zNHZjWmVTd041dUNET2dLLXN3ZnVQa1dCeDRGdHFMOUk4R0k3SDl2TjVIUkJoMUE",
+  "title": "Polisi Sigap Tangani Longsor di Jalur Garut Tasikmalaya, Arus Lalu Lintas Kembali Normal - Media Purna Polri",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOVldhZmR2SG9BRkR3RTViUFUzNkdJdTFrZjFPX0hxcWpycWl2TWJVVEh1QllRdms2aV9Qd243NmJwVFo0UTFtYm1aeEtIcFZJMFl0b3R6N0ZhRXJzeVpZdGgxcG1FaEx2WnpydXU3aTdVdG5BbHpITkZSMkZfNTh4cE5XSGpVZG1HX2lldUFzLS1HQ1h5LW9zNHZjWmVTd041dUNET2dLLXN3ZnVQa1dCeDRGdHFMOUk4R0k3SDl2TjVIUkJoMUE?oc=5",
+  "source": "Media Purna Polri",
+  "source_url": "https://mediapurnapolri.net",
+  "published_at": "2026-11-14T15:48:17.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-14T17:00:41.331Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

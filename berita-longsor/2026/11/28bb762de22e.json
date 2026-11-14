@@ -1,0 +1,31 @@
+{
+  "guid": "CBMi0wFBVV95cUxNd05vTmtLZGhrOFJocFFERXhvTWZfbnJRdzVvUlhSclB6TkcwNVFtbE10WDMzSk03bU1QZ0Q5Z3ZkTW5DbV9fYVhRYmdOVElwd1RXYW4zOGhUUHk5c1gyc3ZmTjVabGMyR1BIM2J4TER6aFhpcVRKZE1ienRFN3lNbUVIVzlvdnZ1SWI5M0VZWmVNZ2M1cFkzSWRBVEJDMEt0di1uY0FWLVNTRUdUa2RYZ0dfWlN0VmVUWlQteEotMTExX2VlTU1ybHE5RTlTYkVEUFE4",
+  "title": "Longsor Ganggu Jalur Penghubung Garut–Tasikmalaya, Polisi dan Petugas Gabungan Berhasil Pulihkan Arus Kendaraan - garut berkabar",
+  "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNd05vTmtLZGhrOFJocFFERXhvTWZfbnJRdzVvUlhSclB6TkcwNVFtbE10WDMzSk03bU1QZ0Q5Z3ZkTW5DbV9fYVhRYmdOVElwd1RXYW4zOGhUUHk5c1gyc3ZmTjVabGMyR1BIM2J4TER6aFhpcVRKZE1ienRFN3lNbUVIVzlvdnZ1SWI5M0VZWmVNZ2M1cFkzSWRBVEJDMEt0di1uY0FWLVNTRUdUa2RYZ0dfWlN0VmVUWlQteEotMTExX2VlTU1ybHE5RTlTYkVEUFE4?oc=5",
+  "source": "garut berkabar",
+  "source_url": "https://garutberkabar.com",
+  "published_at": "2026-11-14T14:16:43.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-14T17:00:41.331Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

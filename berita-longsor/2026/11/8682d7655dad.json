@@ -1,0 +1,31 @@
+{
+  "guid": "CBMi2wFBVV95cUxNX1hSYTJicDdxLWt6bTZIWWwyZndFSmg5VmhDckstUDJwVjNtQTlkUVdVd1VjZWljVmRlemUwejhaNVZFVXlLZV9qY1RUc3pnVFRiVFZSSE90OHY0VDE1NXZLTk9QeVNoSXlmWF9IcVU3YmYzYklyUVZ0TTNPaUZlVXp4MFRzajFTLTdKOEgteTRTN2tVczJVOXJfZWloU1A4QWVLLTdDV3FOa0NiZ0xpMHNYMVdZRGxxZDhLWHloRU1jNllCakFmbkpIQTJrQkJPV3hrUkJXblBkUWc",
+  "title": "Polisi dan Unsur Terkait Sigap Tangani Longsor di Jalur Garut–Tasikmalaya, Arus Lalu Lintas Kembali Normal - Tribuntipikor Online",
+  "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNX1hSYTJicDdxLWt6bTZIWWwyZndFSmg5VmhDckstUDJwVjNtQTlkUVdVd1VjZWljVmRlemUwejhaNVZFVXlLZV9qY1RUc3pnVFRiVFZSSE90OHY0VDE1NXZLTk9QeVNoSXlmWF9IcVU3YmYzYklyUVZ0TTNPaUZlVXp4MFRzajFTLTdKOEgteTRTN2tVczJVOXJfZWloU1A4QWVLLTdDV3FOa0NiZ0xpMHNYMVdZRGxxZDhLWHloRU1jNllCakFmbkpIQTJrQkJPV3hrUkJXblBkUWc?oc=5",
+  "source": "Tribuntipikor Online",
+  "source_url": "https://tribuntipikor.com",
+  "published_at": "2026-11-14T10:48:10.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-14T17:00:41.331Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

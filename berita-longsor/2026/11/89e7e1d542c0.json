@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiugFBVV95cUxONXVRXzE4TU1aTDlMZFlEQXh1WUR2Q251MFEwbUFTLVhVQXpYdUZDbXJLdGJFY0FXYTVxZWtja2taUDExZ2dqTWxyU0YxUDVPYUtiZ2xDc3NYQkFySEZRNkhlRF9vRDN0THR5WUxkNlBFbFZxRjIzaFBDdWVjOWMxQjlHYk9IWXJJUXZzYlQ0TE5HSjlRdDFrQ0VFd1Q3eGdIbjQyR084R0N5Y2FXeXlpbGh5YTJQLU5WRmc",
+  "title": "Kapolres Tasikmalaya Tinjau Longsor di Salawu dan Bantarkalong, Warga Diimbau Waspada - Fokus Jabar",
+  "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONXVRXzE4TU1aTDlMZFlEQXh1WUR2Q251MFEwbUFTLVhVQXpYdUZDbXJLdGJFY0FXYTVxZWtja2taUDExZ2dqTWxyU0YxUDVPYUtiZ2xDc3NYQkFySEZRNkhlRF9vRDN0THR5WUxkNlBFbFZxRjIzaFBDdWVjOWMxQjlHYk9IWXJJUXZzYlQ0TE5HSjlRdDFrQ0VFd1Q3eGdIbjQyR084R0N5Y2FXeXlpbGh5YTJQLU5WRmc?oc=5",
+  "source": "Fokus Jabar",
+  "source_url": "https://fokusjabar.id",
+  "published_at": "2026-11-14T13:52:24.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-14T17:00:41.331Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
