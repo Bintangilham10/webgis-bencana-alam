@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwAFBVV95cUxNanlHUndRajBLYzhXSWRkQVFtT04xWUY0X1luMms2dkp4WEFSbUNkMkNwaWEzU0tpNWIwZllGMEtLN1EtZVRXOGFVU3JpYXhuNlIwbm81R3FMdDVVRXZJXzRpRVowRUF4eC1WaVU1MlV0OXlETVNXeC00SmlrRndCbFMyWXFJX0FRcjBhZUtkQ29qR293Q0pwRXFyVlQ2QmNtZk5WSXZTMWNQWTBDUkZvRVd6bDdKR2hDMVNsbTZwX0M",
+  "title": "Kapolres Tasikmalaya Tinjau Lokasi Longsor di Salawu dan Bantarkalong - Tribunnews.com",
+  "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNanlHUndRajBLYzhXSWRkQVFtT04xWUY0X1luMms2dkp4WEFSbUNkMkNwaWEzU0tpNWIwZllGMEtLN1EtZVRXOGFVU3JpYXhuNlIwbm81R3FMdDVVRXZJXzRpRVowRUF4eC1WaVU1MlV0OXlETVNXeC00SmlrRndCbFMyWXFJX0FRcjBhZUtkQ29qR293Q0pwRXFyVlQ2QmNtZk5WSXZTMWNQWTBDUkZvRVd6bDdKR2hDMVNsbTZwX0M?oc=5",
+  "source": "Tribunnews.com",
+  "source_url": "https://priangan.tribunnews.com",
+  "published_at": "2026-11-14T22:42:06.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-14T23:15:28.666Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
