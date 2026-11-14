@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqAFBVV95cUxOOVBQN0tXaXl5YzFxaS1qeFFBNDRUSGd1QkpCN0hVLTdYb1hfdnpOd214bTdEUGRaVVIzblFPNE9Ra1ZJMHBFeTR4Y25OY0VyRGdheThpbnRBeFY3dnVPQWJucjhxbVNJUG93THBfcTg4Y3FzVXVhMHBRal9UbXhpWkFfaktna2pvV0J0OFlrclBlX2U2R0lWQU5DTWZwR2dIZXlqeTlqZHM",
+  "title": "Kementerian PU Tangani Longsor di Bener Meriah, Akses Gayo Lues–Abdya Pulih - Majalah Lintas",
+  "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOOVBQN0tXaXl5YzFxaS1qeFFBNDRUSGd1QkpCN0hVLTdYb1hfdnpOd214bTdEUGRaVVIzblFPNE9Ra1ZJMHBFeTR4Y25OY0VyRGdheThpbnRBeFY3dnVPQWJucjhxbVNJUG93THBfcTg4Y3FzVXVhMHBRal9UbXhpWkFfaktna2pvV0J0OFlrclBlX2U2R0lWQU5DTWZwR2dIZXlqeTlqZHM?oc=5",
+  "source": "Majalah Lintas",
+  "source_url": "https://www.majalahlintas.com",
+  "published_at": "2026-11-14T06:37:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-14T07:33:32.221Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.17",
+      "nama": "Kabupaten Bener Meriah",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "11.13",
+      "nama": "Kabupaten Gayo Lues",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
