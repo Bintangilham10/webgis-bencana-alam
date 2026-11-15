@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiekFVX3lxTE1GWUJmNm5salY1eHJ1Y3Z2WVh0TWI1NHlyVzVyRzhOa0ZUV3hZcGxINU16czdNZGU5YU5uSjNpUFVqTDZNRV9zX0wxQjBuSWhzMFZuMkZiZWs1aUFOd3VUaGlYQ3BjSThBNFNnMkY5a1U1MmlEamN2OE1R",
+  "title": "Longsor Tutup Sebagian Jalan Garut–Tasikmalaya, Polisi Berlakukan Buka Tutup - Warta Garut",
+  "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1GWUJmNm5salY1eHJ1Y3Z2WVh0TWI1NHlyVzVyRzhOa0ZUV3hZcGxINU16czdNZGU5YU5uSjNpUFVqTDZNRV9zX0wxQjBuSWhzMFZuMkZiZWs1aUFOd3VUaGlYQ3BjSThBNFNnMkY5a1U1MmlEamN2OE1R?oc=5",
+  "source": "Warta Garut",
+  "source_url": "https://wartagarut.com",
+  "published_at": "2026-11-14T23:19:49.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-15T02:15:42.098Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,23 @@
+{
+  "guid": "CBMilAFBVV95cUxNZWYyNzFMQ0NOVTFuR2ZoUzl4ZlVkWWs2VVR1T3AtS1JmNUIxczU0N3JHQ21hZUFOQndWOU9mREM2U0tZellRYndqdzlYZDQtcHJhXzFVXzZQU1ZwWDJoOFhKbjRGQm83eDB5Q2o2WjFrTmhjNmZQbXZ4MTBUZ3h1ZjU3N2xYQmFWc3R2OTQwS3lDV29v",
+  "title": "Longsor di Linge Aceh Tengah, Anak Sekretaris Desa Hilang Tertimbun - Kantor Berita Kemanusiaan",
+  "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZWYyNzFMQ0NOVTFuR2ZoUzl4ZlVkWWs2VVR1T3AtS1JmNUIxczU0N3JHQ21hZUFOQndWOU9mREM2U0tZellRYndqdzlYZDQtcHJhXzFVXzZQU1ZwWDJoOFhKbjRGQm83eDB5Q2o2WjFrTmhjNmZQbXZ4MTBUZ3h1ZjU3N2xYQmFWc3R2OTQwS3lDV29v?oc=5",
+  "source": "Kantor Berita Kemanusiaan",
+  "source_url": "https://www.kbknews.id",
+  "published_at": "2026-11-15T00:42:40.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-15T02:15:42.098Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
