@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.15.11.93.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-15T19:39:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-15T19:52:00+09:00</effective>
+    <expires>2026-11-16T00:10:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 15 November 2026, 19:52 WIT di sebagian wilayah Papua Selatan, khususnya di ASSUE, FOFI, MANDOBO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 16 November 2026, 00:10 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPS/2026/11/15/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua Selatan</areaDesc>
+      <polygon>-5.917,140.102 -5.929,140.121 -5.938,140.176 -5.957,140.232 -5.962,140.257 -5.963,140.297 -5.921,140.330 -5.920,140.351 -5.953,140.415 -5.980,140.445 -6.016,140.499 -6.042,140.548 -6.044,140.577 -6.102,140.609 -6.136,140.631 -6.191,140.635 -6.243,140.611 -6.268,140.604 -6.302,140.576 -6.308,140.544 -6.337,140.520 -6.325,140.502 -6.274,140.449 -6.238,140.421 -6.212,140.393 -6.258,140.330 -6.276,140.296 -6.286,140.257 -6.300,140.227 -6.316,140.225 -6.339,140.215 -6.361,140.199 -6.387,140.140 -6.381,140.076 -6.300,140.078 -6.266,140.070 -6.221,140.045 -6.199,140.016 -6.183,139.984 -6.153,139.948 -6.134,139.930 -6.124,139.915 -6.136,139.889 -6.143,139.855 -6.103,139.843 -5.932,139.792 -5.903,139.921 -5.899,139.976 -5.891,140.026 -5.902,140.059 -5.904,140.082 -5.917,140.102</polygon>
+      <polygon>-6.381,140.076 -6.433,140.072 -6.418,139.789 -6.389,139.801 -6.340,139.848 -6.324,139.854 -6.306,139.854 -6.287,139.859 -6.281,139.857 -6.270,139.833 -6.258,139.825 -6.222,139.823 -6.207,139.825 -6.195,139.835 -6.192,139.869 -6.143,139.855 -6.136,139.889 -6.124,139.915 -6.134,139.930 -6.153,139.948 -6.183,139.984 -6.199,140.016 -6.221,140.045 -6.266,140.070 -6.300,140.078 -6.381,140.076</polygon>
+      <polygon>-5.580,139.219 -5.588,139.223 -5.602,139.219 -5.608,139.217 -5.624,139.225 -5.630,139.230 -5.634,139.232 -5.638,139.245 -5.637,139.254 -5.646,139.261 -5.660,139.262 -5.669,139.265 -5.703,139.176 -5.733,139.177 -5.765,139.186 -5.795,139.204 -5.793,139.209 -5.784,139.211 -5.788,139.220 -5.804,139.235 -5.816,139.229 -5.826,139.229 -5.839,139.254 -5.868,139.255 -5.896,139.238 -5.919,139.256 -5.927,139.277 -5.940,139.280 -5.964,139.279 -5.965,139.304 -5.978,139.314 -5.979,139.316 -5.980,139.316 -5.995,139.319 -6.011,139.327 -6.045,139.338 -6.054,139.338 -6.064,139.337 -6.072,139.335 -6.076,139.335 -6.090,139.337 -6.086,139.351 -6.097,139.330 -6.144,139.297 -6.178,139.268 -6.195,139.259 -6.244,139.250 -6.275,139.225 -6.290,139.179 -6.312,139.138 -6.319,139.111 -6.308,139.101 -6.294,139.098 -6.268,139.099 -6.237,139.090 -6.210,139.076 -6.182,139.070 -6.173,139.064 -6.077,139.052 -6.065,139.042 -6.062,139.029 -6.055,139.022 -6.054,138.986 -6.046,138.934 -5.988,138.936 -5.887,138.939 -5.764,138.942 -5.728,138.943 -5.723,138.943 -5.631,139.109 -5.609,139.148 -5.570,139.218 -5.580,139.219</polygon>
+    </area>
+  </info>
+</alert>
