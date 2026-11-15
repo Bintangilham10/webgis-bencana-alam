@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-15T09:00:49.376Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        107.463789045,
+        -7.1027188084
+      ]
+    },
+    "properties": {
+      "pkey": "400044",
+      "created_at": "2026-11-15T08:46:22.252Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "3c694c90-3dbe-4751-b7f9-217cfae35a0e",
+      "image_url": "https://images.petabencana.id/3c694c90-3dbe-4751-b7f9-217cfae35a0e.jpg",
+      "disaster_type": "wind",
+      "is_training": false,
+      "report_data": {
+        "report_type": "wind",
+        "impact": 2
+      },
+      "tags": {
+        "city": "BANDUNG",
+        "district_id": null,
+        "region_code": "3204",
+        "local_area_id": null,
+        "instance_region_code": "ID-JB"
+      },
+      "title": null,
+      "text": "Rumah warga mengalami kerusakan akibat terjangan angin puting beliung yang melanda kawasan di dekat Pasar Ciwidey, Kecamatan Ciwidey",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
