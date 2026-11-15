@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-15T12:15:32.205Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        96.5484426355,
+        4.5036689622
+      ]
+    },
+    "properties": {
+      "pkey": "400046",
+      "created_at": "2026-11-15T12:10:50.094Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "f87435ab-420b-43fd-86f8-369394316229",
+      "image_url": "https://images.petabencana.id/f87435ab-420b-43fd-86f8-369394316229.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 46
+      },
+      "tags": {
+        "city": "NAGAN RAYA",
+        "district_id": null,
+        "region_code": "1115",
+        "local_area_id": null,
+        "instance_region_code": "ID-AC"
+      },
+      "title": null,
+      "text": "Kondisi terkini banjir melanda wilayah Kecamatan Beutong Ateuh Banggalang, Kabupaten Nagan Raya, Aceh, pada Minggu (15/11/2026).",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
