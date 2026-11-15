@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqwFBVV95cUxPNGRDSUZfZFR0ZmtjTzFJUm1XdmNmbTFDTE1ZZDFselVpMEVfcnIxaEtfM1lUa3RYdVhMOXAtbkJHbVVsV2x6ZmJ3b3BXd09NMFVjdE82Qzk1Z25vUGpYNVVOVEh3NHYyRlVYX0JERUFTX3duUkxZOVo1SXNtUnlzZWtHSnpCQW1EcDJ0NUV0LUlhTjFPaVZLMHRuYTNRclBTeERjU2QtSDRxcGc",
+  "title": "Longsor di Cibalong Tasikmalaya dan Risiko yang Sudah Dipetakan Sejak 2023 - Lintas Priangan",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNGRDSUZfZFR0ZmtjTzFJUm1XdmNmbTFDTE1ZZDFselVpMEVfcnIxaEtfM1lUa3RYdVhMOXAtbkJHbVVsV2x6ZmJ3b3BXd09NMFVjdE82Qzk1Z25vUGpYNVVOVEh3NHYyRlVYX0JERUFTX3duUkxZOVo1SXNtUnlzZWtHSnpCQW1EcDJ0NUV0LUlhTjFPaVZLMHRuYTNRclBTeERjU2QtSDRxcGc?oc=5",
+  "source": "Lintas Priangan",
+  "source_url": "https://lintaspriangan.com",
+  "published_at": "2026-11-15T07:48:51.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-15T08:30:46.560Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
