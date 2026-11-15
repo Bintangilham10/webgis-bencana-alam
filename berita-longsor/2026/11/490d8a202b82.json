@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiggFBVV95cUxOb29PNjlXcGMxMWktUGxRN2c0MllCbFkzbU94V1ZxN2Nra0EyaGdYUVU5YzhGS1lSeTVlOUNxcTNxQ0RUMm9QelhBSHFOMEJQaGtnai0tUzdJTTU5QUkwUmhadzhqR1JJQzFETjdqYUtJNGl0aXJMRkVjUFhIM0wwekFR",
+  "title": "Longsor Aceh Tengah Tewaskan Kayla, Korban Balita - JournalArta",
+  "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOb29PNjlXcGMxMWktUGxRN2c0MllCbFkzbU94V1ZxN2Nra0EyaGdYUVU5YzhGS1lSeTVlOUNxcTNxQ0RUMm9QelhBSHFOMEJQaGtnai0tUzdJTTU5QUkwUmhadzhqR1JJQzFETjdqYUtJNGl0aXJMRkVjUFhIM0wwekFR?oc=5",
+  "source": "JournalArta",
+  "source_url": "https://journalarta.com",
+  "published_at": "2026-11-15T11:17:52.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-15T11:45:26.828Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

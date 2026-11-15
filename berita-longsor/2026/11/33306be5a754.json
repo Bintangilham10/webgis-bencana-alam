@@ -1,0 +1,31 @@
+{
+  "guid": "CBMi6AFBVV95cUxPMTB3MkF0RUJtV3BuWWpkR2NCTE5RUVpCOHZzTmNJNEpEalpTVktZYnQzaFd2MnNqUXVfN3RNQXRhWEw5SmEwSnVRTzlwSE5QMzdZaUNkcDN2UkJNb0pPYXl3VngwLVJJazJMUVB4TFYyUG1kbW1lWWxvYzQ2NGlGWFpUbzVyRDFQWUV4OUdtX1JSeF9vQnFfWTFLX0lQM3I1ZGlmQk5OMVlLRUFMdWhVekJ6RVFQMjNKSWpVUU15eU5vRzNSdHFYNUNDN0ZCRVJpcnNuamNwZ1NpcEJ4cllCN1Z2Y2xEZnhv",
+  "title": "Hujan Deras Picu Longsor di Garut, Jalur Garut–Tasikmalaya dan Pameungpeuk Terdampak - Kabar Priangan",
+  "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPMTB3MkF0RUJtV3BuWWpkR2NCTE5RUVpCOHZzTmNJNEpEalpTVktZYnQzaFd2MnNqUXVfN3RNQXRhWEw5SmEwSnVRTzlwSE5QMzdZaUNkcDN2UkJNb0pPYXl3VngwLVJJazJMUVB4TFYyUG1kbW1lWWxvYzQ2NGlGWFpUbzVyRDFQWUV4OUdtX1JSeF9vQnFfWTFLX0lQM3I1ZGlmQk5OMVlLRUFMdWhVekJ6RVFQMjNKSWpVUU15eU5vRzNSdHFYNUNDN0ZCRVJpcnNuamNwZ1NpcEJ4cllCN1Z2Y2xEZnhv?oc=5",
+  "source": "Kabar Priangan",
+  "source_url": "https://kabarpriangan.pikiran-rakyat.com",
+  "published_at": "2026-11-15T10:28:04.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-15T11:45:26.828Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

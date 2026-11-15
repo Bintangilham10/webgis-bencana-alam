@@ -1,0 +1,23 @@
+{
+  "guid": "CBMinAFBVV95cUxNaDFUNDlUcTFTdmlKMGNMZmp4WE5BMzVOZk5YZ0d3UEVoVXc2WWlPTHM3S1RXRW5BcjBGS05KZEU5M29VWnhvRS1jZEc1UkJXTkRKTUxCd3BGa1VKMThwMGJ3dHhXeWstZVpjMkx0a1FkeVJhWE9VNjZ6R0VTakhoMWxBUmlScmM1UkxYVEZXYVM5XzFKOWdkU1lxQWo",
+  "title": "Balita Meninggal Tertimbun Longsor di Aceh Tengah - Merdeka",
+  "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaDFUNDlUcTFTdmlKMGNMZmp4WE5BMzVOZk5YZ0d3UEVoVXc2WWlPTHM3S1RXRW5BcjBGS05KZEU5M29VWnhvRS1jZEc1UkJXTkRKTUxCd3BGa1VKMThwMGJ3dHhXeWstZVpjMkx0a1FkeVJhWE9VNjZ6R0VTakhoMWxBUmlScmM1UkxYVEZXYVM5XzFKOWdkU1lxQWo?oc=5",
+  "source": "Merdeka",
+  "source_url": "https://www.merdeka.com",
+  "published_at": "2026-11-15T10:23:19.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-15T11:45:26.828Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

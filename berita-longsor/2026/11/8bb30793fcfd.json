@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiqgFBVV95cUxOcnROeGxvbkpwdGJkOUg2YTctckZISmdRdmJrWGVydWJBN3l1dEF3QzV4a3R2eExtSFlXS2NhUURDNVZScERsY3NwNmRySjlhVmhwbnJfLU9XaW5vTjNORDFIWmlyNlBJaXJMd3hYNmRqRUxNOFJLRHh0NV9SZVFTSW40YjRwd1VXM3dkOWZDZElveVZ4R1dBNEFjSmdnR09XZnNVRXJMQWhIQQ",
+  "title": "Balita Korban Longsor di Aceh Tengah Ditemukan Meninggal Dunia - Media Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcnROeGxvbkpwdGJkOUg2YTctckZISmdRdmJrWGVydWJBN3l1dEF3QzV4a3R2eExtSFlXS2NhUURDNVZScERsY3NwNmRySjlhVmhwbnJfLU9XaW5vTjNORDFIWmlyNlBJaXJMd3hYNmRqRUxNOFJLRHh0NV9SZVFTSW40YjRwd1VXM3dkOWZDZElveVZ4R1dBNEFjSmdnR09XZnNVRXJMQWhIQQ?oc=5",
+  "source": "Media Indonesia",
+  "source_url": "https://mediaindonesia.com",
+  "published_at": "2026-11-15T10:25:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-15T11:45:26.828Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

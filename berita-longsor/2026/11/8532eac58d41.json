@@ -1,0 +1,26 @@
+{
+  "guid": "CBMitgFBVV95cUxQZzdqamtSdUJMUzRBUkNmQm5NamdJX2dTVFI4YlZSd2FYb3h3LTg0NEpCbmN6QkRKZXFUMDZxN29JUzhDRG1YMDBlZmNmSlpGVEROUmhTQzhub0FuYXdrWXk3WWJMSlNac1FsV29FRDNoNDRQLVozNy1wc05QOVRMel95OWVKYlp6UEh3VlRNQ0FsX3dZYnBCQVJMc0NEdlNQZkRJeTM2UmFoQ29QVHQ4QjJUOE1kQQ",
+  "title": "Polres Tasikmalaya terjunkan tim atasi daerah terdampak longsor - Elshinta",
+  "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZzdqamtSdUJMUzRBUkNmQm5NamdJX2dTVFI4YlZSd2FYb3h3LTg0NEpCbmN6QkRKZXFUMDZxN29JUzhDRG1YMDBlZmNmSlpGVEROUmhTQzhub0FuYXdrWXk3WWJMSlNac1FsV29FRDNoNDRQLVozNy1wc05QOVRMel95OWVKYlp6UEh3VlRNQ0FsX3dZYnBCQVJMc0NEdlNQZkRJeTM2UmFoQ29QVHQ4QjJUOE1kQQ?oc=5",
+  "source": "Elshinta",
+  "source_url": "https://elshinta.com",
+  "published_at": "2026-11-15T09:10:07.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-15T11:45:26.828Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
