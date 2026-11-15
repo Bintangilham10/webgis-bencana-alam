@@ -1,0 +1,26 @@
+{
+  "guid": "CBMilwFBVV95cUxNRER1WWpOaGZ5ckRUU0NQTUFaVWJtNUVRYmFDSDZoTFZnaUp2OEhpSG80RC1fSHplb2w3UHRDclJsQ1l0ZDRocUE5RFBxTTBPcHJ0OUd0ZUJjcjlxMk9XT21KV3RiYTY4Y043Ti1IQm96N1ZpOEtSQkExMVpoWWhlWjg5N0Jwd2dodmgxV2k5TXloNlJZekNr",
+  "title": "Tanah Longsor Luluhkan Perbukitan Cisolok Sukabumi - Enamplus",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRER1WWpOaGZ5ckRUU0NQTUFaVWJtNUVRYmFDSDZoTFZnaUp2OEhpSG80RC1fSHplb2w3UHRDclJsQ1l0ZDRocUE5RFBxTTBPcHJ0OUd0ZUJjcjlxMk9XT21KV3RiYTY4Y043Ti1IQm96N1ZpOEtSQkExMVpoWWhlWjg5N0Jwd2dodmgxV2k5TXloNlJZekNr?oc=5",
+  "source": "Enamplus",
+  "source_url": "https://enamplus.liputan6.com",
+  "published_at": "2026-11-15T13:55:26.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-15T21:15:26.515Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
