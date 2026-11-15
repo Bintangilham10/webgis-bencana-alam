@@ -1,0 +1,26 @@
+{
+  "guid": "CBMikAFBVV95cUxPR04zNjVkSkUzNWFuYktQRlpzV3hQdnFzQ0NiSDBQNWQzaE9UajJGR1NzcWd4cWxYaW5EYWtwSUl1eThsb1QtYkp3dmxydU1UQ094MTNLbU9yOThtTHdCLXhrc1hWcE5TQkh2RW1zcTBUM3NXSlZMZlYweUVpZ00waGRpY3hKc0JUUWhjcURyTTc",
+  "title": "Pemkab Pekalongan antisipasi banjir-longsor - ANTARA News Jateng",
+  "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPR04zNjVkSkUzNWFuYktQRlpzV3hQdnFzQ0NiSDBQNWQzaE9UajJGR1NzcWd4cWxYaW5EYWtwSUl1eThsb1QtYkp3dmxydU1UQ094MTNLbU9yOThtTHdCLXhrc1hWcE5TQkh2RW1zcTBUM3NXSlZMZlYweUVpZ00waGRpY3hKc0JUUWhjcURyTTc?oc=5",
+  "source": "ANTARA News Jateng",
+  "source_url": "https://jateng.antaranews.com",
+  "published_at": "2026-11-15T17:01:14.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-15T18:15:26.449Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.26",
+      "nama": "Kabupaten Pekalongan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.75",
+      "nama": "Kota Pekalongan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

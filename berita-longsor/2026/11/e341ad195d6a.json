@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwgFBVV95cUxPanlJdU9fS1NjdnVOV2VnME1jT0ZNamRCRlJ1SnBsTmhKZzB3bGNmcWgxNHA3SkEyazR1NzFWMkI2WWRlbk9idHJIMmoxVlFzYXY1YmVIV3JPbXhHajhWWUNUbURXRzNVNGpHOHY5UnBwcm4yUUFZMkt3RHZ1LUFHRXdzVl8xZDE5ZnhwTDFWRkFkX2x2Y282eHVaQVJuSW05Z3IyUS00NFhoenlYNmJRRGtBeUNIN2s2VHpFQ3AxWDJTZw",
+  "title": "Tanah Longsor Putus Jalan di Antasansutun Banjar, Satu Rumah Ambruk ke Sungai - Tribunnews.com",
+  "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPanlJdU9fS1NjdnVOV2VnME1jT0ZNamRCRlJ1SnBsTmhKZzB3bGNmcWgxNHA3SkEyazR1NzFWMkI2WWRlbk9idHJIMmoxVlFzYXY1YmVIV3JPbXhHajhWWUNUbURXRzNVNGpHOHY5UnBwcm4yUUFZMkt3RHZ1LUFHRXdzVl8xZDE5ZnhwTDFWRkFkX2x2Y282eHVaQVJuSW05Z3IyUS00NFhoenlYNmJRRGtBeUNIN2s2VHpFQ3AxWDJTZw?oc=5",
+  "source": "Tribunnews.com",
+  "source_url": "http://www.banjarmasinpost.co.id",
+  "published_at": "2026-11-15T13:34:39.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-15T18:15:26.449Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.79",
+      "nama": "Kota Banjar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "63.03",
+      "nama": "Kabupaten Banjar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
