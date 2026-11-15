@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivwFBVV95cUxOajQyeG9ES1V2aW11ZTIyYVRXa3dMT0tLOHdpRXBLcjFPNmtkeE9qWFU5RVhPYm85OUZubldKam0wQ2hXQXV4NUNIU3lMZ3dRbjVjMm1GaWc3Y2llc2RfSjduMGZqYUQ3VzFtSi14TUtBV0ZQRlVOUFM2VnNEdk9hWHlWbGxtQl9aZ3dyZ2pVVGlNcnZSb1FTR082aHk1bW1JS2hjel81bFlfOXRDVDJtdExNRzhyTDQ4TWxIdndfaw",
+  "title": "Pemkab Banjar Siapkan Langkah Penanganan Longsor di Antasan Sutun, Keselamatan Warga Prioritas - Radio Suara Banjar",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOajQyeG9ES1V2aW11ZTIyYVRXa3dMT0tLOHdpRXBLcjFPNmtkeE9qWFU5RVhPYm85OUZubldKam0wQ2hXQXV4NUNIU3lMZ3dRbjVjMm1GaWc3Y2llc2RfSjduMGZqYUQ3VzFtSi14TUtBV0ZQRlVOUFM2VnNEdk9hWHlWbGxtQl9aZ3dyZ2pVVGlNcnZSb1FTR082aHk1bW1JS2hjel81bFlfOXRDVDJtdExNRzhyTDQ4TWxIdndfaw?oc=5",
+  "source": "Radio Suara Banjar",
+  "source_url": "https://rsb.banjarkab.go.id",
+  "published_at": "2026-11-15T11:46:42.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-15T14:45:29.322Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.79",
+      "nama": "Kota Banjar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "63.03",
+      "nama": "Kabupaten Banjar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

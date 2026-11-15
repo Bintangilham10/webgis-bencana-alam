@@ -1,0 +1,31 @@
+{
+  "guid": "CBMi8AFBVV95cUxQWXE4bXVCZXN0OEhJVFpPMVpsOXhRNElEQks3Q1J0STI3ZTYwQ3ppYnRwNHhxdHF1MFV0d0VvNUR5RUtuT1RJa183cEMwRlJJWloyQ3NCYzRtZ00xTlhTdE1hSDlHa1F6d3lrRmVjTW4wQjdMUUhkRjRCdnlobUJIM3lra3VxeGlNYlh3dlhTUVQxMjFaaER3VTJFRE4tMXdvYXE1U3JhSDV4cEdqb3M5QVFpaE9sLUZ2ek5iRk50UWZIUnVOYU01SXR1TEFoZldBengzTmtYMS12VUdPRkVZbU5vZE9Ec1hEelZwOTlQMzk",
+  "title": "Tebing di Tenjowaringin Tasikmalaya Longsor, Jalur Utama Singaparna-Garut Sempat Terputus - Kabar Priangan",
+  "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQWXE4bXVCZXN0OEhJVFpPMVpsOXhRNElEQks3Q1J0STI3ZTYwQ3ppYnRwNHhxdHF1MFV0d0VvNUR5RUtuT1RJa183cEMwRlJJWloyQ3NCYzRtZ00xTlhTdE1hSDlHa1F6d3lrRmVjTW4wQjdMUUhkRjRCdnlobUJIM3lra3VxeGlNYlh3dlhTUVQxMjFaaER3VTJFRE4tMXdvYXE1U3JhSDV4cEdqb3M5QVFpaE9sLUZ2ek5iRk50UWZIUnVOYU01SXR1TEFoZldBengzTmtYMS12VUdPRkVZbU5vZE9Ec1hEelZwOTlQMzk?oc=5",
+  "source": "Kabar Priangan",
+  "source_url": "https://kabarpriangan.pikiran-rakyat.com",
+  "published_at": "2026-11-15T14:07:43.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-15T14:45:29.322Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

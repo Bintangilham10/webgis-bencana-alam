@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiU0FVX3lxTE02WEh6LXllUG56TGdmRW5UVHVGXzhOWEU2YUp4M2FhbWFKV2NXeXlaRDZ5ZHE5OGpqdDkwSHNFcEpSeW14cmV1OTloY0tzMGU5N3Uw",
+  "title": "Detik-detik Balita Tertimbun Longsor di Aceh Tengah - شبكة تواصل الإخبارية",
+  "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE02WEh6LXllUG56TGdmRW5UVHVGXzhOWEU2YUp4M2FhbWFKV2NXeXlaRDZ5ZHE5OGpqdDkwSHNFcEpSeW14cmV1OTloY0tzMGU5N3Uw?oc=5",
+  "source": "شبكة تواصل الإخبارية",
+  "source_url": "https://twaslnews1.twaslnews.com",
+  "published_at": "2026-11-15T12:52:53.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-15T14:45:29.322Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMitAFBVV95cUxObk55OE00UXlVTmpycWxGNm1FUkdWakVhQURGOUxiRk1odHRGbzIwX01sVzc4UHFLaUllN0VVbm1RWUc5amVqY0htUnpvcEdrajQ5aWw0UkRDYjIxeEJyWU9kZDJOemNwVU5iVU5VNHRva3NtY2pRN2pRS0FVV0lzZUtvNkk4UXBmeTdacVJ6X1RMbVJaQXR5QlYwelg4d1BYR2p1d1kxR2hGc18tSWJwSmVZWErSAboBQVVfeXFMTzZMY0ktUDBaZGxlRTYzTTdiUnM2QlRmc3hPWHROSWVQSkY4V3NLcmRIOEE1U0Z5Y0RWZnhjMWhJeFhyVEFUYXJOTzNDdklkTGhpV0k3M2RmblRmcTRSeDR2Q3FYazlJYjhnWlJEaUxyWnQtbWNyYjB2WXJoMEl2Sk1TQzgwS1ZpdjU2N29PRDhrZ05uejg2LXF3YWR0S0V1aG9wVlhWTERZbmRHbUZJQjJ4TWdBVjItaVZB",
+  "title": "Longsor di Antasan Sutun Banjar, Rumah Amblas dan Jalan Putus - Radar Banjarmasin",
+  "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObk55OE00UXlVTmpycWxGNm1FUkdWakVhQURGOUxiRk1odHRGbzIwX01sVzc4UHFLaUllN0VVbm1RWUc5amVqY0htUnpvcEdrajQ5aWw0UkRDYjIxeEJyWU9kZDJOemNwVU5iVU5VNHRva3NtY2pRN2pRS0FVV0lzZUtvNkk4UXBmeTdacVJ6X1RMbVJaQXR5QlYwelg4d1BYR2p1d1kxR2hGc18tSWJwSmVZWErSAboBQVVfeXFMTzZMY0ktUDBaZGxlRTYzTTdiUnM2QlRmc3hPWHROSWVQSkY4V3NLcmRIOEE1U0Z5Y0RWZnhjMWhJeFhyVEFUYXJOTzNDdklkTGhpV0k3M2RmblRmcTRSeDR2Q3FYazlJYjhnWlJEaUxyWnQtbWNyYjB2WXJoMEl2Sk1TQzgwS1ZpdjU2N29PRDhrZ05uejg2LXF3YWR0S0V1aG9wVlhWTERZbmRHbUZJQjJ4TWdBVjItaVZB?oc=5",
+  "source": "Radar Banjarmasin",
+  "source_url": "https://radarbanjarmasin.jawapos.com",
+  "published_at": "2026-11-15T11:58:29.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-15T14:45:29.322Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.79",
+      "nama": "Kota Banjar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "63.03",
+      "nama": "Kabupaten Banjar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

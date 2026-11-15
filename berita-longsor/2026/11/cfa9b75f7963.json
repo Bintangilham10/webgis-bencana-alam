@@ -1,0 +1,23 @@
+{
+  "guid": "CBMigAFBVV95cUxQcG9LYTZXb3dwTTRoT1p1Z2xUS0kzZXZyVTUwTjFGY2lWR2tzSTFScWlVc2dHSFFTODItaHVNMDhKTGdjcmZMZHl4VDlJUWphZ0hBU3hYOGdJLUhkU3lhWFBuNUN2Rk5hVkhMSVhQOG1EbHUwOEhqcThSYjhSbGN2VA",
+  "title": "Longsor Aceh Tengah: Anak 4 Tahun Tertimbun - JournalArta",
+  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcG9LYTZXb3dwTTRoT1p1Z2xUS0kzZXZyVTUwTjFGY2lWR2tzSTFScWlVc2dHSFFTODItaHVNMDhKTGdjcmZMZHl4VDlJUWphZ0hBU3hYOGdJLUhkU3lhWFBuNUN2Rk5hVkhMSVhQOG1EbHUwOEhqcThSYjhSbGN2VA?oc=5",
+  "source": "JournalArta",
+  "source_url": "https://journalarta.com",
+  "published_at": "2026-11-15T13:40:31.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-15T14:45:29.322Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
