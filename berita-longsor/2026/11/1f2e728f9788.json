@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiqgFBVV95cUxPZ2YzazN6MHFvTjdISnF5ZFVRSC0xUzVQNEIwTFA5X01TWVBmRHE2WVZkT3BWSHVrMXUxNERqNUVwU05xb2J4Sy1jQmhhYWQwNXI0Y29OOEgzVXBJbUJkQmh5RU9scUFKSThFRkQ2bThiOEl3MHJRRG1XVTFHSEZzQUJZUF9kMnVDWXl4R2RiRFBSVmxmWFptSzZIR2VNWUI4UklRc3ZpVUN0QQ",
+  "title": "Hujan Deras Picu Longsor di Pesisir Barat Lampung, Dua Titik Jalan Terdampak - Majalah Lintas",
+  "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZ2YzazN6MHFvTjdISnF5ZFVRSC0xUzVQNEIwTFA5X01TWVBmRHE2WVZkT3BWSHVrMXUxNERqNUVwU05xb2J4Sy1jQmhhYWQwNXI0Y29OOEgzVXBJbUJkQmh5RU9scUFKSThFRkQ2bThiOEl3MHJRRG1XVTFHSEZzQUJZUF9kMnVDWXl4R2RiRFBSVmxmWFptSzZIR2VNWUI4UklRc3ZpVUN0QQ?oc=5",
+  "source": "Majalah Lintas",
+  "source_url": "https://www.majalahlintas.com",
+  "published_at": "2026-11-15T02:20:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-15T05:30:35.444Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "18.13",
+      "nama": "Kabupaten Pesisir Barat",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Lampung"
+  ]
+}

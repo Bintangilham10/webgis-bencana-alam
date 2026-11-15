@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiU0FVX3lxTE9YdG5ZUm1jeklJTmJlamp1VGxnNzdrZUdJX1JWMmdmVWcxaXNmT3RtamhJa1RHZlJZa3c1b1FXNmV1RE9hV1JCUU5VWUhXZHdlQjJR",
+  "title": "Longsor di Hulu Sungai Selatan Rusak 5 Rumah dan Putus Akses Jalan Desa - شبكة تواصل الإخبارية",
+  "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9YdG5ZUm1jeklJTmJlamp1VGxnNzdrZUdJX1JWMmdmVWcxaXNmT3RtamhJa1RHZlJZa3c1b1FXNmV1RE9hV1JCUU5VWUhXZHdlQjJR?oc=5",
+  "source": "شبكة تواصل الإخبارية",
+  "source_url": "https://twaslnews1.twaslnews.com",
+  "published_at": "2026-11-14T16:46:49.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-15T05:30:35.444Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "63.06",
+      "nama": "Kabupaten Hulu Sungai Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

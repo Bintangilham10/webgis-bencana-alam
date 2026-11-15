@@ -1,0 +1,26 @@
+{
+  "guid": "CBMipwFBVV95cUxQQkpldWZ4UkxZQVJzRXo3SzBrQTQtSEJua09BOVhScmdvZFBBZ094SXB6Vkg1VG4wUWtKajRqRlpXUG9GdFRFeF9DMkVNZWpDc3FYejE1M2tFSHM2VkJSSGpRWDBOSXluSmJuRDVvc19EYW1sUkJoN25fVlpKTk5NNmlCWHZLcG1QM2llNEFfZG8tVXhXMC1PT0pZd3FXMHV0QmlVT3BLbw",
+  "title": "Lahan Pembuangan Lumpur Kali Rawalumbu Bekasi Longsor, Tembok Rumah Warga Rusak - KoranIndopos.com",
+  "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQkpldWZ4UkxZQVJzRXo3SzBrQTQtSEJua09BOVhScmdvZFBBZ094SXB6Vkg1VG4wUWtKajRqRlpXUG9GdFRFeF9DMkVNZWpDc3FYejE1M2tFSHM2VkJSSGpRWDBOSXluSmJuRDVvc19EYW1sUkJoN25fVlpKTk5NNmlCWHZLcG1QM2llNEFfZG8tVXhXMC1PT0pZd3FXMHV0QmlVT3BLbw?oc=5",
+  "source": "KoranIndopos.com",
+  "source_url": "https://koranindopos.com",
+  "published_at": "2026-11-15T02:46:28.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-15T05:30:35.444Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.16",
+      "nama": "Kabupaten Bekasi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.75",
+      "nama": "Kota Bekasi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
