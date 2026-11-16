@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi6wFBVV95cUxOMHAwcjFqS0t6THRMYVh5cmdRMEp0V0hvRDgtM21WZ085YTRUSUcxQVlMQ2k2TkxCT0h3M2k1WW1xM0JpbDFRMXNaUHg4RGdPc2ZvM3ZrSm9CZ1VJa2lRLWdtSk8yQUxkQXotcVpRT0w0VUNxLUJ3OUxUTEFwcmpOMzRVckdQNlNhbWZPbkV0Ri1FTVlVZ0FsVTNTSE5MNWJtU2poMVdpU2IyR3FSRGpQczFFbGpTbk5EUWRGVUNmMnpnRFNJSlF6X0NKZ1dfOG9EdkFmVDdIZ0t3NEtQSXYyYS1jWVBYRUpKclQ4",
+  "title": "Update Penangan Longsor Lubuk Basung-Bukittinggi Kabupaten Agam, Pengendara Diminta Waspada Penuh - Celah Sumbar",
+  "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOMHAwcjFqS0t6THRMYVh5cmdRMEp0V0hvRDgtM21WZ085YTRUSUcxQVlMQ2k2TkxCT0h3M2k1WW1xM0JpbDFRMXNaUHg4RGdPc2ZvM3ZrSm9CZ1VJa2lRLWdtSk8yQUxkQXotcVpRT0w0VUNxLUJ3OUxUTEFwcmpOMzRVckdQNlNhbWZPbkV0Ri1FTVlVZ0FsVTNTSE5MNWJtU2poMVdpU2IyR3FSRGpQczFFbGpTbk5EUWRGVUNmMnpnRFNJSlF6X0NKZ1dfOG9EdkFmVDdIZ0t3NEtQSXYyYS1jWVBYRUpKclQ4?oc=5",
+  "source": "Celah Sumbar",
+  "source_url": "https://sumbar.pikiran-rakyat.com",
+  "published_at": "2026-11-16T21:59:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-16T22:30:38.864Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "13.06",
+      "nama": "Kabupaten Agam",
+      "keyakinan": "tinggi"
+    },
+    {
+      "kode": "13.75",
+      "nama": "Kota Bukittinggi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
