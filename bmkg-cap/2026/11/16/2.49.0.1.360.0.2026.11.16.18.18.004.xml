@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.16.18.18.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-17T00:18:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-17T00:28:00+07:00</effective>
+    <expires>2026-11-17T03:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Lampung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 17 November 2026, 00:28 WIB di sebagian wilayah Lampung, khususnya di TANJUNGKARANG BARAT, TANJUNGKARANG PUSAT, TELUKBETUNG UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 17 November 2026, 03:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CLG/2026/11/17/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Lampung</areaDesc>
+      <polygon>-5.384,105.247 -5.385,105.249 -5.385,105.255 -5.394,105.249 -5.399,105.252 -5.409,105.255 -5.408,105.239 -5.425,105.240 -5.432,105.231 -5.427,105.215 -5.409,105.215 -5.409,105.222 -5.402,105.225 -5.403,105.236 -5.387,105.240 -5.384,105.247</polygon>
+      <polygon>-5.399,105.263 -5.403,105.261 -5.406,105.260 -5.419,105.255 -5.426,105.260 -5.425,105.240 -5.408,105.239 -5.409,105.255 -5.399,105.252 -5.399,105.263</polygon>
+      <polygon>-5.426,105.260 -5.427,105.268 -5.432,105.269 -5.435,105.277 -5.445,105.272 -5.444,105.269 -5.445,105.262 -5.440,105.258 -5.439,105.249 -5.435,105.238 -5.446,105.215 -5.442,105.206 -5.429,105.206 -5.427,105.215 -5.432,105.231 -5.425,105.240 -5.426,105.260</polygon>
+    </area>
+  </info>
+</alert>
