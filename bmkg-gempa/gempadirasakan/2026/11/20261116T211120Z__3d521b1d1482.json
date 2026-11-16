@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-16T22:15:32.455Z",
+  "data": {
+    "Tanggal": "17 Nov 2026",
+    "Jam": "04:11:20 WIB",
+    "DateTime": "2026-11-16T21:11:20+00:00",
+    "Coordinates": "-6.03,131.62",
+    "Lintang": "6.03 LS",
+    "Bujur": "131.62 BT",
+    "Magnitude": "7.1",
+    "Kedalaman": "115 km",
+    "Wilayah": "Pusat gempa berada di 130km BaratDaya Maluku Tenggara",
+    "Dirasakan": "III Saumlaki, III Tiakur, III Dobo, III Sorong, III Manokwari, III Manokwari Selatan, III Bintuni, III Tual, III Fakfak, III Kaimana, II Nabire, II Serui"
+  }
+}
