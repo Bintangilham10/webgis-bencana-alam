@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixgFBVV95cUxOM05JeGxKeVhqNlItQUM0MkUwZE9ZZ0pacUNuZ0FFQnlBUS1nRGNROTFBdzU3eGVHeUdiZFJiZWZhcTVXUDBYSU5KTWlyREdDei0zV3d2MFlmQVppZXk5Y0swakt2bUxhNUFNaGZGcWk3anM2bUd2UDdidHZydnNDYmNGcnpkM2d5b05kU19fWmRjZ3BfYV81dXhVLWR2NFhZUHhwTWY2dkx4SXYzQ0FHSU1PSjBBX1RhMEdCdWh2VWZWQ1pRY0E",
+  "title": "12 Titik Longsor dan 3 Lokasi Banjir Landa Tasikmalaya, Puluhan Rumah Rusak - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOM05JeGxKeVhqNlItQUM0MkUwZE9ZZ0pacUNuZ0FFQnlBUS1nRGNROTFBdzU3eGVHeUdiZFJiZWZhcTVXUDBYSU5KTWlyREdDei0zV3d2MFlmQVppZXk5Y0swakt2bUxhNUFNaGZGcWk3anM2bUd2UDdidHZydnNDYmNGcnpkM2d5b05kU19fWmRjZ3BfYV81dXhVLWR2NFhZUHhwTWY2dkx4SXYzQ0FHSU1PSjBBX1RhMEdCdWh2VWZWQ1pRY0E?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://bandung.kompas.com",
+  "published_at": "2026-11-16T08:40:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-16T10:00:44.449Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
