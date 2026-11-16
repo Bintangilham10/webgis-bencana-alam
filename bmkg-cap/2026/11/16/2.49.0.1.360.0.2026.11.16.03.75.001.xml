@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.16.03.75.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-16T10:50:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-16T11:02:00+08:00</effective>
+    <expires>2026-11-16T13:02:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 16 November 2026, 11:02 WITA di sebagian wilayah Gorontalo, khususnya di LIMBOTO BARAT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 16 November 2026, 13:02 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/11/16/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.713,122.959 0.669,122.958 0.656,122.962 0.650,122.971 0.637,122.971 0.628,122.968 0.631,122.944 0.628,122.943 0.625,122.949 0.616,122.950 0.613,122.939 0.606,122.937 0.619,122.901 0.624,122.890 0.644,122.886 0.657,122.888 0.713,122.899 0.710,122.904 0.700,122.901 0.689,122.919 0.694,122.926 0.710,122.928 0.714,122.932 0.711,122.944 0.713,122.959</polygon>
+    </area>
+  </info>
+</alert>

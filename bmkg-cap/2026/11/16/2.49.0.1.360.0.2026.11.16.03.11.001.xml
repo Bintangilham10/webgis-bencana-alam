@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.16.03.11.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-16T07:32:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-16T07:42:00+07:00</effective>
+    <expires>2026-11-16T11:03:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Aceh</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 16 November 2026, 07:42 WIB di sebagian wilayah Aceh, khususnya di INDRA JAYA, SAMPOINIET.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 16 November 2026, 11:03 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CAH/2026/11/16/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Aceh</areaDesc>
+      <polygon>5.063,95.665 5.040,95.665 5.025,95.659 5.006,95.656 4.991,95.647 4.957,95.635 4.902,95.576 4.890,95.555 4.881,95.522 4.873,95.529 4.866,95.527 4.846,95.535 4.829,95.503 4.807,95.483 4.795,95.453 4.808,95.445 4.809,95.427 4.819,95.419 4.824,95.417 4.828,95.426 4.836,95.426 4.852,95.419 4.872,95.398 4.877,95.396 4.894,95.402 4.926,95.378 4.949,95.369 4.940,95.396 4.948,95.410 4.959,95.418 4.965,95.443 4.984,95.444 5.037,95.478 5.030,95.495 5.051,95.545 5.051,95.597 5.052,95.604 5.071,95.627 5.076,95.638 5.068,95.647 5.063,95.665</polygon>
+      <polygon>4.877,95.377 4.878,95.385 4.873,95.391 4.859,95.382 4.863,95.372 4.873,95.366 4.878,95.370 4.877,95.377</polygon>
+      <polygon>5.051,95.597 5.051,95.545 5.030,95.495 5.037,95.478 4.984,95.444 4.965,95.443 4.959,95.418 4.948,95.410 4.940,95.396 4.949,95.369 4.962,95.381 4.969,95.382 4.995,95.369 4.999,95.364 4.998,95.359 5.003,95.356 5.013,95.358 5.014,95.367 5.030,95.368 5.039,95.362 5.047,95.350 5.051,95.332 5.059,95.330 5.078,95.334 5.076,95.349 5.071,95.353 5.080,95.365 5.078,95.373 5.073,95.373 5.088,95.439 5.079,95.535 5.051,95.597</polygon>
+    </area>
+  </info>
+</alert>
