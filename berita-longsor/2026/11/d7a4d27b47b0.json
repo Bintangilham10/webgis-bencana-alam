@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiwAFBVV95cUxQUzA4Y2ZoOFIwcTRpUzVYYUhJMFRtZzJOZDVWaTNOYVFFYlZpb0NxbTJGOWRfVzZMNFZEMkQ2UDJBMlNva24xOU05ODNPUGs1VHVOczltOVFUdm5QblBQVTNzRE5RRUFCM1V5S3h5Zi1iV1U5Z0QtbWprRF9JQy13R2I4c2ZSMk5YMUNrUWRwVUtlbmVSbVBIOXJsY1h0bFZHNnhwYXFhMmlCOE0yV2N4YWp2TEJWUTNBdFBaN1hCQXU",
+  "title": "Kecamatan Rawan Banjir dan Tanah Longsor di Polewali Mandar, Mana Saja? - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUzA4Y2ZoOFIwcTRpUzVYYUhJMFRtZzJOZDVWaTNOYVFFYlZpb0NxbTJGOWRfVzZMNFZEMkQ2UDJBMlNva24xOU05ODNPUGs1VHVOczltOVFUdm5QblBQVTNzRE5RRUFCM1V5S3h5Zi1iV1U5Z0QtbWprRF9JQy13R2I4c2ZSMk5YMUNrUWRwVUtlbmVSbVBIOXJsY1h0bFZHNnhwYXFhMmlCOE0yV2N4YWp2TEJWUTNBdFBaN1hCQXU?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://makassar.kompas.com",
+  "published_at": "2026-11-16T04:26:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-16T06:45:32.641Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "76.04",
+      "nama": "Kabupaten Polewali Mandar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

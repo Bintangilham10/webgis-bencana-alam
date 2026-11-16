@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirwFBVV95cUxNdkxIckFtZGFkaTYyajB1VTZlUi1SMi1EMHRtanVEQWhJd1VBVzBaMk54YzR0bm1KakxRNnJqa2FfR2p3cWxvWGtmQnR5eEwyMXc2bFExS2dBLVpYaDBNWXN1eWIxbExDNFRZcHdRNnJ4c00wdm42cGJsQUR0d1dud3pFUFdfdFNmNUV1akZhT2FaM1hreFJ3RV9WMkZ2UG9PN1RteGgyMENTVWtuelFZ",
+  "title": "Akses Jalan Gunung Meriah-Saran Padang Deli Serdang Putus Akibat Longsor - HARIAN MISTAR",
+  "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdkxIckFtZGFkaTYyajB1VTZlUi1SMi1EMHRtanVEQWhJd1VBVzBaMk54YzR0bm1KakxRNnJqa2FfR2p3cWxvWGtmQnR5eEwyMXc2bFExS2dBLVpYaDBNWXN1eWIxbExDNFRZcHdRNnJ4c00wdm42cGJsQUR0d1dud3pFUFdfdFNmNUV1akZhT2FaM1hreFJ3RV9WMkZ2UG9PN1RteGgyMENTVWtuelFZ?oc=5",
+  "source": "HARIAN MISTAR",
+  "source_url": "https://mistar.id",
+  "published_at": "2026-11-16T04:05:55.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-16T06:45:32.641Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "12.07",
+      "nama": "Kabupaten Deli Serdang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.71",
+      "nama": "Kota Padang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

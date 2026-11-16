@@ -1,0 +1,26 @@
+{
+  "guid": "CBMioAFBVV95cUxPaW5JYW45MHpocTZJdnc1cGpYLW40ME85dkNTNG5RamdBMC1FVmZMQUd2ckZJR000TFo5a0JuMG1MOEZEbmhTc3BQN0V5bHYxWk8wa3JtTWlHbzQ1NmdCbkszRUxBNDZGLW10dkY3MkdodnY1X1g5VnEyNmZQTDRXSk84aXdPNnJvVzYtemh3MlMySE5Fa0hIWWppMEJwSHdS",
+  "title": "Mitigasi Libur Nataru, Polres Semarang Petakan Titik Rawan Laka dan Longsor - Beritajateng.tv",
+  "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPaW5JYW45MHpocTZJdnc1cGpYLW40ME85dkNTNG5RamdBMC1FVmZMQUd2ckZJR000TFo5a0JuMG1MOEZEbmhTc3BQN0V5bHYxWk8wa3JtTWlHbzQ1NmdCbkszRUxBNDZGLW10dkY3MkdodnY1X1g5VnEyNmZQTDRXSk84aXdPNnJvVzYtemh3MlMySE5Fa0hIWWppMEJwSHdS?oc=5",
+  "source": "Beritajateng.tv",
+  "source_url": "https://beritajateng.tv",
+  "published_at": "2026-11-16T04:12:26.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-16T06:45:32.641Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.22",
+      "nama": "Kabupaten Semarang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.74",
+      "nama": "Kota Semarang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiwAFBVV95cUxOR3BrSjBUeTVFdXExSm9uTlota3JBZFNWbkgwZmtGb2FZSERVc2o2QUEzR0t6T0NrSkw4aFdoSkJoTUpYMUs3Z1gyLUNPd2J5N2pNeWtGQS1qTVBCQzNQQ0xnQlpoc05XbFVhUTBUZHF1NlB2amt6UkhPOEtxa081QkdCa1NhTWRWMHJMem14Zk0wbk1NQ0tmY05HYXNvdVNvVVJlU1dsTFBESlhQODM0RVVHSWdpOEtpZkZlRV9ybnE",
+  "title": "BPBD Garut Petakan Risiko Longsor di Banjarwangi, Penguatan Tebing Jadi Rencana Penanganan - Radar Garut",
+  "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOR3BrSjBUeTVFdXExSm9uTlota3JBZFNWbkgwZmtGb2FZSERVc2o2QUEzR0t6T0NrSkw4aFdoSkJoTUpYMUs3Z1gyLUNPd2J5N2pNeWtGQS1qTVBCQzNQQ0xnQlpoc05XbFVhUTBUZHF1NlB2amt6UkhPOEtxa081QkdCa1NhTWRWMHJMem14Zk0wbk1NQ0tmY05HYXNvdVNvVVJlU1dsTFBESlhQODM0RVVHSWdpOEtpZkZlRV9ybnE?oc=5",
+  "source": "Radar Garut",
+  "source_url": "https://radargarut.id",
+  "published_at": "2026-11-16T03:50:45.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-16T06:45:32.641Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

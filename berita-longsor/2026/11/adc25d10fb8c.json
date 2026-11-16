@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiuwFBVV95cUxOem55OFNpUVQ3VWRwNjdOeTh6WmxxZHZsdXV3TWJnbHQ4T0NzMzc0OVRsVGxHeFM5SG1ndHQxZmZNTmZzRmJiWVdGcFhBOEFzOUpINjhzSjdCNFRTVmJJQVJ0NnNzZ1RJM25aWGRiTUhCNzNSZ0pJOWVCOWdMQkdSd3prUmNidk1PNlJyZXJxSEsyRkxwaWdYYmFXYnNSaW5lN2ZzNW8wakpacEdRMW5sdnREZWtwQ0hrMnhJ0gHAAUFVX3lxTFBwbmtLQWJfNjBRVENmZTlfbWUtYXE1eFBQdDNobzF1eUxzTjhvR2NDMVZOaUZMREhnN1VFT2hfV3RWajRRTkdzc3AtYVFWdmxOcEJsZG9TOEZ0alFFMTZ6TkNaRmRqNm9OSnE5SllidHNoZ3VGOWRkUER5OU5aSTJnOHZIYkZCQjVBQktDX1EyQmxFTWFQZVUtU181RjJVcmpaOUsxanlWeVVzajF3MlhSTWFEanJac0tCbE5nTVp0dg",
+  "title": "Balita 2 Tahun Tewas Terseret Arus Banjir dan Longsor di Aceh Tengah - Radar Purworejo",
+  "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOem55OFNpUVQ3VWRwNjdOeTh6WmxxZHZsdXV3TWJnbHQ4T0NzMzc0OVRsVGxHeFM5SG1ndHQxZmZNTmZzRmJiWVdGcFhBOEFzOUpINjhzSjdCNFRTVmJJQVJ0NnNzZ1RJM25aWGRiTUhCNzNSZ0pJOWVCOWdMQkdSd3prUmNidk1PNlJyZXJxSEsyRkxwaWdYYmFXYnNSaW5lN2ZzNW8wakpacEdRMW5sdnREZWtwQ0hrMnhJ0gHAAUFVX3lxTFBwbmtLQWJfNjBRVENmZTlfbWUtYXE1eFBQdDNobzF1eUxzTjhvR2NDMVZOaUZMREhnN1VFT2hfV3RWajRRTkdzc3AtYVFWdmxOcEJsZG9TOEZ0alFFMTZ6TkNaRmRqNm9OSnE5SllidHNoZ3VGOWRkUER5OU5aSTJnOHZIYkZCQjVBQktDX1EyQmxFTWFQZVUtU181RjJVcmpaOUsxanlWeVVzajF3MlhSTWFEanJac0tCbE5nTVp0dg?oc=5",
+  "source": "Radar Purworejo",
+  "source_url": "https://radarpurworejo.jawapos.com",
+  "published_at": "2026-11-16T06:22:59.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-16T06:45:32.641Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivAFBVV95cUxOYkZ2cHBnbG9PcVNCNEx6aEZoOGhENHp1WDl2TE8wVDZWZDNCUHJaZzJSVUtTWnc2bWVabzV5emowemVLRDQyNk01TFp2dzZpeVJBclNxQzFGZFJYZDJweUVSSU0yLWhWdkhrRXQ0MWF6VjV2WnpsVlZuaTM5ZnJHNW5FcWl1OTlNRmZ5a3dLci1PYVN5ZUNSbHFDSlZEaHlTYnVWeHhqQkxYYnJRem11ZUNUNi1yZ0c0TWRVMw",
+  "title": "Tagana Tasikmalaya Masih Membersihkan Material Longsor di sejumlah Wilayah - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYkZ2cHBnbG9PcVNCNEx6aEZoOGhENHp1WDl2TE8wVDZWZDNCUHJaZzJSVUtTWnc2bWVabzV5emowemVLRDQyNk01TFp2dzZpeVJBclNxQzFGZFJYZDJweUVSSU0yLWhWdkhrRXQ0MWF6VjV2WnpsVlZuaTM5ZnJHNW5FcWl1OTlNRmZ5a3dLci1PYVN5ZUNSbHFDSlZEaHlTYnVWeHhqQkxYYnJRem11ZUNUNi1yZ0c0TWRVMw?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-16T04:54:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-16T06:45:32.641Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
