@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiyAFBVV95cUxPb0RYMFVqRFBsaHJqRkVEYWdlNTh2WFF6amtkVmRsbXc1cHRNRF85VFprODU3Tko0aW0xcHZFWVhmMmtqRWs1UGlkcGRFNTc0aVgzb3ExcDFLdjlZRXFGdC05X0p6dlYzM29MekxkeklGQmNqVDRZRkJJUnB6MzFMUDNGOUdzcUxYQWhVaUNjWmpWaERacW56UmtZVXNXQkZJenl6NEIyb1VsVkpraWhaekFQTTM2WERfd3UtQXItYjJzSEJGdktsbQ",
+  "title": "Jalan Nasional di Aceh Tengah yang Sedang Diperbaiki Kembali Longsor, Balita Tewas Tertimbun - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPb0RYMFVqRFBsaHJqRkVEYWdlNTh2WFF6amtkVmRsbXc1cHRNRF85VFprODU3Tko0aW0xcHZFWVhmMmtqRWs1UGlkcGRFNTc0aVgzb3ExcDFLdjlZRXFGdC05X0p6dlYzM29MekxkeklGQmNqVDRZRkJJUnB6MzFMUDNGOUdzcUxYQWhVaUNjWmpWaERacW56UmtZVXNXQkZJenl6NEIyb1VsVkpraWhaekFQTTM2WERfd3UtQXItYjJzSEJGdktsbQ?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://regional.kompas.com",
+  "published_at": "2026-11-15T22:17:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-16T00:15:33.936Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

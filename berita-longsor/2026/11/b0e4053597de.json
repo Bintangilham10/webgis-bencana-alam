@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiiwJBVV95cUxQNnpjMGdqRGNudmxUVDZwU3Y5YmFqMUNUNU5NR1ZoX1U4Z0lwUzVTal9iaVZSTFN6QzFCbTJoS255WHRXRnpwNno4amlmbV9TZ1NYd3ViY1FxZzBsVkJ1WThzbmRBVzNxOFFXZUVOTE5aV0Z3RFFHNEhaUFJCUG94NWJYZUNLOGVQZ1paOXZDa1ZVaGVZTE9DaFBvaTlvUHFxNkpWSkhoU1dmZ1RDTlgtSTZEb29sMGc5bzhxRTNMRklocGVndFFzTjdvVUw4eEU0bWhpS0ZIVlFOM2E2elpNTG9hN1lOSFItUlM4c0YzTXNpM2QtVk1qZkhPSktZdHZYNkFZU25KdGhJc28",
+  "title": "Longsor Terjang Dua Kecamatan di Tasikmalaya: Jalur Salawu–Garut Tertutup, 10 Rumah di Bantarkalong Rusak - Kabar Tasikmalaya",
+  "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQNnpjMGdqRGNudmxUVDZwU3Y5YmFqMUNUNU5NR1ZoX1U4Z0lwUzVTal9iaVZSTFN6QzFCbTJoS255WHRXRnpwNno4amlmbV9TZ1NYd3ViY1FxZzBsVkJ1WThzbmRBVzNxOFFXZUVOTE5aV0Z3RFFHNEhaUFJCUG94NWJYZUNLOGVQZ1paOXZDa1ZVaGVZTE9DaFBvaTlvUHFxNkpWSkhoU1dmZ1RDTlgtSTZEb29sMGc5bzhxRTNMRklocGVndFFzTjdvVUw4eEU0bWhpS0ZIVlFOM2E2elpNTG9hN1lOSFItUlM4c0YzTXNpM2QtVk1qZkhPSktZdHZYNkFZU25KdGhJc28?oc=5",
+  "source": "Kabar Tasikmalaya",
+  "source_url": "https://kabartasikmalaya.pikiran-rakyat.com",
+  "published_at": "2026-11-15T23:26:31.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-16T00:15:33.936Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
