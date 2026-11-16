@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.16.07.53.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-16T14:30:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-16T15:00:00+08:00</effective>
+    <expires>2026-11-16T16:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 16 November 2026, 15:00 WITA di sebagian wilayah Nusa Tenggara Timur, khususnya di ENDE, MAUKARO, NANGAPANDA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 16 November 2026, 16:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNT/2026/11/16/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Timur</areaDesc>
+      <polygon>-8.670,121.455 -8.673,121.471 -8.693,121.467 -8.708,121.469 -8.708,121.474 -8.702,121.479 -8.701,121.491 -8.717,121.525 -8.729,121.524 -8.726,121.535 -8.728,121.543 -8.745,121.559 -8.799,121.576 -8.800,121.560 -8.809,121.543 -8.799,121.486 -8.794,121.415 -8.788,121.416 -8.744,121.416 -8.729,121.399 -8.721,121.395 -8.694,121.417 -8.681,121.430 -8.677,121.429 -8.671,121.434 -8.670,121.455</polygon>
+      <polygon>-8.720,121.695 -8.727,121.696 -8.742,121.691 -8.754,121.705 -8.760,121.706 -8.770,121.690 -8.773,121.686 -8.769,121.676 -8.771,121.664 -8.764,121.655 -8.765,121.649 -8.794,121.663 -8.797,121.663 -8.796,121.656 -8.805,121.652 -8.806,121.623 -8.810,121.612 -8.798,121.594 -8.803,121.587 -8.799,121.576 -8.745,121.559 -8.728,121.543 -8.724,121.538 -8.719,121.541 -8.706,121.570 -8.707,121.603 -8.722,121.609 -8.724,121.613 -8.695,121.633 -8.677,121.638 -8.660,121.645 -8.654,121.663 -8.659,121.683 -8.669,121.674 -8.683,121.673 -8.709,121.682 -8.720,121.695</polygon>
+      <polygon>-8.531,121.571 -8.537,121.573 -8.541,121.570 -8.549,121.575 -8.552,121.588 -8.593,121.613 -8.602,121.621 -8.603,121.632 -8.608,121.636 -8.612,121.638 -8.620,121.630 -8.626,121.628 -8.635,121.629 -8.636,121.636 -8.642,121.636 -8.656,121.617 -8.663,121.618 -8.669,121.628 -8.672,121.625 -8.678,121.631 -8.677,121.638 -8.695,121.633 -8.724,121.613 -8.722,121.609 -8.707,121.603 -8.706,121.570 -8.719,121.541 -8.724,121.538 -8.728,121.543 -8.726,121.535 -8.729,121.524 -8.717,121.525 -8.701,121.491 -8.702,121.479 -8.708,121.474 -8.708,121.469 -8.693,121.467 -8.673,121.471 -8.670,121.455 -8.655,121.479 -8.639,121.495 -8.635,121.519 -8.627,121.523 -8.614,121.520 -8.609,121.528 -8.602,121.525 -8.596,121.526 -8.595,121.531 -8.601,121.532 -8.600,121.540 -8.587,121.541 -8.582,121.545 -8.574,121.564 -8.576,121.575 -8.571,121.581 -8.562,121.580 -8.552,121.565 -8.537,121.566 -8.531,121.571</polygon>
+    </area>
+  </info>
+</alert>
