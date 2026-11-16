@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-16T12:00:54.581Z",
+  "data": {
+    "Tanggal": "16 Nov 2026",
+    "Jam": "18:36:57 WIB",
+    "DateTime": "2026-11-16T11:36:57+00:00",
+    "Coordinates": "-5.41,104.60",
+    "Lintang": "5.41 LS",
+    "Bujur": "104.60 BT",
+    "Magnitude": "3.8",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di darat 12 km Barat Laut Tanggamus-Lampung",
+    "Dirasakan": ""
+  }
+}
