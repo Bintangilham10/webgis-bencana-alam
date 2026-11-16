@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-16T11:15:34.119Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        107.6150725742,
+        -6.8848633772
+      ]
+    },
+    "properties": {
+      "pkey": "400049",
+      "created_at": "2026-11-16T11:08:32.892Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "686fc0b9-5750-4390-8271-cd9f45f09364",
+      "image_url": "https://images.petabencana.id/686fc0b9-5750-4390-8271-cd9f45f09364.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 64
+      },
+      "tags": {
+        "city": "KOTA BANDUNG",
+        "district_id": null,
+        "region_code": "3273",
+        "local_area_id": null,
+        "instance_region_code": "ID-JB"
+      },
+      "title": null,
+      "text": "Pasca diguyur hujan berintensitas tinggi, Sungai Cikalintuh yang melintasi kawasan Jalan Cihampelas, Kecamatan Coblong, Kota Bandung",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
