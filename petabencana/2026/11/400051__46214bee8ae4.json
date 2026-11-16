@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-16T11:30:38.598Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        104.0149219,
+        -5.0078152015
+      ]
+    },
+    "properties": {
+      "pkey": "400051",
+      "created_at": "2026-11-16T11:22:37.212Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "9c4e9dfc-d698-402f-9c96-9bece3004c96",
+      "image_url": "https://images.petabencana.id/9c4e9dfc-d698-402f-9c96-9bece3004c96.jpg",
+      "disaster_type": "wind",
+      "is_training": false,
+      "report_data": {
+        "report_type": "wind",
+        "impact": 2
+      },
+      "tags": {
+        "city": "LAMPUNG BARAT",
+        "district_id": null,
+        "region_code": "1804",
+        "local_area_id": null,
+        "instance_region_code": "ID-LA"
+      },
+      "title": null,
+      "text": "Hujan deras disertai angin puting beliung menerjang Pekon Padang Cahya, Kecamatan Balik Bukit, Kabupaten Lampung Barat, Lampung ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

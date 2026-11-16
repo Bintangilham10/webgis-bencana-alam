@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-16T11:30:38.598Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.8132317422,
+        -6.6259543287
+      ]
+    },
+    "properties": {
+      "pkey": "400052",
+      "created_at": "2026-11-16T11:28:40.460Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "72a69afb-13ea-4c5e-be8f-fca57a9662fc",
+      "image_url": "https://images.petabencana.id/72a69afb-13ea-4c5e-be8f-fca57a9662fc.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 168.90763623714935,
+        "fireLocation": {
+          "lng": 106.81323174218932,
+          "lat": -6.625954328697333
+        },
+        "personLocation": {
+          "lat": "-6.6259117",
+          "lng": "106.8141276"
+        },
+        "fireRadius": {
+          "lng": 106.81172434072494,
+          "lat": -6.626210100803803
+        }
+      },
+      "tags": {
+        "city": "KOTA BOGOR",
+        "district_id": null,
+        "region_code": "3271",
+        "local_area_id": null,
+        "instance_region_code": "ID-JB"
+      },
+      "title": null,
+      "text": "Kebakaran melanda kawasan permukiman asrama di daerah Lawanggintung, Kecamatan Bogor Selatan, Kota Bogor, Jawa Barat, pada Senin sore ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
