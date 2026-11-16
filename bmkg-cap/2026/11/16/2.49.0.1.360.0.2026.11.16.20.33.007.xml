@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.16.20.33.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-17T03:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-17T03:10:00+07:00</effective>
+    <expires>2026-11-17T05:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 17 November 2026, 03:10 WIB di sebagian wilayah Jawa Tengah, khususnya di BATANG, KANDEMAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 17 November 2026, 05:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJH/2026/11/17/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Tengah</areaDesc>
+      <polygon>-6.882,109.756 -6.900,109.750 -6.901,109.759 -6.908,109.756 -6.914,109.746 -6.918,109.751 -6.933,109.738 -6.943,109.741 -6.946,109.750 -6.950,109.752 -6.954,109.743 -6.950,109.725 -6.944,109.718 -6.926,109.714 -6.914,109.704 -6.914,109.698 -6.910,109.700 -6.892,109.707 -6.869,109.714 -6.882,109.756</polygon>
+      <polygon>-6.901,109.812 -6.915,109.801 -6.921,109.800 -6.929,109.805 -6.939,109.801 -6.938,109.789 -6.949,109.777 -6.970,109.776 -6.963,109.763 -6.950,109.752 -6.946,109.750 -6.943,109.741 -6.933,109.738 -6.918,109.751 -6.914,109.746 -6.908,109.756 -6.901,109.759 -6.900,109.750 -6.882,109.756 -6.890,109.790 -6.901,109.812</polygon>
+    </area>
+  </info>
+</alert>
