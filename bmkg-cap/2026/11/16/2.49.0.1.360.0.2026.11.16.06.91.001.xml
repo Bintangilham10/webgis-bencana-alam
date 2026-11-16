@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.16.06.91.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-16T14:45:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-16T14:50:00+09:00</effective>
+    <expires>2026-11-16T16:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 16 November 2026, 14:50 WIT di sebagian wilayah Papua, khususnya di TOWE, WARIS, WEB.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 16 November 2026, 16:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPU/2026/11/16/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua</areaDesc>
+      <polygon>-3.048,140.821 -3.050,140.839 -3.058,140.896 -3.058,140.897 -3.072,140.959 -3.077,141.000 -3.428,141.000 -3.411,140.946 -3.382,140.903 -3.240,140.762 -3.189,140.662 -3.038,140.781 -3.037,140.781 -3.021,140.793 -3.048,140.821</polygon>
+      <polygon>-3.689,141.000 -3.767,141.000 -3.776,140.986 -3.783,140.951 -3.752,140.834 -3.735,140.789 -3.729,140.775 -3.727,140.748 -3.727,140.740 -3.734,140.717 -3.741,140.698 -3.737,140.686 -3.729,140.680 -3.724,140.670 -3.710,140.665 -3.696,140.670 -3.676,140.659 -3.663,140.664 -3.654,140.661 -3.645,140.650 -3.634,140.653 -3.598,140.683 -3.559,140.684 -3.535,140.699 -3.518,140.748 -3.504,140.803 -3.503,140.861 -3.505,140.800 -3.629,140.835 -3.614,140.932 -3.646,140.953 -3.692,140.921 -3.703,141.000 -3.689,141.000</polygon>
+      <polygon>-3.767,141.000 -3.931,141.000 -3.916,140.983 -3.925,140.967 -3.915,140.958 -3.918,140.952 -3.914,140.943 -3.917,140.936 -3.928,140.932 -3.922,140.917 -3.944,140.919 -3.946,140.916 -3.946,140.912 -3.938,140.909 -3.936,140.904 -3.941,140.887 -3.935,140.885 -3.938,140.875 -3.933,140.865 -3.935,140.855 -3.940,140.835 -3.940,140.807 -3.940,140.807 -3.914,140.803 -3.875,140.735 -3.868,140.735 -3.862,140.731 -3.859,140.725 -3.850,140.724 -3.839,140.724 -3.798,140.703 -3.795,140.702 -3.783,140.832 -3.751,140.829 -3.735,140.789 -3.752,140.834 -3.783,140.951 -3.776,140.986 -3.767,141.000</polygon>
+    </area>
+  </info>
+</alert>
