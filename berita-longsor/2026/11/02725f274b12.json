@@ -1,0 +1,23 @@
+{
+  "guid": "CBMinwFBVV95cUxPWmd4Nzg0ZHNpemxTVEhHZkQ5QnpJeFpPbWN1Zm5MblRSbzZGY1dEbV9aakV2X0c2Z05IbGVEUk5QZUZqaVE5TUFLQk14dWVPaXlZWGNRZHJuVFpJRFJ0NUM2eHB1YThYWEUtMS1NQzdhQmlKZndlR3doMU5OMWJJQXkyNmpJd2NoV0ROUkQzWldVSmtuVVBDcEZNYnoyRTQ",
+  "title": "Longsor dan Banjir Terjang Lima Kampung di Aceh Tengah - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWmd4Nzg0ZHNpemxTVEhHZkQ5QnpJeFpPbWN1Zm5MblRSbzZGY1dEbV9aakV2X0c2Z05IbGVEUk5QZUZqaVE5TUFLQk14dWVPaXlZWGNRZHJuVFpJRFJ0NUM2eHB1YThYWEUtMS1NQzdhQmlKZndlR3doMU5OMWJJQXkyNmpJd2NoV0ROUkQzWldVSmtuVVBDcEZNYnoyRTQ?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-16T02:51:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-16T03:30:42.674Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

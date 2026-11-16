@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.16.03.71.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-16T11:07:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-16T11:15:00+08:00</effective>
+    <expires>2026-11-16T13:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 16 November 2026, 11:15 WITA di sebagian wilayah Sulawesi Utara, khususnya di KOMBI, POSIGADAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 16 November 2026, 13:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/16/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>1.323,125.002 1.326,125.011 1.315,125.024 1.294,125.033 1.293,125.058 1.286,125.064 1.174,125.032 1.193,124.986 1.196,124.979 1.211,124.967 1.226,124.967 1.243,124.956 1.260,124.955 1.265,124.953 1.278,124.969 1.289,124.971 1.307,124.970 1.314,124.984 1.328,124.990 1.328,124.998 1.323,125.002</polygon>
+      <polygon>0.573,123.644 0.567,123.660 0.564,123.679 0.568,123.711 0.526,123.721 0.504,123.711 0.482,123.691 0.458,123.698 0.439,123.691 0.370,123.697 0.351,123.702 0.329,123.697 0.313,123.698 0.307,123.692 0.300,123.672 0.304,123.662 0.304,123.637 0.293,123.634 0.292,123.629 0.298,123.614 0.308,123.610 0.308,123.589 0.320,123.569 0.322,123.548 0.307,123.494 0.309,123.486 0.315,123.479 0.319,123.479 0.325,123.483 0.354,123.480 0.356,123.490 0.382,123.498 0.412,123.532 0.426,123.540 0.434,123.550 0.443,123.547 0.451,123.529 0.457,123.525 0.490,123.523 0.497,123.545 0.512,123.551 0.523,123.547 0.534,123.531 0.541,123.528 0.577,123.533 0.579,123.537 0.576,123.554 0.585,123.589 0.562,123.611 0.563,123.627 0.573,123.644</polygon>
+    </area>
+  </info>
+</alert>
