@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.16.19.11.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-17T00:01:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-17T00:11:00+07:00</effective>
+    <expires>2026-11-17T03:32:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Aceh</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 17 November 2026, 00:11 WIB di sebagian wilayah Aceh, khususnya di SEUNAGAN TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 17 November 2026, 03:32 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CAH/2026/11/17/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Aceh</areaDesc>
+      <polygon>4.224,96.360 4.238,96.344 4.252,96.338 4.246,96.316 4.250,96.311 4.256,96.310 4.271,96.286 4.286,96.282 4.289,96.286 4.334,96.293 4.368,96.296 4.367,96.327 4.371,96.336 4.380,96.342 4.382,96.350 4.398,96.373 4.417,96.372 4.423,96.433 4.430,96.449 4.444,96.464 4.435,96.488 4.416,96.501 4.409,96.500 4.389,96.483 4.391,96.465 4.377,96.451 4.374,96.435 4.383,96.426 4.375,96.409 4.359,96.395 4.349,96.397 4.343,96.380 4.333,96.387 4.302,96.376 4.266,96.379 4.255,96.383 4.245,96.397 4.224,96.360</polygon>
+    </area>
+  </info>
+</alert>
