@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-11-16T21:30:41.951Z",
+  "data": {
+    "Tanggal": "17 Nov 2026",
+    "Jam": "04:11:20 WIB",
+    "DateTime": "2026-11-16T21:11:20+00:00",
+    "Coordinates": "-6.03,131.62",
+    "Lintang": "6.03 LS",
+    "Bujur": "131.62 BT",
+    "Magnitude": "7.1",
+    "Kedalaman": "115 km",
+    "Wilayah": "130 km BaratDaya MALUKUTENGGARA",
+    "Potensi": "Tidak berpotensi tsunami",
+    "Dirasakan": "-",
+    "Shakemap": "20261117041408.mmi.jpg"
+  }
+}
