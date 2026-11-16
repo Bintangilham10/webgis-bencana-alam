@@ -1,0 +1,23 @@
+{
+  "guid": "CBMilAFBVV95cUxQa3Nva0FhdzdHcDVzdUVJT1BRVFVXalVBTEN0V180cW5lVDFGeHBQQlEweWpqT1UzNF9YcFhsd0Fac2xZRGF5anlXYkpNWGh5akVSQ0xGRXFidWc2a3cwcVpWbC1FdzJ2b2V0azBiRjZqTzVqanpkZ2MybG9jMzFtZnRkWTdNbFRFYk84aWJZNTZzZFJy",
+  "title": "Satu Balita Meninggal Tertimbun Longsor di Aceh Tengah - Lentera.co",
+  "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQa3Nva0FhdzdHcDVzdUVJT1BRVFVXalVBTEN0V180cW5lVDFGeHBQQlEweWpqT1UzNF9YcFhsd0Fac2xZRGF5anlXYkpNWGh5akVSQ0xGRXFidWc2a3cwcVpWbC1FdzJ2b2V0azBiRjZqTzVqanpkZ2MybG9jMzFtZnRkWTdNbFRFYk84aWJZNTZzZFJy?oc=5",
+  "source": "Lentera.co",
+  "source_url": "https://lentera.co",
+  "published_at": "2026-11-16T02:14:19.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-16T13:00:52.792Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

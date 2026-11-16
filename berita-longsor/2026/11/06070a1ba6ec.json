@@ -1,0 +1,23 @@
+{
+  "guid": "CBMigAFBVV95cUxPVXFPZUhLNHdpcmlzMnFrTWIxaFJFVGEyaWlyRkFkSk93dTNvVGJNTm01RnlZcUZ2cjhjSFl0Sm1PTWQ1ejAxOXpISHFvZEFjUC1JT19DN0RHOFZQajAybl9mMVhKSE9fOE4zMFcxejd5Wll4Y3lWMDJ3c3VCaE9yZw",
+  "title": "Longsor Aceh Tengah Tewaskan Kayla, Banjir Belum Surut - JournalArta",
+  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVXFPZUhLNHdpcmlzMnFrTWIxaFJFVGEyaWlyRkFkSk93dTNvVGJNTm01RnlZcUZ2cjhjSFl0Sm1PTWQ1ejAxOXpISHFvZEFjUC1JT19DN0RHOFZQajAybl9mMVhKSE9fOE4zMFcxejd5Wll4Y3lWMDJ3c3VCaE9yZw?oc=5",
+  "source": "JournalArta",
+  "source_url": "https://journalarta.com",
+  "published_at": "2026-11-16T11:59:08.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-16T13:00:52.792Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

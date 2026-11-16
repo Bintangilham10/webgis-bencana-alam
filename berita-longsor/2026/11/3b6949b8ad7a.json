@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiugFBVV95cUxOeEtiMmFxdTQtcUowVVZJMFdxV28xbUhuQVFNNGF5NVhFU1VLN2p1NnJPdnhsU0c3UjlQUU9pRlI3WmZYcWU2aTFLR0w1bUNXU0RBNmUyaUNSbHJ4ZnladjFWTkxzYmxSeUpHMTRoUHh5akp6TWpQdVYtamlRNldPYjh5dW1DbHZ3NEdTRTRJaGhJTVlDNURvSkt0Q21heUlBSkRqdzZCNGRNQzNXVEdtNExfMURydFhYcmfSAb8BQVVfeXFMTjVOTGxESkFIeWN0ME1QOXROZGx6ZS1Xb2lUSjlSWWZQUGM3Q213RE1oTGNTX1E5RDNYRExBYjBhbl9wMXpkSk0tbjBjbkxwQjZZR0EtUzVuUGllWTdUTU9lenNnUHFQUG4xZ2tMUVN4WkMyb2RGeFN0UWt5ZTk1LXE0VnJ2U0lJckhVblpacmk5T1Vmb2F1dVFkR29rdGFMOW1lLXRwaEJsazlacXFhaDNWamVBRjZBVTA5Rl9OMms",
+  "title": "Waspada Bencana di Madiun, Ini Kecamatan Rawan Banjir dan Longsor - Radar Madiun",
+  "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOeEtiMmFxdTQtcUowVVZJMFdxV28xbUhuQVFNNGF5NVhFU1VLN2p1NnJPdnhsU0c3UjlQUU9pRlI3WmZYcWU2aTFLR0w1bUNXU0RBNmUyaUNSbHJ4ZnladjFWTkxzYmxSeUpHMTRoUHh5akp6TWpQdVYtamlRNldPYjh5dW1DbHZ3NEdTRTRJaGhJTVlDNURvSkt0Q21heUlBSkRqdzZCNGRNQzNXVEdtNExfMURydFhYcmfSAb8BQVVfeXFMTjVOTGxESkFIeWN0ME1QOXROZGx6ZS1Xb2lUSjlSWWZQUGM3Q213RE1oTGNTX1E5RDNYRExBYjBhbl9wMXpkSk0tbjBjbkxwQjZZR0EtUzVuUGllWTdUTU9lenNnUHFQUG4xZ2tMUVN4WkMyb2RGeFN0UWt5ZTk1LXE0VnJ2U0lJckhVblpacmk5T1Vmb2F1dVFkR29rdGFMOW1lLXRwaEJsazlacXFhaDNWamVBRjZBVTA5Rl9OMms?oc=5",
+  "source": "Radar Madiun",
+  "source_url": "https://radarmadiun.jawapos.com",
+  "published_at": "2026-11-16T11:40:32.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-16T13:00:52.792Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.19",
+      "nama": "Kabupaten Madiun",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.77",
+      "nama": "Kota Madiun",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
