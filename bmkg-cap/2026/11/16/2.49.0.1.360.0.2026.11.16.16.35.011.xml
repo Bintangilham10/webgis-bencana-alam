@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.16.16.35.011</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-16T21:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-16T21:30:00+07:00</effective>
+    <expires>2026-11-17T00:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 16 November 2026, 21:30 WIB di sebagian wilayah Jawa Timur, khususnya di KEBONAGUNG, PACITAN, RUNGKUT, SUKOLILO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 17 November 2026, 00:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/16/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-8.132,111.107 -8.136,111.114 -8.135,111.126 -8.148,111.148 -8.164,111.137 -8.200,111.141 -8.201,111.158 -8.228,111.130 -8.241,111.101 -8.238,111.098 -8.235,111.103 -8.228,111.102 -8.221,111.089 -8.225,111.075 -8.239,111.075 -8.212,111.063 -8.179,111.065 -8.179,111.060 -8.174,111.060 -8.166,111.069 -8.172,111.083 -8.162,111.089 -8.140,111.081 -8.136,111.087 -8.139,111.094 -8.130,111.102 -8.132,111.107</polygon>
+      <polygon>-8.157,111.188 -8.157,111.223 -8.175,111.223 -8.181,111.204 -8.211,111.220 -8.223,111.220 -8.257,111.231 -8.268,111.227 -8.266,111.203 -8.279,111.193 -8.273,111.177 -8.280,111.171 -8.279,111.145 -8.273,111.133 -8.267,111.138 -8.262,111.136 -8.255,111.122 -8.253,111.104 -8.244,111.098 -8.241,111.101 -8.228,111.130 -8.201,111.158 -8.200,111.141 -8.164,111.137 -8.148,111.148 -8.146,111.154 -8.160,111.160 -8.157,111.188</polygon>
+      <polygon>-7.304,112.846 -7.317,112.843 -7.333,112.827 -7.330,112.758 -7.309,112.771 -7.308,112.800 -7.305,112.807 -7.299,112.810 -7.309,112.836 -7.304,112.846</polygon>
+      <polygon>-7.304,112.846 -7.309,112.836 -7.299,112.810 -7.305,112.807 -7.308,112.800 -7.309,112.771 -7.306,112.762 -7.289,112.763 -7.282,112.773 -7.280,112.784 -7.277,112.784 -7.274,112.799 -7.284,112.801 -7.285,112.804 -7.272,112.818 -7.269,112.828 -7.280,112.841 -7.304,112.846</polygon>
+    </area>
+  </info>
+</alert>

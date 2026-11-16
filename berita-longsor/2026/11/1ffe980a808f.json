@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiwwFBVV95cUxOVHhtTHVTUzRab0tubGdtQ3drLUpOemw3SzVINjZRbThTWGlYTlFJdXRSSlJWaXRLTmJId0tMM2M1RVBJYjZUZFRjUUhTMXhBRVZYeWRoSEVPcE1DWFNOOEdPaFF4VVBfWnI3WklSZjluMElJZVozUFZQMDU1N3F3bmktNG9FMGdkU2NnSnFRdl9jNGdhV3hmZDA1VkZERV84VFFBVWNFZUtFU2t6T24zRHhxSUZ0d1hMQXZlVEh2VWFlSWM",
+  "title": "Hujan Deras Mulai Terjang Sumut: Medan Banjir, Simalungun dan Madina Longsor - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVHhtTHVTUzRab0tubGdtQ3drLUpOemw3SzVINjZRbThTWGlYTlFJdXRSSlJWaXRLTmJId0tMM2M1RVBJYjZUZFRjUUhTMXhBRVZYeWRoSEVPcE1DWFNOOEdPaFF4VVBfWnI3WklSZjluMElJZVozUFZQMDU1N3F3bmktNG9FMGdkU2NnSnFRdl9jNGdhV3hmZDA1VkZERV84VFFBVWNFZUtFU2t6T24zRHhxSUZ0d1hMQXZlVEh2VWFlSWM?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://medan.kompas.com",
+  "published_at": "2026-11-16T14:44:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-16T16:15:30.359Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "12.08",
+      "nama": "Kabupaten Simalungun",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "12.71",
+      "nama": "Kota Medan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Sumatera Utara"
+  ]
+}

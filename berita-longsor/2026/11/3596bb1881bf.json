@@ -1,0 +1,26 @@
+{
+  "guid": "CBMikAFBVV95cUxPanJLQjJ6YnF6eGVRUGVpM29PdjhvcVUwaXpzdkdLMDBobHIybU9QTEFDMHF4RU1UUmtmNWYyVC15YVB0bFdDaFlJWk5YNjJkcHlJWnpXMVR6Y0tKVkV3YUFFTU9NaU94c0ZUSU43dlFsU2VIczh1eE1IRWxySnM4YlZyMk1TTUdVczNBYzNadkvSAZYBQVVfeXFMT0k5Q3VRc1ZqYkZ6Q2tFZ3pGcUxsbHFZcUJHZVdnVGlzdXBwVVA0aGlmOTI5SGhlbktyYWdRdGxIUS1wWGdIZC1PNGZWa2VsclFzbnNVakZuUUs3RDVxeW0waDRWWE1ONGdSUlY1MW9WeU01Q2RKcHVWRUtfajQ1Q2NzcndMbUNlS05qUVMyUUZaNHM4OWxn",
+  "title": "Galian Tambang di Cirebon Longsor, 1 Orang Tewas - detikNews",
+  "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPanJLQjJ6YnF6eGVRUGVpM29PdjhvcVUwaXpzdkdLMDBobHIybU9QTEFDMHF4RU1UUmtmNWYyVC15YVB0bFdDaFlJWk5YNjJkcHlJWnpXMVR6Y0tKVkV3YUFFTU9NaU94c0ZUSU43dlFsU2VIczh1eE1IRWxySnM4YlZyMk1TTUdVczNBYzNadkvSAZYBQVVfeXFMT0k5Q3VRc1ZqYkZ6Q2tFZ3pGcUxsbHFZcUJHZVdnVGlzdXBwVVA0aGlmOTI5SGhlbktyYWdRdGxIUS1wWGdIZC1PNGZWa2VsclFzbnNVakZuUUs3RDVxeW0waDRWWE1ONGdSUlY1MW9WeU01Q2RKcHVWRUtfajQ1Q2NzcndMbUNlS05qUVMyUUZaNHM4OWxn?oc=5",
+  "source": "detikNews",
+  "source_url": "https://news.detik.com",
+  "published_at": "2026-11-16T14:04:20.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-16T16:15:30.359Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.09",
+      "nama": "Kabupaten Cirebon",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.74",
+      "nama": "Kota Cirebon",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

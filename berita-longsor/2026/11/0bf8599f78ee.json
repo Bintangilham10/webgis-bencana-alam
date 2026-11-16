@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqwFBVV95cUxOOXNtNlVNSTJYRWFLblFBUDBUYzFMd3VORmY4YWkyN2x2WnJBNVAwaW5YYXJDdzlJRUNlT1JTTmhmYWpzRnFnZGM4QXA2X3F2cUZsNzNCUFJsLWI2RjRIRDJqMkFZV0FwZFhWNVFueTdSWE05RENtSzRKTnA0YWtrN3hoU0EtVzQ3YkN5SnFoSHVnQl90RXhwQVliaHJtVTd2YXpVaVJQTjJnbFU",
+  "title": "Pemkab Banjar Siapkan Penanganan Longsor yang Putuskan Jalan di Antasan Sutun - Barito Post",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOXNtNlVNSTJYRWFLblFBUDBUYzFMd3VORmY4YWkyN2x2WnJBNVAwaW5YYXJDdzlJRUNlT1JTTmhmYWpzRnFnZGM4QXA2X3F2cUZsNzNCUFJsLWI2RjRIRDJqMkFZV0FwZFhWNVFueTdSWE05RENtSzRKTnA0YWtrN3hoU0EtVzQ3YkN5SnFoSHVnQl90RXhwQVliaHJtVTd2YXpVaVJQTjJnbFU?oc=5",
+  "source": "Barito Post",
+  "source_url": "https://www.baritopost.co.id",
+  "published_at": "2026-11-16T13:50:07.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-16T16:15:30.359Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.79",
+      "nama": "Kota Banjar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "63.03",
+      "nama": "Kabupaten Banjar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

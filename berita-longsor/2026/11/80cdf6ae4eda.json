@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiXkFVX3lxTE5UV2I5ZjM4V2tmUExkZUNuUHNjOXotYkpGc2ZXTHcyU196QjJvT05QdnJkRVNDTjc0TkFfM2txX2pvNzJzUFBkQ2xSUjV1UUFicDRIQUh1NnpVRjJ1dXc",
+  "title": "Longsor Galian C Cirebon Tewaskan Satu Orang - Lensa Hukum",
+  "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5UV2I5ZjM4V2tmUExkZUNuUHNjOXotYkpGc2ZXTHcyU196QjJvT05QdnJkRVNDTjc0TkFfM2txX2pvNzJzUFBkQ2xSUjV1UUFicDRIQUh1NnpVRjJ1dXc?oc=5",
+  "source": "Lensa Hukum",
+  "source_url": "https://lensahukum.co.id",
+  "published_at": "2026-11-16T14:09:10.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-16T16:15:30.359Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.09",
+      "nama": "Kabupaten Cirebon",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.74",
+      "nama": "Kota Cirebon",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

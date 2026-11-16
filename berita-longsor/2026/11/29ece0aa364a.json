@@ -1,0 +1,21 @@
+{
+  "guid": "CBMidkFVX3lxTE8tVl9uMUlnSnFwYUhrVURIMzMta0FTYmVOZVM4Zk12V2tBVTdvcmtRSEF0d2YzU19ZczhVYzlVUWRZMjFfSV9ESGpZMGtPRzRwUnI2RGVnQjdSLW1zajFOZ185VjRrd2xhQ3ZZV2wyMmRaaENBdGfSAXtBVV95cUxPSHJLeDI1RTMyS0hDSnRZdTVPZWtZZzdhNl9qZUVQeHhVQkxBcmRzNlh0LU40eE5FWFNZNEk3dlFiVHVFekN0UkF0NmRxRjZiUjg5RFFISjRwbV9OczA5WHAtSlVSYlFQcGtTNGE1WTViQTF1cFdjYWlmeEU",
+  "title": "BPBD Kotamobagu Siaga Banjir dan Longsor - Komunika Sulut",
+  "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8tVl9uMUlnSnFwYUhrVURIMzMta0FTYmVOZVM4Zk12V2tBVTdvcmtRSEF0d2YzU19ZczhVYzlVUWRZMjFfSV9ESGpZMGtPRzRwUnI2RGVnQjdSLW1zajFOZ185VjRrd2xhQ3ZZV2wyMmRaaENBdGfSAXtBVV95cUxPSHJLeDI1RTMyS0hDSnRZdTVPZWtZZzdhNl9qZUVQeHhVQkxBcmRzNlh0LU40eE5FWFNZNEk3dlFiVHVFekN0UkF0NmRxRjZiUjg5RFFISjRwbV9OczA5WHAtSlVSYlFQcGtTNGE1WTViQTF1cFdjYWlmeEU?oc=5",
+  "source": "Komunika Sulut",
+  "source_url": "https://komunikasulut.com",
+  "published_at": "2026-11-16T10:34:51.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-16T16:15:30.359Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "71.74",
+      "nama": "Kota Kotamobagu",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

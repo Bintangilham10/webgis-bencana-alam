@@ -1,0 +1,26 @@
+{
+  "guid": "CBMipwFBVV95cUxNcjFNLTlLZVZTb2E4amZ5dkdhY1YwMi1GeW5kN20zR0ZSV2F1Z3lBa1BtdzNFOVpVUHppY25sQ2cwUTNPMW0zMDBfSDlTU2d5c1lIUXBlM3kydnBOdkJMQWZ0aFpDdEI4V0pwZ1gwZ2l6dzllanRoQ3NWbGp3RHRSal9zZUlra0JLWExhd21PUmhBemU3cWFySmNqSmQ4WkJWdE9UNUdxWQ",
+  "title": "Pemkab Banjar Salurkan Bantuan Logistik untuk Korban Longsor Antasan Sutun - Barito Post",
+  "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcjFNLTlLZVZTb2E4amZ5dkdhY1YwMi1GeW5kN20zR0ZSV2F1Z3lBa1BtdzNFOVpVUHppY25sQ2cwUTNPMW0zMDBfSDlTU2d5c1lIUXBlM3kydnBOdkJMQWZ0aFpDdEI4V0pwZ1gwZ2l6dzllanRoQ3NWbGp3RHRSal9zZUlra0JLWExhd21PUmhBemU3cWFySmNqSmQ4WkJWdE9UNUdxWQ?oc=5",
+  "source": "Barito Post",
+  "source_url": "https://www.baritopost.co.id",
+  "published_at": "2026-11-16T13:51:01.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-16T16:15:30.359Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.79",
+      "nama": "Kota Banjar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "63.03",
+      "nama": "Kabupaten Banjar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiiAFBVV95cUxOQ0tYWkQxdHRBcG1rTGU4bnR1QjJXM3oyeWlENXBiUGZRZnNyNC1RM25Ta0txTDNZQy1ZdUl0em11elNzVUFZMUtHWnQ5bHlBZmJfeFpnZjNuV1hXV1Z4NkVLTEhKdkpsZnUza2poc2pjZVNWVGUwRnZuVTJXcnZVQXN6eURUMXU2",
+  "title": "Balita 2,7 Tahun Tewas Tertimbun Longsor di Aceh Tengah - Waspada Aceh",
+  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQ0tYWkQxdHRBcG1rTGU4bnR1QjJXM3oyeWlENXBiUGZRZnNyNC1RM25Ta0txTDNZQy1ZdUl0em11elNzVUFZMUtHWnQ5bHlBZmJfeFpnZjNuV1hXV1Z4NkVLTEhKdkpsZnUza2poc2pjZVNWVGUwRnZuVTJXcnZVQXN6eURUMXU2?oc=5",
+  "source": "Waspada Aceh",
+  "source_url": "https://waspadaaceh.com",
+  "published_at": "2026-11-16T13:13:50.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-16T16:15:30.359Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
