@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.16.05.36.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-16T11:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-16T11:50:00+07:00</effective>
+    <expires>2026-11-16T13:45:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Banten</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 16 November 2026, 11:50 WIB di sebagian wilayah Banten, khususnya di ANYAR, MANCAK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 16 November 2026, 13:45 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBT/2026/11/16/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Banten</areaDesc>
+      <polygon>-6.058,105.964 -6.066,105.962 -6.070,105.952 -6.074,105.951 -6.080,105.952 -6.082,105.960 -6.087,105.960 -6.107,105.943 -6.124,105.953 -6.142,105.950 -6.127,105.926 -6.125,105.907 -6.111,105.880 -6.071,105.884 -6.047,105.923 -6.052,105.938 -6.048,105.941 -6.058,105.964</polygon>
+      <polygon>-6.057,105.895 -6.061,105.893 -6.057,105.891 -6.057,105.895</polygon>
+      <polygon>-6.046,106.005 -6.039,106.018 -6.041,106.031 -6.065,106.020 -6.078,106.020 -6.078,106.027 -6.081,106.036 -6.084,106.035 -6.087,106.046 -6.098,106.050 -6.113,106.039 -6.108,106.028 -6.118,106.006 -6.133,105.999 -6.152,105.996 -6.157,105.988 -6.167,105.965 -6.170,105.948 -6.179,105.932 -6.171,105.930 -6.159,105.933 -6.152,105.945 -6.142,105.950 -6.124,105.953 -6.107,105.943 -6.087,105.960 -6.082,105.960 -6.080,105.952 -6.074,105.951 -6.070,105.952 -6.066,105.962 -6.058,105.964 -6.053,105.988 -6.045,105.981 -6.038,105.985 -6.046,106.005</polygon>
+    </area>
+  </info>
+</alert>
