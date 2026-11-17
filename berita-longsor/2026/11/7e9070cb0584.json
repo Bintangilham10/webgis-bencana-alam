@@ -1,0 +1,26 @@
+{
+  "guid": "CBMimAFBVV95cUxPSjE3cWplM1hSSk1EQkotRmpBbHBTYVVGNGFFN2hZM0pPTXNCenhvQVgwQ0lIMkJXQVVVdjVoRU9VeGV2dzFSUl9nSWFPbjhZRVg4YWdUOU1ZSVlYZWNMOWJNQUpzdURkZ0Y5S2lTQ0JOTFBIclU0S1BudHZqMWNyUG1DSC1hby1VN1NoeEtIRFdxQllGV0VmOA",
+  "title": "Ancaman Longsor Antasan Sutun, PUPRP Banjar Evaluasi Desain Penguatan Siring - Kantor Berita Kalimantan",
+  "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSjE3cWplM1hSSk1EQkotRmpBbHBTYVVGNGFFN2hZM0pPTXNCenhvQVgwQ0lIMkJXQVVVdjVoRU9VeGV2dzFSUl9nSWFPbjhZRVg4YWdUOU1ZSVlYZWNMOWJNQUpzdURkZ0Y5S2lTQ0JOTFBIclU0S1BudHZqMWNyUG1DSC1hby1VN1NoeEtIRFdxQllGV0VmOA?oc=5",
+  "source": "Kantor Berita Kalimantan",
+  "source_url": "https://kbk.news",
+  "published_at": "2026-11-17T10:39:40.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-17T14:00:45.876Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.79",
+      "nama": "Kota Banjar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "63.03",
+      "nama": "Kabupaten Banjar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

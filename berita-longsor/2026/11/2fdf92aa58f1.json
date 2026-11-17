@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi6gFBVV95cUxQREhFbHVKeUhUZWdNUk1oakRzTUVFTC0ycUN5TWpjSDJUZWhDaEZ4U1c0RHBrU1U0RHNrWEhyVll6Rm5QTU1XdXk1QXJpMENGdjhISXpuVGMtNnl1X2tmQlRhTVdZY1hNNHFNX1JWT1lzZy1xaXc2NzVoMkF2OGUzcjhYWUJhWUxwMlZBUmdBWXJQLU0xYkRUMm5FT1RHUXQ4cnhKbGxhOVZzQTNfbGU4bF9kNnhvZ00yNjNUWHdhckRNX3NDMDJXaXpGRnIySEJVUnJSX0QtOVVNWkc4R28ydVkyOHptQm5FaEE",
+  "title": "Ancaman Longsor Mengintai 80 Persen Wilayah Garut, Bupati Instruksikan Mitigasi Dini - Kabar Priangan",
+  "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQREhFbHVKeUhUZWdNUk1oakRzTUVFTC0ycUN5TWpjSDJUZWhDaEZ4U1c0RHBrU1U0RHNrWEhyVll6Rm5QTU1XdXk1QXJpMENGdjhISXpuVGMtNnl1X2tmQlRhTVdZY1hNNHFNX1JWT1lzZy1xaXc2NzVoMkF2OGUzcjhYWUJhWUxwMlZBUmdBWXJQLU0xYkRUMm5FT1RHUXQ4cnhKbGxhOVZzQTNfbGU4bF9kNnhvZ00yNjNUWHdhckRNX3NDMDJXaXpGRnIySEJVUnJSX0QtOVVNWkc4R28ydVkyOHptQm5FaEE?oc=5",
+  "source": "Kabar Priangan",
+  "source_url": "https://kabarpriangan.pikiran-rakyat.com",
+  "published_at": "2026-11-17T11:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-17T14:00:45.876Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

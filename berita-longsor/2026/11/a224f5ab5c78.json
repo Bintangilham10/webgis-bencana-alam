@@ -1,0 +1,23 @@
+{
+  "guid": "CBMixAFBVV95cUxPM2JuODg0UEVnd3BtTzJVNUNuZGRfMXpXTUdBdEw4YWZFVE1BS09WRVNlU21pYTFrTDZkOFU4ZzFqZUdPcDJmcTQ0LW5CR1NUeUtsdC1QZW55bVhEZkszOGVLZW5IbFE3WW9valN3aFFJLU5nVzhwdWFTY0lhQkdmcEpxc09Sd3o4WFl2d3RIbHJzMDdIdzBrLVFnNWlUZEUwNkhBWVZYc1N3TzREbXZ6YTlCZjFKa0VGWlV1eG1JeS1CUmd5",
+  "title": "Banjir, Longsor, dan Pohon Tumbang Terjang Bengkulu, Ribuan Warga Terdampak - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPM2JuODg0UEVnd3BtTzJVNUNuZGRfMXpXTUdBdEw4YWZFVE1BS09WRVNlU21pYTFrTDZkOFU4ZzFqZUdPcDJmcTQ0LW5CR1NUeUtsdC1QZW55bVhEZkszOGVLZW5IbFE3WW9valN3aFFJLU5nVzhwdWFTY0lhQkdmcEpxc09Sd3o4WFl2d3RIbHJzMDdIdzBrLVFnNWlUZEUwNkhBWVZYc1N3TzREbXZ6YTlCZjFKa0VGWlV1eG1JeS1CUmd5?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://regional.kompas.com",
+  "published_at": "2026-11-17T12:14:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-17T14:00:45.876Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "17.71",
+      "nama": "Kota Bengkulu",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bengkulu"
+  ]
+}

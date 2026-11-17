@@ -1,0 +1,21 @@
+{
+  "guid": "CBMitAFBVV95cUxQYS00aW9DU0U5ZGxVVHlRODBOWlFjS0FoYTRSeURULVE0dGhhUUtRb1FLNGI3QklaMVNaSGl3SktWUVNtUFFKaE1ZSlpIRGVEUFpiRkg5YVREbndQWURROFRubzdDRlRqRzh5a1pWZWZmYzJFa0pKUkZiUlA5QWRDRmY1VFRiWkNNSTFkYXlpZm9qVFpid1JOS3NMSkV5RXgxcHRQUWZ1QzU0ckloN0M5N1JxanI",
+  "title": "Ancaman Banjir dan Longsor Mengintai Berau hingga April 2027, BPBD Akui Kekurangan Personel - Radar Berau",
+  "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQYS00aW9DU0U5ZGxVVHlRODBOWlFjS0FoYTRSeURULVE0dGhhUUtRb1FLNGI3QklaMVNaSGl3SktWUVNtUFFKaE1ZSlpIRGVEUFpiRkg5YVREbndQWURROFRubzdDRlRqRzh5a1pWZWZmYzJFa0pKUkZiUlA5QWRDRmY1VFRiWkNNSTFkYXlpZm9qVFpid1JOS3NMSkV5RXgxcHRQUWZ1QzU0ckloN0M5N1JxanI?oc=5",
+  "source": "Radar Berau",
+  "source_url": "https://radarberau.com",
+  "published_at": "2026-11-17T11:05:48.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-17T14:00:45.876Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "64.03",
+      "nama": "Kabupaten Berau",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

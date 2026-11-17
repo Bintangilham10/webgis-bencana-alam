@@ -1,0 +1,21 @@
+{
+  "guid": "CBMilAFBVV95cUxNVURacEJ3RXBSdEYxVlJLSnJtb1VocVhCTTA0WkVGWG5ZTGg5REZua3NnV2Fwa052SnJWVUFRYzlrNlhPYnhGZkxmNzlMRXVlck9KWExDbmdMNmxDSlhVb2hPVE9ObmgtSDNtNG9OeTljMnEzaHBfelBDLXVoM29mR1F4OHVfeVdZTFNqMnNSUElITndT",
+  "title": "Garut Siaga Bencana, 80 Persen Wilayah Rawan Longsor - Infopriangan.com",
+  "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVURacEJ3RXBSdEYxVlJLSnJtb1VocVhCTTA0WkVGWG5ZTGg5REZua3NnV2Fwa052SnJWVUFRYzlrNlhPYnhGZkxmNzlMRXVlck9KWExDbmdMNmxDSlhVb2hPVE9ObmgtSDNtNG9OeTljMnEzaHBfelBDLXVoM29mR1F4OHVfeVdZTFNqMnNSUElITndT?oc=5",
+  "source": "Infopriangan.com",
+  "source_url": "https://infopriangan.com",
+  "published_at": "2026-11-17T08:42:36.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-17T14:00:45.876Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

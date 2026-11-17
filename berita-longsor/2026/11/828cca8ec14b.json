@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqgFBVV95cUxNOXN5OUo0ZnE2cU1IQmcyVXBuSmZoQkF5ajBHZi1yLW9hQlF3OGUxbmY4OWRNREFnUjdXNkVFTXAtUUZvcWI0cktkMlNaS09sTEE1M1BaUlZVZ0JaX3lFbUZmLXFFdXhLeWc5ejVHNlZTX001SjBoeWl6dDJubE83eUZoOEVpTFpvZFl5WGlGQVQ1NGtxelY3YWhMa1VSdzFtT0NERFhQMVZ5UdIBrwFBVV95cUxQNXZCVGprd204RFhCTF9IdlpDb3M1TThJV291UEIweTB0TmlOWWVDTG5va0hYT2toamdUcWV6M1VuTUVPdTk2MlM5MzE1NDdTQVNDenlkOEZjT2VzcVlOTWR4ZzEyWGQxM2oxS1pmWkhCbzBxajU4Nk1EZVhKallUSXdLZzBGa20ySC1YS2NCUmhZNGIxd2dqdE5JOHVRbUFkQy04OWJOQVhoTmQ4MUhJ",
+  "title": "Longsor dan Banjir di Tirtoyudo Malang, Sembilan Rumah Warga Terdampak - VIVA Jatim",
+  "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNOXN5OUo0ZnE2cU1IQmcyVXBuSmZoQkF5ajBHZi1yLW9hQlF3OGUxbmY4OWRNREFnUjdXNkVFTXAtUUZvcWI0cktkMlNaS09sTEE1M1BaUlZVZ0JaX3lFbUZmLXFFdXhLeWc5ejVHNlZTX001SjBoeWl6dDJubE83eUZoOEVpTFpvZFl5WGlGQVQ1NGtxelY3YWhMa1VSdzFtT0NERFhQMVZ5UdIBrwFBVV95cUxQNXZCVGprd204RFhCTF9IdlpDb3M1TThJV291UEIweTB0TmlOWWVDTG5va0hYT2toamdUcWV6M1VuTUVPdTk2MlM5MzE1NDdTQVNDenlkOEZjT2VzcVlOTWR4ZzEyWGQxM2oxS1pmWkhCbzBxajU4Nk1EZVhKallUSXdLZzBGa20ySC1YS2NCUmhZNGIxd2dqdE5JOHVRbUFkQy04OWJOQVhoTmQ4MUhJ?oc=5",
+  "source": "VIVA Jatim",
+  "source_url": "https://jatim.viva.co.id",
+  "published_at": "2026-11-17T13:16:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-17T14:00:45.876Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
