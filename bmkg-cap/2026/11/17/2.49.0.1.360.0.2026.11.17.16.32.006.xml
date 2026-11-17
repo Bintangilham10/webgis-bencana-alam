@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.17.16.32.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-17T22:46:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-17T22:56:00+07:00</effective>
+    <expires>2026-11-18T01:46:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 17 November 2026, 22:56 WIB di sebagian wilayah Jawa Barat, khususnya di AGRABINTA, CIDADAP.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 18 November 2026, 01:46 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJB/2026/11/17/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Barat</areaDesc>
+      <polygon>-7.250,106.965 -7.261,106.960 -7.268,106.970 -7.281,106.973 -7.285,106.976 -7.311,106.968 -7.319,106.956 -7.322,106.951 -7.318,106.941 -7.324,106.934 -7.330,106.934 -7.329,106.927 -7.322,106.919 -7.323,106.915 -7.339,106.909 -7.350,106.909 -7.351,106.903 -7.343,106.903 -7.341,106.896 -7.361,106.871 -7.359,106.858 -7.356,106.861 -7.354,106.859 -7.359,106.852 -7.350,106.848 -7.318,106.865 -7.313,106.886 -7.297,106.920 -7.259,106.911 -7.248,106.912 -7.242,106.935 -7.233,106.942 -7.237,106.960 -7.250,106.965</polygon>
+      <polygon>-7.319,106.956 -7.325,106.964 -7.333,106.952 -7.340,106.954 -7.358,106.972 -7.366,106.970 -7.368,106.956 -7.392,106.963 -7.396,106.961 -7.397,106.985 -7.411,106.988 -7.421,106.995 -7.435,106.996 -7.445,106.989 -7.431,106.864 -7.433,106.864 -7.435,106.879 -7.437,106.796 -7.421,106.793 -7.409,106.789 -7.416,106.783 -7.415,106.780 -7.406,106.776 -7.401,106.778 -7.387,106.806 -7.358,106.831 -7.359,106.852 -7.354,106.859 -7.356,106.861 -7.359,106.858 -7.361,106.871 -7.341,106.896 -7.343,106.903 -7.351,106.903 -7.350,106.909 -7.339,106.909 -7.323,106.915 -7.322,106.919 -7.329,106.927 -7.330,106.934 -7.324,106.934 -7.318,106.941 -7.322,106.951 -7.319,106.956</polygon>
+    </area>
+  </info>
+</alert>
