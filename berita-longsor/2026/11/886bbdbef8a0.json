@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiwgFBVV95cUxPcEkwMDZDd3RISUxZczFReXpsWGdDZHBtSWx1TnJkUE9ocEthdUkxczZ3d0V2MGNhMXlCT2VrMjA0akNRVGJHdlg5NVlKblZQWTF6YzV4Q0pPVXh3MHJzVmExQnN1VWE1eVF2TXdNeUVwM3g2MFB2VnBmRzBHZnFreGNVV2NZcTVmdVNHSG5hUWJaMzVzTlQzTjFRakJrSEZJY3JmT0JLemI2Q01ybEJoOWNiOUVfeThhZ0ZnazdKazMzQdIBxwFBVV95cUxQaEF5ZVFTWW9kNFFiRHRiUktzWjBGdUhlTUs3S3RHZzZaSTN4NWRuNzRPNExJQjBOdlp0RHA1QlJ2cGFudGRtMmtJcGZTbVp4bW1HMzB2MWNRTGtJeURJdXpmTXVZYnAzTGVKTjhNdzQxNVpIVDdMQTNFVXhCUDYwdkNTdzl1TzZqck93dmFveEdYU25qd3podTF3eGxseFJsWDNFQ3dRVGdFdVRhTVBGYWdEcVhHcHJyd3dObnlTaUF3MWJ2X3c0",
+  "title": "Kapolsek Cisarua Ingatkan Longsor dan Pohon Tumbang Mengintai Puncak Bogor - Radar Depok - Radar Depok",
+  "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPcEkwMDZDd3RISUxZczFReXpsWGdDZHBtSWx1TnJkUE9ocEthdUkxczZ3d0V2MGNhMXlCT2VrMjA0akNRVGJHdlg5NVlKblZQWTF6YzV4Q0pPVXh3MHJzVmExQnN1VWE1eVF2TXdNeUVwM3g2MFB2VnBmRzBHZnFreGNVV2NZcTVmdVNHSG5hUWJaMzVzTlQzTjFRakJrSEZJY3JmT0JLemI2Q01ybEJoOWNiOUVfeThhZ0ZnazdKazMzQdIBxwFBVV95cUxQaEF5ZVFTWW9kNFFiRHRiUktzWjBGdUhlTUs3S3RHZzZaSTN4NWRuNzRPNExJQjBOdlp0RHA1QlJ2cGFudGRtMmtJcGZTbVp4bW1HMzB2MWNRTGtJeURJdXpmTXVZYnAzTGVKTjhNdzQxNVpIVDdMQTNFVXhCUDYwdkNTdzl1TzZqck93dmFveEdYU25qd3podTF3eGxseFJsWDNFQ3dRVGdFdVRhTVBGYWdEcVhHcHJyd3dObnlTaUF3MWJ2X3c0?oc=5",
+  "source": "Radar Depok",
+  "source_url": "https://www.radardepok.com",
+  "published_at": "2026-11-17T00:00:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-17T01:30:41.086Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.76",
+      "nama": "Kota Depok",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixwFBVV95cUxQelpOR1VJUGkzQ2ZJWDU4Wm9EX3VjcVNLUzBqZHJObS1MMmRDNDUzeWQ1X1FhYkJ0S3g5WG96Z1BTNzlrc0p6azZPWXBxRTNEazk3OTcxLURnd0JJcXVHVVRldTVHb1FocUpaWTkxbUQ2a3JNWWhITTdqMGtwVFJtenM0NjZlb1RtWk1wTlVqb0w1WnNHeFZ3WUtoYkxVSVFDeFU4SXNiY1E2SEp2eXo3MnhrcWZfbGlmNS01akxINDlWWjdtRHFJ",
+  "title": "Bandung Raya Waspada Cuaca Ekstrem, BMKG Ingatkan Ancaman Banjir hingga Longsor - Pikiran-Rakyat.com",
+  "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQelpOR1VJUGkzQ2ZJWDU4Wm9EX3VjcVNLUzBqZHJObS1MMmRDNDUzeWQ1X1FhYkJ0S3g5WG96Z1BTNzlrc0p6azZPWXBxRTNEazk3OTcxLURnd0JJcXVHVVRldTVHb1FocUpaWTkxbUQ2a3JNWWhITTdqMGtwVFJtenM0NjZlb1RtWk1wTlVqb0w1WnNHeFZ3WUtoYkxVSVFDeFU4SXNiY1E2SEp2eXo3MnhrcWZfbGlmNS01akxINDlWWjdtRHFJ?oc=5",
+  "source": "Pikiran-Rakyat.com",
+  "source_url": "https://www.pikiran-rakyat.com",
+  "published_at": "2026-11-17T00:15:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-17T01:30:41.086Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
