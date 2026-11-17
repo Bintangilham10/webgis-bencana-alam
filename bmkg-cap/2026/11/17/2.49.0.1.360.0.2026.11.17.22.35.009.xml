@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.17.22.35.009</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-18T03:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-18T03:30:00+07:00</effective>
+    <expires>2026-11-18T06:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 18 November 2026, 03:30 WIB di sebagian wilayah Jawa Timur, khususnya di AMPELGADING, DAMPIT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 18 November 2026, 06:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/18/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-8.163,112.771 -8.168,112.796 -8.187,112.774 -8.197,112.773 -8.199,112.774 -8.185,112.801 -8.203,112.800 -8.226,112.788 -8.229,112.803 -8.258,112.804 -8.275,112.812 -8.283,112.809 -8.300,112.812 -8.307,112.823 -8.306,112.835 -8.313,112.842 -8.319,112.843 -8.333,112.840 -8.335,112.811 -8.328,112.806 -8.328,112.786 -8.333,112.780 -8.328,112.779 -8.325,112.767 -8.324,112.762 -8.333,112.760 -8.329,112.754 -8.305,112.760 -8.279,112.760 -8.280,112.770 -8.275,112.772 -8.259,112.769 -8.257,112.752 -8.249,112.743 -8.248,112.731 -8.241,112.730 -8.240,112.717 -8.231,112.712 -8.226,112.695 -8.191,112.705 -8.160,112.729 -8.155,112.759 -8.161,112.761 -8.163,112.771</polygon>
+      <polygon>-8.262,112.914 -8.269,112.908 -8.270,112.903 -8.266,112.900 -8.281,112.904 -8.307,112.919 -8.311,112.941 -8.317,112.943 -8.326,112.935 -8.332,112.935 -8.353,112.960 -8.360,112.947 -8.386,112.932 -8.399,112.912 -8.391,112.912 -8.382,112.922 -8.366,112.899 -8.355,112.896 -8.353,112.888 -8.360,112.876 -8.360,112.863 -8.335,112.846 -8.327,112.852 -8.313,112.879 -8.286,112.886 -8.282,112.881 -8.285,112.876 -8.271,112.861 -8.274,112.847 -8.234,112.847 -8.217,112.840 -8.189,112.850 -8.183,112.855 -8.142,112.862 -8.138,112.860 -8.137,112.851 -8.130,112.847 -8.116,112.856 -8.108,112.866 -8.112,112.873 -8.108,112.922 -8.111,112.925 -8.157,112.903 -8.227,112.914 -8.241,112.921 -8.258,112.918 -8.262,112.914</polygon>
+    </area>
+  </info>
+</alert>
