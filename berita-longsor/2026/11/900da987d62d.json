@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiugFBVV95cUxNNEVSdXVLMEszTVFvZEN0RWdidURmbUdxSzRFeld1VnFBeGZBX1BiZG4zUEZKRTJYdEttcmh2NENmWUw5Q1lrUnBTdk56ZnpvMVFEXzBaM2pyRnJ4Ql9MVmFubFYySEhQemk4dlVpRkVLNGp5YzdQTXZSTXlyOWxSd0JIdUFvbWtVd1Rzam9hbWFOcDRYejlkZ0FjQk5HdXlvY0FKU1dKbUlRVFEzRHpSWFFLWmYwN3VQcVE",
+  "title": "BPBD Bantul Petakan Wilayah Rawan Banjir dan Longsor Jelang Musim Hujan - Harian Jogja",
+  "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNEVSdXVLMEszTVFvZEN0RWdidURmbUdxSzRFeld1VnFBeGZBX1BiZG4zUEZKRTJYdEttcmh2NENmWUw5Q1lrUnBTdk56ZnpvMVFEXzBaM2pyRnJ4Ql9MVmFubFYySEhQemk4dlVpRkVLNGp5YzdQTXZSTXlyOWxSd0JIdUFvbWtVd1Rzam9hbWFOcDRYejlkZ0FjQk5HdXlvY0FKU1dKbUlRVFEzRHpSWFFLWmYwN3VQcVE?oc=5",
+  "source": "Harian Jogja",
+  "source_url": "https://jogjapolitan.harianjogja.com",
+  "published_at": "2026-11-17T08:17:02.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-17T10:45:33.053Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "34.02",
+      "nama": "Kabupaten Bantul",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

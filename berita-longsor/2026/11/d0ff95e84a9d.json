@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwwFBVV95cUxQQVZ3MjhPQV9EZmo5OHZrOXlwUGU4Ty1ibWI2ODBiakxMeHRFTTZYVnR1Z2NJVG9idGVHc2hnMzBxaFJXalpObmNlSHpBNmUzSURFVTQwUHNkN3drSXRnOVdZNFRHcGRiZHpNRmpLcEZHUmI0MlZ4Nm1pWWtOa0VHNGlYalV1LWp4MVdvbkY3NVZqTjNzTS1XdXEtOGlqTEVHeHdxdzVYZzBBdl9XZjlGQ242VDlidnBFbjRSbGtuR0k3NkU",
+  "title": "Masuk Musim Hujan, Alat Deteksi Banjir dan Longsor Semarang Malah Lenyap Dicuri - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQQVZ3MjhPQV9EZmo5OHZrOXlwUGU4Ty1ibWI2ODBiakxMeHRFTTZYVnR1Z2NJVG9idGVHc2hnMzBxaFJXalpObmNlSHpBNmUzSURFVTQwUHNkN3drSXRnOVdZNFRHcGRiZHpNRmpLcEZHUmI0MlZ4Nm1pWWtOa0VHNGlYalV1LWp4MVdvbkY3NVZqTjNzTS1XdXEtOGlqTEVHeHdxdzVYZzBBdl9XZjlGQ242VDlidnBFbjRSbGtuR0k3NkU?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://regional.kompas.com",
+  "published_at": "2026-11-17T10:27:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-17T10:45:33.053Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "33.22",
+      "nama": "Kabupaten Semarang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.74",
+      "nama": "Kota Semarang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

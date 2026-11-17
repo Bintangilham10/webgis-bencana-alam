@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiogFBVV95cUxOODEzQ1M3V1RSWWlnNjQ0WjJOcWQxNTVjMTRrQVNvR19kb3FKSEt5cDRWQnJGZTVpSEZ6ZFhzSGdpd2dWMTFXeDZTZlhMWEdoRk9zLWNESmgxTGExS1JPT0VqY1pxbzk5ZU9NbWtOQ014QV9EY2kzX2FHNkNQNW1saHh6NWlacTBiZDJ0NWo1QlZsMXlteDk2VzdobjZFUlh3VlE",
+  "title": "Pekerja Tewas Tertimbun Longsor di Galian Argasunya Cirebon - BeritaSatu.com",
+  "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOODEzQ1M3V1RSWWlnNjQ0WjJOcWQxNTVjMTRrQVNvR19kb3FKSEt5cDRWQnJGZTVpSEZ6ZFhzSGdpd2dWMTFXeDZTZlhMWEdoRk9zLWNESmgxTGExS1JPT0VqY1pxbzk5ZU9NbWtOQ014QV9EY2kzX2FHNkNQNW1saHh6NWlacTBiZDJ0NWo1QlZsMXlteDk2VzdobjZFUlh3VlE?oc=5",
+  "source": "BeritaSatu.com",
+  "source_url": "https://www.beritasatu.com",
+  "published_at": "2026-11-17T09:31:26.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-17T10:45:33.053Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.09",
+      "nama": "Kabupaten Cirebon",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.74",
+      "nama": "Kota Cirebon",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

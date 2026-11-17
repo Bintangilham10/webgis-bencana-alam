@@ -1,0 +1,23 @@
+{
+  "guid": "CBMixAFBVV95cUxNWTRmMWkzVzItODRIcU5GUGJVZHlQdjRvdFZTZTFibzdmYUd3X251dGIwV3JPdUpUVkZhQWZUNlN5Y1NSUzdCejY3b0lPUktDNUZwWVJCZUVWV21WcmptZWJldHBhZU9hRVdTTFpteEJvZVo4VXFRZFZvbUJiY240Tk9OXzRnNk1UM0NGNkJ3bjJFdWtDbVNkMjhfV3RPdVJiUWk1R0pKVnQ5cFhONnQ2eXltYkhDc2xaMVdFWmJySGx3TDZC",
+  "title": "Wagub Emil Dardak Ingatkan Ancaman Banjir dan Longsor di Pesisir Selatan Jatim - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNWTRmMWkzVzItODRIcU5GUGJVZHlQdjRvdFZTZTFibzdmYUd3X251dGIwV3JPdUpUVkZhQWZUNlN5Y1NSUzdCejY3b0lPUktDNUZwWVJCZUVWV21WcmptZWJldHBhZU9hRVdTTFpteEJvZVo4VXFRZFZvbUJiY240Tk9OXzRnNk1UM0NGNkJ3bjJFdWtDbVNkMjhfV3RPdVJiUWk1R0pKVnQ5cFhONnQ2eXltYkhDc2xaMVdFWmJySGx3TDZC?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://surabaya.kompas.com",
+  "published_at": "2026-11-17T07:47:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-17T10:45:33.053Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "13.01",
+      "nama": "Kabupaten Pesisir Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jawa Timur"
+  ]
+}
