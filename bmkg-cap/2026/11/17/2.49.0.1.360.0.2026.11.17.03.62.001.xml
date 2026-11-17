@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.17.03.62.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-17T08:15:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-17T08:25:00+07:00</effective>
+    <expires>2026-11-17T10:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 17 November 2026, 08:25 WIB di sebagian wilayah Kalimantan Tengah, khususnya di MANDAU TALAWANG, PASAK TALAWANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 17 November 2026, 10:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/11/17/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-0.854,114.312 -1.049,114.296 -1.131,114.275 -1.185,114.275 -1.234,114.283 -1.232,114.253 -1.237,114.187 -1.249,114.133 -1.238,114.120 -1.187,114.082 -1.144,114.023 -1.112,113.970 -1.064,113.977 -1.077,114.042 -0.999,114.114 -0.969,114.131 -0.897,114.158 -0.814,114.184 -0.812,114.184 -0.859,114.228 -0.867,114.246 -0.865,114.270 -0.854,114.312</polygon>
+      <polygon>-0.695,114.110 -0.758,114.124 -0.783,114.134 -0.799,114.156 -0.812,114.184 -0.814,114.184 -0.815,114.072 -0.854,114.074 -0.857,113.958 -0.833,113.831 -0.806,113.838 -0.753,113.831 -0.753,113.844 -0.454,113.842 -0.458,113.885 -0.469,113.902 -0.465,113.907 -0.466,113.921 -0.458,113.929 -0.405,113.928 -0.386,113.943 -0.375,113.973 -0.381,113.991 -0.416,114.012 -0.484,114.029 -0.541,114.061 -0.610,114.075 -0.695,114.110</polygon>
+    </area>
+  </info>
+</alert>
