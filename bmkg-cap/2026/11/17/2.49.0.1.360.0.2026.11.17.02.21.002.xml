@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.17.02.21.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-17T09:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-17T09:10:00+07:00</effective>
+    <expires>2026-11-17T10:40:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Riau</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 17 November 2026, 09:10 WIB di sebagian wilayah Kep. Riau, khususnya di BURU, KARIMUN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 17 November 2026, 10:40 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKR/2026/11/17/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Riau</areaDesc>
+      <polygon>0.962,103.445 0.959,103.463 0.948,103.475 0.920,103.476 0.925,103.464 0.936,103.456 0.941,103.439 0.956,103.428 0.961,103.437 0.962,103.445</polygon>
+      <polygon>1.011,103.434 0.995,103.446 0.990,103.441 0.988,103.437 0.996,103.416 0.992,103.411 1.002,103.408 1.012,103.413 1.016,103.418 1.005,103.424 1.011,103.434</polygon>
+      <polygon>0.945,103.494 0.943,103.490 0.950,103.490 0.950,103.494 0.945,103.494</polygon>
+      <polygon>0.950,103.418 0.945,103.430 0.932,103.439 0.913,103.420 0.920,103.412 0.940,103.412 0.950,103.418</polygon>
+      <polygon>0.938,103.440 0.934,103.457 0.925,103.461 0.925,103.444 0.938,103.440</polygon>
+      <polygon>0.926,103.341 0.929,103.339 0.931,103.343 0.926,103.341</polygon>
+      <polygon>0.927,103.386 0.924,103.386 0.925,103.381 0.927,103.386</polygon>
+      <polygon>0.914,103.342 0.894,103.340 0.904,103.334 0.913,103.336 0.914,103.342</polygon>
+      <polygon>0.912,103.358 0.909,103.363 0.904,103.359 0.912,103.358</polygon>
+      <polygon>0.906,103.403 0.911,103.399 0.911,103.405 0.906,103.403</polygon>
+      <polygon>0.901,103.372 0.898,103.373 0.897,103.365 0.906,103.365 0.901,103.372</polygon>
+      <polygon>0.924,103.442 0.922,103.460 0.913,103.476 0.856,103.488 0.860,103.452 0.892,103.410 0.903,103.405 0.909,103.406 0.911,103.422 0.925,103.435 0.924,103.442</polygon>
+      <polygon>0.868,103.527 0.861,103.513 0.862,103.503 0.899,103.486 0.926,103.489 0.917,103.505 0.909,103.511 0.879,103.527 0.868,103.527</polygon>
+    </area>
+  </info>
+</alert>
