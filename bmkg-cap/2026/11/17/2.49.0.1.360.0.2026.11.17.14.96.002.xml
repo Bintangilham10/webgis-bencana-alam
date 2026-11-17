@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.17.14.96.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-17T19:40:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-17T20:10:00+09:00</effective>
+    <expires>2026-11-17T23:10:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua Barat Daya</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 17 November 2026, 20:10 WIT di sebagian wilayah Papua Barat Daya, khususnya di AIFAT TIMUR SELATAN, AITINYO, AITINYO TENGAH, AYAMARU SELATAN JAYA, MALADUM MES.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 17 November 2026, 23:10 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPD/2026/11/17/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua Barat Daya</areaDesc>
+      <polygon>-1.337,132.241 -1.347,132.263 -1.347,132.263 -1.357,132.249 -1.391,132.240 -1.415,132.235 -1.435,132.235 -1.436,132.231 -1.441,132.209 -1.442,132.207 -1.444,132.202 -1.437,132.179 -1.435,132.170 -1.432,132.169 -1.429,132.109 -1.428,132.102 -1.422,132.103 -1.398,132.110 -1.367,132.119 -1.362,132.121 -1.362,132.121 -1.357,132.212 -1.345,132.219 -1.337,132.241</polygon>
+      <polygon>-1.537,132.578 -1.584,132.570 -1.594,132.568 -1.643,132.552 -1.636,132.486 -1.668,132.433 -1.628,132.414 -1.596,132.370 -1.587,132.373 -1.550,132.328 -1.550,132.328 -1.535,132.368 -1.529,132.380 -1.526,132.382 -1.498,132.398 -1.478,132.412 -1.472,132.417 -1.464,132.423 -1.464,132.424 -1.432,132.424 -1.419,132.507 -1.455,132.493 -1.451,132.518 -1.537,132.578</polygon>
+      <polygon>-1.356,132.398 -1.382,132.401 -1.387,132.405 -1.425,132.424 -1.432,132.424 -1.464,132.424 -1.464,132.423 -1.472,132.417 -1.478,132.412 -1.498,132.398 -1.526,132.382 -1.529,132.380 -1.535,132.368 -1.550,132.328 -1.543,132.322 -1.548,132.305 -1.508,132.311 -1.506,132.323 -1.475,132.366 -1.453,132.357 -1.432,132.363 -1.405,132.360 -1.388,132.351 -1.375,132.349 -1.364,132.352 -1.365,132.345 -1.364,132.331 -1.364,132.352 -1.354,132.366 -1.361,132.378 -1.356,132.398</polygon>
+      <polygon>-0.777,131.398 -0.777,131.399 -0.781,131.399 -0.795,131.401 -0.796,131.400 -0.796,131.400 -0.799,131.399 -0.800,131.398 -0.800,131.398 -0.803,131.398 -0.805,131.397 -0.806,131.397 -0.808,131.398 -0.812,131.345 -0.811,131.337 -0.821,131.302 -0.821,131.291 -0.834,131.238 -0.822,131.225 -0.817,131.232 -0.818,131.247 -0.809,131.270 -0.797,131.322 -0.789,131.330 -0.787,131.347 -0.787,131.348 -0.784,131.352 -0.783,131.356 -0.783,131.356 -0.780,131.360 -0.784,131.376 -0.779,131.390 -0.779,131.391 -0.777,131.395 -0.777,131.396 -0.777,131.398</polygon>
+      <polygon>-1.363,132.319 -1.365,132.322 -1.389,132.322 -1.389,132.328 -1.387,132.337 -1.372,132.338 -1.365,132.345 -1.364,132.352 -1.375,132.349 -1.388,132.351 -1.405,132.360 -1.432,132.363 -1.453,132.357 -1.475,132.366 -1.506,132.323 -1.508,132.311 -1.494,132.307 -1.492,132.306 -1.490,132.306 -1.488,132.307 -1.487,132.304 -1.487,132.304 -1.478,132.297 -1.469,132.289 -1.463,132.275 -1.462,132.274 -1.458,132.271 -1.457,132.270 -1.434,132.236 -1.435,132.235 -1.415,132.235 -1.391,132.240 -1.412,132.303 -1.398,132.298 -1.389,132.295 -1.373,132.298 -1.365,132.310 -1.364,132.317 -1.363,132.319</polygon>
+    </area>
+  </info>
+</alert>
