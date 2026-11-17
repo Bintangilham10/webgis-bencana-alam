@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.17.04.31.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-17T10:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-17T10:50:00+07:00</effective>
+    <expires>2026-11-17T12:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 17 November 2026, 10:50 WIB di sebagian wilayah Jakarta, khususnya di TIGARAKSA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 17 November 2026, 12:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJK/2026/11/17/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jakarta</areaDesc>
+      <polygon>-6.247,106.491 -6.265,106.501 -6.275,106.512 -6.288,106.504 -6.304,106.469 -6.325,106.443 -6.319,106.442 -6.325,106.430 -6.315,106.429 -6.309,106.435 -6.302,106.433 -6.297,106.426 -6.294,106.430 -6.289,106.460 -6.271,106.462 -6.258,106.453 -6.261,106.448 -6.259,106.440 -6.233,106.438 -6.229,106.450 -6.216,106.457 -6.216,106.464 -6.194,106.469 -6.202,106.473 -6.203,106.478 -6.216,106.476 -6.237,106.482 -6.247,106.491</polygon>
+    </area>
+  </info>
+</alert>
