@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.17.19.91.011</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-18T03:25:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-18T03:30:00+09:00</effective>
+    <expires>2026-11-18T04:30:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 18 November 2026, 03:30 WIT di sebagian wilayah Papua, khususnya di AIMANDO PADAIDO, ORIDEK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 18 November 2026, 04:30 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPU/2026/11/18/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua</areaDesc>
+      <polygon>-1.191,136.601 -1.200,136.610 -1.220,136.614 -1.224,136.612 -1.228,136.591 -1.197,136.577 -1.192,136.585 -1.191,136.601</polygon>
+      <polygon>-1.137,136.610 -1.144,136.618 -1.154,136.620 -1.174,136.605 -1.172,136.599 -1.163,136.593 -1.161,136.597 -1.142,136.602 -1.135,136.600 -1.137,136.610</polygon>
+      <polygon>-1.225,136.701 -1.220,136.694 -1.213,136.698 -1.217,136.709 -1.225,136.701</polygon>
+      <polygon>-1.228,136.521 -1.235,136.538 -1.242,136.539 -1.244,136.527 -1.239,136.503 -1.230,136.501 -1.228,136.521</polygon>
+      <polygon>-1.229,136.607 -1.232,136.614 -1.244,136.617 -1.252,136.614 -1.255,136.605 -1.252,136.598 -1.239,136.595 -1.230,136.601 -1.229,136.607</polygon>
+      <polygon>-1.263,136.679 -1.273,136.668 -1.272,136.664 -1.263,136.668 -1.261,136.675 -1.263,136.679</polygon>
+      <polygon>-1.270,136.593 -1.275,136.611 -1.295,136.603 -1.281,136.591 -1.274,136.590 -1.270,136.593</polygon>
+      <polygon>-1.293,136.679 -1.298,136.671 -1.294,136.670 -1.293,136.679</polygon>
+      <polygon>-1.295,136.696 -1.296,136.691 -1.292,136.699 -1.295,136.696</polygon>
+      <polygon>-1.322,136.606 -1.320,136.601 -1.303,136.603 -1.308,136.607 -1.322,136.606</polygon>
+      <polygon>-1.319,136.616 -1.318,136.613 -1.316,136.616 -1.319,136.616</polygon>
+      <polygon>-1.332,136.622 -1.340,136.623 -1.336,136.620 -1.332,136.622</polygon>
+      <polygon>-1.163,136.259 -1.133,136.252 -1.083,136.235 -1.091,136.217 -1.081,136.209 -1.062,136.209 -1.042,136.195 -1.031,136.208 -1.029,136.237 -1.018,136.257 -1.023,136.280 -1.030,136.290 -1.055,136.296 -1.065,136.315 -1.074,136.324 -1.076,136.332 -1.068,136.343 -1.063,136.360 -1.073,136.386 -1.079,136.387 -1.089,136.381 -1.090,136.369 -1.096,136.360 -1.111,136.355 -1.134,136.326 -1.163,136.259</polygon>
+    </area>
+  </info>
+</alert>
