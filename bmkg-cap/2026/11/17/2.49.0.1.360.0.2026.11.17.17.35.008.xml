@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.17.17.35.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-18T00:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-18T00:20:00+07:00</effective>
+    <expires>2026-11-18T03:20:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 18 November 2026, 00:20 WIB di sebagian wilayah Jawa Timur, khususnya di BENOWO, LAREN, PADEMAWU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 18 November 2026, 03:20 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/18/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-6.928,112.287 -6.950,112.288 -6.952,112.292 -6.947,112.297 -6.939,112.299 -6.938,112.306 -6.942,112.313 -6.960,112.315 -6.961,112.327 -6.956,112.328 -6.954,112.343 -6.958,112.375 -6.975,112.367 -6.992,112.367 -6.997,112.363 -6.989,112.360 -6.984,112.353 -6.990,112.354 -7.001,112.335 -6.987,112.323 -6.985,112.326 -6.989,112.339 -6.983,112.343 -6.976,112.341 -6.968,112.326 -6.979,112.317 -6.979,112.313 -6.968,112.307 -6.967,112.298 -6.975,112.297 -6.982,112.284 -6.992,112.278 -7.004,112.278 -7.011,112.274 -7.010,112.236 -7.014,112.231 -7.036,112.222 -7.037,112.222 -7.034,112.207 -7.030,112.204 -7.010,112.214 -6.969,112.206 -6.946,112.203 -6.949,112.210 -6.947,112.241 -6.942,112.252 -6.937,112.259 -6.930,112.260 -6.921,112.273 -6.928,112.287</polygon>
+      <polygon>-7.144,113.525 -7.158,113.520 -7.175,113.541 -7.179,113.538 -7.190,113.540 -7.205,113.550 -7.204,113.557 -7.213,113.560 -7.231,113.550 -7.252,113.514 -7.243,113.507 -7.245,113.517 -7.229,113.502 -7.222,113.474 -7.214,113.482 -7.188,113.487 -7.187,113.491 -7.193,113.495 -7.178,113.496 -7.175,113.487 -7.156,113.487 -7.148,113.490 -7.137,113.502 -7.133,113.501 -7.129,113.507 -7.129,113.515 -7.144,113.514 -7.144,113.525</polygon>
+      <polygon>-7.241,113.502 -7.253,113.514 -7.251,113.505 -7.246,113.500 -7.241,113.502</polygon>
+      <polygon>-7.220,112.668 -7.224,112.664 -7.237,112.661 -7.242,112.654 -7.263,112.660 -7.264,112.655 -7.258,112.652 -7.264,112.633 -7.261,112.632 -7.224,112.636 -7.223,112.627 -7.203,112.626 -7.193,112.661 -7.199,112.664 -7.206,112.660 -7.220,112.668</polygon>
+    </area>
+  </info>
+</alert>
