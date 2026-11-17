@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.17.16.35.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-17T22:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-17T23:10:00+07:00</effective>
+    <expires>2026-11-18T02:10:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 17 November 2026, 23:10 WIB di sebagian wilayah Jawa Timur, khususnya di PANCENG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 18 November 2026, 02:10 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/17/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-6.879,112.449 -6.883,112.454 -6.900,112.475 -6.905,112.498 -6.931,112.485 -6.941,112.493 -6.952,112.511 -6.957,112.512 -6.963,112.501 -6.976,112.500 -6.978,112.489 -6.987,112.483 -6.987,112.479 -6.966,112.476 -6.965,112.466 -6.957,112.456 -6.964,112.444 -6.948,112.426 -6.935,112.427 -6.922,112.423 -6.904,112.428 -6.901,112.439 -6.893,112.443 -6.884,112.446 -6.875,112.441 -6.879,112.449</polygon>
+    </area>
+  </info>
+</alert>
