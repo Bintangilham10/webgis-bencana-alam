@@ -1,0 +1,36 @@
+{
+  "guid": "CBMiygFBVV95cUxOMGUybXJwXzVKaFlqYWZ6TWFxTlc4aVRBdVJhaVFCRUpqV21GV0lhZTlNQUxkaV9mSU5ueEtwVEdjU3RMZU9mMVZnZUVEVHIyUzUzeEpvc3F6QU8wanB2Ry1aa1h4VkhjakpWY0tNb0ZSUHJLMnBuWks2WW5XZGpZYkplR291WTFSR3QteUh3V3NkMUpITS1KcTRNalN0X1M3WHlnWGRmSVVyMy1yN0hGRzdjOGt5QXFobVpUSzdvc2oxM2RWaldSWUN3",
+  "title": "Bupati Tangerang Groundbreaking Tanggul Cimanceuri, Akhiri Ancaman Longsor di Perbatasan Tangerang-Bogor - Sekilasbanten",
+  "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOMGUybXJwXzVKaFlqYWZ6TWFxTlc4aVRBdVJhaVFCRUpqV21GV0lhZTlNQUxkaV9mSU5ueEtwVEdjU3RMZU9mMVZnZUVEVHIyUzUzeEpvc3F6QU8wanB2Ry1aa1h4VkhjakpWY0tNb0ZSUHJLMnBuWks2WW5XZGpZYkplR291WTFSR3QteUh3V3NkMUpITS1KcTRNalN0X1M3WHlnWGRmSVVyMy1yN0hGRzdjOGt5QXFobVpUSzdvc2oxM2RWaldSWUN3?oc=5",
+  "source": "Sekilasbanten",
+  "source_url": "https://sekilasbanten.com",
+  "published_at": "2026-11-17T07:32:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-17T07:45:31.125Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "36.03",
+      "nama": "Kabupaten Tangerang",
+      "keyakinan": "tinggi"
+    },
+    {
+      "kode": "36.71",
+      "nama": "Kota Tangerang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

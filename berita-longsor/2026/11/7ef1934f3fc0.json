@@ -1,0 +1,26 @@
+{
+  "guid": "CBMitgFBVV95cUxONkk4SF94WE91U0RWbW5GMjZoNWdtTk1KbURzMjM2Vnp2ODdZNzAycm42VFpBSGVITlVnVlJ5Tjg0aTJLZk1JM2FYS19xTU5ERnNVclIwcWFLLV9ZQ1N2RmhHU204aDhoLXp0MVd3VGVBV3RKNE1pUEh2MUsxWUt1X3lJUW12SmFuN29XT0x2a2FrVnZPbU94TGpDQWlYTDh2RXNVMVJ1N1kweExOZjRkTkc1QU9xQQ",
+  "title": "Tanggul Cimanceuri Dibangun, Pemkab Tangerang Atasi Ancaman Longsor di Pagedangan - tangselpos.id",
+  "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONkk4SF94WE91U0RWbW5GMjZoNWdtTk1KbURzMjM2Vnp2ODdZNzAycm42VFpBSGVITlVnVlJ5Tjg0aTJLZk1JM2FYS19xTU5ERnNVclIwcWFLLV9ZQ1N2RmhHU204aDhoLXp0MVd3VGVBV3RKNE1pUEh2MUsxWUt1X3lJUW12SmFuN29XT0x2a2FrVnZPbU94TGpDQWlYTDh2RXNVMVJ1N1kweExOZjRkTkc1QU9xQQ?oc=5",
+  "source": "tangselpos.id",
+  "source_url": "https://tangselpos.id",
+  "published_at": "2026-11-17T05:17:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-17T07:45:31.125Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "36.03",
+      "nama": "Kabupaten Tangerang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "36.71",
+      "nama": "Kota Tangerang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

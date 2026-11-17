@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwgFBVV95cUxNZXRhRjk2LVlyNEN6MVB2SHRBUVBZYWgxTkNhWXpkYkxaSzVHTUN5bFhGT1IxZXBhelFHckF4OUNRNHF1OXhuUzBaeFd0ck4zeEM4YXpMMHQ4V2l0MEJOVzBhVWVNX0d2RDRTNUtyQ2ZmRlh3OHJEX21JbTE4Mm9JTjFqUGJiVDMzTXpLM2p1NlhqTHBabXRjOXNKeG96XzZ6LV9tdkJsbnFzVmFzRGdZUElVYTZVaDY5dVpmOHZLZldxZw",
+  "title": "Tebing Tambang Pasir di Cirebon Longsor, 1 Pekerja Tewas dan 2 Luka-luka - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZXRhRjk2LVlyNEN6MVB2SHRBUVBZYWgxTkNhWXpkYkxaSzVHTUN5bFhGT1IxZXBhelFHckF4OUNRNHF1OXhuUzBaeFd0ck4zeEM4YXpMMHQ4V2l0MEJOVzBhVWVNX0d2RDRTNUtyQ2ZmRlh3OHJEX21JbTE4Mm9JTjFqUGJiVDMzTXpLM2p1NlhqTHBabXRjOXNKeG96XzZ6LV9tdkJsbnFzVmFzRGdZUElVYTZVaDY5dVpmOHZLZldxZw?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://bandung.kompas.com",
+  "published_at": "2026-11-16T22:55:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-17T07:45:31.125Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.09",
+      "nama": "Kabupaten Cirebon",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.74",
+      "nama": "Kota Cirebon",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

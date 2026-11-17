@@ -1,0 +1,38 @@
+{
+  "guid": "CBMi4AFBVV95cUxOTkZ1N2NVU2ZPdk9TWFNxRVduR0laV20wZXJBQjJuc0Q3SEFXY2FCZC1uRnFOZl9XaG9YVmx3UXp1RndwYlFDZXFlV3kxV2FHWEM2TUZ5emRRSDdOZjdzRW4tYmpRUFc3ajdWZ1NGbjhzT0E0by1TRVMtcTZtbW1yZEFqVnZybVpfUDUtNW9pelJSZFNlMkIwTjBaOFF4RmNBNm1uSGtZY0VIN1F5THRsMG9Zakt3NGJzci1TSzdlZ3AzT1lQNFNJWVI1QmtONEZiZXpfbjVtMkJhR19fTGx5MQ",
+  "title": "Waspada Banjir Longsor di Tasikmalaya Garut Ciamis, Gubernur Tetapkan Jabar Siaga Darurat Bencana - Tribunnews.com",
+  "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOTkZ1N2NVU2ZPdk9TWFNxRVduR0laV20wZXJBQjJuc0Q3SEFXY2FCZC1uRnFOZl9XaG9YVmx3UXp1RndwYlFDZXFlV3kxV2FHWEM2TUZ5emRRSDdOZjdzRW4tYmpRUFc3ajdWZ1NGbjhzT0E0by1TRVMtcTZtbW1yZEFqVnZybVpfUDUtNW9pelJSZFNlMkIwTjBaOFF4RmNBNm1uSGtZY0VIN1F5THRsMG9Zakt3NGJzci1TSzdlZ3AzT1lQNFNJWVI1QmtONEZiZXpfbjVtMkJhR19fTGx5MQ?oc=5",
+  "source": "Tribunnews.com",
+  "source_url": "https://priangan.tribunnews.com",
+  "published_at": "2026-11-17T06:08:16.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-17T07:45:31.125Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.07",
+      "nama": "Kabupaten Ciamis",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jawa Barat"
+  ]
+}

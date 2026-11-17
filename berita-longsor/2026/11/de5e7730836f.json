@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi0gFBVV95cUxNUVd5ejE1R2x2azZiMG9vcHNKcWNXREw5U0Zwb0RTUGZ2UHV1LUxFWFFUaVZjeFhXQ2FQTFUxTk1FNTh6Yy1UMjBiLVR2c1M0ZlR0RG1oV01IcVo1OGtOMFZqRzNUMmVzSVdCbnA1SEJXRjJGdmtISDRVclQ4WERuZjFta2xDRGR5QlpNUUhSR18ydGFaMzB4cnlsNG84NVdEYkFhTk5KT0trbnpkblNnZkFKc3dNNnppcl9QekUtVW1rWXhXMVFra3JZVXY1VHZfcXc",
+  "title": "Banjir dan Longsor Melanda Kebumen, Jalan Nasional Tergenang Air Sungai Karanganyar - Tribunbanyumas.com",
+  "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUVd5ejE1R2x2azZiMG9vcHNKcWNXREw5U0Zwb0RTUGZ2UHV1LUxFWFFUaVZjeFhXQ2FQTFUxTk1FNTh6Yy1UMjBiLVR2c1M0ZlR0RG1oV01IcVo1OGtOMFZqRzNUMmVzSVdCbnA1SEJXRjJGdmtISDRVclQ4WERuZjFta2xDRGR5QlpNUUhSR18ydGFaMzB4cnlsNG84NVdEYkFhTk5KT0trbnpkblNnZkFKc3dNNnppcl9QekUtVW1rWXhXMVFra3JZVXY1VHZfcXc?oc=5",
+  "source": "Tribunbanyumas.com",
+  "source_url": "https://banyumas.tribunnews.com",
+  "published_at": "2026-11-17T05:38:04.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-17T07:45:31.125Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.13",
+      "nama": "Kabupaten Karanganyar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.05",
+      "nama": "Kabupaten Kebumen",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
