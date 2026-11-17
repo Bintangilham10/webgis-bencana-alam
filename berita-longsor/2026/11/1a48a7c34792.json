@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqwFBVV95cUxPS2xYRS1iQXBYajRFNGJZNTRSMlhXNDB3ZmJQMm5WSXZlTFIxaTFibnBjOXpYWGpMYUJwZTZ2RjFUelpDcTBWUjhRVWpsT1E2eWZuMDhLd2g4TXpvV0dDeHNvdy14RWFKYXBUaXl5RTZxUDlGbXM0Ri02QWF4Yk5Wb0R1SS1TRjNJbEtJRnVVVXNfUkMzY29mcmxFVXZlRW94a3QwdV9ycEpzbzg",
+  "title": "Hujan Deras Picu Longsor dan Banjir di Tirtoyudo Malang, Sembilan Rumah Terdampak - BeritaNasional.ID",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPS2xYRS1iQXBYajRFNGJZNTRSMlhXNDB3ZmJQMm5WSXZlTFIxaTFibnBjOXpYWGpMYUJwZTZ2RjFUelpDcTBWUjhRVWpsT1E2eWZuMDhLd2g4TXpvV0dDeHNvdy14RWFKYXBUaXl5RTZxUDlGbXM0Ri02QWF4Yk5Wb0R1SS1TRjNJbEtJRnVVVXNfUkMzY29mcmxFVXZlRW94a3QwdV9ycEpzbzg?oc=5",
+  "source": "BeritaNasional.ID",
+  "source_url": "https://beritanasional.id",
+  "published_at": "2026-11-17T14:26:58.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-17T17:01:00.545Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

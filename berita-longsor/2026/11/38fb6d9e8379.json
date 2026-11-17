@@ -1,0 +1,26 @@
+{
+  "guid": "CBMizgFBVV95cUxPX2VUczFEc3JZRENncW1FMWIwZTlDTV9Ic29JMjZuMDVRaFdXd0k4aW9HbElOa2poMGVzZmlza0RITktUMURrbFJ0MS1WUU5lUHNXT2JCQjV5eUkzMzY4cnhNNjJ6ME5BUFVlbzNGR2hkR2hVMXM2Q0kyLWR1aDNaSFpFRWYzdmVtRG8yX3Zxc3Q4cy1Wa2tadjZaaWowWk5LV1A0VkJOaGZEcjcyYk9EODNYLUZhcXREZjVQc002R05Eb1RLSmF0T1BlZnhrUQ",
+  "title": "Tanah Longsor Rusak 9 Rumah di Malang, Warga Butuh Terpal - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPX2VUczFEc3JZRENncW1FMWIwZTlDTV9Ic29JMjZuMDVRaFdXd0k4aW9HbElOa2poMGVzZmlza0RITktUMURrbFJ0MS1WUU5lUHNXT2JCQjV5eUkzMzY4cnhNNjJ6ME5BUFVlbzNGR2hkR2hVMXM2Q0kyLWR1aDNaSFpFRWYzdmVtRG8yX3Zxc3Q4cy1Wa2tadjZaaWowWk5LV1A0VkJOaGZEcjcyYk9EODNYLUZhcXREZjVQc002R05Eb1RLSmF0T1BlZnhrUQ?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://surabaya.kompas.com",
+  "published_at": "2026-11-17T14:13:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-17T17:01:00.545Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
