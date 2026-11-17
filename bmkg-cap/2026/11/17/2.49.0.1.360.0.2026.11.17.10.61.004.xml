@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.17.10.61.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-17T15:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-17T16:00:00+07:00</effective>
+    <expires>2026-11-17T18:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 17 November 2026, 16:00 WIB di sebagian wilayah Kalimantan Barat, khususnya di SEMITAU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 17 November 2026, 18:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/11/17/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>0.730,111.933 0.723,111.928 0.677,111.933 0.670,111.928 0.664,111.928 0.632,111.938 0.614,111.939 0.610,111.936 0.612,111.929 0.607,111.925 0.588,111.921 0.584,111.925 0.579,111.953 0.564,111.962 0.571,111.980 0.569,111.991 0.523,112.044 0.513,112.047 0.506,112.043 0.496,112.046 0.484,112.036 0.479,112.020 0.465,111.999 0.473,111.982 0.472,111.973 0.450,111.962 0.447,111.956 0.440,111.932 0.453,111.910 0.453,111.900 0.449,111.887 0.433,111.881 0.453,111.853 0.502,111.821 0.542,111.768 0.578,111.741 0.591,111.739 0.601,111.730 0.612,111.698 0.621,111.689 0.628,111.688 0.667,111.717 0.698,111.717 0.727,111.727 0.737,111.745 0.746,111.749 0.738,111.766 0.739,111.812 0.741,111.820 0.751,111.832 0.754,111.848 0.737,111.870 0.729,111.887 0.726,111.909 0.730,111.933</polygon>
+    </area>
+  </info>
+</alert>
