@@ -1,0 +1,26 @@
+{
+  "guid": "CBMikgFBVV95cUxOVm1hVTFPM2F1SV9SNHRfRzNOTW5XYnljTWZwSmIyOG5qSmo3LXJwWFdQNk42N3U1OV9lVE92ZzMwY1ZiLWg0QnE5UUc0MWlPY1lmVW9VVEJzQVVFVjFRYVUtdUg0d01OQTNnS1ZhS3hGZWhDcVRFTUNtdk1uc3dwNlgxOHhnaEJvXzROVXBoUG82QQ",
+  "title": "Berita Terkini Harian Alat Peringatan Dini Dan Tanah Longsor Semarang Hilang Dicuri Terbaru Hari Ini - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVm1hVTFPM2F1SV9SNHRfRzNOTW5XYnljTWZwSmIyOG5qSmo3LXJwWFdQNk42N3U1OV9lVE92ZzMwY1ZiLWg0QnE5UUc0MWlPY1lmVW9VVEJzQVVFVjFRYVUtdUg0d01OQTNnS1ZhS3hGZWhDcVRFTUNtdk1uc3dwNlgxOHhnaEJvXzROVXBoUG82QQ?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://www.kompas.com",
+  "published_at": "2026-11-17T14:21:41.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-18T12:00:45.449Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.22",
+      "nama": "Kabupaten Semarang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.74",
+      "nama": "Kota Semarang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

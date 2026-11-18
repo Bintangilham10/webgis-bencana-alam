@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwwFBVV95cUxNNGxqTHY4V1RIVl80cndvNFdKeTJ0aVlIbTVYaXFwaDNCOWZRbnhMdHNFZEcwWFAxZ1dNZWQ2Z2VJQXZTRk5pSGQyMlNtaVhQem9CYjVJT0JpdDdVSkhqamdjZVlRRlcxa2tRdGZJUzVLbGxoR3I5amVwN3d5bjNlQXBSeS1Hcjh2LTQtSjZDQnl2clRoVTlVQ0EtSlZTdXBBWnJLQUstR1hVY3hSYkVtOE9aQWdaMTJwUkVsX3hCUEdLTW8",
+  "title": "Hujan Deras Picu 4 Bencana di Agam, Jalan Penghubung Bukittinggi-Lubuk Basung Tertimbun Longsor - Radar Sumbar",
+  "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNGxqTHY4V1RIVl80cndvNFdKeTJ0aVlIbTVYaXFwaDNCOWZRbnhMdHNFZEcwWFAxZ1dNZWQ2Z2VJQXZTRk5pSGQyMlNtaVhQem9CYjVJT0JpdDdVSkhqamdjZVlRRlcxa2tRdGZJUzVLbGxoR3I5amVwN3d5bjNlQXBSeS1Hcjh2LTQtSjZDQnl2clRoVTlVQ0EtSlZTdXBBWnJLQUstR1hVY3hSYkVtOE9aQWdaMTJwUkVsX3hCUEdLTW8?oc=5",
+  "source": "Radar Sumbar",
+  "source_url": "https://radarsumbar.com",
+  "published_at": "2026-11-18T09:01:50.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-18T12:00:45.449Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.75",
+      "nama": "Kota Bukittinggi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.06",
+      "nama": "Kabupaten Agam",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

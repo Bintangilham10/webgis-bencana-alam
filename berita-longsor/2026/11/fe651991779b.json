@@ -1,0 +1,26 @@
+{
+  "guid": "CBMitgFBVV95cUxPZlY2Wm1PRlcxNVdOTEt3ZE1nWjVMSmpoUGJBNHRJbWVoMDJOVm1LdjROYmhjRkpmMUhRNmEtaHRSbXZMSDRQZzVOdHNUZm5FX0U3UTV2TXlHUUcyYWxIdEZ1cGhYcl8tR0R2SUF2NlQ5NHJ4NHpHYWpRb01yaUpPNkdCMGpsSDZjODRDRC1QTWJjVkFQeUhRc2lVRm9KbWNoQTY3ZWJUSEtiV011eFU3bGRZVWZIdw",
+  "title": "Longsor Tutup Total Jalur Bukittinggi-Maninjau di Agam, Mobil Nyaris Tertimbun - KoranKota",
+  "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZlY2Wm1PRlcxNVdOTEt3ZE1nWjVMSmpoUGJBNHRJbWVoMDJOVm1LdjROYmhjRkpmMUhRNmEtaHRSbXZMSDRQZzVOdHNUZm5FX0U3UTV2TXlHUUcyYWxIdEZ1cGhYcl8tR0R2SUF2NlQ5NHJ4NHpHYWpRb01yaUpPNkdCMGpsSDZjODRDRC1QTWJjVkFQeUhRc2lVRm9KbWNoQTY3ZWJUSEtiV011eFU3bGRZVWZIdw?oc=5",
+  "source": "KoranKota",
+  "source_url": "https://korankota.com",
+  "published_at": "2026-11-18T08:21:19.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-18T12:00:45.449Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.75",
+      "nama": "Kota Bukittinggi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.06",
+      "nama": "Kabupaten Agam",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
