@@ -1,0 +1,38 @@
+{
+  "guid": "CBMiwwFBVV95cUxQcEJNNl92bWlJcFRlUDVjMVRBTkdtWHFmYnJUbWhSdlN6aFgxX3Nqb0Q0d2hWRWZHRV9pbEVaM2pRLWZTM2JmUWVmemZRMjRtSGJVOExMRTZ3ZlpscEExR0FfYU03UVAtMlBpSGpuV092MGpUb05fYUdyTlZhVC0xc0ZObXloQm9tdExqVE9pX21yNlVjOEtQQk14d3FGcVVLS09DbGVrenotRDVMOU5qUXp6S0VjZ1RQWjRkNzRtamtMY1HSAcgBQVVfeXFMTWVyS05zb09ma1NzWVo4WEhLVEx1cG1CbVdGWmNPQWE3b0JVMWRHTmVIendsSHlEMGprTzFxYWhFNUVxZ3h2QnloSS1yRWtGVVA4c19laEloQXFQN29MUk1haDRkY0dhdUI2eVNHVGhXZ3pBeG5maklGZjl5WlhUQldzR1lrTnVqV1JUN0w3US1DakQxdXI0Q2MtTHZQOGRMNFh5bWMxb0Z0RTJRaTM0c1A3Zm9ZVVdOZ1l3dklIcmx6aTVHQ3lKaTU",
+  "title": "Waspada musim hujan! 27 wilayah Jabar rawan banjir & longsor, Bogor-Sukabumi tertinggi - ANTARA News Jawa Barat",
+  "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcEJNNl92bWlJcFRlUDVjMVRBTkdtWHFmYnJUbWhSdlN6aFgxX3Nqb0Q0d2hWRWZHRV9pbEVaM2pRLWZTM2JmUWVmemZRMjRtSGJVOExMRTZ3ZlpscEExR0FfYU03UVAtMlBpSGpuV092MGpUb05fYUdyTlZhVC0xc0ZObXloQm9tdExqVE9pX21yNlVjOEtQQk14d3FGcVVLS09DbGVrenotRDVMOU5qUXp6S0VjZ1RQWjRkNzRtamtMY1HSAcgBQVVfeXFMTWVyS05zb09ma1NzWVo4WEhLVEx1cG1CbVdGWmNPQWE3b0JVMWRHTmVIendsSHlEMGprTzFxYWhFNUVxZ3h2QnloSS1yRWtGVVA4c19laEloQXFQN29MUk1haDRkY0dhdUI2eVNHVGhXZ3pBeG5maklGZjl5WlhUQldzR1lrTnVqV1JUN0w3US1DakQxdXI0Q2MtTHZQOGRMNFh5bWMxb0Z0RTJRaTM0c1A3Zm9ZVVdOZ1l3dklIcmx6aTVHQ3lKaTU?oc=5",
+  "source": "ANTARA News Jawa Barat",
+  "source_url": "https://jabar.antaranews.com",
+  "published_at": "2026-11-18T03:14:41.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-18T05:30:38.478Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jawa Barat"
+  ]
+}
