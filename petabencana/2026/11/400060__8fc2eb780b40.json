@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-18T13:45:38.403Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        100.2248516881,
+        -0.3216033278
+      ]
+    },
+    "properties": {
+      "pkey": "400060",
+      "created_at": "2026-11-18T13:43:54.929Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "8cdf7c79-9f9e-437a-87ed-4d1e2689afcc",
+      "image_url": "https://images.petabencana.id/8cdf7c79-9f9e-437a-87ed-4d1e2689afcc.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 59
+      },
+      "tags": {
+        "city": "AGAM",
+        "district_id": null,
+        "region_code": "1306",
+        "local_area_id": null,
+        "instance_region_code": "ID-SB"
+      },
+      "title": null,
+      "text": "Bencana air bah (banjir bandang) menerjang kawasan Jorong Bancah, Nagari Maninjau, Kecamatan Tanjung Raya, Kabupaten Agam, Sumatera Barat",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-18T13:45:38.403Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        109.3077148356,
+        -7.583378675
+      ]
+    },
+    "properties": {
+      "pkey": "400059",
+      "created_at": "2026-11-18T13:35:04.421Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "cc9a312d-56a1-4a49-b40d-3c6bf13be06b",
+      "image_url": "https://images.petabencana.id/cc9a312d-56a1-4a49-b40d-3c6bf13be06b.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 39
+      },
+      "tags": {
+        "city": "BANYUMAS",
+        "district_id": null,
+        "region_code": "3302",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Luapan air akibat hujan deras menggenangi ruas jalan raya di Desa Alasmalang, Kecamatan Singojuruh, Kabupaten Banyuwangi, Jawa Timur",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
