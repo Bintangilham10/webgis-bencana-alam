@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.18.14.71.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-18T20:51:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-18T21:00:00+08:00</effective>
+    <expires>2026-11-19T00:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 18 November 2026, 21:00 WITA di sebagian wilayah Sulawesi Utara, khususnya di BEO, BEO SELATAN, BEO UTARA, MELONGUANE TIMUR, MORONGE, PULUTAN, RAINIS, TAMPAN' AMMA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 19 November 2026, 00:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/18/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>4.294,126.819 4.255,126.832 4.227,126.826 4.192,126.806 4.192,126.770 4.210,126.790 4.234,126.793 4.249,126.781 4.250,126.774 4.272,126.787 4.302,126.814 4.294,126.819</polygon>
+      <polygon>4.173,126.821 4.175,126.792 4.192,126.806 4.227,126.826 4.255,126.832 4.294,126.819 4.304,126.898 4.280,126.910 4.269,126.911 4.260,126.894 4.250,126.861 4.238,126.860 4.231,126.869 4.216,126.871 4.202,126.857 4.188,126.830 4.173,126.821</polygon>
+      <polygon>4.304,126.898 4.294,126.819 4.302,126.814 4.396,126.766 4.421,126.826 4.444,126.867 4.428,126.870 4.411,126.851 4.375,126.850 4.344,126.866 4.304,126.898</polygon>
+      <polygon>4.302,126.814 4.272,126.787 4.250,126.774 4.248,126.762 4.263,126.746 4.267,126.731 4.266,126.720 4.273,126.711 4.303,126.716 4.314,126.707 4.322,126.708 4.329,126.699 4.327,126.690 4.331,126.681 4.345,126.681 4.396,126.766 4.302,126.814</polygon>
+      <polygon>4.173,126.821 4.164,126.807 4.141,126.797 4.121,126.805 4.110,126.804 4.106,126.811 4.080,126.806 4.075,126.750 4.087,126.746 4.099,126.748 4.158,126.779 4.175,126.792 4.173,126.821</polygon>
+      <polygon>3.998,126.767 4.015,126.756 4.033,126.752 4.075,126.750 4.080,126.806 4.075,126.808 4.055,126.802 4.032,126.809 4.032,126.795 4.017,126.791 3.998,126.767</polygon>
+      <polygon>4.075,126.750 4.033,126.752 4.015,126.756 3.998,126.767 3.994,126.762 3.993,126.744 4.004,126.703 3.993,126.685 4.002,126.672 4.031,126.667 4.043,126.668 4.074,126.690 4.080,126.698 4.075,126.750</polygon>
+      <polygon>4.192,126.806 4.175,126.792 4.158,126.779 4.099,126.748 4.087,126.746 4.075,126.750 4.080,126.698 4.086,126.705 4.087,126.714 4.104,126.729 4.127,126.737 4.144,126.750 4.155,126.750 4.181,126.760 4.192,126.770 4.192,126.806</polygon>
+    </area>
+  </info>
+</alert>
