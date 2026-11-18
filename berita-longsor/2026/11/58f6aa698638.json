@@ -1,0 +1,21 @@
+{
+  "guid": "CBMimAFBVV95cUxNVWE3bWM5UWtZanl6cG9ZY09pNUFQd3JCSG9uQXYwTWJocWRDcG1tOUQzMkdHOTBKMTRkY0w2WVJHakczU0hqd05iMzhtTWZ3ZExNX3NMbEd5UzZwVTBOdS1mMVpaMHJ2THJ1bXp4WTFmOFVuMVotdUZ5NGlvdFpyUDZ4eURlbHYtX2VRUlNhdkYtZEpnZ2RnZg",
+  "title": "Bencana Banyumas, 1 Warga Tewas Longsor dan 13 Pelajar Terjebak Banjir - Arah Pantura",
+  "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVWE3bWM5UWtZanl6cG9ZY09pNUFQd3JCSG9uQXYwTWJocWRDcG1tOUQzMkdHOTBKMTRkY0w2WVJHakczU0hqd05iMzhtTWZ3ZExNX3NMbEd5UzZwVTBOdS1mMVpaMHJ2THJ1bXp4WTFmOFVuMVotdUZ5NGlvdFpyUDZ4eURlbHYtX2VRUlNhdkYtZEpnZ2RnZg?oc=5",
+  "source": "Arah Pantura",
+  "source_url": "https://arahpantura.id",
+  "published_at": "2026-11-18T07:02:18.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-18T08:45:35.143Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

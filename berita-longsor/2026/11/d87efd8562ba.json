@@ -1,0 +1,23 @@
+{
+  "guid": "CBMipwFBVV95cUxQUWd2TnJ3M1haSERXblJVNzNodGF5WWN0SGU2OElXWWc3LUJNRzlMSFV1ZGpWVklJcW9SX2VteGJXVVZrdkZCSjQwY0hheVVCeERrZWhSTVJ0TUcyMmFTTXZDRzlydkFFVHluQmNmWmVLRFdrcllwY0tzQ0haaUQ4WUYyTnF6ZGVuWU04NzJ6UU9obXhLNDZVVkZGcWRPbl9kNzFxUGRUdw",
+  "title": "Banjir dan Tanah Longsor Landa Tiga Kecamatan di Agam Sumbar - Media Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUWd2TnJ3M1haSERXblJVNzNodGF5WWN0SGU2OElXWWc3LUJNRzlMSFV1ZGpWVklJcW9SX2VteGJXVVZrdkZCSjQwY0hheVVCeERrZWhSTVJ0TUcyMmFTTXZDRzlydkFFVHluQmNmWmVLRFdrcllwY0tzQ0haaUQ4WUYyTnF6ZGVuWU04NzJ6UU9obXhLNDZVVkZGcWRPbl9kNzFxUGRUdw?oc=5",
+  "source": "Media Indonesia",
+  "source_url": "https://mediaindonesia.com",
+  "published_at": "2026-11-18T05:30:33.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-18T08:45:35.143Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.06",
+      "nama": "Kabupaten Agam",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Sumatera Barat"
+  ]
+}
