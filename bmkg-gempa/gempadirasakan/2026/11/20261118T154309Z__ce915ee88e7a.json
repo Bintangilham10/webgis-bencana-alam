@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-18T19:00:44.792Z",
+  "data": {
+    "Tanggal": "18 Nov 2026",
+    "Jam": "22:43:09 WIB",
+    "DateTime": "2026-11-18T15:43:09+00:00",
+    "Coordinates": "-4.04,122.46",
+    "Lintang": "4.04 LS",
+    "Bujur": "122.46 BT",
+    "Magnitude": "2.0",
+    "Kedalaman": "4 km",
+    "Wilayah": "Pusat gempa berada di darat 9 km barat daya Kendari",
+    "Dirasakan": "II Kendari"
+  }
+}
