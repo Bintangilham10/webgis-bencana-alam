@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.18.03.17.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-18T09:55:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-18T10:05:00+07:00</effective>
+    <expires>2026-11-18T12:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bengkulu</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 18 November 2026, 10:05 WIB di sebagian wilayah Bengkulu, khususnya di PULAU ENGGANO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 18 November 2026, 12:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBK/2026/11/18/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bengkulu</areaDesc>
+      <polygon>-5.276,102.162 -5.304,102.209 -5.316,102.255 -5.345,102.305 -5.357,102.354 -5.370,102.376 -5.388,102.381 -5.408,102.376 -5.410,102.368 -5.417,102.367 -5.426,102.381 -5.440,102.379 -5.442,102.353 -5.411,102.318 -5.336,102.148 -5.315,102.126 -5.293,102.126 -5.283,102.145 -5.285,102.155 -5.276,102.162</polygon>
+    </area>
+  </info>
+</alert>
