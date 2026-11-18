@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.18.02.19.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-18T08:25:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-18T08:35:00+07:00</effective>
+    <expires>2026-11-18T11:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 18 November 2026, 08:35 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di DAMAR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 18 November 2026, 11:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/11/18/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-2.846,108.296 -2.854,108.274 -2.860,108.270 -2.863,108.263 -2.861,108.251 -2.856,108.248 -2.847,108.221 -2.853,108.218 -2.852,108.212 -2.833,108.193 -2.825,108.167 -2.837,108.167 -2.836,108.129 -2.831,108.119 -2.811,108.117 -2.792,108.105 -2.780,108.114 -2.778,108.130 -2.769,108.131 -2.758,108.124 -2.747,108.126 -2.724,108.112 -2.704,108.121 -2.697,108.140 -2.690,108.137 -2.677,108.146 -2.674,108.153 -2.675,108.158 -2.687,108.166 -2.669,108.171 -2.682,108.195 -2.691,108.194 -2.702,108.215 -2.726,108.240 -2.738,108.247 -2.743,108.261 -2.752,108.271 -2.771,108.266 -2.823,108.290 -2.846,108.296</polygon>
+    </area>
+  </info>
+</alert>

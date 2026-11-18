@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi0AFBVV95cUxNdGwtaHdWNDZJbUZUVVAtNGlaTXJ2WTFLcDF4X1pMYUVBUkF6b3ptVVRXQ0dPWTdGOGs5a04weHJhNEdyeXhvNmRyaGdHb2xkR0dQSkNYOXhJZnJvM3czU1dpdXkyOTl5OHROVmlMS3VzZVZUY2hLdzNreEpSZWE0VlVDdWFlX2JOSGxya29BbVg4b0ZiZ3pEWmlyd0pRWE0yMllNNFhqQl9uY1JmQi1CeThBczlzUXY2N3QwQWctVzM3bE5qWTJjRi1yc1pxWi1Z",
+  "title": "Longsor di Cidadap Sukabumi Putus Jembatan Irigasi, 200 Hektare Sawah Terancam Kekeringan - Sukabumi Update",
+  "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdGwtaHdWNDZJbUZUVVAtNGlaTXJ2WTFLcDF4X1pMYUVBUkF6b3ptVVRXQ0dPWTdGOGs5a04weHJhNEdyeXhvNmRyaGdHb2xkR0dQSkNYOXhJZnJvM3czU1dpdXkyOTl5OHROVmlMS3VzZVZUY2hLdzNreEpSZWE0VlVDdWFlX2JOSGxya29BbVg4b0ZiZ3pEWmlyd0pRWE0yMllNNFhqQl9uY1JmQi1CeThBczlzUXY2N3QwQWctVzM3bE5qWTJjRi1yc1pxWi1Z?oc=5",
+  "source": "Sukabumi Update",
+  "source_url": "https://www.sukabumiupdate.com",
+  "published_at": "2026-11-17T06:13:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-18T02:15:44.493Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

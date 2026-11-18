@@ -1,0 +1,26 @@
+{
+  "guid": "CBMilwFBVV95cUxOeXlyOGlvOE12Nlhpa0d2Z2JDd2gwWjlKMWNEbC1abHdhVzhzUGdORFZCVU85OUlUN21RaUxEV1ZNdmpadkQxdVczV3dEU2k0ZV9jZzJLVlFRNWotUWl2Z0xBYkV5aXhIaVY1VE5wNnNqMVVEUnU2WTg2V20ybEVLYVVVb0FrY09UWjZVZWlIVW1yTENSbFYw",
+  "title": "Alat Pendeteksi Banjir dan Longsor di Semarang Hilang - JPNN.com",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOeXlyOGlvOE12Nlhpa0d2Z2JDd2gwWjlKMWNEbC1abHdhVzhzUGdORFZCVU85OUlUN21RaUxEV1ZNdmpadkQxdVczV3dEU2k0ZV9jZzJLVlFRNWotUWl2Z0xBYkV5aXhIaVY1VE5wNnNqMVVEUnU2WTg2V20ybEVLYVVVb0FrY09UWjZVZWlIVW1yTENSbFYw?oc=5",
+  "source": "JPNN.com",
+  "source_url": "https://jateng.jpnn.com",
+  "published_at": "2026-11-18T01:40:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-18T02:15:44.493Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.22",
+      "nama": "Kabupaten Semarang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.74",
+      "nama": "Kota Semarang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

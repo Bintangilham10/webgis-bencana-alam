@@ -1,0 +1,21 @@
+{
+  "guid": "CBMixgFBVV95cUxNbUtwUWdYNFAzUmlybVZiRHQwR0QzclNWcXBRd3FXTFQ3TGk5eTJHdjRtVTExcTl6S1U5SjRUcDE2MHl4R0dMb2pibUUyTVNsTnlqM0UxZGo2QzBIOEcxdTRqa3Q3Q3BUYVYzem1EM2lHbzVUaU9KT2dMV2FSTmsxWndRSUZkZHYwVUFFTEx6Q3p3dlhxSFZjOHJLRnZRekxNZkhHYW5lc0Y1bEJxYzIxSks2MHF6NUlfenF6QXVfQV81MFhQRWc",
+  "title": "Jelang Musim Hujan, BPBD Bantul Identifikasi Daerah Rawan Banjir dan Tanah Longsor - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNbUtwUWdYNFAzUmlybVZiRHQwR0QzclNWcXBRd3FXTFQ3TGk5eTJHdjRtVTExcTl6S1U5SjRUcDE2MHl4R0dMb2pibUUyTVNsTnlqM0UxZGo2QzBIOEcxdTRqa3Q3Q3BUYVYzem1EM2lHbzVUaU9KT2dMV2FSTmsxWndRSUZkZHYwVUFFTEx6Q3p3dlhxSFZjOHJLRnZRekxNZkhHYW5lc0Y1bEJxYzIxSks2MHF6NUlfenF6QXVfQV81MFhQRWc?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-18T01:36:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-18T02:15:44.493Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "34.02",
+      "nama": "Kabupaten Bantul",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

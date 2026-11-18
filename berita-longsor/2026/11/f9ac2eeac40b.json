@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi_gFBVV95cUxOSjZDalVvRHg4UDBrWkJVWDM5LTZxeGtZTUNnYzUxYUJxU3FORmRIUXdnOTMyRFhNSHRIVTZrWlVYMXlQTjBoUXBDU2UzNkVVZ1VzSHFBcUJhZ2gtdk9IXzdhbkFZZk55TjhBcXBDQ0J1Y0dzMmw0azdsc1lYS0QzVnNkcUl0RzhYU2MwYXVjMU9sNkNaYWh6amM4M25ITklpOVE3S01GVG5JQUg5MnMzdGNYLTM4TVpxWGRQd0pQTWVMLWVLbnlROXp4QjdUU2FhZ0gtLTBmT25JeU1fUDlVaGxGOUN0YjBHbjRfRF8yOUVaaTZGOHV4elVTUUFYdw",
+  "title": "Banyumas dan Purbalingga Masuk Zona Siaga Hujan Tinggi, Warga Diminta Waspadai Banjir dan Longsor - Portal Purwokerto",
+  "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOSjZDalVvRHg4UDBrWkJVWDM5LTZxeGtZTUNnYzUxYUJxU3FORmRIUXdnOTMyRFhNSHRIVTZrWlVYMXlQTjBoUXBDU2UzNkVVZ1VzSHFBcUJhZ2gtdk9IXzdhbkFZZk55TjhBcXBDQ0J1Y0dzMmw0azdsc1lYS0QzVnNkcUl0RzhYU2MwYXVjMU9sNkNaYWh6amM4M25ITklpOVE3S01GVG5JQUg5MnMzdGNYLTM4TVpxWGRQd0pQTWVMLWVLbnlROXp4QjdUU2FhZ0gtLTBmT25JeU1fUDlVaGxGOUN0YjBHbjRfRF8yOUVaaTZGOHV4elVTUUFYdw?oc=5",
+  "source": "Portal Purwokerto",
+  "source_url": "https://portalpurwokerto.pikiran-rakyat.com",
+  "published_at": "2026-11-18T02:01:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-18T02:15:44.493Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.03",
+      "nama": "Kabupaten Purbalingga",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

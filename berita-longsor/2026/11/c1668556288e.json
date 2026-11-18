@@ -1,0 +1,28 @@
+{
+  "guid": "CBMi4AFBVV95cUxOOUdfX0FqaXNnMHFTRndDVzRUem51RjdObTVsM01ER1dOY3FLNThSZnJydk4zRGhUSXdCYzZDcUhSY2JmMGlNbDFBR1FjaG8wUmxnVTlpM3RoWUlVLTc2eHJPYVFYd2xoS19BeGozQUNEeHNHY1V1b2FWQ3lKTk56LVBxbi15bHhQVEVsS3ctTjl2SnV0NXlKUzZTU2RGaDR6dTlOUnVGbWVJMDRjV092a0k0RldJejdXMDBtV1NQRzhGS2NCb25odXUtMEF2SkVxUTdDa0c3UFpMUFllYlVkYw",
+  "title": "Populer Sumbar: Banjir Pesisir Selatan, Longsor Tutup Sungai di Agam, dan Loyalis Jokowi Berpaling - Tribunpadang.com",
+  "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOUdfX0FqaXNnMHFTRndDVzRUem51RjdObTVsM01ER1dOY3FLNThSZnJydk4zRGhUSXdCYzZDcUhSY2JmMGlNbDFBR1FjaG8wUmxnVTlpM3RoWUlVLTc2eHJPYVFYd2xoS19BeGozQUNEeHNHY1V1b2FWQ3lKTk56LVBxbi15bHhQVEVsS3ctTjl2SnV0NXlKUzZTU2RGaDR6dTlOUnVGbWVJMDRjV092a0k0RldJejdXMDBtV1NQRzhGS2NCb25odXUtMEF2SkVxUTdDa0c3UFpMUFllYlVkYw?oc=5",
+  "source": "Tribunpadang.com",
+  "source_url": "https://padang.tribunnews.com",
+  "published_at": "2026-11-17T23:46:30.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-18T02:15:44.493Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "13.01",
+      "nama": "Kabupaten Pesisir Selatan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.06",
+      "nama": "Kabupaten Agam",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Sumatera Barat"
+  ]
+}

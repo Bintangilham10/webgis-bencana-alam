@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiswFBVV95cUxPOUQxMl9Hd1JrNnhaS0llZ1VCV1RWRXJYTnNXbVctRjY1TWJxZzNLRzA1aWdzck1yMmRPa0djNGhtR2NhN19lQUVibllVQzZSeWVnY1dCZlNldlhsM01WVHBhNlJvMDBremxOYWxLSzlBc2o4azl6eXhYTko0bWluRzVobzJZamJFc3RxaHpUQXJuSTh1c0t6b0ZNbktMWnJteWkydzdwWU1hUXhOVm5LMnVrSdIBuAFBVV95cUxNUmJ4endnVEpISDZyQzVJS1pPem5ENTd4bFhEZ2c4bUJ6azFXZFp5VXJUUlJOYkU5SFdnWl82SzhXNGE1dEtmTTV0MlQ1cTRIWENTSTYwS0Y4SWRDUXBJRW8yMk1RU1hJUzE0R0RteWhKVjlRRzdieWF1YnBMSWItblJueERVTTNVNTlOb2FpQ3JMWnlxOVFUendCdnk4M2V1MEZ4SlA2dTR5N2Z2U0UyZ0NTNDYzMS1R",
+  "title": "Lima Kecamatan di Kabupaten Mojokerto Rawan Tanah Longsor - Radar Mojokerto",
+  "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPOUQxMl9Hd1JrNnhaS0llZ1VCV1RWRXJYTnNXbVctRjY1TWJxZzNLRzA1aWdzck1yMmRPa0djNGhtR2NhN19lQUVibllVQzZSeWVnY1dCZlNldlhsM01WVHBhNlJvMDBremxOYWxLSzlBc2o4azl6eXhYTko0bWluRzVobzJZamJFc3RxaHpUQXJuSTh1c0t6b0ZNbktMWnJteWkydzdwWU1hUXhOVm5LMnVrSdIBuAFBVV95cUxNUmJ4endnVEpISDZyQzVJS1pPem5ENTd4bFhEZ2c4bUJ6azFXZFp5VXJUUlJOYkU5SFdnWl82SzhXNGE1dEtmTTV0MlQ1cTRIWENTSTYwS0Y4SWRDUXBJRW8yMk1RU1hJUzE0R0RteWhKVjlRRzdieWF1YnBMSWItblJueERVTTNVNTlOb2FpQ3JMWnlxOVFUendCdnk4M2V1MEZ4SlA2dTR5N2Z2U0UyZ0NTNDYzMS1R?oc=5",
+  "source": "Radar Mojokerto",
+  "source_url": "https://radarmojokerto.jawapos.com",
+  "published_at": "2026-11-18T00:18:24.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-18T02:15:44.493Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.16",
+      "nama": "Kabupaten Mojokerto",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}
