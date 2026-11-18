@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirAFBVV95cUxPY3VTZE92SGlUX2owR09DbTFfUGZMNjlTbS1xZUFHZ05SMHU3TGVZNFJZeWZKQ19peDVQbjRQQ1ZCTXV2Y3F4ajhIMHRuSUNLUmtCY0FHY2l6eS0tcHktZF9UODZ0a09BX0NuRkdNaXBIRzNkSDVkUVl3bmdsdzdYV3Y4UW1Mb0FEVTRpQ2o1bGJtX0hNVkRxdklxUzVJTC1HREJCWFNkcXBwZTdi",
+  "title": "Hadapi Ancaman Banjir dan Longsor, Pemkot Tasikmalaya Siagakan 331 Personel - Fokus Jabar",
+  "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPY3VTZE92SGlUX2owR09DbTFfUGZMNjlTbS1xZUFHZ05SMHU3TGVZNFJZeWZKQ19peDVQbjRQQ1ZCTXV2Y3F4ajhIMHRuSUNLUmtCY0FHY2l6eS0tcHktZF9UODZ0a09BX0NuRkdNaXBIRzNkSDVkUVl3bmdsdzdYV3Y4UW1Mb0FEVTRpQ2o1bGJtX0hNVkRxdklxUzVJTC1HREJCWFNkcXBwZTdi?oc=5",
+  "source": "Fokus Jabar",
+  "source_url": "https://fokusjabar.id",
+  "published_at": "2026-11-18T14:22:05.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-18T15:00:47.035Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

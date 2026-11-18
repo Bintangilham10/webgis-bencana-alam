@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixgFBVV95cUxQWkh2YlNQNWVZR3NfN25uMkR2Z3dnQ1B1U0psbzc0a09sdnFkUkg3Z0QwRlZ2dmV6Y3otWGlTOFB6VzdjN1VXRXo2V1lkY0NrN3VqMEloUmtySXJGelRoSVlKTDZlZ2hwbkhKVjhvV2JROVRCUGdLRzlKLWhFMnlfN0xxUDNpWDdRek1uQXQ4WG1ieE11Z21VQ3VOQVNWOEw4QTdzTEVDMnFBVFpCeTlZUVdDZTNpUVpYa3ZiNmtGVlFodGx4SVE",
+  "title": "Hujan Deras Guyur Lereng Merbabu, Rumah di Semarang Rusak Tertimpa Longsor - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQWkh2YlNQNWVZR3NfN25uMkR2Z3dnQ1B1U0psbzc0a09sdnFkUkg3Z0QwRlZ2dmV6Y3otWGlTOFB6VzdjN1VXRXo2V1lkY0NrN3VqMEloUmtySXJGelRoSVlKTDZlZ2hwbkhKVjhvV2JROVRCUGdLRzlKLWhFMnlfN0xxUDNpWDdRek1uQXQ4WG1ieE11Z21VQ3VOQVNWOEw4QTdzTEVDMnFBVFpCeTlZUVdDZTNpUVpYa3ZiNmtGVlFodGx4SVE?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://regional.kompas.com",
+  "published_at": "2026-11-18T13:34:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-18T15:00:47.035Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.22",
+      "nama": "Kabupaten Semarang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.74",
+      "nama": "Kota Semarang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

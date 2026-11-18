@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwAFBVV95cUxOejllYXNmRnRKWTlndTJ6UnJZT081VHFBYlotdjY3MTF6MDFNM3dhTS1WQ2FDc0o1cW15LXd0Y1V5UVVBaGxRSUFvMnV0aUx0emZrc2NCWEpzTVJVT1hlQ2NNTzhOS2VoWFl1YkdBT08wc2VpLTNzSnB5MllHTGhEcnYyTGlzM3BKYjN6YUhRQkpyTXBWanR6djctTTlOSV95eXZDZlBCbm8tZUs2ZkNwUHVBM3k4Nm1HV1dXN0dxR3Y",
+  "title": "Hujan Deras Picu Tanah Longsor di Kelurahan Gunung Samarinda Balikpapan, Akses Warga Terancam Terputus - Kotaku.co.id",
+  "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOejllYXNmRnRKWTlndTJ6UnJZT081VHFBYlotdjY3MTF6MDFNM3dhTS1WQ2FDc0o1cW15LXd0Y1V5UVVBaGxRSUFvMnV0aUx0emZrc2NCWEpzTVJVT1hlQ2NNTzhOS2VoWFl1YkdBT08wc2VpLTNzSnB5MllHTGhEcnYyTGlzM3BKYjN6YUhRQkpyTXBWanR6djctTTlOSV95eXZDZlBCbm8tZUs2ZkNwUHVBM3k4Nm1HV1dXN0dxR3Y?oc=5",
+  "source": "Kotaku.co.id",
+  "source_url": "https://kotaku.co.id",
+  "published_at": "2026-11-18T12:03:10.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-18T15:00:47.035Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "64.71",
+      "nama": "Kota Balikpapan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "64.72",
+      "nama": "Kota Samarinda",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,28 @@
+{
+  "guid": "CBMixwFBVV95cUxPOFBqRDNaWjItWG5QU3I3elBObkNXYUNNLUxnVlhLU1otNTVyYkhralVaaFF5NDVwVXAtMmlFdmNVd3VZNWxobmZyNk53YWlwWHVhOG1BYnp1V0xIbV9tUm95c1p5NVVEMVRMb0VjcUMtQUJQaUpTUG5aVTJQeVFIWTdfRFZkRUJGanVnbGxoc1d6OFhGMVhuZGRQMHBzVlp1R041QXZoOUJSTmNPNGtMR2dZZFNzNEh1a09tNU1TbGI5LUJYbS1B",
+  "title": "Rumah di Tepi Sungai Batanghari Jambi Terancam Longsor akibat Tambang Emas Ilegal - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPOFBqRDNaWjItWG5QU3I3elBObkNXYUNNLUxnVlhLU1otNTVyYkhralVaaFF5NDVwVXAtMmlFdmNVd3VZNWxobmZyNk53YWlwWHVhOG1BYnp1V0xIbV9tUm95c1p5NVVEMVRMb0VjcUMtQUJQaUpTUG5aVTJQeVFIWTdfRFZkRUJGanVnbGxoc1d6OFhGMVhuZGRQMHBzVlp1R041QXZoOUJSTmNPNGtMR2dZZFNzNEh1a09tNU1TbGI5LUJYbS1B?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://regional.kompas.com",
+  "published_at": "2026-11-18T12:27:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-18T15:00:47.035Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.04",
+      "nama": "Kabupaten Batanghari",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}

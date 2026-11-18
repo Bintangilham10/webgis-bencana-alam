@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi1AFBVV95cUxPS1BkTlg1MV91UHFaZU9IbXhBYVI0Y2cyUVNqWjNLVDFZQlBTcC1wN0RCZGRaM1pSTlhibmFQMUFUYldUS0ZDWEJ6UVlqN0YyVlFLMDNLdk5rcU1Fa1JXZUVFXzBJakN0LWUyVjlpeUpUTWRPSm5MVVNUZC1iNjZqTDdDM0VTbVpsN2xSS19BWUZhZGZYQTR2VHZINHVUTmZDcEUyaExyc2FGR3VjcV84TC01VDNHY3JiOVFyQ2t5cWZSOFh3WERkSGhQRll2MU8wX29ZMA",
+  "title": "BPBD: Ribuan Rumah dan Lahan Pertanian di Pesisir Selatan Terdampak Banjir dan Longsor - TVRI Sumatera Barat",
+  "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPS1BkTlg1MV91UHFaZU9IbXhBYVI0Y2cyUVNqWjNLVDFZQlBTcC1wN0RCZGRaM1pSTlhibmFQMUFUYldUS0ZDWEJ6UVlqN0YyVlFLMDNLdk5rcU1Fa1JXZUVFXzBJakN0LWUyVjlpeUpUTWRPSm5MVVNUZC1iNjZqTDdDM0VTbVpsN2xSS19BWUZhZGZYQTR2VHZINHVUTmZDcEUyaExyc2FGR3VjcV84TC01VDNHY3JiOVFyQ2t5cWZSOFh3WERkSGhQRll2MU8wX29ZMA?oc=5",
+  "source": "TVRI Sumatera Barat",
+  "source_url": "https://www.tvrisumbar.co.id",
+  "published_at": "2026-11-18T12:28:50.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-18T15:00:47.035Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.01",
+      "nama": "Kabupaten Pesisir Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
