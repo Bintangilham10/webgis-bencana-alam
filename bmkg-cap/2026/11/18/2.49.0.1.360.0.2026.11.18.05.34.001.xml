@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.18.05.34.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-18T10:35:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-18T10:45:00+07:00</effective>
+    <expires>2026-11-18T13:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di DI Yogyakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 18 November 2026, 10:45 WIB di sebagian wilayah DI Yogyakarta, khususnya di BANTUL, PANDAK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 18 November 2026, 13:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CYG/2026/11/18/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>DI Yogyakarta</areaDesc>
+      <polygon>-7.920,110.314 -7.923,110.304 -7.931,110.302 -7.935,110.305 -7.941,110.301 -7.942,110.290 -7.947,110.284 -7.957,110.284 -7.957,110.277 -7.953,110.255 -7.953,110.264 -7.948,110.265 -7.947,110.258 -7.941,110.255 -7.934,110.261 -7.938,110.268 -7.931,110.273 -7.926,110.271 -7.910,110.274 -7.910,110.280 -7.901,110.284 -7.897,110.291 -7.895,110.307 -7.890,110.310 -7.920,110.314</polygon>
+      <polygon>-7.887,110.363 -7.898,110.361 -7.908,110.346 -7.919,110.347 -7.920,110.314 -7.890,110.310 -7.882,110.311 -7.872,110.324 -7.868,110.321 -7.862,110.324 -7.880,110.338 -7.887,110.363</polygon>
+    </area>
+  </info>
+</alert>

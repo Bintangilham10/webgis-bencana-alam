@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.18.05.53.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-18T11:40:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-18T12:10:00+08:00</effective>
+    <expires>2026-11-18T14:10:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 18 November 2026, 12:10 WITA di sebagian wilayah Nusa Tenggara Timur, khususnya di ALOR SELATAN, MATARU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 18 November 2026, 14:10 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNT/2026/11/18/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Timur</areaDesc>
+      <polygon>-8.296,124.809 -8.317,124.811 -8.317,124.797 -8.352,124.799 -8.355,124.794 -8.362,124.798 -8.372,124.798 -8.387,124.796 -8.401,124.788 -8.403,124.787 -8.405,124.741 -8.401,124.727 -8.405,124.717 -8.395,124.696 -8.349,124.707 -8.339,124.703 -8.337,124.700 -8.349,124.686 -8.348,124.669 -8.329,124.671 -8.321,124.663 -8.319,124.654 -8.325,124.616 -8.298,124.606 -8.291,124.612 -8.281,124.641 -8.255,124.673 -8.253,124.693 -8.246,124.694 -8.251,124.700 -8.250,124.711 -8.258,124.722 -8.259,124.731 -8.251,124.747 -8.245,124.747 -8.272,124.765 -8.283,124.795 -8.296,124.809</polygon>
+      <polygon>-8.395,124.696 -8.390,124.658 -8.433,124.591 -8.435,124.569 -8.422,124.577 -8.386,124.573 -8.383,124.577 -8.368,124.581 -8.346,124.578 -8.324,124.587 -8.307,124.588 -8.308,124.597 -8.298,124.606 -8.325,124.616 -8.319,124.654 -8.321,124.663 -8.329,124.671 -8.348,124.669 -8.349,124.686 -8.337,124.700 -8.339,124.703 -8.349,124.707 -8.395,124.696</polygon>
+    </area>
+  </info>
+</alert>
