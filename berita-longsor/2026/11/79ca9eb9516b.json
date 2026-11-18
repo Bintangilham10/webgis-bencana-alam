@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiowFBVV95cUxPYXNYZGtaQ19NS3FPaUJIb2FuZWpEb3lHVG80RzFnSXdGek5ZTC1mU1ZMaHJ3YnowN1ZsQVhoNXA1aTc2OTVqLVFTeERmUEpXb0hBWUJuTE9aMGE0enRvNUFFZ2c1cTRySUFXYndUME9zLTJLYk1NcFhXUUxyWUF5TjAwUXJqb0tQZFRkek9ielBucE1CLXBkaEgwa0Jqcy1VR1Br",
+  "title": "Musim Hujan Lebih Singkat, Kulon Progo Waspadai Longsor - Harian Jogja",
+  "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPYXNYZGtaQ19NS3FPaUJIb2FuZWpEb3lHVG80RzFnSXdGek5ZTC1mU1ZMaHJ3YnowN1ZsQVhoNXA1aTc2OTVqLVFTeERmUEpXb0hBWUJuTE9aMGE0enRvNUFFZ2c1cTRySUFXYndUME9zLTJLYk1NcFhXUUxyWUF5TjAwUXJqb0tQZFRkek9ielBucE1CLXBkaEgwa0Jqcy1VR1Br?oc=5",
+  "source": "Harian Jogja",
+  "source_url": "https://jogjapolitan.harianjogja.com",
+  "published_at": "2026-11-18T12:37:59.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-18T18:01:02.667Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "34.01",
+      "nama": "Kabupaten Kulon Progo",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiY0FVX3lxTFA1UlJqWjJYdFV3UDV6UlZZR0Q1SDNLYVVzeGhWTExEYktBenkyY09DZnBCY2Z0TzFCMFpNM3JmTnhIZVBPcklsQ1lEWlpZLXZGa01HeEFpS3B0Y0hnb0Z3UnYtSQ",
+  "title": "Longsor Purasari Bogor Picu Kematian Ribuan Ikan - bsinews.id",
+  "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA1UlJqWjJYdFV3UDV6UlZZR0Q1SDNLYVVzeGhWTExEYktBenkyY09DZnBCY2Z0TzFCMFpNM3JmTnhIZVBPcklsQ1lEWlpZLXZGa01HeEFpS3B0Y0hnb0Z3UnYtSQ?oc=5",
+  "source": "bsinews.id",
+  "source_url": "https://bsinews.id",
+  "published_at": "2026-11-18T17:34:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-18T18:01:02.667Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

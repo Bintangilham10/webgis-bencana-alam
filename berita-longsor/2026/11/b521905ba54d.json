@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiugFBVV95cUxPc2FCeEozN3F5LS1oSDJlSTMtN0lCaGE4UU9yM2ttQ3pXZ05EM0Y0NFhMaHdES1J3TXRLNkZKTVF5VDFVdk5ISGdDNWs2UHNJNWdGYl9PeDY3dzV2WUwydEV6QldlbWwxcTFZUWdOaWw3Z0Fvc1pqbGlBX1o0TWI0UWxJbGY5MzV6VXVxdHBmcE12cXRSRWl3TUF1N2F1VVBKVGZpVWpRQ3RCVm1hOU9SSzhYQmhrc3VraUHSAb8BQVVfeXFMT2JiRGdya09ETnF3NnBXVkY0NFc1ZzFoM2J0SGEzVjFYQjVaV3Jvc0pJRENhQVFwWjZaMVdBRFJZOWFmSkV3ek9ib203dHN6TTU1cERURElqbW5UNUxmczk2OGVMaHdONzFMMnM0ZXdNbTFQaEtnVDVSR3ozbllHY3kyZGFnTHd1SzlQX0Y4OWhCUTFoVkNZQVJDYkUwTmFhUldJVlBaSk9fM2hqaFZhR245WkRYNGczaFl4dGpiYnc",
+  "title": "Longsor Terjang Persawahan di Bogor, Ribuan Ikan di Tambak Mati Terendam Lumpur - detikNews",
+  "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPc2FCeEozN3F5LS1oSDJlSTMtN0lCaGE4UU9yM2ttQ3pXZ05EM0Y0NFhMaHdES1J3TXRLNkZKTVF5VDFVdk5ISGdDNWs2UHNJNWdGYl9PeDY3dzV2WUwydEV6QldlbWwxcTFZUWdOaWw3Z0Fvc1pqbGlBX1o0TWI0UWxJbGY5MzV6VXVxdHBmcE12cXRSRWl3TUF1N2F1VVBKVGZpVWpRQ3RCVm1hOU9SSzhYQmhrc3VraUHSAb8BQVVfeXFMT2JiRGdya09ETnF3NnBXVkY0NFc1ZzFoM2J0SGEzVjFYQjVaV3Jvc0pJRENhQVFwWjZaMVdBRFJZOWFmSkV3ek9ib203dHN6TTU1cERURElqbW5UNUxmczk2OGVMaHdONzFMMnM0ZXdNbTFQaEtnVDVSR3ozbllHY3kyZGFnTHd1SzlQX0Y4OWhCUTFoVkNZQVJDYkUwTmFhUldJVlBaSk9fM2hqaFZhR245WkRYNGczaFl4dGpiYnc?oc=5",
+  "source": "detikNews",
+  "source_url": "https://news.detik.com",
+  "published_at": "2026-11-18T17:30:11.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-18T18:01:02.667Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
