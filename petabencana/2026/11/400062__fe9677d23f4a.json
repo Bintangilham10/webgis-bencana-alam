@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-18T14:30:43.510Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.8158784305,
+        -6.5693876
+      ]
+    },
+    "properties": {
+      "pkey": "400062",
+      "created_at": "2026-11-18T14:22:41.289Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "356ef4e7-4e1a-4764-bf5c-b04d0673f354",
+      "image_url": "https://images.petabencana.id/356ef4e7-4e1a-4764-bf5c-b04d0673f354.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 95.52314178644104,
+        "fireLocation": {
+          "lat": "-6.5693876",
+          "lng": 106.815878430534
+        },
+        "personLocation": {
+          "lng": 106.81689832023812,
+          "lat": -6.569579450999072
+        },
+        "fireRadius": {
+          "lng": 106.81501475923358,
+          "lat": -6.569344966434727
+        }
+      },
+      "tags": {
+        "city": "KOTA BOGOR",
+        "district_id": null,
+        "region_code": "3271",
+        "local_area_id": null,
+        "instance_region_code": "ID-JB"
+      },
+      "title": null,
+      "text": "Kebakaran jaringan kabel yang terpasang pada tiang listrik terjadi di ruas jalan depan Perumahan Villa Bogor Indah 2, Kecamatan Bogor Utara",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
