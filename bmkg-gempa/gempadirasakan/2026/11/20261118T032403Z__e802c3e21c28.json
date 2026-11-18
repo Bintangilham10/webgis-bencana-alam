@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-18T04:30:36.747Z",
+  "data": {
+    "Tanggal": "18 Nov 2026",
+    "Jam": "10:24:03 WIB",
+    "DateTime": "2026-11-18T03:24:03+00:00",
+    "Coordinates": "-2.83,136.73",
+    "Lintang": "2.83 LS",
+    "Bujur": "136.73 BT",
+    "Magnitude": "5.3",
+    "Kedalaman": "56 km",
+    "Wilayah": "Pusat gempa berada di darat 75 km Barat Laut Intan Jaya",
+    "Dirasakan": "II-III Nabire"
+  }
+}
