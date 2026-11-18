@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.18.04.93.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-18T13:23:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-18T13:25:00+09:00</effective>
+    <expires>2026-11-18T15:00:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 18 November 2026, 13:25 WIT di sebagian wilayah Papua Selatan, khususnya di JAGEBOB, KURIK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 18 November 2026, 15:00 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPS/2026/11/18/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua Selatan</areaDesc>
+      <polygon>-7.747,140.543 -7.755,140.732 -7.750,140.832 -7.754,140.862 -8.033,140.862 -8.066,140.853 -8.085,140.831 -8.115,140.812 -8.140,140.816 -8.168,140.812 -8.203,140.817 -8.222,140.814 -8.240,140.817 -8.248,140.808 -8.269,140.800 -8.279,140.788 -8.281,140.774 -8.247,140.710 -8.174,140.476 -8.169,140.482 -8.153,140.487 -8.137,140.481 -8.129,140.500 -8.133,140.535 -8.120,140.548 -8.096,140.560 -8.090,140.571 -8.064,140.586 -8.055,140.584 -8.045,140.593 -8.019,140.591 -7.979,140.607 -7.943,140.570 -7.886,140.530 -7.823,140.521 -7.813,140.525 -7.746,140.526 -7.747,140.543</polygon>
+      <polygon>-8.174,140.476 -8.158,140.419 -8.161,140.417 -8.166,140.417 -8.173,140.428 -8.181,140.450 -8.196,140.434 -8.209,140.437 -8.220,140.435 -8.220,140.431 -8.210,140.431 -8.208,140.425 -8.220,140.397 -8.225,140.397 -8.232,140.408 -8.255,140.424 -8.259,140.414 -8.267,140.413 -8.273,140.413 -8.283,140.420 -8.274,140.381 -8.285,140.389 -8.296,140.392 -8.299,140.389 -8.325,140.369 -8.336,140.352 -8.326,140.356 -8.318,140.345 -8.319,140.332 -8.300,140.331 -8.293,140.325 -8.307,140.314 -8.322,140.289 -8.307,140.277 -8.304,140.259 -8.272,140.236 -8.230,140.216 -8.236,140.204 -8.207,140.190 -8.060,140.083 -8.066,140.120 -8.066,140.179 -8.051,140.247 -8.050,140.400 -8.085,140.416 -8.090,140.409 -8.105,140.420 -8.122,140.444 -8.174,140.476</polygon>
+    </area>
+  </info>
+</alert>
