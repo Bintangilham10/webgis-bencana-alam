@@ -1,0 +1,26 @@
+{
+  "guid": "CBMimAFBVV95cUxOTGNRY08ydUxtY2V2S3JVREE2OERfdkdOelBSTFNCcDE5eUpnZmJMYWVoUDk1aGlqQXdweWRPNXBvdkZiNVdLamxmcmhLbXN4cy1OVklCOVc0LWVtcVRGeUUxUHAxbXZ2TWN3X25VNGFOdEFHQnVnQm9ESEtZLVFMclJ4dWZMV25OaERvQTRoVHpiMjJ6akxEdw",
+  "title": "Longsor Tutup Aliran Sungai Batang Balok di Agam, Warga Diminta Waspada - Sumbarkita",
+  "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTGNRY08ydUxtY2V2S3JVREE2OERfdkdOelBSTFNCcDE5eUpnZmJMYWVoUDk1aGlqQXdweWRPNXBvdkZiNVdLamxmcmhLbXN4cy1OVklCOVc0LWVtcVRGeUUxUHAxbXZ2TWN3X25VNGFOdEFHQnVnQm9ESEtZLVFMclJ4dWZMV25OaERvQTRoVHpiMjJ6akxEdw?oc=5",
+  "source": "Sumbarkita",
+  "source_url": "https://sumbarkita.id",
+  "published_at": "2026-11-18T14:08:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-18T21:15:32.638Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.25",
+      "nama": "Kabupaten Batang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.06",
+      "nama": "Kabupaten Agam",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
