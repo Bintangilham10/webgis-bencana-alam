@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.19.11.91.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-19T18:56:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-19T19:00:00+09:00</effective>
+    <expires>2026-11-19T20:30:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 19 November 2026, 19:00 WIT di sebagian wilayah Papua, khususnya di DEMTA, YOKARI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 19 November 2026, 20:30 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPU/2026/11/19/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua</areaDesc>
+      <polygon>-2.387,140.191 -2.458,140.154 -2.458,140.064 -2.454,140.069 -2.447,140.071 -2.442,140.065 -2.430,139.984 -2.420,139.988 -2.404,139.983 -2.393,139.985 -2.373,140.001 -2.362,140.000 -2.360,140.058 -2.356,140.070 -2.349,140.080 -2.330,140.083 -2.319,140.111 -2.321,140.116 -2.327,140.111 -2.335,140.114 -2.347,140.134 -2.348,140.144 -2.337,140.148 -2.324,140.140 -2.323,140.151 -2.327,140.154 -2.340,140.155 -2.354,140.147 -2.355,140.157 -2.364,140.154 -2.372,140.159 -2.379,140.186 -2.387,140.191</polygon>
+      <polygon>-2.451,140.328 -2.495,140.315 -2.547,140.276 -2.525,140.227 -2.458,140.154 -2.387,140.191 -2.408,140.208 -2.412,140.221 -2.422,140.232 -2.417,140.233 -2.409,140.227 -2.405,140.229 -2.403,140.233 -2.405,140.244 -2.400,140.246 -2.400,140.251 -2.423,140.265 -2.422,140.270 -2.427,140.291 -2.440,140.295 -2.445,140.305 -2.440,140.308 -2.440,140.316 -2.447,140.316 -2.445,140.325 -2.451,140.328</polygon>
+    </area>
+  </info>
+</alert>
