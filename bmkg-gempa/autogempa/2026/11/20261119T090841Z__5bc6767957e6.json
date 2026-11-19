@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-11-19T09:30:48.766Z",
+  "data": {
+    "Tanggal": "19 Nov 2026",
+    "Jam": "16:08:41 WIB",
+    "DateTime": "2026-11-19T09:08:41+00:00",
+    "Coordinates": "-8.34,117.52",
+    "Lintang": "8.34 LS",
+    "Bujur": "117.52 BT",
+    "Magnitude": "3.5",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di darat 19 km timur laut Sumbawa",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "II - III Sumbawa",
+    "Shakemap": "20261119160841.mmi.jpg"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMikgFBVV95cUxNM2NWLUpoMm9uXzhtR0lqbHYxTVNMUzVCc0dhVDR3eVVQNkt5Y19lTnZRNHpOVTJOd3Rjb3JYVXF4c0dHZjVlOGJEMEFISXp0azMyRUh4YWxxZFB6dlp2NDk5anZjUlFQdVR6SGFERFhYT1dnSEpiSXUyYWZGRzJhV2kwOUU4VlBjMTNPOThNeERlZw",
+  "title": "Tanah Longsor Rusak Dua Rumah Warga Desa Krangean Purbalingga - Tabloid Elemen",
+  "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNM2NWLUpoMm9uXzhtR0lqbHYxTVNMUzVCc0dhVDR3eVVQNkt5Y19lTnZRNHpOVTJOd3Rjb3JYVXF4c0dHZjVlOGJEMEFISXp0azMyRUh4YWxxZFB6dlp2NDk5anZjUlFQdVR6SGFERFhYT1dnSEpiSXUyYWZGRzJhV2kwOUU4VlBjMTNPOThNeERlZw?oc=5",
+  "source": "Tabloid Elemen",
+  "source_url": "https://tabloidelemen.com",
+  "published_at": "2026-11-19T02:49:16.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-19T09:30:48.766Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.03",
+      "nama": "Kabupaten Purbalingga",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

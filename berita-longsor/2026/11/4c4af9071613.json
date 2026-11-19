@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixgFBVV95cUxNVEYxSU04WVA3TEc4Nk1hX0szNmxhVXl0MTgta0ZDQWVYN2NLWjdlQXp4Szk4aWFyTEI2d3d0Q0s2d1pLcXZOWnducW9lTERmaXV5STBTWHJwSkxidW5FQV9Zd3ZoeTBvM0lfLVFVZ291NUxKbF9tdXBMLTA0VHpqZlltRndJWVViM0lncjdDWjRlWGlYWldSUUVMcFRPeEV6Mm9DdFVXZHJiSFRNT0V0dldQaFRZcEJVZ3p4UHp4Zk41QktRTkE",
+  "title": "Ancaman Banjir dan Longsor Mengintai Semarang, Dewan Ingatkan Pemkot Jangan Kecolongan Saat Hujan Deras - Beritajateng.tv",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNVEYxSU04WVA3TEc4Nk1hX0szNmxhVXl0MTgta0ZDQWVYN2NLWjdlQXp4Szk4aWFyTEI2d3d0Q0s2d1pLcXZOWnducW9lTERmaXV5STBTWHJwSkxidW5FQV9Zd3ZoeTBvM0lfLVFVZ291NUxKbF9tdXBMLTA0VHpqZlltRndJWVViM0lncjdDWjRlWGlYWldSUUVMcFRPeEV6Mm9DdFVXZHJiSFRNT0V0dldQaFRZcEJVZ3p4UHp4Zk41QktRTkE?oc=5",
+  "source": "Beritajateng.tv",
+  "source_url": "https://beritajateng.tv",
+  "published_at": "2026-11-19T08:09:24.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-19T09:30:48.766Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.22",
+      "nama": "Kabupaten Semarang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.74",
+      "nama": "Kota Semarang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
