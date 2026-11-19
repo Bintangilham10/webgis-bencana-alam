@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi3gFBVV95cUxNTE50QTR2alA3MWZiLWNYd05iUnRGbVJ3WEJ2MDhXMTdkQ3JxakxlbHhoNlAtNDhKaXIwSHVVZGVDRzFfLWV1RC0xbGd2bXZoX1UtU3dnWVRIQW1MRWJ3dGdkeVdoVHUwMkdKbUNBSG80WG9BRXNkZnJDQlJSOUVTUVA5VWMxRGNYQzlRTmRvY21oVTlyb3QxTlJhVUROM3NxWTdsamlnZHdEaUtMenZvd18wZTk0ejJybUpGY0tGUWl2U3l4TTMtU0dxNWNlbmVhTjhmSldQSHdlVU0xWWc",
+  "title": "Antisipasi Longsor, BPBD Garut Inventarisasi Rumah di Kawasan Rawan Bencana - Kabar Priangan",
+  "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNTE50QTR2alA3MWZiLWNYd05iUnRGbVJ3WEJ2MDhXMTdkQ3JxakxlbHhoNlAtNDhKaXIwSHVVZGVDRzFfLWV1RC0xbGd2bXZoX1UtU3dnWVRIQW1MRWJ3dGdkeVdoVHUwMkdKbUNBSG80WG9BRXNkZnJDQlJSOUVTUVA5VWMxRGNYQzlRTmRvY21oVTlyb3QxTlJhVUROM3NxWTdsamlnZHdEaUtMenZvd18wZTk0ejJybUpGY0tGUWl2U3l4TTMtU0dxNWNlbmVhTjhmSldQSHdlVU0xWWc?oc=5",
+  "source": "Kabar Priangan",
+  "source_url": "https://kabarpriangan.pikiran-rakyat.com",
+  "published_at": "2026-11-19T11:30:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-19T12:45:34.565Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

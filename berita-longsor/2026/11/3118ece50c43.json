@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiygFBVV95cUxONmNvTnpmelQzVmo2RlVWMndVY2RWWktNd2NxUFpVTjNTaXh4bi05U3JLZVNsSnpyWml4QUtMVXI3dHpVNWNkOXlBSENkQ2dERUg3WUdacUJaaVdrMkZwMEJocXVlRjhablYwcTR6R1RRWGdHazl0VEpQRkNTck14dWNfNVdSenJFcmMwUE8zUTkzTXZ3ZDRmT3lmSXdjeS1zNUdISEpQeFpOZ3FkUkFlV3dqcVIyZi1YWUp1LXZvRUozY2p1OFQyck9R",
+  "title": "Tanah Longsor di Jalan Lintas Bukittinggi Medan Diberlakukan Sistem Buka Tutup - TVRI Sumatera Barat",
+  "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxONmNvTnpmelQzVmo2RlVWMndVY2RWWktNd2NxUFpVTjNTaXh4bi05U3JLZVNsSnpyWml4QUtMVXI3dHpVNWNkOXlBSENkQ2dERUg3WUdacUJaaVdrMkZwMEJocXVlRjhablYwcTR6R1RRWGdHazl0VEpQRkNTck14dWNfNVdSenJFcmMwUE8zUTkzTXZ3ZDRmT3lmSXdjeS1zNUdISEpQeFpOZ3FkUkFlV3dqcVIyZi1YWUp1LXZvRUozY2p1OFQyck9R?oc=5",
+  "source": "TVRI Sumatera Barat",
+  "source_url": "https://www.tvrisumbar.co.id",
+  "published_at": "2026-11-19T11:06:35.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-19T12:45:34.565Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "13.75",
+      "nama": "Kota Bukittinggi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "12.71",
+      "nama": "Kota Medan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiuwFBVV95cUxNc0VwbHZzRm9IT1cyZDhmVDB1VHE2bkxjdWt2bzhuZDE3eUM0UEpIQTZoV29tazZ4TzVhNVJPUHNyc2FrVW1PYl9WU1N2WE00SkkxOC0tRE1YYm82aDY1Ty1oTTdsUUxkZzZjQkMtb1VuengwbFVUcUkzNlU3TEhjMFhkR3dFb2dRVWhtbGN5S0lMMS1MMlZKUldIc290d0paNmJMLVZ6ZGs5Z1lrYkdGSkg5dlNIbVhFVkhJ0gHAAUFVX3lxTE4wM1A3UVNVLTJublptanhPc3U1Nll2T05MOXRqWE5VYlNiN1RVWk5ib2tvQVV4Z01oaG9obGZzN0VHQTBGMnlOcXF6NHBuM3BwbnJkeUhKaDRLYi0tdWhyRDNTZi1mX2FpdlpRYVBERDhWaUJFdlFOSWswWXBQa21YTHFtd1BGajFNMURXMWFUSnNSTk51STVEUGFfaWNCOWxTMUhJejh3MUY3eDFNWjF0eHA2b1RUZG5QbXNsVGNtaA",
+  "title": "Empat Rumah di Karanganyar Rusak Terdampak Longsor dan Angin Ribut - Radar Solo",
+  "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNc0VwbHZzRm9IT1cyZDhmVDB1VHE2bkxjdWt2bzhuZDE3eUM0UEpIQTZoV29tazZ4TzVhNVJPUHNyc2FrVW1PYl9WU1N2WE00SkkxOC0tRE1YYm82aDY1Ty1oTTdsUUxkZzZjQkMtb1VuengwbFVUcUkzNlU3TEhjMFhkR3dFb2dRVWhtbGN5S0lMMS1MMlZKUldIc290d0paNmJMLVZ6ZGs5Z1lrYkdGSkg5dlNIbVhFVkhJ0gHAAUFVX3lxTE4wM1A3UVNVLTJublptanhPc3U1Nll2T05MOXRqWE5VYlNiN1RVWk5ib2tvQVV4Z01oaG9obGZzN0VHQTBGMnlOcXF6NHBuM3BwbnJkeUhKaDRLYi0tdWhyRDNTZi1mX2FpdlpRYVBERDhWaUJFdlFOSWswWXBQa21YTHFtd1BGajFNMURXMWFUSnNSTk51STVEUGFfaWNCOWxTMUhJejh3MUY3eDFNWjF0eHA2b1RUZG5QbXNsVGNtaA?oc=5",
+  "source": "Radar Solo",
+  "source_url": "https://radarsolo.jawapos.com",
+  "published_at": "2026-11-19T10:11:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-19T12:45:34.565Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.13",
+      "nama": "Kabupaten Karanganyar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

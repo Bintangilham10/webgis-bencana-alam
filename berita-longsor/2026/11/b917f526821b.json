@@ -1,0 +1,26 @@
+{
+  "guid": "CBMizAFBVV95cUxNME5qSHBnOVNyVmxlZ05BYnNwd2gwVGdhTVpwM2hoOFFjMDJZZFBWUFhGUjY1SVp1VTVFSlNGQWtlbHRhMmt4UTZFYmR2ZUZEbUtUeEVKcEMtb0JvelJoeUxIVDhuZ3FzUjBSRUlWLTFiMThMd3N1S0pzT0NmeHVVbE5qSmNWZU43RnA2TUM5M0RoQ3ZNMlY4MDBWdy0yNlFtX1M4R3k3WWhTWXBZbGZJelQyd19xc3dQb1dPVU5yaWNQREw1SkJGX1VlbjU",
+  "title": "Musim Hujan Tiba, KAI Daop 7 Madiun Intensifkan Pemeriksaan Jalur Rawan Banjir dan Longsor - Tribunjatim.com",
+  "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNME5qSHBnOVNyVmxlZ05BYnNwd2gwVGdhTVpwM2hoOFFjMDJZZFBWUFhGUjY1SVp1VTVFSlNGQWtlbHRhMmt4UTZFYmR2ZUZEbUtUeEVKcEMtb0JvelJoeUxIVDhuZ3FzUjBSRUlWLTFiMThMd3N1S0pzT0NmeHVVbE5qSmNWZU43RnA2TUM5M0RoQ3ZNMlY4MDBWdy0yNlFtX1M4R3k3WWhTWXBZbGZJelQyd19xc3dQb1dPVU5yaWNQREw1SkJGX1VlbjU?oc=5",
+  "source": "Tribunjatim.com",
+  "source_url": "https://jatim.tribunnews.com",
+  "published_at": "2026-11-19T12:21:25.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-19T12:45:34.565Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.19",
+      "nama": "Kabupaten Madiun",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.77",
+      "nama": "Kota Madiun",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

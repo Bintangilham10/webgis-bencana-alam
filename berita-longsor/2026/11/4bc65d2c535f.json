@@ -1,0 +1,21 @@
+{
+  "guid": "CBMixgFBVV95cUxPS1JGU1ZUUDFJdkdJUDRURmpQcnlpTWhtTDVDaFpEaGM5TkNuOFlzMGpzVnZGT3N6Qm0xSHlMOHBoeUMyV1JzUU54NFo3bmE3NnJQMk8yTkQ1OE5FU0ZlTUFEQWQ2Z0xaNDZ6T2NIVHNPM01OMDl6MXVIQ0ttTDhjcU51akdua1ZrU2JmRlBnM0cwZEhKbHlnZ1VXbmNSd1lyZk9CcUdDZzUxRF9iNXJqanBqMlpfRE9Ea00xQkNEVnZnd1hScnc",
+  "title": "Banjarnegara Siaga Darurat Bencana Hidrometeorologi, 70 Persen Wilayah Rawan Longsor - Media Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPS1JGU1ZUUDFJdkdJUDRURmpQcnlpTWhtTDVDaFpEaGM5TkNuOFlzMGpzVnZGT3N6Qm0xSHlMOHBoeUMyV1JzUU54NFo3bmE3NnJQMk8yTkQ1OE5FU0ZlTUFEQWQ2Z0xaNDZ6T2NIVHNPM01OMDl6MXVIQ0ttTDhjcU51akdua1ZrU2JmRlBnM0cwZEhKbHlnZ1VXbmNSd1lyZk9CcUdDZzUxRF9iNXJqanBqMlpfRE9Ea00xQkNEVnZnd1hScnc?oc=5",
+  "source": "Media Indonesia",
+  "source_url": "https://mediaindonesia.com",
+  "published_at": "2026-11-19T09:42:45.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-19T12:45:34.565Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.04",
+      "nama": "Kabupaten Banjarnegara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
