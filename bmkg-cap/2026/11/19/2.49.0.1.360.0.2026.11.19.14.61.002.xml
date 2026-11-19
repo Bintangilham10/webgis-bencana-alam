@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.19.14.61.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-19T18:05:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-19T18:15:00+07:00</effective>
+    <expires>2026-11-19T21:15:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 19 November 2026, 18:15 WIB di sebagian wilayah Kalimantan Barat, khususnya di SEPONTI, SIMPANG DUA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 19 November 2026, 21:15 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/11/19/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>-0.703,110.457 -0.762,110.458 -0.832,110.444 -0.848,110.433 -0.857,110.414 -0.862,110.386 -0.873,110.367 -0.874,110.353 -0.874,110.282 -0.861,110.219 -0.843,110.191 -0.790,110.127 -0.774,110.094 -0.760,110.057 -0.755,109.990 -0.712,110.007 -0.710,110.016 -0.701,110.003 -0.694,109.984 -0.673,109.964 -0.669,109.986 -0.675,109.991 -0.671,109.994 -0.665,109.987 -0.658,109.988 -0.651,110.006 -0.651,110.016 -0.639,110.022 -0.641,110.031 -0.631,110.040 -0.640,110.052 -0.651,110.056 -0.671,110.076 -0.698,110.084 -0.705,110.099 -0.698,110.134 -0.701,110.149 -0.688,110.175 -0.690,110.178 -0.686,110.191 -0.679,110.194 -0.682,110.212 -0.676,110.238 -0.664,110.264 -0.667,110.274 -0.664,110.323 -0.680,110.338 -0.704,110.392 -0.703,110.457</polygon>
+      <polygon>-0.755,109.990 -0.760,110.057 -0.774,110.094 -0.813,110.058 -0.832,110.053 -0.844,110.037 -0.859,110.026 -0.875,109.967 -0.898,109.938 -0.895,109.908 -0.901,109.872 -0.920,109.850 -0.932,109.829 -0.929,109.811 -0.912,109.788 -0.920,109.776 -0.915,109.770 -0.916,109.765 -0.920,109.765 -0.923,109.770 -0.928,109.766 -0.912,109.750 -0.902,109.758 -0.896,109.758 -0.895,109.754 -0.888,109.760 -0.886,109.772 -0.875,109.780 -0.867,109.803 -0.853,109.795 -0.842,109.800 -0.840,109.818 -0.832,109.828 -0.839,109.843 -0.823,109.856 -0.830,109.866 -0.823,109.887 -0.815,109.893 -0.802,109.894 -0.799,109.907 -0.782,109.931 -0.771,109.931 -0.756,109.937 -0.752,109.932 -0.755,109.990</polygon>
+    </area>
+  </info>
+</alert>
