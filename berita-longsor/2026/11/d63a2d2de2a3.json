@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivAFBVV95cUxNVG02b09KeUpBZmxRMWczOXdybUNBem1GOFhRT1NsSWNGN3hvcWpBWW9jRklOTlZEQWh0QzQ5cDhmeDljS1JvR1FYbG9sODBzZlpOUjZUbEFla2tFVlIzTHdtTm5OWWl4NF9WMzQxcm5sOXZEOVh5WWE0ZzIyZEZtZDZOTmE2TU9vNmpjd2tTYjVtNi11OEllbUNacGNNUW1mR0RGMjkwRThDeFJLYks3RFFPZGRFWXotdG94LQ",
+  "title": "Bencana Sukabumi Capai 12 Kejadian, Longsor Mendominasi Laporan BPBD - Pikiran Rakyat Koran",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVG02b09KeUpBZmxRMWczOXdybUNBem1GOFhRT1NsSWNGN3hvcWpBWW9jRklOTlZEQWh0QzQ5cDhmeDljS1JvR1FYbG9sODBzZlpOUjZUbEFla2tFVlIzTHdtTm5OWWl4NF9WMzQxcm5sOXZEOVh5WWE0ZzIyZEZtZDZOTmE2TU9vNmpjd2tTYjVtNi11OEllbUNacGNNUW1mR0RGMjkwRThDeFJLYks3RFFPZGRFWXotdG94LQ?oc=5",
+  "source": "Pikiran Rakyat Koran",
+  "source_url": "https://koran.pikiran-rakyat.com",
+  "published_at": "2026-11-18T22:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-19T00:15:34.006Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

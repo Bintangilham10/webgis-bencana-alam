@@ -1,0 +1,21 @@
+{
+  "guid": "CBMinwFBVV95cUxNbzU4cFFiZnFQdzV0aUF4U1VoSnlDZXd6OXlNX3lFSlVZb2E1QlV2T3hWenNCcDZYNEtLRUNOTlpZT3RUMEN5NlpfdExYRFpJR2Y2NXJoOTJxbEdWZzZUMmJYdzJFYVE5SlZ6MUlBT1ZRQkhmNnE2blAzX0pwcnJmTjdGc2tuNWRqVlJ1Mi1DTVZZUFQxNmlCdGRQWWttVk0",
+  "title": "BPBD Data Rumah Rawan Longsor di Garut untuk Antisipasi Evakuasi - Lintas Priangan",
+  "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbzU4cFFiZnFQdzV0aUF4U1VoSnlDZXd6OXlNX3lFSlVZb2E1QlV2T3hWenNCcDZYNEtLRUNOTlpZT3RUMEN5NlpfdExYRFpJR2Y2NXJoOTJxbEdWZzZUMmJYdzJFYVE5SlZ6MUlBT1ZRQkhmNnE2blAzX0pwcnJmTjdGc2tuNWRqVlJ1Mi1DTVZZUFQxNmlCdGRQWWttVk0?oc=5",
+  "source": "Lintas Priangan",
+  "source_url": "https://lintaspriangan.com",
+  "published_at": "2026-11-18T21:57:43.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-19T00:15:34.006Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi4gFBVV95cUxQYWx6dElFT0swR1pHWkg2S1ZucjN1R29fZktRNEZJbXk4ZUZlNzItOTdvdnc1N2dselR5UVlGSDRwNV9pcUV3blZrT3FrR2FUTUFNSnN5S0ZyYVRnZENhOG1yQVJZckxWSFlwXzNoS0I0M3AzZWZoOGpka2xJQWNpdjBqQ2tYek5qb3VWUDUtdXpNWXJNVEtVZndtN240eUpKbFRtNEI5WTNfLXp3NExKQ3p3NG1rUzM1WXRPNmRxbjBNSC1HbTVkSGhsS195c2tnRTMtZFhuSWJneXpjYXQzOFBB",
+  "title": "Hujan Deras Picu Longsor di Leuwiliang Bogor, Tambak Terdampak hingga Ikan Milik Warga Mati - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQYWx6dElFT0swR1pHWkg2S1ZucjN1R29fZktRNEZJbXk4ZUZlNzItOTdvdnc1N2dselR5UVlGSDRwNV9pcUV3blZrT3FrR2FUTUFNSnN5S0ZyYVRnZENhOG1yQVJZckxWSFlwXzNoS0I0M3AzZWZoOGpka2xJQWNpdjBqQ2tYek5qb3VWUDUtdXpNWXJNVEtVZndtN240eUpKbFRtNEI5WTNfLXp3NExKQ3p3NG1rUzM1WXRPNmRxbjBNSC1HbTVkSGhsS195c2tnRTMtZFhuSWJneXpjYXQzOFBB?oc=5",
+  "source": "Kompas.com",
+  "source_url": "http://bandung.kompas.com",
+  "published_at": "2026-11-18T23:35:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-19T00:15:34.006Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
