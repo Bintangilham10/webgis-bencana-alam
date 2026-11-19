@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.19.07.12.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-19T12:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-19T12:30:00+07:00</effective>
+    <expires>2026-11-19T15:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 19 November 2026, 12:30 WIB di sebagian wilayah Sumatera Utara, khususnya di MEDAN JOHOR, MEDAN SELAYANG, MEDAN SUNGGAL, MEDAN TUNTUNGAN, PARBULUAN, SITINJO, TINADA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 19 November 2026, 15:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSU/2026/11/19/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Utara</areaDesc>
+      <polygon>2.666,98.526 2.667,98.544 2.674,98.565 2.591,98.555 2.581,98.548 2.567,98.518 2.551,98.497 2.548,98.487 2.554,98.467 2.567,98.463 2.576,98.450 2.588,98.442 2.633,98.427 2.639,98.421 2.647,98.397 2.653,98.397 2.703,98.371 2.727,98.375 2.739,98.387 2.717,98.403 2.687,98.435 2.679,98.497 2.666,98.526</polygon>
+      <polygon>2.739,98.387 2.727,98.375 2.703,98.371 2.653,98.397 2.647,98.397 2.653,98.383 2.667,98.353 2.678,98.344 2.692,98.339 2.698,98.329 2.731,98.341 2.764,98.359 2.749,98.382 2.739,98.387</polygon>
+      <polygon>2.647,98.397 2.639,98.421 2.633,98.427 2.628,98.380 2.622,98.372 2.601,98.357 2.588,98.338 2.576,98.342 2.571,98.337 2.576,98.309 2.580,98.286 2.566,98.246 2.583,98.230 2.597,98.244 2.602,98.258 2.611,98.259 2.597,98.283 2.593,98.299 2.599,98.305 2.602,98.320 2.613,98.325 2.626,98.337 2.623,98.362 2.638,98.368 2.653,98.383 2.647,98.397</polygon>
+      <polygon>3.591,98.647 3.585,98.653 3.576,98.653 3.577,98.645 3.563,98.644 3.569,98.632 3.569,98.613 3.564,98.611 3.568,98.607 3.579,98.611 3.591,98.605 3.604,98.607 3.598,98.609 3.592,98.624 3.591,98.647</polygon>
+      <polygon>3.535,98.643 3.531,98.648 3.521,98.649 3.509,98.644 3.508,98.659 3.499,98.656 3.498,98.648 3.488,98.645 3.489,98.636 3.515,98.628 3.497,98.613 3.492,98.598 3.498,98.592 3.513,98.602 3.519,98.600 3.538,98.599 3.541,98.593 3.550,98.606 3.549,98.620 3.538,98.620 3.529,98.635 3.535,98.643</polygon>
+      <polygon>3.518,98.695 3.518,98.692 3.519,98.680 3.516,98.675 3.515,98.677 3.515,98.673 3.515,98.662 3.522,98.662 3.522,98.658 3.516,98.655 3.508,98.659 3.509,98.644 3.521,98.649 3.531,98.648 3.535,98.643 3.541,98.651 3.542,98.661 3.545,98.683 3.549,98.689 3.549,98.699 3.540,98.693 3.519,98.692 3.518,98.695</polygon>
+      <polygon>3.576,98.653 3.547,98.653 3.547,98.660 3.542,98.661 3.541,98.651 3.535,98.643 3.529,98.635 3.538,98.620 3.549,98.620 3.550,98.606 3.559,98.611 3.564,98.611 3.569,98.613 3.569,98.632 3.563,98.644 3.577,98.645 3.576,98.653</polygon>
+    </area>
+  </info>
+</alert>
