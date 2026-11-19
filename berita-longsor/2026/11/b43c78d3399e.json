@@ -1,0 +1,21 @@
+{
+  "guid": "CBMivwFBVV95cUxOS0NWQjNXbXRYQmJ2RzdpZXR6aEdQa0N6TWF1bmwxNUZ4blJ2WGpLMkZ2TVJzUm1vY3E4WkNyMGQ0VDgxWFpqZzRrRFB0VlhmbUJtdnhlM1E1RjVvQWNjQS1wUGx6ZXdwbVc4Rk1JYUxTc21UTzB2Y0trMmZ5VGhjaVc2RmJCeF80Y3dsS1k3YUU3X2pVb0R2bFB1X241b3lLTEVCc0RZdGpvRXY2Vnp0MldTd3loaWk3a1dhUTdUSQ",
+  "title": "Hadapi Musim Hujan, Pemkab Brebes Petakan Wilayah Rawan Banjir hingga Longsor - Suara Pantura",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOS0NWQjNXbXRYQmJ2RzdpZXR6aEdQa0N6TWF1bmwxNUZ4blJ2WGpLMkZ2TVJzUm1vY3E4WkNyMGQ0VDgxWFpqZzRrRFB0VlhmbUJtdnhlM1E1RjVvQWNjQS1wUGx6ZXdwbVc4Rk1JYUxTc21UTzB2Y0trMmZ5VGhjaVc2RmJCeF80Y3dsS1k3YUU3X2pVb0R2bFB1X241b3lLTEVCc0RZdGpvRXY2Vnp0MldTd3loaWk3a1dhUTdUSQ?oc=5",
+  "source": "Suara Pantura",
+  "source_url": "https://suarapantura.com",
+  "published_at": "2026-11-19T05:25:15.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-19T06:30:45.250Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.29",
+      "nama": "Kabupaten Brebes",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

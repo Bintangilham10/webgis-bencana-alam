@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiyAFBVV95cUxNelpra1p5d0pqTlcwTG5JUHI3NnpCc2NEZUNmd2dBRkxnQk5PdzNLYjY4N3VDXy01WmhPSzU1SnJxMy1VZThzMVRkMjFFb1ZPM0dyLUZReGxEVGNiN1NtNWJXYVpwREFjN0VNSTEybUNaYy1fNWlrUlEwT2FzT0pFUXhfNzJnTElKS2ZpSU80RERITXV5QmpjRVZfZ3NtNVhqNFd3Q2N3N2c0TVFuYXBaZFJxblRFbHV3ekpzZzZIWmMyMjVWeVZsdg",
+  "title": "Waspadai Bencana Hidrometeorologi, BPBD Tulungagung Bekali Warga Pagerwojo Mitigasi Longsor - Portal JTV",
+  "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNelpra1p5d0pqTlcwTG5JUHI3NnpCc2NEZUNmd2dBRkxnQk5PdzNLYjY4N3VDXy01WmhPSzU1SnJxMy1VZThzMVRkMjFFb1ZPM0dyLUZReGxEVGNiN1NtNWJXYVpwREFjN0VNSTEybUNaYy1fNWlrUlEwT2FzT0pFUXhfNzJnTElKS2ZpSU80RERITXV5QmpjRVZfZ3NtNVhqNFd3Q2N3N2c0TVFuYXBaZFJxblRFbHV3ekpzZzZIWmMyMjVWeVZsdg?oc=5",
+  "source": "Portal JTV",
+  "source_url": "https://portaljtv.com",
+  "published_at": "2026-11-19T04:28:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-19T06:30:45.250Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.04",
+      "nama": "Kabupaten Tulungagung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

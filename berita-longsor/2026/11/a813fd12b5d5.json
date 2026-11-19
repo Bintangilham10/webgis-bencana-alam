@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiiwFBVV95cUxOb3c0YW9HalM0aGxIZ2NFRFF5eWpGbFlHbi1HZHY0a0I3X2oxZEhBb0tZLTJ4MDJQMGp5NVlxOWFEeE5rUHpZajlyQjR2QmJaZy1XeGdHQUc5R0xoMUpucHdESk9XSHR0WXA0N3RqMnl4OFpPQldFLS1tOVdETG16SzNXRTJ1bzZ4d1Bv",
+  "title": "Polres Tasikmalaya Peduli Warga Terdampak Longsor - Fokus Jabar",
+  "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOb3c0YW9HalM0aGxIZ2NFRFF5eWpGbFlHbi1HZHY0a0I3X2oxZEhBb0tZLTJ4MDJQMGp5NVlxOWFEeE5rUHpZajlyQjR2QmJaZy1XeGdHQUc5R0xoMUpucHdESk9XSHR0WXA0N3RqMnl4OFpPQldFLS1tOVdETG16SzNXRTJ1bzZ4d1Bv?oc=5",
+  "source": "Fokus Jabar",
+  "source_url": "https://fokusjabar.id",
+  "published_at": "2026-11-19T05:31:34.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-19T06:30:45.250Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMioAFBVV95cUxOcWFwSU5sZnFXLWtQVnViRU9VYkgxR09aTklURmFCRnJYbXBwbGdkVEtHTy1yelRrNlQ4MW9DQ192MmpzWHRZckNJYmQ3TEtSdE5lTll5cm9MWEwzTjJuZkRhcHRlNkczNnBmaVNZVXQ1M1JUVjhzTXMtVTBGSHBJR2dkWV84UkdxLVV5bGZKZml4SEpEX2gwQmItM3VZV3NL",
+  "title": "Hadapi Musim Hujan, Pemkab Brebes Petakan Wilayah Rawan Banjir hingga Longsor - Beritakota",
+  "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcWFwSU5sZnFXLWtQVnViRU9VYkgxR09aTklURmFCRnJYbXBwbGdkVEtHTy1yelRrNlQ4MW9DQ192MmpzWHRZckNJYmQ3TEtSdE5lTll5cm9MWEwzTjJuZkRhcHRlNkczNnBmaVNZVXQ1M1JUVjhzTXMtVTBGSHBJR2dkWV84UkdxLVV5bGZKZml4SEpEX2gwQmItM3VZV3NL?oc=5",
+  "source": "Beritakota",
+  "source_url": "https://beritakota.id",
+  "published_at": "2026-11-19T04:44:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-19T06:30:45.250Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.29",
+      "nama": "Kabupaten Brebes",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
