@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.19.04.71.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-19T11:40:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-19T11:45:00+08:00</effective>
+    <expires>2026-11-19T14:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 19 November 2026, 11:45 WITA di sebagian wilayah Sulawesi Utara, khususnya di AIRMADIDI, AMURANG TIMUR, KALONGAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 19 November 2026, 14:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/19/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>3.960,126.664 3.953,126.655 3.975,126.640 3.972,126.634 3.982,126.630 3.986,126.620 4.001,126.612 4.021,126.618 4.030,126.616 4.039,126.608 4.043,126.612 4.042,126.621 4.024,126.640 3.985,126.644 3.977,126.647 3.960,126.664</polygon>
+      <polygon>1.188,124.725 1.173,124.735 1.166,124.735 1.161,124.737 1.160,124.737 1.151,124.740 1.149,124.740 1.143,124.744 1.143,124.744 1.143,124.744 1.143,124.744 1.115,124.737 1.110,124.730 1.110,124.704 1.103,124.685 1.139,124.650 1.146,124.608 1.160,124.612 1.170,124.608 1.184,124.599 1.195,124.584 1.220,124.598 1.230,124.609 1.230,124.629 1.234,124.638 1.240,124.642 1.217,124.668 1.198,124.714 1.188,124.725</polygon>
+      <polygon>1.455,125.030 1.424,125.010 1.403,124.985 1.383,124.978 1.365,124.964 1.358,124.963 1.347,124.974 1.338,124.977 1.328,124.974 1.321,124.964 1.345,124.935 1.351,124.916 1.375,124.931 1.389,124.935 1.400,124.920 1.416,124.917 1.406,124.951 1.443,124.951 1.464,124.959 1.461,124.968 1.462,124.991 1.452,125.012 1.455,125.030</polygon>
+    </area>
+  </info>
+</alert>
