@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-19T04:45:30.186Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        99.4283160472,
+        1.1492487373
+      ]
+    },
+    "properties": {
+      "pkey": "400064",
+      "created_at": "2026-11-19T04:32:44.514Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "6e25c7d0-498b-45eb-b516-e027acc84600",
+      "image_url": "https://images.petabencana.id/6e25c7d0-498b-45eb-b516-e027acc84600.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 59
+      },
+      "tags": {
+        "city": "TAPANULI SELATAN",
+        "district_id": null,
+        "region_code": "1203",
+        "local_area_id": null,
+        "instance_region_code": "ID-SU"
+      },
+      "title": null,
+      "text": "Banjir melanda kawasan wisata dan jalan lintas Aek Sijorni, Kecamatan Sayur Matinggi, Kabupaten Tapanuli Selatan, Sumatera Utara, pada Kamis",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
