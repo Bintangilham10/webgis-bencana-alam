@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivgFBVV95cUxNTVN2WVNjWGduNGNGQnNfb2JiZHBLc2kyMFB5Z0NLMThyZkhSYUhKZGEyM1VEbll3NXlrdkJRUVZQYzhIYm5KYkhYU2pnSjhiYkNRUVhuZ2NnQ3FQT2JjOTE2S0d0dklwZzYyZnBMUGswVHQ1WVJfUEI0RjRxU0tMWmFrUGtkSjdQaE9fX3kzZHRBdVpWcEUwNE1Hck1KblpGaTNVcU5hakxORDh0NmpfQ05vMnBJaGNQMVVkLTB3",
+  "title": "BPBD Cirebon Ingatkan Potensi Longsor Galian C Argasunya Meningkat Musim Hujan - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTVN2WVNjWGduNGNGQnNfb2JiZHBLc2kyMFB5Z0NLMThyZkhSYUhKZGEyM1VEbll3NXlrdkJRUVZQYzhIYm5KYkhYU2pnSjhiYkNRUVhuZ2NnQ3FQT2JjOTE2S0d0dklwZzYyZnBMUGswVHQ1WVJfUEI0RjRxU0tMWmFrUGtkSjdQaE9fX3kzZHRBdVpWcEUwNE1Hck1KblpGaTNVcU5hakxORDh0NmpfQ05vMnBJaGNQMVVkLTB3?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-19T14:12:13.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-19T16:00:49.144Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.09",
+      "nama": "Kabupaten Cirebon",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.74",
+      "nama": "Kota Cirebon",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
