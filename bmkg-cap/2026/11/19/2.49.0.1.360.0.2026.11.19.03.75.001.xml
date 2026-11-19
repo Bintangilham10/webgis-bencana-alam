@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.19.03.75.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-19T11:38:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-19T11:50:00+08:00</effective>
+    <expires>2026-11-19T13:50:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 19 November 2026, 11:50 WITA di sebagian wilayah Gorontalo, khususnya di BULANGO UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 19 November 2026, 13:50 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/11/19/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.768,123.133 0.733,123.132 0.708,123.120 0.695,123.107 0.662,123.100 0.640,123.100 0.618,123.084 0.608,123.070 0.617,123.053 0.628,123.037 0.653,123.056 0.665,123.060 0.681,123.073 0.693,123.077 0.734,123.078 0.775,123.074 0.777,123.066 0.782,123.064 0.803,123.070 0.806,123.085 0.797,123.098 0.786,123.128 0.776,123.126 0.768,123.133</polygon>
+    </area>
+  </info>
+</alert>
