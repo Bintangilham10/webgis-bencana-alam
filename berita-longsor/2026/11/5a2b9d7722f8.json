@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiugFBVV95cUxNQl9XQ0xaUHpBT3dPeTJjdEVORV9sWUJ1UEdlZ0NPWHVkblBrS0JoOHpaa0Q3NGxKcXFwZzVwc2pIbGVreUFnTjdJSE4zS29vQjBURDJvU1BpZm5nQUl3TFc2WUNOZlA0SklKMVdCOVBYb3duS3R6bmxKWHpVT09jUmZLN0lRQnpXcVdXZE1RQkpOTjYwS25TZUhIeFNvd3Vhd1VWQmN5MEQwOVhocWRxLU0xZlhZQ29QaEE",
+  "title": "Tak Hanya Atur Lalu Lintas, Satlantas Polres Tasikmalaya Bantu Korban Longsor di Bantarkalong - Tasikmalaya Ku",
+  "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQl9XQ0xaUHpBT3dPeTJjdEVORV9sWUJ1UEdlZ0NPWHVkblBrS0JoOHpaa0Q3NGxKcXFwZzVwc2pIbGVreUFnTjdJSE4zS29vQjBURDJvU1BpZm5nQUl3TFc2WUNOZlA0SklKMVdCOVBYb3duS3R6bmxKWHpVT09jUmZLN0lRQnpXcVdXZE1RQkpOTjYwS25TZUhIeFNvd3Vhd1VWQmN5MEQwOVhocWRxLU0xZlhZQ29QaEE?oc=5",
+  "source": "Tasikmalaya Ku",
+  "source_url": "https://tasikmalayaku.id",
+  "published_at": "2026-11-19T02:49:48.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-19T03:30:40.512Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

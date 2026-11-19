@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi-wFBVV95cUxPVVBHcTFyYi1WTUhPdFg2cjJ3R2ZtQ3pMM3FfUW5adzdETnA1SWxuTUw4d1JncXM2R1F3V2kzaGJMSUM1cUFTR3c0ODQ3UTQ5M2lxdmNyUkVBOUJySVI3WkZkSWNHUnJKNlFJN21vLTlwS0hoT1hLalhjOXg2dUY0Z2tGRkt3UHA4dkVVdzVTLWgtcmMtN2s1Xy03bmZzX1pzTE1zMkl4cnV0Q0E1U0tQZjZQZUZjLXRJOWVjb3M3VWtZT1hpTWU5UVZNejZzQUhuU3Y3aURRbUNKRUx1VWMxX2k3cG9aQmJ1RnRiWHFiY29KckMtRmsyZ2padw",
+  "title": "Satlantas Polres Tasikmalaya Bersihkan Material Longsor dan Salurkan Bantuan di Bantarkalong - Kabar Singaparna",
+  "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPVVBHcTFyYi1WTUhPdFg2cjJ3R2ZtQ3pMM3FfUW5adzdETnA1SWxuTUw4d1JncXM2R1F3V2kzaGJMSUM1cUFTR3c0ODQ3UTQ5M2lxdmNyUkVBOUJySVI3WkZkSWNHUnJKNlFJN21vLTlwS0hoT1hLalhjOXg2dUY0Z2tGRkt3UHA4dkVVdzVTLWgtcmMtN2s1Xy03bmZzX1pzTE1zMkl4cnV0Q0E1U0tQZjZQZUZjLXRJOWVjb3M3VWtZT1hpTWU5UVZNejZzQUhuU3Y3aURRbUNKRUx1VWMxX2k3cG9aQmJ1RnRiWHFiY29KckMtRmsyZ2padw?oc=5",
+  "source": "Kabar Singaparna",
+  "source_url": "https://kabarsingaparna.pikiran-rakyat.com",
+  "published_at": "2026-11-19T02:35:05.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-19T03:30:40.512Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
