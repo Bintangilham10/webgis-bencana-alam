@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-19T06:45:34.228Z",
+  "data": {
+    "Tanggal": "19 Nov 2026",
+    "Jam": "13:31:50 WIB",
+    "DateTime": "2026-11-19T06:31:50+00:00",
+    "Coordinates": "-2.49,121.25",
+    "Lintang": "2.49 LS",
+    "Bujur": "121.25 BT",
+    "Magnitude": "3.6",
+    "Kedalaman": "5 km",
+    "Wilayah": "Pusat gempa berada di darat 20 km timur laut Luwu Timur",
+    "Dirasakan": "III Malili"
+  }
+}
