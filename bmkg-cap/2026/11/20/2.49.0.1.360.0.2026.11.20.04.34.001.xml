@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.20.05.34.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-20T11:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-20T11:40:00+07:00</effective>
+    <expires>2026-11-20T12:40:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di DI Yogyakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 20 November 2026, 11:40 WIB di sebagian wilayah DI Yogyakarta, khususnya di IMOGIRI, PUNDONG, PURWOSARI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 20 November 2026, 12:40 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CYG/2026/11/20/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>DI Yogyakarta</areaDesc>
+      <polygon>-7.945,110.366 -7.956,110.363 -7.973,110.367 -7.983,110.364 -7.979,110.352 -7.989,110.354 -7.995,110.348 -7.998,110.332 -8.006,110.329 -7.990,110.317 -7.979,110.327 -7.977,110.321 -7.973,110.323 -7.969,110.326 -7.963,110.321 -7.938,110.333 -7.946,110.350 -7.945,110.366</polygon>
+      <polygon>-7.901,110.431 -7.925,110.426 -7.930,110.414 -7.928,110.406 -7.937,110.409 -7.945,110.429 -7.954,110.425 -7.964,110.433 -7.974,110.422 -7.970,110.397 -7.980,110.398 -7.981,110.392 -7.982,110.381 -7.973,110.367 -7.956,110.363 -7.945,110.366 -7.926,110.367 -7.905,110.382 -7.897,110.400 -7.893,110.422 -7.901,110.431</polygon>
+      <polygon>-7.981,110.392 -8.006,110.401 -8.012,110.409 -8.025,110.416 -8.070,110.403 -8.079,110.405 -8.072,110.381 -8.056,110.359 -8.028,110.340 -8.006,110.329 -7.998,110.332 -7.995,110.348 -7.989,110.354 -7.979,110.352 -7.983,110.364 -7.973,110.367 -7.982,110.381 -7.981,110.392</polygon>
+    </area>
+  </info>
+</alert>
