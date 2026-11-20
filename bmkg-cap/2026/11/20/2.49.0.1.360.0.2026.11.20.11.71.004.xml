@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.20.11.71.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-20T17:42:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-20T17:45:00+08:00</effective>
+    <expires>2026-11-20T19:15:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 20 November 2026, 17:45 WITA di sebagian wilayah Sulawesi Utara, khususnya di KAIDIPANG, LIKUPANG BARAT, PINOGALUMAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 20 November 2026, 19:15 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/20/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>1.687,125.017 1.667,125.007 1.682,125.001 1.687,124.995 1.617,124.974 1.621,124.952 1.631,124.942 1.636,124.946 1.658,124.948 1.663,124.953 1.660,124.957 1.665,124.961 1.678,124.960 1.688,124.963 1.701,124.957 1.700,124.969 1.703,124.971 1.706,124.967 1.727,124.962 1.732,124.967 1.721,124.984 1.724,124.986 1.726,124.982 1.735,124.978 1.750,124.983 1.751,124.989 1.733,125.026 1.724,125.027 1.722,125.021 1.694,125.013 1.687,125.017</polygon>
+      <polygon>1.883,125.099 1.858,125.089 1.839,125.088 1.821,125.067 1.807,125.061 1.804,125.051 1.812,125.048 1.859,125.069 1.867,125.079 1.883,125.088 1.887,125.096 1.883,125.099</polygon>
+      <polygon>1.837,125.101 1.832,125.099 1.836,125.090 1.843,125.098 1.837,125.101</polygon>
+      <polygon>1.781,125.058 1.766,125.058 1.760,125.051 1.764,125.049 1.787,125.057 1.781,125.058</polygon>
+      <polygon>1.708,124.960 1.715,124.951 1.721,124.954 1.708,124.960</polygon>
+      <polygon>1.706,125.028 1.694,125.032 1.689,125.029 1.694,125.021 1.702,125.019 1.708,125.025 1.706,125.028</polygon>
+      <polygon>1.694,124.955 1.687,124.954 1.694,124.949 1.703,124.949 1.701,124.953 1.694,124.955</polygon>
+      <polygon>1.687,125.022 1.688,125.020 1.690,125.022 1.687,125.022</polygon>
+      <polygon>0.911,123.292 0.894,123.290 0.879,123.296 0.839,123.299 0.823,123.293 0.803,123.271 0.848,123.267 0.858,123.252 0.885,123.235 0.906,123.200 0.916,123.195 0.916,123.195 0.916,123.199 0.926,123.207 0.939,123.187 0.944,123.192 0.940,123.196 0.939,123.209 0.946,123.220 0.942,123.238 0.945,123.242 0.956,123.240 0.958,123.250 0.953,123.255 0.932,123.257 0.923,123.254 0.917,123.258 0.915,123.263 0.920,123.270 0.915,123.274 0.911,123.292</polygon>
+      <polygon>0.926,123.262 0.920,123.261 0.927,123.259 0.926,123.262</polygon>
+      <polygon>0.916,123.195 0.906,123.200 0.885,123.235 0.858,123.252 0.848,123.267 0.803,123.271 0.803,123.271 0.848,123.217 0.872,123.166 0.877,123.143 0.891,123.121 0.912,123.114 0.924,123.115 0.923,123.140 0.910,123.152 0.902,123.167 0.902,123.179 0.916,123.195</polygon>
+      <polygon>0.944,123.192 0.939,123.187 0.926,123.207 0.916,123.199 0.916,123.195 0.920,123.198 0.933,123.176 0.941,123.176 0.950,123.167 0.954,123.183 0.944,123.192</polygon>
+    </area>
+  </info>
+</alert>
