@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-20T12:00:51.256Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        112.1030857882,
+        -7.1280126588
+      ]
+    },
+    "properties": {
+      "pkey": "400069",
+      "created_at": "2026-11-20T11:54:30.834Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "7c1fdc9c-2273-48f2-bea2-db126f99eff8",
+      "image_url": "https://images.petabencana.id/7c1fdc9c-2273-48f2-bea2-db126f99eff8.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 88.00029934560935,
+        "fireLocation": {
+          "lng": 112.10308578822162,
+          "lat": -7.128012658753164
+        },
+        "personLocation": {
+          "lng": 112.10387435767217,
+          "lat": -7.128369296835288
+        },
+        "fireRadius": {
+          "lng": 112.10246351573022,
+          "lat": -7.127517623342257
+        }
+      },
+      "tags": {
+        "city": "BOJONEGORO",
+        "district_id": null,
+        "region_code": "3522",
+        "local_area_id": null,
+        "instance_region_code": "ID-JI"
+      },
+      "title": null,
+      "text": "Kebakaran melanda sebuah toko/gerai frozen food di wilayah Kecamatan Baureno, Kabupaten Bojonegoro, Jawa Timur, pada Jumat sore (20/11/2026)",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
