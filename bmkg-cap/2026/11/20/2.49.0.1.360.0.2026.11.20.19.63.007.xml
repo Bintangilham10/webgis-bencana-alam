@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.20.19.63.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-21T03:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-21T03:10:00+08:00</effective>
+    <expires>2026-11-21T03:40:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 November 2026, 03:10 WITA di sebagian wilayah Kalimantan Selatan, khususnya di BARAMBAI, MARABAHAN, WANARAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 November 2026, 03:40 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKS/2026/11/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Selatan</areaDesc>
+      <polygon>-2.975,114.711 -3.017,114.707 -3.055,114.726 -3.057,114.708 -3.044,114.691 -3.044,114.684 -3.048,114.677 -3.060,114.688 -3.069,114.686 -3.093,114.672 -3.095,114.657 -3.090,114.660 -3.053,114.642 -3.040,114.628 -2.994,114.629 -2.994,114.636 -2.990,114.636 -2.930,114.575 -2.896,114.627 -2.975,114.711</polygon>
+      <polygon>-2.998,114.783 -3.010,114.775 -2.997,114.762 -3.000,114.744 -2.990,114.728 -2.976,114.726 -2.975,114.711 -2.896,114.627 -2.807,114.735 -2.932,114.773 -2.948,114.754 -2.957,114.764 -2.971,114.754 -2.980,114.774 -2.998,114.783</polygon>
+      <polygon>-3.040,114.628 -3.070,114.620 -3.087,114.619 -3.097,114.591 -3.097,114.586 -3.067,114.562 -3.069,114.547 -3.068,114.546 -3.015,114.496 -2.987,114.515 -2.947,114.546 -2.930,114.575 -2.990,114.636 -2.994,114.636 -2.994,114.629 -3.040,114.628</polygon>
+    </area>
+  </info>
+</alert>
