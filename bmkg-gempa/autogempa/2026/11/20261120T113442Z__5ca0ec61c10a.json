@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-11-20T12:15:33.506Z",
+  "data": {
+    "Tanggal": "20 Nov 2026",
+    "Jam": "18:34:42 WIB",
+    "DateTime": "2026-11-20T11:34:42+00:00",
+    "Coordinates": "-3.88,122.51",
+    "Lintang": "3.88 LS",
+    "Bujur": "122.51 BT",
+    "Magnitude": "3.2",
+    "Kedalaman": "6 km",
+    "Wilayah": "Pusat gempa berada di laut 10 km Utara Kendari",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Kota Kendari, II - III Konawe Selatan",
+    "Shakemap": "20261120183442.mmi.jpg"
+  }
+}
