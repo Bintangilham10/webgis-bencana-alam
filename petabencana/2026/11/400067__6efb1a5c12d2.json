@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-20T11:30:47.945Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.2448954404,
+        -6.6461393
+      ]
+    },
+    "properties": {
+      "pkey": "400067",
+      "created_at": "2026-11-20T11:21:53.722Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "2e4a7332-4f66-439d-b1d9-41ee41c7d49c",
+      "image_url": "https://images.petabencana.id/2e4a7332-4f66-439d-b1d9-41ee41c7d49c.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 82.45598278866973,
+        "fireLocation": {
+          "lat": "-6.6461393",
+          "lng": 106.24489544042099
+        },
+        "personLocation": {
+          "lng": 106.24600761500636,
+          "lat": -6.647402582816881
+        },
+        "fireRadius": {
+          "lng": 106.24415515073429,
+          "lat": -6.646235210623615
+        }
+      },
+      "tags": {
+        "city": "LEBAK",
+        "district_id": null,
+        "region_code": "3602",
+        "local_area_id": null,
+        "instance_region_code": "ID-BT"
+      },
+      "title": null,
+      "text": "Kondisi terkini after kebakaran di Baduy Luar di Kampung Cipaler Babakan, Desa Kanekes, Kecamatan Leuwidamar, Kabupaten Lebak, Banten",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

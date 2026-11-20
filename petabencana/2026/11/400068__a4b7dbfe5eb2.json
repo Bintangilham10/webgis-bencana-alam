@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-20T11:30:47.945Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        117.1536265558,
+        -0.4695784973
+      ]
+    },
+    "properties": {
+      "pkey": "400068",
+      "created_at": "2026-11-20T11:30:49.086Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "cacd498c-7d03-404a-a9f5-0cf3e32b2d5f",
+      "image_url": "https://images.petabencana.id/cacd498c-7d03-404a-a9f5-0cf3e32b2d5f.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 94.47146458175739,
+        "fireLocation": {
+          "lng": 117.15362655581959,
+          "lat": -0.46957849732770285
+        },
+        "personLocation": {
+          "lat": "-0.4692781",
+          "lng": "117.1536802"
+        },
+        "fireRadius": {
+          "lng": 117.1528004354401,
+          "lat": -0.46977697412626185
+        }
+      },
+      "tags": {
+        "city": "KOTA SAMARINDA",
+        "district_id": null,
+        "region_code": "6472",
+        "local_area_id": null,
+        "instance_region_code": "ID-KI"
+      },
+      "title": null,
+      "text": "Kebakaran bangunan melanda kawasan dekat Lapangan gajah Mada, di sekitar Kantor Pos dan Kantor Camat di Kecamatan Muara Muntai",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
