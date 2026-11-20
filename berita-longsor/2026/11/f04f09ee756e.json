@@ -1,0 +1,21 @@
+{
+  "guid": "CBMikAFBVV95cUxOVEZlTU1rRHNfZk9jTEkwRVdfTkd1Y2YyNzhRZ3ZjbnB5OXNaOVRqZ1k1VUFDMEo0eTExajNqaG9ZS09PN3Jia09fbnlMeU51SW10aFhGSjZ0bV9rdDhyNS0tWjFFMUJZTldUcHhPTjNQb0FVa0RpNVhtcVRGNFhzci1pN096NWNjUVlacGt2cGk",
+  "title": "Bencana Tanah Longsor Terjang Purbalingga, Tiga Rumah Warga Rusak - Serayu News",
+  "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVEZlTU1rRHNfZk9jTEkwRVdfTkd1Y2YyNzhRZ3ZjbnB5OXNaOVRqZ1k1VUFDMEo0eTExajNqaG9ZS09PN3Jia09fbnlMeU51SW10aFhGSjZ0bV9rdDhyNS0tWjFFMUJZTldUcHhPTjNQb0FVa0RpNVhtcVRGNFhzci1pN096NWNjUVlacGt2cGk?oc=5",
+  "source": "Serayu News",
+  "source_url": "https://serayunews.com",
+  "published_at": "2026-11-19T12:30:16.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-20T04:45:28.758Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.03",
+      "nama": "Kabupaten Purbalingga",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

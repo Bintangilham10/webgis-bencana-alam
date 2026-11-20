@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiZkFVX3lxTE95V1FVNzJtemY2Q3FZam5PSk1nbi02VzdoMm03dnhBN1p5b2RNTTJBNGNQaWV6UG42MzRsdmpQWG03N2xPUmtXTXpLWTJWX3lBcGxBRWhsVDFQTDFtMXVsSEdIZWdSUQ",
+  "title": "Banjir dan Longsor Terjang Bengkulu hingga Pamekasan, 1 Tewas - SuaraGarut.ID",
+  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE95V1FVNzJtemY2Q3FZam5PSk1nbi02VzdoMm03dnhBN1p5b2RNTTJBNGNQaWV6UG42MzRsdmpQWG03N2xPUmtXTXpLWTJWX3lBcGxBRWhsVDFQTDFtMXVsSEdIZWdSUQ?oc=5",
+  "source": "SuaraGarut.ID",
+  "source_url": "https://suaragarut.id",
+  "published_at": "2026-11-20T03:22:54.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-20T04:45:28.758Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.28",
+      "nama": "Kabupaten Pamekasan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "17.71",
+      "nama": "Kota Bengkulu",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bengkulu"
+  ]
+}

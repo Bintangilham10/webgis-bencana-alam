@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiU0FVX3lxTFBqcDZKVDU0ZzdQeWNwLVZMME12aFlYUVdaZWRPcVo0RWJDcFpTdU9iRzFNRDF2Y1RnNUhkT1lWdXcyVWZEUVg5ZFNsYk1uVk5IdUJN",
+  "title": "Banjir dan Longsor Terjang Bengkulu hingga Pamekasan, 1 Tewas - شبكة تواصل الإخبارية",
+  "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBqcDZKVDU0ZzdQeWNwLVZMME12aFlYUVdaZWRPcVo0RWJDcFpTdU9iRzFNRDF2Y1RnNUhkT1lWdXcyVWZEUVg5ZFNsYk1uVk5IdUJN?oc=5",
+  "source": "شبكة تواصل الإخبارية",
+  "source_url": "https://twaslnews1.twaslnews.com",
+  "published_at": "2026-11-20T03:32:52.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-20T04:45:28.758Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.28",
+      "nama": "Kabupaten Pamekasan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "17.71",
+      "nama": "Kota Bengkulu",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bengkulu"
+  ]
+}
