@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.20.20.63.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-21T03:40:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-21T03:50:00+08:00</effective>
+    <expires>2026-11-21T05:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 November 2026, 03:50 WITA di sebagian wilayah Kalimantan Selatan, khususnya di BAKUMPAI, BARAMBAI, KURAU, KURIPAN, MARABAHAN, TABUKAN, TAKISUNG, WANARAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 November 2026, 05:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKS/2026/11/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Selatan</areaDesc>
+      <polygon>-3.723,114.642 -3.728,114.651 -3.741,114.660 -3.799,114.676 -3.822,114.696 -3.854,114.696 -3.888,114.687 -3.895,114.681 -3.917,114.676 -3.974,114.681 -3.995,114.678 -3.991,114.632 -3.892,114.611 -3.857,114.610 -3.822,114.604 -3.745,114.610 -3.724,114.620 -3.723,114.642</polygon>
+      <polygon>-3.619,114.691 -3.701,114.669 -3.707,114.654 -3.723,114.642 -3.724,114.620 -3.692,114.622 -3.653,114.616 -3.619,114.602 -3.590,114.583 -3.579,114.612 -3.575,114.674 -3.569,114.674 -3.561,114.708 -3.577,114.709 -3.619,114.691</polygon>
+      <polygon>-3.007,114.815 -2.997,114.793 -2.998,114.783 -2.980,114.774 -2.971,114.754 -2.957,114.764 -2.948,114.754 -2.932,114.773 -2.807,114.735 -2.743,114.804 -2.807,114.812 -2.871,114.840 -2.930,114.815 -2.941,114.802 -2.970,114.805 -2.990,114.815 -3.007,114.815</polygon>
+      <polygon>-2.522,114.860 -2.743,114.804 -2.807,114.735 -2.795,114.699 -2.785,114.708 -2.742,114.733 -2.730,114.750 -2.728,114.759 -2.721,114.760 -2.697,114.771 -2.681,114.787 -2.651,114.793 -2.624,114.792 -2.598,114.795 -2.583,114.802 -2.560,114.836 -2.530,114.852 -2.522,114.860 -2.522,114.860</polygon>
+      <polygon>-2.807,114.735 -2.896,114.627 -2.930,114.575 -2.947,114.546 -2.927,114.524 -2.924,114.542 -2.880,114.562 -2.866,114.568 -2.887,114.607 -2.883,114.618 -2.815,114.599 -2.799,114.666 -2.782,114.679 -2.768,114.678 -2.752,114.671 -2.738,114.680 -2.735,114.692 -2.741,114.716 -2.721,114.760 -2.728,114.759 -2.730,114.750 -2.742,114.733 -2.785,114.708 -2.795,114.699 -2.807,114.735</polygon>
+      <polygon>-2.975,114.711 -3.017,114.707 -3.055,114.726 -3.057,114.708 -3.044,114.691 -3.044,114.684 -3.048,114.677 -3.060,114.688 -3.069,114.686 -3.093,114.672 -3.095,114.657 -3.090,114.660 -3.053,114.642 -3.040,114.628 -2.994,114.629 -2.994,114.636 -2.990,114.636 -2.930,114.575 -2.896,114.627 -2.975,114.711</polygon>
+      <polygon>-2.998,114.783 -3.010,114.775 -2.997,114.762 -3.000,114.744 -2.990,114.728 -2.976,114.726 -2.975,114.711 -2.896,114.627 -2.807,114.735 -2.932,114.773 -2.948,114.754 -2.957,114.764 -2.971,114.754 -2.980,114.774 -2.998,114.783</polygon>
+      <polygon>-3.040,114.628 -3.070,114.620 -3.087,114.619 -3.097,114.591 -3.097,114.586 -3.067,114.562 -3.069,114.547 -3.068,114.546 -3.015,114.496 -2.987,114.515 -2.947,114.546 -2.930,114.575 -2.990,114.636 -2.994,114.636 -2.994,114.629 -3.040,114.628</polygon>
+    </area>
+  </info>
+</alert>
