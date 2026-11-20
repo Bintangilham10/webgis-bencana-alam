@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixAFBVV95cUxPUmZEdnlxNTY4Yms1LUZYend1bmxrN1JsRVpaNUdCX19ycUVsRWZRb0tNTmVsQWlpaEdveFVRSTFyREhPcmhFRjBBR0RvZ0Z3eTFab1o4S290QWE0ZTNPV2lvTkl2aUxBRHhGRXE1RzBJU25hWVpMUzJPTmFqbHBXaEJBRW9xd2tuMlA0TUltZmZEa1pFejNaWDF5aHB4YWxvMHRyREh1akdsc0tJRnU1TmQxcDcyUEVrOFl3UTJsSF9PeElU0gHKAUFVX3lxTE1pOXpITlNTTTRLdW1TZXRxR1Vtei1qNVRITmFYRHI4V3RZUXNzUmNUMzJrTEsxR0duREt5SUxjbHZsb0Nza21tZnJZRWJsdmVQaUx0cHg2WVZSQWZNTU5aNEJ4cXVaNGE0bDFvcUtZMUNQSHJhLVpya1dVUDI0MXRmUEV3NklJb0QtWGpHNHEzaXZnTFJjZ1NLcThxVTY3TTRwM2NFeDk1a3Z1Q0h2MDhER3BqUnpLVjIyT1VtZ1o1VGRuZ2ZnTUprRWc",
+  "title": "Jalur KA di Saradan Rawan Longsor, KAI Daop 7 Madiun Perketat Pengawasan - Radar Madiun",
+  "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUmZEdnlxNTY4Yms1LUZYend1bmxrN1JsRVpaNUdCX19ycUVsRWZRb0tNTmVsQWlpaEdveFVRSTFyREhPcmhFRjBBR0RvZ0Z3eTFab1o4S290QWE0ZTNPV2lvTkl2aUxBRHhGRXE1RzBJU25hWVpMUzJPTmFqbHBXaEJBRW9xd2tuMlA0TUltZmZEa1pFejNaWDF5aHB4YWxvMHRyREh1akdsc0tJRnU1TmQxcDcyUEVrOFl3UTJsSF9PeElU0gHKAUFVX3lxTE1pOXpITlNTTTRLdW1TZXRxR1Vtei1qNVRITmFYRHI4V3RZUXNzUmNUMzJrTEsxR0duREt5SUxjbHZsb0Nza21tZnJZRWJsdmVQaUx0cHg2WVZSQWZNTU5aNEJ4cXVaNGE0bDFvcUtZMUNQSHJhLVpya1dVUDI0MXRmUEV3NklJb0QtWGpHNHEzaXZnTFJjZ1NLcThxVTY3TTRwM2NFeDk1a3Z1Q0h2MDhER3BqUnpLVjIyT1VtZ1o1VGRuZ2ZnTUprRWc?oc=5",
+  "source": "Radar Madiun",
+  "source_url": "https://radarmadiun.jawapos.com",
+  "published_at": "2026-11-20T04:22:49.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-20T07:45:45.832Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.19",
+      "nama": "Kabupaten Madiun",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.77",
+      "nama": "Kota Madiun",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

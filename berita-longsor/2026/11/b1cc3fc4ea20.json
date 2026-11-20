@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiuwFBVV95cUxPNWp2Wm5senRvME1oSllOb3lMM3FmdGZxMnNCeGpPTklQeUJ0UnNZeDJBSWhHaTBaTTV5QWRmNmxoSEdmbVhhV2FnRllUdFpuSFM0bVNsZlBNUS1yTVA0cS1SVGgtMmtUTmNEazVuQ3VsS2JoOVZVODB3YS0zRy1ubjhnNGhLUU9ZeWVKQUdkbUxHMFlKcmtrVF9xWkxxdV9Ibk9iMjNfYVlZVnFON2NscG8xQTd0V3FlQ1pJ",
+  "title": "Hadapi Musim Hujan, BPBD Cirebon Susun Payung Hukum Penanganan Banjir dan Longsor - Jabar Publisher",
+  "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNWp2Wm5senRvME1oSllOb3lMM3FmdGZxMnNCeGpPTklQeUJ0UnNZeDJBSWhHaTBaTTV5QWRmNmxoSEdmbVhhV2FnRllUdFpuSFM0bVNsZlBNUS1yTVA0cS1SVGgtMmtUTmNEazVuQ3VsS2JoOVZVODB3YS0zRy1ubjhnNGhLUU9ZeWVKQUdkbUxHMFlKcmtrVF9xWkxxdV9Ibk9iMjNfYVlZVnFON2NscG8xQTd0V3FlQ1pJ?oc=5",
+  "source": "Jabar Publisher",
+  "source_url": "https://jabarpublisher.com",
+  "published_at": "2026-11-20T07:39:24.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-20T07:45:45.832Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.09",
+      "nama": "Kabupaten Cirebon",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.74",
+      "nama": "Kota Cirebon",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

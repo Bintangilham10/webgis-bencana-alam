@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiywFBVV95cUxQYml0ZlczUHRBNFNDQXBJdkxueG93VlFFRThJWG1vcl9jWTg4XzBzb29RVTFJaU9ZMjlWaE1iTmxoa080SkE5WFJKbG1HeHN4R0FSNVpxNUx6eU0ybWpxR0EyYzk1WFhaNXplS3oxWllDcEJIQUR4N1ppS3YwV3RnN0RGejRZQTdueXRoRG9zNHc4MzBSc0FjZ19OS1REdXFTRDJWMF9oVmM1Y1hPM0RhWWFOMjZpb2NDLUcxc29Wa011Qk91elU0Q1d4OA",
+  "title": "Foto : Banjir, Longsor, dan Pohon Tumbang Terjang Bengkulu, 8.662 Warga Terdampak Halaman 1 - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQYml0ZlczUHRBNFNDQXBJdkxueG93VlFFRThJWG1vcl9jWTg4XzBzb29RVTFJaU9ZMjlWaE1iTmxoa080SkE5WFJKbG1HeHN4R0FSNVpxNUx6eU0ybWpxR0EyYzk1WFhaNXplS3oxWllDcEJIQUR4N1ppS3YwV3RnN0RGejRZQTdueXRoRG9zNHc4MzBSc0FjZ19OS1REdXFTRDJWMF9oVmM1Y1hPM0RhWWFOMjZpb2NDLUcxc29Wa011Qk91elU0Q1d4OA?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://bandung.kompas.com",
+  "published_at": "2026-11-19T07:52:36.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-20T07:45:45.832Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "17.71",
+      "nama": "Kota Bengkulu",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bengkulu"
+  ]
+}
