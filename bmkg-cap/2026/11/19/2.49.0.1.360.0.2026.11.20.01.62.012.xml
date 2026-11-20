@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.20.00.62.012</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-20T06:32:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-20T06:40:00+07:00</effective>
+    <expires>2026-11-20T09:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 20 November 2026, 06:40 WIB di sebagian wilayah Kalimantan Tengah, khususnya di RUNGAN HULU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 20 November 2026, 09:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/11/20/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-0.981,113.417 -0.992,113.450 -0.997,113.485 -1.022,113.581 -1.024,113.595 -1.039,113.619 -1.058,113.614 -1.077,113.602 -1.098,113.595 -1.115,113.602 -1.132,113.613 -1.160,113.643 -1.176,113.670 -1.181,113.686 -1.202,113.701 -1.212,113.602 -1.222,113.550 -1.190,113.544 -1.185,113.539 -1.180,113.537 -1.180,113.537 -1.172,113.535 -1.163,113.531 -1.160,113.529 -1.158,113.528 -1.156,113.528 -1.126,113.512 -1.126,113.512 -1.123,113.510 -1.116,113.504 -1.085,113.460 -1.080,113.486 -1.066,113.526 -1.055,113.540 -1.036,113.493 -1.042,113.490 -1.048,113.458 -1.064,113.409 -1.038,113.357 -1.042,113.357 -1.009,113.355 -0.993,113.359 -0.981,113.368 -0.976,113.386 -0.981,113.417</polygon>
+    </area>
+  </info>
+</alert>
