@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi4AFBVV95cUxNZjhweHJSRlhIN2h2dHpLYTlHQ2dWZ0hFY25aMFo5enU4Yl90NVdiQUt2R0djODVSdURnOUlCTTJJNnF5M1pMWWpKTGRSX0k1dENDWE9fMkdtS2dGc015QkQtYnFsbmo0dlduNmJzMm84WXowTHZvR3NkaUxudXZfUWJnNmJOYnltejdIa3pUNWdOeWlvd0xqaGFuT1o2aDhwQUFuT3B2aFJlcHBna3UwdEpnekJVTGlhdXo3Tkc2Wk54Z1ltSHNoWWRnLXJtMGlSYjFlbFhjN1RrSU5fQzNvSdIB5gFBVV95cUxPUnhsVXhBTnFwbG5OLXZfX205UFhNNUlGeXNocDNJZldTQjZXck9icnJwN2IwNXNjSnIyd0piXzNubUtKdm1lOHIwY004R01JSlctY2t4TnF0NUNmVkpGamg0RWE5MkRDZUxPOGdzQk8ydlRzS3RjckpIMkpjeXV5Q1FZdFdLTjZVWTBVbmJNdnNGZEx5ZTFpbXZYTXFaVmQ0dGpkQ1otc1VfRDMxTFZmTHQ3amE4UG9VMnJfV0lreEQ5YUNmZFpNYWl3VEhmVHV0Y1UxYnBFcVNpQXBOTzVsYlVfNTVJUQ",
+  "title": "Cuaca Ekstrem Berpotensi Landa Tulungagung, Sejumlah Wilayah Rawan Banjir hingga Longsor - Radar Tulungagung",
+  "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNZjhweHJSRlhIN2h2dHpLYTlHQ2dWZ0hFY25aMFo5enU4Yl90NVdiQUt2R0djODVSdURnOUlCTTJJNnF5M1pMWWpKTGRSX0k1dENDWE9fMkdtS2dGc015QkQtYnFsbmo0dlduNmJzMm84WXowTHZvR3NkaUxudXZfUWJnNmJOYnltejdIa3pUNWdOeWlvd0xqaGFuT1o2aDhwQUFuT3B2aFJlcHBna3UwdEpnekJVTGlhdXo3Tkc2Wk54Z1ltSHNoWWRnLXJtMGlSYjFlbFhjN1RrSU5fQzNvSdIB5gFBVV95cUxPUnhsVXhBTnFwbG5OLXZfX205UFhNNUlGeXNocDNJZldTQjZXck9icnJwN2IwNXNjSnIyd0piXzNubUtKdm1lOHIwY004R01JSlctY2t4TnF0NUNmVkpGamg0RWE5MkRDZUxPOGdzQk8ydlRzS3RjckpIMkpjeXV5Q1FZdFdLTjZVWTBVbmJNdnNGZEx5ZTFpbXZYTXFaVmQ0dGpkQ1otc1VfRDMxTFZmTHQ3amE4UG9VMnJfV0lreEQ5YUNmZFpNYWl3VEhmVHV0Y1UxYnBFcVNpQXBOTzVsYlVfNTVJUQ?oc=5",
+  "source": "Radar Tulungagung",
+  "source_url": "https://radartulungagung.jawapos.com",
+  "published_at": "2026-11-20T17:04:18.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-20T17:15:31.708Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.04",
+      "nama": "Kabupaten Tulungagung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

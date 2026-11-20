@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiyAFBVV95cUxPcWg3UmJUeDVTX3BIcG01ck1vbWZnQ2E3VHBURmtYVlVCanVmRjZXVnYwZnFGMVRzcnFvVk1CbFlaeDFCc3hPRFhRdExjNFZobFlYUU9qakpTd1dlRlRET3BjUE9Mcng5WjFMbkY5NzFoU1A3NWh4NFJkNXBrbElOOS1Ta0hLdE96VFl0V0tLclBIQm1PWWdfSGxQQTVVTllXejJYOEtWSU1Wamd2MHZla3BhOXFNdFF3c2NzNXFlTkxzSTVDQmpJYw",
+  "title": "Breaking News - Longsor Timbun Jalan Penghubung Desa di Kabupaten Tasikmalaya - Tribunnews.com",
+  "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcWg3UmJUeDVTX3BIcG01ck1vbWZnQ2E3VHBURmtYVlVCanVmRjZXVnYwZnFGMVRzcnFvVk1CbFlaeDFCc3hPRFhRdExjNFZobFlYUU9qakpTd1dlRlRET3BjUE9Mcng5WjFMbkY5NzFoU1A3NWh4NFJkNXBrbElOOS1Ta0hLdE96VFl0V0tLclBIQm1PWWdfSGxQQTVVTllXejJYOEtWSU1Wamd2MHZla3BhOXFNdFF3c2NzNXFlTkxzSTVDQmpJYw?oc=5",
+  "source": "Tribunnews.com",
+  "source_url": "https://priangan.tribunnews.com",
+  "published_at": "2026-11-20T14:08:58.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-20T17:15:31.708Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

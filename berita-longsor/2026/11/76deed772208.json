@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirwFBVV95cUxPbWdEeUlWdHBSWllLaE9yLTNWWVZfY2ZPU2d0QS1tbWRXOHFXV3I4RDdMUFZjeThyVTBhUXNhZWdLcGRMOGNuSk1SYVVYR0VqQnJQMzhmMEtPSTFORmZKdWIzakFKd3NGc1lkOEtxUE91ZVhtcWpmTHdyQUxaRzNobnFKQ2p0S2RyQUVNMml0dk9XRVY2Q0N6U3M1dERrMG1QUnBfZWNEZzJ5MExnbjFJ",
+  "title": "Ria Norsan Minta Sintang dan Melawi Siaga Banjir, Longsor, dan Puting Beliung - Aksaraloka",
+  "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbWdEeUlWdHBSWllLaE9yLTNWWVZfY2ZPU2d0QS1tbWRXOHFXV3I4RDdMUFZjeThyVTBhUXNhZWdLcGRMOGNuSk1SYVVYR0VqQnJQMzhmMEtPSTFORmZKdWIzakFKd3NGc1lkOEtxUE91ZVhtcWpmTHdyQUxaRzNobnFKQ2p0S2RyQUVNMml0dk9XRVY2Q0N6U3M1dERrMG1QUnBfZWNEZzJ5MExnbjFJ?oc=5",
+  "source": "Aksaraloka",
+  "source_url": "https://aksaraloka.com",
+  "published_at": "2026-11-20T16:02:17.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-20T17:15:31.708Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "61.05",
+      "nama": "Kabupaten Sintang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "61.10",
+      "nama": "Kabupaten Melawi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
