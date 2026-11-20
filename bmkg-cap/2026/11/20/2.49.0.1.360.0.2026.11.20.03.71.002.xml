@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.20.03.71.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-20T11:03:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-20T11:05:00+08:00</effective>
+    <expires>2026-11-20T13:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 20 November 2026, 11:05 WITA di sebagian wilayah Sulawesi Utara, khususnya di KOMBI, SIAU TIMUR SELATAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 20 November 2026, 13:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/20/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>1.323,125.002 1.326,125.011 1.315,125.024 1.294,125.033 1.293,125.058 1.286,125.064 1.174,125.032 1.193,124.986 1.196,124.979 1.211,124.967 1.226,124.967 1.243,124.956 1.260,124.955 1.265,124.953 1.278,124.969 1.289,124.971 1.307,124.970 1.314,124.984 1.328,124.990 1.328,124.998 1.323,125.002</polygon>
+      <polygon>2.707,125.400 2.683,125.393 2.668,125.404 2.663,125.422 2.649,125.432 2.635,125.419 2.669,125.389 2.681,125.385 2.700,125.380 2.703,125.382 2.707,125.400</polygon>
+      <polygon>2.681,125.456 2.679,125.448 2.686,125.444 2.692,125.450 2.693,125.460 2.681,125.456</polygon>
+      <polygon>2.667,125.465 2.657,125.465 2.652,125.470 2.643,125.461 2.641,125.444 2.652,125.457 2.670,125.451 2.673,125.463 2.672,125.466 2.667,125.465</polygon>
+      <polygon>2.657,125.484 2.653,125.489 2.648,125.488 2.656,125.482 2.657,125.484</polygon>
+    </area>
+  </info>
+</alert>
