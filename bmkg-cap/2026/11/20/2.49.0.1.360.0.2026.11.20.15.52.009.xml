@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.20.15.52.009</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-20T22:10:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-20T22:20:00+08:00</effective>
+    <expires>2026-11-21T00:20:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 20 November 2026, 22:20 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di JONGGAT, LABANGKA, MASBAGIK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 November 2026, 00:20 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/11/20/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.632,116.263 -8.639,116.259 -8.644,116.263 -8.651,116.265 -8.689,116.254 -8.704,116.254 -8.712,116.218 -8.708,116.213 -8.704,116.186 -8.712,116.177 -8.675,116.168 -8.673,116.171 -8.679,116.184 -8.674,116.196 -8.642,116.189 -8.629,116.221 -8.637,116.235 -8.636,116.240 -8.626,116.247 -8.626,116.253 -8.632,116.263</polygon>
+      <polygon>-8.543,116.432 -8.571,116.449 -8.593,116.453 -8.601,116.461 -8.608,116.491 -8.621,116.495 -8.626,116.500 -8.630,116.499 -8.635,116.492 -8.633,116.484 -8.638,116.470 -8.634,116.461 -8.626,116.437 -8.621,116.434 -8.615,116.432 -8.601,116.437 -8.593,116.429 -8.574,116.423 -8.543,116.432</polygon>
+      <polygon>-8.919,117.834 -8.906,117.825 -8.899,117.811 -8.907,117.795 -8.931,117.776 -8.934,117.768 -8.932,117.753 -8.916,117.734 -8.922,117.680 -8.937,117.669 -8.941,117.655 -8.909,117.656 -8.895,117.681 -8.893,117.705 -8.885,117.705 -8.883,117.751 -8.857,117.755 -8.860,117.786 -8.857,117.805 -8.874,117.833 -8.890,117.841 -8.906,117.841 -8.919,117.834</polygon>
+    </area>
+  </info>
+</alert>

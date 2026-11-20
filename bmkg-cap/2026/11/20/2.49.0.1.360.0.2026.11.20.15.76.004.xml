@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.20.15.76.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-20T22:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-20T22:30:00+08:00</effective>
+    <expires>2026-11-21T01:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 20 November 2026, 22:30 WITA di sebagian wilayah Sulawesi Barat, khususnya di CAMPALAGIAN, MAPILLI, TIKKE RAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 November 2026, 01:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSK/2026/11/20/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Barat</areaDesc>
+      <polygon>-1.305,119.476 -1.309,119.476 -1.306,119.490 -1.300,119.501 -1.299,119.518 -1.294,119.522 -1.299,119.526 -1.316,119.518 -1.315,119.508 -1.322,119.491 -1.317,119.473 -1.320,119.463 -1.341,119.448 -1.362,119.449 -1.399,119.479 -1.402,119.473 -1.400,119.462 -1.410,119.437 -1.417,119.426 -1.423,119.424 -1.415,119.418 -1.424,119.404 -1.423,119.397 -1.445,119.397 -1.441,119.381 -1.445,119.377 -1.453,119.356 -1.437,119.346 -1.438,119.339 -1.435,119.334 -1.428,119.331 -1.425,119.336 -1.418,119.334 -1.416,119.319 -1.426,119.320 -1.429,119.316 -1.426,119.307 -1.415,119.303 -1.415,119.292 -1.392,119.291 -1.386,119.294 -1.350,119.332 -1.295,119.319 -1.284,119.333 -1.303,119.349 -1.301,119.466 -1.305,119.476</polygon>
+      <polygon>-3.424,119.185 -3.446,119.190 -3.457,119.188 -3.464,119.195 -3.474,119.191 -3.493,119.198 -3.489,119.162 -3.494,119.136 -3.502,119.125 -3.513,119.119 -3.517,119.111 -3.515,119.105 -3.487,119.100 -3.471,119.076 -3.446,119.058 -3.415,119.063 -3.394,119.060 -3.405,119.072 -3.419,119.109 -3.417,119.128 -3.402,119.135 -3.416,119.150 -3.423,119.162 -3.427,119.175 -3.424,119.185</polygon>
+      <polygon>-3.296,119.194 -3.301,119.187 -3.315,119.187 -3.317,119.184 -3.347,119.191 -3.364,119.190 -3.367,119.194 -3.386,119.190 -3.387,119.199 -3.408,119.205 -3.424,119.201 -3.435,119.193 -3.439,119.194 -3.441,119.204 -3.456,119.215 -3.476,119.220 -3.478,119.229 -3.487,119.232 -3.486,119.221 -3.493,119.198 -3.474,119.191 -3.464,119.195 -3.457,119.188 -3.446,119.190 -3.424,119.185 -3.420,119.175 -3.397,119.162 -3.390,119.165 -3.386,119.171 -3.376,119.169 -3.367,119.148 -3.349,119.142 -3.348,119.133 -3.331,119.133 -3.319,119.117 -3.310,119.111 -3.295,119.117 -3.295,119.140 -3.311,119.152 -3.327,119.155 -3.333,119.165 -3.327,119.172 -3.278,119.167 -3.259,119.179 -3.255,119.190 -3.296,119.194</polygon>
+    </area>
+  </info>
+</alert>
