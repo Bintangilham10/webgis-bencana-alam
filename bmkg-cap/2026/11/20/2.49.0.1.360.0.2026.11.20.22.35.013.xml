@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.20.22.35.013</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-21T03:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-21T03:30:00+07:00</effective>
+    <expires>2026-11-21T05:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 November 2026, 03:30 WIB di sebagian wilayah Jawa Timur, khususnya di KALIPURO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 November 2026, 05:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-8.092,114.416 -8.120,114.399 -8.146,114.402 -8.195,114.383 -8.192,114.369 -8.186,114.361 -8.180,114.347 -8.173,114.309 -8.162,114.298 -8.168,114.293 -8.151,114.276 -8.139,114.286 -8.128,114.268 -8.137,114.267 -8.136,114.263 -8.104,114.246 -8.077,114.250 -8.063,114.263 -8.060,114.268 -8.058,114.295 -8.062,114.323 -8.061,114.342 -8.067,114.362 -8.063,114.375 -8.068,114.401 -8.075,114.413 -8.092,114.416</polygon>
+    </area>
+  </info>
+</alert>
