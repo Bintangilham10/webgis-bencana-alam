@@ -1,0 +1,28 @@
+{
+  "guid": "CBMizwFBVV95cUxNUjFJRTlFTGd6em5rVkpmbTJQWm1rUmhWQ0F3SzUxaGloNGtqdFBFWHhFZnFQNmhtSXRfelBQTGZKcjdVeHl0d0MzMG1LdlR3T3ZUV2JRUXlLVk9MSEhFZXFGOFExVHJJWFZoRU11cHRQYnBrT3N2WEp3T2hydDBGTklVYlYtSjI4M0szWWZvX3hxWTBxNW9XQ1FjcE90eFBzeTEtTzhCbWRYLWE0cVphOTVEMGhDalpkbWJ6Z0NHRm5uaGlNRDJiQ0NSZldpRknSAdQBQVVfeXFMTjhSam5tNUwwZ2lyUS1USG4zQkx6VUVobWZuQ1BNYVZlVG9hNG1LeVdNVTA1SFFPNFozaVRERWpSN3Q3bzRTQVNzOHZzckUwNkVSRlpyYk5iSFVLN0w1XzU2cTUtdHRvbS1PbDNibkpVSEtDaGZfNExaQ3ZZd2xBX3AzTGRVcWFIaVQzam91dkd5NV9TcTlnY3JWZWJGSUdIbVdRNFhMNkdGM0h6QnpvZjNjUHNiVEZvU3o4dkFCUEFVS2V6RDcyWk9DdEllMzA5SXVJaWM",
+  "title": "Waspada Banjir dan Longsor, BPBD Jambi Sebut Titik Rawan di Wilayah Barat Belum Status Siaga - Metro Jambi - Metro Jambi",
+  "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNUjFJRTlFTGd6em5rVkpmbTJQWm1rUmhWQ0F3SzUxaGloNGtqdFBFWHhFZnFQNmhtSXRfelBQTGZKcjdVeHl0d0MzMG1LdlR3T3ZUV2JRUXlLVk9MSEhFZXFGOFExVHJJWFZoRU11cHRQYnBrT3N2WEp3T2hydDBGTklVYlYtSjI4M0szWWZvX3hxWTBxNW9XQ1FjcE90eFBzeTEtTzhCbWRYLWE0cVphOTVEMGhDalpkbWJ6Z0NHRm5uaGlNRDJiQ0NSZldpRknSAdQBQVVfeXFMTjhSam5tNUwwZ2lyUS1USG4zQkx6VUVobWZuQ1BNYVZlVG9hNG1LeVdNVTA1SFFPNFozaVRERWpSN3Q3bzRTQVNzOHZzckUwNkVSRlpyYk5iSFVLN0w1XzU2cTUtdHRvbS1PbDNibkpVSEtDaGZfNExaQ3ZZd2xBX3AzTGRVcWFIaVQzam91dkd5NV9TcTlnY3JWZWJGSUdIbVdRNFhMNkdGM0h6QnpvZjNjUHNiVEZvU3o4dkFCUEFVS2V6RDcyWk9DdEllMzA5SXVJaWM?oc=5",
+  "source": "Metro Jambi",
+  "source_url": "https://www.metrojambi.com",
+  "published_at": "2026-11-19T13:15:24.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-20T11:00:42.284Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "18.72",
+      "nama": "Kota Metro",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "guid": "CBMi0wFBVV95cUxQelB5SmJXOENSVlJtMWVtRjRhNkpiTC1tNjBielVmY01BUm5WVnVXb0FXaHRHdEt4My1FaFdHUzhGdWhMbjMxbEE2LTEzZW1CakF3bGc5NHhkT0VHYl9XLWhnZ3FMX0hmdjB2YzNtVmxESFpWMHhYSkFUYTA1dnFpZWh6VlRpNHFXaGZDQ196LWhtTFVxLVE2NXk2TkdPc1djZk9kMlk3STBNeFZtdGNDOGprcndac3d1QmkzSC0xWkkwQ0hfMjB0YmF0TG0zLVBnV0hR",
+  "title": "*POLSEK LINGE POLRES ACEH TENGAH SALURKAN BANTUAN SEMBAKO KEPADA KELUARGA KORBAN BENCANA TANAH LONGSOR DI KP. JAMAT* - mitra mabes",
+  "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQelB5SmJXOENSVlJtMWVtRjRhNkpiTC1tNjBielVmY01BUm5WVnVXb0FXaHRHdEt4My1FaFdHUzhGdWhMbjMxbEE2LTEzZW1CakF3bGc5NHhkT0VHYl9XLWhnZ3FMX0hmdjB2YzNtVmxESFpWMHhYSkFUYTA1dnFpZWh6VlRpNHFXaGZDQ196LWhtTFVxLVE2NXk2TkdPc1djZk9kMlk3STBNeFZtdGNDOGprcndac3d1QmkzSC0xWkkwQ0hfMjB0YmF0TG0zLVBnV0hR?oc=5",
+  "source": "mitra mabes",
+  "source_url": "https://mitramabes.com",
+  "published_at": "2026-11-20T07:45:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-20T11:00:42.284Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
