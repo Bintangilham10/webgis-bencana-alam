@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.20.10.53.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-20T18:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-20T18:30:00+08:00</effective>
+    <expires>2026-11-20T20:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 20 November 2026, 18:30 WITA di sebagian wilayah Nusa Tenggara Timur, khususnya di LANDU LEKO, LOBALAIN, PANTAI BARU, ROTE TENGAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 20 November 2026, 20:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNT/2026/11/20/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Timur</areaDesc>
+      <polygon>-10.767,123.145 -10.816,123.158 -10.814,123.144 -10.818,123.126 -10.833,123.101 -10.857,123.089 -10.856,123.077 -10.851,123.070 -10.857,123.067 -10.860,123.061 -10.856,123.052 -10.844,123.038 -10.815,123.047 -10.802,123.045 -10.799,123.042 -10.804,123.020 -10.796,123.021 -10.788,123.017 -10.775,123.024 -10.763,123.013 -10.741,123.022 -10.735,123.021 -10.725,123.029 -10.731,123.037 -10.728,123.044 -10.708,123.062 -10.709,123.068 -10.757,123.098 -10.761,123.106 -10.758,123.129 -10.767,123.145</polygon>
+      <polygon>-10.871,123.064 -10.877,123.064 -10.869,123.058 -10.871,123.064</polygon>
+      <polygon>-10.744,123.204 -10.743,123.193 -10.758,123.170 -10.767,123.145 -10.758,123.129 -10.761,123.106 -10.757,123.098 -10.709,123.068 -10.708,123.062 -10.705,123.062 -10.705,123.068 -10.695,123.073 -10.678,123.094 -10.669,123.109 -10.648,123.125 -10.645,123.133 -10.653,123.149 -10.650,123.160 -10.635,123.180 -10.673,123.223 -10.684,123.230 -10.709,123.234 -10.726,123.232 -10.734,123.224 -10.738,123.208 -10.744,123.204</polygon>
+      <polygon>-10.594,123.307 -10.623,123.305 -10.657,123.310 -10.668,123.314 -10.683,123.327 -10.687,123.331 -10.692,123.329 -10.703,123.306 -10.718,123.300 -10.734,123.265 -10.733,123.255 -10.749,123.240 -10.758,123.238 -10.766,123.243 -10.756,123.215 -10.744,123.204 -10.738,123.208 -10.734,123.224 -10.726,123.232 -10.709,123.234 -10.684,123.230 -10.673,123.223 -10.635,123.180 -10.622,123.188 -10.598,123.192 -10.592,123.201 -10.595,123.216 -10.606,123.232 -10.603,123.236 -10.604,123.276 -10.596,123.292 -10.594,123.307</polygon>
+      <polygon>-10.586,123.343 -10.579,123.325 -10.580,123.316 -10.576,123.311 -10.580,123.276 -10.603,123.253 -10.596,123.224 -10.579,123.214 -10.570,123.221 -10.565,123.233 -10.535,123.251 -10.521,123.264 -10.518,123.281 -10.500,123.326 -10.484,123.343 -10.485,123.353 -10.481,123.364 -10.457,123.376 -10.441,123.369 -10.431,123.374 -10.431,123.380 -10.455,123.404 -10.470,123.412 -10.472,123.426 -10.474,123.404 -10.481,123.390 -10.502,123.378 -10.496,123.388 -10.502,123.399 -10.505,123.400 -10.509,123.392 -10.521,123.390 -10.527,123.385 -10.530,123.368 -10.550,123.359 -10.555,123.361 -10.557,123.380 -10.569,123.383 -10.583,123.368 -10.586,123.343</polygon>
+      <polygon>-10.487,123.398 -10.495,123.398 -10.489,123.393 -10.485,123.397 -10.487,123.398</polygon>
+      <polygon>-10.491,123.427 -10.492,123.441 -10.510,123.439 -10.507,123.435 -10.512,123.429 -10.538,123.406 -10.539,123.397 -10.556,123.389 -10.557,123.381 -10.544,123.375 -10.540,123.383 -10.542,123.386 -10.529,123.391 -10.514,123.405 -10.507,123.402 -10.499,123.404 -10.493,123.409 -10.491,123.427</polygon>
+      <polygon>-10.529,123.390 -10.533,123.387 -10.527,123.386 -10.529,123.390</polygon>
+    </area>
+  </info>
+</alert>
