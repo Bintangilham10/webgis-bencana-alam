@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-20T18:15:32.622Z",
+  "data": {
+    "Tanggal": "21 Nov 2026",
+    "Jam": "00:50:26 WIB",
+    "DateTime": "2026-11-20T17:50:26+00:00",
+    "Coordinates": "-7.51,106.85",
+    "Lintang": "7.51 LS",
+    "Bujur": "106.85 BT",
+    "Magnitude": "4.6",
+    "Kedalaman": "17 km",
+    "Wilayah": "Pusat gempa berada di laut 66 km selatan Kota Sukabumi",
+    "Dirasakan": "III Lengkong, III Pabuaran, III Ciemas, III Cidolog, II - III Palabuanratu, II - III Nagrak, II Kota Cimahi, II Ciparay, II Pangalengan, II Kab. Bandung"
+  }
+}
