@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-21T20:30:37.560Z",
+  "data": {
+    "Tanggal": "22 Nov 2026",
+    "Jam": "02:52:18 WIB",
+    "DateTime": "2026-11-21T19:52:18+00:00",
+    "Coordinates": "-1.27,100.28",
+    "Lintang": "1.27 LS",
+    "Bujur": "100.28 BT",
+    "Magnitude": "4.2",
+    "Kedalaman": "55 km",
+    "Wilayah": "Pusat gempa berada di laut 34 km Barat Pesisir Selatan",
+    "Dirasakan": "II - III Kota Padang, II - III Pesisir Selatan, I - II Solok"
+  }
+}
