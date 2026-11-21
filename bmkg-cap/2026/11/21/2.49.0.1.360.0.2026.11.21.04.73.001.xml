@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.21.04.73.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-21T12:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-21T12:30:00+08:00</effective>
+    <expires>2026-11-21T14:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 November 2026, 12:30 WITA di sebagian wilayah Sulawesi Selatan, khususnya di BAJENG, BAJENG BARAT, BONTOMARANNU, BONTONOMPO, PALANGGA, POLOMBANGKENG UTARA, SOMBA UPU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 November 2026, 14:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSL/2026/11/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Selatan</areaDesc>
+      <polygon>-5.295,119.593 -5.295,119.585 -5.302,119.586 -5.332,119.601 -5.348,119.616 -5.356,119.619 -5.367,119.618 -5.389,119.643 -5.399,119.646 -5.408,119.644 -5.414,119.641 -5.420,119.628 -5.425,119.638 -5.431,119.636 -5.435,119.633 -5.440,119.609 -5.441,119.584 -5.446,119.574 -5.444,119.567 -5.401,119.547 -5.398,119.540 -5.398,119.521 -5.382,119.513 -5.383,119.505 -5.403,119.487 -5.407,119.468 -5.413,119.466 -5.405,119.447 -5.409,119.437 -5.407,119.429 -5.402,119.428 -5.394,119.434 -5.375,119.457 -5.369,119.456 -5.365,119.447 -5.357,119.449 -5.355,119.458 -5.330,119.475 -5.326,119.474 -5.331,119.459 -5.327,119.457 -5.315,119.465 -5.314,119.470 -5.313,119.484 -5.323,119.502 -5.317,119.505 -5.314,119.503 -5.298,119.529 -5.306,119.542 -5.295,119.550 -5.290,119.577 -5.289,119.585 -5.295,119.593</polygon>
+      <polygon>-5.320,119.425 -5.327,119.457 -5.331,119.459 -5.326,119.474 -5.330,119.475 -5.355,119.458 -5.357,119.449 -5.365,119.447 -5.369,119.456 -5.375,119.457 -5.394,119.434 -5.402,119.428 -5.407,119.429 -5.404,119.419 -5.373,119.429 -5.361,119.401 -5.353,119.405 -5.344,119.400 -5.330,119.406 -5.320,119.425</polygon>
+      <polygon>-5.292,119.521 -5.298,119.529 -5.314,119.503 -5.317,119.505 -5.323,119.502 -5.313,119.484 -5.314,119.470 -5.315,119.465 -5.327,119.457 -5.320,119.425 -5.288,119.418 -5.277,119.408 -5.264,119.414 -5.255,119.428 -5.239,119.428 -5.232,119.437 -5.234,119.439 -5.248,119.431 -5.248,119.440 -5.273,119.447 -5.282,119.455 -5.297,119.516 -5.292,119.521</polygon>
+      <polygon>-5.211,119.518 -5.224,119.520 -5.224,119.531 -5.250,119.541 -5.256,119.554 -5.254,119.565 -5.257,119.579 -5.269,119.575 -5.279,119.587 -5.290,119.577 -5.295,119.550 -5.306,119.542 -5.298,119.529 -5.292,119.521 -5.255,119.503 -5.246,119.503 -5.243,119.496 -5.228,119.500 -5.225,119.496 -5.217,119.501 -5.209,119.508 -5.211,119.518</polygon>
+      <polygon>-5.192,119.440 -5.220,119.459 -5.223,119.470 -5.239,119.486 -5.243,119.496 -5.246,119.503 -5.255,119.503 -5.292,119.521 -5.297,119.516 -5.282,119.455 -5.273,119.447 -5.248,119.440 -5.248,119.431 -5.234,119.439 -5.232,119.437 -5.216,119.427 -5.192,119.427 -5.192,119.440</polygon>
+      <polygon>-5.193,119.516 -5.201,119.521 -5.211,119.518 -5.209,119.508 -5.217,119.501 -5.225,119.496 -5.228,119.500 -5.243,119.496 -5.239,119.486 -5.223,119.470 -5.220,119.459 -5.192,119.440 -5.188,119.441 -5.195,119.461 -5.177,119.464 -5.190,119.486 -5.193,119.516</polygon>
+      <polygon>-5.277,119.408 -5.288,119.418 -5.320,119.425 -5.330,119.406 -5.323,119.394 -5.304,119.389 -5.301,119.381 -5.291,119.376 -5.280,119.384 -5.283,119.392 -5.277,119.408</polygon>
+    </area>
+  </info>
+</alert>
