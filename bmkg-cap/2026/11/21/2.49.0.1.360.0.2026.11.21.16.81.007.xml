@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.21.16.81.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-22T00:40:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-22T01:10:00+09:00</effective>
+    <expires>2026-11-22T03:10:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Maluku</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 22 November 2026, 01:10 WIT di sebagian wilayah Maluku, khususnya di TEOR, WAKATE.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 22 November 2026, 03:10 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CML/2026/11/22/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Maluku</areaDesc>
+      <polygon>-4.448,131.637 -4.476,131.664 -4.510,131.685 -4.525,131.685 -4.528,131.688 -4.540,131.683 -4.538,131.660 -4.532,131.652 -4.519,131.654 -4.499,131.648 -4.454,131.624 -4.451,131.631 -4.440,131.614 -4.424,131.609 -4.438,131.632 -4.448,131.637</polygon>
+      <polygon>-4.334,131.554 -4.336,131.547 -4.333,131.544 -4.334,131.554</polygon>
+      <polygon>-4.379,131.584 -4.396,131.593 -4.406,131.614 -4.414,131.613 -4.416,131.600 -4.407,131.591 -4.383,131.580 -4.380,131.579 -4.379,131.584</polygon>
+      <polygon>-4.591,131.697 -4.600,131.704 -4.596,131.690 -4.585,131.691 -4.591,131.697</polygon>
+      <polygon>-4.747,131.727 -4.720,131.730 -4.710,131.722 -4.720,131.730 -4.747,131.727</polygon>
+      <polygon>-4.747,131.727 -4.720,131.730 -4.710,131.722 -4.700,131.728 -4.705,131.739 -4.725,131.759 -4.737,131.767 -4.748,131.764 -4.761,131.750 -4.785,131.747 -4.780,131.736 -4.747,131.727</polygon>
+    </area>
+  </info>
+</alert>
