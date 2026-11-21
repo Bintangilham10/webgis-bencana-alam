@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.21.10.81.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-21T16:50:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-21T17:20:00+09:00</effective>
+    <expires>2026-11-21T19:20:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Maluku</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 November 2026, 17:20 WIT di sebagian wilayah Maluku, khususnya di KEI BESAR SELATAN, KEI BESAR SELATAN BARAT, LEKSULA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 November 2026, 19:20 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CML/2026/11/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Maluku</areaDesc>
+      <polygon>-5.755,132.958 -5.824,132.943 -5.843,132.956 -5.856,132.959 -5.877,132.951 -5.883,132.942 -5.884,132.930 -5.893,132.928 -5.901,132.918 -5.928,132.905 -5.903,132.882 -5.903,132.887 -5.893,132.889 -5.889,132.886 -5.891,132.903 -5.867,132.910 -5.861,132.908 -5.858,132.911 -5.852,132.904 -5.853,132.890 -5.840,132.882 -5.820,132.907 -5.810,132.910 -5.805,132.904 -5.802,132.905 -5.783,132.922 -5.776,132.935 -5.769,132.936 -5.760,132.928 -5.751,132.930 -5.746,132.937 -5.755,132.958</polygon>
+      <polygon>-5.990,132.857 -6.008,132.847 -5.978,132.851 -5.990,132.857</polygon>
+      <polygon>-5.903,132.882 -5.928,132.905 -5.952,132.898 -5.960,132.874 -5.984,132.856 -5.990,132.857 -5.978,132.851 -5.935,132.869 -5.903,132.869 -5.900,132.871 -5.903,132.882</polygon>
+      <polygon>-5.889,132.886 -5.880,132.874 -5.871,132.878 -5.855,132.877 -5.860,132.889 -5.854,132.893 -5.853,132.890 -5.852,132.904 -5.858,132.911 -5.861,132.908 -5.867,132.910 -5.891,132.903 -5.889,132.886</polygon>
+      <polygon>-3.427,126.493 -3.427,126.493 -3.414,126.466 -3.467,126.456 -3.503,126.447 -3.524,126.437 -3.569,126.428 -3.586,126.429 -3.619,126.440 -3.637,126.440 -3.701,126.404 -3.711,126.416 -3.730,126.452 -3.697,126.462 -3.668,126.478 -3.653,126.492 -3.638,126.516 -3.647,126.609 -3.666,126.619 -3.681,126.621 -3.733,126.623 -3.811,126.601 -3.809,126.588 -3.791,126.553 -3.796,126.529 -3.795,126.515 -3.792,126.515 -3.789,126.522 -3.782,126.521 -3.779,126.512 -3.783,126.502 -3.766,126.483 -3.765,126.472 -3.758,126.457 -3.751,126.455 -3.733,126.416 -3.719,126.396 -3.716,126.395 -3.714,126.402 -3.709,126.400 -3.719,126.392 -3.718,126.385 -3.704,126.370 -3.704,126.357 -3.697,126.348 -3.680,126.336 -3.665,126.285 -3.637,126.260 -3.619,126.232 -3.622,126.195 -3.611,126.181 -3.584,126.165 -3.579,126.177 -3.590,126.180 -3.583,126.203 -3.570,126.218 -3.564,126.234 -3.541,126.240 -3.536,126.234 -3.484,126.242 -3.464,126.251 -3.428,126.258 -3.350,126.282 -3.361,126.326 -3.385,126.381 -3.412,126.462 -3.427,126.493</polygon>
+    </area>
+  </info>
+</alert>

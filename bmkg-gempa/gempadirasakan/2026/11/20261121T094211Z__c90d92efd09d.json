@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-21T10:15:29.494Z",
+  "data": {
+    "Tanggal": "21 Nov 2026",
+    "Jam": "16:42:11 WIB",
+    "DateTime": "2026-11-21T09:42:11+00:00",
+    "Coordinates": "-7.88,127.51",
+    "Lintang": "7.88 LS",
+    "Bujur": "127.51 BT",
+    "Magnitude": "7.2",
+    "Kedalaman": "125 km",
+    "Wilayah": "Pusat gempa berada di laut 43 km barat laut Maluku Barat Daya",
+    "Dirasakan": "IV Tiakur, III Saumlaki, III Waingapu, II-III Kupang, III Kab. Alor, IV Romang, IV Pulau Babar, II-III Kota Kupang, II-III Kab. Kupang, II-III Kab. Timur Tengah Utara, II-III Kab. Malaka, II-III Kab. Melu, II-III Kab. Lembata"
+  }
+}
