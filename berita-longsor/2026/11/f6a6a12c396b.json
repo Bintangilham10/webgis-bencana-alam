@@ -1,0 +1,26 @@
+{
+  "guid": "CBMif0FVX3lxTE9KREp5Q1FlYTlhU1BFOG4tZzd6WF9lSURuSjhXMFVKQ2Nqa0NXeHFnV1UySHJ2eEtMNks0ZTlBSHdacW9mLTU0S1RBRW8waEdFV2doQTJDNTRZbk5JalJzQkNjbEN4bmlJTTRIRGhNeWVaVHY0WVJSaWI1U0Rtd2M",
+  "title": "Bronjong Ambrol Diterjang Longsor di Nagrak Sukabumi - VISI.NEWS",
+  "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9KREp5Q1FlYTlhU1BFOG4tZzd6WF9lSURuSjhXMFVKQ2Nqa0NXeHFnV1UySHJ2eEtMNks0ZTlBSHdacW9mLTU0S1RBRW8waEdFV2doQTJDNTRZbk5JalJzQkNjbEN4bmlJTTRIRGhNeWVaVHY0WVJSaWI1U0Rtd2M?oc=5",
+  "source": "VISI.NEWS",
+  "source_url": "https://www.visi.news",
+  "published_at": "2026-11-21T00:56:50.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-21T03:00:41.977Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiigFBVV95cUxNMUs4bDQ4ZUF4a0ZFdXdhQy00aUJ0aGFiOGF5TWdVcXotazRVeEFRSEFGZGRvd3hLWHZwMnZVZDRsS2hlRmpfSWlSUkQ2SnpFMTYxeHdaVlBaSEJuVVJNcC1IYkRsYVZSMldoVUY1V3paQ0lYXzJ6R0ZOWEVERkdGVTBJdm1LVk9IS0E",
+  "title": "Ria Norsan Minta Sintang dan Melawi Siaga Hadapi Ancaman Banjir, Puting Beliung, dan Longsor - suarakalbar.co.id",
+  "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMUs4bDQ4ZUF4a0ZFdXdhQy00aUJ0aGFiOGF5TWdVcXotazRVeEFRSEFGZGRvd3hLWHZwMnZVZDRsS2hlRmpfSWlSUkQ2SnpFMTYxeHdaVlBaSEJuVVJNcC1IYkRsYVZSMldoVUY1V3paQ0lYXzJ6R0ZOWEVERkdGVTBJdm1LVk9IS0E?oc=5",
+  "source": "suarakalbar.co.id",
+  "source_url": "https://sintang.suarakalbar.co.id",
+  "published_at": "2026-11-21T02:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-21T03:00:41.977Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "61.05",
+      "nama": "Kabupaten Sintang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "61.10",
+      "nama": "Kabupaten Melawi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

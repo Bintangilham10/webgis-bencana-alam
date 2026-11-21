@@ -1,0 +1,23 @@
+{
+  "guid": "CBMihgFBVV95cUxPRExIamFqTDNYbGNwMjM5cHVtOGwyUTNXaVpWVGF1S2FDdFFWRm9iUkM2SjZNVlFQSUpQTDM2dDNjZkkzbVNUOHdDQmhsZWJfVVdkdFNkc21tYmNmRVFhUVVabmRpZnpNbU1UOVRtSExQQWFLb1ZRZS1vbklPRGY3YTA5SzNOdw",
+  "title": "Kementerian PU Tangani Longsor Jalan Payakumbuh–Riau - SinPo.id",
+  "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPRExIamFqTDNYbGNwMjM5cHVtOGwyUTNXaVpWVGF1S2FDdFFWRm9iUkM2SjZNVlFQSUpQTDM2dDNjZkkzbVNUOHdDQmhsZWJfVVdkdFNkc21tYmNmRVFhUVVabmRpZnpNbU1UOVRtSExQQWFLb1ZRZS1vbklPRGY3YTA5SzNOdw?oc=5",
+  "source": "SinPo.id",
+  "source_url": "https://tv.sinpo.id",
+  "published_at": "2026-11-20T11:50:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-21T03:00:41.977Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.76",
+      "nama": "Kota Payakumbuh",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Riau"
+  ]
+}
