@@ -1,0 +1,26 @@
+{
+  "guid": "CBMioAFBVV95cUxOTXZlc1ZPbWtVdmpXX3E0blRVVmpTdVZKWlVsTUdIekxSNmZJc2pkaWJGSjF1TW5DREgxSVRtUjZfUmZaWlJ5VHg5QXBLekZtbXRkbU5zR1N3RVpnZnBseUdUWVFhX0VhTl9GZUtCQ090QmV1ajRUNUpWYTBiRG1zb0VvRUFPNEhlU1hTT0Z4T3ZRRms1Q2UtVnVIeThCSlJj",
+  "title": "715 Bencana Terjadi di Semarang, Ini Daftar Wilayah Rawan Banjir dan Longsor - Jateng Today",
+  "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTXZlc1ZPbWtVdmpXX3E0blRVVmpTdVZKWlVsTUdIekxSNmZJc2pkaWJGSjF1TW5DREgxSVRtUjZfUmZaWlJ5VHg5QXBLekZtbXRkbU5zR1N3RVpnZnBseUdUWVFhX0VhTl9GZUtCQ090QmV1ajRUNUpWYTBiRG1zb0VvRUFPNEhlU1hTT0Z4T3ZRRms1Q2UtVnVIeThCSlJj?oc=5",
+  "source": "Jateng Today",
+  "source_url": "https://jatengtoday.com",
+  "published_at": "2026-11-21T12:12:31.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-21T18:17:23.202Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.22",
+      "nama": "Kabupaten Semarang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.74",
+      "nama": "Kota Semarang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
