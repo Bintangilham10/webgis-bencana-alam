@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.21.03.12.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-21T08:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-21T08:30:00+07:00</effective>
+    <expires>2026-11-21T11:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 November 2026, 08:30 WIB di sebagian wilayah Sumatera Utara, khususnya di LAHUSA, TOMA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 November 2026, 11:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSU/2026/11/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Utara</areaDesc>
+      <polygon>0.789,97.878 0.781,97.879 0.774,97.895 0.748,97.889 0.720,97.894 0.725,97.851 0.728,97.844 0.739,97.839 0.739,97.830 0.738,97.813 0.734,97.807 0.724,97.804 0.723,97.792 0.729,97.791 0.732,97.782 0.740,97.775 0.748,97.771 0.758,97.770 0.770,97.778 0.770,97.790 0.778,97.790 0.772,97.798 0.792,97.823 0.787,97.825 0.792,97.839 0.789,97.857 0.798,97.865 0.789,97.878</polygon>
+      <polygon>0.926,97.923 0.897,97.904 0.885,97.902 0.885,97.893 0.890,97.885 0.885,97.857 0.885,97.857 0.899,97.851 0.916,97.844 0.923,97.846 0.931,97.849 0.932,97.849 0.935,97.850 0.917,97.867 0.911,97.878 0.912,97.886 0.926,97.911 0.926,97.923</polygon>
+      <polygon>0.720,97.894 0.714,97.898 0.699,97.895 0.692,97.898 0.652,97.893 0.631,97.899 0.623,97.898 0.606,97.884 0.620,97.866 0.622,97.857 0.624,97.861 0.634,97.856 0.641,97.857 0.670,97.866 0.689,97.865 0.725,97.851 0.720,97.894</polygon>
+    </area>
+  </info>
+</alert>
