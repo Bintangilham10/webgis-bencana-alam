@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiX0FVX3lxTE9yOGxNTm1rRlRITXVpTTVXSUd5UDhmRHpzU3h5VmkxUFJ1Y1dlY0pySVNuRjFQN0ZSbHJJZ1otOGZiTVNqVUxvVkZkNzlwYjlXTGJjcHBYczdlTHdDblBN",
+  "title": "Polda Bengkulu Waspadai Longsor di Dua Kabupaten - bsinews.id",
+  "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9yOGxNTm1rRlRITXVpTTVXSUd5UDhmRHpzU3h5VmkxUFJ1Y1dlY0pySVNuRjFQN0ZSbHJJZ1otOGZiTVNqVUxvVkZkNzlwYjlXTGJjcHBYczdlTHdDblBN?oc=5",
+  "source": "bsinews.id",
+  "source_url": "https://bsinews.id",
+  "published_at": "2026-11-21T07:09:54.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-21T09:15:32.082Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "17.71",
+      "nama": "Kota Bengkulu",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bengkulu"
+  ]
+}
