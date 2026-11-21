@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi4AFBVV95cUxQUFJ2MkNycnc0bzd0eUc5Z1NMdzdQMU1ral9VUHY2MkNiMzhDdU1PbGJNcE9JaXBlcjVMZ2ZlRGYwbVZLeVBLLUNZcHY5eVgweXVQTVRjbHduaGFpbnNZZVdSalNNbjNZRi1aNExQZTNsdW9qN2tXQlpmcW5vT3VuSXJpUDFIZXZVZ0FwOUItbVJmMXI3V2VmbmZnTDNjS3NzUDFjdjRpallqTUtmUEZpVWR6M0x3V3VtWkNpU0gyMHZ0SFg3cGNRX1hKeHppT1ZvTmJxS2ZRZW9IdUZUcndYeA",
+  "title": "Dilanda Banjir dan Longsor, Rokan Hilir dan Dumai Tetapkan Status Siaga Bencana - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQUFJ2MkNycnc0bzd0eUc5Z1NMdzdQMU1ral9VUHY2MkNiMzhDdU1PbGJNcE9JaXBlcjVMZ2ZlRGYwbVZLeVBLLUNZcHY5eVgweXVQTVRjbHduaGFpbnNZZVdSalNNbjNZRi1aNExQZTNsdW9qN2tXQlpmcW5vT3VuSXJpUDFIZXZVZ0FwOUItbVJmMXI3V2VmbmZnTDNjS3NzUDFjdjRpallqTUtmUEZpVWR6M0x3V3VtWkNpU0gyMHZ0SFg3cGNRX1hKeHppT1ZvTmJxS2ZRZW9IdUZUcndYeA?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://regional.kompas.com",
+  "published_at": "2026-11-21T09:15:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-21T12:15:34.657Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "14.07",
+      "nama": "Kabupaten Rokan Hilir",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "14.72",
+      "nama": "Kota Dumai",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

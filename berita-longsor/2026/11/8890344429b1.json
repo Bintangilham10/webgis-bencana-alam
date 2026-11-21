@@ -1,0 +1,23 @@
+{
+  "guid": "CBMixAFBVV95cUxPTW9YekRVUThiY3ZocTBzd2dTenFwODVYaG5TcE5tS3RtTm5nUmQ4OU5IRkZLWExZTWVBVlo0VmFITW1rbHZES0psLWpxVjQ2cWNOOEwyMGR4dWxxSm5ERElBeVBRVVMyM3IyRDV4UkZJQTNTdjlwSlZDcV9HQmo1elVoM2JvdHI4MUVEVUZTUFo0Yzg1YU4yNHlyXzBzb1NBMWlFZUpOMnJ5LTV4N3RrYV9SY3ExN1ZrNUVlYzBBR3RUc2hr",
+  "title": "Banjir dan Longsor Terjang Riau, Rohil dan Dumai Tetapkan Status Siaga Bencana Hidrometeorologi - HARIAN MISTAR",
+  "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTW9YekRVUThiY3ZocTBzd2dTenFwODVYaG5TcE5tS3RtTm5nUmQ4OU5IRkZLWExZTWVBVlo0VmFITW1rbHZES0psLWpxVjQ2cWNOOEwyMGR4dWxxSm5ERElBeVBRVVMyM3IyRDV4UkZJQTNTdjlwSlZDcV9HQmo1elVoM2JvdHI4MUVEVUZTUFo0Yzg1YU4yNHlyXzBzb1NBMWlFZUpOMnJ5LTV4N3RrYV9SY3ExN1ZrNUVlYzBBR3RUc2hr?oc=5",
+  "source": "HARIAN MISTAR",
+  "source_url": "https://mistar.id",
+  "published_at": "2026-11-21T10:08:35.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-21T12:15:34.657Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "14.72",
+      "nama": "Kota Dumai",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Riau"
+  ]
+}

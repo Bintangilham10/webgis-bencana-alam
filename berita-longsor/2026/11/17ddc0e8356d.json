@@ -1,0 +1,23 @@
+{
+  "guid": "CBMipAFBVV95cUxNSDRqbXBJbmEzWG1uOTlDdnVhc0pfTVphb21zTDNFV3hHa0h4ZGs3LVBWMnVsVkRDeG5JemxycWsxbExCUzd2bE5kczlUcUc1bXZvVHVCOG4zRVpLbVhkZDh3bmxyaDdXc05uZkhnb25MS1ZOU0xoRnhMVzJfd2xkNDkwSV9OOFpXdVV6Z29hXzktdVFsY1JWZTMweWYzWV94ZS1RONIBpAFBVV95cUxNSDRqbXBJbmEzWG1uOTlDdnVhc0pfTVphb21zTDNFV3hHa0h4ZGs3LVBWMnVsVkRDeG5JemxycWsxbExCUzd2bE5kczlUcUc1bXZvVHVCOG4zRVpLbVhkZDh3bmxyaDdXc05uZkhnb25MS1ZOU0xoRnhMVzJfd2xkNDkwSV9OOFpXdVV6Z29hXzktdVFsY1JWZTMweWYzWV94ZS1ROA",
+  "title": "Rohil dan Dumai Tetapkan Status Siaga Banjir - Longsor - Haluan Riau - Haluan Riau",
+  "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSDRqbXBJbmEzWG1uOTlDdnVhc0pfTVphb21zTDNFV3hHa0h4ZGs3LVBWMnVsVkRDeG5JemxycWsxbExCUzd2bE5kczlUcUc1bXZvVHVCOG4zRVpLbVhkZDh3bmxyaDdXc05uZkhnb25MS1ZOU0xoRnhMVzJfd2xkNDkwSV9OOFpXdVV6Z29hXzktdVFsY1JWZTMweWYzWV94ZS1RONIBpAFBVV95cUxNSDRqbXBJbmEzWG1uOTlDdnVhc0pfTVphb21zTDNFV3hHa0h4ZGs3LVBWMnVsVkRDeG5JemxycWsxbExCUzd2bE5kczlUcUc1bXZvVHVCOG4zRVpLbVhkZDh3bmxyaDdXc05uZkhnb25MS1ZOU0xoRnhMVzJfd2xkNDkwSV9OOFpXdVV6Z29hXzktdVFsY1JWZTMweWYzWV94ZS1ROA?oc=5",
+  "source": "Haluan Riau",
+  "source_url": "https://riau.harianhaluan.com",
+  "published_at": "2026-11-21T07:22:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-21T12:15:34.657Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "14.72",
+      "nama": "Kota Dumai",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Riau"
+  ]
+}

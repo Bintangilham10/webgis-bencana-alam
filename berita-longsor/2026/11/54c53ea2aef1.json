@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiwAFBVV95cUxNWWZpTnFMM0x5b0trNk5hSXF2TWhyUXNrRHdTLWRFdk1Wa1NIMFBVczM4YUZxWkZXcGZ5YmhFT3VGaVU2WlByNTFIcG1YUXdIYjFKOWt2Q25EbTlvd2ZHOVFlU1FfRkNDUC0zMDdaVWJfWFpYLUswX0NjNlhxVXc5WFhRRkNwZVprbVBEV2tIWlRRc0N5ZnlLaC1qMS03YWJLRTR2U2RIMFYwQTNNQ1hWbjB1aGFNSlVEWkczU01JNTg",
+  "title": "Ibu Dua Anak Dikabarkan Tewas Tertimbun Longsor di Lokasi PETI Merangin Jambi - Tribunjambi.com",
+  "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWWZpTnFMM0x5b0trNk5hSXF2TWhyUXNrRHdTLWRFdk1Wa1NIMFBVczM4YUZxWkZXcGZ5YmhFT3VGaVU2WlByNTFIcG1YUXdIYjFKOWt2Q25EbTlvd2ZHOVFlU1FfRkNDUC0zMDdaVWJfWFpYLUswX0NjNlhxVXc5WFhRRkNwZVprbVBEV2tIWlRRc0N5ZnlLaC1qMS03YWJLRTR2U2RIMFYwQTNNQ1hWbjB1aGFNSlVEWkczU01JNTg?oc=5",
+  "source": "Tribunjambi.com",
+  "source_url": "https://jambi.tribunnews.com",
+  "published_at": "2026-11-21T11:35:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-21T12:15:34.657Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.02",
+      "nama": "Kabupaten Merangin",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}
