@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.21.11.53.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-21T18:55:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-21T19:25:00+08:00</effective>
+    <expires>2026-11-21T21:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 November 2026, 19:25 WITA di sebagian wilayah Nusa Tenggara Timur, khususnya di SABU BARAT, SABU TENGAH, SABU TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 November 2026, 21:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNT/2026/11/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Timur</areaDesc>
+      <polygon>-10.419,121.912 -10.441,121.910 -10.471,121.920 -10.495,121.915 -10.525,121.923 -10.542,121.919 -10.557,121.911 -10.558,121.890 -10.570,121.883 -10.574,121.877 -10.577,121.837 -10.597,121.806 -10.581,121.795 -10.564,121.778 -10.536,121.761 -10.517,121.789 -10.495,121.835 -10.490,121.840 -10.450,121.844 -10.440,121.854 -10.422,121.892 -10.419,121.912</polygon>
+      <polygon>-10.442,121.972 -10.478,121.965 -10.498,121.956 -10.509,121.960 -10.517,121.958 -10.544,121.948 -10.558,121.934 -10.542,121.919 -10.525,121.923 -10.495,121.915 -10.471,121.920 -10.441,121.910 -10.419,121.912 -10.426,121.939 -10.440,121.961 -10.442,121.972</polygon>
+      <polygon>-10.563,121.938 -10.558,121.934 -10.544,121.948 -10.517,121.958 -10.509,121.960 -10.498,121.956 -10.478,121.965 -10.442,121.972 -10.442,121.997 -10.453,122.006 -10.467,122.007 -10.489,121.993 -10.527,121.996 -10.551,121.985 -10.550,121.960 -10.563,121.938</polygon>
+    </area>
+  </info>
+</alert>

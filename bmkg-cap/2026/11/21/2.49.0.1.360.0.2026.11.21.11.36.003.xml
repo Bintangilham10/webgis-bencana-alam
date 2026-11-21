@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.21.11.36.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-21T16:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-21T16:40:00+07:00</effective>
+    <expires>2026-11-21T18:40:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Banten</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 November 2026, 16:40 WIB di sebagian wilayah Banten, khususnya di BINUANG, CARENANG, CIKANDE.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 November 2026, 18:40 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBT/2026/11/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Banten</areaDesc>
+      <polygon>-6.149,106.390 -6.170,106.392 -6.186,106.386 -6.192,106.374 -6.196,106.373 -6.196,106.378 -6.200,106.379 -6.214,106.368 -6.222,106.373 -6.227,106.358 -6.236,106.355 -6.240,106.355 -6.234,106.341 -6.227,106.343 -6.219,106.332 -6.222,106.315 -6.214,106.311 -6.195,106.313 -6.192,106.322 -6.197,106.332 -6.192,106.342 -6.173,106.336 -6.160,106.343 -6.157,106.342 -6.150,106.361 -6.158,106.383 -6.149,106.390</polygon>
+      <polygon>-6.063,106.339 -6.075,106.340 -6.092,106.354 -6.107,106.350 -6.106,106.337 -6.103,106.338 -6.099,106.330 -6.113,106.323 -6.119,106.316 -6.114,106.301 -6.108,106.292 -6.095,106.295 -6.074,106.301 -6.067,106.313 -6.056,106.311 -6.054,106.317 -6.059,106.325 -6.059,106.330 -6.055,106.332 -6.056,106.338 -6.063,106.339</polygon>
+      <polygon>-6.107,106.350 -6.116,106.362 -6.125,106.366 -6.129,106.375 -6.149,106.390 -6.158,106.383 -6.150,106.361 -6.157,106.342 -6.160,106.343 -6.160,106.333 -6.133,106.329 -6.132,106.317 -6.119,106.316 -6.113,106.323 -6.099,106.330 -6.103,106.338 -6.106,106.337 -6.107,106.350</polygon>
+    </area>
+  </info>
+</alert>

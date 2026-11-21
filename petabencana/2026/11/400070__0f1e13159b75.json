@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-21T11:15:33.288Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        126.2384017349,
+        -7.7870911982
+      ]
+    },
+    "properties": {
+      "pkey": "400070",
+      "created_at": "2026-11-21T11:14:09.175Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "3017e111-d468-4d81-98ed-525a64822aae",
+      "image_url": "https://images.petabencana.id/3017e111-d468-4d81-98ed-525a64822aae.jpg",
+      "disaster_type": "earthquake",
+      "is_training": false,
+      "report_data": {
+        "report_type": "structure",
+        "structureFailure": 1
+      },
+      "tags": {
+        "city": "MALUKU BARAT DAYA",
+        "district_id": null,
+        "region_code": "8108",
+        "local_area_id": null,
+        "instance_region_code": "ID-MA"
+      },
+      "title": null,
+      "text": "Gempa bumi tektonik berkekuatan magnitudo 7,2 mengguncang wilayah Kabupaten Maluku Barat Daya, Maluku, pada Sabtu sore (21/11/2026) ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
