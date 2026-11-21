@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.21.08.51.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-21T14:54:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-21T15:00:00+08:00</effective>
+    <expires>2026-11-21T16:45:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bali</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 21 November 2026, 15:00 WITA di sebagian wilayah Bali, khususnya di SUKASADA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 21 November 2026, 16:45 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBL/2026/11/21/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bali</areaDesc>
+      <polygon>-8.162,115.156 -8.188,115.177 -8.223,115.165 -8.242,115.177 -8.255,115.164 -8.270,115.136 -8.292,115.126 -8.296,115.128 -8.308,115.124 -8.299,115.109 -8.284,115.111 -8.225,115.098 -8.221,115.085 -8.232,115.074 -8.230,115.069 -8.215,115.060 -8.200,115.039 -8.170,115.029 -8.161,115.056 -8.138,115.067 -8.130,115.087 -8.135,115.099 -8.133,115.105 -8.148,115.113 -8.150,115.126 -8.144,115.128 -8.154,115.145 -8.163,115.148 -8.162,115.156</polygon>
+    </area>
+  </info>
+</alert>
