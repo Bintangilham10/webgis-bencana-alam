@@ -1,0 +1,23 @@
+{
+  "guid": "CBMipgFBVV95cUxNYVVYX245OWVYTWFaNVdJQ2w5dzZXRFRDQTRTcE00Sm9mZ0VRMDZNT1g4Zm5jaVhTeWZ1ZmV0ckMwQUhsLS1oZ2ZxVTNsZ2VDYXJKTmJ4RWVlREtPYUdmTkVJbGpXX0c3dXYzNnF2NzQ2ajZjUkhGTlRHdlRKcVhoNHpDVkVkdnRTbEY3bU9CMHR0SmhEWGVudm9lUmltTzRablVpcW1R",
+  "title": "Musim Hujan, Basarnas Jambi Waspadai Banjir Bandang dan Longsor - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNYVVYX245OWVYTWFaNVdJQ2w5dzZXRFRDQTRTcE00Sm9mZ0VRMDZNT1g4Zm5jaVhTeWZ1ZmV0ckMwQUhsLS1oZ2ZxVTNsZ2VDYXJKTmJ4RWVlREtPYUdmTkVJbGpXX0c3dXYzNnF2NzQ2ajZjUkhGTlRHdlRKcVhoNHpDVkVkdnRTbEY3bU9CMHR0SmhEWGVudm9lUmltTzRablVpcW1R?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-21T03:03:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-21T06:15:31.053Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}

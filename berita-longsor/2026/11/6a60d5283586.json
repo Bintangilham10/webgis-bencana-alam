@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiygFBVV95cUxQSzk0V3MtWmRFY29zWkt6eE1hb2lDTTlkdnJXeTdzaDVVY1BVSWprWGJPdWc1T0E4dXQwOGhoZFdNQmlmMUc1OTUxTEV6U1hzU0xLQWFiVFgwWDhUdmJBN3prZG9UQ0ozSkhhQUdTd2N2U3lCQkIwQ2VTZEJIQ2JFdWttbk0wMWk4a3BCTGxxNDIycjVvV2tVN0NMbGljVzE3LWxGWkg5cFdlYWZ6eDktbnJmZ1hCb0gzZ0VfVzZtMWVXTGx0RFFtNDZR",
+  "title": "BPBD dan Perhutani Petakan Wilayah Rawan Banjir-Longsor di Brebes Jelang Musim Hujan - Suara Pantura",
+  "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSzk0V3MtWmRFY29zWkt6eE1hb2lDTTlkdnJXeTdzaDVVY1BVSWprWGJPdWc1T0E4dXQwOGhoZFdNQmlmMUc1OTUxTEV6U1hzU0xLQWFiVFgwWDhUdmJBN3prZG9UQ0ozSkhhQUdTd2N2U3lCQkIwQ2VTZEJIQ2JFdWttbk0wMWk4a3BCTGxxNDIycjVvV2tVN0NMbGljVzE3LWxGWkg5cFdlYWZ6eDktbnJmZ1hCb0gzZ0VfVzZtMWVXTGx0RFFtNDZR?oc=5",
+  "source": "Suara Pantura",
+  "source_url": "https://suarapantura.com",
+  "published_at": "2026-11-20T21:26:30.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-21T06:15:31.053Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.29",
+      "nama": "Kabupaten Brebes",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

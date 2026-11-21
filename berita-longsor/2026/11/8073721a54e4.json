@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiqAFBVV95cUxOWURQZVhNcTlDYVJZMjc1ZU40QUljaF9sVUlfUXBKbjZRUno1Ti0zejJxMkdXd0xjcGRNakZhQjE4NU9MYy0wa3BhOVM3eVlLaXBuVnBiMXlnRHNkcjlPc2MyVUwxNFJ4UVBqRVIza0xhenl4QXBTdDFSc18tTm1zWE1qQVU1Qm1QQnluc0w4dmZzMXBKVjVTMnJGVU51ZEVycnkwMUpTVkE",
+  "title": "Hujan Deras Picu Banjir dan Longsor di Empat Wilayah Bengkulu - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWURQZVhNcTlDYVJZMjc1ZU40QUljaF9sVUlfUXBKbjZRUno1Ti0zejJxMkdXd0xjcGRNakZhQjE4NU9MYy0wa3BhOVM3eVlLaXBuVnBiMXlnRHNkcjlPc2MyVUwxNFJ4UVBqRVIza0xhenl4QXBTdDFSc18tTm1zWE1qQVU1Qm1QQnluc0w4dmZzMXBKVjVTMnJGVU51ZEVycnkwMUpTVkE?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-21T04:14:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-21T06:15:31.053Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "17.71",
+      "nama": "Kota Bengkulu",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bengkulu"
+  ]
+}
