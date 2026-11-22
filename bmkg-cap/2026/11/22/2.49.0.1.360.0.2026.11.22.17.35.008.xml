@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.22.17.35.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-22T23:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-23T00:00:00+07:00</effective>
+    <expires>2026-11-23T03:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 November 2026, 00:00 WIB di sebagian wilayah Jawa Timur, khususnya di GLENMORE, PUNUNG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 November 2026, 03:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/22/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-8.065,111.125 -8.081,111.119 -8.094,111.104 -8.104,111.103 -8.110,111.096 -8.108,111.092 -8.114,111.086 -8.115,111.075 -8.112,111.069 -8.092,111.061 -8.094,111.057 -8.097,111.051 -8.107,111.048 -8.121,111.055 -8.136,111.047 -8.149,111.047 -8.155,111.041 -8.161,111.035 -8.174,111.001 -8.178,110.981 -8.188,110.963 -8.186,110.960 -8.191,110.959 -8.177,110.951 -8.166,110.951 -8.166,110.958 -8.143,110.979 -8.130,110.976 -8.116,110.983 -8.094,111.017 -8.077,111.017 -8.081,111.036 -8.063,111.070 -8.035,111.067 -8.025,111.076 -8.032,111.093 -8.056,111.090 -8.064,111.092 -8.057,111.113 -8.065,111.125</polygon>
+      <polygon>-8.208,114.109 -8.218,114.084 -8.232,114.086 -8.239,114.093 -8.270,114.106 -8.271,114.103 -8.331,114.109 -8.357,114.105 -8.390,114.106 -8.422,114.099 -8.412,114.090 -8.416,114.062 -8.413,114.052 -8.426,114.030 -8.420,114.025 -8.430,113.999 -8.413,113.988 -8.408,113.979 -8.402,113.947 -8.382,113.961 -8.374,113.962 -8.305,113.999 -8.303,114.006 -8.305,114.025 -8.286,114.018 -8.274,114.021 -8.262,114.033 -8.218,114.031 -8.139,114.039 -8.134,114.043 -8.133,114.043 -8.133,114.044 -8.159,114.065 -8.184,114.099 -8.208,114.109</polygon>
+    </area>
+  </info>
+</alert>
