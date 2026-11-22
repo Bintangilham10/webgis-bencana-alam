@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-11-22T00:00:41.879Z",
+  "data": {
+    "Tanggal": "22 Nov 2026",
+    "Jam": "06:16:01 WIB",
+    "DateTime": "2026-11-21T23:16:01+00:00",
+    "Coordinates": "-2.29,140.30",
+    "Lintang": "2.29 LS",
+    "Bujur": "140.30 BT",
+    "Magnitude": "4.8",
+    "Kedalaman": "6 km",
+    "Wilayah": "Pusat gempa berada di laut 35 km barat laut Sentani",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "II - III Kota Jayapura, II - III Kab. Jayapura",
+    "Shakemap": "20261122061601.mmi.jpg"
+  }
+}
