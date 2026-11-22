@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.22.05.51.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-22T13:20:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-22T13:30:00+08:00</effective>
+    <expires>2026-11-22T15:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bali</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 22 November 2026, 13:30 WITA di sebagian wilayah Bali, khususnya di KUBUTAMBAHAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 22 November 2026, 15:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBL/2026/11/22/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bali</areaDesc>
+      <polygon>-8.086,115.253 -8.093,115.256 -8.113,115.254 -8.129,115.261 -8.140,115.260 -8.150,115.265 -8.165,115.266 -8.179,115.255 -8.175,115.244 -8.201,115.245 -8.242,115.233 -8.248,115.208 -8.245,115.184 -8.207,115.218 -8.179,115.224 -8.140,115.186 -8.125,115.181 -8.106,115.164 -8.091,115.165 -8.085,115.171 -8.077,115.166 -8.063,115.173 -8.062,115.186 -8.074,115.208 -8.086,115.253</polygon>
+    </area>
+  </info>
+</alert>

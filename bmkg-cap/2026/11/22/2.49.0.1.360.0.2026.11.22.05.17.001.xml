@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.22.05.17.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-22T12:25:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-22T12:35:00+07:00</effective>
+    <expires>2026-11-22T13:55:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bengkulu</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 22 November 2026, 12:35 WIB di sebagian wilayah Bengkulu, khususnya di AIR PERIUKAN, LUBUK SANDI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 22 November 2026, 13:55 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBK/2026/11/22/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bengkulu</areaDesc>
+      <polygon>-3.907,102.507 -3.951,102.494 -3.955,102.491 -3.959,102.480 -3.986,102.475 -4.003,102.464 -4.015,102.477 -4.025,102.478 -4.031,102.469 -4.023,102.459 -4.024,102.452 -4.037,102.446 -4.060,102.455 -4.072,102.447 -4.075,102.438 -4.085,102.435 -3.994,102.313 -3.989,102.322 -3.982,102.326 -3.984,102.360 -3.968,102.399 -3.960,102.405 -3.963,102.414 -3.975,102.422 -3.952,102.451 -3.920,102.473 -3.907,102.507</polygon>
+      <polygon>-3.809,102.601 -3.817,102.600 -3.830,102.607 -3.853,102.602 -3.883,102.603 -3.913,102.572 -3.940,102.568 -3.964,102.571 -3.990,102.551 -3.996,102.544 -3.994,102.523 -3.997,102.515 -4.011,102.504 -4.025,102.478 -4.015,102.477 -4.003,102.464 -3.986,102.475 -3.959,102.480 -3.955,102.491 -3.951,102.494 -3.907,102.507 -3.879,102.516 -3.838,102.512 -3.830,102.533 -3.835,102.552 -3.821,102.556 -3.807,102.563 -3.803,102.574 -3.809,102.601</polygon>
+    </area>
+  </info>
+</alert>
