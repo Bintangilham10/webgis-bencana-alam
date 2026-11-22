@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi8gFBVV95cUxNSm1WNUVscHRhNGFQUmJaVFFoZGswcWg4dDk2WnV2N0pCRlYydU9PbFVNUFpZQnR2UmpwNHZLTjlxbVhJZmJhemtXWWI0MEgtVy1PWG13U1p2dVJRZW4yQWxGUzJnOFRfVmFzRDFGWUU4QlRzWHdtMkFxZmw4ZktvNnhjcnMtTHpYdl9hU1NfNW9NczlNVk82WjRhVTIzQ3Q0UnRJdlNyR2hKZmkycUcxSXM4RExZWG0xOVpPYlZkMnF5TWZHbDJNLVZJb3JTZVVCYVQxQlFDdGRnQ0cxSExWS1JxTlJkVW00Yi0xTU1aZmotQQ",
+  "title": "Ancaman Banjir dan Longsor Mengintai, Majalengka Tetapkan Status Siaga Darurat Tujuh Bulan - Kabar Cirebon",
+  "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNSm1WNUVscHRhNGFQUmJaVFFoZGswcWg4dDk2WnV2N0pCRlYydU9PbFVNUFpZQnR2UmpwNHZLTjlxbVhJZmJhemtXWWI0MEgtVy1PWG13U1p2dVJRZW4yQWxGUzJnOFRfVmFzRDFGWUU4QlRzWHdtMkFxZmw4ZktvNnhjcnMtTHpYdl9hU1NfNW9NczlNVk82WjRhVTIzQ3Q0UnRJdlNyR2hKZmkycUcxSXM4RExZWG0xOVpPYlZkMnF5TWZHbDJNLVZJb3JTZVVCYVQxQlFDdGRnQ0cxSExWS1JxTlJkVW00Yi0xTU1aZmotQQ?oc=5",
+  "source": "Kabar Cirebon",
+  "source_url": "https://kabarcirebon.pikiran-rakyat.com",
+  "published_at": "2026-11-22T22:30:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-22T23:00:42.861Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.10",
+      "nama": "Kabupaten Majalengka",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

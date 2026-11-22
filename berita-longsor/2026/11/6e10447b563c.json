@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi1gFBVV95cUxQV1p2QkZrTUFrajdUbzlKV05yQ2VubVo5NzBTbTFUVHpsVzF3RWpwai1xTS1aZUlNLVRoU1JTYW5Nc1hnelpPTElYcGUxVUw4ZElGWFlFZzNPYTRGYm5oZmQyblVTWXZrVGhhaUs2a0FtWjR2WjNieDlvanloZFIzYS1obTlhdkJXYVI3aDViMlFkdmRQT3FYdG02SmtsNEk0cnRQdmFxajFFUkxmeFk1aDd2dU9EenpZc3Z4SDZQVFB3QUlIS1V3dzg2UnBPSURDd2dNaml3",
+  "title": "Siaga Darurat Bencana Majalengka, Peta Wilayah Rawan Banjir dan Longsor hingga Mei 2027 - Pikiran Rakyat Koran",
+  "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQV1p2QkZrTUFrajdUbzlKV05yQ2VubVo5NzBTbTFUVHpsVzF3RWpwai1xTS1aZUlNLVRoU1JTYW5Nc1hnelpPTElYcGUxVUw4ZElGWFlFZzNPYTRGYm5oZmQyblVTWXZrVGhhaUs2a0FtWjR2WjNieDlvanloZFIzYS1obTlhdkJXYVI3aDViMlFkdmRQT3FYdG02SmtsNEk0cnRQdmFxajFFUkxmeFk1aDd2dU9EenpZc3Z4SDZQVFB3QUlIS1V3dzg2UnBPSURDd2dNaml3?oc=5",
+  "source": "Pikiran Rakyat Koran",
+  "source_url": "https://koran.pikiran-rakyat.com",
+  "published_at": "2026-11-22T22:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-22T23:00:42.861Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.10",
+      "nama": "Kabupaten Majalengka",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
