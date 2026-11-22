@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirgFBVV95cUxNMGtiVWtOc05JVVhhRWsyeXNTRXZnR1NVaHRBNE85U3VyYjhBa0lDNXo5ZTRidnZQclllTnVuWlBDdUU3Qk1jM0FFUllxeEdvVG5Nam1FNTVSU1k3cWphSmszdlBJZzBZQWIyQ1BQeHA5dndqZldub2FiVzZYRTRWQ1hsYU1xMjhqOHFaSHBPMDU2aHZRTGZFM2xCYkM0Uzc4NGZ3TDc3ajZSekxQWVE",
+  "title": "BPBD Malang Ingatkan Wisatawan Waspadai Longsor di Jalur Bromo - Suara Surabaya",
+  "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMGtiVWtOc05JVVhhRWsyeXNTRXZnR1NVaHRBNE85U3VyYjhBa0lDNXo5ZTRidnZQclllTnVuWlBDdUU3Qk1jM0FFUllxeEdvVG5Nam1FNTVSU1k3cWphSmszdlBJZzBZQWIyQ1BQeHA5dndqZldub2FiVzZYRTRWQ1hsYU1xMjhqOHFaSHBPMDU2aHZRTGZFM2xCYkM0Uzc4NGZ3TDc3ajZSekxQWVE?oc=5",
+  "source": "Suara Surabaya",
+  "source_url": "https://www.suarasurabaya.net",
+  "published_at": "2026-11-22T11:20:26.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-22T13:45:29.220Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

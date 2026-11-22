@@ -1,0 +1,21 @@
+{
+  "guid": "CBMixgFBVV95cUxQZnZHekZjTzlKa1RDNlE5OXo1aGEtUk9UR0ZaY3M1TlczUEM0OHFwd2FIZEVMaUFSeV9xMDNqVXhJQjZuVnB5QWRid08wTHhpSHptREJJMmU1S1lqdElVY0MyRTJraFlMa3RsekNBQVpyWHg2SDNkZ3A3VXQ4RTZwSGtmakFpUHNDSUh4OXpTcjFZX0tFXzdvc1dGUGJXZlVlX1lERFdkY2JGV0dUX1M1SnNnS1hDMklpOEtYZHczS0xwTTlPa2c",
+  "title": "Tanah Longsor Terjadi, Warga Majalengka Diminta Waspada Jelang Puncak Musim Hujan - Media Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZnZHekZjTzlKa1RDNlE5OXo1aGEtUk9UR0ZaY3M1TlczUEM0OHFwd2FIZEVMaUFSeV9xMDNqVXhJQjZuVnB5QWRid08wTHhpSHptREJJMmU1S1lqdElVY0MyRTJraFlMa3RsekNBQVpyWHg2SDNkZ3A3VXQ4RTZwSGtmakFpUHNDSUh4OXpTcjFZX0tFXzdvc1dGUGJXZlVlX1lERFdkY2JGV0dUX1M1SnNnS1hDMklpOEtYZHczS0xwTTlPa2c?oc=5",
+  "source": "Media Indonesia",
+  "source_url": "https://mediaindonesia.com",
+  "published_at": "2026-11-22T10:43:12.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-22T13:45:29.220Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.10",
+      "nama": "Kabupaten Majalengka",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
