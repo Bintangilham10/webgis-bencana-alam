@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.22.10.21.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-22T15:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-22T16:00:00+07:00</effective>
+    <expires>2026-11-22T17:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Riau</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 22 November 2026, 16:00 WIB di sebagian wilayah Kep. Riau, khususnya di MIDAI, PULAU LAUT, SUAK MIDAI, TANJUNG PINANG KOTA, TELUK BINTAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 22 November 2026, 17:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKR/2026/11/22/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Riau</areaDesc>
+      <polygon>1.102,104.507 1.079,104.505 1.066,104.516 1.052,104.534 1.029,104.513 0.979,104.502 0.989,104.499 0.991,104.493 0.988,104.476 0.979,104.474 0.986,104.468 0.987,104.452 0.995,104.443 1.014,104.444 1.017,104.446 1.015,104.452 1.023,104.465 1.014,104.481 1.019,104.488 1.029,104.487 1.027,104.476 1.054,104.453 1.053,104.428 1.043,104.424 1.040,104.417 1.054,104.412 1.054,104.404 1.034,104.404 1.022,104.386 1.012,104.381 1.010,104.374 1.020,104.360 1.036,104.370 1.049,104.376 1.058,104.394 1.066,104.393 1.089,104.404 1.077,104.420 1.108,104.472 1.105,104.482 1.111,104.490 1.112,104.502 1.102,104.507</polygon>
+      <polygon>1.016,104.393 1.002,104.392 0.998,104.398 0.992,104.384 0.990,104.366 0.993,104.365 1.004,104.379 1.014,104.383 1.016,104.393</polygon>
+      <polygon>1.008,104.442 1.009,104.437 1.015,104.438 1.008,104.442</polygon>
+      <polygon>0.997,104.433 0.996,104.429 0.999,104.426 0.997,104.433</polygon>
+      <polygon>0.859,104.390 0.856,104.387 0.859,104.386 0.859,104.390</polygon>
+      <polygon>0.848,104.363 0.821,104.365 0.814,104.358 0.816,104.352 0.835,104.361 0.846,104.356 0.848,104.363</polygon>
+      <polygon>3.019,107.777 3.002,107.773 2.992,107.787 2.979,107.792 2.974,107.761 2.978,107.753 3.008,107.752 3.019,107.777</polygon>
+      <polygon>4.775,108.007 4.756,108.006 4.737,107.996 4.699,107.985 4.679,107.974 4.672,107.966 4.672,107.958 4.680,107.929 4.694,107.928 4.698,107.943 4.707,107.957 4.719,107.967 4.743,107.977 4.752,107.987 4.769,107.992 4.774,107.999 4.775,108.007</polygon>
+      <polygon>4.794,108.022 4.780,108.010 4.781,108.008 4.793,108.011 4.798,108.018 4.794,108.022</polygon>
+      <polygon>4.520,107.732 4.511,107.731 4.513,107.724 4.520,107.723 4.520,107.732</polygon>
+      <polygon>2.979,107.792 2.992,107.787 3.002,107.773 3.019,107.777 3.021,107.785 3.017,107.798 3.006,107.807 2.980,107.814 2.979,107.792</polygon>
+      <polygon>0.979,104.502 0.977,104.502 0.981,104.488 0.973,104.481 0.934,104.498 0.926,104.482 0.928,104.481 0.937,104.469 0.939,104.442 0.954,104.426 0.952,104.422 0.965,104.411 0.978,104.417 0.979,104.474 0.988,104.476 0.991,104.493 0.989,104.499 0.979,104.502</polygon>
+      <polygon>0.960,104.410 0.956,104.402 0.960,104.403 0.960,104.410</polygon>
+      <polygon>0.952,104.348 0.950,104.339 0.955,104.336 0.952,104.348</polygon>
+      <polygon>0.930,104.447 0.924,104.439 0.934,104.442 0.930,104.447</polygon>
+      <polygon>0.929,104.426 0.924,104.424 0.927,104.408 0.930,104.409 0.932,104.419 0.929,104.426</polygon>
+    </area>
+  </info>
+</alert>
