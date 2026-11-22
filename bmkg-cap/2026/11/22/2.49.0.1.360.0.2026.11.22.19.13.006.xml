@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.22.19.13.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-23T00:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-23T00:10:00+07:00</effective>
+    <expires>2026-11-23T02:10:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 November 2026, 00:10 WIB di sebagian wilayah Sumatera Barat, khususnya di PAUH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 November 2026, 02:10 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSB/2026/11/23/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Barat</areaDesc>
+      <polygon>-0.809,100.541 -0.815,100.545 -0.833,100.541 -0.844,100.531 -0.856,100.537 -0.855,100.545 -0.891,100.560 -0.893,100.564 -0.894,100.540 -0.899,100.533 -0.920,100.527 -0.937,100.516 -0.942,100.471 -0.951,100.462 -0.945,100.442 -0.950,100.424 -0.943,100.410 -0.949,100.400 -0.943,100.395 -0.923,100.429 -0.903,100.435 -0.879,100.452 -0.863,100.453 -0.842,100.461 -0.832,100.473 -0.823,100.476 -0.808,100.467 -0.798,100.488 -0.795,100.510 -0.789,100.509 -0.809,100.541</polygon>
+    </area>
+  </info>
+</alert>
