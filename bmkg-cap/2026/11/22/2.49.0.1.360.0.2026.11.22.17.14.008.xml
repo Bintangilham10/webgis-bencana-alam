@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.22.18.14.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-23T00:35:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-23T00:45:00+07:00</effective>
+    <expires>2026-11-23T04:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Riau</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 November 2026, 00:45 WIB di sebagian wilayah Riau, khususnya di KUALA KAMPAR, PULAU BURUNG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 November 2026, 04:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CRU/2026/11/23/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Riau</areaDesc>
+      <polygon>0.390,103.589 0.382,103.576 0.384,103.565 0.364,103.535 0.350,103.494 0.354,103.438 0.348,103.422 0.333,103.401 0.324,103.352 0.302,103.330 0.409,103.209 0.414,103.215 0.452,103.264 0.485,103.337 0.496,103.342 0.537,103.357 0.527,103.407 0.491,103.459 0.462,103.489 0.440,103.534 0.390,103.589</polygon>
+      <polygon>0.408,103.588 0.425,103.559 0.448,103.539 0.450,103.545 0.448,103.556 0.432,103.580 0.416,103.591 0.408,103.588</polygon>
+      <polygon>0.523,103.225 0.520,103.205 0.498,103.171 0.500,103.166 0.527,103.147 0.553,103.138 0.667,103.149 0.685,103.161 0.700,103.191 0.701,103.223 0.685,103.251 0.657,103.279 0.632,103.292 0.602,103.302 0.555,103.301 0.528,103.285 0.523,103.225</polygon>
+      <polygon>0.729,103.275 0.730,103.270 0.733,103.272 0.729,103.275</polygon>
+      <polygon>0.434,103.055 0.618,102.935 0.719,102.892 0.721,102.901 0.722,102.904 0.717,102.911 0.656,102.962 0.601,103.028 0.545,103.062 0.534,103.073 0.537,103.078 0.530,103.086 0.497,103.113 0.477,103.121 0.463,103.121 0.434,103.055</polygon>
+      <polygon>0.669,102.975 0.668,102.972 0.675,102.966 0.669,102.975</polygon>
+      <polygon>0.638,103.109 0.631,103.104 0.650,103.093 0.659,103.096 0.668,103.110 0.650,103.115 0.638,103.109</polygon>
+      <polygon>0.565,103.071 0.563,103.069 0.567,103.065 0.604,103.051 0.642,103.027 0.661,103.034 0.660,103.051 0.624,103.067 0.606,103.079 0.590,103.084 0.565,103.071</polygon>
+      <polygon>0.544,103.073 0.538,103.076 0.539,103.071 0.558,103.056 0.579,103.043 0.582,103.045 0.544,103.073</polygon>
+      <polygon>0.496,103.342 0.485,103.337 0.452,103.264 0.414,103.215 0.407,103.207 0.432,103.189 0.452,103.199 0.472,103.203 0.484,103.212 0.491,103.234 0.509,103.265 0.508,103.290 0.512,103.303 0.525,103.320 0.547,103.333 0.537,103.357 0.496,103.342</polygon>
+    </area>
+  </info>
+</alert>
