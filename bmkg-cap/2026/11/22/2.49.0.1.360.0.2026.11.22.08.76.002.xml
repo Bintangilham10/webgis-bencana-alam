@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.22.08.76.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-22T15:21:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-22T15:33:00+08:00</effective>
+    <expires>2026-11-22T17:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 22 November 2026, 15:33 WITA di sebagian wilayah Sulawesi Barat, khususnya di SUMARORONG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 22 November 2026, 17:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSK/2026/11/22/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Barat</areaDesc>
+      <polygon>-3.097,119.391 -3.110,119.414 -3.132,119.436 -3.160,119.428 -3.173,119.430 -3.198,119.395 -3.197,119.372 -3.206,119.372 -3.209,119.329 -3.205,119.300 -3.196,119.287 -3.185,119.280 -3.177,119.265 -3.166,119.256 -3.144,119.252 -3.127,119.254 -3.093,119.226 -3.072,119.224 -3.068,119.239 -3.075,119.244 -3.089,119.246 -3.077,119.272 -3.076,119.286 -3.107,119.347 -3.105,119.365 -3.097,119.391</polygon>
+    </area>
+  </info>
+</alert>
