@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.22.09.34.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-22T14:35:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-22T14:45:00+07:00</effective>
+    <expires>2026-11-22T16:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di DI Yogyakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 22 November 2026, 14:45 WIB di sebagian wilayah DI Yogyakarta, khususnya di DANUREJAN, GAMPING, GEDANGSARI, GEDONGTENGEN, GONDOKUSUMAN, GONDOMANAN, JETIS, KASIHAN, KRATON, MANTRIJERON, NGAMPILAN, NGLIPAR, PATUK, TEGALREJO, WIROBRAJAN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 22 November 2026, 16:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CYG/2026/11/22/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>DI Yogyakarta</areaDesc>
+      <polygon>-7.768,110.351 -7.793,110.349 -7.808,110.345 -7.814,110.352 -7.826,110.352 -7.832,110.353 -7.846,110.346 -7.850,110.342 -7.848,110.328 -7.850,110.325 -7.853,110.329 -7.858,110.328 -7.861,110.324 -7.855,110.318 -7.852,110.306 -7.852,110.297 -7.858,110.291 -7.857,110.287 -7.836,110.284 -7.833,110.288 -7.821,110.312 -7.806,110.316 -7.805,110.326 -7.792,110.343 -7.768,110.351</polygon>
+      <polygon>-7.820,110.655 -7.825,110.663 -7.872,110.669 -7.883,110.681 -7.899,110.680 -7.904,110.675 -7.904,110.663 -7.915,110.655 -7.917,110.644 -7.910,110.631 -7.917,110.621 -7.906,110.593 -7.900,110.587 -7.885,110.591 -7.869,110.586 -7.859,110.589 -7.836,110.624 -7.827,110.646 -7.820,110.647 -7.820,110.655</polygon>
+      <polygon>-7.893,110.562 -7.895,110.530 -7.907,110.525 -7.909,110.515 -7.887,110.513 -7.885,110.501 -7.888,110.492 -7.891,110.495 -7.890,110.478 -7.867,110.468 -7.842,110.483 -7.838,110.488 -7.838,110.516 -7.834,110.521 -7.831,110.520 -7.821,110.543 -7.819,110.560 -7.826,110.570 -7.845,110.571 -7.893,110.562</polygon>
+      <polygon>-7.798,110.607 -7.798,110.607 -7.802,110.625 -7.800,110.629 -7.800,110.638 -7.795,110.647 -7.805,110.658 -7.799,110.661 -7.816,110.659 -7.820,110.655 -7.820,110.647 -7.827,110.646 -7.836,110.624 -7.859,110.589 -7.869,110.586 -7.885,110.591 -7.900,110.587 -7.902,110.585 -7.895,110.577 -7.893,110.562 -7.845,110.571 -7.826,110.570 -7.819,110.560 -7.821,110.543 -7.801,110.546 -7.793,110.544 -7.782,110.562 -7.792,110.582 -7.805,110.582 -7.807,110.598 -7.800,110.599 -7.798,110.607</polygon>
+      <polygon>-7.766,110.352 -7.768,110.351 -7.792,110.343 -7.805,110.326 -7.806,110.316 -7.821,110.312 -7.833,110.288 -7.807,110.283 -7.794,110.290 -7.795,110.302 -7.783,110.326 -7.765,110.329 -7.758,110.331 -7.736,110.350 -7.741,110.355 -7.766,110.352</polygon>
+      <polygon>-7.774,110.369 -7.781,110.358 -7.789,110.355 -7.794,110.355 -7.793,110.349 -7.768,110.351 -7.766,110.352 -7.770,110.369 -7.774,110.369</polygon>
+      <polygon>-7.774,110.369 -7.774,110.369 -7.775,110.370 -7.790,110.369 -7.790,110.366 -7.789,110.355 -7.781,110.358 -7.774,110.369</polygon>
+      <polygon>-7.788,110.397 -7.791,110.396 -7.798,110.380 -7.797,110.378 -7.788,110.377 -7.790,110.369 -7.775,110.370 -7.780,110.386 -7.788,110.397</polygon>
+      <polygon>-7.797,110.378 -7.797,110.370 -7.796,110.365 -7.790,110.366 -7.790,110.369 -7.788,110.377 -7.797,110.378</polygon>
+      <polygon>-7.790,110.366 -7.796,110.365 -7.796,110.362 -7.796,110.355 -7.794,110.355 -7.789,110.355 -7.790,110.366</polygon>
+      <polygon>-7.796,110.362 -7.805,110.360 -7.809,110.356 -7.808,110.354 -7.796,110.355 -7.796,110.362</polygon>
+      <polygon>-7.794,110.355 -7.796,110.355 -7.808,110.354 -7.814,110.352 -7.808,110.345 -7.793,110.349 -7.794,110.355</polygon>
+      <polygon>-7.809,110.356 -7.813,110.356 -7.815,110.368 -7.827,110.367 -7.826,110.352 -7.814,110.352 -7.808,110.354 -7.809,110.356</polygon>
+      <polygon>-7.808,110.369 -7.815,110.368 -7.813,110.356 -7.809,110.356 -7.805,110.360 -7.808,110.369</polygon>
+      <polygon>-7.796,110.365 -7.797,110.370 -7.802,110.371 -7.808,110.369 -7.805,110.360 -7.796,110.362 -7.796,110.365</polygon>
+    </area>
+  </info>
+</alert>
