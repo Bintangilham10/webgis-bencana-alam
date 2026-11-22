@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.22.03.11.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-22T07:19:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-22T07:29:00+07:00</effective>
+    <expires>2026-11-22T10:49:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Aceh</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 22 November 2026, 07:29 WIB di sebagian wilayah Aceh, khususnya di KOTA COT GLIE.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 22 November 2026, 10:49 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CAH/2026/11/22/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Aceh</areaDesc>
+      <polygon>5.319,95.558 5.317,95.552 5.301,95.551 5.286,95.538 5.276,95.541 5.266,95.532 5.240,95.522 5.226,95.520 5.216,95.527 5.220,95.498 5.213,95.488 5.212,95.486 5.212,95.467 5.223,95.437 5.222,95.418 5.210,95.402 5.250,95.375 5.257,95.383 5.266,95.382 5.283,95.393 5.293,95.386 5.302,95.388 5.333,95.419 5.378,95.450 5.400,95.482 5.424,95.499 5.435,95.518 5.469,95.544 5.475,95.557 5.468,95.562 5.450,95.560 5.432,95.569 5.409,95.565 5.387,95.539 5.371,95.533 5.353,95.534 5.330,95.558 5.319,95.558</polygon>
+    </area>
+  </info>
+</alert>
