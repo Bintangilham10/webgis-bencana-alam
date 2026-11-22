@@ -1,0 +1,51 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-22T07:15:29.387Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        106.3191765714,
+        -6.1980105899
+      ]
+    },
+    "properties": {
+      "pkey": "400075",
+      "created_at": "2026-11-22T07:05:31.769Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "663f0882-67de-46ad-acec-56ad1e2f3365",
+      "image_url": "https://images.petabencana.id/663f0882-67de-46ad-acec-56ad1e2f3365.jpg",
+      "disaster_type": "fire",
+      "is_training": false,
+      "report_data": {
+        "report_type": "fire",
+        "fireDistance": 113.05830705162401,
+        "fireLocation": {
+          "lng": 106.31917657142981,
+          "lat": -6.198010589933858
+        },
+        "personLocation": {
+          "lng": 106.31927747710023,
+          "lat": -6.200493401342612
+        },
+        "fireRadius": {
+          "lng": 106.31815383896242,
+          "lat": -6.198012645210937
+        }
+      },
+      "tags": {
+        "city": "SERANG",
+        "district_id": null,
+        "region_code": "3604",
+        "local_area_id": null,
+        "instance_region_code": "ID-BT"
+      },
+      "title": null,
+      "text": "Kebakaran hebat yang melanda pabrik permen PT Fonusa Agung Mulia (merek Unican) di Kawasan Industri Pancatama, Kecamatan Cikande",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

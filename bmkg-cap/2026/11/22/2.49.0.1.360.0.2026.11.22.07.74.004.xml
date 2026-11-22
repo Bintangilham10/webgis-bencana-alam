@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.22.07.74.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-22T13:50:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-22T14:20:00+08:00</effective>
+    <expires>2026-11-22T16:20:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tenggara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 22 November 2026, 14:20 WITA di sebagian wilayah Sulawesi Tenggara, khususnya di BONE, MAROBO, MAWASANGKA, PARIGI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 22 November 2026, 16:20 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CST/2026/11/22/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tenggara</areaDesc>
+      <polygon>-5.038,122.559 -5.102,122.517 -5.105,122.497 -5.121,122.491 -5.120,122.443 -5.127,122.386 -5.089,122.377 -5.086,122.384 -5.072,122.394 -5.091,122.404 -5.091,122.411 -5.089,122.404 -5.079,122.399 -5.069,122.404 -5.072,122.401 -5.070,122.383 -5.061,122.382 -5.055,122.386 -5.046,122.379 -5.043,122.390 -5.045,122.395 -5.039,122.401 -5.031,122.448 -5.038,122.559</polygon>
+      <polygon>-5.121,122.491 -5.142,122.484 -5.161,122.485 -5.173,122.485 -5.200,122.495 -5.225,122.498 -5.228,122.451 -5.225,122.436 -5.194,122.379 -5.183,122.373 -5.186,122.366 -5.179,122.368 -5.177,122.359 -5.173,122.364 -5.156,122.377 -5.127,122.386 -5.120,122.443 -5.121,122.491</polygon>
+      <polygon>-5.089,122.377 -5.127,122.386 -5.156,122.377 -5.173,122.364 -5.169,122.358 -5.151,122.354 -5.151,122.346 -5.146,122.343 -5.146,122.319 -5.142,122.316 -5.122,122.319 -5.104,122.328 -5.099,122.339 -5.101,122.353 -5.091,122.366 -5.089,122.377</polygon>
+      <polygon>-5.071,122.289 -5.075,122.296 -5.076,122.289 -5.071,122.289</polygon>
+      <polygon>-5.088,122.350 -5.085,122.345 -5.085,122.349 -5.088,122.350</polygon>
+      <polygon>-5.173,122.364 -5.177,122.359 -5.179,122.368 -5.186,122.366 -5.183,122.373 -5.194,122.379 -5.225,122.436 -5.254,122.444 -5.268,122.349 -5.283,122.359 -5.310,122.342 -5.323,122.330 -5.353,122.322 -5.395,122.333 -5.395,122.279 -5.384,122.269 -5.375,122.267 -5.363,122.270 -5.339,122.266 -5.314,122.268 -5.295,122.276 -5.280,122.292 -5.238,122.315 -5.227,122.315 -5.217,122.306 -5.201,122.303 -5.196,122.304 -5.187,122.316 -5.171,122.315 -5.166,122.310 -5.157,122.312 -5.149,122.307 -5.142,122.316 -5.146,122.319 -5.146,122.343 -5.151,122.346 -5.151,122.354 -5.169,122.358 -5.173,122.364</polygon>
+      <polygon>-5.228,122.310 -5.229,122.306 -5.225,122.306 -5.224,122.310 -5.228,122.310</polygon>
+    </area>
+  </info>
+</alert>

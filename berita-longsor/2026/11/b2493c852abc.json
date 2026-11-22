@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiowFBVV95cUxPVlRnQWFwdGcwaWFLazJzSmF1YU1XdnRZQktVNjB2ZmQza2t1SkpCNFJhYjNMOHA3SEc4VWpEaFpickNxbzdQVlljbkJNWnhFTFVVUjg1U21zSnd3SFdnWU9PeTFsN0FEN2tRNFl3cGRlUzdldzdfQy1GMHB0c2hZaE1ZWEhkQzBsZlhqZm9HVVUwOGtodE9wUFhhRUlvbkFDcUNv",
+  "title": "Cuaca Ekstrem Picu Dua Longsor dan Tiga Bencana Lain di Bogor - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVlRnQWFwdGcwaWFLazJzSmF1YU1XdnRZQktVNjB2ZmQza2t1SkpCNFJhYjNMOHA3SEc4VWpEaFpickNxbzdQVlljbkJNWnhFTFVVUjg1U21zSnd3SFdnWU9PeTFsN0FEN2tRNFl3cGRlUzdldzdfQy1GMHB0c2hZaE1ZWEhkQzBsZlhqZm9HVVUwOGtodE9wUFhhRUlvbkFDcUNv?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "http://rri.co.id",
+  "published_at": "2026-11-22T04:59:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-22T07:15:29.387Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

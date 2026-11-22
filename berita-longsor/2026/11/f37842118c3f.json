@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi6wFBVV95cUxNWTVlRWQ5blVWRHQxdmE1Qkhjal81ekNtcWpkR0hCX2RkeEtUSkdEMzFfdHU2cVVDVlVyRExUa3lrdGhscTVqbW9ReDA1ejhERFJVbjhMd0xEVXhkUDh3SENuMkFXcWp4MjI2SFhGNDhMdWZ4X1JXNS1HMWtIbVZTeUs2RDlwNHMtMXpHSThCbzQzc2JtTndiazY2RFZlNWUxaUNJYnMyaThJTUFiWHRXNUlQZFdhUTFENHJ4ZWJpMDNZQS1MaGJJV3FZSXU4VDBFLVMxaEV6dHcwU0xwb0VreTlDS0hVWW00V0ln",
+  "title": "Hujan Deras Mengguyur Rembang Purbalingga Picu Tanah Longsor di Desa Gunungwuled - Lensa Purbalingga",
+  "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNWTVlRWQ5blVWRHQxdmE1Qkhjal81ekNtcWpkR0hCX2RkeEtUSkdEMzFfdHU2cVVDVlVyRExUa3lrdGhscTVqbW9ReDA1ejhERFJVbjhMd0xEVXhkUDh3SENuMkFXcWp4MjI2SFhGNDhMdWZ4X1JXNS1HMWtIbVZTeUs2RDlwNHMtMXpHSThCbzQzc2JtTndiazY2RFZlNWUxaUNJYnMyaThJTUFiWHRXNUlQZFdhUTFENHJ4ZWJpMDNZQS1MaGJJV3FZSXU4VDBFLVMxaEV6dHcwU0xwb0VreTlDS0hVWW00V0ln?oc=5",
+  "source": "Lensa Purbalingga",
+  "source_url": "https://lensapurbalingga.pikiran-rakyat.com",
+  "published_at": "2026-11-22T04:11:20.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-22T07:15:29.387Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.03",
+      "nama": "Kabupaten Purbalingga",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.17",
+      "nama": "Kabupaten Rembang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
