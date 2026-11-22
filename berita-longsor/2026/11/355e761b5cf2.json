@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiuwFBVV95cUxOUmQzLVRhc2VqY1NJT1E1LS10TXAwZ25nQ1ZhWTBjMktSajJfTEt2d19iQ0tEUTBPcDVWc2tQLUQ0NjNSR2dnSHBGandfRVZyUjFCc0UxbEQ5VjJoM3VBWkJiTUVHTHpHWlJjWURkbnFWbld5NEw4Y1VrMS1Lc0paTWtXN1BGX3hCZU9DZVFxSG9JMFdRLTdCM1NCa01oNzdId2w5aGlTbkR1X2RROEZseTE0cXVIZm15aG13",
+  "title": "Cuaca Ekstrem Terjang Tasikmalaya, Rumah Warga Rusak Diterjang Petir dan Longsor - TINTAHIJAU.com",
+  "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUmQzLVRhc2VqY1NJT1E1LS10TXAwZ25nQ1ZhWTBjMktSajJfTEt2d19iQ0tEUTBPcDVWc2tQLUQ0NjNSR2dnSHBGandfRVZyUjFCc0UxbEQ5VjJoM3VBWkJiTUVHTHpHWlJjWURkbnFWbld5NEw4Y1VrMS1Lc0paTWtXN1BGX3hCZU9DZVFxSG9JMFdRLTdCM1NCa01oNzdId2w5aGlTbkR1X2RROEZseTE0cXVIZm15aG13?oc=5",
+  "source": "TINTAHIJAU.com",
+  "source_url": "https://www.tintahijau.com",
+  "published_at": "2026-11-22T09:50:20.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-22T10:45:28.696Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
