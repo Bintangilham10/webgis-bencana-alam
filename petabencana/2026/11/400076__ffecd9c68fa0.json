@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-22T22:15:30.047Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        96.2117212442,
+        5.1050328139
+      ]
+    },
+    "properties": {
+      "pkey": "400076",
+      "created_at": "2026-11-22T22:08:30.906Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "95af6b59-4b29-49d8-9d20-65b63c5ddca4",
+      "image_url": "https://images.petabencana.id/95af6b59-4b29-49d8-9d20-65b63c5ddca4.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 109
+      },
+      "tags": {
+        "city": "PIDIE JAYA",
+        "district_id": null,
+        "region_code": "1118",
+        "local_area_id": null,
+        "instance_region_code": "ID-AC"
+      },
+      "title": null,
+      "text": "Banjir susulan kembali menggenangi jalan di Kabupaten Pidie Jaya, Aceh, pada Minggu malam (22/11/2026). ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
