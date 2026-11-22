@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiwAFBVV95cUxQQnpkOE92d1dKQjBpZC1FRUpxeG1hem5lU2NsbW9LY01MTndrelJ4R2d1SnZhYWNYUUphSEROX1pOZ2NabXphZUlzQ21qTlcyWXFGd3BIbG95bmhpekVfaWhPQzRmVEJtbFZsNzVnZTZLYlZKLXhmREIwUExQTzl4UlpZSEZBbUFZMm1WUUIyOGVvcGhDbTliQkFfSGF6d0dTUmJMTjRTV0JFTEhLX192NUNVN1JqMlRKSUx0aTRxX20",
+  "title": "BPBD Bengkulu Utara Kerahkan 8 Personel Bantu Evakuasi Longsor di Lebong Tandai - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQnpkOE92d1dKQjBpZC1FRUpxeG1hem5lU2NsbW9LY01MTndrelJ4R2d1SnZhYWNYUUphSEROX1pOZ2NabXphZUlzQ21qTlcyWXFGd3BIbG95bmhpekVfaWhPQzRmVEJtbFZsNzVnZTZLYlZKLXhmREIwUExQTzl4UlpZSEZBbUFZMm1WUUIyOGVvcGhDbTliQkFfSGF6d0dTUmJMTjRTV0JFTEhLX192NUNVN1JqMlRKSUx0aTRxX20?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-22T14:55:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-22T16:45:30.609Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "17.03",
+      "nama": "Kabupaten Bengkulu Utara",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "17.07",
+      "nama": "Kabupaten Lebong",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bengkulu"
+  ]
+}
