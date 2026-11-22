@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.22.21.13.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-23T02:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-23T02:20:00+07:00</effective>
+    <expires>2026-11-23T05:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 November 2026, 02:20 WIB di sebagian wilayah Sumatera Barat, khususnya di PAGAI UTARA, TIGO LURAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 November 2026, 05:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSB/2026/11/23/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Barat</areaDesc>
+      <polygon>-0.930,101.061 -0.949,101.069 -0.965,101.055 -0.973,101.053 -0.986,101.070 -0.987,101.083 -0.973,101.124 -0.957,101.149 -0.955,101.161 -0.957,101.171 -0.951,101.187 -0.952,101.195 -0.978,101.203 -0.987,101.188 -0.994,101.187 -1.004,101.191 -1.017,101.187 -1.033,101.178 -1.035,101.146 -1.057,101.162 -1.067,101.160 -1.087,101.169 -1.102,101.168 -1.127,101.174 -1.140,101.182 -1.156,101.194 -1.164,101.211 -1.214,101.245 -1.233,101.235 -1.244,101.235 -1.247,101.229 -1.246,101.219 -1.227,101.191 -1.228,101.167 -1.222,101.161 -1.195,101.149 -1.189,101.129 -1.167,101.116 -1.135,101.060 -1.133,101.013 -1.136,100.997 -1.121,100.984 -1.085,100.937 -1.063,100.890 -1.044,100.862 -1.030,100.850 -1.007,100.841 -0.988,100.827 -0.934,100.843 -0.865,100.839 -0.897,100.892 -0.897,100.910 -0.901,100.915 -0.881,100.927 -0.870,100.929 -0.808,100.918 -0.807,100.925 -0.820,100.936 -0.837,100.968 -0.845,100.974 -0.849,100.992 -0.865,100.992 -0.876,100.999 -0.883,101.020 -0.882,101.043 -0.930,101.061</polygon>
+      <polygon>-2.617,100.120 -2.664,100.106 -2.703,100.107 -2.708,100.105 -2.714,100.089 -2.705,100.050 -2.716,100.029 -2.728,100.024 -2.764,100.042 -2.800,100.092 -2.836,100.121 -2.838,100.103 -2.832,100.091 -2.835,100.081 -2.843,100.080 -2.842,100.076 -2.821,100.060 -2.815,100.048 -2.823,100.039 -2.850,100.041 -2.851,100.019 -2.832,99.996 -2.827,99.999 -2.830,100.005 -2.829,100.013 -2.814,100.016 -2.791,99.991 -2.785,99.990 -2.781,99.994 -2.777,99.994 -2.774,99.986 -2.785,99.981 -2.787,99.974 -2.767,99.984 -2.770,99.994 -2.762,99.991 -2.751,99.995 -2.744,100.002 -2.741,100.012 -2.697,99.999 -2.691,100.011 -2.674,100.010 -2.658,99.994 -2.639,99.989 -2.630,99.975 -2.623,99.978 -2.625,99.982 -2.622,99.987 -2.608,99.988 -2.596,99.981 -2.581,99.964 -2.571,99.959 -2.567,99.974 -2.514,99.972 -2.508,99.975 -2.503,99.998 -2.523,100.023 -2.569,100.059 -2.580,100.072 -2.592,100.099 -2.617,100.120</polygon>
+      <polygon>-2.747,99.984 -2.753,99.987 -2.757,99.981 -2.746,99.980 -2.747,99.984</polygon>
+    </area>
+  </info>
+</alert>
