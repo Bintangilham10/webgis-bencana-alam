@@ -1,0 +1,31 @@
+{
+  "guid": "CBMipgFBVV95cUxQbGlSRXV4ZzlMeGwwdGxLZUhnVFlWbXJoRXhGWGliWUFxLS1TVFhFVDlHdHhseGp5b2ZlQmRMQjBKSkE5TFhHRmdxN0g3bGFGenYtT2RndVRodHNkWTdjQi14cXpESDdaUEM2LTU5UzQ5a1JmNzFIOWF2YWw1QmRrSHNIX1piYnFPYkpGN2RnRGJZWGhLRWlGZHJ0STR4SlRvM2ZOOVV3",
+  "title": "Jalan Nasional Banjar–Ciamis Sempat Tertutup Longsor, Kini Kembali Normal - Majalah Lintas",
+  "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbGlSRXV4ZzlMeGwwdGxLZUhnVFlWbXJoRXhGWGliWUFxLS1TVFhFVDlHdHhseGp5b2ZlQmRMQjBKSkE5TFhHRmdxN0g3bGFGenYtT2RndVRodHNkWTdjQi14cXpESDdaUEM2LTU5UzQ5a1JmNzFIOWF2YWw1QmRrSHNIX1piYnFPYkpGN2RnRGJZWGhLRWlGZHJ0STR4SlRvM2ZOOVV3?oc=5",
+  "source": "Majalah Lintas",
+  "source_url": "https://www.majalahlintas.com",
+  "published_at": "2026-11-23T23:19:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-23T23:45:33.811Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.07",
+      "nama": "Kabupaten Ciamis",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.79",
+      "nama": "Kota Banjar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "63.03",
+      "nama": "Kabupaten Banjar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

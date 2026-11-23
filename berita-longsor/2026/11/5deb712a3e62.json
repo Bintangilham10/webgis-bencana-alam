@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi0gFBVV95cUxPRmd0bzVnaVVyai1jOFRxb0FTN0MzMlZkU1c5aGxXR2cyNHRzZHQ5V2Mtd1pQYmFhdnpUWlBlSEE0RWVJT21xYU82V3dJLUFtcHJrMmNvVVdZeWYwd09xeUhWT1g5TThFMUowdXNxcmI0eHFUUzNQYnJwMU1VTmoxeUxaWExfbVVSdDZocXFSTWdENGFpUlEwY0ZZaEoydGNzYmo0dDBVLV9GM0F0NnVKcmJ5NmNTTXZ2S3AtT0o1cU5xaHNPN01PX3AtZDlYZHFsMlE",
+  "title": "Longsor di Tasikmalaya Tewaskan Warga, Hujan Ekstrem Picu Bencana di Sejumlah Daerah - Pikiran Rakyat Koran",
+  "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPRmd0bzVnaVVyai1jOFRxb0FTN0MzMlZkU1c5aGxXR2cyNHRzZHQ5V2Mtd1pQYmFhdnpUWlBlSEE0RWVJT21xYU82V3dJLUFtcHJrMmNvVVdZeWYwd09xeUhWT1g5TThFMUowdXNxcmI0eHFUUzNQYnJwMU1VTmoxeUxaWExfbVVSdDZocXFSTWdENGFpUlEwY0ZZaEoydGNzYmo0dDBVLV9GM0F0NnVKcmJ5NmNTTXZ2S3AtT0o1cU5xaHNPN01PX3AtZDlYZHFsMlE?oc=5",
+  "source": "Pikiran Rakyat Koran",
+  "source_url": "https://koran.pikiran-rakyat.com",
+  "published_at": "2026-11-23T22:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-23T23:45:33.811Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

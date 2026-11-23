@@ -1,0 +1,31 @@
+{
+  "guid": "CBMitgFBVV95cUxNdXgyWWRKV0lvTDVQRTRFeUpOUU1PRjNqb3JNVS1rcVJKMXZHc0M5NjlEWjRPVWktYjNtdlVGLS1IOFFqZHRiTlVNZmxWM0FmblYyLW5yN1c0QTB6SW5rMF9OdUpGeWFwNGRKTEJ2ZzVrREtvUkVfdzFsM185ZnpSQmtKeUFsZ291d2piM1gwVFlVbmNfcG9IOHJXVHpZUE1HQ3FXSGxmVkF2ZTV2Wm53ZWdJbVZLZw",
+  "title": "Gerak Cepat Tangani Longsor, Akses Jalan Nasional Banjar–Ciamis Kembali Pulih - TopBusiness.id",
+  "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdXgyWWRKV0lvTDVQRTRFeUpOUU1PRjNqb3JNVS1rcVJKMXZHc0M5NjlEWjRPVWktYjNtdlVGLS1IOFFqZHRiTlVNZmxWM0FmblYyLW5yN1c0QTB6SW5rMF9OdUpGeWFwNGRKTEJ2ZzVrREtvUkVfdzFsM185ZnpSQmtKeUFsZ291d2piM1gwVFlVbmNfcG9IOHJXVHpZUE1HQ3FXSGxmVkF2ZTV2Wm53ZWdJbVZLZw?oc=5",
+  "source": "TopBusiness.id",
+  "source_url": "https://www.topbusiness.id",
+  "published_at": "2026-11-23T22:10:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-23T23:45:33.811Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.07",
+      "nama": "Kabupaten Ciamis",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.79",
+      "nama": "Kota Banjar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "63.03",
+      "nama": "Kabupaten Banjar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
