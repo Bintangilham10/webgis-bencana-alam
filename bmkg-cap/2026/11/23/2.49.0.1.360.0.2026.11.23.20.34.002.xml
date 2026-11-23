@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.23.20.34.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-24T03:03:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-24T03:13:00+07:00</effective>
+    <expires>2026-11-24T05:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di DI Yogyakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 November 2026, 03:13 WIB di sebagian wilayah DI Yogyakarta, khususnya di SAPTOSARI, TANJUNGSARI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 November 2026, 05:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CYG/2026/11/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>DI Yogyakarta</areaDesc>
+      <polygon>-8.084,110.557 -8.101,110.557 -8.121,110.546 -8.128,110.548 -8.134,110.544 -8.108,110.469 -8.089,110.462 -8.064,110.460 -8.063,110.465 -8.053,110.472 -8.042,110.478 -8.026,110.481 -8.016,110.491 -8.035,110.515 -8.050,110.518 -8.055,110.522 -8.053,110.528 -8.035,110.530 -8.031,110.534 -8.034,110.538 -8.029,110.549 -8.046,110.552 -8.078,110.548 -8.086,110.553 -8.084,110.557</polygon>
+      <polygon>-8.057,110.644 -8.055,110.630 -8.061,110.628 -8.064,110.638 -8.075,110.636 -8.080,110.616 -8.097,110.622 -8.124,110.602 -8.145,110.600 -8.149,110.597 -8.147,110.590 -8.139,110.580 -8.134,110.554 -8.128,110.548 -8.121,110.546 -8.101,110.557 -8.084,110.557 -8.050,110.563 -8.051,110.572 -8.060,110.582 -8.058,110.591 -8.057,110.601 -8.043,110.610 -8.043,110.642 -8.057,110.644</polygon>
+    </area>
+  </info>
+</alert>
