@@ -1,0 +1,26 @@
+{
+  "guid": "CBMipgFBVV95cUxNWnQ0ZWJPQzh1cWd0OWJPY1B4VW81VzFfNnZvLXRsbi15eEtzZ044TUl0cGJmV3QyaVJGejVZeWZEQ0Zja2hMX0ZBUFBhbEdlNUNqYmI2ZkxlbUc3VG5GNmlBb3ZjcmNvYk5IaGo0ZnRxSndmbHBsd3lJMWhrZUdnc0tKOGJKNGlYUHRIVU5TeFRyUWpuYlZLYTlZelZGTmhHeEJ5QmZB0gGrAUFVX3lxTFAtUWVsWlFoSWw1aTZWSnVUWHlDVlNwRGZPYy0wUG5fZEFVOXRzTE1vLXdYbkJPLUpGT2NMZ2JMckpsY1ZZTVF6SGJOYkRPTmpTeXlZZVc3NXMyU3JYZ0J2RUliaEdFeHFNZEVyVU42NUM1VG53dEtQUEtZd25DSGdKZjh1d0t0YUI3ZHBESUQ3R3lWV3htb1hnTmlQekpHU3NUSlB4NFNqc0dicw",
+  "title": "Longsor Tasikmalaya: 3 Rumah Hancur, 1 Warga Tewas Tertimbun - detikcom",
+  "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWnQ0ZWJPQzh1cWd0OWJPY1B4VW81VzFfNnZvLXRsbi15eEtzZ044TUl0cGJmV3QyaVJGejVZeWZEQ0Zja2hMX0ZBUFBhbEdlNUNqYmI2ZkxlbUc3VG5GNmlBb3ZjcmNvYk5IaGo0ZnRxSndmbHBsd3lJMWhrZUdnc0tKOGJKNGlYUHRIVU5TeFRyUWpuYlZLYTlZelZGTmhHeEJ5QmZB0gGrAUFVX3lxTFAtUWVsWlFoSWw1aTZWSnVUWHlDVlNwRGZPYy0wUG5fZEFVOXRzTE1vLXdYbkJPLUpGT2NMZ2JMckpsY1ZZTVF6SGJOYkRPTmpTeXlZZVc3NXMyU3JYZ0J2RUliaEdFeHFNZEVyVU42NUM1VG53dEtQUEtZd25DSGdKZjh1d0t0YUI3ZHBESUQ3R3lWV3htb1hnTmlQekpHU3NUSlB4NFNqc0dicw?oc=5",
+  "source": "detikcom",
+  "source_url": "https://www.detik.com",
+  "published_at": "2026-11-23T08:08:38.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-23T08:15:27.762Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

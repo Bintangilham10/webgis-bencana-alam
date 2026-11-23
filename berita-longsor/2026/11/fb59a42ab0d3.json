@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi0gFBVV95cUxOeWZHc2ppNlYxRndQemgwSzd1WFlvcWRmU3VMU0RjSTdBQXQ4aXhMQVhnSVl3QTQybmNIX05STEJ1eEltUFhEUUR4WXA4Mzk1RTJuZXFDUS03aXJYdGpLaGdRVzNnd0pNUllyaDhsR1FEOG5VSnBmV0tpbktlOUpMQWptUlFJbGZNVV9YZTJsNzVLMnZYeTdEUXVNRXhsLWVrY3FkUWhDb1hVTUJaUkNBVlRKU2RrVExKU2pBdm5EclJoRm4zMlFubDVxM3RWcTJNVlE",
+  "title": "Longsor Menutup Jalan Raya Cibalong Tasikmalaya, Petugas Gabungan Berpacu Bersihkan Material Tanah - Harapan Rakyat",
+  "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeWZHc2ppNlYxRndQemgwSzd1WFlvcWRmU3VMU0RjSTdBQXQ4aXhMQVhnSVl3QTQybmNIX05STEJ1eEltUFhEUUR4WXA4Mzk1RTJuZXFDUS03aXJYdGpLaGdRVzNnd0pNUllyaDhsR1FEOG5VSnBmV0tpbktlOUpMQWptUlFJbGZNVV9YZTJsNzVLMnZYeTdEUXVNRXhsLWVrY3FkUWhDb1hVTUJaUkNBVlRKU2RrVExKU2pBdm5EclJoRm4zMlFubDVxM3RWcTJNVlE?oc=5",
+  "source": "Harapan Rakyat",
+  "source_url": "https://www.harapanrakyat.com",
+  "published_at": "2026-11-23T08:04:15.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-23T08:15:27.762Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

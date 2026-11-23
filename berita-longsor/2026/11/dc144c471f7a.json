@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiZEFVX3lxTFBkMzhwYko5bGRHa2tYeVAxMjdWblZONFlqNGpwNUx2clBrQ08wRDJMZ080SWJQamJ0TzZ6QjdRUk1KU1BfZFhfNGRGV3RwdDVRcmhEaXdCNGFjaERwemZwVnpTUFI",
+  "title": "Polisi Minta Warga Karangasem Tinggalkan Zona Rawan Longsor - bsinews.id",
+  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBkMzhwYko5bGRHa2tYeVAxMjdWblZONFlqNGpwNUx2clBrQ08wRDJMZ080SWJQamJ0TzZ6QjdRUk1KU1BfZFhfNGRGV3RwdDVRcmhEaXdCNGFjaERwemZwVnpTUFI?oc=5",
+  "source": "bsinews.id",
+  "source_url": "https://bsinews.id",
+  "published_at": "2026-11-23T07:38:44.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-23T08:15:27.762Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "51.07",
+      "nama": "Kabupaten Karangasem",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMinAFBVV95cUxNckFMV3pJWVJfaEJIYnZMWEEyUU9rMWM4UmU5emRlY3VZenVCeGNJRklDUU1XS2hHa2dPZjNFYmdnSjFMYmg4OUVRcFhJcVBXa0txUEJsLXU1NnVPSUtMY3FnUjg3WmVwYWFUVDEzb0pLbFpkRm5UaXRLbGh1U0JyR2Jjc21GNHZxbGI5LTdyXzB2amZUOC1oQ2VZUlk",
+  "title": "Longsor Terjadi di Dekat Teras Musholla Sukadamai Bogor - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNckFMV3pJWVJfaEJIYnZMWEEyUU9rMWM4UmU5emRlY3VZenVCeGNJRklDUU1XS2hHa2dPZjNFYmdnSjFMYmg4OUVRcFhJcVBXa0txUEJsLXU1NnVPSUtMY3FnUjg3WmVwYWFUVDEzb0pLbFpkRm5UaXRLbGh1U0JyR2Jjc21GNHZxbGI5LTdyXzB2amZUOC1oQ2VZUlk?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-23T05:32:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-23T08:15:27.762Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
