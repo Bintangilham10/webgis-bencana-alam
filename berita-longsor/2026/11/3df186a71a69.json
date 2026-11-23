@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiugFBVV95cUxNQnk1RzNPQWRzOURZeEJRbGdIN1ZiR3dfbjdLN0hZWWEyZlhaR2Y5c0hCYmRleVNldE0wTUJzMklDQzE0SzNfdzh2M2dMSHdJMU1rb2VUdFhWRkVZc1BTcGFWOEZScEphT0dWd3RjSUpNS1FoRVFFMmZFaVhiUzhJVXY5LVgwU3FncExDTmZBVlRyWG5Zd3NLcmpwQzh1NVh5b2s2SE91U0dKbVBHdTJ2WG5fMUpIUFdjRUHSAb8BQVVfeXFMT01QUUpfN1VHNVFGMDdPOVdVaTBvQXFCNmhhV0UyN2Y2SE1FUllrR0tTZ0VjX1luVnlqNnFzazlROFRwOXNKTjktUmNZTkZpdE9iY29IQ1ByV1VDMm4xNFJhYTNaM002SnBVdEZCTW9FbW94aEJoU3ZLSVVUUEFXeEtYemYwQl80ZkdocmtSM0psaWpDU1FsY1J3NHFUVnlZMURqN0p3U05rV1ZSSUc0a1VwT0pPYnR4RkV1bkU1XzA",
+  "title": "Alat EWS Bermasalah, BPBD Karanganyar Sisir 30 Titik Rawan Longsor - Radar Solo",
+  "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQnk1RzNPQWRzOURZeEJRbGdIN1ZiR3dfbjdLN0hZWWEyZlhaR2Y5c0hCYmRleVNldE0wTUJzMklDQzE0SzNfdzh2M2dMSHdJMU1rb2VUdFhWRkVZc1BTcGFWOEZScEphT0dWd3RjSUpNS1FoRVFFMmZFaVhiUzhJVXY5LVgwU3FncExDTmZBVlRyWG5Zd3NLcmpwQzh1NVh5b2s2SE91U0dKbVBHdTJ2WG5fMUpIUFdjRUHSAb8BQVVfeXFMT01QUUpfN1VHNVFGMDdPOVdVaTBvQXFCNmhhV0UyN2Y2SE1FUllrR0tTZ0VjX1luVnlqNnFzazlROFRwOXNKTjktUmNZTkZpdE9iY29IQ1ByV1VDMm4xNFJhYTNaM002SnBVdEZCTW9FbW94aEJoU3ZLSVVUUEFXeEtYemYwQl80ZkdocmtSM0psaWpDU1FsY1J3NHFUVnlZMURqN0p3U05rV1ZSSUc0a1VwT0pPYnR4RkV1bkU1XzA?oc=5",
+  "source": "Radar Solo",
+  "source_url": "https://radarsolo.jawapos.com",
+  "published_at": "2026-11-22T11:57:02.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-23T02:00:45.474Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.13",
+      "nama": "Kabupaten Karanganyar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
