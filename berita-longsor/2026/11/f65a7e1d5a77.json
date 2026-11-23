@@ -1,0 +1,23 @@
+{
+  "guid": "CBMipwFBVV95cUxOYzdhSUZyLW11NUNjU2NVcWdoWmZ1cjZuWW9ueml5RWlMZGoyalJyelFiR20ySC1IMWNYbVR6LXpHRVdaU1VuLUVJeDdtVUpYRnd3T0RRVTBmZl9qOHgydE9EOFZHMEJSVlBKNG1uTkhlS2NnclRoQ2pZNWNLdnFBVlA5bTRTN1IzQzR1Q1hMY0MzSU9OdjVWelF2UW9RbnNNR1N6RHJETQ",
+  "title": "Kementerian PU Percepat Penanganan Longsor di Ruas Tapan–Batas Jambi - Radar Indonesia News",
+  "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOYzdhSUZyLW11NUNjU2NVcWdoWmZ1cjZuWW9ueml5RWlMZGoyalJyelFiR20ySC1IMWNYbVR6LXpHRVdaU1VuLUVJeDdtVUpYRnd3T0RRVTBmZl9qOHgydE9EOFZHMEJSVlBKNG1uTkhlS2NnclRoQ2pZNWNLdnFBVlA5bTRTN1IzQzR1Q1hMY0MzSU9OdjVWelF2UW9RbnNNR1N6RHJETQ?oc=5",
+  "source": "Radar Indonesia News",
+  "source_url": "https://www.radarindonesianews.com",
+  "published_at": "2026-11-23T09:30:51.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-23T11:15:30.502Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}

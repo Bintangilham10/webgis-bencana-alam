@@ -1,0 +1,26 @@
+{
+  "guid": "CBMipgFBVV95cUxOc3VlekFlYV9qZVBuWV81Z2hfeldycV92bWRWZEpCTnBXcXVyaWpUd0tqY3JacmlyS0RuaGtNQjhUZGtpYklRcU9LVEdOcUt0Q1R6UzV2TW1OeG5LZlBVNThOcUJyT2VRRkpabU9mcGYzUm5qQkNuVjJHandwbWs4TFNvajV2Mkc4R3lOb0NIT0FpVGlILTVJMHp5ZFJJdHJNaG81YnRn",
+  "title": "Cuaca Ekstrem, Longsor di Tasikmalaya Makan Korban - Suara Merdeka Jakarta",
+  "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOc3VlekFlYV9qZVBuWV81Z2hfeldycV92bWRWZEpCTnBXcXVyaWpUd0tqY3JacmlyS0RuaGtNQjhUZGtpYklRcU9LVEdOcUt0Q1R6UzV2TW1OeG5LZlBVNThOcUJyT2VRRkpabU9mcGYzUm5qQkNuVjJHandwbWs4TFNvajV2Mkc4R3lOb0NIT0FpVGlILTVJMHp5ZFJJdHJNaG81YnRn?oc=5",
+  "source": "Suara Merdeka Jakarta",
+  "source_url": "https://jakarta.suaramerdeka.com",
+  "published_at": "2026-11-23T10:06:59.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-23T11:15:30.502Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

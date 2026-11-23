@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivAFBVV95cUxQelp2emtEZHk4NmZyZzBPdlQ4Qi1TQ080ZkE2UHIwcXpvc3JWbTBUNFZfUEV2b2NmbXliZUNkcE1CSGt0SnBhQVpqcUtkY2pDTWQ3SlZ4TFNqUTU1dGxLX2NValR6NjJtanFMZzd0MlFULXhBSkdJUlkwVTlKeGYtTkRLdTg0N0FsOFI5RXFzcVVEVXZXOHJORVREaVkxS3g4LTRGYVFhMldMNS0wcmZsRktWMlZzRndfRTBuWQ",
+  "title": "Dari Mitigasi Longsor hingga Penanganan Stunting, Ini Terobosan Kelurahan Batutulis Bogor - Bogor Online",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQelp2emtEZHk4NmZyZzBPdlQ4Qi1TQ080ZkE2UHIwcXpvc3JWbTBUNFZfUEV2b2NmbXliZUNkcE1CSGt0SnBhQVpqcUtkY2pDTWQ3SlZ4TFNqUTU1dGxLX2NValR6NjJtanFMZzd0MlFULXhBSkdJUlkwVTlKeGYtTkRLdTg0N0FsOFI5RXFzcVVEVXZXOHJORVREaVkxS3g4LTRGYVFhMldMNS0wcmZsRktWMlZzRndfRTBuWQ?oc=5",
+  "source": "Bogor Online",
+  "source_url": "http://bogoronline.com",
+  "published_at": "2026-11-23T09:21:01.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-23T11:15:30.502Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

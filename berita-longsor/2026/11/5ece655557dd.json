@@ -1,0 +1,26 @@
+{
+  "guid": "CBMipgFBVV95cUxNZnBfVGZpM3hGanh0THhFQkZqMFJMbUJydWN0NWhmMmJoc0FQNy03ZnFGcGpEZnlhTUxVaU5vZ2tHc2R2SElzdXoxNDBIQzltVDJTV0pJNzBNRktZT3R0a1BuUFExWXA1WVg1bUJOS3loenRpNmNXYy1DdHVOY0tvbUxRYXRVOXc1dGsxUzZ3V0xGOVR2YmtMN1VHY3hraUJTcy1sOEdR",
+  "title": "Longsor dan Banjir Lumpur Terjang Tasikmalaya, Dua Orang Hilang - Informasi.com",
+  "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZnBfVGZpM3hGanh0THhFQkZqMFJMbUJydWN0NWhmMmJoc0FQNy03ZnFGcGpEZnlhTUxVaU5vZ2tHc2R2SElzdXoxNDBIQzltVDJTV0pJNzBNRktZT3R0a1BuUFExWXA1WVg1bUJOS3loenRpNmNXYy1DdHVOY0tvbUxRYXRVOXc1dGsxUzZ3V0xGOVR2YmtMN1VHY3hraUJTcy1sOEdR?oc=5",
+  "source": "Informasi.com",
+  "source_url": "https://informasi.com",
+  "published_at": "2026-11-23T09:30:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-23T11:15:30.502Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

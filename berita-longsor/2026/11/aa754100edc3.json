@@ -1,0 +1,26 @@
+{
+  "guid": "CBMirAFBVV95cUxQamowLWlEamtlVDhCeE0zOVNuNzdVRWdEQWlKOFFJc1ZuaG5ONzBNSmNNVXQtamozNHRJVkhPdmhSQTJMRk1ndDJIdEhCNXBZejJqWkZNaFU0VVlYLW1RSElXemhMaTNXYUc4TExvT1MxZ2E0Z3Q1M3JSYnRnSDQ2SEh2bDdhNEFieHliNXJNRGgwZklENURRc29seHZnR1lFTnN5aHgzSzVDSm1t",
+  "title": "Korban Longsor di Jatiwaras Tasikmalaya Ditemukan Meninggal Dunia - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQamowLWlEamtlVDhCeE0zOVNuNzdVRWdEQWlKOFFJc1ZuaG5ONzBNSmNNVXQtamozNHRJVkhPdmhSQTJMRk1ndDJIdEhCNXBZejJqWkZNaFU0VVlYLW1RSElXemhMaTNXYUc4TExvT1MxZ2E0Z3Q1M3JSYnRnSDQ2SEh2bDdhNEFieHliNXJNRGgwZklENURRc29seHZnR1lFTnN5aHgzSzVDSm1t?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-23T08:30:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-23T11:15:30.502Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

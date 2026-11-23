@@ -1,0 +1,26 @@
+{
+  "guid": "CBMic0FVX3lxTE90VEpldERRd3VZN3NVRDFHU1ZkVjZDN0thTHQyX0MtUXpYSkRadk9mQTZwTXNkWHZ6eDVrdW9QUWR5MmtkUkE4R3ktLXZ3SlJFSHJLS3p0QW1PWEhMY0JrOE5pTUZUeThENzE4ZVVuZjhsTDQ",
+  "title": "Longsor dan Banjir Bandang Terjang Tasikmalaya - bsinews.id",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE90VEpldERRd3VZN3NVRDFHU1ZkVjZDN0thTHQyX0MtUXpYSkRadk9mQTZwTXNkWHZ6eDVrdW9QUWR5MmtkUkE4R3ktLXZ3SlJFSHJLS3p0QW1PWEhMY0JrOE5pTUZUeThENzE4ZVVuZjhsTDQ?oc=5",
+  "source": "bsinews.id",
+  "source_url": "https://bsinews.id",
+  "published_at": "2026-11-23T08:14:45.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-23T11:15:30.502Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
