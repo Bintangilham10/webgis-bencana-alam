@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.23.16.72.006</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-23T22:16:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-23T22:28:00+08:00</effective>
+    <expires>2026-11-24T01:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 November 2026, 22:28 WITA di sebagian wilayah Sulawesi Tengah, khususnya di MORI UTARA, SOYO JAYA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 November 2026, 01:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSG/2026/11/23/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Tengah</areaDesc>
+      <polygon>-1.884,121.172 -1.891,121.173 -1.902,121.174 -1.904,121.174 -1.909,121.174 -1.904,121.166 -1.927,121.153 -1.922,121.149 -1.925,121.140 -1.931,121.143 -1.938,121.141 -1.943,121.126 -1.949,121.118 -1.948,121.111 -1.955,121.102 -1.959,121.102 -1.966,121.088 -1.961,121.085 -1.957,121.050 -1.971,121.015 -1.983,121.000 -1.974,120.968 -1.977,120.958 -1.984,120.956 -1.992,120.962 -2.006,120.949 -2.016,120.926 -2.012,120.908 -1.992,120.897 -2.008,120.893 -1.990,120.874 -1.934,120.917 -1.912,120.930 -1.897,120.920 -1.887,120.901 -1.858,120.888 -1.858,120.879 -1.842,120.864 -1.826,120.864 -1.792,120.852 -1.761,120.834 -1.751,120.834 -1.681,120.857 -1.625,120.882 -1.624,120.962 -1.624,121.007 -1.619,121.020 -1.580,121.074 -1.574,121.117 -1.574,121.119 -1.588,121.109 -1.606,121.117 -1.628,121.109 -1.640,121.099 -1.678,121.092 -1.706,121.079 -1.727,121.082 -1.747,121.071 -1.757,121.072 -1.761,121.083 -1.763,121.107 -1.771,121.121 -1.832,121.156 -1.884,121.172</polygon>
+      <polygon>-1.473,121.351 -1.670,121.353 -1.721,121.373 -1.749,121.408 -1.768,121.438 -1.776,121.443 -1.804,121.446 -1.814,121.421 -1.822,121.418 -1.812,121.414 -1.805,121.400 -1.811,121.386 -1.808,121.375 -1.792,121.367 -1.786,121.350 -1.772,121.341 -1.776,121.333 -1.773,121.325 -1.766,121.322 -1.770,121.311 -1.777,121.319 -1.784,121.321 -1.795,121.313 -1.799,121.301 -1.829,121.295 -1.841,121.289 -1.852,121.293 -1.855,121.324 -1.864,121.327 -1.848,121.344 -1.842,121.344 -1.853,121.350 -1.865,121.345 -1.869,121.359 -1.875,121.362 -1.876,121.358 -1.871,121.354 -1.878,121.332 -1.876,121.256 -1.881,121.241 -1.880,121.223 -1.881,121.215 -1.882,121.214 -1.883,121.207 -1.884,121.175 -1.884,121.172 -1.832,121.156 -1.771,121.121 -1.763,121.107 -1.761,121.083 -1.757,121.072 -1.747,121.071 -1.727,121.082 -1.706,121.079 -1.678,121.092 -1.640,121.099 -1.628,121.109 -1.606,121.117 -1.588,121.109 -1.574,121.119 -1.572,121.144 -1.575,121.162 -1.562,121.158 -1.546,121.174 -1.518,121.189 -1.509,121.208 -1.517,121.215 -1.516,121.221 -1.508,121.227 -1.499,121.226 -1.473,121.262 -1.473,121.351</polygon>
+    </area>
+  </info>
+</alert>

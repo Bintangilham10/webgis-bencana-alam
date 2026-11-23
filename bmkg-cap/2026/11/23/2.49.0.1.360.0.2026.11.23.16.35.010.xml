@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.23.16.35.010</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-23T21:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-23T22:00:00+07:00</effective>
+    <expires>2026-11-24T01:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 November 2026, 22:00 WIB di sebagian wilayah Jawa Timur, khususnya di BRONDONG, PACIRAN, SOLOKURO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 November 2026, 01:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/23/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-6.873,112.296 -6.887,112.295 -6.893,112.301 -6.899,112.301 -6.898,112.295 -6.899,112.290 -6.903,112.291 -6.905,112.275 -6.911,112.276 -6.917,112.288 -6.928,112.287 -6.921,112.273 -6.930,112.260 -6.937,112.259 -6.942,112.252 -6.947,112.241 -6.949,112.210 -6.946,112.203 -6.922,112.203 -6.915,112.196 -6.909,112.180 -6.900,112.171 -6.893,112.175 -6.882,112.210 -6.874,112.219 -6.872,112.238 -6.878,112.252 -6.878,112.267 -6.869,112.285 -6.873,112.296</polygon>
+      <polygon>-6.875,112.441 -6.884,112.446 -6.893,112.443 -6.901,112.439 -6.904,112.428 -6.897,112.427 -6.896,112.403 -6.905,112.380 -6.904,112.358 -6.918,112.349 -6.915,112.341 -6.904,112.337 -6.899,112.301 -6.893,112.301 -6.887,112.295 -6.873,112.296 -6.871,112.314 -6.863,112.328 -6.870,112.343 -6.869,112.353 -6.864,112.358 -6.874,112.373 -6.876,112.388 -6.872,112.404 -6.864,112.414 -6.869,112.436 -6.875,112.441</polygon>
+      <polygon>-6.883,112.454 -6.879,112.449 -6.874,112.446 -6.879,112.454 -6.883,112.454</polygon>
+      <polygon>-6.904,112.428 -6.922,112.423 -6.935,112.427 -6.948,112.426 -6.958,112.404 -6.958,112.375 -6.954,112.343 -6.956,112.328 -6.961,112.327 -6.960,112.315 -6.942,112.313 -6.938,112.306 -6.939,112.299 -6.947,112.297 -6.952,112.292 -6.950,112.288 -6.928,112.287 -6.917,112.288 -6.911,112.276 -6.905,112.275 -6.903,112.291 -6.899,112.290 -6.898,112.295 -6.899,112.301 -6.904,112.337 -6.915,112.341 -6.918,112.349 -6.904,112.358 -6.905,112.380 -6.896,112.403 -6.897,112.427 -6.904,112.428</polygon>
+    </area>
+  </info>
+</alert>
