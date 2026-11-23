@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqgFBVV95cUxNU21yNVQ3R0JNVnpWOXNFT3ZXdHRFaUMyNmZaalhvaWxLaUNnelMxclBWWGdzbnFlRDgzYVlhNU5qWlFRNEc3TmstNGZXTHlnUGJyZVE0SGdKUnU3NTl5cDR1MHMzNUlZbVpmbEVFTktTYTV6cTRHSWo1R0o3V192NHd2TjFzd3VheURpS1NCa1FudkFscndNU0lkMlF4eWJtcnhZUUhrVFNvdw",
+  "title": "Longsor Terjang Permukiman di Tasikmalaya, 1 Warga Tewas Tertimbun - BeritaSatu.com",
+  "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNU21yNVQ3R0JNVnpWOXNFT3ZXdHRFaUMyNmZaalhvaWxLaUNnelMxclBWWGdzbnFlRDgzYVlhNU5qWlFRNEc3TmstNGZXTHlnUGJyZVE0SGdKUnU3NTl5cDR1MHMzNUlZbVpmbEVFTktTYTV6cTRHSWo1R0o3V192NHd2TjFzd3VheURpS1NCa1FudkFscndNU0lkMlF4eWJtcnhZUUhrVFNvdw?oc=5",
+  "source": "BeritaSatu.com",
+  "source_url": "https://www.beritasatu.com",
+  "published_at": "2026-11-23T13:24:06.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-23T14:15:32.157Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
