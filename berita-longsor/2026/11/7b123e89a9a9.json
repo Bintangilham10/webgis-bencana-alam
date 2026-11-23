@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqAFBVV95cUxPSjVxWEVjeGw0TTNjd0lZOWNqU3ZISkNKYzJaY1ZEVTlrMkNrU3Q5NWp5b0RReG1WUzVSSzY0YTBBREJTdFVNd0xTWGFJSHVOTjY5dEVCSmt5NVJmekg5cDM1aHFuTjFTdmd6MHhSWFJGdnQ5MkhBSnFqSENhaDU1a0NjT1BxTUtRVDBPUHVCX3JNWTJwVGYxUkg3cHA0TzFQdzBqelFRT24",
+  "title": "Longsor Landa 4 Provinsi, Satu Lansia di Tasikmalaya Meninggal - BeritaSatu.com",
+  "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSjVxWEVjeGw0TTNjd0lZOWNqU3ZISkNKYzJaY1ZEVTlrMkNrU3Q5NWp5b0RReG1WUzVSSzY0YTBBREJTdFVNd0xTWGFJSHVOTjY5dEVCSmt5NVJmekg5cDM1aHFuTjFTdmd6MHhSWFJGdnQ5MkhBSnFqSENhaDU1a0NjT1BxTUtRVDBPUHVCX3JNWTJwVGYxUkg3cHA0TzFQdzBqelFRT24?oc=5",
+  "source": "BeritaSatu.com",
+  "source_url": "https://www.beritasatu.com",
+  "published_at": "2026-11-23T20:19:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-23T20:45:31.035Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
