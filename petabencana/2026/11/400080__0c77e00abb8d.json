@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-23T10:15:30.508Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        115.1725647717,
+        -8.6897970279
+      ]
+    },
+    "properties": {
+      "pkey": "400080",
+      "created_at": "2026-11-23T10:11:13.205Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "4a2a1a5b-8c47-458a-94e9-4565995602e1",
+      "image_url": "https://images.petabencana.id/4a2a1a5b-8c47-458a-94e9-4565995602e1.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 47
+      },
+      "tags": {
+        "city": "BADUNG",
+        "district_id": null,
+        "region_code": "5103",
+        "local_area_id": null,
+        "instance_region_code": "ID-BA"
+      },
+      "title": null,
+      "text": "Banjir menggenangi kawasan Jalan Sunset Road dan Jalan Dewi Sri, Legian, Kecamatan Kuta, Kabupaten Badung, Bali, pada Senin pagi 23/11/2026",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
