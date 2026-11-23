@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.23.07.75.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-23T14:35:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-23T14:47:00+08:00</effective>
+    <expires>2026-11-23T16:47:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 November 2026, 14:47 WITA di sebagian wilayah Gorontalo, khususnya di BONGOMEME.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 November 2026, 16:47 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/11/23/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.612,122.804 0.603,122.836 0.607,122.853 0.606,122.873 0.581,122.868 0.578,122.859 0.564,122.847 0.562,122.859 0.546,122.861 0.524,122.849 0.527,122.837 0.524,122.826 0.530,122.809 0.528,122.775 0.534,122.733 0.532,122.727 0.552,122.721 0.564,122.705 0.575,122.699 0.600,122.697 0.599,122.731 0.612,122.748 0.602,122.766 0.601,122.774 0.604,122.789 0.609,122.793 0.612,122.804</polygon>
+    </area>
+  </info>
+</alert>
