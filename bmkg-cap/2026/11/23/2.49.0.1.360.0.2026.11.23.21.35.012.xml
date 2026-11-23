@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.23.21.35.012</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-24T04:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-24T04:30:00+07:00</effective>
+    <expires>2026-11-24T07:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 November 2026, 04:30 WIB di sebagian wilayah Jawa Timur, khususnya di KEBONAGUNG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 November 2026, 07:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-8.157,111.188 -8.157,111.223 -8.175,111.223 -8.181,111.204 -8.211,111.220 -8.223,111.220 -8.257,111.231 -8.268,111.227 -8.266,111.203 -8.279,111.193 -8.273,111.177 -8.280,111.171 -8.279,111.145 -8.273,111.133 -8.267,111.138 -8.262,111.136 -8.255,111.122 -8.253,111.104 -8.244,111.098 -8.241,111.101 -8.228,111.130 -8.201,111.158 -8.200,111.141 -8.164,111.137 -8.148,111.148 -8.146,111.154 -8.160,111.160 -8.157,111.188</polygon>
+    </area>
+  </info>
+</alert>
