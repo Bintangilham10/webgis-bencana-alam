@@ -1,0 +1,26 @@
+{
+  "guid": "CBMihgFBVV95cUxPNmtoNS0wQ19md1lKbVRpZVNTR1NuanNNVGRsWVh4QWxZQnUyS0ZhdlJqbW14Q0FWQ1FXVFhYUmhwekxJRkVVSHJNcTdkTEcxT1hUbXMtQmF3YmtOTDNYT3A4S2VnUmFibllmMFFTZ2djYkYySVdmTHJOSUdhVGFaak9qUElWZw",
+  "title": "Hujan Deras Picu Longsor dan Banjir Lumpur di Tasikmalaya - VISI.NEWS",
+  "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPNmtoNS0wQ19md1lKbVRpZVNTR1NuanNNVGRsWVh4QWxZQnUyS0ZhdlJqbW14Q0FWQ1FXVFhYUmhwekxJRkVVSHJNcTdkTEcxT1hUbXMtQmF3YmtOTDNYT3A4S2VnUmFibllmMFFTZ2djYkYySVdmTHJOSUdhVGFaak9qUElWZw?oc=5",
+  "source": "VISI.NEWS",
+  "source_url": "https://www.visi.news",
+  "published_at": "2026-11-23T02:44:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-23T05:15:27.459Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixwFBVV95cUxQZ2hHcVpTV0ZaSTdhRHIyY29rNTFCRkFlV3c1VHAzUzE3blFpRFc4b0FNWFpIdk1lcVVVamlweGxKYm1IMDAycUszM3BFVzBValBBRGVJX2JETWUtdERtLWo3Tm1GY0JrM2c4bG5CSk5kemFkLWF2VzF6d0NqbHhBcWhoYXdzMGhGYjR1SEIxbUtqTVFzRmMwYWo5bWduUGhlVTVzX1B5dFlibUd1NE41bFdqdjBsWk5aU0dUNDZoVXcxU29pLVFN",
+  "title": "Tergerus Longsor, Sebagian Jalan Kabupaten di Ciseeng Bogor Tak Bisa Dilalui Kendaraan - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ2hHcVpTV0ZaSTdhRHIyY29rNTFCRkFlV3c1VHAzUzE3blFpRFc4b0FNWFpIdk1lcVVVamlweGxKYm1IMDAycUszM3BFVzBValBBRGVJX2JETWUtdERtLWo3Tm1GY0JrM2c4bG5CSk5kemFkLWF2VzF6d0NqbHhBcWhoYXdzMGhGYjR1SEIxbUtqTVFzRmMwYWo5bWduUGhlVTVzX1B5dFlibUd1NE41bFdqdjBsWk5aU0dUNDZoVXcxU29pLVFN?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://bandung.kompas.com",
+  "published_at": "2026-11-23T04:50:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-23T05:15:27.459Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

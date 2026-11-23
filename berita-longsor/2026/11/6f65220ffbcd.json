@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiwwFBVV95cUxPeVNBOHk1ZGtIWnNQeUh3T2c2QWxmNEZNakNyVmJyMWRvMlFnVmU4WFNEak91RkNJbmtNbkVhaUZwa3AwY25DQzlwSE02YUVHeTVLeGVQdDcxQU5icGRHd1otRS1ydmc4NlRmUkJGZDZTaWxabGZkZnJkZm9rQzJwaEdQMGhGNy0zaXl0TXY0T3hmZmlpZGNwc2xJQmpUNmRKUlE4MjdRYlF6RXZpclA0ZzRxUHhucGJYVmdqM01aRmFXTDQ",
+  "title": "Batu Berukuran Besar Longsor di Leato Utara, BPBD Kota Gorontalo Tuntaskan Penanganan dalam 2,5 Jam - Go-Pena",
+  "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeVNBOHk1ZGtIWnNQeUh3T2c2QWxmNEZNakNyVmJyMWRvMlFnVmU4WFNEak91RkNJbmtNbkVhaUZwa3AwY25DQzlwSE02YUVHeTVLeGVQdDcxQU5icGRHd1otRS1ydmc4NlRmUkJGZDZTaWxabGZkZnJkZm9rQzJwaEdQMGhGNy0zaXl0TXY0T3hmZmlpZGNwc2xJQmpUNmRKUlE4MjdRYlF6RXZpclA0ZzRxUHhucGJYVmdqM01aRmFXTDQ?oc=5",
+  "source": "Go-Pena",
+  "source_url": "https://go-pena.id",
+  "published_at": "2026-11-23T03:42:30.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-23T05:15:27.459Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "75.71",
+      "nama": "Kota Gorontalo",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": [
+    "Gorontalo"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivAFBVV95cUxPbTVISktadHRBV184VnVVVm8zTGoxamNsQ0ozZ01wcVhXNV9ibDJXcE9tZktqdGtpb3A2Nnc2U3RsdjdyeUFTUWtjZ09ETmxmMFhRdV80ODE0enZYUzg3YUktVGdPWXpVQWNFa1JvZ0RfOWpSLXQ0bnlyRVFyMVN0Vm1ZaHU5UHZBZGtPMEVQeWtYWGxGN01FMGhWdVd3aFFKQjFzbWlPMzNlOXNFRjNVdTYzcVdMeFhyLURoNA",
+  "title": "BREAKING NEWS! Dua Warga Tertimbun Longsor di Jatiwaras Tasikmalaya - Tribunnews.com",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbTVISktadHRBV184VnVVVm8zTGoxamNsQ0ozZ01wcVhXNV9ibDJXcE9tZktqdGtpb3A2Nnc2U3RsdjdyeUFTUWtjZ09ETmxmMFhRdV80ODE0enZYUzg3YUktVGdPWXpVQWNFa1JvZ0RfOWpSLXQ0bnlyRVFyMVN0Vm1ZaHU5UHZBZGtPMEVQeWtYWGxGN01FMGhWdVd3aFFKQjFzbWlPMzNlOXNFRjNVdTYzcVdMeFhyLURoNA?oc=5",
+  "source": "Tribunnews.com",
+  "source_url": "https://priangan.tribunnews.com",
+  "published_at": "2026-11-23T03:23:54.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-23T05:15:27.459Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

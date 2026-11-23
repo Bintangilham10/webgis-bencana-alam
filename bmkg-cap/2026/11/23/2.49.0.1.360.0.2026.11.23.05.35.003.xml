@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.23.05.35.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-23T11:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-23T11:30:00+07:00</effective>
+    <expires>2026-11-23T13:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 November 2026, 11:30 WIB di sebagian wilayah Jawa Timur, khususnya di KOKOP, PAKIS.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 November 2026, 13:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/23/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.917,112.714 -7.924,112.724 -7.919,112.730 -7.920,112.733 -7.938,112.728 -7.954,112.736 -7.969,112.749 -7.974,112.744 -7.986,112.759 -7.991,112.727 -8.004,112.721 -8.007,112.695 -8.005,112.684 -7.983,112.695 -7.977,112.690 -7.965,112.657 -7.959,112.663 -7.944,112.667 -7.930,112.662 -7.926,112.677 -7.920,112.680 -7.923,112.697 -7.917,112.714</polygon>
+      <polygon>-6.946,113.095 -6.956,113.107 -6.965,113.103 -6.975,113.109 -6.987,113.106 -6.989,113.113 -6.976,113.135 -6.985,113.147 -6.990,113.145 -6.997,113.146 -7.005,113.139 -7.010,113.141 -7.034,113.134 -7.036,113.127 -7.032,113.115 -7.023,113.089 -7.010,113.079 -7.010,113.043 -7.017,113.020 -7.010,113.009 -7.011,112.995 -6.995,112.999 -6.977,112.994 -6.967,113.000 -6.955,112.999 -6.940,113.004 -6.926,113.015 -6.935,113.040 -6.934,113.052 -6.926,113.052 -6.926,113.060 -6.929,113.066 -6.937,113.062 -6.941,113.065 -6.945,113.077 -6.946,113.095</polygon>
+    </area>
+  </info>
+</alert>

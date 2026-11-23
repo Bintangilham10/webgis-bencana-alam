@@ -1,0 +1,21 @@
+{
+  "guid": "CBMieEFVX3lxTE41dU12c1FZNXRHU2NNQjVxQ3JqNE8zY1k1dl9HRWltU1FoYmZicEZwRk1VdDlOTU9KN09qUXQzOXY4YjhRNUpRdHZmVE5IamFuTXc2QkdOVHpsZURhMi01Wl90YndYazhaVFNiYkZZV25IWWxRZncxaw",
+  "title": "Longsor Susulan Terjadi di Jakarta Selatan - SinPo.id",
+  "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE41dU12c1FZNXRHU2NNQjVxQ3JqNE8zY1k1dl9HRWltU1FoYmZicEZwRk1VdDlOTU9KN09qUXQzOXY4YjhRNUpRdHZmVE5IamFuTXc2QkdOVHpsZURhMi01Wl90YndYazhaVFNiYkZZV25IWWxRZncxaw?oc=5",
+  "source": "SinPo.id",
+  "source_url": "https://tv.sinpo.id",
+  "published_at": "2026-11-23T04:10:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-23T05:15:27.459Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "31.74",
+      "nama": "Kota Administrasi Jakarta Selatan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

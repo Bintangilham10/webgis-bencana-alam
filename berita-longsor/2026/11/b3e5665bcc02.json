@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiwgFBVV95cUxQVWdWZmtDNGJDM0FfamZPZFc1aDlKNHBYYmFTa0FKOF9DenlraHpjd1VUX1EweFQxZ0ZjVmR6c0d5cVpzNy1XTTU5MlcyS1JYU0tfRzdocTdDN0RfWkdDVXJ2M2xQekw3RkFJVEIzNG9VY2Y2eHgtNl9uM01iVW96ZDRwYjExYmZIVXBkdHBzb3RBUXh3dTdaSWR6aWdTUjY0NkNiMVotS3RscTV6RnhKMnU0NmF2RjM1bzZvRHRNMkdhd9IBwgFBVV95cUxQVWdWZmtDNGJDM0FfamZPZFc1aDlKNHBYYmFTa0FKOF9DenlraHpjd1VUX1EweFQxZ0ZjVmR6c0d5cVpzNy1XTTU5MlcyS1JYU0tfRzdocTdDN0RfWkdDVXJ2M2xQekw3RkFJVEIzNG9VY2Y2eHgtNl9uM01iVW96ZDRwYjExYmZIVXBkdHBzb3RBUXh3dTdaSWR6aWdTUjY0NkNiMVotS3RscTV6RnhKMnU0NmF2RjM1bzZvRHRNMkdhdw",
+  "title": "Bencana Banjir hingga Longsor Masih Mengintai Pasuruan di Musim Hujan - Radar Bromo",
+  "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVWdWZmtDNGJDM0FfamZPZFc1aDlKNHBYYmFTa0FKOF9DenlraHpjd1VUX1EweFQxZ0ZjVmR6c0d5cVpzNy1XTTU5MlcyS1JYU0tfRzdocTdDN0RfWkdDVXJ2M2xQekw3RkFJVEIzNG9VY2Y2eHgtNl9uM01iVW96ZDRwYjExYmZIVXBkdHBzb3RBUXh3dTdaSWR6aWdTUjY0NkNiMVotS3RscTV6RnhKMnU0NmF2RjM1bzZvRHRNMkdhd9IBwgFBVV95cUxQVWdWZmtDNGJDM0FfamZPZFc1aDlKNHBYYmFTa0FKOF9DenlraHpjd1VUX1EweFQxZ0ZjVmR6c0d5cVpzNy1XTTU5MlcyS1JYU0tfRzdocTdDN0RfWkdDVXJ2M2xQekw3RkFJVEIzNG9VY2Y2eHgtNl9uM01iVW96ZDRwYjExYmZIVXBkdHBzb3RBUXh3dTdaSWR6aWdTUjY0NkNiMVotS3RscTV6RnhKMnU0NmF2RjM1bzZvRHRNMkdhdw?oc=5",
+  "source": "Radar Bromo",
+  "source_url": "https://radarbromo.jawapos.com",
+  "published_at": "2026-11-23T02:30:27.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-23T05:15:27.459Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.14",
+      "nama": "Kabupaten Pasuruan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.75",
+      "nama": "Kota Pasuruan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
