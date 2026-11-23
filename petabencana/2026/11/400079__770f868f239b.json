@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-23T00:00:45.215Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        115.1779603418,
+        -8.7030898699
+      ]
+    },
+    "properties": {
+      "pkey": "400079",
+      "created_at": "2026-11-22T23:52:43.512Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "ceb621a1-0e21-41ce-ade7-bb1a386f25ca",
+      "image_url": "https://images.petabencana.id/ceb621a1-0e21-41ce-ade7-bb1a386f25ca.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 30
+      },
+      "tags": {
+        "city": "BADUNG",
+        "district_id": null,
+        "region_code": "5103",
+        "local_area_id": null,
+        "instance_region_code": "ID-BA"
+      },
+      "title": null,
+      "text": "Banjir di ruas Jalan Dewi Sri II, kawasan Legian, Badung, Bali. Air tergenang mengganggu pengendara.",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

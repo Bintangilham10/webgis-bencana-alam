@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.23.00.71.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-23T06:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-23T06:10:00+08:00</effective>
+    <expires>2026-11-23T09:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 23 November 2026, 06:10 WITA di sebagian wilayah Sulawesi Utara, khususnya di GEMEH, NANUSA, TAMPAN' AMMA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 23 November 2026, 09:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/23/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>4.732,127.133 4.732,127.114 4.746,127.110 4.764,127.118 4.778,127.133 4.768,127.142 4.749,127.146 4.738,127.142 4.732,127.133</polygon>
+      <polygon>4.807,127.063 4.797,127.065 4.791,127.059 4.798,127.056 4.807,127.063</polygon>
+      <polygon>4.741,127.065 4.734,127.091 4.729,127.094 4.718,127.084 4.718,127.068 4.732,127.054 4.741,127.065</polygon>
+      <polygon>4.705,127.141 4.701,127.144 4.687,127.142 4.695,127.131 4.703,127.133 4.705,127.141</polygon>
+      <polygon>4.643,127.161 4.639,127.158 4.641,127.155 4.644,127.156 4.643,127.161</polygon>
+      <polygon>4.627,127.164 4.623,127.162 4.624,127.157 4.634,127.159 4.627,127.164</polygon>
+      <polygon>4.616,127.149 4.606,127.142 4.616,127.119 4.612,127.132 4.618,127.146 4.616,127.149</polygon>
+      <polygon>4.444,126.867 4.421,126.826 4.396,126.766 4.426,126.765 4.483,126.758 4.542,126.736 4.546,126.744 4.539,126.775 4.529,126.775 4.525,126.787 4.532,126.795 4.533,126.807 4.509,126.822 4.503,126.830 4.492,126.831 4.488,126.837 4.489,126.853 4.479,126.857 4.465,126.854 4.459,126.865 4.444,126.867</polygon>
+      <polygon>4.304,126.898 4.294,126.819 4.302,126.814 4.396,126.766 4.421,126.826 4.444,126.867 4.428,126.870 4.411,126.851 4.375,126.850 4.344,126.866 4.304,126.898</polygon>
+    </area>
+  </info>
+</alert>
