@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.23.18.51.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-24T00:40:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-24T00:48:00+08:00</effective>
+    <expires>2026-11-24T02:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bali</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 November 2026, 00:48 WITA di sebagian wilayah Bali, khususnya di ABIANSEMAL, MENGWI, UBUD.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 November 2026, 02:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBL/2026/11/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bali</areaDesc>
+      <polygon>-8.612,115.194 -8.615,115.188 -8.616,115.182 -8.615,115.182 -8.615,115.182 -8.602,115.176 -8.602,115.170 -8.623,115.147 -8.641,115.137 -8.653,115.123 -8.643,115.104 -8.636,115.099 -8.623,115.108 -8.611,115.122 -8.609,115.136 -8.612,115.136 -8.613,115.141 -8.600,115.156 -8.596,115.156 -8.591,115.150 -8.582,115.150 -8.551,115.162 -8.533,115.165 -8.499,115.183 -8.488,115.183 -8.487,115.178 -8.463,115.174 -8.443,115.188 -8.451,115.200 -8.490,115.195 -8.531,115.197 -8.542,115.210 -8.559,115.207 -8.578,115.196 -8.603,115.203 -8.612,115.194</polygon>
+      <polygon>-8.457,115.235 -8.464,115.241 -8.494,115.242 -8.519,115.231 -8.541,115.234 -8.574,115.249 -8.586,115.249 -8.603,115.242 -8.592,115.233 -8.593,115.228 -8.603,115.203 -8.578,115.196 -8.559,115.207 -8.542,115.210 -8.531,115.197 -8.490,115.195 -8.488,115.203 -8.467,115.204 -8.461,115.207 -8.461,115.212 -8.465,115.216 -8.457,115.235</polygon>
+      <polygon>-8.476,115.256 -8.501,115.256 -8.469,115.269 -8.469,115.275 -8.475,115.278 -8.493,115.279 -8.514,115.279 -8.543,115.279 -8.556,115.282 -8.562,115.279 -8.568,115.268 -8.579,115.268 -8.571,115.258 -8.551,115.253 -8.542,115.247 -8.537,115.242 -8.541,115.234 -8.519,115.231 -8.494,115.242 -8.464,115.241 -8.457,115.242 -8.455,115.247 -8.476,115.256</polygon>
+    </area>
+  </info>
+</alert>
