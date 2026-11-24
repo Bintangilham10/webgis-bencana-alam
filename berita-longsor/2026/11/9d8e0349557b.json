@@ -1,0 +1,23 @@
+{
+  "guid": "CBMivgFBVV95cUxOSVJyZkxGTVAtX2lJc2xQNzdCdmV3Um9jM081RURHX2xnd21maERoT0ZEZm5BZW9lQjRzUFhPbVFrRFF6cUJ6NEZvZi1NVVFQaG1EV2V6UXJlUEFMdml5Sm9DTk1UeERwekp0OVpRUFhtZF9PWWE4WWtZaEU4RERLbkxRcXd6bUNHQURFU0FjRjctVVpiR1picXc5bFE5UUxNUko2UzhHSzlid1BmcFlGdElxV0o0ZlNJWU1Dd0dn",
+  "title": "Salihin Minta Pemerintah Segera Tangani Banjir dan Longsor di Aceh Tengah, Tiga Desa Terisolir - Acehinfo",
+  "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSVJyZkxGTVAtX2lJc2xQNzdCdmV3Um9jM081RURHX2xnd21maERoT0ZEZm5BZW9lQjRzUFhPbVFrRFF6cUJ6NEZvZi1NVVFQaG1EV2V6UXJlUEFMdml5Sm9DTk1UeERwekp0OVpRUFhtZF9PWWE4WWtZaEU4RERLbkxRcXd6bUNHQURFU0FjRjctVVpiR1picXc5bFE5UUxNUko2UzhHSzlid1BmcFlGdElxV0o0ZlNJWU1Dd0dn?oc=5",
+  "source": "Acehinfo",
+  "source_url": "https://www.acehinfo.id",
+  "published_at": "2026-11-24T16:52:34.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-24T19:00:42.093Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}
