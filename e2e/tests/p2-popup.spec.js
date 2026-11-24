@@ -17,8 +17,14 @@ async function popupTitle(page) {
 
 // Klik penanda ke-n yang titik tengahnya tidak tertutup penanda lain atau panel,
 // seperti klik pengguna.
+// Test berjalan dengan gerakan dikurangi, dan untuk itu styles/motion.css memberi
+// semua elemen transisi 0,01 ms. Akibatnya penanda baru sampai di posisi barunya
+// sesaat setelah peta pindah (mis. sesudah tombol "seluruh Indonesia"), bukan saat
+// itu juga. Transisi itu ditunggu selesai sebelum posisi penanda dibaca.
 async function clickUncoveredMarker(page, selector, nth = 0) {
-  const indexes = await page.evaluate((sel) => {
+  const indexes = await page.evaluate(async (sel) => {
+    const moving = [...document.querySelectorAll(sel)].flatMap((m) => m.getAnimations().filter((a) => 'transitionProperty' in a));
+    await Promise.race([Promise.allSettled(moving.map((a) => a.finished)), new Promise((done) => setTimeout(done, 2_000))]);
     const markers = [...document.querySelectorAll(sel)];
     return markers
       .map((m, i) => {
