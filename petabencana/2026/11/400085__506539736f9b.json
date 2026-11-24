@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-24T11:45:33.171Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        96.7534955233,
+        4.7676208536
+      ]
+    },
+    "properties": {
+      "pkey": "400085",
+      "created_at": "2026-11-24T11:38:52.771Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "c9d63374-c1fa-4bf1-90ba-79e529536070",
+      "image_url": "https://images.petabencana.id/c9d63374-c1fa-4bf1-90ba-79e529536070.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 49
+      },
+      "tags": {
+        "city": "BENER MERIAH",
+        "district_id": null,
+        "region_code": "1117",
+        "local_area_id": null,
+        "instance_region_code": "ID-AC"
+      },
+      "title": null,
+      "text": "Hujan deras yang mengguyur wilayah Kecamatan Timang Gajah, Kabupaten Bener Meriah, Aceh, pada Selasa (24/11/2026) menyebabkan debit air di K",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
