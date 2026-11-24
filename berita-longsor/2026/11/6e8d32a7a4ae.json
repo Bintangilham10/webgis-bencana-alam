@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiwwFBVV95cUxPdjB6ZGdqdXZFY0l0bGlWS2ktd0FFZUMycWFaaWV1QWtKU1RCNjM1Y2dWUmlnUnM5S3BqUm1idzZadDkyOGRkZlZjenBudlZyZmNBb2dTR2xLNzFKZG15ZXhwSHo0S2RxMW82eTNXYWZpNkVSM0tNcXRSUVh4RDBhRGRBNldyY1dYeHFIT3o0TkJqOHZZZS1zb1Z2b2xGd3B0aDlkNjV0eTVjbjBBV1pTaXAtUWlXMXg2NlRXRmhKQ25tZ0U",
+  "title": "Kejadian Bencana Trenggalek: Empat Desa di Panggul Dilanda Banjir, Tiga Desa Juga Terdampak Longsor - Kabar Trenggalek",
+  "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdjB6ZGdqdXZFY0l0bGlWS2ktd0FFZUMycWFaaWV1QWtKU1RCNjM1Y2dWUmlnUnM5S3BqUm1idzZadDkyOGRkZlZjenBudlZyZmNBb2dTR2xLNzFKZG15ZXhwSHo0S2RxMW82eTNXYWZpNkVSM0tNcXRSUVh4RDBhRGRBNldyY1dYeHFIT3o0TkJqOHZZZS1zb1Z2b2xGd3B0aDlkNjV0eTVjbjBBV1pTaXAtUWlXMXg2NlRXRmhKQ25tZ0U?oc=5",
+  "source": "Kabar Trenggalek",
+  "source_url": "https://kabartrenggalek.com",
+  "published_at": "2026-11-24T01:00:54.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-24T03:00:40.720Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

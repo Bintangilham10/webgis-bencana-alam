@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiggFBVV95cUxQMFl3eVlncElNV2JlbmNLNXRRaUUyZ1oybWxGSnFCV3ZLSzhpQnZzSFNYdVRCT3VBN2NveUZIRjZuSHNUZ2h0NkNqTEdRaTJKT0ZiTVN1OW0ySjVOMFpKMUVvbnBhVVNMQnMzUGswSTAwNmFTU09qMnI1ajNGTHFxT1dR",
+  "title": "Longsor Terjang Jalur Nasional Banjar–Ciamis - Infopriangan.com",
+  "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQMFl3eVlncElNV2JlbmNLNXRRaUUyZ1oybWxGSnFCV3ZLSzhpQnZzSFNYdVRCT3VBN2NveUZIRjZuSHNUZ2h0NkNqTEdRaTJKT0ZiTVN1OW0ySjVOMFpKMUVvbnBhVVNMQnMzUGswSTAwNmFTU09qMnI1ajNGTHFxT1dR?oc=5",
+  "source": "Infopriangan.com",
+  "source_url": "https://infopriangan.com",
+  "published_at": "2026-11-24T00:52:50.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-24T03:00:40.720Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.07",
+      "nama": "Kabupaten Ciamis",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.79",
+      "nama": "Kota Banjar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "63.03",
+      "nama": "Kabupaten Banjar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

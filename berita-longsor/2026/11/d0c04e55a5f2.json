@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqAFBVV95cUxOcFN5NmRCQ1ByUXRDbElRbEk5Vm1DcFhVT3FyaU82Q3JSWnhqZUhjdHh4UXZaWk1NNnBBUW4xYUxiOTRjSnVWYzh5NVI1cVZFeS13YkdBdEM0UWxXRVk3R3oxc1pTSmRIdEVmWW1YXzRJbnE3b0ZuRVZwaFozVHEyeUxyVEF0ZklWZGtSTk1EMGVveW83b05uSDNwMWdEdUlIR1BWZ2JnN2s",
+  "title": "Longsor di Ciseeng Bogor, satu lajur jalan penghubung ditutup - Elshinta",
+  "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcFN5NmRCQ1ByUXRDbElRbEk5Vm1DcFhVT3FyaU82Q3JSWnhqZUhjdHh4UXZaWk1NNnBBUW4xYUxiOTRjSnVWYzh5NVI1cVZFeS13YkdBdEM0UWxXRVk3R3oxc1pTSmRIdEVmWW1YXzRJbnE3b0ZuRVZwaFozVHEyeUxyVEF0ZklWZGtSTk1EMGVveW83b05uSDNwMWdEdUlIR1BWZ2JnN2s?oc=5",
+  "source": "Elshinta",
+  "source_url": "https://elshinta.com",
+  "published_at": "2026-11-24T00:10:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-24T03:00:40.720Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
