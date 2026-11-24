@@ -47,6 +47,24 @@ const withCategory = (rain) => {
   return { ...rain, category: category?.id ?? null, category_label: category?.label ?? null };
 };
 
+// Hujan 24 jam terakhir per stasiun (sampai jam utama terbaru), tanpa cuaca
+// bandara: dipakai dashboard Sintesis untuk membandingkan peringatan hujan
+// dengan hujan yang benar-benar terukur.
+export async function measuredRain(reference = new Date()) {
+  const [main, counts] = await Promise.all([query(MAIN_ROWS, [reference, 2]), query(MAIN_COUNTS, [reference])]);
+  const until = latestMainHour(counts.rows);
+  if (!until) return { until: null, stations: [] };
+  const byStation = groupByStation(main.rows);
+  const stations = [];
+  for (const [wmo, rows] of byStation) {
+    const station = STATIONS.get(wmo);
+    const rain = station && accumulatedRain(rows, until);
+    if (!rain || rain.hours < 24) continue;
+    stations.push({ wmo, nama: station.nama, lon: station.lon, lat: station.lat, ...withCategory(rain) });
+  }
+  return { until: until.toISOString(), stations };
+}
+
 // Hujan terukur di stasiun cuaca BMKG (laporan SYNOP lewat jaringan WMO) dan
 // cuaca saat ini di bandaranya (METAR). `metar`, `now`, dan `cacheMs` dapat
 // diganti saat test.

@@ -15,6 +15,7 @@ import { createRiskRouter } from './routes/risk.js';
 import { createRiverRouter } from './routes/river.js';
 import { createRouteRouter } from './routes/route.js';
 import { createSeaLevelRouter } from './routes/sea-level.js';
+import { createSintesisRouter } from './routes/sintesis.js';
 import { createV1Router } from './routes/v1.js';
 import { volcanoesRouter } from './routes/volcanoes.js';
 import { createWeatherRouter } from './routes/weather.js';
@@ -111,6 +112,7 @@ export function createApp({ services = {} } = {}) {
     createRiskRouter({ rainWarnings, ...services.risk }),
     landslideRouter,
     outlookRouter,
+    createSintesisRouter({ rainWarnings, ...services.sintesis }),
     createGeocodeRouter(services.geocode),
     createGdacsRouter(services.gdacs),
     createRiverRouter(services.river),
