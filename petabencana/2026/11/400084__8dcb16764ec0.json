@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-24T07:45:31.814Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        115.3881587991,
+        -8.4147453309
+      ]
+    },
+    "properties": {
+      "pkey": "400084",
+      "created_at": "2026-11-24T07:38:40.963Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "80ea0126-16a4-47ae-9c01-2b3dc790cd5c",
+      "image_url": "https://images.petabencana.id/80ea0126-16a4-47ae-9c01-2b3dc790cd5c.jpg",
+      "disaster_type": "earthquake",
+      "is_training": false,
+      "report_data": {
+        "report_type": "road",
+        "accessabilityFailure": 4,
+        "condition": 1
+      },
+      "tags": {
+        "city": "BANGLI",
+        "district_id": null,
+        "region_code": "5106",
+        "local_area_id": null,
+        "instance_region_code": "ID-BA"
+      },
+      "title": null,
+      "text": "Longsor di jalan utama Tegalalang menuju Tambahan, Tembuku, Bangli (24/11)",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
