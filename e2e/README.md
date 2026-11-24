@@ -46,7 +46,7 @@ Yang diukur untuk tiap notifikasi:
 
 | Kolom | Arti |
 |---|---|
-| `latensi_ms` | Latensi kirim: dari server menyimpan notifikasi (`created_at`) sampai datanya tiba di perekam. Jam perekam dan server tidak persis sama, jadi selisihnya diukur ke `/api/time` (tujuh kali bolak-balik, dipakai yang tercepat) di awal, tiap 5 menit, dan tiap menyambung lagi. Ketidakpastiannya paling besar setengah `rtt_ms` |
+| `latensi_ms` | Latensi kirim: dari server menyimpan notifikasi (`created_at`) sampai datanya tiba di perekam. Jam perekam dan server tidak persis sama, jadi selisihnya diukur ke `/api/time` (tujuh kali bolak-balik, dipakai yang tercepat) di awal, tiap menit, dan tiap menyambung lagi. Ketidakpastiannya paling besar setengah `rtt_ms`, ditambah geser jam perekam sejak pengukuran terakhir |
 | `jeda_sumber_s` | Jeda sejak waktu sumber: dari waktu yang dicantumkan sumber (waktu gempa terjadi, waktu BMKG menerbitkan peringatan) sampai server menyimpan notifikasinya. Di dalamnya ada jeda sumber menerbitkan datanya dan selang SIGAP memeriksa sumber (gempa tiap 1 menit, peringatan cuaca tiap 5 menit). Untuk gunung api kolom ini tidak diringkas, karena MAGMA tidak mencantumkan waktu penetapan level |
 | `langsung` | `true` bila notifikasi dibuat selagi perekam mendengarkan. Yang `false` tetap dicatat tetapi tidak masuk ringkasan: kiriman ulang setelah sambungan putus, dan notifikasi yang dibuat selagi perekam terhenti |
 
@@ -56,6 +56,8 @@ Supaya angkanya bisa dipertanggungjawabkan:
 - Atur laptop supaya tidak tidur selama merekam. Bila laptop tetap tidur, perekam mengenalinya dari jam sistem yang melompat, menulis "Perekam terhenti", dan tidak menghitung notifikasi yang dibuat selama itu.
 - Gempa hanya beberapa kali sehari, sedangkan peringatan cuaca datang berombongan tiap sinkronisasi. Ringkasan menulis jumlah notifikasi dan jumlah siaran; laporkan keduanya, beserta rentang waktu perekaman dan jaringan yang dipakai.
 - Yang diukur adalah tibanya data di klien. Waktu browser menggambar notifikasi di layar tidak termasuk.
+- Jam laptop bergeser terhadap jam server: pada laptop perekam terukur sekitar 1 ms per menit (24 Nov 2026, selisih diukur tiap 30 detik selama 6 menit). Karena itu selisih jam diukur ulang tiap menit, sehingga geser ini membuat latensi terhitung kurang paling banyak sekitar 1 ms.
+- Waktu tiba dicatat begitu data terbaca; barisnya ditulis ke berkas sesudahnya. Berkas CSV boleh dibuka selagi merekam. Bila program lain menguncinya (misalnya Excel), perekam menulis "Rekaman belum bisa ditulis", menyimpan barisnya, dan menulisnya begitu berkas itu ditutup.
 
 ## Isi
 
