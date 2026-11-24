@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiqwFBVV95cUxOX0t6VFZ1UHRvWWVueWF1UnJ6WU5SZTFtSXgxeDN1VW11MGpDVHM4ZUdQcFQtTkVEM3UzZHp6VDVvRXB3MjY5cDZsWklRVkdRX3lOM25GYnpLMmhpaG1yelQ4M1pMazhqNXZmaEpJZGljcXBUOWpjR1U1b1daN2E5Vm95UzZJaGUxcEFpckZOaGhYVjVOaWpybTRMODRXSTRfbEdzSnoxTVB5cXc",
+  "title": "Jalan Lubuk Basung-Bukittinggi Tertimbun Longsor, Kendaraan Tak Bisa Melintas - Radar Sumbar",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOX0t6VFZ1UHRvWWVueWF1UnJ6WU5SZTFtSXgxeDN1VW11MGpDVHM4ZUdQcFQtTkVEM3UzZHp6VDVvRXB3MjY5cDZsWklRVkdRX3lOM25GYnpLMmhpaG1yelQ4M1pMazhqNXZmaEpJZGljcXBUOWpjR1U1b1daN2E5Vm95UzZJaGUxcEFpckZOaGhYVjVOaWpybTRMODRXSTRfbEdzSnoxTVB5cXc?oc=5",
+  "source": "Radar Sumbar",
+  "source_url": "https://radarsumbar.com",
+  "published_at": "2026-11-24T13:01:04.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-24T15:45:35.294Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.75",
+      "nama": "Kota Bukittinggi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

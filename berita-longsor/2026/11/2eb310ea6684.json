@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi4wFBVV95cUxPN2l2UnN3YmlBdFM4VmFna3loLVZ4MTFSV2N1b3o0WEpOMExKbTVTcmp2OUNGT05ndWMzUGdyLW8xaUd3X3ZKcFJhNlkwV09aM2xfbHFnR1liRjcwN21WR3A5cFRhUW9qTWVsZ29IWG11Y1FFRUNwRzRFME5OVnpsRHlFMHA1S3lWM3V5QVlJRlFBb25UdmpQb2xYeDBBY2RVMENId2dHVmdsNE9CazJTcERhSUhuTDhETnVZbkpHVzE0Y0MtTDhxb3hkdnFxMUdySTBXVW1DZ2RIOHR2WG5QQlNaNA",
+  "title": "Tasikmalaya Dilanda Banjir-Longsor, Jembatan Provinsi Retak dan Satu Warga Meninggal - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPN2l2UnN3YmlBdFM4VmFna3loLVZ4MTFSV2N1b3o0WEpOMExKbTVTcmp2OUNGT05ndWMzUGdyLW8xaUd3X3ZKcFJhNlkwV09aM2xfbHFnR1liRjcwN21WR3A5cFRhUW9qTWVsZ29IWG11Y1FFRUNwRzRFME5OVnpsRHlFMHA1S3lWM3V5QVlJRlFBb25UdmpQb2xYeDBBY2RVMENId2dHVmdsNE9CazJTcERhSUhuTDhETnVZbkpHVzE0Y0MtTDhxb3hkdnFxMUdySTBXVW1DZ2RIOHR2WG5QQlNaNA?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://bandung.kompas.com",
+  "published_at": "2026-11-24T14:12:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-24T15:45:35.294Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMif0FVX3lxTFAxSURMbmFQV21EVmdwR2lFZGpvcmxjbXZkaGRveE9hWlJhTW9hNURpTll6ckVndUtvcEVwWFdnUWUydlMtQVROMHJVaS13OGZrd1l6UVFhWmttekdRay1xVjE2bmhDTUw0UEFRR3daN01WQ21Ha3hkOEtPMS1hX28",
+  "title": "Banjir dan Longsor Terjang Dua Kecamatan di Bangli - Pos Merdeka",
+  "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAxSURMbmFQV21EVmdwR2lFZGpvcmxjbXZkaGRveE9hWlJhTW9hNURpTll6ckVndUtvcEVwWFdnUWUydlMtQVROMHJVaS13OGZrd1l6UVFhWmttekdRay1xVjE2bmhDTUw0UEFRR3daN01WQ21Ha3hkOEtPMS1hX28?oc=5",
+  "source": "Pos Merdeka",
+  "source_url": "https://posmerdeka.com",
+  "published_at": "2026-11-24T12:40:59.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-24T15:45:35.294Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "51.06",
+      "nama": "Kabupaten Bangli",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

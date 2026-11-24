@@ -1,0 +1,21 @@
+{
+  "guid": "CBMixAFBVV95cUxQdGdjajlmTUotQjhZak4zc0Nzc01fcTZtcGN1MWFOeUtOTHVKSWlQUEFTbHdEcm1CT3FxVjR3Y3dZQmFYd3hRY0MyUVNTUzBJX3NDVmg5NTRCbHhXUUR3R1hXMDJmY2RDY01BOG1ZMTgtQXVQbHQwMVQxa1AwNUY3alFFR0RNSzdKOUdHQzJYamlVbjQ2ek4zc1dTQ1pPaDJjUjN2aXFEWTczbTZ1X2lUamNwSWpTTFlUcS0yQnlNWE9lem9L",
+  "title": "Terdampak Cuaca Ekstrem, Empat Titik di Sudimoro Pacitan Diterjang Longsor - TIMES Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdGdjajlmTUotQjhZak4zc0Nzc01fcTZtcGN1MWFOeUtOTHVKSWlQUEFTbHdEcm1CT3FxVjR3Y3dZQmFYd3hRY0MyUVNTUzBJX3NDVmg5NTRCbHhXUUR3R1hXMDJmY2RDY01BOG1ZMTgtQXVQbHQwMVQxa1AwNUY3alFFR0RNSzdKOUdHQzJYamlVbjQ2ek4zc1dTQ1pPaDJjUjN2aXFEWTczbTZ1X2lUamNwSWpTTFlUcS0yQnlNWE9lem9L?oc=5",
+  "source": "TIMES Indonesia",
+  "source_url": "https://timesindonesia.co.id",
+  "published_at": "2026-11-24T07:01:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-24T15:45:35.294Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.01",
+      "nama": "Kabupaten Pacitan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
