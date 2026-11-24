@@ -1,7 +1,7 @@
 // Uji hitungan perekam latensi notifikasi. Jalankan di e2e/: npm run test:skrip
 import assert from 'node:assert/strict';
 import { describe, test } from 'node:test';
-import { clockOffset, createRecorder, parseSse, report, summarize, toRow } from './latensi-notifikasi.mjs';
+import { clockOffset, createRecorder, createWriter, parseSse, report, summarize, toRow } from './latensi-notifikasi.mjs';
 
 describe('pembaca aliran SSE', () => {
   test('event lengkap dibaca, komentar dan baris retry dilewati, sisa yang belum lengkap dikembalikan', () => {
@@ -203,5 +203,88 @@ describe('perekam: sambung ulang dan laptop tidur', () => {
     measures[2].resolve({ offset: 60_000, rtt: 30 });
     await settle();
     assert.deepEqual([recorder.state.clock.offset, recorder.state.stale], [60_000, false]);
+  });
+});
+
+describe('penulis baris: di luar pembacaan aliran, dan mencoba lagi bila berkas terkunci', () => {
+  const settle = () => new Promise((resolve) => setImmediate(resolve));
+  const row = (id, langsung = true) => ({
+    diterima_utc: `1970-01-01T00:00:0${id}.000Z`, server: 'contoh.id', id, jenis: 'cuaca', level: 1, dibuat_utc: '1970-01-01T00:00:00.000Z',
+    sumber_utc: '', latensi_ms: '12.0', jeda_sumber_s: '', selisih_jam_ms: '0.0', rtt_ms: '20.0', langsung,
+  });
+  const locked = () => Object.assign(new Error('EBUSY: resource busy or locked'), { code: 'EBUSY' });
+  const ids = (text) => text.split('\n').filter(Boolean).map((line) => Number(line.split(',')[2]));
+
+  // Berkas tiruan: tiap penulisan baru selesai saat test memanggil writes[i].ok() atau .fail().
+  function setup() {
+    const file = { text: '' };
+    const writes = [];
+    const logs = [];
+    const warnings = [];
+    const append = (text) => new Promise((resolve, reject) => {
+      writes.push({
+        text,
+        ok: () => {
+          file.text += text;
+          resolve();
+        },
+        fail: () => reject(locked()),
+      });
+    });
+    const writer = createWriter({ append, log: (line) => logs.push(line), warn: (line) => warnings.push(line) });
+    return { writer, file, writes, logs, warnings };
+  }
+
+  test('satu penulisan pada satu waktu, urutan terjaga, dan baris baru dicetak sesudah tertulis', async () => {
+    const { writer, file, writes, logs } = setup();
+    const first = writer.add([row(1), row(2, false)]);
+    // Tiba selagi penulisan pertama belum selesai.
+    writer.add([row(3)]);
+    assert.equal(writes.length, 1);
+    assert.deepEqual(logs, []);
+    writes[0].ok();
+    await settle();
+    assert.equal(writes.length, 2);
+    writes[1].ok();
+    await first;
+    await settle();
+    assert.deepEqual(ids(file.text), [1, 2, 3]);
+    assert.equal(writer.pending(), 0);
+    assert.deepEqual(logs, ['  00:00:01 cuaca #1: 12.0 ms', '  00:00:02 cuaca #2: tidak dihitung', '  00:00:03 cuaca #3: 12.0 ms']);
+    assert.match(file.text, /^1970-01-01T00:00:01\.000Z,contoh\.id,1,cuaca,1,1970-01-01T00:00:00\.000Z,,12\.0,,0\.0,20\.0,true\n/);
+  });
+
+  test('berkas terkunci: baris disimpan, diperingatkan sekali, lalu ditulis sekaligus saat berkas terbuka lagi', async () => {
+    const { writer, file, writes, logs, warnings } = setup();
+    writer.add([row(1)]);
+    writes[0].fail();
+    await settle();
+    assert.equal(writer.pending(), 1);
+    assert.match(warnings[0], /Rekaman belum bisa ditulis \(EBUSY\)/);
+    assert.deepEqual(logs, []);
+
+    // Notifikasi berikutnya mencoba lagi, masih terkunci.
+    writer.add([row(2)]);
+    writes[1].fail();
+    await settle();
+    assert.deepEqual([writer.pending(), warnings.length], [2, 1]);
+    assert.deepEqual(ids(writer.unwritten()), [1, 2]);
+
+    // Percobaan berkala berikutnya berhasil.
+    const retry = writer.flush();
+    assert.deepEqual(ids(writes[2].text), [1, 2]);
+    writes[2].ok();
+    await retry;
+    await settle();
+    assert.deepEqual(ids(file.text), [1, 2]);
+    assert.equal(writer.pending(), 0);
+    assert.match(warnings[1], /Rekaman bisa ditulis lagi/);
+    assert.equal(logs.length, 2);
+  });
+
+  test('flush tanpa baris yang menunggu tidak menulis apa pun', async () => {
+    const { writer, writes } = setup();
+    await writer.flush();
+    assert.equal(writes.length, 0);
   });
 });
