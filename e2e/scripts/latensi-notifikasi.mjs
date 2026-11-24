@@ -13,9 +13,13 @@
 //   SIGAP sendiri melihat perubahan level di MAGMA, jadi tidak diringkas.
 //
 // Jam klien dan server tidak persis sama, jadi selisihnya diukur dulu ke /api/time
-// (tujuh kali bolak-balik, dipakai yang paling cepat), lalu diulang tiap 5 menit dan
+// (tujuh kali bolak-balik, dipakai yang paling cepat), lalu diulang tiap menit dan
 // tiap kali menyambung lagi. Ketidakpastiannya paling besar setengah waktu
-// bolak-balik itu.
+// bolak-balik itu, ditambah geser jam klien sejak pengukuran terakhir.
+//
+// Waktu tiba dicatat begitu potongan aliran terbaca. Menulis baris ke berkas dan
+// mencetaknya dikerjakan sesudahnya, di luar pembacaan aliran, supaya notifikasi
+// berikutnya dalam satu rombongan tidak ikut menunggu.
 //
 // Yang dihitung hanya notifikasi yang dibuat sesudah sambungan terbuka. Yang lain
 // tetap dicatat (langsung = false) tetapi tidak masuk ringkasan:
@@ -51,7 +55,9 @@ const CSV = arg('csv', join(dirname(fileURLToPath(import.meta.url)), '..', 'hasi
 const SUMMARY = `${CSV.endsWith('.csv') ? CSV.slice(0, -4) : CSV}.md`;
 const COLUMNS = ['diterima_utc', 'server', 'id', 'jenis', 'level', 'dibuat_utc', 'sumber_utc', 'latensi_ms', 'jeda_sumber_s', 'selisih_jam_ms', 'rtt_ms', 'langsung'];
 const CLOCK_SAMPLES = 7;
-const CLOCK_EVERY_MS = 5 * 60_000;
+// Jam penghitung klien bergeser terhadap jam server (pada laptop perekam terukur
+// sekitar 1 ms per menit, 24 Nov 2026), jadi selisihnya diukur ulang tiap menit.
+const CLOCK_EVERY_MS = 60_000;
 const RECONNECT_MS = 10_000;
 const TICK_MS = 1000;
 const SUSPEND_GAP_MS = 5000;
@@ -246,6 +252,8 @@ export function report(summaries, recording = 'latensi-notifikasi.csv') {
     ...summaries.flatMap(serverLines),
     'Latensi kirim dihitung dari saat server menyimpan notifikasi sampai datanya tiba di klien perekam; waktu menggambar notifikasi di layar tidak termasuk. Persentil memakai cara peringkat terdekat.',
     '',
+    'Jam klien dan server disamakan lewat `/api/time`: tujuh kali bolak-balik, dipakai yang tercepat, diulang tiap menit dan tiap kali menyambung lagi. Ketidakpastiannya paling besar setengah waktu bolak-balik, ditambah geser jam klien sejak pengukuran terakhir.',
+    '',
     'Jeda sejak waktu sumber dihitung dari waktu yang dicantumkan sumber (waktu gempa terjadi, waktu BMKG menerbitkan peringatan) sampai server menyimpan notifikasinya. Di dalamnya ada jeda sumber menerbitkan datanya dan selang SIGAP memeriksa sumber itu (gempa tiap 1 menit, peringatan cuaca tiap 5 menit). Untuk gunung api tidak dihitung: MAGMA tidak mencantumkan waktu penetapan level, jadi yang tercatat adalah saat SIGAP melihat perubahannya.',
     '',
   ].join('\n');
@@ -262,7 +270,8 @@ async function writeSummary() {
 }
 
 // Satu sambungan SSE sampai putus atau dihentikan; onChunk dipanggil untuk tiap
-// potongan yang tiba, juga yang hanya berisi ": ping".
+// potongan yang tiba, juga yang hanya berisi ": ping". onChunk tidak ditunggu:
+// pekerjaan yang lama di dalamnya akan menunda pencatatan waktu tiba potongan berikutnya.
 async function readStream(api, lastId, signal, onChunk) {
   const headers = { Accept: 'text/event-stream' };
   if (lastId !== null) headers['Last-Event-ID'] = String(lastId);
@@ -276,8 +285,73 @@ async function readStream(api, lastId, signal, onChunk) {
     const parsed = parseSse(buffer + decoder.decode(chunk, { stream: true }));
     buffer = parsed.rest;
     const notifications = parsed.events.filter((e) => e.event === 'notification').map((e) => JSON.parse(e.data));
-    await onChunk(notifications, receivedMs, openedMs);
+    onChunk(notifications, receivedMs, openedMs);
   }
+}
+
+const csvLine = (row) => `${COLUMNS.map((c) => row[c]).join(',')}\n`;
+
+function screenLine(row) {
+  const result = row.langsung ? `${row.latensi_ms} ms` : 'tidak dihitung';
+  return `  ${row.diterima_utc.slice(11, 19)} ${row.jenis} #${row.id}: ${result}`;
+}
+
+// Baris yang menunggu ditulis. Menulis ke berkas dan mencetak ke layar dikerjakan di
+// luar pembacaan aliran, supaya waktu tiba notifikasi berikutnya tidak ikut menunggu.
+// Bila berkas sedang tidak bisa ditulis (mis. dibuka di Excel), barisnya disimpan dan
+// dicoba lagi pada add() atau flush() berikutnya. `append`, `log`, dan `warn` bisa
+// diganti saat test.
+export function createWriter({ append, log = console.log, warn = console.error }) {
+  const state = { queue: [], writing: null, blocked: false };
+
+  const drain = async () => {
+    if (!state.queue.length) return;
+    const rows = [...state.queue];
+    try {
+      await append(rows.map(csvLine).join(''));
+    } catch (err) {
+      if (!state.blocked) warn(`Rekaman belum bisa ditulis (${err.code ?? err.message}). Barisnya disimpan dan dicoba lagi; tutup berkasnya bila sedang dibuka di program lain.`);
+      state.blocked = true;
+      return;
+    }
+    // Baris yang masuk selagi menulis ada di belakang antrean dan ditulis berikutnya.
+    state.queue.splice(0, rows.length);
+    if (state.blocked) warn('Rekaman bisa ditulis lagi.');
+    state.blocked = false;
+    for (const row of rows) log(screenLine(row));
+    await drain();
+  };
+
+  const flush = () => {
+    state.writing ??= drain().finally(() => {
+      state.writing = null;
+      if (state.queue.length && !state.blocked) void flush();
+    });
+    return state.writing;
+  };
+
+  return {
+    add(rows) {
+      state.queue.push(...rows);
+      return flush();
+    },
+    flush,
+    pending: () => state.queue.length,
+    unwritten: () => state.queue.map(csvLine).join(''),
+  };
+}
+
+// Di akhir perekaman, baris yang masih tertahan dicoba ditulis lagi selama setengah
+// menit. Bila berkasnya tetap tidak bisa ditulis, barisnya dicetak supaya tidak hilang.
+async function settleWrites(writer, attempts = 30) {
+  await writer.flush();
+  if (!writer.pending()) return;
+  if (attempts === 0) {
+    console.error(`${writer.pending()} baris tidak tertulis ke ${CSV}. Tambahkan baris berikut ke akhir berkas itu:\n${writer.unwritten()}`);
+    return;
+  }
+  await delay(1000);
+  await settleWrites(writer, attempts - 1);
 }
 
 // Keadaan satu kali perekaman: selisih jam yang sedang dipakai, kapan perekam terakhir
@@ -358,25 +432,26 @@ async function record(api, minutesToRun) {
   if (!existsSync(CSV)) await writeFile(CSV, `${COLUMNS.join(',')}\n`);
   const { clock } = recorder.state;
   console.log(`Selisih jam server − klien ${clock.offset.toFixed(0)} ms (bolak-balik ${clock.rtt.toFixed(0)} ms). Merekam ${minutesToRun} menit dari ${api} …`);
+  const writer = createWriter({ append: (text) => appendFile(CSV, text) });
   const refresh = setInterval(recorder.refreshClock, CLOCK_EVERY_MS);
-  const tick = setInterval(recorder.checkSuspend, TICK_MS);
+  // Tiap detik: periksa apakah perekam sempat terhenti, dan coba lagi baris yang tertahan.
+  const tick = setInterval(() => {
+    void recorder.checkSuspend();
+    if (writer.pending()) void writer.flush();
+  }, TICK_MS);
   const stop = new AbortController();
   const timer = setTimeout(() => stop.abort(), minutesToRun * 60_000);
   process.once('SIGINT', () => stop.abort());
 
-  const save = async (notifications, receivedMs, openedMs) => {
+  const save = (notifications, receivedMs, openedMs) => {
     const rows = recorder.accept(notifications, receivedMs, openedMs);
-    if (!rows.length) return;
-    await appendFile(CSV, rows.map((row) => `${COLUMNS.map((c) => row[c]).join(',')}\n`).join(''));
-    for (const row of rows) {
-      const result = row.langsung ? `${row.latensi_ms} ms` : 'tidak dihitung';
-      console.log(`  ${row.diterima_utc.slice(11, 19)} ${row.jenis} #${row.id}: ${result}`);
-    }
+    if (rows.length) void writer.add(rows);
   };
   await keepConnected(api, recorder, save, stop.signal);
   clearTimeout(timer);
   clearInterval(refresh);
   clearInterval(tick);
+  await settleWrites(writer);
   console.log(`${recorder.state.received} notifikasi diterima.`);
 }
 
