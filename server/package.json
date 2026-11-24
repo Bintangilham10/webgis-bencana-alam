@@ -13,6 +13,7 @@
     "migrate": "node db/migrate.js",
     "seed": "node scripts/seed.js",
     "indikasi": "node scripts/run-indikasi.js",
+    "kunci": "node scripts/kunci-api.js",
     "build:plates": "node scripts/build-plates.js",
     "build:stasiun": "node scripts/build-stasiun-cuaca.js",
     "build:seismik": "node scripts/build-stasiun-seismik.js",

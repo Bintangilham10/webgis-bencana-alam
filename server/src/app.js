@@ -15,9 +15,12 @@ import { createRiskRouter } from './routes/risk.js';
 import { createRiverRouter } from './routes/river.js';
 import { createRouteRouter } from './routes/route.js';
 import { createSeaLevelRouter } from './routes/sea-level.js';
+import { createV1Router } from './routes/v1.js';
 import { volcanoesRouter } from './routes/volcanoes.js';
 import { createWeatherRouter } from './routes/weather.js';
 import { createRainWarnings } from './sources/bmkg-cews.js';
+
+const STREAM_PATHS = new Set(['/api/stream', '/api/v1/stream']);
 
 // `services` memungkinkan test mengganti layanan luar (InaRISK, Open-Meteo,
 // Nominatim, PVMBG, BMKG CEWS, NASA GIBS) dengan versi palsu.
@@ -31,7 +34,7 @@ export function createApp({ services = {} } = {}) {
   app.set('trust proxy', 'loopback, uniquelocal');
   // GeoJSON batas wilayah dan sesar berukuran besar; gzip memangkasnya ±80%.
   // Aliran notifikasi (SSE) tidak dikompres: kompresi menahan event di buffer.
-  app.use(compression({ filter: (req, res) => req.path !== '/api/stream' && compression.filter(req, res) }));
+  app.use(compression({ filter: (req, res) => !STREAM_PATHS.has(req.path) && compression.filter(req, res) }));
 
   // Satu cek risiko memanggil ±8 layanan luar; jawaban yang sama di-cache 10 menit.
   app.use(
@@ -84,6 +87,21 @@ export function createApp({ services = {} } = {}) {
     }),
   );
 
+  const landslideRouter = createLandslideRouter({ rainWarnings, rainNow: services.rainNow, cloudsNow: services.cloudsNow });
+  const outlookRouter = createOutlookRouter(services.outlook);
+  const weatherRouter = createWeatherRouter(services.weather);
+  const notificationsRouter = createNotificationsRouter(services.notifications);
+
+  // API untuk pengembang luar, dengan kunci API (routes/v1.js). Memakai router data
+  // yang sama dengan aplikasi; hanya endpoint yang terdaftar di sana yang dibuka.
+  app.use(
+    '/api/v1',
+    createV1Router({
+      data: [earthquakesRouter, volcanoesRouter, capRouter, outlookRouter, landslideRouter, weatherRouter, notificationsRouter, referenceRouter],
+      ...services.v1,
+    }),
+  );
+
   app.use(
     '/api',
     healthRouter,
@@ -91,15 +109,15 @@ export function createApp({ services = {} } = {}) {
     volcanoesRouter,
     referenceRouter,
     createRiskRouter({ rainWarnings, ...services.risk }),
-    createLandslideRouter({ rainWarnings, rainNow: services.rainNow, cloudsNow: services.cloudsNow }),
-    createOutlookRouter(services.outlook),
+    landslideRouter,
+    outlookRouter,
     createGeocodeRouter(services.geocode),
     createGdacsRouter(services.gdacs),
     createRiverRouter(services.river),
-    createWeatherRouter(services.weather),
+    weatherRouter,
     createSeaLevelRouter(services.seaLevel),
     capRouter,
-    createNotificationsRouter(services.notifications),
+    notificationsRouter,
     facilitiesRouter,
     createRouteRouter(services.route),
   );
