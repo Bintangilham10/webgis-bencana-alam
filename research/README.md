@@ -8,6 +8,7 @@ Folder ini berisi skrip analisis untuk paper. Rancangan lengkapnya ada di rencan
 | RQ-L2 | Ambang hidrometeorologi (kelembapan tanah ERA5-Land × hujan) vs ambang hujan saja | Belum |
 | RQ-L3 | Skill model SIGAP-L harian pada lead 0–2 hari vs produk resmi | Belum |
 | RQ2 | Kinerja sistem: ketersediaan sinkronisasi dan latensi data | Server produksi Azure 13–23 Okt 2026 di [`results/kinerja_sistem_server.md`](results/kinerja_sistem_server.md); laptop pengembangan 26 Sep–1 Okt di [`results/kinerja_sistem.md`](results/kinerja_sistem.md) |
+| Data gempa | Intensitas gempa yang dirasakan per lokasi: daftar BMKG dari arsip perekam dan laporan USGS untuk gempa kuat sejak 2010 | Data siap: [`results/gempa_dirasakan_ringkasan.md`](results/gempa_dirasakan_ringkasan.md) dan [`results/gempa_usgs_ringkasan.md`](results/gempa_usgs_ringkasan.md). Protokol dan evaluasi model belum ada |
 
 ## Menjalankan
 
@@ -21,6 +22,8 @@ research/.venv/Scripts/python research/01_inventaris.py     # ±5 menit pertama 
 research/.venv/Scripts/python research/02_produk_resmi.py   # ±3 jam pertama kali (±8.400 titik PVMBG, 1 request/detik)
 research/.venv/Scripts/python research/06_evaluasi_rq_l1.py # hitung metrik, tulis ke results/
 research/.venv/Scripts/python research/09_kinerja_sistem.py # ketersediaan dan latensi dari database SIGAP (RQ2)
+research/.venv/Scripts/python research/10_gempa_dirasakan.py # ±30 detik; pertama kali mengunduh GeoNames Indonesia (10 MB)
+research/.venv/Scripts/python research/11_usgs_dyfi.py --sampai 2026-11-24 # ±12 menit pertama kali (±650 permintaan, satu per detik)
 research/.venv/Scripts/python -m unittest discover -s research/tests
 ```
 
@@ -40,6 +43,13 @@ Data CEWS dibaca dari arsip perekam (branch `arsip-data`, folder `bmkg-cews/`). 
 
 **Ketersediaan (RQ2).** Di server yang menyala terus, sinkronisasi gempa BMKG berhasil 14.640 dari 14.640 kali dan semua slot jadwal berjalan, jauh di atas laptop (85,5%, karena laptop sering offline). MAGMA berhasil 77,9%: sejak 21 Okt 04:58Z halaman MAGMA berganti format, sehingga 108 sinkronisasi gagal beruntun sampai server dimatikan. Selama itu status 69 gunung api terakhir tetap dilayani, dan pembacanya diperbaiki untuk halaman baru pada 23 Okt.
 
+**Data gempa dirasakan.** Skrip `10` dan `11` tidak memerlukan database. Keduanya menyiapkan data untuk menguji seberapa tepat sebuah model memperkirakan guncangan di lokasi pengguna; belum ada hasil model di sini.
+
+- `10_gempa_dirasakan.py` membaca daftar "Dirasakan" BMKG dari arsip perekam (feed BMKG sendiri hanya memuat 15 gempa terakhir), memilih revisi terakhir tiap gempa, lalu memberi koordinat pada tiap nama lokasi dari dua daftar tetap: 514 kab/kota dan GeoNames Indonesia. Aturan pemilihannya ada di `sigap_riset/geokode.py`, dan kolom `kepastian` mencatat aturan mana yang menentukan tiap lokasi. Tempat yang perlu ditinjau tercantum di ringkasan; koreksi tangan ditulis di [`lokasi_manual.csv`](lokasi_manual.csv) (kolom `nama`, `keterangan`, `tempat`, `lat`, `lon`, `presisi`, `catatan`) dan selalu didahulukan.
+- `11_usgs_dyfi.py` mengambil laporan guncangan USGS ("Did You Feel It?") untuk gempa M ≥ 5 sejak 2010 yang punya sedikitnya 10 respons: intensitas per kotak 10 km beserta jumlah responsnya. Data ini menutup kekurangan arsip BMKG, yang baru dua bulan dan hampir tidak memuat intensitas V ke atas.
+- Untuk himpunan beku yang dirujuk makalah, jalankan `10` dengan `--sampai <tanggal> --commit <hash arsip>` dan `11` dengan `--sampai <tanggal>` yang sama; hash arsip dan sidik berkas GeoNames tercatat di ringkasan.
+- Kedua sumber hanya mencatat tempat yang melapor merasakan. Tempat yang tidak disebut belum tentu tidak merasakan, jadi rancangan evaluasinya harus memperhitungkan itu. Seperti RQ-L1, tulis dan komit protokol analisisnya sebelum menghitung hasil model.
+
 ## Struktur
 
 | Path | Isi |
@@ -48,8 +58,11 @@ Data CEWS dibaca dari arsip perekam (branch `arsip-data`, folder `bmkg-cews/`). 
 | `02_produk_resmi.py` | Desain kasus-kontrol dan nilai produk resmi di tiap titik/periode |
 | `06_evaluasi_rq_l1.py` | AUC berpasangan, POD/POFD/TSS, CI bootstrap klaster, analisis sensitivitas, dan EDuMaP untuk CEWS |
 | `09_kinerja_sistem.py` | Ketersediaan sinkronisasi per sumber (gagal jaringan klien dipisah dari gagal sumber) dan latensi gempa BMKG |
-| `sigap_riset/` | Modul bersama: klien HTTP ber-cache, query PostGIS, metrik, arsip CEWS, dan EDuMaP (Calvello & Piciullo 2016) |
-| `tests/` | Uji metrik dengan data buatan, uji klien HTTP, dan uji EDuMaP dengan contoh di makalah aslinya |
+| `10_gempa_dirasakan.py` | Gempa dirasakan BMKG dari arsip perekam: satu baris per gempa dan per lokasi laporan, dengan koordinat |
+| `11_usgs_dyfi.py` | Laporan guncangan USGS (DYFI) per kotak 10 km untuk gempa M ≥ 5 sejak 2010 |
+| `lokasi_manual.csv` | Koreksi tangan untuk koordinat lokasi laporan BMKG (dikomit; boleh kosong) |
+| `sigap_riset/` | Modul bersama: klien HTTP ber-cache, query PostGIS, metrik, arsip perekam (CEWS, gempa dirasakan), pencocokan nama lokasi, pembaca USGS, dan EDuMaP (Calvello & Piciullo 2016) |
+| `tests/` | Uji metrik dengan data buatan, uji klien HTTP, uji EDuMaP dengan contoh di makalah aslinya, dan uji pengurai gempa dirasakan, pencocokan lokasi, serta pembaca USGS dengan potongan data asli |
 | `data/` | Cache, data antara, dan sampel (tidak dikomit; bisa dibuat ulang) |
 | `results/` | Tabel dan gambar hasil (dikomit) |
 
@@ -59,5 +72,8 @@ Data CEWS dibaca dari arsip perekam (branch `arsip-data`, folder `bmkg-cews/`). 
 - Prakiraan potensi gerakan tanah bulanan dan ZKGT: **PVMBG** (layer WMS Portal MBG).
 - Peringatan dini curah hujan tinggi: **BMKG** (CEWS).
 - Batas wilayah: Kepmendagri 2025 (data cahyadsn/wilayah_boundaries, MIT).
+- Gempa dirasakan: **BMKG** (feed `gempadirasakan` dan `autogempa`, lewat arsip perekam).
+- Laporan guncangan gempa kuat: **U.S. Geological Survey**, katalog ComCat dan produk "Did You Feel It?" (domain publik).
+- Koordinat nama tempat: **GeoNames** (CC BY 4.0), berkas `ID.zip`.
 
 Endpoint Portal MBG dan CEWS adalah API internal situs, bukan layanan yang didokumentasikan. Skrip memakai User-Agent yang jelas, jeda minimal 1–2 detik per request, dan cache supaya tiap data cukup diambil sekali. Data pribadi petugas (nama, NIP) tidak disimpan.

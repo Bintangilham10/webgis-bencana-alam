@@ -335,7 +335,7 @@ TEST_DATABASE_URL=postgres://sigap:sigap@localhost:5433/sigap_test npm test
 
 In PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/sigap_test"; npm test`
 
-Current counts: 170 server tests (with the integration database), 70 recorder tests, and 22 research tests. One research test reproduces the worked example of the EDuMaP paper.
+Current counts: 170 server tests (with the integration database), 70 recorder tests, and 60 research tests. One research test reproduces the worked example of the EDuMaP paper.
 
 End-to-end tests in [`e2e/`](e2e) run the test plan from the course proposal (scenarios P1–P8 and L1–L6) against a running app with Playwright, in Chrome, Edge, Firefox, WebKit, and two 390 px phone profiles, plus scripts for data accuracy against BMKG, MAGMA, and InaRISK and for performance (API timings and Lighthouse). Results and the defects they found are in [`docs/pengujian/README.md`](docs/pengujian/README.md) (in Indonesian).
 
