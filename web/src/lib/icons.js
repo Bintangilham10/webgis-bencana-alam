@@ -27,6 +27,8 @@ export const icons = {
   extent: icon('<path d="M4 9V4h5"/><path d="M20 9V4h-5"/><path d="M4 15v5h5"/><path d="M20 15v5h-5"/>'),
   fault: icon('<path d="M13 2 9.5 8.5l4 3-3.5 5 2 5.5"/>'),
   filter: icon('<path d="M21 4H3l7 8.2V19l4 2v-8.8z"/>'),
+  // Speedometer (status wilayah).
+  gauge: icon('<path d="M3.5 17a9 9 0 1 1 17 0"/><path d="m12 13 4-5"/><circle cx="12" cy="13" r="1.6"/>'),
   info: icon('<circle cx="12" cy="12" r="9"/><path d="M12 11v5.5"/><path d="M12 7.5h.01"/>'),
   // Lereng dengan runtuhan di kakinya (riwayat longsor).
   landslide: icon('<path d="M3 20h18"/><path d="M4 20 11 6l3 5"/><circle cx="16" cy="15" r="1.4"/><circle cx="19" cy="18.2" r="1.1"/><circle cx="14.2" cy="18.4" r="0.9"/>'),

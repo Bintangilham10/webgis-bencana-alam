@@ -82,7 +82,7 @@ async function hazardsByRegion(run, today) {
 
 // Satu run → daftar kab/kota dengan tiga indikasi dan level tertingginya, plus
 // batas [[selatan, barat], [utara, timur]] supaya peta bisa terbang ke sana.
-async function buildOutlook(runId, today) {
+export async function buildOutlook(runId, today) {
   const { rows: runs } = await query(
     `SELECT id, rules_version, started_at, finished_at, forecast_from::text, forecast_to::text, locations, locations_failed
      FROM indikasi_run WHERE id = $1`,
