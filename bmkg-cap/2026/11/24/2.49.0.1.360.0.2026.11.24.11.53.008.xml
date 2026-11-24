@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.24.11.53.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-24T17:50:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-24T18:20:00+08:00</effective>
+    <expires>2026-11-24T19:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 November 2026, 18:20 WITA di sebagian wilayah Nusa Tenggara Timur, khususnya di AMABI OEFETO, AMARASI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 November 2026, 19:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNT/2026/11/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Timur</areaDesc>
+      <polygon>-10.190,123.859 -10.199,123.910 -10.187,123.935 -10.175,123.948 -10.167,123.972 -10.186,123.969 -10.202,123.972 -10.210,123.983 -10.218,123.972 -10.244,123.972 -10.253,123.967 -10.257,123.960 -10.262,123.942 -10.252,123.925 -10.226,123.905 -10.232,123.890 -10.233,123.867 -10.240,123.860 -10.252,123.863 -10.265,123.860 -10.263,123.825 -10.258,123.818 -10.245,123.813 -10.238,123.794 -10.224,123.789 -10.198,123.798 -10.184,123.814 -10.160,123.818 -10.159,123.827 -10.163,123.833 -10.175,123.840 -10.190,123.859</polygon>
+      <polygon>-10.176,124.004 -10.165,124.000 -10.163,123.993 -10.169,123.978 -10.167,123.972 -10.175,123.948 -10.187,123.935 -10.199,123.910 -10.190,123.859 -10.172,123.856 -10.145,123.841 -10.136,123.839 -10.124,123.846 -10.112,123.868 -10.114,123.892 -10.105,123.898 -10.112,123.907 -10.109,123.919 -10.105,123.922 -10.110,123.949 -10.110,123.965 -10.099,123.995 -10.131,123.992 -10.153,123.999 -10.159,124.005 -10.171,124.007 -10.176,124.004</polygon>
+    </area>
+  </info>
+</alert>
