@@ -1,8 +1,9 @@
 # SITE_ADDRESS = nama domain server: Caddy mengambil sertifikat HTTPS (Let's Encrypt)
 # sendiri dan mengalihkan HTTP ke HTTPS. ":80" = uji lokal tanpa HTTPS.
 {$SITE_ADDRESS} {
-	# Aliran notifikasi (SSE) tidak dikompresi supaya tiap notifikasi langsung terkirim.
-	@compress not path /api/stream
+	# Aliran notifikasi (SSE) tidak dikompresi supaya tiap notifikasi langsung terkirim;
+	# /api/v1/stream adalah aliran yang sama untuk pengembang berkunci API.
+	@compress not path /api/stream /api/v1/stream
 	encode @compress zstd gzip
 
 	handle /api/* {
@@ -12,9 +13,10 @@
 	handle {
 		root * /srv
 		# Nama berkas di /assets memuat hash isinya, jadi aman disimpan browser selamanya;
-		# halaman utama selalu diperiksa ulang supaya versi baru langsung terpakai.
+		# halaman (peta dan dokumentasi API) selalu diperiksa ulang supaya versi baru
+		# langsung terpakai.
 		header /assets/* Cache-Control "public, max-age=31536000, immutable"
-		@page path / /index.html
+		@page path / /index.html /pengembang.html
 		header @page Cache-Control "no-cache"
 		file_server
 	}
