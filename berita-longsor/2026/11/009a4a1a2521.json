@@ -1,0 +1,26 @@
+{
+  "guid": "CBMisAFBVV95cUxQWXhFR2toOExuYm9JY1l1c2tCVmhrbWRHbTdFc1NWUjEwNXJCRXVEaElVY1dqVEw0OGhHd3VpeU9iN0p4YktRUjZMYlY4Mm1PeWpmQXhTNENVMS15ZklMd1AtTk11bUxncGJ3dExNQjZtOVp1ZUJrclh6d0ZNblBGZlFQZ1ROOTFVZmdJUS1PemszcWpvbEo5MlZKQTVEd1lhUnpoRVY0RmlLbHZSUXNGeQ",
+  "title": "Banjir Bandang dan Longsor Terjang Culamega Tasikmalaya, Satu Dusun Terisolasi - Fokus Jabar",
+  "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWXhFR2toOExuYm9JY1l1c2tCVmhrbWRHbTdFc1NWUjEwNXJCRXVEaElVY1dqVEw0OGhHd3VpeU9iN0p4YktRUjZMYlY4Mm1PeWpmQXhTNENVMS15ZklMd1AtTk11bUxncGJ3dExNQjZtOVp1ZUJrclh6d0ZNblBGZlFQZ1ROOTFVZmdJUS1PemszcWpvbEo5MlZKQTVEd1lhUnpoRVY0RmlLbHZSUXNGeQ?oc=5",
+  "source": "Fokus Jabar",
+  "source_url": "https://fokusjabar.id",
+  "published_at": "2026-11-24T13:25:05.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-24T22:00:44.793Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
