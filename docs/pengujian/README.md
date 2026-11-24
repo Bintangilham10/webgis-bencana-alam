@@ -98,6 +98,7 @@ L1, L5, dan sesi uji pengguna di HP responden butuh SIGAP yang online lewat HTTP
 - **L1** akurasi dan **L5** perangkat: langkahnya di [`uji-lokasi-dan-perangkat.md`](uji-lokasi-dan-perangkat.md). Koordinat "Lokasi saya" di 5 titik acuan luar ruang dicatat di [`templat-galat-gps.csv`](templat-galat-gps.csv), lalu galatnya dihitung dengan `npm run gps` di `e2e/`; target ≤ 50 m. L5 mengulang alur peta, popup, cek risiko, rute aman, pantau posisi, dan notifikasi di HP Android (Chrome), iPhone (Safari), dan laptop.
 - **Lapis 5** pengguna: ≥ 15 mahasiswa dan warga mengerjakan 5 tugas (cari kab/kota, cek risiko, baca level, ganti lapisan, cari nomor darurat), lalu mengisi kuesioner SUS; target SUS ≥ 68 dan tugas selesai ≥ 90%. Teks Google Form di [`formulir-uji-pengguna.md`](formulir-uji-pengguna.md); jalannya sesi, kunci jawaban, dan lembar pengamatan di [`panduan-uji-pengguna.md`](panduan-uji-pengguna.md). Skor dihitung dengan `npm run sus` dari CSV jawaban formulir.
 - **P3** banjir dan tanah longsor: jalankan ulang `npm run akurasi` di `e2e/` setelah layanan InaRISK pulih.
+- **Latensi notifikasi** (belum diukur; perekamnya ditambahkan 24 Nov 2026): `npm run latensi:server -- --menit 1440` di `e2e/` mendengarkan aliran notifikasi server produksi dan mencatat, untuk tiap notifikasi sungguhan, waktu dari server membuatnya sampai tiba di klien (jam keduanya dikoreksi lewat `/api/time`) serta jeda sejak waktu yang dicantumkan sumbernya. Hasilnya ditulis ke `research/results/latensi_notifikasi.csv` dan `.md`. Cara membaca kolomnya dan syarat supaya angkanya sah ada di [`e2e/README.md`](../../e2e/README.md#latensi-notifikasi).
 
 ## Menjalankan ulang
 
@@ -115,6 +116,7 @@ npm run akurasi     # P3
 npm run kinerja     # P6
 npm run gps -- pengukuran.csv   # L1, dari templat-galat-gps.csv yang sudah diisi
 npm run sus -- jawaban.csv      # lapis 5, dari CSV jawaban Google Form
+npm run latensi:server -- --menit 1440   # latensi notifikasi dari server produksi (tanpa aplikasi lokal)
 cd ../server && TEST_DATABASE_URL=postgres://sigap:sigap@localhost:5433/sigap_test npm test   # lapis 1–2 dan P8 sisi server
 ```
 

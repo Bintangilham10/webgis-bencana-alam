@@ -45,6 +45,9 @@ Image dibangun ulang di VM, biasanya 1–3 menit. Data di basis data tidak berub
 | Kesehatan sumber data | `curl -s https://sigap-bencana.malaysiawest.cloudapp.azure.com/api/health` (bisa dari mana saja) |
 | Cadangan basis data | `docker compose -f deploy/compose.yaml exec db pg_dump -U sigap -d sigap -Fc -f /tmp/cadangan.dump && docker compose -f deploy/compose.yaml cp db:/tmp/cadangan.dump .` lalu salin ke laptop dengan `scp` |
 | Mulai ulang semua | `docker compose -f deploy/compose.yaml restart` |
+| Daftar kunci API dan pemakaiannya hari ini | `docker compose -f deploy/compose.yaml exec api node scripts/kunci-api.js daftar` |
+| Cabut satu kunci API | `docker compose -f deploy/compose.yaml exec api node scripts/kunci-api.js cabut <awalan>` |
+| Ubah kuota harian satu kunci API | `docker compose -f deploy/compose.yaml exec api node scripts/kunci-api.js kuota <awalan> <jumlah per hari>` |
 
 **SSH dari IP baru.** IP rumah atau kampus bisa berganti. Buka lagi aksesnya dari laptop:
 

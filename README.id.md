@@ -86,6 +86,7 @@ Tugas Besar mata kuliah Teknologi Pemetaan Berbasis Web (ACK4LBB3), Telkom Unive
   - evakuasi dan rute aman: tempat evakuasi dan titik kumpul terdekat yang terpetakan di OpenStreetMap, ditambah rumah sakit, puskesmas/klinik, polisi, dan pemadam kebakaran. OSM tidak menilai keamanan tempat, jadi tempat yang berada di zona banjir atau longsor kelas tinggi InaRISK diberi tanda. Tiap tempat bisa dicarikan rute jalan kaki, motor, atau mobil (Valhalla, cadangan OSRM). Setiap kandidat rute dinilai panjangnya di zona banjir dan longsor tinggi; bila semuanya melewati zona, SIGAP meminta rute lagi ke Valhalla dengan blok zona itu sebagai area terlarang. Rute yang disarankan adalah yang paparannya terkecil dengan waktu tempuh paling lama 1,75 × rute tercepat + 2 menit; ruas merah menandai bagian yang tidak bisa dihindari, mis. tujuan yang berada di dalam zona.
 - **Notifikasi langsung (SSE):** gempa BMKG baru, perubahan level gunung api, dan peringatan dini cuaca BMKG dikirim server lewat Server-Sent Events: lonceng dengan badge, toast, serta bunyi dan notifikasi browser (opsional). Bisa dibatasi ke sekitar lokasi pengguna (gempa ≤ 150 km, gunung api ≤ 100 km, peringatan cuaca di kab/kota yang sama atau ≤ 30 km). Browser yang tersambung ulang menerima notifikasi yang terlewat dalam 24 jam terakhir. Tombol simulasi menunjukkan alurnya tanpa menyentuh server.
 - **Pantau posisi** (`watchPosition`): peta mengikuti posisi pengguna. Saat ada rute aman, chip status menunjukkan sisa jarak dan memperingatkan bila pengguna keluar rute lebih dari 60 m atau berada di ruas merah. Posisi tetap di browser kecuali pengguna meminta cek risiko atau rute.
+- **API untuk pengembang** (`/api/v1`): aplikasi lain bisa membaca data yang disimpan SIGAP (gempa, level gunung api, peringatan dini cuaca, indikasi 3 hari, hujan terukur, riwayat longsor, batas wilayah, dan aliran notifikasi langsung) dengan kunci API gratis. Halaman dokumentasi dan formulir kuncinya ada di `/pengembang.html`. Tiap kunci punya kuota harian, dan yang disimpan server hanya sidik kuncinya.
 - **Perekam arsip data riset** (`recorder/`): GitHub Actions merekam tiap 15 menit ke branch `arsip-data`. Yang direkam:
   - peringatan dini cuaca dan gempa BMKG, status gunung api MAGMA, dan laporan PetaBencana;
   - untuk riset longsor dan hujan: peringatan dini curah hujan tinggi BMKG (CEWS, per dasarian, termasuk arsip sejak 2022), prakiraan bulanan potensi gerakan tanah PVMBG di titik tiap kab/kota, laporan pemeriksaan lapangan PVMBG (baru/berubah), ringkasan ensemble hujan ECMWF 3 hari, kejadian mingguan BNPB, dan berita longsor yang dicocokkan ke kab/kota;
@@ -164,6 +165,17 @@ cd e2e && npm install && npx playwright install firefox webkit
 npm test && npm run akurasi && npm run kinerja   # saat API dan `npm run preview` (web/) berjalan
 ```
 
+Latensi notifikasi diukur dengan perekam yang mendengarkan aliran notifikasi seperti browser. Untuk tiap notifikasi dicatat waktu dari server membuatnya sampai tiba di klien, sesudah selisih jam keduanya dikoreksi (`GET /api/time`), dan secara terpisah jeda sejak waktu yang dicantumkan sumbernya. Notifikasi yang dikirim ulang setelah sambungan putus tetap dicatat tetapi tidak masuk ringkasan.
+
+```bash
+cd e2e
+npm run latensi:server -- --menit 1440   # server produksi, 24 jam; hasil di research/results/latensi_notifikasi.csv dan .md
+npm run latensi:server -- --ringkas      # ringkasan semua yang sudah terekam
+npm run test:skrip                       # test perekamnya sendiri
+```
+
+Rinciannya ada di [`e2e/README.md`](e2e/README.md#latensi-notifikasi).
+
 ## API
 
 | Endpoint | Isi |
@@ -194,6 +206,16 @@ npm test && npm run akurasi && npm run kinerja   # saat API dan `npm run preview
 | `GET /api/evacuation-sites` | Semua tempat evakuasi dan titik kumpul OpenStreetMap di Indonesia (±1.600, GeoJSON) |
 | `POST /api/route` | Rute aman untuk `{"from": {"lat", "lon"}, "to": {"lat", "lon"}, "mode"}` dengan mode `jalan_kaki`, `motor`, atau `mobil`: kandidat rute beserta panjangnya per kelas bahaya, rute tercepat dan yang disarankan, serta zona tinggi di titik asal atau tujuan. Maksimal 30 permintaan per 10 menit dari satu alamat IP |
 | `GET /api/geocode?q=bandung` | Pencarian kab/kota (database) dan tempat lain (Nominatim) |
+| `GET /api/time` | Jam server dalam UTC sampai milidetik, dipakai untuk mengukur latensi notifikasi |
+
+### API untuk pengembang dengan kunci API (`/api/v1`)
+
+Pengembang lain bisa membaca data yang disimpan SIGAP lewat `/api/v1`. Halaman dokumentasi beserta formulir kuncinya ada di `/pengembang.html`, dan `GET /api/v1` mengembalikan daftar endpoint yang sama dalam JSON.
+
+- **Kunci.** `POST /api/v1/keys` dengan `name`, `email`, `purpose`, dan `agree: true` mengembalikan kunci satu kali. Basis data hanya menyimpan sidik SHA-256-nya. Satu email bisa punya paling banyak tiga kunci aktif. Email tidak diverifikasi.
+- **Pemakaian.** Kirim kunci di header `X-API-Key` (atau `Authorization: Bearer`). Tiap kunci punya kuota harian, bawaannya 5.000 permintaan, yang kembali penuh pukul 00.00 UTC (07.00 WIB). Sisa kuota ada di header `X-RateLimit-Remaining`, dan `GET /api/v1/usage` menampilkan pemakaian kunci itu sendiri.
+- **Endpoint.** `earthquakes`, `volcanoes`, `cap`, `outlook`, `weather-stations`, `landslides`, `wilayah`, `notifications`, dan `stream` (aliran Server-Sent Events yang sama, paling banyak tiga sambungan per kunci). Isinya persis yang dipakai peta. Endpoint yang memanggil layanan luar per permintaan (cek risiko, rute, debit sungai, pencarian tempat, muka laut) tidak dibuka, supaya pemakaian lewat kunci tidak menghabiskan kuota layanan gratis yang dipakai aplikasi.
+- **Mengelola kunci.** Di `server/`: `npm run kunci -- daftar`, `npm run kunci -- cabut <awalan>`, `npm run kunci -- kuota <awalan> <per hari>`.
 
 ## Sumber data dan atribusi
 

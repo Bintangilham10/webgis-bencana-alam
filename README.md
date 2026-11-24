@@ -96,6 +96,7 @@ Pick a point by search, GPS, right-click, or long press. SIGAP runs 12 lookups i
 - Dark and light themes, flat colours, and one blue accent. Bright colours are reserved for hazard data.
 - Cartographic essentials: collapsible legend, scale bar with a 1:n reading, north arrow, and cursor coordinates in WGS84, UTM, and EPSG:3857.
 - Animations switch off when the system asks for reduced motion.
+- **Data for other apps.** A developer API (`/api/v1`) with free API keys and a documentation page lets other teams read the earthquakes, volcano levels, weather warnings, outlook, and notification stream the map itself uses.
 
 </td>
 <td width="50%" valign="top">
@@ -335,7 +336,7 @@ TEST_DATABASE_URL=postgres://sigap:sigap@localhost:5433/sigap_test npm test
 
 In PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/sigap_test"; npm test`
 
-Current counts: 170 server tests (with the integration database), 70 recorder tests, and 60 research tests. One research test reproduces the worked example of the EDuMaP paper.
+Current counts: 191 server tests (with the integration database), 70 recorder tests, 60 research tests, and 14 tests of the latency recorder (`npm run test:skrip` in `e2e/`). One research test reproduces the worked example of the EDuMaP paper.
 
 End-to-end tests in [`e2e/`](e2e) run the test plan from the course proposal (scenarios P1–P8 and L1–L6) against a running app with Playwright, in Chrome, Edge, Firefox, WebKit, and two 390 px phone profiles, plus scripts for data accuracy against BMKG, MAGMA, and InaRISK and for performance (API timings and Lighthouse). Results and the defects they found are in [`docs/pengujian/README.md`](docs/pengujian/README.md) (in Indonesian).
 
@@ -343,6 +344,17 @@ End-to-end tests in [`e2e/`](e2e) run the test plan from the course proposal (sc
 cd e2e && npm install && npx playwright install firefox webkit
 npm test && npm run akurasi && npm run kinerja   # with the API and `npm run preview` (web/) running
 ```
+
+Notification latency is measured by a recorder that listens to the notification stream like a browser does. For every notification it logs the time from the server creating it to the client receiving it, corrected for the difference between the two clocks (`GET /api/time`), and separately the delay since the time stated by the source. Notifications replayed after a reconnect are logged but left out of the summary.
+
+```bash
+cd e2e
+npm run latensi:server -- --menit 1440   # production server, 24 hours; results in research/results/latensi_notifikasi.csv and .md
+npm run latensi:server -- --ringkas      # summary of everything recorded so far
+npm run test:skrip                       # tests of the recorder itself
+```
+
+Details are in [`e2e/README.md`](e2e/README.md#latensi-notifikasi) (in Indonesian).
 
 </details>
 
@@ -378,6 +390,16 @@ Every endpoint returns JSON; spatial data is GeoJSON with `[lon, lat]` coordinat
 | `GET /api/evacuation-sites` | All OpenStreetMap evacuation sites and assembly points in Indonesia (about 1,600) |
 | `POST /api/route` | Safe route for `{"from": {"lat", "lon"}, "to": {"lat", "lon"}, "mode"}` with mode `jalan_kaki`, `motor`, or `mobil`: candidate routes with metres per hazard class, the fastest and the suggested one, and high zones at the start or destination. At most 30 requests per 10 minutes from one IP address |
 | `GET /api/geocode?q=bandung` | Regency search in the database, other places through Nominatim |
+| `GET /api/time` | The server clock in UTC with milliseconds, used to measure notification latency |
+
+### Developer API with API keys (`/api/v1`)
+
+Other developers can read the data SIGAP stores through `/api/v1`. The documentation page with the key form is served at `/pengembang.html`, and `GET /api/v1` returns the same endpoint list as JSON.
+
+- **Keys.** `POST /api/v1/keys` with `name`, `email`, `purpose`, and `agree: true` returns a key once. The database keeps only its SHA-256 hash. One email can hold up to three active keys. The email address is not verified.
+- **Use.** Send the key in the `X-API-Key` header (or `Authorization: Bearer`). Each key has a daily quota, 5,000 requests by default, that resets at 00:00 UTC (07:00 WIB); the remaining quota is in `X-RateLimit-Remaining`, and `GET /api/v1/usage` shows the key's own usage.
+- **Endpoints.** `earthquakes`, `volcanoes`, `cap`, `outlook`, `weather-stations`, `landslides`, `wilayah`, `notifications`, and `stream` (the same Server-Sent Events stream, at most three connections per key). They return exactly what the map uses. Endpoints that call outside services per request (risk check, route, river, geocode, sea level) are not exposed, so key traffic cannot use up the free quotas the app depends on.
+- **Managing keys.** In `server/`: `npm run kunci -- daftar`, `npm run kunci -- cabut <prefix>`, `npm run kunci -- kuota <prefix> <per day>`.
 
 <details>
 <summary><strong>Example: the landslide section of a risk profile</strong> (Banjarnegara, 27 September 2026)</summary>
@@ -405,7 +427,7 @@ Shortened from the real response. If one source fails, only its own part carries
 | [`web/`](web) | Vite + Leaflet frontend |
 | [`recorder/`](recorder) | Data recorder that runs on GitHub Actions, plus the outlook rules (`src/lib/rules.json`) shared with the server |
 | [`research/`](research) | Python analysis for SIGAP-L, the preregistered protocol, and results |
-| [`e2e/`](e2e) | Playwright end-to-end tests and accuracy/performance scripts for the course test plan; results in [`docs/pengujian/`](docs/pengujian) |
+| [`e2e/`](e2e) | Playwright end-to-end tests, accuracy/performance scripts for the course test plan, and the notification latency recorder; results in [`docs/pengujian/`](docs/pengujian) |
 | [`docs/images/`](docs/images) | Screenshots and charts used in this README |
 | [`deploy/`](deploy) | Production server: Docker Compose with PostGIS, the API, and Caddy (HTTPS) on one Azure VM |
 | [`docker-compose.yml`](docker-compose.yml) | PostgreSQL 18 + PostGIS 3.6 for development |
