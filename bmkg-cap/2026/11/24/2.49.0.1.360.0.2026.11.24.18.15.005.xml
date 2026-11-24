@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.24.18.15.005</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-24T23:19:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-24T23:29:00+07:00</effective>
+    <expires>2026-11-25T02:50:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jambi</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 November 2026, 23:29 WIB di sebagian wilayah Jambi, khususnya di LIMUN, PAMENANG BARAT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 25 November 2026, 02:50 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJI/2026/11/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jambi</areaDesc>
+      <polygon>-2.019,102.474 -2.028,102.474 -2.059,102.464 -2.091,102.461 -2.089,102.452 -2.101,102.445 -2.105,102.432 -2.119,102.443 -2.121,102.429 -2.147,102.431 -2.150,102.423 -2.146,102.409 -2.154,102.398 -2.146,102.370 -2.163,102.342 -2.156,102.334 -2.128,102.327 -2.106,102.368 -2.106,102.381 -2.088,102.379 -2.084,102.365 -2.064,102.356 -2.015,102.357 -2.015,102.373 -2.005,102.384 -2.002,102.408 -1.992,102.421 -1.991,102.428 -1.998,102.438 -2.003,102.439 -2.010,102.461 -2.019,102.474</polygon>
+      <polygon>-2.467,102.655 -2.516,102.636 -2.561,102.637 -2.572,102.642 -2.611,102.641 -2.638,102.624 -2.661,102.616 -2.671,102.608 -2.679,102.594 -2.675,102.570 -2.679,102.537 -2.678,102.522 -2.696,102.505 -2.703,102.492 -2.703,102.466 -2.699,102.448 -2.692,102.439 -2.689,102.406 -2.676,102.390 -2.656,102.392 -2.648,102.389 -2.651,102.371 -2.648,102.351 -2.656,102.330 -2.637,102.302 -2.618,102.351 -2.586,102.377 -2.577,102.396 -2.551,102.398 -2.538,102.390 -2.524,102.373 -2.514,102.370 -2.504,102.414 -2.437,102.592 -2.404,102.632 -2.377,102.654 -2.393,102.669 -2.399,102.671 -2.409,102.670 -2.442,102.652 -2.467,102.655</polygon>
+    </area>
+  </info>
+</alert>
