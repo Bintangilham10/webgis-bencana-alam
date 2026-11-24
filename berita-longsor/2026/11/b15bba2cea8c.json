@@ -1,0 +1,31 @@
+{
+  "guid": "CBMinwFBVV95cUxNd0Frbm40eE10Y3FpaGlyVkZEQVBnTEJ3WExNTHhud1RJdV9meDlscG9ZXzFORHpDVDhuclhsSEVpSnh3YTVsX3NuenN6X19lRGRKaC1WRmpNMFl3Y2pWekdaY1RjMzl0TWIyVTlRcUVvdmllNldzUFVFcnQ1QkpqT25Tc2RIN25KemFmTXUwSkx4UHY0VlpxS3hDVmNlLVU",
+  "title": "Kementerian PU Pulihkan Jalan Nasional Banjar–Ciamis Usai Longsor - Mitrapol",
+  "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNd0Frbm40eE10Y3FpaGlyVkZEQVBnTEJ3WExNTHhud1RJdV9meDlscG9ZXzFORHpDVDhuclhsSEVpSnh3YTVsX3NuenN6X19lRGRKaC1WRmpNMFl3Y2pWekdaY1RjMzl0TWIyVTlRcUVvdmllNldzUFVFcnQ1QkpqT25Tc2RIN25KemFmTXUwSkx4UHY0VlpxS3hDVmNlLVU?oc=5",
+  "source": "Mitrapol",
+  "source_url": "https://mitrapol.com",
+  "published_at": "2026-11-24T09:13:13.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-24T09:30:40.297Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.07",
+      "nama": "Kabupaten Ciamis",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.79",
+      "nama": "Kota Banjar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "63.03",
+      "nama": "Kabupaten Banjar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

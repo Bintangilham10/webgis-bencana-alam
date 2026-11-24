@@ -1,0 +1,26 @@
+{
+  "guid": "CBMingFBVV95cUxNUkJ4SzJsd1M4dmZHUy1OWXVnRUxHZ29EZGhYTHgyazlSeDZRbnNHN2F4b1VKUHVWbFhCbl82SGl6STBncmhDSk02VWluc1Y1NTd2ZEV5WkxrVnQyT0NqYmExRkZwa2UtVFl3RU1IZUt3QVNvZ0l5U1ZmbEdTS3A0ZXNRaXZEVlhrMVhFeExndHMtQkUtd3RJUXAtdFlUd9IBngFBVV95cUxNUkJ4SzJsd1M4dmZHUy1OWXVnRUxHZ29EZGhYTHgyazlSeDZRbnNHN2F4b1VKUHVWbFhCbl82SGl6STBncmhDSk02VWluc1Y1NTd2ZEV5WkxrVnQyT0NqYmExRkZwa2UtVFl3RU1IZUt3QVNvZ0l5U1ZmbEdTS3A0ZXNRaXZEVlhrMVhFeExndHMtQkUtd3RJUXAtdFlUdw",
+  "title": "Hujan Ekstrem, Dua Warga Tertimbun Longsor di Tasikmalaya - Koran Jakarta",
+  "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUkJ4SzJsd1M4dmZHUy1OWXVnRUxHZ29EZGhYTHgyazlSeDZRbnNHN2F4b1VKUHVWbFhCbl82SGl6STBncmhDSk02VWluc1Y1NTd2ZEV5WkxrVnQyT0NqYmExRkZwa2UtVFl3RU1IZUt3QVNvZ0l5U1ZmbEdTS3A0ZXNRaXZEVlhrMVhFeExndHMtQkUtd3RJUXAtdFlUd9IBngFBVV95cUxNUkJ4SzJsd1M4dmZHUy1OWXVnRUxHZ29EZGhYTHgyazlSeDZRbnNHN2F4b1VKUHVWbFhCbl82SGl6STBncmhDSk02VWluc1Y1NTd2ZEV5WkxrVnQyT0NqYmExRkZwa2UtVFl3RU1IZUt3QVNvZ0l5U1ZmbEdTS3A0ZXNRaXZEVlhrMVhFeExndHMtQkUtd3RJUXAtdFlUdw?oc=5",
+  "source": "Koran Jakarta",
+  "source_url": "https://koran-jakarta.com",
+  "published_at": "2026-11-23T22:37:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-24T09:30:40.297Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

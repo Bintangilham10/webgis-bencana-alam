@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiswFBVV95cUxQM3pNd1BfaXViTlNNbVFQcjVxSGMtUk0wRlgycE1acjF5MDNpNThBSlBnRGhuTk5qNTBfMUstekUzczRpbTN5Tk4xc1FrMlRJWnFxVVBWRnAxU2pGS2NscDJaeUtaSnNFd2JjYzhtSDZ2b3dPQmVPbm1DbHFGX3pEX3dzb2NVNG8taDZ6MEpUMTRUcWZZMVpRNFZEZGVHMXNnQjBYVTUyS2lmSm5vNkFkWVkxMA",
+  "title": "Cuaca Ekstrem, Longsor Menerjang Empat Titik di Sudimoro Pacitan - TIMES Jatim",
+  "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQM3pNd1BfaXViTlNNbVFQcjVxSGMtUk0wRlgycE1acjF5MDNpNThBSlBnRGhuTk5qNTBfMUstekUzczRpbTN5Tk4xc1FrMlRJWnFxVVBWRnAxU2pGS2NscDJaeUtaSnNFd2JjYzhtSDZ2b3dPQmVPbm1DbHFGX3pEX3dzb2NVNG8taDZ6MEpUMTRUcWZZMVpRNFZEZGVHMXNnQjBYVTUyS2lmSm5vNkFkWVkxMA?oc=5",
+  "source": "TIMES Jatim",
+  "source_url": "https://jatim.times.co.id",
+  "published_at": "2026-11-24T07:11:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-24T09:30:40.297Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.01",
+      "nama": "Kabupaten Pacitan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

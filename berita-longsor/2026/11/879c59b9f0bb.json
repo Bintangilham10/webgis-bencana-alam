@@ -1,0 +1,31 @@
+{
+  "guid": "CBMilwFBVV95cUxPOW9hNS1Ma3IyS2dhMmtkcHdiVURQNi00WkZXR3h3ZTlXVWJNLV9nVDVMczFfeF9XXzcwaW5fNkkwVS04SkpFcm1aalpMbWdMZGZra3RId3NNa3VrV3RrMVFCa2prVlVSTDJUYjRCTHh4MjY2MHdhNWFvc0dMdXItY2VxVDlTd042YnlfYld0MnFaT08ta3R3",
+  "title": "Longsor Tutup Jalan Nasional di Ciamis, Akses Banjar–Ciamis Kembali Normal - rentak.id",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPOW9hNS1Ma3IyS2dhMmtkcHdiVURQNi00WkZXR3h3ZTlXVWJNLV9nVDVMczFfeF9XXzcwaW5fNkkwVS04SkpFcm1aalpMbWdMZGZra3RId3NNa3VrV3RrMVFCa2prVlVSTDJUYjRCTHh4MjY2MHdhNWFvc0dMdXItY2VxVDlTd042YnlfYld0MnFaT08ta3R3?oc=5",
+  "source": "rentak.id",
+  "source_url": "https://rentak.id",
+  "published_at": "2026-11-24T00:30:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-24T09:30:40.297Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.07",
+      "nama": "Kabupaten Ciamis",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.79",
+      "nama": "Kota Banjar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "63.03",
+      "nama": "Kabupaten Banjar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
