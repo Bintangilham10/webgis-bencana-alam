@@ -33,6 +33,8 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
   // Layanan rute palsu (Valhalla, OSRM) dan paparan zona bahaya, diatur per test.
   let routeFakes = {};
   const services = {
+    // Test API v1 mendaftarkan beberapa kunci dari satu alamat IP.
+    v1: { registerLimit: { limit: 100 } },
     outlook: { today: () => outlookToday },
     route: {
       valhalla: (...args) => routeFakes.valhalla(...args),
@@ -157,7 +159,7 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
     const { migrate } = await import('../db/migrate.js');
     await migrate();
     await pool.query(
-      'TRUNCATE events, volcanoes, sync_logs, faults, wilayah, wilayah_bahaya, titik_pantau, bahaya_raster, indikasi_run, indikasi_wilayah, indikasi_hari, glofas_thresholds, cap_alerts, cap_alert_wilayah, notifications, facilities, synop_reports',
+      'TRUNCATE events, volcanoes, sync_logs, faults, wilayah, wilayah_bahaya, titik_pantau, bahaya_raster, indikasi_run, indikasi_wilayah, indikasi_hari, glofas_thresholds, cap_alerts, cap_alert_wilayah, notifications, facilities, synop_reports, api_keys, api_usage',
     );
     ({ syncEarthquakes } = await import('../src/jobs/sync-earthquakes.js'));
     ({ syncVolcanoes } = await import('../src/jobs/sync-volcanoes.js'));
@@ -1550,6 +1552,116 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
         // Waktu sinkron terakhir tidak maju, jadi browser bisa menandai data tertunda.
         assert.equal(after.meta.synced_at, before.meta.synced_at, c.source);
       }
+    });
+  });
+
+  describe('API v1 untuk pengembang (kunci API)', () => {
+    const form = (email = 'tim@contoh.ac.id') => ({ name: 'Tim Peta Kampus', email, purpose: 'Dasbor kebencanaan untuk tugas akhir', agree: true });
+    const register = async (body) => {
+      const res = await fetch(`${baseUrl}/v1/keys`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+      return { status: res.status, body: await res.json() };
+    };
+    const call = (path, key) => fetch(`${baseUrl}/v1${path}`, { headers: key ? { 'X-API-Key': key } : {} });
+    let key;
+    let apiKeys;
+
+    before(async () => {
+      apiKeys = await import('../src/api-keys.js');
+    });
+
+    test('pendaftaran memberi kunci sekali; basis data hanya menyimpan sidiknya', async () => {
+      const { status, body } = await register(form(' Tim@Contoh.AC.id '));
+      assert.equal(status, 201);
+      assert.match(body.key, apiKeys.KEY_PATTERN);
+      assert.equal(body.daily_quota, apiKeys.DEFAULT_DAILY_QUOTA);
+      key = body.key;
+      const { rows } = await pool.query('SELECT * FROM api_keys');
+      assert.equal(rows.length, 1);
+      assert.deepEqual([rows[0].key_hash, rows[0].prefix, rows[0].email, rows[0].name], [apiKeys.hashKey(key), key.slice(0, 14), 'tim@contoh.ac.id', 'Tim Peta Kampus']);
+      assert.ok(!JSON.stringify(rows[0]).includes(key), 'kunci asli tidak tersimpan');
+    });
+
+    test('isi jawaban sama dengan API aplikasi, dan tiap permintaan tercatat', async () => {
+      const res = await call('/earthquakes?days=90', key);
+      assert.equal(res.status, 200);
+      const quota = apiKeys.DEFAULT_DAILY_QUOTA;
+      assert.equal(res.headers.get('x-ratelimit-limit'), String(quota));
+      assert.equal(res.headers.get('x-ratelimit-remaining'), String(quota - 1));
+      assert.deepEqual(await res.json(), (await getJson('/earthquakes?days=90')).body);
+      assert.equal((await call('/volcanoes', key)).status, 200);
+      assert.equal((await call('/wilayah?tingkat=kabkota', key)).headers.get('cache-control'), 'private, max-age=3600');
+
+      const usage = await (await call('/usage', key)).json();
+      assert.deepEqual([usage.daily_quota, usage.used_today, usage.remaining_today], [quota, 4, quota - 4]);
+      assert.deepEqual(usage.last_7_days.map((d) => d.requests), [4]);
+      assert.match(usage.last_7_days[0].date, /^\d{4}-\d{2}-\d{2}$/);
+    });
+
+    test('tanpa kunci ditolak; endpoint yang memanggil layanan luar tidak dibuka', async () => {
+      assert.equal((await call('/earthquakes')).status, 401);
+      assert.equal((await call('/earthquakes', `sigap_${'x'.repeat(32)}`)).status, 401);
+      for (const path of ['/risk?lat=-7&lon=107', '/geocode?q=bandung', '/river?lat=-6.2&lon=106.8', '/sea-level', '/evacuation?lat=-6&lon=106', '/faults', '/health']) {
+        const res = await call(path, key);
+        assert.equal(res.status, 404, path);
+        assert.match((await res.json()).error, /tidak ada di API v1/, path);
+      }
+    });
+
+    test('aliran notifikasi langsung lewat kunci, tanpa kompresi', async () => {
+      const controller = new AbortController();
+      const res = await fetch(`${baseUrl}/v1/stream`, { headers: { 'X-API-Key': key, 'Accept-Encoding': 'gzip' }, signal: controller.signal });
+      try {
+        assert.equal(res.status, 200);
+        assert.match(res.headers.get('content-type'), /^text\/event-stream/);
+        assert.equal(res.headers.get('content-encoding'), null);
+      } finally {
+        controller.abort();
+      }
+      assert.equal((await call('/stream')).status, 401);
+    });
+
+    test('kuota harian habis: 429 sampai kuota dinaikkan pengelola', async () => {
+      const used = (await pool.query('SELECT requests FROM api_usage')).rows[0].requests;
+      await apiKeys.setQuota(key.slice(0, 14), used + 1);
+      assert.equal((await call('/volcanoes', key)).status, 200);
+      const over = await call('/volcanoes', key);
+      assert.equal(over.status, 429);
+      assert.equal(over.headers.get('x-ratelimit-remaining'), '0');
+      assert.ok(Number(over.headers.get('retry-after')) >= 1);
+      await apiKeys.setQuota(key.slice(0, 14), apiKeys.DEFAULT_DAILY_QUOTA);
+      assert.equal((await call('/volcanoes', key)).status, 200);
+    });
+
+    test('paling banyak tiga kunci aktif per email; pengelola bisa mencabut', async () => {
+      assert.equal((await register(form())).status, 201);
+      const third = await register(form('TIM@contoh.ac.id'));
+      assert.equal(third.status, 201);
+      const fourth = await register(form());
+      assert.equal(fourth.status, 409);
+      assert.match(fourth.body.error, /sudah punya 3 kunci aktif/);
+      assert.equal((await register(form('lain@contoh.ac.id'))).status, 201);
+
+      const list = await apiKeys.listKeys();
+      assert.equal(list.length, 4);
+      const mine = list.find((k) => k.prefix === key.slice(0, 14));
+      assert.ok(mine.today >= 6 && mine.week === mine.today);
+
+      await assert.rejects(apiKeys.revokeKey('sigap_'), /cocok dengan 4 kunci/);
+      await assert.rejects(apiKeys.revokeKey('sigap_tidak-ada'), /Tidak ada kunci/);
+      await apiKeys.revokeKey(third.body.prefix);
+      const revoked = await call('/volcanoes', third.body.key);
+      assert.equal(revoked.status, 403);
+      // Kunci yang dicabut tidak lagi dihitung, jadi email itu bisa mendaftar lagi.
+      assert.equal((await register(form())).status, 201);
+    });
+
+    test('isian pendaftaran yang kurang ditolak tanpa membuat kunci', async () => {
+      const before = (await pool.query('SELECT count(*)::int AS n FROM api_keys')).rows[0].n;
+      assert.equal((await register({ ...form(), agree: false })).status, 400);
+      assert.equal((await register({ ...form(), email: 'salah' })).status, 400);
+      const broken = await fetch(`${baseUrl}/v1/keys`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{rusak' });
+      assert.equal(broken.status, 400);
+      assert.equal((await pool.query('SELECT count(*)::int AS n FROM api_keys')).rows[0].n, before);
     });
   });
 });
