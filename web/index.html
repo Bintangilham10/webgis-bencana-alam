@@ -606,6 +606,18 @@
             Lapisan
           </button>
           <button
+            id="tab-sintesis"
+            class="tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-sintesis"
+            tabindex="-1"
+            data-icon="gauge"
+          >
+            Sintesis
+          </button>
+          <button
             id="tab-info"
             class="tab"
             type="button"
@@ -767,6 +779,18 @@
           </section>
 
           <!-- Info -->
+          <!-- Sintesis: status tiap kab/kota dari semua sumber (ui/sintesis.js) -->
+          <section
+            id="panel-sintesis"
+            class="tabpanel"
+            role="tabpanel"
+            aria-labelledby="tab-sintesis"
+            tabindex="0"
+            hidden
+          >
+            <div id="sintesis"></div>
+          </section>
+
           <section
             id="panel-info"
             class="tabpanel"

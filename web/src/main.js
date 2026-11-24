@@ -6,6 +6,7 @@ import "./styles/base.css";
 import "./styles/motion.css";
 import "./styles/layout.css";
 import "./styles/components.css";
+import "./styles/sintesis.css";
 import "./styles/map.css";
 import "./styles/detail.css";
 import "./styles/landing.css";
@@ -105,6 +106,7 @@ import { createOverview } from "./ui/overview.js";
 import { createRiskDetail } from "./ui/risk-detail.js";
 import { createSearch } from "./ui/search.js";
 import { createSidebar } from "./ui/sidebar.js";
+import { createSintesis } from "./ui/sintesis.js";
 import { hideSplashWhen } from "./ui/splash.js";
 import { createTabs } from "./ui/tabs.js";
 
@@ -135,9 +137,14 @@ const sidebar = createSidebar({
   detailView: $("#detail-view"),
 });
 createTabs($(".tabs"), {
-  onChange() {
+  onChange(id) {
     $("#main-scroll").scrollTop = 0;
     sidebar.expand();
+    // Tab Sintesis memakai panel lebar (di desktop) dan peta status kab/kota.
+    const wide = id === "tab-sintesis";
+    document.documentElement.classList.toggle("panel-wide", wide);
+    if (wide) sintesis.show();
+    else sintesis.hide();
   },
 });
 
@@ -574,6 +581,21 @@ const gdacsItem = {
   layer: gdacsAlerts.layer,
   legend: gdacsLegend,
 };
+
+// ---------- Sintesis: status tiap kab/kota ----------
+// Lapisan kab/kota lain disembunyikan selama tab Sintesis terbuka supaya
+// warnanya tidak bercampur dengan peta status.
+const sintesis = createSintesis({
+  container: $("#sintesis"),
+  map,
+  flyTo(bounds) {
+    // Di HP lembar bawah diturunkan dulu supaya wilayahnya tidak tertutup.
+    if (sidebar.isMobile()) sidebar.collapse();
+    flyToBounds(map, L.latLngBounds(bounds), { maxZoom: 10, ...viewPadding() });
+  },
+  hideWhileShown: [...Object.values(outlook.views), rainWarnings, cap.layer],
+  onError: reportLoadError("Status wilayah"),
+});
 
 createLayerPanel({
   map,
