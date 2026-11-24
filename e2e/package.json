@@ -12,6 +12,9 @@
     "kinerja": "node scripts/kinerja.mjs",
     "sus": "node scripts/sus.mjs",
     "gps": "node scripts/galat-gps.mjs",
+    "latensi": "node scripts/latensi-notifikasi.mjs",
+    "latensi:server": "node scripts/latensi-notifikasi.mjs --api https://sigap-bencana.malaysiawest.cloudapp.azure.com --csv ../research/results/latensi_notifikasi.csv",
+    "test:skrip": "node --test \"scripts/*.test.mjs\"",
     "laporan": "playwright show-report"
   },
   "devDependencies": {
