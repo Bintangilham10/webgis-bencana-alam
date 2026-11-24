@@ -1,0 +1,324 @@
+/* Halaman dokumentasi API untuk pengembang (pengembang.html). Halaman baca satu
+   kolom: memakai token warna, tombol, dan kotak catatan yang sama dengan aplikasi
+   (base.css, components.css); di sini hanya tata letak, formulir, tabel, dan kode. */
+.dev {
+  min-height: 100vh;
+  background: var(--map-bg);
+}
+
+/* Kotak galat dan kotak kunci memakai display: flex, yang tanpa aturan ini
+   mengalahkan atribut hidden. */
+.dev [hidden] {
+  display: none;
+}
+
+.dev-top,
+.dev-main,
+.dev-footer {
+  width: min(880px, 100%);
+  margin: 0 auto;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+
+.dev-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.dev-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.dev-main {
+  padding-top: 28px;
+  padding-bottom: 56px;
+}
+
+.dev-main h1 {
+  font-size: clamp(26px, 5vw, 34px);
+  font-weight: 750;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.dev-lead {
+  max-width: 62ch;
+  margin-top: 12px;
+  font-size: 16px;
+  color: var(--ink-2);
+}
+
+.dev-main > .notice {
+  max-width: 68ch;
+  margin-top: 20px;
+  font-size: 13.5px;
+}
+
+.dev-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.dev-section h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.dev-section h3 {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-2);
+}
+
+.dev-section p,
+.dev-list li {
+  max-width: 70ch;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+
+.dev-section strong {
+  color: var(--ink);
+}
+
+/* base.css membuang penanda daftar yang berkelas; di halaman baca ini penandanya
+   dipakai (ketentuan bernomor supaya bisa dirujuk). */
+.dev-main .dev-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding-left: 22px;
+  list-style: revert;
+}
+
+.dev-list li::marker {
+  color: var(--ink-3);
+}
+
+/* ---------- Formulir kunci ---------- */
+.dev-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 520px;
+}
+
+.dev-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dev-field label {
+  font-size: 13.5px;
+  font-weight: 650;
+  color: var(--ink);
+}
+
+.dev-field input,
+.dev-field textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  font: inherit;
+  font-size: 14.5px;
+  color: var(--ink);
+  background: var(--surface);
+}
+
+.dev-field textarea {
+  resize: vertical;
+}
+
+.dev-section .dev-hint {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink-3);
+}
+
+.dev-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  font-size: 14.5px;
+  color: var(--ink-2);
+}
+
+.dev-check input {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary-fill);
+}
+
+.dev-form .notice {
+  margin-top: 0;
+  font-size: 13.5px;
+}
+
+.dev-key {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 640px;
+  padding: 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.dev-key__label {
+  font-size: 12.5px;
+  font-weight: 650;
+  color: var(--ink-3);
+}
+
+.dev-key__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.dev-main .dev-key__row code {
+  flex: 1 1 280px;
+  min-width: 0;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+  user-select: all;
+}
+
+/* ---------- Kode dan tabel ---------- */
+.dev-main code {
+  padding: 1px 5px;
+  border-radius: 5px;
+  font-family: var(--mono);
+  font-size: 0.9em;
+  color: var(--ink);
+  background: var(--surface-3);
+}
+
+.dev-main pre {
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow-x: auto;
+  background: var(--surface);
+}
+
+.dev-main pre code {
+  padding: 0;
+  font-size: 12.5px;
+  line-height: 1.65;
+  background: none;
+}
+
+.dev-table {
+  overflow-x: auto;
+}
+
+.dev-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.dev-table th,
+.dev-table td {
+  padding: 10px 16px 10px 0;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid var(--line);
+  color: var(--ink-2);
+}
+
+.dev-table th {
+  border-top: 0;
+  font-size: 12.5px;
+  font-weight: 650;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+.dev-table td:first-child {
+  white-space: nowrap;
+}
+
+.dev-params {
+  display: block;
+  margin-top: 4px;
+  font-size: 12.5px;
+  color: var(--ink-3);
+}
+
+/* Di layar sempit empat kolom terlalu rapat: tiap endpoint menjadi satu blok, dan
+   sel sumber serta jadwal diberi nama kolomnya (data-label). */
+@media (max-width: 640px) {
+  .dev-table--stack table,
+  .dev-table--stack tbody,
+  .dev-table--stack tr,
+  .dev-table--stack td {
+    display: block;
+  }
+
+  .dev-table--stack thead {
+    display: none;
+  }
+
+  .dev-table--stack tr {
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .dev-table--stack td {
+    padding: 0;
+    border: 0;
+    white-space: normal;
+  }
+
+  .dev-table--stack td + td {
+    margin-top: 6px;
+  }
+
+  .dev-table--stack td[data-label]::before {
+    content: attr(data-label) ': ';
+    color: var(--ink-3);
+  }
+}
+
+.dev-footer {
+  padding-top: 20px;
+  padding-bottom: 32px;
+  border-top: 1px solid var(--line);
+  font-size: 12.5px;
+  color: var(--ink-3);
+}

@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="id" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#141518" />
+    <title>API SIGAP Bencana untuk pengembang</title>
+    <meta
+      name="description"
+      content="Data gempa, gunung api, peringatan dini cuaca, dan indikasi SIGAP dalam bentuk JSON, dengan kunci API dan notifikasi langsung."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      // Tema mengikuti pilihan di aplikasi peta.
+      try {
+        const saved = localStorage.getItem("sigap-theme");
+        if (saved === "light" || saved === "dark") {
+          document.documentElement.dataset.theme = saved;
+          if (saved === "light") document.querySelector('meta[name="theme-color"]').content = "#ffffff";
+        }
+      } catch {}
+    </script>
+  </head>
+  <body class="dev">
+    <a class="skip-link" href="#isi">Lewati ke isi</a>
+
+    <!-- Dokumentasi API untuk pengembang luar (/api/v1) dan formulir kunci API.
+         Tabel endpoint, kuota, dan batas kunci per email diisi dari GET /api/v1
+         (src/pengembang.js), jadi selalu sama dengan yang dijalankan server. -->
+    <header class="dev-top">
+      <a class="dev-brand" href="/">
+        <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="15" fill="#2a64dc" />
+          <g transform="translate(32 32) scale(0.82) translate(-32 -32)">
+            <g fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round">
+              <path d="M37.6 18.5A6.6 6.6 0 1 0 32 28.6A14.4 14.4 0 1 1 19.79 49.63" />
+              <path d="M44.21 14.37A14.4 14.4 0 1 0 32 36.4A6.6 6.6 0 1 1 26.4 45.5" />
+            </g>
+            <circle cx="32" cy="22" r="2.8" fill="#f59e0b" />
+          </g>
+        </svg>
+        <span>SIGAP Bencana</span>
+      </a>
+      <a class="btn btn-secondary" href="/">Buka peta</a>
+    </header>
+
+    <main id="isi" class="dev-main">
+      <h1>API SIGAP Bencana</h1>
+      <p class="dev-lead">
+        Data yang tampil di peta SIGAP, dalam bentuk JSON untuk aplikasi Anda: gempa, level gunung api, peringatan dini
+        cuaca, indikasi 3 hari, dan notifikasi langsung.
+      </p>
+      <p class="notice">
+        <span>
+          Layanan riset mahasiswa, <strong>bukan peringatan resmi</strong>. Untuk keputusan keselamatan, ikuti
+          <a href="https://www.bmkg.go.id/" target="_blank" rel="noopener">BMKG</a>,
+          <a href="https://magma.esdm.go.id/" target="_blank" rel="noopener">MAGMA/PVMBG</a>, dan BNPB/BPBD setempat.
+        </span>
+      </p>
+
+      <section id="kunci" class="dev-section" aria-labelledby="judul-kunci">
+        <h2 id="judul-kunci">Dapatkan kunci</h2>
+        <p>
+          Tiap aplikasi memakai kuncinya sendiri. Kunci langsung terbit setelah formulir dikirim, dengan kuota
+          <span data-quota>5.000</span> permintaan per hari.
+        </p>
+        <form id="key-form" class="dev-form" novalidate>
+          <div class="dev-field">
+            <label for="key-name">Nama atau nama tim</label>
+            <input id="key-name" name="name" type="text" required minlength="2" maxlength="80" autocomplete="name" />
+          </div>
+          <div class="dev-field">
+            <label for="key-email">Email</label>
+            <input id="key-email" name="email" type="email" required maxlength="120" autocomplete="email" aria-describedby="key-email-hint" />
+            <p id="key-email-hint" class="dev-hint">Hanya dipakai untuk menghubungi Anda soal kunci ini.</p>
+          </div>
+          <div class="dev-field">
+            <label for="key-purpose">Untuk apa datanya dipakai</label>
+            <textarea id="key-purpose" name="purpose" rows="3" required minlength="10" maxlength="500"></textarea>
+          </div>
+          <label class="dev-check" for="key-agree">
+            <input id="key-agree" name="agree" type="checkbox" required />
+            <span>Saya menyetujui <a href="#ketentuan">ketentuan pakai</a>.</span>
+          </label>
+          <p id="key-error" class="notice" role="alert" hidden></p>
+          <div>
+            <button id="key-submit" class="btn btn-primary" type="submit">Buat kunci</button>
+          </div>
+        </form>
+        <output id="key-result" class="dev-key" for="key-name key-email key-purpose key-agree" hidden>
+          <span class="dev-key__label">Kunci Anda</span>
+          <span class="dev-key__row">
+            <code id="key-value"></code>
+            <button id="key-copy" class="btn btn-secondary" type="button">Salin</button>
+          </span>
+          <span class="dev-hint">
+            Simpan sekarang. Kunci tidak disimpan di server dan tidak bisa ditampilkan lagi. Contoh di bawah sudah memakai
+            kunci ini.
+          </span>
+        </output>
+      </section>
+
+      <section id="pakai" class="dev-section" aria-labelledby="judul-pakai">
+        <h2 id="judul-pakai">Panggil API</h2>
+        <p>Kirim kunci di header <code>X-API-Key</code> pada tiap permintaan. Jawabannya JSON; data berlokasi berbentuk GeoJSON.</p>
+        <h3>curl</h3>
+        <pre><code>curl -H "X-API-Key: <span data-key>KUNCI_ANDA</span>" "<span data-origin>https://alamat-server</span>/api/v1/earthquakes?days=7"</code></pre>
+        <h3>JavaScript (Node.js)</h3>
+        <pre><code>const res = await fetch('<span data-origin>https://alamat-server</span>/api/v1/earthquakes?days=7', {
+  headers: { 'X-API-Key': '<span data-key>KUNCI_ANDA</span>' },
+});
+const gempa = await res.json(); // GeoJSON FeatureCollection
+console.log(gempa.features.length, 'gempa; sisa kuota', res.headers.get('X-RateLimit-Remaining'));</code></pre>
+        <h3>Python</h3>
+        <pre><code>import requests
+
+res = requests.get(
+    "<span data-origin>https://alamat-server</span>/api/v1/earthquakes",
+    params={"days": 7},
+    headers={"X-API-Key": "<span data-key>KUNCI_ANDA</span>"},
+    timeout=30,
+)
+res.raise_for_status()
+for f in res.json()["features"]:
+    print(f["properties"]["magnitude"], f["properties"]["wilayah"])</code></pre>
+        <p>Panggil API dari server Anda. Kunci yang ditaruh di kode halaman web bisa dibaca semua pengunjungnya.</p>
+      </section>
+
+      <section id="endpoint" class="dev-section" aria-labelledby="judul-endpoint">
+        <h2 id="judul-endpoint">Endpoint</h2>
+        <p>Semua endpoint memakai metode GET dan diawali <code><span data-origin>https://alamat-server</span>/api/v1</code>.</p>
+        <div class="dev-table dev-table--stack">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Endpoint</th>
+                <th scope="col">Isi</th>
+                <th scope="col">Sumber data</th>
+                <th scope="col">Diperbarui</th>
+              </tr>
+            </thead>
+            <tbody id="endpoint-rows">
+              <tr>
+                <td colspan="4">Memuat daftar endpoint…</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          <code>/usage</code> memberi pemakaian kunci Anda: kuota, yang terpakai hari ini, dan 7 hari terakhir. Daftar di atas
+          juga tersedia sebagai JSON di <a href="/api/v1"><code>/api/v1</code></a>, tanpa kunci.
+        </p>
+      </section>
+
+      <section id="langsung" class="dev-section" aria-labelledby="judul-langsung">
+        <h2 id="judul-langsung">Notifikasi langsung</h2>
+        <p>
+          <code>/stream</code> mengirim notifikasi saat terjadi lewat Server-Sent Events: gempa BMKG baru, perubahan level gunung
+          api, dan peringatan dini cuaca baru. Sambungannya dibiarkan terbuka, dan satu sambungan dihitung satu permintaan.
+        </p>
+        <pre><code>curl -N -H "X-API-Key: <span data-key>KUNCI_ANDA</span>" "<span data-origin>https://alamat-server</span>/api/v1/stream"</code></pre>
+        <pre><code>const res = await fetch('<span data-origin>https://alamat-server</span>/api/v1/stream', {
+  headers: { 'X-API-Key': '<span data-key>KUNCI_ANDA</span>' },
+});
+const decoder = new TextDecoder();
+let sisa = '';
+for await (const potongan of res.body) {
+  const blok = (sisa + decoder.decode(potongan, { stream: true })).split('\n\n');
+  sisa = blok.pop();
+  for (const b of blok) {
+    const data = b.split('\n').find((baris) => baris.startsWith('data: '));
+    if (data) console.log(JSON.parse(data.slice(6))); // { id, kind, level, title, body, lat, lon, created_at, ... }
+  }
+}</code></pre>
+        <p>
+          Bila sambungan putus, sambung lagi dengan header <code>Last-Event-ID</code> berisi <code>id</code> notifikasi terakhir.
+          Notifikasi yang terlewat dikirim ulang, paling lama 24 jam. <code>EventSource</code> di browser tidak bisa mengirim
+          header, jadi pakai <code>fetch</code> seperti contoh di atas.
+        </p>
+      </section>
+
+      <section id="kuota" class="dev-section" aria-labelledby="judul-kuota">
+        <h2 id="judul-kuota">Kuota dan galat</h2>
+        <ul class="dev-list">
+          <li>
+            Kuota <span data-quota>5.000</span> permintaan per kunci per hari, berganti pukul 07.00 WIB. Sisanya ada di header
+            <code>X-RateLimit-Remaining</code> tiap jawaban.
+          </li>
+          <li>Satu email paling banyak punya <span data-max-keys>3</span> kunci aktif.</li>
+          <li>Galat selalu berbentuk <code>{"error": "penjelasan"}</code>.</li>
+        </ul>
+        <div class="dev-table">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Status</th>
+                <th scope="col">Artinya</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>400</code></td>
+                <td>Isian pendaftaran kunci kurang atau salah.</td>
+              </tr>
+              <tr>
+                <td><code>401</code></td>
+                <td>Kunci tidak dikirim, atau tidak dikenal.</td>
+              </tr>
+              <tr>
+                <td><code>403</code></td>
+                <td>Kunci sudah dicabut.</td>
+              </tr>
+              <tr>
+                <td><code>404</code></td>
+                <td>Endpoint tidak ada di API ini.</td>
+              </tr>
+              <tr>
+                <td><code>409</code></td>
+                <td>Email itu sudah punya jumlah kunci aktif terbanyak.</td>
+              </tr>
+              <tr>
+                <td><code>429</code></td>
+                <td>
+                  Kuota harian habis, lebih dari 300 permintaan per menit dari satu jaringan, atau lebih dari 3 aliran
+                  notifikasi dibuka sekaligus. Untuk dua yang pertama, header <code>Retry-After</code> memberi tahu berapa
+                  detik lagi boleh mencoba.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="ketentuan" class="dev-section" aria-labelledby="judul-ketentuan">
+        <h2 id="judul-ketentuan">Ketentuan pakai</h2>
+        <ol class="dev-list">
+          <li>
+            <strong>Sebutkan sumbernya.</strong> Cantumkan lembaga di kolom "Sumber data" tiap endpoint, karena datanya milik
+            mereka. SIGAP hanya mengumpulkan dan menyajikannya.
+          </li>
+          <li>
+            <strong>Untuk riset, pendidikan, dan layanan publik nonkomersial.</strong> Sebagian sumber tidak mengizinkan
+            pemakaian komersial lewat layanan gratisnya. Untuk pemakaian lain, tanyakan dulu lewat
+            <a href="https://github.com/Bintangilham10/webgis-bencana-alam/issues" target="_blank" rel="noopener">halaman isu repositori</a>.
+          </li>
+          <li>
+            <strong>Bukan peringatan resmi.</strong> Jangan menjadikan data ini satu-satunya dasar keputusan keselamatan, dan
+            jangan menampilkannya seolah-olah peringatan dari BMKG, PVMBG, atau BNPB.
+          </li>
+          <li>
+            <strong>Tanpa jaminan ketersediaan.</strong> Ini server riset mahasiswa; layanan bisa lambat, berubah, atau
+            berhenti.
+          </li>
+          <li>
+            <strong>Kunci bisa dicabut</strong> bila dipakai untuk membebani server atau melanggar ketentuan ini.
+          </li>
+          <li>
+            <strong>Data pendaftar.</strong> Nama, email, dan tujuan pemakaian disimpan untuk mengelola kunci dan tidak
+            dibagikan. Jumlah permintaan tiap kunci dicatat per hari.
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="dev-footer">
+      <p>
+        SIGAP Bencana · Tugas Besar TPBW, Telkom University ·
+        <a href="https://github.com/Bintangilham10/webgis-bencana-alam" target="_blank" rel="noopener">Kode sumber</a>
+      </p>
+    </footer>
+
+    <script type="module" src="/src/pengembang.js"></script>
+  </body>
+</html>
