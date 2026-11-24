@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.24.05.71.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-24T11:52:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-24T11:55:00+08:00</effective>
+    <expires>2026-11-24T14:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 November 2026, 11:55 WITA di sebagian wilayah Sulawesi Utara, khususnya di ESSANG, ESSANG SELATAN, GEMEH, LEMBEAN TIMUR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 November 2026, 14:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>1.174,125.032 1.140,125.022 1.136,125.018 1.150,125.003 1.166,124.970 1.171,124.982 1.193,124.986 1.174,125.032</polygon>
+      <polygon>4.426,126.765 4.433,126.715 4.441,126.718 4.452,126.715 4.456,126.718 4.452,126.722 4.453,126.726 4.462,126.734 4.474,126.730 4.476,126.725 4.484,126.728 4.494,126.721 4.515,126.721 4.542,126.736 4.483,126.758 4.426,126.765</polygon>
+      <polygon>4.444,126.867 4.421,126.826 4.396,126.766 4.426,126.765 4.483,126.758 4.542,126.736 4.546,126.744 4.539,126.775 4.529,126.775 4.525,126.787 4.532,126.795 4.533,126.807 4.509,126.822 4.503,126.830 4.492,126.831 4.488,126.837 4.489,126.853 4.479,126.857 4.465,126.854 4.459,126.865 4.444,126.867</polygon>
+      <polygon>4.426,126.765 4.396,126.766 4.345,126.681 4.375,126.690 4.382,126.699 4.393,126.696 4.419,126.701 4.433,126.715 4.426,126.765</polygon>
+    </area>
+  </info>
+</alert>

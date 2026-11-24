@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.24.05.34.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-24T10:11:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-24T10:21:00+07:00</effective>
+    <expires>2026-11-24T12:26:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di DI Yogyakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 November 2026, 10:21 WIB di sebagian wilayah DI Yogyakarta, khususnya di GIRISUBO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 November 2026, 12:26 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CYG/2026/11/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>DI Yogyakarta</areaDesc>
+      <polygon>-8.130,110.787 -8.149,110.786 -8.162,110.796 -8.156,110.810 -8.148,110.812 -8.144,110.817 -8.159,110.819 -8.177,110.834 -8.201,110.830 -8.204,110.829 -8.198,110.800 -8.192,110.796 -8.196,110.781 -8.196,110.749 -8.193,110.733 -8.199,110.725 -8.198,110.714 -8.201,110.709 -8.200,110.707 -8.193,110.709 -8.184,110.705 -8.185,110.689 -8.127,110.697 -8.133,110.711 -8.141,110.711 -8.144,110.717 -8.131,110.738 -8.138,110.744 -8.144,110.744 -8.146,110.750 -8.142,110.755 -8.116,110.758 -8.120,110.773 -8.132,110.773 -8.130,110.787</polygon>
+    </area>
+  </info>
+</alert>

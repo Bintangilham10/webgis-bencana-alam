@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.24.05.52.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-24T12:25:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-24T12:55:00+08:00</effective>
+    <expires>2026-11-24T15:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 24 November 2026, 12:55 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di BAYAN, LINGSAR, SETELUK, TALIWANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 24 November 2026, 15:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/11/24/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.589,116.160 -8.585,116.160 -8.584,116.151 -8.572,116.148 -8.566,116.142 -8.564,116.132 -8.555,116.134 -8.549,116.146 -8.518,116.153 -8.506,116.163 -8.491,116.188 -8.479,116.200 -8.480,116.214 -8.456,116.223 -8.451,116.265 -8.443,116.278 -8.456,116.279 -8.489,116.246 -8.514,116.246 -8.527,116.241 -8.548,116.221 -8.562,116.226 -8.569,116.221 -8.572,116.211 -8.587,116.194 -8.589,116.160</polygon>
+      <polygon>-8.756,116.886 -8.757,116.873 -8.764,116.861 -8.797,116.852 -8.810,116.858 -8.831,116.850 -8.831,116.832 -8.817,116.812 -8.784,116.809 -8.765,116.791 -8.775,116.781 -8.766,116.777 -8.751,116.784 -8.741,116.773 -8.742,116.766 -8.729,116.767 -8.728,116.780 -8.722,116.785 -8.676,116.774 -8.673,116.772 -8.674,116.768 -8.671,116.771 -8.671,116.779 -8.684,116.791 -8.681,116.806 -8.686,116.814 -8.696,116.812 -8.708,116.819 -8.708,116.840 -8.691,116.869 -8.695,116.879 -8.687,116.889 -8.642,116.909 -8.653,116.918 -8.671,116.923 -8.690,116.915 -8.729,116.885 -8.756,116.886</polygon>
+      <polygon>-8.712,116.770 -8.709,116.768 -8.706,116.772 -8.712,116.770</polygon>
+      <polygon>-8.749,116.720 -8.752,116.717 -8.749,116.712 -8.749,116.720</polygon>
+      <polygon>-8.595,116.942 -8.600,116.935 -8.614,116.932 -8.642,116.909 -8.687,116.889 -8.695,116.879 -8.691,116.869 -8.708,116.840 -8.708,116.819 -8.696,116.812 -8.686,116.814 -8.681,116.806 -8.665,116.815 -8.656,116.827 -8.660,116.834 -8.656,116.837 -8.633,116.834 -8.622,116.840 -8.620,116.859 -8.614,116.870 -8.580,116.876 -8.571,116.892 -8.567,116.910 -8.595,116.942</polygon>
+      <polygon>-8.246,116.494 -8.272,116.470 -8.301,116.472 -8.330,116.467 -8.394,116.422 -8.403,116.431 -8.408,116.423 -8.417,116.421 -8.423,116.427 -8.435,116.406 -8.413,116.379 -8.411,116.353 -8.386,116.360 -8.344,116.360 -8.290,116.343 -8.267,116.329 -8.224,116.317 -8.212,116.346 -8.213,116.375 -8.222,116.428 -8.228,116.447 -8.229,116.463 -8.246,116.494</polygon>
+    </area>
+  </info>
+</alert>
