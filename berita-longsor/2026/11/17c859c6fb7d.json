@@ -1,0 +1,23 @@
+{
+  "guid": "CBMi3gFBVV95cUxPclhJRXliaHh1N1lLNWZPSWZ2aFdKUEVxVWMxbXRlekhXMmVJRjA0LW14dWE3c1FoQXhISmJGLVVSSXktYUJicF9xbkwtbU50aWtFakJUaHB6eE5MZS1waXdOUDVzZ0FxWmp5bDZ3RmpCMUgxMG9WcmdDYVBobW5DWXFMV2ViRlJYRmVQeUo3YXd3T3NVNk00dTlzUC00bFpTRWl5bFY3ZnktQUNDbjgzWnJWLTRFMVFpNzhOUENUR0lwR2NXQXphRHpWX2duaHZMYWdzaWFqRk0zQmY0dkE",
+  "title": "BREAKING NEWS: Longsor 15 Meter Putus Jalan Cebok–Tegallalang Gianyar Bali, Hujan Hambat Evakuasi - Tribun-bali.com",
+  "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPclhJRXliaHh1N1lLNWZPSWZ2aFdKUEVxVWMxbXRlekhXMmVJRjA0LW14dWE3c1FoQXhISmJGLVVSSXktYUJicF9xbkwtbU50aWtFakJUaHB6eE5MZS1waXdOUDVzZ0FxWmp5bDZ3RmpCMUgxMG9WcmdDYVBobW5DWXFMV2ViRlJYRmVQeUo3YXd3T3NVNk00dTlzUC00bFpTRWl5bFY3ZnktQUNDbjgzWnJWLTRFMVFpNzhOUENUR0lwR2NXQXphRHpWX2duaHZMYWdzaWFqRk0zQmY0dkE?oc=5",
+  "source": "Tribun-bali.com",
+  "source_url": "https://bali.tribunnews.com",
+  "published_at": "2026-11-24T04:10:11.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-24T06:15:33.412Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "51.04",
+      "nama": "Kabupaten Gianyar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Bali"
+  ]
+}

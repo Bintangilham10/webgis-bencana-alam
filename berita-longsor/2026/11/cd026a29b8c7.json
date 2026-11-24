@@ -1,0 +1,23 @@
+{
+  "guid": "CBMisAFBVV95cUxNckNzX3lmcE9RZDRzOGE1b21uWExWN1lFQS1vRkRSdzAyTjVYLU1KZ1NnSnlRNThNWHl6TmFiN0JUaUNLcnRFZzZVSXZyUkVvM18zUXZjM0Rja3NyOWdmUzFlS2lnLWVzZFdDcHc1WWJlOFV6ZVUzV2VpRTE2T0F5SHVLSWZPazQxVm5oLU1tQVlOVXlPUThRS3dnWDcxODI5V2N3ZTR4ZUJoNllJQTFjbw",
+  "title": "Jangan Tunggu Bencana Datang, Aceh Tenggara Siaga Penuh Hadapi Banjir dan Longsor - Waspada.id",
+  "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNckNzX3lmcE9RZDRzOGE1b21uWExWN1lFQS1vRkRSdzAyTjVYLU1KZ1NnSnlRNThNWHl6TmFiN0JUaUNLcnRFZzZVSXZyUkVvM18zUXZjM0Rja3NyOWdmUzFlS2lnLWVzZFdDcHc1WWJlOFV6ZVUzV2VpRTE2T0F5SHVLSWZPazQxVm5oLU1tQVlOVXlPUThRS3dnWDcxODI5V2N3ZTR4ZUJoNllJQTFjbw?oc=5",
+  "source": "Waspada.id",
+  "source_url": "https://www.waspada.id",
+  "published_at": "2026-11-24T03:54:50.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-24T06:15:33.412Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "11.02",
+      "nama": "Kabupaten Aceh Tenggara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

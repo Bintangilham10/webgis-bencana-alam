@@ -1,0 +1,31 @@
+{
+  "guid": "CBMizgFBVV95cUxQTGxsY04tTzY4c2pXcldsQk1Ka2FOeEtIcXBueVdHNk1KeVNIMTJsM2JFeVA5LXRzZXZLUFprT3VEQlBWcjJqb0JQVlhldzE1WmFxcnQzZ1VwaHFEbWlXTUx3NXBPRFFUbjZfUEVmUHVRZjNXbzVmek43bUg0SDMxa1M5RlY1dnBqM3VIejZPLU5OOWVQMk9BMXA2YWJ6NWMwaHFzd2REMGprMEVEQTgxbEtPSEVoY1BZdWZrTGF1RktqbFJweU5sNzJRUnMzQdIBzgFBVV95cUxQTGxsY04tTzY4c2pXcldsQk1Ka2FOeEtIcXBueVdHNk1KeVNIMTJsM2JFeVA5LXRzZXZLUFprT3VEQlBWcjJqb0JQVlhldzE1WmFxcnQzZ1VwaHFEbWlXTUx3NXBPRFFUbjZfUEVmUHVRZjNXbzVmek43bUg0SDMxa1M5RlY1dnBqM3VIejZPLU5OOWVQMk9BMXA2YWJ6NWMwaHFzd2REMGprMEVEQTgxbEtPSEVoY1BZdWZrTGF1RktqbFJweU5sNzJRUnMzQQ",
+  "title": "Kementerian PU Bergerak Cepat Tangani Longsor dan Pulihkan Akses Jalan Nasional Banjar–Ciamis - Koran Jakarta",
+  "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTGxsY04tTzY4c2pXcldsQk1Ka2FOeEtIcXBueVdHNk1KeVNIMTJsM2JFeVA5LXRzZXZLUFprT3VEQlBWcjJqb0JQVlhldzE1WmFxcnQzZ1VwaHFEbWlXTUx3NXBPRFFUbjZfUEVmUHVRZjNXbzVmek43bUg0SDMxa1M5RlY1dnBqM3VIejZPLU5OOWVQMk9BMXA2YWJ6NWMwaHFzd2REMGprMEVEQTgxbEtPSEVoY1BZdWZrTGF1RktqbFJweU5sNzJRUnMzQdIBzgFBVV95cUxQTGxsY04tTzY4c2pXcldsQk1Ka2FOeEtIcXBueVdHNk1KeVNIMTJsM2JFeVA5LXRzZXZLUFprT3VEQlBWcjJqb0JQVlhldzE1WmFxcnQzZ1VwaHFEbWlXTUx3NXBPRFFUbjZfUEVmUHVRZjNXbzVmek43bUg0SDMxa1M5RlY1dnBqM3VIejZPLU5OOWVQMk9BMXA2YWJ6NWMwaHFzd2REMGprMEVEQTgxbEtPSEVoY1BZdWZrTGF1RktqbFJweU5sNzJRUnMzQQ?oc=5",
+  "source": "Koran Jakarta",
+  "source_url": "https://koran-jakarta.com",
+  "published_at": "2026-11-24T01:16:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-24T06:15:33.412Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.07",
+      "nama": "Kabupaten Ciamis",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.79",
+      "nama": "Kota Banjar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "63.03",
+      "nama": "Kabupaten Banjar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

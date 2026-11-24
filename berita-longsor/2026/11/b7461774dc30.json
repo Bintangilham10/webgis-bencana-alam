@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiXEFVX3lxTE1HUVpYZWdHZXF1NUszY05WTXdIWGJFcnN2S2VBZ21nV0NHMXVKWGhSWlY0LW9veUNBQ1FPYVdmeVNzRV9HbTBlOXk4TUI5TTk2Y0tjaG9Ca0V0QmxO",
+  "title": "Berita Terkini Harian Longsor Ciseeng Bogor Terbaru Hari Ini - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1HUVpYZWdHZXF1NUszY05WTXdIWGJFcnN2S2VBZ21nV0NHMXVKWGhSWlY0LW9veUNBQ1FPYVdmeVNzRV9HbTBlOXk4TUI5TTk2Y0tjaG9Ca0V0QmxO?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://www.kompas.com",
+  "published_at": "2026-11-23T06:44:18.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-24T06:15:33.412Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

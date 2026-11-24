@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiygFBVV95cUxPRFplZ1AzOUVoVVhwLXRCdnAxbWFBcXlpRW1iSEstWlo2aUVDang4YXNoRWVHanNZUXJzSDN2Q29lcDdORmJmdThOenc0cDdhWUZ2WmJzSkw2ZlBFUFRUZmNIUkdtTVpzT3BRcUJkbDFISFhHOWRsMXBVSUtPNm1SVjRzeFZQbU9zNGp6YXBsMUlMMjRYT3JGV3RaN1Jubk1hcEFjeEVxSVBaS2llOE1lYmN0QlhPd0I1VFFVbl90TjRaOTFnZTlmNHN3",
+  "title": "Sanggau Siaga Hujan Lebat, Warga Diimbau Waspada Banjir dan Longsor - Warta Pontianak",
+  "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRFplZ1AzOUVoVVhwLXRCdnAxbWFBcXlpRW1iSEstWlo2aUVDang4YXNoRWVHanNZUXJzSDN2Q29lcDdORmJmdThOenc0cDdhWUZ2WmJzSkw2ZlBFUFRUZmNIUkdtTVpzT3BRcUJkbDFISFhHOWRsMXBVSUtPNm1SVjRzeFZQbU9zNGp6YXBsMUlMMjRYT3JGV3RaN1Jubk1hcEFjeEVxSVBaS2llOE1lYmN0QlhPd0I1VFFVbl90TjRaOTFnZTlmNHN3?oc=5",
+  "source": "Warta Pontianak",
+  "source_url": "https://wartapontianak.pikiran-rakyat.com",
+  "published_at": "2026-11-24T06:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-24T06:15:33.412Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "61.03",
+      "nama": "Kabupaten Sanggau",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

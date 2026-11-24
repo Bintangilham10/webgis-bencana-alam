@@ -1,0 +1,21 @@
+{
+  "guid": "CBMirAFBVV95cUxOeWdQZHl0ZFFCMmlQS2N0ZnhsbGQ4WWRjeFpveFFKMEVWelNSc1Bwc2lTQzhReEhZV19tcUFIU1ozOE1TME1LWXE5LXI3cW9VYnAzSDF6X3FyUE80bFozWWYwMWVzUHU5c2FLUzI1RnlsZ3ExVmhJQVVYQndJNS12OXNoWlp5MlVpcUZqLXQ2WmZNNlFKcTE1YVRMcjk3R1Yxbkx6dVRzUUlWRHJG",
+  "title": "Payakumbuh Perkuat Mitigasi Bencana, Waspadai Ancaman Banjir dan Longsor - PASBANA",
+  "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeWdQZHl0ZFFCMmlQS2N0ZnhsbGQ4WWRjeFpveFFKMEVWelNSc1Bwc2lTQzhReEhZV19tcUFIU1ozOE1TME1LWXE5LXI3cW9VYnAzSDF6X3FyUE80bFozWWYwMWVzUHU5c2FLUzI1RnlsZ3ExVmhJQVVYQndJNS12OXNoWlp5MlVpcUZqLXQ2WmZNNlFKcTE1YVRMcjk3R1Yxbkx6dVRzUUlWRHJG?oc=5",
+  "source": "PASBANA",
+  "source_url": "https://www.pasbana.com",
+  "published_at": "2026-11-24T03:10:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-24T06:15:33.412Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "13.76",
+      "nama": "Kota Payakumbuh",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
