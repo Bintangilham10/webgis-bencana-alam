@@ -99,6 +99,30 @@ const NorthArrow = L.Control.extend({
 // penanda gempa lain, supaya cakram BMKG dan cincin USGS tetap di atasnya.
 const PANES = { hazard: 250, warnings: 300, boundaries: 350, labels: 420, smallQuakes: 440, quakes: 450, analysis: 460 };
 
+// Kanvas Leaflet tetap terpasang di peta setelah lapisannya dimatikan, dan kanvas
+// menangkap semua gerakan kursor di areanya walau kosong. Kanvas kosong yang
+// tertinggal di atas lapisan lain (kanvas tab Sintesis di atas indikasi SIGAP,
+// kanvas batas kab/kota, riwayat longsor, titik evakuasi) membuat lapisan di
+// bawahnya tidak bisa di-hover atau diklik sampai halaman dimuat ulang. Karena itu
+// kanvas yang sedang tidak berisi dibuat tembus klik, dan dipulihkan begitu berisi lagi.
+function passThroughEmptyCanvases(map) {
+  let pending = false;
+  const sync = () => {
+    pending = false;
+    map.eachLayer((layer) => {
+      // _container dan _drawFirst adalah bagian dalam L.Canvas (Leaflet 1.9): elemen
+      // kanvasnya dan bentuk pertama yang digambar. Tidak ada padanan publiknya.
+      if (layer instanceof L.Canvas && layer._container) layer._container.style.pointerEvents = layer._drawFirst ? '' : 'none';
+    });
+  };
+  // Satu lapisan kab/kota memicu ratusan kejadian sekaligus; cukup diperiksa sekali sesudahnya.
+  map.on('layeradd layerremove', () => {
+    if (pending) return;
+    pending = true;
+    queueMicrotask(sync);
+  });
+}
+
 // Tombol zoom dan pemilih peta dasar ada di bilah alat (map/toolbar.js).
 export function createMap(element, { theme = 'dark' } = {}) {
   // minZoom 3 supaya seluruh Indonesia tetap muat di layar HP (±390 px).
@@ -110,6 +134,7 @@ export function createMap(element, { theme = 'dark' } = {}) {
   });
   for (const [name, zIndex] of Object.entries(PANES)) map.createPane(name).style.zIndex = String(zIndex);
   map.getPane('labels').style.pointerEvents = 'none';
+  passThroughEmptyCanvases(map);
   map.fitBounds(INDONESIA_BOUNDS);
 
   // Peta dasar awal menyesuaikan tema saat halaman dibuka. Setelah itu peta
