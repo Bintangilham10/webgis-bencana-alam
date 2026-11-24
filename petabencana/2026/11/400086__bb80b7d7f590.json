@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-24T12:00:44.031Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        107.5951630388,
+        -7.0230355698
+      ]
+    },
+    "properties": {
+      "pkey": "400086",
+      "created_at": "2026-11-24T11:55:52.237Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "cb37f770-d0fa-4bd7-b1a7-91ea3f114179",
+      "image_url": "https://images.petabencana.id/cb37f770-d0fa-4bd7-b1a7-91ea3f114179.jpg",
+      "disaster_type": "wind",
+      "is_training": false,
+      "report_data": {
+        "report_type": "wind",
+        "impact": 1
+      },
+      "tags": {
+        "city": "BANDUNG",
+        "district_id": null,
+        "region_code": "3204",
+        "local_area_id": null,
+        "instance_region_code": "ID-JB"
+      },
+      "title": null,
+      "text": "Hujan deras disertai angin kencang melanda kawasan Banjaran, Kabupaten Bandung, Jawa Barat, pada Selasa siang (24/11/2026), memicu sejumlah ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
