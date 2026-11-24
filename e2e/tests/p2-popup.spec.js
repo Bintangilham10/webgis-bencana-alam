@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { inside, openMap, saveResult, visibleMapArea, watchErrors } from './helpers.js';
+import { inside, openMap, openTab, saveResult, visibleMapArea, watchErrors } from './helpers.js';
 
 // P2 Popup dan interaksi: klik gempa, gunung api, kab/kota; klik dari daftar.
 // Kriteria lulus: popup benar (isinya sama dengan data API); peta terbang ke titik
@@ -36,6 +36,19 @@ async function closePopup(page) {
   await page.keyboard.press('Escape');
   await page.locator('.leaflet-popup-close-button').click({ timeout: 2_000 }).catch(() => {});
   await expect(popup(page)).toHaveCount(0);
+}
+
+// Isi tooltip kab/kota yang tampil saat kursor diarahkan ke titik itu, atau null.
+// Kanvas Leaflet memeriksa hover paling sering tiap 32 ms, jadi kursor digerakkan dua kali.
+async function regionTooltip(page, x, y) {
+  await page.mouse.move(x, y);
+  await page.waitForTimeout(80);
+  await page.mouse.move(x + 1, y + 1);
+  await page.waitForTimeout(120);
+  return page.evaluate(() => {
+    const tip = [...document.querySelectorAll('.leaflet-tooltip.boundary-tooltip')].find((t) => Number(getComputedStyle(t).opacity) > 0.5);
+    return tip ? tip.textContent : null;
+  });
 }
 
 test.describe('P2 popup dan interaksi', () => {
@@ -150,6 +163,58 @@ test.describe('P2 popup dan interaksi', () => {
     await expect(popup(page).locator('.popup-heading .level-pill')).toHaveText(expectedLabel(region));
     results.push({ dari_peta: region.nama, level: expectedLabel(region) });
     saveResult('p2-kabkota', { hasil: results, galat: errors });
+    expect(errors).toEqual([]);
+  });
+
+  // Kanvas Leaflet yang kosong tetap menangkap kursor. Kanvas peta status tab Sintesis
+  // berada di atas lapisan indikasi, dan kanvas batas kab/kota di pane di atasnya.
+  // Setelah keduanya ditutup, kab/kota harus tetap bisa di-hover dan diklik
+  // (passThroughEmptyCanvases di web/src/map/create-map.js).
+  test('kab/kota tetap bisa diklik setelah tab Sintesis dan batas kab/kota ditutup', async ({ page }) => {
+    const errors = watchErrors(page);
+    await openMap(page);
+
+    // Titik kab/kota di sebelah kanan panel Sintesis yang melebar (580 px), supaya
+    // tetap terjangkau kursor selama tab itu terbuka.
+    const area = await visibleMapArea(page);
+    const left = Math.max(area.left, 640);
+    let spot = null;
+    for (let iy = 1; iy <= 7 && !spot; iy++) {
+      for (let ix = 1; ix <= 9 && !spot; ix++) {
+        const x = Math.round(left + ((area.right - 60 - left) * ix) / 10);
+        const y = Math.round(area.top + ((area.bottom - 60 - area.top) * iy) / 8);
+        const tip = await regionTooltip(page, x, y);
+        if (tip?.includes(' · ')) spot = { x, y, nama: tip.split(' · ')[0] };
+      }
+    }
+    expect(spot, 'ada kab/kota berindikasi di bagian peta yang terlihat').toBeTruthy();
+
+    const expectPopup = async (step) => {
+      await expect.poll(() => regionTooltip(page, spot.x, spot.y), { message: `tooltip kab/kota ${step}` }).toContain(`${spot.nama} · `);
+      await page.mouse.click(spot.x, spot.y);
+      await expect(popup(page).locator('h3'), `popup kab/kota ${step}`).toHaveText(spot.nama);
+      await closePopup(page);
+    };
+    await expectPopup('saat peta baru dibuka');
+
+    // Tab Sintesis: peta statusnya ditunggu sampai tampil, lalu tab ditutup.
+    await openTab(page, 'Sintesis');
+    await expect(page.locator('#sintesis .sx-head')).toBeVisible({ timeout: 40_000 });
+    await expect.poll(() => regionTooltip(page, spot.x, spot.y), { message: 'peta status Sintesis tampil' }).toContain(`${spot.nama} · `);
+    await openTab(page, 'Ikhtisar');
+    await expectPopup('setelah tab Sintesis ditutup');
+
+    // Batas kab/kota: dinyalakan sampai tooltipnya (hanya nama) tampil, lalu dimatikan.
+    await openTab(page, 'Lapisan');
+    await page.locator('#feature-tab-referensi').click();
+    const boundary = page.locator('#feature-panel-referensi .switch-row', { hasText: 'Batas kabupaten/kota' });
+    await boundary.click();
+    await expect.poll(() => regionTooltip(page, spot.x, spot.y), { message: 'batas kab/kota tampil' }).toBe(spot.nama);
+    await boundary.click();
+    await expect(boundary.locator('input.switch')).not.toBeChecked();
+    await expectPopup('setelah batas kab/kota dimatikan');
+
+    saveResult('p2-kabkota-kanvas', { wilayah: spot.nama, galat: errors });
     expect(errors).toEqual([]);
   });
 });
