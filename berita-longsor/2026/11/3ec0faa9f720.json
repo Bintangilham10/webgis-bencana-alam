@@ -1,0 +1,21 @@
+{
+  "guid": "CBMisgFBVV95cUxQTHYwVEJ1emR1WDc2NVBlZGNMdjBOMU5GOEFWMmZqMS1hNGplWmExUGo5ZGRseEo3MUNUS3pHTHRoMTJmXzFwdk03MFlBUnY0R0hFRWtNS0VReF8tUml3V0JYZFY3eXhQaHc2VjJtamF5QXpPSE0yR2JwUGh5eVZaanVLQl80aUxnc1B5MWQ4bk94WUlvemYtT3dWc094bHVaVHdXSXlmMGVjMU9xR2M0SWdn0gGyAUFVX3lxTFBMdjBUQnV6ZHVYNzY1UGVkY0x2ME4xTkY4QVYyZmoxLWE0amVaYTFQajlkZGx4SjcxQ1RLekdMdGgxMmZfMXB2TTcwWUFSdjRHSEVFa01LRVF4Xy1SaXdXQlhkVjd5eFBodzZWMm1qYXlBek9ITTJHYnBQaHl5VlpqdUtCXzRpTGdzUHkxZDhuT3hZSW96Zi1Pd1ZzT3hsdVpUd1dJeWYwZWMxT3FHYzRJZ2c",
+  "title": "BPBD Karanganyar Cek EWS di Sejumlah Lokasi Rawan Longsor - Suara Merdeka Solo - Suara Merdeka Solo",
+  "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTHYwVEJ1emR1WDc2NVBlZGNMdjBOMU5GOEFWMmZqMS1hNGplWmExUGo5ZGRseEo3MUNUS3pHTHRoMTJmXzFwdk03MFlBUnY0R0hFRWtNS0VReF8tUml3V0JYZFY3eXhQaHc2VjJtamF5QXpPSE0yR2JwUGh5eVZaanVLQl80aUxnc1B5MWQ4bk94WUlvemYtT3dWc094bHVaVHdXSXlmMGVjMU9xR2M0SWdn0gGyAUFVX3lxTFBMdjBUQnV6ZHVYNzY1UGVkY0x2ME4xTkY4QVYyZmoxLWE0amVaYTFQajlkZGx4SjcxQ1RLekdMdGgxMmZfMXB2TTcwWUFSdjRHSEVFa01LRVF4Xy1SaXdXQlhkVjd5eFBodzZWMm1qYXlBek9ITTJHYnBQaHl5VlpqdUtCXzRpTGdzUHkxZDhuT3hZSW96Zi1Pd1ZzT3hsdVpUd1dJeWYwZWMxT3FHYzRJZ2c?oc=5",
+  "source": "Suara Merdeka Solo",
+  "source_url": "https://solo.suaramerdeka.com",
+  "published_at": "2026-11-24T08:25:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-24T12:30:41.619Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.13",
+      "nama": "Kabupaten Karanganyar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

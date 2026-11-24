@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivwFBVV95cUxOeFpnQ0dNZEE0MVFTMmRSYUEtZldGVWx5LXpwakxoX2JHMFZqNlg3LVNHTGhJWVJwRW13OEVPTFhNVndCbnU2QkR5dGZxaV9uOVg1R0tBNC1sd3F0VldqVDBDR1lheFhna0RJZUNXblkzNGJJYzhIdEoteEh2QkF2Q1hpb20zVmFVTUtXbVVJdzZ6TWJJMFFzcURwMzBzMGRMNV9jTlQwajhlTjFKd21vZGFtWUE0cDBJNG4tWGVGVQ",
+  "title": "Empat Kecamatan di Semarang Rawan Longsor, Warga Diminta Waspada Retakan Tanah - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOeFpnQ0dNZEE0MVFTMmRSYUEtZldGVWx5LXpwakxoX2JHMFZqNlg3LVNHTGhJWVJwRW13OEVPTFhNVndCbnU2QkR5dGZxaV9uOVg1R0tBNC1sd3F0VldqVDBDR1lheFhna0RJZUNXblkzNGJJYzhIdEoteEh2QkF2Q1hpb20zVmFVTUtXbVVJdzZ6TWJJMFFzcURwMzBzMGRMNV9jTlQwajhlTjFKd21vZGFtWUE0cDBJNG4tWGVGVQ?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-24T09:41:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-24T12:30:41.619Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.22",
+      "nama": "Kabupaten Semarang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.74",
+      "nama": "Kota Semarang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

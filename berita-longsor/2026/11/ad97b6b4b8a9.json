@@ -1,0 +1,24 @@
+{
+  "guid": "CBMixgFBVV95cUxNUi1odi1MXzl0Q0tuU3hFYm1ZSUhJUm5XV0dKMTAzMHZQSDd0cWFscXJBU0JobHQydXpiTnBURmc2NWItRkZHLUlXOE1zRWxwLWxBNXJYOVR6aUtNdXh3YVd4ajMwMWVuS2psOEdhMUlhN1czVUFBZllkdDBTcUpqalpMUWtfMzVUSkIzVlhFNzhxV1dFRGlFbDhGbDZLWTRhVG1Oa1plRzhoVmtoUmN3NUN3WTUzM29LZE42dlE0d2pxbHJrNlE",
+  "title": "Kementerian PU Percepat Penanganan Longsor dan Perkuat Badan Jalan pada Ruas Tapan-Batas Jambi, Sumbar - Siaga Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUi1odi1MXzl0Q0tuU3hFYm1ZSUhJUm5XV0dKMTAzMHZQSDd0cWFscXJBU0JobHQydXpiTnBURmc2NWItRkZHLUlXOE1zRWxwLWxBNXJYOVR6aUtNdXh3YVd4ajMwMWVuS2psOEdhMUlhN1czVUFBZllkdDBTcUpqalpMUWtfMzVUSkIzVlhFNzhxV1dFRGlFbDhGbDZLWTRhVG1Oa1plRzhoVmtoUmN3NUN3WTUzM29LZE42dlE0d2pxbHJrNlE?oc=5",
+  "source": "Siaga Indonesia",
+  "source_url": "https://siagaindonesia.id",
+  "published_at": "2026-11-24T09:58:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-24T12:30:41.619Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi",
+    "Sumatera Barat"
+  ]
+}
