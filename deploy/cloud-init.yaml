@@ -16,6 +16,14 @@ packages:
   - docker.io
   - docker-compose-v2
   - git
+  - cron
+# Salinan harian basis data pukul 19.10 UTC (02.10 WIB), 7 salinan terakhir disimpan
+# di /opt/sigap/cadangan. Hasilnya tercatat di jurnal: journalctl -t sigap-cadangan.
+write_files:
+  - path: /etc/cron.d/sigap-cadangan
+    permissions: "0644"
+    content: |
+      10 19 * * * azureuser bash /opt/sigap/deploy/backup-db.sh 2>&1 | logger -t sigap-cadangan
 swap:
   filename: /swapfile
   size: 2G

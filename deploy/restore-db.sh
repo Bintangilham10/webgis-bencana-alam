@@ -1,9 +1,17 @@
 #!/usr/bin/env bash
-# Memulihkan salinan basis data SIGAP (pg_dump -Fc dari laptop) ke server produksi,
-# sebelum API dijalankan pertama kali. Dari root repo di server:
-#   bash deploy/restore-db.sh sigap.dump
+# Memulihkan salinan basis data SIGAP (pg_dump -Fc) ke server produksi, sebelum API
+# dijalankan. Dari root repo di server:
+#   bash deploy/restore-db.sh sigap.dump                               # salinan dari laptop
+#   bash deploy/restore-db.sh cadangan/sigap-terbaru.dump --simpan-log # cadangan server ini
+# Tanpa --simpan-log, log sinkronisasi di dalam salinan dikosongkan (lihat di bawah).
 set -euo pipefail
-dump=${1:?pakai: bash deploy/restore-db.sh <berkas.dump>}
+usage="pakai: bash deploy/restore-db.sh <berkas.dump> [--simpan-log]"
+dump=${1:?$usage}
+keep_logs=${2:-}
+if [ -n "$keep_logs" ] && [ "$keep_logs" != --simpan-log ]; then
+  echo "$usage" >&2
+  exit 2
+fi
 compose="docker compose -f deploy/compose.yaml"
 
 $compose up -d --wait db
@@ -24,6 +32,11 @@ $compose exec -T db sh -c '
   pg_restore -U sigap -d sigap --no-owner --no-privileges --exit-on-error -L /tmp/sigap.list /tmp/sigap.dump'
 
 # Log sinkronisasi laptop tidak dibawa: ketersediaan server (RQ2) dihitung sejak
-# server ini berjalan. Riwayat laptop tetap ada di basis data lokal.
-$compose exec -T db psql -U sigap -d sigap -c 'TRUNCATE sync_logs'
+# server ini berjalan. Riwayat laptop tetap ada di basis data lokal. Cadangan server
+# sendiri dipulihkan dengan --simpan-log, karena log itulah data RQ2-nya.
+if [ "$keep_logs" = --simpan-log ]; then
+  echo "Log sinkronisasi di dalam salinan dipertahankan."
+else
+  $compose exec -T db psql -U sigap -d sigap -c 'TRUNCATE sync_logs'
+fi
 $compose exec -T db psql -U sigap -d sigap -Atc "select format('%s wilayah, %s titik pantau, %s gempa, %s run indikasi', (select count(*) from wilayah), (select count(*) from titik_pantau), (select count(*) from events), (select count(*) from indikasi_run))"
