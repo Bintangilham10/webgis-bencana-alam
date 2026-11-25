@@ -1,7 +1,8 @@
 // Uji hitungan perekam latensi notifikasi. Jalankan di e2e/: npm run test:skrip
 import assert from 'node:assert/strict';
 import { describe, test } from 'node:test';
-import { clockOffset, createRecorder, createWriter, parseSse, report, summarize, toRow } from './latensi-notifikasi.mjs';
+import { parseCsv } from './csv.mjs';
+import { clockOffset, createRecorder, createWriter, parseSse, report, sessionLine, sessionsOf, summarize, toRow } from './latensi-notifikasi.mjs';
 
 describe('pembaca aliran SSE', () => {
   test('event lengkap dibaca, komentar dan baris retry dilewati, sisa yang belum lengkap dikembalikan', () => {
@@ -286,5 +287,117 @@ describe('penulis baris: di luar pembacaan aliran, dan mencoba lagi bila berkas 
     const { writer, writes } = setup();
     await writer.flush();
     assert.equal(writes.length, 0);
+  });
+});
+
+describe('sesi perekaman: kapan perekam mendengarkan', () => {
+  const server = 'contoh.id';
+  const event = (sesi, kejadian, waktu_utc, detik = '', catatan = '') => ({ sesi, server, kejadian, waktu_utc, detik: String(detik), catatan });
+  // Baris seperti terbaca dari CSV rekaman.
+  const row = (id, diterima_utc, langsung = true) => ({
+    diterima_utc, server, id: String(id), jenis: 'cuaca', level: '1', dibuat_utc: diterima_utc, sumber_utc: '',
+    latensi_ms: '15.0', jeda_sumber_s: '', selisih_jam_ms: '0.0', rtt_ms: '24.0', langsung: String(langsung),
+  });
+  const day1 = (clock) => `2026-01-01T${clock}.000Z`;
+  const day2 = (clock) => `2026-01-02T${clock}.000Z`;
+
+  test('baris catatan sesi terbaca lagi sebagai sesi: mulai, terhenti, selesai', () => {
+    const sesi = day1('01:00:00');
+    const at = (clock) => Date.parse(day1(clock));
+    const text = [
+      'sesi,server,kejadian,waktu_utc,detik,catatan\n',
+      sessionLine({ sesi, server, kejadian: 'mulai', waktuMs: at('01:00:00') }),
+      sessionLine({ sesi, server, kejadian: 'terhenti', waktuMs: at('02:00:00'), detik: 600 }),
+      sessionLine({ sesi, server, kejadian: 'terhenti', waktuMs: at('03:00:00'), detik: 60 }),
+      sessionLine({ sesi, server, kejadian: 'selesai', waktuMs: at('04:10:00') }),
+    ].join('');
+    assert.match(text, /\n2026-01-01T01:00:00\.000Z,contoh\.id,terhenti,2026-01-01T02:00:00\.000Z,600,\n/);
+    assert.deepEqual(sessionsOf(parseCsv(text).records), [{ server, mulai: sesi, selesai: day1('04:10:00'), terhenti_s: 660, catatan: [] }]);
+  });
+
+  test('dua perekam bersamaan dan sesi tanpa akhir tidak tertukar; urut waktu mulai', () => {
+    const sessions = sessionsOf([
+      event(day2('10:00:00'), 'mulai', day2('10:00:00')),
+      event(day1('01:00:00'), 'mulai', day1('01:00:00'), '', 'diisi belakangan'),
+      event(day1('01:05:00'), 'mulai', day1('01:05:00')),
+      event(day1('01:00:00'), 'selesai', day1('02:00:00'), '', 'diisi belakangan'),
+      event(day2('10:00:00'), 'selesai', day2('11:00:00')),
+    ]);
+    assert.deepEqual(sessions.map((s) => [s.mulai, s.selesai]), [
+      [day1('01:00:00'), day1('02:00:00')],
+      [day1('01:05:00'), null],
+      [day2('10:00:00'), day2('11:00:00')],
+    ]);
+    assert.deepEqual(sessions[0].catatan, ['diisi belakangan']);
+  });
+
+  test('ringkasan menyebut tiap sesi, bukan satu rentang dari baris pertama sampai terakhir', () => {
+    const events = [
+      event(day1('01:00:00'), 'mulai', day1('01:00:00')),
+      event(day1('01:00:00'), 'selesai', day1('04:10:00')),
+      event(day2('10:00:00'), 'mulai', day2('10:00:00')),
+      event(day2('10:00:00'), 'terhenti', day2('10:40:00'), 600),
+      event(day2('10:00:00'), 'selesai', day2('11:00:00')),
+    ];
+    const rows = [row(1, day1('01:30:00')), row(2, day1('02:00:00')), row(3, day1('03:00:00'), false), row(4, day2('10:50:00'))];
+    const [s] = summarize(rows, events);
+    assert.deepEqual(s.sesi.map((k) => [k.nomor, k.lama_s, k.langsung, k.terhenti_s]), [[1, 11_400, 2, 0], [2, 3000, 1, 600]]);
+    assert.equal(s.tanpa_sesi.n, 0);
+    const text = report([s]);
+    assert.match(text, /Direkam dalam 2 sesi, lama mendengarkan seluruhnya 4 jam\. Di luar sesi perekam tidak berjalan/);
+    assert.match(text, /\| 1 \| 2026-01-01 01:00:00 \| 2026-01-01 04:10:00 \| 3 jam 10 menit \| 2 \|/);
+    assert.match(text, /\| 2 \| 2026-01-02 10:00:00 \| 2026-01-02 11:00:00 \| 50 menit \| 1 \|/);
+    assert.match(text, /Sesi 2: perekam sempat terhenti 10 menit \(laptop tidur\)/);
+    assert.doesNotMatch(text, /Direkam 2026/);
+    assert.match(text, /Notifikasi langsung \| 3 \(dalam 3 kali siaran\)/);
+  });
+
+  test('sesi tanpa akhir berlangsung sampai sesi berikutnya dan lamanya tidak dihitung; baris di luar sesi disebut terpisah', () => {
+    const events = [
+      event(day1('01:00:00'), 'mulai', day1('01:00:00')),
+      event(day1('05:00:00'), 'mulai', day1('05:00:00')),
+      event(day1('05:00:00'), 'selesai', day1('06:00:00'), '', 'waktu selesai diisi belakangan'),
+    ];
+    const rows = [row(1, day1('00:30:00')), row(2, day1('02:00:00')), row(3, day1('05:30:00')), row(4, day1('06:00:01'))];
+    const [s] = summarize(rows, events);
+    assert.deepEqual(s.sesi.map((k) => [k.selesai, k.lama_s, k.langsung, k.baris_terakhir]), [
+      [null, null, 1, day1('02:00:00')],
+      [day1('06:00:00'), 3600, 1, day1('05:30:00')],
+    ]);
+    assert.deepEqual(s.tanpa_sesi, { n: 2, dari: day1('00:30:00'), sampai: day1('06:00:01') });
+    const text = report([s]);
+    assert.match(text, /Direkam dalam 2 sesi, lama mendengarkan seluruhnya 1 jam \(di luar 1 sesi yang akhirnya tidak tercatat\)\./);
+    assert.match(text, /\| 1 \| 2026-01-01 01:00:00 \| tidak tercatat \| — \| 1 \|/);
+    assert.match(text, /Sesi 1: perekam berhenti tanpa menulis akhir sesinya, jadi lamanya tidak dihitung \(notifikasi terakhirnya 2026-01-01 02:00:00 UTC\)\./);
+    assert.match(text, /Sesi 2: waktu selesai diisi belakangan\./);
+    assert.match(text, /2 notifikasi direkam di luar sesi yang tercatat: notifikasi pertama diterima 2026-01-01 00:30:00 UTC, terakhir 2026-01-01 06:00:01 UTC\./);
+  });
+
+  test('tanpa catatan sesi: hanya waktu notifikasi pertama dan terakhir, dengan peringatan', () => {
+    const text = report(summarize([row(1, day1('01:30:00')), row(2, day2('10:50:00'))]));
+    assert.match(text, /Sesi perekaman tidak dicatat: notifikasi pertama diterima 2026-01-01 01:30:00 UTC, terakhir 2026-01-02 10:50:00 UTC\. Perekam belum tentu berjalan terus/);
+    assert.doesNotMatch(text, /Direkam dalam/);
+  });
+
+  test('sesi yang belum menerima notifikasi tetap ditulis', () => {
+    const events = [event(day1('01:00:00'), 'mulai', day1('01:00:00')), event(day1('01:00:00'), 'selesai', day1('01:00:20'))];
+    const text = report(summarize([], events));
+    assert.match(text, /## contoh\.id/);
+    assert.match(text, /\| 1 \| 2026-01-01 01:00:00 \| 2026-01-01 01:00:20 \| kurang dari 1 menit \| 0 \|/);
+    assert.match(text, /Belum ada notifikasi langsung \(0 diterima/);
+  });
+
+  test('perekam yang terhenti melapor lamanya, untuk catatan sesi', () => {
+    const time = { wall: 100_000 };
+    const gaps = [];
+    const recorder = createRecorder({
+      server, clock: { offset: 0, rtt: 20 }, measure: () => new Promise(() => {}),
+      wallClock: () => time.wall, monotonic: () => time.wall, warn: () => {}, onSuspend: (gap) => gaps.push(gap),
+    });
+    time.wall += 1000;
+    recorder.checkSuspend();
+    time.wall += 90_000;
+    recorder.checkSuspend();
+    assert.deepEqual(gaps, [90_000]);
   });
 });

@@ -8,6 +8,9 @@ const LIMIT_MS = 3_000;
 // textContent, karena isi legenda yang terlipat tetap diperbarui walau tidak terlihat.
 const legendTitles = (page) => page.locator('.map-legend .legend-block h3').allTextContents();
 
+// Petak PNG 1 × 1 transparan, pengganti petak satelit NASA GIBS.
+const BLANK_PNG = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==', 'base64');
+
 test.describe('P1 lapisan dan peta dasar', () => {
   test('lapisan bawaan termuat saat peta dibuka', async ({ page }) => {
     const errors = watchErrors(page);
@@ -120,6 +123,63 @@ test.describe('P1 lapisan dan peta dasar', () => {
       expect.soft(timing.ms, `waktu ganti ke ${name}`).toBeLessThanOrEqual(LIMIT_MS);
     }
     saveResult('p1-peta-dasar', { batas_ms: LIMIT_MS, hasil: results, galat: errors });
+    expect(errors).toEqual([]);
+  });
+
+  // NASA GIBS menolak zoom pecahan (HTTP 400). Leaflet membulatkan zoom petak saat
+  // peta bergerak tetapi tidak saat redraw(), dan tampilan awal 1440 × 900 berada di
+  // zoom 4,5: petak awan yang digambar ulang karena nada peta dasar berganti dulu
+  // diminta di z = 4,5, sehingga lapisannya kosong sampai peta di-zoom.
+  test('lapisan satelit digambar ulang di zoom bulat saat peta dasar diganti', async ({ page }) => {
+    const errors = watchErrors(page);
+    // Petak GIBS dijawab di sini supaya test tidak bergantung pada server NASA; zoom
+    // yang diminta dibaca dari alamatnya (…/{z}/{y}/{x}.png).
+    const zooms = [];
+    await page.route('https://gibs.earthdata.nasa.gov/**', (route) => {
+      const zoom = /\/([\d.]+)\/\d+\/\d+\.png/.exec(route.request().url())?.[1];
+      if (zoom !== undefined) zooms.push(zoom);
+      return route.fulfill({ contentType: 'image/png', body: BLANK_PNG, headers: { 'access-control-allow-origin': '*' } });
+    });
+    await openMap(page);
+    // Prasyarat: peta berada di zoom pecahan. Wadah petak peta dasar yang skalanya
+    // bukan 1 berarti zoom peta berbeda dari zoom petaknya.
+    const fractionalZoom = await page.evaluate(() =>
+      [...document.querySelectorAll('.leaflet-tile-pane .leaflet-tile-container')].some(
+        (el) => el.children.length > 0 && Math.abs(new DOMMatrixReadOnly(getComputedStyle(el).transform).a - 1) > 0.01,
+      ),
+    );
+    expect(fractionalZoom, 'tampilan awal tidak lagi di zoom pecahan, jadi test ini tidak menguji redraw di zoom x,5').toBe(true);
+
+    await openTab(page, 'Lapisan');
+    await page.locator('#panel-lapisan .feature-tab', { hasText: 'Hujan' }).click();
+    const cloudTiles = '.leaflet-warnings-pane canvas.leaflet-tile';
+    const cloudRow = page.locator('#panel-lapisan .switch-row:visible', { hasText: 'Citra awan Himawari-9' });
+    await timeUntilLoaded(page, () => cloudRow.click());
+    await expect.poll(() => page.locator(`${cloudTiles}.leaflet-tile-loaded`).count()).toBeGreaterThan(0);
+    // Petak yang ada sekarang ditandai, supaya petak hasil gambar ulang bisa dikenali.
+    await page.evaluate((selector) => document.querySelectorAll(selector).forEach((tile) => tile.setAttribute('data-lama', '')), cloudTiles);
+
+    // Nada peta dasar berganti: petak awan digambar ulang di zoom saat itu.
+    const before = zooms.length;
+    const tone = await page.locator('#map').getAttribute('data-tone');
+    await page.locator('[data-tool="basemap"]').click();
+    const other = page.locator('#basemap-menu .basemap-option', { hasText: tone === 'dark' ? 'Kanvas terang' : 'Kanvas gelap' });
+    await timeUntilLoaded(page, () => other.click());
+    await expect(page.locator('#map')).not.toHaveAttribute('data-tone', tone);
+    const redrawn = page.locator(`${cloudTiles}.leaflet-tile-loaded:not([data-lama])`);
+    await expect.poll(() => redrawn.count()).toBeGreaterThan(0);
+
+    // Zoom peta pecahan dengan zoom petak bulat berarti wadah petaknya berskala
+    // (2^±0,5). Skala 1 berarti petaknya dibuat di zoom peta yang pecahan itu.
+    // Permintaan ke GIBS tidak bisa jadi ukuran satu-satunya: browser kadang memakai
+    // lagi petak beralamat sama dari memorinya tanpa meminta ulang.
+    const scales = await redrawn.evaluateAll((tiles) => [
+      ...new Set(tiles.map((tile) => new DOMMatrixReadOnly(getComputedStyle(tile.parentElement).transform).a.toFixed(3))),
+    ]);
+    const requested = [...new Set(zooms.slice(before))];
+    saveResult('p1-satelit-zoom', { skala_wadah_petak: scales, zoom_diminta: requested, petak_baru: await redrawn.count(), galat: errors });
+    expect(scales, 'petak awan digambar ulang di zoom pecahan').not.toContain('1.000');
+    expect(requested.filter((zoom) => !Number.isInteger(Number(zoom)))).toEqual([]);
     expect(errors).toEqual([]);
   });
 });
