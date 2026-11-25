@@ -1,10 +1,16 @@
 # Latensi notifikasi langsung
 
-Dibuat oleh `e2e/scripts/latensi-notifikasi.mjs` dari berkas rekamannya, `latensi_notifikasi.csv`.
+Dibuat oleh `e2e/scripts/latensi-notifikasi.mjs` dari berkas rekamannya, `latensi_notifikasi.csv`, dan catatan sesinya, `latensi_notifikasi.sesi.csv`.
 
 ## sigap-bencana.malaysiawest.cloudapp.azure.com
 
-Direkam 2026-11-24T09:54:04.643Z sampai 2026-11-24T12:50:56.919Z.
+Direkam dalam 1 sesi, lama mendengarkan seluruhnya 3 jam 10 menit. Di luar sesi perekam tidak berjalan, jadi notifikasi pada waktu itu tidak terekam.
+
+| Sesi | Mulai (UTC) | Selesai (UTC) | Lama mendengarkan | Notifikasi langsung |
+|---|---|---|---|---|
+| 1 | 2026-11-24 09:40:44 | 2026-11-24 12:51:04 | 3 jam 10 menit | 34 |
+
+Sesi 1: waktu sesi ini diisi belakangan pada 25 Nov 2026: mulai menurut catatan saat perekam dijalankan dan selesai menurut waktu berkas ringkasan ditulis.
 
 | Hal | Nilai |
 |---|---|
