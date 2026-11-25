@@ -1,0 +1,31 @@
+{
+  "guid": "CBMivAFBVV95cUxPTW9lWmt5S29XQ1lzNTlDM2VBUW1CdzlOQVJ5RG1pbGVmdC1Cakh6eVhvZEVZTmNFeGR5VXJWNFZzemFKeUxlcGNYOVd1TjhtM09iSmlXdmNZd0owd2JBZG9zajNuMHl1Ry1fZDh4VkZ2YTB4ZG9lajJJY000LV9RaGUyXzI2cUxKSW9TTDlMTGk1SEtnLUR4alV5LWplSlBoVDd2NElkNlpvTzBvU2Qza3c4YWhkMU0yb0FaRg",
+  "title": "Kementerian PU Pulihkan Jalan Nasional Banjar–Ciamis yang Tertutup Longsor - InfoPublik",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTW9lWmt5S29XQ1lzNTlDM2VBUW1CdzlOQVJ5RG1pbGVmdC1Cakh6eVhvZEVZTmNFeGR5VXJWNFZzemFKeUxlcGNYOVd1TjhtM09iSmlXdmNZd0owd2JBZG9zajNuMHl1Ry1fZDh4VkZ2YTB4ZG9lajJJY000LV9RaGUyXzI2cUxKSW9TTDlMTGk1SEtnLUR4alV5LWplSlBoVDd2NElkNlpvTzBvU2Qza3c4YWhkMU0yb0FaRg?oc=5",
+  "source": "InfoPublik",
+  "source_url": "https://infopublik.id",
+  "published_at": "2026-11-25T00:01:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T01:15:29.723Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.07",
+      "nama": "Kabupaten Ciamis",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.79",
+      "nama": "Kota Banjar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "63.03",
+      "nama": "Kabupaten Banjar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
