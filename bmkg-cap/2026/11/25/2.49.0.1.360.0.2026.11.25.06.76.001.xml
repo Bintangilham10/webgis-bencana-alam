@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.25.06.76.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-25T13:55:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-25T14:10:00+08:00</effective>
+    <expires>2026-11-25T15:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 25 November 2026, 14:10 WITA di sebagian wilayah Sulawesi Barat, khususnya di NOSU, PANA, SESENAPADANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 25 November 2026, 15:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSK/2026/11/25/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Barat</areaDesc>
+      <polygon>-3.035,119.580 -3.038,119.586 -3.049,119.587 -3.061,119.594 -3.078,119.618 -3.108,119.632 -3.124,119.631 -3.128,119.636 -3.122,119.611 -3.140,119.536 -3.114,119.531 -3.088,119.508 -3.067,119.479 -3.055,119.468 -3.035,119.459 -2.996,119.467 -2.986,119.462 -2.963,119.467 -2.957,119.470 -2.960,119.483 -2.977,119.512 -3.004,119.542 -3.019,119.547 -3.028,119.559 -3.026,119.564 -3.036,119.577 -3.035,119.580</polygon>
+      <polygon>-2.963,119.467 -2.986,119.462 -2.996,119.467 -3.035,119.459 -3.055,119.468 -3.132,119.436 -3.110,119.414 -3.097,119.391 -3.052,119.379 -3.036,119.374 -3.030,119.359 -3.008,119.354 -2.992,119.346 -2.985,119.336 -2.975,119.358 -2.980,119.375 -2.974,119.406 -2.977,119.412 -2.963,119.456 -2.963,119.467</polygon>
+      <polygon>-3.140,119.536 -3.172,119.514 -3.190,119.478 -3.189,119.464 -3.182,119.459 -3.184,119.439 -3.173,119.430 -3.160,119.428 -3.132,119.436 -3.055,119.468 -3.067,119.479 -3.088,119.508 -3.114,119.531 -3.140,119.536</polygon>
+    </area>
+  </info>
+</alert>

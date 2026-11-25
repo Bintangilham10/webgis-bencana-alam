@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.25.06.62.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-25T11:55:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-25T12:05:00+07:00</effective>
+    <expires>2026-11-25T14:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 25 November 2026, 12:05 WIB di sebagian wilayah Kalimantan Tengah, khususnya di TELUK SAMPIT.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 25 November 2026, 14:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/11/25/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-2.972,113.036 -2.973,113.032 -3.017,113.020 -3.031,113.012 -3.041,113.003 -3.052,112.982 -3.103,112.945 -3.115,112.942 -3.127,112.945 -3.137,112.952 -3.151,112.975 -3.156,112.993 -3.149,113.019 -3.125,113.040 -3.128,113.043 -3.223,112.942 -3.239,112.922 -3.265,112.874 -3.261,112.873 -3.236,112.864 -3.203,112.853 -3.203,112.853 -3.196,112.851 -3.150,112.837 -3.112,112.827 -3.064,112.815 -3.043,112.810 -3.034,112.813 -2.989,112.829 -2.988,112.830 -2.979,112.833 -2.957,112.840 -2.955,112.841 -2.951,112.843 -2.948,112.844 -2.938,112.847 -2.933,112.945 -2.919,112.990 -2.919,113.005 -2.915,113.017 -2.929,113.024 -2.972,113.036</polygon>
+    </area>
+  </info>
+</alert>
