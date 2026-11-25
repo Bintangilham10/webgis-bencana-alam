@@ -1,0 +1,23 @@
+{
+  "guid": "CBMiwgFBVV95cUxNa2NKdUw3R3RxaUNzZTJrT0RMaWRCVThpTjcxYUhSTU9Wc0EtQS1hcmpyZVNHWGtkWGgyUTBoQjROTGY2UVMza2JsZzZzR2xIdTdEdC1jWnBFZE1mQk9ndG8telZ1dWhSLTB5blgyQjNFeDBGTUc4OEl6TmhiMUY4TWRhZVdmUmxUREZmWm5kQkdHZVBKMV9DTV9DYlJaMUhvOUpBVDh0SWFnZDBDbGxPMHY4dllFYkwyYkM4X0Q3THN2QdIBxwFBVV95cUxNVHhaX2c0S29BcTJwdzZER3BZd2d4SGp0TFVrT0xuRG1XR2lpVHRQNWJZUEtzLTZ0Z0VSNlpDMlp6UWZ5M2NZSjAwVlVENThfQ08xRlBOUGN0bEJXZjV1V1ZKV2dnZ0RJbjU2VThFaWtsV3U1TFA2TTQzRUU2dDhiT01hVVhNLUJDMHJsTks3N0ZHVzE1WnpkcUNxOVJ1TWVBa24xX2d5RkM3TDlEUl85RWdUMFRWemdTbGlUcW5FZTRSa2dBU25J",
+  "title": "Pemprov Kaltim dan Pemkot Samarinda Siaga Hadapi Ancaman Banjir dan Longsor - Kaltim Post",
+  "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNa2NKdUw3R3RxaUNzZTJrT0RMaWRCVThpTjcxYUhSTU9Wc0EtQS1hcmpyZVNHWGtkWGgyUTBoQjROTGY2UVMza2JsZzZzR2xIdTdEdC1jWnBFZE1mQk9ndG8telZ1dWhSLTB5blgyQjNFeDBGTUc4OEl6TmhiMUY4TWRhZVdmUmxUREZmWm5kQkdHZVBKMV9DTV9DYlJaMUhvOUpBVDh0SWFnZDBDbGxPMHY4dllFYkwyYkM4X0Q3THN2QdIBxwFBVV95cUxNVHhaX2c0S29BcTJwdzZER3BZd2d4SGp0TFVrT0xuRG1XR2lpVHRQNWJZUEtzLTZ0Z0VSNlpDMlp6UWZ5M2NZSjAwVlVENThfQ08xRlBOUGN0bEJXZjV1V1ZKV2dnZ0RJbjU2VThFaWtsV3U1TFA2TTQzRUU2dDhiT01hVVhNLUJDMHJsTks3N0ZHVzE1WnpkcUNxOVJ1TWVBa24xX2d5RkM3TDlEUl85RWdUMFRWemdTbGlUcW5FZTRSa2dBU25J?oc=5",
+  "source": "Kaltim Post",
+  "source_url": "https://kaltimpost.jawapos.com",
+  "published_at": "2026-11-25T06:34:43.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T07:15:43.177Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "64.72",
+      "nama": "Kota Samarinda",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Kalimantan Timur"
+  ]
+}

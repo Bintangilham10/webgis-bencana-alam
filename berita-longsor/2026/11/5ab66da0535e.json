@@ -1,0 +1,21 @@
+{
+  "guid": "CBMitwFBVV95cUxNclZhaV84S1dDd0dMRlF1YUhGVnJpMzFpZXgyVVpING1vc1hrdEVXT3lRQ2drcm8xdFhPWnNRdV9SOWU4R3liWC1tbjNJTmNvZF96MFkwSzh3d092WWdGY2E2Uzc3d2hhNXpuSFhGcnljSXExaFB2OWltVV9yQVZjR05lNzRaWnA4aUhwZHFXVFJuWE5xeWtlOWlvNGFSR1lDcUMtRDNNanBtVVRLcWxJTk1SMlZVdjQ",
+  "title": "Kodim 1616/Gianyar Kerahkan Personel Tangani Longsor yang Putus Akses Jalan Kedisan - PPID TNI AD",
+  "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNclZhaV84S1dDd0dMRlF1YUhGVnJpMzFpZXgyVVpING1vc1hrdEVXT3lRQ2drcm8xdFhPWnNRdV9SOWU4R3liWC1tbjNJTmNvZF96MFkwSzh3d092WWdGY2E2Uzc3d2hhNXpuSFhGcnljSXExaFB2OWltVV9yQVZjR05lNzRaWnA4aUhwZHFXVFJuWE5xeWtlOWlvNGFSR1lDcUMtRDNNanBtVVRLcWxJTk1SMlZVdjQ?oc=5",
+  "source": "PPID TNI AD",
+  "source_url": "https://ppid.tniad.mil.id",
+  "published_at": "2026-11-25T04:12:26.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-25T07:15:43.177Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "51.04",
+      "nama": "Kabupaten Gianyar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

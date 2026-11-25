@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiygFBVV95cUxOVmdfOTlWTUhWVmtwckk4N3FIX3c1cDU5MS1rZktqSnNROFlhSnBseWVvU3VMem40YjB2TVNVa3A1T3pSVjFMUVViTlEyaUxMOFNBanloWGF3OTBuWGJ2QUc1N2RPaE5QVzJaX294NThxQmlySHQxdHJ3QWF2eU55RFByS0JHdnRPRE94ZUJPQzZHd1A1SlBuWHkyb3oxMmdJV1RtU05UREozRXhKVnhLOEFrRU8wN0x6ZFQ3aV9LTVNGb2JxWkFjZjB3",
+  "title": "Waspadai Longsor di Selatan dan Banjir-Rob di Utara, Pemkab Tegal Perkuat Mitigasi Hulu - korantegal.com",
+  "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVmdfOTlWTUhWVmtwckk4N3FIX3c1cDU5MS1rZktqSnNROFlhSnBseWVvU3VMem40YjB2TVNVa3A1T3pSVjFMUVViTlEyaUxMOFNBanloWGF3OTBuWGJ2QUc1N2RPaE5QVzJaX294NThxQmlySHQxdHJ3QWF2eU55RFByS0JHdnRPRE94ZUJPQzZHd1A1SlBuWHkyb3oxMmdJV1RtU05UREozRXhKVnhLOEFrRU8wN0x6ZFQ3aV9LTVNGb2JxWkFjZjB3?oc=5",
+  "source": "korantegal.com",
+  "source_url": "https://korantegal.com",
+  "published_at": "2026-11-25T05:54:11.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T07:15:43.177Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.28",
+      "nama": "Kabupaten Tegal",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.76",
+      "nama": "Kota Tegal",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

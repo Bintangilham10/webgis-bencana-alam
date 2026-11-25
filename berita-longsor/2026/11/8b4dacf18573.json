@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi0gFBVV95cUxNNElNVzVzQ01vaURTWHhDTmZLdWpqZTgwY21ZdmtON2ZjTGhjYTVJMVFhc3RKRTBUZlUwYzZuQXI2YUdEX1VwVFlWRUthLWRpUXlWTTlXVHBBcE5uLXVhOWt4YzdNcE53R1Q2ZEwtajJqRlBhbkxYRlptSXF2dUFjTjdpM0hlb1NVZHcwdnVjRk1FZnZ2MjN5SnoxZVZJSzdYN3E5Tk1OMDd4Vkhyd3Y0RFNOWmdLOV82cDMtTUc3T19QVW5hOFA4bElUbWVMMXF2Nnc",
+  "title": "Bencana Banjir dan Longsor Kepung Tasikmalaya, Satu Warga Tewas, Jembatan Cibeureum Terancam Ambruk - KejarFakta.co",
+  "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNElNVzVzQ01vaURTWHhDTmZLdWpqZTgwY21ZdmtON2ZjTGhjYTVJMVFhc3RKRTBUZlUwYzZuQXI2YUdEX1VwVFlWRUthLWRpUXlWTTlXVHBBcE5uLXVhOWt4YzdNcE53R1Q2ZEwtajJqRlBhbkxYRlptSXF2dUFjTjdpM0hlb1NVZHcwdnVjRk1FZnZ2MjN5SnoxZVZJSzdYN3E5Tk1OMDd4Vkhyd3Y0RFNOWmdLOV82cDMtTUc3T19QVW5hOFA4bElUbWVMMXF2Nnc?oc=5",
+  "source": "KejarFakta.co",
+  "source_url": "https://jabar.kejarfakta.co",
+  "published_at": "2026-11-25T05:24:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T07:15:43.177Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
