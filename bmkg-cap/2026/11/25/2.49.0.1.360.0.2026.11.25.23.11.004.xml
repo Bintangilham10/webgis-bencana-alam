@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.25.23.11.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-26T05:57:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-26T06:00:00+07:00</effective>
+    <expires>2026-11-26T08:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Aceh</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 November 2026, 06:00 WIB di sebagian wilayah Aceh, khususnya di PEUDAWA, PEUREULAK, PEUREULAK BARAT, PEUREULAK TIMUR, SEKERAK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 November 2026, 08:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CAH/2026/11/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Aceh</areaDesc>
+      <polygon>4.744,97.954 4.741,97.930 4.750,97.915 4.744,97.904 4.745,97.890 4.748,97.889 4.753,97.895 4.758,97.894 4.762,97.871 4.754,97.868 4.739,97.872 4.729,97.868 4.724,97.855 4.707,97.837 4.713,97.831 4.715,97.814 4.703,97.817 4.695,97.812 4.690,97.818 4.689,97.831 4.681,97.837 4.676,97.784 4.668,97.784 4.670,97.769 4.678,97.761 4.675,97.751 4.672,97.746 4.689,97.742 4.691,97.738 4.699,97.741 4.706,97.747 4.707,97.762 4.719,97.765 4.720,97.774 4.729,97.780 4.729,97.790 4.745,97.796 4.746,97.811 4.753,97.808 4.753,97.798 4.763,97.812 4.772,97.803 4.777,97.813 4.788,97.812 4.785,97.827 4.791,97.825 4.808,97.835 4.816,97.848 4.820,97.848 4.811,97.864 4.816,97.886 4.814,97.890 4.824,97.885 4.841,97.894 4.849,97.894 4.851,97.900 4.859,97.901 4.863,97.899 4.857,97.895 4.863,97.891 4.875,97.901 4.873,97.891 4.889,97.894 4.886,97.906 4.778,97.946 4.769,97.946 4.746,97.957 4.744,97.954</polygon>
+      <polygon>4.897,97.861 4.884,97.856 4.868,97.844 4.857,97.811 4.854,97.798 4.876,97.770 4.877,97.770 4.896,97.799 4.923,97.823 4.897,97.861</polygon>
+      <polygon>4.744,97.954 4.733,97.961 4.712,97.962 4.710,97.958 4.693,97.903 4.683,97.887 4.681,97.837 4.689,97.831 4.690,97.818 4.695,97.812 4.703,97.817 4.715,97.814 4.713,97.831 4.707,97.837 4.724,97.855 4.729,97.868 4.739,97.872 4.754,97.868 4.762,97.871 4.758,97.894 4.753,97.895 4.748,97.889 4.745,97.890 4.744,97.904 4.750,97.915 4.741,97.930 4.744,97.954</polygon>
+      <polygon>4.897,97.861 4.889,97.894 4.873,97.891 4.875,97.901 4.863,97.891 4.857,97.895 4.863,97.899 4.859,97.901 4.851,97.900 4.849,97.894 4.841,97.894 4.824,97.885 4.814,97.890 4.816,97.886 4.811,97.864 4.820,97.848 4.816,97.848 4.818,97.839 4.836,97.825 4.839,97.810 4.846,97.807 4.857,97.811 4.868,97.844 4.884,97.856 4.897,97.861</polygon>
+      <polygon>4.355,97.961 4.343,97.966 4.339,97.980 4.317,98.003 4.321,98.016 4.286,98.030 4.287,98.035 4.280,98.045 4.279,98.053 4.282,98.055 4.276,98.056 4.261,98.028 4.262,98.019 4.284,97.997 4.297,97.993 4.287,97.982 4.267,97.982 4.296,97.953 4.295,97.946 4.287,97.947 4.285,97.940 4.306,97.939 4.297,97.928 4.292,97.911 4.307,97.892 4.301,97.875 4.290,97.860 4.301,97.854 4.301,97.848 4.296,97.844 4.299,97.840 4.307,97.845 4.308,97.855 4.313,97.852 4.316,97.843 4.311,97.843 4.310,97.839 4.310,97.826 4.317,97.820 4.337,97.790 4.343,97.774 4.343,97.783 4.346,97.813 4.347,97.883 4.359,97.947 4.355,97.961</polygon>
+    </area>
+  </info>
+</alert>
