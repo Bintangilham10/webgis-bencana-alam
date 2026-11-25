@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiX0FVX3lxTE5hZ1laVHhhUVhlZjFyNTNOeFN3U3lWcDRCb25FTDE0RXJqdEcwcjFEWDR5RmJFcU1mY1BKYnAzM19hZnRwNHJYUXVRQlRnNklXZkQtRVN2NC1oUm5COVo4",
+  "title": "Kumpulan Artikel Terbaru longsor tasikmalaya - Kompasiana.com",
+  "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5hZ1laVHhhUVhlZjFyNTNOeFN3U3lWcDRCb25FTDE0RXJqdEcwcjFEWDR5RmJFcU1mY1BKYnAzM19hZnRwNHJYUXVRQlRnNklXZkQtRVN2NC1oUm5COVo4?oc=5",
+  "source": "Kompasiana.com",
+  "source_url": "https://www.kompasiana.com",
+  "published_at": "2026-11-25T13:14:59.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-25T20:00:45.357Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
