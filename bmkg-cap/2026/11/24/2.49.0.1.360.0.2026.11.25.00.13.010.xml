@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.25.00.13.010</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-25T06:20:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-25T06:40:00+07:00</effective>
+    <expires>2026-11-25T08:40:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sumatera Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 25 November 2026, 06:40 WIB di sebagian wilayah Sumatera Barat, khususnya di NAN SABARIS, PARIAMAN SELATAN, SIBERUT BARAT, ULAKAN TAPAKIH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 25 November 2026, 08:40 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSB/2026/11/25/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sumatera Barat</areaDesc>
+      <polygon>-0.627,100.216 -0.643,100.216 -0.653,100.229 -0.662,100.226 -0.672,100.217 -0.671,100.200 -0.677,100.182 -0.686,100.169 -0.676,100.159 -0.665,100.154 -0.647,100.172 -0.623,100.174 -0.617,100.179 -0.628,100.195 -0.627,100.216</polygon>
+      <polygon>-0.694,100.251 -0.708,100.259 -0.738,100.233 -0.735,100.228 -0.737,100.225 -0.686,100.169 -0.677,100.182 -0.671,100.200 -0.672,100.217 -0.662,100.226 -0.687,100.223 -0.694,100.251</polygon>
+      <polygon>-0.943,98.911 -0.966,98.905 -1.007,98.875 -1.014,98.858 -1.022,98.815 -1.026,98.760 -1.067,98.778 -1.135,98.833 -1.181,98.842 -1.250,98.814 -1.264,98.800 -1.266,98.783 -1.272,98.778 -1.301,98.778 -1.342,98.757 -1.354,98.756 -1.432,98.830 -1.431,98.840 -1.397,98.883 -1.377,98.895 -1.360,98.898 -1.291,98.888 -1.254,98.886 -1.250,98.889 -1.264,98.913 -1.277,98.932 -1.297,98.952 -1.306,98.959 -1.319,98.959 -1.323,98.949 -1.338,98.945 -1.339,98.933 -1.346,98.918 -1.350,98.912 -1.360,98.909 -1.383,98.913 -1.405,98.934 -1.414,98.950 -1.424,98.943 -1.440,98.946 -1.448,98.935 -1.436,98.916 -1.450,98.914 -1.449,98.889 -1.460,98.874 -1.465,98.868 -1.477,98.864 -1.498,98.868 -1.504,98.873 -1.511,98.865 -1.512,98.844 -1.543,98.836 -1.552,98.817 -1.537,98.806 -1.518,98.804 -1.471,98.765 -1.404,98.725 -1.287,98.637 -1.276,98.642 -1.262,98.637 -1.228,98.605 -1.198,98.597 -1.183,98.616 -1.151,98.628 -1.141,98.637 -1.110,98.641 -1.105,98.652 -1.055,98.662 -0.987,98.664 -0.979,98.667 -0.958,98.688 -0.944,98.721 -0.955,98.730 -0.959,98.742 -0.956,98.799 -0.940,98.825 -0.936,98.856 -0.930,98.870 -0.921,98.884 -0.906,98.899 -0.909,98.910 -0.915,98.913 -0.937,98.908 -0.927,98.902 -0.941,98.898 -0.946,98.906 -0.943,98.911</polygon>
+      <polygon>-0.603,100.174 -0.610,100.180 -0.616,100.182 -0.617,100.179 -0.623,100.174 -0.647,100.172 -0.665,100.154 -0.676,100.159 -0.647,100.129 -0.633,100.150 -0.627,100.150 -0.625,100.162 -0.603,100.174</polygon>
+    </area>
+  </info>
+</alert>
