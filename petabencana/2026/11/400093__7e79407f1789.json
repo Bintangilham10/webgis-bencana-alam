@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-25T10:15:34.055Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        120.0331711718,
+        -4.1436949921
+      ]
+    },
+    "properties": {
+      "pkey": "400093",
+      "created_at": "2026-11-25T10:07:23.939Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "f77e1f6e-c256-4bd7-a4cb-ae199d1b3a22",
+      "image_url": "https://images.petabencana.id/f77e1f6e-c256-4bd7-a4cb-ae199d1b3a22.jpg",
+      "disaster_type": "wind",
+      "is_training": false,
+      "report_data": {
+        "report_type": "wind",
+        "impact": 1
+      },
+      "tags": {
+        "city": "WAJO",
+        "district_id": null,
+        "region_code": "7313",
+        "local_area_id": null,
+        "instance_region_code": "ID-SN"
+      },
+      "title": null,
+      "text": "Pohon tumbang akibat hujan deras disertai angin kencang terjadi di Jalan Kelapa, Kelurahan Maddukelleng, Kecamatan Tempe, Kabupaten Wajo, Su",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}

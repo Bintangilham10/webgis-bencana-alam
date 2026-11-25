@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.25.10.62.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-25T15:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-25T16:00:00+07:00</effective>
+    <expires>2026-11-25T18:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 25 November 2026, 16:00 WIB di sebagian wilayah Kalimantan Tengah, khususnya di ARUT UTARA, HANAU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 25 November 2026, 18:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/11/25/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-1.571,111.807 -1.595,111.836 -1.596,111.853 -1.617,111.862 -1.623,111.878 -1.636,111.885 -1.651,111.883 -1.658,111.888 -1.675,111.881 -1.694,111.899 -1.717,111.906 -1.733,111.947 -1.733,111.955 -1.777,111.963 -1.809,111.953 -1.850,111.963 -1.898,111.991 -1.937,112.032 -1.950,112.058 -1.965,112.074 -2.001,112.091 -2.028,112.081 -2.031,112.062 -2.095,112.021 -2.140,112.009 -2.194,111.988 -2.216,111.985 -2.249,111.983 -2.259,111.984 -2.264,111.984 -2.289,111.991 -2.298,112.001 -2.301,112.025 -2.341,112.040 -2.343,112.041 -2.328,111.986 -2.331,111.931 -2.340,111.931 -2.327,111.871 -2.310,111.838 -2.297,111.823 -2.275,111.810 -2.252,111.803 -2.219,111.800 -2.169,111.771 -2.111,111.721 -1.972,111.791 -1.893,111.815 -1.874,111.820 -1.776,111.824 -1.739,111.822 -1.583,111.809 -1.563,111.797 -1.571,111.807</polygon>
+      <polygon>-2.527,112.292 -2.564,112.280 -2.588,112.273 -2.627,112.277 -2.699,112.215 -2.704,112.194 -2.703,112.145 -2.678,112.079 -2.661,111.995 -2.621,112.004 -2.529,112.015 -2.521,112.020 -2.476,112.044 -2.409,112.059 -2.365,112.044 -2.343,112.041 -2.341,112.040 -2.345,112.095 -2.338,112.134 -2.401,112.135 -2.406,112.145 -2.423,112.156 -2.427,112.212 -2.449,112.213 -2.480,112.244 -2.493,112.264 -2.509,112.260 -2.520,112.269 -2.527,112.292</polygon>
+    </area>
+  </info>
+</alert>
