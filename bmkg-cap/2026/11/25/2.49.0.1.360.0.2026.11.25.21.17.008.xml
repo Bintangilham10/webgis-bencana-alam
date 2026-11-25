@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.25.21.17.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-26T04:15:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-26T04:25:00+07:00</effective>
+    <expires>2026-11-26T07:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bengkulu</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 November 2026, 04:25 WIB di sebagian wilayah Bengkulu, khususnya di GADING CEMPAKA, KAMPUNG MELAYU, RATU AGUNG, RATU SAMBAN, SELEBAR, SINGARAN PATI, SUNGAI SERUT, TELUK SEGARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 November 2026, 07:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBK/2026/11/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bengkulu</areaDesc>
+      <polygon>-3.861,102.406 -3.865,102.396 -3.883,102.378 -3.887,102.347 -3.891,102.339 -3.882,102.336 -3.850,102.308 -3.846,102.306 -3.832,102.318 -3.821,102.319 -3.810,102.331 -3.797,102.350 -3.822,102.359 -3.842,102.359 -3.857,102.384 -3.861,102.406</polygon>
+      <polygon>-3.810,102.331 -3.821,102.319 -3.832,102.318 -3.846,102.306 -3.850,102.308 -3.839,102.292 -3.832,102.290 -3.818,102.279 -3.815,102.285 -3.825,102.308 -3.816,102.314 -3.809,102.311 -3.803,102.314 -3.810,102.331</polygon>
+      <polygon>-3.788,102.265 -3.800,102.255 -3.795,102.249 -3.787,102.247 -3.781,102.261 -3.788,102.265</polygon>
+      <polygon>-3.850,102.308 -3.882,102.336 -3.891,102.339 -3.887,102.347 -3.891,102.344 -3.901,102.348 -3.910,102.333 -3.912,102.316 -3.929,102.315 -3.942,102.304 -3.940,102.288 -3.924,102.269 -3.912,102.266 -3.900,102.274 -3.902,102.288 -3.893,102.299 -3.883,102.303 -3.861,102.300 -3.837,102.284 -3.832,102.290 -3.839,102.292 -3.850,102.308</polygon>
+      <polygon>-3.794,102.292 -3.815,102.285 -3.818,102.279 -3.832,102.290 -3.837,102.284 -3.815,102.268 -3.805,102.268 -3.801,102.274 -3.789,102.271 -3.785,102.283 -3.794,102.292</polygon>
+      <polygon>-3.789,102.271 -3.801,102.274 -3.805,102.268 -3.815,102.268 -3.800,102.255 -3.788,102.265 -3.789,102.271</polygon>
+      <polygon>-3.797,102.350 -3.810,102.331 -3.803,102.314 -3.794,102.292 -3.785,102.283 -3.789,102.271 -3.788,102.265 -3.781,102.261 -3.766,102.262 -3.766,102.268 -3.768,102.263 -3.777,102.265 -3.783,102.273 -3.781,102.294 -3.788,102.314 -3.782,102.320 -3.772,102.323 -3.765,102.334 -3.783,102.340 -3.797,102.350</polygon>
+      <polygon>-3.794,102.292 -3.803,102.314 -3.809,102.311 -3.816,102.314 -3.825,102.308 -3.815,102.285 -3.794,102.292</polygon>
+    </area>
+  </info>
+</alert>
