@@ -40,7 +40,9 @@ npm run latensi -- --api http://localhost:3000 --menit 10
 npm run latensi -- --ringkas
 ```
 
-`latensi:server` menulis ke `research/results/latensi_notifikasi.csv` dan ringkasannya ke `research/results/latensi_notifikasi.md`. Rekaman kejadian nyata tidak bisa diulang, jadi kedua berkas itu dikomit. `latensi` biasa menulis ke `hasil/latensi-notifikasi.csv`; `--csv <berkas>` mengganti tempatnya. Tiap jalan menambah baris ke berkas yang sama, jadi perekaman boleh dicicil beberapa sesi (`--menit` paling banyak 30.240, yaitu 21 hari). Ringkasan ditulis saat perekaman selesai atau dihentikan dengan Ctrl+C.
+`latensi:server` menulis ke `research/results/latensi_notifikasi.csv`, ringkasannya ke `research/results/latensi_notifikasi.md`, dan catatan sesinya ke `research/results/latensi_notifikasi.sesi.csv`. Rekaman kejadian nyata tidak bisa diulang, jadi ketiga berkas itu dikomit. `latensi` biasa menulis ke `hasil/latensi-notifikasi.csv`; `--csv <berkas>` mengganti tempatnya. Tiap jalan menambah baris ke berkas yang sama, jadi perekaman boleh dicicil beberapa sesi (`--menit` paling banyak 30.240, yaitu 21 hari). Ringkasan ditulis saat perekaman selesai atau dihentikan dengan Ctrl+C.
+
+Dari baris notifikasi saja tidak terlihat kapan perekam tidak berjalan, jadi tiap sesi mencatat tiga kejadian di berkas `.sesi.csv`: `mulai` (perekam mulai mendengarkan), `terhenti` (laptop sempat tidur; kolom `detik` berisi lamanya), dan `selesai`. Kolom `sesi` berisi waktu mulai sesi itu dan sama di semua barisnya. Ringkasan memakainya untuk menyebut tiap sesi dan lama mendengarkannya, bukan satu rentang dari notifikasi pertama sampai terakhir. Sesi tanpa baris `selesai` berarti perekam dimatikan sebelum sempat menulisnya (jendela terminal ditutup, laptop dimatikan); lamanya tidak dihitung. Jadi hentikan perekam dengan Ctrl+C.
 
 Yang diukur untuk tiap notifikasi:
 
@@ -63,7 +65,7 @@ Supaya angkanya bisa dipertanggungjawabkan:
 
 | Berkas | Skenario |
 |---|---|
-| `tests/p1-lapisan.spec.js` | P1 lapisan dan peta dasar: waktu tampil tiap lapisan dan 6 peta dasar, legenda ikut berubah |
+| `tests/p1-lapisan.spec.js` | P1 lapisan dan peta dasar: waktu tampil tiap lapisan dan 6 peta dasar, legenda ikut berubah, lapisan satelit digambar ulang di zoom bulat saat peta dasar diganti |
 | `tests/p2-popup.spec.js` | P2 popup gempa, gunung api, dan kab/kota dari daftar dan dari peta |
 | `tests/p4-cek-risiko.spec.js` | P4 cek risiko 10 lokasi, dan titik pantau terparah dibandingkan indikasi kab/kota |
 | `tests/p5-kartografi.spec.js` | P5 koordinat kursor WGS84/UTM/EPSG:3857 dibandingkan hitungan sendiri, skala batang, arah utara |

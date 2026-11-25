@@ -43,7 +43,7 @@ Image dibangun ulang di VM, biasanya 1–3 menit. Data di basis data tidak berub
 | Status container | `docker compose -f deploy/compose.yaml ps` |
 | Log API | `docker compose -f deploy/compose.yaml logs -f --tail 100 api` |
 | Kesehatan sumber data | `curl -s https://sigap-bencana.malaysiawest.cloudapp.azure.com/api/health` (bisa dari mana saja) |
-| Cadangan basis data | `docker compose -f deploy/compose.yaml exec db pg_dump -U sigap -d sigap -Fc -f /tmp/cadangan.dump && docker compose -f deploy/compose.yaml cp db:/tmp/cadangan.dump .` lalu salin ke laptop dengan `scp` |
+| Cadangan basis data sekarang juga | `bash deploy/backup-db.sh` (jadwal harian dan cara memulihkan: [Cadangan basis data](#cadangan-basis-data)) |
 | Mulai ulang semua | `docker compose -f deploy/compose.yaml restart` |
 | Daftar kunci API dan pemakaiannya hari ini | `docker compose -f deploy/compose.yaml exec api node scripts/kunci-api.js daftar` |
 | Cabut satu kunci API | `docker compose -f deploy/compose.yaml exec api node scripts/kunci-api.js cabut <awalan>` |
@@ -64,7 +64,36 @@ $env:DATABASE_URL = "postgresql://sigap:<POSTGRES_PASSWORD>@localhost:5434/sigap
 research/.venv/Scripts/python research/09_kinerja_sistem.py
 ```
 
-**Menghentikan atau menghapus.** `az vm deallocate -g sigap-rg -n sigap-vm` mematikan VM (IP dan disk tetap ditagih). `az group delete -n sigap-rg` menghapus semuanya, termasuk basis data server.
+**Menghentikan atau menghapus.** `az vm deallocate -g sigap-rg -n sigap-vm` mematikan VM (IP dan disk tetap ditagih). `az group delete -n sigap-rg` menghapus semuanya, termasuk basis data server dan cadangannya di VM; ambil dulu salinan terbaru ke laptop (bagian berikut).
+
+## Cadangan basis data
+
+Log sinkronisasi (`sync_logs`), notifikasi, dan kunci API hanya ada di basis data server. [`backup-db.sh`](backup-db.sh) membuat salinannya (`pg_dump -Fc`), membacanya ulang sampai habis untuk memastikan utuh, lalu menyimpannya di `/opt/sigap/cadangan/`. Tujuh salinan terakhir dipertahankan, dan `sigap-terbaru.dump` selalu menunjuk yang terbaru.
+
+**Jadwal.** Cron menjalankannya tiap hari pukul 19.10 UTC (02.10 WIB). Server yang dibuat dari `cloud-init.yaml` sudah punya jadwal itu. Server yang sudah berjalan sebelum skrip ini ada dipasangi sekali, dari PowerShell di laptop. Baris ini memasang `cron` bila belum ada, menulis jadwalnya, lalu langsung membuat salinan pertama:
+
+```powershell
+ssh -i "$HOME\.ssh\sigap_azure" azureuser@sigap-bencana.malaysiawest.cloudapp.azure.com "(dpkg -s cron >/dev/null 2>&1 || sudo apt-get install -y cron) && echo '10 19 * * * azureuser bash /opt/sigap/deploy/backup-db.sh 2>&1 | logger -t sigap-cadangan' | sudo tee /etc/cron.d/sigap-cadangan && bash /opt/sigap/deploy/backup-db.sh && ls -lh /opt/sigap/cadangan"
+```
+
+Hasil tiap malam tercatat di jurnal server: `journalctl -t sigap-cadangan -n 5`.
+
+**Salin ke laptop.** Salinan di VM yang sama tidak menolong bila VM-nya hilang, jadi ambil yang terbaru sesekali, dan selalu sebelum VM dihapus. Dari root repo di laptop (berkas `*.dump` tidak ikut di-commit):
+
+```powershell
+scp -i "$HOME\.ssh\sigap_azure" azureuser@sigap-bencana.malaysiawest.cloudapp.azure.com:/opt/sigap/cadangan/sigap-terbaru.dump "sigap-produksi-$(Get-Date -Format yyyy-MM-dd).dump"
+```
+
+**Memulihkan.** Di server, dari `/opt/sigap`. `--simpan-log` mempertahankan log sinkronisasi di dalam salinan; tanpa itu `restore-db.sh` mengosongkannya, karena aslinya dipakai untuk salinan dari laptop.
+
+```bash
+docker compose -f deploy/compose.yaml down
+docker volume rm sigap_pgdata
+bash deploy/restore-db.sh cadangan/sigap-terbaru.dump --simpan-log
+docker compose -f deploy/compose.yaml up -d --build
+```
+
+Volume `sigap_caddy_data` jangan ikut dihapus (sertifikat HTTPS).
 
 ## Membangun server dari nol
 
@@ -78,7 +107,7 @@ Langkah ini dipakai pada 13 Okt 2026 dan diulang pada 11 Nov 2026. Prasyarat di 
 
    Untuk akun ini: centralindia, malaysiawest, indiasouthcentral, eastasia, koreacentral. Di malaysiawest, B2ats v2 diblokir di zona 1, jadi VM dibuat di zona 2.
 
-2. **Buat VM.** Dari root repo. `deploy/cloud-init.yaml` memasang Docker, membuat swap, dan meng-clone repo ke `/opt/sigap`.
+2. **Buat VM.** Dari root repo. `deploy/cloud-init.yaml` memasang Docker, membuat swap, memasang jadwal cadangan harian, dan meng-clone repo ke `/opt/sigap`.
 
    ```powershell
    az group create -n sigap-rg -l malaysiawest
