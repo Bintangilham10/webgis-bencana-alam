@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqwFBVV95cUxPc3I3VkZobzFjVFc4VUxRUGthbjc4UkM1ck1HV2FIZ29jUFhoaGx2LXJZQ3Zsa0F2ckJ5LW1sNzNES2d2c0o1VjBwSmEyYlMwZ0ItWV9HZlRSRWxPS0JEek5TNzlwNUIyWmQxN3UyY0lpVEZXMWxHU000NTB2c3F1UGI3QXV0QlVjeVVBdEVMQ3gyQlBSY05laDVpUTIxaTB4bGZFRXo2RVdfN0U",
+  "title": "Longsor Terjang Tasikmalaya, 197 Rumah dan 565 Warga Terdampak - Bisnis.com - Foto",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPc3I3VkZobzFjVFc4VUxRUGthbjc4UkM1ck1HV2FIZ29jUFhoaGx2LXJZQ3Zsa0F2ckJ5LW1sNzNES2d2c0o1VjBwSmEyYlMwZ0ItWV9HZlRSRWxPS0JEek5TNzlwNUIyWmQxN3UyY0lpVEZXMWxHU000NTB2c3F1UGI3QXV0QlVjeVVBdEVMQ3gyQlBSY05laDVpUTIxaTB4bGZFRXo2RVdfN0U?oc=5",
+  "source": "Bisnis.com - Foto",
+  "source_url": "https://foto.bisnis.com",
+  "published_at": "2026-11-25T14:00:24.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T16:45:35.665Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
