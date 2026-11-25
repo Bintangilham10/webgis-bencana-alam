@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivgFBVV95cUxOTEdKOGNkR0NSNWlpR2R0dXlaeXlPNmRFdXM1V0hVekJiV0U1bkczTG1oTmlVeW9uVnJ4MUVQQUtiMlZNaHBYZ1JMQTd4eHRKc0lkdVhyTU9JYmJ1czN3X1ZlY28xRDVlaElkNm9oTkVWaERCV21MUmM1VFl4Q3dOQW85N0h2WXZkWlJGYTZtWmQxcGJGY1p3eVhzcHFhMEpINjYtRXlWX3lSNmxjUi1NYVplVFI3NXJmUXJ2WWp3",
+  "title": "Didominasi Longsor, BPBD Malang Catat 572 Bencana Hidrometeorologi dalam 3 Tahun - Lentera Today",
+  "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTEdKOGNkR0NSNWlpR2R0dXlaeXlPNmRFdXM1V0hVekJiV0U1bkczTG1oTmlVeW9uVnJ4MUVQQUtiMlZNaHBYZ1JMQTd4eHRKc0lkdVhyTU9JYmJ1czN3X1ZlY28xRDVlaElkNm9oTkVWaERCV21MUmM1VFl4Q3dOQW85N0h2WXZkWlJGYTZtWmQxcGJGY1p3eVhzcHFhMEpINjYtRXlWX3lSNmxjUi1NYVplVFI3NXJmUXJ2WWp3?oc=5",
+  "source": "Lentera Today",
+  "source_url": "https://lenteratoday.com",
+  "published_at": "2026-11-25T10:00:58.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T10:30:39.980Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

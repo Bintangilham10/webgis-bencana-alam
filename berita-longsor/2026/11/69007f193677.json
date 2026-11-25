@@ -1,0 +1,26 @@
+{
+  "guid": "CBMitwFBVV95cUxNcVVVUnBKMXJhWE00RG1kbzdzWTBqd3lTVldXUkpCLWk4LXN1R1pySmZlai1wREVpUnpFb1ZsRF9mb3JmNkZZa0hXN0UyWGNsQTk5RGxaTmhHOFFMV25VdW9MaDVXbkxld2tQeTZiT2NXcndQQXlvY0RaTkcxTUlFYTZvQ1RIWVRMVm9lOGUxR3ZDd2NqSEE4TExwSUVTWWVhZHljZnBGZERqeDNIRnVLZ2RzUUpvT0k",
+  "title": "Diguyur Hujan Deras Tanah Longsor Terjadi di Blitar, Akses Jalan Tertutup - FaktualNews.co",
+  "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcVVVUnBKMXJhWE00RG1kbzdzWTBqd3lTVldXUkpCLWk4LXN1R1pySmZlai1wREVpUnpFb1ZsRF9mb3JmNkZZa0hXN0UyWGNsQTk5RGxaTmhHOFFMV25VdW9MaDVXbkxld2tQeTZiT2NXcndQQXlvY0RaTkcxTUlFYTZvQ1RIWVRMVm9lOGUxR3ZDd2NqSEE4TExwSUVTWWVhZHljZnBGZERqeDNIRnVLZ2RzUUpvT0k?oc=5",
+  "source": "FaktualNews.co",
+  "source_url": "https://faktualnews.co",
+  "published_at": "2026-11-25T08:54:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T10:30:39.980Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.05",
+      "nama": "Kabupaten Blitar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.72",
+      "nama": "Kota Blitar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

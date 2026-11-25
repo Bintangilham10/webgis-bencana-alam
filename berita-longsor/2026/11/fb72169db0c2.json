@@ -1,0 +1,26 @@
+{
+  "guid": "CBMipwFBVV95cUxOeVZRMTdlUTh3SkhsNTVManhlTDFNYVR5QnY1UEJvUkhscmw1YmVjRll1UU4wSmpvN0tDRHhPMlZCa1h6b3I1WHFGWjZ1QW9oMy14VTE2MmJYeG9Pb3FsRFZqYm4zSWktU2dId0R6X01qQzd1OW1zNE9fRlEzd0NWQTY5bE1acmVGZnFMbldYb3pfdlRhX0ZZZGlKMEJSWGFkakRuUFdRUQ",
+  "title": "Longsor dan Cuaca Ekstrem di Tasikmalaya: 197 Rumah dan 565 Warga Terdampak - WestJavaToday.com",
+  "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeVZRMTdlUTh3SkhsNTVManhlTDFNYVR5QnY1UEJvUkhscmw1YmVjRll1UU4wSmpvN0tDRHhPMlZCa1h6b3I1WHFGWjZ1QW9oMy14VTE2MmJYeG9Pb3FsRFZqYm4zSWktU2dId0R6X01qQzd1OW1zNE9fRlEzd0NWQTY5bE1acmVGZnFMbldYb3pfdlRhX0ZZZGlKMEJSWGFkakRuUFdRUQ?oc=5",
+  "source": "WestJavaToday.com",
+  "source_url": "https://www.westjavatoday.com",
+  "published_at": "2026-11-25T10:05:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T10:30:39.980Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

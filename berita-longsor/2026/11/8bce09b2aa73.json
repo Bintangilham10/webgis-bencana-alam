@@ -1,0 +1,26 @@
+{
+  "guid": "CBMilgFBVV95cUxQNjhhUW85ZEdFaTVRdkl0ZThhREk1LXBnTGpveGFBUGFxOEpKTWExTjJfVmROVVh4Ym92X2hMUTUybUk1MV9PNEJCUV9tWXZEeGhPZTNYMVZYaG1OWEdDVUFhejJ3dXVlU3QyTFB0T2JTYXNMcGpTLW8wQ19NdnZWTDIyZXZibGZuZ2dKMmhvV1Z2SXZwUmc",
+  "title": "Waspadai Longsor di Selatan dan Banjir-Rob di Utara, Pemkab Tegal Perkuat Mitigasi Hulu - Sekretariat Daerah Kabupaten Tegal",
+  "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNjhhUW85ZEdFaTVRdkl0ZThhREk1LXBnTGpveGFBUGFxOEpKTWExTjJfVmROVVh4Ym92X2hMUTUybUk1MV9PNEJCUV9tWXZEeGhPZTNYMVZYaG1OWEdDVUFhejJ3dXVlU3QyTFB0T2JTYXNMcGpTLW8wQ19NdnZWTDIyZXZibGZuZ2dKMmhvV1Z2SXZwUmc?oc=5",
+  "source": "Sekretariat Daerah Kabupaten Tegal",
+  "source_url": "https://setda.tegalkab.go.id",
+  "published_at": "2026-11-25T06:27:07.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T10:30:39.980Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.28",
+      "nama": "Kabupaten Tegal",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.76",
+      "nama": "Kota Tegal",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

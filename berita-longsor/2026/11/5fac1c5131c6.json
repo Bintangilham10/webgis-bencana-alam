@@ -1,0 +1,31 @@
+{
+  "guid": "CBMipgFBVV95cUxOTmFEQnpPd000di1fcHBpUW1EWEhOa2VTeEViRVBTZ2JaTVpvcmZsTXFoZmFqSTRCUGl3Z3JmLXByU2l3ejJJa2dQSEZBOUVXd0Y2cEozX1k4dEVvVWRDTzlYejlWMlMzcmp3eENBMFJSaXdWYWNTRVBqRlpNdlpTUGZEOVlMSFhxa1VvYnlDV245bDZYcHNmUmozSkxRMnF2OUc4X2ln",
+  "title": "Hujan Deras, Jalan Utama di Desa Karawang Sukabumi Tergerus Longsor - | Sukabumizone",
+  "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTmFEQnpPd000di1fcHBpUW1EWEhOa2VTeEViRVBTZ2JaTVpvcmZsTXFoZmFqSTRCUGl3Z3JmLXByU2l3ejJJa2dQSEZBOUVXd0Y2cEozX1k4dEVvVWRDTzlYejlWMlMzcmp3eENBMFJSaXdWYWNTRVBqRlpNdlpTUGZEOVlMSFhxa1VvYnlDV245bDZYcHNmUmozSkxRMnF2OUc4X2ln?oc=5",
+  "source": "| Sukabumizone",
+  "source_url": "https://sukabumizone.com",
+  "published_at": "2026-11-25T09:56:48.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T10:30:39.980Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.15",
+      "nama": "Kabupaten Karawang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

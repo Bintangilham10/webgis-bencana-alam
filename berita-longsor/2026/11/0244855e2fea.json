@@ -1,0 +1,26 @@
+{
+  "guid": "CBMioAFBVV95cUxONmtGajRUUEFXTTdBYU9FaEJFcE9vSk40TzEwV1hSZGowRTBlb21KQXdVU3gwSGYzVDl0N0tkbXFPUjVoTUQ2N1E2N3FwSDlUUjV3Z05fTXNYdklNbDFlZWF6SWlkT0s0dzRHX0FxcEE3OXcxREJLTXRIa0c2a3dlQUQ5SC1zRXYxUmd0QkF2cGJvWGE3R2I2R2djMk1IVnpS",
+  "title": "Longsor Terjang Tasikmalaya, 197 Rumah dan 565 Warga Terdampak - Deliknews.com",
+  "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONmtGajRUUEFXTTdBYU9FaEJFcE9vSk40TzEwV1hSZGowRTBlb21KQXdVU3gwSGYzVDl0N0tkbXFPUjVoTUQ2N1E2N3FwSDlUUjV3Z05fTXNYdklNbDFlZWF6SWlkT0s0dzRHX0FxcEE3OXcxREJLTXRIa0c2a3dlQUQ5SC1zRXYxUmd0QkF2cGJvWGE3R2I2R2djMk1IVnpS?oc=5",
+  "source": "Deliknews.com",
+  "source_url": "https://www.deliknews.com",
+  "published_at": "2026-11-25T08:38:51.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T10:30:39.980Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

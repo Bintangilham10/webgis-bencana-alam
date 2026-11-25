@@ -1,0 +1,26 @@
+{
+  "guid": "CBMicEFVX3lxTFBLbjlGX2tSVkhRNjFUNkMtSGI2OTdtb0kzZVR0QmpHaE01T2U2NnQ0N0Y5VDF6alRWN0JVeXBKOWNDd0EyZFVJZnJoMGxTMUZmbGVrYjJibHNiUWRWb1VNaDFEY2hqZzVjYlV3Q3JRTnE",
+  "title": "Bencana Longsor Hantam Tasikmalaya - Malutpost",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBLbjlGX2tSVkhRNjFUNkMtSGI2OTdtb0kzZVR0QmpHaE01T2U2NnQ0N0Y5VDF6alRWN0JVeXBKOWNDd0EyZFVJZnJoMGxTMUZmbGVrYjJibHNiUWRWb1VNaDFEY2hqZzVjYlV3Q3JRTnE?oc=5",
+  "source": "Malutpost",
+  "source_url": "https://malutpost.id",
+  "published_at": "2026-11-25T08:25:30.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T10:30:39.980Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

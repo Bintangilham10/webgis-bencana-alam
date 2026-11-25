@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi2gFBVV95cUxOaXQyc181T2NFVnN2cEVhdGNyWVB0aTB0amcxSk0zbDhEQTU5Y3VTcDdoa0NTdVZweTBTeDR6aFkxOEdDOW1DdHdTN1MwMDBnWWFlS0YtYUswYm92cmF5T2g2Y0VJNF8xcXJ6aFBHRVl4UEZsOXN4eU93ZnNXb2ZCWDVoRkZEc0hDUFp5U1JqV3lyeWU0S2FaTHI5MlF6dmJNQXJNQUxubmxUdnBoRHRTaExBMEdFcXU5M09MeHFNNWxma3NoY3NJM0dDbTBYT1hrQjZIZWgxMGgxZw",
+  "title": "Balikpapan, Samarinda, PPU Bersiap Hadapi Bencana Hidrometeorologi, Banjir hingga Tanah Longsor - Tribunkaltim.co",
+  "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOaXQyc181T2NFVnN2cEVhdGNyWVB0aTB0amcxSk0zbDhEQTU5Y3VTcDdoa0NTdVZweTBTeDR6aFkxOEdDOW1DdHdTN1MwMDBnWWFlS0YtYUswYm92cmF5T2g2Y0VJNF8xcXJ6aFBHRVl4UEZsOXN4eU93ZnNXb2ZCWDVoRkZEc0hDUFp5U1JqV3lyeWU0S2FaTHI5MlF6dmJNQXJNQUxubmxUdnBoRHRTaExBMEdFcXU5M09MeHFNNWxma3NoY3NJM0dDbTBYT1hrQjZIZWgxMGgxZw?oc=5",
+  "source": "Tribunkaltim.co",
+  "source_url": "https://kaltim.tribunnews.com",
+  "published_at": "2026-11-25T07:18:09.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T10:30:39.980Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "64.71",
+      "nama": "Kota Balikpapan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "64.72",
+      "nama": "Kota Samarinda",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,23 @@
+{
+  "guid": "CBMixwFBVV95cUxOUHhMdTBhRmNLckNtWXg2Y0xhQUVXUE9wNXZuMnNWd18wbS1iTDJGR2lrejhtRnVqeENfN2ZObjRPQUlfTlVZc2dPZjA1NGZSVUpicDJ4a0Rkc25TSTR4OWwtUlVrQjk1OHBKUlFuNFI1MW9FV0V2QTBqZ0NlZGN0VUgweUYyZEdPVWtKNmRJRmVjeGZVdWdzbUZkQmJ6dUNOd3AtZlFUUVJmdnRpb3FEN0hmb3N3Q0M3LU1QTHlGcU5LN3ZmbVJ3",
+  "title": "Banjir dan Longsor Terjang Aceh Tengah, Akses Menuju Tiga Desa Terputus - Jurnal Aceh",
+  "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUHhMdTBhRmNLckNtWXg2Y0xhQUVXUE9wNXZuMnNWd18wbS1iTDJGR2lrejhtRnVqeENfN2ZObjRPQUlfTlVZc2dPZjA1NGZSVUpicDJ4a0Rkc25TSTR4OWwtUlVrQjk1OHBKUlFuNFI1MW9FV0V2QTBqZ0NlZGN0VUgweUYyZEdPVWtKNmRJRmVjeGZVdWdzbUZkQmJ6dUNOd3AtZlFUUVJmdnRpb3FEN0hmb3N3Q0M3LU1QTHlGcU5LN3ZmbVJ3?oc=5",
+  "source": "Jurnal Aceh",
+  "source_url": "https://jurnalaceh.pikiran-rakyat.com",
+  "published_at": "2026-11-25T09:56:06.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T10:30:39.980Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

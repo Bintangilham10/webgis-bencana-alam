@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivwFBVV95cUxQb283YnVxd05qSVVUMXM0ZmdVLTUycXNiQUZITGJYSnZILUtYVmhrbWVfWUt4ekdtU2t4MUlDVUFNSlZBT09iNFMyaHo2V0xnUE9GUHZOMklEQ2xDZVhJd2JMMFNuellGMlhKTFk2V0NZeUJ1MkJwOHhVV29PeWZBd0NFRWM0anBMOFNrRld2QTZPSkxrQjFnYk85ZWoxcVpPUnZ0U3V1MUNKcGM3bzZsT29tMW1xLU5WelFMZEhKdw",
+  "title": "Tiga Desa di Sukabumi Terdampak Longsor, Akses Jalan Tertutup Material Tanah - Media Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQb283YnVxd05qSVVUMXM0ZmdVLTUycXNiQUZITGJYSnZILUtYVmhrbWVfWUt4ekdtU2t4MUlDVUFNSlZBT09iNFMyaHo2V0xnUE9GUHZOMklEQ2xDZVhJd2JMMFNuellGMlhKTFk2V0NZeUJ1MkJwOHhVV29PeWZBd0NFRWM0anBMOFNrRld2QTZPSkxrQjFnYk85ZWoxcVpPUnZ0U3V1MUNKcGM3bzZsT29tMW1xLU5WelFMZEhKdw?oc=5",
+  "source": "Media Indonesia",
+  "source_url": "https://mediaindonesia.com",
+  "published_at": "2026-11-25T10:17:54.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T10:30:39.980Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMikgFBVV95cUxQZnczTlIzeDRQNW51cHRNTUhTSVh2RFJ3LU5FNlRBTWZ2MG9hV20tQkFDeU9HQ25UeW1WTVJnRkNaMWUwcWZ4bzFubGhUMkE1anNIS1drdW9SSFRMRUpXbFl1Z1pNMF81QmFvU2F5MDY0TEJkYmZCNWExX0NITUhOQkxBdWY5V3BtRl9jRXNZY2dWdw",
+  "title": "Pemkab Nabire Imbau Warga Waspada Banjir dan Longsor - Papuapos Nabire",
+  "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZnczTlIzeDRQNW51cHRNTUhTSVh2RFJ3LU5FNlRBTWZ2MG9hV20tQkFDeU9HQ25UeW1WTVJnRkNaMWUwcWZ4bzFubGhUMkE1anNIS1drdW9SSFRMRUpXbFl1Z1pNMF81QmFvU2F5MDY0TEJkYmZCNWExX0NITUhOQkxBdWY5V3BtRl9jRXNZY2dWdw?oc=5",
+  "source": "Papuapos Nabire",
+  "source_url": "https://www.papuaposnabire.com",
+  "published_at": "2026-11-25T03:10:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T10:30:39.980Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "94.01",
+      "nama": "Kabupaten Nabire",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
