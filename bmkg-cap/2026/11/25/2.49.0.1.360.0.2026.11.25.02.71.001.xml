@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.25.02.71.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-25T10:00:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-25T10:05:00+08:00</effective>
+    <expires>2026-11-25T12:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 25 November 2026, 10:05 WITA di sebagian wilayah Sulawesi Utara, khususnya di DAMAU, KABARUAN, KAKAS, MELONGUANE, NUSA TABUKAN, SALIBABU, TABUKAN TENGAH.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 25 November 2026, 12:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/25/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>1.166,124.970 1.150,125.003 1.136,125.018 1.072,124.968 1.081,124.956 1.081,124.941 1.096,124.929 1.107,124.927 1.121,124.916 1.132,124.916 1.157,124.884 1.182,124.863 1.188,124.868 1.188,124.868 1.195,124.871 1.187,124.883 1.171,124.890 1.180,124.901 1.202,124.904 1.201,124.914 1.181,124.940 1.170,124.967 1.166,124.970</polygon>
+      <polygon>1.052,124.941 1.052,124.938 1.057,124.938 1.073,124.925 1.052,124.941</polygon>
+      <polygon>1.095,124.906 1.108,124.899 1.111,124.898 1.109,124.903 1.095,124.906</polygon>
+      <polygon>1.177,124.845 1.169,124.856 1.162,124.857 1.177,124.845</polygon>
+      <polygon>1.189,124.834 1.190,124.834 1.209,124.832 1.211,124.839 1.189,124.834</polygon>
+      <polygon>3.793,125.605 3.792,125.625 3.790,125.632 3.785,125.634 3.783,125.621 3.790,125.612 3.786,125.605 3.769,125.595 3.770,125.589 3.787,125.588 3.791,125.592 3.793,125.605</polygon>
+      <polygon>3.807,125.576 3.805,125.574 3.808,125.573 3.807,125.576</polygon>
+      <polygon>3.770,125.573 3.767,125.579 3.751,125.586 3.754,125.571 3.745,125.558 3.753,125.555 3.769,125.567 3.770,125.573</polygon>
+      <polygon>3.635,125.573 3.632,125.563 3.626,125.564 3.625,125.585 3.618,125.585 3.612,125.591 3.608,125.582 3.602,125.577 3.597,125.580 3.589,125.573 3.590,125.564 3.578,125.560 3.580,125.581 3.572,125.588 3.555,125.590 3.554,125.601 3.540,125.617 3.538,125.615 3.523,125.594 3.516,125.595 3.504,125.567 3.513,125.555 3.516,125.542 3.526,125.546 3.553,125.535 3.560,125.541 3.571,125.542 3.594,125.535 3.610,125.527 3.628,125.545 3.633,125.557 3.635,125.573</polygon>
+      <polygon>3.828,126.807 3.796,126.787 3.786,126.794 3.777,126.794 3.750,126.782 3.760,126.776 3.764,126.768 3.774,126.765 3.790,126.754 3.812,126.745 3.842,126.744 3.853,126.753 3.855,126.762 3.841,126.781 3.834,126.803 3.828,126.807</polygon>
+      <polygon>3.876,126.703 3.883,126.698 3.915,126.694 3.926,126.715 3.914,126.722 3.899,126.723 3.887,126.716 3.876,126.703</polygon>
+      <polygon>3.750,126.782 3.777,126.794 3.786,126.794 3.796,126.787 3.828,126.807 3.808,126.820 3.793,126.835 3.753,126.851 3.728,126.823 3.738,126.813 3.743,126.789 3.750,126.782</polygon>
+      <polygon>3.915,126.694 3.883,126.698 3.876,126.703 3.863,126.686 3.819,126.706 3.813,126.703 3.810,126.693 3.816,126.682 3.821,126.685 3.835,126.676 3.855,126.676 3.883,126.662 3.926,126.669 3.934,126.678 3.915,126.694</polygon>
+    </area>
+  </info>
+</alert>
