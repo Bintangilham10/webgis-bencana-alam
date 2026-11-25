@@ -34,6 +34,11 @@
 // ke hasil/latensi-notifikasi.md. Ctrl+C menghentikan perekaman dan tetap menulis
 // ringkasan.
 //
+// Perekaman boleh dicicil beberapa sesi. Kapan perekam mulai mendengarkan, terhenti
+// (laptop tidur), dan selesai dicatat di berkas kedua, hasil/latensi-notifikasi.sesi.csv,
+// supaya ringkasan bisa menyebut tiap sesi dan lama mendengarkannya: dari baris
+// notifikasi saja tidak terlihat kapan perekam tidak berjalan.
+//
 // Untuk data riset: `npm run latensi:server -- --menit 1440` merekam server produksi
 // ke research/results/latensi_notifikasi.csv (ikut dikomit, karena rekaman kejadian
 // nyata tidak bisa diulang).
@@ -52,8 +57,13 @@ function arg(name, fallback) {
 // --csv mengganti berkas rekaman (bawaan hasil/latensi-notifikasi.csv); ringkasannya
 // ditulis di sebelahnya dengan akhiran .md.
 const CSV = arg('csv', join(dirname(fileURLToPath(import.meta.url)), '..', 'hasil', 'latensi-notifikasi.csv'));
-const SUMMARY = `${CSV.endsWith('.csv') ? CSV.slice(0, -4) : CSV}.md`;
+const BASE = CSV.endsWith('.csv') ? CSV.slice(0, -4) : CSV;
+const SUMMARY = `${BASE}.md`;
 const COLUMNS = ['diterima_utc', 'server', 'id', 'jenis', 'level', 'dibuat_utc', 'sumber_utc', 'latensi_ms', 'jeda_sumber_s', 'selisih_jam_ms', 'rtt_ms', 'langsung'];
+// Catatan sesi: satu baris per kejadian (mulai, terhenti, selesai). `sesi` = waktu
+// mulai sesi itu, sama di semua barisnya; `detik` = lama terhenti.
+const SESSIONS = `${BASE}.sesi.csv`;
+const SESSION_COLUMNS = ['sesi', 'server', 'kejadian', 'waktu_utc', 'detik', 'catatan'];
 const CLOCK_SAMPLES = 7;
 // Jam penghitung klien bergeser terhadap jam server (pada laptop perekam terukur
 // sekitar 1 ms per menit, 24 Nov 2026), jadi selisihnya diukur ulang tiap menit.
@@ -173,7 +183,54 @@ function unique(rows) {
   return [...kept.values()];
 }
 
-function summarizeServer(server, recorded) {
+// Catatan sesi (berkas .sesi.csv) → satu objek per sesi perekaman, urut waktu mulai.
+// Sesi tanpa "selesai" berarti perekam dimatikan sebelum sempat menulisnya.
+export function sessionsOf(events) {
+  const sessions = new Map();
+  for (const e of events) {
+    const key = `${e.server}|${e.sesi}`;
+    if (!sessions.has(key)) sessions.set(key, { server: e.server, mulai: e.sesi, selesai: null, terhenti_s: 0, catatan: [] });
+    const session = sessions.get(key);
+    if (e.kejadian === 'selesai') session.selesai = e.waktu_utc;
+    else if (e.kejadian === 'terhenti') session.terhenti_s += Number(e.detik) || 0;
+    if (e.catatan && !session.catatan.includes(e.catatan)) session.catatan.push(e.catatan);
+  }
+  return [...sessions.values()].toSorted((a, b) => Date.parse(a.mulai) - Date.parse(b.mulai));
+}
+
+// Baris notifikasi dibagi ke sesi tempatnya diterima. Sesi yang akhirnya tidak
+// tercatat dianggap berlangsung sampai sesi berikutnya dimulai; lamanya tidak dihitung.
+// Baris di luar semua sesi (direkam sebelum sesi dicatat) dilaporkan terpisah.
+function summarizeSessions(sessions, rows) {
+  const starts = sessions.map((s) => Date.parse(s.mulai));
+  const ends = sessions.map((s, i) => (s.selesai ? Date.parse(s.selesai) : (starts[i + 1] ?? Infinity)));
+  const members = sessions.map(() => []);
+  const outside = [];
+  for (const r of rows) {
+    const at = Date.parse(r.diterima_utc);
+    const i = sessions.findIndex((_, k) => at >= starts[k] && at <= ends[k]);
+    (i === -1 ? outside : members[i]).push(r);
+  }
+  const span = (list) => {
+    const times = list.map((r) => r.diterima_utc).toSorted((a, b) => a.localeCompare(b));
+    return { n: list.length, dari: times[0] ?? null, sampai: times.at(-1) ?? null };
+  };
+  return {
+    sesi: sessions.map((s, i) => ({
+      nomor: i + 1,
+      mulai: s.mulai,
+      selesai: s.selesai,
+      terhenti_s: s.terhenti_s,
+      lama_s: s.selesai ? Math.max(0, (ends[i] - starts[i]) / 1000 - s.terhenti_s) : null,
+      langsung: members[i].filter(isLive).length,
+      baris_terakhir: span(members[i]).sampai,
+      catatan: s.catatan,
+    })),
+    tanpa_sesi: span(outside),
+  };
+}
+
+function summarizeServer(server, recorded, sessions = []) {
   const rows = unique(recorded);
   const live = rows.filter(isLive);
   const latency = live.map((r) => Number(r.latensi_ms));
@@ -184,6 +241,7 @@ function summarizeServer(server, recorded) {
     server,
     dari: times[0],
     sampai: times.at(-1),
+    ...summarizeSessions(sessions, rows),
     diterima: rows.length,
     duplikat: recorded.length - rows.length,
     tidak_langsung: rows.length - live.length,
@@ -197,18 +255,28 @@ function summarizeServer(server, recorded) {
   };
 }
 
-// Ringkasan per server dari baris CSV (nilai berupa teks).
-export function summarize(records) {
-  const servers = new Map();
+// Ringkasan per server dari baris CSV (nilai berupa teks) dan, bila ada, catatan
+// sesinya. Server yang sudah punya sesi tetapi belum menerima notifikasi ikut ditulis.
+export function summarize(records, sessionEvents = []) {
+  const sessions = sessionsOf(sessionEvents);
+  const servers = new Map(sessions.map((s) => [s.server, []]));
   for (const r of records) {
     if (!servers.has(r.server)) servers.set(r.server, []);
     servers.get(r.server).push(r);
   }
-  return [...servers].map(([server, rows]) => summarizeServer(server, rows));
+  return [...servers].map(([server, rows]) => summarizeServer(server, rows, sessions.filter((s) => s.server === server)));
 }
 
 const ms = (v) => (v >= 1000 ? `${(v / 1000).toFixed(2).replace('.', ',')} detik` : `${Math.round(v)} ms`);
 const minutes = (seconds) => `${(seconds / 60).toFixed(1).replace('.', ',')} menit`;
+// Lama mendengarkan: "3 jam 10 menit", "45 menit", "kurang dari 1 menit".
+const duration = (seconds) => {
+  const total = Math.round(seconds / 60);
+  if (total < 1) return 'kurang dari 1 menit';
+  const hours = Math.floor(total / 60);
+  return [hours && `${hours} jam`, total % 60 && `${total % 60} menit`].filter(Boolean).join(' ');
+};
+const utc = (isoTime) => isoTime.slice(0, 19).replace('T', ' ');
 const KIND = { gempa: 'Gempa BMKG', gunung_api: 'Level gunung api', cuaca: 'Peringatan dini cuaca BMKG' };
 
 function kindLine(k) {
@@ -224,8 +292,54 @@ function notes(s) {
   return lines.flatMap((line) => [line, '']);
 }
 
+function sessionRow(k) {
+  const end = k.selesai ? utc(k.selesai) : 'tidak tercatat';
+  return `| ${k.nomor} | ${utc(k.mulai)} | ${end} | ${k.lama_s === null ? '—' : duration(k.lama_s)} | ${k.langsung} |`;
+}
+
+function sessionNotes(k) {
+  const lines = [];
+  if (!k.selesai) {
+    const last = k.baris_terakhir ? ` (notifikasi terakhirnya ${utc(k.baris_terakhir)} UTC)` : '';
+    lines.push(`Sesi ${k.nomor}: perekam berhenti tanpa menulis akhir sesinya, jadi lamanya tidak dihitung${last}.`);
+  }
+  if (k.terhenti_s) lines.push(`Sesi ${k.nomor}: perekam sempat terhenti ${duration(k.terhenti_s)} (laptop tidur); waktu itu sudah dikurangkan dari lama mendengarkan.`);
+  if (k.catatan.length) lines.push(`Sesi ${k.nomor}: ${k.catatan.join('; ')}.`);
+  return lines;
+}
+
+// Notifikasi di luar semua sesi: yang bisa disebut hanya waktu yang pertama dan
+// terakhir, yang bukan berarti perekam berjalan terus di antaranya.
+function outsideLines(s) {
+  if (!s.tanpa_sesi.n) return [];
+  const what = s.sesi.length ? `${s.tanpa_sesi.n} notifikasi direkam di luar sesi yang tercatat` : 'Sesi perekaman tidak dicatat';
+  return [`${what}: notifikasi pertama diterima ${utc(s.tanpa_sesi.dari)} UTC, terakhir ${utc(s.tanpa_sesi.sampai)} UTC. Perekam belum tentu berjalan terus di antara keduanya.`, ''];
+}
+
+function listened(sessions) {
+  const timed = sessions.filter((k) => k.lama_s !== null);
+  if (!timed.length) return '';
+  const untimed = sessions.length - timed.length;
+  const except = untimed ? ` (di luar ${untimed} sesi yang akhirnya tidak tercatat)` : '';
+  return `, lama mendengarkan seluruhnya ${duration(timed.reduce((sum, k) => sum + k.lama_s, 0))}${except}`;
+}
+
+// Kapan perekam mendengarkan, per sesi.
+function sessionLines(s) {
+  if (!s.sesi.length) return outsideLines(s);
+  return [
+    `Direkam dalam ${s.sesi.length} sesi${listened(s.sesi)}. Di luar sesi perekam tidak berjalan, jadi notifikasi pada waktu itu tidak terekam.`,
+    '',
+    '| Sesi | Mulai (UTC) | Selesai (UTC) | Lama mendengarkan | Notifikasi langsung |', '|---|---|---|---|---|',
+    ...s.sesi.map(sessionRow),
+    '',
+    ...s.sesi.flatMap(sessionNotes).flatMap((line) => [line, '']),
+    ...outsideLines(s),
+  ];
+}
+
 function serverLines(s) {
-  const head = [`## ${s.server}`, '', `Direkam ${s.dari} sampai ${s.sampai}.`, ''];
+  const head = [`## ${s.server}`, '', ...sessionLines(s)];
   if (!s.latensi_ms) return [...head, `Belum ada notifikasi langsung (${s.diterima} diterima, tidak ada yang dibuat selagi perekam mendengarkan).`, ''];
   const l = s.latensi_ms;
   return [
@@ -246,9 +360,10 @@ function serverLines(s) {
   ];
 }
 
-export function report(summaries, recording = 'latensi-notifikasi.csv') {
+export function report(summaries, recording = 'latensi-notifikasi.csv', sessionLog = null) {
+  const sources = sessionLog ? `\`${recording}\`, dan catatan sesinya, \`${sessionLog}\`` : `\`${recording}\``;
   return [
-    '# Latensi notifikasi langsung', '', `Dibuat oleh \`e2e/scripts/latensi-notifikasi.mjs\` dari berkas rekamannya, \`${recording}\`.`, '',
+    '# Latensi notifikasi langsung', '', `Dibuat oleh \`e2e/scripts/latensi-notifikasi.mjs\` dari berkas rekamannya, ${sources}.`, '',
     ...summaries.flatMap(serverLines),
     'Latensi kirim dihitung dari saat server menyimpan notifikasi sampai datanya tiba di klien perekam; waktu menggambar notifikasi di layar tidak termasuk. Persentil memakai cara peringkat terdekat.',
     '',
@@ -264,7 +379,9 @@ async function writeSummary() {
     console.log(`Belum ada ${CSV}.`);
     return;
   }
-  const text = report(summarize(parseCsv(await readFile(CSV, 'utf8')).records), basename(CSV));
+  const logged = existsSync(SESSIONS);
+  const events = logged ? parseCsv(await readFile(SESSIONS, 'utf8')).records : [];
+  const text = report(summarize(parseCsv(await readFile(CSV, 'utf8')).records, events), basename(CSV), logged ? basename(SESSIONS) : null);
   await writeFile(SUMMARY, text);
   console.log(`\n${text}`);
 }
@@ -356,8 +473,9 @@ async function settleWrites(writer, attempts = 30) {
 
 // Keadaan satu kali perekaman: selisih jam yang sedang dipakai, kapan perekam terakhir
 // bangun dari tidur, dan notifikasi yang sudah dicatat. `measure`, `wallClock`,
-// `monotonic`, dan `warn` bisa diganti saat test.
-export function createRecorder({ server, clock, measure, wallClock = Date.now, monotonic = now, warn = console.error }) {
+// `monotonic`, dan `warn` bisa diganti saat test. `onSuspend(gapMs)` dipanggil tiap
+// perekam ternyata sempat terhenti, untuk catatan sesi.
+export function createRecorder({ server, clock, measure, wallClock = Date.now, monotonic = now, warn = console.error, onSuspend = () => {} }) {
   const state = { clock, stale: false, epoch: 0, resumedMs: -Infinity, lastTick: wallClock(), lastId: null, seen: new Set(), received: 0 };
 
   const refreshClock = async () => {
@@ -387,6 +505,7 @@ export function createRecorder({ server, clock, measure, wallClock = Date.now, m
     state.stale = true;
     state.resumedMs = monotonic();
     warn(`Perekam terhenti ±${Math.round(gap / 1000)} detik (laptop tidur?). Notifikasi yang dibuat selama itu tidak dihitung.`);
+    onSuspend(gap);
     return refreshClock();
   };
 
@@ -424,12 +543,38 @@ async function keepConnected(api, recorder, save, signal) {
   await keepConnected(api, recorder, save, signal);
 }
 
+// Satu baris catatan sesi. Waktunya jam sistem (bukan jam penghitung perekam, yang
+// bisa berhenti selagi laptop tidur), supaya lama sesi mencakup waktu terhenti yang
+// lalu dikurangkan lewat baris "terhenti".
+export function sessionLine({ sesi, server, kejadian, waktuMs, detik = '' }) {
+  return `${[sesi, server, kejadian, iso(waktuMs), detik, ''].join(',')}\n`;
+}
+
+// Pencatat sesi untuk satu kali perekaman. Gagal menulis (berkas terkunci) tidak
+// menghentikan perekaman: barisnya dicetak supaya bisa ditambahkan dengan tangan.
+function createSessionLog(server) {
+  const sesi = iso(Date.now());
+  return async (kejadian, detik) => {
+    const line = sessionLine({ sesi, server, kejadian, waktuMs: kejadian === 'mulai' ? Date.parse(sesi) : Date.now(), detik });
+    try {
+      if (!existsSync(SESSIONS)) await writeFile(SESSIONS, `${SESSION_COLUMNS.join(',')}\n`);
+      await appendFile(SESSIONS, line);
+    } catch (err) {
+      console.error(`Catatan sesi belum tertulis (${err.code ?? err.message}). Tambahkan baris ini ke akhir ${SESSIONS}:\n${line}`);
+    }
+  };
+}
+
 async function record(api, minutesToRun) {
   // Jam diukur dulu: bila server tidak terjangkau, tidak ada berkas yang dibuat.
   const measure = () => measureClock(api);
-  const recorder = createRecorder({ server: new URL(api).host, clock: await measure(), measure });
+  const server = new URL(api).host;
+  const logSession = createSessionLog(server);
+  const onSuspend = (gapMs) => void logSession('terhenti', Math.round(gapMs / 1000));
+  const recorder = createRecorder({ server, clock: await measure(), measure, onSuspend });
   await mkdir(dirname(CSV), { recursive: true });
   if (!existsSync(CSV)) await writeFile(CSV, `${COLUMNS.join(',')}\n`);
+  await logSession('mulai');
   const { clock } = recorder.state;
   console.log(`Selisih jam server − klien ${clock.offset.toFixed(0)} ms (bolak-balik ${clock.rtt.toFixed(0)} ms). Merekam ${minutesToRun} menit dari ${api} …`);
   const writer = createWriter({ append: (text) => appendFile(CSV, text) });
@@ -452,6 +597,7 @@ async function record(api, minutesToRun) {
   clearInterval(refresh);
   clearInterval(tick);
   await settleWrites(writer);
+  await logSession('selesai');
   console.log(`${recorder.state.received} notifikasi diterima.`);
 }
 
