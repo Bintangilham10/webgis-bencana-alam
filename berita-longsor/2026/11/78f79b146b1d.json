@@ -1,0 +1,26 @@
+{
+  "guid": "CBMikwFBVV95cUxNUnRRU2oyWEV6QUNuSW1MSUxHVGo1S3AyMmhXTnFubjEzMko4OGphQjdTRE5nZnNuZGNyWkJuaVkzaG5temx2b3dWSEx0YUhTZndNZHBNNXpFWUZCRFhldUxkY29KbGswTkFzbGtyZHZYLW9ILUpVWkhBMnBjQUdUUnVnUGtMeFR6U1BMTURvRW5aRXc",
+  "title": "Hujan Deras, 6 Titik di Desa Krisik Blitar Diterjang Tanah Longsor - beritajatim.com",
+  "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUnRRU2oyWEV6QUNuSW1MSUxHVGo1S3AyMmhXTnFubjEzMko4OGphQjdTRE5nZnNuZGNyWkJuaVkzaG5temx2b3dWSEx0YUhTZndNZHBNNXpFWUZCRFhldUxkY29KbGswTkFzbGtyZHZYLW9ILUpVWkhBMnBjQUdUUnVnUGtMeFR6U1BMTURvRW5aRXc?oc=5",
+  "source": "beritajatim.com",
+  "source_url": "https://beritajatim.com",
+  "published_at": "2026-11-25T11:08:01.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T13:45:31.112Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "35.05",
+      "nama": "Kabupaten Blitar",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.72",
+      "nama": "Kota Blitar",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

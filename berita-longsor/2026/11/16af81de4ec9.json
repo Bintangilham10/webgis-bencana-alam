@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi0wFBVV95cUxNNU5aSlg4Wk9IemszSGlma0x6VTdvQkZjTlBsU2xENjFodkxaYmhjYmY5M3BMUFk1bWdqSUljcU1WOFNDMWdLU0FtT0twOEVuOWNXNFBmZEpNbGMzWjVSTVBfY1RMMkZQSTFHbXJrTHdzUGM2ZUVkd3FJZWZaUmlKaTdBNEgzZGh1Mlo1ZVp1S2NnVHJ5LUpmczhSeVZzUVp3Y1Z2SUo4MlNHa2kzOG9ka0dGcURTV3JGZGhLYzVQRjU0ZUlOMTlxOHg2eDJvSWRoVkxR",
+  "title": "Foto : 617 Warga Tasikmalaya Terisolasi Mengungsi di Satu Titik Aman akibat Longsor Susulan Terus Terjadi Halaman 1 - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNNU5aSlg4Wk9IemszSGlma0x6VTdvQkZjTlBsU2xENjFodkxaYmhjYmY5M3BMUFk1bWdqSUljcU1WOFNDMWdLU0FtT0twOEVuOWNXNFBmZEpNbGMzWjVSTVBfY1RMMkZQSTFHbXJrTHdzUGM2ZUVkd3FJZWZaUmlKaTdBNEgzZGh1Mlo1ZVp1S2NnVHJ5LUpmczhSeVZzUVp3Y1Z2SUo4MlNHa2kzOG9ka0dGcURTV3JGZGhLYzVQRjU0ZUlOMTlxOHg2eDJvSWRoVkxR?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://bandung.kompas.com",
+  "published_at": "2026-11-25T06:22:15.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-25T13:45:31.112Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

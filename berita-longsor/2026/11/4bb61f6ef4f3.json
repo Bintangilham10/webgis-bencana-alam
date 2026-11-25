@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiswFBVV95cUxPd01YV0tHcXdfanIwYUo5OEpCS2NESlFmdjExNkl4VUtKMmV4N1lYRG9hUUFlel91eE9YZW1LbUpaNmM3eng0andMVXZHUmlqeUFrQkM4QmlkcUJCQ3pHbHFRN2dEZ1QyTmd1QXVBVlNjdnI1azVnS1lfaWpzY1pTVG45S1AzdFZfZjZFSzlpY2NYT0tvakFDSjJZeWJDMS1JUG5ucUJJRjlIakM1VHZBYWtvQdIBuAFBVV95cUxNaXVGckJINXV6MndLU3NzSVVpT09vQWVXY0gySHhNSlFiT1dGQzRobDFSRUtHUlI0anQ4MEVHemxkQ1V3UHVLWXZtRHNKbUoySFg0dGlZV2w0My1BUkRUUVQ3Q1k1bDQ5WklxUnBqSFJQTjRNdmhYWlVMYjRLd3k4R1RhdE5fUlVGc3J5QW8yb2F0OU5scWZFSVA4RGVWaHZpUGJqaDVDYlhrcXJ0U1ZMeGV5Yk5rdURw",
+  "title": "Jalan Gayo Lues-Aceh Tenggara Dipulihkan Usai Terdampak Longsor - detikFinance",
+  "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPd01YV0tHcXdfanIwYUo5OEpCS2NESlFmdjExNkl4VUtKMmV4N1lYRG9hUUFlel91eE9YZW1LbUpaNmM3eng0andMVXZHUmlqeUFrQkM4QmlkcUJCQ3pHbHFRN2dEZ1QyTmd1QXVBVlNjdnI1azVnS1lfaWpzY1pTVG45S1AzdFZfZjZFSzlpY2NYT0tvakFDSjJZeWJDMS1JUG5ucUJJRjlIakM1VHZBYWtvQdIBuAFBVV95cUxNaXVGckJINXV6MndLU3NzSVVpT09vQWVXY0gySHhNSlFiT1dGQzRobDFSRUtHUlI0anQ4MEVHemxkQ1V3UHVLWXZtRHNKbUoySFg0dGlZV2w0My1BUkRUUVQ3Q1k1bDQ5WklxUnBqSFJQTjRNdmhYWlVMYjRLd3k4R1RhdE5fUlVGc3J5QW8yb2F0OU5scWZFSVA4RGVWaHZpUGJqaDVDYlhrcXJ0U1ZMeGV5Yk5rdURw?oc=5",
+  "source": "detikFinance",
+  "source_url": "https://finance.detik.com",
+  "published_at": "2026-11-25T13:25:28.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-25T13:45:31.112Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.02",
+      "nama": "Kabupaten Aceh Tenggara",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "11.13",
+      "nama": "Kabupaten Gayo Lues",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

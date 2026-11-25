@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivAFBVV95cUxOUUxQYlVzZWs2VUR0M3dPcERIWEtkRW9DcjNoRURkZTI2cmZWYW84ejhkd0FjaVEwTlpfN0dtU0VKaHdnNjR6ZVBfbUg2bUg4RG5XZUZ5U2s1Yk9IaGZzaHlNT3VZMjlhVEIyNlBNQ2VWMXlMcFpIZHJEUDh0akNDcnRNS0ZQdEZ4dlhjYTVRRWZtb0FpZ2otakFjamhON2txTzVUZk1jeXo1N2tZYl85TVh4bXppdE5LdW5fRg",
+  "title": "Antisipasi Banjir dan Longsor, DLH Sukabumi Ingatkan Pelaku Usaha Perkuat Mitigasi - Jurnal Sukabumi",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUUxQYlVzZWs2VUR0M3dPcERIWEtkRW9DcjNoRURkZTI2cmZWYW84ejhkd0FjaVEwTlpfN0dtU0VKaHdnNjR6ZVBfbUg2bUg4RG5XZUZ5U2s1Yk9IaGZzaHlNT3VZMjlhVEIyNlBNQ2VWMXlMcFpIZHJEUDh0akNDcnRNS0ZQdEZ4dlhjYTVRRWZtb0FpZ2otakFjamhON2txTzVUZk1jeXo1N2tZYl85TVh4bXppdE5LdW5fRg?oc=5",
+  "source": "Jurnal Sukabumi",
+  "source_url": "https://jurnalsukabumi.com",
+  "published_at": "2026-11-25T11:42:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T13:45:31.112Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

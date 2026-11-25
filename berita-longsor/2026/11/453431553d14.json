@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi1wFBVV95cUxPRTJGZ21jbzNNbGRtdFpNbXVLZ0VWakdUSlpiaFZKdFExc3ZTb29jeVpmMkgtbHNKWENtRVVXcG92YThjRm5WX1VXSzBlNGlxZkNkQVpnN2VjcUc4dEl0amRNcVJlNUJ6TkNIejd6VnhXUEZiSWJKZENOc1Q0Qk5EUlltTHd6VzJqX21aSEFSOVJaX2haYTYycVQwRllqN01ISG1rUDZJZkd6TldScHFpRXhvUUJmTWhYejRsc3NkdnB5bks1Vkg1WlB0ZDl4RHRja3EwaFFMd9IB1gFBVV95cUxPZHE2cmJfX1RKWmoxR2E1UDYwMEZHX1BQLVRpTFhkUHBkSUt5RWlFQnp6VGZWRlVKSTVhUHFtS2xydzROczV3TXdkWGdRY1dRM2ZTOGVIUlpmZ1B5bE0tQ05wajhGWkd2dDRCRUZFVjdlOE9Mdk5TemFTSU1iTE1IeEQyNVdHTkMyUUxhUGFBU2NsV2c0bURzckVSY1RFQ25KbVBPVHJaVUdUbGdBRzJyZEU5M1d1N3hGUl9jTzE0QWpkNGRfM1R2dXE3bDZIZGVSX2NfZEZ3",
+  "title": "Update Bencana: Penambang Terjebak Longsor di Bogor hingga Banjir Rendam Sejumlah Daerah - news.okezone.com",
+  "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPRTJGZ21jbzNNbGRtdFpNbXVLZ0VWakdUSlpiaFZKdFExc3ZTb29jeVpmMkgtbHNKWENtRVVXcG92YThjRm5WX1VXSzBlNGlxZkNkQVpnN2VjcUc4dEl0amRNcVJlNUJ6TkNIejd6VnhXUEZiSWJKZENOc1Q0Qk5EUlltTHd6VzJqX21aSEFSOVJaX2haYTYycVQwRllqN01ISG1rUDZJZkd6TldScHFpRXhvUUJmTWhYejRsc3NkdnB5bks1Vkg1WlB0ZDl4RHRja3EwaFFMd9IB1gFBVV95cUxPZHE2cmJfX1RKWmoxR2E1UDYwMEZHX1BQLVRpTFhkUHBkSUt5RWlFQnp6VGZWRlVKSTVhUHFtS2xydzROczV3TXdkWGdRY1dRM2ZTOGVIUlpmZ1B5bE0tQ05wajhGWkd2dDRCRUZFVjdlOE9Mdk5TemFTSU1iTE1IeEQyNVdHTkMyUUxhUGFBU2NsV2c0bURzckVSY1RFQ25KbVBPVHJaVUdUbGdBRzJyZEU5M1d1N3hGUl9jTzE0QWpkNGRfM1R2dXE3bDZIZGVSX2NfZEZ3?oc=5",
+  "source": "news.okezone.com",
+  "source_url": "https://news.okezone.com",
+  "published_at": "2026-11-25T12:10:29.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T13:45:31.112Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixAFBVV95cUxNeUlMSk9CMzJhWktxVlg5aEVYVE9XVE9iQjZONDBXYXdETnR2cXl1MlBmSklBVTNieng5NE1JRmxTdmJnTlZEVTRPSG9mT2VlNjY5OHBGa3VUc2xoQVNVWGFrZ1BIelpxTnJpQWozdHFpZ3AxcU9SU3ZmMEVfcGZ6c2kwc0JqQlJ2Z1gtems4QUpoMmxvSi1oWEZJZWx5NFEteE5ZdU9RQkh5a2U3TEN6cXBNNW5YZ2NkMjRZOFhmUjI1WHdv0gHKAUFVX3lxTE5OSXVlSVJwRGpGMDJGb1hOWWpJeE1CandTOUhiY0ROUm1QTWMwZXZzcEhZTlB5SWVkZVBCdHZ4Vy1WV21PaFdLUkVyVm1PWC1WUHo1dWdwYU40eTNucEQ4d3REc25PczAzbmFEZ0NnTGdpVGJVUERGcFZmWnUzV1I1OUdyN0tZdE0wWlpHcklWSEVsQU54aGMwT0t6NHRidml4X3Zja0xYQjZUUWlLaGhqQXhSb1NhcVVtV05VY3JPX2pmaFB0TUxOclE",
+  "title": "Diguyur Hujan Deras, Banjir dan Longsor Melanda Sejumlah Wilayah Tasikmalaya - Radar Batu",
+  "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNeUlMSk9CMzJhWktxVlg5aEVYVE9XVE9iQjZONDBXYXdETnR2cXl1MlBmSklBVTNieng5NE1JRmxTdmJnTlZEVTRPSG9mT2VlNjY5OHBGa3VUc2xoQVNVWGFrZ1BIelpxTnJpQWozdHFpZ3AxcU9SU3ZmMEVfcGZ6c2kwc0JqQlJ2Z1gtems4QUpoMmxvSi1oWEZJZWx5NFEteE5ZdU9RQkh5a2U3TEN6cXBNNW5YZ2NkMjRZOFhmUjI1WHdv0gHKAUFVX3lxTE5OSXVlSVJwRGpGMDJGb1hOWWpJeE1CandTOUhiY0ROUm1QTWMwZXZzcEhZTlB5SWVkZVBCdHZ4Vy1WV21PaFdLUkVyVm1PWC1WUHo1dWdwYU40eTNucEQ4d3REc25PczAzbmFEZ0NnTGdpVGJVUERGcFZmWnUzV1I1OUdyN0tZdE0wWlpHcklWSEVsQU54aGMwT0t6NHRidml4X3Zja0xYQjZUUWlLaGhqQXhSb1NhcVVtV05VY3JPX2pmaFB0TUxOclE?oc=5",
+  "source": "Radar Batu",
+  "source_url": "https://radarbatu.jawapos.com",
+  "published_at": "2026-11-25T10:15:26.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T13:45:31.112Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
