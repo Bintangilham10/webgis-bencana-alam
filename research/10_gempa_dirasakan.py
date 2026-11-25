@@ -16,6 +16,7 @@ Masukan:
 Keluaran:
 - data/gempa/bmkg_kejadian.csv         satu baris per gempa
 - data/gempa/bmkg_laporan.csv          satu baris per lokasi yang melaporkan
+- data/gempa/bmkg_meta.json            commit arsip dan batas waktu himpunan ini
 - results/gempa_dirasakan_lokasi.csv   nama lokasi → tempat yang dipilih, untuk ditinjau
 - results/gempa_dirasakan_ringkasan.md
 
@@ -31,6 +32,7 @@ memakai arsip pada commit yang dicatat di ringkasan, jadi hasilnya bisa diulang 
 from __future__ import annotations
 
 import argparse
+import json
 import math
 from collections import Counter
 from datetime import datetime, timezone
@@ -221,6 +223,9 @@ def main() -> None:
     RESULTS.mkdir(parents=True, exist_ok=True)
     kejadian.to_csv(OUT / 'bmkg_kejadian.csv', index=False)
     laporan.to_csv(OUT / 'bmkg_laporan.csv', index=False)
+    # Asal himpunan ini, dibaca 12_evaluasi_gempa.py supaya hasilnya bisa dilacak ke arsipnya.
+    asal = {'arsip_commit': info.commit, 'arsip_waktu': info.waktu, 'sampai': args.sampai, 'dibuat_utc': utc(datetime.now(timezone.utc))}
+    (OUT / 'bmkg_meta.json').write_text(json.dumps(asal, indent=2) + '\n', encoding='utf-8', newline='\n')
     lokasi.to_csv(RESULTS / 'gempa_dirasakan_lokasi.csv', index=False)
     teks = ringkasan(kejadian, laporan, lokasi, info, geokode.keterangan_geonames(geokode.unduh_geonames(False)), gazetir, sampai)
     (RESULTS / 'gempa_dirasakan_ringkasan.md').write_text(teks, encoding='utf-8', newline='\n')
