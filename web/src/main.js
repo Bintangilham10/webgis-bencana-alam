@@ -92,7 +92,7 @@ import {
   TIDE_GAUGE,
 } from "./lib/symbology.js";
 import { RAIN_CLASSES, rainCss } from "./lib/rain.js";
-import { cloudCss } from "./lib/clouds.js";
+import { cloudSwatchStyle } from "./lib/clouds.js";
 import { cssVar, currentTheme, onThemeChange, setTheme } from "./lib/theme.js";
 import { createMap, INDONESIA_BOUNDS } from "./map/create-map.js";
 import { LegendControl } from "./map/legend-control.js";
@@ -541,7 +541,7 @@ const symbol = {
   rain: `<span class="sym rain-swatch" style="--c:${CEWS_LEVELS[1].color}"></span>`,
   station: '<span class="sym rain-pill"></span>',
   imerg: `<span class="sym ramp-swatch">${[1, 2, 4].map((i) => `<span style="background:${rainCss(RAIN_CLASSES[i].mm)}"></span>`).join("")}</span>`,
-  clouds: `<span class="sym ramp-swatch">${[-30, -50, -65, -85].map((c) => `<span style="background:${cloudCss(c, { light: true })}"></span>`).join("")}</span>`,
+  clouds: `<span class="sym ramp-swatch">${[-30, -50, -65, -85].map((c) => `<span class="cloud-swatch" style="${cloudSwatchStyle(c)}"></span>`).join("")}</span>`,
   landslide: landslideSymbol(),
   rawan: `<span class="sym ramp-swatch">${HAZARD_CLASSES.map((c) => `<span style="background:${c.color}"></span>`).join("")}</span>`,
 };

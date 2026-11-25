@@ -1,6 +1,6 @@
 import L from 'leaflet';
 import { getJson } from '../lib/api.js';
-import { cloudCss, cloudsOnly } from '../lib/clouds.js';
+import { cloudsOnly, cloudSwatchStyle } from '../lib/clouds.js';
 import { escapeHtml, formatDasarian, formatNumber } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
 import { decodeRain, paintRain, RAIN_CLASSES, rainCss } from '../lib/rain.js';
@@ -87,6 +87,19 @@ export const rainWarningLegend = () => `
     .join('')}
   <p class="legend-note">Kab/kota berstatus Aman tidak diwarnai. Klik wilayah untuk rinciannya.</p>`;
 
+// ---------- Petak satelit dari NASA GIBS ----------
+
+// Leaflet 1.9.4 membulatkan zoom petak saat peta bergerak (_setView), tetapi
+// redraw() tidak. Peta ini memakai zoomSnap 0,5, jadi redraw() di zoom x,5
+// (mis. tampilan nasional 4,5) meminta petak z = 4,5, yang dijawab GIBS dengan
+// HTTP 400: lapisannya kosong sampai peta di-zoom. Zoom petak dibulatkan di sini,
+// sama seperti _setView.
+const SnappedGridLayer = L.GridLayer.extend({
+  _clampZoom(zoom) {
+    return L.GridLayer.prototype._clampZoom.call(this, Math.round(zoom));
+  },
+});
+
 // ---------- Hujan satelit NASA IMERG ----------
 
 const TILE = 256;
@@ -121,7 +134,7 @@ function loadImage(url) {
 // di zoom itu langsung dipakai. Mulai zoom 5 nilai tiap sel diambil dari petak
 // zoom 6 dan, bila `smooth`, diinterpolasi bilinear antar-titik tengah sel
 // supaya tidak tampak kotak-kotak 11 km.
-const RainTiles = L.GridLayer.extend({
+const RainTiles = SnappedGridLayer.extend({
   options: { smooth: true },
 
   initialize(options) {
@@ -285,7 +298,7 @@ const CLOUDS_FALLBACK_URL =
 // tidak bolong dan tampak seperti langit cerah.
 // Awan digambar abu-abu kebiruan di peta dasar terang dan putih di peta dasar
 // gelap, jadi petak digambar ulang saat nada peta dasar berganti.
-const CloudTiles = L.GridLayer.extend({
+const CloudTiles = SnappedGridLayer.extend({
   onAdd(map) {
     L.GridLayer.prototype.onAdd.call(this, map);
     this._light = this._isLight();
@@ -401,9 +414,9 @@ const CLOUD_CLASSES = [
 export const cloudLegend = () => `
   <p class="legend-note" data-legend-live="clouds">${escapeHtml(legendText.clouds)}</p>
   ${CLOUD_CLASSES.map(
-    (c) => `<div class="legend-row"><span class="swatch" style="background:${cloudCss(c.c, { light: true })}"></span>${c.label} <span class="legend-dim">${c.range}</span></div>`,
+    (c) => `<div class="legend-row"><span class="swatch cloud-swatch" style="${cloudSwatchStyle(c.c)}"></span>${c.label} <span class="legend-dim">${c.range}</span></div>`,
   ).join('')}
-  <p class="legend-note">Suhu puncak awan dari kanal inframerah, tiap 10 menit, terlambat ±1 jam. Makin dingin makin tinggi awannya: awan tampil putih yang makin pekat, dan hanya puncak di bawah ±−40 °C (umumnya awan hujan konvektif) yang berwarna. Permukaan tanpa awan transparan. Petak yang belum terbit memakai citra 10–30 menit sebelumnya.</p>`;
+  <p class="legend-note">Suhu puncak awan dari kanal inframerah, tiap 10 menit, terlambat ±1 jam. Makin dingin makin tinggi awannya: awan tampil putih (abu-abu kebiruan di peta dasar terang) yang makin pekat, dan hanya puncak di bawah ±−40 °C (umumnya awan hujan konvektif) yang berwarna. Permukaan tanpa awan transparan. Petak yang belum terbit memakai citra 10–30 menit sebelumnya.</p>`;
 
 // ---------- Riwayat longsor ----------
 

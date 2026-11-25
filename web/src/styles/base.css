@@ -105,6 +105,9 @@
 [data-theme='dark'],
 [data-tone='dark'] {
   --map-bg: #141518;
+  /* 100% di latar gelap, 0% di latar terang: pemilih untuk simbol yang warnanya
+     dihitung di JavaScript untuk kedua nada (contoh warna awan, .cloud-swatch). */
+  --tone-dark: 100%;
   --fault-color: #f06b60;
   --plate-color: #a7acb4;
   --boundary-color: #858b94;
@@ -135,6 +138,7 @@
 [data-theme='light'],
 [data-tone='light'] {
   --map-bg: #e4e6e9;
+  --tone-dark: 0%;
   --fault-color: #b3001b;
   --plate-color: #444851;
   --boundary-color: #5b616b;

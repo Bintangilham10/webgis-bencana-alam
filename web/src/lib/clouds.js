@@ -260,6 +260,11 @@ export const cloudCss = (celsius, options) => {
   return `rgb(${r} ${g} ${b} / ${a.toFixed(2)})`;
 };
 
+// Gaya contoh warna di legenda dan daftar lapisan (.cloud-swatch): warna untuk
+// kedua nada dikirim, lalu CSS memilih yang sesuai dengan latar tempatnya tampil.
+export const cloudSwatchStyle = (celsius) =>
+  `--cloud-dark:${cloudCss(celsius)};--cloud-light:${cloudCss(celsius, { light: true })}`;
+
 // Tabel warna per 0,25 °C untuk kedua nada peta dasar.
 const TEMP_MIN = -95;
 const TEMP_STEP = 0.25;

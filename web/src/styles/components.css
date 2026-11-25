@@ -1156,6 +1156,15 @@
   flex: 1;
 }
 
+/* Contoh warna awan. Di peta awan digambar tembus pandang: putih di peta dasar
+   gelap, abu-abu kebiruan di peta dasar terang. Contohnya digambar di atas warna
+   latar peta dan memakai warna untuk nada tempatnya tampil (--tone-dark): nada
+   peta dasar di legenda peta, tema antarmuka di daftar lapisan. */
+.cloud-swatch {
+  background: var(--map-bg);
+  box-shadow: inset 0 0 0 1em color-mix(in srgb, var(--cloud-dark) var(--tone-dark), var(--cloud-light));
+}
+
 /* ---------- Jumlah kab/kota per level (indikasi SIGAP 3 hari) ---------- */
 .level-counts {
   display: grid;
