@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiuAFBVV95cUxQT1dWTXFQNURVM1FjZG9WbHV5UDBaZmt5RWI4TTlOMDhoNWIyMmt2eTM3aWIyUWp2N3pJVDZUaklzUFFEdnV4ZUFnOS1FcWQ4T2RhVnlhX0ZBTExvTV9qckNOTmhyOTU1VHpOVnVVWnRVbGZtbFM0QlI5SGV5Z2E0d2Q2M1VnYnNUZ2VqOXM2eFpWQXBCUkJHUTRIZWEyUVpjVnctbkdyWFdjTkRLelEtSkxOOEZ1cHZz",
+  "title": "Longsor Sukabumi Tutup Akses Jalan di Tiga Desa, Satu Rumah Rusak - Pikiran Rakyat Koran",
+  "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQT1dWTXFQNURVM1FjZG9WbHV5UDBaZmt5RWI4TTlOMDhoNWIyMmt2eTM3aWIyUWp2N3pJVDZUaklzUFFEdnV4ZUFnOS1FcWQ4T2RhVnlhX0ZBTExvTV9qckNOTmhyOTU1VHpOVnVVWnRVbGZtbFM0QlI5SGV5Z2E0d2Q2M1VnYnNUZ2VqOXM2eFpWQXBCUkJHUTRIZWEyUVpjVnctbkdyWFdjTkRLelEtSkxOOEZ1cHZz?oc=5",
+  "source": "Pikiran Rakyat Koran",
+  "source_url": "https://koran.pikiran-rakyat.com",
+  "published_at": "2026-11-25T22:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T23:00:47.600Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
