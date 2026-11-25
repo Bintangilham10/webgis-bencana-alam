@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-25T09:45:33.791Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        115.0472137239,
+        -8.4077762078
+      ]
+    },
+    "properties": {
+      "pkey": "400090",
+      "created_at": "2026-11-25T09:38:11.424Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "2955458b-8c5e-42c9-ba21-c665313e4c8c",
+      "image_url": "https://images.petabencana.id/2955458b-8c5e-42c9-ba21-c665313e4c8c.jpg",
+      "disaster_type": "earthquake",
+      "is_training": false,
+      "report_data": {
+        "report_type": "structure",
+        "structureFailure": 2
+      },
+      "tags": {
+        "city": "TABANAN",
+        "district_id": null,
+        "region_code": "5102",
+        "local_area_id": null,
+        "instance_region_code": "ID-BA"
+      },
+      "title": null,
+      "text": "kondisi hari ini pasca-longsor Senin sore (23/11/2026) di area Pura Puseh dan merajan milik I Ketut Sukiana di Banjar Dinas Kebon Anyar",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
