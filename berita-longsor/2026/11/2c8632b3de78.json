@@ -1,0 +1,26 @@
+{
+  "guid": "CBMikAFBVV95cUxQWU8xWE5TWFVFb21XZ1RjaERjeXR3WlNBVFRzSm41S19qUElrNnNWa0UwaFF1TWN1X3NTNE9OeGJnUnhKamR4aWduMXB0aEtqVkRTYjN3OUU0R2lTb3lxOWJGUERGeHFybXIwRlpZb0xib2J4SmlWX0p6cjRScDBCRnV4WFpqXzhuYXV3UXg5cU8",
+  "title": "Tasikmalaya Dikepung Banjir dan Longsor, Satu Warga Tewas - rayatimes.id",
+  "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQWU8xWE5TWFVFb21XZ1RjaERjeXR3WlNBVFRzSm41S19qUElrNnNWa0UwaFF1TWN1X3NTNE9OeGJnUnhKamR4aWduMXB0aEtqVkRTYjN3OUU0R2lTb3lxOWJGUERGeHFybXIwRlpZb0xib2J4SmlWX0p6cjRScDBCRnV4WFpqXzhuYXV3UXg5cU8?oc=5",
+  "source": "rayatimes.id",
+  "source_url": "https://rayatimes.id",
+  "published_at": "2026-11-25T02:02:23.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T04:15:32.091Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

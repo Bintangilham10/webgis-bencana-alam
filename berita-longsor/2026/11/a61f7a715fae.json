@@ -1,0 +1,26 @@
+{
+  "guid": "CBMihgFBVV95cUxNT1VUN1lidHVyVV9QNmFKNEF4NWdWRTl6WnBNQ1ZBT3pjU0NRUEJnSkZFc3dKeGJZb2dPUFdONWpzdWt4Ungzdk1uRmc3ZlFLc3VPczZkc0RJeGsyOEdlNTZHTV92UWpuV25lLUpqRWdzYlI4cE1vMkhkZ1RjNnoydEl3Vi1Hdw",
+  "title": "Akses Jalan Agam-Bukittinggi Lumpuh Total akibat Longsor - Sumbarkita.id",
+  "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNT1VUN1lidHVyVV9QNmFKNEF4NWdWRTl6WnBNQ1ZBT3pjU0NRUEJnSkZFc3dKeGJZb2dPUFdONWpzdWt4Ungzdk1uRmc3ZlFLc3VPczZkc0RJeGsyOEdlNTZHTV92UWpuV25lLUpqRWdzYlI4cE1vMkhkZ1RjNnoydEl3Vi1Hdw?oc=5",
+  "source": "Sumbarkita.id",
+  "source_url": "https://sumbarkita.id",
+  "published_at": "2026-11-25T01:19:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T04:15:32.091Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.75",
+      "nama": "Kota Bukittinggi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "13.06",
+      "nama": "Kabupaten Agam",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

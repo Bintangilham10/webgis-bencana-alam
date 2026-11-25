@@ -1,0 +1,23 @@
+{
+  "guid": "CBMi4gFBVV95cUxOZTg1T2k1ZVVESVZxUjByNnN2MHNINzhxbS0xWEh4eVBVdl9Oa3ZtQS1UZ1pNSUQ2V1FHUnowdTcya1RXbHRySXNXWnJBRWtqT08wcXFoM3IwQjFUdm5aWnpUcUxKQmx6NlY1WUVneFNELUdoWXZsOWpwalBWVXJoWk1IUWhsVHFSRXd0bGp6WVRvdTQ0aDVDdF9TY1hsY2lUUDBQSEhMaXFtOGtLMUxmejRXUURQSmtibnplYWU3MFJhX2ZWOHp0UVNfRFlnWUF5Y29NeG42dlZnMExSeVdUTE93",
+  "title": "BANJIR DAN TANAH LONGSOR TERJADI DI ACEH TENGAH, 9 KK MENGUNGSI DAN SEJUMLAH AKSES JALAN TERPUTUS - BADAN PENANGGULANGAN BENCANA ACEH",
+  "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOZTg1T2k1ZVVESVZxUjByNnN2MHNINzhxbS0xWEh4eVBVdl9Oa3ZtQS1UZ1pNSUQ2V1FHUnowdTcya1RXbHRySXNXWnJBRWtqT08wcXFoM3IwQjFUdm5aWnpUcUxKQmx6NlY1WUVneFNELUdoWXZsOWpwalBWVXJoWk1IUWhsVHFSRXd0bGp6WVRvdTQ0aDVDdF9TY1hsY2lUUDBQSEhMaXFtOGtLMUxmejRXUURQSmtibnplYWU3MFJhX2ZWOHp0UVNfRFlnWUF5Y29NeG42dlZnMExSeVdUTE93?oc=5",
+  "source": "BADAN PENANGGULANGAN BENCANA ACEH",
+  "source_url": "https://bpba.acehprov.go.id",
+  "published_at": "2026-11-25T04:11:24.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T04:15:32.091Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

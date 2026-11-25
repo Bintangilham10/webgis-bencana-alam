@@ -1,0 +1,26 @@
+{
+  "guid": "CBMieEFVX3lxTFBlZDFoOUFtSm5VNTVyZ25ySzZTbjEtc0xLVUtfcmROSHgweVZmUldyX3NITU9yZVpYMmxUVldzdjkwTzRXNmFpbnNkN2xUSV9vMmE0cU14aUE4MXBWbXZMSTdzalBZdDVSaWFpWXUzQllyUXRCSG5GRw",
+  "title": "Tanah Longsor di Jomblang Semarang, Rumah Warga Tertimpa Material - Barisan.co",
+  "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBlZDFoOUFtSm5VNTVyZ25ySzZTbjEtc0xLVUtfcmROSHgweVZmUldyX3NITU9yZVpYMmxUVldzdjkwTzRXNmFpbnNkN2xUSV9vMmE0cU14aUE4MXBWbXZMSTdzalBZdDVSaWFpWXUzQllyUXRCSG5GRw?oc=5",
+  "source": "Barisan.co",
+  "source_url": "https://barisan.co",
+  "published_at": "2026-11-25T03:49:46.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-25T04:15:32.091Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.22",
+      "nama": "Kabupaten Semarang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.74",
+      "nama": "Kota Semarang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
