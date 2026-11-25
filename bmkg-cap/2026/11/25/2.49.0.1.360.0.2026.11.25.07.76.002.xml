@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.25.07.76.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-25T15:15:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-25T15:30:00+08:00</effective>
+    <expires>2026-11-25T17:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 25 November 2026, 15:30 WITA di sebagian wilayah Sulawesi Barat, khususnya di SENDANA, TAMMERODO SENDANA, TUTAR, ULUMANDA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 25 November 2026, 17:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSK/2026/11/25/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Barat</areaDesc>
+      <polygon>-3.109,119.071 -3.109,119.072 -3.139,119.078 -3.148,119.071 -3.174,119.075 -3.178,119.065 -3.185,119.070 -3.192,119.068 -3.201,119.077 -3.212,119.077 -3.221,119.074 -3.230,119.064 -3.241,119.065 -3.241,119.072 -3.234,119.079 -3.251,119.083 -3.258,119.092 -3.274,119.085 -3.285,119.098 -3.293,119.095 -3.292,119.090 -3.316,119.075 -3.316,119.065 -3.328,119.074 -3.341,119.075 -3.347,119.062 -3.383,119.042 -3.383,119.042 -3.382,119.011 -3.347,119.007 -3.335,118.991 -3.282,118.991 -3.272,118.995 -3.272,118.980 -3.278,118.966 -3.287,118.955 -3.293,118.925 -3.256,118.917 -3.249,118.910 -3.247,118.910 -3.246,118.909 -3.227,118.916 -3.201,118.901 -3.187,118.901 -3.171,118.909 -3.155,118.954 -3.126,118.953 -3.106,118.946 -3.088,118.956 -3.087,118.962 -3.096,118.976 -3.088,119.005 -3.091,119.026 -3.086,119.043 -3.109,119.071</polygon>
+      <polygon>-3.249,118.910 -3.297,118.921 -3.312,118.910 -3.328,118.905 -3.365,118.914 -3.372,118.919 -3.406,118.915 -3.416,118.922 -3.417,118.897 -3.422,118.889 -3.423,118.881 -3.420,118.869 -3.388,118.849 -3.375,118.846 -3.354,118.845 -3.344,118.852 -3.338,118.843 -3.328,118.842 -3.315,118.845 -3.312,118.853 -3.302,118.857 -3.276,118.844 -3.257,118.893 -3.247,118.910 -3.249,118.910</polygon>
+      <polygon>-3.004,119.097 -3.013,119.082 -3.030,119.081 -3.037,119.076 -3.050,119.059 -3.056,119.059 -3.066,119.065 -3.087,119.067 -3.091,119.069 -3.104,119.067 -3.109,119.071 -3.086,119.043 -3.091,119.026 -3.088,119.005 -3.096,118.976 -3.087,118.962 -3.088,118.956 -3.106,118.946 -3.126,118.953 -3.155,118.954 -3.171,118.909 -3.187,118.901 -3.201,118.901 -3.227,118.916 -3.246,118.909 -3.239,118.909 -3.236,118.895 -3.212,118.894 -3.189,118.885 -3.177,118.885 -3.170,118.884 -3.159,118.873 -3.155,118.843 -3.112,118.839 -3.088,118.830 -3.081,118.840 -3.039,118.857 -3.030,118.890 -3.033,118.898 -3.041,118.903 -3.043,118.910 -3.033,118.943 -3.014,118.962 -3.032,118.977 -3.022,118.999 -3.007,119.007 -3.001,119.022 -3.005,119.056 -3.004,119.097</polygon>
+      <polygon>-3.246,118.909 -3.247,118.910 -3.257,118.893 -3.276,118.844 -3.232,118.829 -3.214,118.840 -3.186,118.832 -3.185,118.852 -3.177,118.885 -3.189,118.885 -3.212,118.894 -3.236,118.895 -3.239,118.909 -3.246,118.909</polygon>
+    </area>
+  </info>
+</alert>
