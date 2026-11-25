@@ -1,0 +1,40 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-25T10:00:47.145Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        97.1986442633,
+        4.3918136228
+      ]
+    },
+    "properties": {
+      "pkey": "400091",
+      "created_at": "2026-11-25T09:47:48.513Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "61f9e5f7-5dac-4c34-9c61-8374e21f5c21",
+      "image_url": "https://images.petabencana.id/61f9e5f7-5dac-4c34-9c61-8374e21f5c21.jpg",
+      "disaster_type": "earthquake",
+      "is_training": false,
+      "report_data": {
+        "report_type": "road",
+        "accessabilityFailure": 2,
+        "condition": 0
+      },
+      "tags": {
+        "city": "ACEH TENGAH",
+        "district_id": null,
+        "region_code": "1104",
+        "local_area_id": null,
+        "instance_region_code": "ID-AC"
+      },
+      "title": null,
+      "text": "Pembaruan pasca-longsor yang terjadi pada Selasa malam (24/11/2026) di jalur Jalan Takengon–Blangkejeren, Aceh: pada Rabu (25/11/2026) ruas ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
