@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-11-25T12:30:36.520Z",
+  "data": {
+    "Tanggal": "25 Nov 2026",
+    "Jam": "19:08:11 WIB",
+    "DateTime": "2026-11-25T12:08:11+00:00",
+    "Coordinates": "-0.43,123.08",
+    "Lintang": "0.43 LS",
+    "Bujur": "123.08 BT",
+    "Magnitude": "5.5",
+    "Kedalaman": "56 km",
+    "Wilayah": "Pusat gempa berada di laut 56 km timur laut Pulau Puah",
+    "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+    "Dirasakan": "III Luwuk, III Kota Gorontalo, III Kab. Gorontalo, III Bone Bolango, III Gorontalo Utara, III Pohuwato, III Minahasa Tenggara, III Boalemo",
+    "Shakemap": "20261125190811.mmi.jpg"
+  }
+}
