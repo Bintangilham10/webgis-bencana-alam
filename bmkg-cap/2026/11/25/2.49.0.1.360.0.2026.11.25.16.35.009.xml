@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.25.16.35.009</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-25T21:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-25T21:30:00+07:00</effective>
+    <expires>2026-11-26T00:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 25 November 2026, 21:30 WIB di sebagian wilayah Jawa Timur, khususnya di KEPOHBARU.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 November 2026, 00:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/25/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.158,112.143 -7.182,112.131 -7.191,112.122 -7.213,112.116 -7.225,112.103 -7.226,112.092 -7.230,112.089 -7.260,112.084 -7.266,112.087 -7.269,112.094 -7.282,112.091 -7.284,112.086 -7.283,112.080 -7.268,112.076 -7.264,112.070 -7.256,112.066 -7.210,112.069 -7.191,112.066 -7.182,112.051 -7.160,112.051 -7.158,112.055 -7.163,112.058 -7.163,112.064 -7.155,112.082 -7.147,112.084 -7.155,112.102 -7.138,112.106 -7.131,112.113 -7.137,112.127 -7.145,112.128 -7.151,112.145 -7.158,112.143</polygon>
+    </area>
+  </info>
+</alert>

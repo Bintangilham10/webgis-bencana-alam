@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.25.16.71.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-25T23:40:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-25T23:52:00+08:00</effective>
+    <expires>2026-11-26T01:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 25 November 2026, 23:52 WITA di sebagian wilayah Sulawesi Utara, khususnya di WORI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 November 2026, 01:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSR/2026/11/25/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Utara</areaDesc>
+      <polygon>1.678,124.960 1.665,124.961 1.660,124.957 1.663,124.953 1.658,124.948 1.636,124.946 1.631,124.942 1.634,124.925 1.615,124.907 1.600,124.901 1.572,124.907 1.569,124.893 1.574,124.878 1.566,124.845 1.582,124.823 1.592,124.830 1.605,124.868 1.614,124.868 1.631,124.881 1.659,124.915 1.658,124.919 1.652,124.919 1.661,124.927 1.673,124.924 1.693,124.940 1.685,124.943 1.683,124.956 1.678,124.960</polygon>
+      <polygon>1.794,124.796 1.792,124.798 1.776,124.795 1.778,124.790 1.784,124.788 1.795,124.792 1.794,124.796</polygon>
+      <polygon>1.742,124.762 1.741,124.758 1.745,124.755 1.753,124.758 1.745,124.766 1.742,124.762</polygon>
+      <polygon>1.742,124.746 1.737,124.749 1.729,124.745 1.743,124.734 1.752,124.738 1.750,124.744 1.742,124.746</polygon>
+      <polygon>1.718,124.774 1.698,124.781 1.692,124.768 1.706,124.742 1.715,124.733 1.728,124.731 1.733,124.739 1.718,124.752 1.724,124.748 1.732,124.750 1.745,124.766 1.718,124.774</polygon>
+    </area>
+  </info>
+</alert>
