@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.26.06.75.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-26T14:27:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-26T14:39:00+08:00</effective>
+    <expires>2026-11-26T16:29:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 November 2026, 14:39 WITA di sebagian wilayah Gorontalo, khususnya di BOTUPINGGE, DUMBO RAYA, DUNGINGI, KOTA SELATAN, KOTA TENGAH, PATILANGGIO, TALUDITI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 November 2026, 16:29 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/11/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.527,123.121 0.527,123.124 0.501,123.122 0.505,123.105 0.503,123.099 0.504,123.099 0.505,123.098 0.506,123.097 0.508,123.093 0.508,123.090 0.509,123.089 0.509,123.088 0.509,123.087 0.509,123.087 0.515,123.083 0.523,123.079 0.524,123.079 0.526,123.080 0.528,123.080 0.529,123.080 0.529,123.079 0.530,123.080 0.530,123.080 0.532,123.080 0.532,123.080 0.534,123.104 0.528,123.109 0.527,123.121</polygon>
+      <polygon>0.973,121.892 0.957,121.907 0.928,121.922 0.929,121.935 0.670,121.935 0.652,121.941 0.648,121.961 0.639,121.958 0.627,121.947 0.616,121.948 0.602,121.938 0.585,121.932 0.571,121.938 0.534,121.940 0.524,121.936 0.515,121.921 0.505,121.914 0.514,121.886 0.485,121.885 0.471,121.876 0.459,121.877 0.459,121.873 0.448,121.879 0.439,121.877 0.442,121.868 0.433,121.859 0.437,121.853 0.456,121.849 0.502,121.856 0.521,121.845 0.530,121.833 0.533,121.832 0.542,121.840 0.554,121.840 0.567,121.822 0.568,121.815 0.573,121.811 0.586,121.810 0.590,121.840 0.632,121.897 0.645,121.909 0.690,121.891 0.729,121.889 0.977,121.888 0.973,121.892</polygon>
+      <polygon>0.977,121.888 0.729,121.889 0.690,121.891 0.645,121.909 0.632,121.897 0.590,121.840 0.586,121.810 0.590,121.803 0.590,121.780 0.596,121.768 0.609,121.768 0.609,121.772 0.621,121.773 0.636,121.761 0.648,121.757 0.648,121.752 0.679,121.729 0.923,121.724 0.931,121.739 0.932,121.761 0.950,121.808 0.951,121.813 0.961,121.823 0.961,121.831 0.993,121.851 0.977,121.888</polygon>
+      <polygon>0.552,123.064 0.531,123.060 0.538,123.050 0.544,123.051 0.552,123.050 0.554,123.049 0.552,123.064</polygon>
+      <polygon>0.502,123.049 0.502,123.049 0.502,123.043 0.502,123.049</polygon>
+      <polygon>0.577,123.047 0.570,123.047 0.559,123.042 0.552,123.050 0.544,123.051 0.548,123.042 0.555,123.037 0.553,123.027 0.559,123.025 0.567,123.034 0.571,123.035 0.572,123.039 0.577,123.046 0.577,123.047</polygon>
+      <polygon>0.567,123.069 0.556,123.065 0.552,123.064 0.554,123.049 0.552,123.050 0.559,123.042 0.570,123.047 0.577,123.047 0.567,123.069</polygon>
+      <polygon>0.535,123.081 0.535,123.081 0.535,123.081 0.532,123.080 0.532,123.080 0.530,123.080 0.530,123.080 0.529,123.079 0.529,123.080 0.528,123.080 0.526,123.080 0.524,123.079 0.523,123.079 0.515,123.083 0.509,123.087 0.509,123.087 0.509,123.088 0.509,123.089 0.508,123.090 0.508,123.093 0.506,123.097 0.505,123.098 0.504,123.099 0.503,123.099 0.491,123.096 0.485,123.094 0.483,123.092 0.483,123.092 0.480,123.087 0.487,123.085 0.505,123.063 0.523,123.062 0.530,123.061 0.535,123.081</polygon>
+    </area>
+  </info>
+</alert>
