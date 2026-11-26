@@ -1,0 +1,23 @@
+{
+  "guid": "CBMinwFBVV95cUxNT1NVSFFIS1hlVDNkc2ZGVktnUHJHclRsMUZwN1U4MV9mLTVTeFBQUl9rcXp2b3BQcXZRR2pWQVZTeU9CWnB6ck9jVWVNVTM2QkNMRFNwYUFzUms3NGdoNzVSSnlOVlpSdDcwWFd3c1phZldZQ05LcGFOcDBieGJHVEdOMmdMaHl6Y2tldmMwOTlTV21hTDJVM1BmdHdweVk",
+  "title": "Banjir dan Longsor di Aceh Tengah, 9 KK Mengungsi dan Sejumlah Jalan Putus - Waspada Aceh",
+  "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNT1NVSFFIS1hlVDNkc2ZGVktnUHJHclRsMUZwN1U4MV9mLTVTeFBQUl9rcXp2b3BQcXZRR2pWQVZTeU9CWnB6ck9jVWVNVTM2QkNMRFNwYUFzUms3NGdoNzVSSnlOVlpSdDcwWFd3c1phZldZQ05LcGFOcDBieGJHVEdOMmdMaHl6Y2tldmMwOTlTV21hTDJVM1BmdHdweVk?oc=5",
+  "source": "Waspada Aceh",
+  "source_url": "https://waspadaaceh.com",
+  "published_at": "2026-11-26T10:03:05.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-26T14:45:30.597Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

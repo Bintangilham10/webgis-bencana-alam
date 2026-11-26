@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi8AFBVV95cUxQWmZvbWl2blJVNm11WUlVXzVNZWFqT0JNbDhERWotRENILTF2Uy1Qb01zakFQdFJ5akhWeUtDekhhdzdkbkJXS2g5N3E4dkRRVW8wMzV4U0tiNjBmSW8yMmpmVklNWlV5ck5XVTRUaWgwVHBXRHdoSHYteklfM0tPbWV5d0JSVFRlaXpOaDF5TTE3dHBmaFRMT1ZZU0NhME9EUXhuRE9hVVlFU3c2dktncnFVZXNaQWNCamV6a1VVbTRfVlNVT3VTQWpKb2hZUFMzSnRuNFZqTk5zamNYUVdPaG5Tcm5hLU5taF93Zkw1S3I",
+  "title": "Hujan Deras Melanda Cirebon, 14 Wilayah Ini Berpotensi Diterjang Banjir dan Tanah Longsor - Kabar Cirebon",
+  "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQWmZvbWl2blJVNm11WUlVXzVNZWFqT0JNbDhERWotRENILTF2Uy1Qb01zakFQdFJ5akhWeUtDekhhdzdkbkJXS2g5N3E4dkRRVW8wMzV4U0tiNjBmSW8yMmpmVklNWlV5ck5XVTRUaWgwVHBXRHdoSHYteklfM0tPbWV5d0JSVFRlaXpOaDF5TTE3dHBmaFRMT1ZZU0NhME9EUXhuRE9hVVlFU3c2dktncnFVZXNaQWNCamV6a1VVbTRfVlNVT3VTQWpKb2hZUFMzSnRuNFZqTk5zamNYUVdPaG5Tcm5hLU5taF93Zkw1S3I?oc=5",
+  "source": "Kabar Cirebon",
+  "source_url": "https://kabarcirebon.pikiran-rakyat.com",
+  "published_at": "2026-11-26T13:02:59.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-26T14:45:30.597Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.09",
+      "nama": "Kabupaten Cirebon",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.74",
+      "nama": "Kota Cirebon",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,23 @@
+{
+  "guid": "CBMirgFBVV95cUxQZnhRb2huQ2NRbVdjcnh2NC1aRmdwVmVGeDdsZEtPSDlGeUJwQWFiS0stbVdwY0lwNGtxdnpMWE55Z0tDNlVYS2RsczVSMEZMb2lpS1c2THN1eTBYcGR0bW1zQ3ZPT1hIS1MwbHJGZFpsSHNMSENYQURwMjJhNDNsTUxTc3Q0SWhoVHFmRlVVS2VneUdVYWVpWk15WUhzb0h0OUVuc2RSY09CZlc2eXc",
+  "title": "Siaga BPBD Muaro Jambi Petakan Puluhan Desa Rawan Banjir dan Longsor - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZnhRb2huQ2NRbVdjcnh2NC1aRmdwVmVGeDdsZEtPSDlGeUJwQWFiS0stbVdwY0lwNGtxdnpMWE55Z0tDNlVYS2RsczVSMEZMb2lpS1c2THN1eTBYcGR0bW1zQ3ZPT1hIS1MwbHJGZFpsSHNMSENYQURwMjJhNDNsTUxTc3Q0SWhoVHFmRlVVS2VneUdVYWVpWk15WUhzb0h0OUVuc2RSY09CZlc2eXc?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-26T13:05:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-26T14:45:30.597Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "15.05",
+      "nama": "Kabupaten Muaro Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}

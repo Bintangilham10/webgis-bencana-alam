@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi1gFBVV95cUxQalhxaTVJemtFN2tSeTNTdTE1MW1vcl91STlFY3hnNlJuUExyV3N0c1MzbzRmLUdBNG01OVVNV1FKWUtKOGpjT3p3bkFWa2p4X3VvRVZQbTljTEFmblhvWXZSTy1USEUyZFJ6RVhXY1dqYTFvX09tNXBHRWQ4ajU0VFJfdVZvcHhUQURsTFl4MzIzU3lmalhGVWtKNFZRNkYxZVhweGwwRjU4cnhVazNOdXNQdFhDSU9manFDczc5U1NhVHFETjZXNldFR3IzZHQ0YmdwYThB",
+  "title": "BPBD Evakuasi Tanah Longsor dengan Ekskavator, Buka Akses untuk Warga di Culamega Tasikmalaya - Media Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQalhxaTVJemtFN2tSeTNTdTE1MW1vcl91STlFY3hnNlJuUExyV3N0c1MzbzRmLUdBNG01OVVNV1FKWUtKOGpjT3p3bkFWa2p4X3VvRVZQbTljTEFmblhvWXZSTy1USEUyZFJ6RVhXY1dqYTFvX09tNXBHRWQ4ajU0VFJfdVZvcHhUQURsTFl4MzIzU3lmalhGVWtKNFZRNkYxZVhweGwwRjU4cnhVazNOdXNQdFhDSU9manFDczc5U1NhVHFETjZXNldFR3IzZHQ0YmdwYThB?oc=5",
+  "source": "Media Indonesia",
+  "source_url": "https://mediaindonesia.com",
+  "published_at": "2026-11-26T12:08:23.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-26T14:45:30.597Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

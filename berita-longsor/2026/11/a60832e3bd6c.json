@@ -1,0 +1,26 @@
+{
+  "guid": "CBMidEFVX3lxTE5kaG9YU1RJSkVhM1NFbWpmS3Nodmx5LVV1WUdROUoyNXNYajIzaE5KX3pXZnlHTzF2VGZxQlFURl9IWVJST2s2azl1bzBVVF9aRFVDWDlfc3hFcHk2ZE9fX2xaNEtmQjFfOF9xTTZIMGM2Q1dN",
+  "title": "Korban Longsor di Tasikmalaya Ditemukan - SinPo.id",
+  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5kaG9YU1RJSkVhM1NFbWpmS3Nodmx5LVV1WUdROUoyNXNYajIzaE5KX3pXZnlHTzF2VGZxQlFURl9IWVJST2s2azl1bzBVVF9aRFVDWDlfc3hFcHk2ZE9fX2xaNEtmQjFfOF9xTTZIMGM2Q1dN?oc=5",
+  "source": "SinPo.id",
+  "source_url": "https://tv.sinpo.id",
+  "published_at": "2026-11-26T13:50:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-26T14:45:30.597Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
