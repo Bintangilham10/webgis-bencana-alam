@@ -1,0 +1,26 @@
+{
+  "guid": "CBMilgFBVV95cUxPeG8tLWN3WDdRVDRDb1VteGVFcV9yNnhxdWhPc2VDTlJKSWJxbXI0N2JmV2NmUFN4UENxSGNHelNIdE9kanhtY0x2WUJzTFd2bVA5OTdjZUpoNW94dDBhOFNwaV9iZXU0bk1LdEdhbG1USkhuXzAxWFlDaUlPcTFEcFk1RHVpNXE3R3NFWUxMVElBWmlJYkE",
+  "title": "Ribuan Warga Tasikmalaya Terisolasi Akibat Longsor - Epaper Media Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPeG8tLWN3WDdRVDRDb1VteGVFcV9yNnhxdWhPc2VDTlJKSWJxbXI0N2JmV2NmUFN4UENxSGNHelNIdE9kanhtY0x2WUJzTFd2bVA5OTdjZUpoNW94dDBhOFNwaV9iZXU0bk1LdEdhbG1USkhuXzAxWFlDaUlPcTFEcFk1RHVpNXE3R3NFWUxMVElBWmlJYkE?oc=5",
+  "source": "Epaper Media Indonesia",
+  "source_url": "https://epaper.mediaindonesia.com",
+  "published_at": "2026-11-25T17:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-26T02:15:40.769Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
