@@ -14,9 +14,10 @@
 		root * /srv
 		# Nama berkas di /assets memuat hash isinya, jadi aman disimpan browser selamanya;
 		# halaman (peta dan dokumentasi API) selalu diperiksa ulang supaya versi baru
-		# langsung terpakai.
+		# langsung terpakai. Service worker (/sw.js) juga, supaya perbaikannya segera sampai
+		# ke perangkat yang sudah berlangganan push.
 		header /assets/* Cache-Control "public, max-age=31536000, immutable"
-		@page path / /index.html /pengembang.html
+		@page path / /index.html /pengembang.html /sw.js
 		header @page Cache-Control "no-cache"
 		file_server
 	}
