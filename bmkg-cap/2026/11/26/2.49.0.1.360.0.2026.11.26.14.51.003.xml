@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.26.14.51.003</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-26T22:28:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-26T22:40:00+08:00</effective>
+    <expires>2026-11-27T00:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Bali</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 November 2026, 22:40 WITA di sebagian wilayah Bali, khususnya di JEMBRANA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 November 2026, 00:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBL/2026/11/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Bali</areaDesc>
+      <polygon>-8.401,114.668 -8.408,114.629 -8.404,114.606 -8.400,114.605 -8.394,114.623 -8.374,114.618 -8.364,114.624 -8.319,114.623 -8.303,114.627 -8.279,114.641 -8.263,114.642 -8.237,114.654 -8.226,114.652 -8.226,114.653 -8.223,114.672 -8.232,114.684 -8.246,114.688 -8.253,114.682 -8.255,114.686 -8.266,114.680 -8.294,114.672 -8.321,114.676 -8.339,114.666 -8.387,114.654 -8.390,114.668 -8.401,114.668</polygon>
+    </area>
+  </info>
+</alert>
