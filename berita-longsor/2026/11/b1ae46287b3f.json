@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivgFBVV95cUxQa3l6NHlZOXExUHdPSHRKZVpNTm45cHhjMmIyeGRjV0JQdGtHVlVjV1JRU2oxcmxGUm13UFVkWVowZUhXSHMyaGc4TnZlWUo3eDFkb1NCRGxCZ1hYdXR3M3lmTDJEeXlBUUlFYm1hM3lrTUcwZVFBMDZBQnk0bGpOUl9DSy0yTkhhZFp4Sk5ZUjR0QmpwWWszVWlsNUc1dENmMThIaWRNSmJnczN2bzRvVmM3T0hFOUhyU01vdS13",
+  "title": "Longsor di Tasikmalaya, 16 Kecamatan dan 52 Desa Terdampak, Satu Orang Meninggal Dunia - Satumedia.id",
+  "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQa3l6NHlZOXExUHdPSHRKZVpNTm45cHhjMmIyeGRjV0JQdGtHVlVjV1JRU2oxcmxGUm13UFVkWVowZUhXSHMyaGc4TnZlWUo3eDFkb1NCRGxCZ1hYdXR3M3lmTDJEeXlBUUlFYm1hM3lrTUcwZVFBMDZBQnk0bGpOUl9DSy0yTkhhZFp4Sk5ZUjR0QmpwWWszVWlsNUc1dENmMThIaWRNSmJnczN2bzRvVmM3T0hFOUhyU01vdS13?oc=5",
+  "source": "Satumedia.id",
+  "source_url": "https://www.satumedia.id",
+  "published_at": "2026-11-26T03:20:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-26T05:30:35.485Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
