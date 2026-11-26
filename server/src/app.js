@@ -10,6 +10,7 @@ import { healthRouter } from './routes/health.js';
 import { createLandslideRouter } from './routes/landslides.js';
 import { createNotificationsRouter } from './routes/notifications.js';
 import { createOutlookRouter } from './routes/outlook.js';
+import { createPushRouter } from './routes/push.js';
 import { referenceRouter } from './routes/reference.js';
 import { createRiskRouter } from './routes/risk.js';
 import { createRiverRouter } from './routes/river.js';
@@ -88,6 +89,18 @@ export function createApp({ services = {} } = {}) {
     }),
   );
 
+  // Pendaftaran push dan laporan terima dari service worker. Longgar, karena tiap
+  // notifikasi yang tiba di perangkat mengirim satu laporan terima.
+  app.use(
+    '/api/push',
+    rateLimit({
+      limit: 300,
+      windowMs: 10 * 60_000,
+      message: 'Terlalu banyak permintaan notifikasi push dari jaringan ini. Coba lagi beberapa menit lagi.',
+      ...services.rateLimit,
+    }),
+  );
+
   const landslideRouter = createLandslideRouter({ rainWarnings, rainNow: services.rainNow, cloudsNow: services.cloudsNow });
   const outlookRouter = createOutlookRouter(services.outlook);
   const weatherRouter = createWeatherRouter(services.weather);
@@ -120,6 +133,7 @@ export function createApp({ services = {} } = {}) {
     createSeaLevelRouter(services.seaLevel),
     capRouter,
     notificationsRouter,
+    createPushRouter(services.push),
     facilitiesRouter,
     createRouteRouter(services.route),
   );
