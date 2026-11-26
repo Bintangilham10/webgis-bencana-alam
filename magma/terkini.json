@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-26T17:00:48.782Z",
-  "hash": "ad56ee690b6e",
+  "updated_at": "2026-11-26T17:15:34.628Z",
+  "hash": "da21fe867a90",
   "volcanoes": [
-    {
-      "name": "Anak Krakatau",
-      "region": "Lampung",
-      "level": 3
-    },
     {
       "name": "Semeru",
       "region": "Jawa Timur",
       "level": 3
+    },
+    {
+      "name": "Anak Krakatau",
+      "region": "Lampung",
+      "level": 2
     },
     {
       "name": "Anak Ranakah",

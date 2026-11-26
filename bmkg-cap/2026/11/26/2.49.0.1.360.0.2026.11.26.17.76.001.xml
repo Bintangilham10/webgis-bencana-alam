@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.26.17.76.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-27T00:02:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-27T00:14:00+08:00</effective>
+    <expires>2026-11-27T02:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 November 2026, 00:14 WITA di sebagian wilayah Sulawesi Barat, khususnya di MATAKALI, POLEWALI, WONOMULYO.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 November 2026, 02:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSK/2026/11/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Barat</areaDesc>
+      <polygon>-3.379,119.236 -3.394,119.250 -3.396,119.261 -3.404,119.273 -3.417,119.281 -3.424,119.282 -3.431,119.277 -3.441,119.282 -3.441,119.279 -3.451,119.280 -3.441,119.286 -3.441,119.290 -3.452,119.283 -3.457,119.264 -3.466,119.246 -3.481,119.240 -3.487,119.232 -3.478,119.229 -3.476,119.220 -3.456,119.215 -3.441,119.204 -3.439,119.194 -3.435,119.193 -3.424,119.201 -3.408,119.205 -3.387,119.199 -3.386,119.190 -3.367,119.194 -3.366,119.205 -3.376,119.218 -3.379,119.236</polygon>
+      <polygon>-3.391,119.353 -3.414,119.350 -3.442,119.356 -3.433,119.341 -3.425,119.307 -3.429,119.295 -3.404,119.294 -3.397,119.308 -3.391,119.321 -3.391,119.353</polygon>
+      <polygon>-3.291,119.357 -3.308,119.345 -3.324,119.340 -3.351,119.320 -3.369,119.319 -3.377,119.309 -3.397,119.308 -3.404,119.294 -3.429,119.295 -3.431,119.284 -3.441,119.282 -3.431,119.277 -3.424,119.282 -3.417,119.281 -3.404,119.273 -3.396,119.261 -3.394,119.250 -3.379,119.236 -3.361,119.245 -3.350,119.241 -3.340,119.248 -3.329,119.306 -3.293,119.333 -3.289,119.345 -3.291,119.357</polygon>
+    </area>
+  </info>
+</alert>
