@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.26.03.19.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-26T09:45:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-26T10:00:00+07:00</effective>
+    <expires>2026-11-26T13:16:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kep. Bangka Belitung</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 November 2026, 10:00 WIB di sebagian wilayah Kep. Bangka Belitung, khususnya di LUBUK BESAR.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 November 2026, 13:16 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CBB/2026/11/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kep. Bangka Belitung</areaDesc>
+      <polygon>-2.716,106.662 -2.719,106.644 -2.713,106.638 -2.695,106.633 -2.685,106.585 -2.662,106.560 -2.657,106.533 -2.657,106.496 -2.634,106.501 -2.614,106.495 -2.620,106.454 -2.616,106.444 -2.596,106.443 -2.581,106.449 -2.574,106.458 -2.558,106.457 -2.569,106.438 -2.563,106.428 -2.548,106.429 -2.535,106.435 -2.533,106.446 -2.519,106.459 -2.503,106.462 -2.501,106.466 -2.486,106.466 -2.501,106.488 -2.520,106.565 -2.535,106.641 -2.542,106.698 -2.574,106.846 -2.587,106.838 -2.594,106.807 -2.588,106.824 -2.579,106.820 -2.579,106.809 -2.589,106.786 -2.606,106.774 -2.598,106.763 -2.608,106.747 -2.628,106.729 -2.643,106.708 -2.716,106.662</polygon>
+    </area>
+  </info>
+</alert>
