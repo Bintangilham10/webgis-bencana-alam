@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivwFBVV95cUxOa3JaNk1MY1h3THZvSWF5a3FvUER4T2hLcHlYbTZzRTlhUnRhWmNFUnJtWW9aaXJvOHdPa0hQZWlpRUZ4cHRtSjkxMkVWZWVEeG1KVkVVYnRyODJHYTk4M0wtWkhfME1oTUVnMkxKMjY3bk5lU3FkQ1BZZWJIUWFMbkVQQUVlQ3l2cGVHS2J4YUJKWVhTS0VJYWxOTEc2T1RacF9pdVBvNzh5bkJFb2E5OXpFYkhJUGpoR0dObkk4bw",
+  "title": "Longsor dan Jalan Amblas di Tasikmalaya Selatan, Warga Khawatir tetapi Terpaksa Melintas - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOa3JaNk1MY1h3THZvSWF5a3FvUER4T2hLcHlYbTZzRTlhUnRhWmNFUnJtWW9aaXJvOHdPa0hQZWlpRUZ4cHRtSjkxMkVWZWVEeG1KVkVVYnRyODJHYTk4M0wtWkhfME1oTUVnMkxKMjY3bk5lU3FkQ1BZZWJIUWFMbkVQQUVlQ3l2cGVHS2J4YUJKWVhTS0VJYWxOTEc2T1RacF9pdVBvNzh5bkJFb2E5OXpFYkhJUGpoR0dObkk4bw?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://bandung.kompas.com",
+  "published_at": "2026-11-25T14:07:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-26T11:45:30.167Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

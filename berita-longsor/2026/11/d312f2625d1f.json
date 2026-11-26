@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi1gFBVV95cUxNYzl6Z25pUlp6b1otZ2k2cDIxVDhPMXlzWnBGcWkzTDZnUzdaVmpXaGphOXhDbTQ3SUtQLV9ncDVUdEwxaXpjd1ZzSEswZ3lLbmdvVExieENuUUNtTkR3WndZV3J6WHNWdUNkZWljNTg3RFc4RGxUajdkc2RzcmdiVTk4Yk9YVlM4Smc1VVhJUlN5SEJnZVRuM3phSkN1aDI1aEFWd0FVenZrM2JNbzdKZjk1VW94WjdUeXBQc2ZkMHBNZFYyTFNydHVQNUlUcHpncTROblNn",
+  "title": "Banjir dan Longsor Putus Akses Sejumlah Ruas Jalan di Tasikmalaya, Polisi Lakukan Rekayasa Lalin - jabarekspres.com",
+  "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYzl6Z25pUlp6b1otZ2k2cDIxVDhPMXlzWnBGcWkzTDZnUzdaVmpXaGphOXhDbTQ3SUtQLV9ncDVUdEwxaXpjd1ZzSEswZ3lLbmdvVExieENuUUNtTkR3WndZV3J6WHNWdUNkZWljNTg3RFc4RGxUajdkc2RzcmdiVTk4Yk9YVlM4Smc1VVhJUlN5SEJnZVRuM3phSkN1aDI1aEFWd0FVenZrM2JNbzdKZjk1VW94WjdUeXBQc2ZkMHBNZFYyTFNydHVQNUlUcHpncTROblNn?oc=5",
+  "source": "jabarekspres.com",
+  "source_url": "https://jabarekspres.com",
+  "published_at": "2026-11-26T11:03:42.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-26T11:45:30.167Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
