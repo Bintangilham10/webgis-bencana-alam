@@ -45,11 +45,14 @@ async function closePopup(page) {
 }
 
 // Isi tooltip kab/kota yang tampil saat kursor diarahkan ke titik itu, atau null.
-// Kanvas Leaflet memeriksa hover paling sering tiap 32 ms, jadi kursor digerakkan dua kali.
+// Kanvas Leaflet memeriksa hover paling sering tiap 32 ms, jadi kursor digerakkan dua
+// kali. Gerakan terakhir harus berhenti tepat di (x, y): di tampilan nasional satu
+// piksel ±5 km, jadi tooltip yang dibaca satu piksel di sebelahnya bisa milik
+// kab/kota tetangga, bukan yang nanti diklik.
 async function regionTooltip(page, x, y) {
-  await page.mouse.move(x, y);
-  await page.waitForTimeout(80);
   await page.mouse.move(x + 1, y + 1);
+  await page.waitForTimeout(80);
+  await page.mouse.move(x, y);
   await page.waitForTimeout(120);
   return page.evaluate(() => {
     const tip = [...document.querySelectorAll('.leaflet-tooltip.boundary-tooltip')].find((t) => Number(getComputedStyle(t).opacity) > 0.5);
@@ -184,15 +187,33 @@ test.describe('P2 popup dan interaksi', () => {
     // tetap terjangkau kursor selama tab itu terbuka.
     const area = await visibleMapArea(page);
     const left = Math.max(area.left, 640);
-    let spot = null;
-    for (let iy = 1; iy <= 7 && !spot; iy++) {
-      for (let ix = 1; ix <= 9 && !spot; ix++) {
-        const x = Math.round(left + ((area.right - 60 - left) * ix) / 10);
-        const y = Math.round(area.top + ((area.bottom - 60 - area.top) * iy) / 8);
-        const tip = await regionTooltip(page, x, y);
-        if (tip?.includes(' · ')) spot = { x, y, nama: tip.split(' · ')[0] };
+    // Titiknya harus di bagian dalam kab/kota, bukan di tepinya: ketiga lapisan yang
+    // diuji (indikasi, status Sintesis, batas kab/kota) menyederhanakan batas dengan
+    // cara berbeda, jadi di piksel tepi masing-masing bisa menunjuk kab/kota tetangga.
+    // Syaratnya: 4 px ke empat arah masih kab/kota yang sama (di tampilan nasional
+    // 4 px ±25 km, jadi kisi pencariannya dibuat rapat supaya ada kab/kota yang cukup besar).
+    const MARGIN = 4;
+    const nameAt = async (x, y) => (await regionTooltip(page, x, y))?.split(' · ')[0] ?? null;
+    const insideRegion = async (x, y, nama) => {
+      for (const [dx, dy] of [[MARGIN, 0], [-MARGIN, 0], [0, MARGIN], [0, -MARGIN]]) {
+        if ((await nameAt(x + dx, y + dy)) !== nama) return false;
       }
-    }
+      return true;
+    };
+    const findSpot = async () => {
+      for (let iy = 1; iy <= 11; iy++) {
+        for (let ix = 1; ix <= 15; ix++) {
+          const x = Math.round(left + ((area.right - 60 - left) * ix) / 16);
+          const y = Math.round(area.top + ((area.bottom - 60 - area.top) * iy) / 12);
+          const tip = await regionTooltip(page, x, y);
+          if (!tip?.includes(' · ')) continue;
+          const nama = tip.split(' · ')[0];
+          if (await insideRegion(x, y, nama)) return { x, y, nama };
+        }
+      }
+      return null;
+    };
+    const spot = await findSpot();
     expect(spot, 'ada kab/kota berindikasi di bagian peta yang terlihat').toBeTruthy();
 
     const expectPopup = async (step) => {
