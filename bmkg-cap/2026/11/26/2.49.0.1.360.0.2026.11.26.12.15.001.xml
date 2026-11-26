@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.26.12.15.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-26T17:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-26T17:30:00+07:00</effective>
+    <expires>2026-11-26T20:34:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jambi</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 November 2026, 17:30 WIB di sebagian wilayah Jambi, khususnya di BATANG ASAI, LIMUN.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 November 2026, 20:34 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJI/2026/11/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jambi</areaDesc>
+      <polygon>-2.382,102.330 -2.379,102.352 -2.357,102.373 -2.383,102.414 -2.402,102.409 -2.410,102.412 -2.429,102.401 -2.446,102.397 -2.451,102.415 -2.457,102.416 -2.479,102.408 -2.499,102.390 -2.506,102.376 -2.514,102.370 -2.524,102.373 -2.538,102.390 -2.551,102.398 -2.577,102.396 -2.586,102.377 -2.618,102.351 -2.637,102.302 -2.614,102.281 -2.622,102.258 -2.640,102.247 -2.691,102.235 -2.708,102.190 -2.708,102.173 -2.736,102.116 -2.765,102.098 -2.770,102.092 -2.766,102.075 -2.765,102.073 -2.729,102.081 -2.704,102.078 -2.688,102.087 -2.655,102.083 -2.623,102.063 -2.617,102.069 -2.602,102.104 -2.581,102.096 -2.565,102.094 -2.509,102.156 -2.485,102.152 -2.451,102.134 -2.427,102.122 -2.416,102.123 -2.411,102.134 -2.410,102.183 -2.397,102.222 -2.365,102.257 -2.352,102.287 -2.352,102.295 -2.372,102.295 -2.386,102.301 -2.382,102.330</polygon>
+      <polygon>-2.467,102.655 -2.516,102.636 -2.561,102.637 -2.572,102.642 -2.611,102.641 -2.638,102.624 -2.661,102.616 -2.671,102.608 -2.679,102.594 -2.675,102.570 -2.679,102.537 -2.678,102.522 -2.696,102.505 -2.703,102.492 -2.703,102.466 -2.699,102.448 -2.692,102.439 -2.689,102.406 -2.676,102.390 -2.656,102.392 -2.648,102.389 -2.651,102.371 -2.648,102.351 -2.656,102.330 -2.637,102.302 -2.618,102.351 -2.586,102.377 -2.577,102.396 -2.551,102.398 -2.538,102.390 -2.524,102.373 -2.514,102.370 -2.504,102.414 -2.437,102.592 -2.404,102.632 -2.377,102.654 -2.393,102.669 -2.399,102.671 -2.409,102.670 -2.442,102.652 -2.467,102.655</polygon>
+    </area>
+  </info>
+</alert>
