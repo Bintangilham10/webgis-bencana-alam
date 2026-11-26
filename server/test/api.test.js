@@ -159,7 +159,7 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
     const { migrate } = await import('../db/migrate.js');
     await migrate();
     await pool.query(
-      'TRUNCATE events, volcanoes, sync_logs, faults, wilayah, wilayah_bahaya, titik_pantau, bahaya_raster, indikasi_run, indikasi_wilayah, indikasi_hari, glofas_thresholds, cap_alerts, cap_alert_wilayah, notifications, facilities, synop_reports, api_keys, api_usage',
+      'TRUNCATE events, volcanoes, sync_logs, faults, wilayah, wilayah_bahaya, titik_pantau, bahaya_raster, indikasi_run, indikasi_wilayah, indikasi_hari, glofas_thresholds, cap_alerts, cap_alert_wilayah, notifications, facilities, synop_reports, api_keys, api_usage, push_subscriptions, push_deliveries',
     );
     ({ syncEarthquakes } = await import('../src/jobs/sync-earthquakes.js'));
     ({ syncVolcanoes } = await import('../src/jobs/sync-volcanoes.js'));
@@ -1662,6 +1662,162 @@ describe('API (integrasi database)', { skip: !TEST_DATABASE_URL && 'TEST_DATABAS
       const broken = await fetch(`${baseUrl}/v1/keys`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{rusak' });
       assert.equal(broken.status, 400);
       assert.equal((await pool.query('SELECT count(*)::int AS n FROM api_keys')).rows[0].n, before);
+    });
+  });
+
+  describe('notifikasi push (Web Push)', () => {
+    let app;
+    let url;
+    let notifications;
+    let dispatcher;
+    let vapid;
+    let browser;
+    // Layanan push palsu: mencatat tiap pesan dan menjawab status yang diatur test.
+    const sent = [];
+    let nextStatus = 201;
+    const request = async (method, path, body) => {
+      const res = await fetch(`${url}${path}`, { method, headers: { 'Content-Type': 'application/json' }, body: body === undefined ? undefined : JSON.stringify(body) });
+      return { status: res.status, body: res.status === 204 ? null : await res.json() };
+    };
+    const subscription = (name) => ({ endpoint: `https://fcm.googleapis.com/fcm/send/${name}`, keys: { p256dh: browser.p256dh, auth: browser.auth } });
+    const count = async (table, where = 'true') => (await pool.query(`SELECT count(*)::int AS n FROM ${table} WHERE ${where}`)).rows[0].n;
+
+    before(async () => {
+      notifications = await import('../src/notifications.js');
+      const { createPushDispatcher } = await import('../src/push.js');
+      const { generateVapidKeys } = await import('../src/lib/web-push.js');
+      const { createECDH } = await import('node:crypto');
+      vapid = { ...generateVapidKeys(), subject: 'https://sigap.contoh.id' };
+      const ecdh = createECDH('prime256v1');
+      ecdh.generateKeys();
+      browser = { p256dh: ecdh.getPublicKey().toString('base64url'), auth: Buffer.alloc(16, 5).toString('base64url') };
+      const send = async (sub, payload, keys, options) => {
+        sent.push({ endpoint: sub.endpoint, payload: JSON.parse(payload), options, keys });
+        if (nextStatus === 'putus') throw new Error('sambungan putus');
+        return nextStatus;
+      };
+      dispatcher = createPushDispatcher({ vapid, send, log: () => {} });
+      const { createApp } = await import('../src/app.js');
+      app = createApp({ services: { ...services, push: { vapid, dispatcher } } }).listen(0);
+      url = `http://localhost:${app.address().port}/api/push`;
+    });
+
+    after(() => app?.close());
+
+    test('tanpa kunci VAPID server menjawab 503; dengan kunci, kunci publiknya dibagikan', async () => {
+      assert.equal((await fetch(`${baseUrl}/push/key`)).status, 503);
+      assert.deepEqual(await request('GET', '/key'), { status: 200, body: { publicKey: vapid.publicKey } });
+    });
+
+    test('pendaftaran menyimpan wilayah yang dibulatkan; mengirim ulang memperbarui pilihan tanpa mengganti token', async () => {
+      const first = await request('POST', '/subscriptions', { subscription: subscription('bandung'), nearOnly: true, area: { lat: -6.91474, lon: 107.60981, kode: '32.73' } });
+      assert.equal(first.status, 201);
+      assert.deepEqual([first.body.area, first.body.nearOnly], [{ lat: -6.9, lon: 107.6, kode: '32.73' }, true]);
+      assert.match(first.body.token, /^[\w-]{22}$/);
+      assert.deepEqual((await pool.query('SELECT near_only, lat, lon, kode FROM push_subscriptions')).rows, [{ near_only: true, lat: -6.9, lon: 107.6, kode: '32.73' }]);
+
+      const again = await request('POST', '/subscriptions', { subscription: subscription('bandung'), nearOnly: false });
+      assert.equal(again.body.token, first.body.token);
+      assert.deepEqual((await pool.query('SELECT near_only, lat, lon, kode FROM push_subscriptions')).rows, [{ near_only: false, lat: null, lon: null, kode: null }]);
+
+      assert.equal((await request('POST', '/subscriptions', { subscription: { ...subscription('lain'), endpoint: 'https://contoh.id/push' } })).status, 400);
+      assert.equal((await request('POST', '/subscriptions', { subscription: subscription('lain'), area: { lat: 35.6, lon: 139.7 } })).status, 400);
+      assert.equal(await count('push_subscriptions'), 1);
+    });
+
+    test('jumlah langganan dibatasi; langganan yang sudah ada tetap bisa diperbarui', async () => {
+      const { saveSubscription, validateSubscription } = await import('../src/push.js');
+      const baru = validateSubscription({ subscription: subscription('ke-dua') }).value;
+      const lama = validateSubscription({ subscription: subscription('bandung'), nearOnly: false }).value;
+      // Batas 1 dan sudah ada satu langganan: yang baru ditolak, yang lama diperbarui.
+      assert.equal(await saveSubscription(baru, undefined, 1), null);
+      assert.match(await saveSubscription(lama, undefined, 1), /^[\w-]{22}$/);
+      assert.equal(await count('push_subscriptions'), 1);
+    });
+
+    test('notifikasi dikirim ke yang memintanya saja, dicatat, dan tidak dikirim dua kali', async () => {
+      // "bandung" tanpa wilayah (dari test sebelumnya); "jayapura" hanya sekitar lokasinya.
+      await request('POST', '/subscriptions', { subscription: subscription('jayapura'), nearOnly: true, area: { lat: -2.53, lon: 140.72, kode: '91.71' } });
+      const [n] = await notifications.publishNotifications([{ kind: 'gempa', ref: 'uji-push-1', level: 2, title: 'Gempa M 6,1 uji push', body: 'Uji', lat: -6.9, lon: 107.6 }]);
+      sent.length = 0;
+      assert.deepEqual(await dispatcher.dispatch(n), { targets: 1, accepted: 1 });
+      assert.equal(sent.length, 1);
+      assert.equal(sent[0].endpoint, subscription('bandung').endpoint);
+      assert.equal(sent[0].keys, vapid);
+      assert.deepEqual(sent[0].options, { ttl: 3600, urgency: 'high', topic: `sigap-${n.id}` });
+      const { d, s, ...payload } = sent[0].payload;
+      assert.deepEqual(payload, { id: n.id, kind: 'gempa', level: 2, title: 'Gempa M 6,1 uji push', body: 'Uji', created_at: new Date(n.created_at).toISOString() });
+      assert.equal(s, (await pool.query('SELECT token FROM push_subscriptions WHERE endpoint = $1', [subscription('bandung').endpoint])).rows[0].token);
+
+      const { rows } = await pool.query('SELECT id, notification_id, layanan, status, accepted_ms, received_at FROM push_deliveries');
+      assert.equal(rows.length, 1);
+      assert.deepEqual([Number(rows[0].id), Number(rows[0].notification_id), rows[0].layanan, rows[0].status, rows[0].received_at], [d, n.id, 'fcm.googleapis.com', 201, null]);
+      assert.ok(rows[0].accepted_ms >= 0);
+      assert.ok((await pool.query('SELECT last_ok_at FROM push_subscriptions WHERE endpoint = $1', [subscription('bandung').endpoint])).rows[0].last_ok_at instanceof Date);
+
+      // Notifikasi yang sama tidak dikirim lagi ke langganan yang sama.
+      assert.deepEqual(await dispatcher.dispatch(n), { targets: 1, accepted: 0 });
+      assert.equal(sent.length, 1);
+
+      // Peringatan cuaca: tidak ada yang wilayahnya terkena, jadi tidak ada yang dikirimi.
+      const [cuaca] = await notifications.publishNotifications([{ kind: 'cuaca', ref: 'uji-push-2', level: 1, title: 'Hujan lebat uji', body: 'Uji', wilayah: ['32.73'], lat: -6.9, lon: 107.6 }]);
+      assert.deepEqual(await dispatcher.dispatch(cuaca), { targets: 0, accepted: 0 });
+    });
+
+    test('laporan terima dari service worker dicatat sekali, hanya dengan token langganannya', async () => {
+      const { d, s } = sent[0].payload;
+      const received = async () => (await pool.query('SELECT received_at, sent_at FROM push_deliveries WHERE id = $1', [d])).rows[0];
+      assert.equal((await request('POST', '/ack', { d, s: 'token-salah' })).status, 204);
+      assert.equal((await received()).received_at, null);
+      assert.equal((await request('POST', '/ack', { d, s })).status, 204);
+      const first = await received();
+      assert.ok(first.received_at >= first.sent_at);
+      await request('POST', '/ack', { d, s });
+      assert.deepEqual((await received()).received_at, first.received_at);
+      // Laporan yang rusak tidak membuat galat.
+      assert.equal((await request('POST', '/ack', { d: 'x', s })).status, 204);
+      assert.equal((await request('POST', '/ack', {})).status, 204);
+    });
+
+    test('pesan uji hanya ke perangkat yang meminta; langganan yang ditolak layanan push dihapus, catatannya tetap', async () => {
+      sent.length = 0;
+      const endpoint = subscription('jayapura').endpoint;
+      assert.deepEqual(await request('POST', '/test', { endpoint }), { status: 200, body: { status: 201 } });
+      assert.equal(sent.length, 1);
+      assert.deepEqual([sent[0].endpoint, sent[0].payload.kind, sent[0].payload.id], [endpoint, 'uji', null]);
+      assert.deepEqual(sent[0].options, { ttl: 60, urgency: 'high', topic: undefined });
+      assert.equal((await request('POST', '/test', { endpoint: 'https://fcm.googleapis.com/fcm/send/tidak-ada' })).status, 404);
+      assert.equal((await request('POST', '/test', {})).status, 404);
+
+      // Gagal sementara dihitung; berhasil lagi mengembalikan hitungan ke nol.
+      const failures = async () => (await pool.query('SELECT failures FROM push_subscriptions WHERE endpoint = $1', [endpoint])).rows[0]?.failures;
+      nextStatus = 500;
+      assert.equal((await request('POST', '/test', { endpoint })).status, 502);
+      nextStatus = 'putus';
+      assert.equal((await request('POST', '/test', { endpoint })).status, 502);
+      assert.equal(await failures(), 2);
+      assert.equal(await count('push_deliveries', 'status IS NULL AND accepted_ms IS NOT NULL'), 1);
+      nextStatus = 201;
+      await request('POST', '/test', { endpoint });
+      assert.equal(await failures(), 0);
+
+      // 410 Gone: langganan sudah tidak berlaku di layanan push.
+      nextStatus = 410;
+      const gone = await request('POST', '/test', { endpoint });
+      assert.equal(gone.status, 502);
+      assert.match(gone.body.error, /sudah tidak berlaku/);
+      nextStatus = 201;
+      assert.equal(await count('push_subscriptions', `endpoint = '${endpoint}'`), 0);
+      // Lima pesan uji tercatat, sekarang tanpa langganan.
+      assert.equal(await count('push_deliveries', 'notification_id IS NULL AND subscription_id IS NULL'), 5);
+    });
+
+    test('mematikan push menghapus langganan', async () => {
+      assert.equal((await request('DELETE', '/subscriptions', {})).status, 400);
+      assert.equal((await request('DELETE', '/subscriptions', { endpoint: subscription('bandung').endpoint })).status, 204);
+      assert.equal(await count('push_subscriptions'), 0);
+      // Menghapus yang sudah tidak ada tetap 204.
+      assert.equal((await request('DELETE', '/subscriptions', { endpoint: subscription('bandung').endpoint })).status, 204);
     });
   });
 });
