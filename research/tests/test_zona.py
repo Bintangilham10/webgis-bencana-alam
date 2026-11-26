@@ -142,6 +142,22 @@ class TestBootstrap(unittest.TestCase):
         # Seed yang sama memberi selang yang sama.
         self.assertEqual(hasil, zona.banding_aturan(a, b, n=500, seed=1))
 
+    def test_selang_pada_tingkat_lebih_tinggi_lebih_lebar(self):
+        # 30 gempa buatan: dengan tiga gempa saja sebaran resampelnya terlalu kasar untuk membedakan dua tingkat.
+        acak = np.random.default_rng(4)
+        indeks = [f'g{i}' for i in range(30)]
+        dasar = {'radius_km': 100.0, 'n_laporan': acak.integers(1, 6, 30), 'luas_km2': 1.0}
+        a = pd.DataFrame({**dasar, 'n_terjangkau': 0, 'n_kabkota': acak.integers(1, 40, 30)}, index=indeks)
+        b = pd.DataFrame({**dasar, 'n_terjangkau': 0, 'n_kabkota': acak.integers(1, 40, 30)}, index=indeks)
+        biasa = zona.banding_aturan(a, b, n=4000, seed=1)
+        ketat = zona.banding_aturan(a, b, n=4000, seed=1, tingkat=0.975)
+        self.assertEqual((biasa['tingkat'], ketat['tingkat']), (0.95, 0.975))
+        self.assertEqual(biasa['nisbah_kabkota'], ketat['nisbah_kabkota'])
+        self.assertLess(ketat['nisbah_kabkota_ci'][0], biasa['nisbah_kabkota_ci'][0])
+        self.assertGreater(ketat['nisbah_kabkota_ci'][1], biasa['nisbah_kabkota_ci'][1])
+        # Batas satu sisi untuk uji tidak-lebih-buruk tidak ikut berubah.
+        self.assertEqual(biasa['selisih_cakupan_batas_bawah_satu_sisi'], ketat['selisih_cakupan_batas_bawah_satu_sisi'])
+
     def test_tabel_dengan_gempa_berbeda_ditolak(self):
         a = self.tabel([3, 1, 2], [10, 20, 30])
         with self.assertRaises(ValueError):

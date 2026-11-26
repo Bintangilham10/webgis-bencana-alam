@@ -84,6 +84,7 @@ class TestEvaluasiGempa(unittest.TestCase):
             self.assertIn(round(self.model['ambang'][nama], 1), evaluasi.KISI_AMBANG.tolist())
         tetap = zona.tabel_per_gempa(self.gempa, self.laporan, pd.Series(150.0, index=self.gempa.index), TITIK)
         self.assertAlmostEqual(self.model['target_cakupan'], zona.cakupan(tetap))
+        self.assertAlmostEqual(self.model['mmi_rata_pengembangan'], self.laporan['mmi'].mean())
 
     def test_ambang_setara_memberi_cakupan_sedikitnya_setara_pada_data_yang_sama(self):
         aturan = self.hasil['aturan']
@@ -91,25 +92,54 @@ class TestEvaluasiGempa(unittest.TestCase):
             if self.model['ambang_tercapai'][nama]:
                 self.assertGreaterEqual(aturan[nama]['cakupan'], aturan['tetap150']['cakupan'] - 1e-12)
 
-    def test_perbandingan_memuat_g1_dan_g2(self):
+    def test_perbandingan_gabungan_dan_g2(self):
         self.assertEqual(set(self.tabel), {'tetap150', 'rujukan', 'allen2012', 'ipe_id'})
-        g1 = self.hasil['g1']
-        self.assertEqual(g1['terdukung'], g1['tidak_lebih_buruk'] and g1['lebih_hemat'])
-        self.assertAlmostEqual(g1['selisih_cakupan'], self.hasil['aturan']['ipe_id']['cakupan'] - self.hasil['aturan']['tetap150']['cakupan'])
-        self.assertAlmostEqual(g1['nisbah_kabkota'], self.tabel['ipe_id']['n_kabkota'].sum() / self.tabel['tetap150']['n_kabkota'].sum())
-        self.assertAlmostEqual(g1['nisbah_luas'], self.tabel['ipe_id']['luas_km2'].sum() / self.tabel['tetap150']['luas_km2'].sum())
+        gabungan = self.hasil['g1_gabungan']
+        self.assertEqual(gabungan['tingkat'], 0.95)
+        self.assertEqual(gabungan['keduanya'], gabungan['tidak_lebih_buruk'] and gabungan['lebih_hemat'])
+        self.assertAlmostEqual(gabungan['selisih_cakupan'], self.hasil['aturan']['ipe_id']['cakupan'] - self.hasil['aturan']['tetap150']['cakupan'])
+        self.assertAlmostEqual(gabungan['nisbah_kabkota'], self.tabel['ipe_id']['n_kabkota'].sum() / self.tabel['tetap150']['n_kabkota'].sum())
+        self.assertAlmostEqual(gabungan['nisbah_luas'], self.tabel['ipe_id']['luas_km2'].sum() / self.tabel['tetap150']['luas_km2'].sum())
         self.assertIn('g2_rujukan_vs_tetap150', self.hasil)
         self.assertIn('g2_rujukan_vs_ipe_id', self.hasil)
         # Sasaran aturan rujukan adalah intensitas tertinggi tiap gempa, jadi zonanya lebih sempit.
         self.assertLess(self.hasil['aturan']['rujukan']['cakupan'], self.hasil['aturan']['tetap150']['cakupan'])
 
+    def test_pertanyaan_utama_dipisah_di_m5_dengan_selang_97_5(self):
+        kuat = self.gempa.index[self.gempa['magnitudo'] >= 5]
+        kecil = self.gempa.index[self.gempa['magnitudo'] < 5]
+        self.assertTrue(len(kuat) and len(kecil))
+        g1a, g1b = self.hasil['g1a'], self.hasil['g1b']
+        self.assertEqual((g1a['tingkat'], g1b['tingkat']), (0.975, 0.975))
+        self.assertEqual((g1a['n_gempa'], g1b['n_gempa']), (len(kuat), len(kecil)))
+        self.assertEqual(g1a['n_laporan'] + g1b['n_laporan'], len(self.laporan))
+        ipe, tetap = self.tabel['ipe_id'], self.tabel['tetap150']
+        self.assertAlmostEqual(g1a['selisih_cakupan'], zona.cakupan(ipe.loc[kuat]) - zona.cakupan(tetap.loc[kuat]))
+        self.assertAlmostEqual(g1b['nisbah_kabkota'], ipe.loc[kecil, 'n_kabkota'].sum() / tetap.loc[kecil, 'n_kabkota'].sum())
+        # G1a: batas bawah selang selisih cakupan > 0. G1b: batas atas selang nisbah biaya < 1.
+        self.assertEqual(g1a['terdukung'], g1a['selisih_cakupan_ci'][0] > 0)
+        self.assertEqual(g1b['terdukung'], g1b['nisbah_kabkota_ci'][1] < 1)
+        # Hubungan buatan: zona IPE-ID tumbuh dengan magnitudo, jadi lebih sempit dari 150 km untuk gempa kecil.
+        self.assertLess(g1b['nisbah_kabkota'], 1)
+        self.assertGreater(g1a['kabkota_a'], g1b['kabkota_a'])
+
+    def test_kelas_tanpa_gempa_tidak_dibandingkan(self):
+        kecil = self.gempa[self.gempa['magnitudo'] < 5]
+        hasil, _ = evaluasi.bandingkan(kecil, self.laporan[self.laporan['gempa_id'].isin(kecil.index)], TITIK, self.model, n=N_BOOTSTRAP)
+        self.assertIsNone(hasil['g1a'])
+        self.assertIsNotNone(hasil['g1b'])
+        teks = evaluasi.tulis_uji(hasil, {}, {}, {}, {}, self.model, {'sha256_kejadian': 'a' * 64, 'sha256_laporan': 'b' * 64}, kecil, evaluasi.AKHIR_UJI)
+        self.assertIn('Tidak ada gempa atau laporan di kelas ini.', teks)
+        self.assertNotIn('**G1a ', teks)
+
     def test_ipe_id_yang_tidak_fisis_tidak_ikut_dan_g1_tidak_diuji(self):
         model = {**self.model, 'ipe_id': {**self.model['ipe_id'], 'fisis': False}}
         hasil, tabel = evaluasi.bandingkan(self.gempa, self.laporan, TITIK, model, n=N_BOOTSTRAP)
         self.assertNotIn('ipe_id', tabel)
-        self.assertNotIn('g1', hasil)
+        for kunci in ('g1a', 'g1b', 'g1_gabungan'):
+            self.assertNotIn(kunci, hasil)
         teks = evaluasi.tulis_uji(hasil, {}, {}, {}, {}, model, {'sha256_kejadian': 'a' * 64, 'sha256_laporan': 'b' * 64}, self.gempa, evaluasi.AKHIR_UJI)
-        self.assertIn('G1 tidak diuji', teks)
+        self.assertIn('jadi ketiganya tidak diuji', teks)
 
     def test_varian_sensitivitas(self):
         varian = evaluasi.varian_sensitivitas(self.gempa, self.laporan)
@@ -135,9 +165,12 @@ class TestEvaluasiGempa(unittest.TestCase):
 
     def test_galat_intensitas_tiap_hubungan(self):
         galat = evaluasi.galat_intensitas(self.gempa, self.laporan, self.model, n=N_BOOTSTRAP)
-        self.assertEqual(set(galat), {'rujukan', 'allen2012', 'ipe_id'})
+        self.assertEqual(set(galat), {'rujukan', 'allen2012', 'ipe_id', 'konstan'})
         # IPE-ID dikalibrasi pada data ini, jadi tidak boleh lebih buruk dari hubungan lain.
         self.assertLessEqual(galat['ipe_id']['mae'], min(galat['rujukan']['mae'], galat['allen2012']['mae']))
+        # Tebakan konstan adalah rata-rata data ini, jadi biasnya nol.
+        self.assertAlmostEqual(galat['konstan']['bias'], 0, places=9)
+        self.assertLessEqual(galat['ipe_id']['mae'], galat['konstan']['mae'])
         atas = evaluasi.galat_intensitas(self.gempa, self.laporan, self.model, teramati='mmi_maks', n=N_BOOTSTRAP)
         self.assertLess(atas['ipe_id']['bias'], galat['ipe_id']['bias'])
 
@@ -162,7 +195,9 @@ class TestEvaluasiGempa(unittest.TestCase):
                         for nama, (g, lap, t) in evaluasi.varian_sensitivitas(self.gempa, self.laporan).items()}
         kelas = {'kelas magnitudo': evaluasi.per_kelas(self.gempa, self.tabel, 'magnitudo', evaluasi.KELAS_MAGNITUDO)}
         teks = evaluasi.tulis_uji(self.hasil, galat, galat, sensitivitas, kelas, self.model, meta, self.gempa, evaluasi.AKHIR_UJI + evaluasi.PERPANJANGAN)
-        for potongan in ('## G1: IPE-ID dibanding Tetap-150', '**G1 ', '## G2: aturan rujukan', '## G3', '1. Toleransi lokasi 25 km', 'diperpanjang karena gempa uji kurang dari 60', 'abcdef123456'):
+        for potongan in ('## G1a (utama): gempa M ≥ 5, cakupan', '**G1a ', '## G1b (utama): gempa M < 5, biaya', '**G1b ', 'CI 97,5%',
+                         '## G1 gabungan (rumusan versi 1.0, sekunder)', '## G2: aturan rujukan', '## G3', 'Tebakan konstan',
+                         '1. Toleransi lokasi 25 km', 'diperpanjang karena gempa uji terlalu sedikit', 'abcdef123456', 'PROTOKOL_GEMPA.md v1.1'):
             self.assertIn(potongan, teks)
         # Tidak ada angka kosong yang bocor ke tulisan ("himpunan" memuat "nan", jadi dicari sebagai kata).
         self.assertNotRegex(teks, r'\bnan\b')
@@ -188,6 +223,7 @@ class TestDyfi(unittest.TestCase):
         hasil = evaluasi.nilai_dyfi(kejadian, pd.DataFrame(baris), model, TITIK, n=N_BOOTSTRAP)
         self.assertLess(hasil['n_kotak'], len(baris))  # kotak > 1.000 km dan < 3 respons tidak dipakai untuk galat
         self.assertIn('IPE-ID', hasil['galat'])
+        self.assertIn('Tebakan konstan (rata-rata data pengembangan)', hasil['galat'])
         self.assertIn('IPE-ID, magnitudo USGS + 0,3', hasil['galat'])
         self.assertGreater(hasil['galat']['IPE-ID, magnitudo USGS + 0,5']['bias'], hasil['galat']['IPE-ID']['bias'])
         # Aturan rujukan memerlukan intensitas laporan BMKG, jadi tidak ada di analisis zona.
@@ -201,26 +237,40 @@ class TestDyfi(unittest.TestCase):
 
 
 class TestSyaratWaktu(unittest.TestCase):
-    def waktu(self, jumlah: int, akhir: datetime) -> pd.Series:
-        """`jumlah` gempa tersebar merata dari awal periode uji sampai sebelum `akhir`."""
+    def gempa(self, jumlah: int, akhir: datetime, tiap_kuat: int = 5) -> pd.DataFrame:
+        """`jumlah` gempa tersebar merata dari awal periode uji sampai sebelum `akhir`;
+        satu dari tiap `tiap_kuat` gempa bermagnitudo 5,5, sisanya 4."""
         lama = (akhir - evaluasi.AWAL_UJI) / jumlah
-        return pd.Series([pd.Timestamp(evaluasi.AWAL_UJI + i * lama) for i in range(jumlah)])
+        return pd.DataFrame({'waktu': [pd.Timestamp(evaluasi.AWAL_UJI + i * lama) for i in range(jumlah)],
+                             'magnitudo': [5.5 if i % tiap_kuat == 0 else 4.0 for i in range(jumlah)]})
 
     def test_periode_uji_bawaan_bila_gempa_cukup(self):
-        self.assertEqual(evaluasi.akhir_periode_uji(self.waktu(80, evaluasi.AKHIR_UJI), evaluasi.AKHIR_UJI), evaluasi.AKHIR_UJI)
+        self.assertEqual(evaluasi.akhir_periode_uji(self.gempa(80, evaluasi.AKHIR_UJI), evaluasi.AKHIR_UJI), evaluasi.AKHIR_UJI)
 
     def test_himpunan_yang_belum_mencakup_periode_uji_ditolak(self):
         with self.assertRaises(SystemExit) as galat:
-            evaluasi.akhir_periode_uji(self.waktu(80, evaluasi.AKHIR_UJI), datetime(2026, 12, 20, tzinfo=timezone.utc))
+            evaluasi.akhir_periode_uji(self.gempa(80, evaluasi.AKHIR_UJI), datetime(2026, 12, 20, tzinfo=timezone.utc))
         self.assertIn('--sampai 2027-01-01', str(galat.exception))
 
     def test_diperpanjang_tujuh_hari_bila_gempa_kurang_dari_60(self):
         # 62 gempa merata dalam 38 hari: sampai 1 Jan baru 51, sampai 8 Jan sudah 62.
-        waktu = self.waktu(62, evaluasi.AKHIR_UJI + timedelta(days=7))
+        gempa = self.gempa(62, evaluasi.AKHIR_UJI + timedelta(days=7))
         with self.assertRaises(SystemExit) as galat:
-            evaluasi.akhir_periode_uji(waktu, evaluasi.AKHIR_UJI)
+            evaluasi.akhir_periode_uji(gempa, evaluasi.AKHIR_UJI)
         self.assertIn('--sampai 2027-01-08', str(galat.exception))
-        self.assertEqual(evaluasi.akhir_periode_uji(waktu, evaluasi.AKHIR_UJI + timedelta(days=7)), evaluasi.AKHIR_UJI + timedelta(days=7))
+        self.assertEqual(evaluasi.akhir_periode_uji(gempa, evaluasi.AKHIR_UJI + timedelta(days=7)), evaluasi.AKHIR_UJI + timedelta(days=7))
+
+    def test_diperpanjang_bila_gempa_m5_ke_atas_kurang_dari_8(self):
+        # 70 gempa dalam sebulan tetapi hanya 4 yang M ≥ 5 (satu dari tiap 20).
+        sedikit_kuat = self.gempa(70, evaluasi.AKHIR_UJI, tiap_kuat=20)
+        self.assertEqual(int((sedikit_kuat['magnitudo'] >= 5).sum()), 4)
+        with self.assertRaises(SystemExit) as galat:
+            evaluasi.akhir_periode_uji(sedikit_kuat, evaluasi.AKHIR_UJI)
+        self.assertIn('--sampai 2027-01-08', str(galat.exception))
+        # Tepat 8 gempa M ≥ 5 sudah cukup.
+        cukup = self.gempa(64, evaluasi.AKHIR_UJI, tiap_kuat=8)
+        self.assertEqual(int((cukup['magnitudo'] >= 5).sum()), 8)
+        self.assertEqual(evaluasi.akhir_periode_uji(cukup, evaluasi.AKHIR_UJI), evaluasi.AKHIR_UJI)
 
     def test_uji_ditolak_sebelum_arsip_dibekukan(self):
         beku = evaluasi.AKHIR_UJI + evaluasi.JEDA_BEKU
