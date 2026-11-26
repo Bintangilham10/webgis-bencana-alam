@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.26.10.82.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-26T18:30:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-26T18:45:00+09:00</effective>
+    <expires>2026-11-26T20:45:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Maluku Utara</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 26 November 2026, 18:45 WIT di sebagian wilayah Maluku Utara, khususnya di MABA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 26 November 2026, 20:45 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CMU/2026/11/26/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Maluku Utara</areaDesc>
+      <polygon>0.841,128.249 0.884,128.133 0.954,128.205 0.988,128.238 1.007,128.262 1.059,128.308 1.046,128.337 0.966,128.438 0.946,128.458 0.929,128.441 0.931,128.416 0.920,128.405 0.922,128.394 0.913,128.387 0.912,128.380 0.912,128.336 0.897,128.316 0.894,128.304 0.865,128.280 0.852,128.282 0.844,128.298 0.838,128.300 0.832,128.295 0.828,128.300 0.831,128.309 0.828,128.313 0.816,128.312 0.821,128.282 0.834,128.267 0.841,128.249</polygon>
+      <polygon>0.773,128.304 0.765,128.302 0.778,128.295 0.790,128.293 0.773,128.304</polygon>
+      <polygon>0.802,128.350 0.780,128.343 0.773,128.334 0.774,128.321 0.798,128.328 0.803,128.342 0.802,128.350</polygon>
+      <polygon>0.797,128.296 0.797,128.291 0.809,128.297 0.797,128.296</polygon>
+      <polygon>0.843,128.321 0.831,128.333 0.825,128.327 0.825,128.322 0.843,128.321</polygon>
+    </area>
+  </info>
+</alert>
