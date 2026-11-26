@@ -95,6 +95,23 @@ docker compose -f deploy/compose.yaml up -d --build
 
 Volume `sigap_caddy_data` jangan ikut dihapus (sertifikat HTTPS).
 
+## Notifikasi push
+
+Supaya notifikasi tetap sampai walau tab SIGAP ditutup, server perlu sepasang kunci VAPID di `deploy/.env` (`VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`). Tanpa kunci itu push tidak aktif dan sisanya berjalan seperti biasa: `/api/push/key` menjawab 503 dan aplikasi web menonaktifkan pilihannya.
+
+Kunci dibuat **sekali**. Baris berikut, dari PowerShell di laptop, memperbarui server, membuat kunci bila belum ada, lalu menjalankan ulang API (migrasi `013_push.sql` ikut dijalankan):
+
+```powershell
+ssh -i "$HOME\.ssh\sigap_azure" azureuser@sigap-bencana.malaysiawest.cloudapp.azure.com "cd /opt/sigap && git pull && docker compose -f deploy/compose.yaml build api && (grep -q '^VAPID_PUBLIC_KEY=' deploy/.env || (docker compose -f deploy/compose.yaml run --rm --no-deps api node scripts/kunci-push.js https://sigap-bencana.malaysiawest.cloudapp.azure.com > /tmp/vapid.env && grep -q '^VAPID_PUBLIC_KEY=' /tmp/vapid.env && grep -q '^VAPID_PRIVATE_KEY=' /tmp/vapid.env && (echo; cat /tmp/vapid.env) >> deploy/.env; rm -f /tmp/vapid.env)) && docker compose -f deploy/compose.yaml up -d --build && sleep 20 && curl -s -o /dev/null -w 'push: %{http_code}\n' https://sigap-bencana.malaysiawest.cloudapp.azure.com/api/push/key"
+```
+
+Baris terakhir keluarannya harus `push: 200`. Sesudah itu, di aplikasi: lonceng notifikasi → "Notifikasi saat SIGAP ditutup" → "Kirim notifikasi uji ke perangkat ini".
+
+- **Jangan mengganti kunci** setelah ada pengguna yang berlangganan: langganan lama tidak bisa dipakai dengan kunci baru, dan tiap pengguna harus mematikan lalu menyalakan pilihannya lagi. Kunci ikut tersalin bila `deploy/.env` dicadangkan; `.env` tidak ikut di cadangan basis data.
+- **Yang disimpan server** per langganan (tabel `push_subscriptions`): alamat layanan push browser dan dua kuncinya, pilihan "hanya sekitar lokasi saya", dan wilayah pengguna yang dibulatkan ke 0,1° bila ada. Baris dihapus saat pengguna mematikan pilihannya atau saat layanan push menyatakan alamatnya tidak berlaku. Paling banyak 2.000 langganan.
+- **Data riset (RQ2).** `push_deliveries` mencatat tiap pesan: layanan push, status, lama sampai layanan push menjawab (`accepted_ms`), dan saat service worker melapor sudah menerima (`received_at`, jam server). `received_at − sent_at` adalah batas atas waktu sampai ke perangkat.
+- Server hanya mengirim ke layanan push yang dikenal (Google FCM, Mozilla, Microsoft WNS, Apple), lewat HTTPS, tanpa mengikuti pengalihan.
+
 ## Membangun server dari nol
 
 Langkah ini dipakai pada 13 Okt 2026 dan diulang pada 11 Nov 2026. Prasyarat di laptop: Azure CLI (`winget install --exact --id Microsoft.AzureCLI`), `az login`, dan kunci SSH (`ssh-keygen -t ed25519 -f ~/.ssh/sigap_azure`).

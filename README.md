@@ -91,6 +91,7 @@ Pick a point by search, GPS, right-click, or long press. SIGAP runs 12 lookups i
 ### Built for the field
 - An opening page that tours the product before the map: real screenshots in tablet, laptop, and phone mockups, live counts, the features, how the outlook is computed, and the data sources. Opening the map reveals it through an expanding circle.
 - **Live notifications** over Server-Sent Events for new BMKG earthquakes, volcano level changes, and BMKG weather warnings: a bell with a badge, toasts, and an optional sound and browser notification. They can be limited to the area around you (earthquakes within 150 km, volcanoes within 100 km, weather warnings in your regency or within 30 km). A browser that reconnects receives what it missed in the last 24 hours, and a simulation button demonstrates the flow without touching the server.
+- **Notifications while SIGAP is closed (Web Push).** An option in the notification panel keeps earthquakes, volcano level changes, and weather warnings for your area arriving after the tab or the browser is closed. The server encrypts each message for the receiving browser and sends it through that browser's own push service (Google, Mozilla, Microsoft) with no third-party library: the RFC 8291 encryption and the RFC 8292 server identification are written with `node:crypto` and tested against the worked example in the RFC. Who gets a message follows the same rule as the on-page alerts. Your position is never sent to the server, except when you turn this option on while an area is set: the server then stores that area rounded to 0.1° (about 11 km) to choose your notifications, and deletes it when you turn the option off. Without an area only earthquakes and volcanoes are sent. A "send a test notification to this device" button checks the path. Every message is logged together with the time the service worker reports receiving it, so push latency is measured on one clock (the server's). Not available on iPhone yet, which requires the app to be installed to the Home Screen.
 - **Position tracking** with `watchPosition`: the map follows you, and on a safe route a status chip shows the distance left and warns when you are more than 60 m off the route or on a red segment. The position stays in the browser unless you ask for a risk check or a route.
 - Full-bleed map with floating panels; on phones the panel becomes a bottom sheet.
 - Dark and light themes, flat colours, and one blue accent. Bright colours are reserved for hazard data.
@@ -336,7 +337,7 @@ TEST_DATABASE_URL=postgres://sigap:sigap@localhost:5433/sigap_test npm test
 
 In PowerShell: `$env:TEST_DATABASE_URL="postgres://sigap:sigap@localhost:5433/sigap_test"; npm test`
 
-Current counts: 199 server tests (with the integration database), 70 recorder tests, 113 research tests, and 24 tests of the latency recorder (`npm run test:skrip` in `e2e/`). One research test reproduces the worked example of the EDuMaP paper.
+Current counts: 220 server tests (with the integration database), 70 recorder tests, 113 research tests, and 24 tests of the latency recorder (`npm run test:skrip` in `e2e/`). One research test reproduces the worked example of the EDuMaP paper.
 
 End-to-end tests in [`e2e/`](e2e) run the test plan from the course proposal (scenarios P1–P8 and L1–L6) against a running app with Playwright, in Chrome, Edge, Firefox, WebKit, and two 390 px phone profiles, plus scripts for data accuracy against BMKG, MAGMA, and InaRISK and for performance (API timings and Lighthouse). Results and the defects they found are in [`docs/pengujian/README.md`](docs/pengujian/README.md) (in Indonesian).
 
@@ -386,6 +387,10 @@ Every endpoint returns JSON; spatial data is GeoJSON with `[lon, lat]` coordinat
 | `GET /api/cap` | BMKG nowcast weather warnings in force: sub-district polygons with event, severity, validity in local time, and regencies |
 | `GET /api/notifications?limit=30` | Notifications from the last 24 hours (earthquakes, volcano level changes, weather warnings), newest first, and the number of live listeners |
 | `GET /api/stream` | Server-Sent Events stream of new notifications; a reconnect with `Last-Event-ID` replays those missed in the last 24 hours |
+| `GET /api/push/key` | The server's Web Push public key; 503 when push is not enabled on the server |
+| `POST /api/push/subscriptions` | Registers or updates a browser's push subscription: the push service address and its keys, the "only around my location" choice, and the area (rounded to 0.1° by the server). Only known push service addresses are accepted. `DELETE` with `endpoint` removes it |
+| `POST /api/push/test` | Sends one test message to the subscription that asks for it |
+| `POST /api/push/ack` | Receipt report from the service worker, used to measure push latency |
 | `GET /api/evacuation?lat=-6.22&lon=106.87` | Nearest OpenStreetMap evacuation sites and assembly points (up to 6), hospitals, clinics, police, and fire stations, each with the high hazard classes at its location (`zona_tinggi`) |
 | `GET /api/evacuation-sites` | All OpenStreetMap evacuation sites and assembly points in Indonesia (about 1,600) |
 | `POST /api/route` | Safe route for `{"from": {"lat", "lon"}, "to": {"lat", "lon"}, "mode"}` with mode `jalan_kaki`, `motor`, or `mobil`: candidate routes with metres per hazard class, the fastest and the suggested one, and high zones at the start or destination. At most 30 requests per 10 minutes from one IP address |
