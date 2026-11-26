@@ -24,6 +24,7 @@ research/.venv/Scripts/python research/06_evaluasi_rq_l1.py # hitung metrik, tul
 research/.venv/Scripts/python research/09_kinerja_sistem.py # ketersediaan dan latensi dari database SIGAP (RQ2)
 research/.venv/Scripts/python research/10_gempa_dirasakan.py # ±30 detik; pertama kali mengunduh GeoNames Indonesia (10 MB)
 research/.venv/Scripts/python research/11_usgs_dyfi.py --sampai 2026-11-24 # ±12 menit pertama kali (±650 permintaan, satu per detik)
+research/.venv/Scripts/python research/12_evaluasi_gempa.py kalibrasi --sementara # coba kalibrasi RQ-G pada data yang sudah ada; hasil ke data/gempa/sementara/
 research/.venv/Scripts/python -m unittest discover -s research/tests
 ```
 
@@ -62,6 +63,7 @@ Data CEWS dibaca dari arsip perekam (branch `arsip-data`, folder `bmkg-cews/`). 
 | `09_kinerja_sistem.py` | Ketersediaan sinkronisasi per sumber (gagal jaringan klien dipisah dari gagal sumber) dan latensi gempa BMKG |
 | `10_gempa_dirasakan.py` | Gempa dirasakan BMKG dari arsip perekam: satu baris per gempa dan per lokasi laporan, dengan koordinat |
 | `11_usgs_dyfi.py` | Laporan guncangan USGS (DYFI) per kotak 10 km untuk gempa M ≥ 5 sejak 2010 |
+| `12_evaluasi_gempa.py` | RQ-G menurut `PROTOKOL_GEMPA.md`, tiga langkah: `kalibrasi` (IPE-ID dan ambang dari data pengembangan), `dyfi` (hubungan yang dibekukan pada laporan USGS), dan `uji` (uji konfirmatori). Tiap langkah menolak berjalan sebelum waktunya; `kalibrasi --sementara` mencoba pada data yang sudah ada tanpa membekukan apa pun |
 | `lokasi_manual.csv` | Koreksi tangan untuk koordinat lokasi laporan BMKG (dikomit; boleh kosong) |
 | `sigap_riset/` | Modul bersama: klien HTTP ber-cache, query PostGIS, metrik, arsip perekam (CEWS, gempa dirasakan), pencocokan nama lokasi, pembaca USGS, EDuMaP (Calvello & Piciullo 2016), hubungan intensitas–jarak gempa, dan zona notifikasinya |
 | `tests/` | Uji metrik dengan data buatan, uji klien HTTP, uji EDuMaP dengan contoh di makalah aslinya, uji pengurai gempa dirasakan, pencocokan lokasi, serta pembaca USGS dengan potongan data asli, dan uji hubungan intensitas serta zona notifikasi gempa dengan data buatan |
