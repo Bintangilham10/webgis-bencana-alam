@@ -1,7 +1,12 @@
 {
-  "updated_at": "2026-11-26T17:15:34.628Z",
-  "hash": "da21fe867a90",
+  "updated_at": "2026-11-26T18:00:44.581Z",
+  "hash": "260e8765705a",
   "volcanoes": [
+    {
+      "name": "Merapi",
+      "region": "Daerah Istimewa Yogyakarta dan Jawa Tengah",
+      "level": 3
+    },
     {
       "name": "Semeru",
       "region": "Jawa Timur",
@@ -270,11 +275,6 @@
     {
       "name": "Mahawu",
       "region": "Sulawesi Utara",
-      "level": 1
-    },
-    {
-      "name": "Merapi",
-      "region": "Daerah Istimewa Yogyakarta dan Jawa Tengah",
       "level": 1
     },
     {
