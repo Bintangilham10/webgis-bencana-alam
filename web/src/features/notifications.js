@@ -2,12 +2,19 @@ import { getJson } from '../lib/api.js';
 import { escapeHtml, timeAgo } from '../lib/format.js';
 import { icons } from '../lib/icons.js';
 import { WARNING_LEVEL_STYLES } from '../lib/symbology.js';
+import { disablePush, enablePush, pushServerKey, pushSupported, syncPush, testPush } from './push.js';
 
 // Notifikasi langsung (P6). Server mendorong lewat SSE (/api/stream) gempa BMKG
 // baru, perubahan level gunung api, dan peringatan dini cuaca BMKG baru. Peringatan
 // cuaca terbit ±80 kali sehari se-Indonesia, jadi hanya yang mengenai wilayah
 // pengguna yang dimunculkan; sisanya cukup masuk daftar. Pengaturan disimpan di
-// browser ini saja; posisi pengguna tidak dikirim ke server.
+// browser ini saja, dan posisi pengguna tidak dikirim ke server.
+//
+// Satu pengecualian, hanya bila pengguna menyalakan "Notifikasi saat SIGAP ditutup"
+// (push, features/push.js): supaya server bisa memilih notifikasi yang dikirim saat
+// tab ditutup, wilayah pengguna dikirim ke server, yang membulatkannya ke 0,1°
+// (±11 km) sebelum menyimpan. Aturan pemilihannya di server sama dengan relevance()
+// di bawah.
 
 const STORAGE_KEY = 'sigap-notifikasi';
 const LIST_SIZE = 30;
@@ -29,7 +36,9 @@ const STATUS_TEXT = {
   unsupported: 'Tidak didukung browser',
 };
 
-const DEFAULT_SETTINGS = { nearMe: false, browser: false, sound: false, area: null };
+const DEFAULT_SETTINGS = { nearMe: false, browser: false, push: false, sound: false, area: null };
+// Kawasan yang diterima server untuk wilayah push; di luar itu wilayah tidak dikirim.
+const PUSH_BOUNDS = { latMin: -15, latMax: 10, lonMin: 90, lonMax: 145 };
 
 function loadSettings() {
   try {
@@ -99,6 +108,10 @@ export function createNotifications({ button, panel, toasts, onShow, onLive }) {
   let status = 'connecting';
   let audio = null;
   let simulation = 0;
+  // Kunci publik push server: undefined = belum diketahui, null = server tidak mengaktifkannya.
+  let pushKey;
+  let pushBusy = false;
+  let pushNote = '';
 
   const near = (n) => {
     const area = settings.area;
@@ -150,6 +163,53 @@ export function createNotifications({ button, panel, toasts, onShow, onLive }) {
       onShow(n);
       note.close();
     });
+  }
+
+  // ---------- Push (notifikasi saat SIGAP ditutup) ----------
+  // Pilihan yang dikirim ke server bersama langganan push.
+  function pushPrefs() {
+    const area = settings.area;
+    const inside = area && area.lat >= PUSH_BOUNDS.latMin && area.lat <= PUSH_BOUNDS.latMax && area.lon >= PUSH_BOUNDS.lonMin && area.lon <= PUSH_BOUNDS.lonMax;
+    return { nearOnly: Boolean(settings.nearMe && inside), area: inside ? { lat: area.lat, lon: area.lon, kode: area.kode ?? null } : null };
+  }
+
+  // Pilihan di server disamakan dengan pengaturan di sini. Bila perangkat ternyata
+  // tidak lagi berlangganan (izin dicabut, data situs dihapus), sakelarnya dimatikan.
+  function syncPushPrefs() {
+    if (!settings.push || !pushKey) return;
+    syncPush(pushPrefs())
+      .then((active) => {
+        if (active) return;
+        settings.push = false;
+        saveSettings(settings);
+        renderPanel();
+      })
+      .catch((err) => console.warn('Pilihan push gagal diperbarui', err));
+  }
+
+  async function togglePush(on) {
+    pushBusy = true;
+    pushNote = '';
+    renderPanel();
+    let active = false;
+    if (on) {
+      const result = await enablePush(pushKey, pushPrefs());
+      active = result.ok;
+      pushNote = result.ok ? '' : result.reason;
+    } else {
+      await disablePush().catch((err) => console.warn('Push gagal dimatikan', err));
+    }
+    pushBusy = false;
+    return active;
+  }
+
+  function pushDescription() {
+    if (!pushSupported()) return 'Tidak didukung browser ini';
+    if (pushKey === null) return 'Belum diaktifkan di server ini';
+    if (Notification.permission === 'denied') return 'Diblokir; izinkan notifikasi untuk situs ini di pengaturan browser';
+    return settings.area
+      ? 'Server menyimpan wilayah Anda yang dibulatkan (±11 km) untuk memilih notifikasinya'
+      : 'Tanpa lokasi: semua gempa dan perubahan level gunung api, tanpa peringatan cuaca';
   }
 
   // ---------- Kotak notifikasi di halaman ----------
@@ -238,7 +298,10 @@ export function createNotifications({ button, panel, toasts, onShow, onLive }) {
       <div class="notif-settings">
         ${switchRow('nearMe', 'locate', 'Hanya sekitar lokasi saya', area ? `${escapeHtml(area.nama ?? 'Lokasi terakhir')} · gempa 150 km, gunung api 100 km` : 'Tekan “Lokasi saya” atau pantau posisi dulu', { disabled: !area })}
         ${switchRow('browser', 'bell', 'Notifikasi browser', browserDesc, { disabled: !browserSupported() || Notification.permission === 'denied' })}
+        ${switchRow('push', 'bell', 'Notifikasi saat SIGAP ditutup', pushDescription(), { disabled: pushBusy || !pushSupported() || !pushKey || Notification.permission === 'denied' })}
         ${switchRow('sound', 'activity', 'Bunyi', 'Nada singkat saat ada notifikasi baru')}
+        ${pushNote ? `<p class="notif-push-note" role="status">${escapeHtml(pushNote)}</p>` : ''}
+        ${settings.push ? '<button type="button" class="btn btn-secondary btn-block" data-action="push-test">Kirim notifikasi uji ke perangkat ini</button>' : ''}
         <button type="button" class="btn btn-secondary btn-block" data-action="simulate">Uji notifikasi (simulasi)</button>
       </div>
       ${shown.length ? `<ol class="notif-list">${shown.map((n) => itemHtml(n, now)).join('')}</ol>` : '<p class="empty-note">Belum ada notifikasi dalam 24 jam terakhir.</p>'}
@@ -273,14 +336,29 @@ export function createNotifications({ button, panel, toasts, onShow, onLive }) {
     if (key === 'browser' && on && Notification.permission !== 'granted') {
       on = (await Notification.requestPermission()) === 'granted';
     }
+    if (key === 'push') on = await togglePush(on);
     settings[key] = on;
     saveSettings(settings);
     // Bunyi dinyalakan lewat sentuhan pengguna, jadi browser mengizinkan audio.
     if (key === 'sound' && on) beep(1);
+    if (key === 'nearMe') syncPushPrefs();
     renderPanel();
   });
 
   panel.addEventListener('click', (event) => {
+    if (event.target.closest('[data-action="push-test"]')) {
+      pushNote = 'Mengirim pesan uji…';
+      renderPanel();
+      testPush()
+        .then(() => {
+          pushNote = 'Pesan uji dikirim. Notifikasinya muncul dalam beberapa detik, juga bila tab ini ditutup.';
+        })
+        .catch((err) => {
+          pushNote = err.message;
+        })
+        .finally(renderPanel);
+      return;
+    }
     if (event.target.closest('[data-action="simulate"]')) {
       // Panel ditutup supaya toast simulasinya terlihat di atas peta.
       setOpen(false);
@@ -342,14 +420,36 @@ export function createNotifications({ button, panel, toasts, onShow, onLive }) {
   }
 
   renderBadge();
-  loadRecent().then(connect);
+  const loaded = loadRecent();
+  loaded.then(connect);
+
+  // Membuka kejadian sebuah notifikasi dari id-nya, setelah daftar selesai dimuat.
+  function show(id) {
+    loaded.then(() => onShow(items.get(Number(id))));
+  }
+
+  // Push: kunci server menentukan apakah sakelarnya bisa dipakai, dan pilihan yang
+  // tersimpan di server disamakan lagi tiap halaman dibuka.
+  if (pushSupported()) {
+    pushServerKey().then((key) => {
+      pushKey = key;
+      syncPushPrefs();
+      renderPanel();
+    });
+    // Notifikasi push diklik selagi tab ini terbuka (public/sw.js).
+    navigator.serviceWorker.addEventListener('message', (event) => {
+      if (event.data?.type === 'sigap-notifikasi') show(event.data.id);
+    });
+  }
 
   return {
     // Wilayah pengguna dari "Lokasi saya" atau pantau posisi: { lat, lon, kode, nama, provinsi }.
     setArea(area) {
       settings.area = area;
       saveSettings(settings);
+      syncPushPrefs();
       renderPanel();
     },
+    show,
   };
 }

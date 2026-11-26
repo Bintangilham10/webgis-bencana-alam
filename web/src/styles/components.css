@@ -1347,6 +1347,13 @@
   margin-top: 8px;
 }
 
+/* Hasil menyalakan push atau mengirim pesan uji. */
+.notif-push-note {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: var(--ink-2);
+}
+
 .switch-row.is-disabled {
   opacity: 0.55;
   cursor: default;

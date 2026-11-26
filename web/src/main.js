@@ -1094,10 +1094,17 @@ const notifications = createNotifications({
 
 // Layar pembuka hilang setelah data gempa dan gunung api pertama selesai dimuat;
 // halaman depan memulai intronya saat layar pembuka memudar.
+// Aplikasi yang dibuka dari klik notifikasi push (public/sw.js) melewati halaman
+// depan dan langsung membuka kejadiannya.
+const fromNotification = new URLSearchParams(location.search).get("notifikasi");
 hideSplashWhen(
   $("#splash"),
   Promise.allSettled([refreshEarthquakes(), refreshVolcanoes()]),
-).then(() => landing.play());
+).then(() => {
+  if (!fromNotification) return landing.play();
+  history.replaceState(null, "", location.pathname);
+  landing.enter(() => notifications.show(fromNotification));
+});
 setInterval(refreshEarthquakes, EARTHQUAKE_REFRESH_MS);
 setInterval(refreshVolcanoes, VOLCANO_REFRESH_MS);
 refreshCap();
