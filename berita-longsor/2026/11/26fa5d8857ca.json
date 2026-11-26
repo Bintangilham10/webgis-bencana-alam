@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiqwFBVV95cUxPTUw1d0l0LXBJdElkWGI0M3B0emRLUS1FTnJmcTJTU0xKbXl6VUwyb2RWckFiWERBZXF3RVZLQVRDaUFTUFlUTkM0WGNSSFN4dGVpWjRjTzNTWEZURDA4S1JSOUpKTGJKdTM3dUZxcEE2NEhscXpqeFNZWDdWNHp3SlFWVDY1ZEVvQUtQWFAtc1ZuYjZpb0NOWWIxTDF5cXF1QWRHYzhDc0ZwNzA",
+  "title": "Perhutani Dukung Kesiapsiagaan Penanggulangan Bencana Tanah Longsor di Kebumen - Perhutani",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTUw1d0l0LXBJdElkWGI0M3B0emRLUS1FTnJmcTJTU0xKbXl6VUwyb2RWckFiWERBZXF3RVZLQVRDaUFTUFlUTkM0WGNSSFN4dGVpWjRjTzNTWEZURDA4S1JSOUpKTGJKdTM3dUZxcEE2NEhscXpqeFNZWDdWNHp3SlFWVDY1ZEVvQUtQWFAtc1ZuYjZpb0NOWWIxTDF5cXF1QWRHYzhDc0ZwNzA?oc=5",
+  "source": "Perhutani",
+  "source_url": "https://www.perhutani.co.id",
+  "published_at": "2026-11-26T07:42:47.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-26T08:30:40.843Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.05",
+      "nama": "Kabupaten Kebumen",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

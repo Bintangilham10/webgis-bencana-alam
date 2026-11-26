@@ -1,0 +1,26 @@
+{
+  "guid": "CBMixwFBVV95cUxOeDdqcmFKc0s1WGN0VE5LbWtuZDBuLVM4anlLSnBSWmNMMVE2cHRRamVhbjBwdkJsbE1rVC0xTFoyVVdtVEZwdVBoVG1lZ3BYS0pjVlZzeHUwcmtkajlOcnhqZHRMSlpjWUp1QmhmSExBdWJON0VjT2g3a3lWTVlyM29vT2ctY21QNDVUNXp2cVdUSUdhNi1RY3FsRFFOQ3dEYm4yV3Rhby1lZkhqUzlzc29MNktLakZUYWo1ei1ZMXRhUDk4UWUw",
+  "title": "Update Evakuasi Longsor Tambang Emas Ilegal Bogor, 13 Orang Tewas - CNN Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeDdqcmFKc0s1WGN0VE5LbWtuZDBuLVM4anlLSnBSWmNMMVE2cHRRamVhbjBwdkJsbE1rVC0xTFoyVVdtVEZwdVBoVG1lZ3BYS0pjVlZzeHUwcmtkajlOcnhqZHRMSlpjWUp1QmhmSExBdWJON0VjT2g3a3lWTVlyM29vT2ctY21QNDVUNXp2cVdUSUdhNi1RY3FsRFFOQ3dEYm4yV3Rhby1lZkhqUzlzc29MNktLakZUYWo1ei1ZMXRhUDk4UWUw?oc=5",
+  "source": "CNN Indonesia",
+  "source_url": "https://www.cnnindonesia.com",
+  "published_at": "2026-11-26T08:09:33.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-26T08:30:40.843Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

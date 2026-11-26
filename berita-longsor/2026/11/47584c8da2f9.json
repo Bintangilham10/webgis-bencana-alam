@@ -1,0 +1,28 @@
+{
+  "guid": "CBMigwFBVV95cUxPckxta01rTVEtYkJFc2k2TTZFdGd3UWpuZzVsdlhKcHRhOGI2VVpIclFIeks3U094OUpSa3QwRDRXMG1nNGJ3UmZqcWN3MUlEZldkRHZ0blVtNlpIYUJGYTBrRHJBTjZ5SkF1d2pid1VOZF94M1VybFRJeHZqLWJRQ2VQQQ",
+  "title": "Jalan Penghubung Aceh Tengah–Nagan Raya Rawan Longsor - PUJATV ACEH",
+  "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPckxta01rTVEtYkJFc2k2TTZFdGd3UWpuZzVsdlhKcHRhOGI2VVpIclFIeks3U094OUpSa3QwRDRXMG1nNGJ3UmZqcWN3MUlEZldkRHZ0blVtNlpIYUJGYTBrRHJBTjZ5SkF1d2pid1VOZF94M1VybFRJeHZqLWJRQ2VQQQ?oc=5",
+  "source": "PUJATV ACEH",
+  "source_url": "https://pujatvaceh.com",
+  "published_at": "2026-11-26T07:45:34.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-26T08:30:40.843Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "11.04",
+      "nama": "Kabupaten Aceh Tengah",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "11.15",
+      "nama": "Kabupaten Nagan Raya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Aceh"
+  ]
+}

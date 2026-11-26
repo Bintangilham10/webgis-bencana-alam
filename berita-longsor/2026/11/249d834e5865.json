@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiqwFBVV95cUxQYTRLbXlqNUREYVJQeWZadkZDZkFHVGFseXAwRnd5MXN5XzJHUkY5d2xfNFprVzR6ZVVlRUJMcXR1aFJucktXYXBHeHdRaXU1d0hJSjd6VWRTbkdvSTR0a2YwMkZlZW05RmlDUTV6WmZFa1JKMDhpeXJyT2xrWnZzVFpTRnFuWnV1ZGpsYnh1TDk3dHhuMGxOSUFxQ2ZwZHoyc0Q5VkVwWGx3Rm_SAbABQVVfeXFMT3phbWFEWV9RN0t3TTJmZEhHeXJmQm1Va1J4ckRMaTB1cDBMNmhWTE1WRkc3MnNrMVhjTm1SbkNFbndlMlRBS2hoQVJfSk5XS3NpNHg0RWt2UVFHUzVieUpZbnRYbl9VRWFxWHhkRGRDYmFJMFVrWVVRYnVuSmNtMVJYSXIyQ1VpZWJON2Q0Vm1jdmo4djB6RWRpTUFBVk4zUU1PSE1mZnhTMzlraElmS24",
+  "title": "Longsor Terjang 17 Kecamatan, Ratusan Warga Tasikmalaya Terdampak - detikNews",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYTRLbXlqNUREYVJQeWZadkZDZkFHVGFseXAwRnd5MXN5XzJHUkY5d2xfNFprVzR6ZVVlRUJMcXR1aFJucktXYXBHeHdRaXU1d0hJSjd6VWRTbkdvSTR0a2YwMkZlZW05RmlDUTV6WmZFa1JKMDhpeXJyT2xrWnZzVFpTRnFuWnV1ZGpsYnh1TDk3dHhuMGxOSUFxQ2ZwZHoyc0Q5VkVwWGx3Rm_SAbABQVVfeXFMT3phbWFEWV9RN0t3TTJmZEhHeXJmQm1Va1J4ckRMaTB1cDBMNmhWTE1WRkc3MnNrMVhjTm1SbkNFbndlMlRBS2hoQVJfSk5XS3NpNHg0RWt2UVFHUzVieUpZbnRYbl9VRWFxWHhkRGRDYmFJMFVrWVVRYnVuSmNtMVJYSXIyQ1VpZWJON2Q0Vm1jdmo4djB6RWRpTUFBVk4zUU1PSE1mZnhTMzlraElmS24?oc=5",
+  "source": "detikNews",
+  "source_url": "https://news.detik.com",
+  "published_at": "2026-11-26T06:00:32.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-26T08:30:40.843Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
