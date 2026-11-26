@@ -1,0 +1,19 @@
+{
+  "feed": "autogempa",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+  "first_seen_at": "2026-11-26T09:15:32.184Z",
+  "data": {
+    "Tanggal": "26 Nov 2026",
+    "Jam": "16:08:39 WIB",
+    "DateTime": "2026-11-26T09:08:39+00:00",
+    "Coordinates": "-10.79,117.26",
+    "Lintang": "10.79 LS",
+    "Bujur": "117.26 BT",
+    "Magnitude": "5.6",
+    "Kedalaman": "10 km",
+    "Wilayah": "230 km Tenggara SUMBAWABARAT-NTB",
+    "Potensi": "Tidak berpotensi tsunami",
+    "Dirasakan": "-",
+    "Shakemap": "20261126161117.mmi.jpg"
+  }
+}
