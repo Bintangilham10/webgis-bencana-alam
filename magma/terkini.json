@@ -1,15 +1,10 @@
 {
-  "updated_at": "2026-11-07T15:15:28.703Z",
-  "hash": "6d0ef66062f7",
+  "updated_at": "2026-11-26T17:00:48.782Z",
+  "hash": "ad56ee690b6e",
   "volcanoes": [
     {
       "name": "Anak Krakatau",
       "region": "Lampung",
-      "level": 3
-    },
-    {
-      "name": "Merapi",
-      "region": "Daerah Istimewa Yogyakarta dan Jawa Tengah",
       "level": 3
     },
     {
@@ -275,6 +270,11 @@
     {
       "name": "Mahawu",
       "region": "Sulawesi Utara",
+      "level": 1
+    },
+    {
+      "name": "Merapi",
+      "region": "Daerah Istimewa Yogyakarta dan Jawa Tengah",
       "level": 1
     },
     {
