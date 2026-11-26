@@ -158,13 +158,13 @@ def bootstrap_gempa(kolom: dict[str, np.ndarray], statistik: Callable[[dict[str,
     return statistik({nama: np.asarray(v)[indeks] for nama, v in kolom.items()})
 
 
-def banding_aturan(a: pd.DataFrame, b: pd.DataFrame, *, n: int = BOOTSTRAP_N, seed: int = BOOTSTRAP_SEED) -> dict:
+def banding_aturan(a: pd.DataFrame, b: pd.DataFrame, *, n: int = BOOTSTRAP_N, seed: int = BOOTSTRAP_SEED, tingkat: float = 0.95) -> dict:
     """Aturan A dibanding aturan B pada gempa yang sama (tabel_per_gempa, indeks sama).
 
     Mengembalikan selisih cakupan (A − B, bagian laporan), selisih rata-rata kab/kota
     yang diberi tahu per gempa (A − B), dan perbandingan jumlah kab/kota (A / B),
-    masing-masing dengan selang kepercayaan 95% dua sisi dan, untuk selisih cakupan,
-    batas bawah satu sisi 95% (uji tidak-lebih-buruk).
+    masing-masing dengan selang kepercayaan dua sisi pada `tingkat` (bawaan 95%) dan,
+    untuk selisih cakupan, batas bawah satu sisi 95% (uji tidak-lebih-buruk).
     """
     if not a.index.equals(b.index):
         raise ValueError('kedua tabel harus memuat gempa yang sama dengan urutan yang sama')
@@ -182,10 +182,11 @@ def banding_aturan(a: pd.DataFrame, b: pd.DataFrame, *, n: int = BOOTSTRAP_N, se
     titik = hitung(kolom)
     ulang = bootstrap_gempa(kolom, hitung, n=n, seed=seed)
     return {
-        'selisih_cakupan': float(titik[0]), 'selisih_cakupan_ci': selang(ulang[0]),
+        'tingkat': tingkat,
+        'selisih_cakupan': float(titik[0]), 'selisih_cakupan_ci': selang(ulang[0], tingkat),
         'selisih_cakupan_batas_bawah_satu_sisi': float(np.nanquantile(ulang[0], 0.05)),
-        'selisih_kabkota': float(titik[1]), 'selisih_kabkota_ci': selang(ulang[1]),
-        'nisbah_kabkota': float(titik[2]), 'nisbah_kabkota_ci': selang(ulang[2]),
+        'selisih_kabkota': float(titik[1]), 'selisih_kabkota_ci': selang(ulang[1], tingkat),
+        'nisbah_kabkota': float(titik[2]), 'nisbah_kabkota_ci': selang(ulang[2], tingkat),
     }
 
 
