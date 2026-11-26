@@ -1,0 +1,23 @@
+{
+  "guid": "CBMikwFBVV95cUxOSHZLaVFUQk5LSlh2NEVRNzZwbGVaa1k5ck1kTTd1MGxFcnhfYkdGRGpuWmc1cDhacmFJMFJicXNPWHA2QUU2aFZQTzA3SzBMa1JtWEI3MncxNVBXbE9IZlJMLTI3dklCV3c5V3NBb1VKaXRhZXpoeHZSXzc4SWJfQzEwMWlqRmt6OGk2eWMxS3dEa0E",
+  "title": "Kementerian PU Tangani Longsor Susulan di Ruas Tapan–Batas Jambi - https://spektroom.co.id/",
+  "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSHZLaVFUQk5LSlh2NEVRNzZwbGVaa1k5ck1kTTd1MGxFcnhfYkdGRGpuWmc1cDhacmFJMFJicXNPWHA2QUU2aFZQTzA3SzBMa1JtWEI3MncxNVBXbE9IZlJMLTI3dklCV3c5V3NBb1VKaXRhZXpoeHZSXzc4SWJfQzEwMWlqRmt6OGk2eWMxS3dEa0E?oc=5",
+  "source": "https://spektroom.co.id/",
+  "source_url": "https://spektroom.co.id",
+  "published_at": "2026-11-26T13:52:30.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-26T21:00:44.729Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}
