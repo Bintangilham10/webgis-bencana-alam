@@ -1,0 +1,21 @@
+{
+  "guid": "CBMikgFBVV95cUxNZnVwRXM5R21STmtSYnZyRVhVQjZsVVhrT2hzOUZvZmR4X1F3M2pkc1hhQTZIY1lxd0MtQk1pV2JzMWJaSlFNM0RwVTE2YkJzcm55QXpzcl8yaWNveUlrTjRTdDlGcmxFeHhFN2ZkeF84c3MtV0k4N3c3TE5PUENLSE55QnpoVGktd19DY1hWaHpRdw",
+  "title": "Temanggung waspadai longsor dan banjir luapan - ANTARA News",
+  "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZnVwRXM5R21STmtSYnZyRVhVQjZsVVhrT2hzOUZvZmR4X1F3M2pkc1hhQTZIY1lxd0MtQk1pV2JzMWJaSlFNM0RwVTE2YkJzcm55QXpzcl8yaWNveUlrTjRTdDlGcmxFeHhFN2ZkeF84c3MtV0k4N3c3TE5PUENLSE55QnpoVGktd19DY1hWaHpRdw?oc=5",
+  "source": "ANTARA News",
+  "source_url": "https://m.antaranews.com",
+  "published_at": "2026-11-27T04:44:50.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-27T16:00:45.377Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.23",
+      "nama": "Kabupaten Temanggung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

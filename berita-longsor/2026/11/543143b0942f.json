@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi6AFBVV95cUxQeXBCenA0bDF2QXppekxpb285WkNBMEViNEUzelJrUnJTTnQ1RHExckhuNVUtSVlaazRSdVBScWFId1BwclFVc0FTc3RvSjZHVG9NSGp2Y0s3Z1lTa09sdzJ0R1RGY1BuM0FNa2RjYU5Zd1hJSmVPS3U4elZ4enNRd3VmTkZKQ2NPSEx0bTdDcFg1S1pNdlBfaG1JN2RtNTk5N18tdnVpQ21uSnBSS2hpVkI2MDljV2wtR2tBbjdwNkl3QUx5RnktRE1IT01ldngzTGJKZVU1NkFVNks3clBNdnNHUXlqUlZP",
+  "title": "Banjir dan Longsor Terjang Sejumlah Daerah, 276 Rumah di Melawi Terdampak dan 250 KK di Cianjur Terisolir - Vibizmedia.com",
+  "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQeXBCenA0bDF2QXppekxpb285WkNBMEViNEUzelJrUnJTTnQ1RHExckhuNVUtSVlaazRSdVBScWFId1BwclFVc0FTc3RvSjZHVG9NSGp2Y0s3Z1lTa09sdzJ0R1RGY1BuM0FNa2RjYU5Zd1hJSmVPS3U4elZ4enNRd3VmTkZKQ2NPSEx0bTdDcFg1S1pNdlBfaG1JN2RtNTk5N18tdnVpQ21uSnBSS2hpVkI2MDljV2wtR2tBbjdwNkl3QUx5RnktRE1IT01ldngzTGJKZVU1NkFVNks3clBNdnNHUXlqUlZP?oc=5",
+  "source": "Vibizmedia.com",
+  "source_url": "https://www.vibizmedia.com",
+  "published_at": "2026-11-27T12:52:02.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-27T16:00:45.377Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.03",
+      "nama": "Kabupaten Cianjur",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "61.10",
+      "nama": "Kabupaten Melawi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
