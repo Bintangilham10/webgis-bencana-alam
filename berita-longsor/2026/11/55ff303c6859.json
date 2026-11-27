@@ -1,0 +1,28 @@
+{
+  "guid": "CBMiU0FVX3lxTE02dmwtMDBUUmRId3VwTWdzY0NuWUhaNldScTBpMmJyY3BUR3NKNERWLTV4SzlDT3AyOElwdmlOWFMtYXFSck5FbkQwblRuT3dveHVr",
+  "title": "Longsor Putus Jalan Nasional Tapan Batas Jambi di Pesisir Selatan - شبكة تواصل الإخبارية",
+  "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE02dmwtMDBUUmRId3VwTWdzY0NuWUhaNldScTBpMmJyY3BUR3NKNERWLTV4SzlDT3AyOElwdmlOWFMtYXFSck5FbkQwblRuT3dveHVr?oc=5",
+  "source": "شبكة تواصل الإخبارية",
+  "source_url": "https://twaslnews1.twaslnews.com",
+  "published_at": "2026-11-27T16:23:53.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-27T19:15:34.587Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "13.01",
+      "nama": "Kabupaten Pesisir Selatan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "guid": "CBMifEFVX3lxTE04TFpFS2FfX0I0MUpCcXNnT1Z3OWlZM2huekJtNWN2ZmxZelNxN0MyRlhVQ2hXVzBvcTVvWTZNV0tkdFJsaTFTeHBVc0pHSDRRRFlwSGxtUG55YlotSGQwN2NFX3dpdjJwWDBxRWtBYlJzUG85YkNNVml1cGg",
+  "title": "Longsor Terjang Sukabumi, Jalan dan Rumah Terdampak - VISI.NEWS",
+  "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE04TFpFS2FfX0I0MUpCcXNnT1Z3OWlZM2huekJtNWN2ZmxZelNxN0MyRlhVQ2hXVzBvcTVvWTZNV0tkdFJsaTFTeHBVc0pHSDRRRFlwSGxtUG55YlotSGQwN2NFX3dpdjJwWDBxRWtBYlJzUG85YkNNVml1cGg?oc=5",
+  "source": "VISI.NEWS",
+  "source_url": "https://www.visi.news",
+  "published_at": "2026-11-27T16:22:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-27T19:15:34.587Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.02",
+      "nama": "Kabupaten Sukabumi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.72",
+      "nama": "Kota Sukabumi",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

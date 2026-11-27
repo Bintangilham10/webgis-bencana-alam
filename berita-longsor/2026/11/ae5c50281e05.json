@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivwFBVV95cUxNckM3aHk5OFdPR1FIRlBnOHRmdERFWFpmeGR4RU0yVmZVQWIzV21adzNBVVU3TjJpcUo0em5sMjctTVVESk5XVzI4LTlfZDlqRnFWRGxMMWZRcjlaRkpnZS1pa3BGaHgxRkF6enhrOEZ5R0Z1ZzFURVoxNXhMZ0MzTGZnVWRTX1FRdkN2YzhuYVJzS09XMjVrTlRobl9zMllvZ2R1OTVxcVZUYl9pU2loSmhadFFheGZlSjYzVWl1QQ",
+  "title": "Diduga Galian Ilegal Dekat Rumah Warga di Leuwiliang Bogor, Warga Takut Longsor - Hallo Bogor",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNckM3aHk5OFdPR1FIRlBnOHRmdERFWFpmeGR4RU0yVmZVQWIzV21adzNBVVU3TjJpcUo0em5sMjctTVVESk5XVzI4LTlfZDlqRnFWRGxMMWZRcjlaRkpnZS1pa3BGaHgxRkF6enhrOEZ5R0Z1ZzFURVoxNXhMZ0MzTGZnVWRTX1FRdkN2YzhuYVJzS09XMjVrTlRobl9zMllvZ2R1OTVxcVZUYl9pU2loSmhadFFheGZlSjYzVWl1QQ?oc=5",
+  "source": "Hallo Bogor",
+  "source_url": "https://bogor.hallo.id",
+  "published_at": "2026-11-27T17:40:59.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-27T19:15:34.587Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.01",
+      "nama": "Kabupaten Bogor",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.71",
+      "nama": "Kota Bogor",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.27.19.35.009</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-27T23:30:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-28T00:00:00+07:00</effective>
+    <expires>2026-11-28T03:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 November 2026, 00:00 WIB di sebagian wilayah Jawa Timur, khususnya di DRIYOREJO, LAKARSANTRI, MULYOREJO, SAMBIKEREP.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 November 2026, 03:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-7.312,112.629 -7.314,112.647 -7.321,112.651 -7.336,112.650 -7.343,112.656 -7.357,112.656 -7.361,112.654 -7.367,112.632 -7.368,112.615 -7.377,112.588 -7.392,112.571 -7.368,112.567 -7.362,112.557 -7.341,112.562 -7.336,112.583 -7.317,112.586 -7.312,112.603 -7.312,112.629</polygon>
+      <polygon>-7.293,112.672 -7.300,112.675 -7.314,112.673 -7.319,112.679 -7.329,112.679 -7.333,112.675 -7.337,112.662 -7.351,112.665 -7.357,112.656 -7.343,112.656 -7.336,112.650 -7.321,112.651 -7.314,112.647 -7.312,112.629 -7.290,112.629 -7.293,112.672</polygon>
+      <polygon>-7.256,112.807 -7.261,112.832 -7.267,112.836 -7.269,112.828 -7.272,112.818 -7.285,112.804 -7.284,112.801 -7.274,112.799 -7.277,112.784 -7.280,112.784 -7.282,112.773 -7.289,112.763 -7.277,112.762 -7.278,112.772 -7.264,112.776 -7.263,112.774 -7.256,112.777 -7.248,112.789 -7.256,112.807</polygon>
+      <polygon>-7.287,112.773 -7.289,112.771 -7.285,112.772 -7.287,112.773</polygon>
+      <polygon>-7.263,112.660 -7.268,112.666 -7.263,112.667 -7.262,112.676 -7.271,112.674 -7.277,112.684 -7.284,112.679 -7.283,112.676 -7.293,112.672 -7.290,112.629 -7.277,112.627 -7.264,112.633 -7.258,112.652 -7.264,112.655 -7.263,112.660</polygon>
+    </area>
+  </info>
+</alert>

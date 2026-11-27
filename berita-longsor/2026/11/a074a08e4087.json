@@ -1,0 +1,23 @@
+{
+  "guid": "CBMi2AFBVV95cUxOY3ltNnFrYzF4QVVtdk9xcHNJOGQtUVBzZmRPODFfSmR4OXBlcHZPaUludUc3UUVIX1FTcGpwazFpZTNCa2tMSUZFNGRRMlNiMDQ0Wmt2WFNzWVQ3QjlwRzNvcE9sNmdJNWlBQWZKMUY2empUUlVyVDhXeHQ1RGVmSG9JREFSZWNsTFBkZFlXVEFPVTVEOGQyZXhZX2djb08tMTBJSzYwcjBpMExEWndtUGpKY1RCSTN4bFE3T01QZllDdWplMWR6aFJZTFBPQldnRHNsNjREMjQ",
+  "title": "BMKG Peringatkan Hujan Ekstrem Landa Palembang dan 11 Daerah di Sumsel hingga 30 November, Waspada Banjir dan Longsor - AFU.id",
+  "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOY3ltNnFrYzF4QVVtdk9xcHNJOGQtUVBzZmRPODFfSmR4OXBlcHZPaUludUc3UUVIX1FTcGpwazFpZTNCa2tMSUZFNGRRMlNiMDQ0Wmt2WFNzWVQ3QjlwRzNvcE9sNmdJNWlBQWZKMUY2empUUlVyVDhXeHQ1RGVmSG9JREFSZWNsTFBkZFlXVEFPVTVEOGQyZXhZX2djb08tMTBJSzYwcjBpMExEWndtUGpKY1RCSTN4bFE3T01QZllDdWplMWR6aFJZTFBPQldnRHNsNjREMjQ?oc=5",
+  "source": "AFU.id",
+  "source_url": "https://afu.id",
+  "published_at": "2026-11-27T16:00:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-27T19:15:34.587Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "16.71",
+      "nama": "Kota Palembang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Sumatera Selatan"
+  ]
+}
