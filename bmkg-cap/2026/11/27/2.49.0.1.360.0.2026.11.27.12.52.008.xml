@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.27.12.52.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-27T19:20:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-27T19:30:00+08:00</effective>
+    <expires>2026-11-27T21:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 November 2026, 19:30 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di BATUKLIANG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 November 2026, 21:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/11/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.618,116.353 -8.625,116.355 -8.630,116.353 -8.630,116.345 -8.646,116.346 -8.650,116.341 -8.651,116.326 -8.642,116.321 -8.643,116.316 -8.641,116.287 -8.644,116.263 -8.639,116.259 -8.632,116.263 -8.630,116.273 -8.612,116.267 -8.606,116.268 -8.600,116.275 -8.589,116.275 -8.591,116.296 -8.586,116.307 -8.592,116.316 -8.590,116.333 -8.585,116.341 -8.595,116.344 -8.611,116.339 -8.618,116.353</polygon>
+    </area>
+  </info>
+</alert>
