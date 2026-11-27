@@ -1,0 +1,33 @@
+{
+  "guid": "CBMipwFBVV95cUxPMEtPTEktVXItbTlmd01Hb3c0OFl0ajBLdm9fcy1LdklTWGROR0NxQzY4Vjh6MUtRYlJKeWRQZEFzc3NGSnJLcHlxUkdiUzNsWUpNNnFmYWlBWjRLVmlseUViRm5Ub2M1SElmc0ZNZ3VwUzJmbEhJeWE0VzB3VjdtNDA3OUIxS2JvbllwcWV5YUlwZmVKaU1SV3paZzFRMDBKSXdLMnNmMNIBrAFBVV95cUxPOUtnOGh0NXpNVzFEbW1BMnhIM1NzY1A2VW9tRVRNc3FXMXlOcmROekx2LWtmRkloS0JNbjZhVmdrakxQZ0xQY0RYNlQ1MFp2RlhoNDlla3YzNTZUdjJHTm5fUXBPTmtENng0X1IyaUsyaDlBV1k5V2NTdDhxdEZma1ZJYlEweWhISi10UzlSOW5tRkRqbVdBR2FnSHd2UXpSZjNjbFZvT3MzRUl0",
+  "title": "Waspada Bencana! BPBD Bungo Petakan 6 Kecamatan Rawan Longsor - Metro Jambi - Metro Jambi",
+  "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMEtPTEktVXItbTlmd01Hb3c0OFl0ajBLdm9fcy1LdklTWGROR0NxQzY4Vjh6MUtRYlJKeWRQZEFzc3NGSnJLcHlxUkdiUzNsWUpNNnFmYWlBWjRLVmlseUViRm5Ub2M1SElmc0ZNZ3VwUzJmbEhJeWE0VzB3VjdtNDA3OUIxS2JvbllwcWV5YUlwZmVKaU1SV3paZzFRMDBKSXdLMnNmMNIBrAFBVV95cUxPOUtnOGh0NXpNVzFEbW1BMnhIM1NzY1A2VW9tRVRNc3FXMXlOcmROekx2LWtmRkloS0JNbjZhVmdrakxQZ0xQY0RYNlQ1MFp2RlhoNDlla3YzNTZUdjJHTm5fUXBPTmtENng0X1IyaUsyaDlBV1k5V2NTdDhxdEZma1ZJYlEweWhISi10UzlSOW5tRkRqbVdBR2FnSHd2UXpSZjNjbFZvT3MzRUl0?oc=5",
+  "source": "Metro Jambi",
+  "source_url": "https://www.metrojambi.com",
+  "published_at": "2026-11-26T09:52:24.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-27T00:00:45.687Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "15.08",
+      "nama": "Kabupaten Bungo",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "15.71",
+      "nama": "Kota Jambi",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "18.72",
+      "nama": "Kota Metro",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Jambi"
+  ]
+}

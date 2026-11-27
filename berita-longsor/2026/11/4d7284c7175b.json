@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi3wFBVV95cUxPMnFkRTJLM0tWQVdvQXBBWnhGdk9zT2lSLUlQOW5tMWJqZHppRFl1b0U4Z3VRTlRnZGVNZGNPdGJRZUlBODdZdzF6blI4SGNQY1dYYlJBdWFkemRaRzFyQzk5dS1uZ0NxTlI2X2V0dUVqMzFCWGdhZDJNT2stU0NDdDdKTTY3T1hLeTZKUTB1cXEzOTZyd08wMi1saERIdWJQOGlnd3FrTzRodHFEbVVjSjYzTzlLb0Z1elROZmtoOGxlUHZmeEYyRzFoejZ6OUtlTjBMaVhFcjg3ZlhqVU9V",
+  "title": "Cuaca Ekstrem Bandung Raya Picu Banjir dan Longsor, Kabupaten Bandung Tetapkan Tanggap Darurat - Pikiran Rakyat Koran",
+  "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMnFkRTJLM0tWQVdvQXBBWnhGdk9zT2lSLUlQOW5tMWJqZHppRFl1b0U4Z3VRTlRnZGVNZGNPdGJRZUlBODdZdzF6blI4SGNQY1dYYlJBdWFkemRaRzFyQzk5dS1uZ0NxTlI2X2V0dUVqMzFCWGdhZDJNT2stU0NDdDdKTTY3T1hLeTZKUTB1cXEzOTZyd08wMi1saERIdWJQOGlnd3FrTzRodHFEbVVjSjYzTzlLb0Z1elROZmtoOGxlUHZmeEYyRzFoejZ6OUtlTjBMaVhFcjg3ZlhqVU9V?oc=5",
+  "source": "Pikiran Rakyat Koran",
+  "source_url": "https://koran.pikiran-rakyat.com",
+  "published_at": "2026-11-26T22:00:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-27T00:00:45.687Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "tinggi"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

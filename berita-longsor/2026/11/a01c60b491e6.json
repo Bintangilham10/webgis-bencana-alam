@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi0AFBVV95cUxNLUxJSXlIU2pjZFBCbzUwNjdaSTVhc2RsWkZGZk95bkttdEJ3YS1yLUkxQVFucmx3dDcxM0hIaGRNNTBuTzI1R29iTjJiTFhiaHJ3UjNqNXRaWGRnVkRaZ2pvckNYSDkxRXJhR1JzNU1KRldBTFhBSFA2ck1CY3BFLUl4Ui00dWtTTHFZR3hTTmtTbEJQUEl4WklNSERhaVkwYVMxd05IUmVRYm1BWVcxeUJzcXBWWndsN0JXcHFLeHlaTWRIYTB2aV9tWWpmU2Fn",
+  "title": "AWAS! Jalan Ambles dan Longsor, Polres Tasikmalaya Lakukan Rekayasa Lalu Lintas - Desk Jabar",
+  "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNLUxJSXlIU2pjZFBCbzUwNjdaSTVhc2RsWkZGZk95bkttdEJ3YS1yLUkxQVFucmx3dDcxM0hIaGRNNTBuTzI1R29iTjJiTFhiaHJ3UjNqNXRaWGRnVkRaZ2pvckNYSDkxRXJhR1JzNU1KRldBTFhBSFA2ck1CY3BFLUl4Ui00dWtTTHFZR3hTTmtTbEJQUEl4WklNSERhaVkwYVMxd05IUmVRYm1BWVcxeUJzcXBWWndsN0JXcHFLeHlaTWRIYTB2aV9tWWpmU2Fn?oc=5",
+  "source": "Desk Jabar",
+  "source_url": "https://deskjabar.pikiran-rakyat.com",
+  "published_at": "2026-11-26T21:15:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-27T00:00:45.687Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
