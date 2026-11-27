@@ -1,0 +1,31 @@
+{
+  "guid": "CBMiygFBVV95cUxNMldPSTU2OUpzci03UVIwUkg0Sk9SM2kzOVZudEhuTUJMcm5YSXdMVEdiMGVtalcyUEpIS0daeVdCaWEwZU9zdGt2blA1T1hyNUNOTVZwWWsxUHV0XzFmQTJocG1qcDhnVDZkZ3ZQMnNoSWhqcXE0Nm1rbzEtN0lUOTZxU0Zpcm9uVzk1cHAzZ242cWpxbklqRzdiM0ZmUFh6REE0dmp0S0hYNVotTjctU0l0dTctMVNRNEMwQVJMZFFDVmJzYkR1V3Jn",
+  "title": "Warga Taringgul Garut Tertimbun Longsor Saat Mencari Rumput, SAR Bandung Turunkan 2 Tim - Tribunnews.com",
+  "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMldPSTU2OUpzci03UVIwUkg0Sk9SM2kzOVZudEhuTUJMcm5YSXdMVEdiMGVtalcyUEpIS0daeVdCaWEwZU9zdGt2blA1T1hyNUNOTVZwWWsxUHV0XzFmQTJocG1qcDhnVDZkZ3ZQMnNoSWhqcXE0Nm1rbzEtN0lUOTZxU0Zpcm9uVzk1cHAzZ242cWpxbklqRzdiM0ZmUFh6REE0dmp0S0hYNVotTjctU0l0dTctMVNRNEMwQVJMZFFDVmJzYkR1V3Jn?oc=5",
+  "source": "Tribunnews.com",
+  "source_url": "https://priangan.tribunnews.com",
+  "published_at": "2026-11-27T08:36:36.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-27T09:30:40.901Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.04",
+      "nama": "Kabupaten Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.73",
+      "nama": "Kota Bandung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

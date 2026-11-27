@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.27.09.52.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-27T16:55:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-27T17:00:00+08:00</effective>
+    <expires>2026-11-27T19:00:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Nusa Tenggara Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 November 2026, 17:00 WITA di sebagian wilayah Nusa Tenggara Barat, khususnya di DONGGO, MOYO HULU, SOROMANDI, UNTER IWES.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 November 2026, 19:00 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CNB/2026/11/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Nusa Tenggara Barat</areaDesc>
+      <polygon>-8.559,117.474 -8.575,117.480 -8.595,117.482 -8.625,117.510 -8.642,117.503 -8.665,117.509 -8.679,117.506 -8.688,117.511 -8.710,117.511 -8.709,117.493 -8.705,117.486 -8.706,117.470 -8.703,117.462 -8.707,117.402 -8.702,117.383 -8.705,117.344 -8.696,117.326 -8.680,117.312 -8.678,117.306 -8.662,117.282 -8.645,117.273 -8.634,117.254 -8.623,117.265 -8.613,117.304 -8.603,117.325 -8.606,117.340 -8.597,117.357 -8.595,117.380 -8.587,117.401 -8.566,117.415 -8.563,117.422 -8.569,117.449 -8.558,117.458 -8.555,117.465 -8.559,117.474</polygon>
+      <polygon>-8.532,117.448 -8.540,117.473 -8.559,117.474 -8.555,117.465 -8.558,117.458 -8.569,117.449 -8.563,117.422 -8.566,117.415 -8.587,117.401 -8.595,117.380 -8.597,117.357 -8.578,117.344 -8.565,117.356 -8.553,117.352 -8.534,117.335 -8.529,117.320 -8.505,117.336 -8.520,117.367 -8.528,117.393 -8.523,117.396 -8.502,117.392 -8.483,117.394 -8.492,117.404 -8.495,117.415 -8.517,117.420 -8.522,117.431 -8.530,117.433 -8.532,117.448</polygon>
+      <polygon>-8.457,118.620 -8.462,118.609 -8.477,118.598 -8.473,118.571 -8.481,118.565 -8.483,118.552 -8.474,118.522 -8.479,118.511 -8.462,118.502 -8.445,118.502 -8.428,118.525 -8.407,118.539 -8.394,118.543 -8.379,118.533 -8.365,118.553 -8.358,118.567 -8.359,118.572 -8.399,118.576 -8.408,118.587 -8.404,118.615 -8.408,118.636 -8.412,118.638 -8.414,118.631 -8.422,118.627 -8.457,118.620</polygon>
+      <polygon>-8.482,118.669 -8.474,118.656 -8.454,118.637 -8.457,118.620 -8.422,118.627 -8.414,118.631 -8.412,118.638 -8.408,118.636 -8.404,118.615 -8.408,118.587 -8.399,118.576 -8.359,118.572 -8.358,118.567 -8.365,118.553 -8.379,118.533 -8.366,118.527 -8.348,118.498 -8.344,118.494 -8.329,118.481 -8.300,118.473 -8.290,118.460 -8.271,118.448 -8.269,118.444 -8.246,118.464 -8.251,118.480 -8.243,118.495 -8.261,118.515 -8.264,118.535 -8.264,118.560 -8.269,118.568 -8.276,118.607 -8.292,118.630 -8.288,118.639 -8.292,118.649 -8.345,118.686 -8.358,118.691 -8.368,118.690 -8.377,118.696 -8.392,118.687 -8.396,118.695 -8.413,118.688 -8.432,118.691 -8.459,118.686 -8.472,118.680 -8.482,118.669</polygon>
+      <polygon>-8.452,118.698 -8.449,118.692 -8.447,118.697 -8.452,118.698</polygon>
+    </area>
+  </info>
+</alert>

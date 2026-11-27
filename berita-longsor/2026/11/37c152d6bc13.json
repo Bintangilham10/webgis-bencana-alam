@@ -1,0 +1,26 @@
+{
+  "guid": "CBMi7AFBVV95cUxNME9YdF82QTMzb2VzeXZQZ01hQTZ0S2xuZXhQMjRjZUlqNlRjdTFTcThiNjBpQWNtTXNLdWNSa1Aybkg0N2w5Y2RlZW82V2d5SWtJQ1R0a0NtLTJMUlREbzZTMDV5SHhnWFQzclNHWWJIVG12N0hKZ3lSNE9wSHNmZUxidVp6UFNid0pYQ1R6TEtySXR0aHBsVzRrWWM0MWxVb0tfZVlkQ0FGNjg0Wm4tdGdZV29waFc5UGZNSGNJYWpHbGpVNExvYjdvaGExWEt1TXhqT3BuTWtlLWdhSGprWTBFb2VaTW1pX1NWZQ",
+  "title": "Jalan Rawan Longsor di Cikatomas, Satlantas Polres Tasikmalaya Terjun Langsung Bersama Warga Amankan Arus Lalu Lintas - Tribratanews Polda Jabar",
+  "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNME9YdF82QTMzb2VzeXZQZ01hQTZ0S2xuZXhQMjRjZUlqNlRjdTFTcThiNjBpQWNtTXNLdWNSa1Aybkg0N2w5Y2RlZW82V2d5SWtJQ1R0a0NtLTJMUlREbzZTMDV5SHhnWFQzclNHWWJIVG12N0hKZ3lSNE9wSHNmZUxidVp6UFNid0pYQ1R6TEtySXR0aHBsVzRrWWM0MWxVb0tfZVlkQ0FGNjg0Wm4tdGdZV29waFc5UGZNSGNJYWpHbGpVNExvYjdvaGExWEt1TXhqT3BuTWtlLWdhSGprWTBFb2VaTW1pX1NWZQ?oc=5",
+  "source": "Tribratanews Polda Jabar",
+  "source_url": "https://tribratanews.jabar.polri.go.id",
+  "published_at": "2026-11-27T07:13:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-27T09:30:40.901Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

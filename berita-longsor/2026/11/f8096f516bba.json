@@ -1,0 +1,31 @@
+{
+  "guid": "CBMid0FVX3lxTE5nU1RZMlhkMVRKYWNkMHJPUkNxY0lQWUhqdlFIdWY1S1hVRTFtZ2FsU0gyb2RfWUdDUnEzTGVjNXd6bjlNMXpmVXlYSjhhSVhzT1U2ZDNBMmVlVzd6M1RNcjJwUG9qYkN3cFlpdXVmNW9LdU1BQkE4",
+  "title": "Longsor Gerus Jalan Garut-Tasikmalaya - rayatimes.id",
+  "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5nU1RZMlhkMVRKYWNkMHJPUkNxY0lQWUhqdlFIdWY1S1hVRTFtZ2FsU0gyb2RfWUdDUnEzTGVjNXd6bjlNMXpmVXlYSjhhSVhzT1U2ZDNBMmVlVzd6M1RNcjJwUG9qYkN3cFlpdXVmNW9LdU1BQkE4?oc=5",
+  "source": "rayatimes.id",
+  "source_url": "https://rayatimes.id",
+  "published_at": "2026-11-27T07:34:03.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-27T09:30:40.901Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMipAFBVV95cUxOUHJmWFJIMFVmSnZObjRyUlFCQVZ2azE3Q2Zkd0l1SmV3dUk2NTRSajZlU2ZGN0Y5ejVKdEdqTGEzaUZobzFXMjgtNGZMTE5zVnM1TWVxM1BMY25Lci1PZGdfQVFjNjJiSVFKRzV5NjFwcDZ6Q1ZtNF90RE15UlFOeDN5WF9xWFFOandpVk10cVc5dFFjbDkxZ1p5RGdhV3d4NlhwNg",
+  "title": "Samosir Siaga Hadapi Ancaman Banjir dan Longsor Jelang Puncak Musim Hujan - HARIAN MISTAR",
+  "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUHJmWFJIMFVmSnZObjRyUlFCQVZ2azE3Q2Zkd0l1SmV3dUk2NTRSajZlU2ZGN0Y5ejVKdEdqTGEzaUZobzFXMjgtNGZMTE5zVnM1TWVxM1BMY25Lci1PZGdfQVFjNjJiSVFKRzV5NjFwcDZ6Q1ZtNF90RE15UlFOeDN5WF9xWFFOandpVk10cVc5dFFjbDkxZ1p5RGdhV3d4NlhwNg?oc=5",
+  "source": "HARIAN MISTAR",
+  "source_url": "https://mistar.id",
+  "published_at": "2026-11-27T06:28:11.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-27T09:30:40.901Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "12.17",
+      "nama": "Kabupaten Samosir",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

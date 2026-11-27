@@ -1,0 +1,31 @@
+{
+  "guid": "CBMirAFBVV95cUxPX0ptN0JIRmNYZzVLbWltdmg5d2dURmRmM0h0NkRUbTdfQi1wQTRPQms3NlVRZWhic2Y3Q2R0SEx1dmlBNl9Ga1BjekpOODRZaFdlMGdqTXFmUjZ0YzZGMjN4ZmR0akdmbXhQb21IeVlSUGdTdE5LYkQxSzhfRS1Pa1QyS2lBalUwZG5wM0l3LTZfU1JrUkhvWVJvb3BwTndvNHBERHpYT01yUDJ30gGyAUFVX3lxTE8tY25LSU15N05NZTVZTzlHRXpralJzLWZRcjFwQ2NYeWlNU0ZuNlFUU2F1YnctdE0xUjEyYjRmdFRPa0xQUTVxYXhtT3NHMGFHVTQwZGhyTzFYY3NEc1ZWbWF3TGVlaVZ3cG5wVFBLSE4xUlk1YjNsakxZNGRLaWZJeWNvU0VvcDFURXRTaUQxVk9vZzJKZS0xOU5vZ1VXaWZOVXBabGs2VGpwamcwd2MxM2c",
+  "title": "Jalur Garut-Tasikmalaya Longsor, Polisi Terapkan Sistem Buka Tutup - ANTARA News Jawa Barat",
+  "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPX0ptN0JIRmNYZzVLbWltdmg5d2dURmRmM0h0NkRUbTdfQi1wQTRPQms3NlVRZWhic2Y3Q2R0SEx1dmlBNl9Ga1BjekpOODRZaFdlMGdqTXFmUjZ0YzZGMjN4ZmR0akdmbXhQb21IeVlSUGdTdE5LYkQxSzhfRS1Pa1QyS2lBalUwZG5wM0l3LTZfU1JrUkhvWVJvb3BwTndvNHBERHpYT01yUDJ30gGyAUFVX3lxTE8tY25LSU15N05NZTVZTzlHRXpralJzLWZRcjFwQ2NYeWlNU0ZuNlFUU2F1YnctdE0xUjEyYjRmdFRPa0xQUTVxYXhtT3NHMGFHVTQwZGhyTzFYY3NEc1ZWbWF3TGVlaVZ3cG5wVFBLSE4xUlk1YjNsakxZNGRLaWZJeWNvU0VvcDFURXRTaUQxVk9vZzJKZS0xOU5vZ1VXaWZOVXBabGs2VGpwamcwd2MxM2c?oc=5",
+  "source": "ANTARA News Jawa Barat",
+  "source_url": "https://jabar.antaranews.com",
+  "published_at": "2026-11-27T08:20:43.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-27T09:30:40.901Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
