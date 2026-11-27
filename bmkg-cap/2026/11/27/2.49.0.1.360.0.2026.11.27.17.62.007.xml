@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.27.17.62.007</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-27T23:10:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-27T23:20:00+07:00</effective>
+    <expires>2026-11-28T02:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Tengah</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 November 2026, 23:20 WIB di sebagian wilayah Kalimantan Tengah, khususnya di BAAMANG, KOTA BESI, MENTAYA HILIR UTARA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 November 2026, 02:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKG/2026/11/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Tengah</areaDesc>
+      <polygon>-2.217,112.795 -2.239,112.836 -2.264,112.875 -2.287,112.892 -2.305,112.913 -2.325,112.921 -2.365,112.953 -2.389,112.988 -2.380,113.009 -2.385,113.021 -2.417,113.011 -2.430,113.003 -2.435,112.994 -2.463,112.879 -2.434,112.881 -2.429,112.869 -2.423,112.820 -2.425,112.709 -2.399,112.713 -2.384,112.720 -2.379,112.716 -2.372,112.703 -2.364,112.702 -2.353,112.693 -2.304,112.681 -2.298,112.700 -2.298,112.721 -2.273,112.745 -2.255,112.742 -2.239,112.696 -2.225,112.639 -2.217,112.650 -2.206,112.722 -2.191,112.742 -2.202,112.758 -2.217,112.795</polygon>
+      <polygon>-2.391,113.034 -2.394,113.047 -2.417,113.060 -2.425,113.061 -2.444,113.052 -2.459,113.060 -2.467,113.060 -2.475,113.053 -2.476,113.033 -2.490,113.017 -2.491,113.000 -2.521,112.970 -2.537,112.967 -2.527,112.936 -2.530,112.921 -2.530,112.898 -2.525,112.882 -2.531,112.846 -2.542,112.835 -2.550,112.821 -2.559,112.791 -2.568,112.649 -2.563,112.608 -2.553,112.565 -2.545,112.474 -2.539,112.473 -2.536,112.473 -2.522,112.472 -2.521,112.472 -2.499,112.470 -2.475,112.468 -2.482,112.509 -2.497,112.533 -2.506,112.560 -2.494,112.624 -2.502,112.700 -2.497,112.773 -2.490,112.815 -2.471,112.849 -2.463,112.879 -2.435,112.994 -2.430,113.003 -2.417,113.011 -2.385,113.021 -2.391,113.034</polygon>
+      <polygon>-2.568,112.649 -2.613,112.802 -2.631,112.845 -2.642,112.864 -2.659,112.875 -2.676,112.879 -2.683,112.873 -2.691,112.876 -2.696,112.892 -2.704,112.898 -2.716,112.920 -2.713,112.927 -2.715,112.938 -2.715,112.937 -2.742,112.916 -2.757,112.914 -2.798,112.948 -2.809,112.923 -2.800,112.868 -2.801,112.846 -2.807,112.829 -2.805,112.826 -2.784,112.788 -2.722,112.688 -2.683,112.607 -2.658,112.578 -2.636,112.543 -2.631,112.535 -2.628,112.530 -2.617,112.513 -2.584,112.483 -2.582,112.481 -2.581,112.481 -2.550,112.474 -2.545,112.474 -2.553,112.565 -2.563,112.608 -2.568,112.649</polygon>
+    </area>
+  </info>
+</alert>
