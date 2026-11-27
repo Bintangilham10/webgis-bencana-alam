@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-27T18:00:42.984Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        109.3602080354,
+        -7.613571993
+      ]
+    },
+    "properties": {
+      "pkey": "400098",
+      "created_at": "2026-11-27T17:58:30.007Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "9350051e-148b-4304-9d8c-d9c9aa4211cb",
+      "image_url": "https://images.petabencana.id/9350051e-148b-4304-9d8c-d9c9aa4211cb.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 20
+      },
+      "tags": {
+        "city": "BANYUMAS",
+        "district_id": null,
+        "region_code": "3302",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Banjir di daerah Sumpiuh, Banyumas, Jawa Tengah, setelah  hujan (27/11)",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
