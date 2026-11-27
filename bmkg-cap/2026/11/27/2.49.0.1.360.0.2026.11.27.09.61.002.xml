@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.27.09.61.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-27T15:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-27T16:00:00+07:00</effective>
+    <expires>2026-11-27T18:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Kalimantan Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 27 November 2026, 16:00 WIB di sebagian wilayah Kalimantan Barat, khususnya di MANIS MATA.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 27 November 2026, 18:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CKB/2026/11/27/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Kalimantan Barat</areaDesc>
+      <polygon>-2.118,111.066 -2.161,111.079 -2.178,111.073 -2.184,111.064 -2.197,111.066 -2.203,111.063 -2.222,111.041 -2.240,111.032 -2.262,111.041 -2.277,111.056 -2.309,111.072 -2.363,111.090 -2.433,111.105 -2.454,111.106 -2.484,111.105 -2.515,111.114 -2.542,111.116 -2.595,111.134 -2.611,111.136 -2.624,111.134 -2.643,111.120 -2.653,111.119 -2.666,111.128 -2.670,111.136 -2.672,111.165 -2.682,111.171 -2.694,111.171 -2.742,111.146 -2.768,111.101 -2.782,111.058 -2.786,111.032 -2.799,111.008 -2.830,110.996 -2.825,110.991 -2.787,110.977 -2.775,110.981 -2.776,110.993 -2.770,110.996 -2.760,110.993 -2.758,110.985 -2.750,110.976 -2.737,110.974 -2.721,110.981 -2.712,110.980 -2.707,110.977 -2.707,110.961 -2.698,110.956 -2.677,110.966 -2.653,110.995 -2.636,110.971 -2.617,110.959 -2.603,110.957 -2.596,110.947 -2.550,110.946 -2.477,110.798 -2.477,110.836 -2.441,110.873 -2.417,110.890 -2.382,110.896 -2.363,110.893 -2.352,110.885 -2.341,110.863 -2.313,110.857 -2.304,110.860 -2.272,110.892 -2.255,110.895 -2.193,110.897 -2.191,110.904 -2.177,110.920 -2.174,110.936 -2.167,110.946 -2.124,110.973 -2.096,111.018 -2.074,111.042 -2.067,111.058 -2.118,111.066</polygon>
+    </area>
+  </info>
+</alert>
