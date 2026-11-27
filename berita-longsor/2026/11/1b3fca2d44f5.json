@@ -1,0 +1,31 @@
+{
+  "guid": "CBMingFBVV95cUxNVFBqT0pTR2x0MnhYanFXSE1JeTZIWjVXMmdIR3gtSDU0UkFJa0Eydkg3Nk0zX1RyQ2lnc2lySTZMMlRPUzhMakMyaUxzN1V5M0JyUno2Mml5N3hwc3RQdVEzR1JnMlFXb3hRQWdtalU2YUpiRmdTeXFiNFY5dWNDejBudjJOajhiYVVORC1sNVpyM0JYbVJpWnItZElLQQ",
+  "title": "Polisi Buka Tutup Jalur Garut-Tasikmalaya Imbas Longsor - MetroTVNews.com",
+  "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVFBqT0pTR2x0MnhYanFXSE1JeTZIWjVXMmdIR3gtSDU0UkFJa0Eydkg3Nk0zX1RyQ2lnc2lySTZMMlRPUzhMakMyaUxzN1V5M0JyUno2Mml5N3hwc3RQdVEzR1JnMlFXb3hRQWdtalU2YUpiRmdTeXFiNFY5dWNDejBudjJOajhiYVVORC1sNVpyM0JYbVJpWnItZElLQQ?oc=5",
+  "source": "MetroTVNews.com",
+  "source_url": "https://www.metrotvnews.com",
+  "published_at": "2026-11-27T10:07:09.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-27T12:45:35.903Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.78",
+      "nama": "Kota Tasikmalaya",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

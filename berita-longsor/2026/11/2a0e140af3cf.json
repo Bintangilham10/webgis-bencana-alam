@@ -1,0 +1,26 @@
+{
+  "guid": "CBMilgFBVV95cUxNeXk1X1B1QUhtMnc0MmJhcFMxb0VjNElNVXF1N3JLMFRncW9SLVNHQW11anFid0lpQnBBbndQUzI0RS1XRVhZV1U3a0RsT09OYUZWUV9mMi0xX3R6MDhRUXBZUllPblJ2VlR3QUdPX2ZIRGp0OHF1OXRBaFY3SC1lWUpMT3p3bDRwV2ctNnY2TTJWVzd0VFHSAZYBQVVfeXFMTXl5NV9QdUFIbTJ3NDJiYXBTMW9FYzRJTVVxdTdySzBUZ3FvUi1TR0FtdWpxYndJaUJwQW53UFMyNEUtV0VYWVdVN2tEbE9PTmFGVlFfZjItMV90ejA4UVFwWVJZT25SdlZUd0FHT19mSERqdDhxdTl0QWhWN0gtZVlKTE96d2w0cFdnLTZ2Nk0yVlc3dFRR",
+  "title": "Rawan Longsor, Balikpapan-Samarinda Masuk Radar Waspada Basarnas - Ibukotakini",
+  "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNeXk1X1B1QUhtMnc0MmJhcFMxb0VjNElNVXF1N3JLMFRncW9SLVNHQW11anFid0lpQnBBbndQUzI0RS1XRVhZV1U3a0RsT09OYUZWUV9mMi0xX3R6MDhRUXBZUllPblJ2VlR3QUdPX2ZIRGp0OHF1OXRBaFY3SC1lWUpMT3p3bDRwV2ctNnY2TTJWVzd0VFHSAZYBQVVfeXFMTXl5NV9QdUFIbTJ3NDJiYXBTMW9FYzRJTVVxdTdySzBUZ3FvUi1TR0FtdWpxYndJaUJwQW53UFMyNEUtV0VYWVdVN2tEbE9PTmFGVlFfZjItMV90ejA4UVFwWVJZT25SdlZUd0FHT19mSERqdDhxdTl0QWhWN0gtZVlKTE96d2w0cFdnLTZ2Nk0yVlc3dFRR?oc=5",
+  "source": "Ibukotakini",
+  "source_url": "https://ibukotakini.com",
+  "published_at": "2026-11-27T11:22:44.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-27T12:45:35.903Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "64.71",
+      "nama": "Kota Balikpapan",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "64.72",
+      "nama": "Kota Samarinda",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,23 @@
+{
+  "guid": "CBMivAFBVV95cUxQMXVod2RNUnY0QmxzcUxNYnA3ZDJYbmJFQ0M3elFUc2Q1RXl5SHh0bHJKSV9GdEktaXVmZ3IxTVNGWXVLX0J0NEdybWRoMTNOeGIweVJyU1dIV1ZNVjRCblY1c2ZCTWNpRDZlZVBCSTdYb2xjNGxkOGdsN2VraG96X1dzcTh1Y2RDZHhGN0E5LUlQcmVCMVN3QnVsZ3JkYXlFNmJMdVZoVmdoT0syS3gyaDI2MEp6QVg0VU91WQ",
+  "title": "Banjir dan Longsor Mengintai Kaltim, Basarnas Balikpapan Petakan Wilayah Rawan - EKSPOSKALTIM",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMXVod2RNUnY0QmxzcUxNYnA3ZDJYbmJFQ0M3elFUc2Q1RXl5SHh0bHJKSV9GdEktaXVmZ3IxTVNGWXVLX0J0NEdybWRoMTNOeGIweVJyU1dIV1ZNVjRCblY1c2ZCTWNpRDZlZVBCSTdYb2xjNGxkOGdsN2VraG96X1dzcTh1Y2RDZHhGN0E5LUlQcmVCMVN3QnVsZ3JkYXlFNmJMdVZoVmdoT0syS3gyaDI2MEp6QVg0VU91WQ?oc=5",
+  "source": "EKSPOSKALTIM",
+  "source_url": "https://eksposkaltim.com",
+  "published_at": "2026-11-27T12:22:30.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-27T12:45:35.903Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "64.71",
+      "nama": "Kota Balikpapan",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Kalimantan Timur"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiggFBVV95cUxPYlNqNkJNaEZ6Q21ReXpVNzRnTXU1MTFCSldkQ0RnRXFBM1plOUdVWEdJb0NIT29qaDFOUnpsbVhpRnBzTDAtTnhYR2JfMVdERDk3RnFTd2xhVkRoTW5ZRExxLVBGVmZzUmhMVkFfXzhra3MzaDRrTEpMMVRkYzZxMVVR",
+  "title": "Longsor di Darangdan Purwakarta, Satu Warga Terluka - Radar Karawang",
+  "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPYlNqNkJNaEZ6Q21ReXpVNzRnTXU1MTFCSldkQ0RnRXFBM1plOUdVWEdJb0NIT29qaDFOUnpsbVhpRnBzTDAtTnhYR2JfMVdERDk3RnFTd2xhVkRoTW5ZRExxLVBGVmZzUmhMVkFfXzhra3MzaDRrTEpMMVRkYzZxMVVR?oc=5",
+  "source": "Radar Karawang",
+  "source_url": "https://radarkarawang.id",
+  "published_at": "2026-11-27T06:50:03.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-27T12:45:35.903Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "lainnya",
+  "kab_kota": [
+    {
+      "kode": "32.14",
+      "nama": "Kabupaten Purwakarta",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
