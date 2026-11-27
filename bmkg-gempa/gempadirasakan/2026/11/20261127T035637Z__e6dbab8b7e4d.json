@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-27T04:30:38.480Z",
+  "data": {
+    "Tanggal": "27 Nov 2026",
+    "Jam": "10:56:37 WIB",
+    "DateTime": "2026-11-27T03:56:37+00:00",
+    "Coordinates": "-8.55,116.04",
+    "Lintang": "8.55 LS",
+    "Bujur": "116.04 BT",
+    "Magnitude": "3.1",
+    "Kedalaman": "10 km",
+    "Wilayah": "Pusat gempa berada di laut 18 km barat laut Lombok Barat",
+    "Dirasakan": "III Kota Mataram , III Kab. Lombok Barat"
+  }
+}
