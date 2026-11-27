@@ -1,0 +1,17 @@
+{
+  "feed": "gempadirasakan",
+  "source_url": "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json",
+  "first_seen_at": "2026-11-27T21:00:52.189Z",
+  "data": {
+    "Tanggal": "28 Nov 2026",
+    "Jam": "02:28:05 WIB",
+    "DateTime": "2026-11-27T19:28:05+00:00",
+    "Coordinates": "-2.06,120.62",
+    "Lintang": "2.06 LS",
+    "Bujur": "120.62 BT",
+    "Magnitude": "4.3",
+    "Kedalaman": "4 km",
+    "Wilayah": "Pusat gempa berada di darat 62 km Timur Laut Luwu Utara",
+    "Dirasakan": "III Pendolo"
+  }
+}
