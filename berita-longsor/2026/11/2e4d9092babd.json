@@ -1,0 +1,21 @@
+{
+  "guid": "CBMixwFBVV95cUxNYUE2QkpTNW55dkRxd2F6bjhrQ1ZtdXpjSFRZUmtLOWdQTTFGOXVUOTNfQ3F5OHFxcy1jRmNoamJQQ0ZQcW1pRG5rMEg0cFQwUDYtYXp6VmtvckpqZDE1Y0J1UEJ0aDFsOVI1cXp5NHUtYWNZWGpzSC1telVnZlMtY1ZPMXVldlFfcjFuWFliOVhJVlg3aXJ1aEs1b2hqUVJBX080LVJlbjFhallxXzFsdHFWV1B2enlTOXBIQi1XajlyYTYyci1j0gHMAUFVX3lxTE5pY0VyQUwyTS1laFdBbjJMZ0wzYl9ycFpCd2hNZFJWU2VtdTdYOG9XUEdtdFIwWW5kOTNCYXhUOWFVUUx2SjRsNlJmdk1VT1NZMi1YMDBzYzc5UlJtRGVnbFdQOGx4SVB5UGdWNjU4WVdGUnpHUEN5UjJzMmZRaXZNVTNQb2M4MXplRk4xMEMwMk9MS2xWX0hpSWNVNFkwNW9NV1FkSnlIb2NrWUpEdDdJaHZqM0xCT0ZnNWNHQjBxcmRoMmVwb0NHQ3RoZw",
+  "title": "Cuaca Ekstrem Mengintai, BPBD Karangasem Petakan Lima Kecamatan Rawan Longsor - Radar Bali",
+  "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYUE2QkpTNW55dkRxd2F6bjhrQ1ZtdXpjSFRZUmtLOWdQTTFGOXVUOTNfQ3F5OHFxcy1jRmNoamJQQ0ZQcW1pRG5rMEg0cFQwUDYtYXp6VmtvckpqZDE1Y0J1UEJ0aDFsOVI1cXp5NHUtYWNZWGpzSC1telVnZlMtY1ZPMXVldlFfcjFuWFliOVhJVlg3aXJ1aEs1b2hqUVJBX080LVJlbjFhallxXzFsdHFWV1B2enlTOXBIQi1XajlyYTYyci1j0gHMAUFVX3lxTE5pY0VyQUwyTS1laFdBbjJMZ0wzYl9ycFpCd2hNZFJWU2VtdTdYOG9XUEdtdFIwWW5kOTNCYXhUOWFVUUx2SjRsNlJmdk1VT1NZMi1YMDBzYzc5UlJtRGVnbFdQOGx4SVB5UGdWNjU4WVdGUnpHUEN5UjJzMmZRaXZNVTNQb2M4MXplRk4xMEMwMk9MS2xWX0hpSWNVNFkwNW9NV1FkSnlIb2NrWUpEdDdJaHZqM0xCT0ZnNWNHQjBxcmRoMmVwb0NHQ3RoZw?oc=5",
+  "source": "Radar Bali",
+  "source_url": "https://radarbali.jawapos.com",
+  "published_at": "2026-11-27T19:15:12.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-27T22:30:45.484Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "51.07",
+      "nama": "Kabupaten Karangasem",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
