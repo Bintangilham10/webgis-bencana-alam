@@ -1,0 +1,21 @@
+{
+  "guid": "CBMijgFBVV95cUxPN1BmZDBRMTRUTFdLRGhKODhRS2hEZ1c5VVRGa0hSbDFFV3AzUV9zT1dQQUROUGpWSHQzcVJxeTZsVjRQMFRIcjhWdV9wN1loUmM5NVBrSHE4UnJYbmhLR1ktOWpDV0RrMkttVW1lc2dacG45Tmd1bV84NThiVzdNNHRLdFF1TnlPVHFRUnJR",
+  "title": "Longsor Cianjur Putus Akses Desa Puncak Baru, 250 KK Terdampak - Kantor Berita Kemanusiaan",
+  "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPN1BmZDBRMTRUTFdLRGhKODhRS2hEZ1c5VVRGa0hSbDFFV3AzUV9zT1dQQUROUGpWSHQzcVJxeTZsVjRQMFRIcjhWdV9wN1loUmM5NVBrSHE4UnJYbmhLR1ktOWpDV0RrMkttVW1lc2dacG45Tmd1bV84NThiVzdNNHRLdFF1TnlPVHFRUnJR?oc=5",
+  "source": "Kantor Berita Kemanusiaan",
+  "source_url": "https://www.kbknews.id",
+  "published_at": "2026-11-28T00:52:08.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-28T04:45:36.860Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.03",
+      "nama": "Kabupaten Cianjur",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

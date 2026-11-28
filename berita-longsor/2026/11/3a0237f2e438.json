@@ -1,0 +1,21 @@
+{
+  "guid": "CBMivwFBVV95cUxNOHh3OURPeklhRWxzQ3BiM2twVGpWSnNMSjNTTlJUVG1GSTQ2OHlTbC1iZkJPSmI5QU1xZ2hWemhRc2dsTG1IT204NU5ZZ0NUTEZTYS1DcUIteTUtR0p2Y19JQXljbHR3XzFBSl9Hc1FITnltQUVCWGpGNm1Oc0ZfLTFtdFg2QXg1MXJZalRIcktOMkxnVklXNVI1Y2ZBcXZCT0J1eWdTdDJ4bWJMeXlMRXBxRG9US3ExZm9TNnY4Yw",
+  "title": "Lebih dari 100 Kejadian Banjir dan Longsor Terjadi di Banyumas dalam Semalam - RRI.co.id",
+  "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOHh3OURPeklhRWxzQ3BiM2twVGpWSnNMSjNTTlJUVG1GSTQ2OHlTbC1iZkJPSmI5QU1xZ2hWemhRc2dsTG1IT204NU5ZZ0NUTEZTYS1DcUIteTUtR0p2Y19JQXljbHR3XzFBSl9Hc1FITnltQUVCWGpGNm1Oc0ZfLTFtdFg2QXg1MXJZalRIcktOMkxnVklXNVI1Y2ZBcXZCT0J1eWdTdDJ4bWJMeXlMRXBxRG9US3ExZm9TNnY4Yw?oc=5",
+  "source": "RRI.co.id",
+  "source_url": "https://rri.co.id",
+  "published_at": "2026-11-28T03:20:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-28T04:45:36.860Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

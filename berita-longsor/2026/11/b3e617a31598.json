@@ -1,0 +1,26 @@
+{
+  "guid": "CBMifEFVX3lxTFAxdHBxMWVpMUwzV2hfZllCakFxbVE5UUppaUhMckZ5SWJNOHZNb3RQNm9STS12dEhEY3V1ZDI5dzBUY2NHUEotN0E1MHdYb1V5SVJicFk4cW9tLVhGMHRUV3RsVnZLUnhHZTBucXRGYVNXdDVtMS1tZ0tLRTA",
+  "title": "Longsor Material Tanah dan Batu Besar di Jalur Lintas Selatan Trenggalek-Tulungagung - Suara Trenggalek",
+  "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFAxdHBxMWVpMUwzV2hfZllCakFxbVE5UUppaUhMckZ5SWJNOHZNb3RQNm9STS12dEhEY3V1ZDI5dzBUY2NHUEotN0E1MHdYb1V5SVJicFk4cW9tLVhGMHRUV3RsVnZLUnhHZTBucXRGYVNXdDVtMS1tZ0tLRTA?oc=5",
+  "source": "Suara Trenggalek",
+  "source_url": "https://suaratrenggalek.com",
+  "published_at": "2026-11-28T02:09:52.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-28T04:45:36.860Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.04",
+      "nama": "Kabupaten Tulungagung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
