@@ -1,0 +1,26 @@
+{
+  "guid": "CBMimgFBVV95cUxQdGVsMGRpUzc3QVhXNWYwU2YzNzlhUTBDclByaGV5c2hnLS1lOTJhOHZ5cG4zSHg1UDRSNFMzck03REZOUVo0NUwxRWlNWWhJVGVTTGVHT3lSVTV1c1R1eFE1TzZyVnFUV21JVUVPd1NBamtXcS1uZjJ2aGFHSGRSaVloZnVPMkYtS3VhX0s4NlpSSEtBVWkzSWNB",
+  "title": "Ancaman Banjir dan Longsor Meningkat, Pemkab Madiun Perkuat Mitigasi - Indonesiabuzz.com",
+  "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdGVsMGRpUzc3QVhXNWYwU2YzNzlhUTBDclByaGV5c2hnLS1lOTJhOHZ5cG4zSHg1UDRSNFMzck03REZOUVo0NUwxRWlNWWhJVGVTTGVHT3lSVTV1c1R1eFE1TzZyVnFUV21JVUVPd1NBamtXcS1uZjJ2aGFHSGRSaVloZnVPMkYtS3VhX0s4NlpSSEtBVWkzSWNB?oc=5",
+  "source": "Indonesiabuzz.com",
+  "source_url": "https://indonesiabuzz.com",
+  "published_at": "2026-11-28T08:21:25.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-28T11:00:48.245Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.19",
+      "nama": "Kabupaten Madiun",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.77",
+      "nama": "Kota Madiun",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

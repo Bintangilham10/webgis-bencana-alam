@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiU0FVX3lxTFBWajVQczBoTVpfLU1icDhSVFYyY0twRjNUV0lpb2F2QUxVNDRBYTk2eHJPT3ZuQXhIQXl6OXBGZ25NYTJwclJfX3JwT08yYnJPUUM4",
+  "title": "Longsor Beruntun di Banjarnegara, 7 Orang Hilang - شبكة تواصل الإخبارية",
+  "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBWajVQczBoTVpfLU1icDhSVFYyY0twRjNUV0lpb2F2QUxVNDRBYTk2eHJPT3ZuQXhIQXl6OXBGZ25NYTJwclJfX3JwT08yYnJPUUM4?oc=5",
+  "source": "شبكة تواصل الإخبارية",
+  "source_url": "https://twaslnews1.twaslnews.com",
+  "published_at": "2026-11-28T10:27:49.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-28T11:00:48.245Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.04",
+      "nama": "Kabupaten Banjarnegara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
