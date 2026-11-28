@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.28.15.34.004</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-28T19:40:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-28T19:50:00+07:00</effective>
+    <expires>2026-11-28T22:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di DI Yogyakarta</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 November 2026, 19:50 WIB di sebagian wilayah DI Yogyakarta, khususnya di GALUR, GIRISUBO, SAPTOSARI, TANJUNGSARI, TEMON, TEPUS.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 November 2026, 22:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CYG/2026/11/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>DI Yogyakarta</areaDesc>
+      <polygon>-7.881,110.111 -7.883,110.105 -7.902,110.109 -7.908,110.107 -7.910,110.099 -7.903,110.086 -7.918,110.074 -7.891,110.014 -7.892,110.020 -7.884,110.042 -7.871,110.044 -7.870,110.088 -7.861,110.094 -7.870,110.111 -7.881,110.111</polygon>
+      <polygon>-7.922,110.183 -7.934,110.185 -7.930,110.200 -7.930,110.209 -7.939,110.225 -7.935,110.244 -7.959,110.232 -7.977,110.216 -7.984,110.205 -7.960,110.165 -7.939,110.174 -7.921,110.177 -7.922,110.183</polygon>
+      <polygon>-8.057,110.644 -8.065,110.658 -8.079,110.667 -8.082,110.691 -8.103,110.713 -8.112,110.714 -8.127,110.697 -8.185,110.689 -8.174,110.656 -8.145,110.600 -8.124,110.602 -8.097,110.622 -8.080,110.616 -8.075,110.636 -8.064,110.638 -8.061,110.628 -8.055,110.630 -8.057,110.644</polygon>
+      <polygon>-8.084,110.557 -8.101,110.557 -8.121,110.546 -8.128,110.548 -8.134,110.544 -8.108,110.469 -8.089,110.462 -8.064,110.460 -8.063,110.465 -8.053,110.472 -8.042,110.478 -8.026,110.481 -8.016,110.491 -8.035,110.515 -8.050,110.518 -8.055,110.522 -8.053,110.528 -8.035,110.530 -8.031,110.534 -8.034,110.538 -8.029,110.549 -8.046,110.552 -8.078,110.548 -8.086,110.553 -8.084,110.557</polygon>
+      <polygon>-8.130,110.787 -8.149,110.786 -8.162,110.796 -8.156,110.810 -8.148,110.812 -8.144,110.817 -8.159,110.819 -8.177,110.834 -8.201,110.830 -8.204,110.829 -8.198,110.800 -8.192,110.796 -8.196,110.781 -8.196,110.749 -8.193,110.733 -8.199,110.725 -8.198,110.714 -8.201,110.709 -8.200,110.707 -8.193,110.709 -8.184,110.705 -8.185,110.689 -8.127,110.697 -8.133,110.711 -8.141,110.711 -8.144,110.717 -8.131,110.738 -8.138,110.744 -8.144,110.744 -8.146,110.750 -8.142,110.755 -8.116,110.758 -8.120,110.773 -8.132,110.773 -8.130,110.787</polygon>
+      <polygon>-8.057,110.644 -8.055,110.630 -8.061,110.628 -8.064,110.638 -8.075,110.636 -8.080,110.616 -8.097,110.622 -8.124,110.602 -8.145,110.600 -8.149,110.597 -8.147,110.590 -8.139,110.580 -8.134,110.554 -8.128,110.548 -8.121,110.546 -8.101,110.557 -8.084,110.557 -8.050,110.563 -8.051,110.572 -8.060,110.582 -8.058,110.591 -8.057,110.601 -8.043,110.610 -8.043,110.642 -8.057,110.644</polygon>
+    </area>
+  </info>
+</alert>
