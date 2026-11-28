@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.28.12.75.008</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-28T20:09:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-28T20:21:00+08:00</effective>
+    <expires>2026-11-28T22:21:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Gorontalo</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 November 2026, 20:21 WITA di sebagian wilayah Gorontalo, khususnya di BATUDAA PANTAI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 November 2026, 22:21 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CGT/2026/11/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Gorontalo</areaDesc>
+      <polygon>0.518,123.033 0.517,123.035 0.514,123.038 0.514,123.038 0.514,123.038 0.513,123.039 0.512,123.040 0.510,123.040 0.505,123.041 0.502,123.043 0.502,123.043 0.502,123.043 0.500,123.044 0.497,123.043 0.496,123.021 0.489,123.010 0.493,123.003 0.485,122.989 0.493,122.962 0.486,122.930 0.493,122.905 0.487,122.886 0.491,122.869 0.514,122.875 0.524,122.895 0.529,122.907 0.524,122.927 0.520,122.937 0.518,122.985 0.524,122.995 0.528,123.015 0.530,123.018 0.518,123.033</polygon>
+    </area>
+  </info>
+</alert>
