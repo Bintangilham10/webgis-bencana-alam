@@ -1,0 +1,28 @@
+{
+  "guid": "CBMirgFBVV95cUxObzdIUm5iaUJnMjhpMjRfVDhyd0hBb25IM0VKWGFGQmpmam0zZ000aG9VRGdMV09SNWZvZHZwMUlYZzVrZWc1QnBLUnhzekRWZk4xRk82M3lXcEpJRzUwSzFPV21NMzJfX19kMEVkN2g1MmRFTWpncjRkMkF0X0d5Smt1b0hWYng1eVRvVG1WS3FGUlpOSGpWRFExd2R3SHFpS0hxdnk0dHhLUUlDdnc",
+  "title": "BMKG Peringatkan Cuaca Ekstrem, Lampung dan Malang Terancam Banjir hingga Longsor - Suara Desa",
+  "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObzdIUm5iaUJnMjhpMjRfVDhyd0hBb25IM0VKWGFGQmpmam0zZ000aG9VRGdMV09SNWZvZHZwMUlYZzVrZWc1QnBLUnhzekRWZk4xRk82M3lXcEpJRzUwSzFPV21NMzJfX19kMEVkN2g1MmRFTWpncjRkMkF0X0d5Smt1b0hWYng1eVRvVG1WS3FGUlpOSGpWRFExd2R3SHFpS0hxdnk0dHhLUUlDdnc?oc=5",
+  "source": "Suara Desa",
+  "source_url": "https://suaradesa.co",
+  "published_at": "2026-11-28T01:38:28.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-28T01:45:29.338Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.07",
+      "nama": "Kabupaten Malang",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.73",
+      "nama": "Kota Malang",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": [
+    "Lampung"
+  ]
+}

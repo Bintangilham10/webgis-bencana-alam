@@ -1,0 +1,26 @@
+{
+  "guid": "CBMikwFBVV95cUxQbmVqVFMxSC1SOFdSRXA4Yk5qU0l1Sm9lSENhcmliZDlxQXBMNGZzN3hiclJZWUVlVDhkakc1azZfTmQzQXZnTjUzOHZheFVkSldYXzVxSjdmblpZZHFhYmc5XzhlSnhDRTBobTdMdkFXaGFCM3BIbnF2Nkk0aldfRnNPY0Mzb1pER0V3ekJLb0l1bknSAZgBQVVfeXFMUFN2dkdlLVl3ZGs1eHhpa2Zaczl0a1E5a3dHclY4RUdRd2k4Rkl5dmd1SjBpTnVIY0xYbXA1SWs1VHlhZjBPVDM0YmFQNTBzT01uX3kzbEFYWGhjcW9VWWVKUFNiNkM1QVhQbDV4Z19ZZlRDd1ZzVndNeU1KNVloQ3F4LU9PeUUwakw5bGtPQmNRMjdoUlVaUWY",
+  "title": "JLS Trenggalek-Tulungagung Tertimbun Longsor - detikcom",
+  "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbmVqVFMxSC1SOFdSRXA4Yk5qU0l1Sm9lSENhcmliZDlxQXBMNGZzN3hiclJZWUVlVDhkakc1azZfTmQzQXZnTjUzOHZheFVkSldYXzVxSjdmblpZZHFhYmc5XzhlSnhDRTBobTdMdkFXaGFCM3BIbnF2Nkk0aldfRnNPY0Mzb1pER0V3ekJLb0l1bknSAZgBQVVfeXFMUFN2dkdlLVl3ZGs1eHhpa2Zaczl0a1E5a3dHclY4RUdRd2k4Rkl5dmd1SjBpTnVIY0xYbXA1SWs1VHlhZjBPVDM0YmFQNTBzT01uX3kzbEFYWGhjcW9VWWVKUFNiNkM1QVhQbDV4Z19ZZlRDd1ZzVndNeU1KNVloQ3F4LU9PeUUwakw5bGtPQmNRMjdoUlVaUWY?oc=5",
+  "source": "detikcom",
+  "source_url": "https://www.detik.com",
+  "published_at": "2026-11-28T01:29:15.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-28T01:45:29.338Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.04",
+      "nama": "Kabupaten Tulungagung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

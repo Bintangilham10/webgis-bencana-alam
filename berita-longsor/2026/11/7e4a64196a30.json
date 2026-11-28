@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiYkFVX3lxTE1LeFpob1dhSl9ScGc2OEFabUZTVzM4Vll0WEt2MVhpandoQ0lULUdqRENpcENackZVaW9BN3FrckZIcFJyWE1sdW1VbWllZHI5LWRLYXJwTUxhZ0tVWVlYaFdB",
+  "title": "Tim SAR Cari Koko yang Diduga Tertimbun Longsor di Garut - bsinews.id",
+  "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1LeFpob1dhSl9ScGc2OEFabUZTVzM4Vll0WEt2MVhpandoQ0lULUdqRENpcENackZVaW9BN3FrckZIcFJyWE1sdW1VbWllZHI5LWRLYXJwTUxhZ0tVWVlYaFdB?oc=5",
+  "source": "bsinews.id",
+  "source_url": "https://bsinews.id",
+  "published_at": "2026-11-27T22:32:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-28T01:45:29.338Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
