@@ -1,0 +1,26 @@
+{
+  "guid": "CBMiogFBVV95cUxNeXNfYUV3X0Y2ZEVQd3JKSjVqTXBpZjVlalprTWp6eDRuck1idFNPR1NFbUxiV1NfVnNYR0lSZUppOU9neWllQUtpQVRxV3p2aFNzV0NmbW00NWxOeDZvRXFzeVIxd1lkVUJaMkd6TURDLXhHOWdlRm9pelY5OENQVVROZE9NTUo1MHFZNWNGNG1mNnhvaXRfSHQwd2ZhQm0xYkE",
+  "title": "Pemkab Madiun Bentuk Forum PRB, Antisipasi Banjir dan Longsor - Garda Jatim",
+  "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNeXNfYUV3X0Y2ZEVQd3JKSjVqTXBpZjVlalprTWp6eDRuck1idFNPR1NFbUxiV1NfVnNYR0lSZUppOU9neWllQUtpQVRxV3p2aFNzV0NmbW00NWxOeDZvRXFzeVIxd1lkVUJaMkd6TURDLXhHOWdlRm9pelY5OENQVVROZE9NTUo1MHFZNWNGNG1mNnhvaXRfSHQwd2ZhQm0xYkE?oc=5",
+  "source": "Garda Jatim",
+  "source_url": "https://www.gardajatim.com",
+  "published_at": "2026-11-28T07:31:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-28T08:00:43.647Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "35.19",
+      "nama": "Kabupaten Madiun",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.77",
+      "nama": "Kota Madiun",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

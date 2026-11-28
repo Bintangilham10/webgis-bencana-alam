@@ -1,0 +1,26 @@
+{
+  "guid": "CBMivAFBVV95cUxOd05MLS1ZNmJJOWwzSkpEOTNSSmN0eWlYcEY4bmF0MzlXSkgxMkd1ZDRYWEFEWWNRRHo4NkhTTzByMjh3UHUwWG8wRE5LUElSdkFWWVlKUTl0dDNyWjRHOWN4VEhTRXF5YjFnbXl3Z2lBSndTSnJ6dUZTbjZ5bnpJTU5abWlpVGJ3aUdudVhUOENUUFZLdnRLdXQyU2xUZHh3MTh0cWpvanM2WndjMG45NUxWdUNRbU9weURqUA",
+  "title": "Waspadai Longsor di Selatan dan Banjir-Rob di Utara, Pemkab Tegal Perkuat Mitigasi Hulu - TargetNews.ID",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOd05MLS1ZNmJJOWwzSkpEOTNSSmN0eWlYcEY4bmF0MzlXSkgxMkd1ZDRYWEFEWWNRRHo4NkhTTzByMjh3UHUwWG8wRE5LUElSdkFWWVlKUTl0dDNyWjRHOWN4VEhTRXF5YjFnbXl3Z2lBSndTSnJ6dUZTbjZ5bnpJTU5abWlpVGJ3aUdudVhUOENUUFZLdnRLdXQyU2xUZHh3MTh0cWpvanM2WndjMG45NUxWdUNRbU9weURqUA?oc=5",
+  "source": "TargetNews.ID",
+  "source_url": "https://targetnews.id",
+  "published_at": "2026-11-28T07:14:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-28T08:00:43.647Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "33.28",
+      "nama": "Kabupaten Tegal",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "33.76",
+      "nama": "Kota Tegal",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

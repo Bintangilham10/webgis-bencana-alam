@@ -1,0 +1,26 @@
+{
+  "guid": "CBMigAFBVV95cUxQblF3dVhWMmo2RGR6QVVnRzk3dnNoc0lZNXdwdVpoVElXQ2JROGhsNUJZVERITm5QWUk0VlVhOUE5aDdjZFZmQlFXRXduZ3ZraEQyZ1VKNlI2aC1vemZmb3BXdHFHUEgxNHU5WHJRSlRsREtWM2xEMnVIcUNmeUpHdA",
+  "title": "AWAS!!! Longsor Terjang Jalur JLS Tulungagung - Trenggalek - Nusa Daily",
+  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQblF3dVhWMmo2RGR6QVVnRzk3dnNoc0lZNXdwdVpoVElXQ2JROGhsNUJZVERITm5QWUk0VlVhOUE5aDdjZFZmQlFXRXduZ3ZraEQyZ1VKNlI2aC1vemZmb3BXdHFHUEgxNHU5WHJRSlRsREtWM2xEMnVIcUNmeUpHdA?oc=5",
+  "source": "Nusa Daily",
+  "source_url": "https://nusadaily.com",
+  "published_at": "2026-11-28T07:25:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-28T08:00:43.647Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "35.04",
+      "nama": "Kabupaten Tulungagung",
+      "keyakinan": "rendah"
+    },
+    {
+      "kode": "35.03",
+      "nama": "Kabupaten Trenggalek",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

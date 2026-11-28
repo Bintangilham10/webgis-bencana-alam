@@ -1,0 +1,21 @@
+{
+  "guid": "CBMixgFBVV95cUxOODlqamtQNEVrV0lLc0pyMnE1aFNQODVteTRXYTJqN3htazlPRDFkMkpZb3lLNnRyZ05kcHdYeXRMTzBvOXpLR0tCdVdCdnprOW83S2daOG5OUG9KbTV4S0ZSRTBQZF94Q1J3NTF2NWRCSXNGLUFsOXRvdGk5SGZ0RUFsbDZVaGFwTHJSaktRTEJEQ0NQQ2xYeDhLLXZEYjRNbWVpYUtIanJzd2NRSGp0Z21wRVV2aXRnWXpsQ0FoTVNJTXMtQUE",
+  "title": "BPBD Banyumas Catat 55 Bencana Terjadi dalam Semalam, 43 Titik Longsor dan 11 Banjir - Kompas.com",
+  "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOODlqamtQNEVrV0lLc0pyMnE1aFNQODVteTRXYTJqN3htazlPRDFkMkpZb3lLNnRyZ05kcHdYeXRMTzBvOXpLR0tCdVdCdnprOW83S2daOG5OUG9KbTV4S0ZSRTBQZF94Q1J3NTF2NWRCSXNGLUFsOXRvdGk5SGZ0RUFsbDZVaGFwTHJSaktRTEJEQ0NQQ2xYeDhLLXZEYjRNbWVpYUtIanJzd2NRSGp0Z21wRVV2aXRnWXpsQ0FoTVNJTXMtQUE?oc=5",
+  "source": "Kompas.com",
+  "source_url": "https://regional.kompas.com",
+  "published_at": "2026-11-28T07:21:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-28T08:00:43.647Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.02",
+      "nama": "Kabupaten Banyumas",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

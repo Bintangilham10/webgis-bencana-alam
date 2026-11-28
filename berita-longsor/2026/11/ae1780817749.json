@@ -1,0 +1,21 @@
+{
+  "guid": "CBMipgFBVV95cUxPOEVQem15VDlsakRqODYtN2NTTWl0VHVESmxKNEFFYWEyTG9aVUIyUzZFd2tpOVRjV3FnbWNicXp0UUNiMTBneFN4d1dXd1VwUTJNUDdOWFpqVU52bENBNFpjZkwxOVdjVi02R2F2anE4REZUXzFJUzlpZWpDb0JFbEhVbXhpNnh3Q2pmVG81ZTV6cUJtamo0ZUZiQTNiTHlaMG1kRmNB",
+  "title": "BPBD Samarinda Tambah Rambu Bencana, Titik Rawan Banjir dan Longsor Dipetakan - Headline Kaltim",
+  "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPOEVQem15VDlsakRqODYtN2NTTWl0VHVESmxKNEFFYWEyTG9aVUIyUzZFd2tpOVRjV3FnbWNicXp0UUNiMTBneFN4d1dXd1VwUTJNUDdOWFpqVU52bENBNFpjZkwxOVdjVi02R2F2anE4REZUXzFJUzlpZWpDb0JFbEhVbXhpNnh3Q2pmVG81ZTV6cUJtamo0ZUZiQTNiTHlaMG1kRmNB?oc=5",
+  "source": "Headline Kaltim",
+  "source_url": "https://headlinekaltim.co",
+  "published_at": "2026-11-28T08:01:46.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-28T08:00:43.647Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "imbauan",
+  "kab_kota": [
+    {
+      "kode": "64.72",
+      "nama": "Kota Samarinda",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

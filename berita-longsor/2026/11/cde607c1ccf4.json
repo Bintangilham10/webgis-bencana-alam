@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiiAFBVV95cUxNQ3Q5aDM3WF9NY1ZJMlZLUzVXekFNV1BnampWVVYwUU1rYmhjd0FleEpOdTJzR2hNZ1hvSjZUQVEtZzM2V1hRMnJPWFF3bTFWYjRRTnBjSmR1eUtXMjRKbk05V2liWEFmTGhKNjhQVVd1a0JoSDRiRVBFSTNRS21xSHRGVVBIa1Q4",
+  "title": "Cuaca Ekstrem Picu Banjir dan Longsor di 56 Lokasi Kebumen - Koran Bernas",
+  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQ3Q5aDM3WF9NY1ZJMlZLUzVXekFNV1BnampWVVYwUU1rYmhjd0FleEpOdTJzR2hNZ1hvSjZUQVEtZzM2V1hRMnJPWFF3bTFWYjRRTnBjSmR1eUtXMjRKbk05V2liWEFmTGhKNjhQVVd1a0JoSDRiRVBFSTNRS21xSHRGVVBIa1Q4?oc=5",
+  "source": "Koran Bernas",
+  "source_url": "https://koranbernas.id",
+  "published_at": "2026-11-28T05:10:00.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-28T08:00:43.647Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.05",
+      "nama": "Kabupaten Kebumen",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
