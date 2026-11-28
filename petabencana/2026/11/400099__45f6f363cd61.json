@@ -1,0 +1,39 @@
+{
+  "source_url": "https://api.petabencana.id/reports?geoformat=geojson&timeperiod=604800",
+  "first_seen_at": "2026-11-28T10:15:33.354Z",
+  "report": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.9101325374,
+        -7.4535007655
+      ]
+    },
+    "properties": {
+      "pkey": "400099",
+      "created_at": "2026-11-28T10:04:55.977Z",
+      "source": "grasp",
+      "status": "confirmed",
+      "url": "f45eda39-1cd7-478c-a7ac-d3475a119de8",
+      "image_url": "https://images.petabencana.id/f45eda39-1cd7-478c-a7ac-d3475a119de8.jpg",
+      "disaster_type": "flood",
+      "is_training": false,
+      "report_data": {
+        "report_type": "flood",
+        "flood_depth": 56
+      },
+      "tags": {
+        "city": "CILACAP",
+        "district_id": null,
+        "region_code": "3301",
+        "local_area_id": null,
+        "instance_region_code": "ID-JT"
+      },
+      "title": null,
+      "text": "Air Sungai Banjarwaru meluap hingga menggenangi ruas jalan dan area persawahan di Desa Cingebul, Kecamatan Lumbir, Kabupaten Banyumas, Jawa ",
+      "partner_code": null,
+      "partner_icon": null
+    }
+  }
+}
