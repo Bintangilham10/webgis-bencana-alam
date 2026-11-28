@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.28.04.14.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-28T09:50:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-28T10:00:00+07:00</effective>
+    <expires>2026-11-28T12:00:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Riau</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 November 2026, 10:00 WIB di sebagian wilayah Riau, khususnya di BANGKO, SINABOI.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 November 2026, 12:00 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CRU/2026/11/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Riau</areaDesc>
+      <polygon>2.096,101.015 2.090,101.019 2.076,101.019 2.004,101.049 2.001,100.904 1.998,100.889 2.020,100.889 2.044,100.880 2.077,100.848 2.116,100.793 2.157,100.779 2.186,100.780 2.200,100.772 2.218,100.768 2.224,100.768 2.254,100.797 2.291,100.819 2.299,100.835 2.303,100.887 2.270,100.890 2.248,100.900 2.159,100.904 2.104,100.927 2.096,100.955 2.096,101.015</polygon>
+      <polygon>2.231,100.770 2.227,100.766 2.242,100.765 2.259,100.770 2.271,100.781 2.276,100.797 2.270,100.800 2.231,100.770</polygon>
+      <polygon>2.122,100.786 2.141,100.741 2.178,100.719 2.215,100.709 2.236,100.713 2.251,100.723 2.257,100.734 2.259,100.747 2.254,100.752 2.197,100.766 2.183,100.777 2.153,100.779 2.122,100.786</polygon>
+      <polygon>2.275,101.062 2.267,101.055 2.243,101.050 2.216,101.036 2.146,101.013 2.120,101.009 2.096,101.015 2.096,100.955 2.104,100.927 2.159,100.904 2.248,100.900 2.270,100.890 2.303,100.887 2.305,100.946 2.293,100.988 2.293,101.047 2.291,101.052 2.275,101.062</polygon>
+      <polygon>2.310,101.026 2.309,101.036 2.305,101.037 2.299,101.020 2.302,100.980 2.306,100.985 2.310,101.026</polygon>
+    </area>
+  </info>
+</alert>
