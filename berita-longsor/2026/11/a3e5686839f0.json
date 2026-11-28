@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi_gFBVV95cUxOQnQ4WXRYbTlIWXFnZHBvRVJBcVBhZEdvTmk0QmZlLWdIRkZVc2NzQjRwc3BLTS1Qbml3WWFKSXJPdHFZaFI0M2NyMHN0eWswSHVxdGVvNmgyc2cyS2ZyMTZzVVdZOWh5WWJXN2NfWDUxMXhEU3c5clpieWV5Z0Y3RzV3QTk5N24zV0VLQ292X3hxRk1iUmlFR1BSOWdHN3JVNEVTcWRjRTQ1Y0lkVTVubjROeUhHby02WVJXWjRNYzFOTm9pVmRuYVRuZFQ1S2RqQWVFMUJCSEpTU3dMM3pRRkROcklpcHBVUFYwdGNobkZQRzNLb0tGampsbkFqUQ",
+  "title": "Penanganan Dampak Bencana Longsor, Respon Cepat BBWS Citanduy Bantu Pulihkan Wilayah Terdampak di Kabupaten Tasikmalaya - Ditjen SDA",
+  "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOQnQ4WXRYbTlIWXFnZHBvRVJBcVBhZEdvTmk0QmZlLWdIRkZVc2NzQjRwc3BLTS1Qbml3WWFKSXJPdHFZaFI0M2NyMHN0eWswSHVxdGVvNmgyc2cyS2ZyMTZzVVdZOWh5WWJXN2NfWDUxMXhEU3c5clpieWV5Z0Y3RzV3QTk5N24zV0VLQ292X3hxRk1iUmlFR1BSOWdHN3JVNEVTcWRjRTQ1Y0lkVTVubjROeUhHby02WVJXWjRNYzFOTm9pVmRuYVRuZFQ1S2RqQWVFMUJCSEpTU3dMM3pRRkROcklpcHBVUFYwdGNobkZQRzNLb0tGampsbkFqUQ?oc=5",
+  "source": "Ditjen SDA",
+  "source_url": "https://sda.pu.go.id",
+  "published_at": "2026-11-28T11:08:53.000Z",
+  "query": "longsor when:1d",
+  "first_seen_at": "2026-11-28T14:15:35.355Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.06",
+      "nama": "Kabupaten Tasikmalaya",
+      "keyakinan": "tinggi"
+    }
+  ],
+  "provinsi": []
+}

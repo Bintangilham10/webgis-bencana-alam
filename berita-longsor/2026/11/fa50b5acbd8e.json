@@ -1,0 +1,21 @@
+{
+  "guid": "CBMilAFBVV95cUxQeWZWcnZsTVc3NHRXaUJUVVJnbFFzT2JSU3VhMGNHRzNmQjB0MHVVdkVJWldVMGIwOFREa25mR0FqWUNlRFZwdUUtemJ0NWtWYVIyekdtbjNINXJhTTRZWVV3N2MxTV9DTDlJVHVXU2pCWDBSS3E3ejdhSk4zb0FxLXBzM0ExS2U3R0VLaDg2T0k4TUdn",
+  "title": "Hujan Deras Picu Longsor di Kampung Cibitung Malangbong Garut - Warta Bela Negara",
+  "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeWZWcnZsTVc3NHRXaUJUVVJnbFFzT2JSU3VhMGNHRzNmQjB0MHVVdkVJWldVMGIwOFREa25mR0FqWUNlRFZwdUUtemJ0NWtWYVIyekdtbjNINXJhTTRZWVV3N2MxTV9DTDlJVHVXU2pCWDBSS3E3ejdhSk4zb0FxLXBzM0ExS2U3R0VLaDg2T0k4TUdn?oc=5",
+  "source": "Warta Bela Negara",
+  "source_url": "https://wartabelanegara.com",
+  "published_at": "2026-11-28T13:20:48.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-28T14:15:35.355Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "32.05",
+      "nama": "Kabupaten Garut",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
