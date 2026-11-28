@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.28.03.92.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-28T11:18:00+09:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-28T11:48:00+09:00</effective>
+    <expires>2026-11-28T13:48:00+09:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Papua Barat</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 November 2026, 11:48 WIT di sebagian wilayah Papua Barat, khususnya di CATUBOUW, MASNI, SIDEY.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 November 2026, 13:48 WIT.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CPB/2026/11/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Papua Barat</areaDesc>
+      <polygon>-0.747,133.818 -0.820,133.808 -0.846,133.798 -0.874,133.802 -0.879,133.797 -0.857,133.772 -0.877,133.760 -0.932,133.752 -0.928,133.718 -0.906,133.649 -0.905,133.619 -0.815,133.624 -0.776,133.622 -0.738,133.628 -0.735,133.641 -0.751,133.720 -0.742,133.733 -0.731,133.738 -0.726,133.737 -0.722,133.730 -0.718,133.754 -0.722,133.761 -0.727,133.759 -0.728,133.762 -0.730,133.773 -0.725,133.793 -0.741,133.801 -0.746,133.807 -0.747,133.818</polygon>
+      <polygon>-0.738,133.628 -0.776,133.622 -0.815,133.624 -0.905,133.619 -0.887,133.488 -0.887,133.488 -0.887,133.488 -0.884,133.475 -0.884,133.470 -0.850,133.471 -0.853,133.499 -0.859,133.504 -0.862,133.519 -0.873,133.533 -0.847,133.538 -0.828,133.536 -0.826,133.523 -0.797,133.526 -0.785,133.507 -0.777,133.483 -0.748,133.507 -0.744,133.509 -0.748,133.529 -0.743,133.556 -0.738,133.568 -0.730,133.569 -0.724,133.565 -0.720,133.571 -0.735,133.605 -0.738,133.628</polygon>
+      <polygon>-0.932,133.752 -0.948,133.825 -0.994,133.830 -1.013,133.825 -1.027,133.830 -1.053,133.830 -1.070,133.823 -1.078,133.822 -1.105,133.825 -1.130,133.824 -1.155,133.818 -1.173,133.819 -1.184,133.822 -1.190,133.824 -1.190,133.824 -1.215,133.828 -1.246,133.824 -1.244,133.796 -1.213,133.723 -1.181,133.667 -1.164,133.611 -1.128,133.616 -0.954,133.611 -0.905,133.619 -0.906,133.649 -0.928,133.718 -0.932,133.752</polygon>
+    </area>
+  </info>
+</alert>
