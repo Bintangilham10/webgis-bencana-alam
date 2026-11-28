@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.28.01.35.001</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-28T07:00:00+07:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-28T07:30:00+07:00</effective>
+    <expires>2026-11-28T09:30:00+07:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Jawa Timur</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 November 2026, 07:30 WIB di sebagian wilayah Jawa Timur, khususnya di GAYAM, KEREK, NONGGUNONG, TAMBAK.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 November 2026, 09:30 WIB.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CJT/2026/11/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Jawa Timur</areaDesc>
+      <polygon>-6.839,111.902 -6.858,111.911 -6.862,111.918 -6.870,111.918 -6.882,111.910 -6.890,111.931 -6.932,111.932 -6.918,111.919 -6.916,111.899 -6.930,111.896 -6.937,111.881 -6.937,111.865 -6.945,111.851 -6.932,111.819 -6.929,111.801 -6.925,111.800 -6.925,111.782 -6.920,111.773 -6.912,111.764 -6.906,111.760 -6.893,111.772 -6.889,111.788 -6.883,111.796 -6.876,111.797 -6.865,111.808 -6.843,111.822 -6.842,111.843 -6.830,111.853 -6.822,111.891 -6.839,111.902</polygon>
+      <polygon>-5.754,112.726 -5.756,112.710 -5.765,112.693 -5.767,112.666 -5.772,112.663 -5.779,112.667 -5.782,112.637 -5.784,112.634 -5.793,112.634 -5.795,112.629 -5.785,112.589 -5.774,112.591 -5.771,112.598 -5.774,112.608 -5.770,112.613 -5.752,112.615 -5.749,112.627 -5.731,112.649 -5.738,112.673 -5.733,112.677 -5.724,112.677 -5.718,112.687 -5.728,112.693 -5.734,112.703 -5.741,112.728 -5.754,112.726</polygon>
+      <polygon>-5.737,112.617 -5.734,112.614 -5.729,112.616 -5.737,112.617</polygon>
+      <polygon>-5.758,112.605 -5.755,112.602 -5.745,112.604 -5.758,112.605</polygon>
+      <polygon>-5.775,112.586 -5.770,112.582 -5.768,112.588 -5.775,112.586</polygon>
+      <polygon>-7.109,114.372 -7.116,114.374 -7.134,114.389 -7.154,114.391 -7.161,114.395 -7.166,114.404 -7.170,114.403 -7.182,114.384 -7.179,114.364 -7.164,114.328 -7.156,114.332 -7.157,114.321 -7.144,114.309 -7.150,114.304 -7.117,114.278 -7.099,114.271 -7.094,114.273 -7.094,114.292 -7.105,114.311 -7.097,114.331 -7.100,114.340 -7.111,114.342 -7.109,114.372</polygon>
+      <polygon>-7.109,114.372 -7.111,114.342 -7.100,114.340 -7.097,114.331 -7.105,114.311 -7.094,114.292 -7.094,114.273 -7.066,114.295 -7.057,114.327 -7.062,114.338 -7.090,114.371 -7.103,114.375 -7.109,114.372</polygon>
+      <polygon>-6.838,114.433 -6.852,114.435 -6.858,114.431 -6.842,114.424 -6.832,114.430 -6.838,114.433</polygon>
+      <polygon>-6.895,114.508 -6.893,114.505 -6.875,114.510 -6.872,114.514 -6.879,114.520 -6.895,114.508</polygon>
+    </area>
+  </info>
+</alert>
