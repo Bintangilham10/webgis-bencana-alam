@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="/cap/nowcast-cap-style.xsl"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.1.360.0.2026.11.28.07.73.002</identifier>
+  <sender>cuaca.ekstrem@bmkg.go.id</sender>
+  <sent>2026-11-28T13:20:00+08:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <language>id</language>
+    <category>Met</category>
+    <event>Hujan Lebat dan Petir</event>
+    <urgency>Immediate</urgency>
+    <severity>Moderate</severity>
+    <certainty>Observed</certainty>
+    <eventCode>
+      <valueName>OET:v1.2</valueName>
+      <value>OET-194</value>
+    </eventCode>
+    <effective>2026-11-28T13:50:00+08:00</effective>
+    <expires>2026-11-28T15:30:00+08:00</expires>
+    <senderName>Badan Meteorologi Klimatologi dan Geofisika</senderName>
+    <headline>Hujan Lebat disertai Petir di Sulawesi Selatan</headline>
+    <description>Hujan lebat disertai petir akan terjadi pada 28 November 2026, 13:50 WITA di sebagian wilayah Sulawesi Selatan, khususnya di BIRINGBULU, TINGGIMONCONG.
+ Kondisi ini berpotensi menimbulkan dampak berupa jarak pandang berkurang, angin kencang, dan banjir lokal.
+ Masyarakat dihimbau untuk tetap waspada, mengurangi aktivitas di luar ruangan, serta mengambil langkah-langkah pencegahan yang diperlukan guna menjaga keselamatan.
+ Kondisi diperkirakan dapat berlangsung hingga 28 November 2026, 15:30 WITA.</description>
+    <web>https://nowcasting.bmkg.go.id/infografis/CSL/2026/11/28/infografis.jpg</web>
+    <contact>06221 196</contact>
+    <area>
+      <areaDesc>Sulawesi Selatan</areaDesc>
+      <polygon>-5.314,119.944 -5.316,119.942 -5.300,119.877 -5.281,119.859 -5.279,119.851 -5.279,119.829 -5.286,119.786 -5.282,119.763 -5.282,119.763 -5.233,119.751 -5.221,119.750 -5.215,119.756 -5.208,119.758 -5.185,119.752 -5.191,119.765 -5.207,119.775 -5.211,119.797 -5.201,119.819 -5.184,119.843 -5.199,119.879 -5.212,119.893 -5.215,119.903 -5.221,119.909 -5.243,119.918 -5.262,119.931 -5.314,119.944</polygon>
+      <polygon>-5.420,119.741 -5.423,119.745 -5.423,119.755 -5.433,119.761 -5.444,119.786 -5.454,119.794 -5.468,119.793 -5.497,119.803 -5.506,119.798 -5.512,119.799 -5.525,119.815 -5.550,119.804 -5.569,119.786 -5.563,119.777 -5.570,119.773 -5.561,119.730 -5.558,119.729 -5.543,119.705 -5.531,119.701 -5.505,119.705 -5.501,119.698 -5.500,119.687 -5.515,119.671 -5.508,119.665 -5.478,119.663 -5.469,119.652 -5.476,119.631 -5.451,119.647 -5.435,119.641 -5.431,119.636 -5.425,119.638 -5.420,119.628 -5.414,119.641 -5.408,119.644 -5.398,119.676 -5.412,119.683 -5.415,119.699 -5.420,119.706 -5.438,119.708 -5.420,119.741</polygon>
+    </area>
+  </info>
+</alert>
