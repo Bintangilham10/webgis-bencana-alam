@@ -1,0 +1,21 @@
+{
+  "guid": "CBMi2wFBVV95cUxQaXlSWndXX05zN0g4WUZFU1NrQVpndm0ybzdaaVp6VkgxMUg0NGNzMjdlME45czI0eFVrd2x6OTg3em52V0Jldkh1OUU4MTkwX2Rwc2NOdDB5UVRDWFFLRHJiY1d1M0Nkc0RvRVVZMDFRVzNzenBBTGhfazJVYVNqVkliV2I0akdRS1pWVl9uZmdmRW9vMGEySE1fZXBXTWZ4ZTBlOVNqeV8tZU9vT0pBaG5YWXlpdzhEdzR3b0RyV18yUGRGZ2pSd0p2cjR3aHRmcy0yamg0cmRMNTg",
+  "title": "Bencana Tanah Longsor di Banjarnegara, Tim SAR Gabungan Temukan Satu Korban Meninggal Dunia - TIMES Indonesia",
+  "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQaXlSWndXX05zN0g4WUZFU1NrQVpndm0ybzdaaVp6VkgxMUg0NGNzMjdlME45czI0eFVrd2x6OTg3em52V0Jldkh1OUU4MTkwX2Rwc2NOdDB5UVRDWFFLRHJiY1d1M0Nkc0RvRVVZMDFRVzNzenBBTGhfazJVYVNqVkliV2I0akdRS1pWVl9uZmdmRW9vMGEySE1fZXBXTWZ4ZTBlOVNqeV8tZU9vT0pBaG5YWXlpdzhEdzR3b0RyV18yUGRGZ2pSd0p2cjR3aHRmcy0yamg0cmRMNTg?oc=5",
+  "source": "TIMES Indonesia",
+  "source_url": "https://timesindonesia.co.id",
+  "published_at": "2026-11-28T13:52:00.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-28T17:15:44.496Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.04",
+      "nama": "Kabupaten Banjarnegara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}

@@ -1,0 +1,21 @@
+{
+  "guid": "CBMiO0FVX3lxTE5KeWg5a2Yxay1EQ2U1Ri14bDhBb0Y2THBDSDMwZ0EtTVRFWXpUMzlqZDdsVy1lVXdwWnU0",
+  "title": "7 Warga Hilang Tertimbun Longsor di Banjarnegara, SAR Bergerak - Howl.Link",
+  "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE5KeWg5a2Yxay1EQ2U1Ri14bDhBb0Y2THBDSDMwZ0EtTVRFWXpUMzlqZDdsVy1lVXdwWnU0?oc=5",
+  "source": "Howl.Link",
+  "source_url": "https://t.co",
+  "published_at": "2026-11-28T15:47:29.000Z",
+  "query": "\"tanah longsor\" when:1d",
+  "first_seen_at": "2026-11-28T17:15:44.496Z",
+  "luar_negeri": false,
+  "indonesia": true,
+  "jenis": "kejadian",
+  "kab_kota": [
+    {
+      "kode": "33.04",
+      "nama": "Kabupaten Banjarnegara",
+      "keyakinan": "rendah"
+    }
+  ],
+  "provinsi": []
+}
